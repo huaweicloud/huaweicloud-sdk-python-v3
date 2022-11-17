@@ -17,7 +17,6 @@ class StartLogAutoBackupPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartLogAutoBackupPolicyRequest:
     def body(self):
         """Gets the body of this StartLogAutoBackupPolicyRequest.
 
-
         :return: The body of this StartLogAutoBackupPolicyRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.StartLogAutoBackupPolicyReq`
         """
@@ -86,7 +84,6 @@ class StartLogAutoBackupPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartLogAutoBackupPolicyRequest.
-
 
         :param body: The body of this StartLogAutoBackupPolicyRequest.
         :type body: :class:`huaweicloudsdkcss.v1.StartLogAutoBackupPolicyReq`

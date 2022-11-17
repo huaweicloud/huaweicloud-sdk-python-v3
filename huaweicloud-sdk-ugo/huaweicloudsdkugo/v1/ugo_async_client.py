@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class UgoAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckPermission
         :type request: :class:`huaweicloudsdkugo.v1.CheckPermissionRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CheckPermissionResponse`
@@ -68,6 +63,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CommitSyntaxConversion
         :type request: :class:`huaweicloudsdkugo.v1.CommitSyntaxConversionRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CommitSyntaxConversionResponse`
@@ -126,6 +125,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CommitSyntaxConversionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CommitVerification
         :type request: :class:`huaweicloudsdkugo.v1.CommitVerificationRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CommitVerificationResponse`
@@ -184,6 +187,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +221,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CommitVerificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -230,6 +236,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ConfirmTargetDbType
         :type request: :class:`huaweicloudsdkugo.v1.ConfirmTargetDbTypeRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ConfirmTargetDbTypeResponse`
@@ -242,6 +249,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -274,6 +283,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmTargetDbTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -288,6 +298,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEvaluationProject
         :type request: :class:`huaweicloudsdkugo.v1.CreateEvaluationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CreateEvaluationProjectResponse`
@@ -300,6 +311,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -332,6 +345,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEvaluationProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -346,6 +360,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMigrationProject
         :type request: :class:`huaweicloudsdkugo.v1.CreateMigrationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CreateMigrationProjectResponse`
@@ -358,6 +373,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -390,6 +407,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMigrationProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -404,6 +422,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEvaluationProject
         :type request: :class:`huaweicloudsdkugo.v1.DeleteEvaluationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.DeleteEvaluationProjectResponse`
@@ -416,6 +435,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -448,6 +469,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEvaluationProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -462,6 +484,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMigrationProject
         :type request: :class:`huaweicloudsdkugo.v1.DeleteMigrationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.DeleteMigrationProjectResponse`
@@ -474,6 +497,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +531,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMigrationProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -520,6 +546,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadFailureReport
         :type request: :class:`huaweicloudsdkugo.v1.DownloadFailureReportRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.DownloadFailureReportResponse`
@@ -532,6 +559,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -564,6 +593,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadFailureReportResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -578,6 +608,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEvaluationProjects
         :type request: :class:`huaweicloudsdkugo.v1.ListEvaluationProjectsRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListEvaluationProjectsResponse`
@@ -590,6 +621,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -628,6 +661,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEvaluationProjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -642,6 +676,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMigrationProjects
         :type request: :class:`huaweicloudsdkugo.v1.ListMigrationProjectsRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListMigrationProjectsResponse`
@@ -654,6 +689,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -688,6 +725,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMigrationProjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -702,6 +740,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPermissionCheckResult
         :type request: :class:`huaweicloudsdkugo.v1.ListPermissionCheckResultRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListPermissionCheckResultResponse`
@@ -714,6 +753,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -750,6 +791,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPermissionCheckResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -764,6 +806,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkugo.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListQuotasResponse`
@@ -776,6 +819,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -806,6 +851,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -820,6 +866,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSyntaxConversionProgress
         :type request: :class:`huaweicloudsdkugo.v1.ListSyntaxConversionProgressRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListSyntaxConversionProgressResponse`
@@ -832,6 +879,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -864,6 +913,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSyntaxConversionProgressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -878,6 +928,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVerificationProgress
         :type request: :class:`huaweicloudsdkugo.v1.ListVerificationProgressRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListVerificationProgressResponse`
@@ -890,6 +941,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -922,6 +975,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVerificationProgressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -936,6 +990,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEvaluationProjectDetail
         :type request: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectDetailRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectDetailResponse`
@@ -948,6 +1003,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -980,6 +1037,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEvaluationProjectDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -994,6 +1052,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEvaluationProjectStatus
         :type request: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectStatusRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectStatusResponse`
@@ -1006,6 +1065,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1038,6 +1099,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEvaluationProjectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1052,6 +1114,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMigrationProjectDetail
         :type request: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectDetailRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectDetailResponse`
@@ -1064,6 +1127,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1096,6 +1161,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMigrationProjectDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1110,6 +1176,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMigrationProjectStatus
         :type request: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectStatusRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectStatusResponse`
@@ -1122,6 +1189,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1154,6 +1223,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMigrationProjectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1168,6 +1238,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkugo.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListApiVersionsResponse`
@@ -1180,6 +1251,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1210,6 +1283,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1224,6 +1298,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApiVersionInfo
         :type request: :class:`huaweicloudsdkugo.v1.ShowApiVersionInfoRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowApiVersionInfoResponse`
@@ -1236,6 +1311,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1268,6 +1345,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1282,6 +1360,7 @@ class UgoAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunSqlConversion
         :type request: :class:`huaweicloudsdkugo.v1.RunSqlConversionRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.RunSqlConversionResponse`
@@ -1294,6 +1373,8 @@ class UgoAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1326,6 +1407,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSqlConversionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1333,7 +1415,7 @@ class UgoAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1344,9 +1426,10 @@ class UgoAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1363,6 +1446,7 @@ class UgoAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class ShowReplicationParams:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -380,7 +379,6 @@ class ShowReplicationParams:
     def record_metadata(self):
         """Gets the record_metadata of this ShowReplicationParams.
 
-
         :return: The record_metadata of this ShowReplicationParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReplicationRecordMetadata`
         """
@@ -389,7 +387,6 @@ class ShowReplicationParams:
     @record_metadata.setter
     def record_metadata(self, record_metadata):
         """Sets the record_metadata of this ShowReplicationParams.
-
 
         :param record_metadata: The record_metadata of this ShowReplicationParams.
         :type record_metadata: :class:`huaweicloudsdksdrs.v1.ReplicationRecordMetadata`

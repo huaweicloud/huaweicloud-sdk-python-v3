@@ -17,7 +17,6 @@ class ShowTemplateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowTemplateResponse(SdkResponse):
     def template(self):
         """Gets the template of this ShowTemplateResponse.
 
-
         :return: The template of this ShowTemplateResponse.
         :rtype: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
         """
@@ -58,7 +56,6 @@ class ShowTemplateResponse(SdkResponse):
     @template.setter
     def template(self, template):
         """Sets the template of this ShowTemplateResponse.
-
 
         :param template: The template of this ShowTemplateResponse.
         :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`

@@ -17,7 +17,6 @@ class UpdateFollow302SwitchResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateFollow302SwitchResponse(SdkResponse):
     def follow_status(self):
         """Gets the follow_status of this UpdateFollow302SwitchResponse.
 
-
         :return: The follow_status of this UpdateFollow302SwitchResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.Follow302StatusBody`
         """
@@ -58,7 +56,6 @@ class UpdateFollow302SwitchResponse(SdkResponse):
     @follow_status.setter
     def follow_status(self, follow_status):
         """Sets the follow_status of this UpdateFollow302SwitchResponse.
-
 
         :param follow_status: The follow_status of this UpdateFollow302SwitchResponse.
         :type follow_status: :class:`huaweicloudsdkcdn.v1.Follow302StatusBody`

@@ -17,7 +17,6 @@ class CreatePreheatingAssetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePreheatingAssetRequest:
     def body(self):
         """Gets the body of this CreatePreheatingAssetRequest.
 
-
         :return: The body of this CreatePreheatingAssetRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetReq`
         """
@@ -58,7 +56,6 @@ class CreatePreheatingAssetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePreheatingAssetRequest.
-
 
         :param body: The body of this CreatePreheatingAssetRequest.
         :type body: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetReq`

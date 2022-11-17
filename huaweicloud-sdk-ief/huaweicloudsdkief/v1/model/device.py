@@ -17,7 +17,6 @@ class Device:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -334,7 +333,6 @@ class Device:
     def access_config(self):
         """Gets the access_config of this Device.
 
-
         :return: The access_config of this Device.
         :rtype: :class:`huaweicloudsdkief.v1.AccessConfig`
         """
@@ -343,7 +341,6 @@ class Device:
     @access_config.setter
     def access_config(self, access_config):
         """Sets the access_config of this Device.
-
 
         :param access_config: The access_config of this Device.
         :type access_config: :class:`huaweicloudsdkief.v1.AccessConfig`

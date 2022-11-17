@@ -17,7 +17,6 @@ class PropertyFilter:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -39,9 +38,9 @@ class PropertyFilter:
 
         The model defined in huaweicloud sdk
 
-        :param path: **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。多个属性路径之间以逗号分隔。
+        :param path: **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。
         :type path: str
-        :param operator: **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：&gt;，&lt;，&gt;&#x3D;，&lt;&#x3D;，&#x3D;和between:表示数值区间，geo.circle.in:表示圆形区域范围内，geo.circle.out:表示圆形区域范围外。
+        :param operator: **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：&gt;，&lt;，&gt;&#x3D;，&lt;&#x3D;，&#x3D;和between:表示数值区间。
         :type operator: str
         :param value: **参数说明**：数据比较表达式的右值。与数据比较操作符between联用时，右值表示最小值和最大值，用逗号隔开，如“20,30”表示大于等于20小于30。
         :type value: str
@@ -67,7 +66,7 @@ class PropertyFilter:
     def path(self):
         """Gets the path of this PropertyFilter.
 
-        **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。多个属性路径之间以逗号分隔。
+        **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。
 
         :return: The path of this PropertyFilter.
         :rtype: str
@@ -78,7 +77,7 @@ class PropertyFilter:
     def path(self, path):
         """Sets the path of this PropertyFilter.
 
-        **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。多个属性路径之间以逗号分隔。
+        **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。
 
         :param path: The path of this PropertyFilter.
         :type path: str
@@ -89,7 +88,7 @@ class PropertyFilter:
     def operator(self):
         """Gets the operator of this PropertyFilter.
 
-        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间，geo.circle.in:表示圆形区域范围内，geo.circle.out:表示圆形区域范围外。
+        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间。
 
         :return: The operator of this PropertyFilter.
         :rtype: str
@@ -100,7 +99,7 @@ class PropertyFilter:
     def operator(self, operator):
         """Sets the operator of this PropertyFilter.
 
-        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间，geo.circle.in:表示圆形区域范围内，geo.circle.out:表示圆形区域范围外。
+        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间。
 
         :param operator: The operator of this PropertyFilter.
         :type operator: str
@@ -133,7 +132,6 @@ class PropertyFilter:
     def strategy(self):
         """Gets the strategy of this PropertyFilter.
 
-
         :return: The strategy of this PropertyFilter.
         :rtype: :class:`huaweicloudsdkiotda.v5.Strategy`
         """
@@ -142,7 +140,6 @@ class PropertyFilter:
     @strategy.setter
     def strategy(self, strategy):
         """Sets the strategy of this PropertyFilter.
-
 
         :param strategy: The strategy of this PropertyFilter.
         :type strategy: :class:`huaweicloudsdkiotda.v5.Strategy`

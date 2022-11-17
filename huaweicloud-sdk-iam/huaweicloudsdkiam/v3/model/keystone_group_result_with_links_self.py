@@ -17,7 +17,6 @@ class KeystoneGroupResultWithLinksSelf:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -166,7 +165,6 @@ class KeystoneGroupResultWithLinksSelf:
     def links(self):
         """Gets the links of this KeystoneGroupResultWithLinksSelf.
 
-
         :return: The links of this KeystoneGroupResultWithLinksSelf.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
@@ -175,7 +173,6 @@ class KeystoneGroupResultWithLinksSelf:
     @links.setter
     def links(self, links):
         """Sets the links of this KeystoneGroupResultWithLinksSelf.
-
 
         :param links: The links of this KeystoneGroupResultWithLinksSelf.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

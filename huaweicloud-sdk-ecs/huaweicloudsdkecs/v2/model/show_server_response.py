@@ -17,7 +17,6 @@ class ShowServerResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowServerResponse(SdkResponse):
     def server(self):
         """Gets the server of this ShowServerResponse.
 
-
         :return: The server of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerDetail`
         """
@@ -58,7 +56,6 @@ class ShowServerResponse(SdkResponse):
     @server.setter
     def server(self, server):
         """Sets the server of this ShowServerResponse.
-
 
         :param server: The server of this ShowServerResponse.
         :type server: :class:`huaweicloudsdkecs.v2.ServerDetail`

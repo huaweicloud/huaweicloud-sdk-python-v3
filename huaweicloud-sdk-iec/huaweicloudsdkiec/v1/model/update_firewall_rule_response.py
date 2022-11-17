@@ -17,7 +17,6 @@ class UpdateFirewallRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateFirewallRuleResponse(SdkResponse):
     def firewall(self):
         """Gets the firewall of this UpdateFirewallRuleResponse.
 
-
         :return: The firewall of this UpdateFirewallRuleResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleResp`
         """
@@ -58,7 +56,6 @@ class UpdateFirewallRuleResponse(SdkResponse):
     @firewall.setter
     def firewall(self, firewall):
         """Sets the firewall of this UpdateFirewallRuleResponse.
-
 
         :param firewall: The firewall of this UpdateFirewallRuleResponse.
         :type firewall: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleResp`

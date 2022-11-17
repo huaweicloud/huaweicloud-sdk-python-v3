@@ -17,7 +17,6 @@ class TemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -326,7 +325,6 @@ class TemplateRequest:
     def vpc(self):
         """Gets the vpc of this TemplateRequest.
 
-
         :return: The vpc of this TemplateRequest.
         :rtype: :class:`huaweicloudsdksms.v3.VpcObject`
         """
@@ -335,7 +333,6 @@ class TemplateRequest:
     @vpc.setter
     def vpc(self, vpc):
         """Sets the vpc of this TemplateRequest.
-
 
         :param vpc: The vpc of this TemplateRequest.
         :type vpc: :class:`huaweicloudsdksms.v3.VpcObject`
@@ -390,7 +387,6 @@ class TemplateRequest:
     def publicip(self):
         """Gets the publicip of this TemplateRequest.
 
-
         :return: The publicip of this TemplateRequest.
         :rtype: :class:`huaweicloudsdksms.v3.PublicIp`
         """
@@ -399,7 +395,6 @@ class TemplateRequest:
     @publicip.setter
     def publicip(self, publicip):
         """Sets the publicip of this TemplateRequest.
-
 
         :param publicip: The publicip of this TemplateRequest.
         :type publicip: :class:`huaweicloudsdksms.v3.PublicIp`

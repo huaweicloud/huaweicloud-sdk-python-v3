@@ -17,7 +17,6 @@ class MergeInfoResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -183,7 +182,6 @@ class MergeInfoResult:
     def author(self):
         """Gets the author of this MergeInfoResult.
 
-
         :return: The author of this MergeInfoResult.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Author`
         """
@@ -192,7 +190,6 @@ class MergeInfoResult:
     @author.setter
     def author(self, author):
         """Sets the author of this MergeInfoResult.
-
 
         :param author: The author of this MergeInfoResult.
         :type author: :class:`huaweicloudsdkcodehub.v3.Author`
@@ -379,7 +376,6 @@ class MergeInfoResult:
     def merge_request_diff(self):
         """Gets the merge_request_diff of this MergeInfoResult.
 
-
         :return: The merge_request_diff of this MergeInfoResult.
         :rtype: :class:`huaweicloudsdkcodehub.v3.MergeRequestDiff`
         """
@@ -388,7 +384,6 @@ class MergeInfoResult:
     @merge_request_diff.setter
     def merge_request_diff(self, merge_request_diff):
         """Sets the merge_request_diff of this MergeInfoResult.
-
 
         :param merge_request_diff: The merge_request_diff of this MergeInfoResult.
         :type merge_request_diff: :class:`huaweicloudsdkcodehub.v3.MergeRequestDiff`

@@ -17,7 +17,6 @@ class RunSemanticParserResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class RunSemanticParserResponse(SdkResponse):
     def result(self):
         """Gets the result of this RunSemanticParserResponse.
 
-
         :return: The result of this RunSemanticParserResponse.
         :rtype: :class:`huaweicloudsdknlp.v2.IntentResult`
         """
@@ -72,7 +70,6 @@ class RunSemanticParserResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RunSemanticParserResponse.
-
 
         :param result: The result of this RunSemanticParserResponse.
         :type result: :class:`huaweicloudsdknlp.v2.IntentResult`

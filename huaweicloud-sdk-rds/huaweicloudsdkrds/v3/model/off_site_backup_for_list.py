@@ -17,7 +17,6 @@ class OffSiteBackupForList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -308,7 +307,6 @@ class OffSiteBackupForList:
     def datastore(self):
         """Gets the datastore of this OffSiteBackupForList.
 
-
         :return: The datastore of this OffSiteBackupForList.
         :rtype: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`
         """
@@ -317,7 +315,6 @@ class OffSiteBackupForList:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this OffSiteBackupForList.
-
 
         :param datastore: The datastore of this OffSiteBackupForList.
         :type datastore: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`

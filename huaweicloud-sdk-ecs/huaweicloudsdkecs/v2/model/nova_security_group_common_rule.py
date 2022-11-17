@@ -17,7 +17,6 @@ class NovaSecurityGroupCommonRule:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class NovaSecurityGroupCommonRule:
     def group(self):
         """Gets the group of this NovaSecurityGroupCommonRule.
 
-
         :return: The group of this NovaSecurityGroupCommonRule.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonGroup`
         """
@@ -115,7 +113,6 @@ class NovaSecurityGroupCommonRule:
     @group.setter
     def group(self, group):
         """Sets the group of this NovaSecurityGroupCommonRule.
-
 
         :param group: The group of this NovaSecurityGroupCommonRule.
         :type group: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonGroup`
@@ -170,7 +167,6 @@ class NovaSecurityGroupCommonRule:
     def ip_range(self):
         """Gets the ip_range of this NovaSecurityGroupCommonRule.
 
-
         :return: The ip_range of this NovaSecurityGroupCommonRule.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonIpRange`
         """
@@ -179,7 +175,6 @@ class NovaSecurityGroupCommonRule:
     @ip_range.setter
     def ip_range(self, ip_range):
         """Sets the ip_range of this NovaSecurityGroupCommonRule.
-
 
         :param ip_range: The ip_range of this NovaSecurityGroupCommonRule.
         :type ip_range: :class:`huaweicloudsdkecs.v2.NovaSecurityGroupCommonIpRange`

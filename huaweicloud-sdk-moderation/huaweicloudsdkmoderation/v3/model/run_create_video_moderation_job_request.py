@@ -17,7 +17,6 @@ class RunCreateVideoModerationJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunCreateVideoModerationJobRequest:
     def body(self):
         """Gets the body of this RunCreateVideoModerationJobRequest.
 
-
         :return: The body of this RunCreateVideoModerationJobRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoCreateRequest`
         """
@@ -58,7 +56,6 @@ class RunCreateVideoModerationJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunCreateVideoModerationJobRequest.
-
 
         :param body: The body of this RunCreateVideoModerationJobRequest.
         :type body: :class:`huaweicloudsdkmoderation.v3.VideoCreateRequest`

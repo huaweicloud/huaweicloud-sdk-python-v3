@@ -17,7 +17,6 @@ class Volume:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -221,7 +220,6 @@ class Volume:
     def metadata(self):
         """Gets the metadata of this Volume.
 
-
         :return: The metadata of this Volume.
         :rtype: :class:`huaweicloudsdkcce.v3.VolumeMetadata`
         """
@@ -230,7 +228,6 @@ class Volume:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this Volume.
-
 
         :param metadata: The metadata of this Volume.
         :type metadata: :class:`huaweicloudsdkcce.v3.VolumeMetadata`

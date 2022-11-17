@@ -17,7 +17,6 @@ class UpdateFunctionConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -850,7 +849,6 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def func_vpc(self):
         """Gets the func_vpc of this UpdateFunctionConfigResponse.
 
-
         :return: The func_vpc of this UpdateFunctionConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         """
@@ -859,7 +857,6 @@ class UpdateFunctionConfigResponse(SdkResponse):
     @func_vpc.setter
     def func_vpc(self, func_vpc):
         """Sets the func_vpc of this UpdateFunctionConfigResponse.
-
 
         :param func_vpc: The func_vpc of this UpdateFunctionConfigResponse.
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -870,7 +867,6 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def mount_config(self):
         """Gets the mount_config of this UpdateFunctionConfigResponse.
 
-
         :return: The mount_config of this UpdateFunctionConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         """
@@ -879,7 +875,6 @@ class UpdateFunctionConfigResponse(SdkResponse):
     @mount_config.setter
     def mount_config(self, mount_config):
         """Sets the mount_config of this UpdateFunctionConfigResponse.
-
 
         :param mount_config: The mount_config of this UpdateFunctionConfigResponse.
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
@@ -890,7 +885,6 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def strategy_config(self):
         """Gets the strategy_config of this UpdateFunctionConfigResponse.
 
-
         :return: The strategy_config of this UpdateFunctionConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
@@ -899,7 +893,6 @@ class UpdateFunctionConfigResponse(SdkResponse):
     @strategy_config.setter
     def strategy_config(self, strategy_config):
         """Sets the strategy_config of this UpdateFunctionConfigResponse.
-
 
         :param strategy_config: The strategy_config of this UpdateFunctionConfigResponse.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -1174,7 +1167,6 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def custom_image(self):
         """Gets the custom_image of this UpdateFunctionConfigResponse.
 
-
         :return: The custom_image of this UpdateFunctionConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         """
@@ -1183,7 +1175,6 @@ class UpdateFunctionConfigResponse(SdkResponse):
     @custom_image.setter
     def custom_image(self, custom_image):
         """Sets the custom_image of this UpdateFunctionConfigResponse.
-
 
         :param custom_image: The custom_image of this UpdateFunctionConfigResponse.
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`

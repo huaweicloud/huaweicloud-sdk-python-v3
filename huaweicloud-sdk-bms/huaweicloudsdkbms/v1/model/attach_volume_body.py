@@ -17,7 +17,6 @@ class AttachVolumeBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class AttachVolumeBody:
     def volume_attachment(self):
         """Gets the volume_attachment of this AttachVolumeBody.
 
-
         :return: The volume_attachment of this AttachVolumeBody.
         :rtype: :class:`huaweicloudsdkbms.v1.VolumeAttachment`
         """
@@ -57,7 +55,6 @@ class AttachVolumeBody:
     @volume_attachment.setter
     def volume_attachment(self, volume_attachment):
         """Sets the volume_attachment of this AttachVolumeBody.
-
 
         :param volume_attachment: The volume_attachment of this AttachVolumeBody.
         :type volume_attachment: :class:`huaweicloudsdkbms.v1.VolumeAttachment`

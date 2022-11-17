@@ -17,7 +17,6 @@ class ListIssueRecordsV4Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class ListIssueRecordsV4Response(SdkResponse):
     def records(self):
         """Gets the records of this ListIssueRecordsV4Response.
 
-
         :return: The records of this ListIssueRecordsV4Response.
         :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4`]
         """
@@ -123,7 +121,6 @@ class ListIssueRecordsV4Response(SdkResponse):
     @records.setter
     def records(self, records):
         """Sets the records of this ListIssueRecordsV4Response.
-
 
         :param records: The records of this ListIssueRecordsV4Response.
         :type records: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4`]

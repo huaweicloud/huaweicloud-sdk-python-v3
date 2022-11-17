@@ -17,7 +17,6 @@ class DeleteHooksResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class DeleteHooksResponse(SdkResponse):
     def error(self):
         """Gets the error of this DeleteHooksResponse.
 
-
         :return: The error of this DeleteHooksResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class DeleteHooksResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this DeleteHooksResponse.
-
 
         :param error: The error of this DeleteHooksResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`

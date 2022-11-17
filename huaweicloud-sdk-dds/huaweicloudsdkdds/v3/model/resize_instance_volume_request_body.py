@@ -17,7 +17,6 @@ class ResizeInstanceVolumeRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class ResizeInstanceVolumeRequestBody:
     def volume(self):
         """Gets the volume of this ResizeInstanceVolumeRequestBody.
 
-
         :return: The volume of this ResizeInstanceVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.ResizeInstanceVolumeOption`
         """
@@ -64,7 +62,6 @@ class ResizeInstanceVolumeRequestBody:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this ResizeInstanceVolumeRequestBody.
-
 
         :param volume: The volume of this ResizeInstanceVolumeRequestBody.
         :type volume: :class:`huaweicloudsdkdds.v3.ResizeInstanceVolumeOption`

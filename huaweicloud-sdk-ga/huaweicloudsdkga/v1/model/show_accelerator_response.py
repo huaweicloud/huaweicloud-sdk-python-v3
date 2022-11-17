@@ -17,7 +17,6 @@ class ShowAcceleratorResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowAcceleratorResponse(SdkResponse):
     def accelerator(self):
         """Gets the accelerator of this ShowAcceleratorResponse.
 
-
         :return: The accelerator of this ShowAcceleratorResponse.
         :rtype: :class:`huaweicloudsdkga.v1.AcceleratorDetail`
         """
@@ -65,7 +63,6 @@ class ShowAcceleratorResponse(SdkResponse):
     @accelerator.setter
     def accelerator(self, accelerator):
         """Sets the accelerator of this ShowAcceleratorResponse.
-
 
         :param accelerator: The accelerator of this ShowAcceleratorResponse.
         :type accelerator: :class:`huaweicloudsdkga.v1.AcceleratorDetail`

@@ -17,7 +17,6 @@ class ListCostsReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -87,7 +86,6 @@ class ListCostsReq:
     def time_condition(self):
         """Gets the time_condition of this ListCostsReq.
 
-
         :return: The time_condition of this ListCostsReq.
         :rtype: :class:`huaweicloudsdkbss.v2.TimeCondition`
         """
@@ -96,7 +94,6 @@ class ListCostsReq:
     @time_condition.setter
     def time_condition(self, time_condition):
         """Sets the time_condition of this ListCostsReq.
-
 
         :param time_condition: The time_condition of this ListCostsReq.
         :type time_condition: :class:`huaweicloudsdkbss.v2.TimeCondition`

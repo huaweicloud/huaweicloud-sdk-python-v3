@@ -17,7 +17,6 @@ class ListFilesByQueryResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListFilesByQueryResponse(SdkResponse):
     def error(self):
         """Gets the error of this ListFilesByQueryResponse.
 
-
         :return: The error of this ListFilesByQueryResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ListFilesByQueryResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ListFilesByQueryResponse.
-
 
         :param error: The error of this ListFilesByQueryResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class ListFilesByQueryResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListFilesByQueryResponse.
 
-
         :return: The result of this ListFilesByQueryResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.FileContentInfo`
         """
@@ -92,7 +88,6 @@ class ListFilesByQueryResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ListFilesByQueryResponse.
-
 
         :param result: The result of this ListFilesByQueryResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.FileContentInfo`

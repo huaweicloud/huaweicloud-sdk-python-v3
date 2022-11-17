@@ -17,7 +17,6 @@ class ShowTasksResponseBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -269,7 +268,6 @@ class ShowTasksResponseBody:
     def task_settings(self):
         """Gets the task_settings of this ShowTasksResponseBody.
 
-
         :return: The task_settings of this ShowTasksResponseBody.
         :rtype: :class:`huaweicloudsdkvss.v3.TaskSettings`
         """
@@ -278,7 +276,6 @@ class ShowTasksResponseBody:
     @task_settings.setter
     def task_settings(self, task_settings):
         """Sets the task_settings of this ShowTasksResponseBody.
-
 
         :param task_settings: The task_settings of this ShowTasksResponseBody.
         :type task_settings: :class:`huaweicloudsdkvss.v3.TaskSettings`
@@ -509,7 +506,6 @@ class ShowTasksResponseBody:
     def statistics(self):
         """Gets the statistics of this ShowTasksResponseBody.
 
-
         :return: The statistics of this ShowTasksResponseBody.
         :rtype: :class:`huaweicloudsdkvss.v3.VulnsLevel`
         """
@@ -518,7 +514,6 @@ class ShowTasksResponseBody:
     @statistics.setter
     def statistics(self, statistics):
         """Sets the statistics of this ShowTasksResponseBody.
-
 
         :param statistics: The statistics of this ShowTasksResponseBody.
         :type statistics: :class:`huaweicloudsdkvss.v3.VulnsLevel`

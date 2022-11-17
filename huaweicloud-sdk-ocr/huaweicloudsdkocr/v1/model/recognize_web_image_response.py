@@ -17,7 +17,6 @@ class RecognizeWebImageResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeWebImageResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeWebImageResponse.
 
-
         :return: The result of this RecognizeWebImageResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.WebImageResult`
         """
@@ -58,7 +56,6 @@ class RecognizeWebImageResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeWebImageResponse.
-
 
         :param result: The result of this RecognizeWebImageResponse.
         :type result: :class:`huaweicloudsdkocr.v1.WebImageResult`

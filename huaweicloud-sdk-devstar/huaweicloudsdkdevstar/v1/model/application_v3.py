@@ -17,7 +17,6 @@ class ApplicationV3:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -361,7 +360,6 @@ class ApplicationV3:
     def repository_creation_result(self):
         """Gets the repository_creation_result of this ApplicationV3.
 
-
         :return: The repository_creation_result of this ApplicationV3.
         :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryCreationResult`
         """
@@ -370,7 +368,6 @@ class ApplicationV3:
     @repository_creation_result.setter
     def repository_creation_result(self, repository_creation_result):
         """Sets the repository_creation_result of this ApplicationV3.
-
 
         :param repository_creation_result: The repository_creation_result of this ApplicationV3.
         :type repository_creation_result: :class:`huaweicloudsdkdevstar.v1.RepositoryCreationResult`

@@ -17,7 +17,6 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
     def distinguished_name(self):
         """Gets the distinguished_name of this ParseCertificateSigningRequestResponse.
 
-
         :return: The distinguished_name of this ParseCertificateSigningRequestResponse.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
@@ -174,7 +172,6 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
         """Sets the distinguished_name of this ParseCertificateSigningRequestResponse.
-
 
         :param distinguished_name: The distinguished_name of this ParseCertificateSigningRequestResponse.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`

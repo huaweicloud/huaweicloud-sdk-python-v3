@@ -17,7 +17,6 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -143,7 +142,6 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
     def base_info(self):
         """Gets the base_info of this ShowTakeOverAssetDetailsResponse.
 
-
         :return: The base_info of this ShowTakeOverAssetDetailsResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.BaseInfo`
         """
@@ -152,7 +150,6 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
     @base_info.setter
     def base_info(self, base_info):
         """Sets the base_info of this ShowTakeOverAssetDetailsResponse.
-
 
         :param base_info: The base_info of this ShowTakeOverAssetDetailsResponse.
         :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
@@ -163,7 +160,6 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
     def transcode_info(self):
         """Gets the transcode_info of this ShowTakeOverAssetDetailsResponse.
 
-
         :return: The transcode_info of this ShowTakeOverAssetDetailsResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
         """
@@ -172,7 +168,6 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
     @transcode_info.setter
     def transcode_info(self, transcode_info):
         """Sets the transcode_info of this ShowTakeOverAssetDetailsResponse.
-
 
         :param transcode_info: The transcode_info of this ShowTakeOverAssetDetailsResponse.
         :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`

@@ -17,7 +17,6 @@ class DeleteSecretForScheduleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteSecretForScheduleResponse(SdkResponse):
     def secret(self):
         """Gets the secret of this DeleteSecretForScheduleResponse.
 
-
         :return: The secret of this DeleteSecretForScheduleResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.Secret`
         """
@@ -58,7 +56,6 @@ class DeleteSecretForScheduleResponse(SdkResponse):
     @secret.setter
     def secret(self, secret):
         """Sets the secret of this DeleteSecretForScheduleResponse.
-
 
         :param secret: The secret of this DeleteSecretForScheduleResponse.
         :type secret: :class:`huaweicloudsdkcsms.v1.Secret`

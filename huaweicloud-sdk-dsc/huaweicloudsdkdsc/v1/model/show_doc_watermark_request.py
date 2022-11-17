@@ -17,7 +17,6 @@ class ShowDocWatermarkRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDocWatermarkRequest:
     def body(self):
         """Gets the body of this ShowDocWatermarkRequest.
 
-
         :return: The body of this ShowDocWatermarkRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkRequestBody`
         """
@@ -58,7 +56,6 @@ class ShowDocWatermarkRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowDocWatermarkRequest.
-
 
         :param body: The body of this ShowDocWatermarkRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkRequestBody`

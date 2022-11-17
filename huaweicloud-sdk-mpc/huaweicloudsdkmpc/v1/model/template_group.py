@@ -17,7 +17,6 @@ class TemplateGroup:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -179,7 +178,6 @@ class TemplateGroup:
     def audio(self):
         """Gets the audio of this TemplateGroup.
 
-
         :return: The audio of this TemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
@@ -188,7 +186,6 @@ class TemplateGroup:
     @audio.setter
     def audio(self, audio):
         """Sets the audio of this TemplateGroup.
-
 
         :param audio: The audio of this TemplateGroup.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -199,7 +196,6 @@ class TemplateGroup:
     def video_common(self):
         """Gets the video_common of this TemplateGroup.
 
-
         :return: The video_common of this TemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoCommon`
         """
@@ -208,7 +204,6 @@ class TemplateGroup:
     @video_common.setter
     def video_common(self, video_common):
         """Sets the video_common of this TemplateGroup.
-
 
         :param video_common: The video_common of this TemplateGroup.
         :type video_common: :class:`huaweicloudsdkmpc.v1.VideoCommon`
@@ -219,7 +214,6 @@ class TemplateGroup:
     def common(self):
         """Gets the common of this TemplateGroup.
 
-
         :return: The common of this TemplateGroup.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
@@ -228,7 +222,6 @@ class TemplateGroup:
     @common.setter
     def common(self, common):
         """Sets the common of this TemplateGroup.
-
 
         :param common: The common of this TemplateGroup.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

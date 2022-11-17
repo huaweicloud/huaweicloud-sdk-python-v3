@@ -17,7 +17,6 @@ class Rule:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -53,11 +52,11 @@ class Rule:
         :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
         :param actions: **参数说明**：规则的动作列表，单个规则最多支持设置10个动作。
         :type actions: list[:class:`huaweicloudsdkiotda.v5.RuleAction`]
-        :param rule_type: **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。
+        :param rule_type: **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。
         :type rule_type: str
         :param status: **参数说明**：规则的状态，默认值：active。 **取值范围**： - active：激活。 - inactive：未激活。
         :type status: str
-        :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
         :type app_id: str
         """
         
@@ -131,7 +130,6 @@ class Rule:
     def condition_group(self):
         """Gets the condition_group of this Rule.
 
-
         :return: The condition_group of this Rule.
         :rtype: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
         """
@@ -140,7 +138,6 @@ class Rule:
     @condition_group.setter
     def condition_group(self, condition_group):
         """Sets the condition_group of this Rule.
-
 
         :param condition_group: The condition_group of this Rule.
         :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
@@ -173,7 +170,7 @@ class Rule:
     def rule_type(self):
         """Gets the rule_type of this Rule.
 
-        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。
+        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。
 
         :return: The rule_type of this Rule.
         :rtype: str
@@ -184,7 +181,7 @@ class Rule:
     def rule_type(self, rule_type):
         """Sets the rule_type of this Rule.
 
-        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。
+        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。
 
         :param rule_type: The rule_type of this Rule.
         :type rule_type: str
@@ -217,7 +214,7 @@ class Rule:
     def app_id(self):
         """Gets the app_id of this Rule.
 
-        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The app_id of this Rule.
         :rtype: str
@@ -228,7 +225,7 @@ class Rule:
     def app_id(self, app_id):
         """Sets the app_id of this Rule.
 
-        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
+        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this Rule.
         :type app_id: str

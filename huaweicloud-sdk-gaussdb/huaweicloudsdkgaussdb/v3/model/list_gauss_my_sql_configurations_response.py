@@ -17,7 +17,6 @@ class ListGaussMySqlConfigurationsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListGaussMySqlConfigurationsResponse(SdkResponse):
     def configurations(self):
         """Gets the configurations of this ListGaussMySqlConfigurationsResponse.
 
-
         :return: The configurations of this ListGaussMySqlConfigurationsResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.ConfigurationSummary`]
         """
@@ -65,7 +63,6 @@ class ListGaussMySqlConfigurationsResponse(SdkResponse):
     @configurations.setter
     def configurations(self, configurations):
         """Sets the configurations of this ListGaussMySqlConfigurationsResponse.
-
 
         :param configurations: The configurations of this ListGaussMySqlConfigurationsResponse.
         :type configurations: list[:class:`huaweicloudsdkgaussdb.v3.ConfigurationSummary`]

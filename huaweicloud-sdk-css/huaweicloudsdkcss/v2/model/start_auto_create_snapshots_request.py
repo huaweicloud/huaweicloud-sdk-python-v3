@@ -17,7 +17,6 @@ class StartAutoCreateSnapshotsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartAutoCreateSnapshotsRequest:
     def body(self):
         """Gets the body of this StartAutoCreateSnapshotsRequest.
 
-
         :return: The body of this StartAutoCreateSnapshotsRequest.
         :rtype: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsReq`
         """
@@ -86,7 +84,6 @@ class StartAutoCreateSnapshotsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartAutoCreateSnapshotsRequest.
-
 
         :param body: The body of this StartAutoCreateSnapshotsRequest.
         :type body: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsReq`

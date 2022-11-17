@@ -17,7 +17,6 @@ class CreateProjectRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -39,7 +38,7 @@ class CreateProjectRequest:
 
         :param x_repo_auth: 授权名称。
         :type x_repo_auth: str
-        :param namespace: 组织ID。
+        :param namespace: 命名空间ID或者URL编码名称。
         :type namespace: str
         :param body: Body of the CreateProjectRequest
         :type body: :class:`huaweicloudsdkservicestage.v2.ProjectCreate`
@@ -83,7 +82,7 @@ class CreateProjectRequest:
     def namespace(self):
         """Gets the namespace of this CreateProjectRequest.
 
-        组织ID。
+        命名空间ID或者URL编码名称。
 
         :return: The namespace of this CreateProjectRequest.
         :rtype: str
@@ -94,7 +93,7 @@ class CreateProjectRequest:
     def namespace(self, namespace):
         """Sets the namespace of this CreateProjectRequest.
 
-        组织ID。
+        命名空间ID或者URL编码名称。
 
         :param namespace: The namespace of this CreateProjectRequest.
         :type namespace: str
@@ -105,7 +104,6 @@ class CreateProjectRequest:
     def body(self):
         """Gets the body of this CreateProjectRequest.
 
-
         :return: The body of this CreateProjectRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ProjectCreate`
         """
@@ -114,7 +112,6 @@ class CreateProjectRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateProjectRequest.
-
 
         :param body: The body of this CreateProjectRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.ProjectCreate`

@@ -17,7 +17,6 @@ class CdmCreateClusterReqCluster:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -178,7 +177,6 @@ class CdmCreateClusterReqCluster:
     def datastore(self):
         """Gets the datastore of this CdmCreateClusterReqCluster.
 
-
         :return: The datastore of this CdmCreateClusterReqCluster.
         :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
@@ -187,7 +185,6 @@ class CdmCreateClusterReqCluster:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CdmCreateClusterReqCluster.
-
 
         :param datastore: The datastore of this CdmCreateClusterReqCluster.
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -198,7 +195,6 @@ class CdmCreateClusterReqCluster:
     def extended_properties(self):
         """Gets the extended_properties of this CdmCreateClusterReqCluster.
 
-
         :return: The extended_properties of this CdmCreateClusterReqCluster.
         :rtype: :class:`huaweicloudsdkcdm.v1.ExtendedProperties`
         """
@@ -207,7 +203,6 @@ class CdmCreateClusterReqCluster:
     @extended_properties.setter
     def extended_properties(self, extended_properties):
         """Sets the extended_properties of this CdmCreateClusterReqCluster.
-
 
         :param extended_properties: The extended_properties of this CdmCreateClusterReqCluster.
         :type extended_properties: :class:`huaweicloudsdkcdm.v1.ExtendedProperties`

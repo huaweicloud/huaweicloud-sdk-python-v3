@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class HssAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateTags
         :type request: :class:`huaweicloudsdkhss.v5.BatchCreateTagsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.BatchCreateTagsResponse`
@@ -68,6 +63,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResourceInstanceTag
         :type request: :class:`huaweicloudsdkhss.v5.DeleteResourceInstanceTagRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.DeleteResourceInstanceTagResponse`
@@ -130,6 +129,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResourceInstanceTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHostStatus
         :type request: :class:`huaweicloudsdkhss.v5.ListHostStatusRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostStatusResponse`
@@ -192,6 +195,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -274,6 +279,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -288,6 +294,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPasswordComplexity
         :type request: :class:`huaweicloudsdkhss.v5.ListPasswordComplexityRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListPasswordComplexityResponse`
@@ -300,6 +307,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +351,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPasswordComplexityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +366,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuotasDetail
         :type request: :class:`huaweicloudsdkhss.v5.ListQuotasDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListQuotasDetailResponse`
@@ -368,6 +379,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -420,6 +433,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotasDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -434,6 +448,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRiskConfigCheckRules
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigCheckRulesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListRiskConfigCheckRulesResponse`
@@ -446,6 +461,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -494,6 +511,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRiskConfigCheckRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -508,6 +526,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRiskConfigHosts
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigHostsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListRiskConfigHostsResponse`
@@ -520,6 +539,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -564,6 +585,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRiskConfigHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -578,6 +600,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRiskConfigs
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListRiskConfigsResponse`
@@ -590,6 +613,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -634,6 +659,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRiskConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -648,6 +674,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecurityEvents
         :type request: :class:`huaweicloudsdkhss.v5.ListSecurityEventsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListSecurityEventsResponse`
@@ -660,6 +687,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -721,6 +750,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecurityEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -735,6 +765,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUserChangeHistories
         :type request: :class:`huaweicloudsdkhss.v5.ListUserChangeHistoriesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListUserChangeHistoriesResponse`
@@ -747,6 +778,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -799,6 +832,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserChangeHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -813,6 +847,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUsers
         :type request: :class:`huaweicloudsdkhss.v5.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListUsersResponse`
@@ -825,6 +860,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -875,6 +912,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -889,6 +927,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVulnerabilities
         :type request: :class:`huaweicloudsdkhss.v5.ListVulnerabilitiesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListVulnerabilitiesResponse`
@@ -901,6 +940,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -943,6 +984,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVulnerabilitiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -957,6 +999,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWeakPasswordUsers
         :type request: :class:`huaweicloudsdkhss.v5.ListWeakPasswordUsersRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListWeakPasswordUsersResponse`
@@ -969,6 +1012,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1013,6 +1058,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWeakPasswordUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1027,6 +1073,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCheckRuleDetail
         :type request: :class:`huaweicloudsdkhss.v5.ShowCheckRuleDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowCheckRuleDetailResponse`
@@ -1039,6 +1086,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1079,6 +1128,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCheckRuleDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1093,6 +1143,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResourceQuotas
         :type request: :class:`huaweicloudsdkhss.v5.ShowResourceQuotasRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowResourceQuotasResponse`
@@ -1105,6 +1156,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1143,6 +1196,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1157,6 +1211,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRiskConfigDetail
         :type request: :class:`huaweicloudsdkhss.v5.ShowRiskConfigDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowRiskConfigDetailResponse`
@@ -1169,6 +1224,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1211,6 +1268,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRiskConfigDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1225,6 +1283,7 @@ class HssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SwitchHostsProtectStatus
         :type request: :class:`huaweicloudsdkhss.v5.SwitchHostsProtectStatusRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.SwitchHostsProtectStatusResponse`
@@ -1237,6 +1296,8 @@ class HssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1273,6 +1334,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchHostsProtectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1280,7 +1342,7 @@ class HssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1291,9 +1353,10 @@ class HssAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1310,6 +1373,7 @@ class HssAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -147,7 +146,6 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
     def redis(self):
         """Gets the redis of this ListNumberOfInstancesInDifferentStatusResponse.
 
-
         :return: The redis of this ListNumberOfInstancesInDifferentStatusResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.StatusStatistic`
         """
@@ -156,7 +154,6 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
     @redis.setter
     def redis(self, redis):
         """Sets the redis of this ListNumberOfInstancesInDifferentStatusResponse.
-
 
         :param redis: The redis of this ListNumberOfInstancesInDifferentStatusResponse.
         :type redis: :class:`huaweicloudsdkdcs.v2.StatusStatistic`
@@ -167,7 +164,6 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
     def memcached(self):
         """Gets the memcached of this ListNumberOfInstancesInDifferentStatusResponse.
 
-
         :return: The memcached of this ListNumberOfInstancesInDifferentStatusResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.StatusStatistic`
         """
@@ -176,7 +172,6 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
     @memcached.setter
     def memcached(self, memcached):
         """Sets the memcached of this ListNumberOfInstancesInDifferentStatusResponse.
-
 
         :param memcached: The memcached of this ListNumberOfInstancesInDifferentStatusResponse.
         :type memcached: :class:`huaweicloudsdkdcs.v2.StatusStatistic`

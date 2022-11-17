@@ -17,7 +17,6 @@ class ListImageByTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListImageByTagsRequest:
     def body(self):
         """Gets the body of this ListImageByTagsRequest.
 
-
         :return: The body of this ListImageByTagsRequest.
         :rtype: :class:`huaweicloudsdkims.v2.ListImageByTagsRequestBody`
         """
@@ -58,7 +56,6 @@ class ListImageByTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListImageByTagsRequest.
-
 
         :param body: The body of this ListImageByTagsRequest.
         :type body: :class:`huaweicloudsdkims.v2.ListImageByTagsRequestBody`

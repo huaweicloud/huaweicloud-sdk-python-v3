@@ -17,7 +17,6 @@ class ChangeBaremetalServerNameRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ChangeBaremetalServerNameRequest:
     def body(self):
         """Gets the body of this ChangeBaremetalServerNameRequest.
 
-
         :return: The body of this ChangeBaremetalServerNameRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameBody`
         """
@@ -86,7 +84,6 @@ class ChangeBaremetalServerNameRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeBaremetalServerNameRequest.
-
 
         :param body: The body of this ChangeBaremetalServerNameRequest.
         :type body: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameBody`

@@ -17,7 +17,6 @@ class ValidateSignatureRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ValidateSignatureRequest:
     def body(self):
         """Gets the body of this ValidateSignatureRequest.
 
-
         :return: The body of this ValidateSignatureRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.VerifyRequestBody`
         """
@@ -58,7 +56,6 @@ class ValidateSignatureRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ValidateSignatureRequest.
-
 
         :param body: The body of this ValidateSignatureRequest.
         :type body: :class:`huaweicloudsdkkms.v2.VerifyRequestBody`

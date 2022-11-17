@@ -17,7 +17,6 @@ class SetPostgresqlDbUserPwdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class SetPostgresqlDbUserPwdRequest:
     def body(self):
         """Gets the body of this SetPostgresqlDbUserPwdRequest.
 
-
         :return: The body of this SetPostgresqlDbUserPwdRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DbUserPwdRequest`
         """
@@ -115,7 +113,6 @@ class SetPostgresqlDbUserPwdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetPostgresqlDbUserPwdRequest.
-
 
         :param body: The body of this SetPostgresqlDbUserPwdRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DbUserPwdRequest`

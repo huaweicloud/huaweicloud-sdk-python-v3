@@ -17,7 +17,6 @@ class CreateMessageV2Req:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class CreateMessageV2Req:
     def message(self):
         """Gets the message of this CreateMessageV2Req.
 
-
         :return: The message of this CreateMessageV2Req.
         :rtype: :class:`huaweicloudsdkosm.v2.CreateMessageDoV2`
         """
@@ -64,7 +62,6 @@ class CreateMessageV2Req:
     @message.setter
     def message(self, message):
         """Sets the message of this CreateMessageV2Req.
-
 
         :param message: The message of this CreateMessageV2Req.
         :type message: :class:`huaweicloudsdkosm.v2.CreateMessageDoV2`

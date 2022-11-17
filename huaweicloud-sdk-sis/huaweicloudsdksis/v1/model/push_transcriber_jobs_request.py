@@ -17,7 +17,6 @@ class PushTranscriberJobsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class PushTranscriberJobsRequest:
     def body(self):
         """Gets the body of this PushTranscriberJobsRequest.
 
-
         :return: The body of this PushTranscriberJobsRequest.
         :rtype: :class:`huaweicloudsdksis.v1.PostTranscriberJobs`
         """
@@ -58,7 +56,6 @@ class PushTranscriberJobsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this PushTranscriberJobsRequest.
-
 
         :param body: The body of this PushTranscriberJobsRequest.
         :type body: :class:`huaweicloudsdksis.v1.PostTranscriberJobs`

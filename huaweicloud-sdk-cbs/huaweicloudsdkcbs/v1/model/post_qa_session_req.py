@@ -17,7 +17,6 @@ class PostQaSessionReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -69,7 +68,6 @@ class PostQaSessionReq:
     def extends(self):
         """Gets the extends of this PostQaSessionReq.
 
-
         :return: The extends of this PostQaSessionReq.
         :rtype: :class:`huaweicloudsdkcbs.v1.SessionExtends`
         """
@@ -78,7 +76,6 @@ class PostQaSessionReq:
     @extends.setter
     def extends(self, extends):
         """Sets the extends of this PostQaSessionReq.
-
 
         :param extends: The extends of this PostQaSessionReq.
         :type extends: :class:`huaweicloudsdkcbs.v1.SessionExtends`

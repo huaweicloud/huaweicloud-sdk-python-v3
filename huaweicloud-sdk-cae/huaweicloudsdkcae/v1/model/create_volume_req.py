@@ -17,7 +17,6 @@ class CreateVolumeReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class CreateVolumeReq:
     def spec(self):
         """Gets the spec of this CreateVolumeReq.
 
-
         :return: The spec of this CreateVolumeReq.
         :rtype: :class:`huaweicloudsdkcae.v1.VolumeSpec`
         """
@@ -113,7 +111,6 @@ class CreateVolumeReq:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this CreateVolumeReq.
-
 
         :param spec: The spec of this CreateVolumeReq.
         :type spec: :class:`huaweicloudsdkcae.v1.VolumeSpec`

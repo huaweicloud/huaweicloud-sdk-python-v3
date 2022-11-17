@@ -17,7 +17,6 @@ class ExpandGraphReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ExpandGraphReq:
     def expand(self):
         """Gets the expand of this ExpandGraphReq.
 
-
         :return: The expand of this ExpandGraphReq.
         :rtype: :class:`huaweicloudsdkges.v1.ReplicationReq`
         """
@@ -57,7 +55,6 @@ class ExpandGraphReq:
     @expand.setter
     def expand(self, expand):
         """Sets the expand of this ExpandGraphReq.
-
 
         :param expand: The expand of this ExpandGraphReq.
         :type expand: :class:`huaweicloudsdkges.v1.ReplicationReq`

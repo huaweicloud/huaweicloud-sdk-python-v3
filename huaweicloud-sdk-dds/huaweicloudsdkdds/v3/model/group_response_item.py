@@ -17,7 +17,6 @@ class GroupResponseItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -166,7 +165,6 @@ class GroupResponseItem:
     def volume(self):
         """Gets the volume of this GroupResponseItem.
 
-
         :return: The volume of this GroupResponseItem.
         :rtype: :class:`huaweicloudsdkdds.v3.Volume`
         """
@@ -175,7 +173,6 @@ class GroupResponseItem:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this GroupResponseItem.
-
 
         :param volume: The volume of this GroupResponseItem.
         :type volume: :class:`huaweicloudsdkdds.v3.Volume`

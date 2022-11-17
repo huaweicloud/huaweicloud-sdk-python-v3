@@ -17,7 +17,6 @@ class CreateRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateRuleResponse(SdkResponse):
     def rule(self):
         """Gets the rule of this CreateRuleResponse.
 
-
         :return: The rule of this CreateRuleResponse.
         :rtype: :class:`huaweicloudsdkief.v1.RuleResponse`
         """
@@ -58,7 +56,6 @@ class CreateRuleResponse(SdkResponse):
     @rule.setter
     def rule(self, rule):
         """Sets the rule of this CreateRuleResponse.
-
 
         :param rule: The rule of this CreateRuleResponse.
         :type rule: :class:`huaweicloudsdkief.v1.RuleResponse`

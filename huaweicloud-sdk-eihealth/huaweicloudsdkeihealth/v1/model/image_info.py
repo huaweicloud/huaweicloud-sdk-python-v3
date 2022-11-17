@@ -17,7 +17,6 @@ class ImageInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class ImageInfo:
     def profile(self):
         """Gets the profile of this ImageInfo.
 
-
         :return: The profile of this ImageInfo.
         :rtype: :class:`huaweicloudsdkeihealth.v1.Profile`
         """
@@ -145,7 +143,6 @@ class ImageInfo:
     @profile.setter
     def profile(self, profile):
         """Sets the profile of this ImageInfo.
-
 
         :param profile: The profile of this ImageInfo.
         :type profile: :class:`huaweicloudsdkeihealth.v1.Profile`

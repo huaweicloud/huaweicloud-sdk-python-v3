@@ -17,7 +17,6 @@ class CreatePartitionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreatePartitionRequest:
     def body(self):
         """Gets the body of this CreatePartitionRequest.
 
-
         :return: The body of this CreatePartitionRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.CreatePartitionReq`
         """
@@ -114,7 +112,6 @@ class CreatePartitionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePartitionRequest.
-
 
         :param body: The body of this CreatePartitionRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.CreatePartitionReq`

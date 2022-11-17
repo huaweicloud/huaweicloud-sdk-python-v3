@@ -17,7 +17,6 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -25,13 +24,13 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         'port': 'int',
         'balance_strategy': 'int',
         'member_type': 'str',
+        'type': 'int',
         'dict_code': 'str',
         'create_time': 'datetime',
         'id': 'str',
         'status': 'int',
         'member_groups': 'list[MemberGroupInfo]',
         'microservice_info': 'MicroServiceInfo',
-        'type': 'int',
         'members': 'list[VpcMemberInfo]',
         'vpc_health_config': 'VpcHealthConfigInfo'
     }
@@ -41,18 +40,18 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         'port': 'port',
         'balance_strategy': 'balance_strategy',
         'member_type': 'member_type',
+        'type': 'type',
         'dict_code': 'dict_code',
         'create_time': 'create_time',
         'id': 'id',
         'status': 'status',
         'member_groups': 'member_groups',
         'microservice_info': 'microservice_info',
-        'type': 'type',
         'members': 'members',
         'vpc_health_config': 'vpc_health_config'
     }
 
-    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, microservice_info=None, type=None, members=None, vpc_health_config=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, microservice_info=None, members=None, vpc_health_config=None):
         """ShowDetailsOfVpcChannelV2Response
 
         The model defined in huaweicloud sdk
@@ -65,6 +64,8 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         :type balance_strategy: int
         :param member_type: VPC通道的成员类型。 - ip - ecs
         :type member_type: str
+        :param type: vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+        :type type: int
         :param dict_code: VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
         :type dict_code: str
         :param create_time: VPC通道的创建时间
@@ -77,8 +78,6 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         :type member_groups: list[:class:`huaweicloudsdkapig.v2.MemberGroupInfo`]
         :param microservice_info: 
         :type microservice_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfo`
-        :param type: vpc通道类型。 - 2：服务器类型 - 3：微服务类型
-        :type type: int
         :param members: 后端实例列表。
         :type members: list[:class:`huaweicloudsdkapig.v2.VpcMemberInfo`]
         :param vpc_health_config: 
@@ -91,13 +90,13 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         self._port = None
         self._balance_strategy = None
         self._member_type = None
+        self._type = None
         self._dict_code = None
         self._create_time = None
         self._id = None
         self._status = None
         self._member_groups = None
         self._microservice_info = None
-        self._type = None
         self._members = None
         self._vpc_health_config = None
         self.discriminator = None
@@ -106,6 +105,8 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         self.port = port
         self.balance_strategy = balance_strategy
         self.member_type = member_type
+        if type is not None:
+            self.type = type
         if dict_code is not None:
             self.dict_code = dict_code
         if create_time is not None:
@@ -118,8 +119,6 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
             self.member_groups = member_groups
         if microservice_info is not None:
             self.microservice_info = microservice_info
-        if type is not None:
-            self.type = type
         if members is not None:
             self.members = members
         if vpc_health_config is not None:
@@ -212,6 +211,28 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
         :type member_type: str
         """
         self._member_type = member_type
+
+    @property
+    def type(self):
+        """Gets the type of this ShowDetailsOfVpcChannelV2Response.
+
+        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+
+        :return: The type of this ShowDetailsOfVpcChannelV2Response.
+        :rtype: int
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ShowDetailsOfVpcChannelV2Response.
+
+        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+
+        :param type: The type of this ShowDetailsOfVpcChannelV2Response.
+        :type type: int
+        """
+        self._type = type
 
     @property
     def dict_code(self):
@@ -327,7 +348,6 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     def microservice_info(self):
         """Gets the microservice_info of this ShowDetailsOfVpcChannelV2Response.
 
-
         :return: The microservice_info of this ShowDetailsOfVpcChannelV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfo`
         """
@@ -337,33 +357,10 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     def microservice_info(self, microservice_info):
         """Sets the microservice_info of this ShowDetailsOfVpcChannelV2Response.
 
-
         :param microservice_info: The microservice_info of this ShowDetailsOfVpcChannelV2Response.
         :type microservice_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfo`
         """
         self._microservice_info = microservice_info
-
-    @property
-    def type(self):
-        """Gets the type of this ShowDetailsOfVpcChannelV2Response.
-
-        vpc通道类型。 - 2：服务器类型 - 3：微服务类型
-
-        :return: The type of this ShowDetailsOfVpcChannelV2Response.
-        :rtype: int
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ShowDetailsOfVpcChannelV2Response.
-
-        vpc通道类型。 - 2：服务器类型 - 3：微服务类型
-
-        :param type: The type of this ShowDetailsOfVpcChannelV2Response.
-        :type type: int
-        """
-        self._type = type
 
     @property
     def members(self):
@@ -391,7 +388,6 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     def vpc_health_config(self):
         """Gets the vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
 
-
         :return: The vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.VpcHealthConfigInfo`
         """
@@ -400,7 +396,6 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     @vpc_health_config.setter
     def vpc_health_config(self, vpc_health_config):
         """Sets the vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
-
 
         :param vpc_health_config: The vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
         :type vpc_health_config: :class:`huaweicloudsdkapig.v2.VpcHealthConfigInfo`

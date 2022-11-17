@@ -17,7 +17,6 @@ class ShowHasPipelineResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowHasPipelineResponse(SdkResponse):
     def error(self):
         """Gets the error of this ShowHasPipelineResponse.
 
-
         :return: The error of this ShowHasPipelineResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ShowHasPipelineResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ShowHasPipelineResponse.
-
 
         :param error: The error of this ShowHasPipelineResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`

@@ -17,7 +17,6 @@ class ListActiveOrHistoryAlarmsRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -251,7 +250,6 @@ class ListActiveOrHistoryAlarmsRequestBody:
     def sort(self):
         """Gets the sort of this ListActiveOrHistoryAlarmsRequestBody.
 
-
         :return: The sort of this ListActiveOrHistoryAlarmsRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.Sort`
         """
@@ -260,7 +258,6 @@ class ListActiveOrHistoryAlarmsRequestBody:
     @sort.setter
     def sort(self, sort):
         """Sets the sort of this ListActiveOrHistoryAlarmsRequestBody.
-
 
         :param sort: The sort of this ListActiveOrHistoryAlarmsRequestBody.
         :type sort: :class:`huaweicloudsdklts.v2.Sort`

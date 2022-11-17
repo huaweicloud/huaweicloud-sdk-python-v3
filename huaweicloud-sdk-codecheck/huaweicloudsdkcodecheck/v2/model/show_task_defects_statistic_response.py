@@ -17,7 +17,6 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
     def severity(self):
         """Gets the severity of this ShowTaskDefectsStatisticResponse.
 
-
         :return: The severity of this ShowTaskDefectsStatisticResponse.
         :rtype: :class:`huaweicloudsdkcodecheck.v2.StatisticSeverityV2`
         """
@@ -65,7 +63,6 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
     @severity.setter
     def severity(self, severity):
         """Sets the severity of this ShowTaskDefectsStatisticResponse.
-
 
         :param severity: The severity of this ShowTaskDefectsStatisticResponse.
         :type severity: :class:`huaweicloudsdkcodecheck.v2.StatisticSeverityV2`
@@ -76,7 +73,6 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowTaskDefectsStatisticResponse.
 
-
         :return: The status of this ShowTaskDefectsStatisticResponse.
         :rtype: :class:`huaweicloudsdkcodecheck.v2.StatisticStatusV2`
         """
@@ -85,7 +81,6 @@ class ShowTaskDefectsStatisticResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this ShowTaskDefectsStatisticResponse.
-
 
         :param status: The status of this ShowTaskDefectsStatisticResponse.
         :type status: :class:`huaweicloudsdkcodecheck.v2.StatisticStatusV2`

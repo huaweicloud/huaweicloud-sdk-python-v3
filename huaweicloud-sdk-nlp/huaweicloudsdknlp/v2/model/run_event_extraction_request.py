@@ -17,7 +17,6 @@ class RunEventExtractionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunEventExtractionRequest:
     def body(self):
         """Gets the body of this RunEventExtractionRequest.
 
-
         :return: The body of this RunEventExtractionRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.PostEventExtractionReq`
         """
@@ -58,7 +56,6 @@ class RunEventExtractionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunEventExtractionRequest.
-
 
         :param body: The body of this RunEventExtractionRequest.
         :type body: :class:`huaweicloudsdknlp.v2.PostEventExtractionReq`

@@ -17,7 +17,6 @@ class UpdateSubscriptionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -368,7 +367,6 @@ class UpdateSubscriptionResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this UpdateSubscriptionResponse.
 
-
         :return: The x_request_id of this UpdateSubscriptionResponse.
         :rtype: str
         """
@@ -377,7 +375,6 @@ class UpdateSubscriptionResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this UpdateSubscriptionResponse.
-
 
         :param x_request_id: The x_request_id of this UpdateSubscriptionResponse.
         :type x_request_id: str

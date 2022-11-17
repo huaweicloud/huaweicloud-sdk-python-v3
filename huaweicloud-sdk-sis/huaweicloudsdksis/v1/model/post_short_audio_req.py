@@ -17,7 +17,6 @@ class PostShortAudioReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class PostShortAudioReq:
     def config(self):
         """Gets the config of this PostShortAudioReq.
 
-
         :return: The config of this PostShortAudioReq.
         :rtype: :class:`huaweicloudsdksis.v1.Config`
         """
@@ -63,7 +61,6 @@ class PostShortAudioReq:
     @config.setter
     def config(self, config):
         """Sets the config of this PostShortAudioReq.
-
 
         :param config: The config of this PostShortAudioReq.
         :type config: :class:`huaweicloudsdksis.v1.Config`

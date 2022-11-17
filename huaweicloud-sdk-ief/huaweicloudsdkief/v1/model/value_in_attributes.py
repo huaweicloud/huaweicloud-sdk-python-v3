@@ -17,7 +17,6 @@ class ValueInAttributes:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ValueInAttributes:
     def metadata(self):
         """Gets the metadata of this ValueInAttributes.
 
-
         :return: The metadata of this ValueInAttributes.
         :rtype: :class:`huaweicloudsdkief.v1.Metadata`
         """
@@ -115,7 +113,6 @@ class ValueInAttributes:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ValueInAttributes.
-
 
         :param metadata: The metadata of this ValueInAttributes.
         :type metadata: :class:`huaweicloudsdkief.v1.Metadata`

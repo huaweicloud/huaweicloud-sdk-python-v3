@@ -17,7 +17,6 @@ class ShowAutoRecordResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class ShowAutoRecordResponse(SdkResponse):
     def auto_record_mode(self):
         """Gets the auto_record_mode of this ShowAutoRecordResponse.
 
-
         :return: The auto_record_mode of this ShowAutoRecordResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
         """
@@ -94,7 +92,6 @@ class ShowAutoRecordResponse(SdkResponse):
     @auto_record_mode.setter
     def auto_record_mode(self, auto_record_mode):
         """Sets the auto_record_mode of this ShowAutoRecordResponse.
-
 
         :param auto_record_mode: The auto_record_mode of this ShowAutoRecordResponse.
         :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
@@ -105,7 +102,6 @@ class ShowAutoRecordResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this ShowAutoRecordResponse.
 
-
         :return: The x_request_id of this ShowAutoRecordResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class ShowAutoRecordResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ShowAutoRecordResponse.
-
 
         :param x_request_id: The x_request_id of this ShowAutoRecordResponse.
         :type x_request_id: str

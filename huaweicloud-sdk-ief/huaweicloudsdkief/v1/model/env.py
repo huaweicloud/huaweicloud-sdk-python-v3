@@ -17,7 +17,6 @@ class Env:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -113,7 +112,6 @@ class Env:
     def value_from(self):
         """Gets the value_from of this Env.
 
-
         :return: The value_from of this Env.
         :rtype: :class:`huaweicloudsdkief.v1.ValueFrom`
         """
@@ -122,7 +120,6 @@ class Env:
     @value_from.setter
     def value_from(self, value_from):
         """Sets the value_from of this Env.
-
 
         :param value_from: The value_from of this Env.
         :type value_from: :class:`huaweicloudsdkief.v1.ValueFrom`

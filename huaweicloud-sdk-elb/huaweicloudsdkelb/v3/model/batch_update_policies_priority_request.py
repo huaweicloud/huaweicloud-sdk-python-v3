@@ -17,7 +17,6 @@ class BatchUpdatePoliciesPriorityRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchUpdatePoliciesPriorityRequest:
     def body(self):
         """Gets the body of this BatchUpdatePoliciesPriorityRequest.
 
-
         :return: The body of this BatchUpdatePoliciesPriorityRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.BatchUpdatePoliciesPriorityRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchUpdatePoliciesPriorityRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchUpdatePoliciesPriorityRequest.
-
 
         :param body: The body of this BatchUpdatePoliciesPriorityRequest.
         :type body: :class:`huaweicloudsdkelb.v3.BatchUpdatePoliciesPriorityRequestBody`

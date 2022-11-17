@@ -17,7 +17,6 @@ class UpdateUserInfoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -35,7 +34,7 @@ class UpdateUserInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: 用户id。
+        :param user_id: 用户ID。
         :type user_id: str
         :param body: Body of the UpdateUserInfoRequest
         :type body: :class:`huaweicloudsdkworkspace.v2.EditUserReq`
@@ -55,7 +54,7 @@ class UpdateUserInfoRequest:
     def user_id(self):
         """Gets the user_id of this UpdateUserInfoRequest.
 
-        用户id。
+        用户ID。
 
         :return: The user_id of this UpdateUserInfoRequest.
         :rtype: str
@@ -66,7 +65,7 @@ class UpdateUserInfoRequest:
     def user_id(self, user_id):
         """Sets the user_id of this UpdateUserInfoRequest.
 
-        用户id。
+        用户ID。
 
         :param user_id: The user_id of this UpdateUserInfoRequest.
         :type user_id: str
@@ -77,7 +76,6 @@ class UpdateUserInfoRequest:
     def body(self):
         """Gets the body of this UpdateUserInfoRequest.
 
-
         :return: The body of this UpdateUserInfoRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EditUserReq`
         """
@@ -86,7 +84,6 @@ class UpdateUserInfoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateUserInfoRequest.
-
 
         :param body: The body of this UpdateUserInfoRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.EditUserReq`

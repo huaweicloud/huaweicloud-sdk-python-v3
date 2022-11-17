@@ -17,7 +17,6 @@ class QueryTransTemplate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -90,7 +89,6 @@ class QueryTransTemplate:
     def video(self):
         """Gets the video of this QueryTransTemplate.
 
-
         :return: The video of this QueryTransTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.Video`
         """
@@ -99,7 +97,6 @@ class QueryTransTemplate:
     @video.setter
     def video(self, video):
         """Sets the video of this QueryTransTemplate.
-
 
         :param video: The video of this QueryTransTemplate.
         :type video: :class:`huaweicloudsdkmpc.v1.Video`
@@ -110,7 +107,6 @@ class QueryTransTemplate:
     def audio(self):
         """Gets the audio of this QueryTransTemplate.
 
-
         :return: The audio of this QueryTransTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
@@ -119,7 +115,6 @@ class QueryTransTemplate:
     @audio.setter
     def audio(self, audio):
         """Sets the audio of this QueryTransTemplate.
-
 
         :param audio: The audio of this QueryTransTemplate.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -130,7 +125,6 @@ class QueryTransTemplate:
     def common(self):
         """Gets the common of this QueryTransTemplate.
 
-
         :return: The common of this QueryTransTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
@@ -139,7 +133,6 @@ class QueryTransTemplate:
     @common.setter
     def common(self, common):
         """Sets the common of this QueryTransTemplate.
-
 
         :param common: The common of this QueryTransTemplate.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

@@ -17,7 +17,6 @@ class ShowPropertyRawValueRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowPropertyRawValueRequest:
     def body(self):
         """Gets the body of this ShowPropertyRawValueRequest.
 
-
         :return: The body of this ShowPropertyRawValueRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.RawRequest`
         """
@@ -86,7 +84,6 @@ class ShowPropertyRawValueRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowPropertyRawValueRequest.
-
 
         :param body: The body of this ShowPropertyRawValueRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.RawRequest`

@@ -17,7 +17,6 @@ class ShowRawTableRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowRawTableRequest:
     def body(self):
         """Gets the body of this ShowRawTableRequest.
 
-
         :return: The body of this ShowRawTableRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.RawTableParam`
         """
@@ -86,7 +84,6 @@ class ShowRawTableRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowRawTableRequest.
-
 
         :param body: The body of this ShowRawTableRequest.
         :type body: :class:`huaweicloudsdkapm.v1.RawTableParam`

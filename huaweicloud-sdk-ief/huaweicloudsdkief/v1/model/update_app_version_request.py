@@ -17,7 +17,6 @@ class UpdateAppVersionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class UpdateAppVersionRequest:
     def body(self):
         """Gets the body of this UpdateAppVersionRequest.
 
-
         :return: The body of this UpdateAppVersionRequest.
         :rtype: :class:`huaweicloudsdkief.v1.UpdataAppVersionBody`
         """
@@ -143,7 +141,6 @@ class UpdateAppVersionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateAppVersionRequest.
-
 
         :param body: The body of this UpdateAppVersionRequest.
         :type body: :class:`huaweicloudsdkief.v1.UpdataAppVersionBody`

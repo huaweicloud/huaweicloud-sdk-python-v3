@@ -17,7 +17,6 @@ class RenameInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class RenameInstanceRequest:
     def body(self):
         """Gets the body of this RenameInstanceRequest.
 
-
         :return: The body of this RenameInstanceRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.RenameInstanceRequestBody`
         """
@@ -115,7 +113,6 @@ class RenameInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RenameInstanceRequest.
-
 
         :param body: The body of this RenameInstanceRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.RenameInstanceRequestBody`

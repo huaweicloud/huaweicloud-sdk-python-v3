@@ -17,7 +17,6 @@ class StartClusterRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartClusterRequest:
     def body(self):
         """Gets the body of this StartClusterRequest.
 
-
         :return: The body of this StartClusterRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmStartClusterReq`
         """
@@ -86,7 +84,6 @@ class StartClusterRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartClusterRequest.
-
 
         :param body: The body of this StartClusterRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmStartClusterReq`

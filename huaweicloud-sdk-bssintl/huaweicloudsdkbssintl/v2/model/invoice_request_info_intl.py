@@ -17,7 +17,6 @@ class InvoiceRequestInfoIntl:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -438,7 +437,6 @@ class InvoiceRequestInfoIntl:
     def address_info(self):
         """Gets the address_info of this InvoiceRequestInfoIntl.
 
-
         :return: The address_info of this InvoiceRequestInfoIntl.
         :rtype: :class:`huaweicloudsdkbssintl.v2.PostAddressInfoIntl`
         """
@@ -447,7 +445,6 @@ class InvoiceRequestInfoIntl:
     @address_info.setter
     def address_info(self, address_info):
         """Sets the address_info of this InvoiceRequestInfoIntl.
-
 
         :param address_info: The address_info of this InvoiceRequestInfoIntl.
         :type address_info: :class:`huaweicloudsdkbssintl.v2.PostAddressInfoIntl`

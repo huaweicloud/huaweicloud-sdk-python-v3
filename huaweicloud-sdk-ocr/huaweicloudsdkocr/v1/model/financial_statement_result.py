@@ -17,7 +17,6 @@ class FinancialStatementResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class FinancialStatementResult:
     def image_size(self):
         """Gets the image_size of this FinancialStatementResult.
 
-
         :return: The image_size of this FinancialStatementResult.
         :rtype: :class:`huaweicloudsdkocr.v1.FinancialStatementResultImageSize`
         """
@@ -143,7 +141,6 @@ class FinancialStatementResult:
     @image_size.setter
     def image_size(self, image_size):
         """Sets the image_size of this FinancialStatementResult.
-
 
         :param image_size: The image_size of this FinancialStatementResult.
         :type image_size: :class:`huaweicloudsdkocr.v1.FinancialStatementResultImageSize`

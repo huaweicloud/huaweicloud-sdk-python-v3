@@ -17,7 +17,6 @@ class ConfirmTargetDbTypeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class ConfirmTargetDbTypeResponse(SdkResponse):
     def project_status_detail(self):
         """Gets the project_status_detail of this ConfirmTargetDbTypeResponse.
 
-
         :return: The project_status_detail of this ConfirmTargetDbTypeResponse.
         :rtype: :class:`huaweicloudsdkugo.v1.ProjectStatusDetail`
         """
@@ -173,7 +171,6 @@ class ConfirmTargetDbTypeResponse(SdkResponse):
     @project_status_detail.setter
     def project_status_detail(self, project_status_detail):
         """Sets the project_status_detail of this ConfirmTargetDbTypeResponse.
-
 
         :param project_status_detail: The project_status_detail of this ConfirmTargetDbTypeResponse.
         :type project_status_detail: :class:`huaweicloudsdkugo.v1.ProjectStatusDetail`

@@ -17,7 +17,6 @@ class SourceServersResponseBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -453,7 +452,6 @@ class SourceServersResponseBody:
     def current_task(self):
         """Gets the current_task of this SourceServersResponseBody.
 
-
         :return: The current_task of this SourceServersResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.TaskByServerSources`
         """
@@ -462,7 +460,6 @@ class SourceServersResponseBody:
     @current_task.setter
     def current_task(self, current_task):
         """Sets the current_task of this SourceServersResponseBody.
-
 
         :param current_task: The current_task of this SourceServersResponseBody.
         :type current_task: :class:`huaweicloudsdksms.v3.TaskByServerSources`
@@ -495,7 +492,6 @@ class SourceServersResponseBody:
     def init_target_server(self):
         """Gets the init_target_server of this SourceServersResponseBody.
 
-
         :return: The init_target_server of this SourceServersResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.InitTargetServer`
         """
@@ -504,7 +500,6 @@ class SourceServersResponseBody:
     @init_target_server.setter
     def init_target_server(self, init_target_server):
         """Sets the init_target_server of this SourceServersResponseBody.
-
 
         :param init_target_server: The init_target_server of this SourceServersResponseBody.
         :type init_target_server: :class:`huaweicloudsdksms.v3.InitTargetServer`

@@ -17,7 +17,6 @@ class EnableKeyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class EnableKeyResponse(SdkResponse):
     def key_info(self):
         """Gets the key_info of this EnableKeyResponse.
 
-
         :return: The key_info of this EnableKeyResponse.
         :rtype: :class:`huaweicloudsdkkms.v1.KeyStatusInfo`
         """
@@ -58,7 +56,6 @@ class EnableKeyResponse(SdkResponse):
     @key_info.setter
     def key_info(self, key_info):
         """Sets the key_info of this EnableKeyResponse.
-
 
         :param key_info: The key_info of this EnableKeyResponse.
         :type key_info: :class:`huaweicloudsdkkms.v1.KeyStatusInfo`

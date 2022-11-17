@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ApigClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class ApigClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddEipV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddEngressEipV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -189,6 +189,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -227,6 +229,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -254,6 +257,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -290,6 +295,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -320,6 +326,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -354,7 +362,146 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateSignatureKeyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def attach_api_to_plugin(self, request):
+        """插件绑定API
+
+        绑定插件到API上。
+        - 只能选择发布状态的API
+        - 绑定以后及时生效
+        - 修改插件后及时生效
+        - 相同类型的插件只能绑定一个，原来已经绑定的通类型插件，会直接覆盖。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AttachApiToPlugin
+        :type request: :class:`huaweicloudsdkapig.v2.AttachApiToPluginRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.AttachApiToPluginResponse`
+        """
+        return self.attach_api_to_plugin_with_http_info(request)
+
+    def attach_api_to_plugin_with_http_info(self, request):
+        all_params = ['instance_id', 'plugin_id', 'attach_api_to_plugin_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/attach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AttachApiToPluginResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def attach_plugin_to_api(self, request):
+        """API绑定插件
+
+        绑定插件到API上。
+        - 只能选择发布状态的API
+        - 绑定以后及时生效
+        - 修改插件后及时生效
+        - 相同类型的插件只能绑定一个，原来已经绑定的通类型插件，会直接覆盖。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AttachPluginToApi
+        :type request: :class:`huaweicloudsdkapig.v2.AttachPluginToApiRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.AttachPluginToApiResponse`
+        """
+        return self.attach_plugin_to_api_with_http_info(request)
+
+    def attach_plugin_to_api_with_http_info(self, request):
+        all_params = ['instance_id', 'api_id', 'attach_plugin_to_api_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/plugins/attach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AttachPluginToApiResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -380,6 +527,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -414,6 +563,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -444,6 +594,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -478,6 +630,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnvironmentV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -516,6 +669,8 @@ class ApigClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -549,6 +704,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -602,6 +758,8 @@ class ApigClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -635,6 +793,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFeatureV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -661,6 +820,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -697,6 +858,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGatewayResponseV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -723,6 +885,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -755,7 +919,73 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_plugin(self, request):
+        """创建插件
+
+        创建插件信息。
+        - 插件不允许重名
+        - 插件创建后未绑定API前是无意义的，绑定API后，对绑定的API即时生效
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreatePlugin
+        :type request: :class:`huaweicloudsdkapig.v2.CreatePluginRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.CreatePluginResponse`
+        """
+        return self.create_plugin_with_http_info(request)
+
+    def create_plugin_with_http_info(self, request):
+        all_params = ['instance_id', 'create_plugin_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatePluginResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -781,6 +1011,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -815,6 +1047,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -845,6 +1078,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -879,6 +1114,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -909,6 +1145,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -945,6 +1183,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSpecialThrottlingConfigurationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -971,6 +1210,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1005,6 +1246,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1035,6 +1277,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1069,6 +1313,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvironmentV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1095,6 +1340,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1129,6 +1376,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1155,6 +1403,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1193,6 +1443,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGatewayResponseTypeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1219,6 +1470,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1255,6 +1508,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGatewayResponseV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1281,6 +1535,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1313,7 +1569,72 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstancesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_plugin(self, request):
+        """删除插件
+
+        删除插件。
+        - 必须先解除API和插件的绑定关系，否则删除报错
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeletePlugin
+        :type request: :class:`huaweicloudsdkapig.v2.DeletePluginRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.DeletePluginResponse`
+        """
+        return self.delete_plugin_with_http_info(request)
+
+    def delete_plugin_with_http_info(self, request):
+        all_params = ['instance_id', 'plugin_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeletePluginResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1339,6 +1660,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1373,6 +1696,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1399,6 +1723,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1433,6 +1759,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1459,6 +1786,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1495,7 +1824,140 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSpecialThrottlingConfigurationV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def detach_api_from_plugin(self, request):
+        """解除绑定插件的API
+
+        解除绑定在插件上的API
+        - 解绑及时生效
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DetachApiFromPlugin
+        :type request: :class:`huaweicloudsdkapig.v2.DetachApiFromPluginRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.DetachApiFromPluginResponse`
+        """
+        return self.detach_api_from_plugin_with_http_info(request)
+
+    def detach_api_from_plugin_with_http_info(self, request):
+        all_params = ['instance_id', 'plugin_id', 'detach_api_from_plugin_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/detach',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DetachApiFromPluginResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def detach_plugin_from_api(self, request):
+        """解除绑定API的插件
+
+        解除绑定在API上的插件
+        - 解绑及时生效
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DetachPluginFromApi
+        :type request: :class:`huaweicloudsdkapig.v2.DetachPluginFromApiRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.DetachPluginFromApiResponse`
+        """
+        return self.detach_plugin_from_api_with_http_info(request)
+
+    def detach_plugin_from_api_with_http_info(self, request):
+        all_params = ['instance_id', 'api_id', 'detach_plugin_from_api_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/plugins/detach',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DetachPluginFromApiResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1521,6 +1983,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1559,6 +2023,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1585,6 +2050,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1621,6 +2088,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1647,6 +2115,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1681,6 +2151,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1707,6 +2178,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1741,7 +2214,165 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportMicroserviceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_api_attachable_plugins(self, request):
+        """查询可绑定当前API的插件
+
+        查询可绑定当前API的插件信息。
+        - 支持分页返回
+        - 支持插件名称模糊查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListApiAttachablePlugins
+        :type request: :class:`huaweicloudsdkapig.v2.ListApiAttachablePluginsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListApiAttachablePluginsResponse`
+        """
+        return self.list_api_attachable_plugins_with_http_info(request)
+
+    def list_api_attachable_plugins_with_http_info(self, request):
+        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'plugin_name', 'plugin_type', 'plugin_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'plugin_name' in local_var_params:
+            query_params.append(('plugin_name', local_var_params['plugin_name']))
+        if 'plugin_type' in local_var_params:
+            query_params.append(('plugin_type', local_var_params['plugin_type']))
+        if 'plugin_id' in local_var_params:
+            query_params.append(('plugin_id', local_var_params['plugin_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/attachable-plugins',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListApiAttachablePluginsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_api_attached_plugins(self, request):
+        """查询API下绑定的插件
+
+        查询指定API下绑定的插件信息
+        - 用于查询指定API下已经绑定的插件列表信息
+        - 支持分页返回
+        - 支持插件名称模糊查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListApiAttachedPlugins
+        :type request: :class:`huaweicloudsdkapig.v2.ListApiAttachedPluginsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListApiAttachedPluginsResponse`
+        """
+        return self.list_api_attached_plugins_with_http_info(request)
+
+    def list_api_attached_plugins_with_http_info(self, request):
+        all_params = ['instance_id', 'api_id', 'offset', 'limit', 'env_id', 'plugin_name', 'plugin_id', 'env_name', 'plugin_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'plugin_name' in local_var_params:
+            query_params.append(('plugin_name', local_var_params['plugin_name']))
+        if 'plugin_id' in local_var_params:
+            query_params.append(('plugin_id', local_var_params['plugin_id']))
+        if 'env_name' in local_var_params:
+            query_params.append(('env_name', local_var_params['env_name']))
+        if 'plugin_type' in local_var_params:
+            query_params.append(('plugin_type', local_var_params['plugin_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/attached-plugins',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListApiAttachedPluginsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1767,6 +2398,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1799,6 +2432,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiGroupsQuantitiesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1825,6 +2459,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1857,6 +2493,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiQuantitiesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1883,6 +2520,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1929,6 +2568,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1955,6 +2595,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2001,6 +2643,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisNotBoundWithSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2027,6 +2670,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2059,6 +2704,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppQuantitiesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2085,6 +2731,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2115,6 +2763,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAvailableZonesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2141,6 +2790,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2183,6 +2834,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomAuthorizersV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2209,6 +2861,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2253,6 +2907,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentVariablesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2279,6 +2934,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2317,6 +2974,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2389,6 +3047,8 @@ class ApigClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2424,6 +3084,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFeaturesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2450,6 +3111,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2488,6 +3151,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGatewayResponsesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2514,6 +3178,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2548,6 +3214,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceConfigsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2574,6 +3241,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2614,6 +3283,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2641,6 +3311,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2677,6 +3349,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLatelyApiStatisticsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2704,6 +3377,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2738,6 +3413,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLatelyGroupStatisticsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2764,6 +3440,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2808,7 +3486,253 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMetricDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_plugin_attachable_apis(self, request):
+        """查询可绑定当前插件的API
+
+        查询可绑定当前插件的API信息。
+        - 支持分页返回
+        - 支持API名称模糊查询
+        - 支持已绑定其他插件的API查询返回
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListPluginAttachableApis
+        :type request: :class:`huaweicloudsdkapig.v2.ListPluginAttachableApisRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListPluginAttachableApisResponse`
+        """
+        return self.list_plugin_attachable_apis_with_http_info(request)
+
+    def list_plugin_attachable_apis_with_http_info(self, request):
+        all_params = ['instance_id', 'plugin_id', 'offset', 'limit', 'env_id', 'api_name', 'api_id', 'group_id', 'req_method', 'req_uri']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'api_name' in local_var_params:
+            query_params.append(('api_name', local_var_params['api_name']))
+        if 'api_id' in local_var_params:
+            query_params.append(('api_id', local_var_params['api_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'req_method' in local_var_params:
+            query_params.append(('req_method', local_var_params['req_method']))
+        if 'req_uri' in local_var_params:
+            query_params.append(('req_uri', local_var_params['req_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/attachable-apis',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPluginAttachableApisResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_plugin_attached_apis(self, request):
+        """查询插件下绑定的API
+
+        查询指定插件下绑定的API信息
+        - 用于查询指定插件下已经绑定的API列表信息
+        - 支持分页返回
+        - 支持API名称模糊查询
+        - 绑定关系列表中返回的API在对应的环境中可能已经下线
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListPluginAttachedApis
+        :type request: :class:`huaweicloudsdkapig.v2.ListPluginAttachedApisRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListPluginAttachedApisResponse`
+        """
+        return self.list_plugin_attached_apis_with_http_info(request)
+
+    def list_plugin_attached_apis_with_http_info(self, request):
+        all_params = ['instance_id', 'plugin_id', 'offset', 'limit', 'env_id', 'api_name', 'api_id', 'group_id', 'req_method', 'req_uri']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'api_name' in local_var_params:
+            query_params.append(('api_name', local_var_params['api_name']))
+        if 'api_id' in local_var_params:
+            query_params.append(('api_id', local_var_params['api_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'req_method' in local_var_params:
+            query_params.append(('req_method', local_var_params['req_method']))
+        if 'req_uri' in local_var_params:
+            query_params.append(('req_uri', local_var_params['req_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/attached-apis',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPluginAttachedApisResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_plugins(self, request):
+        """查询插件列表
+
+        查询一组符合条件的API网关插件详情。
+        - 支持分页
+        - 支持根据插件类型查询
+        - 支持根据插件可见范围查询
+        - 支持根据插件编码查询
+        - 支持根据名称模糊查询
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListPlugins
+        :type request: :class:`huaweicloudsdkapig.v2.ListPluginsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListPluginsResponse`
+        """
+        return self.list_plugins_with_http_info(request)
+
+    def list_plugins_with_http_info(self, request):
+        all_params = ['instance_id', 'offset', 'limit', 'plugin_type', 'plugin_scope', 'plugin_id', 'plugin_name', 'precise_search']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'plugin_type' in local_var_params:
+            query_params.append(('plugin_type', local_var_params['plugin_type']))
+        if 'plugin_scope' in local_var_params:
+            query_params.append(('plugin_scope', local_var_params['plugin_scope']))
+        if 'plugin_id' in local_var_params:
+            query_params.append(('plugin_id', local_var_params['plugin_id']))
+        if 'plugin_name' in local_var_params:
+            query_params.append(('plugin_name', local_var_params['plugin_name']))
+        if 'precise_search' in local_var_params:
+            query_params.append(('precise_search', local_var_params['precise_search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPluginsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2834,6 +3758,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2870,6 +3796,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectCofigsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2896,6 +3823,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2938,6 +3867,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2964,6 +3894,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3008,6 +3940,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSignatureKeysBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3034,6 +3967,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3076,6 +4011,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSignatureKeysV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3102,6 +4038,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3146,6 +4084,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSpecialThrottlingConfigurationsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3172,6 +4111,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3208,6 +4149,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3234,6 +4176,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3266,6 +4210,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveEipV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3292,6 +4237,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3324,6 +4271,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveEngressEipV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3350,6 +4298,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3384,6 +4334,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfCustomAuthorizersV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3410,6 +4361,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3448,6 +4401,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfDomainNameCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3474,6 +4428,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3508,6 +4464,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3534,6 +4491,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3572,6 +4531,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfGatewayResponseTypeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3598,6 +4558,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3634,6 +4596,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfGatewayResponseV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3660,6 +4623,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3692,6 +4657,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfInstanceProgressV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3718,6 +4684,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3750,6 +4718,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3776,6 +4745,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3810,7 +4781,71 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_plugin(self, request):
+        """查询插件详情
+
+        查询插件详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowPlugin
+        :type request: :class:`huaweicloudsdkapig.v2.ShowPluginRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ShowPluginResponse`
+        """
+        return self.show_plugin_with_http_info(request)
+
+    def show_plugin_with_http_info(self, request):
+        all_params = ['instance_id', 'plugin_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPluginResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3836,6 +4871,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3872,6 +4909,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3898,6 +4936,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3936,6 +4976,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3962,6 +5003,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3996,6 +5039,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEngressEipV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4022,6 +5066,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4058,6 +5104,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEnvironmentV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4084,6 +5131,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4124,6 +5173,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGatewayResponseTypeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4150,6 +5200,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4188,6 +5240,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGatewayResponseV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4214,6 +5267,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4248,7 +5303,75 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_plugin(self, request):
+        """修改插件
+
+        修改插件信息。
+        - 插件不允许重名
+        - 插件不支持修改类型和可见范围
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePlugin
+        :type request: :class:`huaweicloudsdkapig.v2.UpdatePluginRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.UpdatePluginResponse`
+        """
+        return self.update_plugin_with_http_info(request)
+
+    def update_plugin_with_http_info(self, request):
+        all_params = ['instance_id', 'plugin_id', 'update_plugin_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdatePluginResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4274,6 +5397,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4310,6 +5435,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4336,6 +5462,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4372,6 +5500,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4398,6 +5527,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4436,6 +5567,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSpecialThrottlingConfigurationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4464,6 +5596,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4500,6 +5634,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteAclV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4526,6 +5661,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4560,6 +5697,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAclStrategyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4586,6 +5724,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4620,6 +5760,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAclV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4646,6 +5787,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4692,6 +5835,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAclStrategiesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4718,6 +5862,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4752,6 +5898,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAclPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4778,6 +5925,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4814,6 +5963,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAclStrategyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4844,6 +5994,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4878,6 +6030,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4904,6 +6057,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4940,6 +6095,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDisassociateThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4966,6 +6122,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5002,6 +6160,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchPublishOrOfflineApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5030,6 +6189,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5066,6 +6227,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeApiVersionV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5092,6 +6254,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5126,6 +6290,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5154,6 +6319,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5188,6 +6355,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5218,6 +6386,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5252,6 +6422,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOrDeletePublishRecordForApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5278,6 +6449,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5314,6 +6487,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DebugApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5340,6 +6514,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5374,6 +6550,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiByVersionIdV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5402,6 +6579,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5436,6 +6615,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5464,6 +6644,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5498,6 +6680,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5524,6 +6707,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5558,6 +6743,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5586,6 +6772,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5628,6 +6816,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiGroupsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5660,6 +6849,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5696,6 +6887,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiRuntimeDefinitionV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5722,6 +6914,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5756,6 +6950,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionDetailV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5782,6 +6977,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5824,6 +7021,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5850,6 +7048,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5896,6 +7096,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5922,6 +7123,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5968,6 +7171,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisUnbindedToRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5994,6 +7198,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6050,6 +7256,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6076,6 +7283,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6120,6 +7329,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestThrottlingPoliciesBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6147,6 +7357,8 @@ class ApigClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -6180,6 +7392,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6207,6 +7420,8 @@ class ApigClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -6240,6 +7455,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6266,6 +7482,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6302,6 +7520,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6328,6 +7547,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6364,6 +7585,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6390,6 +7612,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6426,6 +7650,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteApiAclBindingV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6454,6 +7679,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6488,6 +7715,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiAclBindingV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6514,6 +7742,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6548,6 +7778,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiAclBindingV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6574,6 +7805,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6620,6 +7853,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAclPolicyBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6646,6 +7880,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6692,6 +7928,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToAclPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6718,6 +7955,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6764,6 +8003,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisUnbindedToAclPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6790,6 +8030,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6824,6 +8066,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelingAuthorizationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6850,6 +8093,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6884,6 +8129,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6911,6 +8157,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6945,6 +8193,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAnAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6971,6 +8220,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7005,6 +8256,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppCodeAutoV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7031,6 +8283,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7067,6 +8321,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7093,6 +8348,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7127,6 +8384,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAuthorizingAppsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7153,6 +8411,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7189,6 +8449,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7216,6 +8477,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7250,6 +8513,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7276,6 +8540,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7324,6 +8590,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7350,6 +8617,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7396,6 +8665,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisUnbindedToAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7422,6 +8692,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7460,6 +8732,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppCodesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7486,6 +8759,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7530,6 +8805,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7556,6 +8832,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7604,6 +8882,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7630,6 +8909,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7666,6 +8947,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResettingAppSecretV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7692,6 +8974,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7728,6 +9012,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7754,6 +9039,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7788,6 +9075,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7814,6 +9102,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7850,6 +9140,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7876,6 +9167,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7910,6 +9203,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7936,6 +9230,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7984,6 +9280,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8010,6 +9307,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8048,6 +9347,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAssociateCertsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8074,6 +9374,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8108,6 +9410,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAssociateDomainsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8134,6 +9437,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8172,6 +9477,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDisassociateCertsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8198,6 +9504,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8232,6 +9540,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDisassociateDomainsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8258,6 +9567,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8290,6 +9601,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8316,6 +9628,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8348,6 +9662,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8374,6 +9689,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8412,6 +9729,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAttachedDomainsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8438,6 +9756,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8482,6 +9802,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificatesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8508,6 +9829,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8540,6 +9863,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8566,6 +9890,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8600,6 +9926,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8628,6 +9955,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8664,6 +9993,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddingBackendInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8690,6 +10020,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8726,6 +10058,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDisableMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8752,6 +10085,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8788,6 +10123,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchEnableMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8797,7 +10133,7 @@ class ApigClient(Client):
     def create_member_group(self, request):
         """添加或更新VPC通道后端服务器组
 
-        在服务集成中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。
+        在APIG中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。
         
         若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
         
@@ -8816,6 +10152,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8852,6 +10190,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8879,6 +10218,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8913,6 +10254,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8939,6 +10281,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8975,6 +10319,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackendInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9001,6 +10346,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9037,6 +10384,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9063,6 +10411,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9097,6 +10447,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9123,6 +10474,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9169,6 +10522,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackendInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9195,6 +10549,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9239,6 +10595,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMemberGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9265,6 +10622,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9317,6 +10676,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcChannelsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9343,6 +10703,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9379,6 +10741,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9405,6 +10768,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9439,6 +10804,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9465,6 +10831,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9501,6 +10869,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBackendInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9527,6 +10896,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9563,6 +10934,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHealthCheckResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9589,6 +10961,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9627,6 +11001,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9657,6 +11032,8 @@ class ApigClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9693,6 +11070,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9700,7 +11078,7 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -9710,9 +11088,10 @@ class ApigClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -9729,6 +11108,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

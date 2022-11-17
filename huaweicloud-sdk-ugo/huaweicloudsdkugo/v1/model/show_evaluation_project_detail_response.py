@@ -17,7 +17,6 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -294,7 +293,6 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
     def source_db_info(self):
         """Gets the source_db_info of this ShowEvaluationProjectDetailResponse.
 
-
         :return: The source_db_info of this ShowEvaluationProjectDetailResponse.
         :rtype: :class:`huaweicloudsdkugo.v1.SourceDB`
         """
@@ -303,7 +301,6 @@ class ShowEvaluationProjectDetailResponse(SdkResponse):
     @source_db_info.setter
     def source_db_info(self, source_db_info):
         """Sets the source_db_info of this ShowEvaluationProjectDetailResponse.
-
 
         :param source_db_info: The source_db_info of this ShowEvaluationProjectDetailResponse.
         :type source_db_info: :class:`huaweicloudsdkugo.v1.SourceDB`

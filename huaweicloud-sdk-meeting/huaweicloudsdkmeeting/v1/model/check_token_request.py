@@ -17,7 +17,6 @@ class CheckTokenRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CheckTokenRequest:
     def body(self):
         """Gets the body of this CheckTokenRequest.
 
-
         :return: The body of this CheckTokenRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ValidateTokenReqDTO`
         """
@@ -116,7 +114,6 @@ class CheckTokenRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckTokenRequest.
-
 
         :param body: The body of this CheckTokenRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ValidateTokenReqDTO`

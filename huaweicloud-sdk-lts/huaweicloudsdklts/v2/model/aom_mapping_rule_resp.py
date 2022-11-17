@@ -17,7 +17,6 @@ class AomMappingRuleResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -132,7 +131,6 @@ class AomMappingRuleResp:
     def rule_info(self):
         """Gets the rule_info of this AomMappingRuleResp.
 
-
         :return: The rule_info of this AomMappingRuleResp.
         :rtype: :class:`huaweicloudsdklts.v2.AomMappingRuleInfo`
         """
@@ -141,7 +139,6 @@ class AomMappingRuleResp:
     @rule_info.setter
     def rule_info(self, rule_info):
         """Sets the rule_info of this AomMappingRuleResp.
-
 
         :param rule_info: The rule_info of this AomMappingRuleResp.
         :type rule_info: :class:`huaweicloudsdklts.v2.AomMappingRuleInfo`

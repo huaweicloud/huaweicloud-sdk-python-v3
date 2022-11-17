@@ -17,7 +17,6 @@ class ListInstancesGroupResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -110,7 +109,6 @@ class ListInstancesGroupResult:
     def volume(self):
         """Gets the volume of this ListInstancesGroupResult.
 
-
         :return: The volume of this ListInstancesGroupResult.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.Volume`
         """
@@ -119,7 +117,6 @@ class ListInstancesGroupResult:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this ListInstancesGroupResult.
-
 
         :param volume: The volume of this ListInstancesGroupResult.
         :type volume: :class:`huaweicloudsdkgaussdbfornosql.v3.Volume`

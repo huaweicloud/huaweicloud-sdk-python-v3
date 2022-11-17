@@ -47,13 +47,13 @@ def expand(prk, info, hmac_algorithm, okm_len, ceil):
     else:
         raw_result = bytes()
         tmp = bytes()
-        for i in range(1, ceil+1):
+        for i in range(1, ceil + 1):
             tmp = expand_once(prk, info, tmp, i, hmac_algorithm)
             raw_result = raw_result + tmp
     if okm_len == len(raw_result):
         return raw_result
     elif okm_len < len(raw_result):
-        return raw_result[:okm_len+1]
+        return raw_result[:okm_len + 1]
     else:
         return None
 
@@ -75,8 +75,8 @@ DERIVATION_KEY_LENGTH = 32
 HMAC_ALGORITHM = HMAC_SHA256
 ALGORITHM_HASH_LENGTH = get_hash_len(HMAC_ALGORITHM)
 UTF_8 = "utf-8"
-EXPAND_CEIL = int(math.ceil(float(DERIVATION_KEY_LENGTH) / float(ALGORITHM_HASH_LENGTH)))
-
+EXPAND_CEIL = int(math.ceil(float(DERIVATION_KEY_LENGTH) / float(ALGORITHM_HASH_LENGTH))) \
+    if ALGORITHM_HASH_LENGTH != 0 else 0
 
 if six.PY2:
 

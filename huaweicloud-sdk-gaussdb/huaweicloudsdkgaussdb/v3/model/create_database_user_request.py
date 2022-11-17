@@ -17,7 +17,6 @@ class CreateDatabaseUserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateDatabaseUserRequest:
     def users(self):
         """Gets the users of this CreateDatabaseUserRequest.
 
-
         :return: The users of this CreateDatabaseUserRequest.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.CreateDatabaseUserList`]
         """
@@ -57,7 +55,6 @@ class CreateDatabaseUserRequest:
     @users.setter
     def users(self, users):
         """Sets the users of this CreateDatabaseUserRequest.
-
 
         :param users: The users of this CreateDatabaseUserRequest.
         :type users: list[:class:`huaweicloudsdkgaussdb.v3.CreateDatabaseUserList`]

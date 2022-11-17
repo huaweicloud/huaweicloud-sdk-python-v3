@@ -17,7 +17,6 @@ class DeleteActiveAlarmsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DeleteActiveAlarmsRequest:
     def body(self):
         """Gets the body of this DeleteActiveAlarmsRequest.
 
-
         :return: The body of this DeleteActiveAlarmsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.DeleteActiveAlarmsRequestBody`
         """
@@ -86,7 +84,6 @@ class DeleteActiveAlarmsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteActiveAlarmsRequest.
-
 
         :param body: The body of this DeleteActiveAlarmsRequest.
         :type body: :class:`huaweicloudsdklts.v2.DeleteActiveAlarmsRequestBody`

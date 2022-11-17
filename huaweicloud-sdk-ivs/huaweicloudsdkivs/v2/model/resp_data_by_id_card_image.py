@@ -17,7 +17,6 @@ class RespDataByIdCardImage:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class RespDataByIdCardImage:
     def idcard_result(self):
         """Gets the idcard_result of this RespDataByIdCardImage.
 
-
         :return: The idcard_result of this RespDataByIdCardImage.
         :rtype: :class:`huaweicloudsdkivs.v2.IdcardResult`
         """
@@ -174,7 +172,6 @@ class RespDataByIdCardImage:
     @idcard_result.setter
     def idcard_result(self, idcard_result):
         """Sets the idcard_result of this RespDataByIdCardImage.
-
 
         :param idcard_result: The idcard_result of this RespDataByIdCardImage.
         :type idcard_result: :class:`huaweicloudsdkivs.v2.IdcardResult`

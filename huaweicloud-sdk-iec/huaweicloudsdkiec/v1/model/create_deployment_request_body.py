@@ -17,7 +17,6 @@ class CreateDeploymentRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateDeploymentRequestBody:
     def edgecloud(self):
         """Gets the edgecloud of this CreateDeploymentRequestBody.
 
-
         :return: The edgecloud of this CreateDeploymentRequestBody.
         :rtype: :class:`huaweicloudsdkiec.v1.EdgeCloudOption`
         """
@@ -57,7 +55,6 @@ class CreateDeploymentRequestBody:
     @edgecloud.setter
     def edgecloud(self, edgecloud):
         """Sets the edgecloud of this CreateDeploymentRequestBody.
-
 
         :param edgecloud: The edgecloud of this CreateDeploymentRequestBody.
         :type edgecloud: :class:`huaweicloudsdkiec.v1.EdgeCloudOption`

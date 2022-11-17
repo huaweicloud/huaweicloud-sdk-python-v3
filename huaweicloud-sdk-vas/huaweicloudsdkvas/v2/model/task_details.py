@@ -17,7 +17,6 @@ class TaskDetails:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -324,7 +323,6 @@ class TaskDetails:
     def service_title(self):
         """Gets the service_title of this TaskDetails.
 
-
         :return: The service_title of this TaskDetails.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
         """
@@ -333,7 +331,6 @@ class TaskDetails:
     @service_title.setter
     def service_title(self, service_title):
         """Sets the service_title of this TaskDetails.
-
 
         :param service_title: The service_title of this TaskDetails.
         :type service_title: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
@@ -476,7 +473,6 @@ class TaskDetails:
     def error(self):
         """Gets the error of this TaskDetails.
 
-
         :return: The error of this TaskDetails.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
         """
@@ -485,7 +481,6 @@ class TaskDetails:
     @error.setter
     def error(self, error):
         """Sets the error of this TaskDetails.
-
 
         :param error: The error of this TaskDetails.
         :type error: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
@@ -518,7 +513,6 @@ class TaskDetails:
     def timing(self):
         """Gets the timing of this TaskDetails.
 
-
         :return: The timing of this TaskDetails.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
@@ -527,7 +521,6 @@ class TaskDetails:
     @timing.setter
     def timing(self, timing):
         """Sets the timing of this TaskDetails.
-
 
         :param timing: The timing of this TaskDetails.
         :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
@@ -538,7 +531,6 @@ class TaskDetails:
     def input(self):
         """Gets the input of this TaskDetails.
 
-
         :return: The input of this TaskDetails.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
@@ -547,7 +539,6 @@ class TaskDetails:
     @input.setter
     def input(self, input):
         """Sets the input of this TaskDetails.
-
 
         :param input: The input of this TaskDetails.
         :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
@@ -558,7 +549,6 @@ class TaskDetails:
     def output(self):
         """Gets the output of this TaskDetails.
 
-
         :return: The output of this TaskDetails.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
         """
@@ -567,7 +557,6 @@ class TaskDetails:
     @output.setter
     def output(self, output):
         """Sets the output of this TaskDetails.
-
 
         :param output: The output of this TaskDetails.
         :type output: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
@@ -578,7 +567,6 @@ class TaskDetails:
     def service_config(self):
         """Gets the service_config of this TaskDetails.
 
-
         :return: The service_config of this TaskDetails.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
@@ -587,7 +575,6 @@ class TaskDetails:
     @service_config.setter
     def service_config(self, service_config):
         """Sets the service_config of this TaskDetails.
-
 
         :param service_config: The service_config of this TaskDetails.
         :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`

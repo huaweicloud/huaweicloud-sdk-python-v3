@@ -17,7 +17,6 @@ class UpdateConnectionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -273,7 +272,6 @@ class UpdateConnectionResponse(SdkResponse):
     def flavor(self):
         """Gets the flavor of this UpdateConnectionResponse.
 
-
         :return: The flavor of this UpdateConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
         """
@@ -282,7 +280,6 @@ class UpdateConnectionResponse(SdkResponse):
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this UpdateConnectionResponse.
-
 
         :param flavor: The flavor of this UpdateConnectionResponse.
         :type flavor: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
@@ -337,7 +334,6 @@ class UpdateConnectionResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this UpdateConnectionResponse.
 
-
         :return: The x_request_id of this UpdateConnectionResponse.
         :rtype: str
         """
@@ -346,7 +342,6 @@ class UpdateConnectionResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this UpdateConnectionResponse.
-
 
         :param x_request_id: The x_request_id of this UpdateConnectionResponse.
         :type x_request_id: str

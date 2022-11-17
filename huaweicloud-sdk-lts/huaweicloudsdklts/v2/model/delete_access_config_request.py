@@ -17,7 +17,6 @@ class DeleteAccessConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteAccessConfigRequest:
     def body(self):
         """Gets the body of this DeleteAccessConfigRequest.
 
-
         :return: The body of this DeleteAccessConfigRequest.
         :rtype: :class:`huaweicloudsdklts.v2.DeleteAccessConfigRequestBody`
         """
@@ -58,7 +56,6 @@ class DeleteAccessConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteAccessConfigRequest.
-
 
         :param body: The body of this DeleteAccessConfigRequest.
         :type body: :class:`huaweicloudsdklts.v2.DeleteAccessConfigRequestBody`

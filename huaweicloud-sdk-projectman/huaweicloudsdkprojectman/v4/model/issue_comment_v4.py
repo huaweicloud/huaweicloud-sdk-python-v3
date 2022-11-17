@@ -17,7 +17,6 @@ class IssueCommentV4:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class IssueCommentV4:
     def user(self):
         """Gets the user of this IssueCommentV4.
 
-
         :return: The user of this IssueCommentV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CommentUserV4`
         """
@@ -145,7 +143,6 @@ class IssueCommentV4:
     @user.setter
     def user(self, user):
         """Sets the user of this IssueCommentV4.
-
 
         :param user: The user of this IssueCommentV4.
         :type user: :class:`huaweicloudsdkprojectman.v4.CommentUserV4`

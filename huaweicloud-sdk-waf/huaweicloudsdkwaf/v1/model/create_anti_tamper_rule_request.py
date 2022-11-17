@@ -17,7 +17,6 @@ class CreateAntiTamperRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateAntiTamperRuleRequest:
     def body(self):
         """Gets the body of this CreateAntiTamperRuleRequest.
 
-
         :return: The body of this CreateAntiTamperRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRulesRequestBody`
         """
@@ -115,7 +113,6 @@ class CreateAntiTamperRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAntiTamperRuleRequest.
-
 
         :param body: The body of this CreateAntiTamperRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRulesRequestBody`

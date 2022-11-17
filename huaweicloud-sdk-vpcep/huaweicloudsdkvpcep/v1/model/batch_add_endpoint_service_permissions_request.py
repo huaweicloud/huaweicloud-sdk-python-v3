@@ -17,7 +17,6 @@ class BatchAddEndpointServicePermissionsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchAddEndpointServicePermissionsRequest:
     def body(self):
         """Gets the body of this BatchAddEndpointServicePermissionsRequest.
 
-
         :return: The body of this BatchAddEndpointServicePermissionsRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddPermissionRequest`
         """
@@ -86,7 +84,6 @@ class BatchAddEndpointServicePermissionsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchAddEndpointServicePermissionsRequest.
-
 
         :param body: The body of this BatchAddEndpointServicePermissionsRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddPermissionRequest`

@@ -17,7 +17,6 @@ class ShowDomainConsoleAclPolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDomainConsoleAclPolicyResponse(SdkResponse):
     def console_acl_policy(self):
         """Gets the console_acl_policy of this ShowDomainConsoleAclPolicyResponse.
 
-
         :return: The console_acl_policy of this ShowDomainConsoleAclPolicyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
         """
@@ -58,7 +56,6 @@ class ShowDomainConsoleAclPolicyResponse(SdkResponse):
     @console_acl_policy.setter
     def console_acl_policy(self, console_acl_policy):
         """Sets the console_acl_policy of this ShowDomainConsoleAclPolicyResponse.
-
 
         :param console_acl_policy: The console_acl_policy of this ShowDomainConsoleAclPolicyResponse.
         :type console_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyResult`

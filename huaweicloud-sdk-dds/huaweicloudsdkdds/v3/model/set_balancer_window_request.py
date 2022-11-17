@@ -17,7 +17,6 @@ class SetBalancerWindowRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SetBalancerWindowRequest:
     def body(self):
         """Gets the body of this SetBalancerWindowRequest.
 
-
         :return: The body of this SetBalancerWindowRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`
         """
@@ -86,7 +84,6 @@ class SetBalancerWindowRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetBalancerWindowRequest.
-
 
         :param body: The body of this SetBalancerWindowRequest.
         :type body: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`

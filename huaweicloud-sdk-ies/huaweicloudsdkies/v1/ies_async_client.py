@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IesAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -57,6 +51,7 @@ class IesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEdgeSite
         :type request: :class:`huaweicloudsdkies.v1.CreateEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkies.v1.CreateEdgeSiteResponse`
@@ -69,6 +64,8 @@ class IesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -101,6 +98,7 @@ class IesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeSiteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -115,6 +113,7 @@ class IesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEdgeSite
         :type request: :class:`huaweicloudsdkies.v1.DeleteEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkies.v1.DeleteEdgeSiteResponse`
@@ -127,6 +126,8 @@ class IesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -159,6 +160,7 @@ class IesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeSiteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -173,6 +175,7 @@ class IesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEdgeSites
         :type request: :class:`huaweicloudsdkies.v1.ListEdgeSitesRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListEdgeSitesResponse`
@@ -185,6 +188,8 @@ class IesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -237,6 +242,7 @@ class IesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEdgeSitesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -251,6 +257,7 @@ class IesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEdgeSite
         :type request: :class:`huaweicloudsdkies.v1.ShowEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ShowEdgeSiteResponse`
@@ -263,6 +270,8 @@ class IesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -295,6 +304,7 @@ class IesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeSiteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -310,6 +320,7 @@ class IesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEdgeSite
         :type request: :class:`huaweicloudsdkies.v1.UpdateEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkies.v1.UpdateEdgeSiteResponse`
@@ -322,6 +333,8 @@ class IesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -356,6 +369,7 @@ class IesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEdgeSiteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -370,6 +384,7 @@ class IesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEdgeSiteMetrics
         :type request: :class:`huaweicloudsdkies.v1.ListEdgeSiteMetricsRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListEdgeSiteMetricsResponse`
@@ -382,6 +397,8 @@ class IesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -416,6 +433,7 @@ class IesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEdgeSiteMetricsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -430,6 +448,7 @@ class IesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkies.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListQuotasResponse`
@@ -442,6 +461,8 @@ class IesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -472,6 +493,7 @@ class IesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -486,6 +508,7 @@ class IesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSupportedRegions
         :type request: :class:`huaweicloudsdkies.v1.ListSupportedRegionsRequest`
         :rtype: :class:`huaweicloudsdkies.v1.ListSupportedRegionsResponse`
@@ -498,6 +521,8 @@ class IesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -540,6 +565,7 @@ class IesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSupportedRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -547,7 +573,7 @@ class IesAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -558,9 +584,10 @@ class IesAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -577,6 +604,7 @@ class IesAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

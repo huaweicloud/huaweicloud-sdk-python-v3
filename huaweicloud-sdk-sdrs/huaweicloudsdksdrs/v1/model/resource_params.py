@@ -17,7 +17,6 @@ class ResourceParams:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -89,7 +88,6 @@ class ResourceParams:
     def resource_detail(self):
         """Gets the resource_detail of this ResourceParams.
 
-
         :return: The resource_detail of this ResourceParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
         """
@@ -98,7 +96,6 @@ class ResourceParams:
     @resource_detail.setter
     def resource_detail(self, resource_detail):
         """Sets the resource_detail of this ResourceParams.
-
 
         :param resource_detail: The resource_detail of this ResourceParams.
         :type resource_detail: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`

@@ -17,7 +17,6 @@ class ModifyPwdEndPoint:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class ModifyPwdEndPoint:
     def kerberos(self):
         """Gets the kerberos of this ModifyPwdEndPoint.
 
-
         :return: The kerberos of this ModifyPwdEndPoint.
         :rtype: :class:`huaweicloudsdkdrs.v3.KerberosVO`
         """
@@ -142,7 +140,6 @@ class ModifyPwdEndPoint:
     @kerberos.setter
     def kerberos(self, kerberos):
         """Sets the kerberos of this ModifyPwdEndPoint.
-
 
         :param kerberos: The kerberos of this ModifyPwdEndPoint.
         :type kerberos: :class:`huaweicloudsdkdrs.v3.KerberosVO`

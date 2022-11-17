@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class LiveClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -73,6 +67,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -110,7 +106,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -125,6 +121,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAreaDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -151,6 +148,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -190,7 +189,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -205,6 +204,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBandwidthDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -231,6 +231,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -265,7 +267,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -280,6 +282,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainBandwidthPeakResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -306,6 +309,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,7 +347,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -357,6 +362,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainTrafficDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -383,6 +389,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -417,7 +425,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -432,6 +440,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainTrafficSummaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -463,6 +472,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -491,7 +502,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -506,6 +517,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHistoryStreamsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -532,6 +544,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -563,7 +577,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -578,6 +592,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQueryHttpCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -605,6 +620,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -625,7 +642,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -640,6 +657,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -667,6 +685,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -687,7 +707,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -702,6 +722,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSnapshotDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -729,6 +750,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -751,7 +774,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -766,6 +789,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTranscodeDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -792,6 +816,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -830,7 +856,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -845,6 +871,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsersOfStreamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -872,6 +899,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -893,7 +922,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -908,6 +937,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStreamCountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -936,6 +966,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -956,7 +988,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -971,6 +1003,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStreamPortraitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -997,6 +1030,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1031,7 +1066,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1046,6 +1081,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUpBandwidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1077,6 +1113,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1101,7 +1139,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1116,6 +1154,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSingleStreamBitrateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1147,6 +1186,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1171,7 +1212,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1186,6 +1227,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSingleStreamDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1217,6 +1259,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1241,7 +1285,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1256,6 +1300,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSingleStreamFramerateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1263,7 +1308,7 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1273,9 +1318,10 @@ class LiveClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1292,6 +1338,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

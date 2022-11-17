@@ -17,7 +17,6 @@ class CreateVpcRouteRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateVpcRouteRequest:
     def body(self):
         """Gets the body of this CreateVpcRouteRequest.
 
-
         :return: The body of this CreateVpcRouteRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcRouteRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateVpcRouteRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateVpcRouteRequest.
-
 
         :param body: The body of this CreateVpcRouteRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.CreateVpcRouteRequestBody`

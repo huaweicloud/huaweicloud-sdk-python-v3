@@ -17,7 +17,6 @@ class SetParticipantViewRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class SetParticipantViewRequest:
     def body(self):
         """Gets the body of this SetParticipantViewRequest.
 
-
         :return: The body of this SetParticipantViewRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestParticipantViewReqBody`
         """
@@ -142,7 +140,6 @@ class SetParticipantViewRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetParticipantViewRequest.
-
 
         :param body: The body of this SetParticipantViewRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestParticipantViewReqBody`

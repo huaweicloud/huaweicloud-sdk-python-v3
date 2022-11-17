@@ -17,7 +17,6 @@ class RunEntitySentimentRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunEntitySentimentRequest:
     def body(self):
         """Gets the body of this RunEntitySentimentRequest.
 
-
         :return: The body of this RunEntitySentimentRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.EntitySentimentReq`
         """
@@ -58,7 +56,6 @@ class RunEntitySentimentRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunEntitySentimentRequest.
-
 
         :param body: The body of this RunEntitySentimentRequest.
         :type body: :class:`huaweicloudsdknlp.v2.EntitySentimentReq`

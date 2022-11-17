@@ -17,7 +17,6 @@ class UpdateMemberReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateMemberReq:
     def role(self):
         """Gets the role of this UpdateMemberReq.
 
-
         :return: The role of this UpdateMemberReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ProjectRoleType`
         """
@@ -57,7 +55,6 @@ class UpdateMemberReq:
     @role.setter
     def role(self, role):
         """Sets the role of this UpdateMemberReq.
-
 
         :param role: The role of this UpdateMemberReq.
         :type role: :class:`huaweicloudsdkeihealth.v1.ProjectRoleType`

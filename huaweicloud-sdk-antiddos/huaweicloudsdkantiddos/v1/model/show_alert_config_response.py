@@ -17,7 +17,6 @@ class ShowAlertConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowAlertConfigResponse(SdkResponse):
     def warn_config(self):
         """Gets the warn_config of this ShowAlertConfigResponse.
 
-
         :return: The warn_config of this ShowAlertConfigResponse.
         :rtype: :class:`huaweicloudsdkantiddos.v1.AlertConfigRespWarnConfig`
         """
@@ -116,7 +114,6 @@ class ShowAlertConfigResponse(SdkResponse):
     @warn_config.setter
     def warn_config(self, warn_config):
         """Sets the warn_config of this ShowAlertConfigResponse.
-
 
         :param warn_config: The warn_config of this ShowAlertConfigResponse.
         :type warn_config: :class:`huaweicloudsdkantiddos.v1.AlertConfigRespWarnConfig`

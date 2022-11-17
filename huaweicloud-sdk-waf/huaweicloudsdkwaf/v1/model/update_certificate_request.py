@@ -17,7 +17,6 @@ class UpdateCertificateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateCertificateRequest:
     def body(self):
         """Gets the body of this UpdateCertificateRequest.
 
-
         :return: The body of this UpdateCertificateRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCertificateRequestBody`
         """
@@ -115,7 +113,6 @@ class UpdateCertificateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateCertificateRequest.
-
 
         :param body: The body of this UpdateCertificateRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateCertificateRequestBody`

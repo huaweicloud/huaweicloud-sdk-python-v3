@@ -17,7 +17,6 @@ class CreateDeviceTemplateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateDeviceTemplateResponse(SdkResponse):
     def device_template(self):
         """Gets the device_template of this CreateDeviceTemplateResponse.
 
-
         :return: The device_template of this CreateDeviceTemplateResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDevice`
         """
@@ -58,7 +56,6 @@ class CreateDeviceTemplateResponse(SdkResponse):
     @device_template.setter
     def device_template(self, device_template):
         """Sets the device_template of this CreateDeviceTemplateResponse.
-
 
         :param device_template: The device_template of this CreateDeviceTemplateResponse.
         :type device_template: :class:`huaweicloudsdkief.v1.EdgemgrDevice`

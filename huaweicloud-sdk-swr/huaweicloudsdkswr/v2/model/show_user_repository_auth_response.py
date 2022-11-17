@@ -17,7 +17,6 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
     def self_auth(self):
         """Gets the self_auth of this ShowUserRepositoryAuthResponse.
 
-
         :return: The self_auth of this ShowUserRepositoryAuthResponse.
         :rtype: :class:`huaweicloudsdkswr.v2.UserAuth`
         """
@@ -123,7 +121,6 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
     @self_auth.setter
     def self_auth(self, self_auth):
         """Sets the self_auth of this ShowUserRepositoryAuthResponse.
-
 
         :param self_auth: The self_auth of this ShowUserRepositoryAuthResponse.
         :type self_auth: :class:`huaweicloudsdkswr.v2.UserAuth`

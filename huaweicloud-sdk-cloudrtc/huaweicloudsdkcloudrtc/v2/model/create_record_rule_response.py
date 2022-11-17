@@ -17,7 +17,6 @@ class CreateRecordRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -149,7 +148,6 @@ class CreateRecordRuleResponse(SdkResponse):
     def obs_addr(self):
         """Gets the obs_addr of this CreateRecordRuleResponse.
 
-
         :return: The obs_addr of this CreateRecordRuleResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
         """
@@ -158,7 +156,6 @@ class CreateRecordRuleResponse(SdkResponse):
     @obs_addr.setter
     def obs_addr(self, obs_addr):
         """Sets the obs_addr of this CreateRecordRuleResponse.
-
 
         :param obs_addr: The obs_addr of this CreateRecordRuleResponse.
         :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
@@ -191,7 +188,6 @@ class CreateRecordRuleResponse(SdkResponse):
     def hls_config(self):
         """Gets the hls_config of this CreateRecordRuleResponse.
 
-
         :return: The hls_config of this CreateRecordRuleResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
         """
@@ -200,7 +196,6 @@ class CreateRecordRuleResponse(SdkResponse):
     @hls_config.setter
     def hls_config(self, hls_config):
         """Sets the hls_config of this CreateRecordRuleResponse.
-
 
         :param hls_config: The hls_config of this CreateRecordRuleResponse.
         :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
@@ -211,7 +206,6 @@ class CreateRecordRuleResponse(SdkResponse):
     def mp4_config(self):
         """Gets the mp4_config of this CreateRecordRuleResponse.
 
-
         :return: The mp4_config of this CreateRecordRuleResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
         """
@@ -220,7 +214,6 @@ class CreateRecordRuleResponse(SdkResponse):
     @mp4_config.setter
     def mp4_config(self, mp4_config):
         """Sets the mp4_config of this CreateRecordRuleResponse.
-
 
         :param mp4_config: The mp4_config of this CreateRecordRuleResponse.
         :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
@@ -275,7 +268,6 @@ class CreateRecordRuleResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this CreateRecordRuleResponse.
 
-
         :return: The x_request_id of this CreateRecordRuleResponse.
         :rtype: str
         """
@@ -284,7 +276,6 @@ class CreateRecordRuleResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this CreateRecordRuleResponse.
-
 
         :param x_request_id: The x_request_id of this CreateRecordRuleResponse.
         :type x_request_id: str

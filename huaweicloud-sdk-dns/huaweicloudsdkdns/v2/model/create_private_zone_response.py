@@ -17,7 +17,6 @@ class CreatePrivateZoneResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -440,7 +439,6 @@ class CreatePrivateZoneResponse(SdkResponse):
     def links(self):
         """Gets the links of this CreatePrivateZoneResponse.
 
-
         :return: The links of this CreatePrivateZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -449,7 +447,6 @@ class CreatePrivateZoneResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this CreatePrivateZoneResponse.
-
 
         :param links: The links of this CreatePrivateZoneResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -482,7 +479,6 @@ class CreatePrivateZoneResponse(SdkResponse):
     def router(self):
         """Gets the router of this CreatePrivateZoneResponse.
 
-
         :return: The router of this CreatePrivateZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.RouterWithStatus`
         """
@@ -491,7 +487,6 @@ class CreatePrivateZoneResponse(SdkResponse):
     @router.setter
     def router(self, router):
         """Sets the router of this CreatePrivateZoneResponse.
-
 
         :param router: The router of this CreatePrivateZoneResponse.
         :type router: :class:`huaweicloudsdkdns.v2.RouterWithStatus`

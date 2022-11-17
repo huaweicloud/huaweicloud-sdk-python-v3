@@ -17,7 +17,6 @@ class RecordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class RecordRequest:
     def body(self):
         """Gets the body of this RecordRequest.
 
-
         :return: The body of this RecordRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestSetRecordReqBody`
         """
@@ -114,7 +112,6 @@ class RecordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RecordRequest.
-
 
         :param body: The body of this RecordRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestSetRecordReqBody`

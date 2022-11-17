@@ -17,7 +17,6 @@ class ExtendInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -126,7 +125,6 @@ class ExtendInfo:
     def author(self):
         """Gets the author of this ExtendInfo.
 
-
         :return: The author of this ExtendInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
         """
@@ -135,7 +133,6 @@ class ExtendInfo:
     @author.setter
     def author(self, author):
         """Sets the author of this ExtendInfo.
-
 
         :param author: The author of this ExtendInfo.
         :type author: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
@@ -146,7 +143,6 @@ class ExtendInfo:
     def updator(self):
         """Gets the updator of this ExtendInfo.
 
-
         :return: The updator of this ExtendInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
         """
@@ -155,7 +151,6 @@ class ExtendInfo:
     @updator.setter
     def updator(self, updator):
         """Sets the updator of this ExtendInfo.
-
 
         :param updator: The updator of this ExtendInfo.
         :type updator: :class:`huaweicloudsdkcloudtest.v1.ExtendAuthorInfo`
@@ -166,7 +161,6 @@ class ExtendInfo:
     def domain(self):
         """Gets the domain of this ExtendInfo.
 
-
         :return: The domain of this ExtendInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
@@ -175,7 +169,6 @@ class ExtendInfo:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this ExtendInfo.
-
 
         :param domain: The domain of this ExtendInfo.
         :type domain: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
@@ -296,7 +289,6 @@ class ExtendInfo:
     def module(self):
         """Gets the module of this ExtendInfo.
 
-
         :return: The module of this ExtendInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
@@ -305,7 +297,6 @@ class ExtendInfo:
     @module.setter
     def module(self, module):
         """Sets the module of this ExtendInfo.
-
 
         :param module: The module of this ExtendInfo.
         :type module: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
@@ -316,7 +307,6 @@ class ExtendInfo:
     def issue(self):
         """Gets the issue of this ExtendInfo.
 
-
         :return: The issue of this ExtendInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
@@ -325,7 +315,6 @@ class ExtendInfo:
     @issue.setter
     def issue(self, issue):
         """Sets the issue of this ExtendInfo.
-
 
         :param issue: The issue of this ExtendInfo.
         :type issue: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
@@ -358,7 +347,6 @@ class ExtendInfo:
     def fixed_version(self):
         """Gets the fixed_version of this ExtendInfo.
 
-
         :return: The fixed_version of this ExtendInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
@@ -367,7 +355,6 @@ class ExtendInfo:
     @fixed_version.setter
     def fixed_version(self, fixed_version):
         """Sets the fixed_version of this ExtendInfo.
-
 
         :param fixed_version: The fixed_version of this ExtendInfo.
         :type fixed_version: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`

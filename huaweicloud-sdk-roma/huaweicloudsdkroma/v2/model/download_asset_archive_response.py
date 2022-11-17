@@ -17,7 +17,6 @@ class DownloadAssetArchiveResponse(SdkStreamResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -26,7 +25,7 @@ class DownloadAssetArchiveResponse(SdkStreamResponse):
     attribute_map = {
     }
 
-    def __init__(self,response):
+    def __init__(self, response):
         """DownloadAssetArchiveResponse
 
         The model defined in huaweicloud sdk

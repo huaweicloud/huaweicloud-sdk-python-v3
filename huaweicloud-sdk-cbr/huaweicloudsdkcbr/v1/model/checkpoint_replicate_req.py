@@ -17,7 +17,6 @@ class CheckpointReplicateReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CheckpointReplicateReq:
     def replicate(self):
         """Gets the replicate of this CheckpointReplicateReq.
 
-
         :return: The replicate of this CheckpointReplicateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateParam`
         """
@@ -57,7 +55,6 @@ class CheckpointReplicateReq:
     @replicate.setter
     def replicate(self, replicate):
         """Sets the replicate of this CheckpointReplicateReq.
-
 
         :param replicate: The replicate of this CheckpointReplicateReq.
         :type replicate: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateParam`

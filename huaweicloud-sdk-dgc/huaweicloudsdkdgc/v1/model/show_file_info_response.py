@@ -17,7 +17,6 @@ class ShowFileInfoResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowFileInfoResponse(SdkResponse):
     def jobs(self):
         """Gets the jobs of this ShowFileInfoResponse.
 
-
         :return: The jobs of this ShowFileInfoResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Job`]
         """
@@ -65,7 +63,6 @@ class ShowFileInfoResponse(SdkResponse):
     @jobs.setter
     def jobs(self, jobs):
         """Sets the jobs of this ShowFileInfoResponse.
-
 
         :param jobs: The jobs of this ShowFileInfoResponse.
         :type jobs: list[:class:`huaweicloudsdkdgc.v1.Job`]
@@ -76,7 +73,6 @@ class ShowFileInfoResponse(SdkResponse):
     def scripts(self):
         """Gets the scripts of this ShowFileInfoResponse.
 
-
         :return: The scripts of this ShowFileInfoResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Script`]
         """
@@ -85,7 +81,6 @@ class ShowFileInfoResponse(SdkResponse):
     @scripts.setter
     def scripts(self, scripts):
         """Sets the scripts of this ShowFileInfoResponse.
-
 
         :param scripts: The scripts of this ShowFileInfoResponse.
         :type scripts: list[:class:`huaweicloudsdkdgc.v1.Script`]

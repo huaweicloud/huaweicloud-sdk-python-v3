@@ -17,7 +17,6 @@ class CommitRecordDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -244,7 +243,6 @@ class CommitRecordDetail:
     def user(self):
         """Gets the user of this CommitRecordDetail.
 
-
         :return: The user of this CommitRecordDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
         """
@@ -253,7 +251,6 @@ class CommitRecordDetail:
     @user.setter
     def user(self, user):
         """Sets the user of this CommitRecordDetail.
-
 
         :param user: The user of this CommitRecordDetail.
         :type user: :class:`huaweicloudsdkprojectman.v4.SimpleUser`

@@ -17,7 +17,6 @@ class ShowJobStatusResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class ShowJobStatusResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowJobStatusResponse.
 
-
         :return: The name of this ShowJobStatusResponse.
         :rtype: str
         """
@@ -93,7 +91,6 @@ class ShowJobStatusResponse(SdkResponse):
     @name.setter
     def name(self, name):
         """Sets the name of this ShowJobStatusResponse.
-
 
         :param name: The name of this ShowJobStatusResponse.
         :type name: str
@@ -104,7 +101,6 @@ class ShowJobStatusResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowJobStatusResponse.
 
-
         :return: The status of this ShowJobStatusResponse.
         :rtype: str
         """
@@ -113,7 +109,6 @@ class ShowJobStatusResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this ShowJobStatusResponse.
-
 
         :param status: The status of this ShowJobStatusResponse.
         :type status: str
@@ -124,7 +119,6 @@ class ShowJobStatusResponse(SdkResponse):
     def starttime(self):
         """Gets the starttime of this ShowJobStatusResponse.
 
-
         :return: The starttime of this ShowJobStatusResponse.
         :rtype: str
         """
@@ -133,7 +127,6 @@ class ShowJobStatusResponse(SdkResponse):
     @starttime.setter
     def starttime(self, starttime):
         """Sets the starttime of this ShowJobStatusResponse.
-
 
         :param starttime: The starttime of this ShowJobStatusResponse.
         :type starttime: str
@@ -144,7 +137,6 @@ class ShowJobStatusResponse(SdkResponse):
     def end_time(self):
         """Gets the end_time of this ShowJobStatusResponse.
 
-
         :return: The end_time of this ShowJobStatusResponse.
         :rtype: str
         """
@@ -153,7 +145,6 @@ class ShowJobStatusResponse(SdkResponse):
     @end_time.setter
     def end_time(self, end_time):
         """Sets the end_time of this ShowJobStatusResponse.
-
 
         :param end_time: The end_time of this ShowJobStatusResponse.
         :type end_time: str
@@ -186,7 +177,6 @@ class ShowJobStatusResponse(SdkResponse):
     def nodes(self):
         """Gets the nodes of this ShowJobStatusResponse.
 
-
         :return: The nodes of this ShowJobStatusResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.RealTimeNodeStatus`]
         """
@@ -195,7 +185,6 @@ class ShowJobStatusResponse(SdkResponse):
     @nodes.setter
     def nodes(self, nodes):
         """Sets the nodes of this ShowJobStatusResponse.
-
 
         :param nodes: The nodes of this ShowJobStatusResponse.
         :type nodes: list[:class:`huaweicloudsdkdgc.v1.RealTimeNodeStatus`]

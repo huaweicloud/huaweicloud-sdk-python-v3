@@ -17,7 +17,6 @@ class CreateMixJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class CreateMixJobRequest:
     def body(self):
         """Gets the body of this CreateMixJobRequest.
 
-
         :return: The body of this CreateMixJobRequest.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MixJobReq`
         """
@@ -201,7 +199,6 @@ class CreateMixJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateMixJobRequest.
-
 
         :param body: The body of this CreateMixJobRequest.
         :type body: :class:`huaweicloudsdkcloudrtc.v2.MixJobReq`

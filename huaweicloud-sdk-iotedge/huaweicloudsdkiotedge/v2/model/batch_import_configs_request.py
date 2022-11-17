@@ -17,7 +17,6 @@ class BatchImportConfigsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchImportConfigsRequest:
     def body(self):
         """Gets the body of this BatchImportConfigsRequest.
 
-
         :return: The body of this BatchImportConfigsRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequestBody`
         """
@@ -114,7 +112,6 @@ class BatchImportConfigsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchImportConfigsRequest.
-
 
         :param body: The body of this BatchImportConfigsRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequestBody`

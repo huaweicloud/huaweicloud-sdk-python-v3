@@ -17,7 +17,6 @@ class NovaServer:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -421,7 +420,6 @@ class NovaServer:
     def flavor(self):
         """Gets the flavor of this NovaServer.
 
-
         :return: The flavor of this NovaServer.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServerFlavor`
         """
@@ -430,7 +428,6 @@ class NovaServer:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this NovaServer.
-
 
         :param flavor: The flavor of this NovaServer.
         :type flavor: :class:`huaweicloudsdkecs.v2.NovaServerFlavor`
@@ -441,7 +438,6 @@ class NovaServer:
     def image(self):
         """Gets the image of this NovaServer.
 
-
         :return: The image of this NovaServer.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServerImage`
         """
@@ -450,7 +446,6 @@ class NovaServer:
     @image.setter
     def image(self, image):
         """Sets the image of this NovaServer.
-
 
         :param image: The image of this NovaServer.
         :type image: :class:`huaweicloudsdkecs.v2.NovaServerImage`
@@ -879,7 +874,6 @@ class NovaServer:
     def fault(self):
         """Gets the fault of this NovaServer.
 
-
         :return: The fault of this NovaServer.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServerFault`
         """
@@ -888,7 +882,6 @@ class NovaServer:
     @fault.setter
     def fault(self, fault):
         """Sets the fault of this NovaServer.
-
 
         :param fault: The fault of this NovaServer.
         :type fault: :class:`huaweicloudsdkecs.v2.NovaServerFault`
@@ -1229,7 +1222,6 @@ class NovaServer:
     def osscheduler_hints(self):
         """Gets the osscheduler_hints of this NovaServer.
 
-
         :return: The osscheduler_hints of this NovaServer.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServerSchedulerHints`
         """
@@ -1238,7 +1230,6 @@ class NovaServer:
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
         """Sets the osscheduler_hints of this NovaServer.
-
 
         :param osscheduler_hints: The osscheduler_hints of this NovaServer.
         :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.NovaServerSchedulerHints`

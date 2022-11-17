@@ -17,7 +17,6 @@ class KeystoneCreateProjectRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class KeystoneCreateProjectRequestBody:
     def project(self):
         """Gets the project of this KeystoneCreateProjectRequestBody.
 
-
         :return: The project of this KeystoneCreateProjectRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectOption`
         """
@@ -57,7 +55,6 @@ class KeystoneCreateProjectRequestBody:
     @project.setter
     def project(self, project):
         """Sets the project of this KeystoneCreateProjectRequestBody.
-
 
         :param project: The project of this KeystoneCreateProjectRequestBody.
         :type project: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectOption`

@@ -17,7 +17,6 @@ class CreateExecuteJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateExecuteJobResponse(SdkResponse):
     def job_submit_result(self):
         """Gets the job_submit_result of this CreateExecuteJobResponse.
 
-
         :return: The job_submit_result of this CreateExecuteJobResponse.
         :rtype: :class:`huaweicloudsdkmrs.v2.JobSubmitResult`
         """
@@ -58,7 +56,6 @@ class CreateExecuteJobResponse(SdkResponse):
     @job_submit_result.setter
     def job_submit_result(self, job_submit_result):
         """Sets the job_submit_result of this CreateExecuteJobResponse.
-
 
         :param job_submit_result: The job_submit_result of this CreateExecuteJobResponse.
         :type job_submit_result: :class:`huaweicloudsdkmrs.v2.JobSubmitResult`

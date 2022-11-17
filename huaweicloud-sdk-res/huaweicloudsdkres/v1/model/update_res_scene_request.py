@@ -17,7 +17,6 @@ class UpdateResSceneRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class UpdateResSceneRequest:
     def body(self):
         """Gets the body of this UpdateResSceneRequest.
 
-
         :return: The body of this UpdateResSceneRequest.
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResSceneRequestBody`
         """
@@ -142,7 +140,6 @@ class UpdateResSceneRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateResSceneRequest.
-
 
         :param body: The body of this UpdateResSceneRequest.
         :type body: :class:`huaweicloudsdkres.v1.UpdateResSceneRequestBody`

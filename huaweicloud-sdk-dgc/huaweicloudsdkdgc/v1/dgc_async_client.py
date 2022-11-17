@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DgcAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -55,6 +49,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelScript
         :type request: :class:`huaweicloudsdkdgc.v1.CancelScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CancelScriptResponse`
@@ -67,6 +62,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -101,6 +98,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelScriptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateConnection
         :type request: :class:`huaweicloudsdkdgc.v1.CreateConnectionRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CreateConnectionResponse`
@@ -126,6 +125,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -171,6 +173,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateJob
         :type request: :class:`huaweicloudsdkdgc.v1.CreateJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CreateJobResponse`
@@ -183,6 +186,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -215,6 +220,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -228,6 +234,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResource
         :type request: :class:`huaweicloudsdkdgc.v1.CreateResourceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CreateResourceResponse`
@@ -240,6 +247,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -272,6 +281,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -285,6 +295,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateScript
         :type request: :class:`huaweicloudsdkdgc.v1.CreateScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.CreateScriptResponse`
@@ -297,6 +308,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -329,6 +342,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScriptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -342,6 +356,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteConnction
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteConnctionRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteConnctionResponse`
@@ -354,6 +369,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -386,6 +403,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConnctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -399,6 +417,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteJob
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteJobResponse`
@@ -411,6 +430,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -443,6 +464,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -456,6 +478,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResource
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteResourceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteResourceResponse`
@@ -468,6 +491,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -500,6 +525,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -513,6 +539,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteScript
         :type request: :class:`huaweicloudsdkdgc.v1.DeleteScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.DeleteScriptResponse`
@@ -525,6 +552,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -557,6 +586,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScriptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -570,6 +600,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExecuteScript
         :type request: :class:`huaweicloudsdkdgc.v1.ExecuteScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ExecuteScriptResponse`
@@ -582,6 +613,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -616,6 +649,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExecuteScriptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -629,6 +663,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportConnections
         :type request: :class:`huaweicloudsdkdgc.v1.ExportConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ExportConnectionsResponse`
@@ -641,6 +676,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -671,6 +708,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -684,6 +722,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportJob
         :type request: :class:`huaweicloudsdkdgc.v1.ExportJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobResponse`
@@ -696,6 +735,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -728,6 +769,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -741,6 +783,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportJobList
         :type request: :class:`huaweicloudsdkdgc.v1.ExportJobListRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobListResponse`
@@ -753,6 +796,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -785,6 +830,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportJobListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -798,6 +844,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportConnections
         :type request: :class:`huaweicloudsdkdgc.v1.ImportConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ImportConnectionsResponse`
@@ -810,6 +857,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -842,6 +891,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -855,6 +905,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportJob
         :type request: :class:`huaweicloudsdkdgc.v1.ImportJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ImportJobResponse`
@@ -867,6 +918,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -899,6 +952,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -912,6 +966,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConnections
         :type request: :class:`huaweicloudsdkdgc.v1.ListConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListConnectionsResponse`
@@ -924,6 +979,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -954,6 +1011,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -967,6 +1025,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListJobInstances
         :type request: :class:`huaweicloudsdkdgc.v1.ListJobInstancesRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListJobInstancesResponse`
@@ -979,6 +1038,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1009,6 +1070,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1022,6 +1084,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListJobs
         :type request: :class:`huaweicloudsdkdgc.v1.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListJobsResponse`
@@ -1034,6 +1097,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1064,6 +1129,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1072,6 +1138,7 @@ class DgcAsyncClient(Client):
 
     def list_resources_async(self, request):
         """查询资源列表
+
 
 
         :param request: Request instance for ListResources
@@ -1086,6 +1153,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1116,6 +1185,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1129,6 +1199,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScriptResults
         :type request: :class:`huaweicloudsdkdgc.v1.ListScriptResultsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListScriptResultsResponse`
@@ -1141,6 +1212,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1175,6 +1248,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScriptResultsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1188,6 +1262,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScripts
         :type request: :class:`huaweicloudsdkdgc.v1.ListScriptsRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListScriptsResponse`
@@ -1200,6 +1275,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1230,6 +1307,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScriptsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1243,6 +1321,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSystemTasks
         :type request: :class:`huaweicloudsdkdgc.v1.ListSystemTasksRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ListSystemTasksResponse`
@@ -1255,6 +1334,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1287,6 +1368,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSystemTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1300,6 +1382,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreJobInstance
         :type request: :class:`huaweicloudsdkdgc.v1.RestoreJobInstanceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.RestoreJobInstanceResponse`
@@ -1312,6 +1395,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1346,6 +1431,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreJobInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1359,6 +1445,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunOnce
         :type request: :class:`huaweicloudsdkdgc.v1.RunOnceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.RunOnceResponse`
@@ -1371,6 +1458,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1405,6 +1494,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunOnceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1418,6 +1508,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowConnection
         :type request: :class:`huaweicloudsdkdgc.v1.ShowConnectionRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowConnectionResponse`
@@ -1430,6 +1521,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1462,6 +1555,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1475,6 +1569,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowFileInfo
         :type request: :class:`huaweicloudsdkdgc.v1.ShowFileInfoRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowFileInfoResponse`
@@ -1487,6 +1582,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1519,6 +1616,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFileInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1532,6 +1630,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkdgc.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowJobResponse`
@@ -1544,6 +1643,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1576,6 +1677,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1589,6 +1691,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobInstance
         :type request: :class:`huaweicloudsdkdgc.v1.ShowJobInstanceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowJobInstanceResponse`
@@ -1601,6 +1704,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1635,6 +1740,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1648,6 +1754,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobStatus
         :type request: :class:`huaweicloudsdkdgc.v1.ShowJobStatusRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowJobStatusResponse`
@@ -1660,6 +1767,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1692,6 +1801,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1705,6 +1815,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResource
         :type request: :class:`huaweicloudsdkdgc.v1.ShowResourceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowResourceResponse`
@@ -1717,6 +1828,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1749,6 +1862,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1762,6 +1876,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowScript
         :type request: :class:`huaweicloudsdkdgc.v1.ShowScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.ShowScriptResponse`
@@ -1774,6 +1889,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1806,6 +1923,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScriptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1819,6 +1937,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartJob
         :type request: :class:`huaweicloudsdkdgc.v1.StartJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.StartJobResponse`
@@ -1831,6 +1950,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1865,6 +1986,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1878,6 +2000,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopJob
         :type request: :class:`huaweicloudsdkdgc.v1.StopJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.StopJobResponse`
@@ -1890,6 +2013,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1922,6 +2047,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1935,6 +2061,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopJobInstance
         :type request: :class:`huaweicloudsdkdgc.v1.StopJobInstanceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.StopJobInstanceResponse`
@@ -1947,6 +2074,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1981,6 +2110,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopJobInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1994,6 +2124,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateConnection
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateConnectionRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.UpdateConnectionResponse`
@@ -2006,6 +2137,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2040,6 +2173,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2053,6 +2187,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateJob
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateJobRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.UpdateJobResponse`
@@ -2065,6 +2200,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2099,6 +2236,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2112,6 +2250,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResource
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateResourceRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.UpdateResourceResponse`
@@ -2124,6 +2263,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2158,6 +2299,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2171,6 +2313,7 @@ class DgcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateScript
         :type request: :class:`huaweicloudsdkdgc.v1.UpdateScriptRequest`
         :rtype: :class:`huaweicloudsdkdgc.v1.UpdateScriptResponse`
@@ -2183,6 +2326,8 @@ class DgcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2217,6 +2362,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateScriptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2224,7 +2370,7 @@ class DgcAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2235,9 +2381,10 @@ class DgcAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2254,6 +2401,7 @@ class DgcAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

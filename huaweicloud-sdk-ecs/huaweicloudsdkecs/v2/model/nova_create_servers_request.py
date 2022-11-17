@@ -17,7 +17,6 @@ class NovaCreateServersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class NovaCreateServersRequest:
     def body(self):
         """Gets the body of this NovaCreateServersRequest.
 
-
         :return: The body of this NovaCreateServersRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequestBody`
         """
@@ -87,7 +85,6 @@ class NovaCreateServersRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this NovaCreateServersRequest.
-
 
         :param body: The body of this NovaCreateServersRequest.
         :type body: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequestBody`

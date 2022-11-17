@@ -17,7 +17,6 @@ class OriginPara:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -143,7 +142,6 @@ class OriginPara:
     def video(self):
         """Gets the video of this OriginPara.
 
-
         :return: The video of this OriginPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         """
@@ -152,7 +150,6 @@ class OriginPara:
     @video.setter
     def video(self, video):
         """Sets the video of this OriginPara.
-
 
         :param video: The video of this OriginPara.
         :type video: :class:`huaweicloudsdkmpc.v1.VideoInfo`
@@ -163,7 +160,6 @@ class OriginPara:
     def audio(self):
         """Gets the audio of this OriginPara.
 
-
         :return: The audio of this OriginPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.AudioInfo`
         """
@@ -172,7 +168,6 @@ class OriginPara:
     @audio.setter
     def audio(self, audio):
         """Sets the audio of this OriginPara.
-
 
         :param audio: The audio of this OriginPara.
         :type audio: :class:`huaweicloudsdkmpc.v1.AudioInfo`

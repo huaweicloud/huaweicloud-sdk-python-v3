@@ -17,7 +17,6 @@ class ImportMicroserviceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ImportMicroserviceRequest:
     def body(self):
         """Gets the body of this ImportMicroserviceRequest.
 
-
         :return: The body of this ImportMicroserviceRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroserviceImportReq`
         """
@@ -86,7 +84,6 @@ class ImportMicroserviceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportMicroserviceRequest.
-
 
         :param body: The body of this ImportMicroserviceRequest.
         :type body: :class:`huaweicloudsdkapig.v2.MicroserviceImportReq`

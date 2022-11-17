@@ -17,7 +17,6 @@ class UpdateTestCaseRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -163,7 +162,6 @@ class UpdateTestCaseRequestBody:
     def extend_info(self):
         """Gets the extend_info of this UpdateTestCaseRequestBody.
 
-
         :return: The extend_info of this UpdateTestCaseRequestBody.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExternalServiceBizCase`
         """
@@ -172,7 +170,6 @@ class UpdateTestCaseRequestBody:
     @extend_info.setter
     def extend_info(self, extend_info):
         """Sets the extend_info of this UpdateTestCaseRequestBody.
-
 
         :param extend_info: The extend_info of this UpdateTestCaseRequestBody.
         :type extend_info: :class:`huaweicloudsdkcloudtest.v1.ExternalServiceBizCase`

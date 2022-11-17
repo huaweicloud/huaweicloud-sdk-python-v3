@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MeetingClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class MeetingClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -104,6 +100,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -130,6 +127,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -168,6 +167,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddCorpAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -194,6 +194,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -230,6 +232,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDepartmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -256,6 +259,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -292,6 +297,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -318,6 +324,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -356,6 +364,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddMaterialResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -382,6 +391,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -418,6 +429,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddProgramResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -444,6 +456,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -480,6 +494,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddPublicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -506,6 +521,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -544,6 +561,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -570,6 +588,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -606,6 +626,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddToPersonalSpaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -633,6 +654,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -669,6 +692,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -695,6 +719,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -733,6 +759,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowClientRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -759,6 +786,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -795,6 +824,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowGuestUnmuteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -821,6 +851,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -857,6 +889,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowWaitingParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -883,6 +916,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -923,6 +958,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -949,6 +985,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -987,6 +1025,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteCorpAdminsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1014,6 +1053,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1050,6 +1091,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1076,6 +1118,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1112,6 +1156,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMaterialsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1138,6 +1183,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1174,6 +1221,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteProgramsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1200,6 +1248,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1236,6 +1286,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeletePublicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1262,6 +1313,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1300,6 +1353,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1326,6 +1380,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1362,6 +1418,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchHandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1388,6 +1445,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1426,6 +1485,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateDevicesStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1452,6 +1512,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1492,6 +1554,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateUserStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1518,6 +1581,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1554,6 +1619,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BroadcastParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1580,6 +1646,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1614,6 +1682,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelBroadcastResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1640,6 +1709,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1680,6 +1751,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1706,6 +1778,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1746,6 +1820,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelRecurringMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1772,6 +1847,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1814,6 +1891,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelRecurringSubMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1840,6 +1918,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1876,6 +1956,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckSlideVerifyCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1902,6 +1983,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1938,6 +2021,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1964,6 +2048,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2000,6 +2086,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckVeriCodeForUpdateUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2026,6 +2113,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2062,6 +2151,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckVerifyCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2088,6 +2178,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2122,6 +2214,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAnonymousAuthRandomResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2148,6 +2241,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2188,6 +2283,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConfTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2214,6 +2310,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2252,6 +2350,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2278,6 +2377,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2312,6 +2413,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePortalRefNonceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2338,6 +2440,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2376,6 +2480,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecurringMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2402,6 +2507,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2438,6 +2545,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2464,6 +2572,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2498,6 +2608,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWebSocketTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2524,6 +2635,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2560,6 +2673,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWebinarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2586,6 +2700,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2622,6 +2738,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAttendeesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2648,6 +2765,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2684,6 +2803,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2710,6 +2830,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2746,6 +2868,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCorpVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2772,6 +2895,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2808,6 +2933,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDepartmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2834,6 +2960,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2870,6 +2998,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLayoutResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2896,6 +3025,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2934,6 +3065,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRecordingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2960,6 +3092,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2998,6 +3132,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3024,6 +3159,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3060,6 +3197,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3086,6 +3224,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3118,6 +3258,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWebHookConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3144,6 +3285,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3180,6 +3323,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWebinarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3206,6 +3350,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3246,6 +3392,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3272,6 +3419,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3310,6 +3459,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='HandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3336,6 +3486,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3372,6 +3524,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='HangUpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3398,6 +3551,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3436,6 +3591,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteOperateVideoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3462,6 +3618,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3498,6 +3656,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3524,6 +3683,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3562,6 +3723,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteShareResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3592,6 +3754,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3628,6 +3792,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3655,6 +3820,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3689,6 +3856,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteWithPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3715,6 +3883,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3761,6 +3931,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHistoryWebinarsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3787,6 +3958,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3829,6 +4002,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOngoingWebinarsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3855,6 +4029,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3897,6 +4073,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUpComingWebinarsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3923,6 +4100,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3959,6 +4138,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='LiveResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3985,6 +4165,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4021,6 +4203,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='LockMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4047,6 +4230,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4085,6 +4270,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='LockViewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4111,6 +4297,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4147,6 +4335,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MoveToWaitingRoomResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4173,6 +4362,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4209,6 +4400,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MuteMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4235,6 +4427,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4273,6 +4467,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MuteParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4299,6 +4494,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4335,6 +4532,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ProlongMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4361,6 +4559,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4397,6 +4597,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4423,6 +4624,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4459,6 +4662,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RenameParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4485,6 +4689,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4523,6 +4729,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetActivecodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4549,6 +4756,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4585,6 +4794,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4611,6 +4821,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4647,6 +4859,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPwdByAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4673,6 +4886,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4711,6 +4926,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4737,6 +4953,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4773,6 +4991,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RollcallParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4799,6 +5018,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4835,6 +5056,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SaveLayoutResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4861,6 +5083,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4907,6 +5131,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchAttendanceRecordsOfHisMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4933,6 +5158,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4973,6 +5200,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4999,6 +5227,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5039,6 +5269,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpAdminsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5065,6 +5296,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5111,6 +5344,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpDirResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5137,6 +5371,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5179,6 +5415,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpExternalDirResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5205,6 +5442,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5259,6 +5498,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5285,6 +5525,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5329,6 +5571,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5355,6 +5598,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5399,6 +5644,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCtlRecordsOfHisMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5425,6 +5671,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5461,6 +5709,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchDepartmentByNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5488,6 +5737,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5534,6 +5785,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5563,6 +5815,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5613,6 +5867,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchHisMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5639,6 +5894,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5679,6 +5936,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchMaterialsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5705,6 +5963,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5745,6 +6005,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchMeetingFileListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5773,6 +6034,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5821,6 +6084,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5847,6 +6111,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5889,6 +6155,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchMemberVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5915,6 +6182,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5959,6 +6228,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchOnlineMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5985,6 +6255,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6025,6 +6297,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchProgramsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6051,6 +6324,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6091,6 +6366,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchPublicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6117,6 +6393,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6167,6 +6445,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchRecordingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6193,6 +6472,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6245,6 +6526,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6271,6 +6553,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6327,6 +6611,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchResourceOpRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6353,6 +6638,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6412,6 +6699,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6438,6 +6726,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6480,6 +6770,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6506,6 +6797,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6542,6 +6835,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendSlideVerifyCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6568,6 +6862,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6604,6 +6900,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendVeriCodeForChangePwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6630,6 +6927,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6666,6 +6965,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendVeriCodeForUpdateUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6692,6 +6992,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6730,6 +7032,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetCohostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6756,6 +7059,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6792,6 +7097,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetCustomMultiPictureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6818,6 +7124,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6854,6 +7162,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetHostViewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6880,6 +7189,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6916,6 +7227,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetMultiPictureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6942,6 +7254,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6980,6 +7294,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetParticipantViewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7006,6 +7321,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7044,6 +7361,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7070,6 +7388,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7106,6 +7426,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetSsoConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7132,6 +7453,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7164,6 +7487,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetWebHookConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7190,6 +7514,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7222,6 +7548,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConfOrgResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7248,6 +7575,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7284,6 +7613,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7310,6 +7640,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7348,6 +7680,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCorpAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7374,6 +7707,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7408,6 +7743,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCorpBasicInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7434,6 +7770,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7468,6 +7806,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCorpResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7494,6 +7833,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7530,6 +7871,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDepartmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7556,6 +7898,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7592,6 +7936,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeptAndChildDeptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7619,6 +7964,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7655,6 +8002,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7682,6 +8030,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7718,6 +8068,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7744,6 +8095,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7778,6 +8131,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7804,6 +8158,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7852,6 +8208,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHisMeetingDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7878,6 +8235,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7912,6 +8271,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLayoutResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7940,6 +8300,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7988,6 +8350,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMeetingDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8014,6 +8377,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8050,6 +8415,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMeetingFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8076,6 +8442,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8112,6 +8480,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMeetingFileListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8138,6 +8507,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8172,6 +8543,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMyInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8198,6 +8570,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8246,6 +8620,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOnlineMeetingDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8272,6 +8647,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8302,6 +8679,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOrgResResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8328,6 +8706,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8364,6 +8744,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProgramResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8390,6 +8771,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8426,6 +8809,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPublicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8452,6 +8836,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8486,6 +8872,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRealTimeInfoOfMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8512,6 +8899,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8550,6 +8939,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordingDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8578,6 +8968,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8618,6 +9010,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordingFileDownloadUrlsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8644,6 +9037,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8676,6 +9071,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRegionInfoOfMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8702,6 +9098,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8738,6 +9136,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRoomSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8764,6 +9163,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8794,6 +9195,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSpResResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8820,6 +9222,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8856,6 +9260,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSpResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8882,6 +9287,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8916,6 +9323,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSsoConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8942,6 +9350,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8980,6 +9390,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9006,6 +9417,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9040,6 +9453,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWebHookConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9066,6 +9480,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9102,6 +9518,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWebinarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9129,6 +9546,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9161,6 +9580,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9189,6 +9609,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9223,6 +9645,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9249,6 +9672,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9285,6 +9710,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchModeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9311,6 +9737,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9347,6 +9775,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateContactResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9373,6 +9802,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9411,6 +9842,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9437,6 +9869,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9473,6 +9907,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCorpBasicInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9499,6 +9934,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9537,6 +9974,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDepartmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9564,6 +10002,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9602,6 +10042,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9628,6 +10069,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9666,6 +10109,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMaterialResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9692,6 +10136,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9732,6 +10178,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9758,6 +10205,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9796,6 +10245,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9822,6 +10272,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9858,6 +10310,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMyInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9884,6 +10337,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9922,6 +10377,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProgramResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9948,6 +10404,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9986,6 +10444,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePublicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10012,6 +10471,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10048,6 +10509,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10074,6 +10536,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10114,6 +10578,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecurringMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10140,6 +10605,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10180,6 +10647,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecurringSubMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10206,6 +10674,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10244,6 +10714,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10270,6 +10741,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10308,6 +10781,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRoomSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10334,6 +10808,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10370,6 +10846,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStartedConfConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10396,6 +10873,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10430,6 +10909,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10456,6 +10936,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10496,6 +10978,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10522,6 +11005,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10556,6 +11041,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWebHookConfigStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10582,6 +11068,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10618,6 +11106,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWebinarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10644,6 +11133,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10682,6 +11173,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10709,6 +11201,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10749,6 +11243,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQosHistoryMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10776,6 +11271,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10812,6 +11309,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQosOnlineMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10839,6 +11337,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10877,6 +11377,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQosParticipantDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10904,6 +11405,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10944,6 +11447,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQosParticipantsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10971,6 +11475,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11005,6 +11511,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetQosThresholdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11032,6 +11539,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11064,6 +11573,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQosThresholdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11093,6 +11603,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11135,6 +11647,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchStatisticConferenceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11165,6 +11678,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11207,6 +11722,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchStatisticConferenceParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11235,6 +11751,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11277,6 +11795,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchStatisticResourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11307,6 +11826,8 @@ class MeetingClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11349,6 +11870,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchStatisticUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11356,7 +11878,7 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -11366,9 +11888,10 @@ class MeetingClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -11385,6 +11908,7 @@ class MeetingClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class UpdatePoolOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -193,7 +192,6 @@ class UpdatePoolOption:
     def session_persistence(self):
         """Gets the session_persistence of this UpdatePoolOption.
 
-
         :return: The session_persistence of this UpdatePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdatePoolSessionPersistenceOption`
         """
@@ -202,7 +200,6 @@ class UpdatePoolOption:
     @session_persistence.setter
     def session_persistence(self, session_persistence):
         """Sets the session_persistence of this UpdatePoolOption.
-
 
         :param session_persistence: The session_persistence of this UpdatePoolOption.
         :type session_persistence: :class:`huaweicloudsdkelb.v3.UpdatePoolSessionPersistenceOption`
@@ -213,7 +210,6 @@ class UpdatePoolOption:
     def slow_start(self):
         """Gets the slow_start of this UpdatePoolOption.
 
-
         :return: The slow_start of this UpdatePoolOption.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdatePoolSlowStartOption`
         """
@@ -222,7 +218,6 @@ class UpdatePoolOption:
     @slow_start.setter
     def slow_start(self, slow_start):
         """Sets the slow_start of this UpdatePoolOption.
-
 
         :param slow_start: The slow_start of this UpdatePoolOption.
         :type slow_start: :class:`huaweicloudsdkelb.v3.UpdatePoolSlowStartOption`

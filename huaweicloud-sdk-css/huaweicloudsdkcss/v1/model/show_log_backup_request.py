@@ -17,7 +17,6 @@ class ShowLogBackupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowLogBackupRequest:
     def body(self):
         """Gets the body of this ShowLogBackupRequest.
 
-
         :return: The body of this ShowLogBackupRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.GetLogBackupReq`
         """
@@ -86,7 +84,6 @@ class ShowLogBackupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowLogBackupRequest.
-
 
         :param body: The body of this ShowLogBackupRequest.
         :type body: :class:`huaweicloudsdkcss.v1.GetLogBackupReq`

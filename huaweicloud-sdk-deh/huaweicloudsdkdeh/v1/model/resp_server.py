@@ -17,7 +17,6 @@ class RespServer:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class RespServer:
     def addresses(self):
         """Gets the addresses of this RespServer.
 
-
         :return: The addresses of this RespServer.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespAddresses`
         """
@@ -123,7 +121,6 @@ class RespServer:
     @addresses.setter
     def addresses(self, addresses):
         """Sets the addresses of this RespServer.
-
 
         :param addresses: The addresses of this RespServer.
         :type addresses: :class:`huaweicloudsdkdeh.v1.RespAddresses`
@@ -156,7 +153,6 @@ class RespServer:
     def flavor(self):
         """Gets the flavor of this RespServer.
 
-
         :return: The flavor of this RespServer.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespFlavor`
         """
@@ -165,7 +161,6 @@ class RespServer:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this RespServer.
-
 
         :param flavor: The flavor of this RespServer.
         :type flavor: :class:`huaweicloudsdkdeh.v1.RespFlavor`
@@ -330,7 +325,6 @@ class RespServer:
     def image(self):
         """Gets the image of this RespServer.
 
-
         :return: The image of this RespServer.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespImage`
         """
@@ -339,7 +333,6 @@ class RespServer:
     @image.setter
     def image(self, image):
         """Sets the image of this RespServer.
-
 
         :param image: The image of this RespServer.
         :type image: :class:`huaweicloudsdkdeh.v1.RespImage`
@@ -350,7 +343,6 @@ class RespServer:
     def metadata(self):
         """Gets the metadata of this RespServer.
 
-
         :return: The metadata of this RespServer.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespMetadata`
         """
@@ -359,7 +351,6 @@ class RespServer:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this RespServer.
-
 
         :param metadata: The metadata of this RespServer.
         :type metadata: :class:`huaweicloudsdkdeh.v1.RespMetadata`

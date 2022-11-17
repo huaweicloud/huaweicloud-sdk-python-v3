@@ -17,7 +17,6 @@ class KeystoneListVersionsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneListVersionsResponse(SdkResponse):
     def versions(self):
         """Gets the versions of this KeystoneListVersionsResponse.
 
-
         :return: The versions of this KeystoneListVersionsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Versions`
         """
@@ -58,7 +56,6 @@ class KeystoneListVersionsResponse(SdkResponse):
     @versions.setter
     def versions(self, versions):
         """Sets the versions of this KeystoneListVersionsResponse.
-
 
         :param versions: The versions of this KeystoneListVersionsResponse.
         :type versions: :class:`huaweicloudsdkiam.v3.Versions`

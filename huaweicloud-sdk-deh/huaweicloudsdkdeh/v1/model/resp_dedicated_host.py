@@ -17,7 +17,6 @@ class RespDedicatedHost:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -242,7 +241,6 @@ class RespDedicatedHost:
     def host_properties(self):
         """Gets the host_properties of this RespDedicatedHost.
 
-
         :return: The host_properties of this RespDedicatedHost.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespHostProperty`
         """
@@ -251,7 +249,6 @@ class RespDedicatedHost:
     @host_properties.setter
     def host_properties(self, host_properties):
         """Sets the host_properties of this RespDedicatedHost.
-
 
         :param host_properties: The host_properties of this RespDedicatedHost.
         :type host_properties: :class:`huaweicloudsdkdeh.v1.RespHostProperty`

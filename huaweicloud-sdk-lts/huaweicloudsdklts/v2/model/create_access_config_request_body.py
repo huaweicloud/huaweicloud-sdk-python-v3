@@ -17,7 +17,6 @@ class CreateAccessConfigRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -124,7 +123,6 @@ class CreateAccessConfigRequestBody:
     def access_config_detail(self):
         """Gets the access_config_detail of this CreateAccessConfigRequestBody.
 
-
         :return: The access_config_detail of this CreateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
         """
@@ -133,7 +131,6 @@ class CreateAccessConfigRequestBody:
     @access_config_detail.setter
     def access_config_detail(self, access_config_detail):
         """Sets the access_config_detail of this CreateAccessConfigRequestBody.
-
 
         :param access_config_detail: The access_config_detail of this CreateAccessConfigRequestBody.
         :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
@@ -144,7 +141,6 @@ class CreateAccessConfigRequestBody:
     def log_info(self):
         """Gets the log_info of this CreateAccessConfigRequestBody.
 
-
         :return: The log_info of this CreateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigBaseLogInfoCreate`
         """
@@ -153,7 +149,6 @@ class CreateAccessConfigRequestBody:
     @log_info.setter
     def log_info(self, log_info):
         """Sets the log_info of this CreateAccessConfigRequestBody.
-
 
         :param log_info: The log_info of this CreateAccessConfigRequestBody.
         :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigBaseLogInfoCreate`
@@ -164,7 +159,6 @@ class CreateAccessConfigRequestBody:
     def host_group_info(self):
         """Gets the host_group_info of this CreateAccessConfigRequestBody.
 
-
         :return: The host_group_info of this CreateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdListCreate`
         """
@@ -173,7 +167,6 @@ class CreateAccessConfigRequestBody:
     @host_group_info.setter
     def host_group_info(self, host_group_info):
         """Sets the host_group_info of this CreateAccessConfigRequestBody.
-
 
         :param host_group_info: The host_group_info of this CreateAccessConfigRequestBody.
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdListCreate`
@@ -184,7 +177,6 @@ class CreateAccessConfigRequestBody:
     def access_config_tag(self):
         """Gets the access_config_tag of this CreateAccessConfigRequestBody.
 
-
         :return: The access_config_tag of this CreateAccessConfigRequestBody.
         :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
@@ -193,7 +185,6 @@ class CreateAccessConfigRequestBody:
     @access_config_tag.setter
     def access_config_tag(self, access_config_tag):
         """Sets the access_config_tag of this CreateAccessConfigRequestBody.
-
 
         :param access_config_tag: The access_config_tag of this CreateAccessConfigRequestBody.
         :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]

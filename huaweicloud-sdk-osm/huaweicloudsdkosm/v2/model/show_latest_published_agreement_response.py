@@ -17,7 +17,6 @@ class ShowLatestPublishedAgreementResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowLatestPublishedAgreementResponse(SdkResponse):
     def case_agreement(self):
         """Gets the case_agreement of this ShowLatestPublishedAgreementResponse.
 
-
         :return: The case_agreement of this ShowLatestPublishedAgreementResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.AgreementVO`
         """
@@ -58,7 +56,6 @@ class ShowLatestPublishedAgreementResponse(SdkResponse):
     @case_agreement.setter
     def case_agreement(self, case_agreement):
         """Sets the case_agreement of this ShowLatestPublishedAgreementResponse.
-
 
         :param case_agreement: The case_agreement of this ShowLatestPublishedAgreementResponse.
         :type case_agreement: :class:`huaweicloudsdkosm.v2.AgreementVO`

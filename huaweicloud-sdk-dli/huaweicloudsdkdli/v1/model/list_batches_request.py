@@ -17,7 +17,6 @@ class ListBatchesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -171,7 +170,6 @@ class ListBatchesRequest:
     def job_id(self):
         """Gets the job_id of this ListBatchesRequest.
 
-
         :return: The job_id of this ListBatchesRequest.
         :rtype: str
         """
@@ -180,7 +178,6 @@ class ListBatchesRequest:
     @job_id.setter
     def job_id(self, job_id):
         """Sets the job_id of this ListBatchesRequest.
-
 
         :param job_id: The job_id of this ListBatchesRequest.
         :type job_id: str
@@ -213,7 +210,6 @@ class ListBatchesRequest:
     def queue_name(self):
         """Gets the queue_name of this ListBatchesRequest.
 
-
         :return: The queue_name of this ListBatchesRequest.
         :rtype: str
         """
@@ -222,7 +218,6 @@ class ListBatchesRequest:
     @queue_name.setter
     def queue_name(self, queue_name):
         """Sets the queue_name of this ListBatchesRequest.
-
 
         :param queue_name: The queue_name of this ListBatchesRequest.
         :type queue_name: str
@@ -277,7 +272,6 @@ class ListBatchesRequest:
     def state(self):
         """Gets the state of this ListBatchesRequest.
 
-
         :return: The state of this ListBatchesRequest.
         :rtype: str
         """
@@ -286,7 +280,6 @@ class ListBatchesRequest:
     @state.setter
     def state(self, state):
         """Sets the state of this ListBatchesRequest.
-
 
         :param state: The state of this ListBatchesRequest.
         :type state: str

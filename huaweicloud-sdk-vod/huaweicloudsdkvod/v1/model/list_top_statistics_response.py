@@ -17,7 +17,6 @@ class ListTopStatisticsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListTopStatisticsResponse(SdkResponse):
     def top_urls(self):
         """Gets the top_urls of this ListTopStatisticsResponse.
 
-
         :return: The top_urls of this ListTopStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkvod.v1.TopUrl`]
         """
@@ -58,7 +56,6 @@ class ListTopStatisticsResponse(SdkResponse):
     @top_urls.setter
     def top_urls(self, top_urls):
         """Sets the top_urls of this ListTopStatisticsResponse.
-
 
         :param top_urls: The top_urls of this ListTopStatisticsResponse.
         :type top_urls: list[:class:`huaweicloudsdkvod.v1.TopUrl`]

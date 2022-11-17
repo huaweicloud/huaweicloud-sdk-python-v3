@@ -17,7 +17,6 @@ class CreateSubnetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateSubnetRequest:
     def body(self):
         """Gets the body of this CreateSubnetRequest.
 
-
         :return: The body of this CreateSubnetRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateSubnetRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateSubnetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateSubnetRequest.
-
 
         :param body: The body of this CreateSubnetRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.CreateSubnetRequestBody`

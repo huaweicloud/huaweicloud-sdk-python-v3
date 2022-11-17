@@ -17,7 +17,6 @@ class VolumeType:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -126,7 +125,6 @@ class VolumeType:
     def extra_specs(self):
         """Gets the extra_specs of this VolumeType.
 
-
         :return: The extra_specs of this VolumeType.
         :rtype: :class:`huaweicloudsdkevs.v2.VolumeTypeExtraSpecs`
         """
@@ -135,7 +133,6 @@ class VolumeType:
     @extra_specs.setter
     def extra_specs(self, extra_specs):
         """Sets the extra_specs of this VolumeType.
-
 
         :param extra_specs: The extra_specs of this VolumeType.
         :type extra_specs: :class:`huaweicloudsdkevs.v2.VolumeTypeExtraSpecs`

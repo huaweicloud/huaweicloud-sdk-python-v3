@@ -17,7 +17,6 @@ class ResetMessagesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ResetMessagesRequest:
     def body(self):
         """Gets the body of this ResetMessagesRequest.
 
-
         :return: The body of this ResetMessagesRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ResetMessagesReq`
         """
@@ -114,7 +112,6 @@ class ResetMessagesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetMessagesRequest.
-
 
         :param body: The body of this ResetMessagesRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ResetMessagesReq`

@@ -17,7 +17,6 @@ class ProtectableResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -142,7 +141,6 @@ class ProtectableResult:
     def vault(self):
         """Gets the vault of this ProtectableResult.
 
-
         :return: The vault of this ProtectableResult.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultGet`
         """
@@ -151,7 +149,6 @@ class ProtectableResult:
     @vault.setter
     def vault(self, vault):
         """Sets the vault of this ProtectableResult.
-
 
         :param vault: The vault of this ProtectableResult.
         :type vault: :class:`huaweicloudsdkcbr.v1.VaultGet`

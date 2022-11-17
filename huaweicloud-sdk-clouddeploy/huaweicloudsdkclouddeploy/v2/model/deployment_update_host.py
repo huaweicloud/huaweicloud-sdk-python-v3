@@ -17,7 +17,6 @@ class DeploymentUpdateHost:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -196,7 +195,6 @@ class DeploymentUpdateHost:
     def authorization(self):
         """Gets the authorization of this DeploymentUpdateHost.
 
-
         :return: The authorization of this DeploymentUpdateHost.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
         """
@@ -205,7 +203,6 @@ class DeploymentUpdateHost:
     @authorization.setter
     def authorization(self, authorization):
         """Sets the authorization of this DeploymentUpdateHost.
-
 
         :param authorization: The authorization of this DeploymentUpdateHost.
         :type authorization: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`

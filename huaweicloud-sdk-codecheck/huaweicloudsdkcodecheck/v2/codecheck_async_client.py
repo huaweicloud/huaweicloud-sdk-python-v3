@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CodeCheckAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckParameters
         :type request: :class:`huaweicloudsdkcodecheck.v2.CheckParametersRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckParametersResponse`
@@ -68,6 +63,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -106,6 +103,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckParametersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -120,6 +118,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckRecord
         :type request: :class:`huaweicloudsdkcodecheck.v2.CheckRecordRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckRecordResponse`
@@ -132,6 +131,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -174,6 +175,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -188,6 +190,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckRulesetParameters
         :type request: :class:`huaweicloudsdkcodecheck.v2.CheckRulesetParametersRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckRulesetParametersResponse`
@@ -200,6 +203,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -242,6 +247,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRulesetParametersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -256,6 +262,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRuleset
         :type request: :class:`huaweicloudsdkcodecheck.v2.CreateRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CreateRulesetResponse`
@@ -268,6 +275,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -300,6 +309,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRulesetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -314,6 +324,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTask
         :type request: :class:`huaweicloudsdkcodecheck.v2.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CreateTaskResponse`
@@ -326,6 +337,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -360,6 +373,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -374,6 +388,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRuleset
         :type request: :class:`huaweicloudsdkcodecheck.v2.DeleteRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.DeleteRulesetResponse`
@@ -386,6 +401,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -420,6 +437,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRulesetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -434,6 +452,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTask
         :type request: :class:`huaweicloudsdkcodecheck.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.DeleteTaskResponse`
@@ -446,6 +465,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -478,6 +499,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -492,6 +514,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRules
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListRulesResponse`
@@ -504,6 +527,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -542,6 +567,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -556,6 +582,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRulesets
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListRulesetsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListRulesetsResponse`
@@ -568,6 +595,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -606,6 +635,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRulesetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -620,6 +650,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTaskParameter
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListTaskParameterRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListTaskParameterResponse`
@@ -632,6 +663,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -668,6 +701,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTaskParameterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -682,6 +716,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTaskRuleset
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetResponse`
@@ -694,6 +729,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -728,6 +765,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTaskRulesetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -742,6 +780,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplateRules
         :type request: :class:`huaweicloudsdkcodecheck.v2.ListTemplateRulesRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ListTemplateRulesResponse`
@@ -754,6 +793,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -798,6 +839,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -812,6 +854,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunTask
         :type request: :class:`huaweicloudsdkcodecheck.v2.RunTaskRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.RunTaskResponse`
@@ -824,6 +867,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -858,6 +903,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -872,6 +918,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetDefaulTemplate
         :type request: :class:`huaweicloudsdkcodecheck.v2.SetDefaulTemplateRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.SetDefaulTemplateResponse`
@@ -884,6 +931,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -920,6 +969,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetDefaulTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -934,6 +984,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProgressDetail
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowProgressDetailRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowProgressDetailResponse`
@@ -946,6 +997,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -978,6 +1031,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProgressDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -992,6 +1046,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskCmetrics
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskCmetricsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskCmetricsResponse`
@@ -1004,6 +1059,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1038,6 +1095,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskCmetricsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1052,6 +1110,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskDefects
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsResponse`
@@ -1064,6 +1123,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1104,6 +1165,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskDefectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1118,6 +1180,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskDefectsStatistic
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsStatisticRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDefectsStatisticResponse`
@@ -1130,6 +1193,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1162,6 +1227,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskDefectsStatisticResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1176,6 +1242,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskDetail
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskDetailResponse`
@@ -1188,6 +1255,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1220,6 +1289,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1234,6 +1304,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskListByProjectId
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTaskListByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTaskListByProjectIdResponse`
@@ -1246,6 +1317,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1282,6 +1355,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskListByProjectIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1296,6 +1370,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTasklog
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTasklogRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTasklogResponse`
@@ -1308,6 +1383,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1344,6 +1421,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTasklogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1358,6 +1436,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTasksRulesets
         :type request: :class:`huaweicloudsdkcodecheck.v2.ShowTasksRulesetsRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ShowTasksRulesetsResponse`
@@ -1370,6 +1449,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1408,6 +1489,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTasksRulesetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1422,6 +1504,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopTaskById
         :type request: :class:`huaweicloudsdkcodecheck.v2.StopTaskByIdRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.StopTaskByIdResponse`
@@ -1434,6 +1517,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1466,6 +1551,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopTaskByIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1480,6 +1566,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDefectStatus
         :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateDefectStatusRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateDefectStatusResponse`
@@ -1492,6 +1579,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1526,6 +1615,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDefectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1540,6 +1630,7 @@ class CodeCheckAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTaskRuleset
         :type request: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateTaskRulesetResponse`
@@ -1552,6 +1643,8 @@ class CodeCheckAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1586,6 +1679,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskRulesetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1593,7 +1687,7 @@ class CodeCheckAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1604,9 +1698,10 @@ class CodeCheckAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1623,6 +1718,7 @@ class CodeCheckAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

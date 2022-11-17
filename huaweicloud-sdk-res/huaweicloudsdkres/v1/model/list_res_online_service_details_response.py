@@ -17,7 +17,6 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -92,7 +91,6 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
     def jobs(self):
         """Gets the jobs of this ListResOnlineServiceDetailsResponse.
 
-
         :return: The jobs of this ListResOnlineServiceDetailsResponse.
         :rtype: :class:`huaweicloudsdkres.v1.Jobs`
         """
@@ -101,7 +99,6 @@ class ListResOnlineServiceDetailsResponse(SdkResponse):
     @jobs.setter
     def jobs(self, jobs):
         """Sets the jobs of this ListResOnlineServiceDetailsResponse.
-
 
         :param jobs: The jobs of this ListResOnlineServiceDetailsResponse.
         :type jobs: :class:`huaweicloudsdkres.v1.Jobs`

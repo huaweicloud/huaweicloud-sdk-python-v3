@@ -17,7 +17,6 @@ class AgencyAuthIdentity:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -83,7 +82,6 @@ class AgencyAuthIdentity:
     def assume_role(self):
         """Gets the assume_role of this AgencyAuthIdentity.
 
-
         :return: The assume_role of this AgencyAuthIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.IdentityAssumerole`
         """
@@ -92,7 +90,6 @@ class AgencyAuthIdentity:
     @assume_role.setter
     def assume_role(self, assume_role):
         """Sets the assume_role of this AgencyAuthIdentity.
-
 
         :param assume_role: The assume_role of this AgencyAuthIdentity.
         :type assume_role: :class:`huaweicloudsdkiam.v3.IdentityAssumerole`
@@ -103,7 +100,6 @@ class AgencyAuthIdentity:
     def policy(self):
         """Gets the policy of this AgencyAuthIdentity.
 
-
         :return: The policy of this AgencyAuthIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
         """
@@ -112,7 +108,6 @@ class AgencyAuthIdentity:
     @policy.setter
     def policy(self, policy):
         """Sets the policy of this AgencyAuthIdentity.
-
 
         :param policy: The policy of this AgencyAuthIdentity.
         :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`

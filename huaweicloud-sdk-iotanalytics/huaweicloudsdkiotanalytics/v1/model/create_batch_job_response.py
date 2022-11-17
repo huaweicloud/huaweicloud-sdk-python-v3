@@ -17,7 +17,6 @@ class CreateBatchJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -288,7 +287,6 @@ class CreateBatchJobResponse(SdkResponse):
     def sql_job(self):
         """Gets the sql_job of this CreateBatchJobResponse.
 
-
         :return: The sql_job of this CreateBatchJobResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
         """
@@ -297,7 +295,6 @@ class CreateBatchJobResponse(SdkResponse):
     @sql_job.setter
     def sql_job(self, sql_job):
         """Sets the sql_job of this CreateBatchJobResponse.
-
 
         :param sql_job: The sql_job of this CreateBatchJobResponse.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
@@ -308,7 +305,6 @@ class CreateBatchJobResponse(SdkResponse):
     def schedule(self):
         """Gets the schedule of this CreateBatchJobResponse.
 
-
         :return: The schedule of this CreateBatchJobResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Schedule`
         """
@@ -317,7 +313,6 @@ class CreateBatchJobResponse(SdkResponse):
     @schedule.setter
     def schedule(self, schedule):
         """Sets the schedule of this CreateBatchJobResponse.
-
 
         :param schedule: The schedule of this CreateBatchJobResponse.
         :type schedule: :class:`huaweicloudsdkiotanalytics.v1.Schedule`

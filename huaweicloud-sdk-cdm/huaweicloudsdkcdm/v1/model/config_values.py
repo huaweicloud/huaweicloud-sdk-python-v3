@@ -17,7 +17,6 @@ class ConfigValues:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ConfigValues:
     def extended_configs(self):
         """Gets the extended_configs of this ConfigValues.
 
-
         :return: The extended_configs of this ConfigValues.
         :rtype: :class:`huaweicloudsdkcdm.v1.ExtendedConfigs`
         """
@@ -86,7 +84,6 @@ class ConfigValues:
     @extended_configs.setter
     def extended_configs(self, extended_configs):
         """Sets the extended_configs of this ConfigValues.
-
 
         :param extended_configs: The extended_configs of this ConfigValues.
         :type extended_configs: :class:`huaweicloudsdkcdm.v1.ExtendedConfigs`

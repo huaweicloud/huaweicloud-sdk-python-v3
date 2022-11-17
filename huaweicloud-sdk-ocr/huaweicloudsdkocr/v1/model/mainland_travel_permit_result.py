@@ -17,7 +17,6 @@ class MainlandTravelPermitResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -571,7 +570,6 @@ class MainlandTravelPermitResult:
     def confidence(self):
         """Gets the confidence of this MainlandTravelPermitResult.
 
-
         :return: The confidence of this MainlandTravelPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitConfidence`
         """
@@ -580,7 +578,6 @@ class MainlandTravelPermitResult:
     @confidence.setter
     def confidence(self, confidence):
         """Sets the confidence of this MainlandTravelPermitResult.
-
 
         :param confidence: The confidence of this MainlandTravelPermitResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitConfidence`

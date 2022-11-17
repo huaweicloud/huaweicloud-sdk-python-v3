@@ -17,7 +17,6 @@ class IssueAttrHistoryRecord:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -288,7 +287,6 @@ class IssueAttrHistoryRecord:
     def operator(self):
         """Gets the operator of this IssueAttrHistoryRecord.
 
-
         :return: The operator of this IssueAttrHistoryRecord.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
@@ -297,7 +295,6 @@ class IssueAttrHistoryRecord:
     @operator.setter
     def operator(self, operator):
         """Sets the operator of this IssueAttrHistoryRecord.
-
 
         :param operator: The operator of this IssueAttrHistoryRecord.
         :type operator: :class:`huaweicloudsdkprojectman.v4.IssueUser`

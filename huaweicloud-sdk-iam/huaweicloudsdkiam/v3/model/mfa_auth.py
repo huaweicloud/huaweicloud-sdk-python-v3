@@ -17,7 +17,6 @@ class MfaAuth:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class MfaAuth:
     def identity(self):
         """Gets the identity of this MfaAuth.
 
-
         :return: The identity of this MfaAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.MfaIdentity`
         """
@@ -63,7 +61,6 @@ class MfaAuth:
     @identity.setter
     def identity(self, identity):
         """Sets the identity of this MfaAuth.
-
 
         :param identity: The identity of this MfaAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.MfaIdentity`
@@ -74,7 +71,6 @@ class MfaAuth:
     def scope(self):
         """Gets the scope of this MfaAuth.
 
-
         :return: The scope of this MfaAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.AuthScope`
         """
@@ -83,7 +79,6 @@ class MfaAuth:
     @scope.setter
     def scope(self, scope):
         """Sets the scope of this MfaAuth.
-
 
         :param scope: The scope of this MfaAuth.
         :type scope: :class:`huaweicloudsdkiam.v3.AuthScope`

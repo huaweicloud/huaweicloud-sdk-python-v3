@@ -17,7 +17,6 @@ class AssociateServerVirtualIpRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AssociateServerVirtualIpRequest:
     def body(self):
         """Gets the body of this AssociateServerVirtualIpRequest.
 
-
         :return: The body of this AssociateServerVirtualIpRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequestBody`
         """
@@ -86,7 +84,6 @@ class AssociateServerVirtualIpRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AssociateServerVirtualIpRequest.
-
 
         :param body: The body of this AssociateServerVirtualIpRequest.
         :type body: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequestBody`

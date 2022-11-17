@@ -17,7 +17,6 @@ class CreateGaussMySqlBackupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateGaussMySqlBackupRequest:
     def body(self):
         """Gets the body of this CreateGaussMySqlBackupRequest.
 
-
         :return: The body of this CreateGaussMySqlBackupRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateBackupRequest`
         """
@@ -87,7 +85,6 @@ class CreateGaussMySqlBackupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateGaussMySqlBackupRequest.
-
 
         :param body: The body of this CreateGaussMySqlBackupRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateBackupRequest`

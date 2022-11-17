@@ -17,7 +17,6 @@ class StorageResourceRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -128,7 +127,6 @@ class StorageResourceRsp:
     def spec(self):
         """Gets the spec of this StorageResourceRsp.
 
-
         :return: The spec of this StorageResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SpecDto`
         """
@@ -137,7 +135,6 @@ class StorageResourceRsp:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this StorageResourceRsp.
-
 
         :param spec: The spec of this StorageResourceRsp.
         :type spec: :class:`huaweicloudsdkeihealth.v1.SpecDto`

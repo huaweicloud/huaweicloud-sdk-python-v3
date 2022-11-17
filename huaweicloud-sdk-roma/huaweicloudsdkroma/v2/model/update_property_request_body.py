@@ -17,7 +17,6 @@ class UpdatePropertyRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -30,7 +29,8 @@ class UpdatePropertyRequestBody:
         'step': 'str',
         'max_length': 'int',
         'unit': 'str',
-        'enum_list': 'str'
+        'enum_list': 'str',
+        'enum_dict': 'PropertyDataEnum'
     }
 
     attribute_map = {
@@ -43,10 +43,11 @@ class UpdatePropertyRequestBody:
         'step': 'step',
         'max_length': 'max_length',
         'unit': 'unit',
-        'enum_list': 'enum_list'
+        'enum_list': 'enum_list',
+        'enum_dict': 'enum_dict'
     }
 
-    def __init__(self, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None):
+    def __init__(self, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None, enum_dict=None):
         """UpdatePropertyRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,6 +72,8 @@ class UpdatePropertyRequestBody:
         :type unit: str
         :param enum_list: string的枚举值数组，使用逗号分隔
         :type enum_list: str
+        :param enum_dict: 
+        :type enum_dict: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
         """
         
         
@@ -85,6 +88,7 @@ class UpdatePropertyRequestBody:
         self._max_length = None
         self._unit = None
         self._enum_list = None
+        self._enum_dict = None
         self.discriminator = None
 
         self.property_name = property_name
@@ -104,6 +108,8 @@ class UpdatePropertyRequestBody:
             self.unit = unit
         if enum_list is not None:
             self.enum_list = enum_list
+        if enum_dict is not None:
+            self.enum_dict = enum_dict
 
     @property
     def property_name(self):
@@ -324,6 +330,24 @@ class UpdatePropertyRequestBody:
         :type enum_list: str
         """
         self._enum_list = enum_list
+
+    @property
+    def enum_dict(self):
+        """Gets the enum_dict of this UpdatePropertyRequestBody.
+
+        :return: The enum_dict of this UpdatePropertyRequestBody.
+        :rtype: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        """
+        return self._enum_dict
+
+    @enum_dict.setter
+    def enum_dict(self, enum_dict):
+        """Sets the enum_dict of this UpdatePropertyRequestBody.
+
+        :param enum_dict: The enum_dict of this UpdatePropertyRequestBody.
+        :type enum_dict: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        """
+        self._enum_dict = enum_dict
 
     def to_dict(self):
         """Returns the model properties as a dict"""

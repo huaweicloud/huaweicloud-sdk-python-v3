@@ -17,7 +17,6 @@ class DeleteSqlFilterRuleReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class DeleteSqlFilterRuleReq:
     def sql_filter_rules(self):
         """Gets the sql_filter_rules of this DeleteSqlFilterRuleReq.
 
-
         :return: The sql_filter_rules of this DeleteSqlFilterRuleReq.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.DeleteNodeSqlFilterRuleInfo`]
         """
@@ -57,7 +55,6 @@ class DeleteSqlFilterRuleReq:
     @sql_filter_rules.setter
     def sql_filter_rules(self, sql_filter_rules):
         """Sets the sql_filter_rules of this DeleteSqlFilterRuleReq.
-
 
         :param sql_filter_rules: The sql_filter_rules of this DeleteSqlFilterRuleReq.
         :type sql_filter_rules: list[:class:`huaweicloudsdkgaussdb.v3.DeleteNodeSqlFilterRuleInfo`]

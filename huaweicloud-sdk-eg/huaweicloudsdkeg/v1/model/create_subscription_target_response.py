@@ -17,7 +17,6 @@ class CreateSubscriptionTargetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -215,7 +214,6 @@ class CreateSubscriptionTargetResponse(SdkResponse):
     def transform(self):
         """Gets the transform of this CreateSubscriptionTargetResponse.
 
-
         :return: The transform of this CreateSubscriptionTargetResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionTargetInfoTransform`
         """
@@ -224,7 +222,6 @@ class CreateSubscriptionTargetResponse(SdkResponse):
     @transform.setter
     def transform(self, transform):
         """Sets the transform of this CreateSubscriptionTargetResponse.
-
 
         :param transform: The transform of this CreateSubscriptionTargetResponse.
         :type transform: :class:`huaweicloudsdkeg.v1.SubscriptionTargetInfoTransform`
@@ -279,7 +276,6 @@ class CreateSubscriptionTargetResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this CreateSubscriptionTargetResponse.
 
-
         :return: The x_request_id of this CreateSubscriptionTargetResponse.
         :rtype: str
         """
@@ -288,7 +284,6 @@ class CreateSubscriptionTargetResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this CreateSubscriptionTargetResponse.
-
 
         :param x_request_id: The x_request_id of this CreateSubscriptionTargetResponse.
         :type x_request_id: str

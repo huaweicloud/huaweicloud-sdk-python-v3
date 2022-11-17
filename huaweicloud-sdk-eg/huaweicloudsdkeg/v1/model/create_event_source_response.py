@@ -17,7 +17,6 @@ class CreateEventSourceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -426,7 +425,6 @@ class CreateEventSourceResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this CreateEventSourceResponse.
 
-
         :return: The x_request_id of this CreateEventSourceResponse.
         :rtype: str
         """
@@ -435,7 +433,6 @@ class CreateEventSourceResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this CreateEventSourceResponse.
-
 
         :param x_request_id: The x_request_id of this CreateEventSourceResponse.
         :type x_request_id: str

@@ -17,7 +17,6 @@ class ExportDlqMessageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ExportDlqMessageRequest:
     def body(self):
         """Gets the body of this ExportDlqMessageRequest.
 
-
         :return: The body of this ExportDlqMessageRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ExportDlqMessageReq`
         """
@@ -86,7 +84,6 @@ class ExportDlqMessageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExportDlqMessageRequest.
-
 
         :param body: The body of this ExportDlqMessageRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.ExportDlqMessageReq`

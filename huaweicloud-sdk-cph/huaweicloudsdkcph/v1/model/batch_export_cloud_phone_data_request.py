@@ -17,7 +17,6 @@ class BatchExportCloudPhoneDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchExportCloudPhoneDataRequest:
     def body(self):
         """Gets the body of this BatchExportCloudPhoneDataRequest.
 
-
         :return: The body of this BatchExportCloudPhoneDataRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchExportCloudPhoneDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchExportCloudPhoneDataRequest.
-
 
         :param body: The body of this BatchExportCloudPhoneDataRequest.
         :type body: :class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataRequestBody`

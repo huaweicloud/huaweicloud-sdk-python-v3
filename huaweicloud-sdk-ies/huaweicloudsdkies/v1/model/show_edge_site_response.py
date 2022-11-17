@@ -17,7 +17,6 @@ class ShowEdgeSiteResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowEdgeSiteResponse(SdkResponse):
     def edge_site(self):
         """Gets the edge_site of this ShowEdgeSiteResponse.
 
-
         :return: The edge_site of this ShowEdgeSiteResponse.
         :rtype: :class:`huaweicloudsdkies.v1.EdgeSiteDetail`
         """
@@ -58,7 +56,6 @@ class ShowEdgeSiteResponse(SdkResponse):
     @edge_site.setter
     def edge_site(self, edge_site):
         """Sets the edge_site of this ShowEdgeSiteResponse.
-
 
         :param edge_site: The edge_site of this ShowEdgeSiteResponse.
         :type edge_site: :class:`huaweicloudsdkies.v1.EdgeSiteDetail`

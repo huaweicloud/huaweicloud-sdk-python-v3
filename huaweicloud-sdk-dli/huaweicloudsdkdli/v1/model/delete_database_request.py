@@ -17,7 +17,6 @@ class DeleteDatabaseRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class DeleteDatabaseRequest:
     def _async(self):
         """Gets the _async of this DeleteDatabaseRequest.
 
-
         :return: The _async of this DeleteDatabaseRequest.
         :rtype: bool
         """
@@ -93,7 +91,6 @@ class DeleteDatabaseRequest:
     @_async.setter
     def _async(self, _async):
         """Sets the _async of this DeleteDatabaseRequest.
-
 
         :param _async: The _async of this DeleteDatabaseRequest.
         :type _async: bool
@@ -104,7 +101,6 @@ class DeleteDatabaseRequest:
     def cascade(self):
         """Gets the cascade of this DeleteDatabaseRequest.
 
-
         :return: The cascade of this DeleteDatabaseRequest.
         :rtype: bool
         """
@@ -113,7 +109,6 @@ class DeleteDatabaseRequest:
     @cascade.setter
     def cascade(self, cascade):
         """Sets the cascade of this DeleteDatabaseRequest.
-
 
         :param cascade: The cascade of this DeleteDatabaseRequest.
         :type cascade: bool

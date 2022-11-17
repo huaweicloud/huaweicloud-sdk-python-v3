@@ -29,6 +29,7 @@ from huaweicloudsdkies.v1.model.quota_resources import QuotaResources
 from huaweicloudsdkies.v1.model.region_detail import RegionDetail
 from huaweicloudsdkies.v1.model.show_edge_site_request import ShowEdgeSiteRequest
 from huaweicloudsdkies.v1.model.show_edge_site_response import ShowEdgeSiteResponse
+from huaweicloudsdkies.v1.model.site_status import SiteStatus
 from huaweicloudsdkies.v1.model.update_condition import UpdateCondition
 from huaweicloudsdkies.v1.model.update_edge_site import UpdateEdgeSite
 from huaweicloudsdkies.v1.model.update_edge_site_request import UpdateEdgeSiteRequest

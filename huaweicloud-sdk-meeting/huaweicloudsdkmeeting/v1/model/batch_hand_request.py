@@ -17,7 +17,6 @@ class BatchHandRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchHandRequest:
     def body(self):
         """Gets the body of this BatchHandRequest.
 
-
         :return: The body of this BatchHandRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestBatchHandsUpReqBody`
         """
@@ -114,7 +112,6 @@ class BatchHandRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchHandRequest.
-
 
         :param body: The body of this BatchHandRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestBatchHandsUpReqBody`

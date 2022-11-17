@@ -17,7 +17,6 @@ class UpdateInstanceV2Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateInstanceV2Request:
     def body(self):
         """Gets the body of this UpdateInstanceV2Request.
 
-
         :return: The body of this UpdateInstanceV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.InstanceModReq`
         """
@@ -86,7 +84,6 @@ class UpdateInstanceV2Request:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateInstanceV2Request.
-
 
         :param body: The body of this UpdateInstanceV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.InstanceModReq`

@@ -17,7 +17,6 @@ class ShowRecordSetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -426,7 +425,6 @@ class ShowRecordSetResponse(SdkResponse):
     def links(self):
         """Gets the links of this ShowRecordSetResponse.
 
-
         :return: The links of this ShowRecordSetResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -435,7 +433,6 @@ class ShowRecordSetResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ShowRecordSetResponse.
-
 
         :param links: The links of this ShowRecordSetResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

@@ -17,7 +17,6 @@ class UpdateRouteTable:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class UpdateRouteTable:
     def bgp_options(self):
         """Gets the bgp_options of this UpdateRouteTable.
 
-
         :return: The bgp_options of this UpdateRouteTable.
         :rtype: :class:`huaweicloudsdker.v3.BgpOptions`
         """
@@ -116,7 +114,6 @@ class UpdateRouteTable:
     @bgp_options.setter
     def bgp_options(self, bgp_options):
         """Sets the bgp_options of this UpdateRouteTable.
-
 
         :param bgp_options: The bgp_options of this UpdateRouteTable.
         :type bgp_options: :class:`huaweicloudsdker.v3.BgpOptions`

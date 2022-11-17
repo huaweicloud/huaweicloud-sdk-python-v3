@@ -17,7 +17,6 @@ class RunNerDomainRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunNerDomainRequest:
     def body(self):
         """Gets the body of this RunNerDomainRequest.
 
-
         :return: The body of this RunNerDomainRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.PostDomainNerRequest`
         """
@@ -58,7 +56,6 @@ class RunNerDomainRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunNerDomainRequest.
-
 
         :param body: The body of this RunNerDomainRequest.
         :type body: :class:`huaweicloudsdknlp.v2.PostDomainNerRequest`

@@ -17,7 +17,6 @@ class ShowBackupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowBackupResponse(SdkResponse):
     def backup(self):
         """Gets the backup of this ShowBackupResponse.
 
-
         :return: The backup of this ShowBackupResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupDetail`
         """
@@ -58,7 +56,6 @@ class ShowBackupResponse(SdkResponse):
     @backup.setter
     def backup(self, backup):
         """Sets the backup of this ShowBackupResponse.
-
 
         :param backup: The backup of this ShowBackupResponse.
         :type backup: :class:`huaweicloudsdkcbr.v1.BackupDetail`

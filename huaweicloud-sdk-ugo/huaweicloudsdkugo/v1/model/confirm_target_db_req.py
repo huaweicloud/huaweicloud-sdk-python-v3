@@ -17,7 +17,6 @@ class ConfirmTargetDBReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -41,7 +40,7 @@ class ConfirmTargetDBReq:
         :type evaluation_project_id: str
         :param target_db_type: 目标数据库类型。
         :type target_db_type: str
-        :param target_db_version: 目标数据库版本。
+        :param target_db_version: 目标数据库版本。（注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
         :type target_db_version: str
         """
         
@@ -104,7 +103,7 @@ class ConfirmTargetDBReq:
     def target_db_version(self):
         """Gets the target_db_version of this ConfirmTargetDBReq.
 
-        目标数据库版本。
+        目标数据库版本。（注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
 
         :return: The target_db_version of this ConfirmTargetDBReq.
         :rtype: str
@@ -115,7 +114,7 @@ class ConfirmTargetDBReq:
     def target_db_version(self, target_db_version):
         """Sets the target_db_version of this ConfirmTargetDBReq.
 
-        目标数据库版本。
+        目标数据库版本。（注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
 
         :param target_db_version: The target_db_version of this ConfirmTargetDBReq.
         :type target_db_version: str

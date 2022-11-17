@@ -17,7 +17,6 @@ class CreateMfaDeviceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateMfaDeviceResponse(SdkResponse):
     def virtual_mfa_device(self):
         """Gets the virtual_mfa_device of this CreateMfaDeviceResponse.
 
-
         :return: The virtual_mfa_device of this CreateMfaDeviceResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceRespon`
         """
@@ -58,7 +56,6 @@ class CreateMfaDeviceResponse(SdkResponse):
     @virtual_mfa_device.setter
     def virtual_mfa_device(self, virtual_mfa_device):
         """Sets the virtual_mfa_device of this CreateMfaDeviceResponse.
-
 
         :param virtual_mfa_device: The virtual_mfa_device of this CreateMfaDeviceResponse.
         :type virtual_mfa_device: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceRespon`

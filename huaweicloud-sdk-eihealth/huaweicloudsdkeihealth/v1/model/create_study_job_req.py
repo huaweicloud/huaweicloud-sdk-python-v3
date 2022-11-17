@@ -17,7 +17,6 @@ class CreateStudyJobReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -161,7 +160,6 @@ class CreateStudyJobReq:
     def output_file_type(self):
         """Gets the output_file_type of this CreateStudyJobReq.
 
-
         :return: The output_file_type of this CreateStudyJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.OutputFileType`
         """
@@ -170,7 +168,6 @@ class CreateStudyJobReq:
     @output_file_type.setter
     def output_file_type(self, output_file_type):
         """Sets the output_file_type of this CreateStudyJobReq.
-
 
         :param output_file_type: The output_file_type of this CreateStudyJobReq.
         :type output_file_type: :class:`huaweicloudsdkeihealth.v1.OutputFileType`

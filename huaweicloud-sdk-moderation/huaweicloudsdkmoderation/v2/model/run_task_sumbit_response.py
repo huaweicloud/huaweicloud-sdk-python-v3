@@ -17,7 +17,6 @@ class RunTaskSumbitResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunTaskSumbitResponse(SdkResponse):
     def result(self):
         """Gets the result of this RunTaskSumbitResponse.
 
-
         :return: The result of this RunTaskSumbitResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v2.TaskSumbitResponseResult`
         """
@@ -58,7 +56,6 @@ class RunTaskSumbitResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RunTaskSumbitResponse.
-
 
         :param result: The result of this RunTaskSumbitResponse.
         :type result: :class:`huaweicloudsdkmoderation.v2.TaskSumbitResponseResult`

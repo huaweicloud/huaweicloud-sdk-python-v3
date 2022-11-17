@@ -17,7 +17,6 @@ class CreateIndividualStreamJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class CreateIndividualStreamJobRequest:
     def body(self):
         """Gets the body of this CreateIndividualStreamJobRequest.
 
-
         :return: The body of this CreateIndividualStreamJobRequest.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.IndividualStreamJobReq`
         """
@@ -201,7 +199,6 @@ class CreateIndividualStreamJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateIndividualStreamJobRequest.
-
 
         :param body: The body of this CreateIndividualStreamJobRequest.
         :type body: :class:`huaweicloudsdkcloudrtc.v2.IndividualStreamJobReq`

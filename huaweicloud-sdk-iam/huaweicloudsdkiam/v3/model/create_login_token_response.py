@@ -17,7 +17,6 @@ class CreateLoginTokenResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class CreateLoginTokenResponse(SdkResponse):
     def logintoken(self):
         """Gets the logintoken of this CreateLoginTokenResponse.
 
-
         :return: The logintoken of this CreateLoginTokenResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginToken`
         """
@@ -65,7 +63,6 @@ class CreateLoginTokenResponse(SdkResponse):
     @logintoken.setter
     def logintoken(self, logintoken):
         """Sets the logintoken of this CreateLoginTokenResponse.
-
 
         :param logintoken: The logintoken of this CreateLoginTokenResponse.
         :type logintoken: :class:`huaweicloudsdkiam.v3.LoginToken`
@@ -76,7 +73,6 @@ class CreateLoginTokenResponse(SdkResponse):
     def x_subject_login_token(self):
         """Gets the x_subject_login_token of this CreateLoginTokenResponse.
 
-
         :return: The x_subject_login_token of this CreateLoginTokenResponse.
         :rtype: str
         """
@@ -85,7 +81,6 @@ class CreateLoginTokenResponse(SdkResponse):
     @x_subject_login_token.setter
     def x_subject_login_token(self, x_subject_login_token):
         """Sets the x_subject_login_token of this CreateLoginTokenResponse.
-
 
         :param x_subject_login_token: The x_subject_login_token of this CreateLoginTokenResponse.
         :type x_subject_login_token: str

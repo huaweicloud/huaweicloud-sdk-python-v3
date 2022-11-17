@@ -17,7 +17,6 @@ class AddServerNicsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class AddServerNicsRequest:
     def server_id(self):
         """Gets the server_id of this AddServerNicsRequest.
 
-
         :return: The server_id of this AddServerNicsRequest.
         :rtype: str
         """
@@ -64,7 +62,6 @@ class AddServerNicsRequest:
     @server_id.setter
     def server_id(self, server_id):
         """Sets the server_id of this AddServerNicsRequest.
-
 
         :param server_id: The server_id of this AddServerNicsRequest.
         :type server_id: str
@@ -75,7 +72,6 @@ class AddServerNicsRequest:
     def body(self):
         """Gets the body of this AddServerNicsRequest.
 
-
         :return: The body of this AddServerNicsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.AddServerNicsReq`
         """
@@ -84,7 +80,6 @@ class AddServerNicsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddServerNicsRequest.
-
 
         :param body: The body of this AddServerNicsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.AddServerNicsReq`

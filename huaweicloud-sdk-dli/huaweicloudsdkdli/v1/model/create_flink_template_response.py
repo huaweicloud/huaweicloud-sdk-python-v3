@@ -17,7 +17,6 @@ class CreateFlinkTemplateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CreateFlinkTemplateResponse(SdkResponse):
     def template(self):
         """Gets the template of this CreateFlinkTemplateResponse.
 
-
         :return: The template of this CreateFlinkTemplateResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateTemplateRespTemplate`
         """
@@ -116,7 +114,6 @@ class CreateFlinkTemplateResponse(SdkResponse):
     @template.setter
     def template(self, template):
         """Sets the template of this CreateFlinkTemplateResponse.
-
 
         :param template: The template of this CreateFlinkTemplateResponse.
         :type template: :class:`huaweicloudsdkdli.v1.CreateTemplateRespTemplate`

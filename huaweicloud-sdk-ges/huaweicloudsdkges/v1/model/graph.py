@@ -17,7 +17,6 @@ class Graph:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -201,7 +200,6 @@ class Graph:
     def data_source(self):
         """Gets the data_source of this Graph.
 
-
         :return: The data_source of this Graph.
         :rtype: :class:`huaweicloudsdkges.v1.DataSource`
         """
@@ -210,7 +208,6 @@ class Graph:
     @data_source.setter
     def data_source(self, data_source):
         """Sets the data_source of this Graph.
-
 
         :param data_source: The data_source of this Graph.
         :type data_source: :class:`huaweicloudsdkges.v1.DataSource`
@@ -287,7 +284,6 @@ class Graph:
     def public_ip(self):
         """Gets the public_ip of this Graph.
 
-
         :return: The public_ip of this Graph.
         :rtype: :class:`huaweicloudsdkges.v1.PublicIp`
         """
@@ -296,7 +292,6 @@ class Graph:
     @public_ip.setter
     def public_ip(self, public_ip):
         """Sets the public_ip of this Graph.
-
 
         :param public_ip: The public_ip of this Graph.
         :type public_ip: :class:`huaweicloudsdkges.v1.PublicIp`
@@ -329,7 +324,6 @@ class Graph:
     def encryption(self):
         """Gets the encryption of this Graph.
 
-
         :return: The encryption of this Graph.
         :rtype: :class:`huaweicloudsdkges.v1.EncryptionReq`
         """
@@ -338,7 +332,6 @@ class Graph:
     @encryption.setter
     def encryption(self, encryption):
         """Sets the encryption of this Graph.
-
 
         :param encryption: The encryption of this Graph.
         :type encryption: :class:`huaweicloudsdkges.v1.EncryptionReq`
@@ -349,7 +342,6 @@ class Graph:
     def lts_operation_trace(self):
         """Gets the lts_operation_trace of this Graph.
 
-
         :return: The lts_operation_trace of this Graph.
         :rtype: :class:`huaweicloudsdkges.v1.LtsOperationTraceReq`
         """
@@ -358,7 +350,6 @@ class Graph:
     @lts_operation_trace.setter
     def lts_operation_trace(self, lts_operation_trace):
         """Sets the lts_operation_trace of this Graph.
-
 
         :param lts_operation_trace: The lts_operation_trace of this Graph.
         :type lts_operation_trace: :class:`huaweicloudsdkges.v1.LtsOperationTraceReq`

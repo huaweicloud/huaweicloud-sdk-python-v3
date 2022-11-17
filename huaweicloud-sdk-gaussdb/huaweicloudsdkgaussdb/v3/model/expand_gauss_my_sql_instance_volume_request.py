@@ -17,7 +17,6 @@ class ExpandGaussMySqlInstanceVolumeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ExpandGaussMySqlInstanceVolumeRequest:
     def body(self):
         """Gets the body of this ExpandGaussMySqlInstanceVolumeRequest.
 
-
         :return: The body of this ExpandGaussMySqlInstanceVolumeRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlExtendInstanceVolumeRequest`
         """
@@ -115,7 +113,6 @@ class ExpandGaussMySqlInstanceVolumeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExpandGaussMySqlInstanceVolumeRequest.
-
 
         :param body: The body of this ExpandGaussMySqlInstanceVolumeRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlExtendInstanceVolumeRequest`

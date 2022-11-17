@@ -17,7 +17,6 @@ class CreateSubCustomerReqV2:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -65,8 +64,7 @@ class CreateSubCustomerReqV2:
         self.party_id = party_id
         if display_name is not None:
             self.display_name = display_name
-        if sub_customer_association_type is not None:
-            self.sub_customer_association_type = sub_customer_association_type
+        self.sub_customer_association_type = sub_customer_association_type
         if permission_ids is not None:
             self.permission_ids = permission_ids
         self.new_sub_customer = new_sub_customer
@@ -163,7 +161,6 @@ class CreateSubCustomerReqV2:
     def new_sub_customer(self):
         """Gets the new_sub_customer of this CreateSubCustomerReqV2.
 
-
         :return: The new_sub_customer of this CreateSubCustomerReqV2.
         :rtype: :class:`huaweicloudsdkbss.v2.NewCustomerV2`
         """
@@ -172,7 +169,6 @@ class CreateSubCustomerReqV2:
     @new_sub_customer.setter
     def new_sub_customer(self, new_sub_customer):
         """Sets the new_sub_customer of this CreateSubCustomerReqV2.
-
 
         :param new_sub_customer: The new_sub_customer of this CreateSubCustomerReqV2.
         :type new_sub_customer: :class:`huaweicloudsdkbss.v2.NewCustomerV2`

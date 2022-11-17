@@ -17,7 +17,6 @@ class RunQueryAudioModerationJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class RunQueryAudioModerationJobRequest:
     def job_id(self):
         """Gets the job_id of this RunQueryAudioModerationJobRequest.
 
-
         :return: The job_id of this RunQueryAudioModerationJobRequest.
         :rtype: str
         """
@@ -57,7 +55,6 @@ class RunQueryAudioModerationJobRequest:
     @job_id.setter
     def job_id(self, job_id):
         """Sets the job_id of this RunQueryAudioModerationJobRequest.
-
 
         :param job_id: The job_id of this RunQueryAudioModerationJobRequest.
         :type job_id: str

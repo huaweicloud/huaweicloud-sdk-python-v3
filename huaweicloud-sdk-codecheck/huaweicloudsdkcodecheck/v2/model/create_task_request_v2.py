@@ -17,7 +17,6 @@ class CreateTaskRequestV2:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -321,7 +320,6 @@ class CreateTaskRequestV2:
     def inc_config(self):
         """Gets the inc_config of this CreateTaskRequestV2.
 
-
         :return: The inc_config of this CreateTaskRequestV2.
         :rtype: :class:`huaweicloudsdkcodecheck.v2.IncConfigV2`
         """
@@ -330,7 +328,6 @@ class CreateTaskRequestV2:
     @inc_config.setter
     def inc_config(self, inc_config):
         """Sets the inc_config of this CreateTaskRequestV2.
-
 
         :param inc_config: The inc_config of this CreateTaskRequestV2.
         :type inc_config: :class:`huaweicloudsdkcodecheck.v2.IncConfigV2`

@@ -17,7 +17,6 @@ class UpdatePostgresqlInstanceAliasRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdatePostgresqlInstanceAliasRequest:
     def body(self):
         """Gets the body of this UpdatePostgresqlInstanceAliasRequest.
 
-
         :return: The body of this UpdatePostgresqlInstanceAliasRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateRdsInstanceAliasRequest`
         """
@@ -115,7 +113,6 @@ class UpdatePostgresqlInstanceAliasRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePostgresqlInstanceAliasRequest.
-
 
         :param body: The body of this UpdatePostgresqlInstanceAliasRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateRdsInstanceAliasRequest`

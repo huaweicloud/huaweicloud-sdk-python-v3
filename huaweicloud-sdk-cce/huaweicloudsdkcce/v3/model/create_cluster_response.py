@@ -17,7 +17,6 @@ class CreateClusterResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class CreateClusterResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this CreateClusterResponse.
 
-
         :return: The metadata of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
         """
@@ -130,7 +128,6 @@ class CreateClusterResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateClusterResponse.
-
 
         :param metadata: The metadata of this CreateClusterResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
@@ -141,7 +138,6 @@ class CreateClusterResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this CreateClusterResponse.
 
-
         :return: The spec of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterSpec`
         """
@@ -150,7 +146,6 @@ class CreateClusterResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this CreateClusterResponse.
-
 
         :param spec: The spec of this CreateClusterResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
@@ -161,7 +156,6 @@ class CreateClusterResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateClusterResponse.
 
-
         :return: The status of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterStatus`
         """
@@ -170,7 +164,6 @@ class CreateClusterResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this CreateClusterResponse.
-
 
         :param status: The status of this CreateClusterResponse.
         :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`

@@ -17,7 +17,6 @@ class ShowMergeRequestResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowMergeRequestResponse(SdkResponse):
     def error(self):
         """Gets the error of this ShowMergeRequestResponse.
 
-
         :return: The error of this ShowMergeRequestResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ShowMergeRequestResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ShowMergeRequestResponse.
-
 
         :param error: The error of this ShowMergeRequestResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class ShowMergeRequestResponse(SdkResponse):
     def result(self):
         """Gets the result of this ShowMergeRequestResponse.
 
-
         :return: The result of this ShowMergeRequestResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.MergeInfoResult`
         """
@@ -92,7 +88,6 @@ class ShowMergeRequestResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ShowMergeRequestResponse.
-
 
         :param result: The result of this ShowMergeRequestResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.MergeInfoResult`

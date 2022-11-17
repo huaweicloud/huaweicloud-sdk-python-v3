@@ -17,7 +17,6 @@ class DeletePipelineJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeletePipelineJobResponse(SdkResponse):
     def body(self):
         """Gets the body of this DeletePipelineJobResponse.
 
-
         :return: The body of this DeletePipelineJobResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class DeletePipelineJobResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this DeletePipelineJobResponse.
-
 
         :param body: The body of this DeletePipelineJobResponse.
         :type body: str

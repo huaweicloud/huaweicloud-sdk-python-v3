@@ -17,7 +17,6 @@ class UpdateLoginProjectReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateLoginProjectReq:
     def login_protect(self):
         """Gets the login_protect of this UpdateLoginProjectReq.
 
-
         :return: The login_protect of this UpdateLoginProjectReq.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateLoginProject`
         """
@@ -57,7 +55,6 @@ class UpdateLoginProjectReq:
     @login_protect.setter
     def login_protect(self, login_protect):
         """Sets the login_protect of this UpdateLoginProjectReq.
-
 
         :param login_protect: The login_protect of this UpdateLoginProjectReq.
         :type login_protect: :class:`huaweicloudsdkiam.v3.UpdateLoginProject`

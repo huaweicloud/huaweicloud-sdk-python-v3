@@ -17,7 +17,6 @@ class RestoreClusterRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class RestoreClusterRequestBody:
     def restore(self):
         """Gets the restore of this RestoreClusterRequestBody.
 
-
         :return: The restore of this RestoreClusterRequestBody.
         :rtype: :class:`huaweicloudsdkdws.v2.Restore`
         """
@@ -57,7 +55,6 @@ class RestoreClusterRequestBody:
     @restore.setter
     def restore(self, restore):
         """Sets the restore of this RestoreClusterRequestBody.
-
 
         :param restore: The restore of this RestoreClusterRequestBody.
         :type restore: :class:`huaweicloudsdkdws.v2.Restore`

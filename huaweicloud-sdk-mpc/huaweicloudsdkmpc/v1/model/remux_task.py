@@ -17,7 +17,6 @@ class RemuxTask:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -309,7 +308,6 @@ class RemuxTask:
     def input(self):
         """Gets the input of this RemuxTask.
 
-
         :return: The input of this RemuxTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -318,7 +316,6 @@ class RemuxTask:
     @input.setter
     def input(self, input):
         """Sets the input of this RemuxTask.
-
 
         :param input: The input of this RemuxTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -329,7 +326,6 @@ class RemuxTask:
     def output(self):
         """Gets the output of this RemuxTask.
 
-
         :return: The output of this RemuxTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -338,7 +334,6 @@ class RemuxTask:
     @output.setter
     def output(self, output):
         """Sets the output of this RemuxTask.
-
 
         :param output: The output of this RemuxTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -349,7 +344,6 @@ class RemuxTask:
     def output_param(self):
         """Gets the output_param of this RemuxTask.
 
-
         :return: The output_param of this RemuxTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
         """
@@ -358,7 +352,6 @@ class RemuxTask:
     @output_param.setter
     def output_param(self, output_param):
         """Sets the output_param of this RemuxTask.
-
 
         :param output_param: The output_param of this RemuxTask.
         :type output_param: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
@@ -391,7 +384,6 @@ class RemuxTask:
     def output_metadata(self):
         """Gets the output_metadata of this RemuxTask.
 
-
         :return: The output_metadata of this RemuxTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
         """
@@ -400,7 +392,6 @@ class RemuxTask:
     @output_metadata.setter
     def output_metadata(self, output_metadata):
         """Sets the output_metadata of this RemuxTask.
-
 
         :param output_metadata: The output_metadata of this RemuxTask.
         :type output_metadata: :class:`huaweicloudsdkmpc.v1.MetaData`

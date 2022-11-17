@@ -17,7 +17,6 @@ class AddCorpAdminRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class AddCorpAdminRequest:
     def body(self):
         """Gets the body of this AddCorpAdminRequest.
 
-
         :return: The body of this AddCorpAdminRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CorpAdminDTO`
         """
@@ -145,7 +143,6 @@ class AddCorpAdminRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddCorpAdminRequest.
-
 
         :param body: The body of this AddCorpAdminRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.CorpAdminDTO`

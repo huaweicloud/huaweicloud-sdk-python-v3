@@ -17,7 +17,6 @@ class Job:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -286,7 +285,6 @@ class Job:
     def sql_job(self):
         """Gets the sql_job of this Job.
 
-
         :return: The sql_job of this Job.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
         """
@@ -295,7 +293,6 @@ class Job:
     @sql_job.setter
     def sql_job(self, sql_job):
         """Sets the sql_job of this Job.
-
 
         :param sql_job: The sql_job of this Job.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJob`
@@ -306,7 +303,6 @@ class Job:
     def schedule(self):
         """Gets the schedule of this Job.
 
-
         :return: The schedule of this Job.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Schedule`
         """
@@ -315,7 +311,6 @@ class Job:
     @schedule.setter
     def schedule(self, schedule):
         """Sets the schedule of this Job.
-
 
         :param schedule: The schedule of this Job.
         :type schedule: :class:`huaweicloudsdkiotanalytics.v1.Schedule`

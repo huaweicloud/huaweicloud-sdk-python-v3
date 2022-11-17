@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class LiveClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -100,6 +96,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +123,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +157,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDomainMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -184,6 +184,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +218,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordCallbackConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -243,6 +246,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -259,7 +264,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json; charset=UTF-8'])
@@ -274,6 +279,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordIndexResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +306,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -332,6 +340,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +367,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -390,6 +401,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStreamForbiddenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -416,6 +428,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -448,6 +462,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTranscodingsTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -474,6 +489,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +523,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -532,6 +550,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -566,6 +586,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDomainMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -592,6 +613,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -624,6 +647,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRecordCallbackConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -650,6 +674,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -682,6 +708,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -708,6 +735,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -744,6 +773,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStreamForbiddenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -770,6 +800,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -804,6 +836,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTranscodingsTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -830,6 +863,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -866,6 +901,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveSampleLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -892,6 +928,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -932,6 +970,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveStreamsOnlineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -958,6 +997,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -996,6 +1037,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordCallbackConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1022,6 +1064,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1053,7 +1097,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1068,6 +1112,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordContentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1094,6 +1139,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1136,6 +1183,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1162,6 +1210,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1202,6 +1252,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStreamForbiddenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1229,6 +1280,8 @@ class LiveClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1247,7 +1300,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json; charset=UTF-8'])
@@ -1262,6 +1315,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1288,6 +1342,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1320,6 +1376,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1346,6 +1403,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1378,6 +1437,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordCallbackConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1404,6 +1464,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1436,6 +1498,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1462,6 +1525,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1500,6 +1565,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTranscodingsTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1526,6 +1592,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1558,6 +1626,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1584,6 +1653,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1618,6 +1689,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecordCallbackConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1644,6 +1716,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1678,6 +1752,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1704,6 +1779,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1736,6 +1813,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStreamForbiddenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1762,6 +1840,8 @@ class LiveClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1794,6 +1874,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTranscodingsTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1801,7 +1882,7 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1811,9 +1892,10 @@ class LiveClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1830,6 +1912,7 @@ class LiveClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

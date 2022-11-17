@@ -17,7 +17,6 @@ class EdgeCloud:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class EdgeCloud:
     def coverage(self):
         """Gets the coverage of this EdgeCloud.
 
-
         :return: The coverage of this EdgeCloud.
         :rtype: :class:`huaweicloudsdkiec.v1.CoverageResp`
         """
@@ -173,7 +171,6 @@ class EdgeCloud:
     @coverage.setter
     def coverage(self, coverage):
         """Sets the coverage of this EdgeCloud.
-
 
         :param coverage: The coverage of this EdgeCloud.
         :type coverage: :class:`huaweicloudsdkiec.v1.CoverageResp`

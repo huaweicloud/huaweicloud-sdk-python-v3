@@ -17,7 +17,6 @@ class WhiteBlackIpResponseBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -281,7 +280,6 @@ class WhiteBlackIpResponseBody:
     def ip_group(self):
         """Gets the ip_group of this WhiteBlackIpResponseBody.
 
-
         :return: The ip_group of this WhiteBlackIpResponseBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.IpGroup`
         """
@@ -290,7 +288,6 @@ class WhiteBlackIpResponseBody:
     @ip_group.setter
     def ip_group(self, ip_group):
         """Sets the ip_group of this WhiteBlackIpResponseBody.
-
 
         :param ip_group: The ip_group of this WhiteBlackIpResponseBody.
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`

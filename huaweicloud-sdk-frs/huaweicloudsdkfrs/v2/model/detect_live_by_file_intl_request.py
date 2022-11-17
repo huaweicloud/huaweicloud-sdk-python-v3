@@ -17,7 +17,6 @@ class DetectLiveByFileIntlRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DetectLiveByFileIntlRequest:
     def body(self):
         """Gets the body of this DetectLiveByFileIntlRequest.
 
-
         :return: The body of this DetectLiveByFileIntlRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlRequestBody`
         """
@@ -58,7 +56,6 @@ class DetectLiveByFileIntlRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DetectLiveByFileIntlRequest.
-
 
         :param body: The body of this DetectLiveByFileIntlRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlRequestBody`

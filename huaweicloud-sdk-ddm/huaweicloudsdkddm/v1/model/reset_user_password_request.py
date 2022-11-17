@@ -17,7 +17,6 @@ class ResetUserPasswordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ResetUserPasswordRequest:
     def body(self):
         """Gets the body of this ResetUserPasswordRequest.
 
-
         :return: The body of this ResetUserPasswordRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.ResetUserPasswordReq`
         """
@@ -114,7 +112,6 @@ class ResetUserPasswordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetUserPasswordRequest.
-
 
         :param body: The body of this ResetUserPasswordRequest.
         :type body: :class:`huaweicloudsdkddm.v1.ResetUserPasswordReq`

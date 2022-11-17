@@ -17,7 +17,6 @@ class BranchesItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class BranchesItem:
     def commit(self):
         """Gets the commit of this BranchesItem.
 
-
         :return: The commit of this BranchesItem.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitV2`
         """
@@ -72,7 +70,6 @@ class BranchesItem:
     @commit.setter
     def commit(self, commit):
         """Sets the commit of this BranchesItem.
-
 
         :param commit: The commit of this BranchesItem.
         :type commit: :class:`huaweicloudsdkcodehub.v3.CommitV2`
@@ -83,7 +80,6 @@ class BranchesItem:
     def diverging_commit_counts(self):
         """Gets the diverging_commit_counts of this BranchesItem.
 
-
         :return: The diverging_commit_counts of this BranchesItem.
         :rtype: :class:`huaweicloudsdkcodehub.v3.DivergingCommitCounts`
         """
@@ -92,7 +88,6 @@ class BranchesItem:
     @diverging_commit_counts.setter
     def diverging_commit_counts(self, diverging_commit_counts):
         """Sets the diverging_commit_counts of this BranchesItem.
-
 
         :param diverging_commit_counts: The diverging_commit_counts of this BranchesItem.
         :type diverging_commit_counts: :class:`huaweicloudsdkcodehub.v3.DivergingCommitCounts`

@@ -17,7 +17,6 @@ class ConfirmImageUploadRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ConfirmImageUploadRequest:
     def body(self):
         """Gets the body of this ConfirmImageUploadRequest.
 
-
         :return: The body of this ConfirmImageUploadRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadReq`
         """
@@ -58,7 +56,6 @@ class ConfirmImageUploadRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ConfirmImageUploadRequest.
-
 
         :param body: The body of this ConfirmImageUploadRequest.
         :type body: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadReq`

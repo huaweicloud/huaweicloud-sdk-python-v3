@@ -17,7 +17,6 @@ class GetHistoryRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -67,7 +66,6 @@ class GetHistoryRequest:
     def time_span(self):
         """Gets the time_span of this GetHistoryRequest.
 
-
         :return: The time_span of this GetHistoryRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
         """
@@ -76,7 +74,6 @@ class GetHistoryRequest:
     @time_span.setter
     def time_span(self, time_span):
         """Sets the time_span of this GetHistoryRequest.
-
 
         :param time_span: The time_span of this GetHistoryRequest.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`

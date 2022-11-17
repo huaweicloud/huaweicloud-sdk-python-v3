@@ -17,7 +17,6 @@ class DetectFaceByBase64Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DetectFaceByBase64Request:
     def body(self):
         """Gets the body of this DetectFaceByBase64Request.
 
-
         :return: The body of this DetectFaceByBase64Request.
         :rtype: :class:`huaweicloudsdkfrs.v2.FaceDetectBase64Req`
         """
@@ -58,7 +56,6 @@ class DetectFaceByBase64Request:
     @body.setter
     def body(self, body):
         """Sets the body of this DetectFaceByBase64Request.
-
 
         :param body: The body of this DetectFaceByBase64Request.
         :type body: :class:`huaweicloudsdkfrs.v2.FaceDetectBase64Req`

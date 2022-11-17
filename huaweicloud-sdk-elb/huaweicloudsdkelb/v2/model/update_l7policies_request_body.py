@@ -17,7 +17,6 @@ class UpdateL7policiesRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateL7policiesRequestBody:
     def l7policy(self):
         """Gets the l7policy of this UpdateL7policiesRequestBody.
 
-
         :return: The l7policy of this UpdateL7policiesRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateL7policyReq`
         """
@@ -57,7 +55,6 @@ class UpdateL7policiesRequestBody:
     @l7policy.setter
     def l7policy(self, l7policy):
         """Sets the l7policy of this UpdateL7policiesRequestBody.
-
 
         :param l7policy: The l7policy of this UpdateL7policiesRequestBody.
         :type l7policy: :class:`huaweicloudsdkelb.v2.UpdateL7policyReq`

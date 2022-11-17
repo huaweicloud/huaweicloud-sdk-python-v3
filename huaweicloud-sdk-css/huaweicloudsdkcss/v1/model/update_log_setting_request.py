@@ -17,7 +17,6 @@ class UpdateLogSettingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateLogSettingRequest:
     def body(self):
         """Gets the body of this UpdateLogSettingRequest.
 
-
         :return: The body of this UpdateLogSettingRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateLogSettingReq`
         """
@@ -86,7 +84,6 @@ class UpdateLogSettingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateLogSettingRequest.
-
 
         :param body: The body of this UpdateLogSettingRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateLogSettingReq`

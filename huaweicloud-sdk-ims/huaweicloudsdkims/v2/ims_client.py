@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ImsClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class ImsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddImageTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -129,6 +126,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -161,6 +160,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -187,6 +187,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -221,6 +223,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddOrDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -248,6 +251,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -280,6 +285,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -307,6 +313,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -339,6 +347,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -367,6 +376,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -401,6 +412,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CopyImageCrossRegionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -428,6 +440,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -462,6 +476,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CopyImageInRegionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -488,6 +503,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -520,6 +537,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDataImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -558,6 +576,8 @@ class ImsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -589,6 +609,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -615,6 +636,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -647,6 +670,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOrUpdateTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -673,6 +697,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -705,6 +731,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWholeImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -731,6 +758,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -765,6 +794,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteImageTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -791,6 +821,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -825,6 +857,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -853,6 +886,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -885,6 +920,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportImageQuickResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -911,6 +947,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -943,6 +981,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImageByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -969,6 +1008,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1001,6 +1042,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImageTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1028,6 +1070,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1132,6 +1176,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1158,6 +1203,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1188,6 +1235,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImagesTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1214,6 +1262,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1246,6 +1296,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOsVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1272,6 +1323,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1332,6 +1385,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1364,6 +1418,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1398,6 +1454,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1424,6 +1481,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1454,6 +1513,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowImageQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1480,6 +1540,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1512,6 +1574,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1538,6 +1601,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1570,6 +1635,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobProgressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1596,6 +1662,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1630,6 +1698,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1656,6 +1725,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1686,6 +1757,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1712,6 +1784,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1744,6 +1818,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1770,6 +1845,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1804,6 +1881,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceAddImageMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1830,6 +1908,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1862,6 +1942,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceCreateImageMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1888,6 +1969,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1922,6 +2005,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceCreateTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1948,6 +2032,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1982,6 +2068,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceDeleteImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2008,6 +2095,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2042,6 +2131,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceDeleteImageMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2068,6 +2158,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2102,6 +2194,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceDeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2128,6 +2221,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2158,6 +2253,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceListImageMemberSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2184,6 +2280,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2216,6 +2314,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceListImageMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2242,6 +2341,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2272,6 +2373,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceListImageSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2302,6 +2404,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2396,6 +2500,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceListImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2422,6 +2527,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2454,6 +2561,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceShowImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2480,6 +2588,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2514,6 +2624,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceShowImageMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2540,6 +2651,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2570,6 +2683,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceShowImageMemberSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2596,6 +2710,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2626,6 +2742,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceShowImageSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2652,6 +2769,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2686,6 +2805,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceUpdateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2712,6 +2832,8 @@ class ImsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2748,6 +2870,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceUpdateImageMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2755,7 +2878,7 @@ class ImsClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2765,9 +2888,10 @@ class ImsClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2784,6 +2908,7 @@ class ImsClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

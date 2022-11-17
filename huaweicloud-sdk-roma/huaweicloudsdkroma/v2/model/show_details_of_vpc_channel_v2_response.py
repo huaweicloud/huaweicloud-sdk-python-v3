@@ -17,7 +17,6 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -335,7 +334,6 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     def vpc_health_config(self):
         """Gets the vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
 
-
         :return: The vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcHealthConfigInfo`
         """
@@ -344,7 +342,6 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     @vpc_health_config.setter
     def vpc_health_config(self, vpc_health_config):
         """Sets the vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
-
 
         :param vpc_health_config: The vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfigInfo`

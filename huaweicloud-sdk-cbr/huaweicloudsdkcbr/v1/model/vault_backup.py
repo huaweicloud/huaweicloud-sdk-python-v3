@@ -17,7 +17,6 @@ class VaultBackup:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class VaultBackup:
     def parameters(self):
         """Gets the parameters of this VaultBackup.
 
-
         :return: The parameters of this VaultBackup.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointParam`
         """
@@ -64,7 +62,6 @@ class VaultBackup:
     @parameters.setter
     def parameters(self, parameters):
         """Sets the parameters of this VaultBackup.
-
 
         :param parameters: The parameters of this VaultBackup.
         :type parameters: :class:`huaweicloudsdkcbr.v1.CheckpointParam`

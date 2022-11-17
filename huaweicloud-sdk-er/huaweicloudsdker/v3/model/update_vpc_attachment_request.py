@@ -17,7 +17,6 @@ class UpdateVpcAttachmentRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateVpcAttachmentRequest:
     def body(self):
         """Gets the body of this UpdateVpcAttachmentRequest.
 
-
         :return: The body of this UpdateVpcAttachmentRequest.
         :rtype: :class:`huaweicloudsdker.v3.UpdateVpcAttachmentRequestBody`
         """
@@ -114,7 +112,6 @@ class UpdateVpcAttachmentRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateVpcAttachmentRequest.
-
 
         :param body: The body of this UpdateVpcAttachmentRequest.
         :type body: :class:`huaweicloudsdker.v3.UpdateVpcAttachmentRequestBody`

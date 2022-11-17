@@ -17,7 +17,6 @@ class AcceleratorDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class AcceleratorDetail:
     def status(self):
         """Gets the status of this AcceleratorDetail.
 
-
         :return: The status of this AcceleratorDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
@@ -201,7 +199,6 @@ class AcceleratorDetail:
     @status.setter
     def status(self, status):
         """Sets the status of this AcceleratorDetail.
-
 
         :param status: The status of this AcceleratorDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -344,7 +341,6 @@ class AcceleratorDetail:
     def frozen_info(self):
         """Gets the frozen_info of this AcceleratorDetail.
 
-
         :return: The frozen_info of this AcceleratorDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
         """
@@ -353,7 +349,6 @@ class AcceleratorDetail:
     @frozen_info.setter
     def frozen_info(self, frozen_info):
         """Sets the frozen_info of this AcceleratorDetail.
-
 
         :param frozen_info: The frozen_info of this AcceleratorDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`

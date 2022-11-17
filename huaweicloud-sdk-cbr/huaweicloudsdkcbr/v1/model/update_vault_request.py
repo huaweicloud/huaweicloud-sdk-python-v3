@@ -17,7 +17,6 @@ class UpdateVaultRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateVaultRequest:
     def body(self):
         """Gets the body of this UpdateVaultRequest.
 
-
         :return: The body of this UpdateVaultRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultUpdateReq`
         """
@@ -86,7 +84,6 @@ class UpdateVaultRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateVaultRequest.
-
 
         :param body: The body of this UpdateVaultRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultUpdateReq`

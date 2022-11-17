@@ -17,7 +17,6 @@ class UpdateClientNetworkRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateClientNetworkRequest:
     def body(self):
         """Gets the body of this UpdateClientNetworkRequest.
 
-
         :return: The body of this UpdateClientNetworkRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.ClientNetworkRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateClientNetworkRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateClientNetworkRequest.
-
 
         :param body: The body of this UpdateClientNetworkRequest.
         :type body: :class:`huaweicloudsdkdds.v3.ClientNetworkRequestBody`

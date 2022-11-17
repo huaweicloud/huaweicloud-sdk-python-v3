@@ -17,7 +17,6 @@ class RecognizeHealthCodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeHealthCodeResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeHealthCodeResponse.
 
-
         :return: The result of this RecognizeHealthCodeResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.HealthCodeResult`
         """
@@ -58,7 +56,6 @@ class RecognizeHealthCodeResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeHealthCodeResponse.
-
 
         :param result: The result of this RecognizeHealthCodeResponse.
         :type result: :class:`huaweicloudsdkocr.v1.HealthCodeResult`

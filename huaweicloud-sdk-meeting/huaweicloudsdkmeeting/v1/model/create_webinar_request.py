@@ -17,7 +17,6 @@ class CreateWebinarRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CreateWebinarRequest:
     def body(self):
         """Gets the body of this CreateWebinarRequest.
 
-
         :return: The body of this CreateWebinarRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.OpenScheduleConfReq`
         """
@@ -116,7 +114,6 @@ class CreateWebinarRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateWebinarRequest.
-
 
         :param body: The body of this CreateWebinarRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.OpenScheduleConfReq`

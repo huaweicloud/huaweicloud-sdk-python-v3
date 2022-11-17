@@ -17,7 +17,6 @@ class ReinstallNodeSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -125,7 +124,6 @@ class ReinstallNodeSpec:
     def login(self):
         """Gets the login of this ReinstallNodeSpec.
 
-
         :return: The login of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Login`
         """
@@ -134,7 +132,6 @@ class ReinstallNodeSpec:
     @login.setter
     def login(self, login):
         """Sets the login of this ReinstallNodeSpec.
-
 
         :param login: The login of this ReinstallNodeSpec.
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -167,7 +164,6 @@ class ReinstallNodeSpec:
     def server_config(self):
         """Gets the server_config of this ReinstallNodeSpec.
 
-
         :return: The server_config of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallServerConfig`
         """
@@ -176,7 +172,6 @@ class ReinstallNodeSpec:
     @server_config.setter
     def server_config(self, server_config):
         """Sets the server_config of this ReinstallNodeSpec.
-
 
         :param server_config: The server_config of this ReinstallNodeSpec.
         :type server_config: :class:`huaweicloudsdkcce.v3.ReinstallServerConfig`
@@ -187,7 +182,6 @@ class ReinstallNodeSpec:
     def volume_config(self):
         """Gets the volume_config of this ReinstallNodeSpec.
 
-
         :return: The volume_config of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallVolumeConfig`
         """
@@ -196,7 +190,6 @@ class ReinstallNodeSpec:
     @volume_config.setter
     def volume_config(self, volume_config):
         """Sets the volume_config of this ReinstallNodeSpec.
-
 
         :param volume_config: The volume_config of this ReinstallNodeSpec.
         :type volume_config: :class:`huaweicloudsdkcce.v3.ReinstallVolumeConfig`
@@ -207,7 +200,6 @@ class ReinstallNodeSpec:
     def runtime_config(self):
         """Gets the runtime_config of this ReinstallNodeSpec.
 
-
         :return: The runtime_config of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallRuntimeConfig`
         """
@@ -216,7 +208,6 @@ class ReinstallNodeSpec:
     @runtime_config.setter
     def runtime_config(self, runtime_config):
         """Sets the runtime_config of this ReinstallNodeSpec.
-
 
         :param runtime_config: The runtime_config of this ReinstallNodeSpec.
         :type runtime_config: :class:`huaweicloudsdkcce.v3.ReinstallRuntimeConfig`
@@ -227,7 +218,6 @@ class ReinstallNodeSpec:
     def k8s_options(self):
         """Gets the k8s_options of this ReinstallNodeSpec.
 
-
         :return: The k8s_options of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallK8sOptionsConfig`
         """
@@ -236,7 +226,6 @@ class ReinstallNodeSpec:
     @k8s_options.setter
     def k8s_options(self, k8s_options):
         """Sets the k8s_options of this ReinstallNodeSpec.
-
 
         :param k8s_options: The k8s_options of this ReinstallNodeSpec.
         :type k8s_options: :class:`huaweicloudsdkcce.v3.ReinstallK8sOptionsConfig`
@@ -247,7 +236,6 @@ class ReinstallNodeSpec:
     def lifecycle(self):
         """Gets the lifecycle of this ReinstallNodeSpec.
 
-
         :return: The lifecycle of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeLifecycleConfig`
         """
@@ -256,7 +244,6 @@ class ReinstallNodeSpec:
     @lifecycle.setter
     def lifecycle(self, lifecycle):
         """Sets the lifecycle of this ReinstallNodeSpec.
-
 
         :param lifecycle: The lifecycle of this ReinstallNodeSpec.
         :type lifecycle: :class:`huaweicloudsdkcce.v3.NodeLifecycleConfig`
@@ -267,7 +254,6 @@ class ReinstallNodeSpec:
     def extend_param(self):
         """Gets the extend_param of this ReinstallNodeSpec.
 
-
         :return: The extend_param of this ReinstallNodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
         """
@@ -276,7 +262,6 @@ class ReinstallNodeSpec:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this ReinstallNodeSpec.
-
 
         :param extend_param: The extend_param of this ReinstallNodeSpec.
         :type extend_param: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`

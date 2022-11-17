@@ -17,7 +17,6 @@ class TransformModel:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -90,7 +89,6 @@ class TransformModel:
     def expression(self):
         """Gets the expression of this TransformModel.
 
-
         :return: The expression of this TransformModel.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Formula`
         """
@@ -99,7 +97,6 @@ class TransformModel:
     @expression.setter
     def expression(self, expression):
         """Sets the expression of this TransformModel.
-
 
         :param expression: The expression of this TransformModel.
         :type expression: :class:`huaweicloudsdkiotanalytics.v1.Formula`

@@ -17,7 +17,6 @@ class DeletePostgresqlExtensionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class DeletePostgresqlExtensionRequest:
     def body(self):
         """Gets the body of this DeletePostgresqlExtensionRequest.
 
-
         :return: The body of this DeletePostgresqlExtensionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ExtensionRequest`
         """
@@ -115,7 +113,6 @@ class DeletePostgresqlExtensionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeletePostgresqlExtensionRequest.
-
 
         :param body: The body of this DeletePostgresqlExtensionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ExtensionRequest`

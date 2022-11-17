@@ -17,7 +17,6 @@ class HttpInfoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class HttpInfoRequest:
     def https(self):
         """Gets the https of this HttpInfoRequest.
 
-
         :return: The https of this HttpInfoRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.HttpInfoRequestBody`
         """
@@ -57,7 +55,6 @@ class HttpInfoRequest:
     @https.setter
     def https(self, https):
         """Sets the https of this HttpInfoRequest.
-
 
         :param https: The https of this HttpInfoRequest.
         :type https: :class:`huaweicloudsdkcdn.v1.HttpInfoRequestBody`

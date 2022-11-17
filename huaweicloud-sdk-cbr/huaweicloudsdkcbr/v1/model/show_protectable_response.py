@@ -17,7 +17,6 @@ class ShowProtectableResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowProtectableResponse(SdkResponse):
     def instance(self):
         """Gets the instance of this ShowProtectableResponse.
 
-
         :return: The instance of this ShowProtectableResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.ProtectablesResp`
         """
@@ -58,7 +56,6 @@ class ShowProtectableResponse(SdkResponse):
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this ShowProtectableResponse.
-
 
         :param instance: The instance of this ShowProtectableResponse.
         :type instance: :class:`huaweicloudsdkcbr.v1.ProtectablesResp`

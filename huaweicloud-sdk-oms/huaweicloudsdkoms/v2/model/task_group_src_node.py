@@ -17,7 +17,6 @@ class TaskGroupSrcNode:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -252,7 +251,6 @@ class TaskGroupSrcNode:
     def list_file(self):
         """Gets the list_file of this TaskGroupSrcNode.
 
-
         :return: The list_file of this TaskGroupSrcNode.
         :rtype: :class:`huaweicloudsdkoms.v2.ListFile`
         """
@@ -261,7 +259,6 @@ class TaskGroupSrcNode:
     @list_file.setter
     def list_file(self, list_file):
         """Sets the list_file of this TaskGroupSrcNode.
-
 
         :param list_file: The list_file of this TaskGroupSrcNode.
         :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`

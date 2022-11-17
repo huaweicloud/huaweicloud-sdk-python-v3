@@ -17,7 +17,6 @@ class ModifyTransTemplate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -252,7 +251,6 @@ class ModifyTransTemplate:
     def common(self):
         """Gets the common of this ModifyTransTemplate.
 
-
         :return: The common of this ModifyTransTemplate.
         :rtype: :class:`huaweicloudsdkvod.v1.CommonInfo`
         """
@@ -261,7 +259,6 @@ class ModifyTransTemplate:
     @common.setter
     def common(self, common):
         """Sets the common of this ModifyTransTemplate.
-
 
         :param common: The common of this ModifyTransTemplate.
         :type common: :class:`huaweicloudsdkvod.v1.CommonInfo`

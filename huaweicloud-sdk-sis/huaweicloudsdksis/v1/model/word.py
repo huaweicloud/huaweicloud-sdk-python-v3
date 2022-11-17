@@ -17,7 +17,6 @@ class Word:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -263,7 +262,6 @@ class Word:
     def pronunciation(self):
         """Gets the pronunciation of this Word.
 
-
         :return: The pronunciation of this Word.
         :rtype: :class:`huaweicloudsdksis.v1.WordPronunciation`
         """
@@ -272,7 +270,6 @@ class Word:
     @pronunciation.setter
     def pronunciation(self, pronunciation):
         """Sets the pronunciation of this Word.
-
 
         :param pronunciation: The pronunciation of this Word.
         :type pronunciation: :class:`huaweicloudsdksis.v1.WordPronunciation`
@@ -283,7 +280,6 @@ class Word:
     def fluency(self):
         """Gets the fluency of this Word.
 
-
         :return: The fluency of this Word.
         :rtype: :class:`huaweicloudsdksis.v1.WordFluency`
         """
@@ -292,7 +288,6 @@ class Word:
     @fluency.setter
     def fluency(self, fluency):
         """Sets the fluency of this Word.
-
 
         :param fluency: The fluency of this Word.
         :type fluency: :class:`huaweicloudsdksis.v1.WordFluency`

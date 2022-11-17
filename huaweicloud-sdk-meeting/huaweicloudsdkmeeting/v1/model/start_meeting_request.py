@@ -17,7 +17,6 @@ class StartMeetingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class StartMeetingRequest:
     def body(self):
         """Gets the body of this StartMeetingRequest.
 
-
         :return: The body of this StartMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.StartRequest`
         """
@@ -58,7 +56,6 @@ class StartMeetingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartMeetingRequest.
-
 
         :param body: The body of this StartMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.StartRequest`

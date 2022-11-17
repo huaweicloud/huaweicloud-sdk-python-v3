@@ -17,7 +17,6 @@ class CreateConfTokenRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
     sensitive_list.append('x_password')
 

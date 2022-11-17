@@ -17,7 +17,6 @@ class CreateInstanceBy3rdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateInstanceBy3rdRequest:
     def body(self):
         """Gets the body of this CreateInstanceBy3rdRequest.
 
-
         :return: The body of this CreateInstanceBy3rdRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.InstanceEdgeParam`
         """
@@ -87,7 +85,6 @@ class CreateInstanceBy3rdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateInstanceBy3rdRequest.
-
 
         :param body: The body of this CreateInstanceBy3rdRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.InstanceEdgeParam`

@@ -17,7 +17,6 @@ class UpdateAssetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateAssetRequest:
     def body(self):
         """Gets the body of this UpdateAssetRequest.
 
-
         :return: The body of this UpdateAssetRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.UploadAssetReq`
         """
@@ -58,7 +56,6 @@ class UpdateAssetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateAssetRequest.
-
 
         :param body: The body of this UpdateAssetRequest.
         :type body: :class:`huaweicloudsdkvod.v1.UploadAssetReq`

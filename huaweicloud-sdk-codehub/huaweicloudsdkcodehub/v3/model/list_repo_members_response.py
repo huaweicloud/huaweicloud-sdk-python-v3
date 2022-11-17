@@ -17,7 +17,6 @@ class ListRepoMembersResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListRepoMembersResponse(SdkResponse):
     def error(self):
         """Gets the error of this ListRepoMembersResponse.
 
-
         :return: The error of this ListRepoMembersResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ListRepoMembersResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ListRepoMembersResponse.
-
 
         :param error: The error of this ListRepoMembersResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class ListRepoMembersResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListRepoMembersResponse.
 
-
         :return: The result of this ListRepoMembersResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryMemberList`
         """
@@ -92,7 +88,6 @@ class ListRepoMembersResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ListRepoMembersResponse.
-
 
         :param result: The result of this ListRepoMembersResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepositoryMemberList`

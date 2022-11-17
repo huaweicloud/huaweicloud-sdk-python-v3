@@ -17,7 +17,6 @@ class CreateCertificateRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -166,7 +165,6 @@ class CreateCertificateRequestBody:
     def distinguished_name(self):
         """Gets the distinguished_name of this CreateCertificateRequestBody.
 
-
         :return: The distinguished_name of this CreateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.CertDistinguishedName`
         """
@@ -175,7 +173,6 @@ class CreateCertificateRequestBody:
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
         """Sets the distinguished_name of this CreateCertificateRequestBody.
-
 
         :param distinguished_name: The distinguished_name of this CreateCertificateRequestBody.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.CertDistinguishedName`
@@ -186,7 +183,6 @@ class CreateCertificateRequestBody:
     def validity(self):
         """Gets the validity of this CreateCertificateRequestBody.
 
-
         :return: The validity of this CreateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.Validity`
         """
@@ -195,7 +191,6 @@ class CreateCertificateRequestBody:
     @validity.setter
     def validity(self, validity):
         """Sets the validity of this CreateCertificateRequestBody.
-
 
         :param validity: The validity of this CreateCertificateRequestBody.
         :type validity: :class:`huaweicloudsdkccm.v1.Validity`
@@ -250,7 +245,6 @@ class CreateCertificateRequestBody:
     def extended_key_usage(self):
         """Gets the extended_key_usage of this CreateCertificateRequestBody.
 
-
         :return: The extended_key_usage of this CreateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.ExtendedKeyUsage`
         """
@@ -259,7 +253,6 @@ class CreateCertificateRequestBody:
     @extended_key_usage.setter
     def extended_key_usage(self, extended_key_usage):
         """Sets the extended_key_usage of this CreateCertificateRequestBody.
-
 
         :param extended_key_usage: The extended_key_usage of this CreateCertificateRequestBody.
         :type extended_key_usage: :class:`huaweicloudsdkccm.v1.ExtendedKeyUsage`
@@ -270,7 +263,6 @@ class CreateCertificateRequestBody:
     def customized_extension(self):
         """Gets the customized_extension of this CreateCertificateRequestBody.
 
-
         :return: The customized_extension of this CreateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.CustomizedExtension`
         """
@@ -279,7 +271,6 @@ class CreateCertificateRequestBody:
     @customized_extension.setter
     def customized_extension(self, customized_extension):
         """Sets the customized_extension of this CreateCertificateRequestBody.
-
 
         :param customized_extension: The customized_extension of this CreateCertificateRequestBody.
         :type customized_extension: :class:`huaweicloudsdkccm.v1.CustomizedExtension`

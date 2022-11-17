@@ -17,7 +17,6 @@ class ShowVpcPeeringResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowVpcPeeringResponse(SdkResponse):
     def peering(self):
         """Gets the peering of this ShowVpcPeeringResponse.
 
-
         :return: The peering of this ShowVpcPeeringResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcPeering`
         """
@@ -58,7 +56,6 @@ class ShowVpcPeeringResponse(SdkResponse):
     @peering.setter
     def peering(self, peering):
         """Sets the peering of this ShowVpcPeeringResponse.
-
 
         :param peering: The peering of this ShowVpcPeeringResponse.
         :type peering: :class:`huaweicloudsdkvpc.v2.VpcPeering`

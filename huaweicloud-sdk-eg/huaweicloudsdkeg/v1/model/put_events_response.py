@@ -17,7 +17,6 @@ class PutEventsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class PutEventsResponse(SdkResponse):
     def events(self):
         """Gets the events of this PutEventsResponse.
 
-
         :return: The events of this PutEventsResponse.
         :rtype: list[:class:`huaweicloudsdkeg.v1.PutEventsRespEvents`]
         """
@@ -94,7 +92,6 @@ class PutEventsResponse(SdkResponse):
     @events.setter
     def events(self, events):
         """Sets the events of this PutEventsResponse.
-
 
         :param events: The events of this PutEventsResponse.
         :type events: list[:class:`huaweicloudsdkeg.v1.PutEventsRespEvents`]
@@ -105,7 +102,6 @@ class PutEventsResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this PutEventsResponse.
 
-
         :return: The x_request_id of this PutEventsResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class PutEventsResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this PutEventsResponse.
-
 
         :param x_request_id: The x_request_id of this PutEventsResponse.
         :type x_request_id: str

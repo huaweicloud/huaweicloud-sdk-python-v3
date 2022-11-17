@@ -17,7 +17,6 @@ class MicroServiceInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -128,7 +127,6 @@ class MicroServiceInfo:
     def cse_info(self):
         """Gets the cse_info of this MicroServiceInfo.
 
-
         :return: The cse_info of this MicroServiceInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSE`
         """
@@ -137,7 +135,6 @@ class MicroServiceInfo:
     @cse_info.setter
     def cse_info(self, cse_info):
         """Sets the cse_info of this MicroServiceInfo.
-
 
         :param cse_info: The cse_info of this MicroServiceInfo.
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSE`
@@ -148,7 +145,6 @@ class MicroServiceInfo:
     def cce_info(self):
         """Gets the cce_info of this MicroServiceInfo.
 
-
         :return: The cce_info of this MicroServiceInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCE`
         """
@@ -157,7 +153,6 @@ class MicroServiceInfo:
     @cce_info.setter
     def cce_info(self, cce_info):
         """Sets the cce_info of this MicroServiceInfo.
-
 
         :param cce_info: The cce_info of this MicroServiceInfo.
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCE`

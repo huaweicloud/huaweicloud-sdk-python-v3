@@ -17,7 +17,6 @@ class ConferenceInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -701,7 +700,6 @@ class ConferenceInfo:
     def cycle_params(self):
         """Gets the cycle_params of this ConferenceInfo.
 
-
         :return: The cycle_params of this ConferenceInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CycleParams`
         """
@@ -710,7 +708,6 @@ class ConferenceInfo:
     @cycle_params.setter
     def cycle_params(self, cycle_params):
         """Sets the cycle_params of this ConferenceInfo.
-
 
         :param cycle_params: The cycle_params of this ConferenceInfo.
         :type cycle_params: :class:`huaweicloudsdkmeeting.v1.CycleParams`
@@ -963,7 +960,6 @@ class ConferenceInfo:
     def conf_config_info(self):
         """Gets the conf_config_info of this ConferenceInfo.
 
-
         :return: The conf_config_info of this ConferenceInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
         """
@@ -972,7 +968,6 @@ class ConferenceInfo:
     @conf_config_info.setter
     def conf_config_info(self, conf_config_info):
         """Sets the conf_config_info of this ConferenceInfo.
-
 
         :param conf_config_info: The conf_config_info of this ConferenceInfo.
         :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
@@ -1335,7 +1330,6 @@ class ConferenceInfo:
     def pic_display(self):
         """Gets the pic_display of this ConferenceInfo.
 
-
         :return: The pic_display of this ConferenceInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.MultiPicDisplayDO`
         """
@@ -1344,7 +1338,6 @@ class ConferenceInfo:
     @pic_display.setter
     def pic_display(self, pic_display):
         """Sets the pic_display of this ConferenceInfo.
-
 
         :param pic_display: The pic_display of this ConferenceInfo.
         :type pic_display: :class:`huaweicloudsdkmeeting.v1.MultiPicDisplayDO`

@@ -17,7 +17,6 @@ class UpdateCouponQuotasRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateCouponQuotasRequest:
     def body(self):
         """Gets the body of this UpdateCouponQuotasRequest.
 
-
         :return: The body of this UpdateCouponQuotasRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.AdjustCouponQuotasReq`
         """
@@ -58,7 +56,6 @@ class UpdateCouponQuotasRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateCouponQuotasRequest.
-
 
         :param body: The body of this UpdateCouponQuotasRequest.
         :type body: :class:`huaweicloudsdkbss.v2.AdjustCouponQuotasReq`

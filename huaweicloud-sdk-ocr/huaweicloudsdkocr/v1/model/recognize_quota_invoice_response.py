@@ -17,7 +17,6 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeQuotaInvoiceResponse.
 
-
         :return: The result of this RecognizeQuotaInvoiceResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.QuotaInvoiceResult`
         """
@@ -58,7 +56,6 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeQuotaInvoiceResponse.
-
 
         :param result: The result of this RecognizeQuotaInvoiceResponse.
         :type result: :class:`huaweicloudsdkocr.v1.QuotaInvoiceResult`

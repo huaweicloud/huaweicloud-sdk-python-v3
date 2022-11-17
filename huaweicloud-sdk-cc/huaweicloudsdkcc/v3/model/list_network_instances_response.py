@@ -17,7 +17,6 @@ class ListNetworkInstancesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class ListNetworkInstancesResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListNetworkInstancesResponse.
 
-
         :return: The page_info of this ListNetworkInstancesResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
         """
@@ -94,7 +92,6 @@ class ListNetworkInstancesResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListNetworkInstancesResponse.
-
 
         :param page_info: The page_info of this ListNetworkInstancesResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`

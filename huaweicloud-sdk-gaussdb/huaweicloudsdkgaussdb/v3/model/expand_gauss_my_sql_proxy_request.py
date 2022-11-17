@@ -17,7 +17,6 @@ class ExpandGaussMySqlProxyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ExpandGaussMySqlProxyRequest:
     def body(self):
         """Gets the body of this ExpandGaussMySqlProxyRequest.
 
-
         :return: The body of this ExpandGaussMySqlProxyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.EnlargeProxyRequest`
         """
@@ -115,7 +113,6 @@ class ExpandGaussMySqlProxyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExpandGaussMySqlProxyRequest.
-
 
         :param body: The body of this ExpandGaussMySqlProxyRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.EnlargeProxyRequest`

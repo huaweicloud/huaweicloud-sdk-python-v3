@@ -17,7 +17,6 @@ class CreateListenerResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateListenerResponse(SdkResponse):
     def listener(self):
         """Gets the listener of this CreateListenerResponse.
 
-
         :return: The listener of this CreateListenerResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.Listener`
         """
@@ -87,7 +85,6 @@ class CreateListenerResponse(SdkResponse):
     @listener.setter
     def listener(self, listener):
         """Sets the listener of this CreateListenerResponse.
-
 
         :param listener: The listener of this CreateListenerResponse.
         :type listener: :class:`huaweicloudsdkelb.v3.Listener`

@@ -17,7 +17,6 @@ class ShowEngineResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -467,7 +466,6 @@ class ShowEngineResponse(SdkResponse):
     def cce_spec(self):
         """Gets the cce_spec of this ShowEngineResponse.
 
-
         :return: The cce_spec of this ShowEngineResponse.
         :rtype: :class:`huaweicloudsdkcse.v1.Spec`
         """
@@ -476,7 +474,6 @@ class ShowEngineResponse(SdkResponse):
     @cce_spec.setter
     def cce_spec(self, cce_spec):
         """Sets the cce_spec of this ShowEngineResponse.
-
 
         :param cce_spec: The cce_spec of this ShowEngineResponse.
         :type cce_spec: :class:`huaweicloudsdkcse.v1.Spec`
@@ -487,7 +484,6 @@ class ShowEngineResponse(SdkResponse):
     def external_entrypoint(self):
         """Gets the external_entrypoint of this ShowEngineResponse.
 
-
         :return: The external_entrypoint of this ShowEngineResponse.
         :rtype: :class:`huaweicloudsdkcse.v1.EngineExternalEntrypoint`
         """
@@ -496,7 +492,6 @@ class ShowEngineResponse(SdkResponse):
     @external_entrypoint.setter
     def external_entrypoint(self, external_entrypoint):
         """Sets the external_entrypoint of this ShowEngineResponse.
-
 
         :param external_entrypoint: The external_entrypoint of this ShowEngineResponse.
         :type external_entrypoint: :class:`huaweicloudsdkcse.v1.EngineExternalEntrypoint`
@@ -507,7 +502,6 @@ class ShowEngineResponse(SdkResponse):
     def reference(self):
         """Gets the reference of this ShowEngineResponse.
 
-
         :return: The reference of this ShowEngineResponse.
         :rtype: :class:`huaweicloudsdkcse.v1.EngineReference`
         """
@@ -516,7 +510,6 @@ class ShowEngineResponse(SdkResponse):
     @reference.setter
     def reference(self, reference):
         """Sets the reference of this ShowEngineResponse.
-
 
         :param reference: The reference of this ShowEngineResponse.
         :type reference: :class:`huaweicloudsdkcse.v1.EngineReference`

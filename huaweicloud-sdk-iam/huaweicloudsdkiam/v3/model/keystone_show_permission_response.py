@@ -17,7 +17,6 @@ class KeystoneShowPermissionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneShowPermissionResponse(SdkResponse):
     def role(self):
         """Gets the role of this KeystoneShowPermissionResponse.
 
-
         :return: The role of this KeystoneShowPermissionResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleResult`
         """
@@ -58,7 +56,6 @@ class KeystoneShowPermissionResponse(SdkResponse):
     @role.setter
     def role(self, role):
         """Sets the role of this KeystoneShowPermissionResponse.
-
 
         :param role: The role of this KeystoneShowPermissionResponse.
         :type role: :class:`huaweicloudsdkiam.v3.RoleResult`

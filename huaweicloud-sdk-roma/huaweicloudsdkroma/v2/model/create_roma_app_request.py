@@ -17,7 +17,6 @@ class CreateRomaAppRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateRomaAppRequest:
     def body(self):
         """Gets the body of this CreateRomaAppRequest.
 
-
         :return: The body of this CreateRomaAppRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppReq`
         """
@@ -86,7 +84,6 @@ class CreateRomaAppRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRomaAppRequest.
-
 
         :param body: The body of this CreateRomaAppRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateAppReq`

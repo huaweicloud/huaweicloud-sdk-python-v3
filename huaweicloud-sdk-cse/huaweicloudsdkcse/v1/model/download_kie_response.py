@@ -17,7 +17,6 @@ class DownloadKieResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class DownloadKieResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this DownloadKieResponse.
 
-
         :return: The metadata of this DownloadKieResponse.
         :rtype: :class:`huaweicloudsdkcse.v1.DownloadKieResponseBodyMetadata`
         """
@@ -65,7 +63,6 @@ class DownloadKieResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this DownloadKieResponse.
-
 
         :param metadata: The metadata of this DownloadKieResponse.
         :type metadata: :class:`huaweicloudsdkcse.v1.DownloadKieResponseBodyMetadata`

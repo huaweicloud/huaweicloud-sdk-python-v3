@@ -17,7 +17,6 @@ class ListEngineSupportFeaturesEntity:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListEngineSupportFeaturesEntity:
     def properties(self):
         """Gets the properties of this ListEngineSupportFeaturesEntity.
 
-
         :return: The properties of this ListEngineSupportFeaturesEntity.
         :rtype: :class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesPropertiesEntity`
         """
@@ -87,7 +85,6 @@ class ListEngineSupportFeaturesEntity:
     @properties.setter
     def properties(self, properties):
         """Sets the properties of this ListEngineSupportFeaturesEntity.
-
 
         :param properties: The properties of this ListEngineSupportFeaturesEntity.
         :type properties: :class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesPropertiesEntity`

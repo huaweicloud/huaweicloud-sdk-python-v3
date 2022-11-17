@@ -17,7 +17,6 @@ class UpdateOriginHostResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateOriginHostResponse(SdkResponse):
     def origin_host(self):
         """Gets the origin_host of this UpdateOriginHostResponse.
 
-
         :return: The origin_host of this UpdateOriginHostResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
         """
@@ -58,7 +56,6 @@ class UpdateOriginHostResponse(SdkResponse):
     @origin_host.setter
     def origin_host(self, origin_host):
         """Sets the origin_host of this UpdateOriginHostResponse.
-
 
         :param origin_host: The origin_host of this UpdateOriginHostResponse.
         :type origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`

@@ -17,7 +17,6 @@ class TagResource:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -88,7 +87,6 @@ class TagResource:
     def resource_detail(self):
         """Gets the resource_detail of this TagResource.
 
-
         :return: The resource_detail of this TagResource.
         :rtype: :class:`huaweicloudsdksmn.v2.ResourceDetail`
         """
@@ -97,7 +95,6 @@ class TagResource:
     @resource_detail.setter
     def resource_detail(self, resource_detail):
         """Sets the resource_detail of this TagResource.
-
 
         :param resource_detail: The resource_detail of this TagResource.
         :type resource_detail: :class:`huaweicloudsdksmn.v2.ResourceDetail`

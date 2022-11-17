@@ -17,7 +17,6 @@ class UpdateQueueCidrRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateQueueCidrRequest:
     def body(self):
         """Gets the body of this UpdateQueueCidrRequest.
 
-
         :return: The body of this UpdateQueueCidrRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrReq`
         """
@@ -86,7 +84,6 @@ class UpdateQueueCidrRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateQueueCidrRequest.
-
 
         :param body: The body of this UpdateQueueCidrRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrReq`

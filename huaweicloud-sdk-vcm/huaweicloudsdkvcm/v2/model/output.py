@@ -17,7 +17,6 @@ class Output:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class Output:
     def obs(self):
         """Gets the obs of this Output.
 
-
         :return: The obs of this Output.
         :rtype: :class:`huaweicloudsdkvcm.v2.OutputObs`
         """
@@ -86,7 +84,6 @@ class Output:
     @obs.setter
     def obs(self, obs):
         """Sets the obs of this Output.
-
 
         :param obs: The obs of this Output.
         :type obs: :class:`huaweicloudsdkvcm.v2.OutputObs`
@@ -97,7 +94,6 @@ class Output:
     def hosting(self):
         """Gets the hosting of this Output.
 
-
         :return: The hosting of this Output.
         :rtype: :class:`huaweicloudsdkvcm.v2.OutputHosting`
         """
@@ -106,7 +102,6 @@ class Output:
     @hosting.setter
     def hosting(self, hosting):
         """Sets the hosting of this Output.
-
 
         :param hosting: The hosting of this Output.
         :type hosting: :class:`huaweicloudsdkvcm.v2.OutputHosting`
@@ -117,7 +112,6 @@ class Output:
     def dis(self):
         """Gets the dis of this Output.
 
-
         :return: The dis of this Output.
         :rtype: :class:`huaweicloudsdkvcm.v2.OutputDis`
         """
@@ -126,7 +120,6 @@ class Output:
     @dis.setter
     def dis(self, dis):
         """Sets the dis of this Output.
-
 
         :param dis: The dis of this Output.
         :type dis: :class:`huaweicloudsdkvcm.v2.OutputDis`
@@ -137,7 +130,6 @@ class Output:
     def webhook(self):
         """Gets the webhook of this Output.
 
-
         :return: The webhook of this Output.
         :rtype: :class:`huaweicloudsdkvcm.v2.OutputWebhook`
         """
@@ -146,7 +138,6 @@ class Output:
     @webhook.setter
     def webhook(self, webhook):
         """Sets the webhook of this Output.
-
 
         :param webhook: The webhook of this Output.
         :type webhook: :class:`huaweicloudsdkvcm.v2.OutputWebhook`
@@ -157,7 +148,6 @@ class Output:
     def localpath(self):
         """Gets the localpath of this Output.
 
-
         :return: The localpath of this Output.
         :rtype: :class:`huaweicloudsdkvcm.v2.OutputLocalpath`
         """
@@ -166,7 +156,6 @@ class Output:
     @localpath.setter
     def localpath(self, localpath):
         """Sets the localpath of this Output.
-
 
         :param localpath: The localpath of this Output.
         :type localpath: :class:`huaweicloudsdkvcm.v2.OutputLocalpath`

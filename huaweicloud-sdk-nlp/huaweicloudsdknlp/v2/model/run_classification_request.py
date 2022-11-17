@@ -17,7 +17,6 @@ class RunClassificationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunClassificationRequest:
     def body(self):
         """Gets the body of this RunClassificationRequest.
 
-
         :return: The body of this RunClassificationRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.ClassificationReq`
         """
@@ -58,7 +56,6 @@ class RunClassificationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunClassificationRequest.
-
 
         :param body: The body of this RunClassificationRequest.
         :type body: :class:`huaweicloudsdknlp.v2.ClassificationReq`

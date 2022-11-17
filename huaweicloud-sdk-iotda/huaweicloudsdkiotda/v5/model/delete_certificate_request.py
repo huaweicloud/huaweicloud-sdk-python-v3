@@ -17,45 +17,104 @@ class DeleteCertificateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
+    sensitive_list.append('sp_auth_token')
+    sensitive_list.append('stage_auth_token')
 
     openapi_types = {
+        'sp_auth_token': 'str',
+        'stage_auth_token': 'str',
         'instance_id': 'str',
         'certificate_id': 'str'
     }
 
     attribute_map = {
+        'sp_auth_token': 'Sp-Auth-Token',
+        'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
         'certificate_id': 'certificate_id'
     }
 
-    def __init__(self, instance_id=None, certificate_id=None):
+    def __init__(self, sp_auth_token=None, stage_auth_token=None, instance_id=None, certificate_id=None):
         """DeleteCertificateRequest
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        :param sp_auth_token: Sp用户Token。通过调用IoBPS服务获取SP用户Token
+        :type sp_auth_token: str
+        :param stage_auth_token: Stage用户的Token, 仅提供给IoStage服务使用
+        :type stage_auth_token: str
+        :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
         :type instance_id: str
-        :param certificate_id: **参数说明**：设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        :param certificate_id: 设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
         :type certificate_id: str
         """
         
         
 
+        self._sp_auth_token = None
+        self._stage_auth_token = None
         self._instance_id = None
         self._certificate_id = None
         self.discriminator = None
 
+        if sp_auth_token is not None:
+            self.sp_auth_token = sp_auth_token
+        if stage_auth_token is not None:
+            self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         self.certificate_id = certificate_id
 
     @property
+    def sp_auth_token(self):
+        """Gets the sp_auth_token of this DeleteCertificateRequest.
+
+        Sp用户Token。通过调用IoBPS服务获取SP用户Token
+
+        :return: The sp_auth_token of this DeleteCertificateRequest.
+        :rtype: str
+        """
+        return self._sp_auth_token
+
+    @sp_auth_token.setter
+    def sp_auth_token(self, sp_auth_token):
+        """Sets the sp_auth_token of this DeleteCertificateRequest.
+
+        Sp用户Token。通过调用IoBPS服务获取SP用户Token
+
+        :param sp_auth_token: The sp_auth_token of this DeleteCertificateRequest.
+        :type sp_auth_token: str
+        """
+        self._sp_auth_token = sp_auth_token
+
+    @property
+    def stage_auth_token(self):
+        """Gets the stage_auth_token of this DeleteCertificateRequest.
+
+        Stage用户的Token, 仅提供给IoStage服务使用
+
+        :return: The stage_auth_token of this DeleteCertificateRequest.
+        :rtype: str
+        """
+        return self._stage_auth_token
+
+    @stage_auth_token.setter
+    def stage_auth_token(self, stage_auth_token):
+        """Sets the stage_auth_token of this DeleteCertificateRequest.
+
+        Stage用户的Token, 仅提供给IoStage服务使用
+
+        :param stage_auth_token: The stage_auth_token of this DeleteCertificateRequest.
+        :type stage_auth_token: str
+        """
+        self._stage_auth_token = stage_auth_token
+
+    @property
     def instance_id(self):
         """Gets the instance_id of this DeleteCertificateRequest.
 
-        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this DeleteCertificateRequest.
         :rtype: str
@@ -66,7 +125,7 @@ class DeleteCertificateRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteCertificateRequest.
 
-        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this DeleteCertificateRequest.
         :type instance_id: str
@@ -77,7 +136,7 @@ class DeleteCertificateRequest:
     def certificate_id(self):
         """Gets the certificate_id of this DeleteCertificateRequest.
 
-        **参数说明**：设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
         :return: The certificate_id of this DeleteCertificateRequest.
         :rtype: str
@@ -88,7 +147,7 @@ class DeleteCertificateRequest:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this DeleteCertificateRequest.
 
-        **参数说明**：设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
         :param certificate_id: The certificate_id of this DeleteCertificateRequest.
         :type certificate_id: str

@@ -17,7 +17,6 @@ class RunImageDescriptionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunImageDescriptionResponse(SdkResponse):
     def result(self):
         """Gets the result of this RunImageDescriptionResponse.
 
-
         :return: The result of this RunImageDescriptionResponse.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageDescriptionResponseResult`
         """
@@ -58,7 +56,6 @@ class RunImageDescriptionResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RunImageDescriptionResponse.
-
 
         :param result: The result of this RunImageDescriptionResponse.
         :type result: :class:`huaweicloudsdkimage.v2.ImageDescriptionResponseResult`

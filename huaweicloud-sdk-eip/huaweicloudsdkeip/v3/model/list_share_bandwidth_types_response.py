@@ -17,7 +17,6 @@ class ListShareBandwidthTypesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListShareBandwidthTypesResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListShareBandwidthTypesResponse.
 
-
         :return: The page_info of this ListShareBandwidthTypesResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PageInfoOption`
         """
@@ -116,7 +114,6 @@ class ListShareBandwidthTypesResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListShareBandwidthTypesResponse.
-
 
         :param page_info: The page_info of this ListShareBandwidthTypesResponse.
         :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`

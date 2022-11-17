@@ -17,7 +17,6 @@ class UpdatePortRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdatePortRequestBody:
     def port(self):
         """Gets the port of this UpdatePortRequestBody.
 
-
         :return: The port of this UpdatePortRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdatePortOption`
         """
@@ -57,7 +55,6 @@ class UpdatePortRequestBody:
     @port.setter
     def port(self, port):
         """Sets the port of this UpdatePortRequestBody.
-
 
         :param port: The port of this UpdatePortRequestBody.
         :type port: :class:`huaweicloudsdkvpc.v2.UpdatePortOption`

@@ -17,7 +17,6 @@ class ShowEdgeNodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -253,7 +252,6 @@ class ShowEdgeNodeResponse(SdkResponse):
     def ha_config(self):
         """Gets the ha_config of this ShowEdgeNodeResponse.
 
-
         :return: The ha_config of this ShowEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.HaConfigDTO`
         """
@@ -262,7 +260,6 @@ class ShowEdgeNodeResponse(SdkResponse):
     @ha_config.setter
     def ha_config(self, ha_config):
         """Sets the ha_config of this ShowEdgeNodeResponse.
-
 
         :param ha_config: The ha_config of this ShowEdgeNodeResponse.
         :type ha_config: :class:`huaweicloudsdkiotedge.v2.HaConfigDTO`
@@ -779,7 +776,6 @@ class ShowEdgeNodeResponse(SdkResponse):
     def base_path(self):
         """Gets the base_path of this ShowEdgeNodeResponse.
 
-
         :return: The base_path of this ShowEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
         """
@@ -788,7 +784,6 @@ class ShowEdgeNodeResponse(SdkResponse):
     @base_path.setter
     def base_path(self, base_path):
         """Sets the base_path of this ShowEdgeNodeResponse.
-
 
         :param base_path: The base_path of this ShowEdgeNodeResponse.
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`

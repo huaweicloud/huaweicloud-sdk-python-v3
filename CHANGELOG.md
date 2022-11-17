@@ -1,3 +1,378 @@
+# 3.1.11 2022-11-17
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - Support the `Application Orchestration Service`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DC
+
+- _Features_
+  - Support the service `Direct Connect`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CFW
+
+- _Features_
+  - Support the service `Cloud Firewall`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - Support the following interfaces：
+    - `ListPlugins`
+    - `CreatePlugin`
+    - `ShowPlugin`
+    - `UpdatePlugin`
+    - `DeletePlugin`
+    - `AttachApiToPlugin`
+    - `DetachApiFromPlugin`
+    - `ListPluginAttachedApis`
+    - `ListPluginAttachableApis`
+    - `AttachPluginToApi`
+    - `DetachPluginFromApi`
+    - `ListApiAttachedPlugins`
+    - `ListApiAttachablePlugins`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `type`, `microservice_labels` to the interface `CreateVpcChannelV2`
+  - Add the response parameter `microservice_labels` to the interface `ListVpcChannelsV2`
+  - Add the response parameter `microservice_labels` to the interface `ShowDetailsOfVpcChannelV2`
+  - Changes of the interface `UpdateVpcChannelV2`:
+    - Add the request parameters `type`, `microservice_labels`
+    - Add the response parameter `microservice_labels`
+  - Add the request parameter `microservice_labels` to the interface `CreateMemberGroup`
+  - Add the response parameter `microservice_labels` to the interface `ListMemberGroups`
+  - Add the response parameter `microservice_labels` to the interface `ShowDetailsOfMemberGroup`
+  - Changes of the interface `UpdateMemberGroup`:
+    - Add the request parameter `microservice_labels`
+    - Add the response parameter `microservice_labels`
+  - Add the request parameter `tags` to the interface `CreateInstanceV2`
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `id` changed to required of the interface `DeleteServerNics`
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `sub_customer_association_type` changed to required of the interface `CreateSubEnterpriseAccount`
+
+### HuaweiCloud SDK CloudArtifact
+
+- _Features_
+  - Support the interface `ShowProjectReleaseFiles`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudDeploy
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `encrypt` to the request parameter `type` to the interface `CreateDeployTaskByTemplate`
+  - Changes of the interface `StartDeployTask`:
+    - Add the request parameters `trigger_source`, `key`
+    - Remove the request parameters `description`, `name`, `limits`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the following interfaces：
+    - `AddExtensionEvaluation`
+    - `AddExtensionEvaluationReply`
+    - `CheckMaliciousExtensionEvaluation`
+    - `DeleteEvaluationReply`
+    - `DeleteEvaluation`
+    - `AddExtensionStar`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `integer` -> `int32` of the request parameter `new_capacity` of the interface `ResizeInstance`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `gaussdbv5`, `postgresql`, `kafka`, `gaussdbv5ha` to the request parameter `db_type` to the interface `BatchCreateJobs`
+  - Add the enum values `gaussdbv5`, `kafka`, `gaussdbv5ha` to the request parameter `db_type` to the interface `BatchValidateConnections`
+  - Add the enum values `gaussdbv5`, `postgresql`, `kafka`, `gaussdbv5ha` to the request parameter `db_type` to the interface `BatchUpdateJob`
+  - Changes of the interface `ListCompareResult`:
+    - Add the response parameters `line_compare_detail`, `content_compare_diff`, `compare_task_list`
+    - Remove the response parameters `LineCompareDetail`, `ContentCompareDiff`, `CompareTaskList`
+  - Changes of the interface `BatchListJobDetails`:
+    - Add the response parameters `is_multi_az`, `az_name`, `master_az`, `slave_az`, `node_role`
+    - Add the enum values `gaussdbv5`, `postgresql`, `kafka`, `gaussdbv5ha` to the response parameter `db_type`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `string` -> `enum` of the request parameter `monitorMetrics` of the interface `RegisterServerMonitor`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `VPN` to the request parameter `associate_instance_type` to the interface `DisassociatePublicips`
+  - Add the enum values `VPN` to the request parameter `associate_instance_type` to the interface `AssociatePublicips`
+
+### HuaweiCloud SDK EPS
+
+- _Features_
+  - Support the interface `ListProviders`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the interfaces `ShowInstanceRole`, `SwitchToMaster`, `SwitchToSlave`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `ttl` to the interface `CreateMessage`
+  - Add the request parameters `Sp-Auth-Token`, `Stage-Auth-Token` to the interface `ListCertificates`
+  - Changes of the interface `AddCertificate`:
+    - Add the request parameters `Sp-Auth-Token`, `Stage-Auth-Token`, `addCertificateRequestBody`
+    - Remove the request parameter `AddCertificateRequestBody`
+  - Add the request parameters `Sp-Auth-Token`, `Stage-Auth-Token` to the interface `DeleteCertificate`
+  - Changes of the interface `CheckCertificate`:
+    - Add the request parameters `Sp-Auth-Token`, `Stage-Auth-Token`, `checkCertificateRequestBody`
+    - Remove the request parameter `CheckCertificateRequestBody`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `new_password` changed to required of the interface `ResetPassword`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeGeneralTable`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeVatInvoice`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeInvoiceVerification`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeGeneralText`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeWebImage`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeHealthCode`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeQuotaInvoice`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeIdCard`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeHandwriting`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeVehicleLicense`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeTransportationLicense`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeTaxiInvoice`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeAutoClassification`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeTollInvoice`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeMvsInvoice`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeLicensePlate`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeFlightItinerary`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeBusinessLicense`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeDriverLicense`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeBusinessCard`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeTrainTicket`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeVin`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizePassport`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeBankcard`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeInsurancePolicy`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeFinancialStatement`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeQualificationCertificate`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeThailandIdcard`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeMyanmarIdcard`
+  - Changes of the interface `RecognizeMyanmarDriverLicense`:
+    - Add the request parameter `Enterprise-Project-Id`
+    - Add the response parameters `birth`, `birth`
+    - Remove the response parameters `Birth`, `Birth`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeChileIdCard`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeThailandLicensePlate`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeWaybillElectronic`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizePcrTestRecord`
+  - Changes of the interface `RecognizeIdDocument`:
+    - Add the request parameter `Enterprise-Project-Id`
+    - Modify the type `object` -> `object` of the response parameter `result`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeHkIdCard`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeCambodianIdCard`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeExitEntryPermit`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeMainlandTravelPermit`
+  - Add the request parameter `Enterprise-Project-Id` to the interface `RecognizeMacaoIdCard`
+
+### HuaweiCloud SDK OSM
+
+- _Features_
+  - Support the interface `RevokeMessage`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ROMA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `app_name` from the interface `CreateDeviceGroup`
+  - Remove the response parameters `total`, `app_id`, `permissions` from the interface `ShowDeviceGroupTree`
+  - Remove the response parameter `app_name` from the interface `UpdateDeviceGroup`
+  - Add the request parameter `user_name` to the interface `CreateDevice`
+  - Changes of the interface `ListDevices`:
+    - Add the response parameter `device_id`
+    - Remove the response parameter `plugin_id`
+  - Add the response parameters `device_id`, `device_id` to the interface `BatchFreezeDevices`
+  - Changes of the interface `UpdateDevice`:
+    - Add the response parameter `device_id`
+    - Remove the response parameter `plugin_id`
+  - Changes of the interface `ShowDevice`:
+    - Add the response parameter `device_id`
+    - Modify the type `enum` -> `integer` of the response parameter `status`
+    - Modify the type `enum` -> `integer` of the response parameter `online_status`
+    - Modify the type `enum` -> `integer` of the response parameter `device_type`
+    - Modify the type `enum` -> `integer` of the response parameter `plugin_id`
+  - Changes of the interface `ListSubsets`:
+    - Add the response parameter `device_id`
+    - Remove the response parameter `plugin_id`
+  - Add the request parameter `ResetAuthenticationRequestBody` to the interface `ResetAuthentication`
+  - Changes of the interface `UpdateProduct`:
+    - Add the response parameter `status`
+    - Remove the response parameter `authentication`
+  - Add the request parameter `ResetProductAuthenticationRequestBody` to the interface `ResetProductAuthentication`
+  - Remove the response parameters `app_name`, `sql_field`, `sql_where`, `rule_express` from the interface `CreateRule`
+  - Add the request parameters `enum_dict`, `method` to the interface `CreateProperty`
+  - Changes of the interface `ListProperties`:
+    - Add the response parameter `enum_dict`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+  - Changes of the interface `UpdateProperty`:
+    - Add the request parameter `enum_dict`
+    - Add the response parameters `enum_dict`, `method`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+  - Changes of the interface `ShowProperty`:
+    - Add the response parameters `enum_dict`, `method`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+  - Changes of the interface `CreateRequestProperty`:
+    - Add the request parameters `enum_dict`, `method`
+    - Add the response parameter `enum_dict`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+  - Changes of the interface `ListRequestProperties`:
+    - Add the response parameter `enum_dict`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+  - Changes of the interface `UpdateRequestProperty`:
+    - Add the request parameter `enum_dict`
+    - Add the response parameter `enum_dict`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+  - Changes of the interface `ShowRequestProperty`:
+    - Add the response parameter `enum_dict`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+  - Add the request parameters `enum_dict`, `method` to the interface `CreateResponseProperty`
+  - Changes of the interface `ListResponseProperties`:
+    - Add the response parameter `enum_dict`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+  - Changes of the interface `UpdateResponseProperty`:
+    - Add the request parameter `enum_dict`
+    - Add the response parameter `enum_dict`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+  - Changes of the interface `ShowResponseProperty`:
+    - Add the response parameter `enum_dict`
+    - Add the enum values `boolean`, `array` to the response parameter `data_type`
+
+### HuaweiCloud SDK TMS
+
+- _Features_
+  - Support the interface `ListProviders`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK UGO
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `RunSqlConversion`:
+    - Add the enum values `GaussDB Centralized`, Remove the enum values `GaussDB(for openGauss)` from the request parameter `target_db_type`
+    - Add the enum values `2.0`, Remove the enum values `2020` from the request parameter `target_db_version`
+  - Changes of the interface `ConfirmTargetDbType`:
+    - Modify the type `string` -> `enum` of the request parameter `target_db_type`
+    - Modify the type `string` -> `enum` of the request parameter `target_db_version`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateSubnet`:
+    - Add the enum values `addresstime` to the request parameter `opt_name`
+    - Add the enum values `addresstime` to the response parameter `opt_name`
+  - Add the enum values `addresstime` to the response parameter `opt_name` to the interface `ListSubnets`
+  - Add the enum values `addresstime` to the response parameter `opt_name` to the interface `ShowSubnet`
+  - Add the enum values `addresstime` to the request parameter `opt_name` to the interface `UpdateSubnet`
+
 # 3.1.10 2022-11-14
 
 ### HuaweiCloud SDK BMS

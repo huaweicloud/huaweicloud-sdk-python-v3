@@ -17,7 +17,6 @@ class RunFileTranslationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunFileTranslationRequest:
     def body(self):
         """Gets the body of this RunFileTranslationRequest.
 
-
         :return: The body of this RunFileTranslationRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.FileTranslationReq`
         """
@@ -58,7 +56,6 @@ class RunFileTranslationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunFileTranslationRequest.
-
 
         :param body: The body of this RunFileTranslationRequest.
         :type body: :class:`huaweicloudsdknlp.v2.FileTranslationReq`

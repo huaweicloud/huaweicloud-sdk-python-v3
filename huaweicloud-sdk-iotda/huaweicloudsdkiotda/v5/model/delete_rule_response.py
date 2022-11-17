@@ -17,7 +17,6 @@ class DeleteRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteRuleResponse(SdkResponse):
     def body(self):
         """Gets the body of this DeleteRuleResponse.
 
-
         :return: The body of this DeleteRuleResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class DeleteRuleResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteRuleResponse.
-
 
         :param body: The body of this DeleteRuleResponse.
         :type body: str

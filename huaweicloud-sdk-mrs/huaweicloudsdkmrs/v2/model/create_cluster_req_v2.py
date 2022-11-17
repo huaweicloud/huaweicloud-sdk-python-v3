@@ -17,7 +17,6 @@ class CreateClusterReqV2:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -314,7 +313,6 @@ class CreateClusterReqV2:
     def charge_info(self):
         """Gets the charge_info of this CreateClusterReqV2.
 
-
         :return: The charge_info of this CreateClusterReqV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
         """
@@ -323,7 +321,6 @@ class CreateClusterReqV2:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this CreateClusterReqV2.
-
 
         :param charge_info: The charge_info of this CreateClusterReqV2.
         :type charge_info: :class:`huaweicloudsdkmrs.v2.ChargeInfo`

@@ -17,7 +17,6 @@ class UploadProductRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UploadProductRequest:
     def body(self):
         """Gets the body of this UploadProductRequest.
 
-
         :return: The body of this UploadProductRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UploadProductRequestBody`
         """
@@ -86,7 +84,6 @@ class UploadProductRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UploadProductRequest.
-
 
         :param body: The body of this UploadProductRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UploadProductRequestBody`

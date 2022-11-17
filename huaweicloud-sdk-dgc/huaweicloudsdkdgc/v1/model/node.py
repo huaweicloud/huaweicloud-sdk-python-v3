@@ -17,7 +17,6 @@ class Node:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class Node:
     def name(self):
         """Gets the name of this Node.
 
-
         :return: The name of this Node.
         :rtype: str
         """
@@ -142,7 +140,6 @@ class Node:
     @name.setter
     def name(self, name):
         """Sets the name of this Node.
-
 
         :param name: The name of this Node.
         :type name: str
@@ -175,7 +172,6 @@ class Node:
     def location(self):
         """Gets the location of this Node.
 
-
         :return: The location of this Node.
         :rtype: :class:`huaweicloudsdkdgc.v1.Location`
         """
@@ -184,7 +180,6 @@ class Node:
     @location.setter
     def location(self, location):
         """Sets the location of this Node.
-
 
         :param location: The location of this Node.
         :type location: :class:`huaweicloudsdkdgc.v1.Location`
@@ -371,7 +366,6 @@ class Node:
     def event_trigger(self):
         """Gets the event_trigger of this Node.
 
-
         :return: The event_trigger of this Node.
         :rtype: :class:`huaweicloudsdkdgc.v1.Event`
         """
@@ -380,7 +374,6 @@ class Node:
     @event_trigger.setter
     def event_trigger(self, event_trigger):
         """Sets the event_trigger of this Node.
-
 
         :param event_trigger: The event_trigger of this Node.
         :type event_trigger: :class:`huaweicloudsdkdgc.v1.Event`
@@ -391,7 +384,6 @@ class Node:
     def cron_trigger(self):
         """Gets the cron_trigger of this Node.
 
-
         :return: The cron_trigger of this Node.
         :rtype: :class:`huaweicloudsdkdgc.v1.Cron`
         """
@@ -400,7 +392,6 @@ class Node:
     @cron_trigger.setter
     def cron_trigger(self, cron_trigger):
         """Sets the cron_trigger of this Node.
-
 
         :param cron_trigger: The cron_trigger of this Node.
         :type cron_trigger: :class:`huaweicloudsdkdgc.v1.Cron`

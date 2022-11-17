@@ -17,7 +17,6 @@ class RunSqlConversionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunSqlConversionRequest:
     def body(self):
         """Gets the body of this RunSqlConversionRequest.
 
-
         :return: The body of this RunSqlConversionRequest.
         :rtype: :class:`huaweicloudsdkugo.v1.SqlConvertReq`
         """
@@ -58,7 +56,6 @@ class RunSqlConversionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunSqlConversionRequest.
-
 
         :param body: The body of this RunSqlConversionRequest.
         :type body: :class:`huaweicloudsdkugo.v1.SqlConvertReq`

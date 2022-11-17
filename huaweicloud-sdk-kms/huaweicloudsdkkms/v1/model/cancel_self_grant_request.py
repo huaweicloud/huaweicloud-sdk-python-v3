@@ -17,7 +17,6 @@ class CancelSelfGrantRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CancelSelfGrantRequest:
     def body(self):
         """Gets the body of this CancelSelfGrantRequest.
 
-
         :return: The body of this CancelSelfGrantRequest.
         :rtype: :class:`huaweicloudsdkkms.v1.RevokeGrantRequestBody`
         """
@@ -86,7 +84,6 @@ class CancelSelfGrantRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CancelSelfGrantRequest.
-
 
         :param body: The body of this CancelSelfGrantRequest.
         :type body: :class:`huaweicloudsdkkms.v1.RevokeGrantRequestBody`

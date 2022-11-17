@@ -17,7 +17,6 @@ class ResScene:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -170,7 +169,6 @@ class ResScene:
     def ds_config(self):
         """Gets the ds_config of this ResScene.
 
-
         :return: The ds_config of this ResScene.
         :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
         """
@@ -179,7 +177,6 @@ class ResScene:
     @ds_config.setter
     def ds_config(self, ds_config):
         """Sets the ds_config of this ResScene.
-
 
         :param ds_config: The ds_config of this ResScene.
         :type ds_config: :class:`huaweicloudsdkres.v1.DataConfig`
@@ -366,7 +363,6 @@ class ResScene:
     def specs_config(self):
         """Gets the specs_config of this ResScene.
 
-
         :return: The specs_config of this ResScene.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
@@ -375,7 +371,6 @@ class ResScene:
     @specs_config.setter
     def specs_config(self, specs_config):
         """Sets the specs_config of this ResScene.
-
 
         :param specs_config: The specs_config of this ResScene.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`

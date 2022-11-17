@@ -17,7 +17,6 @@ class SetWebHookConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class SetWebHookConfigRequest:
     def body(self):
         """Gets the body of this SetWebHookConfigRequest.
 
-
         :return: The body of this SetWebHookConfigRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.WebHookConfigRequest`
         """
@@ -58,7 +56,6 @@ class SetWebHookConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetWebHookConfigRequest.
-
 
         :param body: The body of this SetWebHookConfigRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.WebHookConfigRequest`

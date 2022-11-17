@@ -17,7 +17,6 @@ class UpdateUnbindPublicRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateUnbindPublicRequest:
     def body(self):
         """Gets the body of this UpdateUnbindPublicRequest.
 
-
         :return: The body of this UpdateUnbindPublicRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UnBindPublicReq`
         """
@@ -86,7 +84,6 @@ class UpdateUnbindPublicRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateUnbindPublicRequest.
-
 
         :param body: The body of this UpdateUnbindPublicRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UnBindPublicReq`

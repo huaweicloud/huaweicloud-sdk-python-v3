@@ -17,7 +17,6 @@ class ShowProcessResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class ShowProcessResponse(SdkResponse):
     def json(self):
         """Gets the json of this ShowProcessResponse.
 
-
         :return: The json of this ShowProcessResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.UploadProcessJson`
         """
@@ -123,7 +121,6 @@ class ShowProcessResponse(SdkResponse):
     @json.setter
     def json(self, json):
         """Sets the json of this ShowProcessResponse.
-
 
         :param json: The json of this ShowProcessResponse.
         :type json: :class:`huaweicloudsdkcpts.v1.UploadProcessJson`

@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CcmAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCertificate
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateResponse`
@@ -68,6 +63,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -115,6 +113,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCertificateAuthorityObsAgency
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityObsAgencyRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityObsAgencyResponse`
@@ -127,6 +126,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -157,6 +158,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCertificateAuthorityObsAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -190,6 +192,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCertificateByCsr
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateByCsrRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateByCsrResponse`
@@ -202,6 +205,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -234,6 +239,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCertificateByCsrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -248,6 +254,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCertificate
         :type request: :class:`huaweicloudsdkccm.v1.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DeleteCertificateResponse`
@@ -260,6 +267,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -292,6 +301,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -320,6 +330,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportCertificate
         :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateResponse`
@@ -332,6 +343,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -366,6 +379,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -380,6 +394,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCertificate
         :type request: :class:`huaweicloudsdkccm.v1.ListCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateResponse`
@@ -392,6 +407,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -434,6 +451,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -449,6 +467,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCertificateAuthorityObsBucket
         :type request: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityObsBucketRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityObsBucketResponse`
@@ -461,6 +480,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -491,6 +512,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificateAuthorityObsBucketResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -505,6 +527,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ParseCertificateSigningRequest
         :type request: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestResponse`
@@ -517,6 +540,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -549,6 +574,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ParseCertificateSigningRequestResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -564,6 +590,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RevokeCertificate
         :type request: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateResponse`
@@ -576,6 +603,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -610,6 +639,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -624,6 +654,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCertificate
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateResponse`
@@ -636,6 +667,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -668,6 +701,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -683,6 +717,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCertificateAuthorityObsAgency
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityObsAgencyRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityObsAgencyResponse`
@@ -695,6 +730,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -725,6 +762,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificateAuthorityObsAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -739,6 +777,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCertificateQuota
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateQuotaRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateQuotaResponse`
@@ -751,6 +790,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -781,6 +822,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificateQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -798,6 +840,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCertificateAuthority
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityResponse`
@@ -810,6 +853,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -842,6 +887,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCertificateAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -857,6 +903,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCertificateAuthority
         :type request: :class:`huaweicloudsdkccm.v1.DeleteCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DeleteCertificateAuthorityResponse`
@@ -869,6 +916,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -903,6 +952,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCertificateAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -918,6 +968,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisableCertificateAuthority
         :type request: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityResponse`
@@ -930,6 +981,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -962,6 +1015,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableCertificateAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -977,6 +1031,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableCertificateAuthority
         :type request: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityResponse`
@@ -989,6 +1044,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1021,6 +1078,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableCertificateAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1036,6 +1094,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportCertificateAuthorityCertificate
         :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCertificateResponse`
@@ -1048,6 +1107,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1080,6 +1141,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportCertificateAuthorityCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1095,6 +1157,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportCertificateAuthorityCsr
         :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCsrRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCsrResponse`
@@ -1107,6 +1170,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1139,6 +1204,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportCertificateAuthorityCsrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1158,6 +1224,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportCertificateAuthorityCertificate
         :type request: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateResponse`
@@ -1170,6 +1237,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1204,6 +1273,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportCertificateAuthorityCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1219,6 +1289,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for IssueCertificateAuthorityCertificate
         :type request: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateResponse`
@@ -1231,6 +1302,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1265,6 +1338,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='IssueCertificateAuthorityCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1279,6 +1353,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCertificateAuthority
         :type request: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityResponse`
@@ -1291,6 +1366,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1335,6 +1412,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificateAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1350,6 +1428,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreCertificateAuthority
         :type request: :class:`huaweicloudsdkccm.v1.RestoreCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.RestoreCertificateAuthorityResponse`
@@ -1362,6 +1441,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1394,6 +1475,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreCertificateAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1409,6 +1491,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RevokeCertificateAuthority
         :type request: :class:`huaweicloudsdkccm.v1.RevokeCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateAuthorityResponse`
@@ -1421,6 +1504,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1455,6 +1540,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeCertificateAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1469,6 +1555,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCertificateAuthority
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityResponse`
@@ -1481,6 +1568,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1513,6 +1602,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificateAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1527,6 +1617,7 @@ class CcmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCertificateAuthorityQuota
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityQuotaRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityQuotaResponse`
@@ -1539,6 +1630,8 @@ class CcmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1569,6 +1662,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificateAuthorityQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1576,7 +1670,7 @@ class CcmAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1587,9 +1681,10 @@ class CcmAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1606,6 +1701,7 @@ class CcmAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

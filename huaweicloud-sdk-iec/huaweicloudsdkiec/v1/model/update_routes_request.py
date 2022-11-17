@@ -17,7 +17,6 @@ class UpdateRoutesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateRoutesRequest:
     def body(self):
         """Gets the body of this UpdateRoutesRequest.
 
-
         :return: The body of this UpdateRoutesRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateRoutesRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateRoutesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateRoutesRequest.
-
 
         :param body: The body of this UpdateRoutesRequest.
         :type body: :class:`huaweicloudsdkiec.v1.UpdateRoutesRequestBody`

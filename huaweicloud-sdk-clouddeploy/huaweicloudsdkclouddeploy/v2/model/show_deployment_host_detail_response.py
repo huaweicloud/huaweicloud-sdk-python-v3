@@ -17,7 +17,6 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -364,7 +363,6 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
     def authorization(self):
         """Gets the authorization of this ShowDeploymentHostDetailResponse.
 
-
         :return: The authorization of this ShowDeploymentHostDetailResponse.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
         """
@@ -373,7 +371,6 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
     @authorization.setter
     def authorization(self, authorization):
         """Sets the authorization of this ShowDeploymentHostDetailResponse.
-
 
         :param authorization: The authorization of this ShowDeploymentHostDetailResponse.
         :type authorization: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
@@ -428,7 +425,6 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
     def proxy_host(self):
         """Gets the proxy_host of this ShowDeploymentHostDetailResponse.
 
-
         :return: The proxy_host of this ShowDeploymentHostDetailResponse.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostDetail`
         """
@@ -437,7 +433,6 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
     @proxy_host.setter
     def proxy_host(self, proxy_host):
         """Sets the proxy_host of this ShowDeploymentHostDetailResponse.
-
 
         :param proxy_host: The proxy_host of this ShowDeploymentHostDetailResponse.
         :type proxy_host: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostDetail`
@@ -514,7 +509,6 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
     def permission(self):
         """Gets the permission of this ShowDeploymentHostDetailResponse.
 
-
         :return: The permission of this ShowDeploymentHostDetailResponse.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`
         """
@@ -523,7 +517,6 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
     @permission.setter
     def permission(self, permission):
         """Sets the permission of this ShowDeploymentHostDetailResponse.
-
 
         :param permission: The permission of this ShowDeploymentHostDetailResponse.
         :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`

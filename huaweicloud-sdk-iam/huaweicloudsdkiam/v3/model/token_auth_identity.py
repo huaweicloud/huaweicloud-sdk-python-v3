@@ -17,7 +17,6 @@ class TokenAuthIdentity:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class TokenAuthIdentity:
     def token(self):
         """Gets the token of this TokenAuthIdentity.
 
-
         :return: The token of this TokenAuthIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.IdentityToken`
         """
@@ -93,7 +91,6 @@ class TokenAuthIdentity:
     @token.setter
     def token(self, token):
         """Sets the token of this TokenAuthIdentity.
-
 
         :param token: The token of this TokenAuthIdentity.
         :type token: :class:`huaweicloudsdkiam.v3.IdentityToken`
@@ -104,7 +101,6 @@ class TokenAuthIdentity:
     def policy(self):
         """Gets the policy of this TokenAuthIdentity.
 
-
         :return: The policy of this TokenAuthIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
         """
@@ -113,7 +109,6 @@ class TokenAuthIdentity:
     @policy.setter
     def policy(self, policy):
         """Sets the policy of this TokenAuthIdentity.
-
 
         :param policy: The policy of this TokenAuthIdentity.
         :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`

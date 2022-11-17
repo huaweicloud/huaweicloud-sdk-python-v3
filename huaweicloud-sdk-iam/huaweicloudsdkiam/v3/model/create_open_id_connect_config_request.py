@@ -17,7 +17,6 @@ class CreateOpenIdConnectConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateOpenIdConnectConfigRequest:
     def body(self):
         """Gets the body of this CreateOpenIdConnectConfigRequest.
 
-
         :return: The body of this CreateOpenIdConnectConfigRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateOpenIdConnectConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateOpenIdConnectConfigRequest.
-
 
         :param body: The body of this CreateOpenIdConnectConfigRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigRequestBody`

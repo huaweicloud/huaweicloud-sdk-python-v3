@@ -17,7 +17,6 @@ class UpdateProductResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -36,10 +35,10 @@ class UpdateProductResponse(SdkResponse):
         'version': 'str',
         'created_user': 'CreatedUser',
         'last_updated_user': 'LastUpdatedUser',
-        'authentication': 'Authentication',
         'created_datetime': 'int',
         'app_name': 'str',
-        'data_format': 'int'
+        'data_format': 'int',
+        'status': 'int'
     }
 
     attribute_map = {
@@ -58,13 +57,13 @@ class UpdateProductResponse(SdkResponse):
         'version': 'version',
         'created_user': 'created_user',
         'last_updated_user': 'last_updated_user',
-        'authentication': 'authentication',
         'created_datetime': 'created_datetime',
         'app_name': 'app_name',
-        'data_format': 'data_format'
+        'data_format': 'data_format',
+        'status': 'status'
     }
 
-    def __init__(self, permissions=None, id=None, product_serial=None, app_id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, product_type=None, description=None, protocol_type=None, device_type=None, version=None, created_user=None, last_updated_user=None, authentication=None, created_datetime=None, app_name=None, data_format=None):
+    def __init__(self, permissions=None, id=None, product_serial=None, app_id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, product_type=None, description=None, protocol_type=None, device_type=None, version=None, created_user=None, last_updated_user=None, created_datetime=None, app_name=None, data_format=None, status=None):
         """UpdateProductResponse
 
         The model defined in huaweicloud sdk
@@ -99,14 +98,14 @@ class UpdateProductResponse(SdkResponse):
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
         :param last_updated_user: 
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
-        :param authentication: 
-        :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
         :param created_datetime: 创建时间，timestamp(ms)，使用UTC时区
         :type created_datetime: int
         :param app_name: 应用名称
         :type app_name: str
         :param data_format: data_format 0-JSON 1-USER_DEFINED
         :type data_format: int
+        :param status: 产品状态 0-启用 1-禁用
+        :type status: int
         """
         
         super(UpdateProductResponse, self).__init__()
@@ -126,10 +125,10 @@ class UpdateProductResponse(SdkResponse):
         self._version = None
         self._created_user = None
         self._last_updated_user = None
-        self._authentication = None
         self._created_datetime = None
         self._app_name = None
         self._data_format = None
+        self._status = None
         self.discriminator = None
 
         if permissions is not None:
@@ -162,14 +161,14 @@ class UpdateProductResponse(SdkResponse):
             self.created_user = created_user
         if last_updated_user is not None:
             self.last_updated_user = last_updated_user
-        if authentication is not None:
-            self.authentication = authentication
         if created_datetime is not None:
             self.created_datetime = created_datetime
         if app_name is not None:
             self.app_name = app_name
         if data_format is not None:
             self.data_format = data_format
+        if status is not None:
+            self.status = status
 
     @property
     def permissions(self):
@@ -461,7 +460,6 @@ class UpdateProductResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this UpdateProductResponse.
 
-
         :return: The created_user of this UpdateProductResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -470,7 +468,6 @@ class UpdateProductResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this UpdateProductResponse.
-
 
         :param created_user: The created_user of this UpdateProductResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -481,7 +478,6 @@ class UpdateProductResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this UpdateProductResponse.
 
-
         :return: The last_updated_user of this UpdateProductResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -491,31 +487,10 @@ class UpdateProductResponse(SdkResponse):
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this UpdateProductResponse.
 
-
         :param last_updated_user: The last_updated_user of this UpdateProductResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
         self._last_updated_user = last_updated_user
-
-    @property
-    def authentication(self):
-        """Gets the authentication of this UpdateProductResponse.
-
-
-        :return: The authentication of this UpdateProductResponse.
-        :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
-        """
-        return self._authentication
-
-    @authentication.setter
-    def authentication(self, authentication):
-        """Sets the authentication of this UpdateProductResponse.
-
-
-        :param authentication: The authentication of this UpdateProductResponse.
-        :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
-        """
-        self._authentication = authentication
 
     @property
     def created_datetime(self):
@@ -582,6 +557,28 @@ class UpdateProductResponse(SdkResponse):
         :type data_format: int
         """
         self._data_format = data_format
+
+    @property
+    def status(self):
+        """Gets the status of this UpdateProductResponse.
+
+        产品状态 0-启用 1-禁用
+
+        :return: The status of this UpdateProductResponse.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this UpdateProductResponse.
+
+        产品状态 0-启用 1-禁用
+
+        :param status: The status of this UpdateProductResponse.
+        :type status: int
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

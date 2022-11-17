@@ -17,7 +17,6 @@ class DebugCaseRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class DebugCaseRequest:
     def body(self):
         """Gets the body of this DebugCaseRequest.
 
-
         :return: The body of this DebugCaseRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseRequestBody`
         """
@@ -142,7 +140,6 @@ class DebugCaseRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DebugCaseRequest.
-
 
         :param body: The body of this DebugCaseRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.DebugCaseRequestBody`

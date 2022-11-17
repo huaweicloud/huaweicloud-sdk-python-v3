@@ -17,7 +17,6 @@ class AddFavoriteReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class AddFavoriteReq:
     def template(self):
         """Gets the template of this AddFavoriteReq.
 
-
         :return: The template of this AddFavoriteReq.
         :rtype: :class:`huaweicloudsdkcss.v1.AddFavoriteReqTemplate`
         """
@@ -85,7 +83,6 @@ class AddFavoriteReq:
     @template.setter
     def template(self, template):
         """Sets the template of this AddFavoriteReq.
-
 
         :param template: The template of this AddFavoriteReq.
         :type template: :class:`huaweicloudsdkcss.v1.AddFavoriteReqTemplate`

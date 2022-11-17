@@ -17,7 +17,6 @@ class ShowGetConfDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -143,7 +142,6 @@ class ShowGetConfDetailResponse(SdkResponse):
     def setting(self):
         """Gets the setting of this ShowGetConfDetailResponse.
 
-
         :return: The setting of this ShowGetConfDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.Setting`
         """
@@ -152,7 +150,6 @@ class ShowGetConfDetailResponse(SdkResponse):
     @setting.setter
     def setting(self, setting):
         """Sets the setting of this ShowGetConfDetailResponse.
-
 
         :param setting: The setting of this ShowGetConfDetailResponse.
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`

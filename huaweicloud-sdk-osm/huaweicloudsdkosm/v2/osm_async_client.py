@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class OsmAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckHosts
         :type request: :class:`huaweicloudsdkosm.v2.CheckHostsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CheckHostsResponse`
@@ -68,6 +63,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -108,6 +105,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -122,6 +120,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckNeedVerify
         :type request: :class:`huaweicloudsdkosm.v2.CheckNeedVerifyRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CheckNeedVerifyResponse`
@@ -134,6 +133,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -176,6 +177,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckNeedVerifyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -190,6 +192,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckVerifyCodes
         :type request: :class:`huaweicloudsdkosm.v2.CheckVerifyCodesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CheckVerifyCodesResponse`
@@ -202,6 +205,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -240,6 +245,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckVerifyCodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -254,6 +260,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ConfirmAuthorizations
         :type request: :class:`huaweicloudsdkosm.v2.ConfirmAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ConfirmAuthorizationsResponse`
@@ -266,6 +273,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -306,6 +315,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmAuthorizationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -320,6 +330,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCaseExtendsParam
         :type request: :class:`huaweicloudsdkosm.v2.CreateCaseExtendsParamRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateCaseExtendsParamResponse`
@@ -332,6 +343,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -372,6 +385,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCaseExtendsParamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -386,6 +400,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCaseLabels
         :type request: :class:`huaweicloudsdkosm.v2.CreateCaseLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateCaseLabelsResponse`
@@ -398,6 +413,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -439,6 +456,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCaseLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -453,6 +471,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCases
         :type request: :class:`huaweicloudsdkosm.v2.CreateCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateCasesResponse`
@@ -465,6 +484,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -507,6 +528,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -521,6 +543,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLabels
         :type request: :class:`huaweicloudsdkosm.v2.CreateLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateLabelsResponse`
@@ -533,6 +556,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -571,6 +596,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -585,6 +611,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMessages
         :type request: :class:`huaweicloudsdkosm.v2.CreateMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateMessagesResponse`
@@ -597,6 +624,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -637,6 +666,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -651,6 +681,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePrivileges
         :type request: :class:`huaweicloudsdkosm.v2.CreatePrivilegesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreatePrivilegesResponse`
@@ -663,6 +694,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -701,6 +734,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePrivilegesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -715,6 +749,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRelations
         :type request: :class:`huaweicloudsdkosm.v2.CreateRelationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateRelationsResponse`
@@ -727,6 +762,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -767,6 +804,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRelationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -781,6 +819,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateScores
         :type request: :class:`huaweicloudsdkosm.v2.CreateScoresRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateScoresResponse`
@@ -793,6 +832,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -833,6 +874,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScoresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -847,6 +889,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAccessories
         :type request: :class:`huaweicloudsdkosm.v2.DeleteAccessoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteAccessoriesResponse`
@@ -859,6 +902,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -897,6 +942,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAccessoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -911,6 +957,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCaseLabels
         :type request: :class:`huaweicloudsdkosm.v2.DeleteCaseLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteCaseLabelsResponse`
@@ -923,6 +970,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -964,6 +1013,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCaseLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -978,6 +1028,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteLabels
         :type request: :class:`huaweicloudsdkosm.v2.DeleteLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteLabelsResponse`
@@ -990,6 +1041,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1028,6 +1081,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1042,6 +1096,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRelation
         :type request: :class:`huaweicloudsdkosm.v2.DeleteRelationRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteRelationResponse`
@@ -1054,6 +1109,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1094,6 +1151,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRelationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1108,6 +1166,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadAccessories
         :type request: :class:`huaweicloudsdkosm.v2.DownloadAccessoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DownloadAccessoriesResponse`
@@ -1120,6 +1179,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1160,6 +1221,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadAccessoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1174,6 +1236,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadCases
         :type request: :class:`huaweicloudsdkosm.v2.DownloadCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DownloadCasesResponse`
@@ -1186,6 +1249,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1249,6 +1314,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1263,6 +1329,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadImages
         :type request: :class:`huaweicloudsdkosm.v2.DownloadImagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DownloadImagesResponse`
@@ -1275,6 +1342,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1315,6 +1384,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1329,6 +1399,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAccessoryAccessUrls
         :type request: :class:`huaweicloudsdkosm.v2.ListAccessoryAccessUrlsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAccessoryAccessUrlsResponse`
@@ -1341,6 +1412,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1382,6 +1455,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAccessoryAccessUrlsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1396,6 +1470,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAgencies
         :type request: :class:`huaweicloudsdkosm.v2.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAgenciesResponse`
@@ -1408,6 +1483,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1444,6 +1521,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAgenciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1458,6 +1536,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAreaCodes
         :type request: :class:`huaweicloudsdkosm.v2.ListAreaCodesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAreaCodesResponse`
@@ -1470,6 +1549,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1506,6 +1587,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAreaCodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1520,6 +1602,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAuthorizations
         :type request: :class:`huaweicloudsdkosm.v2.ListAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAuthorizationsResponse`
@@ -1532,6 +1615,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1582,6 +1667,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1596,6 +1682,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCaseCategories
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCategoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCategoriesResponse`
@@ -1608,6 +1695,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1644,6 +1733,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseCategoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1658,6 +1748,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCaseCcEmails
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCcEmailsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCcEmailsResponse`
@@ -1670,6 +1761,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1706,6 +1799,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseCcEmailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1720,6 +1814,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCaseCounts
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCountsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCountsResponse`
@@ -1732,6 +1827,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1770,6 +1867,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseCountsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1784,6 +1882,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCaseLabels
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseLabelsResponse`
@@ -1796,6 +1895,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1834,6 +1935,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1848,6 +1950,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCaseLimits
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseLimitsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseLimitsResponse`
@@ -1860,6 +1963,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1896,6 +2001,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseLimitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1910,6 +2016,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCaseOperateLogs
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseOperateLogsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseOperateLogsResponse`
@@ -1922,6 +2029,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1966,6 +2075,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseOperateLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1980,6 +2090,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCaseQuotas
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseQuotasRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseQuotasResponse`
@@ -1992,6 +2103,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2032,6 +2145,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2046,6 +2160,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCaseTemplates
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseTemplatesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseTemplatesResponse`
@@ -2058,6 +2173,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2096,6 +2213,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2110,6 +2228,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCases
         :type request: :class:`huaweicloudsdkosm.v2.ListCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCasesResponse`
@@ -2122,6 +2241,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2186,6 +2307,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2200,6 +2322,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCustomersRegions
         :type request: :class:`huaweicloudsdkosm.v2.ListCustomersRegionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCustomersRegionsResponse`
@@ -2212,6 +2335,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2248,6 +2373,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomersRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2262,6 +2388,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListExtendsParams
         :type request: :class:`huaweicloudsdkosm.v2.ListExtendsParamsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListExtendsParamsResponse`
@@ -2274,6 +2401,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2316,6 +2445,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListExtendsParamsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2330,6 +2460,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHasVerifiedContacts
         :type request: :class:`huaweicloudsdkosm.v2.ListHasVerifiedContactsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListHasVerifiedContactsResponse`
@@ -2342,6 +2473,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2396,6 +2529,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHasVerifiedContactsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2410,6 +2544,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHistoryOperateLogs
         :type request: :class:`huaweicloudsdkosm.v2.ListHistoryOperateLogsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListHistoryOperateLogsResponse`
@@ -2422,6 +2557,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2472,6 +2609,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHistoryOperateLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2486,6 +2624,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHistorySessions
         :type request: :class:`huaweicloudsdkosm.v2.ListHistorySessionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListHistorySessionsResponse`
@@ -2498,6 +2637,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2544,6 +2685,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHistorySessionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2558,6 +2700,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLabels
         :type request: :class:`huaweicloudsdkosm.v2.ListLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListLabelsResponse`
@@ -2570,6 +2713,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2614,6 +2759,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2628,6 +2774,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMessages
         :type request: :class:`huaweicloudsdkosm.v2.ListMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListMessagesResponse`
@@ -2640,6 +2787,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2684,6 +2833,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2698,6 +2848,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMoreInstantMessages
         :type request: :class:`huaweicloudsdkosm.v2.ListMoreInstantMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListMoreInstantMessagesResponse`
@@ -2710,6 +2861,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2756,6 +2909,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMoreInstantMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2770,6 +2924,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNewInstantMessages
         :type request: :class:`huaweicloudsdkosm.v2.ListNewInstantMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListNewInstantMessagesResponse`
@@ -2782,6 +2937,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2825,6 +2982,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNewInstantMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2839,6 +2997,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPrivileges
         :type request: :class:`huaweicloudsdkosm.v2.ListPrivilegesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListPrivilegesResponse`
@@ -2851,6 +3010,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2889,6 +3050,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPrivilegesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2903,6 +3065,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProblemTypes
         :type request: :class:`huaweicloudsdkosm.v2.ListProblemTypesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListProblemTypesResponse`
@@ -2915,6 +3078,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2953,6 +3118,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProblemTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2967,6 +3133,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProductCategories
         :type request: :class:`huaweicloudsdkosm.v2.ListProductCategoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListProductCategoriesResponse`
@@ -2979,6 +3146,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3017,6 +3186,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductCategoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3031,6 +3201,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRegions
         :type request: :class:`huaweicloudsdkosm.v2.ListRegionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListRegionsResponse`
@@ -3043,6 +3214,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3079,6 +3252,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3093,6 +3267,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRelation
         :type request: :class:`huaweicloudsdkosm.v2.ListRelationRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListRelationResponse`
@@ -3105,6 +3280,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3143,6 +3320,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRelationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3157,6 +3335,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSatisfactionDimensions
         :type request: :class:`huaweicloudsdkosm.v2.ListSatisfactionDimensionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListSatisfactionDimensionsResponse`
@@ -3169,6 +3348,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3205,6 +3386,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSatisfactionDimensionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3219,6 +3401,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSeverities
         :type request: :class:`huaweicloudsdkosm.v2.ListSeveritiesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListSeveritiesResponse`
@@ -3231,6 +3414,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3271,6 +3456,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSeveritiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3285,6 +3471,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSubCustomers
         :type request: :class:`huaweicloudsdkosm.v2.ListSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListSubCustomersResponse`
@@ -3297,6 +3484,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3337,6 +3526,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubCustomersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3351,6 +3541,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTransportHistories
         :type request: :class:`huaweicloudsdkosm.v2.ListTransportHistoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListTransportHistoriesResponse`
@@ -3363,6 +3554,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3413,6 +3606,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTransportHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3427,6 +3621,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUnreadNewInstantMessages
         :type request: :class:`huaweicloudsdkosm.v2.ListUnreadNewInstantMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListUnreadNewInstantMessagesResponse`
@@ -3439,6 +3634,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3480,7 +3677,78 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUnreadNewInstantMessagesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def revoke_message_async(self, request):
+        """撤回留言
+
+        撤回留言
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for RevokeMessage
+        :type request: :class:`huaweicloudsdkosm.v2.RevokeMessageRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.RevokeMessageResponse`
+        """
+        return self.revoke_message_with_http_info(request)
+
+    def revoke_message_with_http_info(self, request):
+        all_params = ['case_id', 'message_id', 'x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
+        if 'message_id' in local_var_params:
+            path_params['message_id'] = local_var_params['message_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/cases/{case_id}/instant-messages/{message_id}/withdraw',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RevokeMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3494,6 +3762,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SendVerifyCodes
         :type request: :class:`huaweicloudsdkosm.v2.SendVerifyCodesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.SendVerifyCodesResponse`
@@ -3506,6 +3775,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3544,6 +3815,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendVerifyCodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3558,6 +3830,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAccessoryLimits
         :type request: :class:`huaweicloudsdkosm.v2.ShowAccessoryLimitsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowAccessoryLimitsResponse`
@@ -3570,6 +3843,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3606,6 +3881,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAccessoryLimitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3620,6 +3896,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAuthorizationDetail
         :type request: :class:`huaweicloudsdkosm.v2.ShowAuthorizationDetailRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowAuthorizationDetailResponse`
@@ -3632,6 +3909,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3672,6 +3951,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuthorizationDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3686,6 +3966,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCaseDetail
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseDetailRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseDetailResponse`
@@ -3698,6 +3979,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3738,6 +4021,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCaseDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3752,6 +4036,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCaseExtendsParam
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseExtendsParamRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseExtendsParamResponse`
@@ -3764,6 +4049,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3804,6 +4091,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCaseExtendsParamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3818,6 +4106,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCaseStatus
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseStatusRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseStatusResponse`
@@ -3830,6 +4119,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3868,6 +4159,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCaseStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3882,6 +4174,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCustomerPrivilegePolicy
         :type request: :class:`huaweicloudsdkosm.v2.ShowCustomerPrivilegePolicyRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCustomerPrivilegePolicyResponse`
@@ -3894,6 +4187,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3930,6 +4225,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCustomerPrivilegePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3944,6 +4240,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLatestPublishedAgreement
         :type request: :class:`huaweicloudsdkosm.v2.ShowLatestPublishedAgreementRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowLatestPublishedAgreementResponse`
@@ -3956,6 +4253,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3994,6 +4293,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLatestPublishedAgreementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4008,6 +4308,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPartnersCasesPrivilege
         :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersCasesPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowPartnersCasesPrivilegeResponse`
@@ -4020,6 +4321,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4056,6 +4359,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPartnersCasesPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4070,6 +4374,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPartnersServiceInfo
         :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersServiceInfoRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowPartnersServiceInfoResponse`
@@ -4082,6 +4387,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4122,6 +4429,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPartnersServiceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4136,6 +4444,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSignedLatestPublishedAgreement
         :type request: :class:`huaweicloudsdkosm.v2.ShowSignedLatestPublishedAgreementRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowSignedLatestPublishedAgreementResponse`
@@ -4148,6 +4457,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4186,6 +4497,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSignedLatestPublishedAgreementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4200,6 +4512,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SignPublishedAgreement
         :type request: :class:`huaweicloudsdkosm.v2.SignPublishedAgreementRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.SignPublishedAgreementResponse`
@@ -4212,6 +4525,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4252,6 +4567,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SignPublishedAgreementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4266,6 +4582,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAuthorizations
         :type request: :class:`huaweicloudsdkosm.v2.UpdateAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateAuthorizationsResponse`
@@ -4278,6 +4595,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4320,6 +4639,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAuthorizationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4334,6 +4654,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCaseContactInfo
         :type request: :class:`huaweicloudsdkosm.v2.UpdateCaseContactInfoRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateCaseContactInfoResponse`
@@ -4346,6 +4667,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4386,6 +4709,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCaseContactInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4400,6 +4724,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCases
         :type request: :class:`huaweicloudsdkosm.v2.UpdateCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateCasesResponse`
@@ -4412,6 +4737,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4454,6 +4781,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4468,6 +4796,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateLabels
         :type request: :class:`huaweicloudsdkosm.v2.UpdateLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateLabelsResponse`
@@ -4480,6 +4809,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4520,6 +4851,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4534,6 +4866,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNewInstantMessagesRead
         :type request: :class:`huaweicloudsdkosm.v2.UpdateNewInstantMessagesReadRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateNewInstantMessagesReadResponse`
@@ -4546,6 +4879,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4586,6 +4921,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNewInstantMessagesReadResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4600,6 +4936,7 @@ class OsmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadJsonAccessories
         :type request: :class:`huaweicloudsdkosm.v2.UploadJsonAccessoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UploadJsonAccessoriesResponse`
@@ -4612,6 +4949,8 @@ class OsmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4650,6 +4989,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadJsonAccessoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4657,7 +4997,7 @@ class OsmAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4668,9 +5008,10 @@ class OsmAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4687,6 +5028,7 @@ class OsmAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

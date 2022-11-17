@@ -17,7 +17,6 @@ class CreateEnvironmentRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class CreateEnvironmentRequestBody:
     def metadata(self):
         """Gets the metadata of this CreateEnvironmentRequestBody.
 
-
         :return: The metadata of this CreateEnvironmentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateEnvironmentRequestBodyMetadata`
         """
@@ -113,7 +111,6 @@ class CreateEnvironmentRequestBody:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateEnvironmentRequestBody.
-
 
         :param metadata: The metadata of this CreateEnvironmentRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateEnvironmentRequestBodyMetadata`

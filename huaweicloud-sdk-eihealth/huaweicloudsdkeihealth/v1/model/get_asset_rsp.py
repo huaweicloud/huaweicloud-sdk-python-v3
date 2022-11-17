@@ -17,7 +17,6 @@ class GetAssetRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -287,7 +286,6 @@ class GetAssetRsp:
     def latest_version(self):
         """Gets the latest_version of this GetAssetRsp.
 
-
         :return: The latest_version of this GetAssetRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.VersionRsp`
         """
@@ -296,7 +294,6 @@ class GetAssetRsp:
     @latest_version.setter
     def latest_version(self, latest_version):
         """Sets the latest_version of this GetAssetRsp.
-
 
         :param latest_version: The latest_version of this GetAssetRsp.
         :type latest_version: :class:`huaweicloudsdkeihealth.v1.VersionRsp`

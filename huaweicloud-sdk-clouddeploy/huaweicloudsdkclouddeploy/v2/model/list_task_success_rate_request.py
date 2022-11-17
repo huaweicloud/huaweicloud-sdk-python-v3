@@ -17,7 +17,6 @@ class ListTaskSuccessRateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListTaskSuccessRateRequest:
     def body(self):
         """Gets the body of this ListTaskSuccessRateRequest.
 
-
         :return: The body of this ListTaskSuccessRateRequest.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.TasksSuccessRateQuery`
         """
@@ -86,7 +84,6 @@ class ListTaskSuccessRateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListTaskSuccessRateRequest.
-
 
         :param body: The body of this ListTaskSuccessRateRequest.
         :type body: :class:`huaweicloudsdkclouddeploy.v2.TasksSuccessRateQuery`

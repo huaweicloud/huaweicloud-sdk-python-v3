@@ -17,7 +17,6 @@ class DeleteVisionActiveCodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class DeleteVisionActiveCodeRequest:
     def body(self):
         """Gets the body of this DeleteVisionActiveCodeRequest.
 
-
         :return: The body of this DeleteVisionActiveCodeRequest.
         :rtype: list[str]
         """
@@ -116,7 +114,6 @@ class DeleteVisionActiveCodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteVisionActiveCodeRequest.
-
 
         :param body: The body of this DeleteVisionActiveCodeRequest.
         :type body: list[str]

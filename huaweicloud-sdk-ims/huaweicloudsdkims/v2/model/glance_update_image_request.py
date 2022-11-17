@@ -17,7 +17,6 @@ class GlanceUpdateImageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class GlanceUpdateImageRequest:
     def body(self):
         """Gets the body of this GlanceUpdateImageRequest.
 
-
         :return: The body of this GlanceUpdateImageRequest.
         :rtype: list[:class:`huaweicloudsdkims.v2.GlanceUpdateImageRequestBody`]
         """
@@ -86,7 +84,6 @@ class GlanceUpdateImageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this GlanceUpdateImageRequest.
-
 
         :param body: The body of this GlanceUpdateImageRequest.
         :type body: list[:class:`huaweicloudsdkims.v2.GlanceUpdateImageRequestBody`]

@@ -17,7 +17,6 @@ class SendCommandRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class SendCommandRequest:
     def body(self):
         """Gets the body of this SendCommandRequest.
 
-
         :return: The body of this SendCommandRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.SendCommandRequestBody`
         """
@@ -114,7 +112,6 @@ class SendCommandRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SendCommandRequest.
-
 
         :param body: The body of this SendCommandRequest.
         :type body: :class:`huaweicloudsdkroma.v2.SendCommandRequestBody`

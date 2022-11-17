@@ -17,7 +17,6 @@ class ThreatIntel:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -336,7 +335,6 @@ class ThreatIntel:
     def properties(self):
         """Gets the properties of this ThreatIntel.
 
-
         :return: The properties of this ThreatIntel.
         :rtype: :class:`huaweicloudsdksa.v1.ThreatIntelProperties`
         """
@@ -345,7 +343,6 @@ class ThreatIntel:
     @properties.setter
     def properties(self, properties):
         """Sets the properties of this ThreatIntel.
-
 
         :param properties: The properties of this ThreatIntel.
         :type properties: :class:`huaweicloudsdksa.v1.ThreatIntelProperties`

@@ -17,7 +17,6 @@ class ImportFileReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ImportFileReq:
     def path(self):
         """Gets the path of this ImportFileReq.
 
-
         :return: The path of this ImportFileReq.
         :rtype: str
         """
@@ -86,7 +84,6 @@ class ImportFileReq:
     @path.setter
     def path(self, path):
         """Sets the path of this ImportFileReq.
-
 
         :param path: The path of this ImportFileReq.
         :type path: str
@@ -119,7 +116,6 @@ class ImportFileReq:
     def same_name_policy(self):
         """Gets the same_name_policy of this ImportFileReq.
 
-
         :return: The same_name_policy of this ImportFileReq.
         :rtype: str
         """
@@ -128,7 +124,6 @@ class ImportFileReq:
     @same_name_policy.setter
     def same_name_policy(self, same_name_policy):
         """Sets the same_name_policy of this ImportFileReq.
-
 
         :param same_name_policy: The same_name_policy of this ImportFileReq.
         :type same_name_policy: str
@@ -161,7 +156,6 @@ class ImportFileReq:
     def execute_user(self):
         """Gets the execute_user of this ImportFileReq.
 
-
         :return: The execute_user of this ImportFileReq.
         :rtype: str
         """
@@ -170,7 +164,6 @@ class ImportFileReq:
     @execute_user.setter
     def execute_user(self, execute_user):
         """Sets the execute_user of this ImportFileReq.
-
 
         :param execute_user: The execute_user of this ImportFileReq.
         :type execute_user: str

@@ -17,7 +17,6 @@ class PublishAppMessageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class PublishAppMessageRequest:
     def body(self):
         """Gets the body of this PublishAppMessageRequest.
 
-
         :return: The body of this PublishAppMessageRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequestBody`
         """
@@ -86,7 +84,6 @@ class PublishAppMessageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this PublishAppMessageRequest.
-
 
         :param body: The body of this PublishAppMessageRequest.
         :type body: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequestBody`

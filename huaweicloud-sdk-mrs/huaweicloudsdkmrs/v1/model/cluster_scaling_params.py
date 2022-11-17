@@ -17,7 +17,6 @@ class ClusterScalingParams:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -278,7 +277,6 @@ class ClusterScalingParams:
     def task_node_info(self):
         """Gets the task_node_info of this ClusterScalingParams.
 
-
         :return: The task_node_info of this ClusterScalingParams.
         :rtype: :class:`huaweicloudsdkmrs.v1.TaskNodeInfo`
         """
@@ -287,7 +285,6 @@ class ClusterScalingParams:
     @task_node_info.setter
     def task_node_info(self, task_node_info):
         """Sets the task_node_info of this ClusterScalingParams.
-
 
         :param task_node_info: The task_node_info of this ClusterScalingParams.
         :type task_node_info: :class:`huaweicloudsdkmrs.v1.TaskNodeInfo`

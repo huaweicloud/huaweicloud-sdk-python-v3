@@ -17,7 +17,6 @@ class CreateServers:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -226,7 +225,6 @@ class CreateServers:
     def metadata(self):
         """Gets the metadata of this CreateServers.
 
-
         :return: The metadata of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.MetaDataInfo`
         """
@@ -235,7 +233,6 @@ class CreateServers:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateServers.
-
 
         :param metadata: The metadata of this CreateServers.
         :type metadata: :class:`huaweicloudsdkbms.v1.MetaDataInfo`
@@ -400,7 +397,6 @@ class CreateServers:
     def publicip(self):
         """Gets the publicip of this CreateServers.
 
-
         :return: The publicip of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.PublicIp`
         """
@@ -409,7 +405,6 @@ class CreateServers:
     @publicip.setter
     def publicip(self, publicip):
         """Sets the publicip of this CreateServers.
-
 
         :param publicip: The publicip of this CreateServers.
         :type publicip: :class:`huaweicloudsdkbms.v1.PublicIp`
@@ -442,7 +437,6 @@ class CreateServers:
     def root_volume(self):
         """Gets the root_volume of this CreateServers.
 
-
         :return: The root_volume of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.RootVolume`
         """
@@ -451,7 +445,6 @@ class CreateServers:
     @root_volume.setter
     def root_volume(self, root_volume):
         """Sets the root_volume of this CreateServers.
-
 
         :param root_volume: The root_volume of this CreateServers.
         :type root_volume: :class:`huaweicloudsdkbms.v1.RootVolume`
@@ -484,7 +477,6 @@ class CreateServers:
     def extendparam(self):
         """Gets the extendparam of this CreateServers.
 
-
         :return: The extendparam of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.ExtendParam`
         """
@@ -493,7 +485,6 @@ class CreateServers:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this CreateServers.
-
 
         :param extendparam: The extendparam of this CreateServers.
         :type extendparam: :class:`huaweicloudsdkbms.v1.ExtendParam`
@@ -504,7 +495,6 @@ class CreateServers:
     def scheduler_hints(self):
         """Gets the scheduler_hints of this CreateServers.
 
-
         :return: The scheduler_hints of this CreateServers.
         :rtype: :class:`huaweicloudsdkbms.v1.CreateSchedulerHints`
         """
@@ -513,7 +503,6 @@ class CreateServers:
     @scheduler_hints.setter
     def scheduler_hints(self, scheduler_hints):
         """Sets the scheduler_hints of this CreateServers.
-
 
         :param scheduler_hints: The scheduler_hints of this CreateServers.
         :type scheduler_hints: :class:`huaweicloudsdkbms.v1.CreateSchedulerHints`

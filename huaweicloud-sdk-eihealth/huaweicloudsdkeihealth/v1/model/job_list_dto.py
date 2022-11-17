@@ -17,7 +17,6 @@ class JobListDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -447,7 +446,6 @@ class JobListDto:
     def tool_info(self):
         """Gets the tool_info of this JobListDto.
 
-
         :return: The tool_info of this JobListDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
         """
@@ -456,7 +454,6 @@ class JobListDto:
     @tool_info.setter
     def tool_info(self, tool_info):
         """Sets the tool_info of this JobListDto.
-
 
         :param tool_info: The tool_info of this JobListDto.
         :type tool_info: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`

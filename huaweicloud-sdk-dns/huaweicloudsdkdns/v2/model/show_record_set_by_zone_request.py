@@ -17,7 +17,6 @@ class ShowRecordSetByZoneRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -132,7 +131,6 @@ class ShowRecordSetByZoneRequest:
     def zone_id(self):
         """Gets the zone_id of this ShowRecordSetByZoneRequest.
 
-
         :return: The zone_id of this ShowRecordSetByZoneRequest.
         :rtype: str
         """
@@ -141,7 +139,6 @@ class ShowRecordSetByZoneRequest:
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this ShowRecordSetByZoneRequest.
-
 
         :param zone_id: The zone_id of this ShowRecordSetByZoneRequest.
         :type zone_id: str

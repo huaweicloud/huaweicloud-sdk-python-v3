@@ -17,7 +17,6 @@ class ServerDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -490,7 +489,6 @@ class ServerDetail:
     def image(self):
         """Gets the image of this ServerDetail.
 
-
         :return: The image of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerImage`
         """
@@ -499,7 +497,6 @@ class ServerDetail:
     @image.setter
     def image(self, image):
         """Sets the image of this ServerDetail.
-
 
         :param image: The image of this ServerDetail.
         :type image: :class:`huaweicloudsdkecs.v2.ServerImage`
@@ -598,7 +595,6 @@ class ServerDetail:
     def flavor(self):
         """Gets the flavor of this ServerDetail.
 
-
         :return: The flavor of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerFlavor`
         """
@@ -607,7 +603,6 @@ class ServerDetail:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this ServerDetail.
-
 
         :param flavor: The flavor of this ServerDetail.
         :type flavor: :class:`huaweicloudsdkecs.v2.ServerFlavor`
@@ -838,7 +833,6 @@ class ServerDetail:
     def fault(self):
         """Gets the fault of this ServerDetail.
 
-
         :return: The fault of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerFault`
         """
@@ -847,7 +841,6 @@ class ServerDetail:
     @fault.setter
     def fault(self, fault):
         """Sets the fault of this ServerDetail.
-
 
         :param fault: The fault of this ServerDetail.
         :type fault: :class:`huaweicloudsdkecs.v2.ServerFault`
@@ -1254,7 +1247,6 @@ class ServerDetail:
     def osscheduler_hints(self):
         """Gets the osscheduler_hints of this ServerDetail.
 
-
         :return: The osscheduler_hints of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerSchedulerHints`
         """
@@ -1263,7 +1255,6 @@ class ServerDetail:
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
         """Sets the osscheduler_hints of this ServerDetail.
-
 
         :param osscheduler_hints: The osscheduler_hints of this ServerDetail.
         :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.ServerSchedulerHints`
@@ -1318,7 +1309,6 @@ class ServerDetail:
     def cpu_options(self):
         """Gets the cpu_options of this ServerDetail.
 
-
         :return: The cpu_options of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.CpuOptions`
         """
@@ -1327,7 +1317,6 @@ class ServerDetail:
     @cpu_options.setter
     def cpu_options(self, cpu_options):
         """Sets the cpu_options of this ServerDetail.
-
 
         :param cpu_options: The cpu_options of this ServerDetail.
         :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
@@ -1338,7 +1327,6 @@ class ServerDetail:
     def hypervisor(self):
         """Gets the hypervisor of this ServerDetail.
 
-
         :return: The hypervisor of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.Hypervisor`
         """
@@ -1347,7 +1335,6 @@ class ServerDetail:
     @hypervisor.setter
     def hypervisor(self, hypervisor):
         """Sets the hypervisor of this ServerDetail.
-
 
         :param hypervisor: The hypervisor of this ServerDetail.
         :type hypervisor: :class:`huaweicloudsdkecs.v2.Hypervisor`

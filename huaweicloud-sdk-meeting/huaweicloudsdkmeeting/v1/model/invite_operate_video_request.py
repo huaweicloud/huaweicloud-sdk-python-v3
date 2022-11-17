@@ -17,7 +17,6 @@ class InviteOperateVideoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class InviteOperateVideoRequest:
     def body(self):
         """Gets the body of this InviteOperateVideoRequest.
 
-
         :return: The body of this InviteOperateVideoRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestVideoBody`
         """
@@ -142,7 +140,6 @@ class InviteOperateVideoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this InviteOperateVideoRequest.
-
 
         :param body: The body of this InviteOperateVideoRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestVideoBody`

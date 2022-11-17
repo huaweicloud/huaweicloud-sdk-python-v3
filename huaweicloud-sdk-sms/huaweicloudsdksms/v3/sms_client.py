@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SmsClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class SmsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -106,6 +102,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckNetAclResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -132,6 +129,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +165,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CollectLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -192,6 +192,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +226,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -250,6 +253,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +287,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -308,6 +314,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +348,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -366,6 +375,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -398,6 +409,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -424,6 +436,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -456,6 +470,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -482,6 +497,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -514,6 +531,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -540,6 +558,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -572,6 +592,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -598,6 +619,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -630,6 +653,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -656,6 +680,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -688,6 +714,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -714,6 +741,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -746,6 +775,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -772,6 +802,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -810,6 +842,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListErrorServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -836,6 +869,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -870,6 +905,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMigprojectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -896,6 +932,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -946,6 +984,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -972,6 +1011,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1016,6 +1057,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1042,6 +1084,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1082,6 +1126,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1108,6 +1153,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1140,6 +1187,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1166,6 +1214,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1198,6 +1248,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1224,6 +1275,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1256,6 +1309,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1282,6 +1336,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1314,6 +1370,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1340,6 +1397,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1370,6 +1429,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOverviewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1396,6 +1456,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1428,6 +1490,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPassphraseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1454,6 +1517,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1486,6 +1551,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1512,6 +1578,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1544,6 +1612,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSha256Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1570,6 +1639,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1602,6 +1673,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTargetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1628,6 +1700,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1660,6 +1734,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1686,6 +1761,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1718,6 +1795,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1744,6 +1822,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1776,6 +1856,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowsSpeedLimitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1802,6 +1883,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1834,6 +1917,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnlockTargetEcsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1860,6 +1944,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1894,6 +1980,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCommandResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1920,6 +2007,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1954,6 +2043,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCopyStateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1980,6 +2070,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2012,6 +2104,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDefaultMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2038,6 +2131,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2072,6 +2167,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDiskInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2098,6 +2194,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2132,6 +2230,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2158,6 +2257,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2192,6 +2293,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServerNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2218,6 +2320,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2252,6 +2356,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSpeedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2278,6 +2383,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2312,6 +2419,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2340,6 +2448,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2374,6 +2484,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskSpeedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2400,6 +2511,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2434,6 +2547,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2460,6 +2574,8 @@ class SmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2494,6 +2610,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2501,7 +2618,7 @@ class SmsClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2511,9 +2628,10 @@ class SmsClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2530,6 +2648,7 @@ class SmsClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

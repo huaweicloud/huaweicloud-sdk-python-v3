@@ -17,7 +17,6 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -66,7 +65,6 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
     def allow_user(self):
         """Gets the allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
 
-
         :return: The allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
         :rtype: :class:`huaweicloudsdkiam.v3.AllowUserBody`
         """
@@ -75,7 +73,6 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
     @allow_user.setter
     def allow_user(self, allow_user):
         """Sets the allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
-
 
         :param allow_user: The allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
         :type allow_user: :class:`huaweicloudsdkiam.v3.AllowUserBody`

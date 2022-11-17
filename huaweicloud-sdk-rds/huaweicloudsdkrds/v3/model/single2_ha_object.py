@@ -17,7 +17,6 @@ class Single2HaObject:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class Single2HaObject:
     def ad_domain_info(self):
         """Gets the ad_domain_info of this Single2HaObject.
 
-
         :return: The ad_domain_info of this Single2HaObject.
         :rtype: :class:`huaweicloudsdkrds.v3.ADDomainInfo`
         """
@@ -144,7 +142,6 @@ class Single2HaObject:
     @ad_domain_info.setter
     def ad_domain_info(self, ad_domain_info):
         """Sets the ad_domain_info of this Single2HaObject.
-
 
         :param ad_domain_info: The ad_domain_info of this Single2HaObject.
         :type ad_domain_info: :class:`huaweicloudsdkrds.v3.ADDomainInfo`

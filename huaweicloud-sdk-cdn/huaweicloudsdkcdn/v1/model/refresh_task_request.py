@@ -17,7 +17,6 @@ class RefreshTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class RefreshTaskRequest:
     def refresh_task(self):
         """Gets the refresh_task of this RefreshTaskRequest.
 
-
         :return: The refresh_task of this RefreshTaskRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequestBody`
         """
@@ -57,7 +55,6 @@ class RefreshTaskRequest:
     @refresh_task.setter
     def refresh_task(self, refresh_task):
         """Sets the refresh_task of this RefreshTaskRequest.
-
 
         :param refresh_task: The refresh_task of this RefreshTaskRequest.
         :type refresh_task: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequestBody`

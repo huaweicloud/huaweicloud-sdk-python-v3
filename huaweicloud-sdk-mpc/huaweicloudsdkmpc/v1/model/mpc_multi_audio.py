@@ -17,7 +17,6 @@ class MpcMultiAudio:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class MpcMultiAudio:
     def output(self):
         """Gets the output of this MpcMultiAudio.
 
-
         :return: The output of this MpcMultiAudio.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -72,7 +70,6 @@ class MpcMultiAudio:
     @output.setter
     def output(self, output):
         """Sets the output of this MpcMultiAudio.
-
 
         :param output: The output of this MpcMultiAudio.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

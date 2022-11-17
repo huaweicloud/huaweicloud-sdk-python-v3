@@ -17,7 +17,6 @@ class UpdateIaConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class UpdateIaConfigRequest:
     def body(self):
         """Gets the body of this UpdateIaConfigRequest.
 
-
         :return: The body of this UpdateIaConfigRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequestDTO`
         """
@@ -142,7 +140,6 @@ class UpdateIaConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateIaConfigRequest.
-
 
         :param body: The body of this UpdateIaConfigRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequestDTO`

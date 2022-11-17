@@ -17,7 +17,6 @@ class AppRulesSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -280,7 +279,6 @@ class AppRulesSpec:
     def name_rule(self):
         """Gets the name_rule of this AppRulesSpec.
 
-
         :return: The name_rule of this AppRulesSpec.
         :rtype: :class:`huaweicloudsdkaom.v2.NameRule`
         """
@@ -289,7 +287,6 @@ class AppRulesSpec:
     @name_rule.setter
     def name_rule(self, name_rule):
         """Sets the name_rule of this AppRulesSpec.
-
 
         :param name_rule: The name_rule of this AppRulesSpec.
         :type name_rule: :class:`huaweicloudsdkaom.v2.NameRule`

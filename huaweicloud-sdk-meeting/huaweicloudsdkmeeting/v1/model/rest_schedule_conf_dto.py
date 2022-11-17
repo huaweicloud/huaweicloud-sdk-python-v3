@@ -17,7 +17,6 @@ class RestScheduleConfDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -489,7 +488,6 @@ class RestScheduleConfDTO:
     def conf_config_info(self):
         """Gets the conf_config_info of this RestScheduleConfDTO.
 
-
         :return: The conf_config_info of this RestScheduleConfDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
         """
@@ -498,7 +496,6 @@ class RestScheduleConfDTO:
     @conf_config_info.setter
     def conf_config_info(self, conf_config_info):
         """Sets the conf_config_info of this RestScheduleConfDTO.
-
 
         :param conf_config_info: The conf_config_info of this RestScheduleConfDTO.
         :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
@@ -553,7 +550,6 @@ class RestScheduleConfDTO:
     def cycle_params(self):
         """Gets the cycle_params of this RestScheduleConfDTO.
 
-
         :return: The cycle_params of this RestScheduleConfDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CycleParams`
         """
@@ -562,7 +558,6 @@ class RestScheduleConfDTO:
     @cycle_params.setter
     def cycle_params(self, cycle_params):
         """Sets the cycle_params of this RestScheduleConfDTO.
-
 
         :param cycle_params: The cycle_params of this RestScheduleConfDTO.
         :type cycle_params: :class:`huaweicloudsdkmeeting.v1.CycleParams`

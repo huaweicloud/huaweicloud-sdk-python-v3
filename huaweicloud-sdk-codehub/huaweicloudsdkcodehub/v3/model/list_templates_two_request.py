@@ -17,7 +17,6 @@ class ListTemplatesTwoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListTemplatesTwoRequest:
     def body(self):
         """Gets the body of this ListTemplatesTwoRequest.
 
-
         :return: The body of this ListTemplatesTwoRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO2`
         """
@@ -86,7 +84,6 @@ class ListTemplatesTwoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListTemplatesTwoRequest.
-
 
         :param body: The body of this ListTemplatesTwoRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO2`

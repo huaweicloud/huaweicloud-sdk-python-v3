@@ -17,7 +17,6 @@ class RefererBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class RefererBody:
     def referer(self):
         """Gets the referer of this RefererBody.
 
-
         :return: The referer of this RefererBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.Referer`
         """
@@ -57,7 +55,6 @@ class RefererBody:
     @referer.setter
     def referer(self, referer):
         """Sets the referer of this RefererBody.
-
 
         :param referer: The referer of this RefererBody.
         :type referer: :class:`huaweicloudsdkcdn.v1.Referer`

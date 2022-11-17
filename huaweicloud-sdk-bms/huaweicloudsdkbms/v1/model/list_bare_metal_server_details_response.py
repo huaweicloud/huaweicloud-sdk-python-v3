@@ -17,7 +17,6 @@ class ListBareMetalServerDetailsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListBareMetalServerDetailsResponse(SdkResponse):
     def server(self):
         """Gets the server of this ListBareMetalServerDetailsResponse.
 
-
         :return: The server of this ListBareMetalServerDetailsResponse.
         :rtype: :class:`huaweicloudsdkbms.v1.ServerDetails`
         """
@@ -58,7 +56,6 @@ class ListBareMetalServerDetailsResponse(SdkResponse):
     @server.setter
     def server(self, server):
         """Sets the server of this ListBareMetalServerDetailsResponse.
-
 
         :param server: The server of this ListBareMetalServerDetailsResponse.
         :type server: :class:`huaweicloudsdkbms.v1.ServerDetails`

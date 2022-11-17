@@ -17,7 +17,6 @@ class SearchPictureReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -223,7 +222,6 @@ class SearchPictureReq:
     def box(self):
         """Gets the box of this SearchPictureReq.
 
-
         :return: The box of this SearchPictureReq.
         :rtype: :class:`huaweicloudsdkimagesearch.v1.SearchBoxDetail`
         """
@@ -232,7 +230,6 @@ class SearchPictureReq:
     @box.setter
     def box(self, box):
         """Sets the box of this SearchPictureReq.
-
 
         :param box: The box of this SearchPictureReq.
         :type box: :class:`huaweicloudsdkimagesearch.v1.SearchBoxDetail`

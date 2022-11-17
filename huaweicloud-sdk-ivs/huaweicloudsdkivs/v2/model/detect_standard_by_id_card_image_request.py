@@ -17,7 +17,6 @@ class DetectStandardByIdCardImageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DetectStandardByIdCardImageRequest:
     def body(self):
         """Gets the body of this DetectStandardByIdCardImageRequest.
 
-
         :return: The body of this DetectStandardByIdCardImageRequest.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageRequestBody`
         """
@@ -58,7 +56,6 @@ class DetectStandardByIdCardImageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DetectStandardByIdCardImageRequest.
-
 
         :param body: The body of this DetectStandardByIdCardImageRequest.
         :type body: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageRequestBody`

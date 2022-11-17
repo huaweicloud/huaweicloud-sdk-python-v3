@@ -17,7 +17,6 @@ class CreateCnfReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class CreateCnfReq:
     def setting(self):
         """Gets the setting of this CreateCnfReq.
 
-
         :return: The setting of this CreateCnfReq.
         :rtype: :class:`huaweicloudsdkcss.v1.Setting`
         """
@@ -113,7 +111,6 @@ class CreateCnfReq:
     @setting.setter
     def setting(self, setting):
         """Sets the setting of this CreateCnfReq.
-
 
         :param setting: The setting of this CreateCnfReq.
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`

@@ -17,7 +17,6 @@ class SearchApplicationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SearchApplicationRequest:
     def body(self):
         """Gets the body of this SearchApplicationRequest.
 
-
         :return: The body of this SearchApplicationRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.AppSearchParam`
         """
@@ -86,7 +84,6 @@ class SearchApplicationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SearchApplicationRequest.
-
 
         :param body: The body of this SearchApplicationRequest.
         :type body: :class:`huaweicloudsdkapm.v1.AppSearchParam`

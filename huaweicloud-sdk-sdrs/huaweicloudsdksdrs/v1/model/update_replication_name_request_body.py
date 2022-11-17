@@ -17,7 +17,6 @@ class UpdateReplicationNameRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateReplicationNameRequestBody:
     def replication(self):
         """Gets the replication of this UpdateReplicationNameRequestBody.
 
-
         :return: The replication of this UpdateReplicationNameRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequestParams`
         """
@@ -57,7 +55,6 @@ class UpdateReplicationNameRequestBody:
     @replication.setter
     def replication(self, replication):
         """Sets the replication of this UpdateReplicationNameRequestBody.
-
 
         :param replication: The replication of this UpdateReplicationNameRequestBody.
         :type replication: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequestParams`

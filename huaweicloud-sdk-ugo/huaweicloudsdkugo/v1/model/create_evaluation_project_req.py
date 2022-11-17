@@ -17,7 +17,6 @@ class CreateEvaluationProjectReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -88,7 +87,6 @@ class CreateEvaluationProjectReq:
     def source_db_info(self):
         """Gets the source_db_info of this CreateEvaluationProjectReq.
 
-
         :return: The source_db_info of this CreateEvaluationProjectReq.
         :rtype: :class:`huaweicloudsdkugo.v1.SourceDBInfo`
         """
@@ -97,7 +95,6 @@ class CreateEvaluationProjectReq:
     @source_db_info.setter
     def source_db_info(self, source_db_info):
         """Sets the source_db_info of this CreateEvaluationProjectReq.
-
 
         :param source_db_info: The source_db_info of this CreateEvaluationProjectReq.
         :type source_db_info: :class:`huaweicloudsdkugo.v1.SourceDBInfo`
@@ -108,7 +105,6 @@ class CreateEvaluationProjectReq:
     def schemas_info(self):
         """Gets the schemas_info of this CreateEvaluationProjectReq.
 
-
         :return: The schemas_info of this CreateEvaluationProjectReq.
         :rtype: :class:`huaweicloudsdkugo.v1.SchemaInfo`
         """
@@ -117,7 +113,6 @@ class CreateEvaluationProjectReq:
     @schemas_info.setter
     def schemas_info(self, schemas_info):
         """Sets the schemas_info of this CreateEvaluationProjectReq.
-
 
         :param schemas_info: The schemas_info of this CreateEvaluationProjectReq.
         :type schemas_info: :class:`huaweicloudsdkugo.v1.SchemaInfo`
@@ -128,7 +123,6 @@ class CreateEvaluationProjectReq:
     def objects_type_info(self):
         """Gets the objects_type_info of this CreateEvaluationProjectReq.
 
-
         :return: The objects_type_info of this CreateEvaluationProjectReq.
         :rtype: :class:`huaweicloudsdkugo.v1.ObjectTypeInfo`
         """
@@ -137,7 +131,6 @@ class CreateEvaluationProjectReq:
     @objects_type_info.setter
     def objects_type_info(self, objects_type_info):
         """Sets the objects_type_info of this CreateEvaluationProjectReq.
-
 
         :param objects_type_info: The objects_type_info of this CreateEvaluationProjectReq.
         :type objects_type_info: :class:`huaweicloudsdkugo.v1.ObjectTypeInfo`

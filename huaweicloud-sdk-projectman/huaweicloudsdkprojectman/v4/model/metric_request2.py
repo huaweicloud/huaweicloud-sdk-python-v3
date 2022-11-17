@@ -17,7 +17,6 @@ class MetricRequest2:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class MetricRequest2:
     def dividend(self):
         """Gets the dividend of this MetricRequest2.
 
-
         :return: The dividend of this MetricRequest2.
         :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest2Dividend`
         """
@@ -123,7 +121,6 @@ class MetricRequest2:
     @dividend.setter
     def dividend(self, dividend):
         """Sets the dividend of this MetricRequest2.
-
 
         :param dividend: The dividend of this MetricRequest2.
         :type dividend: :class:`huaweicloudsdkprojectman.v4.MetricRequest2Dividend`

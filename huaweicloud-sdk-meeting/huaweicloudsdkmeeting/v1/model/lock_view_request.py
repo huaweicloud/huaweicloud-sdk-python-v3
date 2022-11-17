@@ -17,7 +17,6 @@ class LockViewRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class LockViewRequest:
     def body(self):
         """Gets the body of this LockViewRequest.
 
-
         :return: The body of this LockViewRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestLockSiteViewReqBody`
         """
@@ -142,7 +140,6 @@ class LockViewRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this LockViewRequest.
-
 
         :param body: The body of this LockViewRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestLockSiteViewReqBody`

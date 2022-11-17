@@ -17,7 +17,6 @@ class CancelCustomerOrderRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CancelCustomerOrderRequest:
     def body(self):
         """Gets the body of this CancelCustomerOrderRequest.
 
-
         :return: The body of this CancelCustomerOrderRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.CancelCustomerOrderReq`
         """
@@ -58,7 +56,6 @@ class CancelCustomerOrderRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CancelCustomerOrderRequest.
-
 
         :param body: The body of this CancelCustomerOrderRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.CancelCustomerOrderReq`

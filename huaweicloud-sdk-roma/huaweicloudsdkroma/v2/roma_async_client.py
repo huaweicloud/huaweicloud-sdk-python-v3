@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RomaAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddSubsetsToGateway
         :type request: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayResponse`
@@ -68,6 +63,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddSubsetsToGatewayResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateAppsForAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.AssociateAppsForAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateAppsForAppQuotaResponse`
@@ -130,6 +129,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateAppsForAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -181,6 +183,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateCertificateV2
         :type request: :class:`huaweicloudsdkroma.v2.AssociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateCertificateV2Response`
@@ -193,6 +196,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -231,6 +236,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -245,6 +251,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateDomainV2
         :type request: :class:`huaweicloudsdkroma.v2.AssociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateDomainV2Response`
@@ -257,6 +264,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -293,6 +302,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -311,6 +321,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.AssociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateSignatureKeyV2Response`
@@ -323,6 +334,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -357,6 +370,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -371,6 +385,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddDeviceToGroup
         :type request: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupResponse`
@@ -383,6 +398,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -419,6 +436,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddDeviceToGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -433,6 +451,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteDevices
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesResponse`
@@ -445,6 +464,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -479,6 +500,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -493,6 +515,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicResponse`
@@ -505,6 +528,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -539,6 +564,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -553,6 +579,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteRules
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesResponse`
@@ -565,6 +592,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -599,6 +628,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -613,6 +643,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchFreezeDevices
         :type request: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesResponse`
@@ -625,6 +656,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -659,6 +692,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchFreezeDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -673,6 +707,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchStartOrStopTasks
         :type request: :class:`huaweicloudsdkroma.v2.BatchStartOrStopTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchStartOrStopTasksResponse`
@@ -685,6 +720,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -719,6 +756,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStartOrStopTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -733,6 +771,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckLivedataApisV2
         :type request: :class:`huaweicloudsdkroma.v2.CheckLivedataApisV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckLivedataApisV2Response`
@@ -745,6 +784,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -779,6 +820,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckLivedataApisV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -793,6 +835,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CountDevices
         :type request: :class:`huaweicloudsdkroma.v2.CountDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CountDevicesResponse`
@@ -805,6 +848,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -837,6 +882,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CountDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -851,6 +897,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CountTasks
         :type request: :class:`huaweicloudsdkroma.v2.CountTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CountTasksResponse`
@@ -863,6 +910,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -895,6 +944,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CountTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -909,6 +959,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAppCodeAutoV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeAutoV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppCodeAutoV2Response`
@@ -921,6 +972,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -955,6 +1008,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppCodeAutoV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -969,6 +1023,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAppCodeV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppCodeV2Response`
@@ -981,6 +1036,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1017,6 +1074,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1031,6 +1089,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAppConfigV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppConfigV2Response`
@@ -1043,6 +1102,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1079,6 +1140,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppConfigV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1093,6 +1155,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppQuotaResponse`
@@ -1105,6 +1168,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1139,6 +1204,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1153,6 +1219,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCommand
         :type request: :class:`huaweicloudsdkroma.v2.CreateCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommandResponse`
@@ -1165,6 +1232,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1201,6 +1270,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1215,6 +1285,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCommonTask
         :type request: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommonTaskResponse`
@@ -1227,6 +1298,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1261,6 +1334,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCommonTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1275,6 +1349,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCustomAuthorizerV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCustomAuthorizerV2Response`
@@ -1287,6 +1362,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1321,6 +1398,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1335,6 +1413,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatasourceInfo
         :type request: :class:`huaweicloudsdkroma.v2.CreateDatasourceInfoRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDatasourceInfoResponse`
@@ -1347,6 +1426,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1381,6 +1462,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatasourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1395,6 +1477,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDestination
         :type request: :class:`huaweicloudsdkroma.v2.CreateDestinationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDestinationResponse`
@@ -1407,6 +1490,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1443,6 +1528,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDestinationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1457,6 +1543,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDevice
         :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceResponse`
@@ -1469,6 +1556,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1503,6 +1592,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1517,6 +1607,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDeviceGroup
         :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupResponse`
@@ -1529,6 +1620,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1563,6 +1656,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1577,6 +1671,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDispatches
         :type request: :class:`huaweicloudsdkroma.v2.CreateDispatchesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDispatchesResponse`
@@ -1589,6 +1684,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1625,6 +1722,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDispatchesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1643,6 +1741,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEnvironmentV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateEnvironmentV2Response`
@@ -1655,6 +1754,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1689,6 +1790,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnvironmentV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1711,6 +1813,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateEnvironmentVariableV2Response`
@@ -1723,6 +1826,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1757,6 +1862,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1773,6 +1879,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateFeatureV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateFeatureV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateFeatureV2Response`
@@ -1785,6 +1892,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1819,6 +1928,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFeatureV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1833,6 +1943,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLiveDataApiScriptV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiScriptV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiScriptV2Response`
@@ -1845,6 +1956,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1881,6 +1994,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLiveDataApiScriptV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1895,6 +2009,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiV2Response`
@@ -1907,6 +2022,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1941,6 +2058,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1955,6 +2073,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicResponse`
@@ -1967,6 +2086,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2001,6 +2122,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2015,6 +2137,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMultiTaskMappings
         :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTaskMappingsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMultiTaskMappingsResponse`
@@ -2027,6 +2150,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2063,6 +2188,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMultiTaskMappingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2077,6 +2203,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMultiTasks
         :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMultiTasksResponse`
@@ -2089,6 +2216,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2123,6 +2252,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMultiTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2137,6 +2267,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNotification
         :type request: :class:`huaweicloudsdkroma.v2.CreateNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateNotificationResponse`
@@ -2149,6 +2280,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2183,6 +2316,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2197,6 +2331,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProduct
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductResponse`
@@ -2209,6 +2344,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2243,6 +2380,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2257,6 +2395,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProductTemplate
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTemplateResponse`
@@ -2269,6 +2408,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2303,6 +2444,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProductTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2317,6 +2459,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProductTopic
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTopicResponse`
@@ -2329,6 +2472,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2365,6 +2510,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProductTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2379,6 +2525,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProperty
         :type request: :class:`huaweicloudsdkroma.v2.CreatePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreatePropertyResponse`
@@ -2391,6 +2538,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2427,6 +2576,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2441,6 +2591,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRequestProperty
         :type request: :class:`huaweicloudsdkroma.v2.CreateRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRequestPropertyResponse`
@@ -2453,6 +2604,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2491,6 +2644,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRequestPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2505,6 +2659,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRequestThrottlingPolicyV2Response`
@@ -2517,6 +2672,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2551,6 +2708,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2565,6 +2723,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResponseProperty
         :type request: :class:`huaweicloudsdkroma.v2.CreateResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateResponsePropertyResponse`
@@ -2577,6 +2736,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2615,6 +2776,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResponsePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2629,6 +2791,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRule
         :type request: :class:`huaweicloudsdkroma.v2.CreateRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRuleResponse`
@@ -2641,6 +2804,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2675,6 +2840,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2689,6 +2855,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateService
         :type request: :class:`huaweicloudsdkroma.v2.CreateServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateServiceResponse`
@@ -2701,6 +2868,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2735,6 +2904,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2753,6 +2923,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSignatureKeyV2Response`
@@ -2765,6 +2936,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2799,6 +2972,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2813,6 +2987,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSource
         :type request: :class:`huaweicloudsdkroma.v2.CreateSourceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSourceResponse`
@@ -2825,6 +3000,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2861,6 +3038,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2879,6 +3057,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSpecialThrottlingConfigurationV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSpecialThrottlingConfigurationV2Response`
@@ -2891,6 +3070,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2927,6 +3108,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSpecialThrottlingConfigurationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2941,6 +3123,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DebugLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.DebugLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DebugLiveDataApiV2Response`
@@ -2953,6 +3136,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2989,6 +3174,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DebugLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3003,6 +3189,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DebugRule
         :type request: :class:`huaweicloudsdkroma.v2.DebugRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DebugRuleResponse`
@@ -3015,6 +3202,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3049,6 +3238,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DebugRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3063,6 +3253,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAppAcl
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppAclRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppAclResponse`
@@ -3075,6 +3266,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3109,6 +3302,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppAclResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3123,6 +3317,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAppCodeV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppCodeV2Response`
@@ -3135,6 +3330,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3171,6 +3368,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3185,6 +3383,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAppConfigV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppConfigV2Response`
@@ -3197,6 +3396,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3233,6 +3434,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppConfigV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3247,6 +3449,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppQuotaResponse`
@@ -3259,6 +3462,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3293,6 +3498,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3307,6 +3513,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCommand
         :type request: :class:`huaweicloudsdkroma.v2.DeleteCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteCommandResponse`
@@ -3319,6 +3526,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3355,6 +3564,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3369,6 +3579,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCustomAuthorizerV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteCustomAuthorizerV2Response`
@@ -3381,6 +3592,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3415,6 +3628,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3429,6 +3643,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDatasourceInfoById
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDatasourceInfoByIdRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDatasourceInfoByIdResponse`
@@ -3441,6 +3656,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3475,6 +3692,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatasourceInfoByIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3489,6 +3707,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDestination
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDestinationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDestinationResponse`
@@ -3501,6 +3720,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3537,6 +3758,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDestinationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3551,6 +3773,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDevice
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceResponse`
@@ -3563,6 +3786,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3597,6 +3822,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3611,6 +3837,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeviceFromGroup
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceFromGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceFromGroupResponse`
@@ -3623,6 +3850,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3659,6 +3888,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceFromGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3673,6 +3903,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeviceGroup
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceGroupResponse`
@@ -3685,6 +3916,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3719,6 +3952,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3734,6 +3968,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEnvironmentV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentV2Response`
@@ -3746,6 +3981,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3780,6 +4017,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvironmentV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3794,6 +4032,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentVariableV2Response`
@@ -3806,6 +4045,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3840,6 +4081,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3854,6 +4096,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteLiveDataApiV2Response`
@@ -3866,6 +4109,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3900,6 +4145,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3914,6 +4160,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteMqsInstanceTopicResponse`
@@ -3926,6 +4173,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3960,6 +4209,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3974,6 +4224,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMultiTaskMapping
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMultiTaskMappingRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteMultiTaskMappingResponse`
@@ -3986,6 +4237,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4022,6 +4275,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMultiTaskMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4036,6 +4290,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNotification
         :type request: :class:`huaweicloudsdkroma.v2.DeleteNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteNotificationResponse`
@@ -4048,6 +4303,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4082,6 +4339,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4096,6 +4354,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProduct
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductResponse`
@@ -4108,6 +4367,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4142,6 +4403,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4156,6 +4418,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProductTemplate
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductTemplateResponse`
@@ -4168,6 +4431,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4202,6 +4467,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProductTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4216,6 +4482,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProductTopic
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductTopicResponse`
@@ -4228,6 +4495,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4264,6 +4533,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProductTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4278,6 +4548,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProperty
         :type request: :class:`huaweicloudsdkroma.v2.DeletePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeletePropertyResponse`
@@ -4290,6 +4561,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4326,6 +4599,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4340,6 +4614,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRequestProperty
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRequestPropertyResponse`
@@ -4352,6 +4627,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4390,6 +4667,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRequestPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4404,6 +4682,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRequestThrottlingPolicyV2Response`
@@ -4416,6 +4695,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4450,6 +4731,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4464,6 +4746,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResponseProperty
         :type request: :class:`huaweicloudsdkroma.v2.DeleteResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteResponsePropertyResponse`
@@ -4476,6 +4759,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4514,6 +4799,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResponsePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4528,6 +4814,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRule
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRuleResponse`
@@ -4540,6 +4827,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4574,6 +4863,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4588,6 +4878,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteService
         :type request: :class:`huaweicloudsdkroma.v2.DeleteServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteServiceResponse`
@@ -4600,6 +4891,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4634,6 +4927,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4648,6 +4942,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteSignatureKeyV2Response`
@@ -4660,6 +4955,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4694,6 +4991,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4708,6 +5006,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSource
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSourceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteSourceResponse`
@@ -4720,6 +5019,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4756,6 +5057,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4770,6 +5072,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSpecialThrottlingConfigurationV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteSpecialThrottlingConfigurationV2Response`
@@ -4782,6 +5085,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4818,6 +5123,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSpecialThrottlingConfigurationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4832,6 +5138,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTask
         :type request: :class:`huaweicloudsdkroma.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteTaskResponse`
@@ -4844,6 +5151,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4878,6 +5187,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4892,6 +5202,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateAppQuotaWithApp
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateAppQuotaWithAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateAppQuotaWithAppResponse`
@@ -4904,6 +5215,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4940,6 +5253,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateAppQuotaWithAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4954,6 +5268,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateCertificateV2
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateCertificateV2Response`
@@ -4966,6 +5281,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5004,6 +5321,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5018,6 +5336,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateDomainV2
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateDomainV2Response`
@@ -5030,6 +5349,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5066,6 +5387,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5080,6 +5402,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateSignatureKeyV2Response`
@@ -5092,6 +5415,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5126,6 +5451,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5140,6 +5466,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadProducts
         :type request: :class:`huaweicloudsdkroma.v2.DownloadProductsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DownloadProductsResponse`
@@ -5152,6 +5479,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5187,6 +5516,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5201,6 +5531,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.ExportMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportMqsInstanceTopicResponse`
@@ -5213,6 +5544,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5247,6 +5580,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5261,6 +5595,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicResponse`
@@ -5273,6 +5608,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5313,6 +5650,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5327,6 +5665,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for InstallMultiTasks
         :type request: :class:`huaweicloudsdkroma.v2.InstallMultiTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.InstallMultiTasksResponse`
@@ -5339,6 +5678,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5373,6 +5714,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InstallMultiTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5387,6 +5729,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApisBindedToSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToSignatureKeyV2Response`
@@ -5399,6 +5742,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5445,6 +5790,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5459,6 +5805,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApisNotBoundWithSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisNotBoundWithSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisNotBoundWithSignatureKeyV2Response`
@@ -5471,6 +5818,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5517,6 +5866,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisNotBoundWithSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5531,6 +5881,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAppCodesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAppCodesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppCodesV2Response`
@@ -5543,6 +5894,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5581,6 +5934,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppCodesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5595,6 +5949,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAppConfigsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAppConfigsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppConfigsV2Response`
@@ -5607,6 +5962,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5649,6 +6006,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppConfigsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5663,6 +6021,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAppQuotaBindableApps
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBindableAppsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotaBindableAppsResponse`
@@ -5675,6 +6034,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5715,6 +6076,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppQuotaBindableAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5729,6 +6091,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAppQuotaBoundApps
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBoundAppsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotaBoundAppsResponse`
@@ -5741,6 +6104,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5781,6 +6146,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppQuotaBoundAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5795,6 +6161,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAppQuotas
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotasRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotasResponse`
@@ -5807,6 +6174,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5845,6 +6214,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5859,6 +6229,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAppsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAppsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppsV2Response`
@@ -5871,6 +6242,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5917,6 +6290,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5931,6 +6305,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCommands
         :type request: :class:`huaweicloudsdkroma.v2.ListCommandsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListCommandsResponse`
@@ -5943,6 +6318,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5985,6 +6362,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCommandsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5999,6 +6377,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCustomAuthorizersV2
         :type request: :class:`huaweicloudsdkroma.v2.ListCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListCustomAuthorizersV2Response`
@@ -6011,6 +6390,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6053,6 +6434,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomAuthorizersV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6067,6 +6449,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatasourceColumns
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceColumnsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourceColumnsResponse`
@@ -6079,6 +6462,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6119,6 +6504,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatasourceColumnsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6133,6 +6519,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatasourceTables
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceTablesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourceTablesResponse`
@@ -6145,6 +6532,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6187,6 +6576,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatasourceTablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6201,6 +6591,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatasources
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourcesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourcesResponse`
@@ -6213,6 +6604,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6261,6 +6654,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatasourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6275,6 +6669,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDestinations
         :type request: :class:`huaweicloudsdkroma.v2.ListDestinationsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDestinationsResponse`
@@ -6287,6 +6682,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6325,6 +6722,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDestinationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6339,6 +6737,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDevices
         :type request: :class:`huaweicloudsdkroma.v2.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDevicesResponse`
@@ -6351,6 +6750,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6409,6 +6810,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6423,6 +6825,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDevicesInProduct
         :type request: :class:`huaweicloudsdkroma.v2.ListDevicesInProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDevicesInProductResponse`
@@ -6435,6 +6838,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6469,6 +6874,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesInProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6483,6 +6889,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnvironmentVariablesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentVariablesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListEnvironmentVariablesV2Response`
@@ -6495,6 +6902,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6539,6 +6948,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentVariablesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6553,6 +6963,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnvironmentsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListEnvironmentsV2Response`
@@ -6565,6 +6976,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6603,6 +7016,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6619,6 +7033,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFeaturesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListFeaturesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListFeaturesV2Response`
@@ -6631,6 +7046,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6667,6 +7084,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFeaturesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6682,6 +7100,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLatelyApiStatisticsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLatelyApiStatisticsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLatelyApiStatisticsV2Response`
@@ -6694,6 +7113,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6730,6 +7151,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLatelyApiStatisticsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6744,6 +7166,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLiveDataApiDeploymentHistoryV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiDeploymentHistoryV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiDeploymentHistoryV2Response`
@@ -6756,6 +7179,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6790,6 +7215,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataApiDeploymentHistoryV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6804,6 +7230,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLiveDataApiTestHistoryV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiTestHistoryV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiTestHistoryV2Response`
@@ -6816,6 +7243,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6854,6 +7283,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataApiTestHistoryV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6868,6 +7298,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiV2Response`
@@ -6880,6 +7311,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6928,6 +7361,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6942,6 +7376,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLiveDataDataSourcesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataDataSourcesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataDataSourcesV2Response`
@@ -6954,6 +7389,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6994,6 +7431,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataDataSourcesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7008,6 +7446,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLiveDataQuotaV2
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataQuotaV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataQuotaV2Response`
@@ -7020,6 +7459,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7052,6 +7493,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataQuotaV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7066,6 +7508,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMonitorInfos
         :type request: :class:`huaweicloudsdkroma.v2.ListMonitorInfosRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMonitorInfosResponse`
@@ -7078,6 +7521,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7118,6 +7563,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMonitorInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7132,6 +7578,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMonitorLog
         :type request: :class:`huaweicloudsdkroma.v2.ListMonitorLogRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMonitorLogResponse`
@@ -7144,6 +7591,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7186,6 +7635,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMonitorLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7200,6 +7650,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMqsInstanceTopics
         :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceTopicsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMqsInstanceTopicsResponse`
@@ -7212,6 +7663,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7254,6 +7707,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMqsInstanceTopicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7268,6 +7722,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNotification
         :type request: :class:`huaweicloudsdkroma.v2.ListNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListNotificationResponse`
@@ -7280,6 +7735,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7318,6 +7775,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7332,6 +7790,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProductTemplates
         :type request: :class:`huaweicloudsdkroma.v2.ListProductTemplatesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProductTemplatesResponse`
@@ -7344,6 +7803,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7392,6 +7853,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7406,6 +7868,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProductTopics
         :type request: :class:`huaweicloudsdkroma.v2.ListProductTopicsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProductTopicsResponse`
@@ -7418,6 +7881,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7456,6 +7921,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductTopicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7470,6 +7936,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProducts
         :type request: :class:`huaweicloudsdkroma.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProductsResponse`
@@ -7482,6 +7949,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7546,6 +8015,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7560,6 +8030,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectCofigsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListProjectCofigsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProjectCofigsV2Response`
@@ -7572,6 +8043,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7608,6 +8081,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectCofigsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7622,6 +8096,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProperties
         :type request: :class:`huaweicloudsdkroma.v2.ListPropertiesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListPropertiesResponse`
@@ -7634,6 +8109,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7676,6 +8153,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7690,6 +8168,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRequestProperties
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestPropertiesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRequestPropertiesResponse`
@@ -7702,6 +8181,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7746,6 +8227,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestPropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7760,6 +8242,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPolicyV2Response`
@@ -7772,6 +8255,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7814,6 +8299,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7828,6 +8314,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResponseProperties
         :type request: :class:`huaweicloudsdkroma.v2.ListResponsePropertiesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListResponsePropertiesResponse`
@@ -7840,6 +8327,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7884,6 +8373,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResponsePropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7898,6 +8388,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRules
         :type request: :class:`huaweicloudsdkroma.v2.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRulesResponse`
@@ -7910,6 +8401,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7950,6 +8443,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7964,6 +8458,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServices
         :type request: :class:`huaweicloudsdkroma.v2.ListServicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListServicesResponse`
@@ -7976,6 +8471,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8026,6 +8523,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8040,6 +8538,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListShadows
         :type request: :class:`huaweicloudsdkroma.v2.ListShadowsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListShadowsResponse`
@@ -8052,6 +8551,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8086,6 +8587,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListShadowsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8100,6 +8602,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSignatureKeysBindedToApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSignatureKeysBindedToApiV2Response`
@@ -8112,6 +8615,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8156,6 +8661,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSignatureKeysBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8170,6 +8676,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSignatureKeysV2
         :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSignatureKeysV2Response`
@@ -8182,6 +8689,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8224,6 +8733,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSignatureKeysV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8238,6 +8748,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSources
         :type request: :class:`huaweicloudsdkroma.v2.ListSourcesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSourcesResponse`
@@ -8250,6 +8761,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8288,6 +8801,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8302,6 +8816,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSpecialThrottlingConfigurationsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListSpecialThrottlingConfigurationsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSpecialThrottlingConfigurationsV2Response`
@@ -8314,6 +8829,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8356,6 +8873,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSpecialThrottlingConfigurationsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8370,6 +8888,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStatisticsApi
         :type request: :class:`huaweicloudsdkroma.v2.ListStatisticsApiRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListStatisticsApiResponse`
@@ -8382,6 +8901,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8428,6 +8949,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStatisticsApiResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8442,6 +8964,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSubsets
         :type request: :class:`huaweicloudsdkroma.v2.ListSubsetsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSubsetsResponse`
@@ -8454,6 +8977,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8498,6 +9023,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubsetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8512,6 +9038,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTagsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListTagsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListTagsV2Response`
@@ -8524,6 +9051,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8560,6 +9089,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8574,6 +9104,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTasks
         :type request: :class:`huaweicloudsdkroma.v2.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListTasksResponse`
@@ -8586,6 +9117,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8646,6 +9179,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8660,6 +9194,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTopics
         :type request: :class:`huaweicloudsdkroma.v2.ListTopicsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListTopicsResponse`
@@ -8672,6 +9207,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8718,6 +9255,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTopicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8732,6 +9270,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PublishLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.PublishLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.PublishLiveDataApiV2Response`
@@ -8744,6 +9283,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8780,6 +9321,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PublishLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8794,6 +9336,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetAuthentication
         :type request: :class:`huaweicloudsdkroma.v2.ResetAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetAuthenticationResponse`
@@ -8801,11 +9344,13 @@ class RomaAsyncClient(Client):
         return self.reset_authentication_with_http_info(request)
 
     def reset_authentication_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id']
+        all_params = ['instance_id', 'device_id', 'reset_authentication_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8822,13 +9367,15 @@ class RomaAsyncClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -8840,6 +9387,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8854,6 +9402,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetMessages
         :type request: :class:`huaweicloudsdkroma.v2.ResetMessagesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetMessagesResponse`
@@ -8866,6 +9415,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8902,6 +9453,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8916,6 +9468,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetMultiTaskOffset
         :type request: :class:`huaweicloudsdkroma.v2.ResetMultiTaskOffsetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetMultiTaskOffsetResponse`
@@ -8928,6 +9481,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8964,6 +9519,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetMultiTaskOffsetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8978,6 +9534,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetProductAuthentication
         :type request: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationResponse`
@@ -8985,11 +9542,13 @@ class RomaAsyncClient(Client):
         return self.reset_product_authentication_with_http_info(request)
 
     def reset_product_authentication_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id']
+        all_params = ['instance_id', 'product_id', 'reset_product_authentication_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9006,13 +9565,15 @@ class RomaAsyncClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -9024,6 +9585,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetProductAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9038,6 +9600,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunTask
         :type request: :class:`huaweicloudsdkroma.v2.RunTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.RunTaskResponse`
@@ -9050,6 +9613,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9084,6 +9649,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9098,6 +9664,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SendCommand
         :type request: :class:`huaweicloudsdkroma.v2.SendCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.SendCommandResponse`
@@ -9110,6 +9677,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9146,6 +9715,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9160,6 +9730,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAppBoundAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.ShowAppBoundAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowAppBoundAppQuotaResponse`
@@ -9172,6 +9743,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9206,6 +9779,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppBoundAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9220,6 +9794,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.ShowAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowAppQuotaResponse`
@@ -9232,6 +9807,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9266,6 +9843,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9280,6 +9858,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAuthentication
         :type request: :class:`huaweicloudsdkroma.v2.ShowAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowAuthenticationResponse`
@@ -9292,6 +9871,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9326,6 +9907,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9340,6 +9922,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCommand
         :type request: :class:`huaweicloudsdkroma.v2.ShowCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowCommandResponse`
@@ -9352,6 +9935,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9388,6 +9973,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9402,6 +9988,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDataourceDetail
         :type request: :class:`huaweicloudsdkroma.v2.ShowDataourceDetailRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDataourceDetailResponse`
@@ -9414,6 +10001,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9448,6 +10037,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDataourceDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9462,6 +10052,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfAppAcl
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppAclRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppAclResponse`
@@ -9474,6 +10065,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9508,6 +10101,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppAclResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9522,6 +10116,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfAppCodeV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppCodeV2Response`
@@ -9534,6 +10129,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9570,6 +10167,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9584,6 +10182,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfAppConfigV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppConfigV2Response`
@@ -9596,6 +10195,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9632,6 +10233,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppConfigV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9646,6 +10248,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfAppV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppV2Response`
@@ -9658,6 +10261,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9692,6 +10297,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9706,6 +10312,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfCustomAuthorizersV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCustomAuthorizersV2Response`
@@ -9718,6 +10325,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9752,6 +10361,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfCustomAuthorizersV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9766,6 +10376,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfDomainNameCertificateV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfDomainNameCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfDomainNameCertificateV2Response`
@@ -9778,6 +10389,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9816,6 +10429,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfDomainNameCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9830,6 +10444,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfEnvironmentVariableV2Response`
@@ -9842,6 +10457,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9876,6 +10493,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9890,6 +10508,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfInstanceV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfInstanceV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfInstanceV2Response`
@@ -9902,6 +10521,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9934,6 +10555,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9948,6 +10570,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfRequestThrottlingPolicyV2Response`
@@ -9960,6 +10583,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9994,6 +10619,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10008,6 +10634,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDevice
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceResponse`
@@ -10020,6 +10647,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10054,6 +10683,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10068,6 +10698,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeviceGroup
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupResponse`
@@ -10080,6 +10711,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10114,6 +10747,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10128,6 +10762,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeviceGroupTree
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupTreeRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupTreeResponse`
@@ -10140,6 +10775,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10174,6 +10811,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceGroupTreeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10188,6 +10826,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDevicesInGroup
         :type request: :class:`huaweicloudsdkroma.v2.ShowDevicesInGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDevicesInGroupResponse`
@@ -10200,6 +10839,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10242,6 +10883,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDevicesInGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10256,6 +10898,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDispatches
         :type request: :class:`huaweicloudsdkroma.v2.ShowDispatchesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDispatchesResponse`
@@ -10268,6 +10911,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10302,6 +10947,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDispatchesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10316,6 +10962,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowLiveDataApiV2Response`
@@ -10328,6 +10975,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10362,6 +11011,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10377,6 +11027,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMqsInstanceMessages
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesResponse`
@@ -10389,6 +11040,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10445,6 +11098,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMqsInstanceMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10459,6 +11113,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMqsInstanceTopicAccessPolicy
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyResponse`
@@ -10471,6 +11126,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10509,6 +11166,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMqsInstanceTopicAccessPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10523,6 +11181,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProduct
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowProductResponse`
@@ -10535,6 +11194,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10569,6 +11230,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10583,6 +11245,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProductAuthentication
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowProductAuthenticationResponse`
@@ -10595,6 +11258,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10629,6 +11294,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10643,6 +11309,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProductTemplate
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowProductTemplateResponse`
@@ -10655,6 +11322,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10689,6 +11358,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10703,6 +11373,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProperty
         :type request: :class:`huaweicloudsdkroma.v2.ShowPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowPropertyResponse`
@@ -10715,6 +11386,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10751,6 +11424,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10765,6 +11439,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRequestProperty
         :type request: :class:`huaweicloudsdkroma.v2.ShowRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowRequestPropertyResponse`
@@ -10777,6 +11452,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10815,6 +11492,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRequestPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10829,6 +11507,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResponseProperty
         :type request: :class:`huaweicloudsdkroma.v2.ShowResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowResponsePropertyResponse`
@@ -10841,6 +11520,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10879,6 +11560,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResponsePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10893,6 +11575,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRestrictionOfInstanceV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowRestrictionOfInstanceV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowRestrictionOfInstanceV2Response`
@@ -10905,6 +11588,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10937,6 +11622,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRestrictionOfInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10951,6 +11637,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRule
         :type request: :class:`huaweicloudsdkroma.v2.ShowRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowRuleResponse`
@@ -10963,6 +11650,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10997,6 +11686,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11011,6 +11701,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowService
         :type request: :class:`huaweicloudsdkroma.v2.ShowServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowServiceResponse`
@@ -11023,6 +11714,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11057,6 +11750,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11071,6 +11765,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTask
         :type request: :class:`huaweicloudsdkroma.v2.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowTaskResponse`
@@ -11083,6 +11778,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11117,6 +11814,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11131,6 +11829,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartTestDatasource
         :type request: :class:`huaweicloudsdkroma.v2.StartTestDatasourceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.StartTestDatasourceResponse`
@@ -11143,6 +11842,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11179,6 +11880,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartTestDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11193,6 +11895,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopTask
         :type request: :class:`huaweicloudsdkroma.v2.StopTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.StopTaskResponse`
@@ -11205,6 +11908,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11239,6 +11944,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11253,6 +11959,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UnpublishLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.UnpublishLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UnpublishLiveDataApiV2Response`
@@ -11265,6 +11972,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11299,6 +12008,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnpublishLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11313,6 +12023,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAppAcl
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppAclRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppAclResponse`
@@ -11325,6 +12036,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11361,6 +12074,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppAclResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11375,6 +12089,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAppConfigV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppConfigV2Response`
@@ -11387,6 +12102,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11425,6 +12142,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppConfigV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11439,6 +12157,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAppQuota
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppQuotaResponse`
@@ -11451,6 +12170,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11487,6 +12208,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11501,6 +12223,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCommand
         :type request: :class:`huaweicloudsdkroma.v2.UpdateCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateCommandResponse`
@@ -11513,6 +12236,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11551,6 +12276,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11565,6 +12291,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCustomAuthorizerV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateCustomAuthorizerV2Response`
@@ -11577,6 +12304,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11613,6 +12342,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11627,6 +12357,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDatasourceInfo
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDatasourceInfoRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDatasourceInfoResponse`
@@ -11639,6 +12370,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11675,6 +12408,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDatasourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11689,6 +12423,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDevice
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceResponse`
@@ -11701,6 +12436,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11737,6 +12474,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11751,6 +12489,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDeviceGroup
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupResponse`
@@ -11763,6 +12502,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11799,6 +12540,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11813,6 +12555,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDispatches
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDispatchesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDispatchesResponse`
@@ -11825,6 +12568,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11863,6 +12608,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDispatchesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11877,6 +12623,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDomainV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDomainV2Response`
@@ -11889,6 +12636,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11927,6 +12676,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11941,6 +12691,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEnvironmentV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentV2Response`
@@ -11953,6 +12704,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11989,6 +12742,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEnvironmentV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12003,6 +12757,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEnvironmentVariableV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentVariableV2Response`
@@ -12015,6 +12770,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12051,6 +12808,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12065,6 +12823,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateLiveDataApiV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateLiveDataApiV2Response`
@@ -12077,6 +12836,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12113,6 +12874,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12127,6 +12889,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMqsInstanceTopic
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicResponse`
@@ -12139,6 +12902,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12173,6 +12938,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12187,6 +12953,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMultiTasks
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMultiTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMultiTasksResponse`
@@ -12199,6 +12966,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12235,6 +13004,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMultiTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12249,6 +13019,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNotification
         :type request: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateNotificationResponse`
@@ -12261,6 +13032,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12297,6 +13070,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12311,6 +13085,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProduct
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductResponse`
@@ -12323,6 +13098,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12359,6 +13136,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12373,6 +13151,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProductTemplate
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateResponse`
@@ -12385,6 +13164,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12421,6 +13202,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProductTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12435,6 +13217,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProductTopic
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTopicResponse`
@@ -12447,6 +13230,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12485,6 +13270,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProductTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12499,6 +13285,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProperty
         :type request: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdatePropertyResponse`
@@ -12511,6 +13298,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12549,6 +13338,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12563,6 +13353,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRequestProperty
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRequestPropertyResponse`
@@ -12575,6 +13366,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12615,6 +13408,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRequestPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12629,6 +13423,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRequestThrottlingPolicyV2Response`
@@ -12641,6 +13436,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12677,6 +13474,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12691,6 +13489,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResponseProperty
         :type request: :class:`huaweicloudsdkroma.v2.UpdateResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateResponsePropertyResponse`
@@ -12703,6 +13502,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12743,6 +13544,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResponsePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12757,6 +13559,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRule
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRuleResponse`
@@ -12769,6 +13572,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12805,6 +13610,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12819,6 +13625,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateService
         :type request: :class:`huaweicloudsdkroma.v2.UpdateServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateServiceResponse`
@@ -12831,6 +13638,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12867,6 +13676,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12881,6 +13691,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSignatureKeyV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateSignatureKeyV2Response`
@@ -12893,6 +13704,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12929,6 +13742,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12943,6 +13757,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSpecialThrottlingConfigurationV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateSpecialThrottlingConfigurationV2Response`
@@ -12955,6 +13770,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12993,6 +13810,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSpecialThrottlingConfigurationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13007,6 +13825,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTask
         :type request: :class:`huaweicloudsdkroma.v2.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateTaskResponse`
@@ -13019,6 +13838,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13055,6 +13876,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13069,6 +13891,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTopicAccessPolicy
         :type request: :class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyResponse`
@@ -13081,6 +13904,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13115,6 +13940,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTopicAccessPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13129,6 +13955,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadProduct
         :type request: :class:`huaweicloudsdkroma.v2.UploadProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UploadProductResponse`
@@ -13141,6 +13968,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13177,6 +14006,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13193,6 +14023,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteAclV2
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteAclV2Response`
@@ -13205,6 +14036,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13241,6 +14074,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteAclV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13255,6 +14089,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAclStrategyV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAclStrategyV2Response`
@@ -13267,6 +14102,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13301,6 +14138,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAclStrategyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13315,6 +14153,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAclV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAclV2Response`
@@ -13327,6 +14166,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13361,6 +14202,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAclV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13375,6 +14217,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAclStrategiesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAclStrategiesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAclStrategiesV2Response`
@@ -13387,6 +14230,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13433,6 +14278,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAclStrategiesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13447,6 +14293,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfAclPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAclPolicyV2Response`
@@ -13459,6 +14306,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13493,6 +14342,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAclPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13507,6 +14357,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAclStrategyV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAclStrategyV2Response`
@@ -13519,6 +14370,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13555,6 +14408,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAclStrategyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13573,6 +14427,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.AssociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateRequestThrottlingPolicyV2Response`
@@ -13585,6 +14440,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13619,6 +14476,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13633,6 +14491,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDisassociateThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisassociateThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDisassociateThrottlingPolicyV2Response`
@@ -13645,6 +14504,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13681,6 +14542,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDisassociateThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13697,6 +14559,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchPublishOrOfflineApiV2
         :type request: :class:`huaweicloudsdkroma.v2.BatchPublishOrOfflineApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchPublishOrOfflineApiV2Response`
@@ -13709,6 +14572,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13745,6 +14610,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchPublishOrOfflineApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13761,6 +14627,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeApiVersionV2
         :type request: :class:`huaweicloudsdkroma.v2.ChangeApiVersionV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ChangeApiVersionV2Response`
@@ -13773,6 +14640,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13809,6 +14678,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeApiVersionV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13823,6 +14693,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckApiGroupsV2
         :type request: :class:`huaweicloudsdkroma.v2.CheckApiGroupsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckApiGroupsV2Response`
@@ -13835,6 +14706,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13869,6 +14742,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckApiGroupsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13883,6 +14757,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckApisV2
         :type request: :class:`huaweicloudsdkroma.v2.CheckApisV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckApisV2Response`
@@ -13895,6 +14770,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13929,6 +14806,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckApisV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13943,6 +14821,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApiGroupV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateApiGroupV2Response`
@@ -13955,6 +14834,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13989,6 +14870,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14005,6 +14887,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApiV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateApiV2Response`
@@ -14017,6 +14900,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14051,6 +14936,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14069,6 +14955,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateOrDeletePublishRecordForApiV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateOrDeletePublishRecordForApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateOrDeletePublishRecordForApiV2Response`
@@ -14081,6 +14968,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14115,6 +15004,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOrDeletePublishRecordForApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14129,6 +15019,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DebugApiV2
         :type request: :class:`huaweicloudsdkroma.v2.DebugApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DebugApiV2Response`
@@ -14141,6 +15032,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14177,6 +15070,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DebugApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14191,6 +15085,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApiByVersionIdV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiByVersionIdV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiByVersionIdV2Response`
@@ -14203,6 +15098,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14237,6 +15134,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiByVersionIdV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14253,6 +15151,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApiGroupV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiGroupV2Response`
@@ -14265,6 +15164,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14299,6 +15200,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14315,6 +15217,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApiV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiV2Response`
@@ -14327,6 +15230,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14361,6 +15266,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14375,6 +15281,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateRequestThrottlingPolicyV2Response`
@@ -14387,6 +15294,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14421,6 +15330,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14437,6 +15347,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiGroupsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApiGroupsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiGroupsV2Response`
@@ -14449,6 +15360,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14495,6 +15408,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiGroupsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14515,6 +15429,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiRuntimeDefinitionV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApiRuntimeDefinitionV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiRuntimeDefinitionV2Response`
@@ -14527,6 +15442,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14563,6 +15480,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiRuntimeDefinitionV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14577,6 +15495,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersionDetailV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionDetailV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiVersionDetailV2Response`
@@ -14589,6 +15508,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14623,6 +15544,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionDetailV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14637,6 +15559,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiVersionsV2Response`
@@ -14649,6 +15572,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14691,6 +15616,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14705,6 +15631,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApisBindedToRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToRequestThrottlingPolicyV2Response`
@@ -14717,6 +15644,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14763,6 +15692,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14777,6 +15707,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApisUnbindedToRequestThrottlingPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToRequestThrottlingPolicyV2Response`
@@ -14789,6 +15720,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14835,6 +15768,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisUnbindedToRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14849,6 +15783,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApisV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisV2Response`
@@ -14861,6 +15796,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14921,6 +15858,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14935,6 +15873,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRequestThrottlingPoliciesBindedToApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPoliciesBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPoliciesBindedToApiV2Response`
@@ -14947,6 +15886,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14991,6 +15932,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestThrottlingPoliciesBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15005,6 +15947,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfApiGroupV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiGroupV2Response`
@@ -15017,6 +15960,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15051,6 +15996,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15065,6 +16011,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiV2Response`
@@ -15077,6 +16024,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15111,6 +16060,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15125,6 +16075,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateApiGroupV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateApiGroupV2Response`
@@ -15137,6 +16088,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15173,6 +16126,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15187,6 +16141,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateApiV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateApiV2Response`
@@ -15199,6 +16154,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15235,6 +16192,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15249,6 +16207,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteApiAclBindingV2
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteApiAclBindingV2Response`
@@ -15261,6 +16220,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15297,6 +16258,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteApiAclBindingV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15313,6 +16275,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApiAclBindingV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateApiAclBindingV2Response`
@@ -15325,6 +16288,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15359,6 +16324,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiAclBindingV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15373,6 +16339,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApiAclBindingV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiAclBindingV2Response`
@@ -15385,6 +16352,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15419,6 +16388,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiAclBindingV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15433,6 +16403,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAclPolicyBindedToApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAclPolicyBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAclPolicyBindedToApiV2Response`
@@ -15445,6 +16416,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15491,6 +16464,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAclPolicyBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15505,6 +16479,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApisBindedToAclPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToAclPolicyV2Response`
@@ -15517,6 +16492,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15561,6 +16538,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToAclPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15575,6 +16553,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApisUnbindedToAclPolicyV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAclPolicyV2Response`
@@ -15587,6 +16566,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15633,6 +16614,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisUnbindedToAclPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15647,6 +16629,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelingAuthorizationV2
         :type request: :class:`huaweicloudsdkroma.v2.CancelingAuthorizationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CancelingAuthorizationV2Response`
@@ -15659,6 +16642,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15693,6 +16678,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelingAuthorizationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15707,6 +16693,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAuthorizingAppsV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateAuthorizingAppsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAuthorizingAppsV2Response`
@@ -15719,6 +16706,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15753,6 +16742,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAuthorizingAppsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15767,6 +16757,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApisBindedToAppV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToAppV2Response`
@@ -15779,6 +16770,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15827,6 +16820,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15841,6 +16835,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApisUnbindedToAppV2
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAppV2Response`
@@ -15853,6 +16848,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15899,6 +16896,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisUnbindedToAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15913,6 +16911,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAppsBindedToApiV2
         :type request: :class:`huaweicloudsdkroma.v2.ListAppsBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppsBindedToApiV2Response`
@@ -15925,6 +16924,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15969,6 +16970,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15983,6 +16985,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDuplicateApisForAppV2
         :type request: :class:`huaweicloudsdkroma.v2.ListDuplicateApisForAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDuplicateApisForAppV2Response`
@@ -15995,6 +16998,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16029,6 +17034,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDuplicateApisForAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16044,6 +17050,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddUserToApp
         :type request: :class:`huaweicloudsdkroma.v2.AddUserToAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AddUserToAppResponse`
@@ -16056,6 +17063,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16092,6 +17101,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddUserToAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16106,6 +17116,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckAuthUsersOfApp
         :type request: :class:`huaweicloudsdkroma.v2.CheckAuthUsersOfAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckAuthUsersOfAppResponse`
@@ -16118,6 +17129,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16154,6 +17167,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckAuthUsersOfAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16168,6 +17182,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckCanAuthUsersOfApp
         :type request: :class:`huaweicloudsdkroma.v2.CheckCanAuthUsersOfAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckCanAuthUsersOfAppResponse`
@@ -16180,6 +17195,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16216,6 +17233,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckCanAuthUsersOfAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16230,6 +17248,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckRomaAppDetails
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppDetailsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaAppDetailsResponse`
@@ -16242,6 +17261,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16276,6 +17297,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRomaAppDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16290,6 +17312,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckRomaAppSecret
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppSecretRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaAppSecretResponse`
@@ -16302,6 +17325,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16336,6 +17361,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRomaAppSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16350,6 +17376,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.CreateRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRomaAppResponse`
@@ -16362,6 +17389,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16396,6 +17425,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16410,6 +17440,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRomaAppResponse`
@@ -16422,6 +17453,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16456,6 +17489,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16470,6 +17504,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.ListRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRomaAppResponse`
@@ -16482,6 +17517,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16528,6 +17565,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16542,6 +17580,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetRomaAppSecret
         :type request: :class:`huaweicloudsdkroma.v2.ResetRomaAppSecretRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetRomaAppSecretResponse`
@@ -16554,6 +17593,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16590,6 +17631,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetRomaAppSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16604,6 +17646,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRomaAppResponse`
@@ -16616,6 +17659,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16652,6 +17697,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16666,6 +17712,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ValidateRomaApp
         :type request: :class:`huaweicloudsdkroma.v2.ValidateRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ValidateRomaAppResponse`
@@ -16678,6 +17725,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16716,6 +17765,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16730,6 +17780,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckAssetJobStatus
         :type request: :class:`huaweicloudsdkroma.v2.CheckAssetJobStatusRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckAssetJobStatusResponse`
@@ -16742,6 +17793,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16776,6 +17829,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckAssetJobStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16793,6 +17847,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAsset
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAssetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAssetResponse`
@@ -16805,6 +17860,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16839,6 +17896,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16854,6 +17912,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadAssetArchive
         :type request: :class:`huaweicloudsdkroma.v2.DownloadAssetArchiveRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DownloadAssetArchiveResponse`
@@ -16866,6 +17925,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16900,6 +17961,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadAssetArchiveResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16917,6 +17979,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportAsset
         :type request: :class:`huaweicloudsdkroma.v2.ExportAssetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportAssetResponse`
@@ -16929,6 +17992,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16963,6 +18028,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16979,6 +18045,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportAsset
         :type request: :class:`huaweicloudsdkroma.v2.ImportAssetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportAssetResponse`
@@ -16991,6 +18058,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17027,6 +18096,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17041,6 +18111,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckDictionary
         :type request: :class:`huaweicloudsdkroma.v2.CheckDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckDictionaryResponse`
@@ -17053,6 +18124,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17087,6 +18160,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17101,6 +18175,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDictionary
         :type request: :class:`huaweicloudsdkroma.v2.CreateDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDictionaryResponse`
@@ -17113,6 +18188,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17147,6 +18224,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17161,6 +18239,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDictionary
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDictionaryResponse`
@@ -17173,6 +18252,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17207,6 +18288,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17221,6 +18303,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDictionary
         :type request: :class:`huaweicloudsdkroma.v2.ListDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDictionaryResponse`
@@ -17233,6 +18316,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17275,6 +18360,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17289,6 +18375,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDictionary
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDictionaryResponse`
@@ -17301,6 +18388,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17337,6 +18426,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17351,6 +18441,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ValidateDictionary
         :type request: :class:`huaweicloudsdkroma.v2.ValidateDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ValidateDictionaryResponse`
@@ -17363,6 +18454,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17399,6 +18492,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17413,6 +18507,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckRomaInstanceListV2
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaInstanceListV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaInstanceListV2Response`
@@ -17425,6 +18520,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17461,6 +18558,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRomaInstanceListV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17475,6 +18573,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMqsInstance
         :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMqsInstanceResponse`
@@ -17487,6 +18586,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17519,6 +18620,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMqsInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17533,6 +18635,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMqsInstance
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceResponse`
@@ -17545,6 +18648,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17577,6 +18682,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMqsInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17591,6 +18697,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportApiDefinitionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ExportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportApiDefinitionsV2Response`
@@ -17603,6 +18710,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17637,6 +18746,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17651,6 +18761,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportLiveDataApiDefinitionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ExportLiveDataApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportLiveDataApiDefinitionsV2Response`
@@ -17663,6 +18774,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17697,6 +18810,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportLiveDataApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17711,6 +18825,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportApiDefinitionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ImportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportApiDefinitionsV2Response`
@@ -17723,6 +18838,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17773,6 +18890,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17787,6 +18905,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportLiveDataApiDefinitionsV2
         :type request: :class:`huaweicloudsdkroma.v2.ImportLiveDataApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportLiveDataApiDefinitionsV2Response`
@@ -17799,6 +18918,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17839,6 +18960,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportLiveDataApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17855,6 +18977,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddingBackendInstancesV2
         :type request: :class:`huaweicloudsdkroma.v2.AddingBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AddingBackendInstancesV2Response`
@@ -17867,6 +18990,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17903,6 +19028,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddingBackendInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17917,6 +19043,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDisableMembers
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisableMembersRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDisableMembersResponse`
@@ -17929,6 +19056,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17965,6 +19094,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDisableMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17979,6 +19109,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchEnableMembers
         :type request: :class:`huaweicloudsdkroma.v2.BatchEnableMembersRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchEnableMembersResponse`
@@ -17991,6 +19122,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18027,6 +19160,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchEnableMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18043,6 +19177,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMemberGroup
         :type request: :class:`huaweicloudsdkroma.v2.CreateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMemberGroupResponse`
@@ -18055,6 +19190,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18091,6 +19228,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18106,6 +19244,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateVpcChannelV2
         :type request: :class:`huaweicloudsdkroma.v2.CreateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateVpcChannelV2Response`
@@ -18118,6 +19257,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18152,6 +19293,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18166,6 +19308,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBackendInstanceV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteBackendInstanceV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteBackendInstanceV2Response`
@@ -18178,6 +19321,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18214,6 +19359,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackendInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18228,6 +19374,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMemberGroup
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteMemberGroupResponse`
@@ -18240,6 +19387,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18276,6 +19425,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18290,6 +19440,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteVpcChannelV2
         :type request: :class:`huaweicloudsdkroma.v2.DeleteVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteVpcChannelV2Response`
@@ -18302,6 +19453,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18336,6 +19489,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18350,6 +19504,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackendInstancesV2
         :type request: :class:`huaweicloudsdkroma.v2.ListBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListBackendInstancesV2Response`
@@ -18362,6 +19517,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18408,6 +19565,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackendInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18422,6 +19580,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMemberGroups
         :type request: :class:`huaweicloudsdkroma.v2.ListMemberGroupsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMemberGroupsResponse`
@@ -18434,6 +19593,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18478,6 +19639,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMemberGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18492,6 +19654,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVpcChannelsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListVpcChannelsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListVpcChannelsV2Response`
@@ -18504,6 +19667,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18556,6 +19721,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcChannelsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18570,6 +19736,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfMemberGroup
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfMemberGroupResponse`
@@ -18582,6 +19749,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18618,6 +19787,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18632,6 +19802,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailsOfVpcChannelV2
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfVpcChannelV2Response`
@@ -18644,6 +19815,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18678,6 +19851,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18692,6 +19866,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateBackendInstancesV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateBackendInstancesV2Response`
@@ -18704,6 +19879,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18740,6 +19917,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBackendInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18754,6 +19932,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateHealthCheck
         :type request: :class:`huaweicloudsdkroma.v2.UpdateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateHealthCheckResponse`
@@ -18766,6 +19945,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18802,6 +19983,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHealthCheckResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18816,6 +19998,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMemberGroup
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMemberGroupResponse`
@@ -18828,6 +20011,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18866,6 +20051,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18884,6 +20070,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateVpcChannelV2
         :type request: :class:`huaweicloudsdkroma.v2.UpdateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateVpcChannelV2Response`
@@ -18896,6 +20083,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18932,6 +20121,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18946,6 +20136,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProjectVpcChannel
         :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelResponse`
@@ -18958,6 +20149,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18990,6 +20183,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectVpcChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -19004,6 +20198,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProjectVpcChannelSyncs
         :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelSyncsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelSyncsResponse`
@@ -19016,6 +20211,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -19048,6 +20245,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectVpcChannelSyncsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -19062,6 +20260,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectVpcChannelsV2
         :type request: :class:`huaweicloudsdkroma.v2.ListProjectVpcChannelsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProjectVpcChannelsV2Response`
@@ -19074,6 +20273,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -19124,6 +20325,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectVpcChannelsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -19138,6 +20340,7 @@ class RomaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProjectVpcChannel
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProjectVpcChannelRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProjectVpcChannelResponse`
@@ -19150,6 +20353,8 @@ class RomaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -19182,6 +20387,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectVpcChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -19189,7 +20395,7 @@ class RomaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -19200,9 +20406,10 @@ class RomaAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -19219,6 +20426,7 @@ class RomaAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

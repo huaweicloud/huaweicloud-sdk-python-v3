@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudRTCAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateAppResponse`
@@ -68,6 +63,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -93,7 +90,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -108,6 +105,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +124,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateIndividualStreamJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateIndividualStreamJobResponse`
@@ -138,6 +137,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -165,7 +166,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -180,6 +181,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIndividualStreamJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -210,6 +212,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMixJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateMixJobResponse`
@@ -222,6 +225,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -249,7 +254,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -264,6 +269,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMixJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -281,6 +287,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRecordRule
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateRecordRuleResponse`
@@ -293,6 +300,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -320,7 +329,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -335,6 +344,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -349,6 +359,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.DeleteAppResponse`
@@ -361,6 +372,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -401,6 +414,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -415,6 +429,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRecordRule
         :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.DeleteRecordRuleResponse`
@@ -427,6 +442,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -469,6 +486,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -483,6 +501,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApps
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListAppsResponse`
@@ -495,6 +514,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -524,7 +545,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -539,6 +560,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -553,6 +575,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecordRules
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListRecordRulesRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListRecordRulesResponse`
@@ -565,6 +588,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -594,7 +619,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -609,6 +634,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -623,6 +649,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemoveRoom
         :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveRoomRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RemoveRoomResponse`
@@ -635,6 +662,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -677,6 +706,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveRoomResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -691,6 +721,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemoveUsers
         :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersResponse`
@@ -703,6 +734,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -747,6 +780,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -761,6 +795,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowAppResponse`
@@ -773,6 +808,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -798,7 +835,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -813,6 +850,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -827,6 +865,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAutoRecord
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAutoRecordRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowAutoRecordResponse`
@@ -839,6 +878,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -864,7 +905,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -879,6 +920,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAutoRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -895,6 +937,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIndividualStreamJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowIndividualStreamJobResponse`
@@ -907,6 +950,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -934,7 +979,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -949,6 +994,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIndividualStreamJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -963,6 +1009,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMixJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowMixJobResponse`
@@ -975,6 +1022,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1002,7 +1051,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1017,6 +1066,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMixJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1031,6 +1081,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecordCallback
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordCallbackRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordCallbackResponse`
@@ -1043,6 +1094,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1068,7 +1121,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1083,6 +1136,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordCallbackResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1097,6 +1151,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecordRule
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordRuleResponse`
@@ -1109,6 +1164,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1136,7 +1193,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1151,6 +1208,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1165,6 +1223,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUrlAuth
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowUrlAuthRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowUrlAuthResponse`
@@ -1177,6 +1236,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1202,7 +1263,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1217,6 +1278,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUrlAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1231,6 +1293,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StartAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StartAppResponse`
@@ -1243,6 +1306,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1268,7 +1333,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1283,6 +1348,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1299,6 +1365,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopApp
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopAppResponse`
@@ -1311,6 +1378,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1336,7 +1405,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1351,6 +1420,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1365,6 +1435,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopIndividualStreamJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopIndividualStreamJobResponse`
@@ -1377,6 +1448,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1419,6 +1492,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopIndividualStreamJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1433,6 +1507,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopMixJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopMixJobResponse`
@@ -1445,6 +1520,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1487,6 +1564,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopMixJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1501,6 +1579,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAutoRecord
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateAutoRecordRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateAutoRecordResponse`
@@ -1513,6 +1592,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1540,7 +1621,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1555,6 +1636,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAutoRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1571,6 +1653,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateIndividualStreamJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateIndividualStreamJobResponse`
@@ -1583,6 +1666,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1612,7 +1697,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1627,6 +1712,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIndividualStreamJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1641,6 +1727,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMixJob
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixJobResponse`
@@ -1653,6 +1740,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1682,7 +1771,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1697,6 +1786,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMixJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1715,6 +1805,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRecordCallback
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordCallbackRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordCallbackResponse`
@@ -1727,6 +1818,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1754,7 +1847,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1769,6 +1862,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecordCallbackResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1783,6 +1877,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRecordRule
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordRuleResponse`
@@ -1795,6 +1890,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1824,7 +1921,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1839,6 +1936,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1853,6 +1951,7 @@ class CloudRTCAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUrlAuth
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateUrlAuthRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateUrlAuthResponse`
@@ -1865,6 +1964,8 @@ class CloudRTCAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1892,7 +1993,7 @@ class CloudRTCAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-Id"]
+        response_headers = ["X-request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1907,6 +2008,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUrlAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1914,7 +2016,7 @@ class CloudRTCAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1925,9 +2027,10 @@ class CloudRTCAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1944,6 +2047,7 @@ class CloudRTCAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

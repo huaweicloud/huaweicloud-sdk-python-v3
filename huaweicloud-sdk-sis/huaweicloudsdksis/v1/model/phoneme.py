@@ -17,7 +17,6 @@ class Phoneme:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -166,7 +165,6 @@ class Phoneme:
     def fluency(self):
         """Gets the fluency of this Phoneme.
 
-
         :return: The fluency of this Phoneme.
         :rtype: :class:`huaweicloudsdksis.v1.PhonemeFluency`
         """
@@ -175,7 +173,6 @@ class Phoneme:
     @fluency.setter
     def fluency(self, fluency):
         """Sets the fluency of this Phoneme.
-
 
         :param fluency: The fluency of this Phoneme.
         :type fluency: :class:`huaweicloudsdksis.v1.PhonemeFluency`
@@ -186,7 +183,6 @@ class Phoneme:
     def pronunciation(self):
         """Gets the pronunciation of this Phoneme.
 
-
         :return: The pronunciation of this Phoneme.
         :rtype: :class:`huaweicloudsdksis.v1.PhonemePronunciation`
         """
@@ -195,7 +191,6 @@ class Phoneme:
     @pronunciation.setter
     def pronunciation(self, pronunciation):
         """Sets the pronunciation of this Phoneme.
-
 
         :param pronunciation: The pronunciation of this Phoneme.
         :type pronunciation: :class:`huaweicloudsdksis.v1.PhonemePronunciation`

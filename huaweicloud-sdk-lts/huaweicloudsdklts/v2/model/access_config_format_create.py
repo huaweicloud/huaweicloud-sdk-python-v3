@@ -17,7 +17,6 @@ class AccessConfigFormatCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class AccessConfigFormatCreate:
     def single(self):
         """Gets the single of this AccessConfigFormatCreate.
 
-
         :return: The single of this AccessConfigFormatCreate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatSingleCreate`
         """
@@ -65,7 +63,6 @@ class AccessConfigFormatCreate:
     @single.setter
     def single(self, single):
         """Sets the single of this AccessConfigFormatCreate.
-
 
         :param single: The single of this AccessConfigFormatCreate.
         :type single: :class:`huaweicloudsdklts.v2.AccessConfigFormatSingleCreate`
@@ -76,7 +73,6 @@ class AccessConfigFormatCreate:
     def multi(self):
         """Gets the multi of this AccessConfigFormatCreate.
 
-
         :return: The multi of this AccessConfigFormatCreate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatMutilCreate`
         """
@@ -85,7 +81,6 @@ class AccessConfigFormatCreate:
     @multi.setter
     def multi(self, multi):
         """Sets the multi of this AccessConfigFormatCreate.
-
 
         :param multi: The multi of this AccessConfigFormatCreate.
         :type multi: :class:`huaweicloudsdklts.v2.AccessConfigFormatMutilCreate`

@@ -17,7 +17,6 @@ class ContainerSettingsDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -83,7 +82,6 @@ class ContainerSettingsDTO:
     def configs(self):
         """Gets the configs of this ContainerSettingsDTO.
 
-
         :return: The configs of this ContainerSettingsDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsDTO`
         """
@@ -92,7 +90,6 @@ class ContainerSettingsDTO:
     @configs.setter
     def configs(self, configs):
         """Sets the configs of this ContainerSettingsDTO.
-
 
         :param configs: The configs of this ContainerSettingsDTO.
         :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsDTO`
@@ -169,7 +166,6 @@ class ContainerSettingsDTO:
     def resources(self):
         """Gets the resources of this ContainerSettingsDTO.
 
-
         :return: The resources of this ContainerSettingsDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`
         """
@@ -178,7 +174,6 @@ class ContainerSettingsDTO:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this ContainerSettingsDTO.
-
 
         :param resources: The resources of this ContainerSettingsDTO.
         :type resources: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`

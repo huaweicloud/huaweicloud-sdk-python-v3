@@ -17,7 +17,6 @@ class UpdateClusterEipRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateClusterEipRequest:
     def body(self):
         """Gets the body of this UpdateClusterEipRequest.
 
-
         :return: The body of this UpdateClusterEipRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPRequest`
         """
@@ -86,7 +84,6 @@ class UpdateClusterEipRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateClusterEipRequest.
-
 
         :param body: The body of this UpdateClusterEipRequest.
         :type body: :class:`huaweicloudsdkcce.v3.MasterEIPRequest`

@@ -17,7 +17,6 @@ class EventQueryParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -141,7 +140,6 @@ class EventQueryParam:
     def sort(self):
         """Gets the sort of this EventQueryParam.
 
-
         :return: The sort of this EventQueryParam.
         :rtype: :class:`huaweicloudsdkaom.v2.EventQueryParamSort`
         """
@@ -150,7 +148,6 @@ class EventQueryParam:
     @sort.setter
     def sort(self, sort):
         """Sets the sort of this EventQueryParam.
-
 
         :param sort: The sort of this EventQueryParam.
         :type sort: :class:`huaweicloudsdkaom.v2.EventQueryParamSort`

@@ -17,7 +17,6 @@ class FederationUserBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -68,7 +67,6 @@ class FederationUserBody:
     def os_federation(self):
         """Gets the os_federation of this FederationUserBody.
 
-
         :return: The os_federation of this FederationUserBody.
         :rtype: :class:`huaweicloudsdkiam.v3.OsFederationInfo`
         """
@@ -77,7 +75,6 @@ class FederationUserBody:
     @os_federation.setter
     def os_federation(self, os_federation):
         """Sets the os_federation of this FederationUserBody.
-
 
         :param os_federation: The os_federation of this FederationUserBody.
         :type os_federation: :class:`huaweicloudsdkiam.v3.OsFederationInfo`
@@ -88,7 +85,6 @@ class FederationUserBody:
     def domain(self):
         """Gets the domain of this FederationUserBody.
 
-
         :return: The domain of this FederationUserBody.
         :rtype: :class:`huaweicloudsdkiam.v3.DomainInfo`
         """
@@ -97,7 +93,6 @@ class FederationUserBody:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this FederationUserBody.
-
 
         :param domain: The domain of this FederationUserBody.
         :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`

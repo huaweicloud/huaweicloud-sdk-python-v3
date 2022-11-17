@@ -17,7 +17,6 @@ class BatchCreateChannelsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchCreateChannelsRequest:
     def body(self):
         """Gets the body of this BatchCreateChannelsRequest.
 
-
         :return: The body of this BatchCreateChannelsRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequestBody`
         """
@@ -86,7 +84,6 @@ class BatchCreateChannelsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchCreateChannelsRequest.
-
 
         :param body: The body of this BatchCreateChannelsRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequestBody`

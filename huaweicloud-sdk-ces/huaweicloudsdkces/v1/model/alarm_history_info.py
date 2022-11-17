@@ -17,7 +17,6 @@ class AlarmHistoryInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -234,7 +233,6 @@ class AlarmHistoryInfo:
     def metric(self):
         """Gets the metric of this AlarmHistoryInfo.
 
-
         :return: The metric of this AlarmHistoryInfo.
         :rtype: :class:`huaweicloudsdkces.v1.MetricInfo`
         """
@@ -243,7 +241,6 @@ class AlarmHistoryInfo:
     @metric.setter
     def metric(self, metric):
         """Sets the metric of this AlarmHistoryInfo.
-
 
         :param metric: The metric of this AlarmHistoryInfo.
         :type metric: :class:`huaweicloudsdkces.v1.MetricInfo`
@@ -254,7 +251,6 @@ class AlarmHistoryInfo:
     def condition(self):
         """Gets the condition of this AlarmHistoryInfo.
 
-
         :return: The condition of this AlarmHistoryInfo.
         :rtype: :class:`huaweicloudsdkces.v1.Condition`
         """
@@ -263,7 +259,6 @@ class AlarmHistoryInfo:
     @condition.setter
     def condition(self, condition):
         """Sets the condition of this AlarmHistoryInfo.
-
 
         :param condition: The condition of this AlarmHistoryInfo.
         :type condition: :class:`huaweicloudsdkces.v1.Condition`
@@ -538,7 +533,6 @@ class AlarmHistoryInfo:
     def additional_info(self):
         """Gets the additional_info of this AlarmHistoryInfo.
 
-
         :return: The additional_info of this AlarmHistoryInfo.
         :rtype: :class:`huaweicloudsdkces.v1.AdditionalInfo`
         """
@@ -547,7 +541,6 @@ class AlarmHistoryInfo:
     @additional_info.setter
     def additional_info(self, additional_info):
         """Sets the additional_info of this AlarmHistoryInfo.
-
 
         :param additional_info: The additional_info of this AlarmHistoryInfo.
         :type additional_info: :class:`huaweicloudsdkces.v1.AdditionalInfo`

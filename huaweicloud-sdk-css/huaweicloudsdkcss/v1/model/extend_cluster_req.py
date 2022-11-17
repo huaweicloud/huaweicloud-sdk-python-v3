@@ -17,7 +17,6 @@ class ExtendClusterReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class ExtendClusterReq:
     def grow(self):
         """Gets the grow of this ExtendClusterReq.
 
-
         :return: The grow of this ExtendClusterReq.
         :rtype: :class:`huaweicloudsdkcss.v1.ExtendClusterGrowReq`
         """
@@ -64,7 +62,6 @@ class ExtendClusterReq:
     @grow.setter
     def grow(self, grow):
         """Sets the grow of this ExtendClusterReq.
-
 
         :param grow: The grow of this ExtendClusterReq.
         :type grow: :class:`huaweicloudsdkcss.v1.ExtendClusterGrowReq`

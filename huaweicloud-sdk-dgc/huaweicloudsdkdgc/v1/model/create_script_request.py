@@ -17,7 +17,6 @@ class CreateScriptRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateScriptRequest:
     def body(self):
         """Gets the body of this CreateScriptRequest.
 
-
         :return: The body of this CreateScriptRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.ScriptInfo`
         """
@@ -58,7 +56,6 @@ class CreateScriptRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateScriptRequest.
-
 
         :param body: The body of this CreateScriptRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.ScriptInfo`

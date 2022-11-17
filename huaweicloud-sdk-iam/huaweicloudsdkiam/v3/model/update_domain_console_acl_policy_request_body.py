@@ -17,7 +17,6 @@ class UpdateDomainConsoleAclPolicyRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateDomainConsoleAclPolicyRequestBody:
     def console_acl_policy(self):
         """Gets the console_acl_policy of this UpdateDomainConsoleAclPolicyRequestBody.
 
-
         :return: The console_acl_policy of this UpdateDomainConsoleAclPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.AclPolicyOption`
         """
@@ -57,7 +55,6 @@ class UpdateDomainConsoleAclPolicyRequestBody:
     @console_acl_policy.setter
     def console_acl_policy(self, console_acl_policy):
         """Sets the console_acl_policy of this UpdateDomainConsoleAclPolicyRequestBody.
-
 
         :param console_acl_policy: The console_acl_policy of this UpdateDomainConsoleAclPolicyRequestBody.
         :type console_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyOption`

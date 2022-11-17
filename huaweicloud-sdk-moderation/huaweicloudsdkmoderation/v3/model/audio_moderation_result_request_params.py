@@ -17,7 +17,6 @@ class AudioModerationResultRequestParams:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class AudioModerationResultRequestParams:
     def event_type(self):
         """Gets the event_type of this AudioModerationResultRequestParams.
 
-
         :return: The event_type of this AudioModerationResultRequestParams.
         :rtype: str
         """
@@ -79,7 +77,6 @@ class AudioModerationResultRequestParams:
     @event_type.setter
     def event_type(self, event_type):
         """Sets the event_type of this AudioModerationResultRequestParams.
-
 
         :param event_type: The event_type of this AudioModerationResultRequestParams.
         :type event_type: str
@@ -90,7 +87,6 @@ class AudioModerationResultRequestParams:
     def data(self):
         """Gets the data of this AudioModerationResultRequestParams.
 
-
         :return: The data of this AudioModerationResultRequestParams.
         :rtype: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultRequestParamsData`
         """
@@ -99,7 +95,6 @@ class AudioModerationResultRequestParams:
     @data.setter
     def data(self, data):
         """Sets the data of this AudioModerationResultRequestParams.
-
 
         :param data: The data of this AudioModerationResultRequestParams.
         :type data: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultRequestParamsData`
@@ -110,7 +105,6 @@ class AudioModerationResultRequestParams:
     def param_callback(self):
         """Gets the param_callback of this AudioModerationResultRequestParams.
 
-
         :return: The param_callback of this AudioModerationResultRequestParams.
         :rtype: str
         """
@@ -119,7 +113,6 @@ class AudioModerationResultRequestParams:
     @param_callback.setter
     def param_callback(self, param_callback):
         """Sets the param_callback of this AudioModerationResultRequestParams.
-
 
         :param param_callback: The param_callback of this AudioModerationResultRequestParams.
         :type param_callback: str
@@ -130,7 +123,6 @@ class AudioModerationResultRequestParams:
     def categories(self):
         """Gets the categories of this AudioModerationResultRequestParams.
 
-
         :return: The categories of this AudioModerationResultRequestParams.
         :rtype: list[str]
         """
@@ -139,7 +131,6 @@ class AudioModerationResultRequestParams:
     @categories.setter
     def categories(self, categories):
         """Sets the categories of this AudioModerationResultRequestParams.
-
 
         :param categories: The categories of this AudioModerationResultRequestParams.
         :type categories: list[str]

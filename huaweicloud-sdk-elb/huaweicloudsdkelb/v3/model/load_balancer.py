@@ -17,7 +17,6 @@ class LoadBalancer:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -1056,7 +1055,6 @@ class LoadBalancer:
     def ipv6_bandwidth(self):
         """Gets the ipv6_bandwidth of this LoadBalancer.
 
-
         :return: The ipv6_bandwidth of this LoadBalancer.
         :rtype: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
@@ -1065,7 +1063,6 @@ class LoadBalancer:
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
         """Sets the ipv6_bandwidth of this LoadBalancer.
-
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this LoadBalancer.
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
@@ -1098,7 +1095,6 @@ class LoadBalancer:
     def autoscaling(self):
         """Gets the autoscaling of this LoadBalancer.
 
-
         :return: The autoscaling of this LoadBalancer.
         :rtype: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
         """
@@ -1107,7 +1103,6 @@ class LoadBalancer:
     @autoscaling.setter
     def autoscaling(self, autoscaling):
         """Sets the autoscaling of this LoadBalancer.
-
 
         :param autoscaling: The autoscaling of this LoadBalancer.
         :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`

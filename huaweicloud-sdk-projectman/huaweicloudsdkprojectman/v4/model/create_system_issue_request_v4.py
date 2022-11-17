@@ -17,7 +17,6 @@ class CreateSystemIssueRequestV4:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -574,7 +573,6 @@ class CreateSystemIssueRequestV4:
     def creator(self):
         """Gets the creator of this CreateSystemIssueRequestV4.
 
-
         :return: The creator of this CreateSystemIssueRequestV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.Creator`
         """
@@ -583,7 +581,6 @@ class CreateSystemIssueRequestV4:
     @creator.setter
     def creator(self, creator):
         """Sets the creator of this CreateSystemIssueRequestV4.
-
 
         :param creator: The creator of this CreateSystemIssueRequestV4.
         :type creator: :class:`huaweicloudsdkprojectman.v4.Creator`

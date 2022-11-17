@@ -17,7 +17,6 @@ class ComponentSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -214,7 +213,6 @@ class ComponentSpec:
     def source(self):
         """Gets the source of this ComponentSpec.
 
-
         :return: The source of this ComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Source`
         """
@@ -223,7 +221,6 @@ class ComponentSpec:
     @source.setter
     def source(self, source):
         """Sets the source of this ComponentSpec.
-
 
         :param source: The source of this ComponentSpec.
         :type source: :class:`huaweicloudsdkcae.v1.Source`
@@ -234,7 +231,6 @@ class ComponentSpec:
     def build(self):
         """Gets the build of this ComponentSpec.
 
-
         :return: The build of this ComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Build`
         """
@@ -243,7 +239,6 @@ class ComponentSpec:
     @build.setter
     def build(self, build):
         """Sets the build of this ComponentSpec.
-
 
         :param build: The build of this ComponentSpec.
         :type build: :class:`huaweicloudsdkcae.v1.Build`
@@ -254,7 +249,6 @@ class ComponentSpec:
     def access_info(self):
         """Gets the access_info of this ComponentSpec.
 
-
         :return: The access_info of this ComponentSpec.
         :rtype: list[:class:`huaweicloudsdkcae.v1.Access`]
         """
@@ -263,7 +257,6 @@ class ComponentSpec:
     @access_info.setter
     def access_info(self, access_info):
         """Sets the access_info of this ComponentSpec.
-
 
         :param access_info: The access_info of this ComponentSpec.
         :type access_info: list[:class:`huaweicloudsdkcae.v1.Access`]

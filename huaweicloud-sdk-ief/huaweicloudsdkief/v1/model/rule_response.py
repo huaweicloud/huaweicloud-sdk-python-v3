@@ -17,7 +17,6 @@ class RuleResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -308,7 +307,6 @@ class RuleResponse:
     def source(self):
         """Gets the source of this RuleResponse.
 
-
         :return: The source of this RuleResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EndpointObjResp`
         """
@@ -317,7 +315,6 @@ class RuleResponse:
     @source.setter
     def source(self, source):
         """Sets the source of this RuleResponse.
-
 
         :param source: The source of this RuleResponse.
         :type source: :class:`huaweicloudsdkief.v1.EndpointObjResp`
@@ -350,7 +347,6 @@ class RuleResponse:
     def target(self):
         """Gets the target of this RuleResponse.
 
-
         :return: The target of this RuleResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EndpointObjResp`
         """
@@ -359,7 +355,6 @@ class RuleResponse:
     @target.setter
     def target(self, target):
         """Sets the target of this RuleResponse.
-
 
         :param target: The target of this RuleResponse.
         :type target: :class:`huaweicloudsdkief.v1.EndpointObjResp`

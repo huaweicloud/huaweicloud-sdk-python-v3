@@ -17,7 +17,6 @@ class ListTagResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListTagResponse(SdkResponse):
     def resources(self):
         """Gets the resources of this ListTagResponse.
 
-
         :return: The resources of this ListTagResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ResourceItem`]
         """
@@ -65,7 +63,6 @@ class ListTagResponse(SdkResponse):
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this ListTagResponse.
-
 
         :param resources: The resources of this ListTagResponse.
         :type resources: list[:class:`huaweicloudsdkdns.v2.ResourceItem`]
@@ -76,7 +73,6 @@ class ListTagResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListTagResponse.
 
-
         :return: The total_count of this ListTagResponse.
         :rtype: int
         """
@@ -85,7 +81,6 @@ class ListTagResponse(SdkResponse):
     @total_count.setter
     def total_count(self, total_count):
         """Sets the total_count of this ListTagResponse.
-
 
         :param total_count: The total_count of this ListTagResponse.
         :type total_count: int

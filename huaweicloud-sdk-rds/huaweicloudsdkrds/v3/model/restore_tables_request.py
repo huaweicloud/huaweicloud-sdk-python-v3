@@ -17,7 +17,6 @@ class RestoreTablesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class RestoreTablesRequest:
     def body(self):
         """Gets the body of this RestoreTablesRequest.
 
-
         :return: The body of this RestoreTablesRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreTablesRequestBody`
         """
@@ -115,7 +113,6 @@ class RestoreTablesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RestoreTablesRequest.
-
 
         :param body: The body of this RestoreTablesRequest.
         :type body: :class:`huaweicloudsdkrds.v3.RestoreTablesRequestBody`

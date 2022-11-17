@@ -17,7 +17,6 @@ class UpgradeDbVersionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpgradeDbVersionRequest:
     def body(self):
         """Gets the body of this UpgradeDbVersionRequest.
 
-
         :return: The body of this UpgradeDbVersionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.CustomerUpgradeDatabaseVersionReq`
         """
@@ -115,7 +113,6 @@ class UpgradeDbVersionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpgradeDbVersionRequest.
-
 
         :param body: The body of this UpgradeDbVersionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.CustomerUpgradeDatabaseVersionReq`

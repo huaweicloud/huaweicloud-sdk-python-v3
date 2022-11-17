@@ -150,6 +150,8 @@ from huaweicloudsdkosm.v2.model.partners_service_info import PartnersServiceInfo
 from huaweicloudsdkosm.v2.model.put_case_ext_param_req import PutCaseExtParamReq
 from huaweicloudsdkosm.v2.model.query_message_info_v2 import QueryMessageInfoV2
 from huaweicloudsdkosm.v2.model.region import Region
+from huaweicloudsdkosm.v2.model.revoke_message_request import RevokeMessageRequest
+from huaweicloudsdkosm.v2.model.revoke_message_response import RevokeMessageResponse
 from huaweicloudsdkosm.v2.model.satisfaction_dimension_simple_info_v2 import SatisfactionDimensionSimpleInfoV2
 from huaweicloudsdkosm.v2.model.send_verify_code_req import SendVerifyCodeReq
 from huaweicloudsdkosm.v2.model.send_verify_codes_request import SendVerifyCodesRequest

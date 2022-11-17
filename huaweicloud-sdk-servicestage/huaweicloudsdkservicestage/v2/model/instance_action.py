@@ -17,7 +17,6 @@ class InstanceAction:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class InstanceAction:
     def action(self):
         """Gets the action of this InstanceAction.
 
-
         :return: The action of this InstanceAction.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
         """
@@ -64,7 +62,6 @@ class InstanceAction:
     @action.setter
     def action(self, action):
         """Sets the action of this InstanceAction.
-
 
         :param action: The action of this InstanceAction.
         :type action: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
@@ -75,7 +72,6 @@ class InstanceAction:
     def parameters(self):
         """Gets the parameters of this InstanceAction.
 
-
         :return: The parameters of this InstanceAction.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceActionParameters`
         """
@@ -84,7 +80,6 @@ class InstanceAction:
     @parameters.setter
     def parameters(self, parameters):
         """Sets the parameters of this InstanceAction.
-
 
         :param parameters: The parameters of this InstanceAction.
         :type parameters: :class:`huaweicloudsdkservicestage.v2.InstanceActionParameters`

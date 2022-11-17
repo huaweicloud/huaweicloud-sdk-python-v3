@@ -17,7 +17,6 @@ class CreateChannelResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -223,7 +222,6 @@ class CreateChannelResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this CreateChannelResponse.
 
-
         :return: The x_request_id of this CreateChannelResponse.
         :rtype: str
         """
@@ -232,7 +230,6 @@ class CreateChannelResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this CreateChannelResponse.
-
 
         :param x_request_id: The x_request_id of this CreateChannelResponse.
         :type x_request_id: str

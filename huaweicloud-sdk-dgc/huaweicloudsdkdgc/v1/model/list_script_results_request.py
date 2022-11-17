@@ -17,7 +17,6 @@ class ListScriptResultsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class ListScriptResultsRequest:
     def script_name(self):
         """Gets the script_name of this ListScriptResultsRequest.
 
-
         :return: The script_name of this ListScriptResultsRequest.
         :rtype: str
         """
@@ -63,7 +61,6 @@ class ListScriptResultsRequest:
     @script_name.setter
     def script_name(self, script_name):
         """Sets the script_name of this ListScriptResultsRequest.
-
 
         :param script_name: The script_name of this ListScriptResultsRequest.
         :type script_name: str
@@ -74,7 +71,6 @@ class ListScriptResultsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListScriptResultsRequest.
 
-
         :return: The instance_id of this ListScriptResultsRequest.
         :rtype: str
         """
@@ -83,7 +79,6 @@ class ListScriptResultsRequest:
     @instance_id.setter
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListScriptResultsRequest.
-
 
         :param instance_id: The instance_id of this ListScriptResultsRequest.
         :type instance_id: str

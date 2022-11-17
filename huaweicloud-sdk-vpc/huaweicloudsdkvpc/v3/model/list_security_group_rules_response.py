@@ -17,7 +17,6 @@ class ListSecurityGroupRulesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListSecurityGroupRulesResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListSecurityGroupRulesResponse.
 
-
         :return: The page_info of this ListSecurityGroupRulesResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
@@ -116,7 +114,6 @@ class ListSecurityGroupRulesResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListSecurityGroupRulesResponse.
-
 
         :param page_info: The page_info of this ListSecurityGroupRulesResponse.
         :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`

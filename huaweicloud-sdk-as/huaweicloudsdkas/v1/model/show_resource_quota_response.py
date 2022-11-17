@@ -17,7 +17,6 @@ class ShowResourceQuotaResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowResourceQuotaResponse(SdkResponse):
     def quotas(self):
         """Gets the quotas of this ShowResourceQuotaResponse.
 
-
         :return: The quotas of this ShowResourceQuotaResponse.
         :rtype: :class:`huaweicloudsdkas.v1.AllQuotas`
         """
@@ -58,7 +56,6 @@ class ShowResourceQuotaResponse(SdkResponse):
     @quotas.setter
     def quotas(self, quotas):
         """Sets the quotas of this ShowResourceQuotaResponse.
-
 
         :param quotas: The quotas of this ShowResourceQuotaResponse.
         :type quotas: :class:`huaweicloudsdkas.v1.AllQuotas`

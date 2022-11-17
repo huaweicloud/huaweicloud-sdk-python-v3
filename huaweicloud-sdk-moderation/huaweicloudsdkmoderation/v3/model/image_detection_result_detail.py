@@ -17,7 +17,6 @@ class ImageDetectionResultDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,7 @@ class ImageDetectionResultDetail:
 
         :param suggestion: 审核结果是否通过。 block：包含敏感信息，不通过 review：需要人工复检
         :type suggestion: str
-        :param category: 检测结果的一级标签。 支持category列表如下： politics: 涉政 terrorism: 暴恐 porn: 色情 image_text: 图文审核
+        :param category: 检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
         :type category: str
         :param confidence: 置信度，可选值在0-1之间，值越大，可信度越高。
         :type confidence: float
@@ -117,7 +116,7 @@ class ImageDetectionResultDetail:
     def category(self):
         """Gets the category of this ImageDetectionResultDetail.
 
-        检测结果的一级标签。 支持category列表如下： politics: 涉政 terrorism: 暴恐 porn: 色情 image_text: 图文审核
+        检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
 
         :return: The category of this ImageDetectionResultDetail.
         :rtype: str
@@ -128,7 +127,7 @@ class ImageDetectionResultDetail:
     def category(self, category):
         """Sets the category of this ImageDetectionResultDetail.
 
-        检测结果的一级标签。 支持category列表如下： politics: 涉政 terrorism: 暴恐 porn: 色情 image_text: 图文审核
+        检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
 
         :param category: The category of this ImageDetectionResultDetail.
         :type category: str
@@ -161,7 +160,6 @@ class ImageDetectionResultDetail:
     def face_location(self):
         """Gets the face_location of this ImageDetectionResultDetail.
 
-
         :return: The face_location of this ImageDetectionResultDetail.
         :rtype: :class:`huaweicloudsdkmoderation.v3.FaceLocationDetail`
         """
@@ -170,7 +168,6 @@ class ImageDetectionResultDetail:
     @face_location.setter
     def face_location(self, face_location):
         """Sets the face_location of this ImageDetectionResultDetail.
-
 
         :param face_location: The face_location of this ImageDetectionResultDetail.
         :type face_location: :class:`huaweicloudsdkmoderation.v3.FaceLocationDetail`
@@ -181,7 +178,6 @@ class ImageDetectionResultDetail:
     def qr_location(self):
         """Gets the qr_location of this ImageDetectionResultDetail.
 
-
         :return: The qr_location of this ImageDetectionResultDetail.
         :rtype: :class:`huaweicloudsdkmoderation.v3.QRLocationDetail`
         """
@@ -190,7 +186,6 @@ class ImageDetectionResultDetail:
     @qr_location.setter
     def qr_location(self, qr_location):
         """Sets the qr_location of this ImageDetectionResultDetail.
-
 
         :param qr_location: The qr_location of this ImageDetectionResultDetail.
         :type qr_location: :class:`huaweicloudsdkmoderation.v3.QRLocationDetail`

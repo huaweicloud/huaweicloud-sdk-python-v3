@@ -17,7 +17,6 @@ class VersionDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -100,7 +99,6 @@ class VersionDetail:
     def links(self):
         """Gets the links of this VersionDetail.
 
-
         :return: The links of this VersionDetail.
         :rtype: :class:`huaweicloudsdkswr.v2.Link`
         """
@@ -109,7 +107,6 @@ class VersionDetail:
     @links.setter
     def links(self, links):
         """Sets the links of this VersionDetail.
-
 
         :param links: The links of this VersionDetail.
         :type links: :class:`huaweicloudsdkswr.v2.Link`

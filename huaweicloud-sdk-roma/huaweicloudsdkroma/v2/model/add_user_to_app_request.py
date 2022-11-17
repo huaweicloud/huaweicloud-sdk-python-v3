@@ -17,7 +17,6 @@ class AddUserToAppRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class AddUserToAppRequest:
     def body(self):
         """Gets the body of this AddUserToAppRequest.
 
-
         :return: The body of this AddUserToAppRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AddUserToApp`
         """
@@ -114,7 +112,6 @@ class AddUserToAppRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddUserToAppRequest.
-
 
         :param body: The body of this AddUserToAppRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AddUserToApp`

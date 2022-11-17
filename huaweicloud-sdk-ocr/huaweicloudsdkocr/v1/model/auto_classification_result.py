@@ -17,7 +17,6 @@ class AutoClassificationResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -66,7 +65,6 @@ class AutoClassificationResult:
     def status(self):
         """Gets the status of this AutoClassificationResult.
 
-
         :return: The status of this AutoClassificationResult.
         :rtype: :class:`huaweicloudsdkocr.v1.AutoClassificationResultStatus`
         """
@@ -75,7 +73,6 @@ class AutoClassificationResult:
     @status.setter
     def status(self, status):
         """Sets the status of this AutoClassificationResult.
-
 
         :param status: The status of this AutoClassificationResult.
         :type status: :class:`huaweicloudsdkocr.v1.AutoClassificationResultStatus`

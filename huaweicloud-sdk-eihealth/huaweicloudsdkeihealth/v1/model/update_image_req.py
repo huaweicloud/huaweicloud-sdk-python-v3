@@ -17,7 +17,6 @@ class UpdateImageReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class UpdateImageReq:
     def type(self):
         """Gets the type of this UpdateImageReq.
 
-
         :return: The type of this UpdateImageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageType`
         """
@@ -72,7 +70,6 @@ class UpdateImageReq:
     @type.setter
     def type(self, type):
         """Sets the type of this UpdateImageReq.
-
 
         :param type: The type of this UpdateImageReq.
         :type type: :class:`huaweicloudsdkeihealth.v1.ImageType`
@@ -105,7 +102,6 @@ class UpdateImageReq:
     def chip_type(self):
         """Gets the chip_type of this UpdateImageReq.
 
-
         :return: The chip_type of this UpdateImageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
         """
@@ -114,7 +110,6 @@ class UpdateImageReq:
     @chip_type.setter
     def chip_type(self, chip_type):
         """Sets the chip_type of this UpdateImageReq.
-
 
         :param chip_type: The chip_type of this UpdateImageReq.
         :type chip_type: :class:`huaweicloudsdkeihealth.v1.ImageChipType`

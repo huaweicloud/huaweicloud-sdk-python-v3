@@ -17,7 +17,6 @@ class RawTableParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -141,7 +140,6 @@ class RawTableParam:
     def view_config(self):
         """Gets the view_config of this RawTableParam.
 
-
         :return: The view_config of this RawTableParam.
         :rtype: :class:`huaweicloudsdkapm.v1.RawTableView`
         """
@@ -150,7 +148,6 @@ class RawTableParam:
     @view_config.setter
     def view_config(self, view_config):
         """Sets the view_config of this RawTableParam.
-
 
         :param view_config: The view_config of this RawTableParam.
         :type view_config: :class:`huaweicloudsdkapm.v1.RawTableView`

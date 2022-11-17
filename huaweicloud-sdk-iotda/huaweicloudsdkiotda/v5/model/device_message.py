@@ -17,7 +17,6 @@ class DeviceMessage:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -57,11 +56,11 @@ class DeviceMessage:
         :type message_id: str
         :param name: 消息名称,在下发消息时由用户指定。
         :type name: str
-        :param message: 消息内容。 
+        :param message: 消息内容。
         :type message: object
-        :param encoding: 消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。 
+        :param encoding: 消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。
         :type encoding: str
-        :param payload_format: 有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。 
+        :param payload_format: 有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。
         :type payload_format: str
         :param topic: 消息topic
         :type topic: str
@@ -163,7 +162,7 @@ class DeviceMessage:
     def message(self):
         """Gets the message of this DeviceMessage.
 
-        消息内容。 
+        消息内容。
 
         :return: The message of this DeviceMessage.
         :rtype: object
@@ -174,7 +173,7 @@ class DeviceMessage:
     def message(self, message):
         """Sets the message of this DeviceMessage.
 
-        消息内容。 
+        消息内容。
 
         :param message: The message of this DeviceMessage.
         :type message: object
@@ -185,7 +184,7 @@ class DeviceMessage:
     def encoding(self):
         """Gets the encoding of this DeviceMessage.
 
-        消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。 
+        消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。
 
         :return: The encoding of this DeviceMessage.
         :rtype: str
@@ -196,7 +195,7 @@ class DeviceMessage:
     def encoding(self, encoding):
         """Sets the encoding of this DeviceMessage.
 
-        消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。 
+        消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。
 
         :param encoding: The encoding of this DeviceMessage.
         :type encoding: str
@@ -207,7 +206,7 @@ class DeviceMessage:
     def payload_format(self):
         """Gets the payload_format of this DeviceMessage.
 
-        有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。 
+        有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。
 
         :return: The payload_format of this DeviceMessage.
         :rtype: str
@@ -218,7 +217,7 @@ class DeviceMessage:
     def payload_format(self, payload_format):
         """Sets the payload_format of this DeviceMessage.
 
-        有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。 
+        有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。
 
         :param payload_format: The payload_format of this DeviceMessage.
         :type payload_format: str
@@ -251,7 +250,6 @@ class DeviceMessage:
     def properties(self):
         """Gets the properties of this DeviceMessage.
 
-
         :return: The properties of this DeviceMessage.
         :rtype: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
         """
@@ -260,7 +258,6 @@ class DeviceMessage:
     @properties.setter
     def properties(self, properties):
         """Sets the properties of this DeviceMessage.
-
 
         :param properties: The properties of this DeviceMessage.
         :type properties: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
@@ -293,7 +290,6 @@ class DeviceMessage:
     def error_info(self):
         """Gets the error_info of this DeviceMessage.
 
-
         :return: The error_info of this DeviceMessage.
         :rtype: :class:`huaweicloudsdkiotda.v5.ErrorInfoDTO`
         """
@@ -302,7 +298,6 @@ class DeviceMessage:
     @error_info.setter
     def error_info(self, error_info):
         """Sets the error_info of this DeviceMessage.
-
 
         :param error_info: The error_info of this DeviceMessage.
         :type error_info: :class:`huaweicloudsdkiotda.v5.ErrorInfoDTO`

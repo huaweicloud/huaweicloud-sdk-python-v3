@@ -17,7 +17,6 @@ class TemplateView:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class TemplateView:
     def template_name(self):
         """Gets the template_name of this TemplateView.
 
-
         :return: The template_name of this TemplateView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.Template`
         """
@@ -86,7 +84,6 @@ class TemplateView:
     @template_name.setter
     def template_name(self, template_name):
         """Sets the template_name of this TemplateView.
-
 
         :param template_name: The template_name of this TemplateView.
         :type template_name: :class:`huaweicloudsdkservicestage.v2.Template`
@@ -163,7 +160,6 @@ class TemplateView:
     def runtime(self):
         """Gets the runtime of this TemplateView.
 
-
         :return: The runtime of this TemplateView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
@@ -172,7 +168,6 @@ class TemplateView:
     @runtime.setter
     def runtime(self, runtime):
         """Sets the runtime of this TemplateView.
-
 
         :param runtime: The runtime of this TemplateView.
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`

@@ -17,7 +17,6 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListActiveOrHistoryAlarmsResponse.
 
-
         :return: The page_info of this ListActiveOrHistoryAlarmsResponse.
         :rtype: :class:`huaweicloudsdklts.v2.PageInfo`
         """
@@ -87,7 +85,6 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListActiveOrHistoryAlarmsResponse.
-
 
         :param page_info: The page_info of this ListActiveOrHistoryAlarmsResponse.
         :type page_info: :class:`huaweicloudsdklts.v2.PageInfo`

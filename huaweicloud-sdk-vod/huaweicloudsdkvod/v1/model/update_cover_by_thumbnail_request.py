@@ -17,7 +17,6 @@ class UpdateCoverByThumbnailRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateCoverByThumbnailRequest:
     def body(self):
         """Gets the body of this UpdateCoverByThumbnailRequest.
 
-
         :return: The body of this UpdateCoverByThumbnailRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailReq`
         """
@@ -58,7 +56,6 @@ class UpdateCoverByThumbnailRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateCoverByThumbnailRequest.
-
 
         :param body: The body of this UpdateCoverByThumbnailRequest.
         :type body: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailReq`

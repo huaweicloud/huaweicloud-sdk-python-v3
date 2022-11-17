@@ -17,7 +17,6 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
     def body(self):
         """Gets the body of this ChangeGaussMySqlInstanceSpecificationRequest.
 
-
         :return: The body of this ChangeGaussMySqlInstanceSpecificationRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlChangeSpecificationRequest`
         """
@@ -115,7 +113,6 @@ class ChangeGaussMySqlInstanceSpecificationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeGaussMySqlInstanceSpecificationRequest.
-
 
         :param body: The body of this ChangeGaussMySqlInstanceSpecificationRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlChangeSpecificationRequest`

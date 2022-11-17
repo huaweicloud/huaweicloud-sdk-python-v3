@@ -17,7 +17,6 @@ class UpdateLtsInfoConfigRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class UpdateLtsInfoConfigRequestBody:
     def lts_id_info(self):
         """Gets the lts_id_info of this UpdateLtsInfoConfigRequestBody.
 
-
         :return: The lts_id_info of this UpdateLtsInfoConfigRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`
         """
@@ -94,7 +92,6 @@ class UpdateLtsInfoConfigRequestBody:
     @lts_id_info.setter
     def lts_id_info(self, lts_id_info):
         """Sets the lts_id_info of this UpdateLtsInfoConfigRequestBody.
-
 
         :param lts_id_info: The lts_id_info of this UpdateLtsInfoConfigRequestBody.
         :type lts_id_info: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`

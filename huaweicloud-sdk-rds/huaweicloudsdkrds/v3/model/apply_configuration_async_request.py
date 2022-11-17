@@ -17,7 +17,6 @@ class ApplyConfigurationAsyncRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ApplyConfigurationAsyncRequest:
     def body(self):
         """Gets the body of this ApplyConfigurationAsyncRequest.
 
-
         :return: The body of this ApplyConfigurationAsyncRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ApplyConfigurationRequest`
         """
@@ -115,7 +113,6 @@ class ApplyConfigurationAsyncRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ApplyConfigurationAsyncRequest.
-
 
         :param body: The body of this ApplyConfigurationAsyncRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ApplyConfigurationRequest`

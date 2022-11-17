@@ -17,7 +17,6 @@ class ResourceTag:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -35,9 +34,9 @@ class ResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: Key值。 - 支持最大长度为36个UTF-8字符。 - 不支持特殊字符[\\&#x3D;\\*\\&lt;\\&gt;\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        :param key: Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/&#x3D;+-@ - 不能以\&quot;\\_sys\\_\&quot;开头
         :type key: str
-        :param value: Value值。 - 支持最大长度为43个UTF-8字符。 - 不支持特殊字符[\\&#x3D;\\*\\&lt;\\&gt;\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        :param value: Value值。 - 可以为空但不能缺省，最多支持255个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/&#x3D;+-@
         :type value: str
         """
         
@@ -56,7 +55,7 @@ class ResourceTag:
     def key(self):
         """Gets the key of this ResourceTag.
 
-        Key值。 - 支持最大长度为36个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"\\_sys\\_\"开头
 
         :return: The key of this ResourceTag.
         :rtype: str
@@ -67,7 +66,7 @@ class ResourceTag:
     def key(self, key):
         """Sets the key of this ResourceTag.
 
-        Key值。 - 支持最大长度为36个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"\\_sys\\_\"开头
 
         :param key: The key of this ResourceTag.
         :type key: str
@@ -78,7 +77,7 @@ class ResourceTag:
     def value(self):
         """Gets the value of this ResourceTag.
 
-        Value值。 - 支持最大长度为43个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        Value值。 - 可以为空但不能缺省，最多支持255个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@
 
         :return: The value of this ResourceTag.
         :rtype: str
@@ -89,7 +88,7 @@ class ResourceTag:
     def value(self, value):
         """Sets the value of this ResourceTag.
 
-        Value值。 - 支持最大长度为43个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        Value值。 - 可以为空但不能缺省，最多支持255个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@
 
         :param value: The value of this ResourceTag.
         :type value: str

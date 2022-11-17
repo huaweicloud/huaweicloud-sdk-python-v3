@@ -17,7 +17,6 @@ class UpdateMixJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -228,7 +227,6 @@ class UpdateMixJobResponse(SdkResponse):
     def mix_param(self):
         """Gets the mix_param of this UpdateMixJobResponse.
 
-
         :return: The mix_param of this UpdateMixJobResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
         """
@@ -237,7 +235,6 @@ class UpdateMixJobResponse(SdkResponse):
     @mix_param.setter
     def mix_param(self, mix_param):
         """Sets the mix_param of this UpdateMixJobResponse.
-
 
         :param mix_param: The mix_param of this UpdateMixJobResponse.
         :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
@@ -248,7 +245,6 @@ class UpdateMixJobResponse(SdkResponse):
     def record_param(self):
         """Gets the record_param of this UpdateMixJobResponse.
 
-
         :return: The record_param of this UpdateMixJobResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
@@ -257,7 +253,6 @@ class UpdateMixJobResponse(SdkResponse):
     @record_param.setter
     def record_param(self, record_param):
         """Sets the record_param of this UpdateMixJobResponse.
-
 
         :param record_param: The record_param of this UpdateMixJobResponse.
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
@@ -422,7 +417,6 @@ class UpdateMixJobResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this UpdateMixJobResponse.
 
-
         :return: The x_request_id of this UpdateMixJobResponse.
         :rtype: str
         """
@@ -431,7 +425,6 @@ class UpdateMixJobResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this UpdateMixJobResponse.
-
 
         :param x_request_id: The x_request_id of this UpdateMixJobResponse.
         :type x_request_id: str

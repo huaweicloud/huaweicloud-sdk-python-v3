@@ -17,7 +17,6 @@ class DisassociateRouteTableResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DisassociateRouteTableResponse(SdkResponse):
     def routetable(self):
         """Gets the routetable of this DisassociateRouteTableResponse.
 
-
         :return: The routetable of this DisassociateRouteTableResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.RouteTableResp`
         """
@@ -58,7 +56,6 @@ class DisassociateRouteTableResponse(SdkResponse):
     @routetable.setter
     def routetable(self, routetable):
         """Sets the routetable of this DisassociateRouteTableResponse.
-
 
         :param routetable: The routetable of this DisassociateRouteTableResponse.
         :type routetable: :class:`huaweicloudsdkvpc.v2.RouteTableResp`

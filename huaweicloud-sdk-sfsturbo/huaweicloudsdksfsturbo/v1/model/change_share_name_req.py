@@ -17,7 +17,6 @@ class ChangeShareNameReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ChangeShareNameReq:
     def change_name(self):
         """Gets the change_name of this ChangeShareNameReq.
 
-
         :return: The change_name of this ChangeShareNameReq.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ShareName`
         """
@@ -57,7 +55,6 @@ class ChangeShareNameReq:
     @change_name.setter
     def change_name(self, change_name):
         """Sets the change_name of this ChangeShareNameReq.
-
 
         :param change_name: The change_name of this ChangeShareNameReq.
         :type change_name: :class:`huaweicloudsdksfsturbo.v1.ShareName`

@@ -17,7 +17,6 @@ class ServerNics:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -42,13 +41,11 @@ class ServerNics:
         self._id = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        self.id = id
 
     @property
     def id(self):
         """Gets the id of this ServerNics.
-
 
         :return: The id of this ServerNics.
         :rtype: str
@@ -58,7 +55,6 @@ class ServerNics:
     @id.setter
     def id(self, id):
         """Sets the id of this ServerNics.
-
 
         :param id: The id of this ServerNics.
         :type id: str

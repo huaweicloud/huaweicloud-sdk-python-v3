@@ -17,7 +17,6 @@ class ExecuteSqlRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ExecuteSqlRequest:
     def body(self):
         """Gets the body of this ExecuteSqlRequest.
 
-
         :return: The body of this ExecuteSqlRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.SqlExecutionReq`
         """
@@ -86,7 +84,6 @@ class ExecuteSqlRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExecuteSqlRequest.
-
 
         :param body: The body of this ExecuteSqlRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.SqlExecutionReq`

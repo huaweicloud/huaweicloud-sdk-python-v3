@@ -17,7 +17,6 @@ class ImportGraphRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ImportGraphRequest:
     def body(self):
         """Gets the body of this ImportGraphRequest.
 
-
         :return: The body of this ImportGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.ImportGraphReq`
         """
@@ -114,7 +112,6 @@ class ImportGraphRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportGraphRequest.
-
 
         :param body: The body of this ImportGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.ImportGraphReq`

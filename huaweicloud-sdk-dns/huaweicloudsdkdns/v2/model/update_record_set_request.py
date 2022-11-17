@@ -17,7 +17,6 @@ class UpdateRecordSetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -61,7 +60,6 @@ class UpdateRecordSetRequest:
     def zone_id(self):
         """Gets the zone_id of this UpdateRecordSetRequest.
 
-
         :return: The zone_id of this UpdateRecordSetRequest.
         :rtype: str
         """
@@ -70,7 +68,6 @@ class UpdateRecordSetRequest:
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this UpdateRecordSetRequest.
-
 
         :param zone_id: The zone_id of this UpdateRecordSetRequest.
         :type zone_id: str
@@ -81,7 +78,6 @@ class UpdateRecordSetRequest:
     def recordset_id(self):
         """Gets the recordset_id of this UpdateRecordSetRequest.
 
-
         :return: The recordset_id of this UpdateRecordSetRequest.
         :rtype: str
         """
@@ -90,7 +86,6 @@ class UpdateRecordSetRequest:
     @recordset_id.setter
     def recordset_id(self, recordset_id):
         """Sets the recordset_id of this UpdateRecordSetRequest.
-
 
         :param recordset_id: The recordset_id of this UpdateRecordSetRequest.
         :type recordset_id: str
@@ -101,7 +96,6 @@ class UpdateRecordSetRequest:
     def body(self):
         """Gets the body of this UpdateRecordSetRequest.
 
-
         :return: The body of this UpdateRecordSetRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetReq`
         """
@@ -110,7 +104,6 @@ class UpdateRecordSetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateRecordSetRequest.
-
 
         :param body: The body of this UpdateRecordSetRequest.
         :type body: :class:`huaweicloudsdkdns.v2.UpdateRecordSetReq`

@@ -17,7 +17,6 @@ class NovaShowKeypairResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class NovaShowKeypairResponse(SdkResponse):
     def keypair(self):
         """Gets the keypair of this NovaShowKeypairResponse.
 
-
         :return: The keypair of this NovaShowKeypairResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaKeypairDetail`
         """
@@ -58,7 +56,6 @@ class NovaShowKeypairResponse(SdkResponse):
     @keypair.setter
     def keypair(self, keypair):
         """Sets the keypair of this NovaShowKeypairResponse.
-
 
         :param keypair: The keypair of this NovaShowKeypairResponse.
         :type keypair: :class:`huaweicloudsdkecs.v2.NovaKeypairDetail`

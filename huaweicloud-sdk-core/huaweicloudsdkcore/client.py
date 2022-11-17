@@ -345,10 +345,17 @@ class Client(object):
             list_filter = filter(lambda x: type(x) == tuple and len(x) == 2 and x[1] is not None, params)
             return [i for i in list_filter]
 
-    def do_http_request(self, method, resource_path, path_params=None, query_params=None, header_params=None, body=None,
-                        post_params=None, response_type=None, response_headers=None, collection_formats=None,
-                        request_type=None, async_request=False):
-        url_parse_result = urlparse(self._endpoint)
+    def _url_parse(self, cname):
+        parse_result = urlparse(self._endpoint)
+        if cname:
+            endpoint = "%s://%s.%s" % (parse_result.scheme, cname, parse_result.netloc)
+            parse_result = urlparse(endpoint)
+        return parse_result
+
+    def do_http_request(self, method, resource_path, path_params=None, query_params=None, header_params=None,
+                        body=None, post_params=None, cname=None, response_type=None, response_headers=None,
+                        collection_formats=None, request_type=None, async_request=False):
+        url_parse_result = self._url_parse(cname)
         schema = url_parse_result.scheme
         host = url_parse_result.netloc
 

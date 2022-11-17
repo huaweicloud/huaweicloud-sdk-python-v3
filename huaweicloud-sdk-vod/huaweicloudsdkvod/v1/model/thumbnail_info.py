@@ -17,7 +17,6 @@ class ThumbnailInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -92,7 +91,6 @@ class ThumbnailInfo:
     def dots(self):
         """Gets the dots of this ThumbnailInfo.
 
-
         :return: The dots of this ThumbnailInfo.
         :rtype: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
         """
@@ -101,7 +99,6 @@ class ThumbnailInfo:
     @dots.setter
     def dots(self, dots):
         """Sets the dots of this ThumbnailInfo.
-
 
         :param dots: The dots of this ThumbnailInfo.
         :type dots: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]

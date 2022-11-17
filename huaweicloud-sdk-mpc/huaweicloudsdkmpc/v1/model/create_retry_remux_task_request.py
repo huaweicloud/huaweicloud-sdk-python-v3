@@ -17,7 +17,6 @@ class CreateRetryRemuxTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateRetryRemuxTaskRequest:
     def body(self):
         """Gets the body of this CreateRetryRemuxTaskRequest.
 
-
         :return: The body of this CreateRetryRemuxTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.RemuxRetryReq`
         """
@@ -58,7 +56,6 @@ class CreateRetryRemuxTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRetryRemuxTaskRequest.
-
 
         :param body: The body of this CreateRetryRemuxTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.RemuxRetryReq`

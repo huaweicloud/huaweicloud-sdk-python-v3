@@ -17,7 +17,6 @@ class CreateRemuxTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateRemuxTaskRequest:
     def body(self):
         """Gets the body of this CreateRemuxTaskRequest.
 
-
         :return: The body of this CreateRemuxTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateRemuxTaskReq`
         """
@@ -58,7 +56,6 @@ class CreateRemuxTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRemuxTaskRequest.
-
 
         :param body: The body of this CreateRemuxTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateRemuxTaskReq`

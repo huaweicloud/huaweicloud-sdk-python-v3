@@ -17,7 +17,6 @@ class CreateCaseExtendsParamRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class CreateCaseExtendsParamRequest:
     def body(self):
         """Gets the body of this CreateCaseExtendsParamRequest.
 
-
         :return: The body of this CreateCaseExtendsParamRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.PutCaseExtParamReq`
         """
@@ -173,7 +171,6 @@ class CreateCaseExtendsParamRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCaseExtendsParamRequest.
-
 
         :param body: The body of this CreateCaseExtendsParamRequest.
         :type body: :class:`huaweicloudsdkosm.v2.PutCaseExtParamReq`

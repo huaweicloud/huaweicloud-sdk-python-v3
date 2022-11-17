@@ -17,7 +17,6 @@ class EnlargeInstanceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -140,7 +139,6 @@ class EnlargeInstanceRequestBody:
     def volume(self):
         """Gets the volume of this EnlargeInstanceRequestBody.
 
-
         :return: The volume of this EnlargeInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.AddShardingNodeVolumeOption`
         """
@@ -149,7 +147,6 @@ class EnlargeInstanceRequestBody:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this EnlargeInstanceRequestBody.
-
 
         :param volume: The volume of this EnlargeInstanceRequestBody.
         :type volume: :class:`huaweicloudsdkdds.v3.AddShardingNodeVolumeOption`

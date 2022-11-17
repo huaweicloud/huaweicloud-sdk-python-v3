@@ -17,7 +17,6 @@ class CreateDatasourceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -150,7 +149,6 @@ class CreateDatasourceResponse(SdkResponse):
     def content(self):
         """Gets the content of this CreateDatasourceResponse.
 
-
         :return: The content of this CreateDatasourceResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
         """
@@ -159,7 +157,6 @@ class CreateDatasourceResponse(SdkResponse):
     @content.setter
     def content(self, content):
         """Sets the content of this CreateDatasourceResponse.
-
 
         :param content: The content of this CreateDatasourceResponse.
         :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`

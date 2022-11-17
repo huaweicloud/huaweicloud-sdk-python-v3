@@ -17,7 +17,6 @@ class ProjectModule:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -128,7 +127,6 @@ class ProjectModule:
     def owner(self):
         """Gets the owner of this ProjectModule.
 
-
         :return: The owner of this ProjectModule.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ModuleOwner`
         """
@@ -137,7 +135,6 @@ class ProjectModule:
     @owner.setter
     def owner(self, owner):
         """Sets the owner of this ProjectModule.
-
 
         :param owner: The owner of this ProjectModule.
         :type owner: :class:`huaweicloudsdkprojectman.v4.ModuleOwner`

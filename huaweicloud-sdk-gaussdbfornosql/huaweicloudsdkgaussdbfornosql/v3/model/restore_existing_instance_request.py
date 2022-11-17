@@ -17,7 +17,6 @@ class RestoreExistingInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RestoreExistingInstanceRequest:
     def body(self):
         """Gets the body of this RestoreExistingInstanceRequest.
 
-
         :return: The body of this RestoreExistingInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreRequestBody`
         """
@@ -86,7 +84,6 @@ class RestoreExistingInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RestoreExistingInstanceRequest.
-
 
         :param body: The body of this RestoreExistingInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreRequestBody`

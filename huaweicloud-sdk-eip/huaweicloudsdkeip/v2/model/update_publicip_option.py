@@ -17,7 +17,6 @@ class UpdatePublicipOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -37,11 +36,11 @@ class UpdatePublicipOption:
 
         The model defined in huaweicloud sdk
 
-        :param port_id: 功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。
+        :param port_id: 功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。如果alias和port_id都携带，只有alias生效。
         :type port_id: str
         :param ip_version: 功能说明：IP版本信息  取值范围：4和6  4：IPv4  6：IPv6  约束：必须是系统支持的IP版本类型，和port_id互斥，不能同时更新。
         :type ip_version: int
-        :param alias: 功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        :param alias: 功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：如果alias和port_id都携带，只有alias生效。
         :type alias: str
         """
         
@@ -63,7 +62,7 @@ class UpdatePublicipOption:
     def port_id(self):
         """Gets the port_id of this UpdatePublicipOption.
 
-        功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。
+        功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。如果alias和port_id都携带，只有alias生效。
 
         :return: The port_id of this UpdatePublicipOption.
         :rtype: str
@@ -74,7 +73,7 @@ class UpdatePublicipOption:
     def port_id(self, port_id):
         """Sets the port_id of this UpdatePublicipOption.
 
-        功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。
+        功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。如果alias和port_id都携带，只有alias生效。
 
         :param port_id: The port_id of this UpdatePublicipOption.
         :type port_id: str
@@ -107,7 +106,7 @@ class UpdatePublicipOption:
     def alias(self):
         """Gets the alias of this UpdatePublicipOption.
 
-        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：如果alias和port_id都携带，只有alias生效。
 
         :return: The alias of this UpdatePublicipOption.
         :rtype: str
@@ -118,7 +117,7 @@ class UpdatePublicipOption:
     def alias(self, alias):
         """Sets the alias of this UpdatePublicipOption.
 
-        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：如果alias和port_id都携带，只有alias生效。
 
         :param alias: The alias of this UpdatePublicipOption.
         :type alias: str

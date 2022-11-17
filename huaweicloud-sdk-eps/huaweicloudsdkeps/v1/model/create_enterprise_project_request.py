@@ -17,7 +17,6 @@ class CreateEnterpriseProjectRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateEnterpriseProjectRequest:
     def body(self):
         """Gets the body of this CreateEnterpriseProjectRequest.
 
-
         :return: The body of this CreateEnterpriseProjectRequest.
         :rtype: :class:`huaweicloudsdkeps.v1.EnterpriseProject`
         """
@@ -58,7 +56,6 @@ class CreateEnterpriseProjectRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateEnterpriseProjectRequest.
-
 
         :param body: The body of this CreateEnterpriseProjectRequest.
         :type body: :class:`huaweicloudsdkeps.v1.EnterpriseProject`

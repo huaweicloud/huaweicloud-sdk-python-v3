@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ProjectManAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddApplyJoinProjectForAgc
         :type request: :class:`huaweicloudsdkprojectman.v4.AddApplyJoinProjectForAgcRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.AddApplyJoinProjectForAgcResponse`
@@ -68,6 +63,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddApplyJoinProjectForAgcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddMemberV4
         :type request: :class:`huaweicloudsdkprojectman.v4.AddMemberV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.AddMemberV4Response`
@@ -130,6 +129,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -164,6 +165,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddMemberV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -178,6 +180,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddMembersV4
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchAddMembersV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchAddMembersV4Response`
@@ -190,6 +193,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +229,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddMembersV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -238,6 +244,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteMembersV4
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4Response`
@@ -250,6 +257,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +293,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMembersV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -298,6 +308,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUpdateChildNickNames
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildNickNamesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildNickNamesResponse`
@@ -310,6 +321,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateChildNickNamesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckProjectNameV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameV4Response`
@@ -368,6 +383,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +417,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckProjectNameV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -414,6 +432,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProjectV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4Response`
@@ -426,6 +445,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -458,6 +479,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -472,6 +494,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProjectV4
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteProjectV4Response`
@@ -484,6 +507,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -516,6 +541,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProjectV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -530,6 +556,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDomainNotAddedProjectsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4Response`
@@ -542,6 +569,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -576,6 +605,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainNotAddedProjectsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -590,6 +620,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectBugStaticsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectBugStaticsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectBugStaticsV4Response`
@@ -602,6 +633,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -634,6 +667,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectBugStaticsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -648,6 +682,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectDemandStaticV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectDemandStaticV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectDemandStaticV4Response`
@@ -660,6 +695,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -692,6 +729,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectDemandStaticV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -706,6 +744,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectMembersV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectMembersV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectMembersV4Response`
@@ -718,6 +757,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -754,6 +795,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectMembersV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -768,6 +810,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4Response`
@@ -780,6 +823,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -824,6 +869,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -838,6 +884,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWorkitemStatusRecordsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemStatusRecordsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkitemStatusRecordsV4Response`
@@ -850,6 +897,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -886,6 +935,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkitemStatusRecordsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -900,6 +950,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWorkitems
         :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkitemsResponse`
@@ -912,6 +963,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -950,6 +1003,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkitemsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -964,6 +1018,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemoveProject
         :type request: :class:`huaweicloudsdkprojectman.v4.RemoveProjectRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.RemoveProjectResponse`
@@ -976,6 +1031,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1008,6 +1065,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1022,6 +1080,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBugDensityV2
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugDensityV2Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowBugDensityV2Response`
@@ -1034,6 +1093,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1068,6 +1129,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBugDensityV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1082,6 +1144,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBugsPerDeveloper
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugsPerDeveloperRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowBugsPerDeveloperResponse`
@@ -1094,6 +1157,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1128,6 +1193,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBugsPerDeveloperResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1142,6 +1208,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCompletionRate
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCompletionRateRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCompletionRateResponse`
@@ -1154,6 +1221,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1188,6 +1257,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCompletionRateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1202,6 +1272,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCurUserInfo
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserInfoRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCurUserInfoResponse`
@@ -1214,6 +1285,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1244,6 +1317,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCurUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1258,6 +1332,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCurUserRole
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserRoleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCurUserRoleResponse`
@@ -1270,6 +1345,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1302,6 +1379,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCurUserRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1316,6 +1394,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProjectInfoV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectInfoV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectInfoV4Response`
@@ -1328,6 +1407,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1360,6 +1441,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectInfoV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1374,6 +1456,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProjectSummaryV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectSummaryV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectSummaryV4Response`
@@ -1386,6 +1469,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1418,6 +1503,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectSummaryV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1432,6 +1518,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWorkItemWrokflowConfig
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowWorkItemWrokflowConfigRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowWorkItemWrokflowConfigResponse`
@@ -1444,6 +1531,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1478,6 +1567,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkItemWrokflowConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1492,6 +1582,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMembesRoleV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4Response`
@@ -1504,6 +1595,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1538,6 +1631,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMembesRoleV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1552,6 +1646,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNickNameV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateNickNameV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateNickNameV4Response`
@@ -1564,6 +1659,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1596,6 +1693,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNickNameV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1610,6 +1708,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProjectV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectV4Response`
@@ -1622,6 +1721,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1656,6 +1757,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1670,6 +1772,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteIssuesV4
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesV4Response`
@@ -1682,6 +1785,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1716,6 +1821,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteIssuesV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1730,6 +1836,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteIterationsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIterationsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIterationsV4Response`
@@ -1742,6 +1849,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1776,6 +1885,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteIterationsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1790,6 +1900,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelProjectDomain
         :type request: :class:`huaweicloudsdkprojectman.v4.CancelProjectDomainRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CancelProjectDomainResponse`
@@ -1802,6 +1913,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1836,6 +1949,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelProjectDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1850,6 +1964,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCustomfields
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldsResponse`
@@ -1862,6 +1977,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1896,6 +2013,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCustomfieldsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1910,6 +2028,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueV4Response`
@@ -1922,6 +2041,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1956,6 +2077,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1970,6 +2092,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateIterationV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIterationV4Response`
@@ -1982,6 +2105,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2016,6 +2141,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2030,6 +2156,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProjectDomain
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainResponse`
@@ -2042,6 +2169,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2076,6 +2205,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2090,6 +2220,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProjectModule
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleResponse`
@@ -2102,6 +2233,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2136,6 +2269,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2150,6 +2284,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSystemIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateSystemIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateSystemIssueV4Response`
@@ -2162,6 +2297,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2196,6 +2333,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSystemIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2210,6 +2348,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIssueV4Response`
@@ -2222,6 +2361,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2256,6 +2397,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2270,6 +2412,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteIterationV4
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIterationV4Response`
@@ -2282,6 +2425,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2316,6 +2461,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2330,6 +2476,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProjectModule
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectModuleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteProjectModuleResponse`
@@ -2342,6 +2489,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2376,6 +2525,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProjectModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2390,6 +2540,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadImageFile
         :type request: :class:`huaweicloudsdkprojectman.v4.DownloadImageFileRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DownloadImageFileResponse`
@@ -2402,6 +2553,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2436,6 +2589,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadImageFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2450,6 +2604,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAssociatedIssues
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedIssuesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedIssuesResponse`
@@ -2462,6 +2617,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2500,6 +2657,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssociatedIssuesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2514,6 +2672,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAssociatedTestCases
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedTestCasesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedTestCasesResponse`
@@ -2526,6 +2685,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2564,6 +2725,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssociatedTestCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2578,6 +2740,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAssociatedWikis
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedWikisRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedWikisResponse`
@@ -2590,6 +2753,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2628,6 +2793,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssociatedWikisResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2642,6 +2808,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListChildIssuesV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListChildIssuesV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListChildIssuesV4Response`
@@ -2654,6 +2821,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2688,6 +2857,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListChildIssuesV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2702,6 +2872,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIssueAssociatedCommits
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueAssociatedCommitsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueAssociatedCommitsResponse`
@@ -2714,6 +2885,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2754,6 +2927,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssueAssociatedCommitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2768,6 +2942,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIssueCommentsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCommentsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCommentsV4Response`
@@ -2780,6 +2955,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2818,6 +2995,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssueCommentsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2832,6 +3010,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIssueCustomFields
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsResponse`
@@ -2844,6 +3023,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2878,6 +3059,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssueCustomFieldsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2892,6 +3074,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIssueRecordsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueRecordsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueRecordsV4Response`
@@ -2904,6 +3087,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2942,6 +3127,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssueRecordsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2956,6 +3142,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIssuesSfV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesSfV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssuesSfV4Response`
@@ -2968,6 +3155,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3010,6 +3199,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssuesSfV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3024,6 +3214,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIssuesV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssuesV4Response`
@@ -3036,6 +3227,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3070,6 +3263,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssuesV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3084,6 +3278,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIterationHistories
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIterationHistoriesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIterationHistoriesResponse`
@@ -3096,6 +3291,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3132,6 +3329,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIterationHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3146,6 +3344,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectDomains
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectDomainsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectDomainsResponse`
@@ -3158,6 +3357,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3194,6 +3395,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3208,6 +3410,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectIssuesRecordsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIssuesRecordsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectIssuesRecordsV4Response`
@@ -3220,6 +3423,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3258,6 +3463,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectIssuesRecordsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3272,6 +3478,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectIterationsV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIterationsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectIterationsV4Response`
@@ -3284,6 +3491,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3320,6 +3529,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectIterationsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3334,6 +3544,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectModules
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectModulesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectModulesResponse`
@@ -3346,6 +3557,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3382,6 +3595,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectModulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3396,6 +3610,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectWorkHours
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursResponse`
@@ -3408,6 +3623,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3440,6 +3657,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectWorkHoursResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3454,6 +3672,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScrumProjectStatuses
         :type request: :class:`huaweicloudsdkprojectman.v4.ListScrumProjectStatusesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListScrumProjectStatusesResponse`
@@ -3466,6 +3685,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3504,6 +3725,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScrumProjectStatusesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3518,6 +3740,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIssueCompletionRate
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueCompletionRateRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueCompletionRateResponse`
@@ -3530,6 +3753,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3562,6 +3787,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIssueCompletionRateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3576,6 +3802,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueV4Response`
@@ -3588,6 +3815,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3622,6 +3851,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3636,6 +3866,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIssuesWrokFlowConfig
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssuesWrokFlowConfigRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssuesWrokFlowConfigResponse`
@@ -3648,6 +3879,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3682,6 +3915,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIssuesWrokFlowConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3696,6 +3930,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIterationV4
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIterationV4Response`
@@ -3708,6 +3943,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3740,6 +3977,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3754,6 +3992,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProjectWorkHours
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursResponse`
@@ -3766,6 +4005,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3800,6 +4041,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectWorkHoursResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3814,6 +4056,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateIssueV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIssueV4Response`
@@ -3826,6 +4069,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3862,6 +4107,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3876,6 +4122,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateIterationV4
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIterationV4Response`
@@ -3888,6 +4135,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3924,6 +4173,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3938,6 +4188,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProjectDomain
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectDomainRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectDomainResponse`
@@ -3950,6 +4201,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3986,6 +4239,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4000,6 +4254,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProjectModule
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleResponse`
@@ -4012,6 +4267,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4048,6 +4305,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4062,6 +4320,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadAttachments
         :type request: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsResponse`
@@ -4074,6 +4333,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4112,6 +4373,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadAttachmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4126,6 +4388,7 @@ class ProjectManAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadIssueImg
         :type request: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgResponse`
@@ -4138,6 +4401,8 @@ class ProjectManAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4174,6 +4439,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadIssueImgResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4181,7 +4447,7 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4192,9 +4458,10 @@ class ProjectManAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4211,6 +4478,7 @@ class ProjectManAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

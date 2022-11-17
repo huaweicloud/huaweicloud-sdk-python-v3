@@ -17,7 +17,6 @@ class UpdateRangeSwitchResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateRangeSwitchResponse(SdkResponse):
     def origin_range(self):
         """Gets the origin_range of this UpdateRangeSwitchResponse.
 
-
         :return: The origin_range of this UpdateRangeSwitchResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.OriginRangeBody`
         """
@@ -58,7 +56,6 @@ class UpdateRangeSwitchResponse(SdkResponse):
     @origin_range.setter
     def origin_range(self, origin_range):
         """Sets the origin_range of this UpdateRangeSwitchResponse.
-
 
         :param origin_range: The origin_range of this UpdateRangeSwitchResponse.
         :type origin_range: :class:`huaweicloudsdkcdn.v1.OriginRangeBody`

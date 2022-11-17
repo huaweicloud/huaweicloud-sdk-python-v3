@@ -17,7 +17,6 @@ class ShowTenantQuotaResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowTenantQuotaResponse(SdkResponse):
     def absolute(self):
         """Gets the absolute of this ShowTenantQuotaResponse.
 
-
         :return: The absolute of this ShowTenantQuotaResponse.
         :rtype: :class:`huaweicloudsdkbms.v1.Absolute`
         """
@@ -58,7 +56,6 @@ class ShowTenantQuotaResponse(SdkResponse):
     @absolute.setter
     def absolute(self, absolute):
         """Sets the absolute of this ShowTenantQuotaResponse.
-
 
         :param absolute: The absolute of this ShowTenantQuotaResponse.
         :type absolute: :class:`huaweicloudsdkbms.v1.Absolute`

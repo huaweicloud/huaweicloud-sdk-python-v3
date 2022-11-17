@@ -17,7 +17,6 @@ class Network:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -222,7 +221,6 @@ class Network:
     def src_geo(self):
         """Gets the src_geo of this Network.
 
-
         :return: The src_geo of this Network.
         :rtype: :class:`huaweicloudsdksa.v1.Geo`
         """
@@ -231,7 +229,6 @@ class Network:
     @src_geo.setter
     def src_geo(self, src_geo):
         """Sets the src_geo of this Network.
-
 
         :param src_geo: The src_geo of this Network.
         :type src_geo: :class:`huaweicloudsdksa.v1.Geo`
@@ -308,7 +305,6 @@ class Network:
     def dest_geo(self):
         """Gets the dest_geo of this Network.
 
-
         :return: The dest_geo of this Network.
         :rtype: :class:`huaweicloudsdksa.v1.Geo`
         """
@@ -317,7 +313,6 @@ class Network:
     @dest_geo.setter
     def dest_geo(self, dest_geo):
         """Sets the dest_geo of this Network.
-
 
         :param dest_geo: The dest_geo of this Network.
         :type dest_geo: :class:`huaweicloudsdksa.v1.Geo`

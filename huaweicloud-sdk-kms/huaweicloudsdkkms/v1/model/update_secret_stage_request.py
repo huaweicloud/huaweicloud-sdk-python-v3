@@ -17,7 +17,6 @@ class UpdateSecretStageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateSecretStageRequest:
     def body(self):
         """Gets the body of this UpdateSecretStageRequest.
 
-
         :return: The body of this UpdateSecretStageRequest.
         :rtype: :class:`huaweicloudsdkkms.v1.UpdateSecretStageRequestBody`
         """
@@ -114,7 +112,6 @@ class UpdateSecretStageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateSecretStageRequest.
-
 
         :param body: The body of this UpdateSecretStageRequest.
         :type body: :class:`huaweicloudsdkkms.v1.UpdateSecretStageRequestBody`

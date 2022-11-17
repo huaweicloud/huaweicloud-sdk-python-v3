@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SwrAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateImageSyncRepo
         :type request: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoResponse`
@@ -68,6 +63,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateImageSyncRepoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateManualImageSyncRepo
         :type request: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoResponse`
@@ -130,6 +129,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateManualImageSyncRepoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNamespace
         :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceResponse`
@@ -192,6 +195,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +229,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNamespaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -238,6 +244,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNamespaceAuth
         :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceAuthResponse`
@@ -250,6 +257,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +293,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNamespaceAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -298,6 +308,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRepo
         :type request: :class:`huaweicloudsdkswr.v2.CreateRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoResponse`
@@ -310,6 +321,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +357,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRepoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +372,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRepoDomains
         :type request: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsResponse`
@@ -370,6 +385,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -406,6 +423,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRepoDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -420,6 +438,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRetention
         :type request: :class:`huaweicloudsdkswr.v2.CreateRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRetentionResponse`
@@ -432,6 +451,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -468,6 +489,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRetentionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -482,6 +504,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSecret
         :type request: :class:`huaweicloudsdkswr.v2.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateSecretResponse`
@@ -494,6 +517,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -511,7 +536,7 @@ class SwrAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Swr-Dockerlogin"]
+        response_headers = ["X-Swr-Dockerlogin", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -526,6 +551,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -540,6 +566,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTrigger
         :type request: :class:`huaweicloudsdkswr.v2.CreateTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateTriggerResponse`
@@ -552,6 +579,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -588,6 +617,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -602,6 +632,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateUserRepositoryAuth
         :type request: :class:`huaweicloudsdkswr.v2.CreateUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateUserRepositoryAuthResponse`
@@ -614,6 +645,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -650,6 +683,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateUserRepositoryAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -664,6 +698,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteImageSyncRepo
         :type request: :class:`huaweicloudsdkswr.v2.DeleteImageSyncRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteImageSyncRepoResponse`
@@ -676,6 +711,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -712,6 +749,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteImageSyncRepoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -726,6 +764,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNamespaceAuth
         :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteNamespaceAuthResponse`
@@ -738,6 +777,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -772,6 +813,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNamespaceAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -786,6 +828,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNamespaces
         :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespacesRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteNamespacesResponse`
@@ -798,6 +841,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -830,6 +875,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNamespacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -844,6 +890,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRepo
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoResponse`
@@ -856,6 +903,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -890,6 +939,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRepoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -904,6 +954,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRepoDomains
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoDomainsResponse`
@@ -916,6 +967,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -952,6 +1005,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRepoDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -966,6 +1020,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRepoTag
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoTagRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoTagResponse`
@@ -978,6 +1033,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1014,6 +1071,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRepoTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1028,6 +1086,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRetention
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRetentionResponse`
@@ -1040,6 +1099,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1076,6 +1137,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRetentionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1090,6 +1152,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTrigger
         :type request: :class:`huaweicloudsdkswr.v2.DeleteTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteTriggerResponse`
@@ -1102,6 +1165,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1138,6 +1203,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1152,6 +1218,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteUserRepositoryAuth
         :type request: :class:`huaweicloudsdkswr.v2.DeleteUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteUserRepositoryAuthResponse`
@@ -1164,6 +1231,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1200,6 +1269,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteUserRepositoryAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1214,6 +1284,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListImageAutoSyncReposDetails
         :type request: :class:`huaweicloudsdkswr.v2.ListImageAutoSyncReposDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListImageAutoSyncReposDetailsResponse`
@@ -1226,6 +1297,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1260,6 +1333,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImageAutoSyncReposDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1274,6 +1348,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNamespaces
         :type request: :class:`huaweicloudsdkswr.v2.ListNamespacesRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListNamespacesResponse`
@@ -1286,6 +1361,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1320,6 +1397,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNamespacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1334,6 +1412,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkswr.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListQuotasResponse`
@@ -1346,6 +1425,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1376,6 +1457,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1390,6 +1472,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRepoDomains
         :type request: :class:`huaweicloudsdkswr.v2.ListRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRepoDomainsResponse`
@@ -1402,6 +1485,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1436,6 +1521,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRepoDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1450,6 +1536,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListReposDetails
         :type request: :class:`huaweicloudsdkswr.v2.ListReposDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListReposDetailsResponse`
@@ -1462,6 +1549,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1493,7 +1582,7 @@ class SwrAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["Content-Range"]
+        response_headers = ["Content-Range", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1508,6 +1597,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListReposDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1522,6 +1612,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRepositoryTags
         :type request: :class:`huaweicloudsdkswr.v2.ListRepositoryTagsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRepositoryTagsResponse`
@@ -1534,6 +1625,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1565,7 +1658,7 @@ class SwrAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["Content-Range"]
+        response_headers = ["Content-Range", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1580,6 +1673,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRepositoryTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1594,6 +1688,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRetentionHistories
         :type request: :class:`huaweicloudsdkswr.v2.ListRetentionHistoriesRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRetentionHistoriesResponse`
@@ -1606,6 +1701,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1627,7 +1724,7 @@ class SwrAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["Content-Range"]
+        response_headers = ["Content-Range", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1642,6 +1739,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRetentionHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1656,6 +1754,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRetentions
         :type request: :class:`huaweicloudsdkswr.v2.ListRetentionsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRetentionsResponse`
@@ -1668,6 +1767,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1702,6 +1803,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRetentionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1716,6 +1818,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSharedReposDetails
         :type request: :class:`huaweicloudsdkswr.v2.ListSharedReposDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListSharedReposDetailsResponse`
@@ -1728,6 +1831,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1759,7 +1864,7 @@ class SwrAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["Content-Range"]
+        response_headers = ["Content-Range", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1774,6 +1879,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSharedReposDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1788,6 +1894,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTriggersDetails
         :type request: :class:`huaweicloudsdkswr.v2.ListTriggersDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListTriggersDetailsResponse`
@@ -1800,6 +1907,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1834,6 +1943,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTriggersDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1848,6 +1958,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAccessDomain
         :type request: :class:`huaweicloudsdkswr.v2.ShowAccessDomainRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowAccessDomainResponse`
@@ -1860,6 +1971,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1896,6 +2009,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAccessDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1910,6 +2024,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNamespace
         :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowNamespaceResponse`
@@ -1922,6 +2037,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1954,6 +2071,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNamespaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1968,6 +2086,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNamespaceAuth
         :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowNamespaceAuthResponse`
@@ -1980,6 +2099,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2012,6 +2133,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNamespaceAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2026,6 +2148,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRepository
         :type request: :class:`huaweicloudsdkswr.v2.ShowRepositoryRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowRepositoryResponse`
@@ -2038,6 +2161,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2072,6 +2197,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2086,6 +2212,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRetention
         :type request: :class:`huaweicloudsdkswr.v2.ShowRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowRetentionResponse`
@@ -2098,6 +2225,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2134,6 +2263,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRetentionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2148,6 +2278,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSyncJob
         :type request: :class:`huaweicloudsdkswr.v2.ShowSyncJobRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowSyncJobResponse`
@@ -2160,6 +2291,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2181,7 +2314,7 @@ class SwrAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["Content-Range"]
+        response_headers = ["Content-Range", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2196,6 +2329,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSyncJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2210,6 +2344,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTrigger
         :type request: :class:`huaweicloudsdkswr.v2.ShowTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowTriggerResponse`
@@ -2222,6 +2357,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2258,6 +2395,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2272,6 +2410,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUserRepositoryAuth
         :type request: :class:`huaweicloudsdkswr.v2.ShowUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowUserRepositoryAuthResponse`
@@ -2284,6 +2423,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2318,6 +2459,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserRepositoryAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2332,6 +2474,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNamespaceAuth
         :type request: :class:`huaweicloudsdkswr.v2.UpdateNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateNamespaceAuthResponse`
@@ -2344,6 +2487,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2378,6 +2523,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNamespaceAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2392,6 +2538,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRepo
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoResponse`
@@ -2404,6 +2551,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2440,6 +2589,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRepoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2454,6 +2604,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRepoDomains
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsResponse`
@@ -2466,6 +2617,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2504,6 +2657,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRepoDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2518,6 +2672,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRetention
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRetentionResponse`
@@ -2530,6 +2685,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2568,6 +2725,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRetentionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2582,6 +2740,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTrigger
         :type request: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateTriggerResponse`
@@ -2594,6 +2753,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2632,6 +2793,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2646,6 +2808,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUserRepositoryAuth
         :type request: :class:`huaweicloudsdkswr.v2.UpdateUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateUserRepositoryAuthResponse`
@@ -2658,6 +2821,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2694,6 +2859,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserRepositoryAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2708,6 +2874,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkswr.v2.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListApiVersionsResponse`
@@ -2720,6 +2887,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2750,6 +2919,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2764,6 +2934,7 @@ class SwrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApiVersion
         :type request: :class:`huaweicloudsdkswr.v2.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowApiVersionResponse`
@@ -2776,6 +2947,8 @@ class SwrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2808,6 +2981,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2815,7 +2989,7 @@ class SwrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2826,9 +3000,10 @@ class SwrAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2845,6 +3020,7 @@ class SwrAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

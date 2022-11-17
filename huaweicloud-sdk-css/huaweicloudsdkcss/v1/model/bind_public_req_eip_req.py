@@ -17,7 +17,6 @@ class BindPublicReqEipReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class BindPublicReqEipReq:
     def band_width(self):
         """Gets the band_width of this BindPublicReqEipReq.
 
-
         :return: The band_width of this BindPublicReqEipReq.
         :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReqEipBandWidth`
         """
@@ -64,7 +62,6 @@ class BindPublicReqEipReq:
     @band_width.setter
     def band_width(self, band_width):
         """Sets the band_width of this BindPublicReqEipReq.
-
 
         :param band_width: The band_width of this BindPublicReqEipReq.
         :type band_width: :class:`huaweicloudsdkcss.v1.BindPublicReqEipBandWidth`

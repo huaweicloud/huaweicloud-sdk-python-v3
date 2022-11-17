@@ -17,7 +17,6 @@ class UploadFileResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class UploadFileResponse(SdkResponse):
     def image_moderation(self):
         """Gets the image_moderation of this UploadFileResponse.
 
-
         :return: The image_moderation of this UploadFileResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`
         """
@@ -87,7 +85,6 @@ class UploadFileResponse(SdkResponse):
     @image_moderation.setter
     def image_moderation(self, image_moderation):
         """Sets the image_moderation of this UploadFileResponse.
-
 
         :param image_moderation: The image_moderation of this UploadFileResponse.
         :type image_moderation: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`

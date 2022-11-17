@@ -17,7 +17,6 @@ class ListCustomLineResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListCustomLineResponse(SdkResponse):
     def lines(self):
         """Gets the lines of this ListCustomLineResponse.
 
-
         :return: The lines of this ListCustomLineResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Line`]
         """
@@ -65,7 +63,6 @@ class ListCustomLineResponse(SdkResponse):
     @lines.setter
     def lines(self, lines):
         """Sets the lines of this ListCustomLineResponse.
-
 
         :param lines: The lines of this ListCustomLineResponse.
         :type lines: list[:class:`huaweicloudsdkdns.v2.Line`]
@@ -76,7 +73,6 @@ class ListCustomLineResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ListCustomLineResponse.
 
-
         :return: The metadata of this ListCustomLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
@@ -85,7 +81,6 @@ class ListCustomLineResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ListCustomLineResponse.
-
 
         :param metadata: The metadata of this ListCustomLineResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`

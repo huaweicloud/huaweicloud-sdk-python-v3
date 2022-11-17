@@ -17,7 +17,6 @@ class Node:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class Node:
     def node(self):
         """Gets the node of this Node.
 
-
         :return: The node of this Node.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeNode`
         """
@@ -57,7 +55,6 @@ class Node:
     @node.setter
     def node(self, node):
         """Sets the node of this Node.
-
 
         :param node: The node of this Node.
         :type node: :class:`huaweicloudsdkief.v1.EdgeNode`

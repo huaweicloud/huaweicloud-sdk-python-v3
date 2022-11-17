@@ -17,7 +17,6 @@ class CreateNodeEncryptdatasRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateNodeEncryptdatasRequest:
     def body(self):
         """Gets the body of this CreateNodeEncryptdatasRequest.
 
-
         :return: The body of this CreateNodeEncryptdatasRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EncryptDataNodeReq`
         """
@@ -115,7 +113,6 @@ class CreateNodeEncryptdatasRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateNodeEncryptdatasRequest.
-
 
         :param body: The body of this CreateNodeEncryptdatasRequest.
         :type body: :class:`huaweicloudsdkief.v1.EncryptDataNodeReq`

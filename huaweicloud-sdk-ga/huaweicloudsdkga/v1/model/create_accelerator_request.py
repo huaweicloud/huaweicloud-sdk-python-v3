@@ -17,7 +17,6 @@ class CreateAcceleratorRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAcceleratorRequest:
     def body(self):
         """Gets the body of this CreateAcceleratorRequest.
 
-
         :return: The body of this CreateAcceleratorRequest.
         :rtype: :class:`huaweicloudsdkga.v1.CreateAcceleratorRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateAcceleratorRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAcceleratorRequest.
-
 
         :param body: The body of this CreateAcceleratorRequest.
         :type body: :class:`huaweicloudsdkga.v1.CreateAcceleratorRequestBody`

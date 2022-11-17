@@ -17,7 +17,6 @@ class KeystoneShowServiceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneShowServiceResponse(SdkResponse):
     def service(self):
         """Gets the service of this KeystoneShowServiceResponse.
 
-
         :return: The service of this KeystoneShowServiceResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Service`
         """
@@ -58,7 +56,6 @@ class KeystoneShowServiceResponse(SdkResponse):
     @service.setter
     def service(self, service):
         """Sets the service of this KeystoneShowServiceResponse.
-
 
         :param service: The service of this KeystoneShowServiceResponse.
         :type service: :class:`huaweicloudsdkiam.v3.Service`

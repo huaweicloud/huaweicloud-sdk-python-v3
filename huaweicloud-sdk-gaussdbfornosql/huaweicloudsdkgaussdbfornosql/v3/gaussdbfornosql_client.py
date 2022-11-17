@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GaussDBforNoSQLClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class GaussDBforNoSQLClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ApplyConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchTagActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -189,6 +189,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -223,6 +225,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckDisasterRecoveryOperationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -249,6 +252,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -281,6 +286,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -307,6 +313,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -341,6 +349,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDisasterRecoveryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -367,6 +376,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -399,6 +410,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -425,6 +437,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -457,6 +471,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -483,6 +498,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -515,6 +532,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -541,6 +559,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -573,6 +593,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDisasterRecoveryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -599,6 +620,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -631,6 +654,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -657,6 +681,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -691,6 +717,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandInstanceNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -717,6 +744,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -751,6 +780,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigurationTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -777,6 +807,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -807,6 +839,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -833,6 +866,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -865,6 +900,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatastoresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -891,6 +927,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -925,6 +963,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDedicatedResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -951,6 +990,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -987,6 +1028,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1013,6 +1055,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1047,6 +1091,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1073,6 +1118,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1105,6 +1152,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1131,6 +1179,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1177,6 +1227,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1203,6 +1254,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1235,6 +1288,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesByResourceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1261,6 +1315,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1293,6 +1349,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1319,6 +1376,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1359,6 +1418,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreTimeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1385,6 +1445,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1429,6 +1491,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1455,6 +1518,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1489,6 +1554,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1515,6 +1581,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1549,6 +1617,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1575,6 +1644,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1609,6 +1680,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1635,6 +1707,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1669,6 +1743,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreExistingInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1695,6 +1770,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1729,6 +1806,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1755,6 +1833,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1787,6 +1867,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1813,6 +1894,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1845,6 +1928,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConfigurationDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1871,6 +1955,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1903,7 +1989,69 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_instance_role(self, request):
+        """获取容灾实例主/备角色信息
+
+        该接口用于获取容灾实例主/备角色信息，以便后续容灾实例备升主和容灾实例主降备接口调用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceRole
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceRoleRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceRoleResponse`
+        """
+        return self.show_instance_role_with_http_info(request)
+
+    def show_instance_role_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/instance-role',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowInstanceRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1929,6 +2077,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1959,6 +2109,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1985,6 +2136,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2021,6 +2174,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRestorableListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2047,6 +2201,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2081,7 +2237,130 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShrinkInstanceNodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def switch_to_master(self, request):
+        """容灾实例备升主
+
+        该接口用于对已经搭建容灾关系的实例，将备实例升级为主实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SwitchToMaster
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToMasterRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToMasterResponse`
+        """
+        return self.switch_to_master_with_http_info(request)
+
+    def switch_to_master_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/switchover-master',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SwitchToMasterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def switch_to_slave(self, request):
+        """容灾实例主降备
+
+        该接口用于对已经搭建容灾关系的实例，将主实例降级为备实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SwitchToSlave
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToSlaveRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToSlaveResponse`
+        """
+        return self.switch_to_slave_with_http_info(request)
+
+    def switch_to_slave_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/switchover-slave',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SwitchToSlaveResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2107,6 +2386,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2141,6 +2422,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2167,6 +2449,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2201,6 +2485,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2227,6 +2512,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2261,6 +2548,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2287,6 +2575,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2321,6 +2611,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2347,6 +2638,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2379,6 +2672,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpgradeDbVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2405,6 +2699,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2435,6 +2731,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2461,6 +2758,8 @@ class GaussDBforNoSQLClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2493,6 +2792,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2500,7 +2800,7 @@ class GaussDBforNoSQLClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2510,9 +2810,10 @@ class GaussDBforNoSQLClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2529,6 +2830,7 @@ class GaussDBforNoSQLClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

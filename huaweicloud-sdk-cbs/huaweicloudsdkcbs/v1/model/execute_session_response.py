@@ -17,7 +17,6 @@ class ExecuteSessionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -99,7 +98,6 @@ class ExecuteSessionResponse(SdkResponse):
     def qabot_answers(self):
         """Gets the qabot_answers of this ExecuteSessionResponse.
 
-
         :return: The qabot_answers of this ExecuteSessionResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.QaBotAnswers`
         """
@@ -108,7 +106,6 @@ class ExecuteSessionResponse(SdkResponse):
     @qabot_answers.setter
     def qabot_answers(self, qabot_answers):
         """Sets the qabot_answers of this ExecuteSessionResponse.
-
 
         :param qabot_answers: The qabot_answers of this ExecuteSessionResponse.
         :type qabot_answers: :class:`huaweicloudsdkcbs.v1.QaBotAnswers`
@@ -119,7 +116,6 @@ class ExecuteSessionResponse(SdkResponse):
     def chat_answers(self):
         """Gets the chat_answers of this ExecuteSessionResponse.
 
-
         :return: The chat_answers of this ExecuteSessionResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
         """
@@ -128,7 +124,6 @@ class ExecuteSessionResponse(SdkResponse):
     @chat_answers.setter
     def chat_answers(self, chat_answers):
         """Sets the chat_answers of this ExecuteSessionResponse.
-
 
         :param chat_answers: The chat_answers of this ExecuteSessionResponse.
         :type chat_answers: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
@@ -139,7 +134,6 @@ class ExecuteSessionResponse(SdkResponse):
     def taskbot_answers(self):
         """Gets the taskbot_answers of this ExecuteSessionResponse.
 
-
         :return: The taskbot_answers of this ExecuteSessionResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
         """
@@ -148,7 +142,6 @@ class ExecuteSessionResponse(SdkResponse):
     @taskbot_answers.setter
     def taskbot_answers(self, taskbot_answers):
         """Sets the taskbot_answers of this ExecuteSessionResponse.
-
 
         :param taskbot_answers: The taskbot_answers of this ExecuteSessionResponse.
         :type taskbot_answers: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`

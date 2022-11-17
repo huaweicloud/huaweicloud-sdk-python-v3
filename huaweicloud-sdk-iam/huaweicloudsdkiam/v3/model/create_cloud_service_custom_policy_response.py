@@ -17,7 +17,6 @@ class CreateCloudServiceCustomPolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateCloudServiceCustomPolicyResponse(SdkResponse):
     def role(self):
         """Gets the role of this CreateCloudServiceCustomPolicyResponse.
 
-
         :return: The role of this CreateCloudServiceCustomPolicyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicyRoleResult`
         """
@@ -58,7 +56,6 @@ class CreateCloudServiceCustomPolicyResponse(SdkResponse):
     @role.setter
     def role(self, role):
         """Sets the role of this CreateCloudServiceCustomPolicyResponse.
-
 
         :param role: The role of this CreateCloudServiceCustomPolicyResponse.
         :type role: :class:`huaweicloudsdkiam.v3.ServicePolicyRoleResult`

@@ -17,7 +17,6 @@ class DeploymentEdgecloud:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class DeploymentEdgecloud:
     def stacks(self):
         """Gets the stacks of this DeploymentEdgecloud.
 
-
         :return: The stacks of this DeploymentEdgecloud.
         :rtype: :class:`huaweicloudsdkiec.v1.Stack`
         """
@@ -130,7 +128,6 @@ class DeploymentEdgecloud:
     @stacks.setter
     def stacks(self, stacks):
         """Sets the stacks of this DeploymentEdgecloud.
-
 
         :param stacks: The stacks of this DeploymentEdgecloud.
         :type stacks: :class:`huaweicloudsdkiec.v1.Stack`
@@ -163,7 +160,6 @@ class DeploymentEdgecloud:
     def coverage(self):
         """Gets the coverage of this DeploymentEdgecloud.
 
-
         :return: The coverage of this DeploymentEdgecloud.
         :rtype: :class:`huaweicloudsdkiec.v1.Coverage`
         """
@@ -172,7 +168,6 @@ class DeploymentEdgecloud:
     @coverage.setter
     def coverage(self, coverage):
         """Sets the coverage of this DeploymentEdgecloud.
-
 
         :param coverage: The coverage of this DeploymentEdgecloud.
         :type coverage: :class:`huaweicloudsdkiec.v1.Coverage`

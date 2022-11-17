@@ -17,7 +17,6 @@ class CreateKeywordsAlarmRuleRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -158,7 +157,6 @@ class CreateKeywordsAlarmRuleRequestBody:
     def frequency(self):
         """Gets the frequency of this CreateKeywordsAlarmRuleRequestBody.
 
-
         :return: The frequency of this CreateKeywordsAlarmRuleRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.Frequency`
         """
@@ -167,7 +165,6 @@ class CreateKeywordsAlarmRuleRequestBody:
     @frequency.setter
     def frequency(self, frequency):
         """Sets the frequency of this CreateKeywordsAlarmRuleRequestBody.
-
 
         :param frequency: The frequency of this CreateKeywordsAlarmRuleRequestBody.
         :type frequency: :class:`huaweicloudsdklts.v2.Frequency`

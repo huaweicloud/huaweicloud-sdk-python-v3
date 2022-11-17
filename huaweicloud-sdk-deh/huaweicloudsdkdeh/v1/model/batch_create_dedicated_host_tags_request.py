@@ -17,7 +17,6 @@ class BatchCreateDedicatedHostTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchCreateDedicatedHostTagsRequest:
     def body(self):
         """Gets the body of this BatchCreateDedicatedHostTagsRequest.
 
-
         :return: The body of this BatchCreateDedicatedHostTagsRequest.
         :rtype: :class:`huaweicloudsdkdeh.v1.ReqSetOrDeleteTags`
         """
@@ -86,7 +84,6 @@ class BatchCreateDedicatedHostTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchCreateDedicatedHostTagsRequest.
-
 
         :param body: The body of this BatchCreateDedicatedHostTagsRequest.
         :type body: :class:`huaweicloudsdkdeh.v1.ReqSetOrDeleteTags`

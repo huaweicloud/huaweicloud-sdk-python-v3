@@ -17,7 +17,6 @@ class DetectLiveByFileResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class DetectLiveByFileResponse(SdkResponse):
     def video_result(self):
         """Gets the video_result of this DetectLiveByFileResponse.
 
-
         :return: The video_result of this DetectLiveByFileResponse.
         :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
         """
@@ -65,7 +63,6 @@ class DetectLiveByFileResponse(SdkResponse):
     @video_result.setter
     def video_result(self, video_result):
         """Sets the video_result of this DetectLiveByFileResponse.
-
 
         :param video_result: The video_result of this DetectLiveByFileResponse.
         :type video_result: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`

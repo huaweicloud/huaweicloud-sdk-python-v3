@@ -17,7 +17,6 @@ class ShowShardingBalancerResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowShardingBalancerResponse(SdkResponse):
     def active_window(self):
         """Gets the active_window of this ShowShardingBalancerResponse.
 
-
         :return: The active_window of this ShowShardingBalancerResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`
         """
@@ -87,7 +85,6 @@ class ShowShardingBalancerResponse(SdkResponse):
     @active_window.setter
     def active_window(self, active_window):
         """Sets the active_window of this ShowShardingBalancerResponse.
-
 
         :param active_window: The active_window of this ShowShardingBalancerResponse.
         :type active_window: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`

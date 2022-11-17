@@ -17,7 +17,6 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeWaybillElectronicResponse.
 
-
         :return: The result of this RecognizeWaybillElectronicResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.WaybillElectronicResult`
         """
@@ -58,7 +56,6 @@ class RecognizeWaybillElectronicResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeWaybillElectronicResponse.
-
 
         :param result: The result of this RecognizeWaybillElectronicResponse.
         :type result: :class:`huaweicloudsdkocr.v1.WaybillElectronicResult`

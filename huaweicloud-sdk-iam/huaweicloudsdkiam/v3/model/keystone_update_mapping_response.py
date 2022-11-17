@@ -17,7 +17,6 @@ class KeystoneUpdateMappingResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneUpdateMappingResponse(SdkResponse):
     def mapping(self):
         """Gets the mapping of this KeystoneUpdateMappingResponse.
 
-
         :return: The mapping of this KeystoneUpdateMappingResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.MappingResult`
         """
@@ -58,7 +56,6 @@ class KeystoneUpdateMappingResponse(SdkResponse):
     @mapping.setter
     def mapping(self, mapping):
         """Sets the mapping of this KeystoneUpdateMappingResponse.
-
 
         :param mapping: The mapping of this KeystoneUpdateMappingResponse.
         :type mapping: :class:`huaweicloudsdkiam.v3.MappingResult`

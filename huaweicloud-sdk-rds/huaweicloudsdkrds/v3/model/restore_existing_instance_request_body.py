@@ -17,7 +17,6 @@ class RestoreExistingInstanceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class RestoreExistingInstanceRequestBody:
     def source(self):
         """Gets the source of this RestoreExistingInstanceRequestBody.
 
-
         :return: The source of this RestoreExistingInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBodySource`
         """
@@ -63,7 +61,6 @@ class RestoreExistingInstanceRequestBody:
     @source.setter
     def source(self, source):
         """Sets the source of this RestoreExistingInstanceRequestBody.
-
 
         :param source: The source of this RestoreExistingInstanceRequestBody.
         :type source: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBodySource`
@@ -74,7 +71,6 @@ class RestoreExistingInstanceRequestBody:
     def target(self):
         """Gets the target of this RestoreExistingInstanceRequestBody.
 
-
         :return: The target of this RestoreExistingInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.TargetInstanceRequest`
         """
@@ -83,7 +79,6 @@ class RestoreExistingInstanceRequestBody:
     @target.setter
     def target(self, target):
         """Sets the target of this RestoreExistingInstanceRequestBody.
-
 
         :param target: The target of this RestoreExistingInstanceRequestBody.
         :type target: :class:`huaweicloudsdkrds.v3.TargetInstanceRequest`

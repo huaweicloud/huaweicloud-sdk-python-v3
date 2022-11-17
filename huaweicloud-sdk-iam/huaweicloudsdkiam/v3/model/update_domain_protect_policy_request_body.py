@@ -17,7 +17,6 @@ class UpdateDomainProtectPolicyRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateDomainProtectPolicyRequestBody:
     def protect_policy(self):
         """Gets the protect_policy of this UpdateDomainProtectPolicyRequestBody.
 
-
         :return: The protect_policy of this UpdateDomainProtectPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.ProtectPolicyOption`
         """
@@ -57,7 +55,6 @@ class UpdateDomainProtectPolicyRequestBody:
     @protect_policy.setter
     def protect_policy(self, protect_policy):
         """Sets the protect_policy of this UpdateDomainProtectPolicyRequestBody.
-
 
         :param protect_policy: The protect_policy of this UpdateDomainProtectPolicyRequestBody.
         :type protect_policy: :class:`huaweicloudsdkiam.v3.ProtectPolicyOption`

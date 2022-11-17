@@ -17,7 +17,6 @@ class CreateDomainResponseBodyContent:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -344,7 +343,6 @@ class CreateDomainResponseBodyContent:
     def domain_origin_host(self):
         """Gets the domain_origin_host of this CreateDomainResponseBodyContent.
 
-
         :return: The domain_origin_host of this CreateDomainResponseBodyContent.
         :rtype: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
         """
@@ -353,7 +351,6 @@ class CreateDomainResponseBodyContent:
     @domain_origin_host.setter
     def domain_origin_host(self, domain_origin_host):
         """Sets the domain_origin_host of this CreateDomainResponseBodyContent.
-
 
         :param domain_origin_host: The domain_origin_host of this CreateDomainResponseBodyContent.
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`

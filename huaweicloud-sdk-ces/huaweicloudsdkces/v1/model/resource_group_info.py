@@ -17,7 +17,6 @@ class ResourceGroupInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -150,7 +149,6 @@ class ResourceGroupInfo:
     def instance_statistics(self):
         """Gets the instance_statistics of this ResourceGroupInfo.
 
-
         :return: The instance_statistics of this ResourceGroupInfo.
         :rtype: :class:`huaweicloudsdkces.v1.InstanceStatistics`
         """
@@ -159,7 +157,6 @@ class ResourceGroupInfo:
     @instance_statistics.setter
     def instance_statistics(self, instance_statistics):
         """Sets the instance_statistics of this ResourceGroupInfo.
-
 
         :param instance_statistics: The instance_statistics of this ResourceGroupInfo.
         :type instance_statistics: :class:`huaweicloudsdkces.v1.InstanceStatistics`

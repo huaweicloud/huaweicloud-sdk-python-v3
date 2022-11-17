@@ -17,7 +17,6 @@ class CancelAsyncInvocationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CancelAsyncInvocationRequest:
     def body(self):
         """Gets the body of this CancelAsyncInvocationRequest.
 
-
         :return: The body of this CancelAsyncInvocationRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationRequestBody`
         """
@@ -86,7 +84,6 @@ class CancelAsyncInvocationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CancelAsyncInvocationRequest.
-
 
         :param body: The body of this CancelAsyncInvocationRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationRequestBody`

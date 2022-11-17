@@ -17,7 +17,6 @@ class ChangeAvailabilityZoneRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ChangeAvailabilityZoneRequest:
     def body(self):
         """Gets the body of this ChangeAvailabilityZoneRequest.
 
-
         :return: The body of this ChangeAvailabilityZoneRequest.
         :rtype: :class:`huaweicloudsdker.v3.EnterpriseRouterAZ`
         """
@@ -86,7 +84,6 @@ class ChangeAvailabilityZoneRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeAvailabilityZoneRequest.
-
 
         :param body: The body of this ChangeAvailabilityZoneRequest.
         :type body: :class:`huaweicloudsdker.v3.EnterpriseRouterAZ`

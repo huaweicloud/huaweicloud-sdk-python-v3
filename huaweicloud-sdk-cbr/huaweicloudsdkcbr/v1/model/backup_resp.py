@@ -17,7 +17,6 @@ class BackupResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -264,7 +263,6 @@ class BackupResp:
     def extend_info(self):
         """Gets the extend_info of this BackupResp.
 
-
         :return: The extend_info of this BackupResp.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupExtendInfo`
         """
@@ -273,7 +271,6 @@ class BackupResp:
     @extend_info.setter
     def extend_info(self, extend_info):
         """Sets the extend_info of this BackupResp.
-
 
         :param extend_info: The extend_info of this BackupResp.
         :type extend_info: :class:`huaweicloudsdkcbr.v1.BackupExtendInfo`

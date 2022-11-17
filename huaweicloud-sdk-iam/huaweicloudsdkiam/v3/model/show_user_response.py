@@ -17,7 +17,6 @@ class ShowUserResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowUserResponse(SdkResponse):
     def user(self):
         """Gets the user of this ShowUserResponse.
 
-
         :return: The user of this ShowUserResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserResult`
         """
@@ -58,7 +56,6 @@ class ShowUserResponse(SdkResponse):
     @user.setter
     def user(self, user):
         """Sets the user of this ShowUserResponse.
-
 
         :param user: The user of this ShowUserResponse.
         :type user: :class:`huaweicloudsdkiam.v3.ShowUserResult`

@@ -17,7 +17,6 @@ class ShowPartitionsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowPartitionsResponse(SdkResponse):
     def partitions(self):
         """Gets the partitions of this ShowPartitionsResponse.
 
-
         :return: The partitions of this ShowPartitionsResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.Partitions`
         """
@@ -116,7 +114,6 @@ class ShowPartitionsResponse(SdkResponse):
     @partitions.setter
     def partitions(self, partitions):
         """Sets the partitions of this ShowPartitionsResponse.
-
 
         :param partitions: The partitions of this ShowPartitionsResponse.
         :type partitions: :class:`huaweicloudsdkdli.v1.Partitions`

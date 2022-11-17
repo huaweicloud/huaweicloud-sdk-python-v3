@@ -17,7 +17,6 @@ class ValidateHttpsInfoResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ValidateHttpsInfoResponse(SdkResponse):
     def error(self):
         """Gets the error of this ValidateHttpsInfoResponse.
 
-
         :return: The error of this ValidateHttpsInfoResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ValidateHttpsInfoResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ValidateHttpsInfoResponse.
-
 
         :param error: The error of this ValidateHttpsInfoResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`

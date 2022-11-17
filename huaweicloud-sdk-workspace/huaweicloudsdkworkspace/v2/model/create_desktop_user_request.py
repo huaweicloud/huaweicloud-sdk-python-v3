@@ -17,7 +17,6 @@ class CreateDesktopUserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateDesktopUserRequest:
     def body(self):
         """Gets the body of this CreateDesktopUserRequest.
 
-
         :return: The body of this CreateDesktopUserRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateUserReq`
         """
@@ -58,7 +56,6 @@ class CreateDesktopUserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDesktopUserRequest.
-
 
         :param body: The body of this CreateDesktopUserRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateUserReq`

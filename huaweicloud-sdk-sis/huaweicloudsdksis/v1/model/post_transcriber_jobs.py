@@ -17,7 +17,6 @@ class PostTranscriberJobs:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class PostTranscriberJobs:
     def config(self):
         """Gets the config of this PostTranscriberJobs.
 
-
         :return: The config of this PostTranscriberJobs.
         :rtype: :class:`huaweicloudsdksis.v1.TranscriberConfig`
         """
@@ -63,7 +61,6 @@ class PostTranscriberJobs:
     @config.setter
     def config(self, config):
         """Sets the config of this PostTranscriberJobs.
-
 
         :param config: The config of this PostTranscriberJobs.
         :type config: :class:`huaweicloudsdksis.v1.TranscriberConfig`

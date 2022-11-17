@@ -17,7 +17,6 @@ class AudioModerationResultRequestParamsData:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class AudioModerationResultRequestParamsData:
     def url(self):
         """Gets the url of this AudioModerationResultRequestParamsData.
 
-
         :return: The url of this AudioModerationResultRequestParamsData.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class AudioModerationResultRequestParamsData:
     @url.setter
     def url(self, url):
         """Sets the url of this AudioModerationResultRequestParamsData.
-
 
         :param url: The url of this AudioModerationResultRequestParamsData.
         :type url: str

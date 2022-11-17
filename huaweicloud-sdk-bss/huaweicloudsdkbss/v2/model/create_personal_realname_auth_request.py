@@ -17,7 +17,6 @@ class CreatePersonalRealnameAuthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePersonalRealnameAuthRequest:
     def body(self):
         """Gets the body of this CreatePersonalRealnameAuthRequest.
 
-
         :return: The body of this CreatePersonalRealnameAuthRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.ApplyIndividualRealnameAuthsReq`
         """
@@ -58,7 +56,6 @@ class CreatePersonalRealnameAuthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePersonalRealnameAuthRequest.
-
 
         :param body: The body of this CreatePersonalRealnameAuthRequest.
         :type body: :class:`huaweicloudsdkbss.v2.ApplyIndividualRealnameAuthsReq`

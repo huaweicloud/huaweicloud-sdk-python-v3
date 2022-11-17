@@ -17,7 +17,6 @@ class FunctionAsyncConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -118,7 +117,6 @@ class FunctionAsyncConfig:
     def destination_config(self):
         """Gets the destination_config of this FunctionAsyncConfig.
 
-
         :return: The destination_config of this FunctionAsyncConfig.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         """
@@ -127,7 +125,6 @@ class FunctionAsyncConfig:
     @destination_config.setter
     def destination_config(self, destination_config):
         """Sets the destination_config of this FunctionAsyncConfig.
-
 
         :param destination_config: The destination_config of this FunctionAsyncConfig.
         :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`

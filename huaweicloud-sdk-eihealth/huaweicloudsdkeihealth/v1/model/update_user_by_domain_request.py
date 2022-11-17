@@ -17,7 +17,6 @@ class UpdateUserByDomainRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateUserByDomainRequest:
     def body(self):
         """Gets the body of this UpdateUserByDomainRequest.
 
-
         :return: The body of this UpdateUserByDomainRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainReq`
         """
@@ -86,7 +84,6 @@ class UpdateUserByDomainRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateUserByDomainRequest.
-
 
         :param body: The body of this UpdateUserByDomainRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainReq`

@@ -17,7 +17,6 @@ class ListQuotaCouponsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListQuotaCouponsRequest:
     def body(self):
         """Gets the body of this ListQuotaCouponsRequest.
 
-
         :return: The body of this ListQuotaCouponsRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.QueryCouponQuotasReqExt`
         """
@@ -58,7 +56,6 @@ class ListQuotaCouponsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListQuotaCouponsRequest.
-
 
         :param body: The body of this ListQuotaCouponsRequest.
         :type body: :class:`huaweicloudsdkbss.v2.QueryCouponQuotasReqExt`

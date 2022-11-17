@@ -17,7 +17,6 @@ class ExecuteScriptResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ExecuteScriptResponse(SdkResponse):
     def instance_id(self):
         """Gets the instance_id of this ExecuteScriptResponse.
 
-
         :return: The instance_id of this ExecuteScriptResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class ExecuteScriptResponse(SdkResponse):
     @instance_id.setter
     def instance_id(self, instance_id):
         """Sets the instance_id of this ExecuteScriptResponse.
-
 
         :param instance_id: The instance_id of this ExecuteScriptResponse.
         :type instance_id: str

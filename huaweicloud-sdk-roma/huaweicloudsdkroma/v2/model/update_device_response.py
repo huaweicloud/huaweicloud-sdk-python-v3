@@ -17,12 +17,12 @@ class UpdateDeviceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'permissions': 'list[str]',
         'id': 'int',
+        'device_id': 'int',
         'parent_device_id': 'int',
         'parent_device_name': 'str',
         'product': 'ProductReferer',
@@ -51,13 +51,13 @@ class UpdateDeviceResponse(SdkResponse):
         'keep_alive': 'str',
         'last_active_time': 'int',
         'version': 'str',
-        'plugin_id': 'int',
         'app_id': 'str'
     }
 
     attribute_map = {
         'permissions': 'permissions',
         'id': 'id',
+        'device_id': 'device_id',
         'parent_device_id': 'parent_device_id',
         'parent_device_name': 'parent_device_name',
         'product': 'product',
@@ -86,11 +86,10 @@ class UpdateDeviceResponse(SdkResponse):
         'keep_alive': 'keep_alive',
         'last_active_time': 'last_active_time',
         'version': 'version',
-        'plugin_id': 'plugin_id',
         'app_id': 'app_id'
     }
 
-    def __init__(self, permissions=None, id=None, parent_device_id=None, parent_device_name=None, product=None, device_name=None, instance_id=None, client_id=None, node_id=None, app_name=None, status=None, online_status=None, description=None, authentication=None, created_user=None, last_updated_user=None, tags=None, created_datetime=None, last_updated_datetime=None, connect_address=None, ssl_connect_address=None, ipv6_connect_address=None, ipv6_ssl_connect_address=None, last_login_datetime=None, node_type=None, device_type=None, client_ip=None, keep_alive=None, last_active_time=None, version=None, plugin_id=None, app_id=None):
+    def __init__(self, permissions=None, id=None, device_id=None, parent_device_id=None, parent_device_name=None, product=None, device_name=None, instance_id=None, client_id=None, node_id=None, app_name=None, status=None, online_status=None, description=None, authentication=None, created_user=None, last_updated_user=None, tags=None, created_datetime=None, last_updated_datetime=None, connect_address=None, ssl_connect_address=None, ipv6_connect_address=None, ipv6_ssl_connect_address=None, last_login_datetime=None, node_type=None, device_type=None, client_ip=None, keep_alive=None, last_active_time=None, version=None, app_id=None):
         """UpdateDeviceResponse
 
         The model defined in huaweicloud sdk
@@ -99,6 +98,8 @@ class UpdateDeviceResponse(SdkResponse):
         :type permissions: list[str]
         :param id: 设备ID
         :type id: int
+        :param device_id: 设备ID（兼容20.0）
+        :type device_id: int
         :param parent_device_id: 父设备ID
         :type parent_device_id: int
         :param parent_device_name: 父设备名称
@@ -155,8 +156,6 @@ class UpdateDeviceResponse(SdkResponse):
         :type last_active_time: int
         :param version: 设备版本
         :type version: str
-        :param plugin_id: modbus和opcua设备特有,表示设备所属产品的类型 0-普通产品 1-modbus网关产品 2-opcua网关产品
-        :type plugin_id: int
         :param app_id: 应用ID
         :type app_id: str
         """
@@ -165,6 +164,7 @@ class UpdateDeviceResponse(SdkResponse):
 
         self._permissions = None
         self._id = None
+        self._device_id = None
         self._parent_device_id = None
         self._parent_device_name = None
         self._product = None
@@ -193,7 +193,6 @@ class UpdateDeviceResponse(SdkResponse):
         self._keep_alive = None
         self._last_active_time = None
         self._version = None
-        self._plugin_id = None
         self._app_id = None
         self.discriminator = None
 
@@ -201,6 +200,8 @@ class UpdateDeviceResponse(SdkResponse):
             self.permissions = permissions
         if id is not None:
             self.id = id
+        if device_id is not None:
+            self.device_id = device_id
         if parent_device_id is not None:
             self.parent_device_id = parent_device_id
         if parent_device_name is not None:
@@ -257,8 +258,6 @@ class UpdateDeviceResponse(SdkResponse):
             self.last_active_time = last_active_time
         if version is not None:
             self.version = version
-        if plugin_id is not None:
-            self.plugin_id = plugin_id
         if app_id is not None:
             self.app_id = app_id
 
@@ -305,6 +304,28 @@ class UpdateDeviceResponse(SdkResponse):
         :type id: int
         """
         self._id = id
+
+    @property
+    def device_id(self):
+        """Gets the device_id of this UpdateDeviceResponse.
+
+        设备ID（兼容20.0）
+
+        :return: The device_id of this UpdateDeviceResponse.
+        :rtype: int
+        """
+        return self._device_id
+
+    @device_id.setter
+    def device_id(self, device_id):
+        """Sets the device_id of this UpdateDeviceResponse.
+
+        设备ID（兼容20.0）
+
+        :param device_id: The device_id of this UpdateDeviceResponse.
+        :type device_id: int
+        """
+        self._device_id = device_id
 
     @property
     def parent_device_id(self):
@@ -354,7 +375,6 @@ class UpdateDeviceResponse(SdkResponse):
     def product(self):
         """Gets the product of this UpdateDeviceResponse.
 
-
         :return: The product of this UpdateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.ProductReferer`
         """
@@ -363,7 +383,6 @@ class UpdateDeviceResponse(SdkResponse):
     @product.setter
     def product(self, product):
         """Sets the product of this UpdateDeviceResponse.
-
 
         :param product: The product of this UpdateDeviceResponse.
         :type product: :class:`huaweicloudsdkroma.v2.ProductReferer`
@@ -550,7 +569,6 @@ class UpdateDeviceResponse(SdkResponse):
     def authentication(self):
         """Gets the authentication of this UpdateDeviceResponse.
 
-
         :return: The authentication of this UpdateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
         """
@@ -559,7 +577,6 @@ class UpdateDeviceResponse(SdkResponse):
     @authentication.setter
     def authentication(self, authentication):
         """Sets the authentication of this UpdateDeviceResponse.
-
 
         :param authentication: The authentication of this UpdateDeviceResponse.
         :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
@@ -570,7 +587,6 @@ class UpdateDeviceResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this UpdateDeviceResponse.
 
-
         :return: The created_user of this UpdateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -579,7 +595,6 @@ class UpdateDeviceResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this UpdateDeviceResponse.
-
 
         :param created_user: The created_user of this UpdateDeviceResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -590,7 +605,6 @@ class UpdateDeviceResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this UpdateDeviceResponse.
 
-
         :return: The last_updated_user of this UpdateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -599,7 +613,6 @@ class UpdateDeviceResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this UpdateDeviceResponse.
-
 
         :param last_updated_user: The last_updated_user of this UpdateDeviceResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -913,28 +926,6 @@ class UpdateDeviceResponse(SdkResponse):
         :type version: str
         """
         self._version = version
-
-    @property
-    def plugin_id(self):
-        """Gets the plugin_id of this UpdateDeviceResponse.
-
-        modbus和opcua设备特有,表示设备所属产品的类型 0-普通产品 1-modbus网关产品 2-opcua网关产品
-
-        :return: The plugin_id of this UpdateDeviceResponse.
-        :rtype: int
-        """
-        return self._plugin_id
-
-    @plugin_id.setter
-    def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this UpdateDeviceResponse.
-
-        modbus和opcua设备特有,表示设备所属产品的类型 0-普通产品 1-modbus网关产品 2-opcua网关产品
-
-        :param plugin_id: The plugin_id of this UpdateDeviceResponse.
-        :type plugin_id: int
-        """
-        self._plugin_id = plugin_id
 
     @property
     def app_id(self):

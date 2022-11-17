@@ -17,7 +17,6 @@ class StatusResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class StatusResp:
     def loadbalancer(self):
         """Gets the loadbalancer of this StatusResp.
 
-
         :return: The loadbalancer of this StatusResp.
         :rtype: :class:`huaweicloudsdkelb.v2.LoadbalancerInStatusResp`
         """
@@ -57,7 +55,6 @@ class StatusResp:
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
         """Sets the loadbalancer of this StatusResp.
-
 
         :param loadbalancer: The loadbalancer of this StatusResp.
         :type loadbalancer: :class:`huaweicloudsdkelb.v2.LoadbalancerInStatusResp`

@@ -17,7 +17,6 @@ class PublicipShowResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -373,7 +372,6 @@ class PublicipShowResp:
     def profile(self):
         """Gets the profile of this PublicipShowResp.
 
-
         :return: The profile of this PublicipShowResp.
         :rtype: :class:`huaweicloudsdkeip.v2.ProfileResp`
         """
@@ -382,7 +380,6 @@ class PublicipShowResp:
     @profile.setter
     def profile(self, profile):
         """Sets the profile of this PublicipShowResp.
-
 
         :param profile: The profile of this PublicipShowResp.
         :type profile: :class:`huaweicloudsdkeip.v2.ProfileResp`

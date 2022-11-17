@@ -17,7 +17,6 @@ class IssueRecordV4:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class IssueRecordV4:
     def user(self):
         """Gets the user of this IssueRecordV4.
 
-
         :return: The user of this IssueRecordV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueRecordV4User`
         """
@@ -123,7 +121,6 @@ class IssueRecordV4:
     @user.setter
     def user(self, user):
         """Sets the user of this IssueRecordV4.
-
 
         :param user: The user of this IssueRecordV4.
         :type user: :class:`huaweicloudsdkprojectman.v4.IssueRecordV4User`

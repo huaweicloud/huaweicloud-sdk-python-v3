@@ -17,7 +17,6 @@ class CreateRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -25,13 +24,9 @@ class CreateRuleResponse(SdkResponse):
         'rule_id': 'int',
         'name': 'str',
         'app_id': 'str',
-        'app_name': 'str',
         'description': 'str',
         'status': 'int',
         'data_parsing_status': 'int',
-        'sql_field': 'str',
-        'sql_where': 'str',
-        'rule_express': 'str',
         'created_user': 'CreatedUser',
         'last_updated_user': 'LastUpdatedUser',
         'created_datetime': 'int',
@@ -43,20 +38,16 @@ class CreateRuleResponse(SdkResponse):
         'rule_id': 'rule_id',
         'name': 'name',
         'app_id': 'app_id',
-        'app_name': 'app_name',
         'description': 'description',
         'status': 'status',
         'data_parsing_status': 'data_parsing_status',
-        'sql_field': 'sql_field',
-        'sql_where': 'sql_where',
-        'rule_express': 'rule_express',
         'created_user': 'created_user',
         'last_updated_user': 'last_updated_user',
         'created_datetime': 'created_datetime',
         'last_updated_datetime': 'last_updated_datetime'
     }
 
-    def __init__(self, permissions=None, rule_id=None, name=None, app_id=None, app_name=None, description=None, status=None, data_parsing_status=None, sql_field=None, sql_where=None, rule_express=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
+    def __init__(self, permissions=None, rule_id=None, name=None, app_id=None, description=None, status=None, data_parsing_status=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
         """CreateRuleResponse
 
         The model defined in huaweicloud sdk
@@ -69,20 +60,12 @@ class CreateRuleResponse(SdkResponse):
         :type name: str
         :param app_id: 应用ID
         :type app_id: str
-        :param app_name: 应用名称
-        :type app_name: str
         :param description: 描述
         :type description: str
         :param status: 规则状态 0-启用 1-停用
         :type status: int
         :param data_parsing_status: 数据解析状态，ENABLE时data_parsing必填 0-启用 1-停用
         :type data_parsing_status: int
-        :param sql_field: SQL查询字段
-        :type sql_field: str
-        :param sql_where: SQL查询条件
-        :type sql_where: str
-        :param rule_express: 完整的规则表达式
-        :type rule_express: str
         :param created_user: 
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
         :param last_updated_user: 
@@ -99,13 +82,9 @@ class CreateRuleResponse(SdkResponse):
         self._rule_id = None
         self._name = None
         self._app_id = None
-        self._app_name = None
         self._description = None
         self._status = None
         self._data_parsing_status = None
-        self._sql_field = None
-        self._sql_where = None
-        self._rule_express = None
         self._created_user = None
         self._last_updated_user = None
         self._created_datetime = None
@@ -120,20 +99,12 @@ class CreateRuleResponse(SdkResponse):
             self.name = name
         if app_id is not None:
             self.app_id = app_id
-        if app_name is not None:
-            self.app_name = app_name
         if description is not None:
             self.description = description
         if status is not None:
             self.status = status
         if data_parsing_status is not None:
             self.data_parsing_status = data_parsing_status
-        if sql_field is not None:
-            self.sql_field = sql_field
-        if sql_where is not None:
-            self.sql_where = sql_where
-        if rule_express is not None:
-            self.rule_express = rule_express
         if created_user is not None:
             self.created_user = created_user
         if last_updated_user is not None:
@@ -232,28 +203,6 @@ class CreateRuleResponse(SdkResponse):
         self._app_id = app_id
 
     @property
-    def app_name(self):
-        """Gets the app_name of this CreateRuleResponse.
-
-        应用名称
-
-        :return: The app_name of this CreateRuleResponse.
-        :rtype: str
-        """
-        return self._app_name
-
-    @app_name.setter
-    def app_name(self, app_name):
-        """Sets the app_name of this CreateRuleResponse.
-
-        应用名称
-
-        :param app_name: The app_name of this CreateRuleResponse.
-        :type app_name: str
-        """
-        self._app_name = app_name
-
-    @property
     def description(self):
         """Gets the description of this CreateRuleResponse.
 
@@ -320,75 +269,8 @@ class CreateRuleResponse(SdkResponse):
         self._data_parsing_status = data_parsing_status
 
     @property
-    def sql_field(self):
-        """Gets the sql_field of this CreateRuleResponse.
-
-        SQL查询字段
-
-        :return: The sql_field of this CreateRuleResponse.
-        :rtype: str
-        """
-        return self._sql_field
-
-    @sql_field.setter
-    def sql_field(self, sql_field):
-        """Sets the sql_field of this CreateRuleResponse.
-
-        SQL查询字段
-
-        :param sql_field: The sql_field of this CreateRuleResponse.
-        :type sql_field: str
-        """
-        self._sql_field = sql_field
-
-    @property
-    def sql_where(self):
-        """Gets the sql_where of this CreateRuleResponse.
-
-        SQL查询条件
-
-        :return: The sql_where of this CreateRuleResponse.
-        :rtype: str
-        """
-        return self._sql_where
-
-    @sql_where.setter
-    def sql_where(self, sql_where):
-        """Sets the sql_where of this CreateRuleResponse.
-
-        SQL查询条件
-
-        :param sql_where: The sql_where of this CreateRuleResponse.
-        :type sql_where: str
-        """
-        self._sql_where = sql_where
-
-    @property
-    def rule_express(self):
-        """Gets the rule_express of this CreateRuleResponse.
-
-        完整的规则表达式
-
-        :return: The rule_express of this CreateRuleResponse.
-        :rtype: str
-        """
-        return self._rule_express
-
-    @rule_express.setter
-    def rule_express(self, rule_express):
-        """Sets the rule_express of this CreateRuleResponse.
-
-        完整的规则表达式
-
-        :param rule_express: The rule_express of this CreateRuleResponse.
-        :type rule_express: str
-        """
-        self._rule_express = rule_express
-
-    @property
     def created_user(self):
         """Gets the created_user of this CreateRuleResponse.
-
 
         :return: The created_user of this CreateRuleResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -399,7 +281,6 @@ class CreateRuleResponse(SdkResponse):
     def created_user(self, created_user):
         """Sets the created_user of this CreateRuleResponse.
 
-
         :param created_user: The created_user of this CreateRuleResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -409,7 +290,6 @@ class CreateRuleResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this CreateRuleResponse.
 
-
         :return: The last_updated_user of this CreateRuleResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -418,7 +298,6 @@ class CreateRuleResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this CreateRuleResponse.
-
 
         :param last_updated_user: The last_updated_user of this CreateRuleResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`

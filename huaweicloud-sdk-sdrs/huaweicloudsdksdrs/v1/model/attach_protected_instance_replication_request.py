@@ -17,7 +17,6 @@ class AttachProtectedInstanceReplicationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AttachProtectedInstanceReplicationRequest:
     def body(self):
         """Gets the body of this AttachProtectedInstanceReplicationRequest.
 
-
         :return: The body of this AttachProtectedInstanceReplicationRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachReplicationRequestBody`
         """
@@ -86,7 +84,6 @@ class AttachProtectedInstanceReplicationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AttachProtectedInstanceReplicationRequest.
-
 
         :param body: The body of this AttachProtectedInstanceReplicationRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachReplicationRequestBody`

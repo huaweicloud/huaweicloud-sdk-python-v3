@@ -17,7 +17,6 @@ class AgencyAuth:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class AgencyAuth:
     def identity(self):
         """Gets the identity of this AgencyAuth.
 
-
         :return: The identity of this AgencyAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyAuthIdentity`
         """
@@ -57,7 +55,6 @@ class AgencyAuth:
     @identity.setter
     def identity(self, identity):
         """Sets the identity of this AgencyAuth.
-
 
         :param identity: The identity of this AgencyAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.AgencyAuthIdentity`

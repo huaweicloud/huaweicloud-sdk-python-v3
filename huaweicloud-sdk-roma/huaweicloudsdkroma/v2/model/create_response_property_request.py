@@ -17,7 +17,6 @@ class CreateResponsePropertyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class CreateResponsePropertyRequest:
     def body(self):
         """Gets the body of this CreateResponsePropertyRequest.
 
-
         :return: The body of this CreateResponsePropertyRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`
         """
@@ -142,7 +140,6 @@ class CreateResponsePropertyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateResponsePropertyRequest.
-
 
         :param body: The body of this CreateResponsePropertyRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreatePropertyRequestBody`

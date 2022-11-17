@@ -17,7 +17,6 @@ class OpenUploadFileInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class OpenUploadFileInfo:
     def image_moderation(self):
         """Gets the image_moderation of this OpenUploadFileInfo.
 
-
         :return: The image_moderation of this OpenUploadFileInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`
         """
@@ -87,7 +85,6 @@ class OpenUploadFileInfo:
     @image_moderation.setter
     def image_moderation(self, image_moderation):
         """Sets the image_moderation of this OpenUploadFileInfo.
-
 
         :param image_moderation: The image_moderation of this OpenUploadFileInfo.
         :type image_moderation: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`

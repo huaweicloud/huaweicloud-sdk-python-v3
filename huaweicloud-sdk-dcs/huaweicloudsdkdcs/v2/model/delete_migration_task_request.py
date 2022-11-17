@@ -17,7 +17,6 @@ class DeleteMigrationTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteMigrationTaskRequest:
     def body(self):
         """Gets the body of this DeleteMigrationTaskRequest.
 
-
         :return: The body of this DeleteMigrationTaskRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteMigrateTaskRequest`
         """
@@ -58,7 +56,6 @@ class DeleteMigrationTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteMigrationTaskRequest.
-
 
         :param body: The body of this DeleteMigrationTaskRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.DeleteMigrateTaskRequest`

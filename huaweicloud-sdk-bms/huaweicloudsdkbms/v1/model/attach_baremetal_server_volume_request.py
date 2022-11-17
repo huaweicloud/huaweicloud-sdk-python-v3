@@ -17,7 +17,6 @@ class AttachBaremetalServerVolumeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AttachBaremetalServerVolumeRequest:
     def body(self):
         """Gets the body of this AttachBaremetalServerVolumeRequest.
 
-
         :return: The body of this AttachBaremetalServerVolumeRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.AttachVolumeBody`
         """
@@ -86,7 +84,6 @@ class AttachBaremetalServerVolumeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AttachBaremetalServerVolumeRequest.
-
 
         :param body: The body of this AttachBaremetalServerVolumeRequest.
         :type body: :class:`huaweicloudsdkbms.v1.AttachVolumeBody`

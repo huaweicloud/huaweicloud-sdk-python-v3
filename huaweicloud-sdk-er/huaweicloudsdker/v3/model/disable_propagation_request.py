@@ -17,7 +17,6 @@ class DisablePropagationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class DisablePropagationRequest:
     def body(self):
         """Gets the body of this DisablePropagationRequest.
 
-
         :return: The body of this DisablePropagationRequest.
         :rtype: :class:`huaweicloudsdker.v3.PropagationRequestBody`
         """
@@ -114,7 +112,6 @@ class DisablePropagationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DisablePropagationRequest.
-
 
         :param body: The body of this DisablePropagationRequest.
         :type body: :class:`huaweicloudsdker.v3.PropagationRequestBody`

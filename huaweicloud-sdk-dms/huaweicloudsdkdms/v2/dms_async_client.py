@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DmsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateOrDeleteQueueTag
         :type request: :class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteQueueTagRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.BatchCreateOrDeleteQueueTagResponse`
@@ -68,6 +63,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateOrDeleteQueueTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -124,6 +122,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ConfirmConsumptionMessages
         :type request: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesResponse`
@@ -136,6 +135,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -172,6 +173,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmConsumptionMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -194,6 +196,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ConfirmDeadLettersMessages
         :type request: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesResponse`
@@ -206,6 +209,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -242,6 +247,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmDeadLettersMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -258,6 +264,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ConsumeDeadlettersMessage
         :type request: :class:`huaweicloudsdkdms.v2.ConsumeDeadlettersMessageRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ConsumeDeadlettersMessageResponse`
@@ -270,6 +277,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -310,6 +319,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConsumeDeadlettersMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -328,6 +338,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ConsumeMessages
         :type request: :class:`huaweicloudsdkdms.v2.ConsumeMessagesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ConsumeMessagesResponse`
@@ -340,6 +351,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -384,6 +397,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConsumeMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -402,6 +416,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateConsumerGroup
         :type request: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupResponse`
@@ -414,6 +429,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -448,6 +465,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConsumerGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -463,6 +481,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateQueue
         :type request: :class:`huaweicloudsdkdms.v2.CreateQueueRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.CreateQueueResponse`
@@ -475,6 +494,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -507,6 +528,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -521,6 +543,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteQueue
         :type request: :class:`huaweicloudsdkdms.v2.DeleteQueueRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.DeleteQueueResponse`
@@ -533,6 +556,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -565,6 +590,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -579,6 +605,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSpecifiedConsumerGroup
         :type request: :class:`huaweicloudsdkdms.v2.DeleteSpecifiedConsumerGroupRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.DeleteSpecifiedConsumerGroupResponse`
@@ -591,6 +618,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -625,6 +654,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSpecifiedConsumerGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -639,6 +669,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConsumerGroups
         :type request: :class:`huaweicloudsdkdms.v2.ListConsumerGroupsRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ListConsumerGroupsResponse`
@@ -651,6 +682,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -691,6 +724,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConsumerGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -705,6 +739,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQueues
         :type request: :class:`huaweicloudsdkdms.v2.ListQueuesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ListQueuesResponse`
@@ -717,6 +752,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -749,6 +786,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQueuesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -767,6 +805,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SendMessages
         :type request: :class:`huaweicloudsdkdms.v2.SendMessagesRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.SendMessagesResponse`
@@ -779,6 +818,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -813,6 +854,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -827,6 +869,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQueue
         :type request: :class:`huaweicloudsdkdms.v2.ShowQueueRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ShowQueueResponse`
@@ -839,6 +882,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -873,6 +918,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -887,6 +933,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQueueProjectTags
         :type request: :class:`huaweicloudsdkdms.v2.ShowQueueProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ShowQueueProjectTagsResponse`
@@ -899,6 +946,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -929,6 +978,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQueueProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -943,6 +993,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQueueTags
         :type request: :class:`huaweicloudsdkdms.v2.ShowQueueTagsRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ShowQueueTagsResponse`
@@ -955,6 +1006,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -987,6 +1040,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQueueTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1001,6 +1055,7 @@ class DmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkdms.v2.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdms.v2.ShowQuotasResponse`
@@ -1013,6 +1068,8 @@ class DmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1043,6 +1100,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1050,7 +1108,7 @@ class DmsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1061,9 +1119,10 @@ class DmsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1080,6 +1139,7 @@ class DmsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

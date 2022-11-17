@@ -17,7 +17,6 @@ class IterationHistory:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -128,7 +127,6 @@ class IterationHistory:
     def operator(self):
         """Gets the operator of this IterationHistory.
 
-
         :return: The operator of this IterationHistory.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IterationHistoryOperator`
         """
@@ -137,7 +135,6 @@ class IterationHistory:
     @operator.setter
     def operator(self, operator):
         """Sets the operator of this IterationHistory.
-
 
         :param operator: The operator of this IterationHistory.
         :type operator: :class:`huaweicloudsdkprojectman.v4.IterationHistoryOperator`

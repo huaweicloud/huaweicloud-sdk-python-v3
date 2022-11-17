@@ -17,7 +17,6 @@ class ShowAssetDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -99,7 +98,6 @@ class ShowAssetDetailResponse(SdkResponse):
     def base_info(self):
         """Gets the base_info of this ShowAssetDetailResponse.
 
-
         :return: The base_info of this ShowAssetDetailResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.BaseInfo`
         """
@@ -108,7 +106,6 @@ class ShowAssetDetailResponse(SdkResponse):
     @base_info.setter
     def base_info(self, base_info):
         """Sets the base_info of this ShowAssetDetailResponse.
-
 
         :param base_info: The base_info of this ShowAssetDetailResponse.
         :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
@@ -119,7 +116,6 @@ class ShowAssetDetailResponse(SdkResponse):
     def transcode_info(self):
         """Gets the transcode_info of this ShowAssetDetailResponse.
 
-
         :return: The transcode_info of this ShowAssetDetailResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
         """
@@ -128,7 +124,6 @@ class ShowAssetDetailResponse(SdkResponse):
     @transcode_info.setter
     def transcode_info(self, transcode_info):
         """Sets the transcode_info of this ShowAssetDetailResponse.
-
 
         :param transcode_info: The transcode_info of this ShowAssetDetailResponse.
         :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
@@ -139,7 +134,6 @@ class ShowAssetDetailResponse(SdkResponse):
     def thumbnail_info(self):
         """Gets the thumbnail_info of this ShowAssetDetailResponse.
 
-
         :return: The thumbnail_info of this ShowAssetDetailResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.ThumbnailInfo`
         """
@@ -148,7 +142,6 @@ class ShowAssetDetailResponse(SdkResponse):
     @thumbnail_info.setter
     def thumbnail_info(self, thumbnail_info):
         """Sets the thumbnail_info of this ShowAssetDetailResponse.
-
 
         :param thumbnail_info: The thumbnail_info of this ShowAssetDetailResponse.
         :type thumbnail_info: :class:`huaweicloudsdkvod.v1.ThumbnailInfo`
@@ -159,7 +152,6 @@ class ShowAssetDetailResponse(SdkResponse):
     def review_info(self):
         """Gets the review_info of this ShowAssetDetailResponse.
 
-
         :return: The review_info of this ShowAssetDetailResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.ReviewInfo`
         """
@@ -168,7 +160,6 @@ class ShowAssetDetailResponse(SdkResponse):
     @review_info.setter
     def review_info(self, review_info):
         """Sets the review_info of this ShowAssetDetailResponse.
-
 
         :param review_info: The review_info of this ShowAssetDetailResponse.
         :type review_info: :class:`huaweicloudsdkvod.v1.ReviewInfo`

@@ -17,7 +17,6 @@ class PolicyTriggerReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class PolicyTriggerReq:
     def properties(self):
         """Gets the properties of this PolicyTriggerReq.
 
-
         :return: The properties of this PolicyTriggerReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesReq`
         """
@@ -57,7 +55,6 @@ class PolicyTriggerReq:
     @properties.setter
     def properties(self, properties):
         """Sets the properties of this PolicyTriggerReq.
-
 
         :param properties: The properties of this PolicyTriggerReq.
         :type properties: :class:`huaweicloudsdkcbr.v1.PolicyTriggerPropertiesReq`

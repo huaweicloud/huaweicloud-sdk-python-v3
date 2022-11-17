@@ -17,7 +17,6 @@ class CreateClusterRolesBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -88,7 +87,6 @@ class CreateClusterRolesBody:
     def volume(self):
         """Gets the volume of this CreateClusterRolesBody.
 
-
         :return: The volume of this CreateClusterRolesBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceVolumeBody`
         """
@@ -97,7 +95,6 @@ class CreateClusterRolesBody:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this CreateClusterRolesBody.
-
 
         :param volume: The volume of this CreateClusterRolesBody.
         :type volume: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceVolumeBody`

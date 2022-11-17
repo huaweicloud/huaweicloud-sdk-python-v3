@@ -17,7 +17,6 @@ class EdgemgrDevicesUpdate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class EdgemgrDevicesUpdate:
     def device(self):
         """Gets the device of this EdgemgrDevicesUpdate.
 
-
         :return: The device of this EdgemgrDevicesUpdate.
         :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDevicesPara`
         """
@@ -57,7 +55,6 @@ class EdgemgrDevicesUpdate:
     @device.setter
     def device(self, device):
         """Sets the device of this EdgemgrDevicesUpdate.
-
 
         :param device: The device of this EdgemgrDevicesUpdate.
         :type device: :class:`huaweicloudsdkief.v1.EdgemgrDevicesPara`

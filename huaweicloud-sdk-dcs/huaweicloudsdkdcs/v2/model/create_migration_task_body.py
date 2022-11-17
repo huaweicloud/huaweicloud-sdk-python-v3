@@ -17,7 +17,6 @@ class CreateMigrationTaskBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -182,7 +181,6 @@ class CreateMigrationTaskBody:
     def backup_files(self):
         """Gets the backup_files of this CreateMigrationTaskBody.
 
-
         :return: The backup_files of this CreateMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
         """
@@ -191,7 +189,6 @@ class CreateMigrationTaskBody:
     @backup_files.setter
     def backup_files(self, backup_files):
         """Sets the backup_files of this CreateMigrationTaskBody.
-
 
         :param backup_files: The backup_files of this CreateMigrationTaskBody.
         :type backup_files: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
@@ -224,7 +221,6 @@ class CreateMigrationTaskBody:
     def source_instance(self):
         """Gets the source_instance of this CreateMigrationTaskBody.
 
-
         :return: The source_instance of this CreateMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
         """
@@ -233,7 +229,6 @@ class CreateMigrationTaskBody:
     @source_instance.setter
     def source_instance(self, source_instance):
         """Sets the source_instance of this CreateMigrationTaskBody.
-
 
         :param source_instance: The source_instance of this CreateMigrationTaskBody.
         :type source_instance: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
@@ -244,7 +239,6 @@ class CreateMigrationTaskBody:
     def target_instance(self):
         """Gets the target_instance of this CreateMigrationTaskBody.
 
-
         :return: The target_instance of this CreateMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`
         """
@@ -253,7 +247,6 @@ class CreateMigrationTaskBody:
     @target_instance.setter
     def target_instance(self, target_instance):
         """Sets the target_instance of this CreateMigrationTaskBody.
-
 
         :param target_instance: The target_instance of this CreateMigrationTaskBody.
         :type target_instance: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`

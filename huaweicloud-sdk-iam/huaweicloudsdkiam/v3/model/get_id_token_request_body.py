@@ -17,7 +17,6 @@ class GetIdTokenRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class GetIdTokenRequestBody:
     def auth(self):
         """Gets the auth of this GetIdTokenRequestBody.
 
-
         :return: The auth of this GetIdTokenRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenAuthParams`
         """
@@ -57,7 +55,6 @@ class GetIdTokenRequestBody:
     @auth.setter
     def auth(self, auth):
         """Sets the auth of this GetIdTokenRequestBody.
-
 
         :param auth: The auth of this GetIdTokenRequestBody.
         :type auth: :class:`huaweicloudsdkiam.v3.GetIdTokenAuthParams`

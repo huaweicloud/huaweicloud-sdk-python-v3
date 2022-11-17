@@ -17,7 +17,6 @@ class ShowImageResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -897,7 +896,6 @@ class ShowImageResponse(SdkResponse):
     def origin_region_info(self):
         """Gets the origin_region_info of this ShowImageResponse.
 
-
         :return: The origin_region_info of this ShowImageResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.CloudImageRegionInfo`
         """
@@ -906,7 +904,6 @@ class ShowImageResponse(SdkResponse):
     @origin_region_info.setter
     def origin_region_info(self, origin_region_info):
         """Sets the origin_region_info of this ShowImageResponse.
-
 
         :param origin_region_info: The origin_region_info of this ShowImageResponse.
         :type origin_region_info: :class:`huaweicloudsdkiec.v1.CloudImageRegionInfo`

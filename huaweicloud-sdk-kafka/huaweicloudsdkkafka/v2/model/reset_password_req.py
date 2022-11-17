@@ -17,7 +17,6 @@ class ResetPasswordReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -42,8 +41,7 @@ class ResetPasswordReq:
         self._new_password = None
         self.discriminator = None
 
-        if new_password is not None:
-            self.new_password = new_password
+        self.new_password = new_password
 
     @property
     def new_password(self):

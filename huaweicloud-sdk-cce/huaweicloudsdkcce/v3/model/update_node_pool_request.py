@@ -17,7 +17,6 @@ class UpdateNodePoolRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateNodePoolRequest:
     def body(self):
         """Gets the body of this UpdateNodePoolRequest.
 
-
         :return: The body of this UpdateNodePoolRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolUpdate`
         """
@@ -114,7 +112,6 @@ class UpdateNodePoolRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateNodePoolRequest.
-
 
         :param body: The body of this UpdateNodePoolRequest.
         :type body: :class:`huaweicloudsdkcce.v3.NodePoolUpdate`

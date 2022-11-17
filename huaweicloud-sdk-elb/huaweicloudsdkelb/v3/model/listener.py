@@ -17,7 +17,6 @@ class Listener:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -415,7 +414,6 @@ class Listener:
     def insert_headers(self):
         """Gets the insert_headers of this Listener.
 
-
         :return: The insert_headers of this Listener.
         :rtype: :class:`huaweicloudsdkelb.v3.ListenerInsertHeaders`
         """
@@ -424,7 +422,6 @@ class Listener:
     @insert_headers.setter
     def insert_headers(self, insert_headers):
         """Sets the insert_headers of this Listener.
-
 
         :param insert_headers: The insert_headers of this Listener.
         :type insert_headers: :class:`huaweicloudsdkelb.v3.ListenerInsertHeaders`
@@ -765,7 +762,6 @@ class Listener:
     def ipgroup(self):
         """Gets the ipgroup of this Listener.
 
-
         :return: The ipgroup of this Listener.
         :rtype: :class:`huaweicloudsdkelb.v3.ListenerIpGroup`
         """
@@ -774,7 +770,6 @@ class Listener:
     @ipgroup.setter
     def ipgroup(self, ipgroup):
         """Sets the ipgroup of this Listener.
-
 
         :param ipgroup: The ipgroup of this Listener.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.ListenerIpGroup`
@@ -829,7 +824,6 @@ class Listener:
     def quic_config(self):
         """Gets the quic_config of this Listener.
 
-
         :return: The quic_config of this Listener.
         :rtype: :class:`huaweicloudsdkelb.v3.ListenerQuicConfig`
         """
@@ -838,7 +832,6 @@ class Listener:
     @quic_config.setter
     def quic_config(self, quic_config):
         """Sets the quic_config of this Listener.
-
 
         :param quic_config: The quic_config of this Listener.
         :type quic_config: :class:`huaweicloudsdkelb.v3.ListenerQuicConfig`

@@ -17,7 +17,6 @@ class ShowPrivateipResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowPrivateipResponse(SdkResponse):
     def privateip(self):
         """Gets the privateip of this ShowPrivateipResponse.
 
-
         :return: The privateip of this ShowPrivateipResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.Privateip`
         """
@@ -58,7 +56,6 @@ class ShowPrivateipResponse(SdkResponse):
     @privateip.setter
     def privateip(self, privateip):
         """Sets the privateip of this ShowPrivateipResponse.
-
 
         :param privateip: The privateip of this ShowPrivateipResponse.
         :type privateip: :class:`huaweicloudsdkvpc.v2.Privateip`

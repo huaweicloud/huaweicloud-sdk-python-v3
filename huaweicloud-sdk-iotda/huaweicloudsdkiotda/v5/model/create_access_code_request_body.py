@@ -17,7 +17,6 @@ class CreateAccessCodeRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -33,7 +32,7 @@ class CreateAccessCodeRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - AMQP 
+        :param type: **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - [AMQP,MQTT]
         :type type: str
         """
         
@@ -49,7 +48,7 @@ class CreateAccessCodeRequestBody:
     def type(self):
         """Gets the type of this CreateAccessCodeRequestBody.
 
-        **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - AMQP 
+        **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - [AMQP,MQTT]
 
         :return: The type of this CreateAccessCodeRequestBody.
         :rtype: str
@@ -60,7 +59,7 @@ class CreateAccessCodeRequestBody:
     def type(self, type):
         """Sets the type of this CreateAccessCodeRequestBody.
 
-        **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - AMQP 
+        **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - [AMQP,MQTT]
 
         :param type: The type of this CreateAccessCodeRequestBody.
         :type type: str

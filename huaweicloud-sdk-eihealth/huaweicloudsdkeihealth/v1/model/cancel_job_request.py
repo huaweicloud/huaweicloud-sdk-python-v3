@@ -17,7 +17,6 @@ class CancelJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CancelJobRequest:
     def body(self):
         """Gets the body of this CancelJobRequest.
 
-
         :return: The body of this CancelJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TerminateJobReq`
         """
@@ -114,7 +112,6 @@ class CancelJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CancelJobRequest.
-
 
         :param body: The body of this CancelJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.TerminateJobReq`

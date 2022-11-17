@@ -17,7 +17,6 @@ class ModifyPrefineTag:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class ModifyPrefineTag:
     def new_tag(self):
         """Gets the new_tag of this ModifyPrefineTag.
 
-
         :return: The new_tag of this ModifyPrefineTag.
         :rtype: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
         """
@@ -63,7 +61,6 @@ class ModifyPrefineTag:
     @new_tag.setter
     def new_tag(self, new_tag):
         """Sets the new_tag of this ModifyPrefineTag.
-
 
         :param new_tag: The new_tag of this ModifyPrefineTag.
         :type new_tag: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
@@ -74,7 +71,6 @@ class ModifyPrefineTag:
     def old_tag(self):
         """Gets the old_tag of this ModifyPrefineTag.
 
-
         :return: The old_tag of this ModifyPrefineTag.
         :rtype: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
         """
@@ -83,7 +79,6 @@ class ModifyPrefineTag:
     @old_tag.setter
     def old_tag(self, old_tag):
         """Sets the old_tag of this ModifyPrefineTag.
-
 
         :param old_tag: The old_tag of this ModifyPrefineTag.
         :type old_tag: :class:`huaweicloudsdktms.v1.PredefineTagRequest`

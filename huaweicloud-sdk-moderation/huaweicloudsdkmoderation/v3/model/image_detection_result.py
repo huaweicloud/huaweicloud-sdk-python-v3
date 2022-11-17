@@ -17,7 +17,6 @@ class ImageDetectionResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -41,7 +40,7 @@ class ImageDetectionResult:
 
         :param suggestion: 审核结果是否通过。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检
         :type suggestion: str
-        :param category: 检测结果的一级标签。 支持category列表如下： politics: 涉政 terrorism: 暴恐 porn: 色情 image_text: 图文审核
+        :param category: 检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
         :type category: str
         :param details: 检测详情
         :type details: list[:class:`huaweicloudsdkmoderation.v3.ImageDetectionResultDetail`]
@@ -92,7 +91,7 @@ class ImageDetectionResult:
     def category(self):
         """Gets the category of this ImageDetectionResult.
 
-        检测结果的一级标签。 支持category列表如下： politics: 涉政 terrorism: 暴恐 porn: 色情 image_text: 图文审核
+        检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
 
         :return: The category of this ImageDetectionResult.
         :rtype: str
@@ -103,7 +102,7 @@ class ImageDetectionResult:
     def category(self, category):
         """Sets the category of this ImageDetectionResult.
 
-        检测结果的一级标签。 支持category列表如下： politics: 涉政 terrorism: 暴恐 porn: 色情 image_text: 图文审核
+        检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
 
         :param category: The category of this ImageDetectionResult.
         :type category: str

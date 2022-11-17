@@ -17,7 +17,6 @@ class UpdateTestCaseRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateTestCaseRequest:
     def body(self):
         """Gets the body of this UpdateTestCaseRequest.
 
-
         :return: The body of this UpdateTestCaseRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseRequestBody`
         """
@@ -114,7 +112,6 @@ class UpdateTestCaseRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateTestCaseRequest.
-
 
         :param body: The body of this UpdateTestCaseRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseRequestBody`

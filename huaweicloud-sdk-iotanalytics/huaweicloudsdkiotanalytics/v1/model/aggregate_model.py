@@ -17,7 +17,6 @@ class AggregateModel:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -96,7 +95,6 @@ class AggregateModel:
     def expression(self):
         """Gets the expression of this AggregateModel.
 
-
         :return: The expression of this AggregateModel.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Expression`
         """
@@ -105,7 +103,6 @@ class AggregateModel:
     @expression.setter
     def expression(self, expression):
         """Sets the expression of this AggregateModel.
-
 
         :param expression: The expression of this AggregateModel.
         :type expression: :class:`huaweicloudsdkiotanalytics.v1.Expression`
@@ -116,7 +113,6 @@ class AggregateModel:
     def schedule(self):
         """Gets the schedule of this AggregateModel.
 
-
         :return: The schedule of this AggregateModel.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
         """
@@ -125,7 +121,6 @@ class AggregateModel:
     @schedule.setter
     def schedule(self, schedule):
         """Sets the schedule of this AggregateModel.
-
 
         :param schedule: The schedule of this AggregateModel.
         :type schedule: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`

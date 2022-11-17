@@ -17,7 +17,6 @@ class ShowLtsInfoConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class ShowLtsInfoConfigResponse(SdkResponse):
     def lts_id_info(self):
         """Gets the lts_id_info of this ShowLtsInfoConfigResponse.
 
-
         :return: The lts_id_info of this ShowLtsInfoConfigResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`
         """
@@ -123,7 +121,6 @@ class ShowLtsInfoConfigResponse(SdkResponse):
     @lts_id_info.setter
     def lts_id_info(self, lts_id_info):
         """Sets the lts_id_info of this ShowLtsInfoConfigResponse.
-
 
         :param lts_id_info: The lts_id_info of this ShowLtsInfoConfigResponse.
         :type lts_id_info: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`

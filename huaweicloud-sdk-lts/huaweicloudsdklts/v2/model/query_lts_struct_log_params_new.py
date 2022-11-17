@@ -17,7 +17,6 @@ class QueryLtsStructLogParamsNew:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -111,7 +110,6 @@ class QueryLtsStructLogParamsNew:
     def time_range(self):
         """Gets the time_range of this QueryLtsStructLogParamsNew.
 
-
         :return: The time_range of this QueryLtsStructLogParamsNew.
         :rtype: :class:`huaweicloudsdklts.v2.TimeRange`
         """
@@ -120,7 +118,6 @@ class QueryLtsStructLogParamsNew:
     @time_range.setter
     def time_range(self, time_range):
         """Sets the time_range of this QueryLtsStructLogParamsNew.
-
 
         :param time_range: The time_range of this QueryLtsStructLogParamsNew.
         :type time_range: :class:`huaweicloudsdklts.v2.TimeRange`

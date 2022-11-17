@@ -17,7 +17,6 @@ class ValueInTwin:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -62,7 +61,6 @@ class ValueInTwin:
     def excepted(self):
         """Gets the excepted of this ValueInTwin.
 
-
         :return: The excepted of this ValueInTwin.
         :rtype: :class:`huaweicloudsdkief.v1.Excepted`
         """
@@ -71,7 +69,6 @@ class ValueInTwin:
     @excepted.setter
     def excepted(self, excepted):
         """Sets the excepted of this ValueInTwin.
-
 
         :param excepted: The excepted of this ValueInTwin.
         :type excepted: :class:`huaweicloudsdkief.v1.Excepted`
@@ -104,7 +101,6 @@ class ValueInTwin:
     def metadata(self):
         """Gets the metadata of this ValueInTwin.
 
-
         :return: The metadata of this ValueInTwin.
         :rtype: :class:`huaweicloudsdkief.v1.Metadata`
         """
@@ -113,7 +109,6 @@ class ValueInTwin:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ValueInTwin.
-
 
         :param metadata: The metadata of this ValueInTwin.
         :type metadata: :class:`huaweicloudsdkief.v1.Metadata`

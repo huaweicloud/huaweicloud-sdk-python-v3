@@ -17,7 +17,6 @@ class ShowTempResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowTempResponse(SdkResponse):
     def temp_info(self):
         """Gets the temp_info of this ShowTempResponse.
 
-
         :return: The temp_info of this ShowTempResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.TempInfo`
         """
@@ -116,7 +114,6 @@ class ShowTempResponse(SdkResponse):
     @temp_info.setter
     def temp_info(self, temp_info):
         """Sets the temp_info of this ShowTempResponse.
-
 
         :param temp_info: The temp_info of this ShowTempResponse.
         :type temp_info: :class:`huaweicloudsdkcpts.v1.TempInfo`

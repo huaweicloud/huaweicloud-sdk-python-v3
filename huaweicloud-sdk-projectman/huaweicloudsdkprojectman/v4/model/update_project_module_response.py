@@ -17,7 +17,6 @@ class UpdateProjectModuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class UpdateProjectModuleResponse(SdkResponse):
     def owner(self):
         """Gets the owner of this UpdateProjectModuleResponse.
 
-
         :return: The owner of this UpdateProjectModuleResponse.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ModuleOwner`
         """
@@ -145,7 +143,6 @@ class UpdateProjectModuleResponse(SdkResponse):
     @owner.setter
     def owner(self, owner):
         """Sets the owner of this UpdateProjectModuleResponse.
-
 
         :param owner: The owner of this UpdateProjectModuleResponse.
         :type owner: :class:`huaweicloudsdkprojectman.v4.ModuleOwner`

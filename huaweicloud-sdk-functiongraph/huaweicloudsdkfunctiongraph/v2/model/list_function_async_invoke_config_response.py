@@ -17,7 +17,6 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListFunctionAsyncInvokeConfigResponse.
 
-
         :return: The page_info of this ListFunctionAsyncInvokeConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
         """
@@ -116,7 +114,6 @@ class ListFunctionAsyncInvokeConfigResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListFunctionAsyncInvokeConfigResponse.
-
 
         :param page_info: The page_info of this ListFunctionAsyncInvokeConfigResponse.
         :type page_info: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`

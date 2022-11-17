@@ -17,7 +17,6 @@ class ListPropertyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListPropertyResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListPropertyResponse.
 
-
         :return: The body of this ListPropertyResponse.
         :rtype: list[str]
         """
@@ -58,7 +56,6 @@ class ListPropertyResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ListPropertyResponse.
-
 
         :param body: The body of this ListPropertyResponse.
         :type body: list[str]

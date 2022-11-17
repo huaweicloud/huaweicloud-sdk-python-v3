@@ -17,7 +17,6 @@ class DeleteClusterResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class DeleteClusterResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this DeleteClusterResponse.
 
-
         :return: The metadata of this DeleteClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
         """
@@ -130,7 +128,6 @@ class DeleteClusterResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this DeleteClusterResponse.
-
 
         :param metadata: The metadata of this DeleteClusterResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
@@ -141,7 +138,6 @@ class DeleteClusterResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this DeleteClusterResponse.
 
-
         :return: The spec of this DeleteClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterSpec`
         """
@@ -150,7 +146,6 @@ class DeleteClusterResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this DeleteClusterResponse.
-
 
         :param spec: The spec of this DeleteClusterResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
@@ -161,7 +156,6 @@ class DeleteClusterResponse(SdkResponse):
     def status(self):
         """Gets the status of this DeleteClusterResponse.
 
-
         :return: The status of this DeleteClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterStatus`
         """
@@ -170,7 +164,6 @@ class DeleteClusterResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this DeleteClusterResponse.
-
 
         :param status: The status of this DeleteClusterResponse.
         :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`

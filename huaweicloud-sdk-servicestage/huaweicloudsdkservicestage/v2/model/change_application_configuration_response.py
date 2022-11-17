@@ -17,7 +17,6 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
     def configuration(self):
         """Gets the configuration of this ChangeApplicationConfigurationResponse.
 
-
         :return: The configuration of this ChangeApplicationConfigurationResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration`
         """
@@ -116,7 +114,6 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
     @configuration.setter
     def configuration(self, configuration):
         """Sets the configuration of this ChangeApplicationConfigurationResponse.
-
 
         :param configuration: The configuration of this ChangeApplicationConfigurationResponse.
         :type configuration: :class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration`

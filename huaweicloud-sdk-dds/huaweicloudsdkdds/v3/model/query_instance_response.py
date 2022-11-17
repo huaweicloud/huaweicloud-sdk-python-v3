@@ -17,7 +17,6 @@ class QueryInstanceResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -361,7 +360,6 @@ class QueryInstanceResponse:
     def datastore(self):
         """Gets the datastore of this QueryInstanceResponse.
 
-
         :return: The datastore of this QueryInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.DatastoreItem`
         """
@@ -370,7 +368,6 @@ class QueryInstanceResponse:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this QueryInstanceResponse.
-
 
         :param datastore: The datastore of this QueryInstanceResponse.
         :type datastore: :class:`huaweicloudsdkdds.v3.DatastoreItem`
@@ -557,7 +554,6 @@ class QueryInstanceResponse:
     def backup_strategy(self):
         """Gets the backup_strategy of this QueryInstanceResponse.
 
-
         :return: The backup_strategy of this QueryInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategyForItemResponse`
         """
@@ -566,7 +562,6 @@ class QueryInstanceResponse:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this QueryInstanceResponse.
-
 
         :param backup_strategy: The backup_strategy of this QueryInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategyForItemResponse`

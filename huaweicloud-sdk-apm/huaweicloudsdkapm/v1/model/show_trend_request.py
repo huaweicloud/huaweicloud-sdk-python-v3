@@ -17,7 +17,6 @@ class ShowTrendRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowTrendRequest:
     def body(self):
         """Gets the body of this ShowTrendRequest.
 
-
         :return: The body of this ShowTrendRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.TrendParam`
         """
@@ -86,7 +84,6 @@ class ShowTrendRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowTrendRequest.
-
 
         :param body: The body of this ShowTrendRequest.
         :type body: :class:`huaweicloudsdkapm.v1.TrendParam`

@@ -17,7 +17,6 @@ class OriginRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class OriginRequest:
     def origin(self):
         """Gets the origin of this OriginRequest.
 
-
         :return: The origin of this OriginRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.ResourceBody`
         """
@@ -57,7 +55,6 @@ class OriginRequest:
     @origin.setter
     def origin(self, origin):
         """Sets the origin of this OriginRequest.
-
 
         :param origin: The origin of this OriginRequest.
         :type origin: :class:`huaweicloudsdkcdn.v1.ResourceBody`

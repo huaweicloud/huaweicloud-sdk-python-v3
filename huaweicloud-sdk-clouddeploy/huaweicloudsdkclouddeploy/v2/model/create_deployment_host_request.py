@@ -17,7 +17,6 @@ class CreateDeploymentHostRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateDeploymentHostRequest:
     def body(self):
         """Gets the body of this CreateDeploymentHostRequest.
 
-
         :return: The body of this CreateDeploymentHostRequest.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHost`
         """
@@ -86,7 +84,6 @@ class CreateDeploymentHostRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDeploymentHostRequest.
-
 
         :param body: The body of this CreateDeploymentHostRequest.
         :type body: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHost`

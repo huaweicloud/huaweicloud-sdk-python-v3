@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class KafkaAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateOrDeleteKafkaTag
         :type request: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteKafkaTagRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteKafkaTagResponse`
@@ -68,6 +63,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateOrDeleteKafkaTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteInstanceTopic
         :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicResponse`
@@ -128,6 +127,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteInstanceUsers
         :type request: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceUsersRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceUsersResponse`
@@ -188,6 +191,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteInstanceUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -240,6 +246,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRestartOrDeleteInstances
         :type request: :class:`huaweicloudsdkkafka.v2.BatchRestartOrDeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchRestartOrDeleteInstancesResponse`
@@ -252,6 +259,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +293,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRestartOrDeleteInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +310,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateConnector
         :type request: :class:`huaweicloudsdkkafka.v2.CreateConnectorRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateConnectorResponse`
@@ -312,6 +323,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -346,6 +359,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConnectorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -360,6 +374,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstanceTopic
         :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceTopicResponse`
@@ -372,6 +387,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -406,6 +423,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -420,6 +438,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstanceUser
         :type request: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserResponse`
@@ -432,6 +451,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -466,6 +487,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -480,6 +502,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePartition
         :type request: :class:`huaweicloudsdkkafka.v2.CreatePartitionRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreatePartitionResponse`
@@ -492,6 +515,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -528,6 +553,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePartitionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -542,6 +568,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePostPaidInstance
         :type request: :class:`huaweicloudsdkkafka.v2.CreatePostPaidInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreatePostPaidInstanceResponse`
@@ -554,6 +581,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -586,6 +615,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostPaidInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -600,6 +630,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSinkTask
         :type request: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskResponse`
@@ -612,6 +643,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -646,6 +679,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSinkTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -660,6 +694,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBackgroundTask
         :type request: :class:`huaweicloudsdkkafka.v2.DeleteBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.DeleteBackgroundTaskResponse`
@@ -672,6 +707,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -706,6 +743,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackgroundTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -720,6 +758,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkkafka.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.DeleteInstanceResponse`
@@ -732,6 +771,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -764,6 +805,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -778,6 +820,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSinkTask
         :type request: :class:`huaweicloudsdkkafka.v2.DeleteSinkTaskRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.DeleteSinkTaskResponse`
@@ -790,6 +833,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -824,6 +869,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSinkTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -838,6 +884,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAvailableZones
         :type request: :class:`huaweicloudsdkkafka.v2.ListAvailableZonesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListAvailableZonesResponse`
@@ -850,6 +897,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -880,6 +929,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAvailableZonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -894,6 +944,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackgroundTasks
         :type request: :class:`huaweicloudsdkkafka.v2.ListBackgroundTasksRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListBackgroundTasksResponse`
@@ -906,6 +957,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -946,6 +999,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackgroundTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -960,6 +1014,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEngineProducts
         :type request: :class:`huaweicloudsdkkafka.v2.ListEngineProductsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListEngineProductsResponse`
@@ -972,6 +1027,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1006,6 +1063,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEngineProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1020,6 +1078,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstanceConsumerGroups
         :type request: :class:`huaweicloudsdkkafka.v2.ListInstanceConsumerGroupsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListInstanceConsumerGroupsResponse`
@@ -1032,6 +1091,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1070,6 +1131,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceConsumerGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1084,6 +1146,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstanceTopics
         :type request: :class:`huaweicloudsdkkafka.v2.ListInstanceTopicsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListInstanceTopicsResponse`
@@ -1096,6 +1159,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1128,6 +1193,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceTopicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1142,6 +1208,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkkafka.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListInstancesResponse`
@@ -1154,6 +1221,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1198,6 +1267,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1218,6 +1288,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProducts
         :type request: :class:`huaweicloudsdkkafka.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListProductsResponse`
@@ -1230,6 +1301,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1262,6 +1335,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1276,6 +1350,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSinkTasks
         :type request: :class:`huaweicloudsdkkafka.v2.ListSinkTasksRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ListSinkTasksResponse`
@@ -1288,6 +1363,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1320,6 +1397,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSinkTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1334,6 +1412,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetManagerPassword
         :type request: :class:`huaweicloudsdkkafka.v2.ResetManagerPasswordRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetManagerPasswordResponse`
@@ -1346,6 +1425,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1380,6 +1461,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetManagerPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1396,6 +1478,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetMessageOffset
         :type request: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetResponse`
@@ -1408,6 +1491,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1444,6 +1529,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetMessageOffsetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1458,6 +1544,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetPassword
         :type request: :class:`huaweicloudsdkkafka.v2.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetPasswordResponse`
@@ -1470,6 +1557,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1504,6 +1593,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1518,6 +1608,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetUserPasswrod
         :type request: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodResponse`
@@ -1530,6 +1621,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1566,6 +1659,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetUserPasswrodResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1582,6 +1676,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeInstance
         :type request: :class:`huaweicloudsdkkafka.v2.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ResizeInstanceResponse`
@@ -1594,6 +1689,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1628,6 +1725,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1642,6 +1740,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartManager
         :type request: :class:`huaweicloudsdkkafka.v2.RestartManagerRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.RestartManagerResponse`
@@ -1654,6 +1753,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1686,6 +1787,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartManagerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1700,6 +1802,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBackgroundTask
         :type request: :class:`huaweicloudsdkkafka.v2.ShowBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowBackgroundTaskResponse`
@@ -1712,6 +1815,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1746,6 +1851,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackgroundTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1760,6 +1866,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCesHierarchy
         :type request: :class:`huaweicloudsdkkafka.v2.ShowCesHierarchyRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowCesHierarchyResponse`
@@ -1772,6 +1879,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1804,6 +1913,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCesHierarchyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1818,6 +1928,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCluster
         :type request: :class:`huaweicloudsdkkafka.v2.ShowClusterRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowClusterResponse`
@@ -1830,6 +1941,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1862,6 +1975,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1876,6 +1990,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCoordinators
         :type request: :class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowCoordinatorsResponse`
@@ -1888,6 +2003,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1920,6 +2037,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCoordinatorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1934,6 +2052,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGroups
         :type request: :class:`huaweicloudsdkkafka.v2.ShowGroupsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowGroupsResponse`
@@ -1946,6 +2065,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1980,6 +2101,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1994,6 +2116,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceResponse`
@@ -2006,6 +2129,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2038,6 +2163,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2052,6 +2178,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceExtendProductInfo
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoResponse`
@@ -2064,6 +2191,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2100,6 +2229,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceExtendProductInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2115,6 +2245,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceMessages
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceMessagesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceMessagesResponse`
@@ -2127,6 +2258,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2177,6 +2310,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2191,6 +2325,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceTopicDetail
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceTopicDetailResponse`
@@ -2203,6 +2338,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2237,6 +2374,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceTopicDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2253,6 +2391,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceUsers
         :type request: :class:`huaweicloudsdkkafka.v2.ShowInstanceUsersRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowInstanceUsersResponse`
@@ -2265,6 +2404,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2297,6 +2438,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2311,6 +2453,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowKafkaProjectTags
         :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaProjectTagsResponse`
@@ -2323,6 +2466,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2353,6 +2498,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowKafkaProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2367,6 +2513,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowKafkaTags
         :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaTagsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaTagsResponse`
@@ -2379,6 +2526,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2411,6 +2560,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowKafkaTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2425,6 +2575,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowKafkaTopicPartitionDiskusage
         :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaTopicPartitionDiskusageRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaTopicPartitionDiskusageResponse`
@@ -2437,6 +2588,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2475,6 +2628,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowKafkaTopicPartitionDiskusageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2489,6 +2643,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMaintainWindows
         :type request: :class:`huaweicloudsdkkafka.v2.ShowMaintainWindowsRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowMaintainWindowsResponse`
@@ -2501,6 +2656,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2531,6 +2688,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMaintainWindowsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2545,6 +2703,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMessages
         :type request: :class:`huaweicloudsdkkafka.v2.ShowMessagesRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowMessagesResponse`
@@ -2557,6 +2716,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2601,6 +2762,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2615,6 +2777,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPartitionBeginningMessage
         :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionBeginningMessageRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowPartitionBeginningMessageResponse`
@@ -2627,6 +2790,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2663,6 +2828,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPartitionBeginningMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2677,6 +2843,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPartitionEndMessage
         :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionEndMessageRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowPartitionEndMessageResponse`
@@ -2689,6 +2856,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2725,6 +2894,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPartitionEndMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2739,6 +2909,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPartitionMessage
         :type request: :class:`huaweicloudsdkkafka.v2.ShowPartitionMessageRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowPartitionMessageResponse`
@@ -2751,6 +2922,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2789,6 +2962,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPartitionMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2803,6 +2977,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSinkTaskDetail
         :type request: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailResponse`
@@ -2815,6 +2990,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2851,6 +3028,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSinkTaskDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2867,6 +3045,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTopicAccessPolicy
         :type request: :class:`huaweicloudsdkkafka.v2.ShowTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowTopicAccessPolicyResponse`
@@ -2879,6 +3058,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2913,6 +3094,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTopicAccessPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2927,6 +3109,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceResponse`
@@ -2939,6 +3122,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2973,6 +3158,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2987,6 +3173,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceAutoCreateTopic
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicResponse`
@@ -2999,6 +3186,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3033,6 +3222,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceAutoCreateTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3047,6 +3237,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceCrossVpcIp
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpResponse`
@@ -3059,6 +3250,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3093,6 +3286,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceCrossVpcIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3107,6 +3301,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceTopic
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicResponse`
@@ -3119,6 +3314,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3153,6 +3350,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3167,6 +3365,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSinkTaskQuota
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateSinkTaskQuotaResponse`
@@ -3179,6 +3378,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3213,6 +3414,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSinkTaskQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3229,6 +3431,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTopicAccessPolicy
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateTopicAccessPolicyResponse`
@@ -3241,6 +3444,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3275,6 +3480,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTopicAccessPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3289,6 +3495,7 @@ class KafkaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTopicReplica
         :type request: :class:`huaweicloudsdkkafka.v2.UpdateTopicReplicaRequest`
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateTopicReplicaResponse`
@@ -3301,6 +3508,8 @@ class KafkaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3337,6 +3546,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTopicReplicaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3344,7 +3554,7 @@ class KafkaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3355,9 +3565,10 @@ class KafkaAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3374,6 +3585,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

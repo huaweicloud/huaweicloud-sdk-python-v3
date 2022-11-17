@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class LiveAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDomain
         :type request: :class:`huaweicloudsdklive.v1.CreateDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateDomainResponse`
@@ -68,6 +63,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDomainMapping
         :type request: :class:`huaweicloudsdklive.v1.CreateDomainMappingRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateDomainMappingResponse`
@@ -126,6 +125,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDomainMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRecordCallbackConfig
         :type request: :class:`huaweicloudsdklive.v1.CreateRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateRecordCallbackConfigResponse`
@@ -184,6 +187,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +221,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordCallbackConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -230,6 +236,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRecordIndex
         :type request: :class:`huaweicloudsdklive.v1.CreateRecordIndexRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateRecordIndexResponse`
@@ -242,6 +249,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -259,7 +268,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json; charset=UTF-8'])
@@ -274,6 +283,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordIndexResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -288,6 +298,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRecordRule
         :type request: :class:`huaweicloudsdklive.v1.CreateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateRecordRuleResponse`
@@ -300,6 +311,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -332,6 +345,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -346,6 +360,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateStreamForbidden
         :type request: :class:`huaweicloudsdklive.v1.CreateStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateStreamForbiddenResponse`
@@ -358,6 +373,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -390,6 +407,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStreamForbiddenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -404,6 +422,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTranscodingsTemplate
         :type request: :class:`huaweicloudsdklive.v1.CreateTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateTranscodingsTemplateResponse`
@@ -416,6 +435,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -448,6 +469,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTranscodingsTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -462,6 +484,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDomain
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainResponse`
@@ -474,6 +497,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +531,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -520,6 +546,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDomainMapping
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainMappingRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainMappingResponse`
@@ -532,6 +559,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -566,6 +595,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDomainMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -580,6 +610,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRecordCallbackConfig
         :type request: :class:`huaweicloudsdklive.v1.DeleteRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteRecordCallbackConfigResponse`
@@ -592,6 +623,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -624,6 +657,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRecordCallbackConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -638,6 +672,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRecordRule
         :type request: :class:`huaweicloudsdklive.v1.DeleteRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteRecordRuleResponse`
@@ -650,6 +685,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -682,6 +719,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -696,6 +734,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteStreamForbidden
         :type request: :class:`huaweicloudsdklive.v1.DeleteStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteStreamForbiddenResponse`
@@ -708,6 +747,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -744,6 +785,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStreamForbiddenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -758,6 +800,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTranscodingsTemplate
         :type request: :class:`huaweicloudsdklive.v1.DeleteTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteTranscodingsTemplateResponse`
@@ -770,6 +813,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -804,6 +849,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTranscodingsTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -818,6 +864,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLiveSampleLogs
         :type request: :class:`huaweicloudsdklive.v1.ListLiveSampleLogsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListLiveSampleLogsResponse`
@@ -830,6 +877,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -866,6 +915,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveSampleLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -880,6 +930,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLiveStreamsOnline
         :type request: :class:`huaweicloudsdklive.v1.ListLiveStreamsOnlineRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListLiveStreamsOnlineResponse`
@@ -892,6 +943,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -932,6 +985,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveStreamsOnlineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -946,6 +1000,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecordCallbackConfigs
         :type request: :class:`huaweicloudsdklive.v1.ListRecordCallbackConfigsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListRecordCallbackConfigsResponse`
@@ -958,6 +1013,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -996,6 +1053,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordCallbackConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1010,6 +1068,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecordContents
         :type request: :class:`huaweicloudsdklive.v1.ListRecordContentsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListRecordContentsResponse`
@@ -1022,6 +1081,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1053,7 +1114,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1068,6 +1129,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordContentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1082,6 +1144,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecordRules
         :type request: :class:`huaweicloudsdklive.v1.ListRecordRulesRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListRecordRulesResponse`
@@ -1094,6 +1157,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1136,6 +1201,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1150,6 +1216,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStreamForbidden
         :type request: :class:`huaweicloudsdklive.v1.ListStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListStreamForbiddenResponse`
@@ -1162,6 +1229,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1202,6 +1271,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStreamForbiddenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1216,6 +1286,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunRecord
         :type request: :class:`huaweicloudsdklive.v1.RunRecordRequest`
         :rtype: :class:`huaweicloudsdklive.v1.RunRecordResponse`
@@ -1228,6 +1299,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1247,7 +1320,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json; charset=UTF-8'])
@@ -1262,6 +1335,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1276,6 +1350,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomain
         :type request: :class:`huaweicloudsdklive.v1.ShowDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowDomainResponse`
@@ -1288,6 +1363,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1320,6 +1397,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1334,6 +1412,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecordCallbackConfig
         :type request: :class:`huaweicloudsdklive.v1.ShowRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowRecordCallbackConfigResponse`
@@ -1346,6 +1425,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1378,6 +1459,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordCallbackConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1392,6 +1474,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecordRule
         :type request: :class:`huaweicloudsdklive.v1.ShowRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowRecordRuleResponse`
@@ -1404,6 +1487,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1436,6 +1521,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1450,6 +1536,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTranscodingsTemplate
         :type request: :class:`huaweicloudsdklive.v1.ShowTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowTranscodingsTemplateResponse`
@@ -1462,6 +1549,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1500,6 +1589,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTranscodingsTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1514,6 +1604,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomain
         :type request: :class:`huaweicloudsdklive.v1.UpdateDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainResponse`
@@ -1526,6 +1617,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1558,6 +1651,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1572,6 +1666,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRecordCallbackConfig
         :type request: :class:`huaweicloudsdklive.v1.UpdateRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateRecordCallbackConfigResponse`
@@ -1584,6 +1679,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1618,6 +1715,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecordCallbackConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1632,6 +1730,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRecordRule
         :type request: :class:`huaweicloudsdklive.v1.UpdateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateRecordRuleResponse`
@@ -1644,6 +1743,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1678,6 +1779,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1692,6 +1794,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateStreamForbidden
         :type request: :class:`huaweicloudsdklive.v1.UpdateStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateStreamForbiddenResponse`
@@ -1704,6 +1807,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1736,6 +1841,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStreamForbiddenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1750,6 +1856,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTranscodingsTemplate
         :type request: :class:`huaweicloudsdklive.v1.UpdateTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateTranscodingsTemplateResponse`
@@ -1762,6 +1869,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1794,6 +1903,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTranscodingsTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1801,7 +1911,7 @@ class LiveAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1812,9 +1922,10 @@ class LiveAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1831,6 +1942,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

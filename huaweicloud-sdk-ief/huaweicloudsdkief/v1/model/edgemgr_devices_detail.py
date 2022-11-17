@@ -17,7 +17,6 @@ class EdgemgrDevicesDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -258,7 +257,6 @@ class EdgemgrDevicesDetail:
     def access_config(self):
         """Gets the access_config of this EdgemgrDevicesDetail.
 
-
         :return: The access_config of this EdgemgrDevicesDetail.
         :rtype: :class:`huaweicloudsdkief.v1.AccessConfig`
         """
@@ -267,7 +265,6 @@ class EdgemgrDevicesDetail:
     @access_config.setter
     def access_config(self, access_config):
         """Sets the access_config of this EdgemgrDevicesDetail.
-
 
         :param access_config: The access_config of this EdgemgrDevicesDetail.
         :type access_config: :class:`huaweicloudsdkief.v1.AccessConfig`

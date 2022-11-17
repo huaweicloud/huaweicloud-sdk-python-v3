@@ -17,7 +17,6 @@ class ListShadowsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListShadowsResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListShadowsResponse.
 
-
         :return: The body of this ListShadowsResponse.
         :rtype: list[:class:`huaweicloudsdkroma.v2.ShadowService`]
         """
@@ -58,7 +56,6 @@ class ListShadowsResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ListShadowsResponse.
-
 
         :param body: The body of this ListShadowsResponse.
         :type body: list[:class:`huaweicloudsdkroma.v2.ShadowService`]

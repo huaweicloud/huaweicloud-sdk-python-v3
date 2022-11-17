@@ -17,7 +17,6 @@ class RollbackSnapshotResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RollbackSnapshotResponse(SdkResponse):
     def rollback(self):
         """Gets the rollback of this RollbackSnapshotResponse.
 
-
         :return: The rollback of this RollbackSnapshotResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.RollbackInfo`
         """
@@ -58,7 +56,6 @@ class RollbackSnapshotResponse(SdkResponse):
     @rollback.setter
     def rollback(self, rollback):
         """Sets the rollback of this RollbackSnapshotResponse.
-
 
         :param rollback: The rollback of this RollbackSnapshotResponse.
         :type rollback: :class:`huaweicloudsdkevs.v2.RollbackInfo`

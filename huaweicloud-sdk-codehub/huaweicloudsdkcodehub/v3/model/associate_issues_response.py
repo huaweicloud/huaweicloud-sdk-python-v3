@@ -17,7 +17,6 @@ class AssociateIssuesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class AssociateIssuesResponse(SdkResponse):
     def error(self):
         """Gets the error of this AssociateIssuesResponse.
 
-
         :return: The error of this AssociateIssuesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -65,7 +63,6 @@ class AssociateIssuesResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this AssociateIssuesResponse.
-
 
         :param error: The error of this AssociateIssuesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`

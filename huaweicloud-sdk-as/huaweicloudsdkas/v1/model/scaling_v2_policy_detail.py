@@ -17,7 +17,6 @@ class ScalingV2PolicyDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -287,7 +286,6 @@ class ScalingV2PolicyDetail:
     def scheduled_policy(self):
         """Gets the scheduled_policy of this ScalingV2PolicyDetail.
 
-
         :return: The scheduled_policy of this ScalingV2PolicyDetail.
         :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
@@ -296,7 +294,6 @@ class ScalingV2PolicyDetail:
     @scheduled_policy.setter
     def scheduled_policy(self, scheduled_policy):
         """Sets the scheduled_policy of this ScalingV2PolicyDetail.
-
 
         :param scheduled_policy: The scheduled_policy of this ScalingV2PolicyDetail.
         :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
@@ -307,7 +304,6 @@ class ScalingV2PolicyDetail:
     def scaling_policy_action(self):
         """Gets the scaling_policy_action of this ScalingV2PolicyDetail.
 
-
         :return: The scaling_policy_action of this ScalingV2PolicyDetail.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
         """
@@ -316,7 +312,6 @@ class ScalingV2PolicyDetail:
     @scaling_policy_action.setter
     def scaling_policy_action(self, scaling_policy_action):
         """Sets the scaling_policy_action of this ScalingV2PolicyDetail.
-
 
         :param scaling_policy_action: The scaling_policy_action of this ScalingV2PolicyDetail.
         :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
@@ -371,7 +366,6 @@ class ScalingV2PolicyDetail:
     def meta_data(self):
         """Gets the meta_data of this ScalingV2PolicyDetail.
 
-
         :return: The meta_data of this ScalingV2PolicyDetail.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyV2MetaData`
         """
@@ -380,7 +374,6 @@ class ScalingV2PolicyDetail:
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this ScalingV2PolicyDetail.
-
 
         :param meta_data: The meta_data of this ScalingV2PolicyDetail.
         :type meta_data: :class:`huaweicloudsdkas.v1.ScalingPolicyV2MetaData`

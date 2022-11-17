@@ -17,7 +17,6 @@ class TaskDefinitionDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -186,7 +185,6 @@ class TaskDefinitionDto:
     def resources(self):
         """Gets the resources of this TaskDefinitionDto.
 
-
         :return: The resources of this TaskDefinitionDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
         """
@@ -195,7 +193,6 @@ class TaskDefinitionDto:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this TaskDefinitionDto.
-
 
         :param resources: The resources of this TaskDefinitionDto.
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -206,7 +203,6 @@ class TaskDefinitionDto:
     def location(self):
         """Gets the location of this TaskDefinitionDto.
 
-
         :return: The location of this TaskDefinitionDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`
         """
@@ -215,7 +211,6 @@ class TaskDefinitionDto:
     @location.setter
     def location(self, location):
         """Sets the location of this TaskDefinitionDto.
-
 
         :param location: The location of this TaskDefinitionDto.
         :type location: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`
@@ -248,7 +243,6 @@ class TaskDefinitionDto:
     def app_info(self):
         """Gets the app_info of this TaskDefinitionDto.
 
-
         :return: The app_info of this TaskDefinitionDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AppInfoDto`
         """
@@ -257,7 +251,6 @@ class TaskDefinitionDto:
     @app_info.setter
     def app_info(self, app_info):
         """Sets the app_info of this TaskDefinitionDto.
-
 
         :param app_info: The app_info of this TaskDefinitionDto.
         :type app_info: :class:`huaweicloudsdkeihealth.v1.AppInfoDto`

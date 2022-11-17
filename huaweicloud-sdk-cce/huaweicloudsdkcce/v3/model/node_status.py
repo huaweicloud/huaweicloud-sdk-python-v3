@@ -17,7 +17,6 @@ class NodeStatus:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -223,7 +222,6 @@ class NodeStatus:
     def delete_status(self):
         """Gets the delete_status of this NodeStatus.
 
-
         :return: The delete_status of this NodeStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteStatus`
         """
@@ -232,7 +230,6 @@ class NodeStatus:
     @delete_status.setter
     def delete_status(self, delete_status):
         """Sets the delete_status of this NodeStatus.
-
 
         :param delete_status: The delete_status of this NodeStatus.
         :type delete_status: :class:`huaweicloudsdkcce.v3.DeleteStatus`

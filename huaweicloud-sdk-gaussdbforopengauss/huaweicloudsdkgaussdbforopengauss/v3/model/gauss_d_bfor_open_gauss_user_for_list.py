@@ -17,7 +17,6 @@ class GaussDBforOpenGaussUserForList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class GaussDBforOpenGaussUserForList:
     def attributes(self):
         """Gets the attributes of this GaussDBforOpenGaussUserForList.
 
-
         :return: The attributes of this GaussDBforOpenGaussUserForList.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttributes`
         """
@@ -93,7 +91,6 @@ class GaussDBforOpenGaussUserForList:
     @attributes.setter
     def attributes(self, attributes):
         """Sets the attributes of this GaussDBforOpenGaussUserForList.
-
 
         :param attributes: The attributes of this GaussDBforOpenGaussUserForList.
         :type attributes: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttributes`

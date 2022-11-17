@@ -17,7 +17,6 @@ class SendSlideVerifyCodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class SendSlideVerifyCodeRequest:
     def body(self):
         """Gets the body of this SendSlideVerifyCodeRequest.
 
-
         :return: The body of this SendSlideVerifyCodeRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.SlideVerifyCodeSendDTO`
         """
@@ -116,7 +114,6 @@ class SendSlideVerifyCodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SendSlideVerifyCodeRequest.
-
 
         :param body: The body of this SendSlideVerifyCodeRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.SlideVerifyCodeSendDTO`

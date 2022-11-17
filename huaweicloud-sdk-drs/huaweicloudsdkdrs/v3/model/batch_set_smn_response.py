@@ -17,7 +17,6 @@ class BatchSetSmnResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class BatchSetSmnResponse(SdkResponse):
     def results(self):
         """Gets the results of this BatchSetSmnResponse.
 
-
         :return: The results of this BatchSetSmnResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.ImportSmnResp`]
         """
@@ -65,7 +63,6 @@ class BatchSetSmnResponse(SdkResponse):
     @results.setter
     def results(self, results):
         """Sets the results of this BatchSetSmnResponse.
-
 
         :param results: The results of this BatchSetSmnResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.ImportSmnResp`]
@@ -76,7 +73,6 @@ class BatchSetSmnResponse(SdkResponse):
     def count(self):
         """Gets the count of this BatchSetSmnResponse.
 
-
         :return: The count of this BatchSetSmnResponse.
         :rtype: int
         """
@@ -85,7 +81,6 @@ class BatchSetSmnResponse(SdkResponse):
     @count.setter
     def count(self, count):
         """Sets the count of this BatchSetSmnResponse.
-
 
         :param count: The count of this BatchSetSmnResponse.
         :type count: int

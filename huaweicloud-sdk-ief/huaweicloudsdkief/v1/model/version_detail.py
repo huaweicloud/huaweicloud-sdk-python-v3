@@ -17,7 +17,6 @@ class VersionDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -212,7 +211,6 @@ class VersionDetail:
     def configs(self):
         """Gets the configs of this VersionDetail.
 
-
         :return: The configs of this VersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.AppConfigs`
         """
@@ -221,7 +219,6 @@ class VersionDetail:
     @configs.setter
     def configs(self, configs):
         """Sets the configs of this VersionDetail.
-
 
         :param configs: The configs of this VersionDetail.
         :type configs: :class:`huaweicloudsdkief.v1.AppConfigs`
@@ -232,7 +229,6 @@ class VersionDetail:
     def resources(self):
         """Gets the resources of this VersionDetail.
 
-
         :return: The resources of this VersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.Resources`
         """
@@ -241,7 +237,6 @@ class VersionDetail:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this VersionDetail.
-
 
         :param resources: The resources of this VersionDetail.
         :type resources: :class:`huaweicloudsdkief.v1.Resources`
@@ -318,7 +313,6 @@ class VersionDetail:
     def liveness_probe(self):
         """Gets the liveness_probe of this VersionDetail.
 
-
         :return: The liveness_probe of this VersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
@@ -327,7 +321,6 @@ class VersionDetail:
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
         """Sets the liveness_probe of this VersionDetail.
-
 
         :param liveness_probe: The liveness_probe of this VersionDetail.
         :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -338,7 +331,6 @@ class VersionDetail:
     def readiness_probe(self):
         """Gets the readiness_probe of this VersionDetail.
 
-
         :return: The readiness_probe of this VersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
@@ -347,7 +339,6 @@ class VersionDetail:
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
         """Sets the readiness_probe of this VersionDetail.
-
 
         :param readiness_probe: The readiness_probe of this VersionDetail.
         :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`

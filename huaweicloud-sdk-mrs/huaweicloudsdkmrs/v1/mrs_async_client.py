@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MrsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -62,6 +56,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateClusterTags
         :type request: :class:`huaweicloudsdkmrs.v1.BatchCreateClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.BatchCreateClusterTagsResponse`
@@ -74,6 +69,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -108,6 +105,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateClusterTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -129,6 +127,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteClusterTags
         :type request: :class:`huaweicloudsdkmrs.v1.BatchDeleteClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.BatchDeleteClusterTagsResponse`
@@ -141,6 +140,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -175,6 +176,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteClusterTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -191,6 +193,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAndExecuteJob
         :type request: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobResponse`
@@ -203,6 +206,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -235,6 +240,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAndExecuteJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -255,6 +261,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCluster
         :type request: :class:`huaweicloudsdkmrs.v1.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateClusterResponse`
@@ -267,6 +274,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -299,6 +308,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -314,6 +324,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateClusterTag
         :type request: :class:`huaweicloudsdkmrs.v1.CreateClusterTagRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateClusterTagResponse`
@@ -326,6 +337,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -360,6 +373,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateClusterTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -376,6 +390,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateScalingPolicy
         :type request: :class:`huaweicloudsdkmrs.v1.CreateScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.CreateScalingPolicyResponse`
@@ -388,6 +403,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -422,6 +439,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -444,6 +462,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCluster
         :type request: :class:`huaweicloudsdkmrs.v1.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.DeleteClusterResponse`
@@ -456,6 +475,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -488,6 +509,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -502,6 +524,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteClusterTag
         :type request: :class:`huaweicloudsdkmrs.v1.DeleteClusterTagRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.DeleteClusterTagResponse`
@@ -514,6 +537,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -548,6 +573,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteClusterTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -563,6 +589,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteJobExecution
         :type request: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionResponse`
@@ -575,6 +602,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -607,6 +636,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteJobExecutionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -621,6 +651,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAllTags
         :type request: :class:`huaweicloudsdkmrs.v1.ListAllTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListAllTagsResponse`
@@ -633,6 +664,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -663,6 +696,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAllTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -677,6 +711,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClusterTags
         :type request: :class:`huaweicloudsdkmrs.v1.ListClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListClusterTagsResponse`
@@ -689,6 +724,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -721,6 +758,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClusterTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -735,6 +773,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClusters
         :type request: :class:`huaweicloudsdkmrs.v1.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListClustersResponse`
@@ -747,6 +786,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -789,6 +830,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClustersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -805,6 +847,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClustersByTags
         :type request: :class:`huaweicloudsdkmrs.v1.ListClustersByTagsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListClustersByTagsResponse`
@@ -817,6 +860,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -849,6 +894,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClustersByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -864,6 +910,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListExecuteJob
         :type request: :class:`huaweicloudsdkmrs.v1.ListExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListExecuteJobResponse`
@@ -876,6 +923,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -918,6 +967,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListExecuteJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -932,6 +982,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHosts
         :type request: :class:`huaweicloudsdkmrs.v1.ListHostsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ListHostsResponse`
@@ -944,6 +995,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -980,6 +1033,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -994,6 +1048,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowClusterDetails
         :type request: :class:`huaweicloudsdkmrs.v1.ShowClusterDetailsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ShowClusterDetailsResponse`
@@ -1006,6 +1061,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1038,6 +1095,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClusterDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1053,6 +1111,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobExes
         :type request: :class:`huaweicloudsdkmrs.v1.ShowJobExesRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.ShowJobExesResponse`
@@ -1065,6 +1124,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1097,6 +1158,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobExesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1112,6 +1174,7 @@ class MrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateClusterScaling
         :type request: :class:`huaweicloudsdkmrs.v1.UpdateClusterScalingRequest`
         :rtype: :class:`huaweicloudsdkmrs.v1.UpdateClusterScalingResponse`
@@ -1124,6 +1187,8 @@ class MrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1158,6 +1223,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateClusterScalingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1165,7 +1231,7 @@ class MrsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1176,9 +1242,10 @@ class MrsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1195,6 +1262,7 @@ class MrsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

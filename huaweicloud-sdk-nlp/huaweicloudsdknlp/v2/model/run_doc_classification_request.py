@@ -17,7 +17,6 @@ class RunDocClassificationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunDocClassificationRequest:
     def body(self):
         """Gets the body of this RunDocClassificationRequest.
 
-
         :return: The body of this RunDocClassificationRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.DocumentClassificationReq`
         """
@@ -58,7 +56,6 @@ class RunDocClassificationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunDocClassificationRequest.
-
 
         :param body: The body of this RunDocClassificationRequest.
         :type body: :class:`huaweicloudsdknlp.v2.DocumentClassificationReq`

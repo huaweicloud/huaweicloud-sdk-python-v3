@@ -17,7 +17,6 @@ class ListResourcesByTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class ListResourcesByTagsRequest:
     def body(self):
         """Gets the body of this ListResourcesByTagsRequest.
 
-
         :return: The body of this ListResourcesByTagsRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.QueryResourceByTagsDTO`
         """
@@ -174,7 +172,6 @@ class ListResourcesByTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListResourcesByTagsRequest.
-
 
         :param body: The body of this ListResourcesByTagsRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.QueryResourceByTagsDTO`

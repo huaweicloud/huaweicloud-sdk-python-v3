@@ -17,7 +17,6 @@ class TokenAuth:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class TokenAuth:
     def identity(self):
         """Gets the identity of this TokenAuth.
 
-
         :return: The identity of this TokenAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenAuthIdentity`
         """
@@ -57,7 +55,6 @@ class TokenAuth:
     @identity.setter
     def identity(self, identity):
         """Sets the identity of this TokenAuth.
-
 
         :param identity: The identity of this TokenAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.TokenAuthIdentity`

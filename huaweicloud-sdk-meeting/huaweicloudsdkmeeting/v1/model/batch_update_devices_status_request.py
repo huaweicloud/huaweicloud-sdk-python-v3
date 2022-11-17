@@ -17,7 +17,6 @@ class BatchUpdateDevicesStatusRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class BatchUpdateDevicesStatusRequest:
     def body(self):
         """Gets the body of this BatchUpdateDevicesStatusRequest.
 
-
         :return: The body of this BatchUpdateDevicesStatusRequest.
         :rtype: list[str]
         """
@@ -144,7 +142,6 @@ class BatchUpdateDevicesStatusRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchUpdateDevicesStatusRequest.
-
 
         :param body: The body of this BatchUpdateDevicesStatusRequest.
         :type body: list[str]

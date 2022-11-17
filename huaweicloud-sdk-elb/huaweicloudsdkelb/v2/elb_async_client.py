@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ElbAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateListenerTags
         :type request: :class:`huaweicloudsdkelb.v2.BatchCreateListenerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.BatchCreateListenerTagsResponse`
@@ -68,6 +63,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateListenerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateLoadbalancerTags
         :type request: :class:`huaweicloudsdkelb.v2.BatchCreateLoadbalancerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.BatchCreateLoadbalancerTagsResponse`
@@ -128,6 +127,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateLoadbalancerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteListenerTags
         :type request: :class:`huaweicloudsdkelb.v2.BatchDeleteListenerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.BatchDeleteListenerTagsResponse`
@@ -188,6 +191,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteListenerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteLoadbalancerTags
         :type request: :class:`huaweicloudsdkelb.v2.BatchDeleteLoadbalancerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.BatchDeleteLoadbalancerTagsResponse`
@@ -248,6 +255,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteLoadbalancerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateHealthmonitor
         :type request: :class:`huaweicloudsdkelb.v2.CreateHealthmonitorRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateHealthmonitorResponse`
@@ -308,6 +319,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +353,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateHealthmonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -354,6 +368,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateL7policy
         :type request: :class:`huaweicloudsdkelb.v2.CreateL7policyRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateL7policyResponse`
@@ -366,6 +381,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -398,6 +415,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateL7policyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -412,6 +430,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateL7rule
         :type request: :class:`huaweicloudsdkelb.v2.CreateL7ruleRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateL7ruleResponse`
@@ -424,6 +443,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -458,6 +479,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateL7ruleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -472,6 +494,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateListener
         :type request: :class:`huaweicloudsdkelb.v2.CreateListenerRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateListenerResponse`
@@ -484,6 +507,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -516,6 +541,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -530,6 +556,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateListenerTags
         :type request: :class:`huaweicloudsdkelb.v2.CreateListenerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateListenerTagsResponse`
@@ -542,6 +569,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -576,6 +605,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateListenerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -590,6 +620,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLoadbalancer
         :type request: :class:`huaweicloudsdkelb.v2.CreateLoadbalancerRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateLoadbalancerResponse`
@@ -602,6 +633,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -634,6 +667,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLoadbalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -648,6 +682,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLoadbalancerTags
         :type request: :class:`huaweicloudsdkelb.v2.CreateLoadbalancerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateLoadbalancerTagsResponse`
@@ -660,6 +695,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -694,6 +731,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLoadbalancerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -708,6 +746,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMember
         :type request: :class:`huaweicloudsdkelb.v2.CreateMemberRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateMemberResponse`
@@ -720,6 +759,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -754,6 +795,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -768,6 +810,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePool
         :type request: :class:`huaweicloudsdkelb.v2.CreatePoolRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreatePoolResponse`
@@ -780,6 +823,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -812,6 +857,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -826,6 +872,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateWhitelist
         :type request: :class:`huaweicloudsdkelb.v2.CreateWhitelistRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateWhitelistResponse`
@@ -838,6 +885,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -870,6 +919,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -884,6 +934,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteHealthmonitor
         :type request: :class:`huaweicloudsdkelb.v2.DeleteHealthmonitorRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteHealthmonitorResponse`
@@ -896,6 +947,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -928,6 +981,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHealthmonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -942,6 +996,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteL7policy
         :type request: :class:`huaweicloudsdkelb.v2.DeleteL7policyRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteL7policyResponse`
@@ -954,6 +1009,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -986,6 +1043,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteL7policyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1000,6 +1058,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteL7rule
         :type request: :class:`huaweicloudsdkelb.v2.DeleteL7ruleRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteL7ruleResponse`
@@ -1012,6 +1071,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1046,6 +1107,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteL7ruleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1060,6 +1122,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteListener
         :type request: :class:`huaweicloudsdkelb.v2.DeleteListenerRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteListenerResponse`
@@ -1072,6 +1135,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1104,6 +1169,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1118,6 +1184,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteListenerTags
         :type request: :class:`huaweicloudsdkelb.v2.DeleteListenerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteListenerTagsResponse`
@@ -1130,6 +1197,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1164,6 +1233,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteListenerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1178,6 +1248,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteLoadbalancer
         :type request: :class:`huaweicloudsdkelb.v2.DeleteLoadbalancerRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteLoadbalancerResponse`
@@ -1190,6 +1261,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1222,6 +1295,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLoadbalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1236,6 +1310,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteLoadbalancerTags
         :type request: :class:`huaweicloudsdkelb.v2.DeleteLoadbalancerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteLoadbalancerTagsResponse`
@@ -1248,6 +1323,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1282,6 +1359,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLoadbalancerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1296,6 +1374,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMember
         :type request: :class:`huaweicloudsdkelb.v2.DeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteMemberResponse`
@@ -1308,6 +1387,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1342,6 +1423,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1356,6 +1438,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePool
         :type request: :class:`huaweicloudsdkelb.v2.DeletePoolRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeletePoolResponse`
@@ -1368,6 +1451,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1400,6 +1485,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1414,6 +1500,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteWhitelist
         :type request: :class:`huaweicloudsdkelb.v2.DeleteWhitelistRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteWhitelistResponse`
@@ -1426,6 +1513,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1458,6 +1547,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1472,6 +1562,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHealthmonitors
         :type request: :class:`huaweicloudsdkelb.v2.ListHealthmonitorsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListHealthmonitorsResponse`
@@ -1484,6 +1575,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1544,6 +1637,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHealthmonitorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1558,6 +1652,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListL7policies
         :type request: :class:`huaweicloudsdkelb.v2.ListL7policiesRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListL7policiesResponse`
@@ -1570,6 +1665,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1632,6 +1729,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListL7policiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1646,6 +1744,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListL7rules
         :type request: :class:`huaweicloudsdkelb.v2.ListL7rulesRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListL7rulesResponse`
@@ -1658,6 +1757,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1712,6 +1813,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListL7rulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1726,6 +1828,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListListenerTags
         :type request: :class:`huaweicloudsdkelb.v2.ListListenerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListListenerTagsResponse`
@@ -1738,6 +1841,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1768,6 +1873,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListListenerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1782,6 +1888,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListListeners
         :type request: :class:`huaweicloudsdkelb.v2.ListListenersRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListListenersResponse`
@@ -1794,6 +1901,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1860,6 +1969,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListListenersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1874,6 +1984,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListListenersByTags
         :type request: :class:`huaweicloudsdkelb.v2.ListListenersByTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListListenersByTagsResponse`
@@ -1886,6 +1997,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1918,6 +2031,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListListenersByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1932,6 +2046,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLoadbalancerTags
         :type request: :class:`huaweicloudsdkelb.v2.ListLoadbalancerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListLoadbalancerTagsResponse`
@@ -1944,6 +2059,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1974,6 +2091,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLoadbalancerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1988,6 +2106,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLoadbalancers
         :type request: :class:`huaweicloudsdkelb.v2.ListLoadbalancersRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListLoadbalancersResponse`
@@ -2000,6 +2119,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2062,6 +2183,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLoadbalancersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2076,6 +2198,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLoadbalancersByTags
         :type request: :class:`huaweicloudsdkelb.v2.ListLoadbalancersByTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListLoadbalancersByTagsResponse`
@@ -2088,6 +2211,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2120,6 +2245,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLoadbalancersByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2134,6 +2260,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMembers
         :type request: :class:`huaweicloudsdkelb.v2.ListMembersRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListMembersResponse`
@@ -2146,6 +2273,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2198,6 +2327,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2212,6 +2342,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPools
         :type request: :class:`huaweicloudsdkelb.v2.ListPoolsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListPoolsResponse`
@@ -2224,6 +2355,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2280,6 +2413,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPoolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2294,6 +2428,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWhitelists
         :type request: :class:`huaweicloudsdkelb.v2.ListWhitelistsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListWhitelistsResponse`
@@ -2306,6 +2441,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2350,6 +2487,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWhitelistsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2364,6 +2502,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHealthmonitors
         :type request: :class:`huaweicloudsdkelb.v2.ShowHealthmonitorsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowHealthmonitorsResponse`
@@ -2376,6 +2515,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2408,6 +2549,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHealthmonitorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2422,6 +2564,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowL7policy
         :type request: :class:`huaweicloudsdkelb.v2.ShowL7policyRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowL7policyResponse`
@@ -2434,6 +2577,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2466,6 +2611,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowL7policyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2480,6 +2626,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowL7rule
         :type request: :class:`huaweicloudsdkelb.v2.ShowL7ruleRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowL7ruleResponse`
@@ -2492,6 +2639,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2526,6 +2675,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowL7ruleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2540,6 +2690,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowListener
         :type request: :class:`huaweicloudsdkelb.v2.ShowListenerRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowListenerResponse`
@@ -2552,6 +2703,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2584,6 +2737,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2598,6 +2752,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowListenerTags
         :type request: :class:`huaweicloudsdkelb.v2.ShowListenerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowListenerTagsResponse`
@@ -2610,6 +2765,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2642,6 +2799,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowListenerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2656,6 +2814,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLoadbalancer
         :type request: :class:`huaweicloudsdkelb.v2.ShowLoadbalancerRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowLoadbalancerResponse`
@@ -2668,6 +2827,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2700,6 +2861,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLoadbalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2714,6 +2876,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLoadbalancerTags
         :type request: :class:`huaweicloudsdkelb.v2.ShowLoadbalancerTagsRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowLoadbalancerTagsResponse`
@@ -2726,6 +2889,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2758,6 +2923,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLoadbalancerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2772,6 +2938,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLoadbalancersStatus
         :type request: :class:`huaweicloudsdkelb.v2.ShowLoadbalancersStatusRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowLoadbalancersStatusResponse`
@@ -2784,6 +2951,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2816,6 +2985,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLoadbalancersStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2830,6 +3000,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMember
         :type request: :class:`huaweicloudsdkelb.v2.ShowMemberRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowMemberResponse`
@@ -2842,6 +3013,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2876,6 +3049,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2890,6 +3064,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPool
         :type request: :class:`huaweicloudsdkelb.v2.ShowPoolRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowPoolResponse`
@@ -2902,6 +3077,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2934,6 +3111,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2948,6 +3126,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWhitelist
         :type request: :class:`huaweicloudsdkelb.v2.ShowWhitelistRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowWhitelistResponse`
@@ -2960,6 +3139,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2992,6 +3173,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3006,6 +3188,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateHealthmonitor
         :type request: :class:`huaweicloudsdkelb.v2.UpdateHealthmonitorRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateHealthmonitorResponse`
@@ -3018,6 +3201,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3052,6 +3237,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHealthmonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3066,6 +3252,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateL7policies
         :type request: :class:`huaweicloudsdkelb.v2.UpdateL7policiesRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateL7policiesResponse`
@@ -3078,6 +3265,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3112,6 +3301,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateL7policiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3126,6 +3316,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateL7rule
         :type request: :class:`huaweicloudsdkelb.v2.UpdateL7ruleRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateL7ruleResponse`
@@ -3138,6 +3329,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3174,6 +3367,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateL7ruleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3188,6 +3382,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateListener
         :type request: :class:`huaweicloudsdkelb.v2.UpdateListenerRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateListenerResponse`
@@ -3200,6 +3395,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3234,6 +3431,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3248,6 +3446,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateLoadbalancer
         :type request: :class:`huaweicloudsdkelb.v2.UpdateLoadbalancerRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateLoadbalancerResponse`
@@ -3260,6 +3459,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3294,6 +3495,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLoadbalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3308,6 +3510,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMember
         :type request: :class:`huaweicloudsdkelb.v2.UpdateMemberRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateMemberResponse`
@@ -3320,6 +3523,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3356,6 +3561,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3370,6 +3576,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePool
         :type request: :class:`huaweicloudsdkelb.v2.UpdatePoolRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.UpdatePoolResponse`
@@ -3382,6 +3589,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3416,6 +3625,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3430,6 +3640,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateWhitelist
         :type request: :class:`huaweicloudsdkelb.v2.UpdateWhitelistRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateWhitelistResponse`
@@ -3442,6 +3653,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3476,6 +3689,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3490,6 +3704,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCertificate
         :type request: :class:`huaweicloudsdkelb.v2.CreateCertificateRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.CreateCertificateResponse`
@@ -3502,6 +3717,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3534,6 +3751,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3548,6 +3766,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCertificate
         :type request: :class:`huaweicloudsdkelb.v2.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.DeleteCertificateResponse`
@@ -3560,6 +3779,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3592,6 +3813,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3606,6 +3828,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCertificates
         :type request: :class:`huaweicloudsdkelb.v2.ListCertificatesRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ListCertificatesResponse`
@@ -3618,6 +3841,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3668,6 +3893,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3682,6 +3908,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCertificate
         :type request: :class:`huaweicloudsdkelb.v2.ShowCertificateRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.ShowCertificateResponse`
@@ -3694,6 +3921,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3726,6 +3955,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3740,6 +3970,7 @@ class ElbAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCertificate
         :type request: :class:`huaweicloudsdkelb.v2.UpdateCertificateRequest`
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateCertificateResponse`
@@ -3752,6 +3983,8 @@ class ElbAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3786,6 +4019,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3793,7 +4027,7 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3804,9 +4038,10 @@ class ElbAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3823,6 +4058,7 @@ class ElbAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class UpdateUrlAuthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class UpdateUrlAuthRequest:
     def body(self):
         """Gets the body of this UpdateUrlAuthRequest.
 
-
         :return: The body of this UpdateUrlAuthRequest.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAuthReq`
         """
@@ -201,7 +199,6 @@ class UpdateUrlAuthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateUrlAuthRequest.
-
 
         :param body: The body of this UpdateUrlAuthRequest.
         :type body: :class:`huaweicloudsdkcloudrtc.v2.AppAuthReq`

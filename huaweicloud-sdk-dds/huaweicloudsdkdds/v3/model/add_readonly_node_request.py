@@ -17,7 +17,6 @@ class AddReadonlyNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AddReadonlyNodeRequest:
     def body(self):
         """Gets the body of this AddReadonlyNodeRequest.
 
-
         :return: The body of this AddReadonlyNodeRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeRequestBody`
         """
@@ -86,7 +84,6 @@ class AddReadonlyNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddReadonlyNodeRequest.
-
 
         :param body: The body of this AddReadonlyNodeRequest.
         :type body: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeRequestBody`

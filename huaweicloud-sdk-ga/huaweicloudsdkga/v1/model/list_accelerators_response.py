@@ -17,7 +17,6 @@ class ListAcceleratorsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class ListAcceleratorsResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListAcceleratorsResponse.
 
-
         :return: The page_info of this ListAcceleratorsResponse.
         :rtype: :class:`huaweicloudsdkga.v1.PageInfo`
         """
@@ -94,7 +92,6 @@ class ListAcceleratorsResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListAcceleratorsResponse.
-
 
         :param page_info: The page_info of this ListAcceleratorsResponse.
         :type page_info: :class:`huaweicloudsdkga.v1.PageInfo`

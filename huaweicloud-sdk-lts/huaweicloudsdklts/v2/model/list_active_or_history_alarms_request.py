@@ -17,7 +17,6 @@ class ListActiveOrHistoryAlarmsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -163,7 +162,6 @@ class ListActiveOrHistoryAlarmsRequest:
     def body(self):
         """Gets the body of this ListActiveOrHistoryAlarmsRequest.
 
-
         :return: The body of this ListActiveOrHistoryAlarmsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.ListActiveOrHistoryAlarmsRequestBody`
         """
@@ -172,7 +170,6 @@ class ListActiveOrHistoryAlarmsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListActiveOrHistoryAlarmsRequest.
-
 
         :param body: The body of this ListActiveOrHistoryAlarmsRequest.
         :type body: :class:`huaweicloudsdklts.v2.ListActiveOrHistoryAlarmsRequestBody`

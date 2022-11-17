@@ -17,7 +17,6 @@ class ExternalAccesses:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -117,7 +116,6 @@ class ExternalAccesses:
     def protocol(self):
         """Gets the protocol of this ExternalAccesses.
 
-
         :return: The protocol of this ExternalAccesses.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
         """
@@ -126,7 +124,6 @@ class ExternalAccesses:
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this ExternalAccesses.
-
 
         :param protocol: The protocol of this ExternalAccesses.
         :type protocol: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
@@ -181,7 +178,6 @@ class ExternalAccesses:
     def type(self):
         """Gets the type of this ExternalAccesses.
 
-
         :return: The type of this ExternalAccesses.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
         """
@@ -190,7 +186,6 @@ class ExternalAccesses:
     @type.setter
     def type(self, type):
         """Sets the type of this ExternalAccesses.
-
 
         :param type: The type of this ExternalAccesses.
         :type type: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
@@ -201,7 +196,6 @@ class ExternalAccesses:
     def status(self):
         """Gets the status of this ExternalAccesses.
 
-
         :return: The status of this ExternalAccesses.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`
         """
@@ -210,7 +204,6 @@ class ExternalAccesses:
     @status.setter
     def status(self, status):
         """Sets the status of this ExternalAccesses.
-
 
         :param status: The status of this ExternalAccesses.
         :type status: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`

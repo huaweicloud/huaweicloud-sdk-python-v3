@@ -17,7 +17,6 @@ class RunDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class RunDetail:
     def sql_job(self):
         """Gets the sql_job of this RunDetail.
 
-
         :return: The sql_job of this RunDetail.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunDetail`
         """
@@ -115,7 +113,6 @@ class RunDetail:
     @sql_job.setter
     def sql_job(self, sql_job):
         """Sets the sql_job of this RunDetail.
-
 
         :param sql_job: The sql_job of this RunDetail.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunDetail`

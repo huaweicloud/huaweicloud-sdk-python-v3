@@ -17,7 +17,6 @@ class ComputingResourceRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -198,7 +197,6 @@ class ComputingResourceRsp:
     def spec(self):
         """Gets the spec of this ComputingResourceRsp.
 
-
         :return: The spec of this ComputingResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ComputingSpecDto`
         """
@@ -207,7 +205,6 @@ class ComputingResourceRsp:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ComputingResourceRsp.
-
 
         :param spec: The spec of this ComputingResourceRsp.
         :type spec: :class:`huaweicloudsdkeihealth.v1.ComputingSpecDto`
@@ -240,7 +237,6 @@ class ComputingResourceRsp:
     def system_disk(self):
         """Gets the system_disk of this ComputingResourceRsp.
 
-
         :return: The system_disk of this ComputingResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DiskDto`
         """
@@ -249,7 +245,6 @@ class ComputingResourceRsp:
     @system_disk.setter
     def system_disk(self, system_disk):
         """Sets the system_disk of this ComputingResourceRsp.
-
 
         :param system_disk: The system_disk of this ComputingResourceRsp.
         :type system_disk: :class:`huaweicloudsdkeihealth.v1.DiskDto`
@@ -282,7 +277,6 @@ class ComputingResourceRsp:
     def image(self):
         """Gets the image of this ComputingResourceRsp.
 
-
         :return: The image of this ComputingResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageDto`
         """
@@ -291,7 +285,6 @@ class ComputingResourceRsp:
     @image.setter
     def image(self, image):
         """Sets the image of this ComputingResourceRsp.
-
 
         :param image: The image of this ComputingResourceRsp.
         :type image: :class:`huaweicloudsdkeihealth.v1.ImageDto`

@@ -17,7 +17,6 @@ class GetTaskDetailListRspJobs:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -261,7 +260,6 @@ class GetTaskDetailListRspJobs:
     def instance(self):
         """Gets the instance of this GetTaskDetailListRspJobs.
 
-
         :return: The instance of this GetTaskDetailListRspJobs.
         :rtype: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobsInstance`
         """
@@ -270,7 +268,6 @@ class GetTaskDetailListRspJobs:
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this GetTaskDetailListRspJobs.
-
 
         :param instance: The instance of this GetTaskDetailListRspJobs.
         :type instance: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobsInstance`

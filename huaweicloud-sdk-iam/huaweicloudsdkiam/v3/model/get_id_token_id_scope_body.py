@@ -17,7 +17,6 @@ class GetIdTokenIdScopeBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class GetIdTokenIdScopeBody:
     def domain(self):
         """Gets the domain of this GetIdTokenIdScopeBody.
 
-
         :return: The domain of this GetIdTokenIdScopeBody.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
         """
@@ -65,7 +63,6 @@ class GetIdTokenIdScopeBody:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this GetIdTokenIdScopeBody.
-
 
         :param domain: The domain of this GetIdTokenIdScopeBody.
         :type domain: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
@@ -76,7 +73,6 @@ class GetIdTokenIdScopeBody:
     def project(self):
         """Gets the project of this GetIdTokenIdScopeBody.
 
-
         :return: The project of this GetIdTokenIdScopeBody.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
         """
@@ -85,7 +81,6 @@ class GetIdTokenIdScopeBody:
     @project.setter
     def project(self, project):
         """Sets the project of this GetIdTokenIdScopeBody.
-
 
         :param project: The project of this GetIdTokenIdScopeBody.
         :type project: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`

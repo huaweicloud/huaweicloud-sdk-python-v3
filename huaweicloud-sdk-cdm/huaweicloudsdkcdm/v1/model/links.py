@@ -17,7 +17,6 @@ class Links:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -102,7 +101,6 @@ class Links:
     def link_config_values(self):
         """Gets the link_config_values of this Links.
 
-
         :return: The link_config_values of this Links.
         :rtype: :class:`huaweicloudsdkcdm.v1.LinksLinkconfigvalues`
         """
@@ -111,7 +109,6 @@ class Links:
     @link_config_values.setter
     def link_config_values(self, link_config_values):
         """Sets the link_config_values of this Links.
-
 
         :param link_config_values: The link_config_values of this Links.
         :type link_config_values: :class:`huaweicloudsdkcdm.v1.LinksLinkconfigvalues`

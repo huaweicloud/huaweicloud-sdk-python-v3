@@ -17,7 +17,6 @@ class RunRecordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RunRecordRequest:
     def body(self):
         """Gets the body of this RunRecordRequest.
 
-
         :return: The body of this RunRecordRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordControlInfo`
         """
@@ -86,7 +84,6 @@ class RunRecordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunRecordRequest.
-
 
         :param body: The body of this RunRecordRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordControlInfo`

@@ -17,7 +17,6 @@ class FreezeCertRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class FreezeCertRequest:
     def body(self):
         """Gets the body of this FreezeCertRequest.
 
-
         :return: The body of this FreezeCertRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.FreezeCertRequestBody`
         """
@@ -142,7 +140,6 @@ class FreezeCertRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this FreezeCertRequest.
-
 
         :param body: The body of this FreezeCertRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.FreezeCertRequestBody`

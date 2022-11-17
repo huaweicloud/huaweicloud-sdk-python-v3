@@ -17,7 +17,6 @@ class CreateFunctionTriggerRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateFunctionTriggerRequest:
     def body(self):
         """Gets the body of this CreateFunctionTriggerRequest.
 
-
         :return: The body of this CreateFunctionTriggerRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateFunctionTriggerRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateFunctionTriggerRequest.
-
 
         :param body: The body of this CreateFunctionTriggerRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequestBody`

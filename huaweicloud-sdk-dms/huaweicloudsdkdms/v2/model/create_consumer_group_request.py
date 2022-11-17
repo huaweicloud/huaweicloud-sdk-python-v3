@@ -17,7 +17,6 @@ class CreateConsumerGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateConsumerGroupRequest:
     def body(self):
         """Gets the body of this CreateConsumerGroupRequest.
 
-
         :return: The body of this CreateConsumerGroupRequest.
         :rtype: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupReq`
         """
@@ -86,7 +84,6 @@ class CreateConsumerGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateConsumerGroupRequest.
-
 
         :param body: The body of this CreateConsumerGroupRequest.
         :type body: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupReq`

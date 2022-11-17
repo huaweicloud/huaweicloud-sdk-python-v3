@@ -17,7 +17,6 @@ class UpdateTempRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateTempRequest:
     def body(self):
         """Gets the body of this UpdateTempRequest.
 
-
         :return: The body of this UpdateTempRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTempRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateTempRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateTempRequest.
-
 
         :param body: The body of this UpdateTempRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.UpdateTempRequestBody`

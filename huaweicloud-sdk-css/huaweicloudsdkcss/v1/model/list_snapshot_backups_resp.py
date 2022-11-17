@@ -17,7 +17,6 @@ class ListSnapshotBackupsResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -218,7 +217,6 @@ class ListSnapshotBackupsResp:
     def datastore(self):
         """Gets the datastore of this ListSnapshotBackupsResp.
 
-
         :return: The datastore of this ListSnapshotBackupsResp.
         :rtype: :class:`huaweicloudsdkcss.v1.ListSnapshotBackupsDatastoreResp`
         """
@@ -227,7 +225,6 @@ class ListSnapshotBackupsResp:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this ListSnapshotBackupsResp.
-
 
         :param datastore: The datastore of this ListSnapshotBackupsResp.
         :type datastore: :class:`huaweicloudsdkcss.v1.ListSnapshotBackupsDatastoreResp`

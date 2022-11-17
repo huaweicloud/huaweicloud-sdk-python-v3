@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EpsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEnterpriseProject
         :type request: :class:`huaweicloudsdkeps.v1.CreateEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.CreateEnterpriseProjectResponse`
@@ -68,6 +63,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisableEnterpriseProject
         :type request: :class:`huaweicloudsdkeps.v1.DisableEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.DisableEnterpriseProjectResponse`
@@ -126,6 +125,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -160,6 +161,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -174,6 +176,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableEnterpriseProject
         :type request: :class:`huaweicloudsdkeps.v1.EnableEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.EnableEnterpriseProjectResponse`
@@ -186,6 +189,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -220,6 +225,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -234,6 +240,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkeps.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ListApiVersionsResponse`
@@ -246,6 +253,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -276,6 +285,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -290,6 +300,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnterpriseProject
         :type request: :class:`huaweicloudsdkeps.v1.ListEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ListEnterpriseProjectResponse`
@@ -302,6 +313,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -346,7 +359,76 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_providers_async(self, request):
+        """查询企业项目支持的服务
+
+        查询企业项目支持的服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProviders
+        :type request: :class:`huaweicloudsdkeps.v1.ListProvidersRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ListProvidersResponse`
+        """
+        return self.list_providers_with_http_info(request)
+
+    def list_providers_with_http_info(self, request):
+        all_params = ['locale', 'limit', 'offset', 'provider']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'locale' in local_var_params:
+            query_params.append(('locale', local_var_params['locale']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/enterprise-projects/providers',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListProvidersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -360,6 +442,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MigrateResource
         :type request: :class:`huaweicloudsdkeps.v1.MigrateResourceRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.MigrateResourceResponse`
@@ -372,6 +455,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -406,6 +491,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -420,6 +506,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApiVersion
         :type request: :class:`huaweicloudsdkeps.v1.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowApiVersionResponse`
@@ -432,6 +519,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -464,6 +553,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -478,6 +568,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEnterpriseProject
         :type request: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectResponse`
@@ -490,6 +581,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -522,6 +615,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -536,6 +630,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEnterpriseProjectQuota
         :type request: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectQuotaRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectQuotaResponse`
@@ -548,6 +643,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -578,6 +675,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnterpriseProjectQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -592,6 +690,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResourceBindEnterpriseProject
         :type request: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectResponse`
@@ -604,6 +703,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -638,6 +739,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceBindEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -652,6 +754,7 @@ class EpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEnterpriseProject
         :type request: :class:`huaweicloudsdkeps.v1.UpdateEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.UpdateEnterpriseProjectResponse`
@@ -664,6 +767,8 @@ class EpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -698,6 +803,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -705,7 +811,7 @@ class EpsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -716,9 +822,10 @@ class EpsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -735,6 +842,7 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class ListFunctionVersionResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -870,7 +869,6 @@ class ListFunctionVersionResult:
     def strategy_config(self):
         """Gets the strategy_config of this ListFunctionVersionResult.
 
-
         :return: The strategy_config of this ListFunctionVersionResult.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
@@ -879,7 +877,6 @@ class ListFunctionVersionResult:
     @strategy_config.setter
     def strategy_config(self, strategy_config):
         """Sets the strategy_config of this ListFunctionVersionResult.
-
 
         :param strategy_config: The strategy_config of this ListFunctionVersionResult.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -956,7 +953,6 @@ class ListFunctionVersionResult:
     def function_async_config(self):
         """Gets the function_async_config of this ListFunctionVersionResult.
 
-
         :return: The function_async_config of this ListFunctionVersionResult.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FunctionAsyncConfig`
         """
@@ -965,7 +961,6 @@ class ListFunctionVersionResult:
     @function_async_config.setter
     def function_async_config(self, function_async_config):
         """Sets the function_async_config of this ListFunctionVersionResult.
-
 
         :param function_async_config: The function_async_config of this ListFunctionVersionResult.
         :type function_async_config: :class:`huaweicloudsdkfunctiongraph.v2.FunctionAsyncConfig`
@@ -1108,7 +1103,6 @@ class ListFunctionVersionResult:
     def custom_image(self):
         """Gets the custom_image of this ListFunctionVersionResult.
 
-
         :return: The custom_image of this ListFunctionVersionResult.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         """
@@ -1117,7 +1111,6 @@ class ListFunctionVersionResult:
     @custom_image.setter
     def custom_image(self, custom_image):
         """Sets the custom_image of this ListFunctionVersionResult.
-
 
         :param custom_image: The custom_image of this ListFunctionVersionResult.
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`

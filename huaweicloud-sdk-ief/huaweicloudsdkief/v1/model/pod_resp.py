@@ -17,7 +17,6 @@ class PodResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -159,7 +158,6 @@ class PodResp:
     def configs(self):
         """Gets the configs of this PodResp.
 
-
         :return: The configs of this PodResp.
         :rtype: :class:`huaweicloudsdkief.v1.PodConfigs`
         """
@@ -168,7 +166,6 @@ class PodResp:
     @configs.setter
     def configs(self, configs):
         """Sets the configs of this PodResp.
-
 
         :param configs: The configs of this PodResp.
         :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`

@@ -17,7 +17,6 @@ class CreatePartnerCouponsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePartnerCouponsRequest:
     def body(self):
         """Gets the body of this CreatePartnerCouponsRequest.
 
-
         :return: The body of this CreatePartnerCouponsRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.CreatePartnerCouponsReq`
         """
@@ -58,7 +56,6 @@ class CreatePartnerCouponsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePartnerCouponsRequest.
-
 
         :param body: The body of this CreatePartnerCouponsRequest.
         :type body: :class:`huaweicloudsdkbss.v2.CreatePartnerCouponsReq`

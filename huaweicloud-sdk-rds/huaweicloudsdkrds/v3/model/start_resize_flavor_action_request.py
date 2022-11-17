@@ -17,7 +17,6 @@ class StartResizeFlavorActionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class StartResizeFlavorActionRequest:
     def body(self):
         """Gets the body of this StartResizeFlavorActionRequest.
 
-
         :return: The body of this StartResizeFlavorActionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ResizeFlavorRequest`
         """
@@ -115,7 +113,6 @@ class StartResizeFlavorActionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartResizeFlavorActionRequest.
-
 
         :param body: The body of this StartResizeFlavorActionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ResizeFlavorRequest`

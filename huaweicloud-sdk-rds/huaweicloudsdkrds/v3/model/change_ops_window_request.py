@@ -17,7 +17,6 @@ class ChangeOpsWindowRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ChangeOpsWindowRequest:
     def body(self):
         """Gets the body of this ChangeOpsWindowRequest.
 
-
         :return: The body of this ChangeOpsWindowRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.OpsWindowRequest`
         """
@@ -115,7 +113,6 @@ class ChangeOpsWindowRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeOpsWindowRequest.
-
 
         :param body: The body of this ChangeOpsWindowRequest.
         :type body: :class:`huaweicloudsdkrds.v3.OpsWindowRequest`

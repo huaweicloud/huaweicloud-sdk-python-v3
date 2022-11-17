@@ -17,7 +17,6 @@ class Job:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class Job:
     def metadata(self):
         """Gets the metadata of this Job.
 
-
         :return: The metadata of this Job.
         :rtype: :class:`huaweicloudsdkcce.v3.JobMetadata`
         """
@@ -130,7 +128,6 @@ class Job:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this Job.
-
 
         :param metadata: The metadata of this Job.
         :type metadata: :class:`huaweicloudsdkcce.v3.JobMetadata`
@@ -141,7 +138,6 @@ class Job:
     def spec(self):
         """Gets the spec of this Job.
 
-
         :return: The spec of this Job.
         :rtype: :class:`huaweicloudsdkcce.v3.JobSpec`
         """
@@ -150,7 +146,6 @@ class Job:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this Job.
-
 
         :param spec: The spec of this Job.
         :type spec: :class:`huaweicloudsdkcce.v3.JobSpec`
@@ -161,7 +156,6 @@ class Job:
     def status(self):
         """Gets the status of this Job.
 
-
         :return: The status of this Job.
         :rtype: :class:`huaweicloudsdkcce.v3.JobStatus`
         """
@@ -170,7 +164,6 @@ class Job:
     @status.setter
     def status(self, status):
         """Sets the status of this Job.
-
 
         :param status: The status of this Job.
         :type status: :class:`huaweicloudsdkcce.v3.JobStatus`

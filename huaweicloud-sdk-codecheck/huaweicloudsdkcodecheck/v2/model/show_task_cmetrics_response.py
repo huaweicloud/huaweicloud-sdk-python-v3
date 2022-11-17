@@ -17,7 +17,6 @@ class ShowTaskCmetricsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -310,7 +309,6 @@ class ShowTaskCmetricsResponse(SdkResponse):
     def metric_info(self):
         """Gets the metric_info of this ShowTaskCmetricsResponse.
 
-
         :return: The metric_info of this ShowTaskCmetricsResponse.
         :rtype: :class:`huaweicloudsdkcodecheck.v2.MetricInfo`
         """
@@ -319,7 +317,6 @@ class ShowTaskCmetricsResponse(SdkResponse):
     @metric_info.setter
     def metric_info(self, metric_info):
         """Sets the metric_info of this ShowTaskCmetricsResponse.
-
 
         :param metric_info: The metric_info of this ShowTaskCmetricsResponse.
         :type metric_info: :class:`huaweicloudsdkcodecheck.v2.MetricInfo`

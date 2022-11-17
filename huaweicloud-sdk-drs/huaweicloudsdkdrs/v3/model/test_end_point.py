@@ -17,7 +17,6 @@ class TestEndPoint:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -593,7 +592,6 @@ class TestEndPoint:
     def kafka_security_config(self):
         """Gets the kafka_security_config of this TestEndPoint.
 
-
         :return: The kafka_security_config of this TestEndPoint.
         :rtype: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
         """
@@ -602,7 +600,6 @@ class TestEndPoint:
     @kafka_security_config.setter
     def kafka_security_config(self, kafka_security_config):
         """Sets the kafka_security_config of this TestEndPoint.
-
 
         :param kafka_security_config: The kafka_security_config of this TestEndPoint.
         :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`

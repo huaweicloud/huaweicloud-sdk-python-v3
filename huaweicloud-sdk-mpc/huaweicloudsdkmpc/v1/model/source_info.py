@@ -17,7 +17,6 @@ class SourceInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -172,7 +171,6 @@ class SourceInfo:
     def video_info(self):
         """Gets the video_info of this SourceInfo.
 
-
         :return: The video_info of this SourceInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         """
@@ -181,7 +179,6 @@ class SourceInfo:
     @video_info.setter
     def video_info(self, video_info):
         """Sets the video_info of this SourceInfo.
-
 
         :param video_info: The video_info of this SourceInfo.
         :type video_info: :class:`huaweicloudsdkmpc.v1.VideoInfo`

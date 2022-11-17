@@ -17,7 +17,6 @@ class InvokeFunctionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class InvokeFunctionResponse(SdkResponse):
     def x_cff_request_id(self):
         """Gets the x_cff_request_id of this InvokeFunctionResponse.
 
-
         :return: The x_cff_request_id of this InvokeFunctionResponse.
         :rtype: str
         """
@@ -174,7 +172,6 @@ class InvokeFunctionResponse(SdkResponse):
     @x_cff_request_id.setter
     def x_cff_request_id(self, x_cff_request_id):
         """Sets the x_cff_request_id of this InvokeFunctionResponse.
-
 
         :param x_cff_request_id: The x_cff_request_id of this InvokeFunctionResponse.
         :type x_cff_request_id: str

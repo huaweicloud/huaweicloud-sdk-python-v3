@@ -17,7 +17,6 @@ class RecycleInstance:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -178,7 +177,6 @@ class RecycleInstance:
     def datastore(self):
         """Gets the datastore of this RecycleInstance.
 
-
         :return: The datastore of this RecycleInstance.
         :rtype: :class:`huaweicloudsdkdds.v3.RecycleDatastore`
         """
@@ -187,7 +185,6 @@ class RecycleInstance:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this RecycleInstance.
-
 
         :param datastore: The datastore of this RecycleInstance.
         :type datastore: :class:`huaweicloudsdkdds.v3.RecycleDatastore`

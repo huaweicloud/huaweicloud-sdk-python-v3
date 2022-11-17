@@ -17,7 +17,6 @@ class ListRtcRoomListResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class ListRtcRoomListResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this ListRtcRoomListResponse.
 
-
         :return: The x_request_id of this ListRtcRoomListResponse.
         :rtype: str
         """
@@ -174,7 +172,6 @@ class ListRtcRoomListResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ListRtcRoomListResponse.
-
 
         :param x_request_id: The x_request_id of this ListRtcRoomListResponse.
         :type x_request_id: str

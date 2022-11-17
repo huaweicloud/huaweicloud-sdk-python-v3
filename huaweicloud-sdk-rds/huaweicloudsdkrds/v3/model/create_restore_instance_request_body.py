@@ -17,7 +17,6 @@ class CreateRestoreInstanceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -237,7 +236,6 @@ class CreateRestoreInstanceRequestBody:
     def datastore(self):
         """Gets the datastore of this CreateRestoreInstanceRequestBody.
 
-
         :return: The datastore of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.Datastore`
         """
@@ -246,7 +244,6 @@ class CreateRestoreInstanceRequestBody:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CreateRestoreInstanceRequestBody.
-
 
         :param datastore: The datastore of this CreateRestoreInstanceRequestBody.
         :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
@@ -257,7 +254,6 @@ class CreateRestoreInstanceRequestBody:
     def ha(self):
         """Gets the ha of this CreateRestoreInstanceRequestBody.
 
-
         :return: The ha of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.Ha`
         """
@@ -266,7 +262,6 @@ class CreateRestoreInstanceRequestBody:
     @ha.setter
     def ha(self, ha):
         """Sets the ha of this CreateRestoreInstanceRequestBody.
-
 
         :param ha: The ha of this CreateRestoreInstanceRequestBody.
         :type ha: :class:`huaweicloudsdkrds.v3.Ha`
@@ -343,7 +338,6 @@ class CreateRestoreInstanceRequestBody:
     def backup_strategy(self):
         """Gets the backup_strategy of this CreateRestoreInstanceRequestBody.
 
-
         :return: The backup_strategy of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.BackupStrategy`
         """
@@ -352,7 +346,6 @@ class CreateRestoreInstanceRequestBody:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this CreateRestoreInstanceRequestBody.
-
 
         :param backup_strategy: The backup_strategy of this CreateRestoreInstanceRequestBody.
         :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategy`
@@ -429,7 +422,6 @@ class CreateRestoreInstanceRequestBody:
     def volume(self):
         """Gets the volume of this CreateRestoreInstanceRequestBody.
 
-
         :return: The volume of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.Volume`
         """
@@ -438,7 +430,6 @@ class CreateRestoreInstanceRequestBody:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this CreateRestoreInstanceRequestBody.
-
 
         :param volume: The volume of this CreateRestoreInstanceRequestBody.
         :type volume: :class:`huaweicloudsdkrds.v3.Volume`
@@ -581,7 +572,6 @@ class CreateRestoreInstanceRequestBody:
     def charge_info(self):
         """Gets the charge_info of this CreateRestoreInstanceRequestBody.
 
-
         :return: The charge_info of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.ChargeInfo`
         """
@@ -590,7 +580,6 @@ class CreateRestoreInstanceRequestBody:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this CreateRestoreInstanceRequestBody.
-
 
         :param charge_info: The charge_info of this CreateRestoreInstanceRequestBody.
         :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfo`
@@ -667,7 +656,6 @@ class CreateRestoreInstanceRequestBody:
     def restore_point(self):
         """Gets the restore_point of this CreateRestoreInstanceRequestBody.
 
-
         :return: The restore_point of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.RestorePoint`
         """
@@ -676,7 +664,6 @@ class CreateRestoreInstanceRequestBody:
     @restore_point.setter
     def restore_point(self, restore_point):
         """Sets the restore_point of this CreateRestoreInstanceRequestBody.
-
 
         :param restore_point: The restore_point of this CreateRestoreInstanceRequestBody.
         :type restore_point: :class:`huaweicloudsdkrds.v3.RestorePoint`
@@ -731,7 +718,6 @@ class CreateRestoreInstanceRequestBody:
     def unchangeable_param(self):
         """Gets the unchangeable_param of this CreateRestoreInstanceRequestBody.
 
-
         :return: The unchangeable_param of this CreateRestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.UnchangeableParam`
         """
@@ -740,7 +726,6 @@ class CreateRestoreInstanceRequestBody:
     @unchangeable_param.setter
     def unchangeable_param(self, unchangeable_param):
         """Sets the unchangeable_param of this CreateRestoreInstanceRequestBody.
-
 
         :param unchangeable_param: The unchangeable_param of this CreateRestoreInstanceRequestBody.
         :type unchangeable_param: :class:`huaweicloudsdkrds.v3.UnchangeableParam`

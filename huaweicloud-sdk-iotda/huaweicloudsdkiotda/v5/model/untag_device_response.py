@@ -17,7 +17,6 @@ class UntagDeviceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UntagDeviceResponse(SdkResponse):
     def body(self):
         """Gets the body of this UntagDeviceResponse.
 
-
         :return: The body of this UntagDeviceResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class UntagDeviceResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this UntagDeviceResponse.
-
 
         :param body: The body of this UntagDeviceResponse.
         :type body: str

@@ -17,7 +17,6 @@ class CreateDefaultConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateDefaultConfigRequest:
     def body(self):
         """Gets the body of this CreateDefaultConfigRequest.
 
-
         :return: The body of this CreateDefaultConfigRequest.
         :rtype: :class:`huaweicloudsdkantiddos.v1.DdosConfig`
         """
@@ -58,7 +56,6 @@ class CreateDefaultConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDefaultConfigRequest.
-
 
         :param body: The body of this CreateDefaultConfigRequest.
         :type body: :class:`huaweicloudsdkantiddos.v1.DdosConfig`

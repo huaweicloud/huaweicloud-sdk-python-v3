@@ -17,7 +17,6 @@ class ListEnvMonitorItemRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListEnvMonitorItemRequest:
     def x_business_id(self):
         """Gets the x_business_id of this ListEnvMonitorItemRequest.
 
-
         :return: The x_business_id of this ListEnvMonitorItemRequest.
         :rtype: int
         """
@@ -65,7 +63,6 @@ class ListEnvMonitorItemRequest:
     @x_business_id.setter
     def x_business_id(self, x_business_id):
         """Sets the x_business_id of this ListEnvMonitorItemRequest.
-
 
         :param x_business_id: The x_business_id of this ListEnvMonitorItemRequest.
         :type x_business_id: int
@@ -76,7 +73,6 @@ class ListEnvMonitorItemRequest:
     def body(self):
         """Gets the body of this ListEnvMonitorItemRequest.
 
-
         :return: The body of this ListEnvMonitorItemRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.GetEnvMonitorItemListParam`
         """
@@ -85,7 +81,6 @@ class ListEnvMonitorItemRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListEnvMonitorItemRequest.
-
 
         :param body: The body of this ListEnvMonitorItemRequest.
         :type body: :class:`huaweicloudsdkapm.v1.GetEnvMonitorItemListParam`

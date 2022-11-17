@@ -17,7 +17,6 @@ class BatchCreateServerTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchCreateServerTagsRequest:
     def body(self):
         """Gets the body of this BatchCreateServerTagsRequest.
 
-
         :return: The body of this BatchCreateServerTagsRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequestBody`
         """
@@ -86,7 +84,6 @@ class BatchCreateServerTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchCreateServerTagsRequest.
-
 
         :param body: The body of this BatchCreateServerTagsRequest.
         :type body: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequestBody`

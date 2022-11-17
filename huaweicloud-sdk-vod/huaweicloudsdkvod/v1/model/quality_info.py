@@ -17,7 +17,6 @@ class QualityInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -62,7 +61,6 @@ class QualityInfo:
     def video(self):
         """Gets the video of this QualityInfo.
 
-
         :return: The video of this QualityInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.VideoTemplateInfo`
         """
@@ -71,7 +69,6 @@ class QualityInfo:
     @video.setter
     def video(self, video):
         """Sets the video of this QualityInfo.
-
 
         :param video: The video of this QualityInfo.
         :type video: :class:`huaweicloudsdkvod.v1.VideoTemplateInfo`
@@ -82,7 +79,6 @@ class QualityInfo:
     def audio(self):
         """Gets the audio of this QualityInfo.
 
-
         :return: The audio of this QualityInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.AudioTemplateInfo`
         """
@@ -91,7 +87,6 @@ class QualityInfo:
     @audio.setter
     def audio(self, audio):
         """Sets the audio of this QualityInfo.
-
 
         :param audio: The audio of this QualityInfo.
         :type audio: :class:`huaweicloudsdkvod.v1.AudioTemplateInfo`

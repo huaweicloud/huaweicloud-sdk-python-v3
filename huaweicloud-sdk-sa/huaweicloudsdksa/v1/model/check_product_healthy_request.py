@@ -17,7 +17,6 @@ class CheckProductHealthyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -62,7 +61,6 @@ class CheckProductHealthyRequest:
     def x_language(self):
         """Gets the x_language of this CheckProductHealthyRequest.
 
-
         :return: The x_language of this CheckProductHealthyRequest.
         :rtype: str
         """
@@ -71,7 +69,6 @@ class CheckProductHealthyRequest:
     @x_language.setter
     def x_language(self, x_language):
         """Sets the x_language of this CheckProductHealthyRequest.
-
 
         :param x_language: The x_language of this CheckProductHealthyRequest.
         :type x_language: str
@@ -104,7 +101,6 @@ class CheckProductHealthyRequest:
     def body(self):
         """Gets the body of this CheckProductHealthyRequest.
 
-
         :return: The body of this CheckProductHealthyRequest.
         :rtype: :class:`huaweicloudsdksa.v1.ProductInfo`
         """
@@ -113,7 +109,6 @@ class CheckProductHealthyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckProductHealthyRequest.
-
 
         :param body: The body of this CheckProductHealthyRequest.
         :type body: :class:`huaweicloudsdksa.v1.ProductInfo`

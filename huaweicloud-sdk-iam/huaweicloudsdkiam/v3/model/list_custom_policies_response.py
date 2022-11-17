@@ -17,7 +17,6 @@ class ListCustomPoliciesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListCustomPoliciesResponse(SdkResponse):
     def links(self):
         """Gets the links of this ListCustomPoliciesResponse.
 
-
         :return: The links of this ListCustomPoliciesResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
@@ -72,7 +70,6 @@ class ListCustomPoliciesResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ListCustomPoliciesResponse.
-
 
         :param links: The links of this ListCustomPoliciesResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`

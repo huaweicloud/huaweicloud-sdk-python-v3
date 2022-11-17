@@ -17,7 +17,6 @@ class StartFailoverRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class StartFailoverRequest:
     def body(self):
         """Gets the body of this StartFailoverRequest.
 
-
         :return: The body of this StartFailoverRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.FailoverRequest`
         """
@@ -115,7 +113,6 @@ class StartFailoverRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartFailoverRequest.
-
 
         :param body: The body of this StartFailoverRequest.
         :type body: :class:`huaweicloudsdkrds.v3.FailoverRequest`

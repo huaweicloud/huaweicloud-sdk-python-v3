@@ -17,7 +17,6 @@ class ResetNode:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class ResetNode:
     def spec(self):
         """Gets the spec of this ResetNode.
 
-
         :return: The spec of this ResetNode.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`
         """
@@ -85,7 +83,6 @@ class ResetNode:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ResetNode.
-
 
         :param spec: The spec of this ResetNode.
         :type spec: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`

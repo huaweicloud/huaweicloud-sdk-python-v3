@@ -17,7 +17,6 @@ class ChangeServerOsWithCloudInitOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -171,7 +170,6 @@ class ChangeServerOsWithCloudInitOption:
     def metadata(self):
         """Gets the metadata of this ChangeServerOsWithCloudInitOption.
 
-
         :return: The metadata of this ChangeServerOsWithCloudInitOption.
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeSeversOsMetadata`
         """
@@ -180,7 +178,6 @@ class ChangeServerOsWithCloudInitOption:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ChangeServerOsWithCloudInitOption.
-
 
         :param metadata: The metadata of this ChangeServerOsWithCloudInitOption.
         :type metadata: :class:`huaweicloudsdkecs.v2.ChangeSeversOsMetadata`

@@ -17,7 +17,6 @@ class ListDatabaseResourceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListDatabaseResourceResponse(SdkResponse):
     def x_resource_mappings(self):
         """Gets the x_resource_mappings of this ListDatabaseResourceResponse.
 
-
         :return: The x_resource_mappings of this ListDatabaseResourceResponse.
         :rtype: str
         """
@@ -116,7 +114,6 @@ class ListDatabaseResourceResponse(SdkResponse):
     @x_resource_mappings.setter
     def x_resource_mappings(self, x_resource_mappings):
         """Sets the x_resource_mappings of this ListDatabaseResourceResponse.
-
 
         :param x_resource_mappings: The x_resource_mappings of this ListDatabaseResourceResponse.
         :type x_resource_mappings: str

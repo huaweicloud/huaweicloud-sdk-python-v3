@@ -17,7 +17,6 @@ class OutputFileInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class OutputFileInfo:
     def meta_data(self):
         """Gets the meta_data of this OutputFileInfo.
 
-
         :return: The meta_data of this OutputFileInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
@@ -116,7 +114,6 @@ class OutputFileInfo:
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this OutputFileInfo.
-
 
         :param meta_data: The meta_data of this OutputFileInfo.
         :type meta_data: :class:`huaweicloudsdkmpc.v1.SourceInfo`

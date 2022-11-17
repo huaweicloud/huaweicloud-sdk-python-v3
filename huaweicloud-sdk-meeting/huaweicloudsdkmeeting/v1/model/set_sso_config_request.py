@@ -17,7 +17,6 @@ class SetSsoConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class SetSsoConfigRequest:
     def body(self):
         """Gets the body of this SetSsoConfigRequest.
 
-
         :return: The body of this SetSsoConfigRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.AuthorizeConfigInfoRequestBody`
         """
@@ -116,7 +114,6 @@ class SetSsoConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetSsoConfigRequest.
-
 
         :param body: The body of this SetSsoConfigRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.AuthorizeConfigInfoRequestBody`

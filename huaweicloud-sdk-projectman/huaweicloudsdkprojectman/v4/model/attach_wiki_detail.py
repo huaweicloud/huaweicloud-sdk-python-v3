@@ -17,7 +17,6 @@ class AttachWikiDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class AttachWikiDetail:
     def wiki_author(self):
         """Gets the wiki_author of this AttachWikiDetail.
 
-
         :return: The wiki_author of this AttachWikiDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
         """
@@ -144,7 +142,6 @@ class AttachWikiDetail:
     @wiki_author.setter
     def wiki_author(self, wiki_author):
         """Sets the wiki_author of this AttachWikiDetail.
-
 
         :param wiki_author: The wiki_author of this AttachWikiDetail.
         :type wiki_author: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -155,7 +152,6 @@ class AttachWikiDetail:
     def project(self):
         """Gets the project of this AttachWikiDetail.
 
-
         :return: The project of this AttachWikiDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
         """
@@ -164,7 +160,6 @@ class AttachWikiDetail:
     @project.setter
     def project(self, project):
         """Sets the project of this AttachWikiDetail.
-
 
         :param project: The project of this AttachWikiDetail.
         :type project: :class:`huaweicloudsdkprojectman.v4.SimpleProject`

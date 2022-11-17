@@ -17,7 +17,6 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -418,7 +417,6 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     def created_by(self):
         """Gets the created_by of this ShowDeploymentGroupDetailResponse.
 
-
         :return: The created_by of this ShowDeploymentGroupDetailResponse.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
         """
@@ -427,7 +425,6 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     @created_by.setter
     def created_by(self, created_by):
         """Sets the created_by of this ShowDeploymentGroupDetailResponse.
-
 
         :param created_by: The created_by of this ShowDeploymentGroupDetailResponse.
         :type created_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
@@ -438,7 +435,6 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     def updated_by(self):
         """Gets the updated_by of this ShowDeploymentGroupDetailResponse.
 
-
         :return: The updated_by of this ShowDeploymentGroupDetailResponse.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
         """
@@ -447,7 +443,6 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     @updated_by.setter
     def updated_by(self, updated_by):
         """Sets the updated_by of this ShowDeploymentGroupDetailResponse.
-
 
         :param updated_by: The updated_by of this ShowDeploymentGroupDetailResponse.
         :type updated_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
@@ -480,7 +475,6 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     def permission(self):
         """Gets the permission of this ShowDeploymentGroupDetailResponse.
 
-
         :return: The permission of this ShowDeploymentGroupDetailResponse.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.PermissionGroupDetail`
         """
@@ -489,7 +483,6 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     @permission.setter
     def permission(self, permission):
         """Sets the permission of this ShowDeploymentGroupDetailResponse.
-
 
         :param permission: The permission of this ShowDeploymentGroupDetailResponse.
         :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionGroupDetail`

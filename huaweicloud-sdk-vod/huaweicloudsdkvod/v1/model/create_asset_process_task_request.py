@@ -17,7 +17,6 @@ class CreateAssetProcessTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAssetProcessTaskRequest:
     def body(self):
         """Gets the body of this CreateAssetProcessTaskRequest.
 
-
         :return: The body of this CreateAssetProcessTaskRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.AssetProcessReq`
         """
@@ -58,7 +56,6 @@ class CreateAssetProcessTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAssetProcessTaskRequest.
-
 
         :param body: The body of this CreateAssetProcessTaskRequest.
         :type body: :class:`huaweicloudsdkvod.v1.AssetProcessReq`

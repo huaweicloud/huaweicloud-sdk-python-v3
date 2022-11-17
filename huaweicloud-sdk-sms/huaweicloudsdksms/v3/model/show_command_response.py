@@ -17,7 +17,6 @@ class ShowCommandResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowCommandResponse(SdkResponse):
     def command_param(self):
         """Gets the command_param of this ShowCommandResponse.
 
-
         :return: The command_param of this ShowCommandResponse.
         :rtype: :class:`huaweicloudsdksms.v3.ComandParam`
         """
@@ -87,7 +85,6 @@ class ShowCommandResponse(SdkResponse):
     @command_param.setter
     def command_param(self, command_param):
         """Sets the command_param of this ShowCommandResponse.
-
 
         :param command_param: The command_param of this ShowCommandResponse.
         :type command_param: :class:`huaweicloudsdksms.v3.ComandParam`

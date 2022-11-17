@@ -17,7 +17,6 @@ class ListProjectsV4ResponseBodyProjects:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -252,7 +251,6 @@ class ListProjectsV4ResponseBodyProjects:
     def creator(self):
         """Gets the creator of this ListProjectsV4ResponseBodyProjects.
 
-
         :return: The creator of this ListProjectsV4ResponseBodyProjects.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4ResponseBodyCreator`
         """
@@ -261,7 +259,6 @@ class ListProjectsV4ResponseBodyProjects:
     @creator.setter
     def creator(self, creator):
         """Sets the creator of this ListProjectsV4ResponseBodyProjects.
-
 
         :param creator: The creator of this ListProjectsV4ResponseBodyProjects.
         :type creator: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4ResponseBodyCreator`

@@ -17,7 +17,6 @@ class ShowProtectedInstanceParams:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -325,7 +324,6 @@ class ShowProtectedInstanceParams:
     def metadata(self):
         """Gets the metadata of this ShowProtectedInstanceParams.
 
-
         :return: The metadata of this ShowProtectedInstanceParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.MetadataParams`
         """
@@ -334,7 +332,6 @@ class ShowProtectedInstanceParams:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ShowProtectedInstanceParams.
-
 
         :param metadata: The metadata of this ShowProtectedInstanceParams.
         :type metadata: :class:`huaweicloudsdksdrs.v1.MetadataParams`

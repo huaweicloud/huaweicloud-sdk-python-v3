@@ -17,7 +17,6 @@ class Output:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -162,7 +161,6 @@ class Output:
     def meta_data(self):
         """Gets the meta_data of this Output.
 
-
         :return: The meta_data of this Output.
         :rtype: :class:`huaweicloudsdkvod.v1.MetaData`
         """
@@ -171,7 +169,6 @@ class Output:
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this Output.
-
 
         :param meta_data: The meta_data of this Output.
         :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`

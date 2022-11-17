@@ -17,7 +17,6 @@ class TempInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -288,7 +287,6 @@ class TempInfo:
     def logic_controller(self):
         """Gets the logic_controller of this TempInfo.
 
-
         :return: The logic_controller of this TempInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.LogicController`
         """
@@ -297,7 +295,6 @@ class TempInfo:
     @logic_controller.setter
     def logic_controller(self, logic_controller):
         """Sets the logic_controller of this TempInfo.
-
 
         :param logic_controller: The logic_controller of this TempInfo.
         :type logic_controller: :class:`huaweicloudsdkcpts.v1.LogicController`

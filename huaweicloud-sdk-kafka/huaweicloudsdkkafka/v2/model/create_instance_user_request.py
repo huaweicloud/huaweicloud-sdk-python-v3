@@ -17,7 +17,6 @@ class CreateInstanceUserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateInstanceUserRequest:
     def body(self):
         """Gets the body of this CreateInstanceUserRequest.
 
-
         :return: The body of this CreateInstanceUserRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserReq`
         """
@@ -86,7 +84,6 @@ class CreateInstanceUserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateInstanceUserRequest.
-
 
         :param body: The body of this CreateInstanceUserRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.CreateInstanceUserReq`

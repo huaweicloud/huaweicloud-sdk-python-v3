@@ -17,7 +17,6 @@ class UpdateTaskRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -248,7 +247,6 @@ class UpdateTaskRequestBody:
     def task_run_info(self):
         """Gets the task_run_info of this UpdateTaskRequestBody.
 
-
         :return: The task_run_info of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
         """
@@ -257,7 +255,6 @@ class UpdateTaskRequestBody:
     @task_run_info.setter
     def task_run_info(self, task_run_info):
         """Sets the task_run_info of this UpdateTaskRequestBody.
-
 
         :param task_run_info: The task_run_info of this UpdateTaskRequestBody.
         :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`

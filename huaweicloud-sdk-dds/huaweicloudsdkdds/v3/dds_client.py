@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DdsClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class DdsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddReadonlyNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddShardingNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -188,6 +188,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +224,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachEipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -248,6 +251,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +287,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachInternalIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -308,6 +314,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +350,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchTagActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -368,6 +377,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +411,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelEipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -426,6 +438,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -460,6 +474,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeOpsWindowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -486,6 +501,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -520,6 +537,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -546,6 +564,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -580,6 +600,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckWeakPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -606,6 +627,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -638,6 +661,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -664,6 +688,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -698,6 +724,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -724,6 +751,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -758,6 +787,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -784,6 +814,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -816,6 +848,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -842,6 +875,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -876,6 +911,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -902,6 +938,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -934,6 +972,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -960,6 +999,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -996,6 +1037,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAuditLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1022,6 +1064,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1054,6 +1098,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1080,6 +1125,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1114,6 +1161,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1140,6 +1188,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1174,6 +1224,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1200,6 +1251,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1232,6 +1285,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1258,6 +1312,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1290,6 +1346,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1316,6 +1373,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1350,6 +1409,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1376,6 +1436,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1410,6 +1472,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadErrorlogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1436,6 +1499,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1470,6 +1535,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadSlowlogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1496,6 +1562,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1530,6 +1598,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandReplicasetNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1556,6 +1625,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1590,6 +1661,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuditlogLinksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1616,6 +1688,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1660,6 +1734,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuditlogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1686,6 +1761,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1718,6 +1795,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAz2MigrateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1744,6 +1822,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1790,6 +1870,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1816,6 +1897,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1850,6 +1933,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1876,6 +1960,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1916,6 +2002,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseRolesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1942,6 +2029,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1982,6 +2071,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2008,6 +2098,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2040,6 +2132,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatastoreVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2066,6 +2159,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2110,6 +2205,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListErrorLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2136,6 +2232,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2174,6 +2272,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2200,6 +2299,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2234,6 +2335,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2260,6 +2362,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2292,6 +2396,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2318,6 +2423,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2366,6 +2473,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2392,6 +2500,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2424,6 +2534,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2450,6 +2561,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2480,6 +2593,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2506,6 +2620,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2542,6 +2658,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecycleInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2568,6 +2685,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2610,6 +2729,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreCollectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2636,6 +2756,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2676,6 +2798,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2702,6 +2825,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2738,6 +2863,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreTimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2764,6 +2890,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2808,6 +2936,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSessionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2834,6 +2963,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2878,6 +3009,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2904,6 +3036,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2938,6 +3072,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSslCertDownloadAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2964,6 +3099,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2996,6 +3133,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStorageTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3022,6 +3160,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3056,6 +3196,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateAzResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3082,6 +3223,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3116,6 +3259,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3142,6 +3286,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3176,6 +3322,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3202,6 +3349,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3236,6 +3385,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3262,6 +3412,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3296,6 +3448,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3322,6 +3475,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3356,6 +3511,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3382,6 +3538,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3418,6 +3576,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreInstanceFromCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3444,6 +3603,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3476,6 +3637,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreNewInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3502,6 +3664,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3536,6 +3700,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetAuditlogPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3562,6 +3727,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3596,6 +3763,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3622,6 +3790,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3656,6 +3826,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBalancerSwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3682,6 +3853,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3716,6 +3889,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBalancerWindowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3742,6 +3916,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3774,6 +3950,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetRecyclePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3800,6 +3977,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3834,6 +4013,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuditlogPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3860,6 +4040,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3896,6 +4078,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupDownloadLinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3922,6 +4105,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3954,6 +4139,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3980,6 +4166,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4012,6 +4200,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConfigurationParameterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4038,6 +4227,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4072,6 +4263,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConnectionStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4098,6 +4290,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4132,6 +4326,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDiskUsageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4158,6 +4353,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4192,6 +4389,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEntityConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4218,6 +4416,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4250,6 +4450,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4276,6 +4477,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4306,6 +4509,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4332,6 +4536,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4364,6 +4570,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecyclePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4390,6 +4597,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4422,6 +4631,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecondLevelMonitoringStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4448,6 +4658,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4480,6 +4692,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowShardingBalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4506,6 +4719,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4540,6 +4755,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSlowlogDesensitizationSwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4566,6 +4782,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4600,6 +4818,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUpgradeDurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4626,6 +4845,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4660,6 +4881,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4686,6 +4908,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4720,6 +4944,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchSecondLevelMonitoringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4746,6 +4971,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4782,6 +5009,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchSlowlogDesensitizationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4808,6 +5036,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4842,6 +5072,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchSslResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4868,6 +5099,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4900,6 +5133,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchoverReplicaSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4926,6 +5160,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4960,6 +5196,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateClientNetworkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4986,6 +5223,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5020,6 +5259,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConfigurationParameterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5046,6 +5286,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5080,6 +5322,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEntityConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5106,6 +5349,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5140,6 +5385,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5166,6 +5412,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5200,6 +5448,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstancePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5226,6 +5475,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5260,6 +5511,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceRemarkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5286,6 +5538,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5320,6 +5574,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5346,6 +5601,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5380,6 +5637,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpgradeDatabaseVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5406,6 +5664,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5436,6 +5696,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5462,6 +5723,8 @@ class DdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5494,6 +5757,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5501,7 +5765,7 @@ class DdsClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -5511,9 +5775,10 @@ class DdsClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -5530,6 +5795,7 @@ class DdsClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

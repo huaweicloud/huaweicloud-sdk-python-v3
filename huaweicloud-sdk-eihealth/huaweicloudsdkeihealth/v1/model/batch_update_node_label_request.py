@@ -17,7 +17,6 @@ class BatchUpdateNodeLabelRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchUpdateNodeLabelRequest:
     def body(self):
         """Gets the body of this BatchUpdateNodeLabelRequest.
 
-
         :return: The body of this BatchUpdateNodeLabelRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchUpadteNodeLabelReq`
         """
@@ -86,7 +84,6 @@ class BatchUpdateNodeLabelRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchUpdateNodeLabelRequest.
-
 
         :param body: The body of this BatchUpdateNodeLabelRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.BatchUpadteNodeLabelReq`

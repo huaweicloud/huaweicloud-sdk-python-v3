@@ -17,7 +17,6 @@ class BatchConfirmConfigsNewRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchConfirmConfigsNewRequest:
     def body(self):
         """Gets the body of this BatchConfirmConfigsNewRequest.
 
-
         :return: The body of this BatchConfirmConfigsNewRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ConfirmIaConfigsRequestBody`
         """
@@ -114,7 +112,6 @@ class BatchConfirmConfigsNewRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchConfirmConfigsNewRequest.
-
 
         :param body: The body of this BatchConfirmConfigsNewRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.ConfirmIaConfigsRequestBody`

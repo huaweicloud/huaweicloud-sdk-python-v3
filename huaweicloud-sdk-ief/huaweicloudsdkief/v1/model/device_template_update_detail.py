@@ -17,7 +17,6 @@ class DeviceTemplateUpdateDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -150,7 +149,6 @@ class DeviceTemplateUpdateDetail:
     def tags(self):
         """Gets the tags of this DeviceTemplateUpdateDetail.
 
-
         :return: The tags of this DeviceTemplateUpdateDetail.
         :rtype: :class:`huaweicloudsdkief.v1.DeviceTemplateUpdateDetailTags`
         """
@@ -159,7 +157,6 @@ class DeviceTemplateUpdateDetail:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this DeviceTemplateUpdateDetail.
-
 
         :param tags: The tags of this DeviceTemplateUpdateDetail.
         :type tags: :class:`huaweicloudsdkief.v1.DeviceTemplateUpdateDetailTags`

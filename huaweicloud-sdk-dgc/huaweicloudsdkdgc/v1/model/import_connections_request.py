@@ -17,7 +17,6 @@ class ImportConnectionsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ImportConnectionsRequest:
     def body(self):
         """Gets the body of this ImportConnectionsRequest.
 
-
         :return: The body of this ImportConnectionsRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.ImportConnectionReq`
         """
@@ -58,7 +56,6 @@ class ImportConnectionsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportConnectionsRequest.
-
 
         :param body: The body of this ImportConnectionsRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.ImportConnectionReq`

@@ -17,7 +17,6 @@ class CreateNamespaceAuthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateNamespaceAuthRequest:
     def body(self):
         """Gets the body of this CreateNamespaceAuthRequest.
 
-
         :return: The body of this CreateNamespaceAuthRequest.
         :rtype: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
         """
@@ -86,7 +84,6 @@ class CreateNamespaceAuthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateNamespaceAuthRequest.
-
 
         :param body: The body of this CreateNamespaceAuthRequest.
         :type body: list[:class:`huaweicloudsdkswr.v2.UserAuth`]

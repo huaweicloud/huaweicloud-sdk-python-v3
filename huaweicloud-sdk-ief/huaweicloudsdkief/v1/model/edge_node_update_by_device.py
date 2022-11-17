@@ -17,7 +17,6 @@ class EdgeNodeUpdateByDevice:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class EdgeNodeUpdateByDevice:
     def nodes(self):
         """Gets the nodes of this EdgeNodeUpdateByDevice.
 
-
         :return: The nodes of this EdgeNodeUpdateByDevice.
         :rtype: :class:`huaweicloudsdkief.v1.NodeUpdateByDevice`
         """
@@ -57,7 +55,6 @@ class EdgeNodeUpdateByDevice:
     @nodes.setter
     def nodes(self, nodes):
         """Sets the nodes of this EdgeNodeUpdateByDevice.
-
 
         :param nodes: The nodes of this EdgeNodeUpdateByDevice.
         :type nodes: :class:`huaweicloudsdkief.v1.NodeUpdateByDevice`

@@ -17,7 +17,6 @@ class KeyProtection:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class KeyProtection:
     def encryption(self):
         """Gets the encryption of this KeyProtection.
 
-
         :return: The encryption of this KeyProtection.
         :rtype: :class:`huaweicloudsdkkps.v3.Encryption`
         """
@@ -87,7 +85,6 @@ class KeyProtection:
     @encryption.setter
     def encryption(self, encryption):
         """Sets the encryption of this KeyProtection.
-
 
         :param encryption: The encryption of this KeyProtection.
         :type encryption: :class:`huaweicloudsdkkps.v3.Encryption`

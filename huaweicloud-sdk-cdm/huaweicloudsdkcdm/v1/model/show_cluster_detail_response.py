@@ -17,7 +17,6 @@ class ShowClusterDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -397,7 +396,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def customer_config(self):
         """Gets the customer_config of this ShowClusterDetailResponse.
 
-
         :return: The customer_config of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
         """
@@ -406,7 +404,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @customer_config.setter
     def customer_config(self, customer_config):
         """Sets the customer_config of this ShowClusterDetailResponse.
-
 
         :param customer_config: The customer_config of this ShowClusterDetailResponse.
         :type customer_config: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
@@ -417,7 +414,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def datastore(self):
         """Gets the datastore of this ShowClusterDetailResponse.
 
-
         :return: The datastore of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
@@ -426,7 +422,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this ShowClusterDetailResponse.
-
 
         :param datastore: The datastore of this ShowClusterDetailResponse.
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -525,7 +520,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def maintain_window(self):
         """Gets the maintain_window of this ShowClusterDetailResponse.
 
-
         :return: The maintain_window of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonseMaintainWindow`
         """
@@ -534,7 +528,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @maintain_window.setter
     def maintain_window(self, maintain_window):
         """Sets the maintain_window of this ShowClusterDetailResponse.
-
 
         :param maintain_window: The maintain_window of this ShowClusterDetailResponse.
         :type maintain_window: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonseMaintainWindow`
@@ -633,7 +626,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def public_endpoint_status(self):
         """Gets the public_endpoint_status of this ShowClusterDetailResponse.
 
-
         :return: The public_endpoint_status of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonsePublicEndpointStatus`
         """
@@ -642,7 +634,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @public_endpoint_status.setter
     def public_endpoint_status(self, public_endpoint_status):
         """Sets the public_endpoint_status of this ShowClusterDetailResponse.
-
 
         :param public_endpoint_status: The public_endpoint_status of this ShowClusterDetailResponse.
         :type public_endpoint_status: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonsePublicEndpointStatus`
@@ -719,7 +710,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def failed_reasons(self):
         """Gets the failed_reasons of this ShowClusterDetailResponse.
 
-
         :return: The failed_reasons of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.FailedReasons`
         """
@@ -728,7 +718,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
         """Sets the failed_reasons of this ShowClusterDetailResponse.
-
 
         :param failed_reasons: The failed_reasons of this ShowClusterDetailResponse.
         :type failed_reasons: :class:`huaweicloudsdkcdm.v1.FailedReasons`
@@ -761,7 +750,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def links(self):
         """Gets the links of this ShowClusterDetailResponse.
 
-
         :return: The links of this ShowClusterDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
         """
@@ -770,7 +758,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ShowClusterDetailResponse.
-
 
         :param links: The links of this ShowClusterDetailResponse.
         :type links: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
@@ -803,7 +790,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def task(self):
         """Gets the task of this ShowClusterDetailResponse.
 
-
         :return: The task of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.ClusterTask`
         """
@@ -812,7 +798,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @task.setter
     def task(self, task):
         """Sets the task of this ShowClusterDetailResponse.
-
 
         :param task: The task of this ShowClusterDetailResponse.
         :type task: :class:`huaweicloudsdkcdm.v1.ClusterTask`
@@ -889,7 +874,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def action_progress(self):
         """Gets the action_progress of this ShowClusterDetailResponse.
 
-
         :return: The action_progress of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.ActionProgress`
         """
@@ -898,7 +882,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @action_progress.setter
     def action_progress(self, action_progress):
         """Sets the action_progress of this ShowClusterDetailResponse.
-
 
         :param action_progress: The action_progress of this ShowClusterDetailResponse.
         :type action_progress: :class:`huaweicloudsdkcdm.v1.ActionProgress`

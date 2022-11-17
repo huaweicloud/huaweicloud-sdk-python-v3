@@ -17,7 +17,6 @@ class CatalogTargetInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -208,7 +207,6 @@ class CatalogTargetInfo:
     def parameters(self):
         """Gets the parameters of this CatalogTargetInfo.
 
-
         :return: The parameters of this CatalogTargetInfo.
         :rtype: list[object]
         """
@@ -217,7 +215,6 @@ class CatalogTargetInfo:
     @parameters.setter
     def parameters(self, parameters):
         """Sets the parameters of this CatalogTargetInfo.
-
 
         :param parameters: The parameters of this CatalogTargetInfo.
         :type parameters: list[object]

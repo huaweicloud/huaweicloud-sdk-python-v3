@@ -17,7 +17,6 @@ class CreateDnsNameRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateDnsNameRequest:
     def body(self):
         """Gets the body of this CreateDnsNameRequest.
 
-
         :return: The body of this CreateDnsNameRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.CreateDnsNameRequestBody`
         """
@@ -115,7 +113,6 @@ class CreateDnsNameRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDnsNameRequest.
-
 
         :param body: The body of this CreateDnsNameRequest.
         :type body: :class:`huaweicloudsdkrds.v3.CreateDnsNameRequestBody`

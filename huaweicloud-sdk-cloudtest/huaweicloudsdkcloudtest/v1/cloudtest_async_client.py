@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudtestAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteTestCase
         :type request: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseResponse`
@@ -68,6 +63,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteTestCaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePlan
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreatePlanRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreatePlanResponse`
@@ -128,6 +127,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePlanResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateService
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateServiceRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateServiceResponse`
@@ -188,6 +191,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -220,6 +225,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -234,6 +240,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTestCase
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseResponse`
@@ -246,6 +253,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -280,6 +289,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTestCaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -294,6 +304,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTestCaseInPlan
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanResponse`
@@ -306,6 +317,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTestCaseInPlanResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteService
         :type request: :class:`huaweicloudsdkcloudtest.v1.DeleteServiceRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteServiceResponse`
@@ -368,6 +383,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +417,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -414,6 +432,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunTestCase
         :type request: :class:`huaweicloudsdkcloudtest.v1.RunTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.RunTestCaseResponse`
@@ -426,6 +445,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -460,6 +481,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTestCaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -474,6 +496,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIssuesByPlanId
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowIssuesByPlanIdRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowIssuesByPlanIdResponse`
@@ -486,6 +509,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -524,6 +549,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIssuesByPlanIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -538,6 +564,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPlanJournals
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlanJournalsRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowPlanJournalsResponse`
@@ -550,6 +577,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -588,6 +617,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPlanJournalsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -602,6 +632,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPlanList
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlanListRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowPlanListResponse`
@@ -614,6 +645,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -654,6 +687,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPlanListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -668,6 +702,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPlans
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowPlansRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowPlansResponse`
@@ -680,6 +715,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -720,6 +757,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPlansResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -734,6 +772,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRegisterService
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowRegisterServiceRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowRegisterServiceResponse`
@@ -746,6 +785,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -776,6 +817,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRegisterServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -790,6 +832,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTestCaseDetail
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailResponse`
@@ -802,6 +845,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -836,6 +881,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTestCaseDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -850,6 +896,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTestCaseDetailV2
         :type request: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailV2Request`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ShowTestCaseDetailV2Response`
@@ -862,6 +909,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -896,6 +945,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTestCaseDetailV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -910,6 +960,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateService
         :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateServiceRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateServiceResponse`
@@ -922,6 +973,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -956,6 +1009,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -970,6 +1024,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTestCase
         :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResponse`
@@ -982,6 +1037,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1018,6 +1075,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTestCaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1032,6 +1090,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTestCaseResult
         :type request: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateTestCaseResultResponse`
@@ -1044,6 +1103,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1078,6 +1139,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTestCaseResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1092,6 +1154,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApiTestSuiteByRepoFile
         :type request: :class:`huaweicloudsdkcloudtest.v1.CreateApiTestSuiteByRepoFileRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateApiTestSuiteByRepoFileResponse`
@@ -1104,6 +1167,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1138,6 +1203,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiTestSuiteByRepoFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1152,6 +1218,7 @@ class CloudtestAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnvironments
         :type request: :class:`huaweicloudsdkcloudtest.v1.ListEnvironmentsRequest`
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ListEnvironmentsResponse`
@@ -1164,6 +1231,8 @@ class CloudtestAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1200,6 +1269,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1207,7 +1277,7 @@ class CloudtestAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1218,9 +1288,10 @@ class CloudtestAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1237,6 +1308,7 @@ class CloudtestAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

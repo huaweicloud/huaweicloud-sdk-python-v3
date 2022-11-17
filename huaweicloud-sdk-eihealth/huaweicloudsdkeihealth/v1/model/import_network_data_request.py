@@ -17,7 +17,6 @@ class ImportNetworkDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ImportNetworkDataRequest:
     def body(self):
         """Gets the body of this ImportNetworkDataRequest.
 
-
         :return: The body of this ImportNetworkDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataReq`
         """
@@ -86,7 +84,6 @@ class ImportNetworkDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportNetworkDataRequest.
-
 
         :param body: The body of this ImportNetworkDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataReq`

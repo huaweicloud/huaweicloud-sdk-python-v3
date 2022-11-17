@@ -17,7 +17,6 @@ class Event:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -247,7 +246,6 @@ class Event:
     def environment(self):
         """Gets the environment of this Event.
 
-
         :return: The environment of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Environment`
         """
@@ -256,7 +254,6 @@ class Event:
     @environment.setter
     def environment(self, environment):
         """Sets the environment of this Event.
-
 
         :param environment: The environment of this Event.
         :type environment: :class:`huaweicloudsdksa.v1.Environment`
@@ -267,7 +264,6 @@ class Event:
     def data_source(self):
         """Gets the data_source of this Event.
 
-
         :return: The data_source of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.DataSource`
         """
@@ -276,7 +272,6 @@ class Event:
     @data_source.setter
     def data_source(self, data_source):
         """Sets the data_source of this Event.
-
 
         :param data_source: The data_source of this Event.
         :type data_source: :class:`huaweicloudsdksa.v1.DataSource`
@@ -507,7 +502,6 @@ class Event:
     def severity(self):
         """Gets the severity of this Event.
 
-
         :return: The severity of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Severity`
         """
@@ -516,7 +510,6 @@ class Event:
     @severity.setter
     def severity(self, severity):
         """Sets the severity of this Event.
-
 
         :param severity: The severity of this Event.
         :type severity: :class:`huaweicloudsdksa.v1.Severity`
@@ -549,7 +542,6 @@ class Event:
     def type(self):
         """Gets the type of this Event.
 
-
         :return: The type of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Type`
         """
@@ -558,7 +550,6 @@ class Event:
     @type.setter
     def type(self, type):
         """Sets the type of this Event.
-
 
         :param type: The type of this Event.
         :type type: :class:`huaweicloudsdksa.v1.Type`
@@ -569,7 +560,6 @@ class Event:
     def compliance(self):
         """Gets the compliance of this Event.
 
-
         :return: The compliance of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Compliance`
         """
@@ -578,7 +568,6 @@ class Event:
     @compliance.setter
     def compliance(self, compliance):
         """Sets the compliance of this Event.
-
 
         :param compliance: The compliance of this Event.
         :type compliance: :class:`huaweicloudsdksa.v1.Compliance`
@@ -589,7 +578,6 @@ class Event:
     def network(self):
         """Gets the network of this Event.
 
-
         :return: The network of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Network`
         """
@@ -598,7 +586,6 @@ class Event:
     @network.setter
     def network(self, network):
         """Sets the network of this Event.
-
 
         :param network: The network of this Event.
         :type network: :class:`huaweicloudsdksa.v1.Network`
@@ -609,7 +596,6 @@ class Event:
     def vulnerability_patch(self):
         """Gets the vulnerability_patch of this Event.
 
-
         :return: The vulnerability_patch of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.VulnerabilityPatch`
         """
@@ -618,7 +604,6 @@ class Event:
     @vulnerability_patch.setter
     def vulnerability_patch(self, vulnerability_patch):
         """Sets the vulnerability_patch of this Event.
-
 
         :param vulnerability_patch: The vulnerability_patch of this Event.
         :type vulnerability_patch: :class:`huaweicloudsdksa.v1.VulnerabilityPatch`
@@ -629,7 +614,6 @@ class Event:
     def malware(self):
         """Gets the malware of this Event.
 
-
         :return: The malware of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Malware`
         """
@@ -638,7 +622,6 @@ class Event:
     @malware.setter
     def malware(self, malware):
         """Sets the malware of this Event.
-
 
         :param malware: The malware of this Event.
         :type malware: :class:`huaweicloudsdksa.v1.Malware`
@@ -649,7 +632,6 @@ class Event:
     def threat_intel(self):
         """Gets the threat_intel of this Event.
 
-
         :return: The threat_intel of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.ThreatIntel`
         """
@@ -658,7 +640,6 @@ class Event:
     @threat_intel.setter
     def threat_intel(self, threat_intel):
         """Sets the threat_intel of this Event.
-
 
         :param threat_intel: The threat_intel of this Event.
         :type threat_intel: :class:`huaweicloudsdksa.v1.ThreatIntel`
@@ -669,7 +650,6 @@ class Event:
     def resource(self):
         """Gets the resource of this Event.
 
-
         :return: The resource of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Resource`
         """
@@ -678,7 +658,6 @@ class Event:
     @resource.setter
     def resource(self, resource):
         """Sets the resource of this Event.
-
 
         :param resource: The resource of this Event.
         :type resource: :class:`huaweicloudsdksa.v1.Resource`
@@ -689,7 +668,6 @@ class Event:
     def remediation(self):
         """Gets the remediation of this Event.
 
-
         :return: The remediation of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Remediation`
         """
@@ -698,7 +676,6 @@ class Event:
     @remediation.setter
     def remediation(self, remediation):
         """Sets the remediation of this Event.
-
 
         :param remediation: The remediation of this Event.
         :type remediation: :class:`huaweicloudsdksa.v1.Remediation`

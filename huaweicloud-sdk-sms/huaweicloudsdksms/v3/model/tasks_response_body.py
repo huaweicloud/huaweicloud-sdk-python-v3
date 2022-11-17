@@ -17,7 +17,6 @@ class TasksResponseBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -548,7 +547,6 @@ class TasksResponseBody:
     def source_server(self):
         """Gets the source_server of this TasksResponseBody.
 
-
         :return: The source_server of this TasksResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.SourceServerAssociatedWithTask`
         """
@@ -557,7 +555,6 @@ class TasksResponseBody:
     @source_server.setter
     def source_server(self, source_server):
         """Sets the source_server of this TasksResponseBody.
-
 
         :param source_server: The source_server of this TasksResponseBody.
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerAssociatedWithTask`
@@ -590,7 +587,6 @@ class TasksResponseBody:
     def target_server(self):
         """Gets the target_server of this TasksResponseBody.
 
-
         :return: The target_server of this TasksResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.TargetServerAssociatedWithTask`
         """
@@ -599,7 +595,6 @@ class TasksResponseBody:
     @target_server.setter
     def target_server(self, target_server):
         """Sets the target_server of this TasksResponseBody.
-
 
         :param target_server: The target_server of this TasksResponseBody.
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerAssociatedWithTask`
@@ -632,7 +627,6 @@ class TasksResponseBody:
     def clone_server(self):
         """Gets the clone_server of this TasksResponseBody.
 
-
         :return: The clone_server of this TasksResponseBody.
         :rtype: :class:`huaweicloudsdksms.v3.CloneServerBrief`
         """
@@ -641,7 +635,6 @@ class TasksResponseBody:
     @clone_server.setter
     def clone_server(self, clone_server):
         """Sets the clone_server of this TasksResponseBody.
-
 
         :param clone_server: The clone_server of this TasksResponseBody.
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServerBrief`

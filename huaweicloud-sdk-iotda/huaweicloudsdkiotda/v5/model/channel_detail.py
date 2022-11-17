@@ -17,7 +17,6 @@ class ChannelDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ChannelDetail:
     def http_forwarding(self):
         """Gets the http_forwarding of this ChannelDetail.
 
-
         :return: The http_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.HttpForwarding`
         """
@@ -86,7 +84,6 @@ class ChannelDetail:
     @http_forwarding.setter
     def http_forwarding(self, http_forwarding):
         """Sets the http_forwarding of this ChannelDetail.
-
 
         :param http_forwarding: The http_forwarding of this ChannelDetail.
         :type http_forwarding: :class:`huaweicloudsdkiotda.v5.HttpForwarding`
@@ -97,7 +94,6 @@ class ChannelDetail:
     def dis_forwarding(self):
         """Gets the dis_forwarding of this ChannelDetail.
 
-
         :return: The dis_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.DisForwarding`
         """
@@ -106,7 +102,6 @@ class ChannelDetail:
     @dis_forwarding.setter
     def dis_forwarding(self, dis_forwarding):
         """Sets the dis_forwarding of this ChannelDetail.
-
 
         :param dis_forwarding: The dis_forwarding of this ChannelDetail.
         :type dis_forwarding: :class:`huaweicloudsdkiotda.v5.DisForwarding`
@@ -117,7 +112,6 @@ class ChannelDetail:
     def obs_forwarding(self):
         """Gets the obs_forwarding of this ChannelDetail.
 
-
         :return: The obs_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.ObsForwarding`
         """
@@ -126,7 +120,6 @@ class ChannelDetail:
     @obs_forwarding.setter
     def obs_forwarding(self, obs_forwarding):
         """Sets the obs_forwarding of this ChannelDetail.
-
 
         :param obs_forwarding: The obs_forwarding of this ChannelDetail.
         :type obs_forwarding: :class:`huaweicloudsdkiotda.v5.ObsForwarding`
@@ -137,7 +130,6 @@ class ChannelDetail:
     def amqp_forwarding(self):
         """Gets the amqp_forwarding of this ChannelDetail.
 
-
         :return: The amqp_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.AmqpForwarding`
         """
@@ -146,7 +138,6 @@ class ChannelDetail:
     @amqp_forwarding.setter
     def amqp_forwarding(self, amqp_forwarding):
         """Sets the amqp_forwarding of this ChannelDetail.
-
 
         :param amqp_forwarding: The amqp_forwarding of this ChannelDetail.
         :type amqp_forwarding: :class:`huaweicloudsdkiotda.v5.AmqpForwarding`
@@ -157,7 +148,6 @@ class ChannelDetail:
     def dms_kafka_forwarding(self):
         """Gets the dms_kafka_forwarding of this ChannelDetail.
 
-
         :return: The dms_kafka_forwarding of this ChannelDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.DmsKafkaForwarding`
         """
@@ -166,7 +156,6 @@ class ChannelDetail:
     @dms_kafka_forwarding.setter
     def dms_kafka_forwarding(self, dms_kafka_forwarding):
         """Sets the dms_kafka_forwarding of this ChannelDetail.
-
 
         :param dms_kafka_forwarding: The dms_kafka_forwarding of this ChannelDetail.
         :type dms_kafka_forwarding: :class:`huaweicloudsdkiotda.v5.DmsKafkaForwarding`

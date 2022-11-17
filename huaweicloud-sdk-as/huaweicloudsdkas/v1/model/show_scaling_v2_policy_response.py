@@ -17,7 +17,6 @@ class ShowScalingV2PolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowScalingV2PolicyResponse(SdkResponse):
     def scaling_policy(self):
         """Gets the scaling_policy of this ShowScalingV2PolicyResponse.
 
-
         :return: The scaling_policy of this ShowScalingV2PolicyResponse.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingV2PolicyDetail`
         """
@@ -58,7 +56,6 @@ class ShowScalingV2PolicyResponse(SdkResponse):
     @scaling_policy.setter
     def scaling_policy(self, scaling_policy):
         """Sets the scaling_policy of this ShowScalingV2PolicyResponse.
-
 
         :param scaling_policy: The scaling_policy of this ShowScalingV2PolicyResponse.
         :type scaling_policy: :class:`huaweicloudsdkas.v1.ScalingV2PolicyDetail`

@@ -17,7 +17,6 @@ class ListConnectionsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListConnectionsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListConnectionsResponse.
 
-
         :return: The total of this ListConnectionsResponse.
         :rtype: int
         """
@@ -65,7 +63,6 @@ class ListConnectionsResponse(SdkResponse):
     @total.setter
     def total(self, total):
         """Sets the total of this ListConnectionsResponse.
-
 
         :param total: The total of this ListConnectionsResponse.
         :type total: int
@@ -76,7 +73,6 @@ class ListConnectionsResponse(SdkResponse):
     def connections(self):
         """Gets the connections of this ListConnectionsResponse.
 
-
         :return: The connections of this ListConnectionsResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.ConnectionInfo`]
         """
@@ -85,7 +81,6 @@ class ListConnectionsResponse(SdkResponse):
     @connections.setter
     def connections(self, connections):
         """Sets the connections of this ListConnectionsResponse.
-
 
         :param connections: The connections of this ListConnectionsResponse.
         :type connections: list[:class:`huaweicloudsdkdgc.v1.ConnectionInfo`]

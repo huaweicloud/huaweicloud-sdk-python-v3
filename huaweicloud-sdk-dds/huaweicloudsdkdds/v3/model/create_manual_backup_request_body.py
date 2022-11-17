@@ -17,7 +17,6 @@ class CreateManualBackupRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateManualBackupRequestBody:
     def backup(self):
         """Gets the backup of this CreateManualBackupRequestBody.
 
-
         :return: The backup of this CreateManualBackupRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.CreateManualBackupOption`
         """
@@ -57,7 +55,6 @@ class CreateManualBackupRequestBody:
     @backup.setter
     def backup(self, backup):
         """Sets the backup of this CreateManualBackupRequestBody.
-
 
         :param backup: The backup of this CreateManualBackupRequestBody.
         :type backup: :class:`huaweicloudsdkdds.v3.CreateManualBackupOption`

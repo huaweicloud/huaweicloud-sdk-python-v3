@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RmsClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class RmsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -110,6 +106,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceHistoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -136,6 +133,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -168,6 +167,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePolicyAssignmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -194,6 +194,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -226,6 +228,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -252,6 +255,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +289,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisablePolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -310,6 +316,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +350,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnablePolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -368,6 +377,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +411,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBuiltInPolicyDefinitionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -426,6 +438,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -456,6 +470,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyAssignmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -482,6 +497,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -524,6 +541,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyStatesByAssignmentIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -550,6 +568,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -590,6 +610,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyStatesByDomainIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -616,6 +637,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -654,6 +677,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyStatesByResourceIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -680,6 +704,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -712,6 +738,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunEvaluationByPolicyAssignmentIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -738,6 +765,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -772,6 +801,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBuiltInPolicyDefinitionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -798,6 +828,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -830,6 +862,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEvaluationStateByAssignmentIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -856,6 +889,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -888,6 +923,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -914,6 +950,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -948,6 +986,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -974,6 +1013,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1006,6 +1047,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStoredQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1032,6 +1074,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1064,6 +1108,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStoredQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1090,6 +1135,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1124,6 +1171,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1150,6 +1198,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1186,6 +1236,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStoredQueriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1212,6 +1263,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1244,6 +1297,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1270,6 +1324,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1302,6 +1358,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStoredQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1328,6 +1385,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1362,6 +1421,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStoredQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1388,6 +1448,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1420,6 +1482,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1446,6 +1509,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1484,6 +1549,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceRelationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1510,6 +1576,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1550,6 +1618,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAllResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1576,6 +1645,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1612,6 +1683,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProvidersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1638,6 +1710,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1682,6 +1756,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1708,6 +1783,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1744,6 +1821,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceByIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1770,6 +1848,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1802,6 +1882,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTrackerConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1828,6 +1909,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1858,6 +1941,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTrackerConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1884,6 +1968,8 @@ class RmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1914,6 +2000,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTrackerConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1921,7 +2008,7 @@ class RmsClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1931,9 +2018,10 @@ class RmsClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1950,6 +2038,7 @@ class RmsClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

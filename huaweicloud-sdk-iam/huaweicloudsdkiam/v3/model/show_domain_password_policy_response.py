@@ -17,7 +17,6 @@ class ShowDomainPasswordPolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDomainPasswordPolicyResponse(SdkResponse):
     def password_policy(self):
         """Gets the password_policy of this ShowDomainPasswordPolicyResponse.
 
-
         :return: The password_policy of this ShowDomainPasswordPolicyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.PasswordPolicyResult`
         """
@@ -58,7 +56,6 @@ class ShowDomainPasswordPolicyResponse(SdkResponse):
     @password_policy.setter
     def password_policy(self, password_policy):
         """Sets the password_policy of this ShowDomainPasswordPolicyResponse.
-
 
         :param password_policy: The password_policy of this ShowDomainPasswordPolicyResponse.
         :type password_policy: :class:`huaweicloudsdkiam.v3.PasswordPolicyResult`

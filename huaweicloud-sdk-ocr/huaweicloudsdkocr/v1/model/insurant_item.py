@@ -17,7 +17,6 @@ class InsurantItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class InsurantItem:
     def insurant_name(self):
         """Gets the insurant_name of this InsurantItem.
 
-
         :return: The insurant_name of this InsurantItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -86,7 +84,6 @@ class InsurantItem:
     @insurant_name.setter
     def insurant_name(self, insurant_name):
         """Sets the insurant_name of this InsurantItem.
-
 
         :param insurant_name: The insurant_name of this InsurantItem.
         :type insurant_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -97,7 +94,6 @@ class InsurantItem:
     def insurant_sex(self):
         """Gets the insurant_sex of this InsurantItem.
 
-
         :return: The insurant_sex of this InsurantItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -106,7 +102,6 @@ class InsurantItem:
     @insurant_sex.setter
     def insurant_sex(self, insurant_sex):
         """Sets the insurant_sex of this InsurantItem.
-
 
         :param insurant_sex: The insurant_sex of this InsurantItem.
         :type insurant_sex: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -117,7 +112,6 @@ class InsurantItem:
     def insurant_birthday(self):
         """Gets the insurant_birthday of this InsurantItem.
 
-
         :return: The insurant_birthday of this InsurantItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -126,7 +120,6 @@ class InsurantItem:
     @insurant_birthday.setter
     def insurant_birthday(self, insurant_birthday):
         """Sets the insurant_birthday of this InsurantItem.
-
 
         :param insurant_birthday: The insurant_birthday of this InsurantItem.
         :type insurant_birthday: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -137,7 +130,6 @@ class InsurantItem:
     def insurant_id_type(self):
         """Gets the insurant_id_type of this InsurantItem.
 
-
         :return: The insurant_id_type of this InsurantItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -146,7 +138,6 @@ class InsurantItem:
     @insurant_id_type.setter
     def insurant_id_type(self, insurant_id_type):
         """Sets the insurant_id_type of this InsurantItem.
-
 
         :param insurant_id_type: The insurant_id_type of this InsurantItem.
         :type insurant_id_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -157,7 +148,6 @@ class InsurantItem:
     def insurant_id_number(self):
         """Gets the insurant_id_number of this InsurantItem.
 
-
         :return: The insurant_id_number of this InsurantItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -166,7 +156,6 @@ class InsurantItem:
     @insurant_id_number.setter
     def insurant_id_number(self, insurant_id_number):
         """Sets the insurant_id_number of this InsurantItem.
-
 
         :param insurant_id_number: The insurant_id_number of this InsurantItem.
         :type insurant_id_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`

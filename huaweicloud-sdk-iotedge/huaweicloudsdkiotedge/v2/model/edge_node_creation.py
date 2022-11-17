@@ -17,7 +17,6 @@ class EdgeNodeCreation:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -416,7 +415,6 @@ class EdgeNodeCreation:
     def base_path(self):
         """Gets the base_path of this EdgeNodeCreation.
 
-
         :return: The base_path of this EdgeNodeCreation.
         :rtype: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
         """
@@ -425,7 +423,6 @@ class EdgeNodeCreation:
     @base_path.setter
     def base_path(self, base_path):
         """Sets the base_path of this EdgeNodeCreation.
-
 
         :param base_path: The base_path of this EdgeNodeCreation.
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`

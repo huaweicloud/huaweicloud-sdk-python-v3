@@ -17,7 +17,6 @@ class ResetRomaAppSecretRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ResetRomaAppSecretRequest:
     def body(self):
         """Gets the body of this ResetRomaAppSecretRequest.
 
-
         :return: The body of this ResetRomaAppSecretRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppSecretReq`
         """
@@ -114,7 +112,6 @@ class ResetRomaAppSecretRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetRomaAppSecretRequest.
-
 
         :param body: The body of this ResetRomaAppSecretRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateAppSecretReq`

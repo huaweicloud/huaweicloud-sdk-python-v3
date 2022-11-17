@@ -17,7 +17,6 @@ class KeystoneUpdateProjectResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneUpdateProjectResponse(SdkResponse):
     def project(self):
         """Gets the project of this KeystoneUpdateProjectResponse.
 
-
         :return: The project of this KeystoneUpdateProjectResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectResult`
         """
@@ -58,7 +56,6 @@ class KeystoneUpdateProjectResponse(SdkResponse):
     @project.setter
     def project(self, project):
         """Sets the project of this KeystoneUpdateProjectResponse.
-
 
         :param project: The project of this KeystoneUpdateProjectResponse.
         :type project: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectResult`

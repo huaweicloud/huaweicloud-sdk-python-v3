@@ -17,11 +17,11 @@ class ShowApplicationDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'component_count': 'int',
+        'unified_model': 'str',
         'id': 'str',
         'name': 'str',
         'description': 'str',
@@ -34,6 +34,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     attribute_map = {
         'component_count': 'component_count',
+        'unified_model': 'unified_model',
         'id': 'id',
         'name': 'name',
         'description': 'description',
@@ -44,13 +45,15 @@ class ShowApplicationDetailResponse(SdkResponse):
         'update_time': 'update_time'
     }
 
-    def __init__(self, component_count=None, id=None, name=None, description=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None):
+    def __init__(self, component_count=None, unified_model=None, id=None, name=None, description=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None):
         """ShowApplicationDetailResponse
 
         The model defined in huaweicloud sdk
 
         :param component_count: 组件个数。
         :type component_count: int
+        :param unified_model: 是否开启统一模型
+        :type unified_model: str
         :param id: 应用ID。
         :type id: str
         :param name: 应用名称。
@@ -72,6 +75,7 @@ class ShowApplicationDetailResponse(SdkResponse):
         super(ShowApplicationDetailResponse, self).__init__()
 
         self._component_count = None
+        self._unified_model = None
         self._id = None
         self._name = None
         self._description = None
@@ -84,6 +88,8 @@ class ShowApplicationDetailResponse(SdkResponse):
 
         if component_count is not None:
             self.component_count = component_count
+        if unified_model is not None:
+            self.unified_model = unified_model
         if id is not None:
             self.id = id
         if name is not None:
@@ -122,6 +128,28 @@ class ShowApplicationDetailResponse(SdkResponse):
         :type component_count: int
         """
         self._component_count = component_count
+
+    @property
+    def unified_model(self):
+        """Gets the unified_model of this ShowApplicationDetailResponse.
+
+        是否开启统一模型
+
+        :return: The unified_model of this ShowApplicationDetailResponse.
+        :rtype: str
+        """
+        return self._unified_model
+
+    @unified_model.setter
+    def unified_model(self, unified_model):
+        """Sets the unified_model of this ShowApplicationDetailResponse.
+
+        是否开启统一模型
+
+        :param unified_model: The unified_model of this ShowApplicationDetailResponse.
+        :type unified_model: str
+        """
+        self._unified_model = unified_model
 
     @property
     def id(self):

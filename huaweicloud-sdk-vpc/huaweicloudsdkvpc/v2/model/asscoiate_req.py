@@ -17,7 +17,6 @@ class AsscoiateReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class AsscoiateReq:
     def subnets(self):
         """Gets the subnets of this AsscoiateReq.
 
-
         :return: The subnets of this AsscoiateReq.
         :rtype: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableAndSubnetReq`
         """
@@ -57,7 +55,6 @@ class AsscoiateReq:
     @subnets.setter
     def subnets(self, subnets):
         """Sets the subnets of this AsscoiateReq.
-
 
         :param subnets: The subnets of this AsscoiateReq.
         :type subnets: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableAndSubnetReq`

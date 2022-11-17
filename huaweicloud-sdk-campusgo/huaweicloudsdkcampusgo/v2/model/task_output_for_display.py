@@ -17,7 +17,6 @@ class TaskOutputForDisplay:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class TaskOutputForDisplay:
     def obs(self):
         """Gets the obs of this TaskOutputForDisplay.
 
-
         :return: The obs of this TaskOutputForDisplay.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskOutputObs`
         """
@@ -79,7 +77,6 @@ class TaskOutputForDisplay:
     @obs.setter
     def obs(self, obs):
         """Sets the obs of this TaskOutputForDisplay.
-
 
         :param obs: The obs of this TaskOutputForDisplay.
         :type obs: :class:`huaweicloudsdkcampusgo.v2.TaskOutputObs`
@@ -90,7 +87,6 @@ class TaskOutputForDisplay:
     def dis(self):
         """Gets the dis of this TaskOutputForDisplay.
 
-
         :return: The dis of this TaskOutputForDisplay.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskOutputDis`
         """
@@ -99,7 +95,6 @@ class TaskOutputForDisplay:
     @dis.setter
     def dis(self, dis):
         """Sets the dis of this TaskOutputForDisplay.
-
 
         :param dis: The dis of this TaskOutputForDisplay.
         :type dis: :class:`huaweicloudsdkcampusgo.v2.TaskOutputDis`
@@ -110,7 +105,6 @@ class TaskOutputForDisplay:
     def webhook(self):
         """Gets the webhook of this TaskOutputForDisplay.
 
-
         :return: The webhook of this TaskOutputForDisplay.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskOutputWebhook`
         """
@@ -119,7 +113,6 @@ class TaskOutputForDisplay:
     @webhook.setter
     def webhook(self, webhook):
         """Sets the webhook of this TaskOutputForDisplay.
-
 
         :param webhook: The webhook of this TaskOutputForDisplay.
         :type webhook: :class:`huaweicloudsdkcampusgo.v2.TaskOutputWebhook`
@@ -130,7 +123,6 @@ class TaskOutputForDisplay:
     def localpath(self):
         """Gets the localpath of this TaskOutputForDisplay.
 
-
         :return: The localpath of this TaskOutputForDisplay.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskOutputLocalpath`
         """
@@ -139,7 +131,6 @@ class TaskOutputForDisplay:
     @localpath.setter
     def localpath(self, localpath):
         """Sets the localpath of this TaskOutputForDisplay.
-
 
         :param localpath: The localpath of this TaskOutputForDisplay.
         :type localpath: :class:`huaweicloudsdkcampusgo.v2.TaskOutputLocalpath`

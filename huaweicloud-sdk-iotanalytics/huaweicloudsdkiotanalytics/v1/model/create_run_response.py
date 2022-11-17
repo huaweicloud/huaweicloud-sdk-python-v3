@@ -17,7 +17,6 @@ class CreateRunResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class CreateRunResponse(SdkResponse):
     def sql_job(self):
         """Gets the sql_job of this CreateRunResponse.
 
-
         :return: The sql_job of this CreateRunResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunResponseBody`
         """
@@ -174,7 +172,6 @@ class CreateRunResponse(SdkResponse):
     @sql_job.setter
     def sql_job(self, sql_job):
         """Sets the sql_job of this CreateRunResponse.
-
 
         :param sql_job: The sql_job of this CreateRunResponse.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunResponseBody`

@@ -17,7 +17,6 @@ class UpdateFunctionAsyncInvokeConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -157,7 +156,6 @@ class UpdateFunctionAsyncInvokeConfigResponse(SdkResponse):
     def destination_config(self):
         """Gets the destination_config of this UpdateFunctionAsyncInvokeConfigResponse.
 
-
         :return: The destination_config of this UpdateFunctionAsyncInvokeConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         """
@@ -166,7 +164,6 @@ class UpdateFunctionAsyncInvokeConfigResponse(SdkResponse):
     @destination_config.setter
     def destination_config(self, destination_config):
         """Sets the destination_config of this UpdateFunctionAsyncInvokeConfigResponse.
-
 
         :param destination_config: The destination_config of this UpdateFunctionAsyncInvokeConfigResponse.
         :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`

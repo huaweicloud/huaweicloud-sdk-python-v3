@@ -17,7 +17,6 @@ class ListEnvTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListEnvTagsRequest:
     def body(self):
         """Gets the body of this ListEnvTagsRequest.
 
-
         :return: The body of this ListEnvTagsRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.TagParam`
         """
@@ -86,7 +84,6 @@ class ListEnvTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListEnvTagsRequest.
-
 
         :param body: The body of this ListEnvTagsRequest.
         :type body: :class:`huaweicloudsdkapm.v1.TagParam`

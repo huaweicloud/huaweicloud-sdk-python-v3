@@ -17,7 +17,6 @@ class BatchRemoveScalingInstancesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchRemoveScalingInstancesRequest:
     def body(self):
         """Gets the body of this BatchRemoveScalingInstancesRequest.
 
-
         :return: The body of this BatchRemoveScalingInstancesRequest.
         :rtype: :class:`huaweicloudsdkas.v1.BatchRemoveInstancesOption`
         """
@@ -86,7 +84,6 @@ class BatchRemoveScalingInstancesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchRemoveScalingInstancesRequest.
-
 
         :param body: The body of this BatchRemoveScalingInstancesRequest.
         :type body: :class:`huaweicloudsdkas.v1.BatchRemoveInstancesOption`

@@ -17,7 +17,6 @@ class ConfirmConsumptionMessagesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ConfirmConsumptionMessagesRequest:
     def body(self):
         """Gets the body of this ConfirmConsumptionMessagesRequest.
 
-
         :return: The body of this ConfirmConsumptionMessagesRequest.
         :rtype: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesReq`
         """
@@ -114,7 +112,6 @@ class ConfirmConsumptionMessagesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ConfirmConsumptionMessagesRequest.
-
 
         :param body: The body of this ConfirmConsumptionMessagesRequest.
         :type body: :class:`huaweicloudsdkdms.v2.ConfirmConsumptionMessagesReq`

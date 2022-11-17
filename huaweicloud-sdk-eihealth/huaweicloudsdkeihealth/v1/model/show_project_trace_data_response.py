@@ -17,7 +17,6 @@ class ShowProjectTraceDataResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -128,7 +127,6 @@ class ShowProjectTraceDataResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowProjectTraceDataResponse.
 
-
         :return: The type of this ShowProjectTraceDataResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
         """
@@ -137,7 +135,6 @@ class ShowProjectTraceDataResponse(SdkResponse):
     @type.setter
     def type(self, type):
         """Sets the type of this ShowProjectTraceDataResponse.
-
 
         :param type: The type of this ShowProjectTraceDataResponse.
         :type type: :class:`huaweicloudsdkeihealth.v1.PathType`

@@ -17,7 +17,6 @@ class BatchCreateProtectedInstancesRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class BatchCreateProtectedInstancesRequestBody:
     def protected_instances(self):
         """Gets the protected_instances of this BatchCreateProtectedInstancesRequestBody.
 
-
         :return: The protected_instances of this BatchCreateProtectedInstancesRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesRequestParams`
         """
@@ -57,7 +55,6 @@ class BatchCreateProtectedInstancesRequestBody:
     @protected_instances.setter
     def protected_instances(self, protected_instances):
         """Sets the protected_instances of this BatchCreateProtectedInstancesRequestBody.
-
 
         :param protected_instances: The protected_instances of this BatchCreateProtectedInstancesRequestBody.
         :type protected_instances: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesRequestParams`

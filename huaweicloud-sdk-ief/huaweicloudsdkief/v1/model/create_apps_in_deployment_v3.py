@@ -17,7 +17,6 @@ class CreateAppsInDeploymentV3:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -83,7 +82,6 @@ class CreateAppsInDeploymentV3:
     def template(self):
         """Gets the template of this CreateAppsInDeploymentV3.
 
-
         :return: The template of this CreateAppsInDeploymentV3.
         :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
         """
@@ -92,7 +90,6 @@ class CreateAppsInDeploymentV3:
     @template.setter
     def template(self, template):
         """Sets the template of this CreateAppsInDeploymentV3.
-
 
         :param template: The template of this CreateAppsInDeploymentV3.
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -103,7 +100,6 @@ class CreateAppsInDeploymentV3:
     def annotations(self):
         """Gets the annotations of this CreateAppsInDeploymentV3.
 
-
         :return: The annotations of this CreateAppsInDeploymentV3.
         :rtype: :class:`huaweicloudsdkief.v1.Annotations`
         """
@@ -112,7 +108,6 @@ class CreateAppsInDeploymentV3:
     @annotations.setter
     def annotations(self, annotations):
         """Sets the annotations of this CreateAppsInDeploymentV3.
-
 
         :param annotations: The annotations of this CreateAppsInDeploymentV3.
         :type annotations: :class:`huaweicloudsdkief.v1.Annotations`

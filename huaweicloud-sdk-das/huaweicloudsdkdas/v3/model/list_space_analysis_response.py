@@ -17,7 +17,6 @@ class ListSpaceAnalysisResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListSpaceAnalysisResponse(SdkResponse):
     def instance_info(self):
         """Gets the instance_info of this ListSpaceAnalysisResponse.
 
-
         :return: The instance_info of this ListSpaceAnalysisResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.InstanceSpaceInfo`
         """
@@ -116,7 +114,6 @@ class ListSpaceAnalysisResponse(SdkResponse):
     @instance_info.setter
     def instance_info(self, instance_info):
         """Sets the instance_info of this ListSpaceAnalysisResponse.
-
 
         :param instance_info: The instance_info of this ListSpaceAnalysisResponse.
         :type instance_info: :class:`huaweicloudsdkdas.v3.InstanceSpaceInfo`

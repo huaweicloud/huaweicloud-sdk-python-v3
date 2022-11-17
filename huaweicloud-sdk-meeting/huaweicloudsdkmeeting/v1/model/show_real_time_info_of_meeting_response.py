@@ -17,7 +17,6 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
     def conf_info(self):
         """Gets the conf_info of this ShowRealTimeInfoOfMeetingResponse.
 
-
         :return: The conf_info of this ShowRealTimeInfoOfMeetingResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RealTimeConfInfo`
         """
@@ -116,7 +114,6 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
     @conf_info.setter
     def conf_info(self, conf_info):
         """Sets the conf_info of this ShowRealTimeInfoOfMeetingResponse.
-
 
         :param conf_info: The conf_info of this ShowRealTimeInfoOfMeetingResponse.
         :type conf_info: :class:`huaweicloudsdkmeeting.v1.RealTimeConfInfo`

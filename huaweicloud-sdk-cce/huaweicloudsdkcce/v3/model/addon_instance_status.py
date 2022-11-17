@@ -17,7 +17,6 @@ class AddonInstanceStatus:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -161,7 +160,6 @@ class AddonInstanceStatus:
     def current_version(self):
         """Gets the current_version of this AddonInstanceStatus.
 
-
         :return: The current_version of this AddonInstanceStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.Versions`
         """
@@ -170,7 +168,6 @@ class AddonInstanceStatus:
     @current_version.setter
     def current_version(self, current_version):
         """Sets the current_version of this AddonInstanceStatus.
-
 
         :param current_version: The current_version of this AddonInstanceStatus.
         :type current_version: :class:`huaweicloudsdkcce.v3.Versions`

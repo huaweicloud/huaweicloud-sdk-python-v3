@@ -17,7 +17,6 @@ class DeleteRepoMemberResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class DeleteRepoMemberResponse(SdkResponse):
     def error(self):
         """Gets the error of this DeleteRepoMemberResponse.
 
-
         :return: The error of this DeleteRepoMemberResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class DeleteRepoMemberResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this DeleteRepoMemberResponse.
-
 
         :param error: The error of this DeleteRepoMemberResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class DeleteRepoMemberResponse(SdkResponse):
     def result(self):
         """Gets the result of this DeleteRepoMemberResponse.
 
-
         :return: The result of this DeleteRepoMemberResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Empty`
         """
@@ -92,7 +88,6 @@ class DeleteRepoMemberResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this DeleteRepoMemberResponse.
-
 
         :param result: The result of this DeleteRepoMemberResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.Empty`

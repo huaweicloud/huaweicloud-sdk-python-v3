@@ -17,7 +17,6 @@ class WatermarkRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class WatermarkRequest:
     def input(self):
         """Gets the input of this WatermarkRequest.
 
-
         :return: The input of this WatermarkRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -86,7 +84,6 @@ class WatermarkRequest:
     @input.setter
     def input(self, input):
         """Sets the input of this WatermarkRequest.
-
 
         :param input: The input of this WatermarkRequest.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -141,7 +138,6 @@ class WatermarkRequest:
     def image_watermark(self):
         """Gets the image_watermark of this WatermarkRequest.
 
-
         :return: The image_watermark of this WatermarkRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.ImageWatermark`
         """
@@ -150,7 +146,6 @@ class WatermarkRequest:
     @image_watermark.setter
     def image_watermark(self, image_watermark):
         """Sets the image_watermark of this WatermarkRequest.
-
 
         :param image_watermark: The image_watermark of this WatermarkRequest.
         :type image_watermark: :class:`huaweicloudsdkmpc.v1.ImageWatermark`
@@ -161,7 +156,6 @@ class WatermarkRequest:
     def text_watermark(self):
         """Gets the text_watermark of this WatermarkRequest.
 
-
         :return: The text_watermark of this WatermarkRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.TextWatermark`
         """
@@ -170,7 +164,6 @@ class WatermarkRequest:
     @text_watermark.setter
     def text_watermark(self, text_watermark):
         """Sets the text_watermark of this WatermarkRequest.
-
 
         :param text_watermark: The text_watermark of this WatermarkRequest.
         :type text_watermark: :class:`huaweicloudsdkmpc.v1.TextWatermark`

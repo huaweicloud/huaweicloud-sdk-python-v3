@@ -17,7 +17,6 @@ class UpgradeEdgeNodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpgradeEdgeNodeResponse(SdkResponse):
     def body(self):
         """Gets the body of this UpgradeEdgeNodeResponse.
 
-
         :return: The body of this UpgradeEdgeNodeResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class UpgradeEdgeNodeResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this UpgradeEdgeNodeResponse.
-
 
         :param body: The body of this UpgradeEdgeNodeResponse.
         :type body: str

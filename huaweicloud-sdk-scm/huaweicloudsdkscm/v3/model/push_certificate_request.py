@@ -17,7 +17,6 @@ class PushCertificateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class PushCertificateRequest:
     def body(self):
         """Gets the body of this PushCertificateRequest.
 
-
         :return: The body of this PushCertificateRequest.
         :rtype: :class:`huaweicloudsdkscm.v3.PushCertificateRequestBody`
         """
@@ -86,7 +84,6 @@ class PushCertificateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this PushCertificateRequest.
-
 
         :param body: The body of this PushCertificateRequest.
         :type body: :class:`huaweicloudsdkscm.v3.PushCertificateRequestBody`

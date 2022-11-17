@@ -17,7 +17,6 @@ class CreateVolumeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateVolumeRequest:
     def body(self):
         """Gets the body of this CreateVolumeRequest.
 
-
         :return: The body of this CreateVolumeRequest.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateVolumeReq`
         """
@@ -115,7 +113,6 @@ class CreateVolumeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateVolumeRequest.
-
 
         :param body: The body of this CreateVolumeRequest.
         :type body: :class:`huaweicloudsdkcae.v1.CreateVolumeReq`

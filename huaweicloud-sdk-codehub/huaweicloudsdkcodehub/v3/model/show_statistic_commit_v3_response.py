@@ -17,7 +17,6 @@ class ShowStatisticCommitV3Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowStatisticCommitV3Response(SdkResponse):
     def error(self):
         """Gets the error of this ShowStatisticCommitV3Response.
 
-
         :return: The error of this ShowStatisticCommitV3Response.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ShowStatisticCommitV3Response(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ShowStatisticCommitV3Response.
-
 
         :param error: The error of this ShowStatisticCommitV3Response.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class ShowStatisticCommitV3Response(SdkResponse):
     def result(self):
         """Gets the result of this ShowStatisticCommitV3Response.
 
-
         :return: The result of this ShowStatisticCommitV3Response.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitStatistic`
         """
@@ -92,7 +88,6 @@ class ShowStatisticCommitV3Response(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ShowStatisticCommitV3Response.
-
 
         :param result: The result of this ShowStatisticCommitV3Response.
         :type result: :class:`huaweicloudsdkcodehub.v3.CommitStatistic`

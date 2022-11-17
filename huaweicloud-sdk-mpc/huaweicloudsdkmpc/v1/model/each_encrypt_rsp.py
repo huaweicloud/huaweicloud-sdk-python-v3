@@ -17,7 +17,6 @@ class EachEncryptRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -193,7 +192,6 @@ class EachEncryptRsp:
     def input(self):
         """Gets the input of this EachEncryptRsp.
 
-
         :return: The input of this EachEncryptRsp.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -202,7 +200,6 @@ class EachEncryptRsp:
     @input.setter
     def input(self, input):
         """Sets the input of this EachEncryptRsp.
-
 
         :param input: The input of this EachEncryptRsp.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -213,7 +210,6 @@ class EachEncryptRsp:
     def output(self):
         """Gets the output of this EachEncryptRsp.
 
-
         :return: The output of this EachEncryptRsp.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -222,7 +218,6 @@ class EachEncryptRsp:
     @output.setter
     def output(self, output):
         """Sets the output of this EachEncryptRsp.
-
 
         :param output: The output of this EachEncryptRsp.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

@@ -17,7 +17,6 @@ class ShowResourceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class ShowResourceResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowResourceResponse.
 
-
         :return: The name of this ShowResourceResponse.
         :rtype: str
         """
@@ -93,7 +91,6 @@ class ShowResourceResponse(SdkResponse):
     @name.setter
     def name(self, name):
         """Sets the name of this ShowResourceResponse.
-
 
         :param name: The name of this ShowResourceResponse.
         :type name: str
@@ -104,7 +101,6 @@ class ShowResourceResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowResourceResponse.
 
-
         :return: The type of this ShowResourceResponse.
         :rtype: str
         """
@@ -113,7 +109,6 @@ class ShowResourceResponse(SdkResponse):
     @type.setter
     def type(self, type):
         """Sets the type of this ShowResourceResponse.
-
 
         :param type: The type of this ShowResourceResponse.
         :type type: str
@@ -146,7 +141,6 @@ class ShowResourceResponse(SdkResponse):
     def depend_files(self):
         """Gets the depend_files of this ShowResourceResponse.
 
-
         :return: The depend_files of this ShowResourceResponse.
         :rtype: list[str]
         """
@@ -155,7 +149,6 @@ class ShowResourceResponse(SdkResponse):
     @depend_files.setter
     def depend_files(self, depend_files):
         """Sets the depend_files of this ShowResourceResponse.
-
 
         :param depend_files: The depend_files of this ShowResourceResponse.
         :type depend_files: list[str]
@@ -166,7 +159,6 @@ class ShowResourceResponse(SdkResponse):
     def desc(self):
         """Gets the desc of this ShowResourceResponse.
 
-
         :return: The desc of this ShowResourceResponse.
         :rtype: str
         """
@@ -175,7 +167,6 @@ class ShowResourceResponse(SdkResponse):
     @desc.setter
     def desc(self, desc):
         """Sets the desc of this ShowResourceResponse.
-
 
         :param desc: The desc of this ShowResourceResponse.
         :type desc: str

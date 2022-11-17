@@ -17,7 +17,6 @@ class LiveRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class LiveRequest:
     def body(self):
         """Gets the body of this LiveRequest.
 
-
         :return: The body of this LiveRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestSetLiveReqBody`
         """
@@ -114,7 +112,6 @@ class LiveRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this LiveRequest.
-
 
         :param body: The body of this LiveRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestSetLiveReqBody`

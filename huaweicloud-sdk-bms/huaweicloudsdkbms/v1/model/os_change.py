@@ -17,7 +17,6 @@ class OsChange:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class OsChange:
     def metadata(self):
         """Gets the metadata of this OsChange.
 
-
         :return: The metadata of this OsChange.
         :rtype: :class:`huaweicloudsdkbms.v1.MetadataInstall`
         """
@@ -173,7 +171,6 @@ class OsChange:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this OsChange.
-
 
         :param metadata: The metadata of this OsChange.
         :type metadata: :class:`huaweicloudsdkbms.v1.MetadataInstall`

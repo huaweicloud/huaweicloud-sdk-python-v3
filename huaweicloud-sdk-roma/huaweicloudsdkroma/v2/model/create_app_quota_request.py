@@ -17,7 +17,6 @@ class CreateAppQuotaRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateAppQuotaRequest:
     def body(self):
         """Gets the body of this CreateAppQuotaRequest.
 
-
         :return: The body of this CreateAppQuotaRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`
         """
@@ -86,7 +84,6 @@ class CreateAppQuotaRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAppQuotaRequest.
-
 
         :param body: The body of this CreateAppQuotaRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`

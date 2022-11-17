@@ -17,7 +17,6 @@ class ScopeProjectOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ScopeProjectOption:
     def domain(self):
         """Gets the domain of this ScopeProjectOption.
 
-
         :return: The domain of this ScopeProjectOption.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
         """
@@ -116,7 +114,6 @@ class ScopeProjectOption:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this ScopeProjectOption.
-
 
         :param domain: The domain of this ScopeProjectOption.
         :type domain: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`

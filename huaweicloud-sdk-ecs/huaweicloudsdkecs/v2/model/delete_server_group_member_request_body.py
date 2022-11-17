@@ -17,7 +17,6 @@ class DeleteServerGroupMemberRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class DeleteServerGroupMemberRequestBody:
     def remove_member(self):
         """Gets the remove_member of this DeleteServerGroupMemberRequestBody.
 
-
         :return: The remove_member of this DeleteServerGroupMemberRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerGroupMember`
         """
@@ -57,7 +55,6 @@ class DeleteServerGroupMemberRequestBody:
     @remove_member.setter
     def remove_member(self, remove_member):
         """Sets the remove_member of this DeleteServerGroupMemberRequestBody.
-
 
         :param remove_member: The remove_member of this DeleteServerGroupMemberRequestBody.
         :type remove_member: :class:`huaweicloudsdkecs.v2.ServerGroupMember`

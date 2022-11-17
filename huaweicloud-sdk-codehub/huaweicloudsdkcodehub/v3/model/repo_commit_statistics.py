@@ -17,7 +17,6 @@ class RepoCommitStatistics:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -150,7 +149,6 @@ class RepoCommitStatistics:
     def event(self):
         """Gets the event of this RepoCommitStatistics.
 
-
         :return: The event of this RepoCommitStatistics.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsEvent`
         """
@@ -159,7 +157,6 @@ class RepoCommitStatistics:
     @event.setter
     def event(self, event):
         """Sets the event of this RepoCommitStatistics.
-
 
         :param event: The event of this RepoCommitStatistics.
         :type event: :class:`huaweicloudsdkcodehub.v3.RepoStatisticsEvent`

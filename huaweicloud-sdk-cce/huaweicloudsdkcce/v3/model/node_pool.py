@@ -17,7 +17,6 @@ class NodePool:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -117,7 +116,6 @@ class NodePool:
     def metadata(self):
         """Gets the metadata of this NodePool.
 
-
         :return: The metadata of this NodePool.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
         """
@@ -126,7 +124,6 @@ class NodePool:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this NodePool.
-
 
         :param metadata: The metadata of this NodePool.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
@@ -137,7 +134,6 @@ class NodePool:
     def spec(self):
         """Gets the spec of this NodePool.
 
-
         :return: The spec of this NodePool.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
         """
@@ -146,7 +142,6 @@ class NodePool:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this NodePool.
-
 
         :param spec: The spec of this NodePool.
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
@@ -157,7 +152,6 @@ class NodePool:
     def status(self):
         """Gets the status of this NodePool.
 
-
         :return: The status of this NodePool.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
         """
@@ -166,7 +160,6 @@ class NodePool:
     @status.setter
     def status(self, status):
         """Sets the status of this NodePool.
-
 
         :param status: The status of this NodePool.
         :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`

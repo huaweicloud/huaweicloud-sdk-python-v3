@@ -17,7 +17,6 @@ class CreateTranscodingReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -153,7 +152,6 @@ class CreateTranscodingReq:
     def input(self):
         """Gets the input of this CreateTranscodingReq.
 
-
         :return: The input of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -162,7 +160,6 @@ class CreateTranscodingReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateTranscodingReq.
-
 
         :param input: The input of this CreateTranscodingReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -173,7 +170,6 @@ class CreateTranscodingReq:
     def output(self):
         """Gets the output of this CreateTranscodingReq.
 
-
         :return: The output of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -182,7 +178,6 @@ class CreateTranscodingReq:
     @output.setter
     def output(self, output):
         """Sets the output of this CreateTranscodingReq.
-
 
         :param output: The output of this CreateTranscodingReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -303,7 +298,6 @@ class CreateTranscodingReq:
     def thumbnail(self):
         """Gets the thumbnail of this CreateTranscodingReq.
 
-
         :return: The thumbnail of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Thumbnail`
         """
@@ -312,7 +306,6 @@ class CreateTranscodingReq:
     @thumbnail.setter
     def thumbnail(self, thumbnail):
         """Sets the thumbnail of this CreateTranscodingReq.
-
 
         :param thumbnail: The thumbnail of this CreateTranscodingReq.
         :type thumbnail: :class:`huaweicloudsdkmpc.v1.Thumbnail`
@@ -345,7 +338,6 @@ class CreateTranscodingReq:
     def subtitle(self):
         """Gets the subtitle of this CreateTranscodingReq.
 
-
         :return: The subtitle of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Subtitle`
         """
@@ -354,7 +346,6 @@ class CreateTranscodingReq:
     @subtitle.setter
     def subtitle(self, subtitle):
         """Sets the subtitle of this CreateTranscodingReq.
-
 
         :param subtitle: The subtitle of this CreateTranscodingReq.
         :type subtitle: :class:`huaweicloudsdkmpc.v1.Subtitle`
@@ -365,7 +356,6 @@ class CreateTranscodingReq:
     def encryption(self):
         """Gets the encryption of this CreateTranscodingReq.
 
-
         :return: The encryption of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Encryption`
         """
@@ -374,7 +364,6 @@ class CreateTranscodingReq:
     @encryption.setter
     def encryption(self, encryption):
         """Sets the encryption of this CreateTranscodingReq.
-
 
         :param encryption: The encryption of this CreateTranscodingReq.
         :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`
@@ -385,7 +374,6 @@ class CreateTranscodingReq:
     def crop(self):
         """Gets the crop of this CreateTranscodingReq.
 
-
         :return: The crop of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Crop`
         """
@@ -394,7 +382,6 @@ class CreateTranscodingReq:
     @crop.setter
     def crop(self, crop):
         """Sets the crop of this CreateTranscodingReq.
-
 
         :param crop: The crop of this CreateTranscodingReq.
         :type crop: :class:`huaweicloudsdkmpc.v1.Crop`
@@ -405,7 +392,6 @@ class CreateTranscodingReq:
     def audio_track(self):
         """Gets the audio_track of this CreateTranscodingReq.
 
-
         :return: The audio_track of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.AudioTrack`
         """
@@ -414,7 +400,6 @@ class CreateTranscodingReq:
     @audio_track.setter
     def audio_track(self, audio_track):
         """Sets the audio_track of this CreateTranscodingReq.
-
 
         :param audio_track: The audio_track of this CreateTranscodingReq.
         :type audio_track: :class:`huaweicloudsdkmpc.v1.AudioTrack`
@@ -425,7 +410,6 @@ class CreateTranscodingReq:
     def multi_audio(self):
         """Gets the multi_audio of this CreateTranscodingReq.
 
-
         :return: The multi_audio of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.MultiAudio`
         """
@@ -434,7 +418,6 @@ class CreateTranscodingReq:
     @multi_audio.setter
     def multi_audio(self, multi_audio):
         """Sets the multi_audio of this CreateTranscodingReq.
-
 
         :param multi_audio: The multi_audio of this CreateTranscodingReq.
         :type multi_audio: :class:`huaweicloudsdkmpc.v1.MultiAudio`
@@ -445,7 +428,6 @@ class CreateTranscodingReq:
     def video_process(self):
         """Gets the video_process of this CreateTranscodingReq.
 
-
         :return: The video_process of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoProcess`
         """
@@ -454,7 +436,6 @@ class CreateTranscodingReq:
     @video_process.setter
     def video_process(self, video_process):
         """Sets the video_process of this CreateTranscodingReq.
-
 
         :param video_process: The video_process of this CreateTranscodingReq.
         :type video_process: :class:`huaweicloudsdkmpc.v1.VideoProcess`
@@ -465,7 +446,6 @@ class CreateTranscodingReq:
     def audio_process(self):
         """Gets the audio_process of this CreateTranscodingReq.
 
-
         :return: The audio_process of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.AudioProcess`
         """
@@ -474,7 +454,6 @@ class CreateTranscodingReq:
     @audio_process.setter
     def audio_process(self, audio_process):
         """Sets the audio_process of this CreateTranscodingReq.
-
 
         :param audio_process: The audio_process of this CreateTranscodingReq.
         :type audio_process: :class:`huaweicloudsdkmpc.v1.AudioProcess`

@@ -17,7 +17,6 @@ class VaultCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -131,7 +130,6 @@ class VaultCreate:
     def billing(self):
         """Gets the billing of this VaultCreate.
 
-
         :return: The billing of this VaultCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.BillingCreate`
         """
@@ -140,7 +138,6 @@ class VaultCreate:
     @billing.setter
     def billing(self, billing):
         """Sets the billing of this VaultCreate.
-
 
         :param billing: The billing of this VaultCreate.
         :type billing: :class:`huaweicloudsdkcbr.v1.BillingCreate`
@@ -283,7 +280,6 @@ class VaultCreate:
     def bind_rules(self):
         """Gets the bind_rules of this VaultCreate.
 
-
         :return: The bind_rules of this VaultCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
@@ -292,7 +288,6 @@ class VaultCreate:
     @bind_rules.setter
     def bind_rules(self, bind_rules):
         """Sets the bind_rules of this VaultCreate.
-
 
         :param bind_rules: The bind_rules of this VaultCreate.
         :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`

@@ -17,7 +17,6 @@ class BatchAddDeleteTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class BatchAddDeleteTagsRequest:
     def body(self):
         """Gets the body of this BatchAddDeleteTagsRequest.
 
-
         :return: The body of this BatchAddDeleteTagsRequest.
         :rtype: :class:`huaweicloudsdkief.v1.BachTags`
         """
@@ -143,7 +141,6 @@ class BatchAddDeleteTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchAddDeleteTagsRequest.
-
 
         :param body: The body of this BatchAddDeleteTagsRequest.
         :type body: :class:`huaweicloudsdkief.v1.BachTags`

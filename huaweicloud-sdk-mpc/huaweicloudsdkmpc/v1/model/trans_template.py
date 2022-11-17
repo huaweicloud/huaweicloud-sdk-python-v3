@@ -17,7 +17,6 @@ class TransTemplate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -90,7 +89,6 @@ class TransTemplate:
     def video(self):
         """Gets the video of this TransTemplate.
 
-
         :return: The video of this TransTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.Video`
         """
@@ -99,7 +97,6 @@ class TransTemplate:
     @video.setter
     def video(self, video):
         """Sets the video of this TransTemplate.
-
 
         :param video: The video of this TransTemplate.
         :type video: :class:`huaweicloudsdkmpc.v1.Video`
@@ -110,7 +107,6 @@ class TransTemplate:
     def audio(self):
         """Gets the audio of this TransTemplate.
 
-
         :return: The audio of this TransTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
@@ -119,7 +115,6 @@ class TransTemplate:
     @audio.setter
     def audio(self, audio):
         """Sets the audio of this TransTemplate.
-
 
         :param audio: The audio of this TransTemplate.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -130,7 +125,6 @@ class TransTemplate:
     def common(self):
         """Gets the common of this TransTemplate.
 
-
         :return: The common of this TransTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
@@ -139,7 +133,6 @@ class TransTemplate:
     @common.setter
     def common(self, common):
         """Sets the common of this TransTemplate.
-
 
         :param common: The common of this TransTemplate.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

@@ -17,7 +17,6 @@ class EndpointDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class EndpointDetail:
     def resource_type(self):
         """Gets the resource_type of this EndpointDetail.
 
-
         :return: The resource_type of this EndpointDetail.
         :rtype: :class:`huaweicloudsdkga.v1.EndpointType`
         """
@@ -201,7 +199,6 @@ class EndpointDetail:
     @resource_type.setter
     def resource_type(self, resource_type):
         """Sets the resource_type of this EndpointDetail.
-
 
         :param resource_type: The resource_type of this EndpointDetail.
         :type resource_type: :class:`huaweicloudsdkga.v1.EndpointType`
@@ -212,7 +209,6 @@ class EndpointDetail:
     def status(self):
         """Gets the status of this EndpointDetail.
 
-
         :return: The status of this EndpointDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
@@ -221,7 +217,6 @@ class EndpointDetail:
     @status.setter
     def status(self, status):
         """Sets the status of this EndpointDetail.
-
 
         :param status: The status of this EndpointDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -364,7 +359,6 @@ class EndpointDetail:
     def frozen_info(self):
         """Gets the frozen_info of this EndpointDetail.
 
-
         :return: The frozen_info of this EndpointDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
         """
@@ -373,7 +367,6 @@ class EndpointDetail:
     @frozen_info.setter
     def frozen_info(self, frozen_info):
         """Sets the frozen_info of this EndpointDetail.
-
 
         :param frozen_info: The frozen_info of this EndpointDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`

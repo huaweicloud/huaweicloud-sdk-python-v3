@@ -17,7 +17,6 @@ class ListUserDetailRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -33,7 +32,7 @@ class ListUserDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: 用户id。
+        :param user_id: 用户ID。
         :type user_id: str
         """
         
@@ -48,7 +47,7 @@ class ListUserDetailRequest:
     def user_id(self):
         """Gets the user_id of this ListUserDetailRequest.
 
-        用户id。
+        用户ID。
 
         :return: The user_id of this ListUserDetailRequest.
         :rtype: str
@@ -59,7 +58,7 @@ class ListUserDetailRequest:
     def user_id(self, user_id):
         """Sets the user_id of this ListUserDetailRequest.
 
-        用户id。
+        用户ID。
 
         :param user_id: The user_id of this ListUserDetailRequest.
         :type user_id: str

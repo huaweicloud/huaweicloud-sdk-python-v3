@@ -17,7 +17,6 @@ class CreateRouteTableRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
     sensitive_list.append('x_client_token')
 
@@ -107,7 +106,6 @@ class CreateRouteTableRequest:
     def body(self):
         """Gets the body of this CreateRouteTableRequest.
 
-
         :return: The body of this CreateRouteTableRequest.
         :rtype: :class:`huaweicloudsdker.v3.CreateRouteTableRequestBody`
         """
@@ -116,7 +114,6 @@ class CreateRouteTableRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRouteTableRequest.
-
 
         :param body: The body of this CreateRouteTableRequest.
         :type body: :class:`huaweicloudsdker.v3.CreateRouteTableRequestBody`

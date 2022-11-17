@@ -17,7 +17,6 @@ class ShowAuditlogDownloadLinkRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ShowAuditlogDownloadLinkRequest:
     def body(self):
         """Gets the body of this ShowAuditlogDownloadLinkRequest.
 
-
         :return: The body of this ShowAuditlogDownloadLinkRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.GenerateAuditlogDownloadLinkRequest`
         """
@@ -115,7 +113,6 @@ class ShowAuditlogDownloadLinkRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowAuditlogDownloadLinkRequest.
-
 
         :param body: The body of this ShowAuditlogDownloadLinkRequest.
         :type body: :class:`huaweicloudsdkrds.v3.GenerateAuditlogDownloadLinkRequest`

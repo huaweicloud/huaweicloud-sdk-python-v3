@@ -17,7 +17,6 @@ class StartAppResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class StartAppResponse(SdkResponse):
     def state(self):
         """Gets the state of this StartAppResponse.
 
-
         :return: The state of this StartAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppState`
         """
@@ -94,7 +92,6 @@ class StartAppResponse(SdkResponse):
     @state.setter
     def state(self, state):
         """Sets the state of this StartAppResponse.
-
 
         :param state: The state of this StartAppResponse.
         :type state: :class:`huaweicloudsdkcloudrtc.v2.AppState`
@@ -105,7 +102,6 @@ class StartAppResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this StartAppResponse.
 
-
         :return: The x_request_id of this StartAppResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class StartAppResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this StartAppResponse.
-
 
         :param x_request_id: The x_request_id of this StartAppResponse.
         :type x_request_id: str

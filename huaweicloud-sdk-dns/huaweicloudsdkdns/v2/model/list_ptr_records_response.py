@@ -17,7 +17,6 @@ class ListPtrRecordsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListPtrRecordsResponse(SdkResponse):
     def links(self):
         """Gets the links of this ListPtrRecordsResponse.
 
-
         :return: The links of this ListPtrRecordsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -72,7 +70,6 @@ class ListPtrRecordsResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ListPtrRecordsResponse.
-
 
         :param links: The links of this ListPtrRecordsResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -83,7 +80,6 @@ class ListPtrRecordsResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ListPtrRecordsResponse.
 
-
         :return: The metadata of this ListPtrRecordsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
@@ -92,7 +88,6 @@ class ListPtrRecordsResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ListPtrRecordsResponse.
-
 
         :param metadata: The metadata of this ListPtrRecordsResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
@@ -103,7 +98,6 @@ class ListPtrRecordsResponse(SdkResponse):
     def floatingips(self):
         """Gets the floatingips of this ListPtrRecordsResponse.
 
-
         :return: The floatingips of this ListPtrRecordsResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]
         """
@@ -112,7 +106,6 @@ class ListPtrRecordsResponse(SdkResponse):
     @floatingips.setter
     def floatingips(self, floatingips):
         """Sets the floatingips of this ListPtrRecordsResponse.
-
 
         :param floatingips: The floatingips of this ListPtrRecordsResponse.
         :type floatingips: list[:class:`huaweicloudsdkdns.v2.ListPtrRecordsFloatingResp`]

@@ -17,7 +17,6 @@ class UpdateResJobRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -124,7 +123,6 @@ class UpdateResJobRequestBody:
     def job_config(self):
         """Gets the job_config of this UpdateResJobRequestBody.
 
-
         :return: The job_config of this UpdateResJobRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
         """
@@ -133,7 +131,6 @@ class UpdateResJobRequestBody:
     @job_config.setter
     def job_config(self, job_config):
         """Sets the job_config of this UpdateResJobRequestBody.
-
 
         :param job_config: The job_config of this UpdateResJobRequestBody.
         :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`

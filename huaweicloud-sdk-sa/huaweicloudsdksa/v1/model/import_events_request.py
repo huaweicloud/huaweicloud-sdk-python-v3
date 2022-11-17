@@ -17,7 +17,6 @@ class ImportEventsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -62,7 +61,6 @@ class ImportEventsRequest:
     def x_language(self):
         """Gets the x_language of this ImportEventsRequest.
 
-
         :return: The x_language of this ImportEventsRequest.
         :rtype: str
         """
@@ -71,7 +69,6 @@ class ImportEventsRequest:
     @x_language.setter
     def x_language(self, x_language):
         """Sets the x_language of this ImportEventsRequest.
-
 
         :param x_language: The x_language of this ImportEventsRequest.
         :type x_language: str
@@ -104,7 +101,6 @@ class ImportEventsRequest:
     def body(self):
         """Gets the body of this ImportEventsRequest.
 
-
         :return: The body of this ImportEventsRequest.
         :rtype: :class:`huaweicloudsdksa.v1.Events`
         """
@@ -113,7 +109,6 @@ class ImportEventsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportEventsRequest.
-
 
         :param body: The body of this ImportEventsRequest.
         :type body: :class:`huaweicloudsdksa.v1.Events`

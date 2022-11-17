@@ -17,7 +17,6 @@ class TaskGroupResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -345,7 +344,6 @@ class TaskGroupResp:
     def error_reason(self):
         """Gets the error_reason of this TaskGroupResp.
 
-
         :return: The error_reason of this TaskGroupResp.
         :rtype: :class:`huaweicloudsdkoms.v2.ErrorReasonResp`
         """
@@ -354,7 +352,6 @@ class TaskGroupResp:
     @error_reason.setter
     def error_reason(self, error_reason):
         """Sets the error_reason of this TaskGroupResp.
-
 
         :param error_reason: The error_reason of this TaskGroupResp.
         :type error_reason: :class:`huaweicloudsdkoms.v2.ErrorReasonResp`
@@ -365,7 +362,6 @@ class TaskGroupResp:
     def src_node(self):
         """Gets the src_node of this TaskGroupResp.
 
-
         :return: The src_node of this TaskGroupResp.
         :rtype: :class:`huaweicloudsdkoms.v2.TaskGroupSrcNodeResp`
         """
@@ -374,7 +370,6 @@ class TaskGroupResp:
     @src_node.setter
     def src_node(self, src_node):
         """Sets the src_node of this TaskGroupResp.
-
 
         :param src_node: The src_node of this TaskGroupResp.
         :type src_node: :class:`huaweicloudsdkoms.v2.TaskGroupSrcNodeResp`
@@ -407,7 +402,6 @@ class TaskGroupResp:
     def dst_node(self):
         """Gets the dst_node of this TaskGroupResp.
 
-
         :return: The dst_node of this TaskGroupResp.
         :rtype: :class:`huaweicloudsdkoms.v2.TaskGroupDstNodeResp`
         """
@@ -416,7 +410,6 @@ class TaskGroupResp:
     @dst_node.setter
     def dst_node(self, dst_node):
         """Sets the dst_node of this TaskGroupResp.
-
 
         :param dst_node: The dst_node of this TaskGroupResp.
         :type dst_node: :class:`huaweicloudsdkoms.v2.TaskGroupDstNodeResp`
@@ -559,7 +552,6 @@ class TaskGroupResp:
     def smn_config(self):
         """Gets the smn_config of this TaskGroupResp.
 
-
         :return: The smn_config of this TaskGroupResp.
         :rtype: :class:`huaweicloudsdkoms.v2.SmnInfo`
         """
@@ -568,7 +560,6 @@ class TaskGroupResp:
     @smn_config.setter
     def smn_config(self, smn_config):
         """Sets the smn_config of this TaskGroupResp.
-
 
         :param smn_config: The smn_config of this TaskGroupResp.
         :type smn_config: :class:`huaweicloudsdkoms.v2.SmnInfo`
@@ -579,7 +570,6 @@ class TaskGroupResp:
     def source_cdn(self):
         """Gets the source_cdn of this TaskGroupResp.
 
-
         :return: The source_cdn of this TaskGroupResp.
         :rtype: :class:`huaweicloudsdkoms.v2.SourceCdnResp`
         """
@@ -588,7 +578,6 @@ class TaskGroupResp:
     @source_cdn.setter
     def source_cdn(self, source_cdn):
         """Sets the source_cdn of this TaskGroupResp.
-
 
         :param source_cdn: The source_cdn of this TaskGroupResp.
         :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnResp`
@@ -1017,7 +1006,6 @@ class TaskGroupResp:
     def failed_object_record(self):
         """Gets the failed_object_record of this TaskGroupResp.
 
-
         :return: The failed_object_record of this TaskGroupResp.
         :rtype: :class:`huaweicloudsdkoms.v2.FailedObjectRecordDto`
         """
@@ -1026,7 +1014,6 @@ class TaskGroupResp:
     @failed_object_record.setter
     def failed_object_record(self, failed_object_record):
         """Sets the failed_object_record of this TaskGroupResp.
-
 
         :param failed_object_record: The failed_object_record of this TaskGroupResp.
         :type failed_object_record: :class:`huaweicloudsdkoms.v2.FailedObjectRecordDto`

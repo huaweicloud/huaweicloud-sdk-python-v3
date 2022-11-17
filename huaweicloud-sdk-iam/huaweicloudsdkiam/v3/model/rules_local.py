@@ -17,7 +17,6 @@ class RulesLocal:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class RulesLocal:
     def user(self):
         """Gets the user of this RulesLocal.
 
-
         :return: The user of this RulesLocal.
         :rtype: :class:`huaweicloudsdkiam.v3.RulesLocalUser`
         """
@@ -72,7 +70,6 @@ class RulesLocal:
     @user.setter
     def user(self, user):
         """Sets the user of this RulesLocal.
-
 
         :param user: The user of this RulesLocal.
         :type user: :class:`huaweicloudsdkiam.v3.RulesLocalUser`
@@ -83,7 +80,6 @@ class RulesLocal:
     def group(self):
         """Gets the group of this RulesLocal.
 
-
         :return: The group of this RulesLocal.
         :rtype: :class:`huaweicloudsdkiam.v3.RulesLocalGroup`
         """
@@ -92,7 +88,6 @@ class RulesLocal:
     @group.setter
     def group(self, group):
         """Sets the group of this RulesLocal.
-
 
         :param group: The group of this RulesLocal.
         :type group: :class:`huaweicloudsdkiam.v3.RulesLocalGroup`
@@ -103,7 +98,6 @@ class RulesLocal:
     def groups(self):
         """Gets the groups of this RulesLocal.
 
-
         :return: The groups of this RulesLocal.
         :rtype: :class:`huaweicloudsdkiam.v3.RulesLocalGroups`
         """
@@ -112,7 +106,6 @@ class RulesLocal:
     @groups.setter
     def groups(self, groups):
         """Sets the groups of this RulesLocal.
-
 
         :param groups: The groups of this RulesLocal.
         :type groups: :class:`huaweicloudsdkiam.v3.RulesLocalGroups`

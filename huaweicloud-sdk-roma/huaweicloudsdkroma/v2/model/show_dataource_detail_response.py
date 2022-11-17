@@ -17,7 +17,6 @@ class ShowDataourceDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -353,7 +352,6 @@ class ShowDataourceDetailResponse(SdkResponse):
     def content(self):
         """Gets the content of this ShowDataourceDetailResponse.
 
-
         :return: The content of this ShowDataourceDetailResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.Content`
         """
@@ -362,7 +360,6 @@ class ShowDataourceDetailResponse(SdkResponse):
     @content.setter
     def content(self, content):
         """Sets the content of this ShowDataourceDetailResponse.
-
 
         :param content: The content of this ShowDataourceDetailResponse.
         :type content: :class:`huaweicloudsdkroma.v2.Content`

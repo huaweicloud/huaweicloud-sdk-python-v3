@@ -17,7 +17,6 @@ class CreateMpeCallBackRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateMpeCallBackRequest:
     def body(self):
         """Gets the body of this CreateMpeCallBackRequest.
 
-
         :return: The body of this CreateMpeCallBackRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.MpeCallBackReq`
         """
@@ -58,7 +56,6 @@ class CreateMpeCallBackRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateMpeCallBackRequest.
-
 
         :param body: The body of this CreateMpeCallBackRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.MpeCallBackReq`

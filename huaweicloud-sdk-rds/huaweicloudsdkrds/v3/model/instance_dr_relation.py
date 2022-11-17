@@ -17,7 +17,6 @@ class InstanceDrRelation:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class InstanceDrRelation:
     def master_instance(self):
         """Gets the master_instance of this InstanceDrRelation.
 
-
         :return: The master_instance of this InstanceDrRelation.
         :rtype: :class:`huaweicloudsdkrds.v3.MasterInstance`
         """
@@ -94,7 +92,6 @@ class InstanceDrRelation:
     @master_instance.setter
     def master_instance(self, master_instance):
         """Sets the master_instance of this InstanceDrRelation.
-
 
         :param master_instance: The master_instance of this InstanceDrRelation.
         :type master_instance: :class:`huaweicloudsdkrds.v3.MasterInstance`

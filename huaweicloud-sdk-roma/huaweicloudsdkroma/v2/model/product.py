@@ -17,7 +17,6 @@ class Product:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -461,7 +460,6 @@ class Product:
     def created_user(self):
         """Gets the created_user of this Product.
 
-
         :return: The created_user of this Product.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -470,7 +468,6 @@ class Product:
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this Product.
-
 
         :param created_user: The created_user of this Product.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -481,7 +478,6 @@ class Product:
     def last_updated_user(self):
         """Gets the last_updated_user of this Product.
 
-
         :return: The last_updated_user of this Product.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -490,7 +486,6 @@ class Product:
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this Product.
-
 
         :param last_updated_user: The last_updated_user of this Product.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -501,7 +496,6 @@ class Product:
     def authentication(self):
         """Gets the authentication of this Product.
 
-
         :return: The authentication of this Product.
         :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
         """
@@ -510,7 +504,6 @@ class Product:
     @authentication.setter
     def authentication(self, authentication):
         """Sets the authentication of this Product.
-
 
         :param authentication: The authentication of this Product.
         :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`

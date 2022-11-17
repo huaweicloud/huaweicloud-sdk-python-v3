@@ -17,7 +17,6 @@ class RecognizeFlightItineraryResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeFlightItineraryResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeFlightItineraryResponse.
 
-
         :return: The result of this RecognizeFlightItineraryResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.FlightItineraryResult`
         """
@@ -58,7 +56,6 @@ class RecognizeFlightItineraryResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeFlightItineraryResponse.
-
 
         :param result: The result of this RecognizeFlightItineraryResponse.
         :type result: :class:`huaweicloudsdkocr.v1.FlightItineraryResult`

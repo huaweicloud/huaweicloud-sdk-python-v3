@@ -17,7 +17,6 @@ class CreateExtractAudioTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateExtractAudioTaskRequest:
     def body(self):
         """Gets the body of this CreateExtractAudioTaskRequest.
 
-
         :return: The body of this CreateExtractAudioTaskRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.ExtractAudioTaskReq`
         """
@@ -58,7 +56,6 @@ class CreateExtractAudioTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateExtractAudioTaskRequest.
-
 
         :param body: The body of this CreateExtractAudioTaskRequest.
         :type body: :class:`huaweicloudsdkvod.v1.ExtractAudioTaskReq`

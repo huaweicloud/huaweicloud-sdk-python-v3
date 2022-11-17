@@ -17,7 +17,6 @@ class CreateRuleActionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateRuleActionRequest:
     def body(self):
         """Gets the body of this CreateRuleActionRequest.
 
-
         :return: The body of this CreateRuleActionRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.AddActionReq`
         """
@@ -87,7 +85,6 @@ class CreateRuleActionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRuleActionRequest.
-
 
         :param body: The body of this CreateRuleActionRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.AddActionReq`

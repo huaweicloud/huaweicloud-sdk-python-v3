@@ -17,7 +17,6 @@ class UpdateFaceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateFaceRequest:
     def body(self):
         """Gets the body of this UpdateFaceRequest.
 
-
         :return: The body of this UpdateFaceRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.UpdateFaceReq`
         """
@@ -86,7 +84,6 @@ class UpdateFaceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateFaceRequest.
-
 
         :param body: The body of this UpdateFaceRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.UpdateFaceReq`

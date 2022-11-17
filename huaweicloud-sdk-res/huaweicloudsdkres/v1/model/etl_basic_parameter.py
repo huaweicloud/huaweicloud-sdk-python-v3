@@ -17,7 +17,6 @@ class EtlBasicParameter:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class EtlBasicParameter:
     def rank_etl_filter(self):
         """Gets the rank_etl_filter of this EtlBasicParameter.
 
-
         :return: The rank_etl_filter of this EtlBasicParameter.
         :rtype: :class:`huaweicloudsdkres.v1.RankETLFilter`
         """
@@ -116,7 +114,6 @@ class EtlBasicParameter:
     @rank_etl_filter.setter
     def rank_etl_filter(self, rank_etl_filter):
         """Sets the rank_etl_filter of this EtlBasicParameter.
-
 
         :param rank_etl_filter: The rank_etl_filter of this EtlBasicParameter.
         :type rank_etl_filter: :class:`huaweicloudsdkres.v1.RankETLFilter`

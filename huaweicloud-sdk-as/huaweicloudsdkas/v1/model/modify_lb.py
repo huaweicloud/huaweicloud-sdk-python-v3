@@ -17,7 +17,6 @@ class ModifyLb:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class ModifyLb:
     def lbaas_listener(self):
         """Gets the lbaas_listener of this ModifyLb.
 
-
         :return: The lbaas_listener of this ModifyLb.
         :rtype: :class:`huaweicloudsdkas.v1.LbaasListener`
         """
@@ -79,7 +77,6 @@ class ModifyLb:
     @lbaas_listener.setter
     def lbaas_listener(self, lbaas_listener):
         """Sets the lbaas_listener of this ModifyLb.
-
 
         :param lbaas_listener: The lbaas_listener of this ModifyLb.
         :type lbaas_listener: :class:`huaweicloudsdkas.v1.LbaasListener`

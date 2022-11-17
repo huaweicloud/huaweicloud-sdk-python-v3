@@ -17,7 +17,6 @@ class ListDomainBandwidthPeakResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListDomainBandwidthPeakResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this ListDomainBandwidthPeakResponse.
 
-
         :return: The x_request_id of this ListDomainBandwidthPeakResponse.
         :rtype: str
         """
@@ -87,7 +85,6 @@ class ListDomainBandwidthPeakResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ListDomainBandwidthPeakResponse.
-
 
         :param x_request_id: The x_request_id of this ListDomainBandwidthPeakResponse.
         :type x_request_id: str

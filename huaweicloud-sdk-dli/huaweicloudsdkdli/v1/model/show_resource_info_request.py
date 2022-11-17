@@ -17,7 +17,6 @@ class ShowResourceInfoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowResourceInfoRequest:
     def group(self):
         """Gets the group of this ShowResourceInfoRequest.
 
-
         :return: The group of this ShowResourceInfoRequest.
         :rtype: str
         """
@@ -86,7 +84,6 @@ class ShowResourceInfoRequest:
     @group.setter
     def group(self, group):
         """Sets the group of this ShowResourceInfoRequest.
-
 
         :param group: The group of this ShowResourceInfoRequest.
         :type group: str

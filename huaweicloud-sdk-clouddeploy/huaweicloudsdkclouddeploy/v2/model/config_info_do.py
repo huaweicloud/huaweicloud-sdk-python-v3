@@ -17,7 +17,6 @@ class ConfigInfoDO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -47,11 +46,11 @@ class ConfigInfoDO:
 
         :param name: 部署参数名称，用户可自定义
         :type name: str
-        :param type: 类型，如果填写name字段，则type必选
+        :param type: 类型，如果填写name字段，则type必选,若type为空则默认为text
         :type type: str
         :param description: 描述
         :type description: str
-        :param value: 部署参数值，如果填写name字段，则value必选
+        :param value: 部署参数值
         :type value: str
         :param task_id: 部署任务id，创建部署任务后由系统自动生成
         :type task_id: str
@@ -113,7 +112,7 @@ class ConfigInfoDO:
     def type(self):
         """Gets the type of this ConfigInfoDO.
 
-        类型，如果填写name字段，则type必选
+        类型，如果填写name字段，则type必选,若type为空则默认为text
 
         :return: The type of this ConfigInfoDO.
         :rtype: str
@@ -124,7 +123,7 @@ class ConfigInfoDO:
     def type(self, type):
         """Sets the type of this ConfigInfoDO.
 
-        类型，如果填写name字段，则type必选
+        类型，如果填写name字段，则type必选,若type为空则默认为text
 
         :param type: The type of this ConfigInfoDO.
         :type type: str
@@ -157,7 +156,7 @@ class ConfigInfoDO:
     def value(self):
         """Gets the value of this ConfigInfoDO.
 
-        部署参数值，如果填写name字段，则value必选
+        部署参数值
 
         :return: The value of this ConfigInfoDO.
         :rtype: str
@@ -168,7 +167,7 @@ class ConfigInfoDO:
     def value(self, value):
         """Sets the value of this ConfigInfoDO.
 
-        部署参数值，如果填写name字段，则value必选
+        部署参数值
 
         :param value: The value of this ConfigInfoDO.
         :type value: str

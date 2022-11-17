@@ -17,7 +17,6 @@ class MultiTaskInitElement:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -168,7 +167,6 @@ class MultiTaskInitElement:
     def ext_info(self):
         """Gets the ext_info of this MultiTaskInitElement.
 
-
         :return: The ext_info of this MultiTaskInitElement.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
         """
@@ -177,7 +175,6 @@ class MultiTaskInitElement:
     @ext_info.setter
     def ext_info(self, ext_info):
         """Sets the ext_info of this MultiTaskInitElement.
-
 
         :param ext_info: The ext_info of this MultiTaskInitElement.
         :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`

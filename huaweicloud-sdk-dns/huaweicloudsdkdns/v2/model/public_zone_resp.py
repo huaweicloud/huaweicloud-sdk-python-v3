@@ -17,7 +17,6 @@ class PublicZoneResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -447,7 +446,6 @@ class PublicZoneResp:
     def links(self):
         """Gets the links of this PublicZoneResp.
 
-
         :return: The links of this PublicZoneResp.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -456,7 +454,6 @@ class PublicZoneResp:
     @links.setter
     def links(self, links):
         """Sets the links of this PublicZoneResp.
-
 
         :param links: The links of this PublicZoneResp.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

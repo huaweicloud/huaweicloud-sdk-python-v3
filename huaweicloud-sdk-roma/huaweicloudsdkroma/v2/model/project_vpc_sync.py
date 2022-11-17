@@ -17,7 +17,6 @@ class ProjectVpcSync:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {

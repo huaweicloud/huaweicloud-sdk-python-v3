@@ -17,7 +17,6 @@ class AggregateMetrics:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -81,7 +80,6 @@ class AggregateMetrics:
     def time_span(self):
         """Gets the time_span of this AggregateMetrics.
 
-
         :return: The time_span of this AggregateMetrics.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
         """
@@ -90,7 +88,6 @@ class AggregateMetrics:
     @time_span.setter
     def time_span(self, time_span):
         """Sets the time_span of this AggregateMetrics.
-
 
         :param time_span: The time_span of this AggregateMetrics.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`

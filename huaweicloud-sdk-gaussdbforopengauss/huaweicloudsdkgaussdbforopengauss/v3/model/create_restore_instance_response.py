@@ -17,7 +17,6 @@ class CreateRestoreInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class CreateRestoreInstanceResponse(SdkResponse):
     def instance(self):
         """Gets the instance of this CreateRestoreInstanceResponse.
 
-
         :return: The instance of this CreateRestoreInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateInstanceRespItem`
         """
@@ -65,7 +63,6 @@ class CreateRestoreInstanceResponse(SdkResponse):
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this CreateRestoreInstanceResponse.
-
 
         :param instance: The instance of this CreateRestoreInstanceResponse.
         :type instance: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateInstanceRespItem`

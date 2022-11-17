@@ -17,7 +17,6 @@ class RestoreNewInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -211,7 +210,6 @@ class RestoreNewInstanceResponse(SdkResponse):
     def datastore(self):
         """Gets the datastore of this RestoreNewInstanceResponse.
 
-
         :return: The datastore of this RestoreNewInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.Datastore`
         """
@@ -220,7 +218,6 @@ class RestoreNewInstanceResponse(SdkResponse):
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this RestoreNewInstanceResponse.
-
 
         :param datastore: The datastore of this RestoreNewInstanceResponse.
         :type datastore: :class:`huaweicloudsdkdds.v3.Datastore`
@@ -495,7 +492,6 @@ class RestoreNewInstanceResponse(SdkResponse):
     def backup_strategy(self):
         """Gets the backup_strategy of this RestoreNewInstanceResponse.
 
-
         :return: The backup_strategy of this RestoreNewInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategy`
         """
@@ -504,7 +500,6 @@ class RestoreNewInstanceResponse(SdkResponse):
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this RestoreNewInstanceResponse.
-
 
         :param backup_strategy: The backup_strategy of this RestoreNewInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
@@ -625,7 +620,6 @@ class RestoreNewInstanceResponse(SdkResponse):
     def charge_info(self):
         """Gets the charge_info of this RestoreNewInstanceResponse.
 
-
         :return: The charge_info of this RestoreNewInstanceResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`
         """
@@ -634,7 +628,6 @@ class RestoreNewInstanceResponse(SdkResponse):
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this RestoreNewInstanceResponse.
-
 
         :param charge_info: The charge_info of this RestoreNewInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`

@@ -17,7 +17,6 @@ class SwitchRiskRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SwitchRiskRuleRequest:
     def body(self):
         """Gets the body of this SwitchRiskRuleRequest.
 
-
         :return: The body of this SwitchRiskRuleRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.BatchSwitchesRequest`
         """
@@ -86,7 +84,6 @@ class SwitchRiskRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SwitchRiskRuleRequest.
-
 
         :param body: The body of this SwitchRiskRuleRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.BatchSwitchesRequest`

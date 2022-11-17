@@ -17,7 +17,6 @@ class OsFederationInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -60,7 +59,6 @@ class OsFederationInfo:
     def identity_provider(self):
         """Gets the identity_provider of this OsFederationInfo.
 
-
         :return: The identity_provider of this OsFederationInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.IdpIdInfo`
         """
@@ -69,7 +67,6 @@ class OsFederationInfo:
     @identity_provider.setter
     def identity_provider(self, identity_provider):
         """Sets the identity_provider of this OsFederationInfo.
-
 
         :param identity_provider: The identity_provider of this OsFederationInfo.
         :type identity_provider: :class:`huaweicloudsdkiam.v3.IdpIdInfo`
@@ -80,7 +77,6 @@ class OsFederationInfo:
     def protocol(self):
         """Gets the protocol of this OsFederationInfo.
 
-
         :return: The protocol of this OsFederationInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.ProtocolIdInfo`
         """
@@ -89,7 +85,6 @@ class OsFederationInfo:
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this OsFederationInfo.
-
 
         :param protocol: The protocol of this OsFederationInfo.
         :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolIdInfo`

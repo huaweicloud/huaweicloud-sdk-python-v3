@@ -17,7 +17,6 @@ class CreateCommitResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CreateCommitResponse(SdkResponse):
     def error(self):
         """Gets the error of this CreateCommitResponse.
 
-
         :return: The error of this CreateCommitResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class CreateCommitResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this CreateCommitResponse.
-
 
         :param error: The error of this CreateCommitResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class CreateCommitResponse(SdkResponse):
     def result(self):
         """Gets the result of this CreateCommitResponse.
 
-
         :return: The result of this CreateCommitResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`
         """
@@ -92,7 +88,6 @@ class CreateCommitResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this CreateCommitResponse.
-
 
         :param result: The result of this CreateCommitResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`

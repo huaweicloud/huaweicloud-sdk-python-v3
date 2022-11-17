@@ -17,7 +17,6 @@ class InstanceStatusView:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -26,6 +25,7 @@ class InstanceStatusView:
         'replica': 'int',
         'fail_detail': 'InstanceFailDetail',
         'last_job_id': 'str',
+        'last_job_status': 'str',
         'enterprise_project_id': 'str'
     }
 
@@ -35,10 +35,11 @@ class InstanceStatusView:
         'replica': 'replica',
         'fail_detail': 'fail_detail',
         'last_job_id': 'last_job_id',
+        'last_job_status': 'last_job_status',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, status=None, available_replica=None, replica=None, fail_detail=None, last_job_id=None, enterprise_project_id=None):
+    def __init__(self, status=None, available_replica=None, replica=None, fail_detail=None, last_job_id=None, last_job_status=None, enterprise_project_id=None):
         """InstanceStatusView
 
         The model defined in huaweicloud sdk
@@ -53,6 +54,8 @@ class InstanceStatusView:
         :type fail_detail: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
         :param last_job_id: 最近Job ID。
         :type last_job_id: str
+        :param last_job_status: 最近Job的状态
+        :type last_job_status: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         """
@@ -64,6 +67,7 @@ class InstanceStatusView:
         self._replica = None
         self._fail_detail = None
         self._last_job_id = None
+        self._last_job_status = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -77,13 +81,14 @@ class InstanceStatusView:
             self.fail_detail = fail_detail
         if last_job_id is not None:
             self.last_job_id = last_job_id
+        if last_job_status is not None:
+            self.last_job_status = last_job_status
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
     @property
     def status(self):
         """Gets the status of this InstanceStatusView.
-
 
         :return: The status of this InstanceStatusView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
@@ -93,7 +98,6 @@ class InstanceStatusView:
     @status.setter
     def status(self, status):
         """Sets the status of this InstanceStatusView.
-
 
         :param status: The status of this InstanceStatusView.
         :type status: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
@@ -148,7 +152,6 @@ class InstanceStatusView:
     def fail_detail(self):
         """Gets the fail_detail of this InstanceStatusView.
 
-
         :return: The fail_detail of this InstanceStatusView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
         """
@@ -157,7 +160,6 @@ class InstanceStatusView:
     @fail_detail.setter
     def fail_detail(self, fail_detail):
         """Sets the fail_detail of this InstanceStatusView.
-
 
         :param fail_detail: The fail_detail of this InstanceStatusView.
         :type fail_detail: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
@@ -185,6 +187,28 @@ class InstanceStatusView:
         :type last_job_id: str
         """
         self._last_job_id = last_job_id
+
+    @property
+    def last_job_status(self):
+        """Gets the last_job_status of this InstanceStatusView.
+
+        最近Job的状态
+
+        :return: The last_job_status of this InstanceStatusView.
+        :rtype: str
+        """
+        return self._last_job_status
+
+    @last_job_status.setter
+    def last_job_status(self, last_job_status):
+        """Sets the last_job_status of this InstanceStatusView.
+
+        最近Job的状态
+
+        :param last_job_status: The last_job_status of this InstanceStatusView.
+        :type last_job_status: str
+        """
+        self._last_job_status = last_job_status
 
     @property
     def enterprise_project_id(self):

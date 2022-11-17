@@ -17,7 +17,6 @@ class RemoveNodesSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class RemoveNodesSpec:
     def login(self):
         """Gets the login of this RemoveNodesSpec.
 
-
         :return: The login of this RemoveNodesSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Login`
         """
@@ -63,7 +61,6 @@ class RemoveNodesSpec:
     @login.setter
     def login(self, login):
         """Sets the login of this RemoveNodesSpec.
-
 
         :param login: The login of this RemoveNodesSpec.
         :type login: :class:`huaweicloudsdkcce.v3.Login`

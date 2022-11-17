@@ -17,7 +17,6 @@ class CreatePoolRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreatePoolRequestBody:
     def pool(self):
         """Gets the pool of this CreatePoolRequestBody.
 
-
         :return: The pool of this CreatePoolRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.CreatePoolReq`
         """
@@ -57,7 +55,6 @@ class CreatePoolRequestBody:
     @pool.setter
     def pool(self, pool):
         """Sets the pool of this CreatePoolRequestBody.
-
 
         :param pool: The pool of this CreatePoolRequestBody.
         :type pool: :class:`huaweicloudsdkelb.v2.CreatePoolReq`

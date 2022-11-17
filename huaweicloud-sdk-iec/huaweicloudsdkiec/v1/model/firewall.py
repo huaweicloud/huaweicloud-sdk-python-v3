@@ -17,7 +17,6 @@ class Firewall:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -244,7 +243,6 @@ class Firewall:
     def egress_firewall_policy(self):
         """Gets the egress_firewall_policy of this Firewall.
 
-
         :return: The egress_firewall_policy of this Firewall.
         :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
@@ -253,7 +251,6 @@ class Firewall:
     @egress_firewall_policy.setter
     def egress_firewall_policy(self, egress_firewall_policy):
         """Sets the egress_firewall_policy of this Firewall.
-
 
         :param egress_firewall_policy: The egress_firewall_policy of this Firewall.
         :type egress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
@@ -286,7 +283,6 @@ class Firewall:
     def ingress_firewall_policy(self):
         """Gets the ingress_firewall_policy of this Firewall.
 
-
         :return: The ingress_firewall_policy of this Firewall.
         :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
@@ -295,7 +291,6 @@ class Firewall:
     @ingress_firewall_policy.setter
     def ingress_firewall_policy(self, ingress_firewall_policy):
         """Sets the ingress_firewall_policy of this Firewall.
-
 
         :param ingress_firewall_policy: The ingress_firewall_policy of this Firewall.
         :type ingress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`

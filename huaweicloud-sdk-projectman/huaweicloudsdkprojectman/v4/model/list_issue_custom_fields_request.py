@@ -17,7 +17,6 @@ class ListIssueCustomFieldsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListIssueCustomFieldsRequest:
     def body(self):
         """Gets the body of this ListIssueCustomFieldsRequest.
 
-
         :return: The body of this ListIssueCustomFieldsRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsRequestBody`
         """
@@ -86,7 +84,6 @@ class ListIssueCustomFieldsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListIssueCustomFieldsRequest.
-
 
         :param body: The body of this ListIssueCustomFieldsRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsRequestBody`

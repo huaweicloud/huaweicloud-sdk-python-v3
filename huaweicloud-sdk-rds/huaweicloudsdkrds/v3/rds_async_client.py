@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RdsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ApplyConfigurationAsync
         :type request: :class:`huaweicloudsdkrds.v3.ApplyConfigurationAsyncRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ApplyConfigurationAsyncResponse`
@@ -68,6 +63,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ApplyConfigurationAsyncResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AttachEip
         :type request: :class:`huaweicloudsdkrds.v3.AttachEipRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.AttachEipResponse`
@@ -130,6 +129,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachEipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchTagAddAction
         :type request: :class:`huaweicloudsdkrds.v3.BatchTagAddActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.BatchTagAddActionResponse`
@@ -192,6 +195,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +233,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchTagAddActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +248,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchTagDelAction
         :type request: :class:`huaweicloudsdkrds.v3.BatchTagDelActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.BatchTagDelActionResponse`
@@ -254,6 +261,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -290,6 +299,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchTagDelActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -304,6 +314,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeFailoverMode
         :type request: :class:`huaweicloudsdkrds.v3.ChangeFailoverModeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeFailoverModeResponse`
@@ -316,6 +327,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -352,6 +365,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeFailoverModeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -366,6 +380,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeFailoverStrategy
         :type request: :class:`huaweicloudsdkrds.v3.ChangeFailoverStrategyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeFailoverStrategyResponse`
@@ -378,6 +393,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -414,6 +431,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeFailoverStrategyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -428,6 +446,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeOpsWindow
         :type request: :class:`huaweicloudsdkrds.v3.ChangeOpsWindowRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeOpsWindowResponse`
@@ -440,6 +459,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -476,6 +497,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeOpsWindowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -490,6 +512,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.CreateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateConfigurationResponse`
@@ -502,6 +525,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -536,6 +561,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -550,6 +576,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDnsName
         :type request: :class:`huaweicloudsdkrds.v3.CreateDnsNameRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateDnsNameResponse`
@@ -562,6 +589,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -598,6 +627,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDnsNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -612,6 +642,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkrds.v3.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateInstanceResponse`
@@ -624,6 +655,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -658,6 +691,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -672,6 +706,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateManualBackup
         :type request: :class:`huaweicloudsdkrds.v3.CreateManualBackupRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateManualBackupResponse`
@@ -684,6 +719,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -718,6 +755,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -732,6 +770,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePostgresqlExtension
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlExtensionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlExtensionResponse`
@@ -744,6 +783,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -780,6 +821,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostgresqlExtensionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -794,6 +836,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRestoreInstance
         :type request: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceResponse`
@@ -806,6 +849,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -840,6 +885,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRestoreInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -854,6 +900,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.DeleteConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteConfigurationResponse`
@@ -866,6 +913,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -900,6 +949,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -914,6 +964,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkrds.v3.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteInstanceResponse`
@@ -926,6 +977,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -960,6 +1013,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -974,6 +1028,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteManualBackup
         :type request: :class:`huaweicloudsdkrds.v3.DeleteManualBackupRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteManualBackupResponse`
@@ -986,6 +1041,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1020,6 +1077,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1034,6 +1092,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePostgresqlExtension
         :type request: :class:`huaweicloudsdkrds.v3.DeletePostgresqlExtensionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeletePostgresqlExtensionResponse`
@@ -1046,6 +1105,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1082,6 +1143,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePostgresqlExtensionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1096,6 +1158,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadSlowlog
         :type request: :class:`huaweicloudsdkrds.v3.DownloadSlowlogRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DownloadSlowlogResponse`
@@ -1108,6 +1171,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1144,6 +1209,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadSlowlogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1158,6 +1224,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.EnableConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.EnableConfigurationResponse`
@@ -1170,6 +1237,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1206,6 +1275,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1220,6 +1290,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAuditlogs
         :type request: :class:`huaweicloudsdkrds.v3.ListAuditlogsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListAuditlogsResponse`
@@ -1232,6 +1303,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1274,6 +1347,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuditlogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1288,6 +1362,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackups
         :type request: :class:`huaweicloudsdkrds.v3.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListBackupsResponse`
@@ -1300,6 +1375,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1346,6 +1423,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1360,6 +1438,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCollations
         :type request: :class:`huaweicloudsdkrds.v3.ListCollationsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListCollationsResponse`
@@ -1372,6 +1451,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1404,6 +1485,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCollationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1418,6 +1500,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConfigurations
         :type request: :class:`huaweicloudsdkrds.v3.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListConfigurationsResponse`
@@ -1430,6 +1513,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1462,6 +1547,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1476,6 +1562,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatastores
         :type request: :class:`huaweicloudsdkrds.v3.ListDatastoresRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListDatastoresResponse`
@@ -1488,6 +1575,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1522,6 +1611,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatastoresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1536,6 +1626,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDrRelations
         :type request: :class:`huaweicloudsdkrds.v3.ListDrRelationsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListDrRelationsResponse`
@@ -1548,6 +1639,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1580,6 +1673,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDrRelationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1594,6 +1688,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListErrorLogs
         :type request: :class:`huaweicloudsdkrds.v3.ListErrorLogsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListErrorLogsResponse`
@@ -1606,6 +1701,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1650,6 +1747,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListErrorLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1664,6 +1762,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListErrorLogsNew
         :type request: :class:`huaweicloudsdkrds.v3.ListErrorLogsNewRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListErrorLogsNewResponse`
@@ -1676,6 +1775,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1720,6 +1821,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListErrorLogsNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1734,6 +1836,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkrds.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListFlavorsResponse`
@@ -1746,6 +1849,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1784,6 +1889,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1798,6 +1904,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkrds.v3.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesResponse`
@@ -1810,6 +1917,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1860,6 +1969,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1874,6 +1984,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListJobInfo
         :type request: :class:`huaweicloudsdkrds.v3.ListJobInfoRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListJobInfoResponse`
@@ -1886,6 +1997,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1920,6 +2033,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1934,6 +2048,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListJobInfoDetail
         :type request: :class:`huaweicloudsdkrds.v3.ListJobInfoDetailRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListJobInfoDetailResponse`
@@ -1946,6 +2061,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1984,6 +2101,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobInfoDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1998,6 +2116,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOffSiteBackups
         :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteBackupsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListOffSiteBackupsResponse`
@@ -2010,6 +2129,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2056,6 +2177,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOffSiteBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2070,6 +2192,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOffSiteInstances
         :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteInstancesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListOffSiteInstancesResponse`
@@ -2082,6 +2205,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2118,6 +2243,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOffSiteInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2133,6 +2259,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOffSiteRestoreTimes
         :type request: :class:`huaweicloudsdkrds.v3.ListOffSiteRestoreTimesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListOffSiteRestoreTimesResponse`
@@ -2145,6 +2272,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2181,6 +2310,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOffSiteRestoreTimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2195,6 +2325,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPostgresqlExtension
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlExtensionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlExtensionResponse`
@@ -2207,6 +2338,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2247,6 +2380,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostgresqlExtensionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2261,6 +2395,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectTags
         :type request: :class:`huaweicloudsdkrds.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListProjectTagsResponse`
@@ -2273,6 +2408,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2305,6 +2442,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2320,6 +2458,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRestoreTimes
         :type request: :class:`huaweicloudsdkrds.v3.ListRestoreTimesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListRestoreTimesResponse`
@@ -2332,6 +2471,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2368,6 +2509,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreTimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2383,6 +2525,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSlowLogFile
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogFileRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogFileResponse`
@@ -2395,6 +2538,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2433,6 +2578,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2447,6 +2593,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSlowLogs
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogsResponse`
@@ -2459,6 +2606,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2503,6 +2652,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2517,6 +2667,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSlowLogsNew
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowLogsNewRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowLogsNewResponse`
@@ -2529,6 +2680,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2573,6 +2726,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogsNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2587,6 +2741,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSlowlogStatistics
         :type request: :class:`huaweicloudsdkrds.v3.ListSlowlogStatisticsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSlowlogStatisticsResponse`
@@ -2599,6 +2754,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2645,6 +2802,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowlogStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2659,6 +2817,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStorageTypes
         :type request: :class:`huaweicloudsdkrds.v3.ListStorageTypesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListStorageTypesResponse`
@@ -2671,6 +2830,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2709,6 +2870,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStorageTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2723,6 +2885,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MigrateFollower
         :type request: :class:`huaweicloudsdkrds.v3.MigrateFollowerRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.MigrateFollowerResponse`
@@ -2735,6 +2898,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2771,6 +2936,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateFollowerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2785,6 +2951,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreExistInstance
         :type request: :class:`huaweicloudsdkrds.v3.RestoreExistInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreExistInstanceResponse`
@@ -2797,6 +2964,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2831,6 +3000,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreExistInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2845,6 +3015,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreTables
         :type request: :class:`huaweicloudsdkrds.v3.RestoreTablesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreTablesResponse`
@@ -2857,6 +3028,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2893,6 +3066,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreTablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2907,6 +3081,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreToExistingInstance
         :type request: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceResponse`
@@ -2919,6 +3094,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2953,6 +3130,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreToExistingInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2967,6 +3145,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetAuditlogPolicy
         :type request: :class:`huaweicloudsdkrds.v3.SetAuditlogPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetAuditlogPolicyResponse`
@@ -2979,6 +3158,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3015,6 +3196,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetAuditlogPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3029,6 +3211,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetBackupPolicy
         :type request: :class:`huaweicloudsdkrds.v3.SetBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetBackupPolicyResponse`
@@ -3041,6 +3224,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3077,6 +3262,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3091,6 +3277,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetBinlogClearPolicy
         :type request: :class:`huaweicloudsdkrds.v3.SetBinlogClearPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetBinlogClearPolicyResponse`
@@ -3103,6 +3290,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3139,6 +3328,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBinlogClearPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3153,6 +3343,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetOffSiteBackupPolicy
         :type request: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyResponse`
@@ -3165,6 +3356,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3201,6 +3394,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetOffSiteBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3215,6 +3409,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetSecurityGroup
         :type request: :class:`huaweicloudsdkrds.v3.SetSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetSecurityGroupResponse`
@@ -3227,6 +3422,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3263,6 +3460,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3277,6 +3475,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetSensitiveSlowLog
         :type request: :class:`huaweicloudsdkrds.v3.SetSensitiveSlowLogRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetSensitiveSlowLogResponse`
@@ -3289,6 +3488,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3325,6 +3526,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetSensitiveSlowLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3339,6 +3541,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAuditlogDownloadLink
         :type request: :class:`huaweicloudsdkrds.v3.ShowAuditlogDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowAuditlogDownloadLinkResponse`
@@ -3351,6 +3554,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3387,6 +3592,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuditlogDownloadLinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3401,6 +3607,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAuditlogPolicy
         :type request: :class:`huaweicloudsdkrds.v3.ShowAuditlogPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowAuditlogPolicyResponse`
@@ -3413,6 +3620,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3447,6 +3656,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuditlogPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3461,6 +3671,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBackupDownloadLink
         :type request: :class:`huaweicloudsdkrds.v3.ShowBackupDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupDownloadLinkResponse`
@@ -3473,6 +3684,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3507,6 +3720,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupDownloadLinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3521,6 +3735,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBackupPolicy
         :type request: :class:`huaweicloudsdkrds.v3.ShowBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowBackupPolicyResponse`
@@ -3533,6 +3748,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3567,6 +3784,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3581,6 +3799,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBinlogClearPolicy
         :type request: :class:`huaweicloudsdkrds.v3.ShowBinlogClearPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowBinlogClearPolicyResponse`
@@ -3593,6 +3812,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3627,6 +3848,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBinlogClearPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3641,6 +3863,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.ShowConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowConfigurationResponse`
@@ -3653,6 +3876,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3687,6 +3912,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3701,6 +3927,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDrReplicaStatus
         :type request: :class:`huaweicloudsdkrds.v3.ShowDrReplicaStatusRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowDrReplicaStatusResponse`
@@ -3713,6 +3940,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3747,6 +3976,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDrReplicaStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3761,6 +3991,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.ShowInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowInstanceConfigurationResponse`
@@ -3773,6 +4004,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3807,6 +4040,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3821,6 +4055,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowOffSiteBackupPolicy
         :type request: :class:`huaweicloudsdkrds.v3.ShowOffSiteBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowOffSiteBackupPolicyResponse`
@@ -3833,6 +4068,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3867,6 +4104,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOffSiteBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3881,6 +4119,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkrds.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowQuotasResponse`
@@ -3893,6 +4132,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3925,6 +4166,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3939,6 +4181,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartFailover
         :type request: :class:`huaweicloudsdkrds.v3.StartFailoverRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartFailoverResponse`
@@ -3951,6 +4194,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3987,6 +4232,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartFailoverResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4001,6 +4247,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartInstanceEnlargeVolumeAction
         :type request: :class:`huaweicloudsdkrds.v3.StartInstanceEnlargeVolumeActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartInstanceEnlargeVolumeActionResponse`
@@ -4013,6 +4260,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4049,6 +4298,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartInstanceEnlargeVolumeActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4063,6 +4313,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartInstanceRestartAction
         :type request: :class:`huaweicloudsdkrds.v3.StartInstanceRestartActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartInstanceRestartActionResponse`
@@ -4075,6 +4326,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4111,6 +4364,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartInstanceRestartActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4125,6 +4379,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartInstanceSingleToHaAction
         :type request: :class:`huaweicloudsdkrds.v3.StartInstanceSingleToHaActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartInstanceSingleToHaActionResponse`
@@ -4137,6 +4392,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4173,6 +4430,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartInstanceSingleToHaActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4187,6 +4445,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartRecyclePolicy
         :type request: :class:`huaweicloudsdkrds.v3.StartRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartRecyclePolicyResponse`
@@ -4199,6 +4458,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4233,6 +4494,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartRecyclePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4247,6 +4509,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartResizeFlavorAction
         :type request: :class:`huaweicloudsdkrds.v3.StartResizeFlavorActionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartResizeFlavorActionResponse`
@@ -4259,6 +4522,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4295,6 +4560,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartResizeFlavorActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4309,6 +4575,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartupInstance
         :type request: :class:`huaweicloudsdkrds.v3.StartupInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartupInstanceResponse`
@@ -4321,6 +4588,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4355,6 +4624,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartupInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4369,6 +4639,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopInstance
         :type request: :class:`huaweicloudsdkrds.v3.StopInstanceRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StopInstanceResponse`
@@ -4381,6 +4652,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4415,6 +4688,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4429,6 +4703,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SwitchSsl
         :type request: :class:`huaweicloudsdkrds.v3.SwitchSslRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SwitchSslResponse`
@@ -4441,6 +4716,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4477,6 +4754,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchSslResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4491,6 +4769,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.UpdateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateConfigurationResponse`
@@ -4503,6 +4782,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4539,6 +4820,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4553,6 +4835,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDataIp
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDataIpRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDataIpResponse`
@@ -4565,6 +4848,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4601,6 +4886,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDataIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4615,6 +4901,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDnsName
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDnsNameRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDnsNameResponse`
@@ -4627,6 +4914,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4663,6 +4952,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDnsNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4677,6 +4967,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceConfiguration
         :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationResponse`
@@ -4689,6 +4980,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4725,6 +5018,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4739,6 +5033,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceConfigurationAsync
         :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationAsyncRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationAsyncResponse`
@@ -4751,6 +5046,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4787,6 +5084,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceConfigurationAsyncResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4801,6 +5099,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceName
         :type request: :class:`huaweicloudsdkrds.v3.UpdateInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceNameResponse`
@@ -4813,6 +5112,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4849,6 +5150,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4863,6 +5165,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePort
         :type request: :class:`huaweicloudsdkrds.v3.UpdatePortRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdatePortResponse`
@@ -4875,6 +5178,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4911,6 +5216,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4925,6 +5231,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePostgresqlInstanceAlias
         :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlInstanceAliasRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlInstanceAliasResponse`
@@ -4937,6 +5244,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4973,6 +5282,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePostgresqlInstanceAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4987,6 +5297,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpgradeDbVersion
         :type request: :class:`huaweicloudsdkrds.v3.UpgradeDbVersionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpgradeDbVersionResponse`
@@ -4999,6 +5310,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5035,6 +5348,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpgradeDbVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5049,6 +5363,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersion
         :type request: :class:`huaweicloudsdkrds.v3.ListApiVersionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListApiVersionResponse`
@@ -5061,6 +5376,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5091,6 +5408,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5105,6 +5423,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersionNew
         :type request: :class:`huaweicloudsdkrds.v3.ListApiVersionNewRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListApiVersionNewResponse`
@@ -5117,6 +5436,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5147,6 +5468,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5161,6 +5483,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApiVersion
         :type request: :class:`huaweicloudsdkrds.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowApiVersionResponse`
@@ -5173,6 +5496,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5205,6 +5530,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5219,6 +5545,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AllowDbUserPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.AllowDbUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.AllowDbUserPrivilegeResponse`
@@ -5231,6 +5558,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5267,6 +5596,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowDbUserPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5281,6 +5611,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatabase
         :type request: :class:`huaweicloudsdkrds.v3.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateDatabaseResponse`
@@ -5293,6 +5624,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5329,6 +5662,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5343,6 +5677,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDbUser
         :type request: :class:`huaweicloudsdkrds.v3.CreateDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateDbUserResponse`
@@ -5355,6 +5690,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5391,6 +5728,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5405,6 +5743,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDatabase
         :type request: :class:`huaweicloudsdkrds.v3.DeleteDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteDatabaseResponse`
@@ -5417,6 +5756,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5453,6 +5794,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5467,6 +5809,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDbUser
         :type request: :class:`huaweicloudsdkrds.v3.DeleteDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteDbUserResponse`
@@ -5479,6 +5822,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5515,6 +5860,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5529,6 +5875,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAuthorizedDatabases
         :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedDatabasesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListAuthorizedDatabasesResponse`
@@ -5541,6 +5888,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5581,6 +5930,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizedDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5595,6 +5945,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAuthorizedDbUsers
         :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedDbUsersRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListAuthorizedDbUsersResponse`
@@ -5607,6 +5958,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5647,6 +6000,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizedDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5661,6 +6015,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatabases
         :type request: :class:`huaweicloudsdkrds.v3.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListDatabasesResponse`
@@ -5673,6 +6028,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5711,6 +6068,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5725,6 +6083,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDbUsers
         :type request: :class:`huaweicloudsdkrds.v3.ListDbUsersRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListDbUsersResponse`
@@ -5737,6 +6096,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5775,6 +6136,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5789,6 +6151,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetPwd
         :type request: :class:`huaweicloudsdkrds.v3.ResetPwdRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ResetPwdResponse`
@@ -5801,6 +6164,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5837,6 +6202,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5851,6 +6217,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for Revoke
         :type request: :class:`huaweicloudsdkrds.v3.RevokeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RevokeResponse`
@@ -5863,6 +6230,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5899,6 +6268,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5913,6 +6283,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetDbUserPwd
         :type request: :class:`huaweicloudsdkrds.v3.SetDbUserPwdRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetDbUserPwdResponse`
@@ -5925,6 +6296,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5961,6 +6334,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetDbUserPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5975,6 +6349,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetReadOnlySwitch
         :type request: :class:`huaweicloudsdkrds.v3.SetReadOnlySwitchRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetReadOnlySwitchResponse`
@@ -5987,6 +6362,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6023,6 +6400,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetReadOnlySwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6037,6 +6415,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDatabase
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDatabaseResponse`
@@ -6049,6 +6428,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6085,6 +6466,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6099,6 +6481,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDbUserComment
         :type request: :class:`huaweicloudsdkrds.v3.UpdateDbUserCommentRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDbUserCommentResponse`
@@ -6111,6 +6494,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6147,6 +6532,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDbUserCommentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6161,6 +6547,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AllowDbPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.AllowDbPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.AllowDbPrivilegeResponse`
@@ -6173,6 +6560,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6209,6 +6598,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowDbPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6225,6 +6615,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeProxyScale
         :type request: :class:`huaweicloudsdkrds.v3.ChangeProxyScaleRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeProxyScaleResponse`
@@ -6237,6 +6628,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6273,6 +6666,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeProxyScaleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6287,6 +6681,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeTheDelayThreshold
         :type request: :class:`huaweicloudsdkrds.v3.ChangeTheDelayThresholdRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ChangeTheDelayThresholdResponse`
@@ -6299,6 +6694,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6335,6 +6732,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeTheDelayThresholdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6349,6 +6747,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePostgresqlDatabase
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseResponse`
@@ -6361,6 +6760,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6397,6 +6798,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostgresqlDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6411,6 +6813,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePostgresqlDatabaseSchema
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseSchemaRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDatabaseSchemaResponse`
@@ -6423,6 +6826,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6459,6 +6864,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostgresqlDatabaseSchemaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6473,6 +6879,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePostgresqlDbUser
         :type request: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreatePostgresqlDbUserResponse`
@@ -6485,6 +6892,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6521,6 +6930,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostgresqlDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6535,6 +6945,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPostgresqlDatabaseSchemas
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabaseSchemasRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabaseSchemasResponse`
@@ -6547,6 +6958,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6587,6 +7000,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostgresqlDatabaseSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6601,6 +7015,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPostgresqlDatabases
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabasesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlDatabasesResponse`
@@ -6613,6 +7028,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6651,6 +7068,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostgresqlDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6665,6 +7083,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPostgresqlDbUserPaginated
         :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlDbUserPaginatedRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlDbUserPaginatedResponse`
@@ -6677,6 +7096,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6715,6 +7136,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostgresqlDbUserPaginatedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6731,6 +7153,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchQueryScaleComputeFlavors
         :type request: :class:`huaweicloudsdkrds.v3.SearchQueryScaleComputeFlavorsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SearchQueryScaleComputeFlavorsResponse`
@@ -6743,6 +7166,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6781,6 +7206,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQueryScaleComputeFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6797,6 +7223,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchQueryScaleFlavors
         :type request: :class:`huaweicloudsdkrds.v3.SearchQueryScaleFlavorsRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SearchQueryScaleFlavorsResponse`
@@ -6809,6 +7236,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6843,6 +7272,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQueryScaleFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6857,6 +7287,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetDatabaseUserPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.SetDatabaseUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetDatabaseUserPrivilegeResponse`
@@ -6869,6 +7300,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6905,6 +7338,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetDatabaseUserPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6919,6 +7353,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetPostgresqlDbUserPwd
         :type request: :class:`huaweicloudsdkrds.v3.SetPostgresqlDbUserPwdRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.SetPostgresqlDbUserPwdResponse`
@@ -6931,6 +7366,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6967,6 +7404,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetPostgresqlDbUserPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6981,6 +7419,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInformationAboutDatabaseProxy
         :type request: :class:`huaweicloudsdkrds.v3.ShowInformationAboutDatabaseProxyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowInformationAboutDatabaseProxyResponse`
@@ -6993,6 +7432,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7027,6 +7468,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInformationAboutDatabaseProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7041,6 +7483,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPostgresqlParamValue
         :type request: :class:`huaweicloudsdkrds.v3.ShowPostgresqlParamValueRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ShowPostgresqlParamValueResponse`
@@ -7053,6 +7496,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7089,6 +7534,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPostgresqlParamValueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7103,6 +7549,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartDatabaseProxy
         :type request: :class:`huaweicloudsdkrds.v3.StartDatabaseProxyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StartDatabaseProxyResponse`
@@ -7115,6 +7562,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7151,6 +7600,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartDatabaseProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7165,6 +7615,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopDatabaseProxy
         :type request: :class:`huaweicloudsdkrds.v3.StopDatabaseProxyRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.StopDatabaseProxyResponse`
@@ -7177,6 +7628,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7211,6 +7664,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopDatabaseProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7225,6 +7679,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePostgresqlParameterValue
         :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlParameterValueRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlParameterValueResponse`
@@ -7237,6 +7692,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7275,6 +7732,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePostgresqlParameterValueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7289,6 +7747,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateReadWeight
         :type request: :class:`huaweicloudsdkrds.v3.UpdateReadWeightRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateReadWeightResponse`
@@ -7301,6 +7760,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7337,6 +7798,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateReadWeightResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7351,6 +7813,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AllowSqlserverDbUserPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.AllowSqlserverDbUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.AllowSqlserverDbUserPrivilegeResponse`
@@ -7363,6 +7826,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7399,6 +7864,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowSqlserverDbUserPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7413,6 +7879,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSqlserverDatabase
         :type request: :class:`huaweicloudsdkrds.v3.CreateSqlserverDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateSqlserverDatabaseResponse`
@@ -7425,6 +7892,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7461,6 +7930,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSqlserverDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7475,6 +7945,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSqlserverDbUser
         :type request: :class:`huaweicloudsdkrds.v3.CreateSqlserverDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.CreateSqlserverDbUserResponse`
@@ -7487,6 +7958,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7523,6 +7996,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSqlserverDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7537,6 +8011,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSqlserverDatabase
         :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseResponse`
@@ -7549,6 +8024,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7587,6 +8064,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSqlserverDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7601,6 +8079,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSqlserverDatabaseEx
         :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseExRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDatabaseExResponse`
@@ -7613,6 +8092,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7651,6 +8132,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSqlserverDatabaseExResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7665,6 +8147,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSqlserverDbUser
         :type request: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDbUserRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteSqlserverDbUserResponse`
@@ -7677,6 +8160,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7713,6 +8198,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSqlserverDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7727,6 +8213,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAuthorizedSqlserverDbUsers
         :type request: :class:`huaweicloudsdkrds.v3.ListAuthorizedSqlserverDbUsersRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListAuthorizedSqlserverDbUsersResponse`
@@ -7739,6 +8226,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7779,6 +8268,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizedSqlserverDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7793,6 +8283,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSqlserverDatabases
         :type request: :class:`huaweicloudsdkrds.v3.ListSqlserverDatabasesRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSqlserverDatabasesResponse`
@@ -7805,6 +8296,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7845,6 +8338,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSqlserverDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7859,6 +8353,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSqlserverDbUsers
         :type request: :class:`huaweicloudsdkrds.v3.ListSqlserverDbUsersRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.ListSqlserverDbUsersResponse`
@@ -7871,6 +8366,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7909,6 +8406,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSqlserverDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7923,6 +8421,7 @@ class RdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RevokeSqlserverDbUserPrivilege
         :type request: :class:`huaweicloudsdkrds.v3.RevokeSqlserverDbUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkrds.v3.RevokeSqlserverDbUserPrivilegeResponse`
@@ -7935,6 +8434,8 @@ class RdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7971,6 +8472,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeSqlserverDbUserPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7978,7 +8480,7 @@ class RdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -7989,9 +8491,10 @@ class RdsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -8008,6 +8511,7 @@ class RdsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

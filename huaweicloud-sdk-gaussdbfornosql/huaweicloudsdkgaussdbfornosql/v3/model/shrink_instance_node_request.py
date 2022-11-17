@@ -17,7 +17,6 @@ class ShrinkInstanceNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShrinkInstanceNodeRequest:
     def body(self):
         """Gets the body of this ShrinkInstanceNodeRequest.
 
-
         :return: The body of this ShrinkInstanceNodeRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShrinkInstanceNodeRequestBody`
         """
@@ -86,7 +84,6 @@ class ShrinkInstanceNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShrinkInstanceNodeRequest.
-
 
         :param body: The body of this ShrinkInstanceNodeRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ShrinkInstanceNodeRequestBody`

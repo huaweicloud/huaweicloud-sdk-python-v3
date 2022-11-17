@@ -17,7 +17,6 @@ class MbTaskParameter:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class MbTaskParameter:
     def metadata(self):
         """Gets the metadata of this MbTaskParameter.
 
-
         :return: The metadata of this MbTaskParameter.
         :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
         """
@@ -116,7 +114,6 @@ class MbTaskParameter:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this MbTaskParameter.
-
 
         :param metadata: The metadata of this MbTaskParameter.
         :type metadata: :class:`huaweicloudsdkmpc.v1.MetaData`

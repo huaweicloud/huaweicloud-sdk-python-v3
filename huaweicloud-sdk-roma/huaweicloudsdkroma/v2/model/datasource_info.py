@@ -17,7 +17,6 @@ class DatasourceInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -172,7 +171,6 @@ class DatasourceInfo:
     def content(self):
         """Gets the content of this DatasourceInfo.
 
-
         :return: The content of this DatasourceInfo.
         :rtype: :class:`huaweicloudsdkroma.v2.Content`
         """
@@ -181,7 +179,6 @@ class DatasourceInfo:
     @content.setter
     def content(self, content):
         """Sets the content of this DatasourceInfo.
-
 
         :param content: The content of this DatasourceInfo.
         :type content: :class:`huaweicloudsdkroma.v2.Content`

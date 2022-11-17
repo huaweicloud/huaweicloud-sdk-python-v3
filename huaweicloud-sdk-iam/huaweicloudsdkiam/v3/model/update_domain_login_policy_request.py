@@ -17,7 +17,6 @@ class UpdateDomainLoginPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateDomainLoginPolicyRequest:
     def body(self):
         """Gets the body of this UpdateDomainLoginPolicyRequest.
 
-
         :return: The body of this UpdateDomainLoginPolicyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateDomainLoginPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDomainLoginPolicyRequest.
-
 
         :param body: The body of this UpdateDomainLoginPolicyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequestBody`

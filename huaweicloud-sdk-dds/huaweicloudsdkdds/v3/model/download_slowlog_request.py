@@ -17,7 +17,6 @@ class DownloadSlowlogRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DownloadSlowlogRequest:
     def body(self):
         """Gets the body of this DownloadSlowlogRequest.
 
-
         :return: The body of this DownloadSlowlogRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.DownloadSlowlogRequestBody`
         """
@@ -86,7 +84,6 @@ class DownloadSlowlogRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DownloadSlowlogRequest.
-
 
         :param body: The body of this DownloadSlowlogRequest.
         :type body: :class:`huaweicloudsdkdds.v3.DownloadSlowlogRequestBody`

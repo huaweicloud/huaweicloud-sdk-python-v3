@@ -17,7 +17,6 @@ class UpdateUserReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateUserReq:
     def user(self):
         """Gets the user of this UpdateUserReq.
 
-
         :return: The user of this UpdateUserReq.
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateUserDetailReq`
         """
@@ -57,7 +55,6 @@ class UpdateUserReq:
     @user.setter
     def user(self, user):
         """Sets the user of this UpdateUserReq.
-
 
         :param user: The user of this UpdateUserReq.
         :type user: :class:`huaweicloudsdkddm.v1.UpdateUserDetailReq`

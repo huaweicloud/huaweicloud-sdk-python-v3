@@ -17,7 +17,6 @@ class BatchDeleteInstanceUsersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchDeleteInstanceUsersRequest:
     def body(self):
         """Gets the body of this BatchDeleteInstanceUsersRequest.
 
-
         :return: The body of this BatchDeleteInstanceUsersRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceUsersReq`
         """
@@ -86,7 +84,6 @@ class BatchDeleteInstanceUsersRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteInstanceUsersRequest.
-
 
         :param body: The body of this BatchDeleteInstanceUsersRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceUsersReq`

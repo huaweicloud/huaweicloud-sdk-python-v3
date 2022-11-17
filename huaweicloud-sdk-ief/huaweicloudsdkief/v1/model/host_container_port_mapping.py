@@ -17,7 +17,6 @@ class HostContainerPortMapping:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class HostContainerPortMapping:
     def host_port_range(self):
         """Gets the host_port_range of this HostContainerPortMapping.
 
-
         :return: The host_port_range of this HostContainerPortMapping.
         :rtype: :class:`huaweicloudsdkief.v1.HostPortRange`
         """
@@ -144,7 +142,6 @@ class HostContainerPortMapping:
     @host_port_range.setter
     def host_port_range(self, host_port_range):
         """Sets the host_port_range of this HostContainerPortMapping.
-
 
         :param host_port_range: The host_port_range of this HostContainerPortMapping.
         :type host_port_range: :class:`huaweicloudsdkief.v1.HostPortRange`

@@ -17,7 +17,6 @@ class BatchValidateConnectionsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class BatchValidateConnectionsRequest:
     def body(self):
         """Gets the body of this BatchValidateConnectionsRequest.
 
-
         :return: The body of this BatchValidateConnectionsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchTestConnectionReq`
         """
@@ -87,7 +85,6 @@ class BatchValidateConnectionsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchValidateConnectionsRequest.
-
 
         :param body: The body of this BatchValidateConnectionsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchTestConnectionReq`

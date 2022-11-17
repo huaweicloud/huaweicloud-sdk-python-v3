@@ -17,7 +17,6 @@ class AssociateIssuesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class AssociateIssuesRequest:
     def body(self):
         """Gets the body of this AssociateIssuesRequest.
 
-
         :return: The body of this AssociateIssuesRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesRequestBody`
         """
@@ -58,7 +56,6 @@ class AssociateIssuesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AssociateIssuesRequest.
-
 
         :param body: The body of this AssociateIssuesRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesRequestBody`

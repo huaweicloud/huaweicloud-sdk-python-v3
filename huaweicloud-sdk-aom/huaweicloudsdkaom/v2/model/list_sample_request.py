@@ -17,7 +17,6 @@ class ListSampleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListSampleRequest:
     def body(self):
         """Gets the body of this ListSampleRequest.
 
-
         :return: The body of this ListSampleRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.QuerySampleParam`
         """
@@ -87,7 +85,6 @@ class ListSampleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListSampleRequest.
-
 
         :param body: The body of this ListSampleRequest.
         :type body: :class:`huaweicloudsdkaom.v2.QuerySampleParam`

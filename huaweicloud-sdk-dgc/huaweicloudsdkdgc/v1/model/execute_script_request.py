@@ -17,7 +17,6 @@ class ExecuteScriptRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class ExecuteScriptRequest:
     def script_name(self):
         """Gets the script_name of this ExecuteScriptRequest.
 
-
         :return: The script_name of this ExecuteScriptRequest.
         :rtype: str
         """
@@ -64,7 +62,6 @@ class ExecuteScriptRequest:
     @script_name.setter
     def script_name(self, script_name):
         """Sets the script_name of this ExecuteScriptRequest.
-
 
         :param script_name: The script_name of this ExecuteScriptRequest.
         :type script_name: str
@@ -75,7 +72,6 @@ class ExecuteScriptRequest:
     def body(self):
         """Gets the body of this ExecuteScriptRequest.
 
-
         :return: The body of this ExecuteScriptRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.ExecuteScriptReq`
         """
@@ -84,7 +80,6 @@ class ExecuteScriptRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExecuteScriptRequest.
-
 
         :param body: The body of this ExecuteScriptRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.ExecuteScriptReq`

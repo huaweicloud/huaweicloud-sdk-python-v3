@@ -17,7 +17,6 @@ class NeutronUpdateFloatingIpRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class NeutronUpdateFloatingIpRequest:
     def body(self):
         """Gets the body of this NeutronUpdateFloatingIpRequest.
 
-
         :return: The body of this NeutronUpdateFloatingIpRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronUpdateFloatingIpRequestBody`
         """
@@ -86,7 +84,6 @@ class NeutronUpdateFloatingIpRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this NeutronUpdateFloatingIpRequest.
-
 
         :param body: The body of this NeutronUpdateFloatingIpRequest.
         :type body: :class:`huaweicloudsdkeip.v2.NeutronUpdateFloatingIpRequestBody`

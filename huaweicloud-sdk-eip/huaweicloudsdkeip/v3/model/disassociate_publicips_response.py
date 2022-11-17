@@ -17,7 +17,6 @@ class DisassociatePublicipsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class DisassociatePublicipsResponse(SdkResponse):
     def publicip(self):
         """Gets the publicip of this DisassociatePublicipsResponse.
 
-
         :return: The publicip of this DisassociatePublicipsResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PublicipInstanceResp`
         """
@@ -87,7 +85,6 @@ class DisassociatePublicipsResponse(SdkResponse):
     @publicip.setter
     def publicip(self, publicip):
         """Sets the publicip of this DisassociatePublicipsResponse.
-
 
         :param publicip: The publicip of this DisassociatePublicipsResponse.
         :type publicip: :class:`huaweicloudsdkeip.v3.PublicipInstanceResp`

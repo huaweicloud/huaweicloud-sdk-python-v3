@@ -17,7 +17,6 @@ class CreateIefSystemEventsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateIefSystemEventsRequest:
     def body(self):
         """Gets the body of this CreateIefSystemEventsRequest.
 
-
         :return: The body of this CreateIefSystemEventsRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.IefSystemEventsReq`
         """
@@ -58,7 +56,6 @@ class CreateIefSystemEventsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateIefSystemEventsRequest.
-
 
         :param body: The body of this CreateIefSystemEventsRequest.
         :type body: :class:`huaweicloudsdkdli.v1.IefSystemEventsReq`

@@ -14,10 +14,12 @@ from huaweicloudsdkservicestage.v2.model.application_list_config_configuration1 
 from huaweicloudsdkservicestage.v2.model.application_list_config_configuration_env import ApplicationListConfigConfigurationEnv
 from huaweicloudsdkservicestage.v2.model.application_modify import ApplicationModify
 from huaweicloudsdkservicestage.v2.model.application_view import ApplicationView
+from huaweicloudsdkservicestage.v2.model.authorization_vi import AuthorizationVI
 from huaweicloudsdkservicestage.v2.model.authorization_vo import AuthorizationVO
 from huaweicloudsdkservicestage.v2.model.build import Build
 from huaweicloudsdkservicestage.v2.model.build_info import BuildInfo
 from huaweicloudsdkservicestage.v2.model.build_info_parameters import BuildInfoParameters
+from huaweicloudsdkservicestage.v2.model.build_parameters import BuildParameters
 from huaweicloudsdkservicestage.v2.model.change_application_configuration_request import ChangeApplicationConfigurationRequest
 from huaweicloudsdkservicestage.v2.model.change_application_configuration_response import ChangeApplicationConfigurationResponse
 from huaweicloudsdkservicestage.v2.model.change_application_request import ChangeApplicationRequest
@@ -138,6 +140,7 @@ from huaweicloudsdkservicestage.v2.model.list_trees_request import ListTreesRequ
 from huaweicloudsdkservicestage.v2.model.list_trees_response import ListTreesResponse
 from huaweicloudsdkservicestage.v2.model.namespaces_namespaces import NamespacesNamespaces
 from huaweicloudsdkservicestage.v2.model.o_auth import OAuth
+from huaweicloudsdkservicestage.v2.model.obs_properties import ObsProperties
 from huaweicloudsdkservicestage.v2.model.project import Project
 from huaweicloudsdkservicestage.v2.model.project_create import ProjectCreate
 from huaweicloudsdkservicestage.v2.model.refer_resource_create import ReferResourceCreate

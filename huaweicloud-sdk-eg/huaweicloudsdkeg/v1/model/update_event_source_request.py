@@ -17,7 +17,6 @@ class UpdateEventSourceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateEventSourceRequest:
     def body(self):
         """Gets the body of this UpdateEventSourceRequest.
 
-
         :return: The body of this UpdateEventSourceRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.CustomizeSourceUpdateReq`
         """
@@ -86,7 +84,6 @@ class UpdateEventSourceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEventSourceRequest.
-
 
         :param body: The body of this UpdateEventSourceRequest.
         :type body: :class:`huaweicloudsdkeg.v1.CustomizeSourceUpdateReq`

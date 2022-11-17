@@ -17,7 +17,6 @@ class RemovePublicipsFromSharedBandwidthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RemovePublicipsFromSharedBandwidthRequest:
     def body(self):
         """Gets the body of this RemovePublicipsFromSharedBandwidthRequest.
 
-
         :return: The body of this RemovePublicipsFromSharedBandwidthRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequestBody`
         """
@@ -86,7 +84,6 @@ class RemovePublicipsFromSharedBandwidthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RemovePublicipsFromSharedBandwidthRequest.
-
 
         :param body: The body of this RemovePublicipsFromSharedBandwidthRequest.
         :type body: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequestBody`

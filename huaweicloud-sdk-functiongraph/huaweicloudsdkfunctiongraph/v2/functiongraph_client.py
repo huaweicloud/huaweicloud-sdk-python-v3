@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class FunctionGraphClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class FunctionGraphClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AsyncInvokeFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -129,6 +126,8 @@ class FunctionGraphClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -147,7 +146,7 @@ class FunctionGraphClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["Content-Type"]
+        response_headers = ["Content-Type", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -162,6 +161,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AsyncInvokeReservedFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -192,6 +192,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +226,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteFunctionTriggersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -250,6 +253,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +287,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteWorkflowsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -308,6 +314,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +350,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelAsyncInvocationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -368,6 +377,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +411,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDependencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -426,6 +438,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -460,6 +474,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -486,6 +501,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -518,6 +535,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -548,6 +566,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -582,6 +602,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFunctionTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -608,6 +629,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -642,6 +665,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFunctionVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -668,6 +692,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -702,6 +728,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVersionAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -728,6 +755,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -760,6 +789,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -786,6 +816,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -818,6 +850,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDependencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -844,6 +877,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -878,6 +913,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -907,6 +943,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -939,6 +977,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -965,6 +1004,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -997,6 +1038,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1023,6 +1065,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1059,6 +1103,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFunctionTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1085,6 +1130,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1119,6 +1166,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVersionAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1145,6 +1193,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1175,6 +1225,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableLtsLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1201,6 +1252,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1239,6 +1292,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1265,6 +1319,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1297,6 +1353,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1324,6 +1381,8 @@ class FunctionGraphClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1346,7 +1405,7 @@ class FunctionGraphClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Cff-Request-Id"]
+        response_headers = ["X-Cff-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1361,6 +1420,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InvokeFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1387,6 +1447,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1431,6 +1493,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAsyncInvocationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1457,6 +1520,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1501,6 +1566,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDependenciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1527,6 +1593,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1559,6 +1627,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1585,6 +1654,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1621,6 +1692,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1647,6 +1719,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1681,6 +1755,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1707,6 +1782,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1739,6 +1816,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionTriggersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1765,6 +1843,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1801,6 +1881,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1827,6 +1908,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1863,6 +1946,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1889,6 +1973,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1919,6 +2005,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1948,6 +2035,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1984,6 +2073,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2010,6 +2100,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2042,6 +2134,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVersionAliasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2068,6 +2161,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2108,6 +2203,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2134,6 +2230,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2174,6 +2272,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkflowExecutionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2200,6 +2299,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2234,6 +2335,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RetryWorkFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2260,6 +2362,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2292,6 +2396,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDependcyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2318,6 +2423,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2352,6 +2459,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2378,6 +2486,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2410,6 +2520,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2436,6 +2547,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2468,6 +2581,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFunctionCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2494,6 +2608,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2526,6 +2642,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFunctionConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2552,6 +2669,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2588,6 +2707,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFunctionTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2614,6 +2734,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2646,6 +2768,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLtsLogDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2672,6 +2795,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2708,6 +2833,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTenantMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2734,6 +2860,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2766,6 +2894,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTracingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2792,6 +2921,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2826,6 +2957,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2852,6 +2984,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2884,6 +3018,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2910,6 +3045,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2948,6 +3085,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkFlowMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2974,6 +3112,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3010,6 +3150,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkflowExecutionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3036,6 +3177,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3070,6 +3213,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkflowExecutionForPageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3096,6 +3240,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3130,6 +3276,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartSyncWorkflowExecutionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3156,6 +3303,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3196,6 +3345,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartWorkflowExecutionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3222,6 +3372,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3256,6 +3408,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopWorkFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3282,6 +3435,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3316,6 +3471,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDependcyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3342,6 +3498,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3378,6 +3536,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3404,6 +3563,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3438,6 +3599,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3464,6 +3626,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3498,6 +3662,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3524,6 +3689,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3558,6 +3725,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3584,6 +3752,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3618,6 +3788,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionMaxInstanceConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3644,6 +3815,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3678,6 +3851,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionReservedInstancesCountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3704,6 +3878,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3738,6 +3914,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTracingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3764,6 +3941,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3802,6 +3981,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3828,6 +4008,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3864,6 +4046,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVersionAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3890,6 +4073,8 @@ class FunctionGraphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3924,6 +4109,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWorkFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3931,7 +4117,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3941,9 +4127,10 @@ class FunctionGraphClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3960,6 +4147,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

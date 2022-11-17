@@ -17,7 +17,6 @@ class ShowDomainItemDetailsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDomainItemDetailsResponse(SdkResponse):
     def domain_item_details(self):
         """Gets the domain_item_details of this ShowDomainItemDetailsResponse.
 
-
         :return: The domain_item_details of this ShowDomainItemDetailsResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.DomainItemDetail`
         """
@@ -58,7 +56,6 @@ class ShowDomainItemDetailsResponse(SdkResponse):
     @domain_item_details.setter
     def domain_item_details(self, domain_item_details):
         """Sets the domain_item_details of this ShowDomainItemDetailsResponse.
-
 
         :param domain_item_details: The domain_item_details of this ShowDomainItemDetailsResponse.
         :type domain_item_details: :class:`huaweicloudsdkcdn.v1.DomainItemDetail`

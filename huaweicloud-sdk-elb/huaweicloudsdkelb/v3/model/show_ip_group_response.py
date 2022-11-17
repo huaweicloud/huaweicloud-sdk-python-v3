@@ -17,7 +17,6 @@ class ShowIpGroupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowIpGroupResponse(SdkResponse):
     def ipgroup(self):
         """Gets the ipgroup of this ShowIpGroupResponse.
 
-
         :return: The ipgroup of this ShowIpGroupResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.IpGroup`
         """
@@ -65,7 +63,6 @@ class ShowIpGroupResponse(SdkResponse):
     @ipgroup.setter
     def ipgroup(self, ipgroup):
         """Sets the ipgroup of this ShowIpGroupResponse.
-
 
         :param ipgroup: The ipgroup of this ShowIpGroupResponse.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.IpGroup`

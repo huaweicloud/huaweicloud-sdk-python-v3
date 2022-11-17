@@ -17,7 +17,6 @@ class CancelRecurringSubMeetingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -193,7 +192,6 @@ class CancelRecurringSubMeetingRequest:
     def body(self):
         """Gets the body of this CancelRecurringSubMeetingRequest.
 
-
         :return: The body of this CancelRecurringSubMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestCancelSingleRecordCycleConfListReqBody`
         """
@@ -202,7 +200,6 @@ class CancelRecurringSubMeetingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CancelRecurringSubMeetingRequest.
-
 
         :param body: The body of this CancelRecurringSubMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestCancelSingleRecordCycleConfListReqBody`

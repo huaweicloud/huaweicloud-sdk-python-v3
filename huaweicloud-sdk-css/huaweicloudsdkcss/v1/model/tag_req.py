@@ -17,7 +17,6 @@ class TagReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class TagReq:
     def tag(self):
         """Gets the tag of this TagReq.
 
-
         :return: The tag of this TagReq.
         :rtype: :class:`huaweicloudsdkcss.v1.Tag`
         """
@@ -57,7 +55,6 @@ class TagReq:
     @tag.setter
     def tag(self, tag):
         """Sets the tag of this TagReq.
-
 
         :param tag: The tag of this TagReq.
         :type tag: :class:`huaweicloudsdkcss.v1.Tag`

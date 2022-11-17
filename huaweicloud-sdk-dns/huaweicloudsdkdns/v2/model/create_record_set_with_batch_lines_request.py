@@ -17,7 +17,6 @@ class CreateRecordSetWithBatchLinesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class CreateRecordSetWithBatchLinesRequest:
     def zone_id(self):
         """Gets the zone_id of this CreateRecordSetWithBatchLinesRequest.
 
-
         :return: The zone_id of this CreateRecordSetWithBatchLinesRequest.
         :rtype: str
         """
@@ -64,7 +62,6 @@ class CreateRecordSetWithBatchLinesRequest:
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this CreateRecordSetWithBatchLinesRequest.
-
 
         :param zone_id: The zone_id of this CreateRecordSetWithBatchLinesRequest.
         :type zone_id: str
@@ -75,7 +72,6 @@ class CreateRecordSetWithBatchLinesRequest:
     def body(self):
         """Gets the body of this CreateRecordSetWithBatchLinesRequest.
 
-
         :return: The body of this CreateRecordSetWithBatchLinesRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRSetBatchLinesReq`
         """
@@ -84,7 +80,6 @@ class CreateRecordSetWithBatchLinesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRecordSetWithBatchLinesRequest.
-
 
         :param body: The body of this CreateRecordSetWithBatchLinesRequest.
         :type body: :class:`huaweicloudsdkdns.v2.CreateRSetBatchLinesReq`

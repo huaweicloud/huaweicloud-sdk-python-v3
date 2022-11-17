@@ -17,7 +17,6 @@ class ReclaimSubEnterpriseAmountRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ReclaimSubEnterpriseAmountRequest:
     def body(self):
         """Gets the body of this ReclaimSubEnterpriseAmountRequest.
 
-
         :return: The body of this ReclaimSubEnterpriseAmountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.RetrieveEnterpriseMultiAccountReq`
         """
@@ -58,7 +56,6 @@ class ReclaimSubEnterpriseAmountRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ReclaimSubEnterpriseAmountRequest.
-
 
         :param body: The body of this ReclaimSubEnterpriseAmountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.RetrieveEnterpriseMultiAccountReq`

@@ -17,7 +17,6 @@ class CreateTakeOverTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateTakeOverTaskRequest:
     def body(self):
         """Gets the body of this CreateTakeOverTaskRequest.
 
-
         :return: The body of this CreateTakeOverTaskRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskReq`
         """
@@ -58,7 +56,6 @@ class CreateTakeOverTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTakeOverTaskRequest.
-
 
         :param body: The body of this CreateTakeOverTaskRequest.
         :type body: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskReq`

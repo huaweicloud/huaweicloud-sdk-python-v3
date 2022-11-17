@@ -17,7 +17,6 @@ class ResizeInstanceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class ResizeInstanceRequestBody:
     def resize(self):
         """Gets the resize of this ResizeInstanceRequestBody.
 
-
         :return: The resize of this ResizeInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceOption`
         """
@@ -64,7 +62,6 @@ class ResizeInstanceRequestBody:
     @resize.setter
     def resize(self, resize):
         """Sets the resize of this ResizeInstanceRequestBody.
-
 
         :param resize: The resize of this ResizeInstanceRequestBody.
         :type resize: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceOption`

@@ -17,7 +17,6 @@ class AssociateKeypairRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class AssociateKeypairRequestBody:
     def server(self):
         """Gets the server of this AssociateKeypairRequestBody.
 
-
         :return: The server of this AssociateKeypairRequestBody.
         :rtype: :class:`huaweicloudsdkkps.v3.EcsServerInfo`
         """
@@ -85,7 +83,6 @@ class AssociateKeypairRequestBody:
     @server.setter
     def server(self, server):
         """Sets the server of this AssociateKeypairRequestBody.
-
 
         :param server: The server of this AssociateKeypairRequestBody.
         :type server: :class:`huaweicloudsdkkps.v3.EcsServerInfo`

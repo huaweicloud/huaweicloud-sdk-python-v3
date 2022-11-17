@@ -17,7 +17,6 @@ class QualityEnhanceTemplateInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class QualityEnhanceTemplateInfo:
     def template(self):
         """Gets the template of this QualityEnhanceTemplateInfo.
 
-
         :return: The template of this QualityEnhanceTemplateInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
         """
@@ -94,7 +92,6 @@ class QualityEnhanceTemplateInfo:
     @template.setter
     def template(self, template):
         """Sets the template of this QualityEnhanceTemplateInfo.
-
 
         :param template: The template of this QualityEnhanceTemplateInfo.
         :type template: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
@@ -105,7 +102,6 @@ class QualityEnhanceTemplateInfo:
     def error(self):
         """Gets the error of this QualityEnhanceTemplateInfo.
 
-
         :return: The error of this QualityEnhanceTemplateInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.XCodeError`
         """
@@ -114,7 +110,6 @@ class QualityEnhanceTemplateInfo:
     @error.setter
     def error(self, error):
         """Sets the error of this QualityEnhanceTemplateInfo.
-
 
         :param error: The error of this QualityEnhanceTemplateInfo.
         :type error: :class:`huaweicloudsdkmpc.v1.XCodeError`

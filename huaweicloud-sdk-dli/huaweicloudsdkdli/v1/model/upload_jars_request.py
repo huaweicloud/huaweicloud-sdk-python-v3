@@ -17,7 +17,6 @@ class UploadJarsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class UploadJarsRequest:
     def user_id(self):
         """Gets the user_id of this UploadJarsRequest.
 
-
         :return: The user_id of this UploadJarsRequest.
         :rtype: str
         """
@@ -65,7 +63,6 @@ class UploadJarsRequest:
     @user_id.setter
     def user_id(self, user_id):
         """Sets the user_id of this UploadJarsRequest.
-
 
         :param user_id: The user_id of this UploadJarsRequest.
         :type user_id: str
@@ -76,7 +73,6 @@ class UploadJarsRequest:
     def body(self):
         """Gets the body of this UploadJarsRequest.
 
-
         :return: The body of this UploadJarsRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UploadGroupPackageReq`
         """
@@ -85,7 +81,6 @@ class UploadJarsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UploadJarsRequest.
-
 
         :param body: The body of this UploadJarsRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UploadGroupPackageReq`

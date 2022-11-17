@@ -17,7 +17,6 @@ class UnfreezeSubCustomersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UnfreezeSubCustomersRequest:
     def body(self):
         """Gets the body of this UnfreezeSubCustomersRequest.
 
-
         :return: The body of this UnfreezeSubCustomersRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.UnfreezeSubCustomersReq`
         """
@@ -58,7 +56,6 @@ class UnfreezeSubCustomersRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UnfreezeSubCustomersRequest.
-
 
         :param body: The body of this UnfreezeSubCustomersRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.UnfreezeSubCustomersReq`

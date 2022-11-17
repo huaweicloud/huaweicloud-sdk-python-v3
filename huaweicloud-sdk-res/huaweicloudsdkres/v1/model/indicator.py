@@ -17,7 +17,6 @@ class Indicator:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class Indicator:
     def indicator_params(self):
         """Gets the indicator_params of this Indicator.
 
-
         :return: The indicator_params of this Indicator.
         :rtype: :class:`huaweicloudsdkres.v1.IndicatorParam`
         """
@@ -87,7 +85,6 @@ class Indicator:
     @indicator_params.setter
     def indicator_params(self, indicator_params):
         """Sets the indicator_params of this Indicator.
-
 
         :param indicator_params: The indicator_params of this Indicator.
         :type indicator_params: :class:`huaweicloudsdkres.v1.IndicatorParam`

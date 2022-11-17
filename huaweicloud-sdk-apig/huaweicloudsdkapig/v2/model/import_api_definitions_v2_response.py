@@ -17,7 +17,6 @@ class ImportApiDefinitionsV2Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class ImportApiDefinitionsV2Response(SdkResponse):
     def swagger(self):
         """Gets the swagger of this ImportApiDefinitionsV2Response.
 
-
         :return: The swagger of this ImportApiDefinitionsV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.Swagger`
         """
@@ -130,7 +128,6 @@ class ImportApiDefinitionsV2Response(SdkResponse):
     @swagger.setter
     def swagger(self, swagger):
         """Sets the swagger of this ImportApiDefinitionsV2Response.
-
 
         :param swagger: The swagger of this ImportApiDefinitionsV2Response.
         :type swagger: :class:`huaweicloudsdkapig.v2.Swagger`

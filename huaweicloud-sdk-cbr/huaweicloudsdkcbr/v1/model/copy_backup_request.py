@@ -17,7 +17,6 @@ class CopyBackupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CopyBackupRequest:
     def body(self):
         """Gets the body of this CopyBackupRequest.
 
-
         :return: The body of this CopyBackupRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupReplicateReq`
         """
@@ -86,7 +84,6 @@ class CopyBackupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CopyBackupRequest.
-
 
         :param body: The body of this CopyBackupRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.BackupReplicateReq`

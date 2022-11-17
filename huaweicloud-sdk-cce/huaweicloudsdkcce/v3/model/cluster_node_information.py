@@ -17,7 +17,6 @@ class ClusterNodeInformation:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ClusterNodeInformation:
     def metadata(self):
         """Gets the metadata of this ClusterNodeInformation.
 
-
         :return: The metadata of this ClusterNodeInformation.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterNodeInformationMetadata`
         """
@@ -57,7 +55,6 @@ class ClusterNodeInformation:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ClusterNodeInformation.
-
 
         :param metadata: The metadata of this ClusterNodeInformation.
         :type metadata: :class:`huaweicloudsdkcce.v3.ClusterNodeInformationMetadata`

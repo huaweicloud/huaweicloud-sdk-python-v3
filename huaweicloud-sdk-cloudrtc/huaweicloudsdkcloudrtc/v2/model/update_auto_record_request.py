@@ -17,7 +17,6 @@ class UpdateAutoRecordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class UpdateAutoRecordRequest:
     def body(self):
         """Gets the body of this UpdateAutoRecordRequest.
 
-
         :return: The body of this UpdateAutoRecordRequest.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AutoRecordModeReq`
         """
@@ -201,7 +199,6 @@ class UpdateAutoRecordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateAutoRecordRequest.
-
 
         :param body: The body of this UpdateAutoRecordRequest.
         :type body: :class:`huaweicloudsdkcloudrtc.v2.AutoRecordModeReq`

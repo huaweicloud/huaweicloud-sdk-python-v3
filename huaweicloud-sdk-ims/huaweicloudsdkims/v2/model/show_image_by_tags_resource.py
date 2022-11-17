@@ -17,7 +17,6 @@ class ShowImageByTagsResource:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -88,7 +87,6 @@ class ShowImageByTagsResource:
     def resource_detail(self):
         """Gets the resource_detail of this ShowImageByTagsResource.
 
-
         :return: The resource_detail of this ShowImageByTagsResource.
         :rtype: :class:`huaweicloudsdkims.v2.QueryImageByTagsResourceDetail`
         """
@@ -97,7 +95,6 @@ class ShowImageByTagsResource:
     @resource_detail.setter
     def resource_detail(self, resource_detail):
         """Sets the resource_detail of this ShowImageByTagsResource.
-
 
         :param resource_detail: The resource_detail of this ShowImageByTagsResource.
         :type resource_detail: :class:`huaweicloudsdkims.v2.QueryImageByTagsResourceDetail`

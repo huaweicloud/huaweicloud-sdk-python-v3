@@ -17,7 +17,6 @@ class ChangeCloudPhoneServerModelRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ChangeCloudPhoneServerModelRequestBody:
     def extend_param(self):
         """Gets the extend_param of this ChangeCloudPhoneServerModelRequestBody.
 
-
         :return: The extend_param of this ChangeCloudPhoneServerModelRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelRequestBodyExtendParam`
         """
@@ -114,7 +112,6 @@ class ChangeCloudPhoneServerModelRequestBody:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this ChangeCloudPhoneServerModelRequestBody.
-
 
         :param extend_param: The extend_param of this ChangeCloudPhoneServerModelRequestBody.
         :type extend_param: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelRequestBodyExtendParam`

@@ -17,7 +17,6 @@ class PublicipInstanceResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -431,7 +430,6 @@ class PublicipInstanceResp:
     def vnic(self):
         """Gets the vnic of this PublicipInstanceResp.
 
-
         :return: The vnic of this PublicipInstanceResp.
         :rtype: :class:`huaweicloudsdkeip.v3.VnicInfo`
         """
@@ -440,7 +438,6 @@ class PublicipInstanceResp:
     @vnic.setter
     def vnic(self, vnic):
         """Sets the vnic of this PublicipInstanceResp.
-
 
         :param vnic: The vnic of this PublicipInstanceResp.
         :type vnic: :class:`huaweicloudsdkeip.v3.VnicInfo`
@@ -451,7 +448,6 @@ class PublicipInstanceResp:
     def bandwidth(self):
         """Gets the bandwidth of this PublicipInstanceResp.
 
-
         :return: The bandwidth of this PublicipInstanceResp.
         :rtype: :class:`huaweicloudsdkeip.v3.PublicipBandwidthInfo`
         """
@@ -460,7 +456,6 @@ class PublicipInstanceResp:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this PublicipInstanceResp.
-
 
         :param bandwidth: The bandwidth of this PublicipInstanceResp.
         :type bandwidth: :class:`huaweicloudsdkeip.v3.PublicipBandwidthInfo`

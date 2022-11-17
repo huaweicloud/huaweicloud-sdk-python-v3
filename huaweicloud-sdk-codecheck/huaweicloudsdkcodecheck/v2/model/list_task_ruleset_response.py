@@ -17,7 +17,6 @@ class ListTaskRulesetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListTaskRulesetResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListTaskRulesetResponse.
 
-
         :return: The body of this ListTaskRulesetResponse.
         :rtype: list[:class:`huaweicloudsdkcodecheck.v2.TaskRulesetInfo`]
         """
@@ -58,7 +56,6 @@ class ListTaskRulesetResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ListTaskRulesetResponse.
-
 
         :param body: The body of this ListTaskRulesetResponse.
         :type body: list[:class:`huaweicloudsdkcodecheck.v2.TaskRulesetInfo`]

@@ -17,7 +17,6 @@ class KeystoneCreateScopedTokenRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class KeystoneCreateScopedTokenRequestBody:
     def auth(self):
         """Gets the auth of this KeystoneCreateScopedTokenRequestBody.
 
-
         :return: The auth of this KeystoneCreateScopedTokenRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopedTokenAuth`
         """
@@ -57,7 +55,6 @@ class KeystoneCreateScopedTokenRequestBody:
     @auth.setter
     def auth(self, auth):
         """Sets the auth of this KeystoneCreateScopedTokenRequestBody.
-
 
         :param auth: The auth of this KeystoneCreateScopedTokenRequestBody.
         :type auth: :class:`huaweicloudsdkiam.v3.ScopedTokenAuth`

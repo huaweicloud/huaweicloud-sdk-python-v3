@@ -17,7 +17,6 @@ class ActionSmnForwarding:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -51,9 +50,9 @@ class ActionSmnForwarding:
         :type theme_name: str
         :param topic_urn: **参数说明**：SMN服务对应的topic的主题URN。
         :type topic_urn: str
-        :param message_content: **参数说明**：短信或邮件的内容。。
+        :param message_content: **参数说明**：短信或邮件的内容。
         :type message_content: str
-        :param message_title: **参数说明**：短信或邮件的主题。。
+        :param message_title: **参数说明**：短信或邮件的主题。
         :type message_title: str
         """
         
@@ -166,7 +165,7 @@ class ActionSmnForwarding:
     def message_content(self):
         """Gets the message_content of this ActionSmnForwarding.
 
-        **参数说明**：短信或邮件的内容。。
+        **参数说明**：短信或邮件的内容。
 
         :return: The message_content of this ActionSmnForwarding.
         :rtype: str
@@ -177,7 +176,7 @@ class ActionSmnForwarding:
     def message_content(self, message_content):
         """Sets the message_content of this ActionSmnForwarding.
 
-        **参数说明**：短信或邮件的内容。。
+        **参数说明**：短信或邮件的内容。
 
         :param message_content: The message_content of this ActionSmnForwarding.
         :type message_content: str
@@ -188,7 +187,7 @@ class ActionSmnForwarding:
     def message_title(self):
         """Gets the message_title of this ActionSmnForwarding.
 
-        **参数说明**：短信或邮件的主题。。
+        **参数说明**：短信或邮件的主题。
 
         :return: The message_title of this ActionSmnForwarding.
         :rtype: str
@@ -199,7 +198,7 @@ class ActionSmnForwarding:
     def message_title(self, message_title):
         """Sets the message_title of this ActionSmnForwarding.
 
-        **参数说明**：短信或邮件的主题。。
+        **参数说明**：短信或邮件的主题。
 
         :param message_title: The message_title of this ActionSmnForwarding.
         :type message_title: str

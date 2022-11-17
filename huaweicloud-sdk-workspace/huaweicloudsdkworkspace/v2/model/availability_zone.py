@@ -17,7 +17,6 @@ class AvailabilityZone:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -157,7 +156,6 @@ class AvailabilityZone:
     def sold_out(self):
         """Gets the sold_out of this AvailabilityZone.
 
-
         :return: The sold_out of this AvailabilityZone.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SoldOutInfo`
         """
@@ -166,7 +164,6 @@ class AvailabilityZone:
     @sold_out.setter
     def sold_out(self, sold_out):
         """Sets the sold_out of this AvailabilityZone.
-
 
         :param sold_out: The sold_out of this AvailabilityZone.
         :type sold_out: :class:`huaweicloudsdkworkspace.v2.SoldOutInfo`

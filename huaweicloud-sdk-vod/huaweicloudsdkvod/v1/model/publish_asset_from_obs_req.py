@@ -17,7 +17,6 @@ class PublishAssetFromObsReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -349,7 +348,6 @@ class PublishAssetFromObsReq:
     def thumbnail(self):
         """Gets the thumbnail of this PublishAssetFromObsReq.
 
-
         :return: The thumbnail of this PublishAssetFromObsReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
@@ -358,7 +356,6 @@ class PublishAssetFromObsReq:
     @thumbnail.setter
     def thumbnail(self, thumbnail):
         """Sets the thumbnail of this PublishAssetFromObsReq.
-
 
         :param thumbnail: The thumbnail of this PublishAssetFromObsReq.
         :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -369,7 +366,6 @@ class PublishAssetFromObsReq:
     def review(self):
         """Gets the review of this PublishAssetFromObsReq.
 
-
         :return: The review of this PublishAssetFromObsReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
         """
@@ -378,7 +374,6 @@ class PublishAssetFromObsReq:
     @review.setter
     def review(self, review):
         """Sets the review of this PublishAssetFromObsReq.
-
 
         :param review: The review of this PublishAssetFromObsReq.
         :type review: :class:`huaweicloudsdkvod.v1.Review`
@@ -411,7 +406,6 @@ class PublishAssetFromObsReq:
     def input(self):
         """Gets the input of this PublishAssetFromObsReq.
 
-
         :return: The input of this PublishAssetFromObsReq.
         :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
@@ -420,7 +414,6 @@ class PublishAssetFromObsReq:
     @input.setter
     def input(self, input):
         """Sets the input of this PublishAssetFromObsReq.
-
 
         :param input: The input of this PublishAssetFromObsReq.
         :type input: :class:`huaweicloudsdkvod.v1.FileAddr`

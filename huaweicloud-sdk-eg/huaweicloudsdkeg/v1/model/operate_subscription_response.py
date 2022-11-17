@@ -17,7 +17,6 @@ class OperateSubscriptionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class OperateSubscriptionResponse(SdkResponse):
     def events(self):
         """Gets the events of this OperateSubscriptionResponse.
 
-
         :return: The events of this OperateSubscriptionResponse.
         :rtype: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]
         """
@@ -94,7 +92,6 @@ class OperateSubscriptionResponse(SdkResponse):
     @events.setter
     def events(self, events):
         """Sets the events of this OperateSubscriptionResponse.
-
 
         :param events: The events of this OperateSubscriptionResponse.
         :type events: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]
@@ -105,7 +102,6 @@ class OperateSubscriptionResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this OperateSubscriptionResponse.
 
-
         :return: The x_request_id of this OperateSubscriptionResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class OperateSubscriptionResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this OperateSubscriptionResponse.
-
 
         :param x_request_id: The x_request_id of this OperateSubscriptionResponse.
         :type x_request_id: str

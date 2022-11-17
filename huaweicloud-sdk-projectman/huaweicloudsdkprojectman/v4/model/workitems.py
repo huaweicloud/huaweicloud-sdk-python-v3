@@ -17,7 +17,6 @@ class Workitems:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -311,7 +310,6 @@ class Workitems:
     def assigned_user(self):
         """Gets the assigned_user of this Workitems.
 
-
         :return: The assigned_user of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
         """
@@ -320,7 +318,6 @@ class Workitems:
     @assigned_user.setter
     def assigned_user(self, assigned_user):
         """Sets the assigned_user of this Workitems.
-
 
         :param assigned_user: The assigned_user of this Workitems.
         :type assigned_user: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
@@ -331,7 +328,6 @@ class Workitems:
     def author(self):
         """Gets the author of this Workitems.
 
-
         :return: The author of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
         """
@@ -340,7 +336,6 @@ class Workitems:
     @author.setter
     def author(self, author):
         """Sets the author of this Workitems.
-
 
         :param author: The author of this Workitems.
         :type author: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
@@ -417,7 +412,6 @@ class Workitems:
     def developer(self):
         """Gets the developer of this Workitems.
 
-
         :return: The developer of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
         """
@@ -426,7 +420,6 @@ class Workitems:
     @developer.setter
     def developer(self, developer):
         """Sets the developer of this Workitems.
-
 
         :param developer: The developer of this Workitems.
         :type developer: :class:`huaweicloudsdkprojectman.v4.WorkitemUser`
@@ -635,7 +628,6 @@ class Workitems:
     def domain(self):
         """Gets the domain of this Workitems.
 
-
         :return: The domain of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemsDomain`
         """
@@ -644,7 +636,6 @@ class Workitems:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this Workitems.
-
 
         :param domain: The domain of this Workitems.
         :type domain: :class:`huaweicloudsdkprojectman.v4.WorkitemsDomain`
@@ -655,7 +646,6 @@ class Workitems:
     def iteration(self):
         """Gets the iteration of this Workitems.
 
-
         :return: The iteration of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemsIteration`
         """
@@ -664,7 +654,6 @@ class Workitems:
     @iteration.setter
     def iteration(self, iteration):
         """Sets the iteration of this Workitems.
-
 
         :param iteration: The iteration of this Workitems.
         :type iteration: :class:`huaweicloudsdkprojectman.v4.WorkitemsIteration`
@@ -675,7 +664,6 @@ class Workitems:
     def module(self):
         """Gets the module of this Workitems.
 
-
         :return: The module of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemsModule`
         """
@@ -684,7 +672,6 @@ class Workitems:
     @module.setter
     def module(self, module):
         """Sets the module of this Workitems.
-
 
         :param module: The module of this Workitems.
         :type module: :class:`huaweicloudsdkprojectman.v4.WorkitemsModule`
@@ -739,7 +726,6 @@ class Workitems:
     def status(self):
         """Gets the status of this Workitems.
 
-
         :return: The status of this Workitems.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemsStatus`
         """
@@ -748,7 +734,6 @@ class Workitems:
     @status.setter
     def status(self, status):
         """Sets the status of this Workitems.
-
 
         :param status: The status of this Workitems.
         :type status: :class:`huaweicloudsdkprojectman.v4.WorkitemsStatus`

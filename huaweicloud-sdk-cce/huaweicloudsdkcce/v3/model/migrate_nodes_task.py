@@ -17,7 +17,6 @@ class MigrateNodesTask:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -113,7 +112,6 @@ class MigrateNodesTask:
     def spec(self):
         """Gets the spec of this MigrateNodesTask.
 
-
         :return: The spec of this MigrateNodesTask.
         :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
         """
@@ -122,7 +120,6 @@ class MigrateNodesTask:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this MigrateNodesTask.
-
 
         :param spec: The spec of this MigrateNodesTask.
         :type spec: :class:`huaweicloudsdkcce.v3.MigrateNodesSpec`
@@ -133,7 +130,6 @@ class MigrateNodesTask:
     def status(self):
         """Gets the status of this MigrateNodesTask.
 
-
         :return: The status of this MigrateNodesTask.
         :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
@@ -142,7 +138,6 @@ class MigrateNodesTask:
     @status.setter
     def status(self, status):
         """Sets the status of this MigrateNodesTask.
-
 
         :param status: The status of this MigrateNodesTask.
         :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`

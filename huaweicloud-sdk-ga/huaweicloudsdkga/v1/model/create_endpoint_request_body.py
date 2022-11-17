@@ -17,7 +17,6 @@ class CreateEndpointRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateEndpointRequestBody:
     def endpoint(self):
         """Gets the endpoint of this CreateEndpointRequestBody.
 
-
         :return: The endpoint of this CreateEndpointRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointOption`
         """
@@ -57,7 +55,6 @@ class CreateEndpointRequestBody:
     @endpoint.setter
     def endpoint(self, endpoint):
         """Sets the endpoint of this CreateEndpointRequestBody.
-
 
         :param endpoint: The endpoint of this CreateEndpointRequestBody.
         :type endpoint: :class:`huaweicloudsdkga.v1.CreateEndpointOption`

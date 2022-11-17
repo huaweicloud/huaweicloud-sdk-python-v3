@@ -17,7 +17,6 @@ class SignPublishedAgreementRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class SignPublishedAgreementRequest:
     def body(self):
         """Gets the body of this SignPublishedAgreementRequest.
 
-
         :return: The body of this SignPublishedAgreementRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.SignAgreementReq`
         """
@@ -173,7 +171,6 @@ class SignPublishedAgreementRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SignPublishedAgreementRequest.
-
 
         :param body: The body of this SignPublishedAgreementRequest.
         :type body: :class:`huaweicloudsdkosm.v2.SignAgreementReq`

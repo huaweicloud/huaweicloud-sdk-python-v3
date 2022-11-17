@@ -17,7 +17,6 @@ class CreateGraphReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateGraphReq:
     def graph(self):
         """Gets the graph of this CreateGraphReq.
 
-
         :return: The graph of this CreateGraphReq.
         :rtype: :class:`huaweicloudsdkges.v1.Graph`
         """
@@ -57,7 +55,6 @@ class CreateGraphReq:
     @graph.setter
     def graph(self, graph):
         """Sets the graph of this CreateGraphReq.
-
 
         :param graph: The graph of this CreateGraphReq.
         :type graph: :class:`huaweicloudsdkges.v1.Graph`

@@ -17,7 +17,6 @@ class OperationLog:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -206,7 +205,6 @@ class OperationLog:
     def error_info(self):
         """Gets the error_info of this OperationLog.
 
-
         :return: The error_info of this OperationLog.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpErrorInfo`
         """
@@ -215,7 +213,6 @@ class OperationLog:
     @error_info.setter
     def error_info(self, error_info):
         """Sets the error_info of this OperationLog.
-
 
         :param error_info: The error_info of this OperationLog.
         :type error_info: :class:`huaweicloudsdkcbr.v1.OpErrorInfo`
@@ -226,7 +223,6 @@ class OperationLog:
     def extra_info(self):
         """Gets the extra_info of this OperationLog.
 
-
         :return: The extra_info of this OperationLog.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtraInfo`
         """
@@ -235,7 +231,6 @@ class OperationLog:
     @extra_info.setter
     def extra_info(self, extra_info):
         """Sets the extra_info of this OperationLog.
-
 
         :param extra_info: The extra_info of this OperationLog.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.OpExtraInfo`

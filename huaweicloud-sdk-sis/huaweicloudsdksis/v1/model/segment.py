@@ -17,7 +17,6 @@ class Segment:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class Segment:
     def result(self):
         """Gets the result of this Segment.
 
-
         :return: The result of this Segment.
         :rtype: :class:`huaweicloudsdksis.v1.TranscriberResult`
         """
@@ -113,7 +111,6 @@ class Segment:
     @result.setter
     def result(self, result):
         """Sets the result of this Segment.
-
 
         :param result: The result of this Segment.
         :type result: :class:`huaweicloudsdksis.v1.TranscriberResult`

@@ -17,7 +17,6 @@ class ResizeDesktopData:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -33,7 +32,7 @@ class ResizeDesktopData:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_id: 桌面ID
+        :param desktop_id: 桌面ID。
         :type desktop_id: str
         """
         
@@ -49,7 +48,7 @@ class ResizeDesktopData:
     def desktop_id(self):
         """Gets the desktop_id of this ResizeDesktopData.
 
-        桌面ID
+        桌面ID。
 
         :return: The desktop_id of this ResizeDesktopData.
         :rtype: str
@@ -60,7 +59,7 @@ class ResizeDesktopData:
     def desktop_id(self, desktop_id):
         """Sets the desktop_id of this ResizeDesktopData.
 
-        桌面ID
+        桌面ID。
 
         :param desktop_id: The desktop_id of this ResizeDesktopData.
         :type desktop_id: str

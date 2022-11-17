@@ -17,7 +17,6 @@ class ShowSinkTaskDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -201,7 +200,6 @@ class ShowSinkTaskDetailResponse(SdkResponse):
     def obs_destination_descriptor(self):
         """Gets the obs_destination_descriptor of this ShowSinkTaskDetailResponse.
 
-
         :return: The obs_destination_descriptor of this ShowSinkTaskDetailResponse.
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespObsDestinationDescriptor`
         """
@@ -210,7 +208,6 @@ class ShowSinkTaskDetailResponse(SdkResponse):
     @obs_destination_descriptor.setter
     def obs_destination_descriptor(self, obs_destination_descriptor):
         """Sets the obs_destination_descriptor of this ShowSinkTaskDetailResponse.
-
 
         :param obs_destination_descriptor: The obs_destination_descriptor of this ShowSinkTaskDetailResponse.
         :type obs_destination_descriptor: :class:`huaweicloudsdkkafka.v2.ShowSinkTaskDetailRespObsDestinationDescriptor`

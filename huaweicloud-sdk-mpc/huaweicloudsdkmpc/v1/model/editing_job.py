@@ -17,7 +17,6 @@ class EditingJob:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -353,7 +352,6 @@ class EditingJob:
     def output(self):
         """Gets the output of this EditingJob.
 
-
         :return: The output of this EditingJob.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -362,7 +360,6 @@ class EditingJob:
     @output.setter
     def output(self, output):
         """Sets the output of this EditingJob.
-
 
         :param output: The output of this EditingJob.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -373,7 +370,6 @@ class EditingJob:
     def edit_task_req(self):
         """Gets the edit_task_req of this EditingJob.
 
-
         :return: The edit_task_req of this EditingJob.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEditingJobReq`
         """
@@ -382,7 +378,6 @@ class EditingJob:
     @edit_task_req.setter
     def edit_task_req(self, edit_task_req):
         """Sets the edit_task_req of this EditingJob.
-
 
         :param edit_task_req: The edit_task_req of this EditingJob.
         :type edit_task_req: :class:`huaweicloudsdkmpc.v1.CreateEditingJobReq`

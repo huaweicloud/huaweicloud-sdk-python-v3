@@ -17,7 +17,6 @@ class UpdateDeployment:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class UpdateDeployment:
     def deployment(self):
         """Gets the deployment of this UpdateDeployment.
 
-
         :return: The deployment of this UpdateDeployment.
         :rtype: :class:`huaweicloudsdkief.v1.UpdatePodDeployment`
         """
@@ -65,7 +63,6 @@ class UpdateDeployment:
     @deployment.setter
     def deployment(self, deployment):
         """Sets the deployment of this UpdateDeployment.
-
 
         :param deployment: The deployment of this UpdateDeployment.
         :type deployment: :class:`huaweicloudsdkief.v1.UpdatePodDeployment`

@@ -17,7 +17,6 @@ class CreateStreamGraphRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class CreateStreamGraphRequest:
     def job_id(self):
         """Gets the job_id of this CreateStreamGraphRequest.
 
-
         :return: The job_id of this CreateStreamGraphRequest.
         :rtype: str
         """
@@ -64,7 +62,6 @@ class CreateStreamGraphRequest:
     @job_id.setter
     def job_id(self, job_id):
         """Sets the job_id of this CreateStreamGraphRequest.
-
 
         :param job_id: The job_id of this CreateStreamGraphRequest.
         :type job_id: str
@@ -75,7 +72,6 @@ class CreateStreamGraphRequest:
     def body(self):
         """Gets the body of this CreateStreamGraphRequest.
 
-
         :return: The body of this CreateStreamGraphRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.GenStreamGraphReq`
         """
@@ -84,7 +80,6 @@ class CreateStreamGraphRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateStreamGraphRequest.
-
 
         :param body: The body of this CreateStreamGraphRequest.
         :type body: :class:`huaweicloudsdkdli.v1.GenStreamGraphReq`

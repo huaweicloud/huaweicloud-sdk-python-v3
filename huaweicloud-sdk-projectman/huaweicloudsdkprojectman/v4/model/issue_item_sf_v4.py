@@ -17,7 +17,6 @@ class IssueItemSfV4:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -246,7 +245,6 @@ class IssueItemSfV4:
     def assigned_user(self):
         """Gets the assigned_user of this IssueItemSfV4.
 
-
         :return: The assigned_user of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
@@ -255,7 +253,6 @@ class IssueItemSfV4:
     @assigned_user.setter
     def assigned_user(self, assigned_user):
         """Sets the assigned_user of this IssueItemSfV4.
-
 
         :param assigned_user: The assigned_user of this IssueItemSfV4.
         :type assigned_user: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -266,7 +263,6 @@ class IssueItemSfV4:
     def author(self):
         """Gets the author of this IssueItemSfV4.
 
-
         :return: The author of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
@@ -275,7 +271,6 @@ class IssueItemSfV4:
     @author.setter
     def author(self, author):
         """Sets the author of this IssueItemSfV4.
-
 
         :param author: The author of this IssueItemSfV4.
         :type author: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -374,7 +369,6 @@ class IssueItemSfV4:
     def developer(self):
         """Gets the developer of this IssueItemSfV4.
 
-
         :return: The developer of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         """
@@ -383,7 +377,6 @@ class IssueItemSfV4:
     @developer.setter
     def developer(self, developer):
         """Sets the developer of this IssueItemSfV4.
-
 
         :param developer: The developer of this IssueItemSfV4.
         :type developer: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -570,7 +563,6 @@ class IssueItemSfV4:
     def story_point(self):
         """Gets the story_point of this IssueItemSfV4.
 
-
         :return: The story_point of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4StoryPoint`
         """
@@ -579,7 +571,6 @@ class IssueItemSfV4:
     @story_point.setter
     def story_point(self, story_point):
         """Sets the story_point of this IssueItemSfV4.
-
 
         :param story_point: The story_point of this IssueItemSfV4.
         :type story_point: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4StoryPoint`
@@ -590,7 +581,6 @@ class IssueItemSfV4:
     def domain(self):
         """Gets the domain of this IssueItemSfV4.
 
-
         :return: The domain of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Domain`
         """
@@ -599,7 +589,6 @@ class IssueItemSfV4:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this IssueItemSfV4.
-
 
         :param domain: The domain of this IssueItemSfV4.
         :type domain: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Domain`
@@ -610,7 +599,6 @@ class IssueItemSfV4:
     def iteration(self):
         """Gets the iteration of this IssueItemSfV4.
 
-
         :return: The iteration of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
         """
@@ -619,7 +607,6 @@ class IssueItemSfV4:
     @iteration.setter
     def iteration(self, iteration):
         """Sets the iteration of this IssueItemSfV4.
-
 
         :param iteration: The iteration of this IssueItemSfV4.
         :type iteration: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
@@ -630,7 +617,6 @@ class IssueItemSfV4:
     def module(self):
         """Gets the module of this IssueItemSfV4.
 
-
         :return: The module of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
         """
@@ -639,7 +625,6 @@ class IssueItemSfV4:
     @module.setter
     def module(self, module):
         """Sets the module of this IssueItemSfV4.
-
 
         :param module: The module of this IssueItemSfV4.
         :type module: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
@@ -650,7 +635,6 @@ class IssueItemSfV4:
     def priority(self):
         """Gets the priority of this IssueItemSfV4.
 
-
         :return: The priority of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
         """
@@ -659,7 +643,6 @@ class IssueItemSfV4:
     @priority.setter
     def priority(self, priority):
         """Sets the priority of this IssueItemSfV4.
-
 
         :param priority: The priority of this IssueItemSfV4.
         :type priority: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
@@ -670,7 +653,6 @@ class IssueItemSfV4:
     def severity(self):
         """Gets the severity of this IssueItemSfV4.
 
-
         :return: The severity of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
         """
@@ -679,7 +661,6 @@ class IssueItemSfV4:
     @severity.setter
     def severity(self, severity):
         """Sets the severity of this IssueItemSfV4.
-
 
         :param severity: The severity of this IssueItemSfV4.
         :type severity: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
@@ -690,7 +671,6 @@ class IssueItemSfV4:
     def status(self):
         """Gets the status of this IssueItemSfV4.
 
-
         :return: The status of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
         """
@@ -699,7 +679,6 @@ class IssueItemSfV4:
     @status.setter
     def status(self, status):
         """Sets the status of this IssueItemSfV4.
-
 
         :param status: The status of this IssueItemSfV4.
         :type status: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
@@ -710,7 +689,6 @@ class IssueItemSfV4:
     def tracker(self):
         """Gets the tracker of this IssueItemSfV4.
 
-
         :return: The tracker of this IssueItemSfV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`
         """
@@ -719,7 +697,6 @@ class IssueItemSfV4:
     @tracker.setter
     def tracker(self, tracker):
         """Sets the tracker of this IssueItemSfV4.
-
 
         :param tracker: The tracker of this IssueItemSfV4.
         :type tracker: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`

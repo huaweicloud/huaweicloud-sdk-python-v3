@@ -17,7 +17,6 @@ class RunMultiModalAssessmentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -157,7 +156,6 @@ class RunMultiModalAssessmentResponse(SdkResponse):
     def pronunciation(self):
         """Gets the pronunciation of this RunMultiModalAssessmentResponse.
 
-
         :return: The pronunciation of this RunMultiModalAssessmentResponse.
         :rtype: :class:`huaweicloudsdksis.v1.Pronunciation`
         """
@@ -166,7 +164,6 @@ class RunMultiModalAssessmentResponse(SdkResponse):
     @pronunciation.setter
     def pronunciation(self, pronunciation):
         """Sets the pronunciation of this RunMultiModalAssessmentResponse.
-
 
         :param pronunciation: The pronunciation of this RunMultiModalAssessmentResponse.
         :type pronunciation: :class:`huaweicloudsdksis.v1.Pronunciation`
@@ -177,7 +174,6 @@ class RunMultiModalAssessmentResponse(SdkResponse):
     def fluency(self):
         """Gets the fluency of this RunMultiModalAssessmentResponse.
 
-
         :return: The fluency of this RunMultiModalAssessmentResponse.
         :rtype: :class:`huaweicloudsdksis.v1.Fluency`
         """
@@ -186,7 +182,6 @@ class RunMultiModalAssessmentResponse(SdkResponse):
     @fluency.setter
     def fluency(self, fluency):
         """Sets the fluency of this RunMultiModalAssessmentResponse.
-
 
         :param fluency: The fluency of this RunMultiModalAssessmentResponse.
         :type fluency: :class:`huaweicloudsdksis.v1.Fluency`

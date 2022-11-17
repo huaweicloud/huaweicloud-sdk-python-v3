@@ -17,7 +17,6 @@ class KafkaContentReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class KafkaContentReq:
     def auth_info(self):
         """Gets the auth_info of this KafkaContentReq.
 
-
         :return: The auth_info of this KafkaContentReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.KafkaAuthInfo`
         """
@@ -173,7 +171,6 @@ class KafkaContentReq:
     @auth_info.setter
     def auth_info(self, auth_info):
         """Sets the auth_info of this KafkaContentReq.
-
 
         :param auth_info: The auth_info of this KafkaContentReq.
         :type auth_info: :class:`huaweicloudsdkiotanalytics.v1.KafkaAuthInfo`

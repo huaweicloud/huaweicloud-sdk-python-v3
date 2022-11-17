@@ -17,7 +17,6 @@ class MergeRequestsItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -140,7 +139,6 @@ class MergeRequestsItem:
     def author(self):
         """Gets the author of this MergeRequestsItem.
 
-
         :return: The author of this MergeRequestsItem.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Author`
         """
@@ -149,7 +147,6 @@ class MergeRequestsItem:
     @author.setter
     def author(self, author):
         """Sets the author of this MergeRequestsItem.
-
 
         :param author: The author of this MergeRequestsItem.
         :type author: :class:`huaweicloudsdkcodehub.v3.Author`

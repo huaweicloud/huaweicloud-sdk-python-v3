@@ -17,7 +17,6 @@ class AssetInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -143,7 +142,6 @@ class AssetInfo:
     def base_info(self):
         """Gets the base_info of this AssetInfo.
 
-
         :return: The base_info of this AssetInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.BaseInfo`
         """
@@ -152,7 +150,6 @@ class AssetInfo:
     @base_info.setter
     def base_info(self, base_info):
         """Sets the base_info of this AssetInfo.
-
 
         :param base_info: The base_info of this AssetInfo.
         :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`

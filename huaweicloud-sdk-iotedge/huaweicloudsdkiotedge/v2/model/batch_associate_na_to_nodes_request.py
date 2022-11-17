@@ -17,7 +17,6 @@ class BatchAssociateNaToNodesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchAssociateNaToNodesRequest:
     def body(self):
         """Gets the body of this BatchAssociateNaToNodesRequest.
 
-
         :return: The body of this BatchAssociateNaToNodesRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AuthorizeNa2NodesRequestDTO`
         """
@@ -114,7 +112,6 @@ class BatchAssociateNaToNodesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchAssociateNaToNodesRequest.
-
 
         :param body: The body of this BatchAssociateNaToNodesRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.AuthorizeNa2NodesRequestDTO`

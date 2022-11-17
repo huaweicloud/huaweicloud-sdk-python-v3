@@ -17,7 +17,6 @@ class KeystoneUpdateIdentityProviderResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneUpdateIdentityProviderResponse(SdkResponse):
     def identity_provider(self):
         """Gets the identity_provider of this KeystoneUpdateIdentityProviderResponse.
 
-
         :return: The identity_provider of this KeystoneUpdateIdentityProviderResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.IdentityprovidersResult`
         """
@@ -58,7 +56,6 @@ class KeystoneUpdateIdentityProviderResponse(SdkResponse):
     @identity_provider.setter
     def identity_provider(self, identity_provider):
         """Sets the identity_provider of this KeystoneUpdateIdentityProviderResponse.
-
 
         :param identity_provider: The identity_provider of this KeystoneUpdateIdentityProviderResponse.
         :type identity_provider: :class:`huaweicloudsdkiam.v3.IdentityprovidersResult`

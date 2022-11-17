@@ -17,7 +17,6 @@ class CreateExtractTaskReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class CreateExtractTaskReq:
     def input(self):
         """Gets the input of this CreateExtractTaskReq.
 
-
         :return: The input of this CreateExtractTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -79,7 +77,6 @@ class CreateExtractTaskReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateExtractTaskReq.
-
 
         :param input: The input of this CreateExtractTaskReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -90,7 +87,6 @@ class CreateExtractTaskReq:
     def output(self):
         """Gets the output of this CreateExtractTaskReq.
 
-
         :return: The output of this CreateExtractTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -99,7 +95,6 @@ class CreateExtractTaskReq:
     @output.setter
     def output(self, output):
         """Sets the output of this CreateExtractTaskReq.
-
 
         :param output: The output of this CreateExtractTaskReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

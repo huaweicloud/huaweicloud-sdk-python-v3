@@ -17,7 +17,6 @@ class AddTagsResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class AddTagsResponse:
     def commit(self):
         """Gets the commit of this AddTagsResponse.
 
-
         :return: The commit of this AddTagsResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitRepoV2`
         """
@@ -116,7 +114,6 @@ class AddTagsResponse:
     @commit.setter
     def commit(self, commit):
         """Sets the commit of this AddTagsResponse.
-
 
         :param commit: The commit of this AddTagsResponse.
         :type commit: :class:`huaweicloudsdkcodehub.v3.CommitRepoV2`

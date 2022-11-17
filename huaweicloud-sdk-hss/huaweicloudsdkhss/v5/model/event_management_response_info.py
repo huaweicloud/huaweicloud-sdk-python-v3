@@ -17,7 +17,6 @@ class EventManagementResponseInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -721,7 +720,6 @@ class EventManagementResponseInfo:
     def resource_info(self):
         """Gets the resource_info of this EventManagementResponseInfo.
 
-
         :return: The resource_info of this EventManagementResponseInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.EventResourceResponseInfo`
         """
@@ -730,7 +728,6 @@ class EventManagementResponseInfo:
     @resource_info.setter
     def resource_info(self, resource_info):
         """Sets the resource_info of this EventManagementResponseInfo.
-
 
         :param resource_info: The resource_info of this EventManagementResponseInfo.
         :type resource_info: :class:`huaweicloudsdkhss.v5.EventResourceResponseInfo`

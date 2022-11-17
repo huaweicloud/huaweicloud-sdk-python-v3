@@ -17,7 +17,6 @@ class PreheatingTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class PreheatingTaskRequest:
     def preheating_task(self):
         """Gets the preheating_task of this PreheatingTaskRequest.
 
-
         :return: The preheating_task of this PreheatingTaskRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.PreheatingTaskRequestBody`
         """
@@ -57,7 +55,6 @@ class PreheatingTaskRequest:
     @preheating_task.setter
     def preheating_task(self, preheating_task):
         """Sets the preheating_task of this PreheatingTaskRequest.
-
 
         :param preheating_task: The preheating_task of this PreheatingTaskRequest.
         :type preheating_task: :class:`huaweicloudsdkcdn.v1.PreheatingTaskRequestBody`

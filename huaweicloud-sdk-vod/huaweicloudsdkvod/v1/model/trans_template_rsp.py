@@ -17,7 +17,6 @@ class TransTemplateRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -281,7 +280,6 @@ class TransTemplateRsp:
     def common(self):
         """Gets the common of this TransTemplateRsp.
 
-
         :return: The common of this TransTemplateRsp.
         :rtype: :class:`huaweicloudsdkvod.v1.CommonInfo`
         """
@@ -290,7 +288,6 @@ class TransTemplateRsp:
     @common.setter
     def common(self, common):
         """Sets the common of this TransTemplateRsp.
-
 
         :param common: The common of this TransTemplateRsp.
         :type common: :class:`huaweicloudsdkvod.v1.CommonInfo`

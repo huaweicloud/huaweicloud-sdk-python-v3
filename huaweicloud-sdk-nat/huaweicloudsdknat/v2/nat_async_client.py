@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class NatAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateNatGatewayDnatRules
         :type request: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequest`
         :rtype: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesResponse`
@@ -68,6 +63,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateNatGatewayDnatRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNatGatewayDnatRule
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleResponse`
@@ -126,6 +125,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNatGatewayDnatRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNatGatewayDnatRule
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewayDnatRuleResponse`
@@ -184,6 +187,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -218,6 +223,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNatGatewayDnatRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -232,6 +238,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNatGatewayDnatRules
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewayDnatRulesRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewayDnatRulesResponse`
@@ -244,6 +251,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -305,6 +314,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNatGatewayDnatRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -319,6 +329,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNatGatewayDnatRule
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewayDnatRuleResponse`
@@ -331,6 +342,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -363,6 +376,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNatGatewayDnatRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -377,6 +391,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNatGatewayDnatRule
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleResponse`
@@ -389,6 +404,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -423,6 +440,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNatGatewayDnatRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -437,6 +455,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNatGateway
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayResponse`
@@ -449,6 +468,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -481,6 +502,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNatGatewayResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -495,6 +517,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNatGateway
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewayResponse`
@@ -507,6 +530,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -539,6 +564,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNatGatewayResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -553,6 +579,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNatGateways
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaysRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewaysResponse`
@@ -565,6 +592,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -619,6 +648,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNatGatewaysResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -633,6 +663,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNatGateway
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewayResponse`
@@ -645,6 +676,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -677,6 +710,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNatGatewayResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -691,6 +725,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNatGateway
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayResponse`
@@ -703,6 +738,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -737,6 +774,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNatGatewayResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -751,6 +789,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNatGatewaySnatRule
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleResponse`
@@ -763,6 +802,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -795,6 +836,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNatGatewaySnatRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -809,6 +851,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNatGatewaySnatRule
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewaySnatRuleResponse`
@@ -821,6 +864,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -855,6 +900,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNatGatewaySnatRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -869,6 +915,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNatGatewaySnatRules
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaySnatRulesRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewaySnatRulesResponse`
@@ -881,6 +928,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -936,6 +985,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNatGatewaySnatRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -950,6 +1000,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNatGatewaySnatRule
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewaySnatRuleResponse`
@@ -962,6 +1013,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -994,6 +1047,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNatGatewaySnatRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1008,6 +1062,7 @@ class NatAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNatGatewaySnatRule
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleResponse`
@@ -1020,6 +1075,8 @@ class NatAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1054,6 +1111,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNatGatewaySnatRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1061,7 +1119,7 @@ class NatAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1072,9 +1130,10 @@ class NatAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1091,6 +1150,7 @@ class NatAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

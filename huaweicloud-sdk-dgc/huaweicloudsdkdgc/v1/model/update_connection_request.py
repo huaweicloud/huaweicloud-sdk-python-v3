@@ -17,7 +17,6 @@ class UpdateConnectionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateConnectionRequest:
     def body(self):
         """Gets the body of this UpdateConnectionRequest.
 
-
         :return: The body of this UpdateConnectionRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.ConnectionInfo`
         """
@@ -86,7 +84,6 @@ class UpdateConnectionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateConnectionRequest.
-
 
         :param body: The body of this UpdateConnectionRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.ConnectionInfo`

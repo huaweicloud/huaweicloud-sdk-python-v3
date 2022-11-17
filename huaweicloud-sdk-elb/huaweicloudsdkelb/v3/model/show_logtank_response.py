@@ -17,7 +17,6 @@ class ShowLogtankResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowLogtankResponse(SdkResponse):
     def logtank(self):
         """Gets the logtank of this ShowLogtankResponse.
 
-
         :return: The logtank of this ShowLogtankResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.Logtank`
         """
@@ -87,7 +85,6 @@ class ShowLogtankResponse(SdkResponse):
     @logtank.setter
     def logtank(self, logtank):
         """Sets the logtank of this ShowLogtankResponse.
-
 
         :param logtank: The logtank of this ShowLogtankResponse.
         :type logtank: :class:`huaweicloudsdkelb.v3.Logtank`

@@ -17,7 +17,6 @@ class UpdateServerResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -347,7 +346,6 @@ class UpdateServerResult:
     def flavor(self):
         """Gets the flavor of this UpdateServerResult.
 
-
         :return: The flavor of this UpdateServerResult.
         :rtype: :class:`huaweicloudsdkecs.v2.SimpleFlavor`
         """
@@ -356,7 +354,6 @@ class UpdateServerResult:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this UpdateServerResult.
-
 
         :param flavor: The flavor of this UpdateServerResult.
         :type flavor: :class:`huaweicloudsdkecs.v2.SimpleFlavor`

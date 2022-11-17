@@ -17,7 +17,6 @@ class DiagnosisNodeReport:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -244,7 +243,6 @@ class DiagnosisNodeReport:
     def command_time_taken_list(self):
         """Gets the command_time_taken_list of this DiagnosisNodeReport.
 
-
         :return: The command_time_taken_list of this DiagnosisNodeReport.
         :rtype: :class:`huaweicloudsdkdcs.v2.CommandTimeTakenList`
         """
@@ -253,7 +251,6 @@ class DiagnosisNodeReport:
     @command_time_taken_list.setter
     def command_time_taken_list(self, command_time_taken_list):
         """Sets the command_time_taken_list of this DiagnosisNodeReport.
-
 
         :param command_time_taken_list: The command_time_taken_list of this DiagnosisNodeReport.
         :type command_time_taken_list: :class:`huaweicloudsdkdcs.v2.CommandTimeTakenList`

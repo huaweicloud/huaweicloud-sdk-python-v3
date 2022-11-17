@@ -17,7 +17,6 @@ class SearchFace:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SearchFace:
     def bounding_box(self):
         """Gets the bounding_box of this SearchFace.
 
-
         :return: The bounding_box of this SearchFace.
         :rtype: :class:`huaweicloudsdkfrs.v2.BoundingBox`
         """
@@ -86,7 +84,6 @@ class SearchFace:
     @bounding_box.setter
     def bounding_box(self, bounding_box):
         """Sets the bounding_box of this SearchFace.
-
 
         :param bounding_box: The bounding_box of this SearchFace.
         :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`

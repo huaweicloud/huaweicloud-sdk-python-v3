@@ -17,7 +17,6 @@ class SetRecordSetsStatusRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class SetRecordSetsStatusRequest:
     def recordset_id(self):
         """Gets the recordset_id of this SetRecordSetsStatusRequest.
 
-
         :return: The recordset_id of this SetRecordSetsStatusRequest.
         :rtype: str
         """
@@ -64,7 +62,6 @@ class SetRecordSetsStatusRequest:
     @recordset_id.setter
     def recordset_id(self, recordset_id):
         """Sets the recordset_id of this SetRecordSetsStatusRequest.
-
 
         :param recordset_id: The recordset_id of this SetRecordSetsStatusRequest.
         :type recordset_id: str
@@ -75,7 +72,6 @@ class SetRecordSetsStatusRequest:
     def body(self):
         """Gets the body of this SetRecordSetsStatusRequest.
 
-
         :return: The body of this SetRecordSetsStatusRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusReq`
         """
@@ -84,7 +80,6 @@ class SetRecordSetsStatusRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetRecordSetsStatusRequest.
-
 
         :param body: The body of this SetRecordSetsStatusRequest.
         :type body: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusReq`

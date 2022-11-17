@@ -17,7 +17,6 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
     def result(self):
         """Gets the result of this RunQueryAudioModerationJobResponse.
 
-
         :return: The result of this RunQueryAudioModerationJobResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultResult`
         """
@@ -144,7 +142,6 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RunQueryAudioModerationJobResponse.
-
 
         :param result: The result of this RunQueryAudioModerationJobResponse.
         :type result: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultResult`
@@ -155,7 +152,6 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
     def request_params(self):
         """Gets the request_params of this RunQueryAudioModerationJobResponse.
 
-
         :return: The request_params of this RunQueryAudioModerationJobResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultRequestParams`
         """
@@ -164,7 +160,6 @@ class RunQueryAudioModerationJobResponse(SdkResponse):
     @request_params.setter
     def request_params(self, request_params):
         """Sets the request_params of this RunQueryAudioModerationJobResponse.
-
 
         :param request_params: The request_params of this RunQueryAudioModerationJobResponse.
         :type request_params: :class:`huaweicloudsdkmoderation.v3.AudioModerationResultRequestParams`

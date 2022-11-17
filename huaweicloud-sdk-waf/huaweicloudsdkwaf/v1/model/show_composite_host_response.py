@@ -17,7 +17,6 @@ class ShowCompositeHostResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -388,7 +387,6 @@ class ShowCompositeHostResponse(SdkResponse):
     def flag(self):
         """Gets the flag of this ShowCompositeHostResponse.
 
-
         :return: The flag of this ShowCompositeHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
@@ -397,7 +395,6 @@ class ShowCompositeHostResponse(SdkResponse):
     @flag.setter
     def flag(self, flag):
         """Sets the flag of this ShowCompositeHostResponse.
-
 
         :param flag: The flag of this ShowCompositeHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`

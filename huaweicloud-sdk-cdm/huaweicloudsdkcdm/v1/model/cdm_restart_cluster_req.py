@@ -17,7 +17,6 @@ class CdmRestartClusterReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CdmRestartClusterReq:
     def restart(self):
         """Gets the restart of this CdmRestartClusterReq.
 
-
         :return: The restart of this CdmRestartClusterReq.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmRestartClusterReqRestart`
         """
@@ -57,7 +55,6 @@ class CdmRestartClusterReq:
     @restart.setter
     def restart(self, restart):
         """Sets the restart of this CdmRestartClusterReq.
-
 
         :param restart: The restart of this CdmRestartClusterReq.
         :type restart: :class:`huaweicloudsdkcdm.v1.CdmRestartClusterReqRestart`

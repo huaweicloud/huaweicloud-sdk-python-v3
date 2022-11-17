@@ -17,7 +17,6 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
     def links(self):
         """Gets the links of this ListAllProjectsPermissionsForAgencyResponse.
 
-
         :return: The links of this ListAllProjectsPermissionsForAgencyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
@@ -87,7 +85,6 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ListAllProjectsPermissionsForAgencyResponse.
-
 
         :param links: The links of this ListAllProjectsPermissionsForAgencyResponse.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

@@ -17,7 +17,6 @@ class TestCaseStage:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -556,7 +555,6 @@ class TestCaseStage:
     def peak_load_kpis(self):
         """Gets the peak_load_kpis of this TestCaseStage.
 
-
         :return: The peak_load_kpis of this TestCaseStage.
         :rtype: :class:`huaweicloudsdkcpts.v1.StageKpiItems`
         """
@@ -565,7 +563,6 @@ class TestCaseStage:
     @peak_load_kpis.setter
     def peak_load_kpis(self, peak_load_kpis):
         """Sets the peak_load_kpis of this TestCaseStage.
-
 
         :param peak_load_kpis: The peak_load_kpis of this TestCaseStage.
         :type peak_load_kpis: :class:`huaweicloudsdkcpts.v1.StageKpiItems`

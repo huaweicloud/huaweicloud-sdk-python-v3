@@ -17,7 +17,6 @@ class DeleteCorpVmrRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class DeleteCorpVmrRequest:
     def body(self):
         """Gets the body of this DeleteCorpVmrRequest.
 
-
         :return: The body of this DeleteCorpVmrRequest.
         :rtype: list[str]
         """
@@ -116,7 +114,6 @@ class DeleteCorpVmrRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteCorpVmrRequest.
-
 
         :param body: The body of this DeleteCorpVmrRequest.
         :type body: list[str]

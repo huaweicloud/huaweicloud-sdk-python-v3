@@ -17,7 +17,6 @@ class ServerDetails:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -543,7 +542,6 @@ class ServerDetails:
     def image(self):
         """Gets the image of this ServerDetails.
 
-
         :return: The image of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.ImageInfo`
         """
@@ -552,7 +550,6 @@ class ServerDetails:
     @image.setter
     def image(self, image):
         """Sets the image of this ServerDetails.
-
 
         :param image: The image of this ServerDetails.
         :type image: :class:`huaweicloudsdkbms.v1.ImageInfo`
@@ -563,7 +560,6 @@ class ServerDetails:
     def flavor(self):
         """Gets the flavor of this ServerDetails.
 
-
         :return: The flavor of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.FlavorInfos`
         """
@@ -572,7 +568,6 @@ class ServerDetails:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this ServerDetails.
-
 
         :param flavor: The flavor of this ServerDetails.
         :type flavor: :class:`huaweicloudsdkbms.v1.FlavorInfos`
@@ -715,7 +710,6 @@ class ServerDetails:
     def metadata(self):
         """Gets the metadata of this ServerDetails.
 
-
         :return: The metadata of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.MetadataList`
         """
@@ -724,7 +718,6 @@ class ServerDetails:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ServerDetails.
-
 
         :param metadata: The metadata of this ServerDetails.
         :type metadata: :class:`huaweicloudsdkbms.v1.MetadataList`
@@ -911,7 +904,6 @@ class ServerDetails:
     def fault(self):
         """Gets the fault of this ServerDetails.
 
-
         :return: The fault of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.Fault`
         """
@@ -920,7 +912,6 @@ class ServerDetails:
     @fault.setter
     def fault(self, fault):
         """Sets the fault of this ServerDetails.
-
 
         :param fault: The fault of this ServerDetails.
         :type fault: :class:`huaweicloudsdkbms.v1.Fault`
@@ -1239,7 +1230,6 @@ class ServerDetails:
     def osscheduler_hints(self):
         """Gets the osscheduler_hints of this ServerDetails.
 
-
         :return: The osscheduler_hints of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.SchedulerHints`
         """
@@ -1248,7 +1238,6 @@ class ServerDetails:
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
         """Sets the osscheduler_hints of this ServerDetails.
-
 
         :param osscheduler_hints: The osscheduler_hints of this ServerDetails.
         :type osscheduler_hints: :class:`huaweicloudsdkbms.v1.SchedulerHints`

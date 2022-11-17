@@ -17,7 +17,6 @@ class UploadFromOBSReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class UploadFromOBSReq:
     def encryption(self):
         """Gets the encryption of this UploadFromOBSReq.
 
-
         :return: The encryption of this UploadFromOBSReq.
         :rtype: :class:`huaweicloudsdkges.v1.EncryptionReq`
         """
@@ -143,7 +141,6 @@ class UploadFromOBSReq:
     @encryption.setter
     def encryption(self, encryption):
         """Sets the encryption of this UploadFromOBSReq.
-
 
         :param encryption: The encryption of this UploadFromOBSReq.
         :type encryption: :class:`huaweicloudsdkges.v1.EncryptionReq`

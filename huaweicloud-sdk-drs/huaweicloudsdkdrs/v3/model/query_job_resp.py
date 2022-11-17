@@ -17,7 +17,6 @@ class QueryJobResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -67,7 +66,12 @@ class QueryJobResp:
         'inherit_id': 'str',
         'gtid': 'str',
         'alarm_notify': 'QuerySmnInfoResp',
-        'incre_start_position': 'str'
+        'incre_start_position': 'str',
+        'is_multi_az': 'bool',
+        'az_name': 'str',
+        'master_az': 'str',
+        'slave_az': 'str',
+        'node_role': 'str'
     }
 
     attribute_map = {
@@ -117,10 +121,15 @@ class QueryJobResp:
         'inherit_id': 'inherit_id',
         'gtid': 'gtid',
         'alarm_notify': 'alarm_notify',
-        'incre_start_position': 'incre_start_position'
+        'incre_start_position': 'incre_start_position',
+        'is_multi_az': 'is_multi_az',
+        'az_name': 'az_name',
+        'master_az': 'master_az',
+        'slave_az': 'slave_az',
+        'node_role': 'node_role'
     }
 
-    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None):
+    def __init__(self, id=None, parent_id=None, name=None, status=None, description=None, create_time=None, task_type=None, source_endpoint=None, dmq_endpoint=None, source_sharding=None, target_endpoint=None, net_type=None, failed_reason=None, inst_info=None, actual_start_time=None, full_transfer_complete_time=None, update_time=None, job_direction=None, db_use_type=None, need_restart=None, is_target_readonly=None, conflict_policy=None, filter_ddl_policy=None, speed_limit=None, schema_type=None, node_num=None, object_switch=None, master_job_id=None, full_mode=None, struct_trans=None, index_trans=None, replace_definer=None, migrate_user=None, sync_database=None, error_code=None, error_message=None, target_root_db=None, az_code=None, vpc_id=None, subnet_id=None, security_group_id=None, multi_write=None, support_ip_v6=None, inherit_id=None, gtid=None, alarm_notify=None, incre_start_position=None, is_multi_az=None, az_name=None, master_az=None, slave_az=None, node_role=None):
         """QueryJobResp
 
         The model defined in huaweicloud sdk
@@ -219,6 +228,16 @@ class QueryJobResp:
         :type alarm_notify: :class:`huaweicloudsdkdrs.v3.QuerySmnInfoResp`
         :param incre_start_position: 增量任务启动位点
         :type incre_start_position: str
+        :param is_multi_az: 是否是主备任务。
+        :type is_multi_az: bool
+        :param az_name: node所在节点AZ名称。
+        :type az_name: str
+        :param master_az: 主备任务主AZ。
+        :type master_az: str
+        :param slave_az: 主备任务备AZ。
+        :type slave_az: str
+        :param node_role: 任务主备角色。
+        :type node_role: str
         """
         
         
@@ -270,6 +289,11 @@ class QueryJobResp:
         self._gtid = None
         self._alarm_notify = None
         self._incre_start_position = None
+        self._is_multi_az = None
+        self._az_name = None
+        self._master_az = None
+        self._slave_az = None
+        self._node_role = None
         self.discriminator = None
 
         if id is not None:
@@ -366,6 +390,16 @@ class QueryJobResp:
             self.alarm_notify = alarm_notify
         if incre_start_position is not None:
             self.incre_start_position = incre_start_position
+        if is_multi_az is not None:
+            self.is_multi_az = is_multi_az
+        if az_name is not None:
+            self.az_name = az_name
+        if master_az is not None:
+            self.master_az = master_az
+        if slave_az is not None:
+            self.slave_az = slave_az
+        if node_role is not None:
+            self.node_role = node_role
 
     @property
     def id(self):
@@ -525,7 +559,6 @@ class QueryJobResp:
     def source_endpoint(self):
         """Gets the source_endpoint of this QueryJobResp.
 
-
         :return: The source_endpoint of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
@@ -534,7 +567,6 @@ class QueryJobResp:
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
         """Sets the source_endpoint of this QueryJobResp.
-
 
         :param source_endpoint: The source_endpoint of this QueryJobResp.
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -545,7 +577,6 @@ class QueryJobResp:
     def dmq_endpoint(self):
         """Gets the dmq_endpoint of this QueryJobResp.
 
-
         :return: The dmq_endpoint of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
@@ -554,7 +585,6 @@ class QueryJobResp:
     @dmq_endpoint.setter
     def dmq_endpoint(self, dmq_endpoint):
         """Sets the dmq_endpoint of this QueryJobResp.
-
 
         :param dmq_endpoint: The dmq_endpoint of this QueryJobResp.
         :type dmq_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -587,7 +617,6 @@ class QueryJobResp:
     def target_endpoint(self):
         """Gets the target_endpoint of this QueryJobResp.
 
-
         :return: The target_endpoint of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
@@ -596,7 +625,6 @@ class QueryJobResp:
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
         """Sets the target_endpoint of this QueryJobResp.
-
 
         :param target_endpoint: The target_endpoint of this QueryJobResp.
         :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -651,7 +679,6 @@ class QueryJobResp:
     def inst_info(self):
         """Gets the inst_info of this QueryJobResp.
 
-
         :return: The inst_info of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.InstInfo`
         """
@@ -660,7 +687,6 @@ class QueryJobResp:
     @inst_info.setter
     def inst_info(self, inst_info):
         """Sets the inst_info of this QueryJobResp.
-
 
         :param inst_info: The inst_info of this QueryJobResp.
         :type inst_info: :class:`huaweicloudsdkdrs.v3.InstInfo`
@@ -1155,7 +1181,6 @@ class QueryJobResp:
     def target_root_db(self):
         """Gets the target_root_db of this QueryJobResp.
 
-
         :return: The target_root_db of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.DefaultRootDb`
         """
@@ -1164,7 +1189,6 @@ class QueryJobResp:
     @target_root_db.setter
     def target_root_db(self, target_root_db):
         """Sets the target_root_db of this QueryJobResp.
-
 
         :param target_root_db: The target_root_db of this QueryJobResp.
         :type target_root_db: :class:`huaweicloudsdkdrs.v3.DefaultRootDb`
@@ -1351,7 +1375,6 @@ class QueryJobResp:
     def alarm_notify(self):
         """Gets the alarm_notify of this QueryJobResp.
 
-
         :return: The alarm_notify of this QueryJobResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.QuerySmnInfoResp`
         """
@@ -1360,7 +1383,6 @@ class QueryJobResp:
     @alarm_notify.setter
     def alarm_notify(self, alarm_notify):
         """Sets the alarm_notify of this QueryJobResp.
-
 
         :param alarm_notify: The alarm_notify of this QueryJobResp.
         :type alarm_notify: :class:`huaweicloudsdkdrs.v3.QuerySmnInfoResp`
@@ -1388,6 +1410,116 @@ class QueryJobResp:
         :type incre_start_position: str
         """
         self._incre_start_position = incre_start_position
+
+    @property
+    def is_multi_az(self):
+        """Gets the is_multi_az of this QueryJobResp.
+
+        是否是主备任务。
+
+        :return: The is_multi_az of this QueryJobResp.
+        :rtype: bool
+        """
+        return self._is_multi_az
+
+    @is_multi_az.setter
+    def is_multi_az(self, is_multi_az):
+        """Sets the is_multi_az of this QueryJobResp.
+
+        是否是主备任务。
+
+        :param is_multi_az: The is_multi_az of this QueryJobResp.
+        :type is_multi_az: bool
+        """
+        self._is_multi_az = is_multi_az
+
+    @property
+    def az_name(self):
+        """Gets the az_name of this QueryJobResp.
+
+        node所在节点AZ名称。
+
+        :return: The az_name of this QueryJobResp.
+        :rtype: str
+        """
+        return self._az_name
+
+    @az_name.setter
+    def az_name(self, az_name):
+        """Sets the az_name of this QueryJobResp.
+
+        node所在节点AZ名称。
+
+        :param az_name: The az_name of this QueryJobResp.
+        :type az_name: str
+        """
+        self._az_name = az_name
+
+    @property
+    def master_az(self):
+        """Gets the master_az of this QueryJobResp.
+
+        主备任务主AZ。
+
+        :return: The master_az of this QueryJobResp.
+        :rtype: str
+        """
+        return self._master_az
+
+    @master_az.setter
+    def master_az(self, master_az):
+        """Sets the master_az of this QueryJobResp.
+
+        主备任务主AZ。
+
+        :param master_az: The master_az of this QueryJobResp.
+        :type master_az: str
+        """
+        self._master_az = master_az
+
+    @property
+    def slave_az(self):
+        """Gets the slave_az of this QueryJobResp.
+
+        主备任务备AZ。
+
+        :return: The slave_az of this QueryJobResp.
+        :rtype: str
+        """
+        return self._slave_az
+
+    @slave_az.setter
+    def slave_az(self, slave_az):
+        """Sets the slave_az of this QueryJobResp.
+
+        主备任务备AZ。
+
+        :param slave_az: The slave_az of this QueryJobResp.
+        :type slave_az: str
+        """
+        self._slave_az = slave_az
+
+    @property
+    def node_role(self):
+        """Gets the node_role of this QueryJobResp.
+
+        任务主备角色。
+
+        :return: The node_role of this QueryJobResp.
+        :rtype: str
+        """
+        return self._node_role
+
+    @node_role.setter
+    def node_role(self, node_role):
+        """Sets the node_role of this QueryJobResp.
+
+        任务主备角色。
+
+        :param node_role: The node_role of this QueryJobResp.
+        :type node_role: str
+        """
+        self._node_role = node_role
 
     def to_dict(self):
         """Returns the model properties as a dict"""

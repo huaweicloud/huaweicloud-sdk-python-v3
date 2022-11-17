@@ -17,7 +17,6 @@ class InstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -244,7 +243,6 @@ class InstanceRequest:
     def datastore(self):
         """Gets the datastore of this InstanceRequest.
 
-
         :return: The datastore of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.Datastore`
         """
@@ -253,7 +251,6 @@ class InstanceRequest:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this InstanceRequest.
-
 
         :param datastore: The datastore of this InstanceRequest.
         :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
@@ -264,7 +261,6 @@ class InstanceRequest:
     def ha(self):
         """Gets the ha of this InstanceRequest.
 
-
         :return: The ha of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.Ha`
         """
@@ -273,7 +269,6 @@ class InstanceRequest:
     @ha.setter
     def ha(self, ha):
         """Sets the ha of this InstanceRequest.
-
 
         :param ha: The ha of this InstanceRequest.
         :type ha: :class:`huaweicloudsdkrds.v3.Ha`
@@ -350,7 +345,6 @@ class InstanceRequest:
     def backup_strategy(self):
         """Gets the backup_strategy of this InstanceRequest.
 
-
         :return: The backup_strategy of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.BackupStrategy`
         """
@@ -359,7 +353,6 @@ class InstanceRequest:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this InstanceRequest.
-
 
         :param backup_strategy: The backup_strategy of this InstanceRequest.
         :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategy`
@@ -436,7 +429,6 @@ class InstanceRequest:
     def volume(self):
         """Gets the volume of this InstanceRequest.
 
-
         :return: The volume of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.Volume`
         """
@@ -445,7 +437,6 @@ class InstanceRequest:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this InstanceRequest.
-
 
         :param volume: The volume of this InstanceRequest.
         :type volume: :class:`huaweicloudsdkrds.v3.Volume`
@@ -588,7 +579,6 @@ class InstanceRequest:
     def charge_info(self):
         """Gets the charge_info of this InstanceRequest.
 
-
         :return: The charge_info of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ChargeInfo`
         """
@@ -597,7 +587,6 @@ class InstanceRequest:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this InstanceRequest.
-
 
         :param charge_info: The charge_info of this InstanceRequest.
         :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfo`
@@ -674,7 +663,6 @@ class InstanceRequest:
     def restore_point(self):
         """Gets the restore_point of this InstanceRequest.
 
-
         :return: The restore_point of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.RestorePoint`
         """
@@ -683,7 +671,6 @@ class InstanceRequest:
     @restore_point.setter
     def restore_point(self, restore_point):
         """Sets the restore_point of this InstanceRequest.
-
 
         :param restore_point: The restore_point of this InstanceRequest.
         :type restore_point: :class:`huaweicloudsdkrds.v3.RestorePoint`
@@ -738,7 +725,6 @@ class InstanceRequest:
     def unchangeable_param(self):
         """Gets the unchangeable_param of this InstanceRequest.
 
-
         :return: The unchangeable_param of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UnchangeableParam`
         """
@@ -747,7 +733,6 @@ class InstanceRequest:
     @unchangeable_param.setter
     def unchangeable_param(self, unchangeable_param):
         """Sets the unchangeable_param of this InstanceRequest.
-
 
         :param unchangeable_param: The unchangeable_param of this InstanceRequest.
         :type unchangeable_param: :class:`huaweicloudsdkrds.v3.UnchangeableParam`

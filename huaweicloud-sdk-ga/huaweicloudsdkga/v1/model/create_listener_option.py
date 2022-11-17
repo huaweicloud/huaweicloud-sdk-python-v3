@@ -17,7 +17,6 @@ class CreateListenerOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -131,7 +130,6 @@ class CreateListenerOption:
     def protocol(self):
         """Gets the protocol of this CreateListenerOption.
 
-
         :return: The protocol of this CreateListenerOption.
         :rtype: :class:`huaweicloudsdkga.v1.ListenerProtocol`
         """
@@ -140,7 +138,6 @@ class CreateListenerOption:
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this CreateListenerOption.
-
 
         :param protocol: The protocol of this CreateListenerOption.
         :type protocol: :class:`huaweicloudsdkga.v1.ListenerProtocol`
@@ -173,7 +170,6 @@ class CreateListenerOption:
     def client_affinity(self):
         """Gets the client_affinity of this CreateListenerOption.
 
-
         :return: The client_affinity of this CreateListenerOption.
         :rtype: :class:`huaweicloudsdkga.v1.ClientAffinity`
         """
@@ -182,7 +178,6 @@ class CreateListenerOption:
     @client_affinity.setter
     def client_affinity(self, client_affinity):
         """Sets the client_affinity of this CreateListenerOption.
-
 
         :param client_affinity: The client_affinity of this CreateListenerOption.
         :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`

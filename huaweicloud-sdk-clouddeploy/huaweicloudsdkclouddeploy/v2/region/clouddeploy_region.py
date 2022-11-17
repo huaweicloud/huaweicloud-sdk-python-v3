@@ -20,12 +20,18 @@ class CloudDeployRegion:
 
     CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://clouddeploy.cn-north-4.myhuaweicloud.com")
 
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://clouddeploy.sa-brazil-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://clouddeploy.la-north-2.myhuaweicloud.com")
+
     static_fields = {
         "ap-southeast-3": AP_SOUTHEAST_3,
         "cn-south-1": CN_SOUTH_1,
         "cn-east-3": CN_EAST_3,
         "cn-east-2": CN_EAST_2,
         "cn-north-4": CN_NORTH_4,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-north-2": LA_NORTH_2,
     }
 
     @classmethod

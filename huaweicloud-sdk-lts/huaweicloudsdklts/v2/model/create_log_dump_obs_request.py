@@ -17,7 +17,6 @@ class CreateLogDumpObsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateLogDumpObsRequest:
     def body(self):
         """Gets the body of this CreateLogDumpObsRequest.
 
-
         :return: The body of this CreateLogDumpObsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateLogDumpObsRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateLogDumpObsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateLogDumpObsRequest.
-
 
         :param body: The body of this CreateLogDumpObsRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateLogDumpObsRequestBody`

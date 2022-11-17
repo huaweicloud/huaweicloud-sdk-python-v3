@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RdsClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class RdsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -104,6 +100,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ApplyConfigurationAsyncResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -130,6 +127,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +165,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachEipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -193,6 +193,8 @@ class RdsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -228,6 +230,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchTagAddActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -255,6 +258,8 @@ class RdsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -290,6 +295,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchTagDelActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -316,6 +322,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -352,6 +360,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeFailoverModeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -378,6 +387,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -414,6 +425,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeFailoverStrategyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -440,6 +452,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -476,6 +490,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeOpsWindowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -502,6 +517,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -536,6 +553,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -562,6 +580,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -598,6 +618,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDnsNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -624,6 +645,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -658,6 +681,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -684,6 +708,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -718,6 +744,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -744,6 +771,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -780,6 +809,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostgresqlExtensionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -806,6 +836,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -840,6 +872,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRestoreInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -866,6 +899,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -900,6 +935,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -926,6 +962,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -960,6 +998,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -986,6 +1025,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1020,6 +1061,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1046,6 +1088,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1082,6 +1126,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePostgresqlExtensionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1108,6 +1153,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1144,6 +1191,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadSlowlogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1170,6 +1218,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1206,6 +1256,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1232,6 +1283,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1274,6 +1327,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuditlogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1300,6 +1354,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1346,6 +1402,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1372,6 +1429,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1404,6 +1463,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCollationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1430,6 +1490,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1462,6 +1524,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1488,6 +1551,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1522,6 +1587,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatastoresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1548,6 +1614,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1580,6 +1648,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDrRelationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1606,6 +1675,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1650,6 +1721,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListErrorLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1676,6 +1748,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1720,6 +1794,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListErrorLogsNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1746,6 +1821,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1784,6 +1861,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1810,6 +1888,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1860,6 +1940,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1886,6 +1967,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1920,6 +2003,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1946,6 +2030,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1984,6 +2070,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobInfoDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2010,6 +2097,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2056,6 +2145,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOffSiteBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2082,6 +2172,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2118,6 +2210,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOffSiteInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2145,6 +2238,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2181,6 +2276,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOffSiteRestoreTimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2207,6 +2303,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2247,6 +2345,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostgresqlExtensionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2273,6 +2372,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2305,6 +2406,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2332,6 +2434,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2368,6 +2472,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreTimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2395,6 +2500,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2433,6 +2540,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2459,6 +2567,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2503,6 +2613,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2529,6 +2640,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2573,6 +2686,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogsNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2599,6 +2713,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2645,6 +2761,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowlogStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2671,6 +2788,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2709,6 +2828,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStorageTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2735,6 +2855,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2771,6 +2893,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateFollowerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2797,6 +2920,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2831,6 +2956,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreExistInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2857,6 +2983,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2893,6 +3021,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreTablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2919,6 +3048,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2953,6 +3084,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreToExistingInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2979,6 +3111,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3015,6 +3149,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetAuditlogPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3041,6 +3176,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3077,6 +3214,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3103,6 +3241,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3139,6 +3279,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBinlogClearPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3165,6 +3306,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3201,6 +3344,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetOffSiteBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3227,6 +3371,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3263,6 +3409,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3289,6 +3436,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3325,6 +3474,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetSensitiveSlowLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3351,6 +3501,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3387,6 +3539,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuditlogDownloadLinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3413,6 +3566,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3447,6 +3602,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuditlogPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3473,6 +3629,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3507,6 +3665,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupDownloadLinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3533,6 +3692,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3567,6 +3728,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3593,6 +3755,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3627,6 +3791,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBinlogClearPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3653,6 +3818,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3687,6 +3854,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3713,6 +3881,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3747,6 +3917,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDrReplicaStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3773,6 +3944,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3807,6 +3980,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3833,6 +4007,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3867,6 +4043,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOffSiteBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3893,6 +4070,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3925,6 +4104,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3951,6 +4131,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3987,6 +4169,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartFailoverResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4014,6 +4197,8 @@ class RdsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4049,6 +4234,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartInstanceEnlargeVolumeActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4076,6 +4262,8 @@ class RdsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4111,6 +4299,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartInstanceRestartActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4138,6 +4327,8 @@ class RdsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4173,6 +4364,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartInstanceSingleToHaActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4199,6 +4391,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4233,6 +4427,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartRecyclePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4259,6 +4454,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4295,6 +4492,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartResizeFlavorActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4321,6 +4519,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4355,6 +4555,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartupInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4381,6 +4582,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4415,6 +4618,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4441,6 +4645,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4477,6 +4683,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchSslResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4503,6 +4710,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4539,6 +4748,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4565,6 +4775,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4601,6 +4813,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDataIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4627,6 +4840,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4663,6 +4878,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDnsNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4689,6 +4905,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4725,6 +4943,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4751,6 +4970,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4787,6 +5008,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceConfigurationAsyncResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4813,6 +5035,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4849,6 +5073,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4875,6 +5100,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4911,6 +5138,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4937,6 +5165,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4973,6 +5203,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePostgresqlInstanceAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4999,6 +5230,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5035,6 +5268,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpgradeDbVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5061,6 +5295,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5091,6 +5327,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5117,6 +5354,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5147,6 +5386,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5173,6 +5413,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5205,6 +5447,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5231,6 +5474,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5267,6 +5512,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowDbUserPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5293,6 +5539,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5329,6 +5577,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5355,6 +5604,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5391,6 +5642,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5417,6 +5669,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5453,6 +5707,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5479,6 +5734,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5515,6 +5772,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5541,6 +5799,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5581,6 +5841,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizedDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5607,6 +5868,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5647,6 +5910,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizedDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5673,6 +5937,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5711,6 +5977,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5737,6 +6004,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5775,6 +6044,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5801,6 +6071,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5837,6 +6109,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5863,6 +6136,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5899,6 +6174,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5925,6 +6201,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5961,6 +6239,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetDbUserPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5987,6 +6266,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6023,6 +6304,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetReadOnlySwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6049,6 +6331,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6085,6 +6369,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6111,6 +6396,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6147,6 +6434,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDbUserCommentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6173,6 +6461,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6209,6 +6499,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowDbPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6237,6 +6528,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6273,6 +6566,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeProxyScaleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6299,6 +6593,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6335,6 +6631,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeTheDelayThresholdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6361,6 +6658,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6397,6 +6696,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostgresqlDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6423,6 +6723,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6459,6 +6761,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostgresqlDatabaseSchemaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6485,6 +6788,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6521,6 +6826,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostgresqlDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6547,6 +6853,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6587,6 +6895,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostgresqlDatabaseSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6613,6 +6922,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6651,6 +6962,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostgresqlDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6677,6 +6989,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6715,6 +7029,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostgresqlDbUserPaginatedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6743,6 +7058,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6781,6 +7098,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQueryScaleComputeFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6809,6 +7127,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6843,6 +7163,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQueryScaleFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6869,6 +7190,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6905,6 +7228,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetDatabaseUserPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6931,6 +7255,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6967,6 +7293,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetPostgresqlDbUserPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6993,6 +7320,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7027,6 +7356,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInformationAboutDatabaseProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7053,6 +7383,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7089,6 +7421,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPostgresqlParamValueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7115,6 +7448,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7151,6 +7486,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartDatabaseProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7177,6 +7513,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7211,6 +7549,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopDatabaseProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7237,6 +7576,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7275,6 +7616,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePostgresqlParameterValueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7301,6 +7643,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7337,6 +7681,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateReadWeightResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7363,6 +7708,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7399,6 +7746,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowSqlserverDbUserPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7425,6 +7773,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7461,6 +7811,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSqlserverDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7487,6 +7838,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7523,6 +7876,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSqlserverDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7549,6 +7903,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7587,6 +7943,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSqlserverDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7613,6 +7970,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7651,6 +8010,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSqlserverDatabaseExResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7677,6 +8037,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7713,6 +8075,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSqlserverDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7739,6 +8102,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7779,6 +8144,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizedSqlserverDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7805,6 +8171,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7845,6 +8213,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSqlserverDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7871,6 +8240,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7909,6 +8280,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSqlserverDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7935,6 +8307,8 @@ class RdsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7971,6 +8345,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeSqlserverDbUserPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7978,7 +8353,7 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -7988,9 +8363,10 @@ class RdsClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -8007,6 +8383,7 @@ class RdsClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class ShowRecordSetWithLineResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -454,7 +453,6 @@ class ShowRecordSetWithLineResponse(SdkResponse):
     def links(self):
         """Gets the links of this ShowRecordSetWithLineResponse.
 
-
         :return: The links of this ShowRecordSetWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -463,7 +461,6 @@ class ShowRecordSetWithLineResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ShowRecordSetWithLineResponse.
-
 
         :param links: The links of this ShowRecordSetWithLineResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -540,7 +537,6 @@ class ShowRecordSetWithLineResponse(SdkResponse):
     def alias_target(self):
         """Gets the alias_target of this ShowRecordSetWithLineResponse.
 
-
         :return: The alias_target of this ShowRecordSetWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
@@ -549,7 +545,6 @@ class ShowRecordSetWithLineResponse(SdkResponse):
     @alias_target.setter
     def alias_target(self, alias_target):
         """Sets the alias_target of this ShowRecordSetWithLineResponse.
-
 
         :param alias_target: The alias_target of this ShowRecordSetWithLineResponse.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`

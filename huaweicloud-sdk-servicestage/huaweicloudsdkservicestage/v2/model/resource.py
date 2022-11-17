@@ -17,26 +17,29 @@ class Resource:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'id': 'str',
+        'name': 'str',
         'type': 'ResourceType'
     }
 
     attribute_map = {
         'id': 'id',
+        'name': 'name',
         'type': 'type'
     }
 
-    def __init__(self, id=None, type=None):
+    def __init__(self, id=None, name=None, type=None):
         """Resource
 
         The model defined in huaweicloud sdk
 
         :param id: 资源ID
         :type id: str
+        :param name: 资源名称
+        :type name: str
         :param type: 
         :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
         """
@@ -44,10 +47,13 @@ class Resource:
         
 
         self._id = None
+        self._name = None
         self._type = None
         self.discriminator = None
 
         self.id = id
+        if name is not None:
+            self.name = name
         self.type = type
 
     @property
@@ -73,9 +79,30 @@ class Resource:
         self._id = id
 
     @property
+    def name(self):
+        """Gets the name of this Resource.
+
+        资源名称
+
+        :return: The name of this Resource.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this Resource.
+
+        资源名称
+
+        :param name: The name of this Resource.
+        :type name: str
+        """
+        self._name = name
+
+    @property
     def type(self):
         """Gets the type of this Resource.
-
 
         :return: The type of this Resource.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ResourceType`
@@ -85,7 +112,6 @@ class Resource:
     @type.setter
     def type(self, type):
         """Sets the type of this Resource.
-
 
         :param type: The type of this Resource.
         :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`

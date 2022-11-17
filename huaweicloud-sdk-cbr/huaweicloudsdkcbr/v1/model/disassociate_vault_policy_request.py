@@ -17,7 +17,6 @@ class DisassociateVaultPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DisassociateVaultPolicyRequest:
     def body(self):
         """Gets the body of this DisassociateVaultPolicyRequest.
 
-
         :return: The body of this DisassociateVaultPolicyRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultDissociate`
         """
@@ -86,7 +84,6 @@ class DisassociateVaultPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DisassociateVaultPolicyRequest.
-
 
         :param body: The body of this DisassociateVaultPolicyRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultDissociate`

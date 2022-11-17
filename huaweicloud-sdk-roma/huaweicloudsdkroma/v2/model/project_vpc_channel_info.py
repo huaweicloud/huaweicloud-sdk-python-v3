@@ -17,7 +17,6 @@ class ProjectVpcChannelInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -393,7 +392,6 @@ class ProjectVpcChannelInfo:
     def vpc_health_config(self):
         """Gets the vpc_health_config of this ProjectVpcChannelInfo.
 
-
         :return: The vpc_health_config of this ProjectVpcChannelInfo.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcHealthConfigInfo`
         """
@@ -402,7 +400,6 @@ class ProjectVpcChannelInfo:
     @vpc_health_config.setter
     def vpc_health_config(self, vpc_health_config):
         """Sets the vpc_health_config of this ProjectVpcChannelInfo.
-
 
         :param vpc_health_config: The vpc_health_config of this ProjectVpcChannelInfo.
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfigInfo`

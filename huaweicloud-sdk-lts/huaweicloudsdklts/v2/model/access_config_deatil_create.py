@@ -17,7 +17,6 @@ class AccessConfigDeatilCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -112,7 +111,6 @@ class AccessConfigDeatilCreate:
     def format(self):
         """Gets the format of this AccessConfigDeatilCreate.
 
-
         :return: The format of this AccessConfigDeatilCreate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatCreate`
         """
@@ -121,7 +119,6 @@ class AccessConfigDeatilCreate:
     @format.setter
     def format(self, format):
         """Sets the format of this AccessConfigDeatilCreate.
-
 
         :param format: The format of this AccessConfigDeatilCreate.
         :type format: :class:`huaweicloudsdklts.v2.AccessConfigFormatCreate`
@@ -132,7 +129,6 @@ class AccessConfigDeatilCreate:
     def windows_log_info(self):
         """Gets the windows_log_info of this AccessConfigDeatilCreate.
 
-
         :return: The windows_log_info of this AccessConfigDeatilCreate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigWindowsLogInfoCreate`
         """
@@ -141,7 +137,6 @@ class AccessConfigDeatilCreate:
     @windows_log_info.setter
     def windows_log_info(self, windows_log_info):
         """Sets the windows_log_info of this AccessConfigDeatilCreate.
-
 
         :param windows_log_info: The windows_log_info of this AccessConfigDeatilCreate.
         :type windows_log_info: :class:`huaweicloudsdklts.v2.AccessConfigWindowsLogInfoCreate`

@@ -17,7 +17,6 @@ class EdgeNodeResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -1338,7 +1337,6 @@ class EdgeNodeResp:
     def ntp_configs(self):
         """Gets the ntp_configs of this EdgeNodeResp.
 
-
         :return: The ntp_configs of this EdgeNodeResp.
         :rtype: :class:`huaweicloudsdkief.v1.NtpConfigs`
         """
@@ -1347,7 +1345,6 @@ class EdgeNodeResp:
     @ntp_configs.setter
     def ntp_configs(self, ntp_configs):
         """Sets the ntp_configs of this EdgeNodeResp.
-
 
         :param ntp_configs: The ntp_configs of this EdgeNodeResp.
         :type ntp_configs: :class:`huaweicloudsdkief.v1.NtpConfigs`

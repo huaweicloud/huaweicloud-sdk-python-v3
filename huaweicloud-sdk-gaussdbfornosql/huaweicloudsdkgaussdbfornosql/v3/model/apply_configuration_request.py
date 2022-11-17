@@ -17,7 +17,6 @@ class ApplyConfigurationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ApplyConfigurationRequest:
     def body(self):
         """Gets the body of this ApplyConfigurationRequest.
 
-
         :return: The body of this ApplyConfigurationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequestBody`
         """
@@ -86,7 +84,6 @@ class ApplyConfigurationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ApplyConfigurationRequest.
-
 
         :param body: The body of this ApplyConfigurationRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequestBody`

@@ -17,7 +17,6 @@ class CreateRecordSetWithLineReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -308,7 +307,6 @@ class CreateRecordSetWithLineReq:
     def alias_target(self):
         """Gets the alias_target of this CreateRecordSetWithLineReq.
 
-
         :return: The alias_target of this CreateRecordSetWithLineReq.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
@@ -317,7 +315,6 @@ class CreateRecordSetWithLineReq:
     @alias_target.setter
     def alias_target(self, alias_target):
         """Sets the alias_target of this CreateRecordSetWithLineReq.
-
 
         :param alias_target: The alias_target of this CreateRecordSetWithLineReq.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`

@@ -17,7 +17,6 @@ class ClusterSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -71,13 +70,13 @@ class ClusterSpec:
 
         The model defined in huaweicloud sdk
 
-        :param category: 集群类别：   - CCE：CCE集群    CCE集群支持虚拟机与裸金属服务器混合、GPU、NPU等异构节点的混合部署，基于高性能网络模型提供全方位、多场景、安全稳定的容器运行环境。  [- Turbo: CCE Turbo集群。全面基于云原生基础设施构建的云原生2.0的容器引擎服务，具备软硬协同、网络无损、安全可靠、调度智能的优势，为用户提供一站式、高性价比的全新容器服务体验。](tag:hws,dt) 
+        :param category: 集群类别：   - CCE：CCE集群    CCE集群支持虚拟机与裸金属服务器混合、GPU、NPU等异构节点的混合部署，基于高性能网络模型提供全方位、多场景、安全稳定的容器运行环境。  [- Turbo: CCE Turbo集群。全面基于云原生基础设施构建的云原生2.0的容器引擎服务，具备软硬协同、网络无损、安全可靠、调度智能的优势，为用户提供一站式、高性价比的全新容器服务体验。](tag:hws,hws_hk,dt) 
         :type category: str
         :param type: 集群Master节点架构：  - VirtualMachine：Master节点为x86架构服务器 [- ARM64: Master节点为鲲鹏（ARM架构）服务器](tag:hws,hws_hk) 
         :type type: str
         :param flavor: 字段默认值：创建CCE集群[或鲲鹏集群](tag:hws,hws_hk)时，如果是非专属云为 cce.s1.small，专属云则为cce.dec.s1.small；   集群规格，集群创建完成后规格不可再变更，请按实际业务需求进行选择：   - cce.s1.small: 小规模单控制节点CCE集群（最大50节点）  - cce.s1.medium: 中等规模单控制节点CCE集群（最大200节点）  - cce.s2.small: 小规模多控制节点CCE集群（最大50节点）  - cce.s2.medium: 中等规模多控制节点CCE集群（最大200节点）  - cce.s2.large: 大规模多控制节点CCE集群（最大1000节点）  - cce.s2.xlarge: 超大规模多控制节点CCE集群（最大2000节点）   &gt;    - s1：单控制节点CCE集群。 &gt;    - s2：多控制节点CCE集群。 &gt;    - dec：专属CCE集群规格。如cce.dec.s1.small为小规模单控制节点专属CCE集群（最大50节点）。 &gt;    - 最大节点数：当前集群支持管理的最大节点规模，请根据业务需求选择。 &gt;    - 单控制节点集群：普通集群是单控制节点，控制节点故障后，集群将不可用，但已运行工作负载不受影响。 &gt;    - 多控制节点集群：即高可用集群，当某个控制节点故障时，集群仍然可用。 
         :type flavor: str
-        :param version: 集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台中支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  &gt;    - 若不配置，默认创建最新版本的集群。 &gt;    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
+        :param version: 集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  &gt;    - 若不配置，默认创建最新版本的集群。 &gt;    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
         :type version: str
         :param platform_version: CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。不支持用户指定，集群创建时自动选择对应集群版本的最新平台版本。   platformVersion格式为：cce.X.Y   - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。  - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。
         :type platform_version: str
@@ -179,7 +178,7 @@ class ClusterSpec:
     def category(self):
         """Gets the category of this ClusterSpec.
 
-        集群类别：   - CCE：CCE集群    CCE集群支持虚拟机与裸金属服务器混合、GPU、NPU等异构节点的混合部署，基于高性能网络模型提供全方位、多场景、安全稳定的容器运行环境。  [- Turbo: CCE Turbo集群。全面基于云原生基础设施构建的云原生2.0的容器引擎服务，具备软硬协同、网络无损、安全可靠、调度智能的优势，为用户提供一站式、高性价比的全新容器服务体验。](tag:hws,dt) 
+        集群类别：   - CCE：CCE集群    CCE集群支持虚拟机与裸金属服务器混合、GPU、NPU等异构节点的混合部署，基于高性能网络模型提供全方位、多场景、安全稳定的容器运行环境。  [- Turbo: CCE Turbo集群。全面基于云原生基础设施构建的云原生2.0的容器引擎服务，具备软硬协同、网络无损、安全可靠、调度智能的优势，为用户提供一站式、高性价比的全新容器服务体验。](tag:hws,hws_hk,dt) 
 
         :return: The category of this ClusterSpec.
         :rtype: str
@@ -190,7 +189,7 @@ class ClusterSpec:
     def category(self, category):
         """Sets the category of this ClusterSpec.
 
-        集群类别：   - CCE：CCE集群    CCE集群支持虚拟机与裸金属服务器混合、GPU、NPU等异构节点的混合部署，基于高性能网络模型提供全方位、多场景、安全稳定的容器运行环境。  [- Turbo: CCE Turbo集群。全面基于云原生基础设施构建的云原生2.0的容器引擎服务，具备软硬协同、网络无损、安全可靠、调度智能的优势，为用户提供一站式、高性价比的全新容器服务体验。](tag:hws,dt) 
+        集群类别：   - CCE：CCE集群    CCE集群支持虚拟机与裸金属服务器混合、GPU、NPU等异构节点的混合部署，基于高性能网络模型提供全方位、多场景、安全稳定的容器运行环境。  [- Turbo: CCE Turbo集群。全面基于云原生基础设施构建的云原生2.0的容器引擎服务，具备软硬协同、网络无损、安全可靠、调度智能的优势，为用户提供一站式、高性价比的全新容器服务体验。](tag:hws,hws_hk,dt) 
 
         :param category: The category of this ClusterSpec.
         :type category: str
@@ -245,7 +244,7 @@ class ClusterSpec:
     def version(self):
         """Gets the version of this ClusterSpec.
 
-        集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台中支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  >    - 若不配置，默认创建最新版本的集群。 >    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
+        集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  >    - 若不配置，默认创建最新版本的集群。 >    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
 
         :return: The version of this ClusterSpec.
         :rtype: str
@@ -256,7 +255,7 @@ class ClusterSpec:
     def version(self, version):
         """Sets the version of this ClusterSpec.
 
-        集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台中支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  >    - 若不配置，默认创建最新版本的集群。 >    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
+        集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  >    - 若不配置，默认创建最新版本的集群。 >    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
 
         :param version: The version of this ClusterSpec.
         :type version: str
@@ -355,7 +354,6 @@ class ClusterSpec:
     def host_network(self):
         """Gets the host_network of this ClusterSpec.
 
-
         :return: The host_network of this ClusterSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.HostNetwork`
         """
@@ -364,7 +362,6 @@ class ClusterSpec:
     @host_network.setter
     def host_network(self, host_network):
         """Sets the host_network of this ClusterSpec.
-
 
         :param host_network: The host_network of this ClusterSpec.
         :type host_network: :class:`huaweicloudsdkcce.v3.HostNetwork`
@@ -375,7 +372,6 @@ class ClusterSpec:
     def container_network(self):
         """Gets the container_network of this ClusterSpec.
 
-
         :return: The container_network of this ClusterSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ContainerNetwork`
         """
@@ -384,7 +380,6 @@ class ClusterSpec:
     @container_network.setter
     def container_network(self, container_network):
         """Sets the container_network of this ClusterSpec.
-
 
         :param container_network: The container_network of this ClusterSpec.
         :type container_network: :class:`huaweicloudsdkcce.v3.ContainerNetwork`
@@ -395,7 +390,6 @@ class ClusterSpec:
     def eni_network(self):
         """Gets the eni_network of this ClusterSpec.
 
-
         :return: The eni_network of this ClusterSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.EniNetwork`
         """
@@ -404,7 +398,6 @@ class ClusterSpec:
     @eni_network.setter
     def eni_network(self, eni_network):
         """Sets the eni_network of this ClusterSpec.
-
 
         :param eni_network: The eni_network of this ClusterSpec.
         :type eni_network: :class:`huaweicloudsdkcce.v3.EniNetwork`
@@ -415,7 +408,6 @@ class ClusterSpec:
     def authentication(self):
         """Gets the authentication of this ClusterSpec.
 
-
         :return: The authentication of this ClusterSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Authentication`
         """
@@ -424,7 +416,6 @@ class ClusterSpec:
     @authentication.setter
     def authentication(self, authentication):
         """Sets the authentication of this ClusterSpec.
-
 
         :param authentication: The authentication of this ClusterSpec.
         :type authentication: :class:`huaweicloudsdkcce.v3.Authentication`
@@ -567,7 +558,6 @@ class ClusterSpec:
     def extend_param(self):
         """Gets the extend_param of this ClusterSpec.
 
-
         :return: The extend_param of this ClusterSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterExtendParam`
         """
@@ -576,7 +566,6 @@ class ClusterSpec:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this ClusterSpec.
-
 
         :param extend_param: The extend_param of this ClusterSpec.
         :type extend_param: :class:`huaweicloudsdkcce.v3.ClusterExtendParam`

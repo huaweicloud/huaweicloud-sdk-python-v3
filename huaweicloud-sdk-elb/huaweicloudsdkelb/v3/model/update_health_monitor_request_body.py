@@ -17,7 +17,6 @@ class UpdateHealthMonitorRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateHealthMonitorRequestBody:
     def healthmonitor(self):
         """Gets the healthmonitor of this UpdateHealthMonitorRequestBody.
 
-
         :return: The healthmonitor of this UpdateHealthMonitorRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateHealthMonitorOption`
         """
@@ -57,7 +55,6 @@ class UpdateHealthMonitorRequestBody:
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
         """Sets the healthmonitor of this UpdateHealthMonitorRequestBody.
-
 
         :param healthmonitor: The healthmonitor of this UpdateHealthMonitorRequestBody.
         :type healthmonitor: :class:`huaweicloudsdkelb.v3.UpdateHealthMonitorOption`

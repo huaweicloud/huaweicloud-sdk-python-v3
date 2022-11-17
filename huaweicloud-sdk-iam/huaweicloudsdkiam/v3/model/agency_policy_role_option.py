@@ -17,7 +17,6 @@ class AgencyPolicyRoleOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -161,7 +160,6 @@ class AgencyPolicyRoleOption:
     def policy(self):
         """Gets the policy of this AgencyPolicyRoleOption.
 
-
         :return: The policy of this AgencyPolicyRoleOption.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyPolicy`
         """
@@ -170,7 +168,6 @@ class AgencyPolicyRoleOption:
     @policy.setter
     def policy(self, policy):
         """Sets the policy of this AgencyPolicyRoleOption.
-
 
         :param policy: The policy of this AgencyPolicyRoleOption.
         :type policy: :class:`huaweicloudsdkiam.v3.AgencyPolicy`

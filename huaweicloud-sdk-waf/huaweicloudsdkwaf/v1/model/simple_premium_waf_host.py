@@ -17,7 +17,6 @@ class SimplePremiumWafHost:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -207,7 +206,6 @@ class SimplePremiumWafHost:
     def flag(self):
         """Gets the flag of this SimplePremiumWafHost.
 
-
         :return: The flag of this SimplePremiumWafHost.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
@@ -216,7 +214,6 @@ class SimplePremiumWafHost:
     @flag.setter
     def flag(self, flag):
         """Sets the flag of this SimplePremiumWafHost.
-
 
         :param flag: The flag of this SimplePremiumWafHost.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`

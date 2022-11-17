@@ -17,7 +17,6 @@ class VideoModerationImageDetailList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -186,7 +185,6 @@ class VideoModerationImageDetailList:
     def face_location(self):
         """Gets the face_location of this VideoModerationImageDetailList.
 
-
         :return: The face_location of this VideoModerationImageDetailList.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoModerationImageDetailListFaceLocation`
         """
@@ -195,7 +193,6 @@ class VideoModerationImageDetailList:
     @face_location.setter
     def face_location(self, face_location):
         """Sets the face_location of this VideoModerationImageDetailList.
-
 
         :param face_location: The face_location of this VideoModerationImageDetailList.
         :type face_location: :class:`huaweicloudsdkmoderation.v3.VideoModerationImageDetailListFaceLocation`
@@ -206,7 +203,6 @@ class VideoModerationImageDetailList:
     def qr_location(self):
         """Gets the qr_location of this VideoModerationImageDetailList.
 
-
         :return: The qr_location of this VideoModerationImageDetailList.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoModerationImageDetailListQrLocation`
         """
@@ -215,7 +211,6 @@ class VideoModerationImageDetailList:
     @qr_location.setter
     def qr_location(self, qr_location):
         """Sets the qr_location of this VideoModerationImageDetailList.
-
 
         :param qr_location: The qr_location of this VideoModerationImageDetailList.
         :type qr_location: :class:`huaweicloudsdkmoderation.v3.VideoModerationImageDetailListQrLocation`

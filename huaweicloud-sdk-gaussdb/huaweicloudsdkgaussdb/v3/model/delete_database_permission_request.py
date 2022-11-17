@@ -17,7 +17,6 @@ class DeleteDatabasePermissionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class DeleteDatabasePermissionRequest:
     def body(self):
         """Gets the body of this DeleteDatabasePermissionRequest.
 
-
         :return: The body of this DeleteDatabasePermissionRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermissionRequestBody`
         """
@@ -115,7 +113,6 @@ class DeleteDatabasePermissionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteDatabasePermissionRequest.
-
 
         :param body: The body of this DeleteDatabasePermissionRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermissionRequestBody`

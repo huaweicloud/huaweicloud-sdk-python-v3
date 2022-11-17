@@ -17,7 +17,6 @@ class BatchCreateKmsTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchCreateKmsTagsRequest:
     def body(self):
         """Gets the body of this BatchCreateKmsTagsRequest.
 
-
         :return: The body of this BatchCreateKmsTagsRequest.
         :rtype: :class:`huaweicloudsdkkms.v1.BatchCreateKmsTagsRequestBody`
         """
@@ -114,7 +112,6 @@ class BatchCreateKmsTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchCreateKmsTagsRequest.
-
 
         :param body: The body of this BatchCreateKmsTagsRequest.
         :type body: :class:`huaweicloudsdkkms.v1.BatchCreateKmsTagsRequestBody`

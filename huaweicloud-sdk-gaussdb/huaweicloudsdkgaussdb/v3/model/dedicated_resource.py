@@ -17,7 +17,6 @@ class DedicatedResource:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -201,7 +200,6 @@ class DedicatedResource:
     def capacity(self):
         """Gets the capacity of this DedicatedResource.
 
-
         :return: The capacity of this DedicatedResource.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DedicatedResourceCapacity`
         """
@@ -210,7 +208,6 @@ class DedicatedResource:
     @capacity.setter
     def capacity(self, capacity):
         """Sets the capacity of this DedicatedResource.
-
 
         :param capacity: The capacity of this DedicatedResource.
         :type capacity: :class:`huaweicloudsdkgaussdb.v3.DedicatedResourceCapacity`

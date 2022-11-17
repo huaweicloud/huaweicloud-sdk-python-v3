@@ -17,7 +17,6 @@ class UpdateEncryptdatasRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateEncryptdatasRequest:
     def body(self):
         """Gets the body of this UpdateEncryptdatasRequest.
 
-
         :return: The body of this UpdateEncryptdatasRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EncryptDataReq`
         """
@@ -115,7 +113,6 @@ class UpdateEncryptdatasRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEncryptdatasRequest.
-
 
         :param body: The body of this UpdateEncryptdatasRequest.
         :type body: :class:`huaweicloudsdkief.v1.EncryptDataReq`

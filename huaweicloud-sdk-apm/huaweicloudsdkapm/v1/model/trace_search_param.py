@@ -17,7 +17,6 @@ class TraceSearchParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -316,7 +315,6 @@ class TraceSearchParam:
     def order_param(self):
         """Gets the order_param of this TraceSearchParam.
 
-
         :return: The order_param of this TraceSearchParam.
         :rtype: :class:`huaweicloudsdkapm.v1.OrderParam`
         """
@@ -325,7 +323,6 @@ class TraceSearchParam:
     @order_param.setter
     def order_param(self, order_param):
         """Sets the order_param of this TraceSearchParam.
-
 
         :param order_param: The order_param of this TraceSearchParam.
         :type order_param: :class:`huaweicloudsdkapm.v1.OrderParam`

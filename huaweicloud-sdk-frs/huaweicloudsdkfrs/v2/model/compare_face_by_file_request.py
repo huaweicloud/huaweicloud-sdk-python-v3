@@ -17,7 +17,6 @@ class CompareFaceByFileRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CompareFaceByFileRequest:
     def body(self):
         """Gets the body of this CompareFaceByFileRequest.
 
-
         :return: The body of this CompareFaceByFileRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileRequestBody`
         """
@@ -58,7 +56,6 @@ class CompareFaceByFileRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CompareFaceByFileRequest.
-
 
         :param body: The body of this CompareFaceByFileRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileRequestBody`

@@ -17,7 +17,6 @@ class QueryRecordSetWithLineAndTagsResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -461,7 +460,6 @@ class QueryRecordSetWithLineAndTagsResp:
     def links(self):
         """Gets the links of this QueryRecordSetWithLineAndTagsResp.
 
-
         :return: The links of this QueryRecordSetWithLineAndTagsResp.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -470,7 +468,6 @@ class QueryRecordSetWithLineAndTagsResp:
     @links.setter
     def links(self, links):
         """Sets the links of this QueryRecordSetWithLineAndTagsResp.
-
 
         :param links: The links of this QueryRecordSetWithLineAndTagsResp.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -569,7 +566,6 @@ class QueryRecordSetWithLineAndTagsResp:
     def alias_target(self):
         """Gets the alias_target of this QueryRecordSetWithLineAndTagsResp.
 
-
         :return: The alias_target of this QueryRecordSetWithLineAndTagsResp.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
         """
@@ -578,7 +574,6 @@ class QueryRecordSetWithLineAndTagsResp:
     @alias_target.setter
     def alias_target(self, alias_target):
         """Sets the alias_target of this QueryRecordSetWithLineAndTagsResp.
-
 
         :param alias_target: The alias_target of this QueryRecordSetWithLineAndTagsResp.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`

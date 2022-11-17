@@ -17,7 +17,6 @@ class ListLogHistogramRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListLogHistogramRequest:
     def body(self):
         """Gets the body of this ListLogHistogramRequest.
 
-
         :return: The body of this ListLogHistogramRequest.
         :rtype: :class:`huaweicloudsdklts.v2.QueryLogKeyWordCountRequestBody`
         """
@@ -58,7 +56,6 @@ class ListLogHistogramRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListLogHistogramRequest.
-
 
         :param body: The body of this ListLogHistogramRequest.
         :type body: :class:`huaweicloudsdklts.v2.QueryLogKeyWordCountRequestBody`

@@ -17,7 +17,6 @@ class ListRulesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -47,9 +46,9 @@ class ListRulesRequest:
         :type instance_id: str
         :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的规则列表，不携带该参数则会查询该用户下所有规则列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
         :type app_id: str
-        :param rule_type: **参数说明**：规则类型。此参数为非必选参数，指定对应的规则类型结果进行返回，不携带该参数则会返回所有类型规则。 **取值范围**： - DEVICE_LINKAGE - DATA_FORWARDING
+        :param rule_type: **参数说明**：规则类型。此参数为非必选参数，指定对应的规则类型结果进行返回，不携带该参数则会返回所有类型规则。 **取值范围**： - DEVICE_LINKAGE
         :type rule_type: str
-        :param limit: **参数说明**：分页查询时每页显示的记录数，查询结果根据limit进行分页。 **取值范围**：1-50的整数，默认值为10。
+        :param limit: **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
         :type limit: int
         :param marker: **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
         :type marker: str
@@ -128,7 +127,7 @@ class ListRulesRequest:
     def rule_type(self):
         """Gets the rule_type of this ListRulesRequest.
 
-        **参数说明**：规则类型。此参数为非必选参数，指定对应的规则类型结果进行返回，不携带该参数则会返回所有类型规则。 **取值范围**： - DEVICE_LINKAGE - DATA_FORWARDING
+        **参数说明**：规则类型。此参数为非必选参数，指定对应的规则类型结果进行返回，不携带该参数则会返回所有类型规则。 **取值范围**： - DEVICE_LINKAGE
 
         :return: The rule_type of this ListRulesRequest.
         :rtype: str
@@ -139,7 +138,7 @@ class ListRulesRequest:
     def rule_type(self, rule_type):
         """Sets the rule_type of this ListRulesRequest.
 
-        **参数说明**：规则类型。此参数为非必选参数，指定对应的规则类型结果进行返回，不携带该参数则会返回所有类型规则。 **取值范围**： - DEVICE_LINKAGE - DATA_FORWARDING
+        **参数说明**：规则类型。此参数为非必选参数，指定对应的规则类型结果进行返回，不携带该参数则会返回所有类型规则。 **取值范围**： - DEVICE_LINKAGE
 
         :param rule_type: The rule_type of this ListRulesRequest.
         :type rule_type: str
@@ -150,7 +149,7 @@ class ListRulesRequest:
     def limit(self):
         """Gets the limit of this ListRulesRequest.
 
-        **参数说明**：分页查询时每页显示的记录数，查询结果根据limit进行分页。 **取值范围**：1-50的整数，默认值为10。
+        **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
 
         :return: The limit of this ListRulesRequest.
         :rtype: int
@@ -161,7 +160,7 @@ class ListRulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListRulesRequest.
 
-        **参数说明**：分页查询时每页显示的记录数，查询结果根据limit进行分页。 **取值范围**：1-50的整数，默认值为10。
+        **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
 
         :param limit: The limit of this ListRulesRequest.
         :type limit: int

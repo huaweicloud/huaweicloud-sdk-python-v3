@@ -17,7 +17,6 @@ class BatchDeleteTestCaseRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchDeleteTestCaseRequest:
     def body(self):
         """Gets the body of this BatchDeleteTestCaseRequest.
 
-
         :return: The body of this BatchDeleteTestCaseRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequestBody`
         """
@@ -86,7 +84,6 @@ class BatchDeleteTestCaseRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteTestCaseRequest.
-
 
         :param body: The body of this BatchDeleteTestCaseRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.BatchDeleteTestCaseRequestBody`

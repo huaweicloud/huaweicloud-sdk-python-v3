@@ -17,7 +17,6 @@ class CinderListQuotasResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CinderListQuotasResponse(SdkResponse):
     def quota_set(self):
         """Gets the quota_set of this CinderListQuotasResponse.
 
-
         :return: The quota_set of this CinderListQuotasResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.QuotaList`
         """
@@ -58,7 +56,6 @@ class CinderListQuotasResponse(SdkResponse):
     @quota_set.setter
     def quota_set(self, quota_set):
         """Sets the quota_set of this CinderListQuotasResponse.
-
 
         :param quota_set: The quota_set of this CinderListQuotasResponse.
         :type quota_set: :class:`huaweicloudsdkevs.v2.QuotaList`

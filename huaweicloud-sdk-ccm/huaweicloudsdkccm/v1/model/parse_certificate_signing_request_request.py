@@ -17,7 +17,6 @@ class ParseCertificateSigningRequestRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ParseCertificateSigningRequestRequest:
     def body(self):
         """Gets the body of this ParseCertificateSigningRequestRequest.
 
-
         :return: The body of this ParseCertificateSigningRequestRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequestBody`
         """
@@ -58,7 +56,6 @@ class ParseCertificateSigningRequestRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ParseCertificateSigningRequestRequest.
-
 
         :param body: The body of this ParseCertificateSigningRequestRequest.
         :type body: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequestBody`

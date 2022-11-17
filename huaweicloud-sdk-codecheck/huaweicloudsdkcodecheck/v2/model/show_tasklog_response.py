@@ -17,7 +17,6 @@ class ShowTasklogResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowTasklogResponse(SdkResponse):
     def param_info(self):
         """Gets the param_info of this ShowTasklogResponse.
 
-
         :return: The param_info of this ShowTasklogResponse.
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ParamInfo`
         """
@@ -65,7 +63,6 @@ class ShowTasklogResponse(SdkResponse):
     @param_info.setter
     def param_info(self, param_info):
         """Sets the param_info of this ShowTasklogResponse.
-
 
         :param param_info: The param_info of this ShowTasklogResponse.
         :type param_info: :class:`huaweicloudsdkcodecheck.v2.ParamInfo`

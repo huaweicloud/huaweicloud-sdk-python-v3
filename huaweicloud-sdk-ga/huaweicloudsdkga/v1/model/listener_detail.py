@@ -17,7 +17,6 @@ class ListenerDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -199,7 +198,6 @@ class ListenerDetail:
     def protocol(self):
         """Gets the protocol of this ListenerDetail.
 
-
         :return: The protocol of this ListenerDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ListenerProtocol`
         """
@@ -208,7 +206,6 @@ class ListenerDetail:
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this ListenerDetail.
-
 
         :param protocol: The protocol of this ListenerDetail.
         :type protocol: :class:`huaweicloudsdkga.v1.ListenerProtocol`
@@ -219,7 +216,6 @@ class ListenerDetail:
     def status(self):
         """Gets the status of this ListenerDetail.
 
-
         :return: The status of this ListenerDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
@@ -228,7 +224,6 @@ class ListenerDetail:
     @status.setter
     def status(self, status):
         """Sets the status of this ListenerDetail.
-
 
         :param status: The status of this ListenerDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -261,7 +256,6 @@ class ListenerDetail:
     def client_affinity(self):
         """Gets the client_affinity of this ListenerDetail.
 
-
         :return: The client_affinity of this ListenerDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ClientAffinity`
         """
@@ -270,7 +264,6 @@ class ListenerDetail:
     @client_affinity.setter
     def client_affinity(self, client_affinity):
         """Sets the client_affinity of this ListenerDetail.
-
 
         :param client_affinity: The client_affinity of this ListenerDetail.
         :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`
@@ -369,7 +362,6 @@ class ListenerDetail:
     def frozen_info(self):
         """Gets the frozen_info of this ListenerDetail.
 
-
         :return: The frozen_info of this ListenerDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
         """
@@ -378,7 +370,6 @@ class ListenerDetail:
     @frozen_info.setter
     def frozen_info(self, frozen_info):
         """Sets the frozen_info of this ListenerDetail.
-
 
         :param frozen_info: The frozen_info of this ListenerDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`

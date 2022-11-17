@@ -17,7 +17,6 @@ class ProbeDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -92,7 +91,6 @@ class ProbeDetail:
     def http_get(self):
         """Gets the http_get of this ProbeDetail.
 
-
         :return: The http_get of this ProbeDetail.
         :rtype: :class:`huaweicloudsdkief.v1.HttpGetDetail`
         """
@@ -101,7 +99,6 @@ class ProbeDetail:
     @http_get.setter
     def http_get(self, http_get):
         """Sets the http_get of this ProbeDetail.
-
 
         :param http_get: The http_get of this ProbeDetail.
         :type http_get: :class:`huaweicloudsdkief.v1.HttpGetDetail`

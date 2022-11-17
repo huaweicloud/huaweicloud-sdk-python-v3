@@ -17,7 +17,6 @@ class UpdateRouteTableRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateRouteTableRequestBody:
     def route_table(self):
         """Gets the route_table of this UpdateRouteTableRequestBody.
 
-
         :return: The route_table of this UpdateRouteTableRequestBody.
         :rtype: :class:`huaweicloudsdker.v3.UpdateRouteTable`
         """
@@ -58,7 +56,6 @@ class UpdateRouteTableRequestBody:
     @route_table.setter
     def route_table(self, route_table):
         """Sets the route_table of this UpdateRouteTableRequestBody.
-
 
         :param route_table: The route_table of this UpdateRouteTableRequestBody.
         :type route_table: :class:`huaweicloudsdker.v3.UpdateRouteTable`

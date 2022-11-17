@@ -17,7 +17,6 @@ class CreateLocation:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -45,7 +44,7 @@ class CreateLocation:
 
         The model defined in huaweicloud sdk
 
-        :param name: 场地名称，最大支持长度为64个字节。只包含中文字符、英文字母（a-z、A-Z）、数字（0-9）、下划线（_）、中划线（-）
+        :param name: 场地名称（已废弃）,该参数不会再持久化存储，新建站点也不会再返回该字段
         :type name: str
         :param province: 场地所在省/自治区/直辖市
         :type province: str
@@ -72,7 +71,8 @@ class CreateLocation:
         self._description = None
         self.discriminator = None
 
-        self.name = name
+        if name is not None:
+            self.name = name
         self.province = province
         self.city = city
         self.district = district
@@ -86,7 +86,7 @@ class CreateLocation:
     def name(self):
         """Gets the name of this CreateLocation.
 
-        场地名称，最大支持长度为64个字节。只包含中文字符、英文字母（a-z、A-Z）、数字（0-9）、下划线（_）、中划线（-）
+        场地名称（已废弃）,该参数不会再持久化存储，新建站点也不会再返回该字段
 
         :return: The name of this CreateLocation.
         :rtype: str
@@ -97,7 +97,7 @@ class CreateLocation:
     def name(self, name):
         """Sets the name of this CreateLocation.
 
-        场地名称，最大支持长度为64个字节。只包含中文字符、英文字母（a-z、A-Z）、数字（0-9）、下划线（_）、中划线（-）
+        场地名称（已废弃）,该参数不会再持久化存储，新建站点也不会再返回该字段
 
         :param name: The name of this CreateLocation.
         :type name: str
@@ -196,7 +196,6 @@ class CreateLocation:
     def condition(self):
         """Gets the condition of this CreateLocation.
 
-
         :return: The condition of this CreateLocation.
         :rtype: :class:`huaweicloudsdkies.v1.Condition`
         """
@@ -205,7 +204,6 @@ class CreateLocation:
     @condition.setter
     def condition(self, condition):
         """Sets the condition of this CreateLocation.
-
 
         :param condition: The condition of this CreateLocation.
         :type condition: :class:`huaweicloudsdkies.v1.Condition`

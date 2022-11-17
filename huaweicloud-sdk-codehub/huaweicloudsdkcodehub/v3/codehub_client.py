@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CodeHubClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class CodeHubClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCommitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -172,6 +171,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCommitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -198,6 +198,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -232,6 +234,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDiffCommitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -258,6 +261,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -294,6 +299,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSingleCommitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -320,6 +326,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -356,6 +364,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFilesByQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -382,6 +391,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -418,6 +429,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -444,6 +456,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -482,6 +496,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GetAllRepositoryByProjectIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -508,6 +523,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -544,6 +561,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GetProductTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -570,6 +588,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -606,6 +626,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductTwoTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -632,6 +653,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -666,6 +689,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryNameExistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -692,6 +716,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -726,6 +752,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddRepoMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -752,6 +779,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -786,6 +815,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRepoMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -812,6 +842,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -850,6 +882,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRepoMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -876,6 +909,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -912,6 +947,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetRepoRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -938,6 +974,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -972,6 +1010,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeployKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -998,6 +1037,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1032,6 +1073,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeployKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1058,6 +1100,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1094,6 +1138,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddProtectBranchV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1120,6 +1165,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1154,6 +1201,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddTagV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1180,6 +1228,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1212,6 +1262,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRepositoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1238,6 +1289,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1272,6 +1325,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeployKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1298,6 +1352,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1332,6 +1388,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeployKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1358,6 +1415,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1390,6 +1449,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRepositoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1416,6 +1476,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1448,6 +1510,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GetRepositoryByProjectIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1474,6 +1537,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1526,6 +1591,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GetTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1552,6 +1618,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1590,6 +1658,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBranchesByRepositoryIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1616,6 +1685,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1650,6 +1721,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCommitStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1676,6 +1748,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1712,6 +1786,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1738,6 +1813,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1778,6 +1855,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMergeRequestResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1804,6 +1882,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1836,6 +1916,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRepositoryStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1862,6 +1943,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1902,6 +1985,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubfilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1928,6 +2012,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1962,6 +2048,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesTwoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1988,6 +2075,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2040,6 +2129,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTwoTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2066,6 +2156,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2100,6 +2192,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShareTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2126,6 +2219,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2158,6 +2253,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBranchesByRepositoryIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2184,6 +2280,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2216,6 +2314,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBranchesByTwoRepositoryIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2242,6 +2341,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2282,6 +2383,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCommitsByBranchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2308,6 +2410,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2358,6 +2462,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCommitsByRepoIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2384,6 +2489,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2416,6 +2523,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHasPipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2442,6 +2550,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2478,6 +2588,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowImageBlobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2504,6 +2615,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2536,6 +2649,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMasterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2562,6 +2676,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2596,6 +2712,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMergeRequestResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2622,6 +2739,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2656,6 +2775,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepoIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2682,6 +2802,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2718,6 +2840,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryArchiveResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2744,6 +2867,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2776,6 +2901,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryByUuidResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2802,6 +2928,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2836,6 +2964,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2862,6 +2991,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2900,6 +3031,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStatisticCommitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2926,6 +3058,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2964,6 +3098,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStatisticCommitV3Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2990,6 +3125,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3022,6 +3159,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStatisticalDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3048,6 +3186,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3080,6 +3220,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddSshKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3106,6 +3247,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3138,6 +3281,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSShkeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3164,6 +3308,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3194,6 +3340,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSshKeysResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3220,6 +3367,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3252,6 +3401,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPrivateKeyVerifyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3278,6 +3428,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3312,6 +3464,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateHttpsInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3338,6 +3491,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3372,6 +3527,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateHttpsInfoV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3398,6 +3554,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3430,6 +3588,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateIssuesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3456,6 +3615,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3488,6 +3649,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectAndRepositoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3514,6 +3676,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3546,6 +3710,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectAndforkRepositoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3572,6 +3737,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3608,6 +3775,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserAllRepositoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3634,6 +3802,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3672,6 +3842,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAllRepositoryByTwoProjectIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3698,6 +3869,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3734,6 +3907,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3760,6 +3934,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3796,6 +3972,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3822,6 +3999,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3858,6 +4037,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3884,6 +4064,8 @@ class CodeHubClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3918,6 +4100,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNewBranchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3925,7 +4108,7 @@ class CodeHubClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3935,9 +4118,10 @@ class CodeHubClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3954,6 +4138,7 @@ class CodeHubClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

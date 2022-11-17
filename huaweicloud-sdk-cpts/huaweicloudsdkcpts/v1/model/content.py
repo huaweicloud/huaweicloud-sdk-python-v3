@@ -17,7 +17,6 @@ class Content:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class Content:
     def content(self):
         """Gets the content of this Content.
 
-
         :return: The content of this Content.
         :rtype: :class:`huaweicloudsdkcpts.v1.ContentInfo`
         """
@@ -87,7 +85,6 @@ class Content:
     @content.setter
     def content(self, content):
         """Sets the content of this Content.
-
 
         :param content: The content of this Content.
         :type content: :class:`huaweicloudsdkcpts.v1.ContentInfo`

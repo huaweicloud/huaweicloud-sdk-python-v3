@@ -17,7 +17,6 @@ class CreatePrivateipRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePrivateipRequest:
     def body(self):
         """Gets the body of this CreatePrivateipRequest.
 
-
         :return: The body of this CreatePrivateipRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreatePrivateipRequestBody`
         """
@@ -58,7 +56,6 @@ class CreatePrivateipRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePrivateipRequest.
-
 
         :param body: The body of this CreatePrivateipRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.CreatePrivateipRequestBody`

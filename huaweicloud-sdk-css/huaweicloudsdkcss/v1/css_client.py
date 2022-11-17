@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CssClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class CssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAutoCreatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBindPublicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -188,6 +188,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -220,6 +222,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -246,6 +249,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +287,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateClustersTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -308,6 +314,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +350,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLoadIkThesaurusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -368,6 +377,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +411,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLogBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -426,6 +438,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -460,6 +474,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -488,6 +503,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -520,6 +537,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -546,6 +564,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -582,6 +602,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteClustersTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -608,6 +629,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -640,6 +663,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIkThesaurusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -666,6 +690,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -700,6 +726,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -726,6 +753,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -756,6 +785,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -782,6 +812,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -816,6 +848,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClustersDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -842,6 +875,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -874,6 +909,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClustersTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -900,6 +936,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -930,6 +968,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -956,6 +995,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -988,6 +1029,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLogsJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1014,6 +1056,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1046,6 +1090,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSnapshotsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1072,6 +1117,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1104,6 +1151,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListYmlsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1130,6 +1178,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1162,6 +1212,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListYmlsJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1188,6 +1239,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1222,6 +1275,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1248,6 +1302,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1280,6 +1336,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1306,6 +1363,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1342,6 +1401,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1368,6 +1428,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1400,6 +1462,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAutoCreatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1426,6 +1489,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1458,6 +1523,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClusterDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1484,6 +1550,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1518,6 +1586,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClusterTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1544,6 +1613,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1576,6 +1647,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGetLogSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1602,6 +1674,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1634,6 +1708,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIkThesaurusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1660,6 +1735,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1694,6 +1771,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLogBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1720,6 +1798,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1752,6 +1832,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVpcepConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1785,6 +1866,8 @@ class CssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1816,6 +1899,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartAutoSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1842,6 +1926,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1876,6 +1962,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartLogAutoBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1902,6 +1989,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1936,6 +2025,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1962,6 +2052,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1996,6 +2088,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartPublicWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2022,6 +2115,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2056,6 +2151,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartVpecpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2082,6 +2178,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2114,6 +2212,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopLogAutoBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2140,6 +2239,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2172,6 +2273,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2198,6 +2300,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2230,6 +2334,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopPublicWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2256,6 +2361,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2288,6 +2395,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2314,6 +2422,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2346,6 +2456,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopVpecpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2372,6 +2483,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2408,6 +2521,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBatchClustersTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2434,6 +2548,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2468,6 +2584,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateClusterNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2496,6 +2613,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2530,6 +2649,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateExtendClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2556,6 +2676,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2590,6 +2712,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateExtendInstanceStorageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2616,6 +2739,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2650,6 +2775,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFlavorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2680,6 +2806,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2716,6 +2844,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFlavorByTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2742,6 +2871,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2776,6 +2907,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLogSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2802,6 +2934,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2836,6 +2970,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateOndemandClusterToPeriodResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2862,6 +2997,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2896,6 +3033,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePublicBandWidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2922,6 +3060,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2956,6 +3096,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateShrinkClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2982,6 +3123,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3016,6 +3159,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateShrinkNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3044,6 +3188,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3078,6 +3224,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSnapshotSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3104,6 +3251,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3138,6 +3287,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUnbindPublicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3164,6 +3314,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3198,6 +3350,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcepConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3224,6 +3377,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3258,6 +3413,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcepWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3284,6 +3440,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3318,6 +3476,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateYmlsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3344,6 +3503,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3378,6 +3539,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartKibanaPublicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3404,6 +3566,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3436,6 +3600,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopPublicKibanaWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3462,6 +3627,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3496,6 +3663,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAlterKibanaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3522,6 +3690,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3556,6 +3726,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCloseKibanaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3582,6 +3753,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3616,6 +3789,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePublicKibanaWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3642,6 +3816,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3676,6 +3852,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddFavoriteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3702,6 +3879,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3736,6 +3915,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCnfResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3762,6 +3942,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3796,6 +3978,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConfResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3822,6 +4005,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3854,6 +4039,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3880,6 +4066,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3912,6 +4100,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListActionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3938,6 +4127,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3970,6 +4161,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3996,6 +4188,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4028,6 +4222,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPipelinesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4054,6 +4249,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4086,6 +4283,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4112,6 +4310,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4146,6 +4346,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGetConfDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4172,6 +4373,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4206,6 +4409,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartConnectivityTestResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4232,6 +4436,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4266,6 +4472,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartPipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4292,6 +4499,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4324,6 +4533,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopPipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4350,6 +4560,8 @@ class CssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4384,6 +4596,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCnfResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4391,7 +4604,7 @@ class CssClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4401,9 +4614,10 @@ class CssClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4420,6 +4634,7 @@ class CssClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class UpdateKeyRotationIntervalRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateKeyRotationIntervalRequest:
     def body(self):
         """Gets the body of this UpdateKeyRotationIntervalRequest.
 
-
         :return: The body of this UpdateKeyRotationIntervalRequest.
         :rtype: :class:`huaweicloudsdkkms.v1.UpdateKeyRotationIntervalRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateKeyRotationIntervalRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateKeyRotationIntervalRequest.
-
 
         :param body: The body of this UpdateKeyRotationIntervalRequest.
         :type body: :class:`huaweicloudsdkkms.v1.UpdateKeyRotationIntervalRequestBody`

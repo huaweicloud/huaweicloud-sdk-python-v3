@@ -17,7 +17,6 @@ class RunTaskSumbitRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunTaskSumbitRequest:
     def body(self):
         """Gets the body of this RunTaskSumbitRequest.
 
-
         :return: The body of this RunTaskSumbitRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v2.TaskSumbitReq`
         """
@@ -58,7 +56,6 @@ class RunTaskSumbitRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunTaskSumbitRequest.
-
 
         :param body: The body of this RunTaskSumbitRequest.
         :type body: :class:`huaweicloudsdkmoderation.v2.TaskSumbitReq`

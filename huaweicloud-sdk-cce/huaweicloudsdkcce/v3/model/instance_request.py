@@ -17,7 +17,6 @@ class InstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -110,7 +109,6 @@ class InstanceRequest:
     def metadata(self):
         """Gets the metadata of this InstanceRequest.
 
-
         :return: The metadata of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
@@ -119,7 +117,6 @@ class InstanceRequest:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this InstanceRequest.
-
 
         :param metadata: The metadata of this InstanceRequest.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -130,7 +127,6 @@ class InstanceRequest:
     def spec(self):
         """Gets the spec of this InstanceRequest.
 
-
         :return: The spec of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.InstanceRequestSpec`
         """
@@ -139,7 +135,6 @@ class InstanceRequest:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this InstanceRequest.
-
 
         :param spec: The spec of this InstanceRequest.
         :type spec: :class:`huaweicloudsdkcce.v3.InstanceRequestSpec`

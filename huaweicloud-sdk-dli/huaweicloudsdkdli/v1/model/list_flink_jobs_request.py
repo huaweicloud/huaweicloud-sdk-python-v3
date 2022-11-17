@@ -17,7 +17,6 @@ class ListFlinkJobsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -324,7 +323,6 @@ class ListFlinkJobsRequest:
     def sys_enterprise_project_name(self):
         """Gets the sys_enterprise_project_name of this ListFlinkJobsRequest.
 
-
         :return: The sys_enterprise_project_name of this ListFlinkJobsRequest.
         :rtype: str
         """
@@ -333,7 +331,6 @@ class ListFlinkJobsRequest:
     @sys_enterprise_project_name.setter
     def sys_enterprise_project_name(self, sys_enterprise_project_name):
         """Sets the sys_enterprise_project_name of this ListFlinkJobsRequest.
-
 
         :param sys_enterprise_project_name: The sys_enterprise_project_name of this ListFlinkJobsRequest.
         :type sys_enterprise_project_name: str
@@ -344,7 +341,6 @@ class ListFlinkJobsRequest:
     def tags(self):
         """Gets the tags of this ListFlinkJobsRequest.
 
-
         :return: The tags of this ListFlinkJobsRequest.
         :rtype: str
         """
@@ -353,7 +349,6 @@ class ListFlinkJobsRequest:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ListFlinkJobsRequest.
-
 
         :param tags: The tags of this ListFlinkJobsRequest.
         :type tags: str

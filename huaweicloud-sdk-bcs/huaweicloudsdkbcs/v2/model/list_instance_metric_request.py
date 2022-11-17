@@ -17,7 +17,6 @@ class ListInstanceMetricRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListInstanceMetricRequest:
     def body(self):
         """Gets the body of this ListInstanceMetricRequest.
 
-
         :return: The body of this ListInstanceMetricRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequestBody`
         """
@@ -86,7 +84,6 @@ class ListInstanceMetricRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListInstanceMetricRequest.
-
 
         :param body: The body of this ListInstanceMetricRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequestBody`

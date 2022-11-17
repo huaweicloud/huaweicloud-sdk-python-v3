@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DnsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCustomLine
         :type request: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateCustomLineResponse`
@@ -68,6 +63,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCustomLineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCustomLine
         :type request: :class:`huaweicloudsdkdns.v2.DeleteCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteCustomLineResponse`
@@ -126,6 +125,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCustomLineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkdns.v2.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListApiVersionsResponse`
@@ -184,6 +187,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -214,6 +219,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -228,6 +234,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCustomLine
         :type request: :class:`huaweicloudsdkdns.v2.ListCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListCustomLineResponse`
@@ -240,6 +247,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -280,6 +289,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomLineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -294,6 +304,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNameServers
         :type request: :class:`huaweicloudsdkdns.v2.ListNameServersRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListNameServersResponse`
@@ -306,6 +317,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +353,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNameServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -354,6 +368,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApiInfo
         :type request: :class:`huaweicloudsdkdns.v2.ShowApiInfoRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowApiInfoResponse`
@@ -366,6 +381,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -398,6 +415,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -412,6 +430,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainQuota
         :type request: :class:`huaweicloudsdkdns.v2.ShowDomainQuotaRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowDomainQuotaResponse`
@@ -424,6 +443,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -456,6 +477,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -470,6 +492,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCustomLine
         :type request: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateCustomLineResponse`
@@ -482,6 +505,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -516,6 +541,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCustomLineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -530,6 +556,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEipRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetResponse`
@@ -542,6 +569,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -578,6 +607,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEipRecordSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -592,6 +622,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPtrRecords
         :type request: :class:`huaweicloudsdkdns.v2.ListPtrRecordsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListPtrRecordsResponse`
@@ -604,6 +635,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -646,6 +679,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPtrRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -660,6 +694,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestorePtrRecord
         :type request: :class:`huaweicloudsdkdns.v2.RestorePtrRecordRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.RestorePtrRecordResponse`
@@ -672,6 +707,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -708,6 +745,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestorePtrRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -722,6 +760,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPtrRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetResponse`
@@ -734,6 +773,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -768,6 +809,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPtrRecordSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -782,6 +824,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePtrRecord
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordResponse`
@@ -794,6 +837,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -830,6 +875,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePtrRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -845,6 +891,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteRecordSetWithLine
         :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineResponse`
@@ -857,6 +904,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -891,6 +940,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteRecordSetWithLineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -906,6 +956,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUpdateRecordSetWithLine
         :type request: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineResponse`
@@ -918,6 +969,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -952,6 +1005,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateRecordSetWithLineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -966,6 +1020,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetResponse`
@@ -978,6 +1033,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1012,6 +1069,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1026,6 +1084,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRecordSetWithBatchLines
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithBatchLinesRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithBatchLinesResponse`
@@ -1038,6 +1097,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1072,6 +1133,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordSetWithBatchLinesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1086,6 +1148,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRecordSetWithLine
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineResponse`
@@ -1098,6 +1161,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1132,6 +1197,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecordSetWithLineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1146,6 +1212,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetResponse`
@@ -1158,6 +1225,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1192,6 +1261,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRecordSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1206,6 +1276,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRecordSets
         :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsResponse`
@@ -1218,6 +1289,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1252,6 +1325,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRecordSetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1266,6 +1340,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecordSets
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsResponse`
@@ -1278,6 +1353,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1332,6 +1409,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordSetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1346,6 +1424,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecordSetsByZone
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneResponse`
@@ -1358,6 +1437,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1410,6 +1491,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordSetsByZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1424,6 +1506,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecordSetsWithLine
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineResponse`
@@ -1436,6 +1519,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1496,6 +1581,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordSetsWithLineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1510,6 +1596,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetRecordSetsStatus
         :type request: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusResponse`
@@ -1522,6 +1609,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1556,6 +1645,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetRecordSetsStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1570,6 +1660,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetResponse`
@@ -1582,6 +1673,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1616,6 +1709,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1630,6 +1724,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecordSetByZone
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneResponse`
@@ -1642,6 +1737,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1698,6 +1795,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordSetByZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1712,6 +1810,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecordSetWithLine
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineResponse`
@@ -1724,6 +1823,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1758,6 +1859,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordSetWithLineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1772,6 +1874,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRecordSet
         :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetResponse`
@@ -1784,6 +1887,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1820,6 +1925,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecordSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1834,6 +1940,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRecordSets
         :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsResponse`
@@ -1846,6 +1953,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1882,6 +1991,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecordSetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1896,6 +2006,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateTag
         :type request: :class:`huaweicloudsdkdns.v2.BatchCreateTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.BatchCreateTagResponse`
@@ -1908,6 +2019,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1944,6 +2057,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1958,6 +2072,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTag
         :type request: :class:`huaweicloudsdkdns.v2.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateTagResponse`
@@ -1970,6 +2085,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2006,6 +2123,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2020,6 +2138,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTag
         :type request: :class:`huaweicloudsdkdns.v2.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteTagResponse`
@@ -2032,6 +2151,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2068,6 +2189,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2082,6 +2204,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTag
         :type request: :class:`huaweicloudsdkdns.v2.ListTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListTagResponse`
@@ -2094,6 +2217,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2128,6 +2253,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2142,6 +2268,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTags
         :type request: :class:`huaweicloudsdkdns.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListTagsResponse`
@@ -2154,6 +2281,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2186,6 +2315,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2200,6 +2330,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResourceTag
         :type request: :class:`huaweicloudsdkdns.v2.ShowResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowResourceTagResponse`
@@ -2212,6 +2343,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2246,6 +2379,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2260,6 +2394,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateRouter
         :type request: :class:`huaweicloudsdkdns.v2.AssociateRouterRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.AssociateRouterResponse`
@@ -2272,6 +2407,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2306,6 +2443,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRouterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2320,6 +2458,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePrivateZone
         :type request: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneResponse`
@@ -2332,6 +2471,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2364,6 +2505,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePrivateZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2378,6 +2520,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePublicZone
         :type request: :class:`huaweicloudsdkdns.v2.CreatePublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreatePublicZoneResponse`
@@ -2390,6 +2533,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2422,6 +2567,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePublicZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2436,6 +2582,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePrivateZone
         :type request: :class:`huaweicloudsdkdns.v2.DeletePrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeletePrivateZoneResponse`
@@ -2448,6 +2595,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2480,6 +2629,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePrivateZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2494,6 +2644,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePublicZone
         :type request: :class:`huaweicloudsdkdns.v2.DeletePublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeletePublicZoneResponse`
@@ -2506,6 +2657,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2538,6 +2691,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePublicZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2552,6 +2706,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateRouter
         :type request: :class:`huaweicloudsdkdns.v2.DisassociateRouterRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DisassociateRouterResponse`
@@ -2564,6 +2719,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2598,6 +2755,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateRouterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2612,6 +2770,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPrivateZones
         :type request: :class:`huaweicloudsdkdns.v2.ListPrivateZonesRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListPrivateZonesResponse`
@@ -2624,6 +2783,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2670,6 +2831,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPrivateZonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2684,6 +2846,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPublicZones
         :type request: :class:`huaweicloudsdkdns.v2.ListPublicZonesRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListPublicZonesResponse`
@@ -2696,6 +2859,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2742,6 +2907,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPublicZonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2756,6 +2922,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPrivateZone
         :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneResponse`
@@ -2768,6 +2935,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2800,6 +2969,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPrivateZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2814,6 +2984,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPrivateZoneNameServer
         :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneNameServerRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneNameServerResponse`
@@ -2826,6 +2997,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2858,6 +3031,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPrivateZoneNameServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2872,6 +3046,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPublicZone
         :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPublicZoneResponse`
@@ -2884,6 +3059,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2916,6 +3093,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPublicZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2930,6 +3108,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPublicZoneNameServer
         :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneNameServerRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPublicZoneNameServerResponse`
@@ -2942,6 +3121,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2974,6 +3155,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPublicZoneNameServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2988,6 +3170,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePrivateZone
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneResponse`
@@ -3000,6 +3183,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3034,6 +3219,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePrivateZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3048,6 +3234,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePublicZone
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneResponse`
@@ -3060,6 +3247,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3094,6 +3283,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePublicZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3108,6 +3298,7 @@ class DnsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePublicZoneStatus
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusResponse`
@@ -3120,6 +3311,8 @@ class DnsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3154,6 +3347,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePublicZoneStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3161,7 +3355,7 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3172,9 +3366,10 @@ class DnsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3191,6 +3386,7 @@ class DnsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

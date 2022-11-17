@@ -17,7 +17,6 @@ class BatchStopServersRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class BatchStopServersRequestBody:
     def os_stop(self):
         """Gets the os_stop of this BatchStopServersRequestBody.
 
-
         :return: The os_stop of this BatchStopServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchStopServersOption`
         """
@@ -57,7 +55,6 @@ class BatchStopServersRequestBody:
     @os_stop.setter
     def os_stop(self, os_stop):
         """Sets the os_stop of this BatchStopServersRequestBody.
-
 
         :param os_stop: The os_stop of this BatchStopServersRequestBody.
         :type os_stop: :class:`huaweicloudsdkecs.v2.BatchStopServersOption`

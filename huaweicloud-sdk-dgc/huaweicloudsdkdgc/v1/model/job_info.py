@@ -17,7 +17,6 @@ class JobInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -91,7 +90,6 @@ class JobInfo:
     def name(self):
         """Gets the name of this JobInfo.
 
-
         :return: The name of this JobInfo.
         :rtype: str
         """
@@ -100,7 +98,6 @@ class JobInfo:
     @name.setter
     def name(self, name):
         """Sets the name of this JobInfo.
-
 
         :param name: The name of this JobInfo.
         :type name: str
@@ -111,7 +108,6 @@ class JobInfo:
     def nodes(self):
         """Gets the nodes of this JobInfo.
 
-
         :return: The nodes of this JobInfo.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Node`]
         """
@@ -120,7 +116,6 @@ class JobInfo:
     @nodes.setter
     def nodes(self, nodes):
         """Sets the nodes of this JobInfo.
-
 
         :param nodes: The nodes of this JobInfo.
         :type nodes: list[:class:`huaweicloudsdkdgc.v1.Node`]
@@ -131,7 +126,6 @@ class JobInfo:
     def schedule(self):
         """Gets the schedule of this JobInfo.
 
-
         :return: The schedule of this JobInfo.
         :rtype: :class:`huaweicloudsdkdgc.v1.Schedule`
         """
@@ -140,7 +134,6 @@ class JobInfo:
     @schedule.setter
     def schedule(self, schedule):
         """Sets the schedule of this JobInfo.
-
 
         :param schedule: The schedule of this JobInfo.
         :type schedule: :class:`huaweicloudsdkdgc.v1.Schedule`
@@ -151,7 +144,6 @@ class JobInfo:
     def params(self):
         """Gets the params of this JobInfo.
 
-
         :return: The params of this JobInfo.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
         """
@@ -160,7 +152,6 @@ class JobInfo:
     @params.setter
     def params(self, params):
         """Sets the params of this JobInfo.
-
 
         :param params: The params of this JobInfo.
         :type params: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
@@ -171,7 +162,6 @@ class JobInfo:
     def directory(self):
         """Gets the directory of this JobInfo.
 
-
         :return: The directory of this JobInfo.
         :rtype: str
         """
@@ -180,7 +170,6 @@ class JobInfo:
     @directory.setter
     def directory(self, directory):
         """Sets the directory of this JobInfo.
-
 
         :param directory: The directory of this JobInfo.
         :type directory: str
@@ -191,7 +180,6 @@ class JobInfo:
     def job_type(self):
         """Gets the job_type of this JobInfo.
 
-
         :return: The job_type of this JobInfo.
         :rtype: str
         """
@@ -200,7 +188,6 @@ class JobInfo:
     @job_type.setter
     def job_type(self, job_type):
         """Sets the job_type of this JobInfo.
-
 
         :param job_type: The job_type of this JobInfo.
         :type job_type: str
@@ -211,7 +198,6 @@ class JobInfo:
     def basic_config(self):
         """Gets the basic_config of this JobInfo.
 
-
         :return: The basic_config of this JobInfo.
         :rtype: :class:`huaweicloudsdkdgc.v1.BasicInfo`
         """
@@ -220,7 +206,6 @@ class JobInfo:
     @basic_config.setter
     def basic_config(self, basic_config):
         """Sets the basic_config of this JobInfo.
-
 
         :param basic_config: The basic_config of this JobInfo.
         :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicInfo`

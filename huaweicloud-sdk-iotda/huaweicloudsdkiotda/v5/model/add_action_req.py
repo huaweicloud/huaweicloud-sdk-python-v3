@@ -17,7 +17,6 @@ class AddActionReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class AddActionReq:
     def channel_detail(self):
         """Gets the channel_detail of this AddActionReq.
 
-
         :return: The channel_detail of this AddActionReq.
         :rtype: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
         """
@@ -113,7 +111,6 @@ class AddActionReq:
     @channel_detail.setter
     def channel_detail(self, channel_detail):
         """Sets the channel_detail of this AddActionReq.
-
 
         :param channel_detail: The channel_detail of this AddActionReq.
         :type channel_detail: :class:`huaweicloudsdkiotda.v5.ChannelDetail`

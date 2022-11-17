@@ -17,7 +17,6 @@ class CreatePostPaidServersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
     sensitive_list.append('x_client_token')
 
@@ -79,7 +78,6 @@ class CreatePostPaidServersRequest:
     def body(self):
         """Gets the body of this CreatePostPaidServersRequest.
 
-
         :return: The body of this CreatePostPaidServersRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequestBody`
         """
@@ -88,7 +86,6 @@ class CreatePostPaidServersRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePostPaidServersRequest.
-
 
         :param body: The body of this CreatePostPaidServersRequest.
         :type body: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequestBody`

@@ -17,7 +17,6 @@ class Confs:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -143,7 +142,6 @@ class Confs:
     def setting(self):
         """Gets the setting of this Confs.
 
-
         :return: The setting of this Confs.
         :rtype: :class:`huaweicloudsdkcss.v1.Setting`
         """
@@ -152,7 +150,6 @@ class Confs:
     @setting.setter
     def setting(self, setting):
         """Sets the setting of this Confs.
-
 
         :param setting: The setting of this Confs.
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`

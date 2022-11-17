@@ -17,7 +17,6 @@ class BatchDeleteWorkflowsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchDeleteWorkflowsRequest:
     def body(self):
         """Gets the body of this BatchDeleteWorkflowsRequest.
 
-
         :return: The body of this BatchDeleteWorkflowsRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowDeleteBody`
         """
@@ -58,7 +56,6 @@ class BatchDeleteWorkflowsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteWorkflowsRequest.
-
 
         :param body: The body of this BatchDeleteWorkflowsRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowDeleteBody`

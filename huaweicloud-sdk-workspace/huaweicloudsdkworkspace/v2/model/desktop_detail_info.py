@@ -17,7 +17,6 @@ class DesktopDetailInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -342,7 +341,6 @@ class DesktopDetailInfo:
     def flavor(self):
         """Gets the flavor of this DesktopDetailInfo.
 
-
         :return: The flavor of this DesktopDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.FlavorInfo`
         """
@@ -351,7 +349,6 @@ class DesktopDetailInfo:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this DesktopDetailInfo.
-
 
         :param flavor: The flavor of this DesktopDetailInfo.
         :type flavor: :class:`huaweicloudsdkworkspace.v2.FlavorInfo`
@@ -516,7 +513,6 @@ class DesktopDetailInfo:
     def root_volume(self):
         """Gets the root_volume of this DesktopDetailInfo.
 
-
         :return: The root_volume of this DesktopDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.VolumeDetail`
         """
@@ -525,7 +521,6 @@ class DesktopDetailInfo:
     @root_volume.setter
     def root_volume(self, root_volume):
         """Sets the root_volume of this DesktopDetailInfo.
-
 
         :param root_volume: The root_volume of this DesktopDetailInfo.
         :type root_volume: :class:`huaweicloudsdkworkspace.v2.VolumeDetail`
@@ -602,7 +597,6 @@ class DesktopDetailInfo:
     def product(self):
         """Gets the product of this DesktopDetailInfo.
 
-
         :return: The product of this DesktopDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ProductDetailInfo`
         """
@@ -611,7 +605,6 @@ class DesktopDetailInfo:
     @product.setter
     def product(self, product):
         """Sets the product of this DesktopDetailInfo.
-
 
         :param product: The product of this DesktopDetailInfo.
         :type product: :class:`huaweicloudsdkworkspace.v2.ProductDetailInfo`

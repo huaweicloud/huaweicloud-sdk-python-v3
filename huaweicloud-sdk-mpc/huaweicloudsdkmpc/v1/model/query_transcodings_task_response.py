@@ -17,7 +17,6 @@ class QueryTranscodingsTaskResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -271,7 +270,6 @@ class QueryTranscodingsTaskResponse:
     def input(self):
         """Gets the input of this QueryTranscodingsTaskResponse.
 
-
         :return: The input of this QueryTranscodingsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -280,7 +278,6 @@ class QueryTranscodingsTaskResponse:
     @input.setter
     def input(self, input):
         """Sets the input of this QueryTranscodingsTaskResponse.
-
 
         :param input: The input of this QueryTranscodingsTaskResponse.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -291,7 +288,6 @@ class QueryTranscodingsTaskResponse:
     def output(self):
         """Gets the output of this QueryTranscodingsTaskResponse.
 
-
         :return: The output of this QueryTranscodingsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -300,7 +296,6 @@ class QueryTranscodingsTaskResponse:
     @output.setter
     def output(self, output):
         """Sets the output of this QueryTranscodingsTaskResponse.
-
 
         :param output: The output of this QueryTranscodingsTaskResponse.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -421,7 +416,6 @@ class QueryTranscodingsTaskResponse:
     def transcode_detail(self):
         """Gets the transcode_detail of this QueryTranscodingsTaskResponse.
 
-
         :return: The transcode_detail of this QueryTranscodingsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.TranscodeDetail`
         """
@@ -430,7 +424,6 @@ class QueryTranscodingsTaskResponse:
     @transcode_detail.setter
     def transcode_detail(self, transcode_detail):
         """Sets the transcode_detail of this QueryTranscodingsTaskResponse.
-
 
         :param transcode_detail: The transcode_detail of this QueryTranscodingsTaskResponse.
         :type transcode_detail: :class:`huaweicloudsdkmpc.v1.TranscodeDetail`
@@ -441,7 +434,6 @@ class QueryTranscodingsTaskResponse:
     def thumbnail_output(self):
         """Gets the thumbnail_output of this QueryTranscodingsTaskResponse.
 
-
         :return: The thumbnail_output of this QueryTranscodingsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -450,7 +442,6 @@ class QueryTranscodingsTaskResponse:
     @thumbnail_output.setter
     def thumbnail_output(self, thumbnail_output):
         """Sets the thumbnail_output of this QueryTranscodingsTaskResponse.
-
 
         :param thumbnail_output: The thumbnail_output of this QueryTranscodingsTaskResponse.
         :type thumbnail_output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

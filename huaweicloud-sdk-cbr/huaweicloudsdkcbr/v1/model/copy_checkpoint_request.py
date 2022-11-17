@@ -17,7 +17,6 @@ class CopyCheckpointRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CopyCheckpointRequest:
     def body(self):
         """Gets the body of this CopyCheckpointRequest.
 
-
         :return: The body of this CopyCheckpointRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateReq`
         """
@@ -58,7 +56,6 @@ class CopyCheckpointRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CopyCheckpointRequest.
-
 
         :param body: The body of this CopyCheckpointRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateReq`

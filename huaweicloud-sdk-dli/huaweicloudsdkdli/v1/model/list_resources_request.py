@@ -17,7 +17,6 @@ class ListResourcesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListResourcesRequest:
     def kind(self):
         """Gets the kind of this ListResourcesRequest.
 
-
         :return: The kind of this ListResourcesRequest.
         :rtype: str
         """
@@ -65,7 +63,6 @@ class ListResourcesRequest:
     @kind.setter
     def kind(self, kind):
         """Sets the kind of this ListResourcesRequest.
-
 
         :param kind: The kind of this ListResourcesRequest.
         :type kind: str
@@ -76,7 +73,6 @@ class ListResourcesRequest:
     def tags(self):
         """Gets the tags of this ListResourcesRequest.
 
-
         :return: The tags of this ListResourcesRequest.
         :rtype: str
         """
@@ -85,7 +81,6 @@ class ListResourcesRequest:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ListResourcesRequest.
-
 
         :param tags: The tags of this ListResourcesRequest.
         :type tags: str

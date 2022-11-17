@@ -17,7 +17,6 @@ class ListVersionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListVersionResponse(SdkResponse):
     def version(self):
         """Gets the version of this ListVersionResponse.
 
-
         :return: The version of this ListVersionResponse.
         :rtype: object
         """
@@ -58,7 +56,6 @@ class ListVersionResponse(SdkResponse):
     @version.setter
     def version(self, version):
         """Sets the version of this ListVersionResponse.
-
 
         :param version: The version of this ListVersionResponse.
         :type version: object

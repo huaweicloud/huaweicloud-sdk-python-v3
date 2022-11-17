@@ -17,7 +17,6 @@ class ConditionGroup:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ConditionGroup:
     def time_range(self):
         """Gets the time_range of this ConditionGroup.
 
-
         :return: The time_range of this ConditionGroup.
         :rtype: :class:`huaweicloudsdkiotda.v5.TimeRange`
         """
@@ -116,7 +114,6 @@ class ConditionGroup:
     @time_range.setter
     def time_range(self, time_range):
         """Sets the time_range of this ConditionGroup.
-
 
         :param time_range: The time_range of this ConditionGroup.
         :type time_range: :class:`huaweicloudsdkiotda.v5.TimeRange`

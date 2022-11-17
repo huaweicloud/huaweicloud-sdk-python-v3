@@ -17,7 +17,6 @@ class CreateLoadIkThesaurusRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateLoadIkThesaurusRequest:
     def body(self):
         """Gets the body of this CreateLoadIkThesaurusRequest.
 
-
         :return: The body of this CreateLoadIkThesaurusRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.LoadCustomThesaurusReq`
         """
@@ -86,7 +84,6 @@ class CreateLoadIkThesaurusRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateLoadIkThesaurusRequest.
-
 
         :param body: The body of this CreateLoadIkThesaurusRequest.
         :type body: :class:`huaweicloudsdkcss.v1.LoadCustomThesaurusReq`

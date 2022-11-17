@@ -17,7 +17,6 @@ class UpdateFlinkTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class UpdateFlinkTemplateRequest:
     def template_id(self):
         """Gets the template_id of this UpdateFlinkTemplateRequest.
 
-
         :return: The template_id of this UpdateFlinkTemplateRequest.
         :rtype: int
         """
@@ -64,7 +62,6 @@ class UpdateFlinkTemplateRequest:
     @template_id.setter
     def template_id(self, template_id):
         """Sets the template_id of this UpdateFlinkTemplateRequest.
-
 
         :param template_id: The template_id of this UpdateFlinkTemplateRequest.
         :type template_id: int
@@ -75,7 +72,6 @@ class UpdateFlinkTemplateRequest:
     def body(self):
         """Gets the body of this UpdateFlinkTemplateRequest.
 
-
         :return: The body of this UpdateFlinkTemplateRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateTemplateReq`
         """
@@ -84,7 +80,6 @@ class UpdateFlinkTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateFlinkTemplateRequest.
-
 
         :param body: The body of this UpdateFlinkTemplateRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateTemplateReq`

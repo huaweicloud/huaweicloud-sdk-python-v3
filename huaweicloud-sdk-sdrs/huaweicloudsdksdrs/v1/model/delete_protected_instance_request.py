@@ -17,7 +17,6 @@ class DeleteProtectedInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DeleteProtectedInstanceRequest:
     def body(self):
         """Gets the body of this DeleteProtectedInstanceRequest.
 
-
         :return: The body of this DeleteProtectedInstanceRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceRequestBody`
         """
@@ -86,7 +84,6 @@ class DeleteProtectedInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteProtectedInstanceRequest.
-
 
         :param body: The body of this DeleteProtectedInstanceRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceRequestBody`

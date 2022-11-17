@@ -17,7 +17,6 @@ class EdgemgrDevice:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -329,7 +328,6 @@ class EdgemgrDevice:
     def tags(self):
         """Gets the tags of this EdgemgrDevice.
 
-
         :return: The tags of this EdgemgrDevice.
         :rtype: :class:`huaweicloudsdkief.v1.ResourceTag`
         """
@@ -338,7 +336,6 @@ class EdgemgrDevice:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this EdgemgrDevice.
-
 
         :param tags: The tags of this EdgemgrDevice.
         :type tags: :class:`huaweicloudsdkief.v1.ResourceTag`

@@ -17,7 +17,6 @@ class CreateClusterInstanceBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -89,7 +88,6 @@ class CreateClusterInstanceBody:
     def volume(self):
         """Gets the volume of this CreateClusterInstanceBody.
 
-
         :return: The volume of this CreateClusterInstanceBody.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceVolumeBody`
         """
@@ -98,7 +96,6 @@ class CreateClusterInstanceBody:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this CreateClusterInstanceBody.
-
 
         :param volume: The volume of this CreateClusterInstanceBody.
         :type volume: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceVolumeBody`
@@ -109,7 +106,6 @@ class CreateClusterInstanceBody:
     def nics(self):
         """Gets the nics of this CreateClusterInstanceBody.
 
-
         :return: The nics of this CreateClusterInstanceBody.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceNicsBody`
         """
@@ -118,7 +114,6 @@ class CreateClusterInstanceBody:
     @nics.setter
     def nics(self, nics):
         """Sets the nics of this CreateClusterInstanceBody.
-
 
         :param nics: The nics of this CreateClusterInstanceBody.
         :type nics: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceNicsBody`

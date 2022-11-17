@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CcAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCloudConnection
         :type request: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionResponse`
@@ -68,6 +63,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCloudConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNetworkInstance
         :type request: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceResponse`
@@ -126,6 +125,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNetworkInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCloudConnection
         :type request: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionResponse`
@@ -184,6 +187,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +221,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCloudConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -230,6 +236,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNetworkInstance
         :type request: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceResponse`
@@ -242,6 +249,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -274,6 +283,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNetworkInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -289,6 +299,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCloudConnectionRoutes
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionRoutesResponse`
@@ -301,6 +312,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -345,6 +358,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudConnectionRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -360,6 +374,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCloudConnections
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsResponse`
@@ -372,6 +387,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -424,6 +441,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -439,6 +457,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNetworkInstances
         :type request: :class:`huaweicloudsdkcc.v3.ListNetworkInstancesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListNetworkInstancesResponse`
@@ -451,6 +470,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -509,6 +530,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNetworkInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -523,6 +545,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCloudConnection
         :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionResponse`
@@ -535,6 +558,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -567,6 +592,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCloudConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -582,6 +608,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCloudConnectionRoutes
         :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesResponse`
@@ -594,6 +621,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -626,6 +655,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCloudConnectionRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -640,6 +670,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNetworkInstance
         :type request: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceResponse`
@@ -652,6 +683,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -684,6 +717,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNetworkInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -698,6 +732,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCloudConnection
         :type request: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionResponse`
@@ -710,6 +745,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -744,6 +781,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCloudConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -758,6 +796,7 @@ class CcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNetworkInstance
         :type request: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceResponse`
@@ -770,6 +809,8 @@ class CcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -804,6 +845,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNetworkInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -811,7 +853,7 @@ class CcAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -822,9 +864,10 @@ class CcAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -841,6 +884,7 @@ class CcAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

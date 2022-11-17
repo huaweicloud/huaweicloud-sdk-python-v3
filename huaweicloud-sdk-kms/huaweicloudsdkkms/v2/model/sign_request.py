@@ -17,7 +17,6 @@ class SignRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class SignRequest:
     def body(self):
         """Gets the body of this SignRequest.
 
-
         :return: The body of this SignRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.SignRequestBody`
         """
@@ -58,7 +56,6 @@ class SignRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SignRequest.
-
 
         :param body: The body of this SignRequest.
         :type body: :class:`huaweicloudsdkkms.v2.SignRequestBody`

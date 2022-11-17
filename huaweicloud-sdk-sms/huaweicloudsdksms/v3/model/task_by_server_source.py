@@ -17,7 +17,6 @@ class TaskByServerSource:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -425,7 +424,6 @@ class TaskByServerSource:
     def target_server(self):
         """Gets the target_server of this TaskByServerSource.
 
-
         :return: The target_server of this TaskByServerSource.
         :rtype: :class:`huaweicloudsdksms.v3.TargetServerById`
         """
@@ -434,7 +432,6 @@ class TaskByServerSource:
     @target_server.setter
     def target_server(self, target_server):
         """Sets the target_server of this TaskByServerSource.
-
 
         :param target_server: The target_server of this TaskByServerSource.
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerById`
@@ -511,7 +508,6 @@ class TaskByServerSource:
     def clone_server(self):
         """Gets the clone_server of this TaskByServerSource.
 
-
         :return: The clone_server of this TaskByServerSource.
         :rtype: :class:`huaweicloudsdksms.v3.CloneServer`
         """
@@ -520,7 +516,6 @@ class TaskByServerSource:
     @clone_server.setter
     def clone_server(self, clone_server):
         """Sets the clone_server of this TaskByServerSource.
-
 
         :param clone_server: The clone_server of this TaskByServerSource.
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`

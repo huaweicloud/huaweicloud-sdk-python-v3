@@ -17,7 +17,6 @@ class CreateHealthCheckOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateHealthCheckOption:
     def protocol(self):
         """Gets the protocol of this CreateHealthCheckOption.
 
-
         :return: The protocol of this CreateHealthCheckOption.
         :rtype: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
         """
@@ -115,7 +113,6 @@ class CreateHealthCheckOption:
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this CreateHealthCheckOption.
-
 
         :param protocol: The protocol of this CreateHealthCheckOption.
         :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`

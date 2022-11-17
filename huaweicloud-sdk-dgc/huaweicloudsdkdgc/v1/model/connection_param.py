@@ -17,7 +17,6 @@ class ConnectionParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ConnectionParam:
     def name(self):
         """Gets the name of this ConnectionParam.
 
-
         :return: The name of this ConnectionParam.
         :rtype: str
         """
@@ -72,7 +70,6 @@ class ConnectionParam:
     @name.setter
     def name(self, name):
         """Sets the name of this ConnectionParam.
-
 
         :param name: The name of this ConnectionParam.
         :type name: str
@@ -83,7 +80,6 @@ class ConnectionParam:
     def connection_type(self):
         """Gets the connection_type of this ConnectionParam.
 
-
         :return: The connection_type of this ConnectionParam.
         :rtype: str
         """
@@ -92,7 +88,6 @@ class ConnectionParam:
     @connection_type.setter
     def connection_type(self, connection_type):
         """Sets the connection_type of this ConnectionParam.
-
 
         :param connection_type: The connection_type of this ConnectionParam.
         :type connection_type: str
@@ -103,7 +98,6 @@ class ConnectionParam:
     def params(self):
         """Gets the params of this ConnectionParam.
 
-
         :return: The params of this ConnectionParam.
         :rtype: object
         """
@@ -112,7 +106,6 @@ class ConnectionParam:
     @params.setter
     def params(self, params):
         """Sets the params of this ConnectionParam.
-
 
         :param params: The params of this ConnectionParam.
         :type params: object

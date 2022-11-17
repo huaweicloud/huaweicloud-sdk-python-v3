@@ -17,7 +17,6 @@ class ListAuditlogsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListAuditlogsResponse(SdkResponse):
     def auditlogs(self):
         """Gets the auditlogs of this ListAuditlogsResponse.
 
-
         :return: The auditlogs of this ListAuditlogsResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.Auditlog`]
         """
@@ -65,7 +63,6 @@ class ListAuditlogsResponse(SdkResponse):
     @auditlogs.setter
     def auditlogs(self, auditlogs):
         """Sets the auditlogs of this ListAuditlogsResponse.
-
 
         :param auditlogs: The auditlogs of this ListAuditlogsResponse.
         :type auditlogs: list[:class:`huaweicloudsdkrds.v3.Auditlog`]

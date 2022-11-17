@@ -17,7 +17,6 @@ class JobInstance:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -91,7 +90,6 @@ class JobInstance:
     def job_name(self):
         """Gets the job_name of this JobInstance.
 
-
         :return: The job_name of this JobInstance.
         :rtype: str
         """
@@ -100,7 +98,6 @@ class JobInstance:
     @job_name.setter
     def job_name(self, job_name):
         """Sets the job_name of this JobInstance.
-
 
         :param job_name: The job_name of this JobInstance.
         :type job_name: str
@@ -111,7 +108,6 @@ class JobInstance:
     def status(self):
         """Gets the status of this JobInstance.
 
-
         :return: The status of this JobInstance.
         :rtype: str
         """
@@ -120,7 +116,6 @@ class JobInstance:
     @status.setter
     def status(self, status):
         """Sets the status of this JobInstance.
-
 
         :param status: The status of this JobInstance.
         :type status: str
@@ -131,7 +126,6 @@ class JobInstance:
     def plan_time(self):
         """Gets the plan_time of this JobInstance.
 
-
         :return: The plan_time of this JobInstance.
         :rtype: int
         """
@@ -140,7 +134,6 @@ class JobInstance:
     @plan_time.setter
     def plan_time(self, plan_time):
         """Sets the plan_time of this JobInstance.
-
 
         :param plan_time: The plan_time of this JobInstance.
         :type plan_time: int
@@ -151,7 +144,6 @@ class JobInstance:
     def start_time(self):
         """Gets the start_time of this JobInstance.
 
-
         :return: The start_time of this JobInstance.
         :rtype: int
         """
@@ -160,7 +152,6 @@ class JobInstance:
     @start_time.setter
     def start_time(self, start_time):
         """Sets the start_time of this JobInstance.
-
 
         :param start_time: The start_time of this JobInstance.
         :type start_time: int
@@ -171,7 +162,6 @@ class JobInstance:
     def end_time(self):
         """Gets the end_time of this JobInstance.
 
-
         :return: The end_time of this JobInstance.
         :rtype: int
         """
@@ -180,7 +170,6 @@ class JobInstance:
     @end_time.setter
     def end_time(self, end_time):
         """Sets the end_time of this JobInstance.
-
 
         :param end_time: The end_time of this JobInstance.
         :type end_time: int
@@ -191,7 +180,6 @@ class JobInstance:
     def execute_time(self):
         """Gets the execute_time of this JobInstance.
 
-
         :return: The execute_time of this JobInstance.
         :rtype: int
         """
@@ -200,7 +188,6 @@ class JobInstance:
     @execute_time.setter
     def execute_time(self, execute_time):
         """Sets the execute_time of this JobInstance.
-
 
         :param execute_time: The execute_time of this JobInstance.
         :type execute_time: int
@@ -211,7 +198,6 @@ class JobInstance:
     def instances_id(self):
         """Gets the instances_id of this JobInstance.
 
-
         :return: The instances_id of this JobInstance.
         :rtype: str
         """
@@ -220,7 +206,6 @@ class JobInstance:
     @instances_id.setter
     def instances_id(self, instances_id):
         """Sets the instances_id of this JobInstance.
-
 
         :param instances_id: The instances_id of this JobInstance.
         :type instances_id: str

@@ -17,7 +17,6 @@ class DownloadKieRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class DownloadKieRequest:
     def body(self):
         """Gets the body of this DownloadKieRequest.
 
-
         :return: The body of this DownloadKieRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.DownloadKieReqBody`
         """
@@ -173,7 +171,6 @@ class DownloadKieRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DownloadKieRequest.
-
 
         :param body: The body of this DownloadKieRequest.
         :type body: :class:`huaweicloudsdkcse.v1.DownloadKieReqBody`

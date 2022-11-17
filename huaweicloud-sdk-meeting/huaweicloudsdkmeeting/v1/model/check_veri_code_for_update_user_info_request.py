@@ -17,7 +17,6 @@ class CheckVeriCodeForUpdateUserInfoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CheckVeriCodeForUpdateUserInfoRequest:
     def body(self):
         """Gets the body of this CheckVeriCodeForUpdateUserInfoRequest.
 
-
         :return: The body of this CheckVeriCodeForUpdateUserInfoRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.VerificationCodeDTO`
         """
@@ -116,7 +114,6 @@ class CheckVeriCodeForUpdateUserInfoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckVeriCodeForUpdateUserInfoRequest.
-
 
         :param body: The body of this CheckVeriCodeForUpdateUserInfoRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.VerificationCodeDTO`

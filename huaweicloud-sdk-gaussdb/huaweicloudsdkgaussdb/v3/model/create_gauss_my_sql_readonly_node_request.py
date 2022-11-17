@@ -17,7 +17,6 @@ class CreateGaussMySqlReadonlyNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateGaussMySqlReadonlyNodeRequest:
     def body(self):
         """Gets the body of this CreateGaussMySqlReadonlyNodeRequest.
 
-
         :return: The body of this CreateGaussMySqlReadonlyNodeRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateReadonlyNodeRequest`
         """
@@ -115,7 +113,6 @@ class CreateGaussMySqlReadonlyNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateGaussMySqlReadonlyNodeRequest.
-
 
         :param body: The body of this CreateGaussMySqlReadonlyNodeRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlCreateReadonlyNodeRequest`

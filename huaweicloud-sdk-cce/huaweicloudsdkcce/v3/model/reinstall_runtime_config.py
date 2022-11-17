@@ -17,7 +17,6 @@ class ReinstallRuntimeConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ReinstallRuntimeConfig:
     def runtime(self):
         """Gets the runtime of this ReinstallRuntimeConfig.
 
-
         :return: The runtime of this ReinstallRuntimeConfig.
         :rtype: :class:`huaweicloudsdkcce.v3.Runtime`
         """
@@ -87,7 +85,6 @@ class ReinstallRuntimeConfig:
     @runtime.setter
     def runtime(self, runtime):
         """Sets the runtime of this ReinstallRuntimeConfig.
-
 
         :param runtime: The runtime of this ReinstallRuntimeConfig.
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`

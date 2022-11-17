@@ -17,7 +17,6 @@ class RecordRule:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -142,7 +141,6 @@ class RecordRule:
     def obs_addr(self):
         """Gets the obs_addr of this RecordRule.
 
-
         :return: The obs_addr of this RecordRule.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
         """
@@ -151,7 +149,6 @@ class RecordRule:
     @obs_addr.setter
     def obs_addr(self, obs_addr):
         """Sets the obs_addr of this RecordRule.
-
 
         :param obs_addr: The obs_addr of this RecordRule.
         :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
@@ -184,7 +181,6 @@ class RecordRule:
     def hls_config(self):
         """Gets the hls_config of this RecordRule.
 
-
         :return: The hls_config of this RecordRule.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
         """
@@ -193,7 +189,6 @@ class RecordRule:
     @hls_config.setter
     def hls_config(self, hls_config):
         """Sets the hls_config of this RecordRule.
-
 
         :param hls_config: The hls_config of this RecordRule.
         :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
@@ -204,7 +199,6 @@ class RecordRule:
     def mp4_config(self):
         """Gets the mp4_config of this RecordRule.
 
-
         :return: The mp4_config of this RecordRule.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
         """
@@ -213,7 +207,6 @@ class RecordRule:
     @mp4_config.setter
     def mp4_config(self, mp4_config):
         """Sets the mp4_config of this RecordRule.
-
 
         :param mp4_config: The mp4_config of this RecordRule.
         :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`

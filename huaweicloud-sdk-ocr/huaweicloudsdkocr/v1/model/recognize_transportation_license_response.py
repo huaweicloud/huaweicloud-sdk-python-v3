@@ -17,7 +17,6 @@ class RecognizeTransportationLicenseResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeTransportationLicenseResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeTransportationLicenseResponse.
 
-
         :return: The result of this RecognizeTransportationLicenseResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.TransportationLicenseResult`
         """
@@ -58,7 +56,6 @@ class RecognizeTransportationLicenseResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeTransportationLicenseResponse.
-
 
         :param result: The result of this RecognizeTransportationLicenseResponse.
         :type result: :class:`huaweicloudsdkocr.v1.TransportationLicenseResult`

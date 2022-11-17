@@ -17,7 +17,6 @@ class SetOnlineMigrationTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SetOnlineMigrationTaskRequest:
     def body(self):
         """Gets the body of this SetOnlineMigrationTaskRequest.
 
-
         :return: The body of this SetOnlineMigrationTaskRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.SetOnlineMigrationTaskBody`
         """
@@ -86,7 +84,6 @@ class SetOnlineMigrationTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetOnlineMigrationTaskRequest.
-
 
         :param body: The body of this SetOnlineMigrationTaskRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.SetOnlineMigrationTaskBody`

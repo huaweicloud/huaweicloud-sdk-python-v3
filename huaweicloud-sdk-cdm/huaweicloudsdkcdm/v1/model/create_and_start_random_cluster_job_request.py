@@ -17,7 +17,6 @@ class CreateAndStartRandomClusterJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateAndStartRandomClusterJobRequest:
     def body(self):
         """Gets the body of this CreateAndStartRandomClusterJobRequest.
 
-
         :return: The body of this CreateAndStartRandomClusterJobRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmRandomCreateAndStartJobJsonReq`
         """
@@ -86,7 +84,6 @@ class CreateAndStartRandomClusterJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAndStartRandomClusterJobRequest.
-
 
         :param body: The body of this CreateAndStartRandomClusterJobRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmRandomCreateAndStartJobJsonReq`

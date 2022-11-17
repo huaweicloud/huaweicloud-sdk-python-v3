@@ -17,7 +17,6 @@ class ShowBatchTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowBatchTaskResponse(SdkResponse):
     def batchtask(self):
         """Gets the batchtask of this ShowBatchTaskResponse.
 
-
         :return: The batchtask of this ShowBatchTaskResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Task`
         """
@@ -72,7 +70,6 @@ class ShowBatchTaskResponse(SdkResponse):
     @batchtask.setter
     def batchtask(self, batchtask):
         """Sets the batchtask of this ShowBatchTaskResponse.
-
 
         :param batchtask: The batchtask of this ShowBatchTaskResponse.
         :type batchtask: :class:`huaweicloudsdkiotda.v5.Task`
@@ -105,7 +102,6 @@ class ShowBatchTaskResponse(SdkResponse):
     def page(self):
         """Gets the page of this ShowBatchTaskResponse.
 
-
         :return: The page of this ShowBatchTaskResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
         """
@@ -114,7 +110,6 @@ class ShowBatchTaskResponse(SdkResponse):
     @page.setter
     def page(self, page):
         """Sets the page of this ShowBatchTaskResponse.
-
 
         :param page: The page of this ShowBatchTaskResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

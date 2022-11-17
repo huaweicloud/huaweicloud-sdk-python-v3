@@ -17,7 +17,6 @@ class ShowUserLoginProtectResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowUserLoginProtectResponse(SdkResponse):
     def login_protect(self):
         """Gets the login_protect of this ShowUserLoginProtectResponse.
 
-
         :return: The login_protect of this ShowUserLoginProtectResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginProtectResult`
         """
@@ -58,7 +56,6 @@ class ShowUserLoginProtectResponse(SdkResponse):
     @login_protect.setter
     def login_protect(self, login_protect):
         """Sets the login_protect of this ShowUserLoginProtectResponse.
-
 
         :param login_protect: The login_protect of this ShowUserLoginProtectResponse.
         :type login_protect: :class:`huaweicloudsdkiam.v3.LoginProtectResult`

@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CdnAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteTags
         :type request: :class:`huaweicloudsdkcdn.v1.BatchDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.BatchDeleteTagsResponse`
@@ -68,6 +63,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDomain
         :type request: :class:`huaweicloudsdkcdn.v1.CreateDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.CreateDomainResponse`
@@ -126,6 +125,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePreheatingTasks
         :type request: :class:`huaweicloudsdkcdn.v1.CreatePreheatingTasksRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.CreatePreheatingTasksResponse`
@@ -184,6 +187,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -218,6 +223,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePreheatingTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -232,6 +238,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRefreshTasks
         :type request: :class:`huaweicloudsdkcdn.v1.CreateRefreshTasksRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.CreateRefreshTasksResponse`
@@ -244,6 +251,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -278,6 +287,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRefreshTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -292,6 +302,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTags
         :type request: :class:`huaweicloudsdkcdn.v1.CreateTagsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.CreateTagsResponse`
@@ -304,6 +315,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -336,6 +349,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -350,6 +364,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDomain
         :type request: :class:`huaweicloudsdkcdn.v1.DeleteDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.DeleteDomainResponse`
@@ -362,6 +377,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -396,6 +413,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -410,6 +428,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisableDomain
         :type request: :class:`huaweicloudsdkcdn.v1.DisableDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.DisableDomainResponse`
@@ -422,6 +441,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -456,6 +477,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -470,6 +492,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableDomain
         :type request: :class:`huaweicloudsdkcdn.v1.EnableDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.EnableDomainResponse`
@@ -482,6 +505,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -516,6 +541,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -530,6 +556,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDomains
         :type request: :class:`huaweicloudsdkcdn.v1.ListDomainsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ListDomainsResponse`
@@ -542,6 +569,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -586,6 +615,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -600,6 +630,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBlackWhiteList
         :type request: :class:`huaweicloudsdkcdn.v1.ShowBlackWhiteListRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowBlackWhiteListResponse`
@@ -612,6 +643,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -646,6 +679,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBlackWhiteListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -660,6 +694,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCacheRules
         :type request: :class:`huaweicloudsdkcdn.v1.ShowCacheRulesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowCacheRulesResponse`
@@ -672,6 +707,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -706,6 +743,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCacheRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -720,6 +758,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCertificatesHttpsInfo
         :type request: :class:`huaweicloudsdkcdn.v1.ShowCertificatesHttpsInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowCertificatesHttpsInfoResponse`
@@ -732,6 +771,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -772,6 +813,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificatesHttpsInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -786,6 +828,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainDetail
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainDetailRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainDetailResponse`
@@ -798,6 +841,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -832,6 +877,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -846,6 +892,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainFullConfig
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainFullConfigRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainFullConfigResponse`
@@ -858,6 +905,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -892,6 +941,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainFullConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -914,6 +964,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainItemDetails
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainItemDetailsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainItemDetailsResponse`
@@ -926,6 +977,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -968,6 +1021,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainItemDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -993,6 +1047,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainItemLocationDetails
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainItemLocationDetailsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainItemLocationDetailsResponse`
@@ -1005,6 +1060,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1049,6 +1106,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainItemLocationDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1069,6 +1127,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainLocationStats
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainLocationStatsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainLocationStatsResponse`
@@ -1081,6 +1140,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1133,6 +1194,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainLocationStatsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1153,6 +1215,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainStats
         :type request: :class:`huaweicloudsdkcdn.v1.ShowDomainStatsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowDomainStatsResponse`
@@ -1165,6 +1228,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1213,6 +1278,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainStatsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1227,6 +1293,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHistoryTaskDetails
         :type request: :class:`huaweicloudsdkcdn.v1.ShowHistoryTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowHistoryTaskDetailsResponse`
@@ -1239,6 +1306,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1283,6 +1352,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHistoryTaskDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1297,6 +1367,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHistoryTasks
         :type request: :class:`huaweicloudsdkcdn.v1.ShowHistoryTasksRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowHistoryTasksResponse`
@@ -1309,6 +1380,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1357,6 +1430,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHistoryTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1371,6 +1445,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHttpInfo
         :type request: :class:`huaweicloudsdkcdn.v1.ShowHttpInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowHttpInfoResponse`
@@ -1383,6 +1458,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1417,6 +1494,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHttpInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1431,6 +1509,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIpInfo
         :type request: :class:`huaweicloudsdkcdn.v1.ShowIpInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowIpInfoResponse`
@@ -1443,6 +1522,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1477,6 +1558,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIpInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1491,6 +1573,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLogs
         :type request: :class:`huaweicloudsdkcdn.v1.ShowLogsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowLogsResponse`
@@ -1503,6 +1586,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1543,6 +1628,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1557,6 +1643,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowOriginHost
         :type request: :class:`huaweicloudsdkcdn.v1.ShowOriginHostRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowOriginHostResponse`
@@ -1569,6 +1656,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1603,6 +1692,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOriginHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1617,6 +1707,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuota
         :type request: :class:`huaweicloudsdkcdn.v1.ShowQuotaRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowQuotaResponse`
@@ -1629,6 +1720,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1659,6 +1752,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1673,6 +1767,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRefer
         :type request: :class:`huaweicloudsdkcdn.v1.ShowReferRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowReferResponse`
@@ -1685,6 +1780,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1719,6 +1816,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowReferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1733,6 +1831,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResponseHeader
         :type request: :class:`huaweicloudsdkcdn.v1.ShowResponseHeaderRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowResponseHeaderResponse`
@@ -1745,6 +1844,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1779,6 +1880,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResponseHeaderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1793,6 +1895,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTags
         :type request: :class:`huaweicloudsdkcdn.v1.ShowTagsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowTagsResponse`
@@ -1805,6 +1908,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1837,6 +1942,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1857,6 +1963,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTopUrl
         :type request: :class:`huaweicloudsdkcdn.v1.ShowTopUrlRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowTopUrlResponse`
@@ -1869,6 +1976,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1911,6 +2020,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTopUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1925,6 +2035,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUrlTaskInfo
         :type request: :class:`huaweicloudsdkcdn.v1.ShowUrlTaskInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.ShowUrlTaskInfoResponse`
@@ -1937,6 +2048,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1968,7 +2081,7 @@ class CdnAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-id"]
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1983,6 +2096,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUrlTaskInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1997,6 +2111,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateBlackWhiteList
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateBlackWhiteListRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateBlackWhiteListResponse`
@@ -2009,6 +2124,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2045,6 +2162,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBlackWhiteListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2059,6 +2177,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCacheRules
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateCacheRulesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateCacheRulesResponse`
@@ -2071,6 +2190,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2107,6 +2228,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCacheRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2121,6 +2243,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainFullConfig
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateDomainFullConfigRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainFullConfigResponse`
@@ -2133,6 +2256,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2169,6 +2294,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainFullConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2183,6 +2309,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainMultiCertificates
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesResponse`
@@ -2195,6 +2322,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2229,6 +2358,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainMultiCertificatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2243,6 +2373,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainOrigin
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateDomainOriginRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainOriginResponse`
@@ -2255,6 +2386,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2291,6 +2424,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainOriginResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2305,6 +2439,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateFollow302Switch
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateFollow302SwitchRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateFollow302SwitchResponse`
@@ -2317,6 +2452,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2353,6 +2490,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFollow302SwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2367,6 +2505,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateHttpsInfo
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateHttpsInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateHttpsInfoResponse`
@@ -2379,6 +2518,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2415,6 +2556,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHttpsInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2429,6 +2571,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateOriginHost
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateOriginHostRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateOriginHostResponse`
@@ -2441,6 +2584,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2477,6 +2622,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateOriginHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2491,6 +2637,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePrivateBucketAccess
         :type request: :class:`huaweicloudsdkcdn.v1.UpdatePrivateBucketAccessRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdatePrivateBucketAccessResponse`
@@ -2503,6 +2650,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2539,6 +2688,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePrivateBucketAccessResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2555,6 +2705,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRangeSwitch
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateRangeSwitchRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateRangeSwitchResponse`
@@ -2567,6 +2718,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2603,6 +2756,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRangeSwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2617,6 +2771,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRefer
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateReferRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateReferResponse`
@@ -2629,6 +2784,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2665,6 +2822,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateReferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2679,6 +2837,7 @@ class CdnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResponseHeader
         :type request: :class:`huaweicloudsdkcdn.v1.UpdateResponseHeaderRequest`
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateResponseHeaderResponse`
@@ -2691,6 +2850,8 @@ class CdnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2727,6 +2888,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResponseHeaderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2734,7 +2896,7 @@ class CdnAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2745,9 +2907,10 @@ class CdnAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2764,6 +2927,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

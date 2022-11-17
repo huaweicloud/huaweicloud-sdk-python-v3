@@ -17,7 +17,6 @@ class TaskInstanceRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class TaskInstanceRsp:
     def status(self):
         """Gets the status of this TaskInstanceRsp.
 
-
         :return: The status of this TaskInstanceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskInstanceStatusRsp`
         """
@@ -72,7 +70,6 @@ class TaskInstanceRsp:
     @status.setter
     def status(self, status):
         """Sets the status of this TaskInstanceRsp.
-
 
         :param status: The status of this TaskInstanceRsp.
         :type status: :class:`huaweicloudsdkeihealth.v1.TaskInstanceStatusRsp`
@@ -83,7 +80,6 @@ class TaskInstanceRsp:
     def metadata(self):
         """Gets the metadata of this TaskInstanceRsp.
 
-
         :return: The metadata of this TaskInstanceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskInstanceMetadataRsp`
         """
@@ -92,7 +88,6 @@ class TaskInstanceRsp:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this TaskInstanceRsp.
-
 
         :param metadata: The metadata of this TaskInstanceRsp.
         :type metadata: :class:`huaweicloudsdkeihealth.v1.TaskInstanceMetadataRsp`
@@ -103,7 +98,6 @@ class TaskInstanceRsp:
     def spec(self):
         """Gets the spec of this TaskInstanceRsp.
 
-
         :return: The spec of this TaskInstanceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecRsp`
         """
@@ -112,7 +106,6 @@ class TaskInstanceRsp:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this TaskInstanceRsp.
-
 
         :param spec: The spec of this TaskInstanceRsp.
         :type spec: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecRsp`

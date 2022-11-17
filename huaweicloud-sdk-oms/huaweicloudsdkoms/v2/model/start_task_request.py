@@ -17,7 +17,6 @@ class StartTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartTaskRequest:
     def body(self):
         """Gets the body of this StartTaskRequest.
 
-
         :return: The body of this StartTaskRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.StartTaskReq`
         """
@@ -86,7 +84,6 @@ class StartTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartTaskRequest.
-
 
         :param body: The body of this StartTaskRequest.
         :type body: :class:`huaweicloudsdkoms.v2.StartTaskReq`

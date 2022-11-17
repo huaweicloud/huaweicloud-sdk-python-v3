@@ -17,7 +17,6 @@ class MetricAlarms:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -199,7 +198,6 @@ class MetricAlarms:
     def metric(self):
         """Gets the metric of this MetricAlarms.
 
-
         :return: The metric of this MetricAlarms.
         :rtype: :class:`huaweicloudsdkces.v1.MetricInfoForAlarm`
         """
@@ -208,7 +206,6 @@ class MetricAlarms:
     @metric.setter
     def metric(self, metric):
         """Sets the metric of this MetricAlarms.
-
 
         :param metric: The metric of this MetricAlarms.
         :type metric: :class:`huaweicloudsdkces.v1.MetricInfoForAlarm`
@@ -219,7 +216,6 @@ class MetricAlarms:
     def condition(self):
         """Gets the condition of this MetricAlarms.
 
-
         :return: The condition of this MetricAlarms.
         :rtype: :class:`huaweicloudsdkces.v1.Condition`
         """
@@ -228,7 +224,6 @@ class MetricAlarms:
     @condition.setter
     def condition(self, condition):
         """Sets the condition of this MetricAlarms.
-
 
         :param condition: The condition of this MetricAlarms.
         :type condition: :class:`huaweicloudsdkces.v1.Condition`

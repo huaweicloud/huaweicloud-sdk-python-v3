@@ -17,7 +17,6 @@ class CreatePortRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePortRequest:
     def body(self):
         """Gets the body of this CreatePortRequest.
 
-
         :return: The body of this CreatePortRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreatePortRequestBody`
         """
@@ -58,7 +56,6 @@ class CreatePortRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePortRequest.
-
 
         :param body: The body of this CreatePortRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.CreatePortRequestBody`

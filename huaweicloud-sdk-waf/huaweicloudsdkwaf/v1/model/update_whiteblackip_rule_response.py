@@ -17,7 +17,6 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -223,7 +222,6 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
     def ip_group(self):
         """Gets the ip_group of this UpdateWhiteblackipRuleResponse.
 
-
         :return: The ip_group of this UpdateWhiteblackipRuleResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.IpGroup`
         """
@@ -232,7 +230,6 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
     @ip_group.setter
     def ip_group(self, ip_group):
         """Sets the ip_group of this UpdateWhiteblackipRuleResponse.
-
 
         :param ip_group: The ip_group of this UpdateWhiteblackipRuleResponse.
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`

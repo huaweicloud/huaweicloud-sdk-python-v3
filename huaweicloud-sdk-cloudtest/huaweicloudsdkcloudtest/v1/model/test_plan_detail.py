@@ -17,7 +17,6 @@ class TestPlanDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -316,7 +315,6 @@ class TestPlanDetail:
     def creator(self):
         """Gets the creator of this TestPlanDetail.
 
-
         :return: The creator of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailCreator`
         """
@@ -325,7 +323,6 @@ class TestPlanDetail:
     @creator.setter
     def creator(self, creator):
         """Sets the creator of this TestPlanDetail.
-
 
         :param creator: The creator of this TestPlanDetail.
         :type creator: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailCreator`
@@ -336,7 +333,6 @@ class TestPlanDetail:
     def owner(self):
         """Gets the owner of this TestPlanDetail.
 
-
         :return: The owner of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailOwner`
         """
@@ -345,7 +341,6 @@ class TestPlanDetail:
     @owner.setter
     def owner(self, owner):
         """Sets the owner of this TestPlanDetail.
-
 
         :param owner: The owner of this TestPlanDetail.
         :type owner: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailOwner`
@@ -356,7 +351,6 @@ class TestPlanDetail:
     def design_stage(self):
         """Gets the design_stage of this TestPlanDetail.
 
-
         :return: The design_stage of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailDesignStage`
         """
@@ -365,7 +359,6 @@ class TestPlanDetail:
     @design_stage.setter
     def design_stage(self, design_stage):
         """Sets the design_stage of this TestPlanDetail.
-
 
         :param design_stage: The design_stage of this TestPlanDetail.
         :type design_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailDesignStage`
@@ -376,7 +369,6 @@ class TestPlanDetail:
     def execute_stage(self):
         """Gets the execute_stage of this TestPlanDetail.
 
-
         :return: The execute_stage of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailExecuteStage`
         """
@@ -385,7 +377,6 @@ class TestPlanDetail:
     @execute_stage.setter
     def execute_stage(self, execute_stage):
         """Sets the execute_stage of this TestPlanDetail.
-
 
         :param execute_stage: The execute_stage of this TestPlanDetail.
         :type execute_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailExecuteStage`
@@ -396,7 +387,6 @@ class TestPlanDetail:
     def report_stage(self):
         """Gets the report_stage of this TestPlanDetail.
 
-
         :return: The report_stage of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailReportStage`
         """
@@ -405,7 +395,6 @@ class TestPlanDetail:
     @report_stage.setter
     def report_stage(self, report_stage):
         """Sets the report_stage of this TestPlanDetail.
-
 
         :param report_stage: The report_stage of this TestPlanDetail.
         :type report_stage: :class:`huaweicloudsdkcloudtest.v1.TestPlanDetailReportStage`
@@ -416,7 +405,6 @@ class TestPlanDetail:
     def iteration(self):
         """Gets the iteration of this TestPlanDetail.
 
-
         :return: The iteration of this TestPlanDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
@@ -425,7 +413,6 @@ class TestPlanDetail:
     @iteration.setter
     def iteration(self, iteration):
         """Sets the iteration of this TestPlanDetail.
-
 
         :param iteration: The iteration of this TestPlanDetail.
         :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndId`

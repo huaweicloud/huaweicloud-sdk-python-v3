@@ -17,7 +17,6 @@ class UpdateComponentRequestSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -69,7 +68,6 @@ class UpdateComponentRequestSpec:
     def source(self):
         """Gets the source of this UpdateComponentRequestSpec.
 
-
         :return: The source of this UpdateComponentRequestSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Source`
         """
@@ -78,7 +76,6 @@ class UpdateComponentRequestSpec:
     @source.setter
     def source(self, source):
         """Sets the source of this UpdateComponentRequestSpec.
-
 
         :param source: The source of this UpdateComponentRequestSpec.
         :type source: :class:`huaweicloudsdkcae.v1.Source`
@@ -89,7 +86,6 @@ class UpdateComponentRequestSpec:
     def build(self):
         """Gets the build of this UpdateComponentRequestSpec.
 
-
         :return: The build of this UpdateComponentRequestSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Build`
         """
@@ -98,7 +94,6 @@ class UpdateComponentRequestSpec:
     @build.setter
     def build(self, build):
         """Sets the build of this UpdateComponentRequestSpec.
-
 
         :param build: The build of this UpdateComponentRequestSpec.
         :type build: :class:`huaweicloudsdkcae.v1.Build`
@@ -109,7 +104,6 @@ class UpdateComponentRequestSpec:
     def resource_limit(self):
         """Gets the resource_limit of this UpdateComponentRequestSpec.
 
-
         :return: The resource_limit of this UpdateComponentRequestSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ResourceLimit`
         """
@@ -118,7 +112,6 @@ class UpdateComponentRequestSpec:
     @resource_limit.setter
     def resource_limit(self, resource_limit):
         """Sets the resource_limit of this UpdateComponentRequestSpec.
-
 
         :param resource_limit: The resource_limit of this UpdateComponentRequestSpec.
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimit`
@@ -129,7 +122,6 @@ class UpdateComponentRequestSpec:
     def log_strategy(self):
         """Gets the log_strategy of this UpdateComponentRequestSpec.
 
-
         :return: The log_strategy of this UpdateComponentRequestSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.LogStrategy`
         """
@@ -138,7 +130,6 @@ class UpdateComponentRequestSpec:
     @log_strategy.setter
     def log_strategy(self, log_strategy):
         """Sets the log_strategy of this UpdateComponentRequestSpec.
-
 
         :param log_strategy: The log_strategy of this UpdateComponentRequestSpec.
         :type log_strategy: :class:`huaweicloudsdkcae.v1.LogStrategy`

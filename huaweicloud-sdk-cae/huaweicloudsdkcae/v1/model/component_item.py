@@ -17,7 +17,6 @@ class ComponentItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class ComponentItem:
     def spec(self):
         """Gets the spec of this ComponentItem.
 
-
         :return: The spec of this ComponentItem.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentSpec`
         """
@@ -174,7 +172,6 @@ class ComponentItem:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ComponentItem.
-
 
         :param spec: The spec of this ComponentItem.
         :type spec: :class:`huaweicloudsdkcae.v1.ComponentSpec`

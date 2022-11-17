@@ -17,7 +17,6 @@ class StartVpecpRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartVpecpRequest:
     def body(self):
         """Gets the body of this StartVpecpRequest.
 
-
         :return: The body of this StartVpecpRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.StartVpecpReq`
         """
@@ -86,7 +84,6 @@ class StartVpecpRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartVpecpRequest.
-
 
         :param body: The body of this StartVpecpRequest.
         :type body: :class:`huaweicloudsdkcss.v1.StartVpecpReq`

@@ -17,7 +17,6 @@ class RestoreToExistingInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class RestoreToExistingInstanceRequest:
     def body(self):
         """Gets the body of this RestoreToExistingInstanceRequest.
 
-
         :return: The body of this RestoreToExistingInstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBody`
         """
@@ -87,7 +85,6 @@ class RestoreToExistingInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RestoreToExistingInstanceRequest.
-
 
         :param body: The body of this RestoreToExistingInstanceRequest.
         :type body: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBody`

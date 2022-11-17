@@ -17,7 +17,6 @@ class DeleteGaussMySqlProxyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class DeleteGaussMySqlProxyRequest:
     def body(self):
         """Gets the body of this DeleteGaussMySqlProxyRequest.
 
-
         :return: The body of this DeleteGaussMySqlProxyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CloseMysqlProxyRequestBody`
         """
@@ -115,7 +113,6 @@ class DeleteGaussMySqlProxyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteGaussMySqlProxyRequest.
-
 
         :param body: The body of this DeleteGaussMySqlProxyRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CloseMysqlProxyRequestBody`

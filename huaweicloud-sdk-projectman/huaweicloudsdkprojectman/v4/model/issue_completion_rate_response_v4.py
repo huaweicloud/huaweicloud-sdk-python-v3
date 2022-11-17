@@ -17,7 +17,6 @@ class IssueCompletionRateResponseV4:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class IssueCompletionRateResponseV4:
     def issue_status(self):
         """Gets the issue_status of this IssueCompletionRateResponseV4.
 
-
         :return: The issue_status of this IssueCompletionRateResponseV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueStatusResponseV4`
         """
@@ -65,7 +63,6 @@ class IssueCompletionRateResponseV4:
     @issue_status.setter
     def issue_status(self, issue_status):
         """Sets the issue_status of this IssueCompletionRateResponseV4.
-
 
         :param issue_status: The issue_status of this IssueCompletionRateResponseV4.
         :type issue_status: :class:`huaweicloudsdkprojectman.v4.IssueStatusResponseV4`

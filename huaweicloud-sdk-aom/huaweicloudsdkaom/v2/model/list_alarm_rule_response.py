@@ -17,7 +17,6 @@ class ListAlarmRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListAlarmRuleResponse(SdkResponse):
     def meta_data(self):
         """Gets the meta_data of this ListAlarmRuleResponse.
 
-
         :return: The meta_data of this ListAlarmRuleResponse.
         :rtype: :class:`huaweicloudsdkaom.v2.MetaData`
         """
@@ -65,7 +63,6 @@ class ListAlarmRuleResponse(SdkResponse):
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this ListAlarmRuleResponse.
-
 
         :param meta_data: The meta_data of this ListAlarmRuleResponse.
         :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`
@@ -76,7 +73,6 @@ class ListAlarmRuleResponse(SdkResponse):
     def thresholds(self):
         """Gets the thresholds of this ListAlarmRuleResponse.
 
-
         :return: The thresholds of this ListAlarmRuleResponse.
         :rtype: list[:class:`huaweicloudsdkaom.v2.QueryAlarmResult`]
         """
@@ -85,7 +81,6 @@ class ListAlarmRuleResponse(SdkResponse):
     @thresholds.setter
     def thresholds(self, thresholds):
         """Sets the thresholds of this ListAlarmRuleResponse.
-
 
         :param thresholds: The thresholds of this ListAlarmRuleResponse.
         :type thresholds: list[:class:`huaweicloudsdkaom.v2.QueryAlarmResult`]

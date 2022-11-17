@@ -17,7 +17,6 @@ class Thumbnail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class Thumbnail:
     def out(self):
         """Gets the out of this Thumbnail.
 
-
         :return: The out of this Thumbnail.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -93,7 +91,6 @@ class Thumbnail:
     @out.setter
     def out(self, out):
         """Sets the out of this Thumbnail.
-
 
         :param out: The out of this Thumbnail.
         :type out: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -104,7 +101,6 @@ class Thumbnail:
     def params(self):
         """Gets the params of this Thumbnail.
 
-
         :return: The params of this Thumbnail.
         :rtype: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
         """
@@ -113,7 +109,6 @@ class Thumbnail:
     @params.setter
     def params(self, params):
         """Sets the params of this Thumbnail.
-
 
         :param params: The params of this Thumbnail.
         :type params: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`

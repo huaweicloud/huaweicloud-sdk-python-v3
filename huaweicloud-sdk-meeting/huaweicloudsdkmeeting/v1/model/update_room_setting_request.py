@@ -17,7 +17,6 @@ class UpdateRoomSettingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class UpdateRoomSettingRequest:
     def body(self):
         """Gets the body of this UpdateRoomSettingRequest.
 
-
         :return: The body of this UpdateRoomSettingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.OpenRoomSettingReq`
         """
@@ -144,7 +142,6 @@ class UpdateRoomSettingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateRoomSettingRequest.
-
 
         :param body: The body of this UpdateRoomSettingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.OpenRoomSettingReq`

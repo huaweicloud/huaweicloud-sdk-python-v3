@@ -17,7 +17,6 @@ class QualityEnhanceTemplate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class QualityEnhanceTemplate:
     def video(self):
         """Gets the video of this QualityEnhanceTemplate.
 
-
         :return: The video of this QualityEnhanceTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.QualityEnhanceVideo`
         """
@@ -115,7 +113,6 @@ class QualityEnhanceTemplate:
     @video.setter
     def video(self, video):
         """Sets the video of this QualityEnhanceTemplate.
-
 
         :param video: The video of this QualityEnhanceTemplate.
         :type video: :class:`huaweicloudsdkmpc.v1.QualityEnhanceVideo`

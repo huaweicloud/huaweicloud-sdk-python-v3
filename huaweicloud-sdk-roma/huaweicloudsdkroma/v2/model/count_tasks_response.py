@@ -17,7 +17,6 @@ class CountTasksResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class CountTasksResponse(SdkResponse):
     def common_task_details(self):
         """Gets the common_task_details of this CountTasksResponse.
 
-
         :return: The common_task_details of this CountTasksResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
         """
@@ -65,7 +63,6 @@ class CountTasksResponse(SdkResponse):
     @common_task_details.setter
     def common_task_details(self, common_task_details):
         """Sets the common_task_details of this CountTasksResponse.
-
 
         :param common_task_details: The common_task_details of this CountTasksResponse.
         :type common_task_details: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
@@ -76,7 +73,6 @@ class CountTasksResponse(SdkResponse):
     def cdc_task_details(self):
         """Gets the cdc_task_details of this CountTasksResponse.
 
-
         :return: The cdc_task_details of this CountTasksResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`
         """
@@ -85,7 +81,6 @@ class CountTasksResponse(SdkResponse):
     @cdc_task_details.setter
     def cdc_task_details(self, cdc_task_details):
         """Sets the cdc_task_details of this CountTasksResponse.
-
 
         :param cdc_task_details: The cdc_task_details of this CountTasksResponse.
         :type cdc_task_details: :class:`huaweicloudsdkroma.v2.TaskStatisticDetails`

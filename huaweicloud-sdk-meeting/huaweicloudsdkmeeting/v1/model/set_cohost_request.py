@@ -17,7 +17,6 @@ class SetCohostRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class SetCohostRequest:
     def body(self):
         """Gets the body of this SetCohostRequest.
 
-
         :return: The body of this SetCohostRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestSetCohostBody`
         """
@@ -142,7 +140,6 @@ class SetCohostRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetCohostRequest.
-
 
         :param body: The body of this SetCohostRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestSetCohostBody`

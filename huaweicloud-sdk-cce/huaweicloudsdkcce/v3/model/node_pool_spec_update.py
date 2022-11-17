@@ -17,7 +17,6 @@ class NodePoolSpecUpdate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -60,7 +59,6 @@ class NodePoolSpecUpdate:
     def node_template(self):
         """Gets the node_template of this NodePoolSpecUpdate.
 
-
         :return: The node_template of this NodePoolSpecUpdate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpecUpdate`
         """
@@ -69,7 +67,6 @@ class NodePoolSpecUpdate:
     @node_template.setter
     def node_template(self, node_template):
         """Sets the node_template of this NodePoolSpecUpdate.
-
 
         :param node_template: The node_template of this NodePoolSpecUpdate.
         :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpecUpdate`
@@ -102,7 +99,6 @@ class NodePoolSpecUpdate:
     def autoscaling(self):
         """Gets the autoscaling of this NodePoolSpecUpdate.
 
-
         :return: The autoscaling of this NodePoolSpecUpdate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
         """
@@ -111,7 +107,6 @@ class NodePoolSpecUpdate:
     @autoscaling.setter
     def autoscaling(self, autoscaling):
         """Sets the autoscaling of this NodePoolSpecUpdate.
-
 
         :param autoscaling: The autoscaling of this NodePoolSpecUpdate.
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`

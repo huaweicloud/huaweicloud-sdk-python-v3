@@ -17,7 +17,6 @@ class CreateGrantRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateGrantRequest:
     def body(self):
         """Gets the body of this CreateGrantRequest.
 
-
         :return: The body of this CreateGrantRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.CreateGrantRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateGrantRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateGrantRequest.
-
 
         :param body: The body of this CreateGrantRequest.
         :type body: :class:`huaweicloudsdkkms.v2.CreateGrantRequestBody`

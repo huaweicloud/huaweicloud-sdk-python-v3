@@ -17,7 +17,6 @@ class CreateNatGatewaySnatRuleRequestOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateNatGatewaySnatRuleRequestOption:
     def snat_rule(self):
         """Gets the snat_rule of this CreateNatGatewaySnatRuleRequestOption.
 
-
         :return: The snat_rule of this CreateNatGatewaySnatRuleRequestOption.
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleOption`
         """
@@ -57,7 +55,6 @@ class CreateNatGatewaySnatRuleRequestOption:
     @snat_rule.setter
     def snat_rule(self, snat_rule):
         """Sets the snat_rule of this CreateNatGatewaySnatRuleRequestOption.
-
 
         :param snat_rule: The snat_rule of this CreateNatGatewaySnatRuleRequestOption.
         :type snat_rule: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleOption`

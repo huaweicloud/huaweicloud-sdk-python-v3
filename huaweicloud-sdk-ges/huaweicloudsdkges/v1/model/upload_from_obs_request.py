@@ -17,7 +17,6 @@ class UploadFromObsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UploadFromObsRequest:
     def body(self):
         """Gets the body of this UploadFromObsRequest.
 
-
         :return: The body of this UploadFromObsRequest.
         :rtype: :class:`huaweicloudsdkges.v1.UploadFromOBSReq`
         """
@@ -58,7 +56,6 @@ class UploadFromObsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UploadFromObsRequest.
-
 
         :param body: The body of this UploadFromObsRequest.
         :type body: :class:`huaweicloudsdkges.v1.UploadFromOBSReq`

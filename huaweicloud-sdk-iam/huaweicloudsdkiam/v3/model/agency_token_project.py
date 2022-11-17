@@ -17,7 +17,6 @@ class AgencyTokenProject:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class AgencyTokenProject:
     def domain(self):
         """Gets the domain of this AgencyTokenProject.
 
-
         :return: The domain of this AgencyTokenProject.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenProjectDomain`
         """
@@ -113,7 +111,6 @@ class AgencyTokenProject:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this AgencyTokenProject.
-
 
         :param domain: The domain of this AgencyTokenProject.
         :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenProjectDomain`

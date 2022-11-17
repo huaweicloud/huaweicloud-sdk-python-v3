@@ -17,7 +17,6 @@ class CreateCloudPersistentVolumeClaimsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class CreateCloudPersistentVolumeClaimsResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this CreateCloudPersistentVolumeClaimsResponse.
 
-
         :return: The metadata of this CreateCloudPersistentVolumeClaimsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
         """
@@ -130,7 +128,6 @@ class CreateCloudPersistentVolumeClaimsResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateCloudPersistentVolumeClaimsResponse.
-
 
         :param metadata: The metadata of this CreateCloudPersistentVolumeClaimsResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
@@ -141,7 +138,6 @@ class CreateCloudPersistentVolumeClaimsResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this CreateCloudPersistentVolumeClaimsResponse.
 
-
         :return: The spec of this CreateCloudPersistentVolumeClaimsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
         """
@@ -150,7 +146,6 @@ class CreateCloudPersistentVolumeClaimsResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this CreateCloudPersistentVolumeClaimsResponse.
-
 
         :param spec: The spec of this CreateCloudPersistentVolumeClaimsResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
@@ -161,7 +156,6 @@ class CreateCloudPersistentVolumeClaimsResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateCloudPersistentVolumeClaimsResponse.
 
-
         :return: The status of this CreateCloudPersistentVolumeClaimsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`
         """
@@ -170,7 +164,6 @@ class CreateCloudPersistentVolumeClaimsResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this CreateCloudPersistentVolumeClaimsResponse.
-
 
         :param status: The status of this CreateCloudPersistentVolumeClaimsResponse.
         :type status: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`

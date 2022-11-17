@@ -17,7 +17,6 @@ class ProtocolResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class ProtocolResult:
     def links(self):
         """Gets the links of this ProtocolResult.
 
-
         :return: The links of this ProtocolResult.
         :rtype: :class:`huaweicloudsdkiam.v3.ProtocolLinks`
         """
@@ -113,7 +111,6 @@ class ProtocolResult:
     @links.setter
     def links(self, links):
         """Sets the links of this ProtocolResult.
-
 
         :param links: The links of this ProtocolResult.
         :type links: :class:`huaweicloudsdkiam.v3.ProtocolLinks`

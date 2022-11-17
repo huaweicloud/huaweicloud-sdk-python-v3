@@ -17,7 +17,6 @@ class UpdateBaremetalServerInterfaceAttachmentsReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateBaremetalServerInterfaceAttachmentsReq:
     def interface_attachment(self):
         """Gets the interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
 
-
         :return: The interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
         :rtype: :class:`huaweicloudsdkbms.v1.InterfaceAttachmentsReq`
         """
@@ -57,7 +55,6 @@ class UpdateBaremetalServerInterfaceAttachmentsReq:
     @interface_attachment.setter
     def interface_attachment(self, interface_attachment):
         """Sets the interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
-
 
         :param interface_attachment: The interface_attachment of this UpdateBaremetalServerInterfaceAttachmentsReq.
         :type interface_attachment: :class:`huaweicloudsdkbms.v1.InterfaceAttachmentsReq`

@@ -17,7 +17,6 @@ class CreateTableRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateTableRequest:
     def body(self):
         """Gets the body of this CreateTableRequest.
 
-
         :return: The body of this CreateTableRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateTableRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateTableRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTableRequest.
-
 
         :param body: The body of this CreateTableRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateTableRequestBody`

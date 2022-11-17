@@ -17,7 +17,6 @@ class ShowTopologyTreeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowTopologyTreeResponse(SdkResponse):
     def topology_tree(self):
         """Gets the topology_tree of this ShowTopologyTreeResponse.
 
-
         :return: The topology_tree of this ShowTopologyTreeResponse.
         :rtype: :class:`huaweicloudsdkapm.v1.TopologyTree`
         """
@@ -58,7 +56,6 @@ class ShowTopologyTreeResponse(SdkResponse):
     @topology_tree.setter
     def topology_tree(self, topology_tree):
         """Sets the topology_tree of this ShowTopologyTreeResponse.
-
 
         :param topology_tree: The topology_tree of this ShowTopologyTreeResponse.
         :type topology_tree: :class:`huaweicloudsdkapm.v1.TopologyTree`

@@ -17,7 +17,6 @@ class CreateResSceneResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class CreateResSceneResponse(SdkResponse):
     def scene(self):
         """Gets the scene of this CreateResSceneResponse.
 
-
         :return: The scene of this CreateResSceneResponse.
         :rtype: :class:`huaweicloudsdkres.v1.Scene`
         """
@@ -123,7 +121,6 @@ class CreateResSceneResponse(SdkResponse):
     @scene.setter
     def scene(self, scene):
         """Sets the scene of this CreateResSceneResponse.
-
 
         :param scene: The scene of this CreateResSceneResponse.
         :type scene: :class:`huaweicloudsdkres.v1.Scene`

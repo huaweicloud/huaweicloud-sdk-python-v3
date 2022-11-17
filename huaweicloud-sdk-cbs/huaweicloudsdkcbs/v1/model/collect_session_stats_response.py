@@ -17,7 +17,6 @@ class CollectSessionStatsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -128,7 +127,6 @@ class CollectSessionStatsResponse(SdkResponse):
     def total(self):
         """Gets the total of this CollectSessionStatsResponse.
 
-
         :return: The total of this CollectSessionStatsResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.SessionStatsTotal`
         """
@@ -137,7 +135,6 @@ class CollectSessionStatsResponse(SdkResponse):
     @total.setter
     def total(self, total):
         """Sets the total of this CollectSessionStatsResponse.
-
 
         :param total: The total of this CollectSessionStatsResponse.
         :type total: :class:`huaweicloudsdkcbs.v1.SessionStatsTotal`

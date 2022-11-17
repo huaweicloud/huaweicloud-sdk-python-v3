@@ -17,7 +17,6 @@ class RenewalResourcesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RenewalResourcesRequest:
     def body(self):
         """Gets the body of this RenewalResourcesRequest.
 
-
         :return: The body of this RenewalResourcesRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.RenewalResourcesReq`
         """
@@ -58,7 +56,6 @@ class RenewalResourcesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RenewalResourcesRequest.
-
 
         :param body: The body of this RenewalResourcesRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.RenewalResourcesReq`

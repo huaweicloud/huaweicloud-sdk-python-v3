@@ -17,7 +17,6 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
     def tactics_config(self):
         """Gets the tactics_config of this UpdateFunctionReservedInstancesCountResponse.
 
-
         :return: The tactics_config of this UpdateFunctionReservedInstancesCountResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`
         """
@@ -116,7 +114,6 @@ class UpdateFunctionReservedInstancesCountResponse(SdkResponse):
     @tactics_config.setter
     def tactics_config(self, tactics_config):
         """Sets the tactics_config of this UpdateFunctionReservedInstancesCountResponse.
-
 
         :param tactics_config: The tactics_config of this UpdateFunctionReservedInstancesCountResponse.
         :type tactics_config: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`

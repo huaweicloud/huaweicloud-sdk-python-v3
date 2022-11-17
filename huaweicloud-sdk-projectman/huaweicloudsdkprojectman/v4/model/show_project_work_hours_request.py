@@ -17,7 +17,6 @@ class ShowProjectWorkHoursRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowProjectWorkHoursRequest:
     def body(self):
         """Gets the body of this ShowProjectWorkHoursRequest.
 
-
         :return: The body of this ShowProjectWorkHoursRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequestBody`
         """
@@ -86,7 +84,6 @@ class ShowProjectWorkHoursRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowProjectWorkHoursRequest.
-
 
         :param body: The body of this ShowProjectWorkHoursRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequestBody`

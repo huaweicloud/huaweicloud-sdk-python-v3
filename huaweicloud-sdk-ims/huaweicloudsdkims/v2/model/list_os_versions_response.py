@@ -17,7 +17,6 @@ class ListOsVersionsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListOsVersionsResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListOsVersionsResponse.
 
-
         :return: The body of this ListOsVersionsResponse.
         :rtype: list[:class:`huaweicloudsdkims.v2.ListOsVersionsResponseBody`]
         """
@@ -58,7 +56,6 @@ class ListOsVersionsResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ListOsVersionsResponse.
-
 
         :param body: The body of this ListOsVersionsResponse.
         :type body: list[:class:`huaweicloudsdkims.v2.ListOsVersionsResponseBody`]

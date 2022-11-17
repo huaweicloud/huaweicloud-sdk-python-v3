@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ClassroomAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ApplyJudgement
         :type request: :class:`huaweicloudsdkclassroom.v3.ApplyJudgementRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ApplyJudgementResponse`
@@ -68,6 +63,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ApplyJudgementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJudgementDetail
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJudgementDetailResponse`
@@ -126,6 +125,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJudgementDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJudgementFile
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementFileRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJudgementFileResponse`
@@ -184,6 +187,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +221,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJudgementFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -230,6 +236,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClassroomMembers
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMembersRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomMembersResponse`
@@ -242,6 +249,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -280,6 +289,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClassroomMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -294,6 +304,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClassrooms
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomsResponse`
@@ -306,6 +317,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClassroomsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowClassroomDetail
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowClassroomDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowClassroomDetailResponse`
@@ -368,6 +383,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +417,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClassroomDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -414,6 +432,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClassroomMemberJobs
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMemberJobsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomMemberJobsResponse`
@@ -426,6 +445,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -464,6 +485,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClassroomMemberJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -478,6 +500,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListJobs
         :type request: :class:`huaweicloudsdkclassroom.v3.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListJobsResponse`
@@ -490,6 +513,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -528,6 +553,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -542,6 +568,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMemberJobRecords
         :type request: :class:`huaweicloudsdkclassroom.v3.ListMemberJobRecordsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListMemberJobRecordsResponse`
@@ -554,6 +581,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -594,6 +623,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMemberJobRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -608,6 +638,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobDetail
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJobDetailResponse`
@@ -620,6 +651,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -652,6 +685,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -666,6 +700,7 @@ class ClassroomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobExercises
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobExercisesRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJobExercisesResponse`
@@ -678,6 +713,8 @@ class ClassroomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -718,6 +755,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobExercisesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -725,7 +763,7 @@ class ClassroomAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -736,9 +774,10 @@ class ClassroomAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -755,6 +794,7 @@ class ClassroomAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

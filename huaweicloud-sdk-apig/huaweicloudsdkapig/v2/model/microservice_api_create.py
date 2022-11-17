@@ -17,7 +17,6 @@ class MicroserviceApiCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -43,7 +42,7 @@ class MicroserviceApiCreate:
         :type name: str
         :param req_method: API的请求方式
         :type req_method: str
-        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 /apic/health_check为服务集成预置的健康检查路径，当req_method&#x3D;GET时不支持req_uri&#x3D;/apic/health_check。 &gt; 需要服从URI规范。
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 /apic/health_check为APIG预置的健康检查路径，当req_method&#x3D;GET时不支持req_uri&#x3D;/apic/health_check。 &gt; 需要服从URI规范。
         :type req_uri: str
         :param match_mode: API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
         :type match_mode: str
@@ -113,7 +112,7 @@ class MicroserviceApiCreate:
     def req_uri(self):
         """Gets the req_uri of this MicroserviceApiCreate.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 /apic/health_check为服务集成预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 /apic/health_check为APIG预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。 > 需要服从URI规范。
 
         :return: The req_uri of this MicroserviceApiCreate.
         :rtype: str
@@ -124,7 +123,7 @@ class MicroserviceApiCreate:
     def req_uri(self, req_uri):
         """Sets the req_uri of this MicroserviceApiCreate.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 /apic/health_check为服务集成预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 /apic/health_check为APIG预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。 > 需要服从URI规范。
 
         :param req_uri: The req_uri of this MicroserviceApiCreate.
         :type req_uri: str

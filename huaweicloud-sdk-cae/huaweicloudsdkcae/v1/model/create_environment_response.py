@@ -17,7 +17,6 @@ class CreateEnvironmentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CreateEnvironmentResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this CreateEnvironmentResponse.
 
-
         :return: The metadata of this CreateEnvironmentResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.EnvironmentMetadata`
         """
@@ -116,7 +114,6 @@ class CreateEnvironmentResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateEnvironmentResponse.
-
 
         :param metadata: The metadata of this CreateEnvironmentResponse.
         :type metadata: :class:`huaweicloudsdkcae.v1.EnvironmentMetadata`

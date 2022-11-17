@@ -17,7 +17,6 @@ class CheckDataTransformationReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -113,7 +112,6 @@ class CheckDataTransformationReq:
     def transformation_info(self):
         """Gets the transformation_info of this CheckDataTransformationReq.
 
-
         :return: The transformation_info of this CheckDataTransformationReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
         """
@@ -122,7 +120,6 @@ class CheckDataTransformationReq:
     @transformation_info.setter
     def transformation_info(self, transformation_info):
         """Sets the transformation_info of this CheckDataTransformationReq.
-
 
         :param transformation_info: The transformation_info of this CheckDataTransformationReq.
         :type transformation_info: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
@@ -133,7 +130,6 @@ class CheckDataTransformationReq:
     def config_transformation(self):
         """Gets the config_transformation of this CheckDataTransformationReq.
 
-
         :return: The config_transformation of this CheckDataTransformationReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.ConfigTransformationVo`
         """
@@ -142,7 +138,6 @@ class CheckDataTransformationReq:
     @config_transformation.setter
     def config_transformation(self, config_transformation):
         """Sets the config_transformation of this CheckDataTransformationReq.
-
 
         :param config_transformation: The config_transformation of this CheckDataTransformationReq.
         :type config_transformation: :class:`huaweicloudsdkdrs.v3.ConfigTransformationVo`

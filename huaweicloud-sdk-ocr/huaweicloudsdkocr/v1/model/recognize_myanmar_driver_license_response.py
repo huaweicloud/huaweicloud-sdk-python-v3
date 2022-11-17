@@ -17,7 +17,6 @@ class RecognizeMyanmarDriverLicenseResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeMyanmarDriverLicenseResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeMyanmarDriverLicenseResponse.
 
-
         :return: The result of this RecognizeMyanmarDriverLicenseResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseResult`
         """
@@ -58,7 +56,6 @@ class RecognizeMyanmarDriverLicenseResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeMyanmarDriverLicenseResponse.
-
 
         :param result: The result of this RecognizeMyanmarDriverLicenseResponse.
         :type result: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseResult`

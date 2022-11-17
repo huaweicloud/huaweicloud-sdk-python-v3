@@ -17,7 +17,6 @@ class Task:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -484,7 +483,6 @@ class Task:
     def task_executor_brief(self):
         """Gets the task_executor_brief of this Task.
 
-
         :return: The task_executor_brief of this Task.
         :rtype: :class:`huaweicloudsdkcse.v1.TaskExecutorBrief`
         """
@@ -493,7 +491,6 @@ class Task:
     @task_executor_brief.setter
     def task_executor_brief(self, task_executor_brief):
         """Sets the task_executor_brief of this Task.
-
 
         :param task_executor_brief: The task_executor_brief of this Task.
         :type task_executor_brief: :class:`huaweicloudsdkcse.v1.TaskExecutorBrief`

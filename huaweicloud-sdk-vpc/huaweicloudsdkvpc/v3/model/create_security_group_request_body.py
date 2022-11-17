@@ -17,7 +17,6 @@ class CreateSecurityGroupRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateSecurityGroupRequestBody:
     def security_group(self):
         """Gets the security_group of this CreateSecurityGroupRequestBody.
 
-
         :return: The security_group of this CreateSecurityGroupRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupOption`
         """
@@ -86,7 +84,6 @@ class CreateSecurityGroupRequestBody:
     @security_group.setter
     def security_group(self, security_group):
         """Sets the security_group of this CreateSecurityGroupRequestBody.
-
 
         :param security_group: The security_group of this CreateSecurityGroupRequestBody.
         :type security_group: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupOption`

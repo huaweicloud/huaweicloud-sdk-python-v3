@@ -17,7 +17,6 @@ class Submission:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -214,7 +213,6 @@ class Submission:
     def counters(self):
         """Gets the counters of this Submission.
 
-
         :return: The counters of this Submission.
         :rtype: :class:`huaweicloudsdkcdm.v1.Counters`
         """
@@ -223,7 +221,6 @@ class Submission:
     @counters.setter
     def counters(self, counters):
         """Sets the counters of this Submission.
-
 
         :param counters: The counters of this Submission.
         :type counters: :class:`huaweicloudsdkcdm.v1.Counters`

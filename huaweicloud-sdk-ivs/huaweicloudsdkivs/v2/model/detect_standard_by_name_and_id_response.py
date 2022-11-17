@@ -17,7 +17,6 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
     def meta(self):
         """Gets the meta of this DetectStandardByNameAndIdResponse.
 
-
         :return: The meta of this DetectStandardByNameAndIdResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
@@ -65,7 +63,6 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
     @meta.setter
     def meta(self, meta):
         """Sets the meta of this DetectStandardByNameAndIdResponse.
-
 
         :param meta: The meta of this DetectStandardByNameAndIdResponse.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -76,7 +73,6 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
     def result(self):
         """Gets the result of this DetectStandardByNameAndIdResponse.
 
-
         :return: The result of this DetectStandardByNameAndIdResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdResponseBodyResult`
         """
@@ -85,7 +81,6 @@ class DetectStandardByNameAndIdResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this DetectStandardByNameAndIdResponse.
-
 
         :param result: The result of this DetectStandardByNameAndIdResponse.
         :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdResponseBodyResult`

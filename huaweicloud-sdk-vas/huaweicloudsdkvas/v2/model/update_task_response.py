@@ -17,7 +17,6 @@ class UpdateTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -324,7 +323,6 @@ class UpdateTaskResponse(SdkResponse):
     def service_title(self):
         """Gets the service_title of this UpdateTaskResponse.
 
-
         :return: The service_title of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
         """
@@ -333,7 +331,6 @@ class UpdateTaskResponse(SdkResponse):
     @service_title.setter
     def service_title(self, service_title):
         """Sets the service_title of this UpdateTaskResponse.
-
 
         :param service_title: The service_title of this UpdateTaskResponse.
         :type service_title: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
@@ -476,7 +473,6 @@ class UpdateTaskResponse(SdkResponse):
     def error(self):
         """Gets the error of this UpdateTaskResponse.
 
-
         :return: The error of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
         """
@@ -485,7 +481,6 @@ class UpdateTaskResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this UpdateTaskResponse.
-
 
         :param error: The error of this UpdateTaskResponse.
         :type error: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
@@ -518,7 +513,6 @@ class UpdateTaskResponse(SdkResponse):
     def timing(self):
         """Gets the timing of this UpdateTaskResponse.
 
-
         :return: The timing of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
@@ -527,7 +521,6 @@ class UpdateTaskResponse(SdkResponse):
     @timing.setter
     def timing(self, timing):
         """Sets the timing of this UpdateTaskResponse.
-
 
         :param timing: The timing of this UpdateTaskResponse.
         :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
@@ -538,7 +531,6 @@ class UpdateTaskResponse(SdkResponse):
     def input(self):
         """Gets the input of this UpdateTaskResponse.
 
-
         :return: The input of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
@@ -547,7 +539,6 @@ class UpdateTaskResponse(SdkResponse):
     @input.setter
     def input(self, input):
         """Sets the input of this UpdateTaskResponse.
-
 
         :param input: The input of this UpdateTaskResponse.
         :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
@@ -558,7 +549,6 @@ class UpdateTaskResponse(SdkResponse):
     def output(self):
         """Gets the output of this UpdateTaskResponse.
 
-
         :return: The output of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
         """
@@ -567,7 +557,6 @@ class UpdateTaskResponse(SdkResponse):
     @output.setter
     def output(self, output):
         """Sets the output of this UpdateTaskResponse.
-
 
         :param output: The output of this UpdateTaskResponse.
         :type output: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
@@ -578,7 +567,6 @@ class UpdateTaskResponse(SdkResponse):
     def service_config(self):
         """Gets the service_config of this UpdateTaskResponse.
 
-
         :return: The service_config of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
@@ -587,7 +575,6 @@ class UpdateTaskResponse(SdkResponse):
     @service_config.setter
     def service_config(self, service_config):
         """Sets the service_config of this UpdateTaskResponse.
-
 
         :param service_config: The service_config of this UpdateTaskResponse.
         :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`

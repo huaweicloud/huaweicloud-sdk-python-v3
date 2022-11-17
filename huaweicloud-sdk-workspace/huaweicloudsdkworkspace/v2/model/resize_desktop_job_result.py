@@ -17,7 +17,6 @@ class ResizeDesktopJobResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -35,9 +34,9 @@ class ResizeDesktopJobResult:
 
         The model defined in huaweicloud sdk
 
-        :param desktop_id: 桌面ID
+        :param desktop_id: 桌面ID。
         :type desktop_id: str
-        :param job_id: 任务ID
+        :param job_id: 任务ID。
         :type job_id: str
         """
         
@@ -56,7 +55,7 @@ class ResizeDesktopJobResult:
     def desktop_id(self):
         """Gets the desktop_id of this ResizeDesktopJobResult.
 
-        桌面ID
+        桌面ID。
 
         :return: The desktop_id of this ResizeDesktopJobResult.
         :rtype: str
@@ -67,7 +66,7 @@ class ResizeDesktopJobResult:
     def desktop_id(self, desktop_id):
         """Sets the desktop_id of this ResizeDesktopJobResult.
 
-        桌面ID
+        桌面ID。
 
         :param desktop_id: The desktop_id of this ResizeDesktopJobResult.
         :type desktop_id: str
@@ -78,7 +77,7 @@ class ResizeDesktopJobResult:
     def job_id(self):
         """Gets the job_id of this ResizeDesktopJobResult.
 
-        任务ID
+        任务ID。
 
         :return: The job_id of this ResizeDesktopJobResult.
         :rtype: str
@@ -89,7 +88,7 @@ class ResizeDesktopJobResult:
     def job_id(self, job_id):
         """Sets the job_id of this ResizeDesktopJobResult.
 
-        任务ID
+        任务ID。
 
         :param job_id: The job_id of this ResizeDesktopJobResult.
         :type job_id: str

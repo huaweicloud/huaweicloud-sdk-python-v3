@@ -1,3 +1,378 @@
+# 3.1.11 2022-11-17
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持应用编排服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DC
+
+- _新增特性_
+  - 支持云专线服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CFW
+
+- _新增特性_
+  - 支持云防火墙服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListPlugins`
+    - `CreatePlugin`
+    - `ShowPlugin`
+    - `UpdatePlugin`
+    - `DeletePlugin`
+    - `AttachApiToPlugin`
+    - `DetachApiFromPlugin`
+    - `ListPluginAttachedApis`
+    - `ListPluginAttachableApis`
+    - `AttachPluginToApi`
+    - `DetachPluginFromApi`
+    - `ListApiAttachedPlugins`
+    - `ListApiAttachablePlugins`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateVpcChannelV2`新增请求参数 `type`、`microservice_labels`
+  - 接口`ListVpcChannelsV2`新增响应参数 `microservice_labels`
+  - 接口`ShowDetailsOfVpcChannelV2`新增响应参数 `microservice_labels`
+  - 接口`UpdateVpcChannelV2`:
+    - 新增请求参数 `type`、`microservice_labels`
+    - 新增响应参数 `microservice_labels`
+  - 接口`CreateMemberGroup`新增请求参数 `microservice_labels`
+  - 接口`ListMemberGroups`新增响应参数 `microservice_labels`
+  - 接口`ShowDetailsOfMemberGroup`新增响应参数 `microservice_labels`
+  - 接口`UpdateMemberGroup`:
+    - 新增请求参数 `microservice_labels`
+    - 新增响应参数 `microservice_labels`
+  - 接口`CreateInstanceV2`新增请求参数 `tags`
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DeleteServerNics`请求参数`id`改为必填
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateSubEnterpriseAccount`请求参数`sub_customer_association_type`改为必填
+
+### HuaweiCloud SDK CloudArtifact
+
+- _新增特性_
+  - 支持接口`ShowProjectReleaseFiles`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudDeploy
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDeployTaskByTemplate`请求参数`type`新增枚举值`encrypt`
+  - 接口`StartDeployTask`:
+    - 新增请求参数 `trigger_source`、`key`
+    - 移除请求参数 `description`、`name`、`limits`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持以下接口：
+    - `AddExtensionEvaluation`
+    - `AddExtensionEvaluationReply`
+    - `CheckMaliciousExtensionEvaluation`
+    - `DeleteEvaluationReply`
+    - `DeleteEvaluation`
+    - `AddExtensionStar`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ResizeInstance`请求参数`new_capacity`类型调整 `integer` -> `int32`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`BatchCreateJobs`请求参数`db_type`新增枚举值`gaussdbv5`、`postgresql`、`kafka`、`gaussdbv5ha`
+  - 接口`BatchValidateConnections`请求参数`db_type`新增枚举值`gaussdbv5`、`kafka`、`gaussdbv5ha`
+  - 接口`BatchUpdateJob`请求参数`db_type`新增枚举值`gaussdbv5`、`postgresql`、`kafka`、`gaussdbv5ha`
+  - 接口`ListCompareResult`:
+    - 新增响应参数 `line_compare_detail`、`content_compare_diff`、`compare_task_list`
+    - 移除响应参数 `LineCompareDetail`、`ContentCompareDiff`、`CompareTaskList`
+  - 接口`BatchListJobDetails`:
+    - 新增响应参数 `is_multi_az`、`az_name`、`master_az`、`slave_az`、`node_role`
+    - 响应参数`db_type`新增枚举值`gaussdbv5`、`postgresql`、`kafka`、`gaussdbv5ha`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RegisterServerMonitor`请求参数`monitorMetrics`类型调整 `string` -> `enum`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DisassociatePublicips`请求参数`associate_instance_type`新增枚举值`VPN`
+  - 接口`AssociatePublicips`请求参数`associate_instance_type`新增枚举值`VPN`
+
+### HuaweiCloud SDK EPS
+
+- _新增特性_
+  - 支持接口`ListProviders`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持接口`ShowInstanceRole`、`SwitchToMaster`、`SwitchToSlave`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateMessage`新增请求参数 `ttl`
+  - 接口`ListCertificates`新增请求参数 `Sp-Auth-Token`、`Stage-Auth-Token`
+  - 接口`AddCertificate`:
+    - 新增请求参数 `Sp-Auth-Token`、`Stage-Auth-Token`、`addCertificateRequestBody`
+    - 移除请求参数 `AddCertificateRequestBody`
+  - 接口`DeleteCertificate`新增请求参数 `Sp-Auth-Token`、`Stage-Auth-Token`
+  - 接口`CheckCertificate`:
+    - 新增请求参数 `Sp-Auth-Token`、`Stage-Auth-Token`、`checkCertificateRequestBody`
+    - 移除请求参数 `CheckCertificateRequestBody`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ResetPassword`请求参数`new_password`改为必填
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeGeneralTable`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeVatInvoice`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeInvoiceVerification`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeGeneralText`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeWebImage`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeHealthCode`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeQuotaInvoice`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeIdCard`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeHandwriting`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeVehicleLicense`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeTransportationLicense`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeTaxiInvoice`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeAutoClassification`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeTollInvoice`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeMvsInvoice`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeLicensePlate`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeFlightItinerary`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeBusinessLicense`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeDriverLicense`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeBusinessCard`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeTrainTicket`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeVin`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizePassport`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeBankcard`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeInsurancePolicy`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeFinancialStatement`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeQualificationCertificate`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeThailandIdcard`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeMyanmarIdcard`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeMyanmarDriverLicense`:
+    - 新增请求参数 `Enterprise-Project-Id`
+    - 新增响应参数 `birth`、`birth`
+    - 移除响应参数 `Birth`、`Birth`
+  - 接口`RecognizeChileIdCard`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeThailandLicensePlate`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeWaybillElectronic`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizePcrTestRecord`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeIdDocument`:
+    - 新增请求参数 `Enterprise-Project-Id`
+    - 响应参数`result`类型调整 `object` -> `object`
+  - 接口`RecognizeHkIdCard`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeCambodianIdCard`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeExitEntryPermit`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeMainlandTravelPermit`新增请求参数 `Enterprise-Project-Id`
+  - 接口`RecognizeMacaoIdCard`新增请求参数 `Enterprise-Project-Id`
+
+### HuaweiCloud SDK OSM
+
+- _新增特性_
+  - 支持接口`RevokeMessage`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ROMA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDeviceGroup`移除响应参数 `app_name`
+  - 接口`ShowDeviceGroupTree`移除响应参数 `total`、`app_id`、`permissions`
+  - 接口`UpdateDeviceGroup`移除响应参数 `app_name`
+  - 接口`CreateDevice`新增请求参数 `user_name`
+  - 接口`ListDevices`:
+    - 新增响应参数 `device_id`
+    - 移除响应参数 `plugin_id`
+  - 接口`BatchFreezeDevices`新增响应参数 `device_id`、`device_id`
+  - 接口`UpdateDevice`:
+    - 新增响应参数 `device_id`
+    - 移除响应参数 `plugin_id`
+  - 接口`ShowDevice`:
+    - 新增响应参数 `device_id`
+    - 响应参数`status`类型调整 `enum` -> `integer`
+    - 响应参数`online_status`类型调整 `enum` -> `integer`
+    - 响应参数`device_type`类型调整 `enum` -> `integer`
+    - 响应参数`plugin_id`类型调整 `enum` -> `integer`
+  - 接口`ListSubsets`:
+    - 新增响应参数 `device_id`
+    - 移除响应参数 `plugin_id`
+  - 接口`ResetAuthentication`新增请求参数 `ResetAuthenticationRequestBody`
+  - 接口`UpdateProduct`:
+    - 新增响应参数 `status`
+    - 移除响应参数 `authentication`
+  - 接口`ResetProductAuthentication`新增请求参数 `ResetProductAuthenticationRequestBody`
+  - 接口`CreateRule`移除响应参数 `app_name`、`sql_field`、`sql_where`、`rule_express`
+  - 接口`CreateProperty`新增请求参数 `enum_dict`、`method`
+  - 接口`ListProperties`:
+    - 新增响应参数 `enum_dict`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+  - 接口`UpdateProperty`:
+    - 新增请求参数 `enum_dict`
+    - 新增响应参数 `enum_dict`、`method`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+  - 接口`ShowProperty`:
+    - 新增响应参数 `enum_dict`、`method`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+  - 接口`CreateRequestProperty`:
+    - 新增请求参数 `enum_dict`、`method`
+    - 新增响应参数 `enum_dict`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+  - 接口`ListRequestProperties`:
+    - 新增响应参数 `enum_dict`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+  - 接口`UpdateRequestProperty`:
+    - 新增请求参数 `enum_dict`
+    - 新增响应参数 `enum_dict`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+  - 接口`ShowRequestProperty`:
+    - 新增响应参数 `enum_dict`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+  - 接口`CreateResponseProperty`新增请求参数 `enum_dict`、`method`
+  - 接口`ListResponseProperties`:
+    - 新增响应参数 `enum_dict`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+  - 接口`UpdateResponseProperty`:
+    - 新增请求参数 `enum_dict`
+    - 新增响应参数 `enum_dict`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+  - 接口`ShowResponseProperty`:
+    - 新增响应参数 `enum_dict`
+    - 响应参数`data_type`新增枚举值`boolean`、`array`
+
+### HuaweiCloud SDK TMS
+
+- _新增特性_
+  - 支持接口`ListProviders`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK UGO
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RunSqlConversion`:
+    - 请求参数`target_db_type`新增枚举值`GaussDB Centralized`, 移除枚举值`GaussDB(for openGauss)`
+    - 请求参数`target_db_version`新增枚举值`2.0`, 移除枚举值`2020`
+  - 接口`ConfirmTargetDbType`:
+    - 请求参数`target_db_type`类型调整 `string` -> `enum`
+    - 请求参数`target_db_version`类型调整 `string` -> `enum`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateSubnet`:
+    - 请求参数`opt_name`新增枚举值`addresstime`
+    - 响应参数`opt_name`新增枚举值`addresstime`
+  - 接口`ListSubnets`响应参数`opt_name`新增枚举值`addresstime`
+  - 接口`ShowSubnet`响应参数`opt_name`新增枚举值`addresstime`
+  - 接口`UpdateSubnet`请求参数`opt_name`新增枚举值`addresstime`
+
 # 3.1.10 2022-11-14
 
 ### HuaweiCloud SDK BMS

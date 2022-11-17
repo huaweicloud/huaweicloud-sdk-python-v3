@@ -17,7 +17,6 @@ class PolicyAssignmentRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -148,7 +147,6 @@ class PolicyAssignmentRequestBody:
     def policy_filter(self):
         """Gets the policy_filter of this PolicyAssignmentRequestBody.
 
-
         :return: The policy_filter of this PolicyAssignmentRequestBody.
         :rtype: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
         """
@@ -157,7 +155,6 @@ class PolicyAssignmentRequestBody:
     @policy_filter.setter
     def policy_filter(self, policy_filter):
         """Sets the policy_filter of this PolicyAssignmentRequestBody.
-
 
         :param policy_filter: The policy_filter of this PolicyAssignmentRequestBody.
         :type policy_filter: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`

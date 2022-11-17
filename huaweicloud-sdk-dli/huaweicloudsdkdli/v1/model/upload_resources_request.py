@@ -17,7 +17,6 @@ class UploadResourcesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class UploadResourcesRequest:
     def user_id(self):
         """Gets the user_id of this UploadResourcesRequest.
 
-
         :return: The user_id of this UploadResourcesRequest.
         :rtype: str
         """
@@ -65,7 +63,6 @@ class UploadResourcesRequest:
     @user_id.setter
     def user_id(self, user_id):
         """Sets the user_id of this UploadResourcesRequest.
-
 
         :param user_id: The user_id of this UploadResourcesRequest.
         :type user_id: str
@@ -76,7 +73,6 @@ class UploadResourcesRequest:
     def body(self):
         """Gets the body of this UploadResourcesRequest.
 
-
         :return: The body of this UploadResourcesRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UploadPackageGroupReq`
         """
@@ -85,7 +81,6 @@ class UploadResourcesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UploadResourcesRequest.
-
 
         :param body: The body of this UploadResourcesRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UploadPackageGroupReq`

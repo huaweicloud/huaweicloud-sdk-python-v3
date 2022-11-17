@@ -17,7 +17,6 @@ class TraceDataRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -128,7 +127,6 @@ class TraceDataRsp:
     def type(self):
         """Gets the type of this TraceDataRsp.
 
-
         :return: The type of this TraceDataRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
         """
@@ -137,7 +135,6 @@ class TraceDataRsp:
     @type.setter
     def type(self, type):
         """Sets the type of this TraceDataRsp.
-
 
         :param type: The type of this TraceDataRsp.
         :type type: :class:`huaweicloudsdkeihealth.v1.PathType`

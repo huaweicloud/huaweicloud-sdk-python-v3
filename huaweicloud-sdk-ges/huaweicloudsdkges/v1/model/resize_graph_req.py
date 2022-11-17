@@ -17,7 +17,6 @@ class ResizeGraphReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ResizeGraphReq:
     def resize(self):
         """Gets the resize of this ResizeGraphReq.
 
-
         :return: The resize of this ResizeGraphReq.
         :rtype: :class:`huaweicloudsdkges.v1.GraphSizeTypeIndexReq`
         """
@@ -57,7 +55,6 @@ class ResizeGraphReq:
     @resize.setter
     def resize(self, resize):
         """Sets the resize of this ResizeGraphReq.
-
 
         :param resize: The resize of this ResizeGraphReq.
         :type resize: :class:`huaweicloudsdkges.v1.GraphSizeTypeIndexReq`

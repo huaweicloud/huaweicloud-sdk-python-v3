@@ -17,7 +17,6 @@ class ListPrivateZonesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListPrivateZonesResponse(SdkResponse):
     def links(self):
         """Gets the links of this ListPrivateZonesResponse.
 
-
         :return: The links of this ListPrivateZonesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -72,7 +70,6 @@ class ListPrivateZonesResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ListPrivateZonesResponse.
-
 
         :param links: The links of this ListPrivateZonesResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -83,7 +80,6 @@ class ListPrivateZonesResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ListPrivateZonesResponse.
 
-
         :return: The metadata of this ListPrivateZonesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
@@ -92,7 +88,6 @@ class ListPrivateZonesResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ListPrivateZonesResponse.
-
 
         :param metadata: The metadata of this ListPrivateZonesResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
@@ -103,7 +98,6 @@ class ListPrivateZonesResponse(SdkResponse):
     def zones(self):
         """Gets the zones of this ListPrivateZonesResponse.
 
-
         :return: The zones of this ListPrivateZonesResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]
         """
@@ -112,7 +106,6 @@ class ListPrivateZonesResponse(SdkResponse):
     @zones.setter
     def zones(self, zones):
         """Sets the zones of this ListPrivateZonesResponse.
-
 
         :param zones: The zones of this ListPrivateZonesResponse.
         :type zones: list[:class:`huaweicloudsdkdns.v2.PrivateZoneResp`]

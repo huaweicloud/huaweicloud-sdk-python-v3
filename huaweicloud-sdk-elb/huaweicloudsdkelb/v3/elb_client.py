@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ElbClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class ElbClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -188,6 +188,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -220,6 +222,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdatePoliciesPriorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -246,6 +249,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -278,6 +283,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeLoadbalancerChargeModeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -304,6 +310,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -336,6 +344,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -362,6 +371,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -394,6 +405,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateHealthMonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -420,6 +432,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -452,6 +466,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateL7PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -478,6 +493,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -512,6 +529,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateL7RuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -538,6 +556,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -570,6 +590,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -606,6 +627,8 @@ class ElbClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -637,6 +660,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLoadBalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -663,6 +687,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -695,6 +721,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLogtankResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -721,6 +748,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -755,6 +784,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -781,6 +811,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -813,6 +845,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -839,6 +872,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -871,6 +906,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecurityPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -897,6 +933,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -929,6 +967,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -955,6 +994,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -987,6 +1028,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHealthMonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1013,6 +1055,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1045,6 +1089,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteL7PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1071,6 +1116,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1105,6 +1152,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteL7RuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1131,6 +1179,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1163,6 +1213,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1189,6 +1240,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1221,6 +1274,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLoadBalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1247,6 +1301,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1279,6 +1335,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLogtankResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1305,6 +1362,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1339,6 +1398,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1365,6 +1425,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1397,6 +1459,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1423,6 +1486,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1455,6 +1520,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecurityPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1481,6 +1547,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1552,6 +1620,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAllMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1587,6 +1656,8 @@ class ElbClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1618,6 +1689,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAvailabilityZonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1644,6 +1716,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1697,6 +1771,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1723,6 +1798,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1770,6 +1847,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1796,6 +1874,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1872,6 +1952,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHealthMonitorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1898,6 +1979,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1974,6 +2057,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListL7PoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2000,6 +2084,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2063,6 +2149,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListL7RulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2089,6 +2176,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2189,6 +2278,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListListenersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2215,6 +2305,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2335,6 +2427,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLoadBalancersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2361,6 +2454,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2412,6 +2507,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLogtanksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2438,6 +2534,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2511,6 +2609,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2537,6 +2636,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2622,6 +2723,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPoolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2648,6 +2750,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2681,6 +2785,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotaDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2707,6 +2812,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2758,6 +2865,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecurityPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2786,6 +2894,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2816,6 +2926,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSystemSecurityPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2842,6 +2953,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2874,6 +2987,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2900,6 +3014,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2932,6 +3048,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFlavorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2958,6 +3075,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2990,6 +3109,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHealthMonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3016,6 +3136,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3048,6 +3170,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowL7PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3074,6 +3197,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3108,6 +3233,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowL7RuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3134,6 +3260,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3166,6 +3294,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3192,6 +3321,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3224,6 +3355,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLoadBalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3253,6 +3385,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3285,6 +3419,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLoadBalancerStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3311,6 +3446,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3343,6 +3480,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLogtankResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3369,6 +3507,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3403,6 +3543,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3429,6 +3570,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3461,6 +3604,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3487,6 +3631,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3517,6 +3663,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3543,6 +3690,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3575,6 +3724,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecurityPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3601,6 +3751,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3635,6 +3787,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3661,6 +3814,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3695,6 +3850,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHealthMonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3721,6 +3877,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3755,6 +3913,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateL7PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3781,6 +3940,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3817,6 +3978,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateL7RuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3843,6 +4005,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3877,6 +4041,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3903,6 +4068,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3937,6 +4104,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLoadBalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3963,6 +4131,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3997,6 +4167,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLogtankResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4023,6 +4194,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4059,6 +4232,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4085,6 +4259,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4119,6 +4295,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4145,6 +4322,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4179,6 +4358,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecurityPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4205,6 +4385,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4235,6 +4417,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4261,6 +4444,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4295,6 +4480,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteIpListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4334,6 +4520,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4375,6 +4563,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CountPreoccupyIpNumResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4403,6 +4592,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4435,6 +4626,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4461,6 +4653,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4493,6 +4687,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4519,6 +4714,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4567,6 +4764,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIpGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4593,6 +4791,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4625,6 +4825,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4654,6 +4855,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4688,6 +4891,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4714,6 +4918,8 @@ class ElbClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4748,6 +4954,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIpListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4755,7 +4962,7 @@ class ElbClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4765,9 +4972,10 @@ class ElbClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4784,6 +4992,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

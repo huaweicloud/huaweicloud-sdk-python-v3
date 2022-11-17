@@ -17,7 +17,6 @@ class UpdateFirewallRuleOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class UpdateFirewallRuleOption:
     def egress_firewall_policy(self):
         """Gets the egress_firewall_policy of this UpdateFirewallRuleOption.
 
-
         :return: The egress_firewall_policy of this UpdateFirewallRuleOption.
         :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
@@ -63,7 +61,6 @@ class UpdateFirewallRuleOption:
     @egress_firewall_policy.setter
     def egress_firewall_policy(self, egress_firewall_policy):
         """Sets the egress_firewall_policy of this UpdateFirewallRuleOption.
-
 
         :param egress_firewall_policy: The egress_firewall_policy of this UpdateFirewallRuleOption.
         :type egress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
@@ -74,7 +71,6 @@ class UpdateFirewallRuleOption:
     def ingress_firewall_policy(self):
         """Gets the ingress_firewall_policy of this UpdateFirewallRuleOption.
 
-
         :return: The ingress_firewall_policy of this UpdateFirewallRuleOption.
         :rtype: :class:`huaweicloudsdkiec.v1.FirewallPolicy`
         """
@@ -83,7 +79,6 @@ class UpdateFirewallRuleOption:
     @ingress_firewall_policy.setter
     def ingress_firewall_policy(self, ingress_firewall_policy):
         """Sets the ingress_firewall_policy of this UpdateFirewallRuleOption.
-
 
         :param ingress_firewall_policy: The ingress_firewall_policy of this UpdateFirewallRuleOption.
         :type ingress_firewall_policy: :class:`huaweicloudsdkiec.v1.FirewallPolicy`

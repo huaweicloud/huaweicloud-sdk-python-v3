@@ -17,7 +17,6 @@ class ResetPasswordBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ResetPasswordBody:
     def reset_password(self):
         """Gets the reset_password of this ResetPasswordBody.
 
-
         :return: The reset_password of this ResetPasswordBody.
         :rtype: :class:`huaweicloudsdkbms.v1.ResetPassword`
         """
@@ -57,7 +55,6 @@ class ResetPasswordBody:
     @reset_password.setter
     def reset_password(self, reset_password):
         """Sets the reset_password of this ResetPasswordBody.
-
 
         :param reset_password: The reset_password of this ResetPasswordBody.
         :type reset_password: :class:`huaweicloudsdkbms.v1.ResetPassword`

@@ -17,7 +17,6 @@ class UpdateCompetitionScoreRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateCompetitionScoreRequest:
     def body(self):
         """Gets the body of this UpdateCompetitionScoreRequest.
 
-
         :return: The body of this UpdateCompetitionScoreRequest.
         :rtype: :class:`huaweicloudsdkcodecraft.v5.UpdateScoreRequestModel`
         """
@@ -58,7 +56,6 @@ class UpdateCompetitionScoreRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateCompetitionScoreRequest.
-
 
         :param body: The body of this UpdateCompetitionScoreRequest.
         :type body: :class:`huaweicloudsdkcodecraft.v5.UpdateScoreRequestModel`

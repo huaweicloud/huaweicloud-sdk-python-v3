@@ -17,7 +17,6 @@ class BatchDeleteBaremetalServerTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class BatchDeleteBaremetalServerTagsRequest:
     def server_id(self):
         """Gets the server_id of this BatchDeleteBaremetalServerTagsRequest.
 
-
         :return: The server_id of this BatchDeleteBaremetalServerTagsRequest.
         :rtype: str
         """
@@ -64,7 +62,6 @@ class BatchDeleteBaremetalServerTagsRequest:
     @server_id.setter
     def server_id(self, server_id):
         """Sets the server_id of this BatchDeleteBaremetalServerTagsRequest.
-
 
         :param server_id: The server_id of this BatchDeleteBaremetalServerTagsRequest.
         :type server_id: str
@@ -75,7 +72,6 @@ class BatchDeleteBaremetalServerTagsRequest:
     def body(self):
         """Gets the body of this BatchDeleteBaremetalServerTagsRequest.
 
-
         :return: The body of this BatchDeleteBaremetalServerTagsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsRequestBody`
         """
@@ -84,7 +80,6 @@ class BatchDeleteBaremetalServerTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteBaremetalServerTagsRequest.
-
 
         :param body: The body of this BatchDeleteBaremetalServerTagsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsRequestBody`

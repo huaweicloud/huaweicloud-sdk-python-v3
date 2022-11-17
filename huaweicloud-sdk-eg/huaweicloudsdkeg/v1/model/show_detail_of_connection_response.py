@@ -17,7 +17,6 @@ class ShowDetailOfConnectionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -266,7 +265,6 @@ class ShowDetailOfConnectionResponse(SdkResponse):
     def flavor(self):
         """Gets the flavor of this ShowDetailOfConnectionResponse.
 
-
         :return: The flavor of this ShowDetailOfConnectionResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
         """
@@ -275,7 +273,6 @@ class ShowDetailOfConnectionResponse(SdkResponse):
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this ShowDetailOfConnectionResponse.
-
 
         :param flavor: The flavor of this ShowDetailOfConnectionResponse.
         :type flavor: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`

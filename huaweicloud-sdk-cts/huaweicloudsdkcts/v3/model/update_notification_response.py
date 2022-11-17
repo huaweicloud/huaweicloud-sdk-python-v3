@@ -17,7 +17,6 @@ class UpdateNotificationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -339,7 +338,6 @@ class UpdateNotificationResponse(SdkResponse):
     def filter(self):
         """Gets the filter of this UpdateNotificationResponse.
 
-
         :return: The filter of this UpdateNotificationResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.Filter`
         """
@@ -348,7 +346,6 @@ class UpdateNotificationResponse(SdkResponse):
     @filter.setter
     def filter(self, filter):
         """Sets the filter of this UpdateNotificationResponse.
-
 
         :param filter: The filter of this UpdateNotificationResponse.
         :type filter: :class:`huaweicloudsdkcts.v3.Filter`

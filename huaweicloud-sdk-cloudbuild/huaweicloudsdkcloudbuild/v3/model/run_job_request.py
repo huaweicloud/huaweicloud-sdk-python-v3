@@ -17,7 +17,6 @@ class RunJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunJobRequest:
     def body(self):
         """Gets the body of this RunJobRequest.
 
-
         :return: The body of this RunJobRequest.
         :rtype: :class:`huaweicloudsdkcloudbuild.v3.RunJobRequestBody`
         """
@@ -58,7 +56,6 @@ class RunJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunJobRequest.
-
 
         :param body: The body of this RunJobRequest.
         :type body: :class:`huaweicloudsdkcloudbuild.v3.RunJobRequestBody`

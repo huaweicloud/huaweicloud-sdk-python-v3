@@ -17,7 +17,6 @@ class CreateAlarmRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -167,7 +166,6 @@ class CreateAlarmRequestBody:
     def metric(self):
         """Gets the metric of this CreateAlarmRequestBody.
 
-
         :return: The metric of this CreateAlarmRequestBody.
         :rtype: :class:`huaweicloudsdkces.v1.MetricForAlarm`
         """
@@ -176,7 +174,6 @@ class CreateAlarmRequestBody:
     @metric.setter
     def metric(self, metric):
         """Sets the metric of this CreateAlarmRequestBody.
-
 
         :param metric: The metric of this CreateAlarmRequestBody.
         :type metric: :class:`huaweicloudsdkces.v1.MetricForAlarm`
@@ -187,7 +184,6 @@ class CreateAlarmRequestBody:
     def condition(self):
         """Gets the condition of this CreateAlarmRequestBody.
 
-
         :return: The condition of this CreateAlarmRequestBody.
         :rtype: :class:`huaweicloudsdkces.v1.Condition`
         """
@@ -196,7 +192,6 @@ class CreateAlarmRequestBody:
     @condition.setter
     def condition(self, condition):
         """Sets the condition of this CreateAlarmRequestBody.
-
 
         :param condition: The condition of this CreateAlarmRequestBody.
         :type condition: :class:`huaweicloudsdkces.v1.Condition`

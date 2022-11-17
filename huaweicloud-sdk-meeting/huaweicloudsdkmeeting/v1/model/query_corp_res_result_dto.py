@@ -17,7 +17,6 @@ class QueryCorpResResultDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class QueryCorpResResultDTO:
     def corp_vc_res(self):
         """Gets the corp_vc_res of this QueryCorpResResultDTO.
 
-
         :return: The corp_vc_res of this QueryCorpResResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpVcResResultDTO`
         """
@@ -58,7 +56,6 @@ class QueryCorpResResultDTO:
     @corp_vc_res.setter
     def corp_vc_res(self, corp_vc_res):
         """Sets the corp_vc_res of this QueryCorpResResultDTO.
-
 
         :param corp_vc_res: The corp_vc_res of this QueryCorpResResultDTO.
         :type corp_vc_res: :class:`huaweicloudsdkmeeting.v1.QueryCorpVcResResultDTO`

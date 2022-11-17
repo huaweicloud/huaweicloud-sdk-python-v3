@@ -17,7 +17,6 @@ class KeystoneUpdateUserPasswordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class KeystoneUpdateUserPasswordRequest:
     def body(self):
         """Gets the body of this KeystoneUpdateUserPasswordRequest.
 
-
         :return: The body of this KeystoneUpdateUserPasswordRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordRequestBody`
         """
@@ -86,7 +84,6 @@ class KeystoneUpdateUserPasswordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this KeystoneUpdateUserPasswordRequest.
-
 
         :param body: The body of this KeystoneUpdateUserPasswordRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordRequestBody`

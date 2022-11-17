@@ -17,7 +17,6 @@ class ResourceInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class ResourceInfo:
     def name(self):
         """Gets the name of this ResourceInfo.
 
-
         :return: The name of this ResourceInfo.
         :rtype: str
         """
@@ -93,7 +91,6 @@ class ResourceInfo:
     @name.setter
     def name(self, name):
         """Sets the name of this ResourceInfo.
-
 
         :param name: The name of this ResourceInfo.
         :type name: str
@@ -104,7 +101,6 @@ class ResourceInfo:
     def type(self):
         """Gets the type of this ResourceInfo.
 
-
         :return: The type of this ResourceInfo.
         :rtype: str
         """
@@ -113,7 +109,6 @@ class ResourceInfo:
     @type.setter
     def type(self, type):
         """Sets the type of this ResourceInfo.
-
 
         :param type: The type of this ResourceInfo.
         :type type: str
@@ -146,7 +141,6 @@ class ResourceInfo:
     def depend_files(self):
         """Gets the depend_files of this ResourceInfo.
 
-
         :return: The depend_files of this ResourceInfo.
         :rtype: list[str]
         """
@@ -155,7 +149,6 @@ class ResourceInfo:
     @depend_files.setter
     def depend_files(self, depend_files):
         """Sets the depend_files of this ResourceInfo.
-
 
         :param depend_files: The depend_files of this ResourceInfo.
         :type depend_files: list[str]
@@ -166,7 +159,6 @@ class ResourceInfo:
     def desc(self):
         """Gets the desc of this ResourceInfo.
 
-
         :return: The desc of this ResourceInfo.
         :rtype: str
         """
@@ -175,7 +167,6 @@ class ResourceInfo:
     @desc.setter
     def desc(self, desc):
         """Sets the desc of this ResourceInfo.
-
 
         :param desc: The desc of this ResourceInfo.
         :type desc: str

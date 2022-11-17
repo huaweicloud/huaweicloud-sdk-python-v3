@@ -17,7 +17,6 @@ class CreateRestoreInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateRestoreInstanceRequest:
     def body(self):
         """Gets the body of this CreateRestoreInstanceRequest.
 
-
         :return: The body of this CreateRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpengaussRestoreInstanceRequest`
         """
@@ -87,7 +85,6 @@ class CreateRestoreInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRestoreInstanceRequest.
-
 
         :param body: The body of this CreateRestoreInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpengaussRestoreInstanceRequest`

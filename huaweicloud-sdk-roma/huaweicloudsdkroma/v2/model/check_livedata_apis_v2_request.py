@@ -17,7 +17,6 @@ class CheckLivedataApisV2Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CheckLivedataApisV2Request:
     def body(self):
         """Gets the body of this CheckLivedataApisV2Request.
 
-
         :return: The body of this CheckLivedataApisV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.LdApiCheckInfo`
         """
@@ -86,7 +84,6 @@ class CheckLivedataApisV2Request:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckLivedataApisV2Request.
-
 
         :param body: The body of this CheckLivedataApisV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.LdApiCheckInfo`

@@ -17,7 +17,6 @@ class CheckResultItemsBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class CheckResultItemsBody:
     def detail(self):
         """Gets the detail of this CheckResultItemsBody.
 
-
         :return: The detail of this CheckResultItemsBody.
         :rtype: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
         """
@@ -144,7 +142,6 @@ class CheckResultItemsBody:
     @detail.setter
     def detail(self, detail):
         """Sets the detail of this CheckResultItemsBody.
-
 
         :param detail: The detail of this CheckResultItemsBody.
         :type detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`

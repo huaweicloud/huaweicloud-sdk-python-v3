@@ -17,7 +17,6 @@ class BatchUpdateConsumerGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchUpdateConsumerGroupRequest:
     def body(self):
         """Gets the body of this BatchUpdateConsumerGroupRequest.
 
-
         :return: The body of this BatchUpdateConsumerGroupRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.BatchUpdateConsumerGroupReq`
         """
@@ -86,7 +84,6 @@ class BatchUpdateConsumerGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchUpdateConsumerGroupRequest.
-
 
         :param body: The body of this BatchUpdateConsumerGroupRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.BatchUpdateConsumerGroupReq`

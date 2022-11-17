@@ -17,7 +17,6 @@ class ChangeOsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ChangeOsRequest:
     def body(self):
         """Gets the body of this ChangeOsRequest.
 
-
         :return: The body of this ChangeOsRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.ChangeOsOption`
         """
@@ -86,7 +84,6 @@ class ChangeOsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeOsRequest.
-
 
         :param body: The body of this ChangeOsRequest.
         :type body: :class:`huaweicloudsdkiec.v1.ChangeOsOption`

@@ -17,7 +17,6 @@ class RunDependencyParserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunDependencyParserRequest:
     def body(self):
         """Gets the body of this RunDependencyParserRequest.
 
-
         :return: The body of this RunDependencyParserRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.DependencyParserRequest`
         """
@@ -58,7 +56,6 @@ class RunDependencyParserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunDependencyParserRequest.
-
 
         :param body: The body of this RunDependencyParserRequest.
         :type body: :class:`huaweicloudsdknlp.v2.DependencyParserRequest`

@@ -17,7 +17,6 @@ class MediaProcessTaskInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -186,7 +185,6 @@ class MediaProcessTaskInfo:
     def output(self):
         """Gets the output of this MediaProcessTaskInfo.
 
-
         :return: The output of this MediaProcessTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -195,7 +193,6 @@ class MediaProcessTaskInfo:
     @output.setter
     def output(self, output):
         """Sets the output of this MediaProcessTaskInfo.
-
 
         :param output: The output of this MediaProcessTaskInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -250,7 +247,6 @@ class MediaProcessTaskInfo:
     def input(self):
         """Gets the input of this MediaProcessTaskInfo.
 
-
         :return: The input of this MediaProcessTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -259,7 +255,6 @@ class MediaProcessTaskInfo:
     @input.setter
     def input(self, input):
         """Sets the input of this MediaProcessTaskInfo.
-
 
         :param input: The input of this MediaProcessTaskInfo.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

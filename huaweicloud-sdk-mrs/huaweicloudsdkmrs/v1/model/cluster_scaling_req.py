@@ -17,7 +17,6 @@ class ClusterScalingReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -113,7 +112,6 @@ class ClusterScalingReq:
     def parameters(self):
         """Gets the parameters of this ClusterScalingReq.
 
-
         :return: The parameters of this ClusterScalingReq.
         :rtype: :class:`huaweicloudsdkmrs.v1.ClusterScalingParams`
         """
@@ -122,7 +120,6 @@ class ClusterScalingReq:
     @parameters.setter
     def parameters(self, parameters):
         """Sets the parameters of this ClusterScalingReq.
-
 
         :param parameters: The parameters of this ClusterScalingReq.
         :type parameters: :class:`huaweicloudsdkmrs.v1.ClusterScalingParams`

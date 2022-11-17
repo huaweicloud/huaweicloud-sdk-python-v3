@@ -17,7 +17,6 @@ class UpdateResourceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateResourceRequest:
     def body(self):
         """Gets the body of this UpdateResourceRequest.
 
-
         :return: The body of this UpdateResourceRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.ResourceInfo`
         """
@@ -86,7 +84,6 @@ class UpdateResourceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateResourceRequest.
-
 
         :param body: The body of this UpdateResourceRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.ResourceInfo`

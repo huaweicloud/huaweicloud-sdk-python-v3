@@ -17,7 +17,6 @@ class Dictionary:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -266,7 +265,6 @@ class Dictionary:
     def type(self):
         """Gets the type of this Dictionary.
 
-
         :return: The type of this Dictionary.
         :rtype: :class:`huaweicloudsdkroma.v2.DictionaryType`
         """
@@ -275,7 +273,6 @@ class Dictionary:
     @type.setter
     def type(self, type):
         """Sets the type of this Dictionary.
-
 
         :param type: The type of this Dictionary.
         :type type: :class:`huaweicloudsdkroma.v2.DictionaryType`

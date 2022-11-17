@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MpcAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -57,6 +51,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAnimatedGraphicsTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskResponse`
@@ -69,6 +64,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -101,6 +98,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAnimatedGraphicsTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -115,6 +113,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAnimatedGraphicsTask
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteAnimatedGraphicsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteAnimatedGraphicsTaskResponse`
@@ -127,6 +126,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -159,6 +160,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAnimatedGraphicsTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -173,6 +175,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAnimatedGraphicsTask
         :type request: :class:`huaweicloudsdkmpc.v1.ListAnimatedGraphicsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListAnimatedGraphicsTaskResponse`
@@ -185,6 +188,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -230,6 +235,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAnimatedGraphicsTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -245,6 +251,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEditingJob
         :type request: :class:`huaweicloudsdkmpc.v1.CreateEditingJobRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEditingJobResponse`
@@ -257,6 +264,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -289,6 +298,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEditingJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -303,6 +313,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEditingJob
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteEditingJobRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteEditingJobResponse`
@@ -315,6 +326,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -347,6 +360,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEditingJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -361,6 +375,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEditingJob
         :type request: :class:`huaweicloudsdkmpc.v1.ListEditingJobRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListEditingJobResponse`
@@ -373,6 +388,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -418,6 +435,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEditingJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -436,6 +454,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEncryptTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateEncryptTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEncryptTaskResponse`
@@ -448,6 +467,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -480,6 +501,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEncryptTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -498,6 +520,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEncryptTask
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteEncryptTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteEncryptTaskResponse`
@@ -510,6 +533,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -542,6 +567,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEncryptTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -556,6 +582,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEncryptTask
         :type request: :class:`huaweicloudsdkmpc.v1.ListEncryptTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListEncryptTaskResponse`
@@ -568,6 +595,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -611,6 +640,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEncryptTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -625,6 +655,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateExtractTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskResponse`
@@ -637,6 +668,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -669,6 +702,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateExtractTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -683,6 +717,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteExtractTask
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteExtractTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteExtractTaskResponse`
@@ -695,6 +730,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -727,6 +764,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteExtractTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -741,6 +779,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListExtractTask
         :type request: :class:`huaweicloudsdkmpc.v1.ListExtractTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListExtractTaskResponse`
@@ -753,6 +792,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -798,6 +839,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListExtractTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -817,6 +859,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMbTasksReport
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMbTasksReportRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMbTasksReportResponse`
@@ -829,6 +872,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -861,6 +906,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMbTasksReportResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -876,6 +922,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMergeChannelsTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsTaskResponse`
@@ -888,6 +935,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -920,6 +969,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMergeChannelsTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -935,6 +985,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResetTracksTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateResetTracksTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateResetTracksTaskResponse`
@@ -947,6 +998,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -979,6 +1032,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResetTracksTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -993,6 +1047,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMergeChannelsTask
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteMergeChannelsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteMergeChannelsTaskResponse`
@@ -1005,6 +1060,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1037,6 +1094,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMergeChannelsTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1051,6 +1109,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResetTracksTask
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteResetTracksTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteResetTracksTaskResponse`
@@ -1063,6 +1122,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1095,6 +1156,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResetTracksTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1109,6 +1171,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMergeChannelsTask
         :type request: :class:`huaweicloudsdkmpc.v1.ListMergeChannelsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListMergeChannelsTaskResponse`
@@ -1121,6 +1184,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1164,6 +1229,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMergeChannelsTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1178,6 +1244,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResetTracksTask
         :type request: :class:`huaweicloudsdkmpc.v1.ListResetTracksTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListResetTracksTaskResponse`
@@ -1190,6 +1257,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1233,6 +1302,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResetTracksTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1254,6 +1324,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMediaProcessTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessTaskResponse`
@@ -1266,6 +1337,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1298,6 +1371,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMediaProcessTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1319,6 +1393,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMediaProcessTask
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteMediaProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteMediaProcessTaskResponse`
@@ -1331,6 +1406,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1363,6 +1440,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMediaProcessTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1384,6 +1462,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMediaProcessTask
         :type request: :class:`huaweicloudsdkmpc.v1.ListMediaProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListMediaProcessTaskResponse`
@@ -1396,6 +1475,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1439,6 +1520,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMediaProcessTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1458,6 +1540,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMpeCallBack
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMpeCallBackRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMpeCallBackResponse`
@@ -1470,6 +1553,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1502,6 +1587,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMpeCallBackResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1516,6 +1602,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateQualityEnhanceTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.CreateQualityEnhanceTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateQualityEnhanceTemplateResponse`
@@ -1528,6 +1615,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1560,6 +1649,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateQualityEnhanceTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1574,6 +1664,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteQualityEnhanceTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteQualityEnhanceTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteQualityEnhanceTemplateResponse`
@@ -1586,6 +1677,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1618,6 +1711,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteQualityEnhanceTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1632,6 +1726,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQualityEnhanceDefaultTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.ListQualityEnhanceDefaultTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListQualityEnhanceDefaultTemplateResponse`
@@ -1644,6 +1739,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1674,6 +1771,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQualityEnhanceDefaultTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1688,6 +1786,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateQualityEnhanceTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateQualityEnhanceTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateQualityEnhanceTemplateResponse`
@@ -1700,6 +1799,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1732,6 +1833,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateQualityEnhanceTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1746,6 +1848,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTranscodeDetail
         :type request: :class:`huaweicloudsdkmpc.v1.ListTranscodeDetailRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTranscodeDetailResponse`
@@ -1758,6 +1861,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1791,6 +1896,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTranscodeDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1805,6 +1911,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelRemuxTask
         :type request: :class:`huaweicloudsdkmpc.v1.CancelRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CancelRemuxTaskResponse`
@@ -1817,6 +1924,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1849,6 +1958,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelRemuxTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1864,6 +1974,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRemuxTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateRemuxTaskResponse`
@@ -1876,6 +1987,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1908,6 +2021,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRemuxTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1922,6 +2036,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRetryRemuxTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateRetryRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateRetryRemuxTaskResponse`
@@ -1934,6 +2049,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1966,6 +2083,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRetryRemuxTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1980,6 +2098,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRemuxTask
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteRemuxTaskResponse`
@@ -1992,6 +2111,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2024,6 +2145,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRemuxTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2038,6 +2160,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRemuxTask
         :type request: :class:`huaweicloudsdkmpc.v1.ListRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListRemuxTaskResponse`
@@ -2050,6 +2173,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2097,6 +2222,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRemuxTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2111,6 +2237,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTemplateGroup
         :type request: :class:`huaweicloudsdkmpc.v1.CreateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTemplateGroupResponse`
@@ -2123,6 +2250,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2155,6 +2284,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2169,6 +2299,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTemplateGroup
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTemplateGroupResponse`
@@ -2181,6 +2312,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2213,6 +2346,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2227,6 +2361,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplateGroup
         :type request: :class:`huaweicloudsdkmpc.v1.ListTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTemplateGroupResponse`
@@ -2239,6 +2374,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2279,6 +2416,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2293,6 +2431,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTemplateGroup
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateTemplateGroupResponse`
@@ -2305,6 +2444,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2337,6 +2478,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2355,6 +2497,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateThumbnailsTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateThumbnailsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateThumbnailsTaskResponse`
@@ -2367,6 +2510,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2399,6 +2544,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateThumbnailsTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2414,6 +2560,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteThumbnailsTask
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteThumbnailsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteThumbnailsTaskResponse`
@@ -2426,6 +2573,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2458,6 +2607,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteThumbnailsTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2472,6 +2622,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListThumbnailsTask
         :type request: :class:`huaweicloudsdkmpc.v1.ListThumbnailsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListThumbnailsTaskResponse`
@@ -2484,6 +2635,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2529,6 +2682,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListThumbnailsTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2544,6 +2698,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTranscodingTask
         :type request: :class:`huaweicloudsdkmpc.v1.CreateTranscodingTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTranscodingTaskResponse`
@@ -2556,6 +2711,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2588,6 +2745,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTranscodingTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2603,6 +2761,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTranscodingTask
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskResponse`
@@ -2615,6 +2774,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2647,6 +2808,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTranscodingTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2661,6 +2823,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTranscodingTask
         :type request: :class:`huaweicloudsdkmpc.v1.ListTranscodingTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTranscodingTaskResponse`
@@ -2673,6 +2836,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2718,6 +2883,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTranscodingTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2732,6 +2898,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTransTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.CreateTransTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTransTemplateResponse`
@@ -2744,6 +2911,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2776,6 +2945,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTransTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2790,6 +2960,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTemplateResponse`
@@ -2802,6 +2973,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2834,6 +3007,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2849,6 +3023,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.ListTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTemplateResponse`
@@ -2861,6 +3036,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2898,6 +3075,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2912,6 +3090,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTransTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateTransTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateTransTemplateResponse`
@@ -2924,6 +3103,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2956,6 +3137,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTransTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2970,6 +3152,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateWatermarkTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.CreateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateWatermarkTemplateResponse`
@@ -2982,6 +3165,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3014,6 +3199,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3028,6 +3214,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteWatermarkTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteWatermarkTemplateResponse`
@@ -3040,6 +3227,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3072,6 +3261,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3086,6 +3276,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWatermarkTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.ListWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListWatermarkTemplateResponse`
@@ -3098,6 +3289,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3135,6 +3328,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3149,6 +3343,7 @@ class MpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateWatermarkTemplate
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateWatermarkTemplateResponse`
@@ -3161,6 +3356,8 @@ class MpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3193,6 +3390,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3200,7 +3398,7 @@ class MpcAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3211,9 +3409,10 @@ class MpcAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3230,6 +3429,7 @@ class MpcAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

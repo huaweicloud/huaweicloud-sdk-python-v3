@@ -17,7 +17,6 @@ class TemplateItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -83,7 +82,6 @@ class TemplateItem:
     def condition(self):
         """Gets the condition of this TemplateItem.
 
-
         :return: The condition of this TemplateItem.
         :rtype: :class:`huaweicloudsdkces.v1.AlarmTemplateCondition`
         """
@@ -92,7 +90,6 @@ class TemplateItem:
     @condition.setter
     def condition(self, condition):
         """Sets the condition of this TemplateItem.
-
 
         :param condition: The condition of this TemplateItem.
         :type condition: :class:`huaweicloudsdkces.v1.AlarmTemplateCondition`

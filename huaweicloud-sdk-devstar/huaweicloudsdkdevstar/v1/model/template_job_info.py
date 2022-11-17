@@ -17,7 +17,6 @@ class TemplateJobInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -222,7 +221,6 @@ class TemplateJobInfo:
     def repo_info(self):
         """Gets the repo_info of this TemplateJobInfo.
 
-
         :return: The repo_info of this TemplateJobInfo.
         :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
         """
@@ -231,7 +229,6 @@ class TemplateJobInfo:
     @repo_info.setter
     def repo_info(self, repo_info):
         """Sets the repo_info of this TemplateJobInfo.
-
 
         :param repo_info: The repo_info of this TemplateJobInfo.
         :type repo_info: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`

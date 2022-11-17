@@ -17,7 +17,6 @@ class App:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -156,7 +155,6 @@ class App:
     def state(self):
         """Gets the state of this App.
 
-
         :return: The state of this App.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppState`
         """
@@ -165,7 +163,6 @@ class App:
     @state.setter
     def state(self, state):
         """Sets the state of this App.
-
 
         :param state: The state of this App.
         :type state: :class:`huaweicloudsdkcloudrtc.v2.AppState`
@@ -264,7 +261,6 @@ class App:
     def authentication(self):
         """Gets the authentication of this App.
 
-
         :return: The authentication of this App.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
@@ -273,7 +269,6 @@ class App:
     @authentication.setter
     def authentication(self, authentication):
         """Sets the authentication of this App.
-
 
         :param authentication: The authentication of this App.
         :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
@@ -284,7 +279,6 @@ class App:
     def callbacks(self):
         """Gets the callbacks of this App.
 
-
         :return: The callbacks of this App.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
         """
@@ -293,7 +287,6 @@ class App:
     @callbacks.setter
     def callbacks(self, callbacks):
         """Sets the callbacks of this App.
-
 
         :param callbacks: The callbacks of this App.
         :type callbacks: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
@@ -304,7 +297,6 @@ class App:
     def auto_record_mode(self):
         """Gets the auto_record_mode of this App.
 
-
         :return: The auto_record_mode of this App.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
         """
@@ -313,7 +305,6 @@ class App:
     @auto_record_mode.setter
     def auto_record_mode(self, auto_record_mode):
         """Sets the auto_record_mode of this App.
-
 
         :param auto_record_mode: The auto_record_mode of this App.
         :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`

@@ -17,7 +17,6 @@ class ListSharedReposDetailsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListSharedReposDetailsResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListSharedReposDetailsResponse.
 
-
         :return: The body of this ListSharedReposDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkswr.v2.ShowReposResp`]
         """
@@ -65,7 +63,6 @@ class ListSharedReposDetailsResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ListSharedReposDetailsResponse.
-
 
         :param body: The body of this ListSharedReposDetailsResponse.
         :type body: list[:class:`huaweicloudsdkswr.v2.ShowReposResp`]
@@ -76,7 +73,6 @@ class ListSharedReposDetailsResponse(SdkResponse):
     def content_range(self):
         """Gets the content_range of this ListSharedReposDetailsResponse.
 
-
         :return: The content_range of this ListSharedReposDetailsResponse.
         :rtype: str
         """
@@ -85,7 +81,6 @@ class ListSharedReposDetailsResponse(SdkResponse):
     @content_range.setter
     def content_range(self, content_range):
         """Sets the content_range of this ListSharedReposDetailsResponse.
-
 
         :param content_range: The content_range of this ListSharedReposDetailsResponse.
         :type content_range: str

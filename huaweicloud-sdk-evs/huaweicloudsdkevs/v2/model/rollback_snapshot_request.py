@@ -17,7 +17,6 @@ class RollbackSnapshotRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RollbackSnapshotRequest:
     def body(self):
         """Gets the body of this RollbackSnapshotRequest.
 
-
         :return: The body of this RollbackSnapshotRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.RollbackSnapshotRequestBody`
         """
@@ -86,7 +84,6 @@ class RollbackSnapshotRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RollbackSnapshotRequest.
-
 
         :param body: The body of this RollbackSnapshotRequest.
         :type body: :class:`huaweicloudsdkevs.v2.RollbackSnapshotRequestBody`

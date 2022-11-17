@@ -17,7 +17,6 @@ class UpdateMemberVmrRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class UpdateMemberVmrRequest:
     def body(self):
         """Gets the body of this UpdateMemberVmrRequest.
 
-
         :return: The body of this UpdateMemberVmrRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ModVmrDTO`
         """
@@ -144,7 +142,6 @@ class UpdateMemberVmrRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateMemberVmrRequest.
-
 
         :param body: The body of this UpdateMemberVmrRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ModVmrDTO`

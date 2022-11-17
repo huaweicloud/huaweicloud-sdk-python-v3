@@ -17,7 +17,6 @@ class CreateAudioJobRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -124,7 +123,6 @@ class CreateAudioJobRequestBody:
     def input(self):
         """Gets the input of this CreateAudioJobRequestBody.
 
-
         :return: The input of this CreateAudioJobRequestBody.
         :rtype: :class:`huaweicloudsdkvcm.v2.CreateAudioJobRequestBodyInput`
         """
@@ -133,7 +131,6 @@ class CreateAudioJobRequestBody:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateAudioJobRequestBody.
-
 
         :param input: The input of this CreateAudioJobRequestBody.
         :type input: :class:`huaweicloudsdkvcm.v2.CreateAudioJobRequestBodyInput`
@@ -144,7 +141,6 @@ class CreateAudioJobRequestBody:
     def output(self):
         """Gets the output of this CreateAudioJobRequestBody.
 
-
         :return: The output of this CreateAudioJobRequestBody.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioOutput`
         """
@@ -153,7 +149,6 @@ class CreateAudioJobRequestBody:
     @output.setter
     def output(self, output):
         """Sets the output of this CreateAudioJobRequestBody.
-
 
         :param output: The output of this CreateAudioJobRequestBody.
         :type output: :class:`huaweicloudsdkvcm.v2.AudioOutput`
@@ -164,7 +159,6 @@ class CreateAudioJobRequestBody:
     def service_config(self):
         """Gets the service_config of this CreateAudioJobRequestBody.
 
-
         :return: The service_config of this CreateAudioJobRequestBody.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioServiceConfig`
         """
@@ -173,7 +167,6 @@ class CreateAudioJobRequestBody:
     @service_config.setter
     def service_config(self, service_config):
         """Sets the service_config of this CreateAudioJobRequestBody.
-
 
         :param service_config: The service_config of this CreateAudioJobRequestBody.
         :type service_config: :class:`huaweicloudsdkvcm.v2.AudioServiceConfig`

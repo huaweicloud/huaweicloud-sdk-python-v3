@@ -17,7 +17,6 @@ class CreateNamespaceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateNamespaceRequest:
     def body(self):
         """Gets the body of this CreateNamespaceRequest.
 
-
         :return: The body of this CreateNamespaceRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateNamespaceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateNamespaceRequest.
-
 
         :param body: The body of this CreateNamespaceRequest.
         :type body: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequestBody`

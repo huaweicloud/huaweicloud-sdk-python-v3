@@ -17,7 +17,6 @@ class KafkaAuthInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class KafkaAuthInfo:
     def sasl_plain_auth_info(self):
         """Gets the sasl_plain_auth_info of this KafkaAuthInfo.
 
-
         :return: The sasl_plain_auth_info of this KafkaAuthInfo.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SaslPlainAuthInfo`
         """
@@ -86,7 +84,6 @@ class KafkaAuthInfo:
     @sasl_plain_auth_info.setter
     def sasl_plain_auth_info(self, sasl_plain_auth_info):
         """Sets the sasl_plain_auth_info of this KafkaAuthInfo.
-
 
         :param sasl_plain_auth_info: The sasl_plain_auth_info of this KafkaAuthInfo.
         :type sasl_plain_auth_info: :class:`huaweicloudsdkiotanalytics.v1.SaslPlainAuthInfo`

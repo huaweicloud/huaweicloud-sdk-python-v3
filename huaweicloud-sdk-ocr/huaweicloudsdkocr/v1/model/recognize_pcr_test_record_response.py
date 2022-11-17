@@ -17,7 +17,6 @@ class RecognizePcrTestRecordResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizePcrTestRecordResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizePcrTestRecordResponse.
 
-
         :return: The result of this RecognizePcrTestRecordResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.PcrTestRecordResult`
         """
@@ -58,7 +56,6 @@ class RecognizePcrTestRecordResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizePcrTestRecordResponse.
-
 
         :param result: The result of this RecognizePcrTestRecordResponse.
         :type result: :class:`huaweicloudsdkocr.v1.PcrTestRecordResult`

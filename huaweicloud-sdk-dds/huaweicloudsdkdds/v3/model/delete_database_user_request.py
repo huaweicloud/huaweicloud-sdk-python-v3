@@ -17,7 +17,6 @@ class DeleteDatabaseUserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DeleteDatabaseUserRequest:
     def body(self):
         """Gets the body of this DeleteDatabaseUserRequest.
 
-
         :return: The body of this DeleteDatabaseUserRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteDatabaseUserRequestBody`
         """
@@ -86,7 +84,6 @@ class DeleteDatabaseUserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteDatabaseUserRequest.
-
 
         :param body: The body of this DeleteDatabaseUserRequest.
         :type body: :class:`huaweicloudsdkdds.v3.DeleteDatabaseUserRequestBody`

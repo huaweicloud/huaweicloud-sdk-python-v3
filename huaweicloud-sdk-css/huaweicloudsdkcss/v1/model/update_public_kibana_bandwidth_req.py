@@ -17,7 +17,6 @@ class UpdatePublicKibanaBandwidthReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class UpdatePublicKibanaBandwidthReq:
     def band_width(self):
         """Gets the band_width of this UpdatePublicKibanaBandwidthReq.
 
-
         :return: The band_width of this UpdatePublicKibanaBandwidthReq.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaBandwidthReqBandWidth`
         """
@@ -64,7 +62,6 @@ class UpdatePublicKibanaBandwidthReq:
     @band_width.setter
     def band_width(self, band_width):
         """Sets the band_width of this UpdatePublicKibanaBandwidthReq.
-
 
         :param band_width: The band_width of this UpdatePublicKibanaBandwidthReq.
         :type band_width: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaBandwidthReqBandWidth`

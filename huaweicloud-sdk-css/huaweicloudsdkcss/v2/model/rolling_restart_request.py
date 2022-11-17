@@ -17,7 +17,6 @@ class RollingRestartRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RollingRestartRequest:
     def body(self):
         """Gets the body of this RollingRestartRequest.
 
-
         :return: The body of this RollingRestartRequest.
         :rtype: :class:`huaweicloudsdkcss.v2.RollingRestartReq`
         """
@@ -86,7 +84,6 @@ class RollingRestartRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RollingRestartRequest.
-
 
         :param body: The body of this RollingRestartRequest.
         :type body: :class:`huaweicloudsdkcss.v2.RollingRestartReq`

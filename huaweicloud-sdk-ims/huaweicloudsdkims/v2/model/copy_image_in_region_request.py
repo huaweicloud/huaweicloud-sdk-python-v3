@@ -17,7 +17,6 @@ class CopyImageInRegionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CopyImageInRegionRequest:
     def body(self):
         """Gets the body of this CopyImageInRegionRequest.
 
-
         :return: The body of this CopyImageInRegionRequest.
         :rtype: :class:`huaweicloudsdkims.v2.CopyImageInRegionRequestBody`
         """
@@ -86,7 +84,6 @@ class CopyImageInRegionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CopyImageInRegionRequest.
-
 
         :param body: The body of this CopyImageInRegionRequest.
         :type body: :class:`huaweicloudsdkims.v2.CopyImageInRegionRequestBody`

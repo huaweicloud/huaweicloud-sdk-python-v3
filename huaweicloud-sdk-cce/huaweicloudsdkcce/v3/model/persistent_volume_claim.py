@@ -17,7 +17,6 @@ class PersistentVolumeClaim:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -117,7 +116,6 @@ class PersistentVolumeClaim:
     def metadata(self):
         """Gets the metadata of this PersistentVolumeClaim.
 
-
         :return: The metadata of this PersistentVolumeClaim.
         :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
         """
@@ -126,7 +124,6 @@ class PersistentVolumeClaim:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this PersistentVolumeClaim.
-
 
         :param metadata: The metadata of this PersistentVolumeClaim.
         :type metadata: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimMetadata`
@@ -137,7 +134,6 @@ class PersistentVolumeClaim:
     def spec(self):
         """Gets the spec of this PersistentVolumeClaim.
 
-
         :return: The spec of this PersistentVolumeClaim.
         :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
         """
@@ -146,7 +142,6 @@ class PersistentVolumeClaim:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this PersistentVolumeClaim.
-
 
         :param spec: The spec of this PersistentVolumeClaim.
         :type spec: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimSpec`
@@ -157,7 +152,6 @@ class PersistentVolumeClaim:
     def status(self):
         """Gets the status of this PersistentVolumeClaim.
 
-
         :return: The status of this PersistentVolumeClaim.
         :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`
         """
@@ -166,7 +160,6 @@ class PersistentVolumeClaim:
     @status.setter
     def status(self, status):
         """Sets the status of this PersistentVolumeClaim.
-
 
         :param status: The status of this PersistentVolumeClaim.
         :type status: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaimStatus`

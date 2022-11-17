@@ -17,7 +17,6 @@ class ResetFingerprint:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
     sensitive_list.append('fingerprint')
 
@@ -36,7 +35,7 @@ class ResetFingerprint:
 
         The model defined in huaweicloud sdk
 
-        :param fingerprint: **参数说明**：设备指纹。设置改字段时平台将设备指纹重置为指定值；不携带时将之置空，后续设备第一次接入时，该设备指纹的值将设置为第一次接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
+        :param fingerprint: **参数说明**：设备指纹。设置该字段时平台将设备指纹重置为指定值；不携带时将之置空，后续设备第一次接入时，该设备指纹的值将设置为第一次接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
         :type fingerprint: str
         :param force_disconnect: **参数说明**：是否强制断开设备的连接，当前仅限长连接。默认值false。
         :type force_disconnect: bool
@@ -57,7 +56,7 @@ class ResetFingerprint:
     def fingerprint(self):
         """Gets the fingerprint of this ResetFingerprint.
 
-        **参数说明**：设备指纹。设置改字段时平台将设备指纹重置为指定值；不携带时将之置空，后续设备第一次接入时，该设备指纹的值将设置为第一次接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
+        **参数说明**：设备指纹。设置该字段时平台将设备指纹重置为指定值；不携带时将之置空，后续设备第一次接入时，该设备指纹的值将设置为第一次接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
 
         :return: The fingerprint of this ResetFingerprint.
         :rtype: str
@@ -68,7 +67,7 @@ class ResetFingerprint:
     def fingerprint(self, fingerprint):
         """Sets the fingerprint of this ResetFingerprint.
 
-        **参数说明**：设备指纹。设置改字段时平台将设备指纹重置为指定值；不携带时将之置空，后续设备第一次接入时，该设备指纹的值将设置为第一次接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
+        **参数说明**：设备指纹。设置该字段时平台将设备指纹重置为指定值；不携带时将之置空，后续设备第一次接入时，该设备指纹的值将设置为第一次接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
 
         :param fingerprint: The fingerprint of this ResetFingerprint.
         :type fingerprint: str

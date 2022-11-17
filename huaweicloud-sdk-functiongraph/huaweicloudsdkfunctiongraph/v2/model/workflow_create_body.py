@@ -17,7 +17,6 @@ class WorkflowCreateBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -311,7 +310,6 @@ class WorkflowCreateBody:
     def express_config(self):
         """Gets the express_config of this WorkflowCreateBody.
 
-
         :return: The express_config of this WorkflowCreateBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ExpressConfig`
         """
@@ -320,7 +318,6 @@ class WorkflowCreateBody:
     @express_config.setter
     def express_config(self, express_config):
         """Sets the express_config of this WorkflowCreateBody.
-
 
         :param express_config: The express_config of this WorkflowCreateBody.
         :type express_config: :class:`huaweicloudsdkfunctiongraph.v2.ExpressConfig`

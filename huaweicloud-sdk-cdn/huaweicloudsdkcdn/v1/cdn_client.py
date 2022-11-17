@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CdnClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class CdnClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -100,6 +96,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +123,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +157,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -184,6 +184,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -218,6 +220,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePreheatingTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -244,6 +247,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -278,6 +283,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRefreshTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -304,6 +310,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -336,6 +344,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -362,6 +371,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -396,6 +407,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -422,6 +434,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -456,6 +470,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -482,6 +497,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -516,6 +533,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -542,6 +560,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -586,6 +606,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -612,6 +633,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -646,6 +669,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBlackWhiteListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -672,6 +696,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -706,6 +732,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCacheRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -732,6 +759,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -772,6 +801,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificatesHttpsInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -798,6 +828,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -832,6 +864,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -858,6 +891,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -892,6 +927,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainFullConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -926,6 +962,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -968,6 +1006,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainItemDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1005,6 +1044,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1049,6 +1090,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainItemLocationDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1081,6 +1123,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1133,6 +1177,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainLocationStatsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1165,6 +1210,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1213,6 +1260,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainStatsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1239,6 +1287,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1283,6 +1333,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHistoryTaskDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1309,6 +1360,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1357,6 +1410,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHistoryTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1383,6 +1437,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1417,6 +1473,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHttpInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1443,6 +1500,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1477,6 +1536,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIpInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1503,6 +1563,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1543,6 +1605,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1569,6 +1632,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1603,6 +1668,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOriginHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1629,6 +1695,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1659,6 +1727,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1685,6 +1754,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1719,6 +1790,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowReferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1745,6 +1817,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1779,6 +1853,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResponseHeaderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1805,6 +1880,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1837,6 +1914,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1869,6 +1947,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1911,6 +1991,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTopUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1937,6 +2018,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1968,7 +2051,7 @@ class CdnClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-id"]
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1983,6 +2066,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUrlTaskInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2009,6 +2093,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2045,6 +2131,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBlackWhiteListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2071,6 +2158,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2107,6 +2196,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCacheRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2133,6 +2223,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2169,6 +2261,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainFullConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2195,6 +2288,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2229,6 +2324,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainMultiCertificatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2255,6 +2351,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2291,6 +2389,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainOriginResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2317,6 +2416,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2353,6 +2454,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFollow302SwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2379,6 +2481,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2415,6 +2519,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHttpsInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2441,6 +2546,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2477,6 +2584,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateOriginHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2503,6 +2611,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2539,6 +2649,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePrivateBucketAccessResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2567,6 +2678,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2603,6 +2716,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRangeSwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2629,6 +2743,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2665,6 +2781,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateReferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2691,6 +2808,8 @@ class CdnClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2727,6 +2846,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResponseHeaderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2734,7 +2854,7 @@ class CdnClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2744,9 +2864,10 @@ class CdnClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2763,6 +2884,7 @@ class CdnClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

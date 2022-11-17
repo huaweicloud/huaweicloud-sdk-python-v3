@@ -17,7 +17,6 @@ class ListBatchJobsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListBatchJobsResponse(SdkResponse):
     def jobs(self):
         """Gets the jobs of this ListBatchJobsResponse.
 
-
         :return: The jobs of this ListBatchJobsResponse.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.Job`]
         """
@@ -87,7 +85,6 @@ class ListBatchJobsResponse(SdkResponse):
     @jobs.setter
     def jobs(self, jobs):
         """Sets the jobs of this ListBatchJobsResponse.
-
 
         :param jobs: The jobs of this ListBatchJobsResponse.
         :type jobs: list[:class:`huaweicloudsdkiotanalytics.v1.Job`]

@@ -17,7 +17,6 @@ class CreateEndpointOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -90,7 +89,6 @@ class CreateEndpointOption:
     def resource_type(self):
         """Gets the resource_type of this CreateEndpointOption.
 
-
         :return: The resource_type of this CreateEndpointOption.
         :rtype: :class:`huaweicloudsdkga.v1.EndpointType`
         """
@@ -99,7 +97,6 @@ class CreateEndpointOption:
     @resource_type.setter
     def resource_type(self, resource_type):
         """Sets the resource_type of this CreateEndpointOption.
-
 
         :param resource_type: The resource_type of this CreateEndpointOption.
         :type resource_type: :class:`huaweicloudsdkga.v1.EndpointType`

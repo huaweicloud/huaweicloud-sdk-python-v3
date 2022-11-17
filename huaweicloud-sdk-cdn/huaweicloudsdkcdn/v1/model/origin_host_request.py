@@ -17,7 +17,6 @@ class OriginHostRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class OriginHostRequest:
     def origin_host(self):
         """Gets the origin_host of this OriginHostRequest.
 
-
         :return: The origin_host of this OriginHostRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.OriginHostBody`
         """
@@ -57,7 +55,6 @@ class OriginHostRequest:
     @origin_host.setter
     def origin_host(self, origin_host):
         """Sets the origin_host of this OriginHostRequest.
-
 
         :param origin_host: The origin_host of this OriginHostRequest.
         :type origin_host: :class:`huaweicloudsdkcdn.v1.OriginHostBody`

@@ -17,7 +17,6 @@ class PublicipPoolShowResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -381,7 +380,6 @@ class PublicipPoolShowResp:
     def billing_info(self):
         """Gets the billing_info of this PublicipPoolShowResp.
 
-
         :return: The billing_info of this PublicipPoolShowResp.
         :rtype: :class:`huaweicloudsdkeip.v3.BillingInfoDict`
         """
@@ -390,7 +388,6 @@ class PublicipPoolShowResp:
     @billing_info.setter
     def billing_info(self, billing_info):
         """Sets the billing_info of this PublicipPoolShowResp.
-
 
         :param billing_info: The billing_info of this PublicipPoolShowResp.
         :type billing_info: :class:`huaweicloudsdkeip.v3.BillingInfoDict`

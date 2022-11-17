@@ -17,7 +17,6 @@ class SendMessagesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SendMessagesRequest:
     def body(self):
         """Gets the body of this SendMessagesRequest.
 
-
         :return: The body of this SendMessagesRequest.
         :rtype: :class:`huaweicloudsdkdms.v2.SendMessagesReq`
         """
@@ -86,7 +84,6 @@ class SendMessagesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SendMessagesRequest.
-
 
         :param body: The body of this SendMessagesRequest.
         :type body: :class:`huaweicloudsdkdms.v2.SendMessagesReq`

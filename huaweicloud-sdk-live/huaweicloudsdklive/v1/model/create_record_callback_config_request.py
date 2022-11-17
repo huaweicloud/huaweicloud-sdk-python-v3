@@ -17,7 +17,6 @@ class CreateRecordCallbackConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateRecordCallbackConfigRequest:
     def body(self):
         """Gets the body of this CreateRecordCallbackConfigRequest.
 
-
         :return: The body of this CreateRecordCallbackConfigRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordCallbackConfigRequest`
         """
@@ -58,7 +56,6 @@ class CreateRecordCallbackConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRecordCallbackConfigRequest.
-
 
         :param body: The body of this CreateRecordCallbackConfigRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordCallbackConfigRequest`

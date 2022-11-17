@@ -17,7 +17,6 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
     def links(self):
         """Gets the links of this BatchUpdateRecordSetWithLineResponse.
 
-
         :return: The links of this BatchUpdateRecordSetWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -72,7 +70,6 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this BatchUpdateRecordSetWithLineResponse.
-
 
         :param links: The links of this BatchUpdateRecordSetWithLineResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -83,7 +80,6 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
     def recordsets(self):
         """Gets the recordsets of this BatchUpdateRecordSetWithLineResponse.
 
-
         :return: The recordsets of this BatchUpdateRecordSetWithLineResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]
         """
@@ -92,7 +88,6 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
     @recordsets.setter
     def recordsets(self, recordsets):
         """Sets the recordsets of this BatchUpdateRecordSetWithLineResponse.
-
 
         :param recordsets: The recordsets of this BatchUpdateRecordSetWithLineResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]
@@ -103,7 +98,6 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this BatchUpdateRecordSetWithLineResponse.
 
-
         :return: The metadata of this BatchUpdateRecordSetWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
@@ -112,7 +106,6 @@ class BatchUpdateRecordSetWithLineResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this BatchUpdateRecordSetWithLineResponse.
-
 
         :param metadata: The metadata of this BatchUpdateRecordSetWithLineResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`

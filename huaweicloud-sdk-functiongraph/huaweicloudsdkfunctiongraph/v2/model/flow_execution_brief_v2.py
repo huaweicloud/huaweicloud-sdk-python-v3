@@ -17,7 +17,6 @@ class FlowExecutionBriefV2:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -230,7 +229,6 @@ class FlowExecutionBriefV2:
     def create_by(self):
         """Gets the create_by of this FlowExecutionBriefV2.
 
-
         :return: The create_by of this FlowExecutionBriefV2.
         :rtype: str
         """
@@ -239,7 +237,6 @@ class FlowExecutionBriefV2:
     @create_by.setter
     def create_by(self, create_by):
         """Sets the create_by of this FlowExecutionBriefV2.
-
 
         :param create_by: The create_by of this FlowExecutionBriefV2.
         :type create_by: str

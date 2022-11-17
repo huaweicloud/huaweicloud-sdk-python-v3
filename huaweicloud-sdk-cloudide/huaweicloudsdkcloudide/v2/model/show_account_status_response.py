@@ -17,7 +17,6 @@ class ShowAccountStatusResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowAccountStatusResponse(SdkResponse):
     def result(self):
         """Gets the result of this ShowAccountStatusResponse.
 
-
         :return: The result of this ShowAccountStatusResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.AccountStatus`
         """
@@ -65,7 +63,6 @@ class ShowAccountStatusResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ShowAccountStatusResponse.
-
 
         :param result: The result of this ShowAccountStatusResponse.
         :type result: :class:`huaweicloudsdkcloudide.v2.AccountStatus`

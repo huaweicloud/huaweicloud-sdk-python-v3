@@ -17,7 +17,6 @@ class AddSshKeyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class AddSshKeyResponse(SdkResponse):
     def error(self):
         """Gets the error of this AddSshKeyResponse.
 
-
         :return: The error of this AddSshKeyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class AddSshKeyResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this AddSshKeyResponse.
-
 
         :param error: The error of this AddSshKeyResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class AddSshKeyResponse(SdkResponse):
     def result(self):
         """Gets the result of this AddSshKeyResponse.
 
-
         :return: The result of this AddSshKeyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.PublicKey`
         """
@@ -92,7 +88,6 @@ class AddSshKeyResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this AddSshKeyResponse.
-
 
         :param result: The result of this AddSshKeyResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.PublicKey`

@@ -17,7 +17,6 @@ class ShowUserDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -605,7 +604,6 @@ class ShowUserDetailResponse(SdkResponse):
     def corp(self):
         """Gets the corp of this ShowUserDetailResponse.
 
-
         :return: The corp of this ShowUserDetailResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
         """
@@ -614,7 +612,6 @@ class ShowUserDetailResponse(SdkResponse):
     @corp.setter
     def corp(self, corp):
         """Sets the corp of this ShowUserDetailResponse.
-
 
         :param corp: The corp of this ShowUserDetailResponse.
         :type corp: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
@@ -625,7 +622,6 @@ class ShowUserDetailResponse(SdkResponse):
     def function(self):
         """Gets the function of this ShowUserDetailResponse.
 
-
         :return: The function of this ShowUserDetailResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
         """
@@ -634,7 +630,6 @@ class ShowUserDetailResponse(SdkResponse):
     @function.setter
     def function(self, function):
         """Sets the function of this ShowUserDetailResponse.
-
 
         :param function: The function of this ShowUserDetailResponse.
         :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
@@ -645,7 +640,6 @@ class ShowUserDetailResponse(SdkResponse):
     def dev_type(self):
         """Gets the dev_type of this ShowUserDetailResponse.
 
-
         :return: The dev_type of this ShowUserDetailResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`
         """
@@ -654,7 +648,6 @@ class ShowUserDetailResponse(SdkResponse):
     @dev_type.setter
     def dev_type(self, dev_type):
         """Sets the dev_type of this ShowUserDetailResponse.
-
 
         :param dev_type: The dev_type of this ShowUserDetailResponse.
         :type dev_type: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`

@@ -17,7 +17,6 @@ class UpdatePodDeployment:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class UpdatePodDeployment:
     def template(self):
         """Gets the template of this UpdatePodDeployment.
 
-
         :return: The template of this UpdatePodDeployment.
         :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
         """
@@ -85,7 +83,6 @@ class UpdatePodDeployment:
     @template.setter
     def template(self, template):
         """Sets the template of this UpdatePodDeployment.
-
 
         :param template: The template of this UpdatePodDeployment.
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`

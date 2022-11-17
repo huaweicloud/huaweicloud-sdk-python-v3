@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GesAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AttachEip
         :type request: :class:`huaweicloudsdkges.v1.AttachEipRequest`
         :rtype: :class:`huaweicloudsdkges.v1.AttachEipResponse`
@@ -68,6 +63,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachEipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ClearGraph
         :type request: :class:`huaweicloudsdkges.v1.ClearGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ClearGraphResponse`
@@ -130,6 +129,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ClearGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateBackup
         :type request: :class:`huaweicloudsdkges.v1.CreateBackupRequest`
         :rtype: :class:`huaweicloudsdkges.v1.CreateBackupResponse`
@@ -192,6 +195,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +229,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -238,6 +244,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateGraph
         :type request: :class:`huaweicloudsdkges.v1.CreateGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.CreateGraphResponse`
@@ -250,6 +257,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMetadata
         :type request: :class:`huaweicloudsdkges.v1.CreateMetadataRequest`
         :rtype: :class:`huaweicloudsdkges.v1.CreateMetadataResponse`
@@ -308,6 +319,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +353,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -354,6 +368,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBackup
         :type request: :class:`huaweicloudsdkges.v1.DeleteBackupRequest`
         :rtype: :class:`huaweicloudsdkges.v1.DeleteBackupResponse`
@@ -366,6 +381,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +417,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -414,6 +432,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteGraph
         :type request: :class:`huaweicloudsdkges.v1.DeleteGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.DeleteGraphResponse`
@@ -426,6 +445,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -460,6 +481,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -474,6 +496,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMetadata
         :type request: :class:`huaweicloudsdkges.v1.DeleteMetadataRequest`
         :rtype: :class:`huaweicloudsdkges.v1.DeleteMetadataResponse`
@@ -486,6 +509,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -518,6 +543,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -532,6 +558,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetachEip
         :type request: :class:`huaweicloudsdkges.v1.DetachEipRequest`
         :rtype: :class:`huaweicloudsdkges.v1.DetachEipResponse`
@@ -544,6 +571,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -580,6 +609,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetachEipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -595,6 +625,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExpandGraph
         :type request: :class:`huaweicloudsdkges.v1.ExpandGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ExpandGraphResponse`
@@ -607,6 +638,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -641,6 +674,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -655,6 +689,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportGraph
         :type request: :class:`huaweicloudsdkges.v1.ExportGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ExportGraphResponse`
@@ -667,6 +702,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -703,6 +740,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -717,6 +755,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportGraph
         :type request: :class:`huaweicloudsdkges.v1.ImportGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ImportGraphResponse`
@@ -729,6 +768,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -765,6 +806,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -779,6 +821,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackups
         :type request: :class:`huaweicloudsdkges.v1.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListBackupsResponse`
@@ -791,6 +834,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -825,6 +870,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -839,6 +885,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGraphBackups
         :type request: :class:`huaweicloudsdkges.v1.ListGraphBackupsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListGraphBackupsResponse`
@@ -851,6 +898,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -887,6 +936,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGraphBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -901,6 +951,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGraphMetadatas
         :type request: :class:`huaweicloudsdkges.v1.ListGraphMetadatasRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListGraphMetadatasResponse`
@@ -913,6 +964,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -945,6 +998,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGraphMetadatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -959,6 +1013,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGraphs
         :type request: :class:`huaweicloudsdkges.v1.ListGraphsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListGraphsResponse`
@@ -971,6 +1026,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1005,6 +1062,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGraphsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1019,6 +1077,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListJobs
         :type request: :class:`huaweicloudsdkges.v1.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListJobsResponse`
@@ -1031,6 +1090,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1073,6 +1134,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1087,6 +1149,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMetadatas
         :type request: :class:`huaweicloudsdkges.v1.ListMetadatasRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListMetadatasResponse`
@@ -1099,6 +1162,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1133,6 +1198,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMetadatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1147,6 +1213,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkges.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ListQuotasResponse`
@@ -1159,6 +1226,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1189,6 +1258,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1203,6 +1273,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeGraph
         :type request: :class:`huaweicloudsdkges.v1.ResizeGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ResizeGraphResponse`
@@ -1215,6 +1286,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1249,6 +1322,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1263,6 +1337,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartGraph
         :type request: :class:`huaweicloudsdkges.v1.RestartGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.RestartGraphResponse`
@@ -1275,6 +1350,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1309,6 +1386,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1323,6 +1401,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGraph
         :type request: :class:`huaweicloudsdkges.v1.ShowGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ShowGraphResponse`
@@ -1335,6 +1414,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1367,6 +1448,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1381,6 +1463,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkges.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkges.v1.ShowJobResponse`
@@ -1393,6 +1476,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1427,6 +1512,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1441,6 +1527,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartGraph
         :type request: :class:`huaweicloudsdkges.v1.StartGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.StartGraphResponse`
@@ -1453,6 +1540,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1489,6 +1578,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1504,6 +1594,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopGraph
         :type request: :class:`huaweicloudsdkges.v1.StopGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.StopGraphResponse`
@@ -1516,6 +1607,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1550,6 +1643,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1564,6 +1658,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpgradeGraph
         :type request: :class:`huaweicloudsdkges.v1.UpgradeGraphRequest`
         :rtype: :class:`huaweicloudsdkges.v1.UpgradeGraphResponse`
@@ -1576,6 +1671,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1612,6 +1709,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpgradeGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1626,6 +1724,7 @@ class GesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadFromObs
         :type request: :class:`huaweicloudsdkges.v1.UploadFromObsRequest`
         :rtype: :class:`huaweicloudsdkges.v1.UploadFromObsResponse`
@@ -1638,6 +1737,8 @@ class GesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1670,6 +1771,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadFromObsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1677,7 +1779,7 @@ class GesAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1688,9 +1790,10 @@ class GesAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1707,6 +1810,7 @@ class GesAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

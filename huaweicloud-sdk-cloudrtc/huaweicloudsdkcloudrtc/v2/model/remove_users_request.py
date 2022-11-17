@@ -17,7 +17,6 @@ class RemoveUsersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -220,7 +219,6 @@ class RemoveUsersRequest:
     def body(self):
         """Gets the body of this RemoveUsersRequest.
 
-
         :return: The body of this RemoveUsersRequest.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersReq`
         """
@@ -229,7 +227,6 @@ class RemoveUsersRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RemoveUsersRequest.
-
 
         :param body: The body of this RemoveUsersRequest.
         :type body: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersReq`

@@ -17,7 +17,6 @@ class CreatePremiumHostRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -227,7 +226,6 @@ class CreatePremiumHostRequestBody:
     def block_page(self):
         """Gets the block_page of this CreatePremiumHostRequestBody.
 
-
         :return: The block_page of this CreatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
@@ -236,7 +234,6 @@ class CreatePremiumHostRequestBody:
     @block_page.setter
     def block_page(self, block_page):
         """Sets the block_page of this CreatePremiumHostRequestBody.
-
 
         :param block_page: The block_page of this CreatePremiumHostRequestBody.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`

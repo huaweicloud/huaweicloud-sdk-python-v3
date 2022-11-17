@@ -17,7 +17,6 @@ class SubscriptionTarget:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -191,7 +190,6 @@ class SubscriptionTarget:
     def transform(self):
         """Gets the transform of this SubscriptionTarget.
 
-
         :return: The transform of this SubscriptionTarget.
         :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionTargetTransform`
         """
@@ -200,7 +198,6 @@ class SubscriptionTarget:
     @transform.setter
     def transform(self, transform):
         """Sets the transform of this SubscriptionTarget.
-
 
         :param transform: The transform of this SubscriptionTarget.
         :type transform: :class:`huaweicloudsdkeg.v1.SubscriptionTargetTransform`

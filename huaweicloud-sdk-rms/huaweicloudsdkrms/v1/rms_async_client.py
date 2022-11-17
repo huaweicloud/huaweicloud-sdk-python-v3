@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RmsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResourceHistory
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceHistoryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceHistoryResponse`
@@ -68,6 +63,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -110,6 +107,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceHistoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -124,6 +122,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePolicyAssignments
         :type request: :class:`huaweicloudsdkrms.v1.CreatePolicyAssignmentsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CreatePolicyAssignmentsResponse`
@@ -136,6 +135,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -168,6 +169,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePolicyAssignmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -182,6 +184,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.DeletePolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeletePolicyAssignmentResponse`
@@ -194,6 +197,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -226,6 +231,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -240,6 +246,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisablePolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.DisablePolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DisablePolicyAssignmentResponse`
@@ -252,6 +259,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +293,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisablePolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -298,6 +308,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnablePolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.EnablePolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.EnablePolicyAssignmentResponse`
@@ -310,6 +321,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnablePolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBuiltInPolicyDefinitions
         :type request: :class:`huaweicloudsdkrms.v1.ListBuiltInPolicyDefinitionsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListBuiltInPolicyDefinitionsResponse`
@@ -368,6 +383,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +417,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBuiltInPolicyDefinitionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -414,6 +432,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPolicyAssignments
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyAssignmentsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyAssignmentsResponse`
@@ -426,6 +445,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -456,6 +477,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyAssignmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -470,6 +492,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPolicyStatesByAssignmentId
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByAssignmentIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByAssignmentIdResponse`
@@ -482,6 +505,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -524,6 +549,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyStatesByAssignmentIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -538,6 +564,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPolicyStatesByDomainId
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByDomainIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByDomainIdResponse`
@@ -550,6 +577,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -590,6 +619,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyStatesByDomainIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -604,6 +634,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPolicyStatesByResourceId
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByResourceIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByResourceIdResponse`
@@ -616,6 +647,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -654,6 +687,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyStatesByResourceIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -668,6 +702,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunEvaluationByPolicyAssignmentId
         :type request: :class:`huaweicloudsdkrms.v1.RunEvaluationByPolicyAssignmentIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.RunEvaluationByPolicyAssignmentIdResponse`
@@ -680,6 +715,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -712,6 +749,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunEvaluationByPolicyAssignmentIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -726,6 +764,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBuiltInPolicyDefinition
         :type request: :class:`huaweicloudsdkrms.v1.ShowBuiltInPolicyDefinitionRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowBuiltInPolicyDefinitionResponse`
@@ -738,6 +777,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -772,6 +813,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBuiltInPolicyDefinitionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -786,6 +828,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEvaluationStateByAssignmentId
         :type request: :class:`huaweicloudsdkrms.v1.ShowEvaluationStateByAssignmentIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowEvaluationStateByAssignmentIdResponse`
@@ -798,6 +841,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -830,6 +875,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEvaluationStateByAssignmentIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -844,6 +890,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.ShowPolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowPolicyAssignmentResponse`
@@ -856,6 +903,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -888,6 +937,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -902,6 +952,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePolicyAssignment
         :type request: :class:`huaweicloudsdkrms.v1.UpdatePolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.UpdatePolicyAssignmentResponse`
@@ -914,6 +965,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -948,6 +1001,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePolicyAssignmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -962,6 +1016,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateStoredQuery
         :type request: :class:`huaweicloudsdkrms.v1.CreateStoredQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CreateStoredQueryResponse`
@@ -974,6 +1029,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1006,6 +1063,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStoredQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1020,6 +1078,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteStoredQuery
         :type request: :class:`huaweicloudsdkrms.v1.DeleteStoredQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeleteStoredQueryResponse`
@@ -1032,6 +1091,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1064,6 +1125,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStoredQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1078,6 +1140,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSchemas
         :type request: :class:`huaweicloudsdkrms.v1.ListSchemasRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListSchemasResponse`
@@ -1090,6 +1153,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1124,6 +1189,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1138,6 +1204,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStoredQueries
         :type request: :class:`huaweicloudsdkrms.v1.ListStoredQueriesRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListStoredQueriesResponse`
@@ -1150,6 +1217,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1186,6 +1255,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStoredQueriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1200,6 +1270,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunQuery
         :type request: :class:`huaweicloudsdkrms.v1.RunQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.RunQueryResponse`
@@ -1212,6 +1283,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1244,6 +1317,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1258,6 +1332,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowStoredQuery
         :type request: :class:`huaweicloudsdkrms.v1.ShowStoredQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowStoredQueryResponse`
@@ -1270,6 +1345,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1302,6 +1379,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStoredQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1316,6 +1394,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateStoredQuery
         :type request: :class:`huaweicloudsdkrms.v1.UpdateStoredQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.UpdateStoredQueryResponse`
@@ -1328,6 +1407,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1362,6 +1443,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStoredQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1376,6 +1458,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRegions
         :type request: :class:`huaweicloudsdkrms.v1.ListRegionsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListRegionsResponse`
@@ -1388,6 +1471,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1420,6 +1505,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1434,6 +1520,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResourceRelations
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsResponse`
@@ -1446,6 +1533,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1484,6 +1573,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceRelationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1498,6 +1588,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAllResources
         :type request: :class:`huaweicloudsdkrms.v1.ListAllResourcesRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListAllResourcesResponse`
@@ -1510,6 +1601,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1550,6 +1643,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAllResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1564,6 +1658,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProviders
         :type request: :class:`huaweicloudsdkrms.v1.ListProvidersRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListProvidersResponse`
@@ -1576,6 +1671,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1612,6 +1709,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProvidersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1626,6 +1724,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResources
         :type request: :class:`huaweicloudsdkrms.v1.ListResourcesRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListResourcesResponse`
@@ -1638,6 +1737,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1682,6 +1783,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1696,6 +1798,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResourceById
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceByIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceByIdResponse`
@@ -1708,6 +1811,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1744,6 +1849,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceByIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1758,6 +1864,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTrackerConfig
         :type request: :class:`huaweicloudsdkrms.v1.CreateTrackerConfigRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CreateTrackerConfigResponse`
@@ -1770,6 +1877,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1802,6 +1911,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTrackerConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1816,6 +1926,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTrackerConfig
         :type request: :class:`huaweicloudsdkrms.v1.DeleteTrackerConfigRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeleteTrackerConfigResponse`
@@ -1828,6 +1939,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1858,6 +1971,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTrackerConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1872,6 +1986,7 @@ class RmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTrackerConfig
         :type request: :class:`huaweicloudsdkrms.v1.ShowTrackerConfigRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowTrackerConfigResponse`
@@ -1884,6 +1999,8 @@ class RmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1914,6 +2031,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTrackerConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1921,7 +2039,7 @@ class RmsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1932,9 +2050,10 @@ class RmsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1951,6 +2070,7 @@ class RmsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

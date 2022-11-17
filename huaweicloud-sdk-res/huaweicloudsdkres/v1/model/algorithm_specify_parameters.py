@@ -17,7 +17,6 @@ class AlgorithmSpecifyParameters:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -353,7 +352,6 @@ class AlgorithmSpecifyParameters:
     def structure_optimizer(self):
         """Gets the structure_optimizer of this AlgorithmSpecifyParameters.
 
-
         :return: The structure_optimizer of this AlgorithmSpecifyParameters.
         :rtype: :class:`huaweicloudsdkres.v1.Optimizer`
         """
@@ -362,7 +360,6 @@ class AlgorithmSpecifyParameters:
     @structure_optimizer.setter
     def structure_optimizer(self, structure_optimizer):
         """Sets the structure_optimizer of this AlgorithmSpecifyParameters.
-
 
         :param structure_optimizer: The structure_optimizer of this AlgorithmSpecifyParameters.
         :type structure_optimizer: :class:`huaweicloudsdkres.v1.Optimizer`

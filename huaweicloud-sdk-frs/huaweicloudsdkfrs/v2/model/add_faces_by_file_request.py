@@ -17,7 +17,6 @@ class AddFacesByFileRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AddFacesByFileRequest:
     def body(self):
         """Gets the body of this AddFacesByFileRequest.
 
-
         :return: The body of this AddFacesByFileRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByFileRequestBody`
         """
@@ -86,7 +84,6 @@ class AddFacesByFileRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddFacesByFileRequest.
-
 
         :param body: The body of this AddFacesByFileRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.AddFacesByFileRequestBody`

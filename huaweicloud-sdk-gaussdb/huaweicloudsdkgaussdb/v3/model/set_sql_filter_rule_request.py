@@ -17,7 +17,6 @@ class SetSqlFilterRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class SetSqlFilterRuleRequest:
     def body(self):
         """Gets the body of this SetSqlFilterRuleRequest.
 
-
         :return: The body of this SetSqlFilterRuleRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.OperateSqlFilterRuleReq`
         """
@@ -115,7 +113,6 @@ class SetSqlFilterRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetSqlFilterRuleRequest.
-
 
         :param body: The body of this SetSqlFilterRuleRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.OperateSqlFilterRuleReq`

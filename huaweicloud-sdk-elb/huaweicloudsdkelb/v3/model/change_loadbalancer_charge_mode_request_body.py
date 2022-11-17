@@ -17,7 +17,6 @@ class ChangeLoadbalancerChargeModeRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ChangeLoadbalancerChargeModeRequestBody:
     def prepaid_options(self):
         """Gets the prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
 
-
         :return: The prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.PrepaidChangeChargeModeOption`
         """
@@ -114,7 +112,6 @@ class ChangeLoadbalancerChargeModeRequestBody:
     @prepaid_options.setter
     def prepaid_options(self, prepaid_options):
         """Sets the prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
-
 
         :param prepaid_options: The prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidChangeChargeModeOption`

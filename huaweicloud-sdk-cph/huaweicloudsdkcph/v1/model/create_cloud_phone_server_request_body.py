@@ -17,7 +17,6 @@ class CreateCloudPhoneServerRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -266,7 +265,6 @@ class CreateCloudPhoneServerRequestBody:
     def band_width(self):
         """Gets the band_width of this CreateCloudPhoneServerRequestBody.
 
-
         :return: The band_width of this CreateCloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequestBodyBandWidth`
         """
@@ -275,7 +273,6 @@ class CreateCloudPhoneServerRequestBody:
     @band_width.setter
     def band_width(self, band_width):
         """Sets the band_width of this CreateCloudPhoneServerRequestBody.
-
 
         :param band_width: The band_width of this CreateCloudPhoneServerRequestBody.
         :type band_width: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequestBodyBandWidth`
@@ -286,7 +283,6 @@ class CreateCloudPhoneServerRequestBody:
     def extend_param(self):
         """Gets the extend_param of this CreateCloudPhoneServerRequestBody.
 
-
         :return: The extend_param of this CreateCloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequestBodyExtendParam`
         """
@@ -295,7 +291,6 @@ class CreateCloudPhoneServerRequestBody:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this CreateCloudPhoneServerRequestBody.
-
 
         :param extend_param: The extend_param of this CreateCloudPhoneServerRequestBody.
         :type extend_param: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequestBodyExtendParam`

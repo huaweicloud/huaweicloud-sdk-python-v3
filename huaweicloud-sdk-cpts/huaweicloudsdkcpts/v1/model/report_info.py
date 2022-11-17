@@ -17,7 +17,6 @@ class ReportInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class ReportInfo:
     def brokens(self):
         """Gets the brokens of this ReportInfo.
 
-
         :return: The brokens of this ReportInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportbrokensInfo`
         """
@@ -93,7 +91,6 @@ class ReportInfo:
     @brokens.setter
     def brokens(self, brokens):
         """Sets the brokens of this ReportInfo.
-
 
         :param brokens: The brokens of this ReportInfo.
         :type brokens: :class:`huaweicloudsdkcpts.v1.ReportbrokensInfo`
@@ -104,7 +101,6 @@ class ReportInfo:
     def details(self):
         """Gets the details of this ReportInfo.
 
-
         :return: The details of this ReportInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportdetailsInfo`
         """
@@ -113,7 +109,6 @@ class ReportInfo:
     @details.setter
     def details(self, details):
         """Sets the details of this ReportInfo.
-
 
         :param details: The details of this ReportInfo.
         :type details: :class:`huaweicloudsdkcpts.v1.ReportdetailsInfo`
@@ -124,7 +119,6 @@ class ReportInfo:
     def outline(self):
         """Gets the outline of this ReportInfo.
 
-
         :return: The outline of this ReportInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportoutlineInfo`
         """
@@ -133,7 +127,6 @@ class ReportInfo:
     @outline.setter
     def outline(self, outline):
         """Sets the outline of this ReportInfo.
-
 
         :param outline: The outline of this ReportInfo.
         :type outline: :class:`huaweicloudsdkcpts.v1.ReportoutlineInfo`
@@ -166,7 +159,6 @@ class ReportInfo:
     def task_info(self):
         """Gets the task_info of this ReportInfo.
 
-
         :return: The task_info of this ReportInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportTaskInfo`
         """
@@ -175,7 +167,6 @@ class ReportInfo:
     @task_info.setter
     def task_info(self, task_info):
         """Sets the task_info of this ReportInfo.
-
 
         :param task_info: The task_info of this ReportInfo.
         :type task_info: :class:`huaweicloudsdkcpts.v1.ReportTaskInfo`

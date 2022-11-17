@@ -17,7 +17,6 @@ class CreateAppVersionsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateAppVersionsRequest:
     def body(self):
         """Gets the body of this CreateAppVersionsRequest.
 
-
         :return: The body of this CreateAppVersionsRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Version`
         """
@@ -115,7 +113,6 @@ class CreateAppVersionsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAppVersionsRequest.
-
 
         :param body: The body of this CreateAppVersionsRequest.
         :type body: :class:`huaweicloudsdkief.v1.Version`

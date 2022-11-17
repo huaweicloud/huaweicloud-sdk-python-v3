@@ -17,7 +17,6 @@ class Domains:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -138,7 +137,6 @@ class Domains:
     def links(self):
         """Gets the links of this Domains.
 
-
         :return: The links of this Domains.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
@@ -147,7 +145,6 @@ class Domains:
     @links.setter
     def links(self, links):
         """Sets the links of this Domains.
-
 
         :param links: The links of this Domains.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

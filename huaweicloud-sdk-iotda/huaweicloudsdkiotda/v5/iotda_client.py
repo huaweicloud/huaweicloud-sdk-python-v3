@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IoTDAClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class IoTDAClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAccessCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -188,6 +188,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +230,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchShowQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -254,6 +257,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -288,6 +293,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -314,6 +320,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -348,6 +356,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -374,6 +383,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -408,6 +419,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -434,6 +446,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -468,6 +482,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -494,6 +509,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -528,6 +545,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -554,6 +572,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -588,6 +608,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -597,7 +618,7 @@ class IoTDAClient(Client):
     def create_async_command(self, request):
         """下发异步设备命令
 
-        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步通知应用服务器。 命令执行结果支持灵活的数据流转，应用服务器通过调用物联网平台的创建规则触发条件（Resource:device.command.status，Event:update）、创建规则动作并激活规则后，当命令状态变更时，物联网平台会根据规则将结果发送到规则指定的服务器，如用户自定义的HTTP服务器，AMQP服务器，以及华为云的其他储存服务器等, 详情参考[设备命令状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01212.html)。
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步通知应用服务器。 命令执行结果支持灵活的数据流转，应用服务器通过调用物联网平台的创建规则触发条件（Resource:device.command.status，Event:update）、创建规则动作并激活规则后，当命令状态变更时，物联网平台会根据规则将结果发送到规则指定的服务器，如用户自定义的HTTP服务器，AMQP服务器，以及华为云的其他储存服务器等, 详情参考[[设备命令状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01212.html)](tag:hws)[[设备命令状态变更通知](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_01212.html)](tag:hws_hk)。
         注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。
         
         详细说明请参考华为云API Explorer。
@@ -615,6 +636,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -651,6 +674,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAsyncCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -660,7 +684,7 @@ class IoTDAClient(Client):
     def show_async_device_command(self, request):
         """查询指定id的命令
 
-        物联网平台可查询指定id的命令。 
+        物联网平台可查询指定id的命令。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -677,6 +701,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -713,6 +739,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAsyncDeviceCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -739,6 +766,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -773,6 +802,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBatchTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -799,6 +829,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -843,6 +875,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBatchTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -869,6 +902,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -909,6 +944,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBatchTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -935,6 +971,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -969,6 +1007,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBatchTaskFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -995,6 +1034,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1027,6 +1068,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBatchTaskFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1036,7 +1078,7 @@ class IoTDAClient(Client):
     def add_certificate(self, request):
         """上传设备CA证书
 
-        应用服务器可调用此接口在物联网平台上传设备的CA证书
+        应用服务器可调用此接口在物联网平台上传设备CA证书
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1048,11 +1090,13 @@ class IoTDAClient(Client):
         return self.add_certificate_with_http_info(request)
 
     def add_certificate_with_http_info(self, request):
-        all_params = ['add_certificate_request_body', 'instance_id']
+        all_params = ['add_certificate_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1061,6 +1105,10 @@ class IoTDAClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1087,6 +1135,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1108,11 +1157,13 @@ class IoTDAClient(Client):
         return self.check_certificate_with_http_info(request)
 
     def check_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'action_id', 'check_certificate_request_body', 'instance_id']
+        all_params = ['certificate_id', 'action_id', 'check_certificate_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1125,6 +1176,10 @@ class IoTDAClient(Client):
             query_params.append(('action_id', local_var_params['action_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1151,6 +1206,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1160,7 +1216,7 @@ class IoTDAClient(Client):
     def delete_certificate(self, request):
         """删除设备CA证书
 
-        应用服务器可调用此接口在物联网平台删除设备的CA证书
+        应用服务器可调用此接口在物联网平台删除设备CA证书
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1172,11 +1228,13 @@ class IoTDAClient(Client):
         return self.delete_certificate_with_http_info(request)
 
     def delete_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'instance_id']
+        all_params = ['certificate_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1187,6 +1245,10 @@ class IoTDAClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1211,6 +1273,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1220,7 +1283,7 @@ class IoTDAClient(Client):
     def list_certificates(self, request):
         """获取设备CA证书列表
 
-        应用服务器可调用此接口在物联网平台获取设备的CA证书列表
+        应用服务器可调用此接口在物联网平台获取设备CA证书列表
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1232,11 +1295,13 @@ class IoTDAClient(Client):
         return self.list_certificates_with_http_info(request)
 
     def list_certificates_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'limit', 'marker', 'offset']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'app_id', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1253,6 +1318,10 @@ class IoTDAClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1277,6 +1346,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1304,6 +1374,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1340,6 +1412,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1366,6 +1439,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1400,6 +1475,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1426,6 +1502,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1464,6 +1542,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOrDeleteDeviceInGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1490,6 +1569,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1524,6 +1605,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1550,6 +1632,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1592,6 +1676,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeviceGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1618,6 +1703,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1652,6 +1739,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1678,6 +1766,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1718,6 +1808,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDevicesInGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1744,6 +1835,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1780,6 +1873,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1810,6 +1904,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1844,6 +1940,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1870,6 +1967,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1904,6 +2003,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1930,6 +2030,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1964,6 +2066,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='FreezeDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1990,6 +2093,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2044,6 +2149,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2070,6 +2176,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2108,6 +2216,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetDeviceSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2134,6 +2243,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2170,6 +2281,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetFingerprintResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2196,6 +2308,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2230,6 +2344,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2256,6 +2371,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2290,6 +2407,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnfreezeDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2316,6 +2434,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2352,6 +2472,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2389,6 +2510,8 @@ class IoTDAClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2422,6 +2545,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceShadowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2459,6 +2583,8 @@ class IoTDAClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2494,6 +2620,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceShadowDesiredDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2503,7 +2630,7 @@ class IoTDAClient(Client):
     def create_message(self, request):
         """下发设备消息
 
-        物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。平台返回应用响应结果不一定是设备接收结果，建议用户应用通过订阅[设备消息状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01203.html)，订阅后平台会将设备接收结果推送给订阅的应用。
+        物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。平台返回应用响应结果不一定是设备接收结果，建议用户应用通过订阅[[设备消息状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01203.html)](tag:hws)[[设备消息状态变更通知](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_01203.html)](tag:hws_hk)，订阅后平台会将设备接收结果推送给订阅的应用。
         注意：此接口适用于MQTT设备消息下发，暂不支持其他协议接入的设备消息下发。
         
         详细说明请参考华为云API Explorer。
@@ -2521,6 +2648,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2557,6 +2686,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2566,7 +2696,7 @@ class IoTDAClient(Client):
     def list_device_messages(self, request):
         """查询设备消息
 
-        应用服务器可调用此接口查询平台下发给设备的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。 
+        应用服务器可调用此接口查询平台下发给设备的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2583,6 +2713,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2617,6 +2749,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeviceMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2626,7 +2759,7 @@ class IoTDAClient(Client):
     def show_device_message(self, request):
         """查询指定消息id的消息
 
-        应用服务器可调用此接口查询平台下发给设备的指定消息id的消息。 
+        应用服务器可调用此接口查询平台下发给设备的指定消息id的消息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2643,6 +2776,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2679,6 +2814,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2705,6 +2841,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2739,6 +2877,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2765,6 +2904,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2801,6 +2942,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2827,6 +2969,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2867,6 +3011,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2893,6 +3038,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2929,6 +3076,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2955,6 +3103,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2991,6 +3141,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3018,6 +3169,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3054,6 +3207,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3081,6 +3235,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3117,6 +3273,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3143,6 +3300,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3177,6 +3336,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRoutingRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3203,6 +3363,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3237,6 +3399,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRuleActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3263,6 +3426,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3297,6 +3462,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRoutingRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3323,6 +3489,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3357,6 +3525,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRuleActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3383,6 +3552,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3431,6 +3602,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRoutingRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3457,6 +3629,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3503,6 +3677,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRuleActionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3530,6 +3705,8 @@ class IoTDAClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -3563,6 +3740,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRoutingRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3590,6 +3768,8 @@ class IoTDAClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -3623,6 +3803,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRuleActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3649,6 +3830,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3685,6 +3868,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRoutingRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3711,6 +3895,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3747,6 +3933,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRuleActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3773,6 +3960,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3809,6 +3998,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeRuleStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3835,6 +4025,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3869,6 +4061,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3895,6 +4088,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3929,6 +4124,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3955,6 +4151,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3997,6 +4195,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4023,6 +4222,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4057,6 +4258,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4083,6 +4285,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4119,6 +4323,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4145,6 +4350,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4185,6 +4392,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourcesByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4211,6 +4419,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4245,6 +4455,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='TagDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4271,6 +4482,8 @@ class IoTDAClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4305,6 +4518,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UntagDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4312,7 +4526,7 @@ class IoTDAClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4322,9 +4536,10 @@ class IoTDAClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4341,6 +4556,7 @@ class IoTDAClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

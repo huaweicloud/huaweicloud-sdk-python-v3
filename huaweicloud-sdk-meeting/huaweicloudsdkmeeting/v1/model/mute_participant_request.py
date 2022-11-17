@@ -17,7 +17,6 @@ class MuteParticipantRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class MuteParticipantRequest:
     def body(self):
         """Gets the body of this MuteParticipantRequest.
 
-
         :return: The body of this MuteParticipantRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestMuteParticipantReqBody`
         """
@@ -142,7 +140,6 @@ class MuteParticipantRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this MuteParticipantRequest.
-
 
         :param body: The body of this MuteParticipantRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestMuteParticipantReqBody`

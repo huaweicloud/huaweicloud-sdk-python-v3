@@ -17,7 +17,6 @@ class UpdateServerAutoTerminateTimeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateServerAutoTerminateTimeRequest:
     def body(self):
         """Gets the body of this UpdateServerAutoTerminateTimeRequest.
 
-
         :return: The body of this UpdateServerAutoTerminateTimeRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateServerAutoTerminateTimeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateServerAutoTerminateTimeRequest.
-
 
         :param body: The body of this UpdateServerAutoTerminateTimeRequest.
         :type body: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequestBody`

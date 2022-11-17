@@ -17,7 +17,6 @@ class ChangeUserStatusRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -35,7 +34,7 @@ class ChangeUserStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: 用户id。
+        :param user_id: 用户ID。
         :type user_id: str
         :param body: Body of the ChangeUserStatusRequest
         :type body: :class:`huaweicloudsdkworkspace.v2.OperateUserReq`
@@ -55,7 +54,7 @@ class ChangeUserStatusRequest:
     def user_id(self):
         """Gets the user_id of this ChangeUserStatusRequest.
 
-        用户id。
+        用户ID。
 
         :return: The user_id of this ChangeUserStatusRequest.
         :rtype: str
@@ -66,7 +65,7 @@ class ChangeUserStatusRequest:
     def user_id(self, user_id):
         """Sets the user_id of this ChangeUserStatusRequest.
 
-        用户id。
+        用户ID。
 
         :param user_id: The user_id of this ChangeUserStatusRequest.
         :type user_id: str
@@ -77,7 +76,6 @@ class ChangeUserStatusRequest:
     def body(self):
         """Gets the body of this ChangeUserStatusRequest.
 
-
         :return: The body of this ChangeUserStatusRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OperateUserReq`
         """
@@ -86,7 +84,6 @@ class ChangeUserStatusRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeUserStatusRequest.
-
 
         :param body: The body of this ChangeUserStatusRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.OperateUserReq`

@@ -17,7 +17,6 @@ class Agency:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class Agency:
     def metadata(self):
         """Gets the metadata of this Agency.
 
-
         :return: The metadata of this Agency.
         :rtype: :class:`huaweicloudsdkcae.v1.AgencyMetadata`
         """
@@ -114,7 +112,6 @@ class Agency:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this Agency.
-
 
         :param metadata: The metadata of this Agency.
         :type metadata: :class:`huaweicloudsdkcae.v1.AgencyMetadata`

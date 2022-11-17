@@ -17,7 +17,6 @@ class DeleteNotificationTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DeleteNotificationTemplateRequest:
     def body(self):
         """Gets the body of this DeleteNotificationTemplateRequest.
 
-
         :return: The body of this DeleteNotificationTemplateRequest.
         :rtype: :class:`huaweicloudsdklts.v2.DeleteNotificationTemplateBody`
         """
@@ -86,7 +84,6 @@ class DeleteNotificationTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteNotificationTemplateRequest.
-
 
         :param body: The body of this DeleteNotificationTemplateRequest.
         :type body: :class:`huaweicloudsdklts.v2.DeleteNotificationTemplateBody`

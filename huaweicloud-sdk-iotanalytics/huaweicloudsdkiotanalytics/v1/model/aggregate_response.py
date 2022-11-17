@@ -17,7 +17,6 @@ class AggregateResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -99,7 +98,6 @@ class AggregateResponse:
     def expression(self):
         """Gets the expression of this AggregateResponse.
 
-
         :return: The expression of this AggregateResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Expression`
         """
@@ -108,7 +106,6 @@ class AggregateResponse:
     @expression.setter
     def expression(self, expression):
         """Sets the expression of this AggregateResponse.
-
 
         :param expression: The expression of this AggregateResponse.
         :type expression: :class:`huaweicloudsdkiotanalytics.v1.Expression`
@@ -141,7 +138,6 @@ class AggregateResponse:
     def outputs(self):
         """Gets the outputs of this AggregateResponse.
 
-
         :return: The outputs of this AggregateResponse.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
         """
@@ -150,7 +146,6 @@ class AggregateResponse:
     @outputs.setter
     def outputs(self, outputs):
         """Sets the outputs of this AggregateResponse.
-
 
         :param outputs: The outputs of this AggregateResponse.
         :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
@@ -161,7 +156,6 @@ class AggregateResponse:
     def schedule(self):
         """Gets the schedule of this AggregateResponse.
 
-
         :return: The schedule of this AggregateResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
         """
@@ -170,7 +164,6 @@ class AggregateResponse:
     @schedule.setter
     def schedule(self, schedule):
         """Sets the schedule of this AggregateResponse.
-
 
         :param schedule: The schedule of this AggregateResponse.
         :type schedule: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`

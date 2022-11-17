@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class BmsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -55,6 +49,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddServerNics
         :type request: :class:`huaweicloudsdkbms.v1.AddServerNicsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.AddServerNicsResponse`
@@ -67,6 +62,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -101,6 +98,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddServerNicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -115,6 +113,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AttachBaremetalServerVolume
         :type request: :class:`huaweicloudsdkbms.v1.AttachBaremetalServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.AttachBaremetalServerVolumeResponse`
@@ -127,6 +126,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -161,6 +162,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachBaremetalServerVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -175,6 +177,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateBaremetalServerTags
         :type request: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsResponse`
@@ -187,6 +190,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -221,6 +226,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateBaremetalServerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -235,6 +241,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteBaremetalServerTags
         :type request: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsResponse`
@@ -247,6 +254,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -281,6 +290,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteBaremetalServerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -295,6 +305,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRebootBaremetalServers
         :type request: :class:`huaweicloudsdkbms.v1.BatchRebootBaremetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchRebootBaremetalServersResponse`
@@ -307,6 +318,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -339,6 +352,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRebootBaremetalServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -353,6 +367,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchStartBaremetalServers
         :type request: :class:`huaweicloudsdkbms.v1.BatchStartBaremetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchStartBaremetalServersResponse`
@@ -365,6 +380,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -397,6 +414,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStartBaremetalServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -411,6 +429,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchStopBaremetalServers
         :type request: :class:`huaweicloudsdkbms.v1.BatchStopBaremetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchStopBaremetalServersResponse`
@@ -423,6 +442,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -455,6 +476,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStopBaremetalServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -469,6 +491,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeBaremetalServerName
         :type request: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerNameRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerNameResponse`
@@ -481,6 +504,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -515,6 +540,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeBaremetalServerNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -529,6 +555,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeBaremetalServerOs
         :type request: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerOsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerOsResponse`
@@ -541,6 +568,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -575,6 +604,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeBaremetalServerOsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -589,6 +619,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateBareMetalServers
         :type request: :class:`huaweicloudsdkbms.v1.CreateBareMetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.CreateBareMetalServersResponse`
@@ -601,6 +632,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -633,6 +666,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBareMetalServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -646,6 +680,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteServerNics
         :type request: :class:`huaweicloudsdkbms.v1.DeleteServerNicsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.DeleteServerNicsResponse`
@@ -658,6 +693,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -692,6 +729,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServerNicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -706,6 +744,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteWindowsBareMetalServerPassword
         :type request: :class:`huaweicloudsdkbms.v1.DeleteWindowsBareMetalServerPasswordRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.DeleteWindowsBareMetalServerPasswordResponse`
@@ -718,6 +757,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -750,6 +791,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWindowsBareMetalServerPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -764,6 +806,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetachBaremetalServerVolume
         :type request: :class:`huaweicloudsdkbms.v1.DetachBaremetalServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.DetachBaremetalServerVolumeResponse`
@@ -776,6 +819,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -810,6 +855,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetachBaremetalServerVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -824,6 +870,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBareMetalServerDetails
         :type request: :class:`huaweicloudsdkbms.v1.ListBareMetalServerDetailsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ListBareMetalServerDetailsResponse`
@@ -836,6 +883,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -868,6 +917,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBareMetalServerDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -882,6 +932,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBareMetalServers
         :type request: :class:`huaweicloudsdkbms.v1.ListBareMetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ListBareMetalServersResponse`
@@ -894,6 +945,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -942,6 +995,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBareMetalServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -956,6 +1010,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBaremetalFlavorDetailExtends
         :type request: :class:`huaweicloudsdkbms.v1.ListBaremetalFlavorDetailExtendsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ListBaremetalFlavorDetailExtendsResponse`
@@ -968,6 +1023,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1000,6 +1057,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBaremetalFlavorDetailExtendsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1014,6 +1072,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ReinstallBaremetalServerOs
         :type request: :class:`huaweicloudsdkbms.v1.ReinstallBaremetalServerOsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ReinstallBaremetalServerOsResponse`
@@ -1026,6 +1085,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1060,6 +1121,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ReinstallBaremetalServerOsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1074,6 +1136,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetPwdOneClick
         :type request: :class:`huaweicloudsdkbms.v1.ResetPwdOneClickRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ResetPwdOneClickResponse`
@@ -1086,6 +1149,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1120,6 +1185,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPwdOneClickResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1134,6 +1200,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBaremetalServerInterfaceAttachments
         :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerInterfaceAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerInterfaceAttachmentsResponse`
@@ -1146,6 +1213,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1178,6 +1247,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBaremetalServerInterfaceAttachmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1192,6 +1262,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBaremetalServerTags
         :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerTagsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerTagsResponse`
@@ -1204,6 +1275,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1236,6 +1309,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBaremetalServerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1250,6 +1324,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBaremetalServerVolumeInfo
         :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerVolumeInfoRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerVolumeInfoResponse`
@@ -1262,6 +1337,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1294,6 +1371,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBaremetalServerVolumeInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1308,6 +1386,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResetPwd
         :type request: :class:`huaweicloudsdkbms.v1.ShowResetPwdRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowResetPwdResponse`
@@ -1320,6 +1399,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1352,6 +1433,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResetPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1365,6 +1447,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServerRemoteConsole
         :type request: :class:`huaweicloudsdkbms.v1.ShowServerRemoteConsoleRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowServerRemoteConsoleResponse`
@@ -1377,6 +1460,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1411,6 +1496,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerRemoteConsoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1425,6 +1511,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTenantQuota
         :type request: :class:`huaweicloudsdkbms.v1.ShowTenantQuotaRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowTenantQuotaResponse`
@@ -1437,6 +1524,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1467,6 +1556,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTenantQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1481,6 +1571,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWindowsBaremetalServerPwd
         :type request: :class:`huaweicloudsdkbms.v1.ShowWindowsBaremetalServerPwdRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowWindowsBaremetalServerPwdResponse`
@@ -1493,6 +1584,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1525,6 +1618,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWindowsBaremetalServerPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1538,6 +1632,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateBaremetalServerInterfaceAttachments
         :type request: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerInterfaceAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerInterfaceAttachmentsResponse`
@@ -1550,6 +1645,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1586,6 +1683,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBaremetalServerInterfaceAttachmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1600,6 +1698,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateBaremetalServerMetadata
         :type request: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataResponse`
@@ -1612,6 +1711,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1646,6 +1747,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBaremetalServerMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1660,6 +1762,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSpecifiedVersion
         :type request: :class:`huaweicloudsdkbms.v1.ShowSpecifiedVersionRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowSpecifiedVersionResponse`
@@ -1672,6 +1775,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1704,6 +1809,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSpecifiedVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1718,6 +1824,7 @@ class BmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobInfos
         :type request: :class:`huaweicloudsdkbms.v1.ShowJobInfosRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowJobInfosResponse`
@@ -1730,6 +1837,8 @@ class BmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1762,6 +1871,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1769,7 +1879,7 @@ class BmsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1780,9 +1890,10 @@ class BmsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1799,6 +1910,7 @@ class BmsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class CreateNet2CloudPhoneServerRequestBodyBandWidth:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {

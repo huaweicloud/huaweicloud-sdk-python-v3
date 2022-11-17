@@ -17,7 +17,6 @@ class EdgeSiteDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -295,7 +294,6 @@ class EdgeSiteDetail:
     def location(self):
         """Gets the location of this EdgeSiteDetail.
 
-
         :return: The location of this EdgeSiteDetail.
         :rtype: :class:`huaweicloudsdkies.v1.LocationDetail`
         """
@@ -304,7 +302,6 @@ class EdgeSiteDetail:
     @location.setter
     def location(self, location):
         """Sets the location of this EdgeSiteDetail.
-
 
         :param location: The location of this EdgeSiteDetail.
         :type location: :class:`huaweicloudsdkies.v1.LocationDetail`

@@ -17,7 +17,6 @@ class AttachInternalIpRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AttachInternalIpRequest:
     def body(self):
         """Gets the body of this AttachInternalIpRequest.
 
-
         :return: The body of this AttachInternalIpRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.AttachInternalIpRequestBody`
         """
@@ -86,7 +84,6 @@ class AttachInternalIpRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AttachInternalIpRequest.
-
 
         :param body: The body of this AttachInternalIpRequest.
         :type body: :class:`huaweicloudsdkdds.v3.AttachInternalIpRequestBody`

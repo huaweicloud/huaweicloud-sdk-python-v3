@@ -17,7 +17,6 @@ class CreateTemplateViewHistoriesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateTemplateViewHistoriesRequest:
     def body(self):
         """Gets the body of this CreateTemplateViewHistoriesRequest.
 
-
         :return: The body of this CreateTemplateViewHistoriesRequest.
         :rtype: :class:`huaweicloudsdkdevstar.v1.TemplatesInfo`
         """
@@ -87,7 +85,6 @@ class CreateTemplateViewHistoriesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTemplateViewHistoriesRequest.
-
 
         :param body: The body of this CreateTemplateViewHistoriesRequest.
         :type body: :class:`huaweicloudsdkdevstar.v1.TemplatesInfo`

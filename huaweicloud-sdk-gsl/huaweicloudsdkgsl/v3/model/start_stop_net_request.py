@@ -17,7 +17,6 @@ class StartStopNetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartStopNetRequest:
     def body(self):
         """Gets the body of this StartStopNetRequest.
 
-
         :return: The body of this StartStopNetRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.CutNetReq`
         """
@@ -86,7 +84,6 @@ class StartStopNetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartStopNetRequest.
-
 
         :param body: The body of this StartStopNetRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.CutNetReq`

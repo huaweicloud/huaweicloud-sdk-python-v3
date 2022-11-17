@@ -17,7 +17,6 @@ class TimeRange:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -41,7 +40,7 @@ class TimeRange:
         :type start_time: str
         :param end_time: **参数说明**：规则条件触发的结束时间，格式：HH:mm。若结束时间与开始时间一致，则时间为全天。
         :type end_time: str
-        :param days_of_week: **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
+        :param days_of_week: **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。
         :type days_of_week: str
         """
         
@@ -105,7 +104,7 @@ class TimeRange:
     def days_of_week(self):
         """Gets the days_of_week of this TimeRange.
 
-        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
+        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。
 
         :return: The days_of_week of this TimeRange.
         :rtype: str
@@ -116,7 +115,7 @@ class TimeRange:
     def days_of_week(self, days_of_week):
         """Sets the days_of_week of this TimeRange.
 
-        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
+        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。
 
         :param days_of_week: The days_of_week of this TimeRange.
         :type days_of_week: str

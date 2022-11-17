@@ -17,7 +17,6 @@ class CommonTask:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -288,7 +287,6 @@ class CommonTask:
     def input(self):
         """Gets the input of this CommonTask.
 
-
         :return: The input of this CommonTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -297,7 +295,6 @@ class CommonTask:
     @input.setter
     def input(self, input):
         """Sets the input of this CommonTask.
-
 
         :param input: The input of this CommonTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -308,7 +305,6 @@ class CommonTask:
     def output(self):
         """Gets the output of this CommonTask.
 
-
         :return: The output of this CommonTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -317,7 +313,6 @@ class CommonTask:
     @output.setter
     def output(self, output):
         """Sets the output of this CommonTask.
-
 
         :param output: The output of this CommonTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

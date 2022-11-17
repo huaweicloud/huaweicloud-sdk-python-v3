@@ -17,7 +17,6 @@ class ReclaimIndirectPartnerAccountRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ReclaimIndirectPartnerAccountRequest:
     def body(self):
         """Gets the body of this ReclaimIndirectPartnerAccountRequest.
 
-
         :return: The body of this ReclaimIndirectPartnerAccountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimIndirectPartnerAccountReq`
         """
@@ -58,7 +56,6 @@ class ReclaimIndirectPartnerAccountRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ReclaimIndirectPartnerAccountRequest.
-
 
         :param body: The body of this ReclaimIndirectPartnerAccountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.ReclaimIndirectPartnerAccountReq`

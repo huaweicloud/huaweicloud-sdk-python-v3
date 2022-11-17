@@ -17,7 +17,6 @@ class IssueCertificateAuthorityCertificateRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -132,7 +131,6 @@ class IssueCertificateAuthorityCertificateRequestBody:
     def validity(self):
         """Gets the validity of this IssueCertificateAuthorityCertificateRequestBody.
 
-
         :return: The validity of this IssueCertificateAuthorityCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.Validity`
         """
@@ -141,7 +139,6 @@ class IssueCertificateAuthorityCertificateRequestBody:
     @validity.setter
     def validity(self, validity):
         """Sets the validity of this IssueCertificateAuthorityCertificateRequestBody.
-
 
         :param validity: The validity of this IssueCertificateAuthorityCertificateRequestBody.
         :type validity: :class:`huaweicloudsdkccm.v1.Validity`

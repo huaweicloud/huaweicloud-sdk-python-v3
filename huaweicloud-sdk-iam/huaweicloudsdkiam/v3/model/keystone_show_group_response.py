@@ -17,7 +17,6 @@ class KeystoneShowGroupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneShowGroupResponse(SdkResponse):
     def group(self):
         """Gets the group of this KeystoneShowGroupResponse.
 
-
         :return: The group of this KeystoneShowGroupResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneGroupResult`
         """
@@ -58,7 +56,6 @@ class KeystoneShowGroupResponse(SdkResponse):
     @group.setter
     def group(self, group):
         """Sets the group of this KeystoneShowGroupResponse.
-
 
         :param group: The group of this KeystoneShowGroupResponse.
         :type group: :class:`huaweicloudsdkiam.v3.KeystoneGroupResult`

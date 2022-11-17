@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SdrsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddProtectedInstanceNic
         :type request: :class:`huaweicloudsdksdrs.v1.AddProtectedInstanceNicRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.AddProtectedInstanceNicResponse`
@@ -68,6 +63,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddProtectedInstanceNicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddProtectedInstanceTags
         :type request: :class:`huaweicloudsdksdrs.v1.AddProtectedInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.AddProtectedInstanceTagsResponse`
@@ -128,6 +127,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddProtectedInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AttachProtectedInstanceReplication
         :type request: :class:`huaweicloudsdksdrs.v1.AttachProtectedInstanceReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.AttachProtectedInstanceReplicationResponse`
@@ -188,6 +191,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachProtectedInstanceReplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -239,6 +245,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddTags
         :type request: :class:`huaweicloudsdksdrs.v1.BatchAddTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchAddTagsResponse`
@@ -251,6 +258,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -285,6 +294,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +310,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateProtectedInstances
         :type request: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesResponse`
@@ -312,6 +323,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +357,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateProtectedInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -359,6 +373,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteProtectedInstances
         :type request: :class:`huaweicloudsdksdrs.v1.BatchDeleteProtectedInstancesRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchDeleteProtectedInstancesResponse`
@@ -371,6 +386,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -403,6 +420,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteProtectedInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -419,6 +437,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteTags
         :type request: :class:`huaweicloudsdksdrs.v1.BatchDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchDeleteTagsResponse`
@@ -431,6 +450,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -465,6 +486,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -479,6 +501,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDisasterRecoveryDrill
         :type request: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillResponse`
@@ -491,6 +514,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -523,6 +548,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDisasterRecoveryDrillResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -537,6 +563,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProtectedInstance
         :type request: :class:`huaweicloudsdksdrs.v1.CreateProtectedInstanceRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateProtectedInstanceResponse`
@@ -549,6 +576,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -581,6 +610,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProtectedInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -597,6 +627,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProtectionGroup
         :type request: :class:`huaweicloudsdksdrs.v1.CreateProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateProtectionGroupResponse`
@@ -609,6 +640,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -641,6 +674,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProtectionGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -655,6 +689,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateReplication
         :type request: :class:`huaweicloudsdksdrs.v1.CreateReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateReplicationResponse`
@@ -667,6 +702,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -699,6 +736,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateReplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -713,6 +751,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAllServerGroupFailureJobs
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteAllServerGroupFailureJobsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteAllServerGroupFailureJobsResponse`
@@ -725,6 +764,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -755,6 +796,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAllServerGroupFailureJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -771,6 +813,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDisasterRecoveryDrill
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteDisasterRecoveryDrillRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteDisasterRecoveryDrillResponse`
@@ -783,6 +826,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -815,6 +860,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDisasterRecoveryDrillResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -829,6 +875,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteFailureJob
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteFailureJobRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteFailureJobResponse`
@@ -841,6 +888,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -873,6 +922,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFailureJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -887,6 +937,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProtectedInstance
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceResponse`
@@ -899,6 +950,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -933,6 +986,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProtectedInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -947,6 +1001,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProtectedInstanceNic
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceNicRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceNicResponse`
@@ -959,6 +1014,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -993,6 +1050,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProtectedInstanceNicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1009,6 +1067,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProtectedInstanceTag
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceTagRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceTagResponse`
@@ -1021,6 +1080,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1055,6 +1116,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProtectedInstanceTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1069,6 +1131,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProtectionGroup
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectionGroupResponse`
@@ -1081,6 +1144,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1113,6 +1178,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProtectionGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1127,6 +1193,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteReplication
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteReplicationResponse`
@@ -1139,6 +1206,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1173,6 +1242,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteReplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1187,6 +1257,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteServerGroupFailureJobs
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteServerGroupFailureJobsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteServerGroupFailureJobsResponse`
@@ -1199,6 +1270,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1231,6 +1304,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServerGroupFailureJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1245,6 +1319,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetachProtectedInstanceReplication
         :type request: :class:`huaweicloudsdksdrs.v1.DetachProtectedInstanceReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DetachProtectedInstanceReplicationResponse`
@@ -1257,6 +1332,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1291,6 +1368,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetachProtectedInstanceReplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1305,6 +1383,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExpandReplication
         :type request: :class:`huaweicloudsdksdrs.v1.ExpandReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ExpandReplicationResponse`
@@ -1317,6 +1396,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1351,6 +1432,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandReplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1365,6 +1447,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListActiveActiveDomains
         :type request: :class:`huaweicloudsdksdrs.v1.ListActiveActiveDomainsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListActiveActiveDomainsResponse`
@@ -1377,6 +1460,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1407,6 +1492,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListActiveActiveDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1421,6 +1507,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDisasterRecoveryDrills
         :type request: :class:`huaweicloudsdksdrs.v1.ListDisasterRecoveryDrillsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListDisasterRecoveryDrillsResponse`
@@ -1433,6 +1520,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1475,6 +1564,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDisasterRecoveryDrillsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1489,6 +1579,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFailureJobs
         :type request: :class:`huaweicloudsdksdrs.v1.ListFailureJobsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListFailureJobsResponse`
@@ -1501,6 +1592,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1543,6 +1636,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFailureJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1557,6 +1651,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProtectedInstanceTags
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectedInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstanceTagsResponse`
@@ -1569,6 +1664,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1601,6 +1698,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProtectedInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1615,6 +1713,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProtectedInstances
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesResponse`
@@ -1627,6 +1726,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1675,6 +1776,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProtectedInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1689,6 +1791,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProtectedInstancesByTags
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesByTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesByTagsResponse`
@@ -1701,6 +1804,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1733,6 +1838,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProtectedInstancesByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1747,6 +1853,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProtectedInstancesProjectTags
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesProjectTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesProjectTagsResponse`
@@ -1759,6 +1866,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1789,6 +1898,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProtectedInstancesProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1803,6 +1913,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProtectionGroups
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectionGroupsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectionGroupsResponse`
@@ -1815,6 +1926,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1857,6 +1970,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProtectionGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1871,6 +1985,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListReplications
         :type request: :class:`huaweicloudsdksdrs.v1.ListReplicationsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListReplicationsResponse`
@@ -1883,6 +1998,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1933,6 +2050,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListReplicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1947,6 +2065,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRpoStatistics
         :type request: :class:`huaweicloudsdksdrs.v1.ListRpoStatisticsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListRpoStatisticsResponse`
@@ -1959,6 +2078,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1999,6 +2120,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRpoStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2018,6 +2140,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeProtectedInstance
         :type request: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceResponse`
@@ -2030,6 +2153,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2064,6 +2189,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeProtectedInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2078,6 +2204,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDisasterRecoveryDrill
         :type request: :class:`huaweicloudsdksdrs.v1.ShowDisasterRecoveryDrillRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowDisasterRecoveryDrillResponse`
@@ -2090,6 +2217,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2122,6 +2251,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDisasterRecoveryDrillResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2136,6 +2266,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProtectedInstance
         :type request: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceResponse`
@@ -2148,6 +2279,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2180,6 +2313,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProtectedInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2194,6 +2328,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProtectionGroup
         :type request: :class:`huaweicloudsdksdrs.v1.ShowProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectionGroupResponse`
@@ -2206,6 +2341,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2238,6 +2375,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProtectionGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2252,6 +2390,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuota
         :type request: :class:`huaweicloudsdksdrs.v1.ShowQuotaRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowQuotaResponse`
@@ -2264,6 +2403,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2294,6 +2435,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2308,6 +2450,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowReplication
         :type request: :class:`huaweicloudsdksdrs.v1.ShowReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowReplicationResponse`
@@ -2320,6 +2463,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2352,6 +2497,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowReplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2367,6 +2513,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartFailoverProtectionGroup
         :type request: :class:`huaweicloudsdksdrs.v1.StartFailoverProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.StartFailoverProtectionGroupResponse`
@@ -2379,6 +2526,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2413,6 +2562,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartFailoverProtectionGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2427,6 +2577,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartProtectionGroup
         :type request: :class:`huaweicloudsdksdrs.v1.StartProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.StartProtectionGroupResponse`
@@ -2439,6 +2590,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2473,6 +2626,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartProtectionGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2487,6 +2641,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartReverseProtectionGroup
         :type request: :class:`huaweicloudsdksdrs.v1.StartReverseProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.StartReverseProtectionGroupResponse`
@@ -2499,6 +2654,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2533,6 +2690,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartReverseProtectionGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2547,6 +2705,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopProtectionGroup
         :type request: :class:`huaweicloudsdksdrs.v1.StopProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.StopProtectionGroupResponse`
@@ -2559,6 +2718,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2593,6 +2754,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopProtectionGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2607,6 +2769,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDisasterRecoveryDrillName
         :type request: :class:`huaweicloudsdksdrs.v1.UpdateDisasterRecoveryDrillNameRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateDisasterRecoveryDrillNameResponse`
@@ -2619,6 +2782,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2653,6 +2818,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDisasterRecoveryDrillNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2667,6 +2833,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProtectedInstanceName
         :type request: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameResponse`
@@ -2679,6 +2846,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2713,6 +2882,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProtectedInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2727,6 +2897,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProtectionGroupName
         :type request: :class:`huaweicloudsdksdrs.v1.UpdateProtectionGroupNameRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateProtectionGroupNameResponse`
@@ -2739,6 +2910,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2773,6 +2946,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProtectionGroupNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2787,6 +2961,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateReplicationName
         :type request: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameResponse`
@@ -2799,6 +2974,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2833,6 +3010,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateReplicationNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2847,6 +3025,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdksdrs.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListApiVersionsResponse`
@@ -2859,6 +3038,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2889,6 +3070,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2903,6 +3085,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSpecifiedApiVersion
         :type request: :class:`huaweicloudsdksdrs.v1.ShowSpecifiedApiVersionRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowSpecifiedApiVersionResponse`
@@ -2915,6 +3098,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2947,6 +3132,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSpecifiedApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2962,6 +3148,7 @@ class SdrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobStatus
         :type request: :class:`huaweicloudsdksdrs.v1.ShowJobStatusRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowJobStatusResponse`
@@ -2974,6 +3161,8 @@ class SdrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3006,6 +3195,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3013,7 +3203,7 @@ class SdrsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3024,9 +3214,10 @@ class SdrsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3043,6 +3234,7 @@ class SdrsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

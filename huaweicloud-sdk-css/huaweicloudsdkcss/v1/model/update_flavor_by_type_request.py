@@ -17,7 +17,6 @@ class UpdateFlavorByTypeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateFlavorByTypeRequest:
     def body(self):
         """Gets the body of this UpdateFlavorByTypeRequest.
 
-
         :return: The body of this UpdateFlavorByTypeRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeReq`
         """
@@ -114,7 +112,6 @@ class UpdateFlavorByTypeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateFlavorByTypeRequest.
-
 
         :param body: The body of this UpdateFlavorByTypeRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeReq`

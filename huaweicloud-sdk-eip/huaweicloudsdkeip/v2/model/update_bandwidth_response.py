@@ -17,7 +17,6 @@ class UpdateBandwidthResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateBandwidthResponse(SdkResponse):
     def bandwidth(self):
         """Gets the bandwidth of this UpdateBandwidthResponse.
 
-
         :return: The bandwidth of this UpdateBandwidthResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.BandwidthResp`
         """
@@ -58,7 +56,6 @@ class UpdateBandwidthResponse(SdkResponse):
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this UpdateBandwidthResponse.
-
 
         :param bandwidth: The bandwidth of this UpdateBandwidthResponse.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.BandwidthResp`

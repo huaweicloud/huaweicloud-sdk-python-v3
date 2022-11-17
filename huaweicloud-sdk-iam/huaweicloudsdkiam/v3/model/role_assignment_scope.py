@@ -17,7 +17,6 @@ class RoleAssignmentScope:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class RoleAssignmentScope:
     def project(self):
         """Gets the project of this RoleAssignmentScope.
 
-
         :return: The project of this RoleAssignmentScope.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleProjectAssignmentId`
         """
@@ -72,7 +70,6 @@ class RoleAssignmentScope:
     @project.setter
     def project(self, project):
         """Sets the project of this RoleAssignmentScope.
-
 
         :param project: The project of this RoleAssignmentScope.
         :type project: :class:`huaweicloudsdkiam.v3.RoleProjectAssignmentId`
@@ -83,7 +80,6 @@ class RoleAssignmentScope:
     def domain(self):
         """Gets the domain of this RoleAssignmentScope.
 
-
         :return: The domain of this RoleAssignmentScope.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleDomainAssignmentId`
         """
@@ -92,7 +88,6 @@ class RoleAssignmentScope:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this RoleAssignmentScope.
-
 
         :param domain: The domain of this RoleAssignmentScope.
         :type domain: :class:`huaweicloudsdkiam.v3.RoleDomainAssignmentId`
@@ -103,7 +98,6 @@ class RoleAssignmentScope:
     def enterprise_project(self):
         """Gets the enterprise_project of this RoleAssignmentScope.
 
-
         :return: The enterprise_project of this RoleAssignmentScope.
         :rtype: :class:`huaweicloudsdkiam.v3.RoleEnterpriseProjectAssignmentId`
         """
@@ -112,7 +106,6 @@ class RoleAssignmentScope:
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
         """Sets the enterprise_project of this RoleAssignmentScope.
-
 
         :param enterprise_project: The enterprise_project of this RoleAssignmentScope.
         :type enterprise_project: :class:`huaweicloudsdkiam.v3.RoleEnterpriseProjectAssignmentId`

@@ -17,7 +17,6 @@ class CreateSharedBandwidhRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateSharedBandwidhRequestBody:
     def bandwidth(self):
         """Gets the bandwidth of this CreateSharedBandwidhRequestBody.
 
-
         :return: The bandwidth of this CreateSharedBandwidhRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthOption`
         """
@@ -57,7 +55,6 @@ class CreateSharedBandwidhRequestBody:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this CreateSharedBandwidhRequestBody.
-
 
         :param bandwidth: The bandwidth of this CreateSharedBandwidhRequestBody.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthOption`

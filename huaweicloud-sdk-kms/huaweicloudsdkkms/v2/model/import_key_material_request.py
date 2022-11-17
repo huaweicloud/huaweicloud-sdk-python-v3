@@ -17,7 +17,6 @@ class ImportKeyMaterialRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ImportKeyMaterialRequest:
     def body(self):
         """Gets the body of this ImportKeyMaterialRequest.
 
-
         :return: The body of this ImportKeyMaterialRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialRequestBody`
         """
@@ -58,7 +56,6 @@ class ImportKeyMaterialRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportKeyMaterialRequest.
-
 
         :param body: The body of this ImportKeyMaterialRequest.
         :type body: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialRequestBody`

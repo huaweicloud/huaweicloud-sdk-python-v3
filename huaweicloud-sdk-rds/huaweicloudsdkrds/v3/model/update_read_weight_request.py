@@ -17,7 +17,6 @@ class UpdateReadWeightRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateReadWeightRequest:
     def body(self):
         """Gets the body of this UpdateReadWeightRequest.
 
-
         :return: The body of this UpdateReadWeightRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ModifyProxyWeightRequest`
         """
@@ -115,7 +113,6 @@ class UpdateReadWeightRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateReadWeightRequest.
-
 
         :param body: The body of this UpdateReadWeightRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ModifyProxyWeightRequest`

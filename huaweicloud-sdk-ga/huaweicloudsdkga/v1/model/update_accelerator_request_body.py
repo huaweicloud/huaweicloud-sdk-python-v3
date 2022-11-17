@@ -17,7 +17,6 @@ class UpdateAcceleratorRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateAcceleratorRequestBody:
     def accelerator(self):
         """Gets the accelerator of this UpdateAcceleratorRequestBody.
 
-
         :return: The accelerator of this UpdateAcceleratorRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.UpdateAcceleratorOption`
         """
@@ -57,7 +55,6 @@ class UpdateAcceleratorRequestBody:
     @accelerator.setter
     def accelerator(self, accelerator):
         """Sets the accelerator of this UpdateAcceleratorRequestBody.
-
 
         :param accelerator: The accelerator of this UpdateAcceleratorRequestBody.
         :type accelerator: :class:`huaweicloudsdkga.v1.UpdateAcceleratorOption`

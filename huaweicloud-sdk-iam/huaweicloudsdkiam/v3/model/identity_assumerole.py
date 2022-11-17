@@ -17,7 +17,6 @@ class IdentityAssumerole:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class IdentityAssumerole:
     def session_user(self):
         """Gets the session_user of this IdentityAssumerole.
 
-
         :return: The session_user of this IdentityAssumerole.
         :rtype: :class:`huaweicloudsdkiam.v3.AssumeroleSessionuser`
         """
@@ -173,7 +171,6 @@ class IdentityAssumerole:
     @session_user.setter
     def session_user(self, session_user):
         """Sets the session_user of this IdentityAssumerole.
-
 
         :param session_user: The session_user of this IdentityAssumerole.
         :type session_user: :class:`huaweicloudsdkiam.v3.AssumeroleSessionuser`

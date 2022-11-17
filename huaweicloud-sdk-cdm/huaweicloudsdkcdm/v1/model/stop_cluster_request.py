@@ -17,7 +17,6 @@ class StopClusterRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StopClusterRequest:
     def body(self):
         """Gets the body of this StopClusterRequest.
 
-
         :return: The body of this StopClusterRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReq`
         """
@@ -86,7 +84,6 @@ class StopClusterRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StopClusterRequest.
-
 
         :param body: The body of this StopClusterRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReq`

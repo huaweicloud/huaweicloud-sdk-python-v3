@@ -17,7 +17,6 @@ class ServiceConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ServiceConfig:
     def common(self):
         """Gets the common of this ServiceConfig.
 
-
         :return: The common of this ServiceConfig.
         :rtype: :class:`huaweicloudsdkvcm.v2.ServiceConfigCommon`
         """
@@ -58,7 +56,6 @@ class ServiceConfig:
     @common.setter
     def common(self, common):
         """Sets the common of this ServiceConfig.
-
 
         :param common: The common of this ServiceConfig.
         :type common: :class:`huaweicloudsdkvcm.v2.ServiceConfigCommon`

@@ -17,7 +17,6 @@ class ComponentCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -110,7 +109,6 @@ class ComponentCreate:
     def runtime(self):
         """Gets the runtime of this ComponentCreate.
 
-
         :return: The runtime of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
@@ -119,7 +117,6 @@ class ComponentCreate:
     @runtime.setter
     def runtime(self, runtime):
         """Sets the runtime of this ComponentCreate.
-
 
         :param runtime: The runtime of this ComponentCreate.
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -130,7 +127,6 @@ class ComponentCreate:
     def category(self):
         """Gets the category of this ComponentCreate.
 
-
         :return: The category of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
@@ -139,7 +135,6 @@ class ComponentCreate:
     @category.setter
     def category(self, category):
         """Sets the category of this ComponentCreate.
-
 
         :param category: The category of this ComponentCreate.
         :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
@@ -150,7 +145,6 @@ class ComponentCreate:
     def sub_category(self):
         """Gets the sub_category of this ComponentCreate.
 
-
         :return: The sub_category of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
@@ -159,7 +153,6 @@ class ComponentCreate:
     @sub_category.setter
     def sub_category(self, sub_category):
         """Sets the sub_category of this ComponentCreate.
-
 
         :param sub_category: The sub_category of this ComponentCreate.
         :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
@@ -192,7 +185,6 @@ class ComponentCreate:
     def source(self):
         """Gets the source of this ComponentCreate.
 
-
         :return: The source of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
@@ -201,7 +193,6 @@ class ComponentCreate:
     @source.setter
     def source(self, source):
         """Sets the source of this ComponentCreate.
-
 
         :param source: The source of this ComponentCreate.
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -212,7 +203,6 @@ class ComponentCreate:
     def build(self):
         """Gets the build of this ComponentCreate.
 
-
         :return: The build of this ComponentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.Build`
         """
@@ -221,7 +211,6 @@ class ComponentCreate:
     @build.setter
     def build(self, build):
         """Sets the build of this ComponentCreate.
-
 
         :param build: The build of this ComponentCreate.
         :type build: :class:`huaweicloudsdkservicestage.v2.Build`

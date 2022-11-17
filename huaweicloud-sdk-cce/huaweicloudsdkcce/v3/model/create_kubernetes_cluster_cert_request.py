@@ -17,7 +17,6 @@ class CreateKubernetesClusterCertRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateKubernetesClusterCertRequest:
     def body(self):
         """Gets the body of this CreateKubernetesClusterCertRequest.
 
-
         :return: The body of this CreateKubernetesClusterCertRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.CertDuration`
         """
@@ -86,7 +84,6 @@ class CreateKubernetesClusterCertRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateKubernetesClusterCertRequest.
-
 
         :param body: The body of this CreateKubernetesClusterCertRequest.
         :type body: :class:`huaweicloudsdkcce.v3.CertDuration`

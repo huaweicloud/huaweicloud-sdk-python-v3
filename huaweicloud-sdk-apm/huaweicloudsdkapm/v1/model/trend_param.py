@@ -17,7 +17,6 @@ class TrendParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class TrendParam:
     def view_config(self):
         """Gets the view_config of this TrendParam.
 
-
         :return: The view_config of this TrendParam.
         :rtype: :class:`huaweicloudsdkapm.v1.TrendView`
         """
@@ -93,7 +91,6 @@ class TrendParam:
     @view_config.setter
     def view_config(self, view_config):
         """Sets the view_config of this TrendParam.
-
 
         :param view_config: The view_config of this TrendParam.
         :type view_config: :class:`huaweicloudsdkapm.v1.TrendView`

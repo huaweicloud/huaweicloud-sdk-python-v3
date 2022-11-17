@@ -17,7 +17,6 @@ class Eip:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class Eip:
     def bandwidth(self):
         """Gets the bandwidth of this Eip.
 
-
         :return: The bandwidth of this Eip.
         :rtype: :class:`huaweicloudsdkbms.v1.BandWidth`
         """
@@ -91,7 +89,6 @@ class Eip:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this Eip.
-
 
         :param bandwidth: The bandwidth of this Eip.
         :type bandwidth: :class:`huaweicloudsdkbms.v1.BandWidth`
@@ -102,7 +99,6 @@ class Eip:
     def extendparam(self):
         """Gets the extendparam of this Eip.
 
-
         :return: The extendparam of this Eip.
         :rtype: :class:`huaweicloudsdkbms.v1.ExtendParamEip`
         """
@@ -111,7 +107,6 @@ class Eip:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this Eip.
-
 
         :param extendparam: The extendparam of this Eip.
         :type extendparam: :class:`huaweicloudsdkbms.v1.ExtendParamEip`

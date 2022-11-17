@@ -17,7 +17,6 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
     def protect_policy(self):
         """Gets the protect_policy of this ShowDomainProtectPolicyResponse.
 
-
         :return: The protect_policy of this ShowDomainProtectPolicyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponseBodyProtectPolicy`
         """
@@ -58,7 +56,6 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
     @protect_policy.setter
     def protect_policy(self, protect_policy):
         """Sets the protect_policy of this ShowDomainProtectPolicyResponse.
-
 
         :param protect_policy: The protect_policy of this ShowDomainProtectPolicyResponse.
         :type protect_policy: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponseBodyProtectPolicy`

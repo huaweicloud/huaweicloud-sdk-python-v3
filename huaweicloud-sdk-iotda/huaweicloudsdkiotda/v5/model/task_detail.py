@@ -17,7 +17,6 @@ class TaskDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -41,7 +40,7 @@ class TaskDetail:
 
         :param target: 执行批量任务的目标。
         :type target: str
-        :param status: 子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。 
+        :param status: 子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。
         :type status: str
         :param output: 子任务执行的输出信息。
         :type output: str
@@ -92,7 +91,7 @@ class TaskDetail:
     def status(self):
         """Gets the status of this TaskDetail.
 
-        子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。 
+        子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。
 
         :return: The status of this TaskDetail.
         :rtype: str
@@ -103,7 +102,7 @@ class TaskDetail:
     def status(self, status):
         """Sets the status of this TaskDetail.
 
-        子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。 
+        子任务的执行状态，结果范围：Processing，Success，Fail，Waitting，FailWaitRetry，Stopped。 - Waitting: 等待执行。 - Processing: 执行中。 - Success: 成功。 - Fail: 失败。 - FailWaitRetry: 失败重试。 - Stopped: 已停止。
 
         :param status: The status of this TaskDetail.
         :type status: str
@@ -136,7 +135,6 @@ class TaskDetail:
     def error(self):
         """Gets the error of this TaskDetail.
 
-
         :return: The error of this TaskDetail.
         :rtype: :class:`huaweicloudsdkiotda.v5.ErrorInfo`
         """
@@ -145,7 +143,6 @@ class TaskDetail:
     @error.setter
     def error(self, error):
         """Sets the error of this TaskDetail.
-
 
         :param error: The error of this TaskDetail.
         :type error: :class:`huaweicloudsdkiotda.v5.ErrorInfo`

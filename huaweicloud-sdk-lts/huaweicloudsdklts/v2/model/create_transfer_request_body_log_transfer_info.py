@@ -17,7 +17,6 @@ class CreateTransferRequestBodyLogTransferInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -167,7 +166,6 @@ class CreateTransferRequestBodyLogTransferInfo:
     def log_agency_transfer(self):
         """Gets the log_agency_transfer of this CreateTransferRequestBodyLogTransferInfo.
 
-
         :return: The log_agency_transfer of this CreateTransferRequestBodyLogTransferInfo.
         :rtype: :class:`huaweicloudsdklts.v2.CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer`
         """
@@ -176,7 +174,6 @@ class CreateTransferRequestBodyLogTransferInfo:
     @log_agency_transfer.setter
     def log_agency_transfer(self, log_agency_transfer):
         """Sets the log_agency_transfer of this CreateTransferRequestBodyLogTransferInfo.
-
 
         :param log_agency_transfer: The log_agency_transfer of this CreateTransferRequestBodyLogTransferInfo.
         :type log_agency_transfer: :class:`huaweicloudsdklts.v2.CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer`
@@ -187,7 +184,6 @@ class CreateTransferRequestBodyLogTransferInfo:
     def log_transfer_detail(self):
         """Gets the log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
 
-
         :return: The log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
         :rtype: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
@@ -196,7 +192,6 @@ class CreateTransferRequestBodyLogTransferInfo:
     @log_transfer_detail.setter
     def log_transfer_detail(self, log_transfer_detail):
         """Sets the log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
-
 
         :param log_transfer_detail: The log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
         :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`

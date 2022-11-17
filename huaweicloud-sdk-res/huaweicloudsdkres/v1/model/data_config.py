@@ -17,7 +17,6 @@ class DataConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class DataConfig:
     def offline(self):
         """Gets the offline of this DataConfig.
 
-
         :return: The offline of this DataConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Offline`
         """
@@ -64,7 +62,6 @@ class DataConfig:
     @offline.setter
     def offline(self, offline):
         """Sets the offline of this DataConfig.
-
 
         :param offline: The offline of this DataConfig.
         :type offline: :class:`huaweicloudsdkres.v1.Offline`
@@ -75,7 +72,6 @@ class DataConfig:
     def nearline(self):
         """Gets the nearline of this DataConfig.
 
-
         :return: The nearline of this DataConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Nearline`
         """
@@ -84,7 +80,6 @@ class DataConfig:
     @nearline.setter
     def nearline(self, nearline):
         """Sets the nearline of this DataConfig.
-
 
         :param nearline: The nearline of this DataConfig.
         :type nearline: :class:`huaweicloudsdkres.v1.Nearline`

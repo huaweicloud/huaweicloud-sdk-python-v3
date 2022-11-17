@@ -17,7 +17,6 @@ class AddDepartmentRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class AddDepartmentRequest:
     def body(self):
         """Gets the body of this AddDepartmentRequest.
 
-
         :return: The body of this AddDepartmentRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeptDTO`
         """
@@ -116,7 +114,6 @@ class AddDepartmentRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddDepartmentRequest.
-
 
         :param body: The body of this AddDepartmentRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.DeptDTO`

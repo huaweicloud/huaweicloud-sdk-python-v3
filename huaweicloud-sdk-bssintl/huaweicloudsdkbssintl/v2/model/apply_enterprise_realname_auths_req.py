@@ -17,7 +17,6 @@ class ApplyEnterpriseRealnameAuthsReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -304,7 +303,6 @@ class ApplyEnterpriseRealnameAuthsReq:
     def enterprise_person(self):
         """Gets the enterprise_person of this ApplyEnterpriseRealnameAuthsReq.
 
-
         :return: The enterprise_person of this ApplyEnterpriseRealnameAuthsReq.
         :rtype: :class:`huaweicloudsdkbssintl.v2.EnterprisePersonNew`
         """
@@ -313,7 +311,6 @@ class ApplyEnterpriseRealnameAuthsReq:
     @enterprise_person.setter
     def enterprise_person(self, enterprise_person):
         """Sets the enterprise_person of this ApplyEnterpriseRealnameAuthsReq.
-
 
         :param enterprise_person: The enterprise_person of this ApplyEnterpriseRealnameAuthsReq.
         :type enterprise_person: :class:`huaweicloudsdkbssintl.v2.EnterprisePersonNew`

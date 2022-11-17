@@ -17,7 +17,6 @@ class AssociateRouteTableRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AssociateRouteTableRequest:
     def body(self):
         """Gets the body of this AssociateRouteTableRequest.
 
-
         :return: The body of this AssociateRouteTableRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.RoutetableAssociateReqbody`
         """
@@ -86,7 +84,6 @@ class AssociateRouteTableRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AssociateRouteTableRequest.
-
 
         :param body: The body of this AssociateRouteTableRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.RoutetableAssociateReqbody`

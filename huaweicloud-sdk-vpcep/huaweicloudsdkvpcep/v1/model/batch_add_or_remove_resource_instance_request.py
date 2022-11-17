@@ -17,7 +17,6 @@ class BatchAddOrRemoveResourceInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchAddOrRemoveResourceInstanceRequest:
     def body(self):
         """Gets the body of this BatchAddOrRemoveResourceInstanceRequest.
 
-
         :return: The body of this BatchAddOrRemoveResourceInstanceRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceBody`
         """
@@ -114,7 +112,6 @@ class BatchAddOrRemoveResourceInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchAddOrRemoveResourceInstanceRequest.
-
 
         :param body: The body of this BatchAddOrRemoveResourceInstanceRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceBody`

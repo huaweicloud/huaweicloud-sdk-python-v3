@@ -17,7 +17,6 @@ class CreateManualBackupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class CreateManualBackupResponse(SdkResponse):
     def backup(self):
         """Gets the backup of this CreateManualBackupResponse.
 
-
         :return: The backup of this CreateManualBackupResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupInfo`
         """
@@ -65,7 +63,6 @@ class CreateManualBackupResponse(SdkResponse):
     @backup.setter
     def backup(self, backup):
         """Sets the backup of this CreateManualBackupResponse.
-
 
         :param backup: The backup of this CreateManualBackupResponse.
         :type backup: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupInfo`

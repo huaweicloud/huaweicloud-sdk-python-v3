@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IamClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -71,6 +65,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -106,6 +102,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateAgencyWithAllProjectsPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -134,6 +131,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -170,6 +169,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateAgencyWithDomainPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -198,6 +198,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -234,6 +236,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateAgencyWithProjectPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -262,6 +265,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -298,6 +303,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRoleToGroupOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -325,6 +331,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -361,6 +369,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRoleToUserOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -389,6 +398,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -425,6 +436,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckAllProjectsPermissionForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -453,6 +465,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -489,6 +503,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckDomainPermissionForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -517,6 +532,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -553,6 +570,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckProjectPermissionForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -581,6 +599,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -613,6 +633,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -642,6 +663,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -673,6 +696,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAgencyCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -702,6 +726,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -733,6 +759,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCloudServiceCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -764,6 +791,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -780,7 +809,7 @@ class IamClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-LoginToken"]
+        response_headers = ["X-Subject-LoginToken", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -795,6 +824,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLoginTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -825,6 +855,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -861,6 +893,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -887,6 +920,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -921,6 +956,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOpenIdConnectConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -948,6 +984,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -966,7 +1004,7 @@ class IamClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -981,6 +1019,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTokenWithIdTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1008,6 +1047,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1028,7 +1069,7 @@ class IamClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1043,6 +1084,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateUnscopedTokenWithIdTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1071,6 +1113,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1103,6 +1147,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1131,6 +1176,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1163,6 +1210,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1191,6 +1239,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1227,6 +1277,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDomainGroupInheritedRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1256,6 +1307,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1289,6 +1342,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneAddUserToGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1318,6 +1372,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1353,6 +1409,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneAssociateGroupWithDomainPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1382,6 +1439,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1417,6 +1476,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneAssociateGroupWithProjectPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1445,6 +1505,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1481,6 +1543,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCheckDomainPermissionForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1509,6 +1572,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1545,6 +1610,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCheckProjectPermissionForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1573,6 +1639,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1607,6 +1675,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCheckUserInGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1635,6 +1704,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1671,6 +1742,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCheckroleForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1699,6 +1771,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1731,6 +1805,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1759,6 +1834,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1793,6 +1870,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateIdentityProviderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1821,6 +1899,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1855,6 +1935,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1883,6 +1964,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1915,6 +1998,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1943,6 +2027,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1979,6 +2065,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateProtocolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2008,6 +2095,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2024,7 +2113,7 @@ class IamClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -2039,6 +2128,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateScopedTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2067,6 +2157,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2099,6 +2191,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2127,6 +2220,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2159,6 +2254,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteIdentityProviderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2187,6 +2283,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2219,6 +2317,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2247,6 +2346,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2281,6 +2382,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteProtocolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2307,6 +2409,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2341,6 +2445,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListAllProjectPermissionsForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2369,6 +2474,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2399,6 +2506,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListAuthDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2427,6 +2535,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2457,6 +2567,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListAuthProjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2485,6 +2596,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2519,6 +2632,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListDomainPermissionsForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2547,6 +2661,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2581,6 +2697,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListEndpointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2611,6 +2728,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2640,6 +2759,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListFederationDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2668,6 +2788,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2702,6 +2824,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2730,6 +2853,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2760,6 +2885,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListIdentityProvidersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2788,6 +2914,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2818,6 +2946,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListMappingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2846,6 +2975,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2892,6 +3023,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListPermissionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2920,6 +3052,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2954,6 +3088,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListProjectPermissionsForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2982,6 +3117,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3026,6 +3163,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListProjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3054,6 +3192,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3086,6 +3226,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListProjectsForUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3114,6 +3255,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3146,6 +3289,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListProtocolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3174,6 +3318,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3204,6 +3350,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3232,6 +3379,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3264,6 +3413,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListServicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3292,6 +3442,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3324,6 +3476,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListUsersForGroupByAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3352,6 +3505,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3382,6 +3537,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3410,6 +3566,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3446,6 +3604,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneRemoveDomainPermissionFromGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3474,6 +3633,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3510,6 +3671,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneRemoveProjectPermissionFromGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3538,6 +3700,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3572,6 +3736,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneRemoveUserFromGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3600,6 +3765,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3630,6 +3797,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowCatalogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3658,6 +3826,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3690,6 +3860,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3718,6 +3889,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3750,6 +3923,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3778,6 +3952,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3810,6 +3986,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowIdentityProviderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3838,6 +4015,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3870,6 +4049,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3898,6 +4078,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3930,6 +4112,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3958,6 +4141,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3990,6 +4175,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4018,6 +4204,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4052,6 +4240,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowProtocolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4080,6 +4269,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4112,6 +4303,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowRegionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4140,6 +4332,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4172,6 +4366,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowSecurityComplianceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4200,6 +4395,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4234,6 +4431,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowSecurityComplianceByOptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4262,6 +4460,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4294,6 +4494,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4322,6 +4523,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4352,6 +4555,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4380,6 +4584,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4414,6 +4620,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4442,6 +4649,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4476,6 +4685,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateIdentityProviderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4504,6 +4714,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4538,6 +4750,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4566,6 +4779,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4600,6 +4815,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4628,6 +4844,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4664,6 +4882,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateProtocolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4692,6 +4911,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4728,6 +4949,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAgenciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4756,6 +4978,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4790,6 +5014,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAllProjectsPermissionsForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4818,6 +5043,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4852,6 +5079,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4880,6 +5108,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4914,6 +5144,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainPermissionsForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4942,6 +5173,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4974,6 +5207,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnterpriseProjectsForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5002,6 +5236,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5034,6 +5270,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnterpriseProjectsForUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5062,6 +5299,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5094,6 +5333,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGroupsForEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5122,6 +5362,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5156,6 +5398,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectPermissionsForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5184,6 +5427,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5218,6 +5463,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRolesForGroupOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5245,6 +5491,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5279,6 +5527,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRolesForUserOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5306,6 +5555,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5338,6 +5589,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsersForEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5366,6 +5618,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5402,6 +5656,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveAllProjectsPermissionFromAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5430,6 +5685,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5466,6 +5723,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveDomainPermissionFromAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5494,6 +5752,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5530,6 +5790,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveProjectPermissionFromAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5558,6 +5819,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5594,6 +5857,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeRoleFromGroupOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5621,6 +5885,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5657,6 +5923,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeRoleFromUserOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5685,6 +5952,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5717,6 +5986,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5745,6 +6015,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5777,6 +6049,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5805,6 +6078,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5837,6 +6112,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainApiAclPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5865,6 +6141,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5897,6 +6175,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainConsoleAclPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5925,6 +6204,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5957,6 +6238,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainLoginPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5985,6 +6267,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6017,6 +6301,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainPasswordPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6045,6 +6330,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6077,6 +6364,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainProtectPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6105,6 +6393,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6139,6 +6429,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6166,6 +6457,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6224,6 +6517,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainRoleAssignmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6252,6 +6546,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6286,6 +6582,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6312,6 +6609,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6344,6 +6643,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOpenIdConnectConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6372,6 +6672,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6404,6 +6706,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectDetailsAndStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6432,6 +6735,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6464,6 +6769,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6492,6 +6798,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6526,6 +6834,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6555,6 +6864,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -6588,6 +6899,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAgencyCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6617,6 +6929,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -6650,6 +6964,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCloudServiceCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6678,6 +6993,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6712,6 +7029,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainApiAclPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6740,6 +7058,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6774,6 +7094,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainConsoleAclPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6802,6 +7123,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6838,6 +7161,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainGroupInheritRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6866,6 +7190,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6900,6 +7226,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainLoginPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6928,6 +7255,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6962,6 +7291,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainPasswordPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6990,6 +7320,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7024,6 +7356,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainProtectPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7050,6 +7383,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7084,6 +7419,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateOpenIdConnectConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7112,6 +7448,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7146,6 +7484,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7176,6 +7515,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7208,6 +7549,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePermanentAccessKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7239,6 +7581,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -7270,6 +7614,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemporaryAccessKeyByAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7301,6 +7646,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -7332,6 +7679,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemporaryAccessKeyByTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7360,6 +7708,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7392,6 +7742,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePermanentAccessKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7420,6 +7771,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7452,6 +7805,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPermanentAccessKeysResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7480,6 +7834,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7512,6 +7868,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPermanentAccessKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7540,6 +7897,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7574,6 +7933,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePermanentAccessKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7602,6 +7962,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7634,6 +7996,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBindingDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7662,6 +8025,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7694,6 +8059,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMfaDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7722,6 +8088,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7754,6 +8122,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7782,6 +8151,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7814,6 +8185,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBindingDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7842,6 +8214,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7876,6 +8250,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMfaDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7904,6 +8279,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7936,6 +8313,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7964,6 +8342,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7996,6 +8376,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8024,6 +8405,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8056,6 +8439,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListGroupsForUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8084,6 +8468,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8122,6 +8508,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8150,6 +8537,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8182,6 +8571,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8210,6 +8600,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8244,6 +8636,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateUserByAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8272,6 +8665,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8306,6 +8701,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateUserPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8334,6 +8730,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8364,6 +8762,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserLoginProtectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8392,6 +8791,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8422,6 +8823,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserMfaDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8450,6 +8852,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8482,6 +8886,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8510,6 +8915,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8542,6 +8949,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserLoginProtectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8570,6 +8978,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8602,6 +9012,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserMfaDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8630,6 +9041,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8664,6 +9077,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLoginProtectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8692,6 +9106,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8726,6 +9142,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8754,6 +9171,8 @@ class IamClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8788,6 +9207,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserInformationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8823,6 +9243,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -8841,7 +9263,7 @@ class IamClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -8856,6 +9278,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateAgencyTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8890,6 +9313,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -8908,7 +9333,7 @@ class IamClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -8923,6 +9348,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateUserTokenByPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8957,6 +9383,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -8975,7 +9403,7 @@ class IamClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -8990,6 +9418,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateUserTokenByPasswordAndMfaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9019,6 +9448,8 @@ class IamClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -9037,7 +9468,7 @@ class IamClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -9052,6 +9483,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneValidateTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9059,7 +9491,7 @@ class IamClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -9069,9 +9501,10 @@ class IamClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -9088,6 +9521,7 @@ class IamClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

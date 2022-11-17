@@ -17,7 +17,6 @@ class Counters:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class Counters:
     def org_apache_sqoop_submission_counter_sqoop_counters(self):
         """Gets the org_apache_sqoop_submission_counter_sqoop_counters of this Counters.
 
-
         :return: The org_apache_sqoop_submission_counter_sqoop_counters of this Counters.
         :rtype: :class:`huaweicloudsdkcdm.v1.Counter`
         """
@@ -57,7 +55,6 @@ class Counters:
     @org_apache_sqoop_submission_counter_sqoop_counters.setter
     def org_apache_sqoop_submission_counter_sqoop_counters(self, org_apache_sqoop_submission_counter_sqoop_counters):
         """Sets the org_apache_sqoop_submission_counter_sqoop_counters of this Counters.
-
 
         :param org_apache_sqoop_submission_counter_sqoop_counters: The org_apache_sqoop_submission_counter_sqoop_counters of this Counters.
         :type org_apache_sqoop_submission_counter_sqoop_counters: :class:`huaweicloudsdkcdm.v1.Counter`

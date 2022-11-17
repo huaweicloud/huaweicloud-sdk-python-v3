@@ -17,7 +17,6 @@ class CheckHostsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class CheckHostsRequest:
     def body(self):
         """Gets the body of this CheckHostsRequest.
 
-
         :return: The body of this CheckHostsRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.VerifyHostV2Req`
         """
@@ -173,7 +171,6 @@ class CheckHostsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckHostsRequest.
-
 
         :param body: The body of this CheckHostsRequest.
         :type body: :class:`huaweicloudsdkosm.v2.VerifyHostV2Req`

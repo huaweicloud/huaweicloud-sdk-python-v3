@@ -17,7 +17,6 @@ class DebugCaseResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -156,7 +155,6 @@ class DebugCaseResult:
     def header(self):
         """Gets the header of this DebugCaseResult.
 
-
         :return: The header of this DebugCaseResult.
         :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseResultHeader`
         """
@@ -165,7 +163,6 @@ class DebugCaseResult:
     @header.setter
     def header(self, header):
         """Sets the header of this DebugCaseResult.
-
 
         :param header: The header of this DebugCaseResult.
         :type header: :class:`huaweicloudsdkcpts.v1.DebugCaseResultHeader`
@@ -264,7 +261,6 @@ class DebugCaseResult:
     def return_header(self):
         """Gets the return_header of this DebugCaseResult.
 
-
         :return: The return_header of this DebugCaseResult.
         :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseReturnHeader`
         """
@@ -273,7 +269,6 @@ class DebugCaseResult:
     @return_header.setter
     def return_header(self, return_header):
         """Sets the return_header of this DebugCaseResult.
-
 
         :param return_header: The return_header of this DebugCaseResult.
         :type return_header: :class:`huaweicloudsdkcpts.v1.DebugCaseReturnHeader`

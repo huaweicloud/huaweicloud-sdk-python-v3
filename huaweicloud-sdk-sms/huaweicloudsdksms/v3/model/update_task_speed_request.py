@@ -17,7 +17,6 @@ class UpdateTaskSpeedRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateTaskSpeedRequest:
     def body(self):
         """Gets the body of this UpdateTaskSpeedRequest.
 
-
         :return: The body of this UpdateTaskSpeedRequest.
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedReq`
         """
@@ -86,7 +84,6 @@ class UpdateTaskSpeedRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateTaskSpeedRequest.
-
 
         :param body: The body of this UpdateTaskSpeedRequest.
         :type body: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedReq`

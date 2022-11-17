@@ -17,7 +17,6 @@ class CreateGlobleValueRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateGlobleValueRequest:
     def body(self):
         """Gets the body of this CreateGlobleValueRequest.
 
-
         :return: The body of this CreateGlobleValueRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateGlobalValueReq`
         """
@@ -58,7 +56,6 @@ class CreateGlobleValueRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateGlobleValueRequest.
-
 
         :param body: The body of this CreateGlobleValueRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateGlobalValueReq`

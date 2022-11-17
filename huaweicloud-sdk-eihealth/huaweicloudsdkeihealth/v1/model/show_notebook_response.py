@@ -17,7 +17,6 @@ class ShowNotebookResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -243,7 +242,6 @@ class ShowNotebookResponse(SdkResponse):
     def flavor(self):
         """Gets the flavor of this ShowNotebookResponse.
 
-
         :return: The flavor of this ShowNotebookResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
         """
@@ -252,7 +250,6 @@ class ShowNotebookResponse(SdkResponse):
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this ShowNotebookResponse.
-
 
         :param flavor: The flavor of this ShowNotebookResponse.
         :type flavor: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
@@ -263,7 +260,6 @@ class ShowNotebookResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowNotebookResponse.
 
-
         :return: The status of this ShowNotebookResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
         """
@@ -272,7 +268,6 @@ class ShowNotebookResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this ShowNotebookResponse.
-
 
         :param status: The status of this ShowNotebookResponse.
         :type status: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
@@ -283,7 +278,6 @@ class ShowNotebookResponse(SdkResponse):
     def image(self):
         """Gets the image of this ShowNotebookResponse.
 
-
         :return: The image of this ShowNotebookResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
         """
@@ -292,7 +286,6 @@ class ShowNotebookResponse(SdkResponse):
     @image.setter
     def image(self, image):
         """Sets the image of this ShowNotebookResponse.
-
 
         :param image: The image of this ShowNotebookResponse.
         :type image: :class:`huaweicloudsdkeihealth.v1.NotebookImage`

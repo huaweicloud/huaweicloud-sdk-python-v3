@@ -17,7 +17,6 @@ class CheckParametersResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CheckParametersResponse(SdkResponse):
     def body(self):
         """Gets the body of this CheckParametersResponse.
 
-
         :return: The body of this CheckParametersResponse.
         :rtype: list[:class:`huaweicloudsdkcodecheck.v2.TaskCheckParamters`]
         """
@@ -58,7 +56,6 @@ class CheckParametersResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this CheckParametersResponse.
-
 
         :param body: The body of this CheckParametersResponse.
         :type body: list[:class:`huaweicloudsdkcodecheck.v2.TaskCheckParamters`]

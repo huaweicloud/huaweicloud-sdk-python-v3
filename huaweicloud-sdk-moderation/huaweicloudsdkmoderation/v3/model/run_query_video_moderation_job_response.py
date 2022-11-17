@@ -17,7 +17,6 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -157,7 +156,6 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
     def request_params(self):
         """Gets the request_params of this RunQueryVideoModerationJobResponse.
 
-
         :return: The request_params of this RunQueryVideoModerationJobResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoModerationResultRequestParams`
         """
@@ -166,7 +164,6 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
     @request_params.setter
     def request_params(self, request_params):
         """Sets the request_params of this RunQueryVideoModerationJobResponse.
-
 
         :param request_params: The request_params of this RunQueryVideoModerationJobResponse.
         :type request_params: :class:`huaweicloudsdkmoderation.v3.VideoModerationResultRequestParams`
@@ -221,7 +218,6 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
     def result(self):
         """Gets the result of this RunQueryVideoModerationJobResponse.
 
-
         :return: The result of this RunQueryVideoModerationJobResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoModerationResultResult`
         """
@@ -230,7 +226,6 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RunQueryVideoModerationJobResponse.
-
 
         :param result: The result of this RunQueryVideoModerationJobResponse.
         :type result: :class:`huaweicloudsdkmoderation.v3.VideoModerationResultResult`

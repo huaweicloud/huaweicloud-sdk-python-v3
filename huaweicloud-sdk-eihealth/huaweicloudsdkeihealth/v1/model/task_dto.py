@@ -17,7 +17,6 @@ class TaskDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -177,7 +176,6 @@ class TaskDto:
     def resources(self):
         """Gets the resources of this TaskDto.
 
-
         :return: The resources of this TaskDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
         """
@@ -186,7 +184,6 @@ class TaskDto:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this TaskDto.
-
 
         :param resources: The resources of this TaskDto.
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -197,7 +194,6 @@ class TaskDto:
     def location(self):
         """Gets the location of this TaskDto.
 
-
         :return: The location of this TaskDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`
         """
@@ -206,7 +202,6 @@ class TaskDto:
     @location.setter
     def location(self, location):
         """Sets the location of this TaskDto.
-
 
         :param location: The location of this TaskDto.
         :type location: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`

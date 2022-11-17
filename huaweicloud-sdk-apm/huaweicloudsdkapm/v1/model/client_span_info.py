@@ -17,7 +17,6 @@ class ClientSpanInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -218,7 +217,6 @@ class ClientSpanInfo:
     def global_path(self):
         """Gets the global_path of this ClientSpanInfo.
 
-
         :return: The global_path of this ClientSpanInfo.
         :rtype: str
         """
@@ -227,7 +225,6 @@ class ClientSpanInfo:
     @global_path.setter
     def global_path(self, global_path):
         """Sets the global_path of this ClientSpanInfo.
-
 
         :param global_path: The global_path of this ClientSpanInfo.
         :type global_path: str
@@ -238,7 +235,6 @@ class ClientSpanInfo:
     def trace_id(self):
         """Gets the trace_id of this ClientSpanInfo.
 
-
         :return: The trace_id of this ClientSpanInfo.
         :rtype: str
         """
@@ -247,7 +243,6 @@ class ClientSpanInfo:
     @trace_id.setter
     def trace_id(self, trace_id):
         """Sets the trace_id of this ClientSpanInfo.
-
 
         :param trace_id: The trace_id of this ClientSpanInfo.
         :type trace_id: str
@@ -258,7 +253,6 @@ class ClientSpanInfo:
     def span_id(self):
         """Gets the span_id of this ClientSpanInfo.
 
-
         :return: The span_id of this ClientSpanInfo.
         :rtype: str
         """
@@ -267,7 +261,6 @@ class ClientSpanInfo:
     @span_id.setter
     def span_id(self, span_id):
         """Sets the span_id of this ClientSpanInfo.
-
 
         :param span_id: The span_id of this ClientSpanInfo.
         :type span_id: str
@@ -278,7 +271,6 @@ class ClientSpanInfo:
     def env_id(self):
         """Gets the env_id of this ClientSpanInfo.
 
-
         :return: The env_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -287,7 +279,6 @@ class ClientSpanInfo:
     @env_id.setter
     def env_id(self, env_id):
         """Sets the env_id of this ClientSpanInfo.
-
 
         :param env_id: The env_id of this ClientSpanInfo.
         :type env_id: int
@@ -298,7 +289,6 @@ class ClientSpanInfo:
     def instance_id(self):
         """Gets the instance_id of this ClientSpanInfo.
 
-
         :return: The instance_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -307,7 +297,6 @@ class ClientSpanInfo:
     @instance_id.setter
     def instance_id(self, instance_id):
         """Sets the instance_id of this ClientSpanInfo.
-
 
         :param instance_id: The instance_id of this ClientSpanInfo.
         :type instance_id: int
@@ -318,7 +307,6 @@ class ClientSpanInfo:
     def app_id(self):
         """Gets the app_id of this ClientSpanInfo.
 
-
         :return: The app_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -327,7 +315,6 @@ class ClientSpanInfo:
     @app_id.setter
     def app_id(self, app_id):
         """Sets the app_id of this ClientSpanInfo.
-
 
         :param app_id: The app_id of this ClientSpanInfo.
         :type app_id: int
@@ -338,7 +325,6 @@ class ClientSpanInfo:
     def biz_id(self):
         """Gets the biz_id of this ClientSpanInfo.
 
-
         :return: The biz_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -347,7 +333,6 @@ class ClientSpanInfo:
     @biz_id.setter
     def biz_id(self, biz_id):
         """Sets the biz_id of this ClientSpanInfo.
-
 
         :param biz_id: The biz_id of this ClientSpanInfo.
         :type biz_id: int
@@ -358,7 +343,6 @@ class ClientSpanInfo:
     def domain_id(self):
         """Gets the domain_id of this ClientSpanInfo.
 
-
         :return: The domain_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -367,7 +351,6 @@ class ClientSpanInfo:
     @domain_id.setter
     def domain_id(self, domain_id):
         """Sets the domain_id of this ClientSpanInfo.
-
 
         :param domain_id: The domain_id of this ClientSpanInfo.
         :type domain_id: int
@@ -378,7 +361,6 @@ class ClientSpanInfo:
     def source(self):
         """Gets the source of this ClientSpanInfo.
 
-
         :return: The source of this ClientSpanInfo.
         :rtype: str
         """
@@ -387,7 +369,6 @@ class ClientSpanInfo:
     @source.setter
     def source(self, source):
         """Sets the source of this ClientSpanInfo.
-
 
         :param source: The source of this ClientSpanInfo.
         :type source: str
@@ -398,7 +379,6 @@ class ClientSpanInfo:
     def real_source(self):
         """Gets the real_source of this ClientSpanInfo.
 
-
         :return: The real_source of this ClientSpanInfo.
         :rtype: str
         """
@@ -407,7 +387,6 @@ class ClientSpanInfo:
     @real_source.setter
     def real_source(self, real_source):
         """Sets the real_source of this ClientSpanInfo.
-
 
         :param real_source: The real_source of this ClientSpanInfo.
         :type real_source: str
@@ -418,7 +397,6 @@ class ClientSpanInfo:
     def start_time(self):
         """Gets the start_time of this ClientSpanInfo.
 
-
         :return: The start_time of this ClientSpanInfo.
         :rtype: int
         """
@@ -427,7 +405,6 @@ class ClientSpanInfo:
     @start_time.setter
     def start_time(self, start_time):
         """Sets the start_time of this ClientSpanInfo.
-
 
         :param start_time: The start_time of this ClientSpanInfo.
         :type start_time: int
@@ -438,7 +415,6 @@ class ClientSpanInfo:
     def time_used(self):
         """Gets the time_used of this ClientSpanInfo.
 
-
         :return: The time_used of this ClientSpanInfo.
         :rtype: int
         """
@@ -447,7 +423,6 @@ class ClientSpanInfo:
     @time_used.setter
     def time_used(self, time_used):
         """Sets the time_used of this ClientSpanInfo.
-
 
         :param time_used: The time_used of this ClientSpanInfo.
         :type time_used: int
@@ -458,7 +433,6 @@ class ClientSpanInfo:
     def code(self):
         """Gets the code of this ClientSpanInfo.
 
-
         :return: The code of this ClientSpanInfo.
         :rtype: int
         """
@@ -467,7 +441,6 @@ class ClientSpanInfo:
     @code.setter
     def code(self, code):
         """Sets the code of this ClientSpanInfo.
-
 
         :param code: The code of this ClientSpanInfo.
         :type code: int
@@ -478,7 +451,6 @@ class ClientSpanInfo:
     def class_name(self):
         """Gets the class_name of this ClientSpanInfo.
 
-
         :return: The class_name of this ClientSpanInfo.
         :rtype: str
         """
@@ -487,7 +459,6 @@ class ClientSpanInfo:
     @class_name.setter
     def class_name(self, class_name):
         """Sets the class_name of this ClientSpanInfo.
-
 
         :param class_name: The class_name of this ClientSpanInfo.
         :type class_name: str
@@ -498,7 +469,6 @@ class ClientSpanInfo:
     def is_async(self):
         """Gets the is_async of this ClientSpanInfo.
 
-
         :return: The is_async of this ClientSpanInfo.
         :rtype: bool
         """
@@ -507,7 +477,6 @@ class ClientSpanInfo:
     @is_async.setter
     def is_async(self, is_async):
         """Sets the is_async of this ClientSpanInfo.
-
 
         :param is_async: The is_async of this ClientSpanInfo.
         :type is_async: bool
@@ -518,7 +487,6 @@ class ClientSpanInfo:
     def tags(self):
         """Gets the tags of this ClientSpanInfo.
 
-
         :return: The tags of this ClientSpanInfo.
         :rtype: dict(str, str)
         """
@@ -527,7 +495,6 @@ class ClientSpanInfo:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ClientSpanInfo.
-
 
         :param tags: The tags of this ClientSpanInfo.
         :type tags: dict(str, str)
@@ -538,7 +505,6 @@ class ClientSpanInfo:
     def has_error(self):
         """Gets the has_error of this ClientSpanInfo.
 
-
         :return: The has_error of this ClientSpanInfo.
         :rtype: bool
         """
@@ -547,7 +513,6 @@ class ClientSpanInfo:
     @has_error.setter
     def has_error(self, has_error):
         """Sets the has_error of this ClientSpanInfo.
-
 
         :param has_error: The has_error of this ClientSpanInfo.
         :type has_error: bool
@@ -558,7 +523,6 @@ class ClientSpanInfo:
     def error_reasons(self):
         """Gets the error_reasons of this ClientSpanInfo.
 
-
         :return: The error_reasons of this ClientSpanInfo.
         :rtype: str
         """
@@ -567,7 +531,6 @@ class ClientSpanInfo:
     @error_reasons.setter
     def error_reasons(self, error_reasons):
         """Sets the error_reasons of this ClientSpanInfo.
-
 
         :param error_reasons: The error_reasons of this ClientSpanInfo.
         :type error_reasons: str

@@ -17,7 +17,6 @@ class CreateWhitelistResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateWhitelistResponse(SdkResponse):
     def whitelist(self):
         """Gets the whitelist of this CreateWhitelistResponse.
 
-
         :return: The whitelist of this CreateWhitelistResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.WhitelistResp`
         """
@@ -58,7 +56,6 @@ class CreateWhitelistResponse(SdkResponse):
     @whitelist.setter
     def whitelist(self, whitelist):
         """Sets the whitelist of this CreateWhitelistResponse.
-
 
         :param whitelist: The whitelist of this CreateWhitelistResponse.
         :type whitelist: :class:`huaweicloudsdkelb.v2.WhitelistResp`

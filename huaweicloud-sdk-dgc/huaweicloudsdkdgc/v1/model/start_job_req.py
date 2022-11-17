@@ -17,7 +17,6 @@ class StartJobReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class StartJobReq:
     def job_params(self):
         """Gets the job_params of this StartJobReq.
 
-
         :return: The job_params of this StartJobReq.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
         """
@@ -58,7 +56,6 @@ class StartJobReq:
     @job_params.setter
     def job_params(self, job_params):
         """Sets the job_params of this StartJobReq.
-
 
         :param job_params: The job_params of this StartJobReq.
         :type job_params: list[:class:`huaweicloudsdkdgc.v1.JobParam`]

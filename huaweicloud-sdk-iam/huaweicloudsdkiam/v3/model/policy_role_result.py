@@ -17,7 +17,6 @@ class PolicyRoleResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -300,7 +299,6 @@ class PolicyRoleResult:
     def links(self):
         """Gets the links of this PolicyRoleResult.
 
-
         :return: The links of this PolicyRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
@@ -309,7 +307,6 @@ class PolicyRoleResult:
     @links.setter
     def links(self, links):
         """Sets the links of this PolicyRoleResult.
-
 
         :param links: The links of this PolicyRoleResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -386,7 +383,6 @@ class PolicyRoleResult:
     def policy(self):
         """Gets the policy of this PolicyRoleResult.
 
-
         :return: The policy of this PolicyRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
         """
@@ -395,7 +391,6 @@ class PolicyRoleResult:
     @policy.setter
     def policy(self, policy):
         """Sets the policy of this PolicyRoleResult.
-
 
         :param policy: The policy of this PolicyRoleResult.
         :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`

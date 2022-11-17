@@ -17,7 +17,6 @@ class ContentDetailRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -119,7 +118,6 @@ class ContentDetailRsp:
     def iotda_content(self):
         """Gets the iotda_content of this ContentDetailRsp.
 
-
         :return: The iotda_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentRsp`
         """
@@ -128,7 +126,6 @@ class ContentDetailRsp:
     @iotda_content.setter
     def iotda_content(self, iotda_content):
         """Sets the iotda_content of this ContentDetailRsp.
-
 
         :param iotda_content: The iotda_content of this ContentDetailRsp.
         :type iotda_content: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentRsp`
@@ -139,7 +136,6 @@ class ContentDetailRsp:
     def obs_content(self):
         """Gets the obs_content of this ContentDetailRsp.
 
-
         :return: The obs_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ObsContentRsp`
         """
@@ -148,7 +144,6 @@ class ContentDetailRsp:
     @obs_content.setter
     def obs_content(self, obs_content):
         """Sets the obs_content of this ContentDetailRsp.
-
 
         :param obs_content: The obs_content of this ContentDetailRsp.
         :type obs_content: :class:`huaweicloudsdkiotanalytics.v1.ObsContentRsp`
@@ -159,7 +154,6 @@ class ContentDetailRsp:
     def dis_content(self):
         """Gets the dis_content of this ContentDetailRsp.
 
-
         :return: The dis_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DisContentRsp`
         """
@@ -168,7 +162,6 @@ class ContentDetailRsp:
     @dis_content.setter
     def dis_content(self, dis_content):
         """Sets the dis_content of this ContentDetailRsp.
-
 
         :param dis_content: The dis_content of this ContentDetailRsp.
         :type dis_content: :class:`huaweicloudsdkiotanalytics.v1.DisContentRsp`
@@ -179,7 +172,6 @@ class ContentDetailRsp:
     def smn_content(self):
         """Gets the smn_content of this ContentDetailRsp.
 
-
         :return: The smn_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SmnContentRsp`
         """
@@ -188,7 +180,6 @@ class ContentDetailRsp:
     @smn_content.setter
     def smn_content(self, smn_content):
         """Sets the smn_content of this ContentDetailRsp.
-
 
         :param smn_content: The smn_content of this ContentDetailRsp.
         :type smn_content: :class:`huaweicloudsdkiotanalytics.v1.SmnContentRsp`
@@ -199,7 +190,6 @@ class ContentDetailRsp:
     def function_graph_content(self):
         """Gets the function_graph_content of this ContentDetailRsp.
 
-
         :return: The function_graph_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentRsp`
         """
@@ -208,7 +198,6 @@ class ContentDetailRsp:
     @function_graph_content.setter
     def function_graph_content(self, function_graph_content):
         """Sets the function_graph_content of this ContentDetailRsp.
-
 
         :param function_graph_content: The function_graph_content of this ContentDetailRsp.
         :type function_graph_content: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentRsp`
@@ -219,7 +208,6 @@ class ContentDetailRsp:
     def model_arts_content(self):
         """Gets the model_arts_content of this ContentDetailRsp.
 
-
         :return: The model_arts_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentRsp`
         """
@@ -228,7 +216,6 @@ class ContentDetailRsp:
     @model_arts_content.setter
     def model_arts_content(self, model_arts_content):
         """Sets the model_arts_content of this ContentDetailRsp.
-
 
         :param model_arts_content: The model_arts_content of this ContentDetailRsp.
         :type model_arts_content: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentRsp`
@@ -239,7 +226,6 @@ class ContentDetailRsp:
     def dcs_content(self):
         """Gets the dcs_content of this ContentDetailRsp.
 
-
         :return: The dcs_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DcsContentRsp`
         """
@@ -248,7 +234,6 @@ class ContentDetailRsp:
     @dcs_content.setter
     def dcs_content(self, dcs_content):
         """Sets the dcs_content of this ContentDetailRsp.
-
 
         :param dcs_content: The dcs_content of this ContentDetailRsp.
         :type dcs_content: :class:`huaweicloudsdkiotanalytics.v1.DcsContentRsp`
@@ -259,7 +244,6 @@ class ContentDetailRsp:
     def kafka_content(self):
         """Gets the kafka_content of this ContentDetailRsp.
 
-
         :return: The kafka_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentRsp`
         """
@@ -268,7 +252,6 @@ class ContentDetailRsp:
     @kafka_content.setter
     def kafka_content(self, kafka_content):
         """Sets the kafka_content of this ContentDetailRsp.
-
 
         :param kafka_content: The kafka_content of this ContentDetailRsp.
         :type kafka_content: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentRsp`
@@ -279,7 +262,6 @@ class ContentDetailRsp:
     def api_content(self):
         """Gets the api_content of this ContentDetailRsp.
 
-
         :return: The api_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ApiContentRsp`
         """
@@ -288,7 +270,6 @@ class ContentDetailRsp:
     @api_content.setter
     def api_content(self, api_content):
         """Sets the api_content of this ContentDetailRsp.
-
 
         :param api_content: The api_content of this ContentDetailRsp.
         :type api_content: :class:`huaweicloudsdkiotanalytics.v1.ApiContentRsp`
@@ -299,7 +280,6 @@ class ContentDetailRsp:
     def node_content(self):
         """Gets the node_content of this ContentDetailRsp.
 
-
         :return: The node_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.NodeContentRsp`
         """
@@ -308,7 +288,6 @@ class ContentDetailRsp:
     @node_content.setter
     def node_content(self, node_content):
         """Sets the node_content of this ContentDetailRsp.
-
 
         :param node_content: The node_content of this ContentDetailRsp.
         :type node_content: :class:`huaweicloudsdkiotanalytics.v1.NodeContentRsp`
@@ -319,7 +298,6 @@ class ContentDetailRsp:
     def edge_content(self):
         """Gets the edge_content of this ContentDetailRsp.
 
-
         :return: The edge_content of this ContentDetailRsp.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentRsp`
         """
@@ -328,7 +306,6 @@ class ContentDetailRsp:
     @edge_content.setter
     def edge_content(self, edge_content):
         """Sets the edge_content of this ContentDetailRsp.
-
 
         :param edge_content: The edge_content of this ContentDetailRsp.
         :type edge_content: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentRsp`

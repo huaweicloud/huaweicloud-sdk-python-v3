@@ -17,7 +17,6 @@ class RecognizeHandwritingResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeHandwritingResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeHandwritingResponse.
 
-
         :return: The result of this RecognizeHandwritingResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.HandwritingResult`
         """
@@ -58,7 +56,6 @@ class RecognizeHandwritingResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeHandwritingResponse.
-
 
         :param result: The result of this RecognizeHandwritingResponse.
         :type result: :class:`huaweicloudsdkocr.v1.HandwritingResult`

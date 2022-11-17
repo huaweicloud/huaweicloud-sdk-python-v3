@@ -17,7 +17,6 @@ class AffinityNodeAffinity:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class AffinityNodeAffinity:
     def required_during_scheduling_ignored_during_execution(self):
         """Gets the required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
 
-
         :return: The required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
         :rtype: :class:`huaweicloudsdkief.v1.RequiredDuringScheduling`
         """
@@ -87,7 +85,6 @@ class AffinityNodeAffinity:
     @required_during_scheduling_ignored_during_execution.setter
     def required_during_scheduling_ignored_during_execution(self, required_during_scheduling_ignored_during_execution):
         """Sets the required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
-
 
         :param required_during_scheduling_ignored_during_execution: The required_during_scheduling_ignored_during_execution of this AffinityNodeAffinity.
         :type required_during_scheduling_ignored_during_execution: :class:`huaweicloudsdkief.v1.RequiredDuringScheduling`

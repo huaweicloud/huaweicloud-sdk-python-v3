@@ -17,7 +17,6 @@ class ListCbhInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class ListCbhInstanceResponse(SdkResponse):
     def quota_detail(self):
         """Gets the quota_detail of this ListCbhInstanceResponse.
 
-
         :return: The quota_detail of this ListCbhInstanceResponse.
         :rtype: :class:`huaweicloudsdkcbh.v1.QuotaDetail`
         """
@@ -94,7 +92,6 @@ class ListCbhInstanceResponse(SdkResponse):
     @quota_detail.setter
     def quota_detail(self, quota_detail):
         """Sets the quota_detail of this ListCbhInstanceResponse.
-
 
         :param quota_detail: The quota_detail of this ListCbhInstanceResponse.
         :type quota_detail: :class:`huaweicloudsdkcbh.v1.QuotaDetail`

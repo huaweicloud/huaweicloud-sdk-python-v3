@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class BssClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConversionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -195,6 +195,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -253,6 +255,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerBillsMonthlyBreakDownResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -279,6 +282,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -313,6 +318,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFreeResourceInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -339,6 +345,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -373,6 +381,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFreeResourceUsagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -401,6 +410,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -439,6 +450,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIncentiveDiscountPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -465,6 +477,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -497,6 +511,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMeasureUnitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -523,6 +538,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -567,6 +584,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPartnerAccountChangeRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -593,6 +611,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -629,6 +649,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -658,6 +679,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -704,6 +727,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceUsageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -734,6 +758,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -778,6 +804,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceUsageSummaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -804,6 +831,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -840,6 +869,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServiceTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -866,6 +896,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -904,6 +936,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStoredValueCardsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -932,6 +965,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -964,6 +999,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeEnterpriseRealnameAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -993,6 +1029,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1025,6 +1063,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckUserIdentityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1051,6 +1090,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1081,6 +1122,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnterpriseProjectAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1109,6 +1151,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1141,6 +1185,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnterpriseRealnameAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1173,6 +1218,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1204,6 +1251,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePartnerCouponsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1232,6 +1280,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1264,6 +1314,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePersonalRealnameAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1292,6 +1343,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1326,6 +1379,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1360,6 +1414,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1391,6 +1447,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSubCustomerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1419,6 +1476,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1451,6 +1510,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSubEnterpriseAccountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1479,6 +1539,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1511,6 +1573,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePostalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1537,6 +1600,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1575,6 +1640,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCitiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1604,6 +1670,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1638,6 +1706,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConsumeSubCustomersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1664,6 +1733,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1702,6 +1773,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCountiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1733,6 +1805,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1779,6 +1853,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCouponQuotasRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1807,6 +1882,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1873,6 +1950,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerBillsFeeRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1899,6 +1977,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1933,6 +2013,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerOnDemandResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1965,6 +2046,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1996,6 +2079,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomersBalancesDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2028,6 +2112,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2059,6 +2145,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerselfResourceRecordDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2087,6 +2174,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2149,6 +2238,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerselfResourceRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2175,6 +2265,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2213,6 +2305,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnterpriseMultiAccountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2239,6 +2332,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2273,6 +2368,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnterpriseOrganizationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2299,6 +2395,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2341,6 +2439,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnterpriseSubCustomersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2369,6 +2468,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2401,6 +2502,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIndirectPartnersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2432,6 +2534,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2472,6 +2576,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssuedCouponQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2500,6 +2605,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2558,6 +2665,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssuedPartnerCouponsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2592,6 +2700,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2623,6 +2733,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOnDemandResourceRatingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2649,6 +2760,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2681,6 +2794,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOrderDiscountsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2709,6 +2823,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2755,6 +2871,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPartnerAdjustRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2781,6 +2898,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2813,6 +2932,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPartnerBalancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2841,6 +2961,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2895,6 +3017,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPartnerCouponsRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2923,6 +3046,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2957,6 +3082,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostalAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2983,6 +3109,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3019,6 +3147,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProvincesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3047,6 +3176,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3079,6 +3210,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotaCouponsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3113,6 +3245,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -3144,6 +3278,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRateOnPeriodDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3170,6 +3305,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3208,6 +3345,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServiceResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3241,6 +3379,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3305,6 +3445,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubCustomerBillDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3333,6 +3474,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3385,6 +3528,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubCustomerCouponsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3413,6 +3557,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3445,6 +3591,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubCustomersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3477,6 +3624,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3523,6 +3672,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubcustomerMonthlyBillsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3549,6 +3699,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3587,6 +3739,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsageTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3615,6 +3768,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3647,6 +3802,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ReclaimCouponQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3675,6 +3831,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3707,6 +3865,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ReclaimIndirectPartnerAccountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3739,6 +3898,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -3770,6 +3931,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ReclaimPartnerCouponsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3798,6 +3960,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3830,6 +3994,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ReclaimSubEnterpriseAmountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3858,6 +4023,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3890,6 +4057,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ReclaimToPartnerAccountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3916,6 +4084,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3948,6 +4118,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendSmsVerificationCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3974,6 +4145,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4006,6 +4179,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendVerificationMessageCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4034,6 +4208,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4064,6 +4240,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCustomerAccountBalancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4095,6 +4272,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4139,6 +4318,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCustomerMonthlySumResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4165,6 +4345,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4201,6 +4383,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMultiAccountTransferAmountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4227,6 +4410,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4259,6 +4444,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRealnameAuthenticationReviewResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4287,6 +4473,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4319,6 +4507,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCouponQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4347,6 +4536,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4379,6 +4570,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCustomerAccountAmountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4407,6 +4599,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4439,6 +4633,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIndirectPartnerAccountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4475,6 +4670,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4506,6 +4703,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePeriodToOnDemandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4534,6 +4732,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4568,6 +4768,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePostalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4594,6 +4795,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4626,6 +4829,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSubEnterpriseAmountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4662,6 +4866,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4693,6 +4899,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AutoRenewalResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4727,6 +4934,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4758,6 +4967,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelAutoRenewalResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4790,6 +5000,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4821,6 +5033,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelCustomerOrderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4858,6 +5071,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4889,6 +5104,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelResourcesSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4920,6 +5136,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4976,6 +5194,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerOrdersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5002,6 +5221,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5034,6 +5255,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOrderCouponsByOrderIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5063,6 +5285,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5095,6 +5319,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPayPerUseCustomerResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5131,6 +5356,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -5162,6 +5389,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PayOrdersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5196,6 +5424,8 @@ class BssClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -5227,6 +5457,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RenewalResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5258,6 +5489,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5298,6 +5531,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCustomerOrderDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5328,6 +5562,8 @@ class BssClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5360,6 +5596,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRefundOrderDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5367,7 +5604,7 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -5377,9 +5614,10 @@ class BssClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -5396,6 +5634,7 @@ class BssClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

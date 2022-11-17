@@ -17,7 +17,6 @@ class NodeDevice:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class NodeDevice:
     def added(self):
         """Gets the added of this NodeDevice.
 
-
         :return: The added of this NodeDevice.
         :rtype: :class:`huaweicloudsdkief.v1.DeviceInfos`
         """
@@ -65,7 +63,6 @@ class NodeDevice:
     @added.setter
     def added(self, added):
         """Sets the added of this NodeDevice.
-
 
         :param added: The added of this NodeDevice.
         :type added: :class:`huaweicloudsdkief.v1.DeviceInfos`

@@ -17,7 +17,6 @@ class UpdateServerMetadataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateServerMetadataRequest:
     def body(self):
         """Gets the body of this UpdateServerMetadataRequest.
 
-
         :return: The body of this UpdateServerMetadataRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateServerMetadataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateServerMetadataRequest.
-
 
         :param body: The body of this UpdateServerMetadataRequest.
         :type body: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequestBody`

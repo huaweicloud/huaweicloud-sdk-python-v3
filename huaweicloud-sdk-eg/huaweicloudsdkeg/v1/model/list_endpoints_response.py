@@ -17,7 +17,6 @@ class ListEndpointsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class ListEndpointsResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this ListEndpointsResponse.
 
-
         :return: The x_request_id of this ListEndpointsResponse.
         :rtype: str
         """
@@ -145,7 +143,6 @@ class ListEndpointsResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ListEndpointsResponse.
-
 
         :param x_request_id: The x_request_id of this ListEndpointsResponse.
         :type x_request_id: str

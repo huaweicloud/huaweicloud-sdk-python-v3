@@ -17,7 +17,6 @@ class CreateClustersTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateClustersTagsRequest:
     def body(self):
         """Gets the body of this CreateClustersTagsRequest.
 
-
         :return: The body of this CreateClustersTagsRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.TagReq`
         """
@@ -114,7 +112,6 @@ class CreateClustersTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateClustersTagsRequest.
-
 
         :param body: The body of this CreateClustersTagsRequest.
         :type body: :class:`huaweicloudsdkcss.v1.TagReq`

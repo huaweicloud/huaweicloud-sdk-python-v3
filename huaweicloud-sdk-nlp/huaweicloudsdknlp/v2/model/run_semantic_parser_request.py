@@ -17,7 +17,6 @@ class RunSemanticParserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunSemanticParserRequest:
     def body(self):
         """Gets the body of this RunSemanticParserRequest.
 
-
         :return: The body of this RunSemanticParserRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.IntentReq`
         """
@@ -58,7 +56,6 @@ class RunSemanticParserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunSemanticParserRequest.
-
 
         :param body: The body of this RunSemanticParserRequest.
         :type body: :class:`huaweicloudsdknlp.v2.IntentReq`

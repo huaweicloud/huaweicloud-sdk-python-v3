@@ -17,7 +17,6 @@ class CreateKeywordsAlarmRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateKeywordsAlarmRuleRequest:
     def body(self):
         """Gets the body of this CreateKeywordsAlarmRuleRequest.
 
-
         :return: The body of this CreateKeywordsAlarmRuleRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateKeywordsAlarmRuleRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateKeywordsAlarmRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateKeywordsAlarmRuleRequest.
-
 
         :param body: The body of this CreateKeywordsAlarmRuleRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateKeywordsAlarmRuleRequestBody`

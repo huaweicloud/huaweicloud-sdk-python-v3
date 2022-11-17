@@ -17,7 +17,6 @@ class CreateEdgeNodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateEdgeNodeResponse(SdkResponse):
     def node(self):
         """Gets the node of this CreateEdgeNodeResponse.
 
-
         :return: The node of this CreateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeResp`
         """
@@ -58,7 +56,6 @@ class CreateEdgeNodeResponse(SdkResponse):
     @node.setter
     def node(self, node):
         """Sets the node of this CreateEdgeNodeResponse.
-
 
         :param node: The node of this CreateEdgeNodeResponse.
         :type node: :class:`huaweicloudsdkief.v1.EdgeNodeResp`

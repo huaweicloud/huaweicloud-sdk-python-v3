@@ -17,7 +17,6 @@ class UploadExtensionFileRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UploadExtensionFileRequest:
     def body(self):
         """Gets the body of this UploadExtensionFileRequest.
 
-
         :return: The body of this UploadExtensionFileRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileRequestBody`
         """
@@ -86,7 +84,6 @@ class UploadExtensionFileRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UploadExtensionFileRequest.
-
 
         :param body: The body of this UploadExtensionFileRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileRequestBody`

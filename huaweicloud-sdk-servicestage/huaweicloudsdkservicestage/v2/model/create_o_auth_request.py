@@ -17,7 +17,6 @@ class CreateOAuthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateOAuthRequest:
     def body(self):
         """Gets the body of this CreateOAuthRequest.
 
-
         :return: The body of this CreateOAuthRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.OAuth`
         """
@@ -115,7 +113,6 @@ class CreateOAuthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateOAuthRequest.
-
 
         :param body: The body of this CreateOAuthRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.OAuth`

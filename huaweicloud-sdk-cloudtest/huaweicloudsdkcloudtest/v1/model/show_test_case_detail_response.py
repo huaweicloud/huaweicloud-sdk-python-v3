@@ -17,7 +17,6 @@ class ShowTestCaseDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -287,7 +286,6 @@ class ShowTestCaseDetailResponse(SdkResponse):
     def assigned_user(self):
         """Gets the assigned_user of this ShowTestCaseDetailResponse.
 
-
         :return: The assigned_user of this ShowTestCaseDetailResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
         """
@@ -296,7 +294,6 @@ class ShowTestCaseDetailResponse(SdkResponse):
     @assigned_user.setter
     def assigned_user(self, assigned_user):
         """Sets the assigned_user of this ShowTestCaseDetailResponse.
-
 
         :param assigned_user: The assigned_user of this ShowTestCaseDetailResponse.
         :type assigned_user: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
@@ -351,7 +348,6 @@ class ShowTestCaseDetailResponse(SdkResponse):
     def extend_info(self):
         """Gets the extend_info of this ShowTestCaseDetailResponse.
 
-
         :return: The extend_info of this ShowTestCaseDetailResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExtendInfo`
         """
@@ -360,7 +356,6 @@ class ShowTestCaseDetailResponse(SdkResponse):
     @extend_info.setter
     def extend_info(self, extend_info):
         """Sets the extend_info of this ShowTestCaseDetailResponse.
-
 
         :param extend_info: The extend_info of this ShowTestCaseDetailResponse.
         :type extend_info: :class:`huaweicloudsdkcloudtest.v1.ExtendInfo`

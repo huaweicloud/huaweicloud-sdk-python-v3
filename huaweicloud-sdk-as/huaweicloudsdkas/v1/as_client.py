@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AsClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachCallbackInstanceLifeCycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -137,6 +134,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -170,6 +169,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -196,6 +196,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +230,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteScalingConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -255,6 +258,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -286,6 +291,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteScalingPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -313,6 +319,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -344,6 +352,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchPauseScalingPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -371,6 +380,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -404,6 +415,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchProtectScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -431,6 +443,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -464,6 +478,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRemoveScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -490,6 +505,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -522,6 +539,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchResumeScalingPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -549,6 +567,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -582,6 +602,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSetScalingInstancesStandbyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -609,6 +630,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -642,6 +665,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUnprotectScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -669,6 +693,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -702,6 +728,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUnsetScalingInstancesStantbyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -728,6 +755,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -762,6 +791,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLifyCycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -788,6 +818,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -820,6 +852,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -846,6 +879,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -878,6 +913,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -904,6 +940,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -938,6 +976,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -964,6 +1003,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -996,6 +1037,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1022,6 +1064,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1058,6 +1102,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingTagInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1084,6 +1129,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1118,6 +1165,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLifecycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1144,6 +1192,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1176,6 +1226,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1202,6 +1253,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1236,6 +1289,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1262,6 +1316,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1296,6 +1352,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1322,6 +1379,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1356,6 +1415,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1382,6 +1442,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1414,6 +1476,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1440,6 +1503,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1476,6 +1541,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingTagInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1502,6 +1568,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1536,6 +1604,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExecuteScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1562,6 +1631,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1596,6 +1667,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHookInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1622,6 +1694,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1654,6 +1728,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLifeCycleHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1680,6 +1755,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1714,6 +1791,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1740,6 +1818,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1780,6 +1860,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingActivityLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1806,6 +1887,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1852,6 +1935,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingActivityV2LogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1878,6 +1962,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1916,6 +2002,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1942,6 +2029,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1984,6 +2073,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2010,6 +2100,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2052,6 +2144,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2078,6 +2171,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2110,6 +2205,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingNotificationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2136,6 +2232,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2178,6 +2276,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2204,6 +2303,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2252,6 +2353,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingPolicyExecuteLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2278,6 +2380,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2312,6 +2416,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingTagInfosByResourceIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2338,6 +2443,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2370,6 +2477,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingTagInfosByTenantIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2397,6 +2505,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2430,6 +2540,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PauseScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2457,6 +2568,8 @@ class AsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2490,6 +2603,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PauseScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2516,6 +2630,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2550,6 +2666,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResumeScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2576,6 +2693,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2610,6 +2729,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResumeScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2636,6 +2756,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2670,6 +2792,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLifeCycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2696,6 +2819,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2728,6 +2853,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPolicyAndInstanceQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2754,6 +2880,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2784,6 +2912,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2810,6 +2939,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2842,6 +2973,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScalingConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2868,6 +3000,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2900,6 +3034,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2926,6 +3061,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2958,6 +3095,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2984,6 +3122,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3020,6 +3160,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLifeCycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3046,6 +3187,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3080,6 +3223,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3106,6 +3250,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3140,6 +3286,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3166,6 +3313,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3196,6 +3345,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3222,6 +3372,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3254,6 +3406,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3280,6 +3433,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3312,6 +3467,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingV2PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3338,6 +3494,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3390,6 +3548,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAllScalingV2PoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3416,6 +3575,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3458,6 +3619,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingV2PoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3484,6 +3646,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3516,6 +3680,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScalingV2PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3542,6 +3707,8 @@ class AsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3576,6 +3743,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateScalingV2PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3583,7 +3751,7 @@ class AsClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3593,9 +3761,10 @@ class AsClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3612,6 +3781,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

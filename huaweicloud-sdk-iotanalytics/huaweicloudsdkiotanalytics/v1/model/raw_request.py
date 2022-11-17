@@ -17,7 +17,6 @@ class RawRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class RawRequest:
     def time_span(self):
         """Gets the time_span of this RawRequest.
 
-
         :return: The time_span of this RawRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
         """
@@ -85,7 +83,6 @@ class RawRequest:
     @time_span.setter
     def time_span(self, time_span):
         """Sets the time_span of this RawRequest.
-
 
         :param time_span: The time_span of this RawRequest.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`

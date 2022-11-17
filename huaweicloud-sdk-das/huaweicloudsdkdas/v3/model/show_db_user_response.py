@@ -17,7 +17,6 @@ class ShowDbUserResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDbUserResponse(SdkResponse):
     def db_user(self):
         """Gets the db_user of this ShowDbUserResponse.
 
-
         :return: The db_user of this ShowDbUserResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.DbUser`
         """
@@ -58,7 +56,6 @@ class ShowDbUserResponse(SdkResponse):
     @db_user.setter
     def db_user(self, db_user):
         """Sets the db_user of this ShowDbUserResponse.
-
 
         :param db_user: The db_user of this ShowDbUserResponse.
         :type db_user: :class:`huaweicloudsdkdas.v3.DbUser`

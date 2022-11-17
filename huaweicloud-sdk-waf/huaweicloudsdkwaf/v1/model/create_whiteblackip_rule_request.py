@@ -17,7 +17,6 @@ class CreateWhiteblackipRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateWhiteblackipRuleRequest:
     def body(self):
         """Gets the body of this CreateWhiteblackipRuleRequest.
 
-
         :return: The body of this CreateWhiteblackipRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateWhiteBlackIpRuleRequestBody`
         """
@@ -115,7 +113,6 @@ class CreateWhiteblackipRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateWhiteblackipRuleRequest.
-
 
         :param body: The body of this CreateWhiteblackipRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateWhiteBlackIpRuleRequestBody`

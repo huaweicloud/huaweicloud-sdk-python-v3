@@ -17,7 +17,6 @@ class UpdateNaRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateNaRequest:
     def body(self):
         """Gets the body of this UpdateNaRequest.
 
-
         :return: The body of this UpdateNaRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequestDTO`
         """
@@ -86,7 +84,6 @@ class UpdateNaRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateNaRequest.
-
 
         :param body: The body of this UpdateNaRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequestDTO`

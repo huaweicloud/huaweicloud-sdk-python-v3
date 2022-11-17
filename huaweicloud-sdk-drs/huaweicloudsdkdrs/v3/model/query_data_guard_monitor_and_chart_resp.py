@@ -17,7 +17,6 @@ class QueryDataGuardMonitorAndChartResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class QueryDataGuardMonitorAndChartResp:
     def data_guard_minitor(self):
         """Gets the data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
 
-
         :return: The data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorResponse`
         """
@@ -85,7 +83,6 @@ class QueryDataGuardMonitorAndChartResp:
     @data_guard_minitor.setter
     def data_guard_minitor(self, data_guard_minitor):
         """Sets the data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
-
 
         :param data_guard_minitor: The data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
         :type data_guard_minitor: :class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorResponse`

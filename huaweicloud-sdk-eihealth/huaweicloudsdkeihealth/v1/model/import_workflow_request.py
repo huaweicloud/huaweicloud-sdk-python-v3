@@ -17,7 +17,6 @@ class ImportWorkflowRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ImportWorkflowRequest:
     def body(self):
         """Gets the body of this ImportWorkflowRequest.
 
-
         :return: The body of this ImportWorkflowRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowReq`
         """
@@ -86,7 +84,6 @@ class ImportWorkflowRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportWorkflowRequest.
-
 
         :param body: The body of this ImportWorkflowRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowReq`

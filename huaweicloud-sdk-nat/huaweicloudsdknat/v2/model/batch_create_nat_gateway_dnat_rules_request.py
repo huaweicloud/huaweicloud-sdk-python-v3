@@ -17,7 +17,6 @@ class BatchCreateNatGatewayDnatRulesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchCreateNatGatewayDnatRulesRequest:
     def body(self):
         """Gets the body of this BatchCreateNatGatewayDnatRulesRequest.
 
-
         :return: The body of this BatchCreateNatGatewayDnatRulesRequest.
         :rtype: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchCreateNatGatewayDnatRulesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchCreateNatGatewayDnatRulesRequest.
-
 
         :param body: The body of this BatchCreateNatGatewayDnatRulesRequest.
         :type body: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequestBody`

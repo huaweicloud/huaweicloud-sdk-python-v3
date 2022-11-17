@@ -17,7 +17,6 @@ class DetectStandardByNameAndIdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DetectStandardByNameAndIdRequest:
     def body(self):
         """Gets the body of this DetectStandardByNameAndIdRequest.
 
-
         :return: The body of this DetectStandardByNameAndIdRequest.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBody`
         """
@@ -58,7 +56,6 @@ class DetectStandardByNameAndIdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DetectStandardByNameAndIdRequest.
-
 
         :param body: The body of this DetectStandardByNameAndIdRequest.
         :type body: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBody`

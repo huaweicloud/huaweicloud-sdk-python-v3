@@ -17,7 +17,6 @@ class UpdateEndpointRoutetableRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateEndpointRoutetableRequest:
     def body(self):
         """Gets the body of this UpdateEndpointRoutetableRequest.
 
-
         :return: The body of this UpdateEndpointRoutetableRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateEndpointRoutetableRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEndpointRoutetableRequest.
-
 
         :param body: The body of this UpdateEndpointRoutetableRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequestBody`

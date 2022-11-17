@@ -17,7 +17,6 @@ class ComponentView:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class ComponentView:
     def runtime(self):
         """Gets the runtime of this ComponentView.
 
-
         :return: The runtime of this ComponentView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
@@ -201,7 +199,6 @@ class ComponentView:
     @runtime.setter
     def runtime(self, runtime):
         """Sets the runtime of this ComponentView.
-
 
         :param runtime: The runtime of this ComponentView.
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -212,7 +209,6 @@ class ComponentView:
     def category(self):
         """Gets the category of this ComponentView.
 
-
         :return: The category of this ComponentView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
@@ -221,7 +217,6 @@ class ComponentView:
     @category.setter
     def category(self, category):
         """Sets the category of this ComponentView.
-
 
         :param category: The category of this ComponentView.
         :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
@@ -232,7 +227,6 @@ class ComponentView:
     def sub_category(self):
         """Gets the sub_category of this ComponentView.
 
-
         :return: The sub_category of this ComponentView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
@@ -241,7 +235,6 @@ class ComponentView:
     @sub_category.setter
     def sub_category(self, sub_category):
         """Sets the sub_category of this ComponentView.
-
 
         :param sub_category: The sub_category of this ComponentView.
         :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
@@ -296,7 +289,6 @@ class ComponentView:
     def source(self):
         """Gets the source of this ComponentView.
 
-
         :return: The source of this ComponentView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
@@ -305,7 +297,6 @@ class ComponentView:
     @source.setter
     def source(self, source):
         """Sets the source of this ComponentView.
-
 
         :param source: The source of this ComponentView.
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`

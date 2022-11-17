@@ -17,7 +17,6 @@ class RecognizeTollInvoiceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeTollInvoiceResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeTollInvoiceResponse.
 
-
         :return: The result of this RecognizeTollInvoiceResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.TollInvoiceResult`
         """
@@ -58,7 +56,6 @@ class RecognizeTollInvoiceResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeTollInvoiceResponse.
-
 
         :param result: The result of this RecognizeTollInvoiceResponse.
         :type result: :class:`huaweicloudsdkocr.v1.TollInvoiceResult`

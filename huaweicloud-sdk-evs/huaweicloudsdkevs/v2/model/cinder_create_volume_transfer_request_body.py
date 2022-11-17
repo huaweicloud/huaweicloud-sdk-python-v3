@@ -17,7 +17,6 @@ class CinderCreateVolumeTransferRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CinderCreateVolumeTransferRequestBody:
     def transfer(self):
         """Gets the transfer of this CinderCreateVolumeTransferRequestBody.
 
-
         :return: The transfer of this CinderCreateVolumeTransferRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeTransferOption`
         """
@@ -57,7 +55,6 @@ class CinderCreateVolumeTransferRequestBody:
     @transfer.setter
     def transfer(self, transfer):
         """Sets the transfer of this CinderCreateVolumeTransferRequestBody.
-
 
         :param transfer: The transfer of this CinderCreateVolumeTransferRequestBody.
         :type transfer: :class:`huaweicloudsdkevs.v2.CreateVolumeTransferOption`

@@ -17,7 +17,6 @@ class CreatePostPaidInstanceByEngineRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreatePostPaidInstanceByEngineRequest:
     def body(self):
         """Gets the body of this CreatePostPaidInstanceByEngineRequest.
 
-
         :return: The body of this CreatePostPaidInstanceByEngineRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateInstanceReq`
         """
@@ -86,7 +84,6 @@ class CreatePostPaidInstanceByEngineRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePostPaidInstanceByEngineRequest.
-
 
         :param body: The body of this CreatePostPaidInstanceByEngineRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.CreateInstanceReq`

@@ -17,7 +17,6 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def order_info(self):
         """Gets the order_info of this ShowCustomerOrderDetailsResponse.
 
-
         :return: The order_info of this ShowCustomerOrderDetailsResponse.
         :rtype: :class:`huaweicloudsdkbssintl.v2.CustomerOrderV3`
         """
@@ -94,7 +92,6 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     @order_info.setter
     def order_info(self, order_info):
         """Sets the order_info of this ShowCustomerOrderDetailsResponse.
-
 
         :param order_info: The order_info of this ShowCustomerOrderDetailsResponse.
         :type order_info: :class:`huaweicloudsdkbssintl.v2.CustomerOrderV3`

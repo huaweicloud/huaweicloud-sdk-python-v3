@@ -17,28 +17,23 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
         'size': 'int',
         'items': 'list[GroupTreeResponse]'
     }
 
     attribute_map = {
-        'total': 'total',
         'size': 'size',
         'items': 'items'
     }
 
-    def __init__(self, total=None, size=None, items=None):
+    def __init__(self, size=None, items=None):
         """ShowDeviceGroupTreeResponse
 
         The model defined in huaweicloud sdk
 
-        :param total: 总数
-        :type total: int
         :param size: 本次返回数量
         :type size: int
         :param items: 设备分组信息
@@ -47,39 +42,14 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
         
         super(ShowDeviceGroupTreeResponse, self).__init__()
 
-        self._total = None
         self._size = None
         self._items = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
         if size is not None:
             self.size = size
         if items is not None:
             self.items = items
-
-    @property
-    def total(self):
-        """Gets the total of this ShowDeviceGroupTreeResponse.
-
-        总数
-
-        :return: The total of this ShowDeviceGroupTreeResponse.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ShowDeviceGroupTreeResponse.
-
-        总数
-
-        :param total: The total of this ShowDeviceGroupTreeResponse.
-        :type total: int
-        """
-        self._total = total
 
     @property
     def size(self):

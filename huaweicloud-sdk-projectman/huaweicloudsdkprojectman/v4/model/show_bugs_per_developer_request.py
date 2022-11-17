@@ -17,7 +17,6 @@ class ShowBugsPerDeveloperRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowBugsPerDeveloperRequest:
     def body(self):
         """Gets the body of this ShowBugsPerDeveloperRequest.
 
-
         :return: The body of this ShowBugsPerDeveloperRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest2`
         """
@@ -86,7 +84,6 @@ class ShowBugsPerDeveloperRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowBugsPerDeveloperRequest.
-
 
         :param body: The body of this ShowBugsPerDeveloperRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.MetricRequest2`

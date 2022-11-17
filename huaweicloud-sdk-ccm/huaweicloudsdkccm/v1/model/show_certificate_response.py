@@ -17,7 +17,6 @@ class ShowCertificateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -426,7 +425,6 @@ class ShowCertificateResponse(SdkResponse):
     def distinguished_name(self):
         """Gets the distinguished_name of this ShowCertificateResponse.
 
-
         :return: The distinguished_name of this ShowCertificateResponse.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
@@ -435,7 +433,6 @@ class ShowCertificateResponse(SdkResponse):
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
         """Sets the distinguished_name of this ShowCertificateResponse.
-
 
         :param distinguished_name: The distinguished_name of this ShowCertificateResponse.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`

@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VpcepAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -57,6 +51,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AcceptOrRejectEndpoint
         :type request: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointResponse`
@@ -69,6 +64,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -103,6 +100,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AcceptOrRejectEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -120,6 +118,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddOrRemoveServicePermissions
         :type request: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsResponse`
@@ -132,6 +131,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddOrRemoveServicePermissionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -183,6 +185,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddEndpointServicePermissions
         :type request: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsResponse`
@@ -195,6 +198,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -229,6 +234,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddEndpointServicePermissionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -244,6 +250,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRemoveEndpointServicePermissions
         :type request: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsResponse`
@@ -256,6 +263,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -290,6 +299,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRemoveEndpointServicePermissionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -305,6 +315,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEndpoint
         :type request: :class:`huaweicloudsdkvpcep.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.CreateEndpointResponse`
@@ -317,6 +328,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -349,6 +362,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -368,6 +382,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEndpointService
         :type request: :class:`huaweicloudsdkvpcep.v1.CreateEndpointServiceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.CreateEndpointServiceResponse`
@@ -380,6 +395,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -412,6 +429,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEndpointServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -427,6 +445,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEndpoint
         :type request: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointResponse`
@@ -439,6 +458,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -471,6 +492,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -486,6 +508,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEndpointPolicy
         :type request: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointPolicyRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointPolicyResponse`
@@ -498,6 +521,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -530,6 +555,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEndpointPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -545,6 +571,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEndpointService
         :type request: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointServiceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointServiceResponse`
@@ -557,6 +584,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -589,6 +618,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEndpointServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -604,6 +634,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEndpointInfoDetails
         :type request: :class:`huaweicloudsdkvpcep.v1.ListEndpointInfoDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListEndpointInfoDetailsResponse`
@@ -616,6 +647,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -648,6 +681,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEndpointInfoDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -663,6 +697,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEndpointService
         :type request: :class:`huaweicloudsdkvpcep.v1.ListEndpointServiceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListEndpointServiceResponse`
@@ -675,6 +710,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -721,6 +758,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEndpointServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -736,6 +774,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEndpoints
         :type request: :class:`huaweicloudsdkvpcep.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListEndpointsResponse`
@@ -748,6 +787,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -794,6 +835,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEndpointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -809,6 +851,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuotaDetails
         :type request: :class:`huaweicloudsdkvpcep.v1.ListQuotaDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListQuotaDetailsResponse`
@@ -821,6 +864,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -853,6 +898,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotaDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -868,6 +914,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServiceConnections
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServiceConnectionsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServiceConnectionsResponse`
@@ -880,6 +927,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -926,6 +975,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServiceConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -941,6 +991,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServiceDescribeDetails
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServiceDescribeDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServiceDescribeDetailsResponse`
@@ -953,6 +1004,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -987,6 +1040,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServiceDescribeDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1002,6 +1056,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServiceDetails
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServiceDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServiceDetailsResponse`
@@ -1014,6 +1069,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1046,6 +1103,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServiceDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1063,6 +1121,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServicePermissionsDetails
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServicePermissionsDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServicePermissionsDetailsResponse`
@@ -1075,6 +1134,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1117,6 +1178,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServicePermissionsDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1133,6 +1195,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServicePublicDetails
         :type request: :class:`huaweicloudsdkvpcep.v1.ListServicePublicDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListServicePublicDetailsResponse`
@@ -1145,6 +1208,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1187,6 +1252,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServicePublicDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1202,6 +1268,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSpecifiedVersionDetails
         :type request: :class:`huaweicloudsdkvpcep.v1.ListSpecifiedVersionDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListSpecifiedVersionDetailsResponse`
@@ -1214,6 +1281,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1246,6 +1315,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSpecifiedVersionDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1261,6 +1331,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVersionDetails
         :type request: :class:`huaweicloudsdkvpcep.v1.ListVersionDetailsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListVersionDetailsResponse`
@@ -1273,6 +1344,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1303,6 +1376,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVersionDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1318,6 +1392,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpointConnectionsDesc
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescResponse`
@@ -1330,6 +1405,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1364,6 +1441,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointConnectionsDescResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1379,6 +1457,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpointPolicy
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointPolicyRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointPolicyResponse`
@@ -1391,6 +1470,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1425,6 +1506,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1440,6 +1522,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpointRoutetable
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointRoutetableResponse`
@@ -1452,6 +1535,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1486,6 +1571,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointRoutetableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1501,6 +1587,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpointService
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceResponse`
@@ -1513,6 +1600,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1547,6 +1636,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1562,6 +1652,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpointServiceName
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameResponse`
@@ -1574,6 +1665,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1608,6 +1701,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointServiceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1623,6 +1717,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpointServicePermissionDesc
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescResponse`
@@ -1635,6 +1730,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1671,6 +1768,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointServicePermissionDescResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1686,6 +1784,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpointWhite
         :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointWhiteResponse`
@@ -1698,6 +1797,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1732,6 +1833,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointWhiteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1748,6 +1850,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddOrRemoveResourceInstance
         :type request: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddOrRemoveResourceInstanceResponse`
@@ -1760,6 +1863,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1796,6 +1901,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddOrRemoveResourceInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1811,6 +1917,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQueryProjectResourceTags
         :type request: :class:`huaweicloudsdkvpcep.v1.ListQueryProjectResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListQueryProjectResourceTagsResponse`
@@ -1823,6 +1930,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1855,6 +1964,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQueryProjectResourceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1870,6 +1980,7 @@ class VpcepAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResourceInstances
         :type request: :class:`huaweicloudsdkvpcep.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkvpcep.v1.ListResourceInstancesResponse`
@@ -1882,6 +1993,8 @@ class VpcepAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1916,6 +2029,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1923,7 +2037,7 @@ class VpcepAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1934,9 +2048,10 @@ class VpcepAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1953,6 +2068,7 @@ class VpcepAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

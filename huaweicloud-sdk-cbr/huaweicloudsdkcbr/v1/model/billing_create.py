@@ -17,7 +17,6 @@ class BillingCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -371,7 +370,6 @@ class BillingCreate:
     def extra_info(self):
         """Gets the extra_info of this BillingCreate.
 
-
         :return: The extra_info of this BillingCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.BillbingCreateExtraInfo`
         """
@@ -380,7 +378,6 @@ class BillingCreate:
     @extra_info.setter
     def extra_info(self, extra_info):
         """Sets the extra_info of this BillingCreate.
-
 
         :param extra_info: The extra_info of this BillingCreate.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.BillbingCreateExtraInfo`

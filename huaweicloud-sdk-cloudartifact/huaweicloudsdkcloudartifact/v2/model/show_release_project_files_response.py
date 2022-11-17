@@ -17,7 +17,6 @@ class ShowReleaseProjectFilesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowReleaseProjectFilesResponse(SdkResponse):
     def result(self):
         """Gets the result of this ShowReleaseProjectFilesResponse.
 
-
         :return: The result of this ShowReleaseProjectFilesResponse.
         :rtype: :class:`huaweicloudsdkcloudartifact.v2.StandardResponseResult`
         """
@@ -58,7 +56,6 @@ class ShowReleaseProjectFilesResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ShowReleaseProjectFilesResponse.
-
 
         :param result: The result of this ShowReleaseProjectFilesResponse.
         :type result: :class:`huaweicloudsdkcloudartifact.v2.StandardResponseResult`

@@ -17,7 +17,6 @@ class CreateAgencyRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateAgencyRequestBody:
     def agency(self):
         """Gets the agency of this CreateAgencyRequestBody.
 
-
         :return: The agency of this CreateAgencyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyOption`
         """
@@ -57,7 +55,6 @@ class CreateAgencyRequestBody:
     @agency.setter
     def agency(self, agency):
         """Sets the agency of this CreateAgencyRequestBody.
-
 
         :param agency: The agency of this CreateAgencyRequestBody.
         :type agency: :class:`huaweicloudsdkiam.v3.CreateAgencyOption`

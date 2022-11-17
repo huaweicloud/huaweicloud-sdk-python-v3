@@ -17,7 +17,6 @@ class CollectReplyRatesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -128,7 +127,6 @@ class CollectReplyRatesResponse(SdkResponse):
     def total(self):
         """Gets the total of this CollectReplyRatesResponse.
 
-
         :return: The total of this CollectReplyRatesResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.ReplyRatesTotal`
         """
@@ -137,7 +135,6 @@ class CollectReplyRatesResponse(SdkResponse):
     @total.setter
     def total(self, total):
         """Sets the total of this CollectReplyRatesResponse.
-
 
         :param total: The total of this CollectReplyRatesResponse.
         :type total: :class:`huaweicloudsdkcbs.v1.ReplyRatesTotal`
@@ -148,7 +145,6 @@ class CollectReplyRatesResponse(SdkResponse):
     def intervals(self):
         """Gets the intervals of this CollectReplyRatesResponse.
 
-
         :return: The intervals of this CollectReplyRatesResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`
         """
@@ -157,7 +153,6 @@ class CollectReplyRatesResponse(SdkResponse):
     @intervals.setter
     def intervals(self, intervals):
         """Sets the intervals of this CollectReplyRatesResponse.
-
 
         :param intervals: The intervals of this CollectReplyRatesResponse.
         :type intervals: :class:`huaweicloudsdkcbs.v1.ReplyRatesIntervals`

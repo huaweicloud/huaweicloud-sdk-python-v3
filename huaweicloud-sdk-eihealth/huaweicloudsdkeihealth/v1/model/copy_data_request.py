@@ -17,7 +17,6 @@ class CopyDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CopyDataRequest:
     def body(self):
         """Gets the body of this CopyDataRequest.
 
-
         :return: The body of this CopyDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CloneDataReq`
         """
@@ -86,7 +84,6 @@ class CopyDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CopyDataRequest.
-
 
         :param body: The body of this CopyDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CloneDataReq`

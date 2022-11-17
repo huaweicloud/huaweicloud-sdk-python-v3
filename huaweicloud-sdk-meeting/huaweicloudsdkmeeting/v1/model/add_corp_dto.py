@@ -17,7 +17,6 @@ class AddCorpDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -75,7 +74,6 @@ class AddCorpDTO:
     def basic_info(self):
         """Gets the basic_info of this AddCorpDTO.
 
-
         :return: The basic_info of this AddCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CorpBasicDTO`
         """
@@ -84,7 +82,6 @@ class AddCorpDTO:
     @basic_info.setter
     def basic_info(self, basic_info):
         """Sets the basic_info of this AddCorpDTO.
-
 
         :param basic_info: The basic_info of this AddCorpDTO.
         :type basic_info: :class:`huaweicloudsdkmeeting.v1.CorpBasicDTO`
@@ -95,7 +92,6 @@ class AddCorpDTO:
     def admin_info(self):
         """Gets the admin_info of this AddCorpDTO.
 
-
         :return: The admin_info of this AddCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.AdminDTO`
         """
@@ -104,7 +100,6 @@ class AddCorpDTO:
     @admin_info.setter
     def admin_info(self, admin_info):
         """Sets the admin_info of this AddCorpDTO.
-
 
         :param admin_info: The admin_info of this AddCorpDTO.
         :type admin_info: :class:`huaweicloudsdkmeeting.v1.AdminDTO`
@@ -115,7 +110,6 @@ class AddCorpDTO:
     def res_info(self):
         """Gets the res_info of this AddCorpDTO.
 
-
         :return: The res_info of this AddCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddCorpResDTO`
         """
@@ -124,7 +118,6 @@ class AddCorpDTO:
     @res_info.setter
     def res_info(self, res_info):
         """Sets the res_info of this AddCorpDTO.
-
 
         :param res_info: The res_info of this AddCorpDTO.
         :type res_info: :class:`huaweicloudsdkmeeting.v1.AddCorpResDTO`

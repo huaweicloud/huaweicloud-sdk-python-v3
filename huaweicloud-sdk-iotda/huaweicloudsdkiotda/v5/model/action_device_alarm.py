@@ -17,7 +17,6 @@ class ActionDeviceAlarm:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -43,7 +42,7 @@ class ActionDeviceAlarm:
         :type name: str
         :param alarm_status: **参数说明**：告警状态。 **取值范围**： - fault：上报告警。 - recovery：恢复告警。
         :type alarm_status: str
-        :param severity: **参数说明**：告警级别。 **取值范围**： - warning：警告。 - minor：一般。 - major：严重。 - critical：致命。
+        :param severity: **参数说明**：告警级别。 **取值范围**：warning（警告）、minor（一般）、major（严重）和critical（致命）。
         :type severity: str
         :param description: **参数说明**：告警的描述信息。
         :type description: str
@@ -111,7 +110,7 @@ class ActionDeviceAlarm:
     def severity(self):
         """Gets the severity of this ActionDeviceAlarm.
 
-        **参数说明**：告警级别。 **取值范围**： - warning：警告。 - minor：一般。 - major：严重。 - critical：致命。
+        **参数说明**：告警级别。 **取值范围**：warning（警告）、minor（一般）、major（严重）和critical（致命）。
 
         :return: The severity of this ActionDeviceAlarm.
         :rtype: str
@@ -122,7 +121,7 @@ class ActionDeviceAlarm:
     def severity(self, severity):
         """Sets the severity of this ActionDeviceAlarm.
 
-        **参数说明**：告警级别。 **取值范围**： - warning：警告。 - minor：一般。 - major：严重。 - critical：致命。
+        **参数说明**：告警级别。 **取值范围**：warning（警告）、minor（一般）、major（严重）和critical（致命）。
 
         :param severity: The severity of this ActionDeviceAlarm.
         :type severity: str

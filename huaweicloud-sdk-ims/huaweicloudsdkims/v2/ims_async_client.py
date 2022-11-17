@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ImsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddImageTag
         :type request: :class:`huaweicloudsdkims.v2.AddImageTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.AddImageTagResponse`
@@ -68,6 +63,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddImageTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -117,6 +115,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddMembers
         :type request: :class:`huaweicloudsdkims.v2.BatchAddMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchAddMembersResponse`
@@ -129,6 +128,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -161,6 +162,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -175,6 +177,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddOrDeleteTags
         :type request: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsResponse`
@@ -187,6 +190,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -221,6 +226,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddOrDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteMembers
         :type request: :class:`huaweicloudsdkims.v2.BatchDeleteMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchDeleteMembersResponse`
@@ -248,6 +255,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -280,6 +289,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -295,6 +305,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUpdateMembers
         :type request: :class:`huaweicloudsdkims.v2.BatchUpdateMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchUpdateMembersResponse`
@@ -307,6 +318,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -339,6 +352,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -355,6 +369,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CopyImageCrossRegion
         :type request: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionResponse`
@@ -367,6 +382,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -401,6 +418,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CopyImageCrossRegionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -416,6 +434,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CopyImageInRegion
         :type request: :class:`huaweicloudsdkims.v2.CopyImageInRegionRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CopyImageInRegionResponse`
@@ -428,6 +447,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -462,6 +483,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CopyImageInRegionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -476,6 +498,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDataImage
         :type request: :class:`huaweicloudsdkims.v2.CreateDataImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateDataImageResponse`
@@ -488,6 +511,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -520,6 +545,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDataImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -545,6 +571,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateImage
         :type request: :class:`huaweicloudsdkims.v2.CreateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateImageResponse`
@@ -557,6 +584,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -589,6 +618,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -603,6 +633,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateOrUpdateTags
         :type request: :class:`huaweicloudsdkims.v2.CreateOrUpdateTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateOrUpdateTagsResponse`
@@ -615,6 +646,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -647,6 +680,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOrUpdateTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -661,6 +695,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateWholeImage
         :type request: :class:`huaweicloudsdkims.v2.CreateWholeImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateWholeImageResponse`
@@ -673,6 +708,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -705,6 +742,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWholeImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -719,6 +757,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteImageTag
         :type request: :class:`huaweicloudsdkims.v2.DeleteImageTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.DeleteImageTagResponse`
@@ -731,6 +770,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -765,6 +806,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteImageTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -779,6 +821,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportImage
         :type request: :class:`huaweicloudsdkims.v2.ExportImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ExportImageResponse`
@@ -791,6 +834,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -825,6 +870,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -841,6 +887,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportImageQuick
         :type request: :class:`huaweicloudsdkims.v2.ImportImageQuickRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ImportImageQuickResponse`
@@ -853,6 +900,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -885,6 +934,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportImageQuickResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -899,6 +949,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListImageByTags
         :type request: :class:`huaweicloudsdkims.v2.ListImageByTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImageByTagsResponse`
@@ -911,6 +962,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -943,6 +996,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImageByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -957,6 +1011,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListImageTags
         :type request: :class:`huaweicloudsdkims.v2.ListImageTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImageTagsResponse`
@@ -969,6 +1024,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1001,6 +1058,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImageTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1016,6 +1074,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListImages
         :type request: :class:`huaweicloudsdkims.v2.ListImagesRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImagesResponse`
@@ -1028,6 +1087,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1132,6 +1193,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1146,6 +1208,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListImagesTags
         :type request: :class:`huaweicloudsdkims.v2.ListImagesTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImagesTagsResponse`
@@ -1158,6 +1221,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1188,6 +1253,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImagesTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1202,6 +1268,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOsVersions
         :type request: :class:`huaweicloudsdkims.v2.ListOsVersionsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListOsVersionsResponse`
@@ -1214,6 +1281,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1246,6 +1315,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOsVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1260,6 +1330,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTags
         :type request: :class:`huaweicloudsdkims.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListTagsResponse`
@@ -1272,6 +1343,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1332,6 +1405,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1352,6 +1426,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RegisterImage
         :type request: :class:`huaweicloudsdkims.v2.RegisterImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.RegisterImageResponse`
@@ -1364,6 +1439,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1398,6 +1475,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1412,6 +1490,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowImageQuota
         :type request: :class:`huaweicloudsdkims.v2.ShowImageQuotaRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowImageQuotaResponse`
@@ -1424,6 +1503,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1454,6 +1535,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowImageQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1468,6 +1550,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkims.v2.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowJobResponse`
@@ -1480,6 +1563,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1512,6 +1597,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1526,6 +1612,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobProgress
         :type request: :class:`huaweicloudsdkims.v2.ShowJobProgressRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowJobProgressResponse`
@@ -1538,6 +1625,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1570,6 +1659,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobProgressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1584,6 +1674,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateImage
         :type request: :class:`huaweicloudsdkims.v2.UpdateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.UpdateImageResponse`
@@ -1596,6 +1687,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1630,6 +1723,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1644,6 +1738,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVersions
         :type request: :class:`huaweicloudsdkims.v2.ListVersionsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListVersionsResponse`
@@ -1656,6 +1751,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1686,6 +1783,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1700,6 +1798,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVersion
         :type request: :class:`huaweicloudsdkims.v2.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowVersionResponse`
@@ -1712,6 +1811,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1744,6 +1845,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1758,6 +1860,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceAddImageMember
         :type request: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberResponse`
@@ -1770,6 +1873,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1804,6 +1909,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceAddImageMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1818,6 +1924,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceCreateImageMetadata
         :type request: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataResponse`
@@ -1830,6 +1937,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1862,6 +1971,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceCreateImageMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1876,6 +1986,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceCreateTag
         :type request: :class:`huaweicloudsdkims.v2.GlanceCreateTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateTagResponse`
@@ -1888,6 +1999,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1922,6 +2035,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceCreateTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1936,6 +2050,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceDeleteImage
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageResponse`
@@ -1948,6 +2063,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1982,6 +2099,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceDeleteImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1996,6 +2114,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceDeleteImageMember
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberResponse`
@@ -2008,6 +2127,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2042,6 +2163,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceDeleteImageMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2056,6 +2178,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceDeleteTag
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteTagResponse`
@@ -2068,6 +2191,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2102,6 +2227,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceDeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2116,6 +2242,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceListImageMemberSchemas
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImageMemberSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageMemberSchemasResponse`
@@ -2128,6 +2255,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2158,6 +2287,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceListImageMemberSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2172,6 +2302,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceListImageMembers
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImageMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageMembersResponse`
@@ -2184,6 +2315,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2216,6 +2349,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceListImageMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2230,6 +2364,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceListImageSchemas
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImageSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageSchemasResponse`
@@ -2242,6 +2377,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2272,6 +2409,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceListImageSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2290,6 +2428,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceListImages
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImagesRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImagesResponse`
@@ -2302,6 +2441,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2396,6 +2537,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceListImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2410,6 +2552,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceShowImage
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageResponse`
@@ -2422,6 +2565,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2454,6 +2599,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceShowImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2468,6 +2614,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceShowImageMember
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberResponse`
@@ -2480,6 +2627,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2514,6 +2663,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceShowImageMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2528,6 +2678,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceShowImageMemberSchemas
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberSchemasResponse`
@@ -2540,6 +2691,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2570,6 +2723,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceShowImageMemberSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2584,6 +2738,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceShowImageSchemas
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageSchemasResponse`
@@ -2596,6 +2751,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2626,6 +2783,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceShowImageSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2640,6 +2798,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceUpdateImage
         :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageResponse`
@@ -2652,6 +2811,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2686,6 +2847,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceUpdateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2700,6 +2862,7 @@ class ImsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GlanceUpdateImageMember
         :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberResponse`
@@ -2712,6 +2875,8 @@ class ImsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2748,6 +2913,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GlanceUpdateImageMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2755,7 +2921,7 @@ class ImsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2766,9 +2932,10 @@ class ImsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2785,6 +2952,7 @@ class ImsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

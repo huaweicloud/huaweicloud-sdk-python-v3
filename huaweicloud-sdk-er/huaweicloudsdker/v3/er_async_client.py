@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ErAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateRouteTable
         :type request: :class:`huaweicloudsdker.v3.AssociateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.AssociateRouteTableResponse`
@@ -68,6 +63,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -91,7 +88,7 @@ class ErAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Client-Token"]
+        response_headers = ["X-Client-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -106,6 +103,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -120,6 +118,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateRouteTable
         :type request: :class:`huaweicloudsdker.v3.DisassociateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.DisassociateRouteTableResponse`
@@ -132,6 +131,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -168,6 +169,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -182,6 +184,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAssociations
         :type request: :class:`huaweicloudsdker.v3.ListAssociationsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListAssociationsResponse`
@@ -194,6 +197,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -247,6 +252,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssociationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -264,6 +270,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAttachments
         :type request: :class:`huaweicloudsdker.v3.ListAttachmentsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListAttachmentsResponse`
@@ -276,6 +283,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -327,6 +336,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAttachmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -341,6 +351,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAttachment
         :type request: :class:`huaweicloudsdker.v3.ShowAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowAttachmentResponse`
@@ -353,6 +364,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -387,6 +400,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAttachmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -401,6 +415,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAttachment
         :type request: :class:`huaweicloudsdker.v3.UpdateAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateAttachmentResponse`
@@ -413,6 +428,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -449,6 +466,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAttachmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -463,6 +481,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAvailabilityZone
         :type request: :class:`huaweicloudsdker.v3.ListAvailabilityZoneRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListAvailabilityZoneResponse`
@@ -475,6 +494,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -507,6 +528,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAvailabilityZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -521,6 +543,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeAvailabilityZone
         :type request: :class:`huaweicloudsdker.v3.ChangeAvailabilityZoneRequest`
         :rtype: :class:`huaweicloudsdker.v3.ChangeAvailabilityZoneResponse`
@@ -533,6 +556,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -567,6 +592,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeAvailabilityZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -581,6 +607,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEnterpriseRouter
         :type request: :class:`huaweicloudsdker.v3.CreateEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateEnterpriseRouterResponse`
@@ -593,6 +620,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -612,7 +641,7 @@ class ErAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Client-Token"]
+        response_headers = ["X-Client-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -627,6 +656,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnterpriseRouterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -642,6 +672,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEnterpriseRouter
         :type request: :class:`huaweicloudsdker.v3.DeleteEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteEnterpriseRouterResponse`
@@ -654,6 +685,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -686,6 +719,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnterpriseRouterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -700,6 +734,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnterpriseRouters
         :type request: :class:`huaweicloudsdker.v3.ListEnterpriseRoutersRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListEnterpriseRoutersResponse`
@@ -712,6 +747,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -764,6 +801,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnterpriseRoutersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -778,6 +816,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEnterpriseRouter
         :type request: :class:`huaweicloudsdker.v3.ShowEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowEnterpriseRouterResponse`
@@ -790,6 +829,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -822,6 +863,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnterpriseRouterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -836,6 +878,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEnterpriseRouter
         :type request: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterResponse`
@@ -848,6 +891,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -882,6 +927,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEnterpriseRouterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -896,6 +942,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisablePropagation
         :type request: :class:`huaweicloudsdker.v3.DisablePropagationRequest`
         :rtype: :class:`huaweicloudsdker.v3.DisablePropagationResponse`
@@ -908,6 +955,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -944,6 +993,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisablePropagationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -958,6 +1008,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnablePropagation
         :type request: :class:`huaweicloudsdker.v3.EnablePropagationRequest`
         :rtype: :class:`huaweicloudsdker.v3.EnablePropagationResponse`
@@ -970,6 +1021,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -993,7 +1046,7 @@ class ErAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Client-Token"]
+        response_headers = ["X-Client-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1008,6 +1061,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnablePropagationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1022,6 +1076,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPropagations
         :type request: :class:`huaweicloudsdker.v3.ListPropagationsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListPropagationsResponse`
@@ -1034,6 +1089,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1087,6 +1144,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPropagationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1101,6 +1159,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateStaticRoute
         :type request: :class:`huaweicloudsdker.v3.CreateStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateStaticRouteResponse`
@@ -1113,6 +1172,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1134,7 +1195,7 @@ class ErAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Client-Token"]
+        response_headers = ["X-Client-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1149,6 +1210,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStaticRouteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1163,6 +1225,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteStaticRoute
         :type request: :class:`huaweicloudsdker.v3.DeleteStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteStaticRouteResponse`
@@ -1175,6 +1238,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1209,6 +1274,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStaticRouteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1223,6 +1289,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEffectiveRoutes
         :type request: :class:`huaweicloudsdker.v3.ListEffectiveRoutesRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListEffectiveRoutesResponse`
@@ -1235,6 +1302,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1277,6 +1346,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEffectiveRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1291,6 +1361,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStaticRoutes
         :type request: :class:`huaweicloudsdker.v3.ListStaticRoutesRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListStaticRoutesResponse`
@@ -1303,6 +1374,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1354,6 +1427,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStaticRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1368,6 +1442,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowStaticRoute
         :type request: :class:`huaweicloudsdker.v3.ShowStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowStaticRouteResponse`
@@ -1380,6 +1455,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1414,6 +1491,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStaticRouteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1428,6 +1506,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateStaticRoute
         :type request: :class:`huaweicloudsdker.v3.UpdateStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateStaticRouteResponse`
@@ -1440,6 +1519,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1476,6 +1557,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStaticRouteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1490,6 +1572,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRouteTable
         :type request: :class:`huaweicloudsdker.v3.CreateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateRouteTableResponse`
@@ -1502,6 +1585,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1523,7 +1608,7 @@ class ErAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Client-Token"]
+        response_headers = ["X-Client-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1538,6 +1623,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1552,6 +1638,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRouteTable
         :type request: :class:`huaweicloudsdker.v3.DeleteRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteRouteTableResponse`
@@ -1564,6 +1651,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1598,6 +1687,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1612,6 +1702,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRouteTables
         :type request: :class:`huaweicloudsdker.v3.ListRouteTablesRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListRouteTablesResponse`
@@ -1624,6 +1715,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1673,6 +1766,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRouteTablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1687,6 +1781,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRouteTable
         :type request: :class:`huaweicloudsdker.v3.ShowRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowRouteTableResponse`
@@ -1699,6 +1794,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1733,6 +1830,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1747,6 +1845,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRouteTable
         :type request: :class:`huaweicloudsdker.v3.UpdateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateRouteTableResponse`
@@ -1759,6 +1858,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1795,6 +1896,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1809,6 +1911,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateVpcAttachment
         :type request: :class:`huaweicloudsdker.v3.CreateVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateVpcAttachmentResponse`
@@ -1821,6 +1924,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1842,7 +1947,7 @@ class ErAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Client-Token"]
+        response_headers = ["X-Client-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1857,6 +1962,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcAttachmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1871,6 +1977,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteVpcAttachment
         :type request: :class:`huaweicloudsdker.v3.DeleteVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteVpcAttachmentResponse`
@@ -1883,6 +1990,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1917,6 +2026,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcAttachmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1934,6 +2044,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVpcAttachments
         :type request: :class:`huaweicloudsdker.v3.ListVpcAttachmentsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListVpcAttachmentsResponse`
@@ -1946,6 +2057,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1997,6 +2110,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcAttachmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2011,6 +2125,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVpcAttachment
         :type request: :class:`huaweicloudsdker.v3.ShowVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowVpcAttachmentResponse`
@@ -2023,6 +2138,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2057,6 +2174,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVpcAttachmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2071,6 +2189,7 @@ class ErAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateVpcAttachment
         :type request: :class:`huaweicloudsdker.v3.UpdateVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateVpcAttachmentResponse`
@@ -2083,6 +2202,8 @@ class ErAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2119,6 +2240,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcAttachmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2126,7 +2248,7 @@ class ErAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2137,9 +2259,10 @@ class ErAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2156,6 +2279,7 @@ class ErAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

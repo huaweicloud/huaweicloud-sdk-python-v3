@@ -17,7 +17,6 @@ class CreateGaussMySqlDatabaseRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateGaussMySqlDatabaseRequestBody:
     def databases(self):
         """Gets the databases of this CreateGaussMySqlDatabaseRequestBody.
 
-
         :return: The databases of this CreateGaussMySqlDatabaseRequestBody.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabase`]
         """
@@ -57,7 +55,6 @@ class CreateGaussMySqlDatabaseRequestBody:
     @databases.setter
     def databases(self, databases):
         """Sets the databases of this CreateGaussMySqlDatabaseRequestBody.
-
 
         :param databases: The databases of this CreateGaussMySqlDatabaseRequestBody.
         :type databases: list[:class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabase`]

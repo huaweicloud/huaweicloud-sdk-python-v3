@@ -17,7 +17,6 @@ class Extends:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class Extends:
     def tag_ids(self):
         """Gets the tag_ids of this Extends.
 
-
         :return: The tag_ids of this Extends.
         :rtype: :class:`huaweicloudsdkcbs.v1.Tag`
         """
@@ -79,7 +77,6 @@ class Extends:
     @tag_ids.setter
     def tag_ids(self, tag_ids):
         """Sets the tag_ids of this Extends.
-
 
         :param tag_ids: The tag_ids of this Extends.
         :type tag_ids: :class:`huaweicloudsdkcbs.v1.Tag`

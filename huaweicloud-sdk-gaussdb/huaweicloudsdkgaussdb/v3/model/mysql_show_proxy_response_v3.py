@@ -17,7 +17,6 @@ class MysqlShowProxyResponseV3:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class MysqlShowProxyResponseV3:
     def proxy(self):
         """Gets the proxy of this MysqlShowProxyResponseV3.
 
-
         :return: The proxy of this MysqlShowProxyResponseV3.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyV3`
         """
@@ -72,7 +70,6 @@ class MysqlShowProxyResponseV3:
     @proxy.setter
     def proxy(self, proxy):
         """Sets the proxy of this MysqlShowProxyResponseV3.
-
 
         :param proxy: The proxy of this MysqlShowProxyResponseV3.
         :type proxy: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyV3`
@@ -83,7 +80,6 @@ class MysqlShowProxyResponseV3:
     def master_node(self):
         """Gets the master_node of this MysqlShowProxyResponseV3.
 
-
         :return: The master_node of this MysqlShowProxyResponseV3.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`
         """
@@ -92,7 +88,6 @@ class MysqlShowProxyResponseV3:
     @master_node.setter
     def master_node(self, master_node):
         """Sets the master_node of this MysqlShowProxyResponseV3.
-
 
         :param master_node: The master_node of this MysqlShowProxyResponseV3.
         :type master_node: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`

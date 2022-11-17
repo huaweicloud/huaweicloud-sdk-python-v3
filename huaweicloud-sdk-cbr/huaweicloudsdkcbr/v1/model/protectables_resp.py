@@ -17,7 +17,6 @@ class ProtectablesResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -181,7 +180,6 @@ class ProtectablesResp:
     def protectable(self):
         """Gets the protectable of this ProtectablesResp.
 
-
         :return: The protectable of this ProtectablesResp.
         :rtype: :class:`huaweicloudsdkcbr.v1.ProtectableResult`
         """
@@ -190,7 +188,6 @@ class ProtectablesResp:
     @protectable.setter
     def protectable(self, protectable):
         """Sets the protectable of this ProtectablesResp.
-
 
         :param protectable: The protectable of this ProtectablesResp.
         :type protectable: :class:`huaweicloudsdkcbr.v1.ProtectableResult`

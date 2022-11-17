@@ -17,7 +17,6 @@ class BatchSetSpeedRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class BatchSetSpeedRequest:
     def body(self):
         """Gets the body of this BatchSetSpeedRequest.
 
-
         :return: The body of this BatchSetSpeedRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchLimitSpeedReq`
         """
@@ -87,7 +85,6 @@ class BatchSetSpeedRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchSetSpeedRequest.
-
 
         :param body: The body of this BatchSetSpeedRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchLimitSpeedReq`

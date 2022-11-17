@@ -17,7 +17,6 @@ class RecognizeShortAudioResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class RecognizeShortAudioResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeShortAudioResponse.
 
-
         :return: The result of this RecognizeShortAudioResponse.
         :rtype: :class:`huaweicloudsdksis.v1.Result`
         """
@@ -87,7 +85,6 @@ class RecognizeShortAudioResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeShortAudioResponse.
-
 
         :param result: The result of this RecognizeShortAudioResponse.
         :type result: :class:`huaweicloudsdksis.v1.Result`

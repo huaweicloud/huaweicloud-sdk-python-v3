@@ -17,7 +17,6 @@ class BackupPolicy:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class BackupPolicy:
     def periodical_backup_plan(self):
         """Gets the periodical_backup_plan of this BackupPolicy.
 
-
         :return: The periodical_backup_plan of this BackupPolicy.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupPlan`
         """
@@ -115,7 +113,6 @@ class BackupPolicy:
     @periodical_backup_plan.setter
     def periodical_backup_plan(self, periodical_backup_plan):
         """Sets the periodical_backup_plan of this BackupPolicy.
-
 
         :param periodical_backup_plan: The periodical_backup_plan of this BackupPolicy.
         :type periodical_backup_plan: :class:`huaweicloudsdkdcs.v2.BackupPlan`

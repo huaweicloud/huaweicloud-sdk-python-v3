@@ -17,7 +17,6 @@ class ResizePrePaidServerOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -113,7 +112,6 @@ class ResizePrePaidServerOption:
     def extendparam(self):
         """Gets the extendparam of this ResizePrePaidServerOption.
 
-
         :return: The extendparam of this ResizePrePaidServerOption.
         :rtype: :class:`huaweicloudsdkecs.v2.ResizeServerExtendParam`
         """
@@ -122,7 +120,6 @@ class ResizePrePaidServerOption:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this ResizePrePaidServerOption.
-
 
         :param extendparam: The extendparam of this ResizePrePaidServerOption.
         :type extendparam: :class:`huaweicloudsdkecs.v2.ResizeServerExtendParam`

@@ -17,7 +17,6 @@ class UpdateDomainPasswordPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateDomainPasswordPolicyRequest:
     def body(self):
         """Gets the body of this UpdateDomainPasswordPolicyRequest.
 
-
         :return: The body of this UpdateDomainPasswordPolicyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainPasswordPolicyRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateDomainPasswordPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDomainPasswordPolicyRequest.
-
 
         :param body: The body of this UpdateDomainPasswordPolicyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateDomainPasswordPolicyRequestBody`

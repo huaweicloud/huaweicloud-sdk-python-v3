@@ -17,7 +17,6 @@ class ListAllTablesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -112,7 +111,6 @@ class ListAllTablesRequest:
     def current_page(self):
         """Gets the current_page of this ListAllTablesRequest.
 
-
         :return: The current_page of this ListAllTablesRequest.
         :rtype: int
         """
@@ -121,7 +119,6 @@ class ListAllTablesRequest:
     @current_page.setter
     def current_page(self, current_page):
         """Sets the current_page of this ListAllTablesRequest.
-
 
         :param current_page: The current_page of this ListAllTablesRequest.
         :type current_page: int
@@ -154,7 +151,6 @@ class ListAllTablesRequest:
     def page_size(self):
         """Gets the page_size of this ListAllTablesRequest.
 
-
         :return: The page_size of this ListAllTablesRequest.
         :rtype: int
         """
@@ -163,7 +159,6 @@ class ListAllTablesRequest:
     @page_size.setter
     def page_size(self, page_size):
         """Sets the page_size of this ListAllTablesRequest.
-
 
         :param page_size: The page_size of this ListAllTablesRequest.
         :type page_size: int
@@ -174,7 +169,6 @@ class ListAllTablesRequest:
     def table_type(self):
         """Gets the table_type of this ListAllTablesRequest.
 
-
         :return: The table_type of this ListAllTablesRequest.
         :rtype: str
         """
@@ -183,7 +177,6 @@ class ListAllTablesRequest:
     @table_type.setter
     def table_type(self, table_type):
         """Sets the table_type of this ListAllTablesRequest.
-
 
         :param table_type: The table_type of this ListAllTablesRequest.
         :type table_type: str
@@ -216,7 +209,6 @@ class ListAllTablesRequest:
     def with_priv(self):
         """Gets the with_priv of this ListAllTablesRequest.
 
-
         :return: The with_priv of this ListAllTablesRequest.
         :rtype: bool
         """
@@ -225,7 +217,6 @@ class ListAllTablesRequest:
     @with_priv.setter
     def with_priv(self, with_priv):
         """Sets the with_priv of this ListAllTablesRequest.
-
 
         :param with_priv: The with_priv of this ListAllTablesRequest.
         :type with_priv: bool

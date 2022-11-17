@@ -17,7 +17,6 @@ class UpdateSubNetworkInterfaceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateSubNetworkInterfaceRequestBody:
     def sub_network_interface(self):
         """Gets the sub_network_interface of this UpdateSubNetworkInterfaceRequestBody.
 
-
         :return: The sub_network_interface of this UpdateSubNetworkInterfaceRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceOption`
         """
@@ -86,7 +84,6 @@ class UpdateSubNetworkInterfaceRequestBody:
     @sub_network_interface.setter
     def sub_network_interface(self, sub_network_interface):
         """Sets the sub_network_interface of this UpdateSubNetworkInterfaceRequestBody.
-
 
         :param sub_network_interface: The sub_network_interface of this UpdateSubNetworkInterfaceRequestBody.
         :type sub_network_interface: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceOption`

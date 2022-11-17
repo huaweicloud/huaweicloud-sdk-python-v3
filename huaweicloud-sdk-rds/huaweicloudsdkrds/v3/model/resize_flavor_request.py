@@ -17,7 +17,6 @@ class ResizeFlavorRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ResizeFlavorRequest:
     def resize_flavor(self):
         """Gets the resize_flavor of this ResizeFlavorRequest.
 
-
         :return: The resize_flavor of this ResizeFlavorRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ResizeFlavorObject`
         """
@@ -57,7 +55,6 @@ class ResizeFlavorRequest:
     @resize_flavor.setter
     def resize_flavor(self, resize_flavor):
         """Sets the resize_flavor of this ResizeFlavorRequest.
-
 
         :param resize_flavor: The resize_flavor of this ResizeFlavorRequest.
         :type resize_flavor: :class:`huaweicloudsdkrds.v3.ResizeFlavorObject`

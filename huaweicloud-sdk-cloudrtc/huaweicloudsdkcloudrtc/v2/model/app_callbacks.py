@@ -17,7 +17,6 @@ class AppCallbacks:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class AppCallbacks:
     def push_callback(self):
         """Gets the push_callback of this AppCallbacks.
 
-
         :return: The push_callback of this AppCallbacks.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
         """
@@ -65,7 +63,6 @@ class AppCallbacks:
     @push_callback.setter
     def push_callback(self, push_callback):
         """Sets the push_callback of this AppCallbacks.
-
 
         :param push_callback: The push_callback of this AppCallbacks.
         :type push_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
@@ -76,7 +73,6 @@ class AppCallbacks:
     def record_callback(self):
         """Gets the record_callback of this AppCallbacks.
 
-
         :return: The record_callback of this AppCallbacks.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
         """
@@ -85,7 +81,6 @@ class AppCallbacks:
     @record_callback.setter
     def record_callback(self, record_callback):
         """Sets the record_callback of this AppCallbacks.
-
 
         :param record_callback: The record_callback of this AppCallbacks.
         :type record_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`

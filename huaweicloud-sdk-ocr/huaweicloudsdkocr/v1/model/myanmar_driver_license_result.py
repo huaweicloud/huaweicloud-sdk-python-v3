@@ -17,7 +17,6 @@ class MyanmarDriverLicenseResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -43,7 +42,7 @@ class MyanmarDriverLicenseResult:
         'name_en': 'name_en',
         'nrc_id': 'nrc_id',
         'nrc_id_en': 'nrc_id_en',
-        'birth': 'Birth',
+        'birth': 'birth',
         'birth_en': 'birth_en',
         'blood_group': 'blood_group',
         'blood_group_en': 'blood_group_en',
@@ -397,7 +396,6 @@ class MyanmarDriverLicenseResult:
     def confidence(self):
         """Gets the confidence of this MyanmarDriverLicenseResult.
 
-
         :return: The confidence of this MyanmarDriverLicenseResult.
         :rtype: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseConfidence`
         """
@@ -406,7 +404,6 @@ class MyanmarDriverLicenseResult:
     @confidence.setter
     def confidence(self, confidence):
         """Sets the confidence of this MyanmarDriverLicenseResult.
-
 
         :param confidence: The confidence of this MyanmarDriverLicenseResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.MyanmarDriverLicenseConfidence`

@@ -17,7 +17,6 @@ class ShowGraphResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowGraphResponse(SdkResponse):
     def graph(self):
         """Gets the graph of this ShowGraphResponse.
 
-
         :return: The graph of this ShowGraphResponse.
         :rtype: :class:`huaweicloudsdkges.v1.Graph1`
         """
@@ -72,7 +70,6 @@ class ShowGraphResponse(SdkResponse):
     @graph.setter
     def graph(self, graph):
         """Sets the graph of this ShowGraphResponse.
-
 
         :param graph: The graph of this ShowGraphResponse.
         :type graph: :class:`huaweicloudsdkges.v1.Graph1`

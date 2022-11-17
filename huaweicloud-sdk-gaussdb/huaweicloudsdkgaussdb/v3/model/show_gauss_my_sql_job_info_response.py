@@ -17,7 +17,6 @@ class ShowGaussMySqlJobInfoResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowGaussMySqlJobInfoResponse(SdkResponse):
     def job(self):
         """Gets the job of this ShowGaussMySqlJobInfoResponse.
 
-
         :return: The job of this ShowGaussMySqlJobInfoResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.GetJobInfoDetail`
         """
@@ -58,7 +56,6 @@ class ShowGaussMySqlJobInfoResponse(SdkResponse):
     @job.setter
     def job(self, job):
         """Sets the job of this ShowGaussMySqlJobInfoResponse.
-
 
         :param job: The job of this ShowGaussMySqlJobInfoResponse.
         :type job: :class:`huaweicloudsdkgaussdb.v3.GetJobInfoDetail`

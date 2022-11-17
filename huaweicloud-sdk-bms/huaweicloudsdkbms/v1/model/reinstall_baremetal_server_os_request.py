@@ -17,7 +17,6 @@ class ReinstallBaremetalServerOsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ReinstallBaremetalServerOsRequest:
     def body(self):
         """Gets the body of this ReinstallBaremetalServerOsRequest.
 
-
         :return: The body of this ReinstallBaremetalServerOsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.OsReinstallBody`
         """
@@ -86,7 +84,6 @@ class ReinstallBaremetalServerOsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ReinstallBaremetalServerOsRequest.
-
 
         :param body: The body of this ReinstallBaremetalServerOsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.OsReinstallBody`

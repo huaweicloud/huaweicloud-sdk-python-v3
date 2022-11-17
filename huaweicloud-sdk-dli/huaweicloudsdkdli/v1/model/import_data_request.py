@@ -17,7 +17,6 @@ class ImportDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ImportDataRequest:
     def body(self):
         """Gets the body of this ImportDataRequest.
 
-
         :return: The body of this ImportDataRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ImportTableReq`
         """
@@ -58,7 +56,6 @@ class ImportDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportDataRequest.
-
 
         :param body: The body of this ImportDataRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ImportTableReq`

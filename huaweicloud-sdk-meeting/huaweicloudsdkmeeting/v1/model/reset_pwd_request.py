@@ -17,7 +17,6 @@ class ResetPwdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ResetPwdRequest:
     def body(self):
         """Gets the body of this ResetPwdRequest.
 
-
         :return: The body of this ResetPwdRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetPwdReqDTOV1`
         """
@@ -116,7 +114,6 @@ class ResetPwdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetPwdRequest.
-
 
         :param body: The body of this ResetPwdRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ResetPwdReqDTOV1`

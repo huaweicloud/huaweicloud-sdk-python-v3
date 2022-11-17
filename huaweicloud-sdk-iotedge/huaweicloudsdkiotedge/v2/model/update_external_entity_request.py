@@ -17,7 +17,6 @@ class UpdateExternalEntityRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateExternalEntityRequest:
     def body(self):
         """Gets the body of this UpdateExternalEntityRequest.
 
-
         :return: The body of this UpdateExternalEntityRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityReqDTO`
         """
@@ -114,7 +112,6 @@ class UpdateExternalEntityRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateExternalEntityRequest.
-
 
         :param body: The body of this UpdateExternalEntityRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityReqDTO`

@@ -17,7 +17,6 @@ class CreateDatasourceReqDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class CreateDatasourceReqDTO:
     def content(self):
         """Gets the content of this CreateDatasourceReqDTO.
 
-
         :return: The content of this CreateDatasourceReqDTO.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailReq`
         """
@@ -113,7 +111,6 @@ class CreateDatasourceReqDTO:
     @content.setter
     def content(self, content):
         """Sets the content of this CreateDatasourceReqDTO.
-
 
         :param content: The content of this CreateDatasourceReqDTO.
         :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailReq`

@@ -17,7 +17,6 @@ class ShowAccessoryLimitsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowAccessoryLimitsResponse(SdkResponse):
     def accessory_limit(self):
         """Gets the accessory_limit of this ShowAccessoryLimitsResponse.
 
-
         :return: The accessory_limit of this ShowAccessoryLimitsResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.AccessoryLimitVo`
         """
@@ -58,7 +56,6 @@ class ShowAccessoryLimitsResponse(SdkResponse):
     @accessory_limit.setter
     def accessory_limit(self, accessory_limit):
         """Sets the accessory_limit of this ShowAccessoryLimitsResponse.
-
 
         :param accessory_limit: The accessory_limit of this ShowAccessoryLimitsResponse.
         :type accessory_limit: :class:`huaweicloudsdkosm.v2.AccessoryLimitVo`

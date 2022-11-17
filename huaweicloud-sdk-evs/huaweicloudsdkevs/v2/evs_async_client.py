@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EvsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -59,6 +53,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateVolumeTags
         :type request: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsResponse`
@@ -71,6 +66,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -105,6 +102,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateVolumeTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -119,6 +117,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteVolumeTags
         :type request: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsResponse`
@@ -131,6 +130,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -165,6 +166,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteVolumeTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -179,6 +181,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CinderAcceptVolumeTransfer
         :type request: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferResponse`
@@ -191,6 +194,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -225,6 +230,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CinderAcceptVolumeTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -240,6 +246,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CinderCreateVolumeTransfer
         :type request: :class:`huaweicloudsdkevs.v2.CinderCreateVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderCreateVolumeTransferResponse`
@@ -252,6 +259,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +293,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CinderCreateVolumeTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -298,6 +308,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CinderDeleteVolumeTransfer
         :type request: :class:`huaweicloudsdkevs.v2.CinderDeleteVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderDeleteVolumeTransferResponse`
@@ -310,6 +321,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CinderDeleteVolumeTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CinderListAvailabilityZones
         :type request: :class:`huaweicloudsdkevs.v2.CinderListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListAvailabilityZonesResponse`
@@ -368,6 +383,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -398,6 +415,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CinderListAvailabilityZonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -412,6 +430,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CinderListQuotas
         :type request: :class:`huaweicloudsdkevs.v2.CinderListQuotasRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListQuotasResponse`
@@ -424,6 +443,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -458,6 +479,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CinderListQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -472,6 +494,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CinderListVolumeTransfers
         :type request: :class:`huaweicloudsdkevs.v2.CinderListVolumeTransfersRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListVolumeTransfersResponse`
@@ -484,6 +507,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -518,6 +543,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CinderListVolumeTransfersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -532,6 +558,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CinderListVolumeTypes
         :type request: :class:`huaweicloudsdkevs.v2.CinderListVolumeTypesRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListVolumeTypesResponse`
@@ -544,6 +571,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -574,6 +603,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CinderListVolumeTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -588,6 +618,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CinderShowVolumeTransfer
         :type request: :class:`huaweicloudsdkevs.v2.CinderShowVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderShowVolumeTransferResponse`
@@ -600,6 +631,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -632,6 +665,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CinderShowVolumeTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -646,6 +680,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSnapshot
         :type request: :class:`huaweicloudsdkevs.v2.CreateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CreateSnapshotResponse`
@@ -658,6 +693,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -690,6 +727,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -709,6 +747,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateVolume
         :type request: :class:`huaweicloudsdkevs.v2.CreateVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeResponse`
@@ -721,6 +760,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -753,6 +794,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -767,6 +809,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSnapshot
         :type request: :class:`huaweicloudsdkevs.v2.DeleteSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.DeleteSnapshotResponse`
@@ -779,6 +822,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -811,6 +856,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -825,6 +871,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteVolume
         :type request: :class:`huaweicloudsdkevs.v2.DeleteVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.DeleteVolumeResponse`
@@ -837,6 +884,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -869,6 +918,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -883,6 +933,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSnapshots
         :type request: :class:`huaweicloudsdkevs.v2.ListSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListSnapshotsResponse`
@@ -895,6 +946,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -947,6 +1000,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSnapshotsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -961,6 +1015,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVolumeTags
         :type request: :class:`huaweicloudsdkevs.v2.ListVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumeTagsResponse`
@@ -973,6 +1028,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1003,6 +1060,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVolumeTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1017,6 +1075,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVolumes
         :type request: :class:`huaweicloudsdkevs.v2.ListVolumesRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumesResponse`
@@ -1029,6 +1088,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1095,6 +1156,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVolumesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1109,6 +1171,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVolumesByTags
         :type request: :class:`huaweicloudsdkevs.v2.ListVolumesByTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumesByTagsResponse`
@@ -1121,6 +1184,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1153,6 +1218,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVolumesByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1172,6 +1238,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeVolume
         :type request: :class:`huaweicloudsdkevs.v2.ResizeVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ResizeVolumeResponse`
@@ -1184,6 +1251,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1218,6 +1287,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1232,6 +1302,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RollbackSnapshot
         :type request: :class:`huaweicloudsdkevs.v2.RollbackSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.RollbackSnapshotResponse`
@@ -1244,6 +1315,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1278,6 +1351,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RollbackSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1293,6 +1367,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkevs.v2.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowJobResponse`
@@ -1305,6 +1380,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1337,6 +1414,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1351,6 +1429,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSnapshot
         :type request: :class:`huaweicloudsdkevs.v2.ShowSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowSnapshotResponse`
@@ -1363,6 +1442,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1395,6 +1476,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1409,6 +1491,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVolume
         :type request: :class:`huaweicloudsdkevs.v2.ShowVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowVolumeResponse`
@@ -1421,6 +1504,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1453,6 +1538,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1467,6 +1553,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVolumeTags
         :type request: :class:`huaweicloudsdkevs.v2.ShowVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowVolumeTagsResponse`
@@ -1479,6 +1566,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1511,6 +1600,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVolumeTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1525,6 +1615,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSnapshot
         :type request: :class:`huaweicloudsdkevs.v2.UpdateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.UpdateSnapshotResponse`
@@ -1537,6 +1628,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1571,6 +1664,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1585,6 +1679,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateVolume
         :type request: :class:`huaweicloudsdkevs.v2.UpdateVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.UpdateVolumeResponse`
@@ -1597,6 +1692,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1631,6 +1728,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1645,6 +1743,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVersions
         :type request: :class:`huaweicloudsdkevs.v2.ListVersionsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVersionsResponse`
@@ -1657,6 +1756,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1687,6 +1788,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1701,6 +1803,7 @@ class EvsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVersion
         :type request: :class:`huaweicloudsdkevs.v2.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowVersionResponse`
@@ -1713,6 +1816,8 @@ class EvsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1745,6 +1850,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1752,7 +1858,7 @@ class EvsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1763,9 +1869,10 @@ class EvsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1782,6 +1889,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

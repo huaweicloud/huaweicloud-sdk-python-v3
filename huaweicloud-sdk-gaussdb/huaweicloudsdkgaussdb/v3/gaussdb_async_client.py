@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GaussDBAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddDatabasePermission
         :type request: :class:`huaweicloudsdkgaussdb.v3.AddDatabasePermissionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.AddDatabasePermissionResponse`
@@ -68,6 +63,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDatabasePermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchTagAction
         :type request: :class:`huaweicloudsdkgaussdb.v3.BatchTagActionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.BatchTagActionResponse`
@@ -130,6 +129,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchTagActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeGaussMySqlInstanceSpecification
         :type request: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlInstanceSpecificationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlInstanceSpecificationResponse`
@@ -192,6 +195,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +233,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeGaussMySqlInstanceSpecificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +248,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeGaussMySqlProxySpecification
         :type request: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlProxySpecificationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlProxySpecificationResponse`
@@ -254,6 +261,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -292,6 +301,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeGaussMySqlProxySpecificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -306,6 +316,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateGaussMySqlBackup
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlBackupResponse`
@@ -318,6 +329,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -352,6 +365,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -366,6 +380,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateGaussMySqlDatabase
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseResponse`
@@ -378,6 +393,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -414,6 +431,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -428,6 +446,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateGaussMySqlDatabaseUser
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseUserResponse`
@@ -440,6 +459,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -476,6 +497,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -490,6 +512,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateGaussMySqlInstance
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlInstanceResponse`
@@ -502,6 +525,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -536,6 +561,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -550,6 +576,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateGaussMySqlProxy
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlProxyResponse`
@@ -562,6 +589,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -598,6 +627,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -612,6 +642,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateGaussMySqlReadonlyNode
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlReadonlyNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlReadonlyNodeResponse`
@@ -624,6 +655,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -660,6 +693,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlReadonlyNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -674,6 +708,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDatabasePermission
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermissionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermissionResponse`
@@ -686,6 +721,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -722,6 +759,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabasePermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -736,6 +774,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteGaussMySqlDatabase
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseResponse`
@@ -748,6 +787,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -784,6 +825,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -798,6 +840,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteGaussMySqlDatabaseUser
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseUserResponse`
@@ -810,6 +853,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -846,6 +891,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -860,6 +906,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteGaussMySqlInstance
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlInstanceResponse`
@@ -872,6 +919,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -906,6 +955,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -920,6 +970,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteGaussMySqlProxy
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlProxyResponse`
@@ -932,6 +983,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -968,6 +1021,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -982,6 +1036,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteGaussMySqlReadonlyNode
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlReadonlyNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlReadonlyNodeResponse`
@@ -994,6 +1049,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1030,6 +1087,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlReadonlyNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1044,6 +1102,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExpandGaussMySqlInstanceVolume
         :type request: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlInstanceVolumeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlInstanceVolumeResponse`
@@ -1056,6 +1115,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1092,6 +1153,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandGaussMySqlInstanceVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1107,6 +1169,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExpandGaussMySqlProxy
         :type request: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlProxyResponse`
@@ -1119,6 +1182,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1155,6 +1220,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandGaussMySqlProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1169,6 +1235,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGaussMySqlConfigurations
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlConfigurationsResponse`
@@ -1181,6 +1248,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1217,6 +1286,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1231,6 +1301,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGaussMySqlDatabase
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseResponse`
@@ -1243,6 +1314,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1281,6 +1354,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1295,6 +1369,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGaussMySqlDatabaseCharsets
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseCharsetsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseCharsetsResponse`
@@ -1307,6 +1382,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1341,6 +1418,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlDatabaseCharsetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1355,6 +1433,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGaussMySqlDatabaseUser
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseUserResponse`
@@ -1367,6 +1446,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1405,6 +1486,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1419,6 +1501,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGaussMySqlDedicatedResources
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDedicatedResourcesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDedicatedResourcesResponse`
@@ -1431,6 +1514,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1467,6 +1552,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlDedicatedResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1481,6 +1567,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGaussMySqlErrorLog
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlErrorLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlErrorLogResponse`
@@ -1493,6 +1580,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1539,6 +1628,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlErrorLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1553,6 +1643,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGaussMySqlInstanceDetailInfo
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoResponse`
@@ -1565,6 +1656,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1599,6 +1692,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlInstanceDetailInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1613,6 +1707,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGaussMySqlInstances
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesResponse`
@@ -1625,6 +1720,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1677,6 +1774,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1691,6 +1789,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGaussMySqlSlowLog
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlSlowLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlSlowLogResponse`
@@ -1703,6 +1802,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1749,6 +1850,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlSlowLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1763,6 +1865,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstanceTags
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListInstanceTagsResponse`
@@ -1775,6 +1878,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1813,6 +1918,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1827,6 +1933,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectTags
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListProjectTagsResponse`
@@ -1839,6 +1946,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1875,6 +1984,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1889,6 +1999,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetGaussMySqlDatabasePassword
         :type request: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlDatabasePasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlDatabasePasswordResponse`
@@ -1901,6 +2012,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1937,6 +2050,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetGaussMySqlDatabasePasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1951,6 +2065,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetGaussMySqlPassword
         :type request: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlPasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlPasswordResponse`
@@ -1963,6 +2078,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1999,6 +2116,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetGaussMySqlPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2013,6 +2131,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetGaussMySqlProxyWeight
         :type request: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlProxyWeightRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlProxyWeightResponse`
@@ -2025,6 +2144,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2063,6 +2184,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetGaussMySqlProxyWeightResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2077,6 +2199,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetGaussMySqlQuotas
         :type request: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlQuotasResponse`
@@ -2089,6 +2212,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2123,6 +2248,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetGaussMySqlQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2137,6 +2263,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAuditLog
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogResponse`
@@ -2149,6 +2276,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2183,6 +2312,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuditLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2197,6 +2327,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDedicatedResourceInfo
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowDedicatedResourceInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowDedicatedResourceInfoResponse`
@@ -2209,6 +2340,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2243,6 +2376,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDedicatedResourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2257,6 +2391,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlBackupList
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupListRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupListResponse`
@@ -2269,6 +2404,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2315,6 +2452,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlBackupListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2329,6 +2467,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlBackupPolicy
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupPolicyResponse`
@@ -2341,6 +2480,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2375,6 +2516,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2389,6 +2531,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlEngineVersion
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlEngineVersionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlEngineVersionResponse`
@@ -2401,6 +2544,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2435,6 +2580,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlEngineVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2449,6 +2595,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlFlavors
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlFlavorsResponse`
@@ -2461,6 +2608,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2501,6 +2650,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2515,6 +2665,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlInstanceInfo
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoResponse`
@@ -2527,6 +2678,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2561,6 +2714,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlInstanceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2575,6 +2729,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlJobInfo
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlJobInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlJobInfoResponse`
@@ -2587,6 +2742,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2621,6 +2778,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlJobInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2635,6 +2793,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlProjectQuotas
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProjectQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProjectQuotasResponse`
@@ -2647,6 +2806,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2681,6 +2842,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlProjectQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2695,6 +2857,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlProxyFlavors
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyFlavorsResponse`
@@ -2707,6 +2870,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2741,6 +2906,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlProxyFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2755,6 +2921,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlProxyList
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyListRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyListResponse`
@@ -2767,6 +2934,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2805,6 +2974,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlProxyListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2819,6 +2989,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGaussMySqlQuotas
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlQuotasResponse`
@@ -2831,6 +3002,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2869,6 +3042,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2883,6 +3057,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceMonitorExtend
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceMonitorExtendRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceMonitorExtendResponse`
@@ -2895,6 +3070,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2929,6 +3106,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceMonitorExtendResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2943,6 +3121,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAuditLog
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateAuditLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateAuditLogResponse`
@@ -2955,6 +3134,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2991,6 +3172,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAuditLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3005,6 +3187,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateGaussMySqlBackupPolicy
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlBackupPolicyResponse`
@@ -3017,6 +3200,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3053,6 +3238,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGaussMySqlBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3067,6 +3253,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateGaussMySqlInstanceName
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceNameResponse`
@@ -3079,6 +3266,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3115,6 +3304,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGaussMySqlInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3129,6 +3319,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateGaussMySqlQuotas
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlQuotasResponse`
@@ -3141,6 +3332,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3175,6 +3368,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGaussMySqlQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3189,6 +3383,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceMonitor
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceMonitorRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceMonitorResponse`
@@ -3201,6 +3396,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3237,6 +3434,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceMonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3251,6 +3449,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTransactionSplitStatus
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateTransactionSplitStatusRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateTransactionSplitStatusResponse`
@@ -3263,6 +3462,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3299,6 +3500,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTransactionSplitStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3313,6 +3515,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSqlFilterRule
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleResponse`
@@ -3325,6 +3528,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3361,6 +3566,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSqlFilterRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3375,6 +3581,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetSqlFilterRule
         :type request: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleResponse`
@@ -3387,6 +3594,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3423,6 +3632,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetSqlFilterRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3437,6 +3647,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSqlFilterControl
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlResponse`
@@ -3449,6 +3660,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3483,6 +3696,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSqlFilterControlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3497,6 +3711,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSqlFilterRule
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleResponse`
@@ -3509,6 +3724,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3547,6 +3764,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSqlFilterRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3561,6 +3779,7 @@ class GaussDBAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSqlFilterControl
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlResponse`
@@ -3573,6 +3792,8 @@ class GaussDBAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3609,6 +3830,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSqlFilterControlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3616,7 +3838,7 @@ class GaussDBAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3627,9 +3849,10 @@ class GaussDBAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3646,6 +3869,7 @@ class GaussDBAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

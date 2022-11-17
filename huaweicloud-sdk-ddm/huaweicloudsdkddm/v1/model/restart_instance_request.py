@@ -17,7 +17,6 @@ class RestartInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RestartInstanceRequest:
     def body(self):
         """Gets the body of this RestartInstanceRequest.
 
-
         :return: The body of this RestartInstanceRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.RestartInstanceReq`
         """
@@ -86,7 +84,6 @@ class RestartInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RestartInstanceRequest.
-
 
         :param body: The body of this RestartInstanceRequest.
         :type body: :class:`huaweicloudsdkddm.v1.RestartInstanceReq`

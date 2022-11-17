@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ApmAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAkSk
         :type request: :class:`huaweicloudsdkapm.v1.CreateAkSkRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.CreateAkSkResponse`
@@ -68,6 +63,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAkSkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAkSk
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAkSkRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.DeleteAkSkResponse`
@@ -126,6 +125,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAkSkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAkSks
         :type request: :class:`huaweicloudsdkapm.v1.ShowAkSksRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowAkSksResponse`
@@ -184,6 +187,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -214,6 +219,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAkSksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -228,6 +234,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAkSk
         :type request: :class:`huaweicloudsdkapm.v1.ListAkSkRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAkSkResponse`
@@ -240,6 +247,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -270,6 +279,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAkSkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -284,6 +294,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBusiness
         :type request: :class:`huaweicloudsdkapm.v1.ListBusinessRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListBusinessResponse`
@@ -296,6 +307,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -326,6 +339,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBusinessResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -340,6 +354,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnvMonitorItem
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvMonitorItemRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListEnvMonitorItemResponse`
@@ -352,6 +367,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -386,6 +403,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvMonitorItemResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -400,6 +418,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SaveMonitorItemConfig
         :type request: :class:`huaweicloudsdkapm.v1.SaveMonitorItemConfigRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SaveMonitorItemConfigResponse`
@@ -412,6 +431,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -446,6 +467,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SaveMonitorItemConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -460,6 +482,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchApplication
         :type request: :class:`huaweicloudsdkapm.v1.SearchApplicationRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchApplicationResponse`
@@ -472,6 +495,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +531,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -520,6 +546,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMasterAddress
         :type request: :class:`huaweicloudsdkapm.v1.ShowMasterAddressRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowMasterAddressResponse`
@@ -532,6 +559,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -564,6 +593,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMasterAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -578,6 +608,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApp
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.DeleteAppResponse`
@@ -590,6 +621,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -624,6 +657,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -638,6 +672,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEnv
         :type request: :class:`huaweicloudsdkapm.v1.DeleteEnvRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.DeleteEnvResponse`
@@ -650,6 +685,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -684,6 +721,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -698,6 +736,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAppEnvs
         :type request: :class:`huaweicloudsdkapm.v1.ListAppEnvsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAppEnvsResponse`
@@ -710,6 +749,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -744,6 +785,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppEnvsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -758,6 +800,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApps
         :type request: :class:`huaweicloudsdkapm.v1.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAppsResponse`
@@ -770,6 +813,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -804,6 +849,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -818,6 +864,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnvTags
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvTagsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListEnvTagsResponse`
@@ -830,6 +877,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -864,6 +913,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -878,6 +928,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTopologyTree
         :type request: :class:`huaweicloudsdkapm.v1.ShowTopologyTreeRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTopologyTreeResponse`
@@ -890,6 +941,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -930,6 +983,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTopologyTreeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -944,6 +998,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOpenRegion
         :type request: :class:`huaweicloudsdkapm.v1.ListOpenRegionRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListOpenRegionResponse`
@@ -956,6 +1011,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -986,6 +1043,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOpenRegionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1000,6 +1058,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSupportedRegion
         :type request: :class:`huaweicloudsdkapm.v1.ListSupportedRegionRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListSupportedRegionResponse`
@@ -1012,6 +1071,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1042,6 +1103,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSupportedRegionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1056,6 +1118,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnvInstances
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvInstancesRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListEnvInstancesResponse`
@@ -1068,6 +1131,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1102,6 +1167,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1116,6 +1182,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowClobDetail
         :type request: :class:`huaweicloudsdkapm.v1.ShowClobDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowClobDetailResponse`
@@ -1128,6 +1195,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1162,6 +1231,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1175,6 +1245,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEnvMonitorItems
         :type request: :class:`huaweicloudsdkapm.v1.ShowEnvMonitorItemsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowEnvMonitorItemsResponse`
@@ -1187,6 +1258,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1221,6 +1294,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnvMonitorItemsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1235,6 +1309,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEventDetail
         :type request: :class:`huaweicloudsdkapm.v1.ShowEventDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowEventDetailResponse`
@@ -1247,6 +1322,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1285,6 +1362,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEventDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1299,6 +1377,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMonitorItemViewConfig
         :type request: :class:`huaweicloudsdkapm.v1.ShowMonitorItemViewConfigRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowMonitorItemViewConfigResponse`
@@ -1311,6 +1390,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1347,6 +1428,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMonitorItemViewConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1361,6 +1443,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRawTable
         :type request: :class:`huaweicloudsdkapm.v1.ShowRawTableRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowRawTableResponse`
@@ -1373,6 +1456,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1407,6 +1492,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRawTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1421,6 +1507,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSpanSearch
         :type request: :class:`huaweicloudsdkapm.v1.ShowSpanSearchRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowSpanSearchResponse`
@@ -1433,6 +1520,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1467,6 +1556,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSpanSearchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1481,6 +1571,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSumTable
         :type request: :class:`huaweicloudsdkapm.v1.ShowSumTableRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowSumTableResponse`
@@ -1493,6 +1584,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1527,6 +1620,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSumTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1541,6 +1635,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTopology
         :type request: :class:`huaweicloudsdkapm.v1.ShowTopologyRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTopologyResponse`
@@ -1553,6 +1648,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1585,6 +1682,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTopologyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1599,6 +1697,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTraceEvents
         :type request: :class:`huaweicloudsdkapm.v1.ShowTraceEventsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTraceEventsResponse`
@@ -1611,6 +1710,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1643,6 +1744,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTraceEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1657,6 +1759,7 @@ class ApmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTrend
         :type request: :class:`huaweicloudsdkapm.v1.ShowTrendRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTrendResponse`
@@ -1669,6 +1772,8 @@ class ApmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1703,6 +1808,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTrendResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1710,7 +1816,7 @@ class ApmAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1721,9 +1827,10 @@ class ApmAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1740,6 +1847,7 @@ class ApmAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

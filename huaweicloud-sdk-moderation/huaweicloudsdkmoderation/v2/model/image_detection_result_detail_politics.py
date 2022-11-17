@@ -17,7 +17,6 @@ class ImageDetectionResultDetailPolitics:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ImageDetectionResultDetailPolitics:
     def face_detail(self):
         """Gets the face_detail of this ImageDetectionResultDetailPolitics.
 
-
         :return: The face_detail of this ImageDetectionResultDetailPolitics.
         :rtype: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetailFaceDetail`
         """
@@ -116,7 +114,6 @@ class ImageDetectionResultDetailPolitics:
     @face_detail.setter
     def face_detail(self, face_detail):
         """Sets the face_detail of this ImageDetectionResultDetailPolitics.
-
 
         :param face_detail: The face_detail of this ImageDetectionResultDetailPolitics.
         :type face_detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetailFaceDetail`

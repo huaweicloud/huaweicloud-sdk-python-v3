@@ -17,7 +17,6 @@ class SetQosThresholdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SetQosThresholdRequest:
     def body(self):
         """Gets the body of this SetQosThresholdRequest.
 
-
         :return: The body of this SetQosThresholdRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdReq`
         """
@@ -86,7 +84,6 @@ class SetQosThresholdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetQosThresholdRequest.
-
 
         :param body: The body of this SetQosThresholdRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdReq`

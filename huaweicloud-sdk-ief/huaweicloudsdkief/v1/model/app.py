@@ -17,7 +17,6 @@ class App:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class App:
     def app(self):
         """Gets the app of this App.
 
-
         :return: The app of this App.
         :rtype: :class:`huaweicloudsdkief.v1.AppDetail`
         """
@@ -57,7 +55,6 @@ class App:
     @app.setter
     def app(self, app):
         """Sets the app of this App.
-
 
         :param app: The app of this App.
         :type app: :class:`huaweicloudsdkief.v1.AppDetail`

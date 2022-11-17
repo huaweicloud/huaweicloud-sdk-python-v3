@@ -17,7 +17,6 @@ class Resource:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -260,7 +259,6 @@ class Resource:
     def net_config(self):
         """Gets the net_config of this Resource.
 
-
         :return: The net_config of this Resource.
         :rtype: :class:`huaweicloudsdkiec.v1.NetConfig`
         """
@@ -269,7 +267,6 @@ class Resource:
     @net_config.setter
     def net_config(self, net_config):
         """Sets the net_config of this Resource.
-
 
         :param net_config: The net_config of this Resource.
         :type net_config: :class:`huaweicloudsdkiec.v1.NetConfig`
@@ -280,7 +277,6 @@ class Resource:
     def bandwidth(self):
         """Gets the bandwidth of this Resource.
 
-
         :return: The bandwidth of this Resource.
         :rtype: :class:`huaweicloudsdkiec.v1.BandwidthConfig`
         """
@@ -289,7 +285,6 @@ class Resource:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this Resource.
-
 
         :param bandwidth: The bandwidth of this Resource.
         :type bandwidth: :class:`huaweicloudsdkiec.v1.BandwidthConfig`
@@ -300,7 +295,6 @@ class Resource:
     def root_volume(self):
         """Gets the root_volume of this Resource.
 
-
         :return: The root_volume of this Resource.
         :rtype: :class:`huaweicloudsdkiec.v1.RootVolume`
         """
@@ -309,7 +303,6 @@ class Resource:
     @root_volume.setter
     def root_volume(self, root_volume):
         """Sets the root_volume of this Resource.
-
 
         :param root_volume: The root_volume of this Resource.
         :type root_volume: :class:`huaweicloudsdkiec.v1.RootVolume`

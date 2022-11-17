@@ -17,7 +17,6 @@ class DownloadErrorlogRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DownloadErrorlogRequest:
     def body(self):
         """Gets the body of this DownloadErrorlogRequest.
 
-
         :return: The body of this DownloadErrorlogRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.DownloadErrorlogRequestBody`
         """
@@ -86,7 +84,6 @@ class DownloadErrorlogRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DownloadErrorlogRequest.
-
 
         :param body: The body of this DownloadErrorlogRequest.
         :type body: :class:`huaweicloudsdkdds.v3.DownloadErrorlogRequestBody`

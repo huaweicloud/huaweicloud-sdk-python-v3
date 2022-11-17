@@ -17,7 +17,6 @@ class SetRepoRoleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class SetRepoRoleResponse(SdkResponse):
     def error(self):
         """Gets the error of this SetRepoRoleResponse.
 
-
         :return: The error of this SetRepoRoleResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class SetRepoRoleResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this SetRepoRoleResponse.
-
 
         :param error: The error of this SetRepoRoleResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class SetRepoRoleResponse(SdkResponse):
     def result(self):
         """Gets the result of this SetRepoRoleResponse.
 
-
         :return: The result of this SetRepoRoleResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Empty`
         """
@@ -92,7 +88,6 @@ class SetRepoRoleResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this SetRepoRoleResponse.
-
 
         :param result: The result of this SetRepoRoleResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.Empty`

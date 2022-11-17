@@ -17,7 +17,6 @@ class ExitEntryPermitResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -447,7 +446,6 @@ class ExitEntryPermitResult:
     def endorsement_info_hk(self):
         """Gets the endorsement_info_hk of this ExitEntryPermitResult.
 
-
         :return: The endorsement_info_hk of this ExitEntryPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
         """
@@ -456,7 +454,6 @@ class ExitEntryPermitResult:
     @endorsement_info_hk.setter
     def endorsement_info_hk(self, endorsement_info_hk):
         """Sets the endorsement_info_hk of this ExitEntryPermitResult.
-
 
         :param endorsement_info_hk: The endorsement_info_hk of this ExitEntryPermitResult.
         :type endorsement_info_hk: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
@@ -467,7 +464,6 @@ class ExitEntryPermitResult:
     def endorsement_info_mo(self):
         """Gets the endorsement_info_mo of this ExitEntryPermitResult.
 
-
         :return: The endorsement_info_mo of this ExitEntryPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
         """
@@ -476,7 +472,6 @@ class ExitEntryPermitResult:
     @endorsement_info_mo.setter
     def endorsement_info_mo(self, endorsement_info_mo):
         """Sets the endorsement_info_mo of this ExitEntryPermitResult.
-
 
         :param endorsement_info_mo: The endorsement_info_mo of this ExitEntryPermitResult.
         :type endorsement_info_mo: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
@@ -487,7 +482,6 @@ class ExitEntryPermitResult:
     def endorsement_info_tw(self):
         """Gets the endorsement_info_tw of this ExitEntryPermitResult.
 
-
         :return: The endorsement_info_tw of this ExitEntryPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
         """
@@ -496,7 +490,6 @@ class ExitEntryPermitResult:
     @endorsement_info_tw.setter
     def endorsement_info_tw(self, endorsement_info_tw):
         """Sets the endorsement_info_tw of this ExitEntryPermitResult.
-
 
         :param endorsement_info_tw: The endorsement_info_tw of this ExitEntryPermitResult.
         :type endorsement_info_tw: :class:`huaweicloudsdkocr.v1.ExitEntryPermitEndorsementInfo`
@@ -507,7 +500,6 @@ class ExitEntryPermitResult:
     def confidence(self):
         """Gets the confidence of this ExitEntryPermitResult.
 
-
         :return: The confidence of this ExitEntryPermitResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitConfidence`
         """
@@ -516,7 +508,6 @@ class ExitEntryPermitResult:
     @confidence.setter
     def confidence(self, confidence):
         """Sets the confidence of this ExitEntryPermitResult.
-
 
         :param confidence: The confidence of this ExitEntryPermitResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.ExitEntryPermitConfidence`

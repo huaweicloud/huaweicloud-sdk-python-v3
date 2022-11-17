@@ -17,7 +17,6 @@ class Schedule:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class Schedule:
     def sche_type(self):
         """Gets the sche_type of this Schedule.
 
-
         :return: The sche_type of this Schedule.
         :rtype: str
         """
@@ -72,7 +70,6 @@ class Schedule:
     @sche_type.setter
     def sche_type(self, sche_type):
         """Sets the sche_type of this Schedule.
-
 
         :param sche_type: The sche_type of this Schedule.
         :type sche_type: str
@@ -83,7 +80,6 @@ class Schedule:
     def cron(self):
         """Gets the cron of this Schedule.
 
-
         :return: The cron of this Schedule.
         :rtype: :class:`huaweicloudsdkdgc.v1.Cron`
         """
@@ -92,7 +88,6 @@ class Schedule:
     @cron.setter
     def cron(self, cron):
         """Sets the cron of this Schedule.
-
 
         :param cron: The cron of this Schedule.
         :type cron: :class:`huaweicloudsdkdgc.v1.Cron`
@@ -103,7 +98,6 @@ class Schedule:
     def event(self):
         """Gets the event of this Schedule.
 
-
         :return: The event of this Schedule.
         :rtype: :class:`huaweicloudsdkdgc.v1.Event`
         """
@@ -112,7 +106,6 @@ class Schedule:
     @event.setter
     def event(self, event):
         """Sets the event of this Schedule.
-
 
         :param event: The event of this Schedule.
         :type event: :class:`huaweicloudsdkdgc.v1.Event`

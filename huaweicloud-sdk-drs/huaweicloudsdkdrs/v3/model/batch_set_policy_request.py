@@ -17,7 +17,6 @@ class BatchSetPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class BatchSetPolicyRequest:
     def body(self):
         """Gets the body of this BatchSetPolicyRequest.
 
-
         :return: The body of this BatchSetPolicyRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetupSyncPolicyReq`
         """
@@ -87,7 +85,6 @@ class BatchSetPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchSetPolicyRequest.
-
 
         :param body: The body of this BatchSetPolicyRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchSetupSyncPolicyReq`

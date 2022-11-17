@@ -17,7 +17,6 @@ class ResumeScalingPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ResumeScalingPolicyRequest:
     def body(self):
         """Gets the body of this ResumeScalingPolicyRequest.
 
-
         :return: The body of this ResumeScalingPolicyRequest.
         :rtype: :class:`huaweicloudsdkas.v1.ResumeScalingPolicyOption`
         """
@@ -86,7 +84,6 @@ class ResumeScalingPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResumeScalingPolicyRequest.
-
 
         :param body: The body of this ResumeScalingPolicyRequest.
         :type body: :class:`huaweicloudsdkas.v1.ResumeScalingPolicyOption`

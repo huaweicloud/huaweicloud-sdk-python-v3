@@ -17,7 +17,6 @@ class UpdateNaRequestDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -176,7 +175,6 @@ class UpdateNaRequestDTO:
     def auth_aksk_info(self):
         """Gets the auth_aksk_info of this UpdateNaRequestDTO.
 
-
         :return: The auth_aksk_info of this UpdateNaRequestDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AuthAkSkInfo`
         """
@@ -185,7 +183,6 @@ class UpdateNaRequestDTO:
     @auth_aksk_info.setter
     def auth_aksk_info(self, auth_aksk_info):
         """Sets the auth_aksk_info of this UpdateNaRequestDTO.
-
 
         :param auth_aksk_info: The auth_aksk_info of this UpdateNaRequestDTO.
         :type auth_aksk_info: :class:`huaweicloudsdkiotedge.v2.AuthAkSkInfo`
@@ -218,7 +215,6 @@ class UpdateNaRequestDTO:
     def access_roma_info(self):
         """Gets the access_roma_info of this UpdateNaRequestDTO.
 
-
         :return: The access_roma_info of this UpdateNaRequestDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AccessRomaInfo`
         """
@@ -227,7 +223,6 @@ class UpdateNaRequestDTO:
     @access_roma_info.setter
     def access_roma_info(self, access_roma_info):
         """Sets the access_roma_info of this UpdateNaRequestDTO.
-
 
         :param access_roma_info: The access_roma_info of this UpdateNaRequestDTO.
         :type access_roma_info: :class:`huaweicloudsdkiotedge.v2.AccessRomaInfo`

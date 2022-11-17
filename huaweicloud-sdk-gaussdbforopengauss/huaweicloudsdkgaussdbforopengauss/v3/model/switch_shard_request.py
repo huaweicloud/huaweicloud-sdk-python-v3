@@ -17,7 +17,6 @@ class SwitchShardRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class SwitchShardRequest:
     def body(self):
         """Gets the body of this SwitchShardRequest.
 
-
         :return: The body of this SwitchShardRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardRequestBody`
         """
@@ -115,7 +113,6 @@ class SwitchShardRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SwitchShardRequest.
-
 
         :param body: The body of this SwitchShardRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardRequestBody`

@@ -17,7 +17,6 @@ class ReverseProtectionGroupRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ReverseProtectionGroupRequestBody:
     def reverse_server_group(self):
         """Gets the reverse_server_group of this ReverseProtectionGroupRequestBody.
 
-
         :return: The reverse_server_group of this ReverseProtectionGroupRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestParams`
         """
@@ -57,7 +55,6 @@ class ReverseProtectionGroupRequestBody:
     @reverse_server_group.setter
     def reverse_server_group(self, reverse_server_group):
         """Sets the reverse_server_group of this ReverseProtectionGroupRequestBody.
-
 
         :param reverse_server_group: The reverse_server_group of this ReverseProtectionGroupRequestBody.
         :type reverse_server_group: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestParams`

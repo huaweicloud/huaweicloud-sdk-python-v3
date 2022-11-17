@@ -17,7 +17,6 @@ class DeviceMessageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -28,7 +27,8 @@ class DeviceMessageRequest:
         'encoding': 'str',
         'payload_format': 'str',
         'topic': 'str',
-        'topic_full_name': 'str'
+        'topic_full_name': 'str',
+        'ttl': 'int'
     }
 
     attribute_map = {
@@ -39,10 +39,11 @@ class DeviceMessageRequest:
         'encoding': 'encoding',
         'payload_format': 'payload_format',
         'topic': 'topic',
-        'topic_full_name': 'topic_full_name'
+        'topic_full_name': 'topic_full_name',
+        'ttl': 'ttl'
     }
 
-    def __init__(self, message_id=None, name=None, message=None, properties=None, encoding=None, payload_format=None, topic=None, topic_full_name=None):
+    def __init__(self, message_id=None, name=None, message=None, properties=None, encoding=None, payload_format=None, topic=None, topic_full_name=None, ttl=None):
         """DeviceMessageRequest
 
         The model defined in huaweicloud sdk
@@ -63,6 +64,8 @@ class DeviceMessageRequest:
         :type topic: str
         :param topic_full_name: **参数说明**：消息下行到设备的完整topic名称, 可选。用户需要下发用户自定义的topic给设备时，可以使用该参数指定完整的topic名称，物联网平台不校验该topic是否在平台定义，直接透传给设备。设备需要提前订阅该topic。此字段与topic字段只可填写一个。
         :type topic_full_name: str
+        :param ttl: **参数说明**：下发消息在平台缓存的老化时间，时间单位是分钟，默认值1440；ttl参数数值必须是5的倍数，即以5分钟为粒度；指定为0时表示不缓存消息，最大缓存时间1440分钟，即缓存一天
+        :type ttl: int
         """
         
         
@@ -75,6 +78,7 @@ class DeviceMessageRequest:
         self._payload_format = None
         self._topic = None
         self._topic_full_name = None
+        self._ttl = None
         self.discriminator = None
 
         if message_id is not None:
@@ -92,6 +96,8 @@ class DeviceMessageRequest:
             self.topic = topic
         if topic_full_name is not None:
             self.topic_full_name = topic_full_name
+        if ttl is not None:
+            self.ttl = ttl
 
     @property
     def message_id(self):
@@ -163,7 +169,6 @@ class DeviceMessageRequest:
     def properties(self):
         """Gets the properties of this DeviceMessageRequest.
 
-
         :return: The properties of this DeviceMessageRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
         """
@@ -172,7 +177,6 @@ class DeviceMessageRequest:
     @properties.setter
     def properties(self, properties):
         """Sets the properties of this DeviceMessageRequest.
-
 
         :param properties: The properties of this DeviceMessageRequest.
         :type properties: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
@@ -266,6 +270,28 @@ class DeviceMessageRequest:
         :type topic_full_name: str
         """
         self._topic_full_name = topic_full_name
+
+    @property
+    def ttl(self):
+        """Gets the ttl of this DeviceMessageRequest.
+
+        **参数说明**：下发消息在平台缓存的老化时间，时间单位是分钟，默认值1440；ttl参数数值必须是5的倍数，即以5分钟为粒度；指定为0时表示不缓存消息，最大缓存时间1440分钟，即缓存一天
+
+        :return: The ttl of this DeviceMessageRequest.
+        :rtype: int
+        """
+        return self._ttl
+
+    @ttl.setter
+    def ttl(self, ttl):
+        """Sets the ttl of this DeviceMessageRequest.
+
+        **参数说明**：下发消息在平台缓存的老化时间，时间单位是分钟，默认值1440；ttl参数数值必须是5的倍数，即以5分钟为粒度；指定为0时表示不缓存消息，最大缓存时间1440分钟，即缓存一天
+
+        :param ttl: The ttl of this DeviceMessageRequest.
+        :type ttl: int
+        """
+        self._ttl = ttl
 
     def to_dict(self):
         """Returns the model properties as a dict"""

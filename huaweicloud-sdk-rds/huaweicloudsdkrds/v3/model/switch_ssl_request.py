@@ -17,7 +17,6 @@ class SwitchSslRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class SwitchSslRequest:
     def body(self):
         """Gets the body of this SwitchSslRequest.
 
-
         :return: The body of this SwitchSslRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SslOptionRequest`
         """
@@ -115,7 +113,6 @@ class SwitchSslRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SwitchSslRequest.
-
 
         :param body: The body of this SwitchSslRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SslOptionRequest`

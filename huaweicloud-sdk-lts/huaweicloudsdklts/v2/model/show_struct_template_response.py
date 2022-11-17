@@ -17,7 +17,6 @@ class ShowStructTemplateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -258,7 +257,6 @@ class ShowStructTemplateResponse(SdkResponse):
     def rule(self):
         """Gets the rule of this ShowStructTemplateResponse.
 
-
         :return: The rule of this ShowStructTemplateResponse.
         :rtype: :class:`huaweicloudsdklts.v2.ShowStructTemplateRule`
         """
@@ -267,7 +265,6 @@ class ShowStructTemplateResponse(SdkResponse):
     @rule.setter
     def rule(self, rule):
         """Sets the rule of this ShowStructTemplateResponse.
-
 
         :param rule: The rule of this ShowStructTemplateResponse.
         :type rule: :class:`huaweicloudsdklts.v2.ShowStructTemplateRule`
@@ -278,7 +275,6 @@ class ShowStructTemplateResponse(SdkResponse):
     def cluster_info(self):
         """Gets the cluster_info of this ShowStructTemplateResponse.
 
-
         :return: The cluster_info of this ShowStructTemplateResponse.
         :rtype: :class:`huaweicloudsdklts.v2.ShowStructTemplateclusterInfo`
         """
@@ -287,7 +283,6 @@ class ShowStructTemplateResponse(SdkResponse):
     @cluster_info.setter
     def cluster_info(self, cluster_info):
         """Sets the cluster_info of this ShowStructTemplateResponse.
-
 
         :param cluster_info: The cluster_info of this ShowStructTemplateResponse.
         :type cluster_info: :class:`huaweicloudsdklts.v2.ShowStructTemplateclusterInfo`

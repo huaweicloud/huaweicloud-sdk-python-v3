@@ -17,7 +17,6 @@ class RestorePtrRecordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -61,7 +60,6 @@ class RestorePtrRecordRequest:
     def region(self):
         """Gets the region of this RestorePtrRecordRequest.
 
-
         :return: The region of this RestorePtrRecordRequest.
         :rtype: str
         """
@@ -70,7 +68,6 @@ class RestorePtrRecordRequest:
     @region.setter
     def region(self, region):
         """Sets the region of this RestorePtrRecordRequest.
-
 
         :param region: The region of this RestorePtrRecordRequest.
         :type region: str
@@ -81,7 +78,6 @@ class RestorePtrRecordRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this RestorePtrRecordRequest.
 
-
         :return: The floatingip_id of this RestorePtrRecordRequest.
         :rtype: str
         """
@@ -90,7 +86,6 @@ class RestorePtrRecordRequest:
     @floatingip_id.setter
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this RestorePtrRecordRequest.
-
 
         :param floatingip_id: The floatingip_id of this RestorePtrRecordRequest.
         :type floatingip_id: str
@@ -101,7 +96,6 @@ class RestorePtrRecordRequest:
     def body(self):
         """Gets the body of this RestorePtrRecordRequest.
 
-
         :return: The body of this RestorePtrRecordRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.RestorePtrReq`
         """
@@ -110,7 +104,6 @@ class RestorePtrRecordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RestorePtrRecordRequest.
-
 
         :param body: The body of this RestorePtrRecordRequest.
         :type body: :class:`huaweicloudsdkdns.v2.RestorePtrReq`

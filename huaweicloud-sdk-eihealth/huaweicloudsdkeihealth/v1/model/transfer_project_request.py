@@ -17,7 +17,6 @@ class TransferProjectRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class TransferProjectRequest:
     def body(self):
         """Gets the body of this TransferProjectRequest.
 
-
         :return: The body of this TransferProjectRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TransferProjectReq`
         """
@@ -86,7 +84,6 @@ class TransferProjectRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this TransferProjectRequest.
-
 
         :param body: The body of this TransferProjectRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.TransferProjectReq`

@@ -17,7 +17,6 @@ class DisassociateVaultPolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DisassociateVaultPolicyResponse(SdkResponse):
     def dissociate_policy(self):
         """Gets the dissociate_policy of this DisassociateVaultPolicyResponse.
 
-
         :return: The dissociate_policy of this DisassociateVaultPolicyResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`
         """
@@ -58,7 +56,6 @@ class DisassociateVaultPolicyResponse(SdkResponse):
     @dissociate_policy.setter
     def dissociate_policy(self, dissociate_policy):
         """Sets the dissociate_policy of this DisassociateVaultPolicyResponse.
-
 
         :param dissociate_policy: The dissociate_policy of this DisassociateVaultPolicyResponse.
         :type dissociate_policy: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`

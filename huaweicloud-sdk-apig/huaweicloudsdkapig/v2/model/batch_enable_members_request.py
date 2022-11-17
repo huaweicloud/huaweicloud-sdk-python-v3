@@ -17,7 +17,6 @@ class BatchEnableMembersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchEnableMembersRequest:
     def body(self):
         """Gets the body of this BatchEnableMembersRequest.
 
-
         :return: The body of this BatchEnableMembersRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.MembersBatchEnableOrDisable`
         """
@@ -114,7 +112,6 @@ class BatchEnableMembersRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchEnableMembersRequest.
-
 
         :param body: The body of this BatchEnableMembersRequest.
         :type body: :class:`huaweicloudsdkapig.v2.MembersBatchEnableOrDisable`

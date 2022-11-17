@@ -17,7 +17,6 @@ class CreateInstanceReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class CreateInstanceReq:
     def instance(self):
         """Gets the instance of this CreateInstanceReq.
 
-
         :return: The instance of this CreateInstanceReq.
         :rtype: :class:`huaweicloudsdkddm.v1.CreateInstanceDetail`
         """
@@ -64,7 +62,6 @@ class CreateInstanceReq:
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this CreateInstanceReq.
-
 
         :param instance: The instance of this CreateInstanceReq.
         :type instance: :class:`huaweicloudsdkddm.v1.CreateInstanceDetail`
@@ -75,7 +72,6 @@ class CreateInstanceReq:
     def extend_param(self):
         """Gets the extend_param of this CreateInstanceReq.
 
-
         :return: The extend_param of this CreateInstanceReq.
         :rtype: :class:`huaweicloudsdkddm.v1.CreateInstanceExtendParam`
         """
@@ -84,7 +80,6 @@ class CreateInstanceReq:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this CreateInstanceReq.
-
 
         :param extend_param: The extend_param of this CreateInstanceReq.
         :type extend_param: :class:`huaweicloudsdkddm.v1.CreateInstanceExtendParam`

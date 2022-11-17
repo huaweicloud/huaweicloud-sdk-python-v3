@@ -17,7 +17,6 @@ class ModelProperty:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -31,7 +30,8 @@ class ModelProperty:
         'step': 'str',
         'max_length': 'int',
         'unit': 'str',
-        'enum_list': 'str'
+        'enum_list': 'str',
+        'enum_dict': 'PropertyDataEnum'
     }
 
     attribute_map = {
@@ -45,10 +45,11 @@ class ModelProperty:
         'step': 'step',
         'max_length': 'max_length',
         'unit': 'unit',
-        'enum_list': 'enum_list'
+        'enum_list': 'enum_list',
+        'enum_dict': 'enum_dict'
     }
 
-    def __init__(self, property_id=None, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None):
+    def __init__(self, property_id=None, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None, enum_dict=None):
         """ModelProperty
 
         The model defined in huaweicloud sdk
@@ -59,7 +60,7 @@ class ModelProperty:
         :type property_name: str
         :param description: 属性描述，长度0-200
         :type description: str
-        :param data_type: 属性数据类型，枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；sting为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式
+        :param data_type: 属性数据类型，boolean枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；string为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式; array为数组类型
         :type data_type: str
         :param required: 是否必填 0-非必填 1-必填
         :type required: int
@@ -75,6 +76,8 @@ class ModelProperty:
         :type unit: str
         :param enum_list: string的枚举值数组，使用逗号分隔
         :type enum_list: str
+        :param enum_dict: 
+        :type enum_dict: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
         """
         
         
@@ -90,6 +93,7 @@ class ModelProperty:
         self._max_length = None
         self._unit = None
         self._enum_list = None
+        self._enum_dict = None
         self.discriminator = None
 
         if property_id is not None:
@@ -114,6 +118,8 @@ class ModelProperty:
             self.unit = unit
         if enum_list is not None:
             self.enum_list = enum_list
+        if enum_dict is not None:
+            self.enum_dict = enum_dict
 
     @property
     def property_id(self):
@@ -185,7 +191,7 @@ class ModelProperty:
     def data_type(self):
         """Gets the data_type of this ModelProperty.
 
-        属性数据类型，枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；sting为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式
+        属性数据类型，boolean枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；string为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式; array为数组类型
 
         :return: The data_type of this ModelProperty.
         :rtype: str
@@ -196,7 +202,7 @@ class ModelProperty:
     def data_type(self, data_type):
         """Sets the data_type of this ModelProperty.
 
-        属性数据类型，枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；sting为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式
+        属性数据类型，boolean枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；string为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式; array为数组类型
 
         :param data_type: The data_type of this ModelProperty.
         :type data_type: str
@@ -356,6 +362,24 @@ class ModelProperty:
         :type enum_list: str
         """
         self._enum_list = enum_list
+
+    @property
+    def enum_dict(self):
+        """Gets the enum_dict of this ModelProperty.
+
+        :return: The enum_dict of this ModelProperty.
+        :rtype: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        """
+        return self._enum_dict
+
+    @enum_dict.setter
+    def enum_dict(self, enum_dict):
+        """Sets the enum_dict of this ModelProperty.
+
+        :param enum_dict: The enum_dict of this ModelProperty.
+        :type enum_dict: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        """
+        self._enum_dict = enum_dict
 
     def to_dict(self):
         """Returns the model properties as a dict"""

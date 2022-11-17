@@ -17,7 +17,6 @@ class UpdateTransferRequestBodyLogTransferInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class UpdateTransferRequestBodyLogTransferInfo:
     def log_transfer_detail(self):
         """Gets the log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
 
-
         :return: The log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
         :rtype: :class:`huaweicloudsdklts.v2.TransferDetail`
         """
@@ -113,7 +111,6 @@ class UpdateTransferRequestBodyLogTransferInfo:
     @log_transfer_detail.setter
     def log_transfer_detail(self, log_transfer_detail):
         """Sets the log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
-
 
         :param log_transfer_detail: The log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
         :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`

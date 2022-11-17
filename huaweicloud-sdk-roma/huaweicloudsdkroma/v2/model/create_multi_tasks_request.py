@@ -17,7 +17,6 @@ class CreateMultiTasksRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateMultiTasksRequest:
     def body(self):
         """Gets the body of this CreateMultiTasksRequest.
 
-
         :return: The body of this CreateMultiTasksRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateMultiTasksRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateMultiTasksRequest.
-
 
         :param body: The body of this CreateMultiTasksRequest.
         :type body: :class:`huaweicloudsdkroma.v2.MultiTaskRequestBody`

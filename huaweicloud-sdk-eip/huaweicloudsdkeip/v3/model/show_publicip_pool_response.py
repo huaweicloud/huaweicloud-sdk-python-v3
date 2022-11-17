@@ -17,7 +17,6 @@ class ShowPublicipPoolResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowPublicipPoolResponse(SdkResponse):
     def publicip_pool(self):
         """Gets the publicip_pool of this ShowPublicipPoolResponse.
 
-
         :return: The publicip_pool of this ShowPublicipPoolResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`
         """
@@ -65,7 +63,6 @@ class ShowPublicipPoolResponse(SdkResponse):
     @publicip_pool.setter
     def publicip_pool(self, publicip_pool):
         """Sets the publicip_pool of this ShowPublicipPoolResponse.
-
 
         :param publicip_pool: The publicip_pool of this ShowPublicipPoolResponse.
         :type publicip_pool: :class:`huaweicloudsdkeip.v3.PublicipPoolShowResp`

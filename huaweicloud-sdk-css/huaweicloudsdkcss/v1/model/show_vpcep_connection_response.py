@@ -17,7 +17,6 @@ class ShowVpcepConnectionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowVpcepConnectionResponse(SdkResponse):
     def connections(self):
         """Gets the connections of this ShowVpcepConnectionResponse.
 
-
         :return: The connections of this ShowVpcepConnectionResponse.
         :rtype: list[:class:`huaweicloudsdkcss.v1.Connections`]
         """
@@ -72,7 +70,6 @@ class ShowVpcepConnectionResponse(SdkResponse):
     @connections.setter
     def connections(self, connections):
         """Sets the connections of this ShowVpcepConnectionResponse.
-
 
         :param connections: The connections of this ShowVpcepConnectionResponse.
         :type connections: list[:class:`huaweicloudsdkcss.v1.Connections`]

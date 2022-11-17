@@ -17,7 +17,6 @@ class OsReinstallBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class OsReinstallBody:
     def os_reinstall(self):
         """Gets the os_reinstall of this OsReinstallBody.
 
-
         :return: The os_reinstall of this OsReinstallBody.
         :rtype: :class:`huaweicloudsdkbms.v1.OsReinstall`
         """
@@ -57,7 +55,6 @@ class OsReinstallBody:
     @os_reinstall.setter
     def os_reinstall(self, os_reinstall):
         """Sets the os_reinstall of this OsReinstallBody.
-
 
         :param os_reinstall: The os_reinstall of this OsReinstallBody.
         :type os_reinstall: :class:`huaweicloudsdkbms.v1.OsReinstall`

@@ -17,7 +17,6 @@ class CreateScalingTagInfoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateScalingTagInfoRequest:
     def body(self):
         """Gets the body of this CreateScalingTagInfoRequest.
 
-
         :return: The body of this CreateScalingTagInfoRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateTagsOption`
         """
@@ -114,7 +112,6 @@ class CreateScalingTagInfoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateScalingTagInfoRequest.
-
 
         :param body: The body of this CreateScalingTagInfoRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateTagsOption`

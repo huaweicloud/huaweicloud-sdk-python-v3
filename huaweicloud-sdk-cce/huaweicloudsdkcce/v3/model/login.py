@@ -17,7 +17,6 @@ class Login:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class Login:
     def user_password(self):
         """Gets the user_password of this Login.
 
-
         :return: The user_password of this Login.
         :rtype: :class:`huaweicloudsdkcce.v3.UserPassword`
         """
@@ -87,7 +85,6 @@ class Login:
     @user_password.setter
     def user_password(self, user_password):
         """Sets the user_password of this Login.
-
 
         :param user_password: The user_password of this Login.
         :type user_password: :class:`huaweicloudsdkcce.v3.UserPassword`

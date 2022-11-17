@@ -17,7 +17,6 @@ class CreatePostPaidServersRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreatePostPaidServersRequestBody:
     def server(self):
         """Gets the server of this CreatePostPaidServersRequestBody.
 
-
         :return: The server of this CreatePostPaidServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServer`
         """
@@ -86,7 +84,6 @@ class CreatePostPaidServersRequestBody:
     @server.setter
     def server(self, server):
         """Sets the server of this CreatePostPaidServersRequestBody.
-
 
         :param server: The server of this CreatePostPaidServersRequestBody.
         :type server: :class:`huaweicloudsdkecs.v2.PostPaidServer`

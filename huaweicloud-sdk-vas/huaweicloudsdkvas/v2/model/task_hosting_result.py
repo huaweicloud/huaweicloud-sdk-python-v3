@@ -17,7 +17,6 @@ class TaskHostingResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class TaskHostingResult:
     def hosting_result(self):
         """Gets the hosting_result of this TaskHostingResult.
 
-
         :return: The hosting_result of this TaskHostingResult.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`
         """
@@ -58,7 +56,6 @@ class TaskHostingResult:
     @hosting_result.setter
     def hosting_result(self, hosting_result):
         """Sets the hosting_result of this TaskHostingResult.
-
 
         :param hosting_result: The hosting_result of this TaskHostingResult.
         :type hosting_result: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`

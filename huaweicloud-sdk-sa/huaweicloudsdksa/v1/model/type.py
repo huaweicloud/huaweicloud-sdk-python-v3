@@ -17,7 +17,6 @@ class Type:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class Type:
     def properties(self):
         """Gets the properties of this Type.
 
-
         :return: The properties of this Type.
         :rtype: :class:`huaweicloudsdksa.v1.TypeProperties`
         """
@@ -173,7 +171,6 @@ class Type:
     @properties.setter
     def properties(self, properties):
         """Sets the properties of this Type.
-
 
         :param properties: The properties of this Type.
         :type properties: :class:`huaweicloudsdksa.v1.TypeProperties`

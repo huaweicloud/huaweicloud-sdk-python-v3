@@ -17,7 +17,6 @@ class Job:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -326,7 +325,6 @@ class Job:
     def to_config_values(self):
         """Gets the to_config_values of this Job.
 
-
         :return: The to_config_values of this Job.
         :rtype: :class:`huaweicloudsdkcdm.v1.ConfigValues`
         """
@@ -335,7 +333,6 @@ class Job:
     @to_config_values.setter
     def to_config_values(self, to_config_values):
         """Sets the to_config_values of this Job.
-
 
         :param to_config_values: The to_config_values of this Job.
         :type to_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
@@ -368,7 +365,6 @@ class Job:
     def driver_config_values(self):
         """Gets the driver_config_values of this Job.
 
-
         :return: The driver_config_values of this Job.
         :rtype: :class:`huaweicloudsdkcdm.v1.ConfigValues`
         """
@@ -377,7 +373,6 @@ class Job:
     @driver_config_values.setter
     def driver_config_values(self, driver_config_values):
         """Sets the driver_config_values of this Job.
-
 
         :param driver_config_values: The driver_config_values of this Job.
         :type driver_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`
@@ -388,7 +383,6 @@ class Job:
     def from_config_values(self):
         """Gets the from_config_values of this Job.
 
-
         :return: The from_config_values of this Job.
         :rtype: :class:`huaweicloudsdkcdm.v1.ConfigValues`
         """
@@ -397,7 +391,6 @@ class Job:
     @from_config_values.setter
     def from_config_values(self, from_config_values):
         """Sets the from_config_values of this Job.
-
 
         :param from_config_values: The from_config_values of this Job.
         :type from_config_values: :class:`huaweicloudsdkcdm.v1.ConfigValues`

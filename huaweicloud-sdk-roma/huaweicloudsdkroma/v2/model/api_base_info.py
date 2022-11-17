@@ -17,7 +17,6 @@ class ApiBaseInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -349,7 +348,6 @@ class ApiBaseInfo:
     def auth_opt(self):
         """Gets the auth_opt of this ApiBaseInfo.
 
-
         :return: The auth_opt of this ApiBaseInfo.
         :rtype: :class:`huaweicloudsdkroma.v2.AuthOpt`
         """
@@ -358,7 +356,6 @@ class ApiBaseInfo:
     @auth_opt.setter
     def auth_opt(self, auth_opt):
         """Sets the auth_opt of this ApiBaseInfo.
-
 
         :param auth_opt: The auth_opt of this ApiBaseInfo.
         :type auth_opt: :class:`huaweicloudsdkroma.v2.AuthOpt`

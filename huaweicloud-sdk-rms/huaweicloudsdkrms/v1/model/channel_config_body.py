@@ -17,7 +17,6 @@ class ChannelConfigBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ChannelConfigBody:
     def smn(self):
         """Gets the smn of this ChannelConfigBody.
 
-
         :return: The smn of this ChannelConfigBody.
         :rtype: :class:`huaweicloudsdkrms.v1.TrackerSMNChannelConfigBody`
         """
@@ -65,7 +63,6 @@ class ChannelConfigBody:
     @smn.setter
     def smn(self, smn):
         """Sets the smn of this ChannelConfigBody.
-
 
         :param smn: The smn of this ChannelConfigBody.
         :type smn: :class:`huaweicloudsdkrms.v1.TrackerSMNChannelConfigBody`
@@ -76,7 +73,6 @@ class ChannelConfigBody:
     def obs(self):
         """Gets the obs of this ChannelConfigBody.
 
-
         :return: The obs of this ChannelConfigBody.
         :rtype: :class:`huaweicloudsdkrms.v1.TrackerOBSChannelConfigBody`
         """
@@ -85,7 +81,6 @@ class ChannelConfigBody:
     @obs.setter
     def obs(self, obs):
         """Sets the obs of this ChannelConfigBody.
-
 
         :param obs: The obs of this ChannelConfigBody.
         :type obs: :class:`huaweicloudsdkrms.v1.TrackerOBSChannelConfigBody`

@@ -17,7 +17,6 @@ class ShowUrlAuthResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class ShowUrlAuthResponse(SdkResponse):
     def authentication(self):
         """Gets the authentication of this ShowUrlAuthResponse.
 
-
         :return: The authentication of this ShowUrlAuthResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
@@ -94,7 +92,6 @@ class ShowUrlAuthResponse(SdkResponse):
     @authentication.setter
     def authentication(self, authentication):
         """Sets the authentication of this ShowUrlAuthResponse.
-
 
         :param authentication: The authentication of this ShowUrlAuthResponse.
         :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
@@ -105,7 +102,6 @@ class ShowUrlAuthResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this ShowUrlAuthResponse.
 
-
         :return: The x_request_id of this ShowUrlAuthResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class ShowUrlAuthResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ShowUrlAuthResponse.
-
 
         :param x_request_id: The x_request_id of this ShowUrlAuthResponse.
         :type x_request_id: str

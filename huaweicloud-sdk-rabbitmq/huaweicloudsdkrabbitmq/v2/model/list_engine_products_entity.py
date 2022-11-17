@@ -17,7 +17,6 @@ class ListEngineProductsEntity:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -281,7 +280,6 @@ class ListEngineProductsEntity:
     def properties(self):
         """Gets the properties of this ListEngineProductsEntity.
 
-
         :return: The properties of this ListEngineProductsEntity.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListEnginePropertiesEntity`
         """
@@ -290,7 +288,6 @@ class ListEngineProductsEntity:
     @properties.setter
     def properties(self, properties):
         """Sets the properties of this ListEngineProductsEntity.
-
 
         :param properties: The properties of this ListEngineProductsEntity.
         :type properties: :class:`huaweicloudsdkrabbitmq.v2.ListEnginePropertiesEntity`

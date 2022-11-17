@@ -17,7 +17,6 @@ class CreateConnectorRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateConnectorRequest:
     def body(self):
         """Gets the body of this CreateConnectorRequest.
 
-
         :return: The body of this CreateConnectorRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateConnectorReq`
         """
@@ -86,7 +84,6 @@ class CreateConnectorRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateConnectorRequest.
-
 
         :param body: The body of this CreateConnectorRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.CreateConnectorReq`

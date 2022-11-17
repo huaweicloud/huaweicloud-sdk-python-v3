@@ -17,7 +17,6 @@ class UpdateHealthCheckRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateHealthCheckRequestBody:
     def health_check(self):
         """Gets the health_check of this UpdateHealthCheckRequestBody.
 
-
         :return: The health_check of this UpdateHealthCheckRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.UpdateHealthCheckOption`
         """
@@ -57,7 +55,6 @@ class UpdateHealthCheckRequestBody:
     @health_check.setter
     def health_check(self, health_check):
         """Sets the health_check of this UpdateHealthCheckRequestBody.
-
 
         :param health_check: The health_check of this UpdateHealthCheckRequestBody.
         :type health_check: :class:`huaweicloudsdkga.v1.UpdateHealthCheckOption`

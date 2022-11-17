@@ -17,7 +17,6 @@ class TokenSocpeOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class TokenSocpeOption:
     def domain(self):
         """Gets the domain of this TokenSocpeOption.
 
-
         :return: The domain of this TokenSocpeOption.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
         """
@@ -65,7 +63,6 @@ class TokenSocpeOption:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this TokenSocpeOption.
-
 
         :param domain: The domain of this TokenSocpeOption.
         :type domain: :class:`huaweicloudsdkiam.v3.ScopeDomainOption`
@@ -76,7 +73,6 @@ class TokenSocpeOption:
     def project(self):
         """Gets the project of this TokenSocpeOption.
 
-
         :return: The project of this TokenSocpeOption.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopeProjectOption`
         """
@@ -85,7 +81,6 @@ class TokenSocpeOption:
     @project.setter
     def project(self, project):
         """Sets the project of this TokenSocpeOption.
-
 
         :param project: The project of this TokenSocpeOption.
         :type project: :class:`huaweicloudsdkiam.v3.ScopeProjectOption`

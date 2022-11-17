@@ -17,7 +17,6 @@ class UpdateBlackWhiteListRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateBlackWhiteListRequest:
     def body(self):
         """Gets the body of this UpdateBlackWhiteListRequest.
 
-
         :return: The body of this UpdateBlackWhiteListRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.BlackWhiteListBody`
         """
@@ -115,7 +113,6 @@ class UpdateBlackWhiteListRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateBlackWhiteListRequest.
-
 
         :param body: The body of this UpdateBlackWhiteListRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.BlackWhiteListBody`

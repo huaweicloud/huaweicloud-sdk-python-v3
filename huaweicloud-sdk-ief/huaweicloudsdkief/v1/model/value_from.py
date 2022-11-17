@@ -17,7 +17,6 @@ class ValueFrom:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ValueFrom:
     def secret(self):
         """Gets the secret of this ValueFrom.
 
-
         :return: The secret of this ValueFrom.
         :rtype: :class:`huaweicloudsdkief.v1.Secrets`
         """
@@ -65,7 +63,6 @@ class ValueFrom:
     @secret.setter
     def secret(self, secret):
         """Sets the secret of this ValueFrom.
-
 
         :param secret: The secret of this ValueFrom.
         :type secret: :class:`huaweicloudsdkief.v1.Secrets`
@@ -76,7 +73,6 @@ class ValueFrom:
     def configmap(self):
         """Gets the configmap of this ValueFrom.
 
-
         :return: The configmap of this ValueFrom.
         :rtype: :class:`huaweicloudsdkief.v1.ConfigsMap`
         """
@@ -85,7 +81,6 @@ class ValueFrom:
     @configmap.setter
     def configmap(self, configmap):
         """Sets the configmap of this ValueFrom.
-
 
         :param configmap: The configmap of this ValueFrom.
         :type configmap: :class:`huaweicloudsdkief.v1.ConfigsMap`

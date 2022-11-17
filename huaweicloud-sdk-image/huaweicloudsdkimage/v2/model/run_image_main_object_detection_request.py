@@ -17,7 +17,6 @@ class RunImageMainObjectDetectionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunImageMainObjectDetectionRequest:
     def body(self):
         """Gets the body of this RunImageMainObjectDetectionRequest.
 
-
         :return: The body of this RunImageMainObjectDetectionRequest.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageMainObjectDetectionReq`
         """
@@ -58,7 +56,6 @@ class RunImageMainObjectDetectionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunImageMainObjectDetectionRequest.
-
 
         :param body: The body of this RunImageMainObjectDetectionRequest.
         :type body: :class:`huaweicloudsdkimage.v2.ImageMainObjectDetectionReq`

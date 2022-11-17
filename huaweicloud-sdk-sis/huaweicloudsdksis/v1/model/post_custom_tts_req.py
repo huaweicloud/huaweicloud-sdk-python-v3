@@ -17,7 +17,6 @@ class PostCustomTTSReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class PostCustomTTSReq:
     def config(self):
         """Gets the config of this PostCustomTTSReq.
 
-
         :return: The config of this PostCustomTTSReq.
         :rtype: :class:`huaweicloudsdksis.v1.TtsConfig`
         """
@@ -86,7 +84,6 @@ class PostCustomTTSReq:
     @config.setter
     def config(self, config):
         """Sets the config of this PostCustomTTSReq.
-
 
         :param config: The config of this PostCustomTTSReq.
         :type config: :class:`huaweicloudsdksis.v1.TtsConfig`

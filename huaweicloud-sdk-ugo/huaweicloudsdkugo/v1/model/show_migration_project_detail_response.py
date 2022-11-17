@@ -17,7 +17,6 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -157,7 +156,6 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
     def source_db_info(self):
         """Gets the source_db_info of this ShowMigrationProjectDetailResponse.
 
-
         :return: The source_db_info of this ShowMigrationProjectDetailResponse.
         :rtype: :class:`huaweicloudsdkugo.v1.DataBase`
         """
@@ -166,7 +164,6 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
     @source_db_info.setter
     def source_db_info(self, source_db_info):
         """Sets the source_db_info of this ShowMigrationProjectDetailResponse.
-
 
         :param source_db_info: The source_db_info of this ShowMigrationProjectDetailResponse.
         :type source_db_info: :class:`huaweicloudsdkugo.v1.DataBase`
@@ -177,7 +174,6 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
     def target_db_info(self):
         """Gets the target_db_info of this ShowMigrationProjectDetailResponse.
 
-
         :return: The target_db_info of this ShowMigrationProjectDetailResponse.
         :rtype: :class:`huaweicloudsdkugo.v1.DataBase`
         """
@@ -186,7 +182,6 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
     @target_db_info.setter
     def target_db_info(self, target_db_info):
         """Sets the target_db_info of this ShowMigrationProjectDetailResponse.
-
 
         :param target_db_info: The target_db_info of this ShowMigrationProjectDetailResponse.
         :type target_db_info: :class:`huaweicloudsdkugo.v1.DataBase`

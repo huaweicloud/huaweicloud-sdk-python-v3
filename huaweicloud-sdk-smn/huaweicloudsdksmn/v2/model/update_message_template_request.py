@@ -17,7 +17,6 @@ class UpdateMessageTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateMessageTemplateRequest:
     def body(self):
         """Gets the body of this UpdateMessageTemplateRequest.
 
-
         :return: The body of this UpdateMessageTemplateRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateMessageTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateMessageTemplateRequest.
-
 
         :param body: The body of this UpdateMessageTemplateRequest.
         :type body: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateRequestBody`

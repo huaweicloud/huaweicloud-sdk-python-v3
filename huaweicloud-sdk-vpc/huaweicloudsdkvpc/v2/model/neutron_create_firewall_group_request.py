@@ -17,7 +17,6 @@ class NeutronCreateFirewallGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class NeutronCreateFirewallGroupRequest:
     def body(self):
         """Gets the body of this NeutronCreateFirewallGroupRequest.
 
-
         :return: The body of this NeutronCreateFirewallGroupRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallGroupRequestBody`
         """
@@ -58,7 +56,6 @@ class NeutronCreateFirewallGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this NeutronCreateFirewallGroupRequest.
-
 
         :param body: The body of this NeutronCreateFirewallGroupRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallGroupRequestBody`

@@ -17,7 +17,6 @@ class ApplyJudgementRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ApplyJudgementRequest:
     def body(self):
         """Gets the body of this ApplyJudgementRequest.
 
-
         :return: The body of this ApplyJudgementRequest.
         :rtype: :class:`huaweicloudsdkclassroom.v3.JudgementTaskRequestBody`
         """
@@ -58,7 +56,6 @@ class ApplyJudgementRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ApplyJudgementRequest.
-
 
         :param body: The body of this ApplyJudgementRequest.
         :type body: :class:`huaweicloudsdkclassroom.v3.JudgementTaskRequestBody`

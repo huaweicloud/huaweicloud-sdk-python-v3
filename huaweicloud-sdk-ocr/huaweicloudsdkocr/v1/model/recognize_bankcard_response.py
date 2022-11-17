@@ -17,7 +17,6 @@ class RecognizeBankcardResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeBankcardResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeBankcardResponse.
 
-
         :return: The result of this RecognizeBankcardResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.BankcardResult`
         """
@@ -58,7 +56,6 @@ class RecognizeBankcardResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeBankcardResponse.
-
 
         :param result: The result of this RecognizeBankcardResponse.
         :type result: :class:`huaweicloudsdkocr.v1.BankcardResult`

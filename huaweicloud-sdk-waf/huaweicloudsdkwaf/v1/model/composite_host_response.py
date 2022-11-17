@@ -17,7 +17,6 @@ class CompositeHostResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -388,7 +387,6 @@ class CompositeHostResponse:
     def flag(self):
         """Gets the flag of this CompositeHostResponse.
 
-
         :return: The flag of this CompositeHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
@@ -397,7 +395,6 @@ class CompositeHostResponse:
     @flag.setter
     def flag(self, flag):
         """Sets the flag of this CompositeHostResponse.
-
 
         :param flag: The flag of this CompositeHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`

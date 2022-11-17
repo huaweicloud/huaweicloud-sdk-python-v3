@@ -17,7 +17,6 @@ class Secret:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class Secret:
     def secret(self):
         """Gets the secret of this Secret.
 
-
         :return: The secret of this Secret.
         :rtype: :class:`huaweicloudsdkief.v1.SecretDetail`
         """
@@ -57,7 +55,6 @@ class Secret:
     @secret.setter
     def secret(self, secret):
         """Sets the secret of this Secret.
-
 
         :param secret: The secret of this Secret.
         :type secret: :class:`huaweicloudsdkief.v1.SecretDetail`

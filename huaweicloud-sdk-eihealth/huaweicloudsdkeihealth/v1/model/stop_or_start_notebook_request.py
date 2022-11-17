@@ -17,7 +17,6 @@ class StopOrStartNotebookRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class StopOrStartNotebookRequest:
     def body(self):
         """Gets the body of this StopOrStartNotebookRequest.
 
-
         :return: The body of this StopOrStartNotebookRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookActionReq`
         """
@@ -114,7 +112,6 @@ class StopOrStartNotebookRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StopOrStartNotebookRequest.
-
 
         :param body: The body of this StopOrStartNotebookRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.NotebookActionReq`

@@ -17,7 +17,6 @@ class UpdateTaskRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -128,7 +127,6 @@ class UpdateTaskRequestBody:
     def timing(self):
         """Gets the timing of this UpdateTaskRequestBody.
 
-
         :return: The timing of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
@@ -137,7 +135,6 @@ class UpdateTaskRequestBody:
     @timing.setter
     def timing(self, timing):
         """Sets the timing of this UpdateTaskRequestBody.
-
 
         :param timing: The timing of this UpdateTaskRequestBody.
         :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
@@ -148,7 +145,6 @@ class UpdateTaskRequestBody:
     def input(self):
         """Gets the input of this UpdateTaskRequestBody.
 
-
         :return: The input of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
@@ -157,7 +153,6 @@ class UpdateTaskRequestBody:
     @input.setter
     def input(self, input):
         """Sets the input of this UpdateTaskRequestBody.
-
 
         :param input: The input of this UpdateTaskRequestBody.
         :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
@@ -168,7 +163,6 @@ class UpdateTaskRequestBody:
     def output(self):
         """Gets the output of this UpdateTaskRequestBody.
 
-
         :return: The output of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutput`
         """
@@ -177,7 +171,6 @@ class UpdateTaskRequestBody:
     @output.setter
     def output(self, output):
         """Sets the output of this UpdateTaskRequestBody.
-
 
         :param output: The output of this UpdateTaskRequestBody.
         :type output: :class:`huaweicloudsdkvas.v2.TaskOutput`
@@ -188,7 +181,6 @@ class UpdateTaskRequestBody:
     def service_config(self):
         """Gets the service_config of this UpdateTaskRequestBody.
 
-
         :return: The service_config of this UpdateTaskRequestBody.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
@@ -197,7 +189,6 @@ class UpdateTaskRequestBody:
     @service_config.setter
     def service_config(self, service_config):
         """Sets the service_config of this UpdateTaskRequestBody.
-
 
         :param service_config: The service_config of this UpdateTaskRequestBody.
         :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`

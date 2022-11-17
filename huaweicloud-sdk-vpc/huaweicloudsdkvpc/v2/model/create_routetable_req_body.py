@@ -17,7 +17,6 @@ class CreateRoutetableReqBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateRoutetableReqBody:
     def routetable(self):
         """Gets the routetable of this CreateRoutetableReqBody.
 
-
         :return: The routetable of this CreateRoutetableReqBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateRouteTableReq`
         """
@@ -57,7 +55,6 @@ class CreateRoutetableReqBody:
     @routetable.setter
     def routetable(self, routetable):
         """Sets the routetable of this CreateRoutetableReqBody.
-
 
         :param routetable: The routetable of this CreateRoutetableReqBody.
         :type routetable: :class:`huaweicloudsdkvpc.v2.CreateRouteTableReq`

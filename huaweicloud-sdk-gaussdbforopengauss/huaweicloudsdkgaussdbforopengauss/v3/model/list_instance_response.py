@@ -17,7 +17,6 @@ class ListInstanceResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -377,7 +376,6 @@ class ListInstanceResponse:
     def ha(self):
         """Gets the ha of this ListInstanceResponse.
 
-
         :return: The ha of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListHa`
         """
@@ -386,7 +384,6 @@ class ListInstanceResponse:
     @ha.setter
     def ha(self, ha):
         """Sets the ha of this ListInstanceResponse.
-
 
         :param ha: The ha of this ListInstanceResponse.
         :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListHa`
@@ -441,7 +438,6 @@ class ListInstanceResponse:
     def datastore(self):
         """Gets the datastore of this ListInstanceResponse.
 
-
         :return: The datastore of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastore`
         """
@@ -450,7 +446,6 @@ class ListInstanceResponse:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this ListInstanceResponse.
-
 
         :param datastore: The datastore of this ListInstanceResponse.
         :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastore`
@@ -615,7 +610,6 @@ class ListInstanceResponse:
     def flavor_info(self):
         """Gets the flavor_info of this ListInstanceResponse.
 
-
         :return: The flavor_info of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorInfo`
         """
@@ -624,7 +618,6 @@ class ListInstanceResponse:
     @flavor_info.setter
     def flavor_info(self, flavor_info):
         """Sets the flavor_info of this ListInstanceResponse.
-
 
         :param flavor_info: The flavor_info of this ListInstanceResponse.
         :type flavor_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorInfo`
@@ -635,7 +628,6 @@ class ListInstanceResponse:
     def volume(self):
         """Gets the volume of this ListInstanceResponse.
 
-
         :return: The volume of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListVolume`
         """
@@ -644,7 +636,6 @@ class ListInstanceResponse:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this ListInstanceResponse.
-
 
         :param volume: The volume of this ListInstanceResponse.
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListVolume`
@@ -677,7 +668,6 @@ class ListInstanceResponse:
     def backup_strategy(self):
         """Gets the backup_strategy of this ListInstanceResponse.
 
-
         :return: The backup_strategy of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForListResponse`
         """
@@ -686,7 +676,6 @@ class ListInstanceResponse:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this ListInstanceResponse.
-
 
         :param backup_strategy: The backup_strategy of this ListInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForListResponse`
@@ -807,7 +796,6 @@ class ListInstanceResponse:
     def charge_info(self):
         """Gets the charge_info of this ListInstanceResponse.
 
-
         :return: The charge_info of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoListResponse`
         """
@@ -816,7 +804,6 @@ class ListInstanceResponse:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this ListInstanceResponse.
-
 
         :param charge_info: The charge_info of this ListInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoListResponse`

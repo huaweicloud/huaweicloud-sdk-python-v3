@@ -17,7 +17,6 @@ class StartProtectionGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartProtectionGroupRequest:
     def body(self):
         """Gets the body of this StartProtectionGroupRequest.
 
-
         :return: The body of this StartProtectionGroupRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.StartProtectionGroupRequestBody`
         """
@@ -86,7 +84,6 @@ class StartProtectionGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartProtectionGroupRequest.
-
 
         :param body: The body of this StartProtectionGroupRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.StartProtectionGroupRequestBody`

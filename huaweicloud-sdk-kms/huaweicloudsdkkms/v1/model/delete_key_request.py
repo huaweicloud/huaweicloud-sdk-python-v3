@@ -17,7 +17,6 @@ class DeleteKeyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DeleteKeyRequest:
     def body(self):
         """Gets the body of this DeleteKeyRequest.
 
-
         :return: The body of this DeleteKeyRequest.
         :rtype: :class:`huaweicloudsdkkms.v1.ScheduleKeyDeletionRequestBody`
         """
@@ -86,7 +84,6 @@ class DeleteKeyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteKeyRequest.
-
 
         :param body: The body of this DeleteKeyRequest.
         :type body: :class:`huaweicloudsdkkms.v1.ScheduleKeyDeletionRequestBody`

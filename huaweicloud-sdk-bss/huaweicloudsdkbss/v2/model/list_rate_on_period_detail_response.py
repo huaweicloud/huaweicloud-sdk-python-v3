@@ -17,7 +17,6 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     def official_website_rating_result(self):
         """Gets the official_website_rating_result of this ListRateOnPeriodDetailResponse.
 
-
         :return: The official_website_rating_result of this ListRateOnPeriodDetailResponse.
         :rtype: :class:`huaweicloudsdkbss.v2.OfficialWebsiteRatingResult`
         """
@@ -72,7 +70,6 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     @official_website_rating_result.setter
     def official_website_rating_result(self, official_website_rating_result):
         """Sets the official_website_rating_result of this ListRateOnPeriodDetailResponse.
-
 
         :param official_website_rating_result: The official_website_rating_result of this ListRateOnPeriodDetailResponse.
         :type official_website_rating_result: :class:`huaweicloudsdkbss.v2.OfficialWebsiteRatingResult`

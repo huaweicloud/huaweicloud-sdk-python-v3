@@ -17,7 +17,6 @@ class DeleteBatchFlinkJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteBatchFlinkJobRequest:
     def body(self):
         """Gets the body of this DeleteBatchFlinkJobRequest.
 
-
         :return: The body of this DeleteBatchFlinkJobRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteFlinkJobInBatch`
         """
@@ -58,7 +56,6 @@ class DeleteBatchFlinkJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteBatchFlinkJobRequest.
-
 
         :param body: The body of this DeleteBatchFlinkJobRequest.
         :type body: :class:`huaweicloudsdkdli.v1.DeleteFlinkJobInBatch`

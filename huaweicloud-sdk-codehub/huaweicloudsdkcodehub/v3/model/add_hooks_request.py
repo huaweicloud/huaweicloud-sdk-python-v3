@@ -17,7 +17,6 @@ class AddHooksRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class AddHooksRequest:
     def body(self):
         """Gets the body of this AddHooksRequest.
 
-
         :return: The body of this AddHooksRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryHookRequest`
         """
@@ -114,7 +112,6 @@ class AddHooksRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddHooksRequest.
-
 
         :param body: The body of this AddHooksRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryHookRequest`

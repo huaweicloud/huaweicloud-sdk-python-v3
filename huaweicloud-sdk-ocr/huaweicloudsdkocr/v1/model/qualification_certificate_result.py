@@ -17,7 +17,6 @@ class QualificationCertificateResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -571,7 +570,6 @@ class QualificationCertificateResult:
     def confidence(self):
         """Gets the confidence of this QualificationCertificateResult.
 
-
         :return: The confidence of this QualificationCertificateResult.
         :rtype: :class:`huaweicloudsdkocr.v1.QualificationConfidence`
         """
@@ -580,7 +578,6 @@ class QualificationCertificateResult:
     @confidence.setter
     def confidence(self, confidence):
         """Sets the confidence of this QualificationCertificateResult.
-
 
         :param confidence: The confidence of this QualificationCertificateResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.QualificationConfidence`

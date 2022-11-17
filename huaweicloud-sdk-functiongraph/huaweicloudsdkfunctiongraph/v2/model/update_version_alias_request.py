@@ -17,7 +17,6 @@ class UpdateVersionAliasRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateVersionAliasRequest:
     def body(self):
         """Gets the body of this UpdateVersionAliasRequest.
 
-
         :return: The body of this UpdateVersionAliasRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequestBody`
         """
@@ -114,7 +112,6 @@ class UpdateVersionAliasRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateVersionAliasRequest.
-
 
         :param body: The body of this UpdateVersionAliasRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequestBody`

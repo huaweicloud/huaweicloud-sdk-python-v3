@@ -17,7 +17,6 @@ class UpdateLifeCycleHookRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateLifeCycleHookRequest:
     def body(self):
         """Gets the body of this UpdateLifeCycleHookRequest.
 
-
         :return: The body of this UpdateLifeCycleHookRequest.
         :rtype: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookOption`
         """
@@ -114,7 +112,6 @@ class UpdateLifeCycleHookRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateLifeCycleHookRequest.
-
 
         :param body: The body of this UpdateLifeCycleHookRequest.
         :type body: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookOption`

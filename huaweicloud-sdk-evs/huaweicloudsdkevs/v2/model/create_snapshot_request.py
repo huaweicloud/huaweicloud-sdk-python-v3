@@ -17,7 +17,6 @@ class CreateSnapshotRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateSnapshotRequest:
     def body(self):
         """Gets the body of this CreateSnapshotRequest.
 
-
         :return: The body of this CreateSnapshotRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.CreateSnapshotRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateSnapshotRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateSnapshotRequest.
-
 
         :param body: The body of this CreateSnapshotRequest.
         :type body: :class:`huaweicloudsdkevs.v2.CreateSnapshotRequestBody`

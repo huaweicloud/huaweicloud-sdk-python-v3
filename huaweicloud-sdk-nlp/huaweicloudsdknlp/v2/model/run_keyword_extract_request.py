@@ -17,7 +17,6 @@ class RunKeywordExtractRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunKeywordExtractRequest:
     def body(self):
         """Gets the body of this RunKeywordExtractRequest.
 
-
         :return: The body of this RunKeywordExtractRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.KeywordExtractReq`
         """
@@ -58,7 +56,6 @@ class RunKeywordExtractRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunKeywordExtractRequest.
-
 
         :param body: The body of this RunKeywordExtractRequest.
         :type body: :class:`huaweicloudsdknlp.v2.KeywordExtractReq`

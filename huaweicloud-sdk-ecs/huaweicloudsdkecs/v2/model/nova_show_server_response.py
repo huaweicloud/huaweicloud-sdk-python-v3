@@ -17,7 +17,6 @@ class NovaShowServerResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class NovaShowServerResponse(SdkResponse):
     def server(self):
         """Gets the server of this NovaShowServerResponse.
 
-
         :return: The server of this NovaShowServerResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServer`
         """
@@ -58,7 +56,6 @@ class NovaShowServerResponse(SdkResponse):
     @server.setter
     def server(self, server):
         """Sets the server of this NovaShowServerResponse.
-
 
         :param server: The server of this NovaShowServerResponse.
         :type server: :class:`huaweicloudsdkecs.v2.NovaServer`

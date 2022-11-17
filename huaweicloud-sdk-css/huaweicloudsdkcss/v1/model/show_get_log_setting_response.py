@@ -17,7 +17,6 @@ class ShowGetLogSettingResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowGetLogSettingResponse(SdkResponse):
     def log_configuration(self):
         """Gets the log_configuration of this ShowGetLogSettingResponse.
 
-
         :return: The log_configuration of this ShowGetLogSettingResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.LogConfiguration`
         """
@@ -58,7 +56,6 @@ class ShowGetLogSettingResponse(SdkResponse):
     @log_configuration.setter
     def log_configuration(self, log_configuration):
         """Sets the log_configuration of this ShowGetLogSettingResponse.
-
 
         :param log_configuration: The log_configuration of this ShowGetLogSettingResponse.
         :type log_configuration: :class:`huaweicloudsdkcss.v1.LogConfiguration`

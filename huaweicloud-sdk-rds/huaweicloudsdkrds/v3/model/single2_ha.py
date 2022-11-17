@@ -17,7 +17,6 @@ class Single2Ha:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class Single2Ha:
     def single_to_ha(self):
         """Gets the single_to_ha of this Single2Ha.
 
-
         :return: The single_to_ha of this Single2Ha.
         :rtype: :class:`huaweicloudsdkrds.v3.Single2HaObject`
         """
@@ -57,7 +55,6 @@ class Single2Ha:
     @single_to_ha.setter
     def single_to_ha(self, single_to_ha):
         """Sets the single_to_ha of this Single2Ha.
-
 
         :param single_to_ha: The single_to_ha of this Single2Ha.
         :type single_to_ha: :class:`huaweicloudsdkrds.v3.Single2HaObject`

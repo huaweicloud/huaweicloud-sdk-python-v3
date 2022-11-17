@@ -17,7 +17,6 @@ class CreateIpRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateIpRequest:
     def body(self):
         """Gets the body of this CreateIpRequest.
 
-
         :return: The body of this CreateIpRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.CreateIpRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateIpRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateIpRequest.
-
 
         :param body: The body of this CreateIpRequest.
         :type body: :class:`huaweicloudsdkdds.v3.CreateIpRequestBody`

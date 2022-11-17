@@ -17,7 +17,6 @@ class ReviewInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ReviewInfo:
     def text(self):
         """Gets the text of this ReviewInfo.
 
-
         :return: The text of this ReviewInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.TextReviewRet`
         """
@@ -114,7 +112,6 @@ class ReviewInfo:
     @text.setter
     def text(self, text):
         """Sets the text of this ReviewInfo.
-
 
         :param text: The text of this ReviewInfo.
         :type text: :class:`huaweicloudsdkvod.v1.TextReviewRet`

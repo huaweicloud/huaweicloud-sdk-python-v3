@@ -17,7 +17,6 @@ class ListInstancesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListInstancesResponse(SdkResponse):
     def instances(self):
         """Gets the instances of this ListInstancesResponse.
 
-
         :return: The instances of this ListInstancesResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.PageInstancesVO`
         """
@@ -65,7 +63,6 @@ class ListInstancesResponse(SdkResponse):
     @instances.setter
     def instances(self, instances):
         """Sets the instances of this ListInstancesResponse.
-
 
         :param instances: The instances of this ListInstancesResponse.
         :type instances: :class:`huaweicloudsdkcloudide.v2.PageInstancesVO`

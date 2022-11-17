@@ -17,7 +17,6 @@ class CreateCommandRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateCommandRequest:
     def body(self):
         """Gets the body of this CreateCommandRequest.
 
-
         :return: The body of this CreateCommandRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommandRequestBody`
         """
@@ -114,7 +112,6 @@ class CreateCommandRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCommandRequest.
-
 
         :param body: The body of this CreateCommandRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateCommandRequestBody`

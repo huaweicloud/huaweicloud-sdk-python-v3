@@ -17,7 +17,6 @@ class AgencyPolicyStatement:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class AgencyPolicyStatement:
     def resource(self):
         """Gets the resource of this AgencyPolicyStatement.
 
-
         :return: The resource of this AgencyPolicyStatement.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyPolicyResource`
         """
@@ -113,7 +111,6 @@ class AgencyPolicyStatement:
     @resource.setter
     def resource(self, resource):
         """Sets the resource of this AgencyPolicyStatement.
-
 
         :param resource: The resource of this AgencyPolicyStatement.
         :type resource: :class:`huaweicloudsdkiam.v3.AgencyPolicyResource`

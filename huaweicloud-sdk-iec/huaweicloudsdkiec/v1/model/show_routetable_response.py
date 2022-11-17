@@ -17,7 +17,6 @@ class ShowRoutetableResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowRoutetableResponse(SdkResponse):
     def routetable(self):
         """Gets the routetable of this ShowRoutetableResponse.
 
-
         :return: The routetable of this ShowRoutetableResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Routetable`
         """
@@ -58,7 +56,6 @@ class ShowRoutetableResponse(SdkResponse):
     @routetable.setter
     def routetable(self, routetable):
         """Sets the routetable of this ShowRoutetableResponse.
-
 
         :param routetable: The routetable of this ShowRoutetableResponse.
         :type routetable: :class:`huaweicloudsdkiec.v1.Routetable`

@@ -17,7 +17,6 @@ class UpdateEndpointServicePermissionDescResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateEndpointServicePermissionDescResponse(SdkResponse):
     def permissions(self):
         """Gets the permissions of this UpdateEndpointServicePermissionDescResponse.
 
-
         :return: The permissions of this UpdateEndpointServicePermissionDescResponse.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.EpsPermission`]
         """
@@ -58,7 +56,6 @@ class UpdateEndpointServicePermissionDescResponse(SdkResponse):
     @permissions.setter
     def permissions(self, permissions):
         """Sets the permissions of this UpdateEndpointServicePermissionDescResponse.
-
 
         :param permissions: The permissions of this UpdateEndpointServicePermissionDescResponse.
         :type permissions: list[:class:`huaweicloudsdkvpcep.v1.EpsPermission`]

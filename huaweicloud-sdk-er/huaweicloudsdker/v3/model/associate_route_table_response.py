@@ -17,7 +17,6 @@ class AssociateRouteTableResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class AssociateRouteTableResponse(SdkResponse):
     def association(self):
         """Gets the association of this AssociateRouteTableResponse.
 
-
         :return: The association of this AssociateRouteTableResponse.
         :rtype: :class:`huaweicloudsdker.v3.Association`
         """
@@ -72,7 +70,6 @@ class AssociateRouteTableResponse(SdkResponse):
     @association.setter
     def association(self, association):
         """Sets the association of this AssociateRouteTableResponse.
-
 
         :param association: The association of this AssociateRouteTableResponse.
         :type association: :class:`huaweicloudsdker.v3.Association`
@@ -105,7 +102,6 @@ class AssociateRouteTableResponse(SdkResponse):
     def x_client_token(self):
         """Gets the x_client_token of this AssociateRouteTableResponse.
 
-
         :return: The x_client_token of this AssociateRouteTableResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class AssociateRouteTableResponse(SdkResponse):
     @x_client_token.setter
     def x_client_token(self, x_client_token):
         """Sets the x_client_token of this AssociateRouteTableResponse.
-
 
         :param x_client_token: The x_client_token of this AssociateRouteTableResponse.
         :type x_client_token: str

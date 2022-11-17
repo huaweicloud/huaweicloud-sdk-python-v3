@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ResAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResDatasource
         :type request: :class:`huaweicloudsdkres.v1.CreateResDatasourceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResDatasourceResponse`
@@ -68,6 +63,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResIntelligentScene
         :type request: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneResponse`
@@ -130,6 +129,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResIntelligentSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResJob
         :type request: :class:`huaweicloudsdkres.v1.CreateResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResJobResponse`
@@ -192,6 +195,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -230,6 +235,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -244,6 +250,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResJobs
         :type request: :class:`huaweicloudsdkres.v1.CreateResJobsRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResJobsResponse`
@@ -256,6 +263,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -294,6 +303,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -308,6 +318,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResOnlineInstance
         :type request: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceResponse`
@@ -320,6 +331,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -358,6 +371,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResOnlineInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -372,6 +386,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResScene
         :type request: :class:`huaweicloudsdkres.v1.CreateResSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResSceneResponse`
@@ -384,6 +399,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -420,6 +437,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -434,6 +452,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResWorkspace
         :type request: :class:`huaweicloudsdkres.v1.CreateResWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.CreateResWorkspaceResponse`
@@ -446,6 +465,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -480,6 +501,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResWorkspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -494,6 +516,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResDatasource
         :type request: :class:`huaweicloudsdkres.v1.DeleteResDatasourceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResDatasourceResponse`
@@ -506,6 +529,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -542,6 +567,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -556,6 +582,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResJob
         :type request: :class:`huaweicloudsdkres.v1.DeleteResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResJobResponse`
@@ -568,6 +595,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -606,6 +635,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -620,6 +650,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResOnlineInstance
         :type request: :class:`huaweicloudsdkres.v1.DeleteResOnlineInstanceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResOnlineInstanceResponse`
@@ -632,6 +663,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -670,6 +703,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResOnlineInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -684,6 +718,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResScene
         :type request: :class:`huaweicloudsdkres.v1.DeleteResSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResSceneResponse`
@@ -696,6 +731,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -732,6 +769,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -746,6 +784,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResWorkspace
         :type request: :class:`huaweicloudsdkres.v1.DeleteResWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.DeleteResWorkspaceResponse`
@@ -758,6 +797,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -792,6 +833,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResWorkspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -806,6 +848,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResDatasources
         :type request: :class:`huaweicloudsdkres.v1.ListResDatasourcesRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResDatasourcesResponse`
@@ -818,6 +861,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -852,6 +897,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResDatasourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -866,6 +912,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResEnterprises
         :type request: :class:`huaweicloudsdkres.v1.ListResEnterprisesRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResEnterprisesResponse`
@@ -878,6 +925,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -910,6 +959,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResEnterprisesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -924,6 +974,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResOnlineServiceDetails
         :type request: :class:`huaweicloudsdkres.v1.ListResOnlineServiceDetailsRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResOnlineServiceDetailsResponse`
@@ -936,6 +987,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -974,6 +1027,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResOnlineServiceDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -988,6 +1042,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResResourceSpec
         :type request: :class:`huaweicloudsdkres.v1.ListResResourceSpecRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResResourceSpecResponse`
@@ -1000,6 +1055,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1032,6 +1089,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResResourceSpecResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1046,6 +1104,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResScenes
         :type request: :class:`huaweicloudsdkres.v1.ListResScenesRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResScenesResponse`
@@ -1058,6 +1117,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1094,6 +1155,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResScenesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1108,6 +1170,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResWorkspaces
         :type request: :class:`huaweicloudsdkres.v1.ListResWorkspacesRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ListResWorkspacesResponse`
@@ -1120,6 +1183,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1152,6 +1217,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResWorkspacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1166,6 +1232,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResDatasource
         :type request: :class:`huaweicloudsdkres.v1.ShowResDatasourceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResDatasourceResponse`
@@ -1178,6 +1245,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1214,6 +1283,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1228,6 +1298,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResDatasourceWorkDetail
         :type request: :class:`huaweicloudsdkres.v1.ShowResDatasourceWorkDetailRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResDatasourceWorkDetailResponse`
@@ -1240,6 +1311,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1278,6 +1351,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResDatasourceWorkDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1292,6 +1366,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResJob
         :type request: :class:`huaweicloudsdkres.v1.ShowResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResJobResponse`
@@ -1304,6 +1379,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1342,6 +1419,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1356,6 +1434,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResRecallSet
         :type request: :class:`huaweicloudsdkres.v1.ShowResRecallSetRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResRecallSetResponse`
@@ -1368,6 +1447,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1406,6 +1487,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResRecallSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1420,6 +1502,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResScene
         :type request: :class:`huaweicloudsdkres.v1.ShowResSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResSceneResponse`
@@ -1432,6 +1515,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1468,6 +1553,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1482,6 +1568,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResWrokspace
         :type request: :class:`huaweicloudsdkres.v1.ShowResWrokspaceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.ShowResWrokspaceResponse`
@@ -1494,6 +1581,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1528,6 +1617,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResWrokspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1542,6 +1632,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartResJob
         :type request: :class:`huaweicloudsdkres.v1.StartResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.StartResJobResponse`
@@ -1554,6 +1645,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1594,6 +1687,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1608,6 +1702,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartResSceneJobs
         :type request: :class:`huaweicloudsdkres.v1.StartResSceneJobsRequest`
         :rtype: :class:`huaweicloudsdkres.v1.StartResSceneJobsResponse`
@@ -1620,6 +1715,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1658,6 +1755,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartResSceneJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1672,6 +1770,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResDatasource
         :type request: :class:`huaweicloudsdkres.v1.UpdateResDatasourceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResDatasourceResponse`
@@ -1684,6 +1783,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1722,6 +1823,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1736,6 +1838,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResDatastruct
         :type request: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResDatastructResponse`
@@ -1748,6 +1851,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1786,6 +1891,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResDatastructResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1800,6 +1906,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResIntelligentScene
         :type request: :class:`huaweicloudsdkres.v1.UpdateResIntelligentSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResIntelligentSceneResponse`
@@ -1812,6 +1919,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1850,6 +1959,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResIntelligentSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1864,6 +1974,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResJob
         :type request: :class:`huaweicloudsdkres.v1.UpdateResJobRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResJobResponse`
@@ -1876,6 +1987,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1916,6 +2029,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1930,6 +2044,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResOnlineInstance
         :type request: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceResponse`
@@ -1942,6 +2057,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1982,6 +2099,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResOnlineInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1996,6 +2114,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResScene
         :type request: :class:`huaweicloudsdkres.v1.UpdateResSceneRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResSceneResponse`
@@ -2008,6 +2127,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2046,6 +2167,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2060,6 +2182,7 @@ class ResAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResWorkspace
         :type request: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResWorkspaceResponse`
@@ -2072,6 +2195,8 @@ class ResAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2108,6 +2233,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResWorkspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2115,7 +2241,7 @@ class ResAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2126,9 +2252,10 @@ class ResAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2145,6 +2272,7 @@ class ResAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

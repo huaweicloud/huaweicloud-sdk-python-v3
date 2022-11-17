@@ -17,7 +17,6 @@ class ShowAutoJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -445,7 +444,6 @@ class ShowAutoJobResponse(SdkResponse):
     def tool_info(self):
         """Gets the tool_info of this ShowAutoJobResponse.
 
-
         :return: The tool_info of this ShowAutoJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
         """
@@ -454,7 +452,6 @@ class ShowAutoJobResponse(SdkResponse):
     @tool_info.setter
     def tool_info(self, tool_info):
         """Sets the tool_info of this ShowAutoJobResponse.
-
 
         :param tool_info: The tool_info of this ShowAutoJobResponse.
         :type tool_info: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`

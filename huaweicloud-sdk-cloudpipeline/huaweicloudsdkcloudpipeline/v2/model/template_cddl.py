@@ -17,7 +17,6 @@ class TemplateCddl:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class TemplateCddl:
     def workflow(self):
         """Gets the workflow of this TemplateCddl.
 
-
         :return: The workflow of this TemplateCddl.
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.Workflow`
         """
@@ -113,7 +111,6 @@ class TemplateCddl:
     @workflow.setter
     def workflow(self, workflow):
         """Sets the workflow of this TemplateCddl.
-
 
         :param workflow: The workflow of this TemplateCddl.
         :type workflow: :class:`huaweicloudsdkcloudpipeline.v2.Workflow`

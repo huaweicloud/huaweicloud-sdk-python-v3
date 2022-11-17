@@ -17,7 +17,6 @@ class OpenGaussExpandCluster:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class OpenGaussExpandCluster:
     def shard(self):
         """Gets the shard of this OpenGaussExpandCluster.
 
-
         :return: The shard of this OpenGaussExpandCluster.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussShard`
         """
@@ -87,7 +85,6 @@ class OpenGaussExpandCluster:
     @shard.setter
     def shard(self, shard):
         """Sets the shard of this OpenGaussExpandCluster.
-
 
         :param shard: The shard of this OpenGaussExpandCluster.
         :type shard: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussShard`

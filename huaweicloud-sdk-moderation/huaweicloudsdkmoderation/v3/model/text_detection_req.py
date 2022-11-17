@@ -17,7 +17,6 @@ class TextDetectionReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class TextDetectionReq:
     def data(self):
         """Gets the data of this TextDetectionReq.
 
-
         :return: The data of this TextDetectionReq.
         :rtype: :class:`huaweicloudsdkmoderation.v3.TextDetectionDataReq`
         """
@@ -114,7 +112,6 @@ class TextDetectionReq:
     @data.setter
     def data(self, data):
         """Sets the data of this TextDetectionReq.
-
 
         :param data: The data of this TextDetectionReq.
         :type data: :class:`huaweicloudsdkmoderation.v3.TextDetectionDataReq`

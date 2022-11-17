@@ -17,7 +17,6 @@ class CreateTranscodingsTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateTranscodingsTemplateRequest:
     def body(self):
         """Gets the body of this CreateTranscodingsTemplateRequest.
 
-
         :return: The body of this CreateTranscodingsTemplateRequest.
         :rtype: :class:`huaweicloudsdklive.v1.StreamTranscodingTemplate`
         """
@@ -58,7 +56,6 @@ class CreateTranscodingsTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTranscodingsTemplateRequest.
-
 
         :param body: The body of this CreateTranscodingsTemplateRequest.
         :type body: :class:`huaweicloudsdklive.v1.StreamTranscodingTemplate`

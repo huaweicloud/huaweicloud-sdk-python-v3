@@ -17,7 +17,6 @@ class Affinity:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class Affinity:
     def node_affinity(self):
         """Gets the node_affinity of this Affinity.
 
-
         :return: The node_affinity of this Affinity.
         :rtype: :class:`huaweicloudsdkief.v1.AffinityNodeAffinity`
         """
@@ -72,7 +70,6 @@ class Affinity:
     @node_affinity.setter
     def node_affinity(self, node_affinity):
         """Sets the node_affinity of this Affinity.
-
 
         :param node_affinity: The node_affinity of this Affinity.
         :type node_affinity: :class:`huaweicloudsdkief.v1.AffinityNodeAffinity`
@@ -83,7 +80,6 @@ class Affinity:
     def pod_affinity(self):
         """Gets the pod_affinity of this Affinity.
 
-
         :return: The pod_affinity of this Affinity.
         :rtype: :class:`huaweicloudsdkief.v1.AffinityPodAffinity`
         """
@@ -92,7 +88,6 @@ class Affinity:
     @pod_affinity.setter
     def pod_affinity(self, pod_affinity):
         """Sets the pod_affinity of this Affinity.
-
 
         :param pod_affinity: The pod_affinity of this Affinity.
         :type pod_affinity: :class:`huaweicloudsdkief.v1.AffinityPodAffinity`
@@ -103,7 +98,6 @@ class Affinity:
     def pod_anti_affinity(self):
         """Gets the pod_anti_affinity of this Affinity.
 
-
         :return: The pod_anti_affinity of this Affinity.
         :rtype: :class:`huaweicloudsdkief.v1.AffinityPodAntiAffinity`
         """
@@ -112,7 +106,6 @@ class Affinity:
     @pod_anti_affinity.setter
     def pod_anti_affinity(self, pod_anti_affinity):
         """Sets the pod_anti_affinity of this Affinity.
-
 
         :param pod_anti_affinity: The pod_anti_affinity of this Affinity.
         :type pod_anti_affinity: :class:`huaweicloudsdkief.v1.AffinityPodAntiAffinity`

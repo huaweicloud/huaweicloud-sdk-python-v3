@@ -17,7 +17,6 @@ class StartKibanaPublicReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -83,7 +82,6 @@ class StartKibanaPublicReq:
     def elb_white_list(self):
         """Gets the elb_white_list of this StartKibanaPublicReq.
 
-
         :return: The elb_white_list of this StartKibanaPublicReq.
         :rtype: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`
         """
@@ -92,7 +90,6 @@ class StartKibanaPublicReq:
     @elb_white_list.setter
     def elb_white_list(self, elb_white_list):
         """Sets the elb_white_list of this StartKibanaPublicReq.
-
 
         :param elb_white_list: The elb_white_list of this StartKibanaPublicReq.
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`

@@ -17,7 +17,6 @@ class ApiAuthRelations:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class ApiAuthRelations:
     def auth_result(self):
         """Gets the auth_result of this ApiAuthRelations.
 
-
         :return: The auth_result of this ApiAuthRelations.
         :rtype: :class:`huaweicloudsdkapig.v2.AuthResult`
         """
@@ -143,7 +141,6 @@ class ApiAuthRelations:
     @auth_result.setter
     def auth_result(self, auth_result):
         """Sets the auth_result of this ApiAuthRelations.
-
 
         :param auth_result: The auth_result of this ApiAuthRelations.
         :type auth_result: :class:`huaweicloudsdkapig.v2.AuthResult`

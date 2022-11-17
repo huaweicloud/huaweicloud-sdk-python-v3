@@ -17,7 +17,6 @@ class UpdateUrlAuthResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class UpdateUrlAuthResponse(SdkResponse):
     def authentication(self):
         """Gets the authentication of this UpdateUrlAuthResponse.
 
-
         :return: The authentication of this UpdateUrlAuthResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
@@ -94,7 +92,6 @@ class UpdateUrlAuthResponse(SdkResponse):
     @authentication.setter
     def authentication(self, authentication):
         """Sets the authentication of this UpdateUrlAuthResponse.
-
 
         :param authentication: The authentication of this UpdateUrlAuthResponse.
         :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
@@ -105,7 +102,6 @@ class UpdateUrlAuthResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this UpdateUrlAuthResponse.
 
-
         :return: The x_request_id of this UpdateUrlAuthResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class UpdateUrlAuthResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this UpdateUrlAuthResponse.
-
 
         :param x_request_id: The x_request_id of this UpdateUrlAuthResponse.
         :type x_request_id: str

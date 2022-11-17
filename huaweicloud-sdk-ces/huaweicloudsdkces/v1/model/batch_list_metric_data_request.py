@@ -17,7 +17,6 @@ class BatchListMetricDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchListMetricDataRequest:
     def body(self):
         """Gets the body of this BatchListMetricDataRequest.
 
-
         :return: The body of this BatchListMetricDataRequest.
         :rtype: :class:`huaweicloudsdkces.v1.BatchListMetricDataRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchListMetricDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchListMetricDataRequest.
-
 
         :param body: The body of this BatchListMetricDataRequest.
         :type body: :class:`huaweicloudsdkces.v1.BatchListMetricDataRequestBody`

@@ -17,7 +17,6 @@ class IvsExtentionByIdCardImageRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class IvsExtentionByIdCardImageRequestBody:
     def meta(self):
         """Gets the meta of this IvsExtentionByIdCardImageRequestBody.
 
-
         :return: The meta of this IvsExtentionByIdCardImageRequestBody.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
@@ -63,7 +61,6 @@ class IvsExtentionByIdCardImageRequestBody:
     @meta.setter
     def meta(self, meta):
         """Sets the meta of this IvsExtentionByIdCardImageRequestBody.
-
 
         :param meta: The meta of this IvsExtentionByIdCardImageRequestBody.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -74,7 +71,6 @@ class IvsExtentionByIdCardImageRequestBody:
     def data(self):
         """Gets the data of this IvsExtentionByIdCardImageRequestBody.
 
-
         :return: The data of this IvsExtentionByIdCardImageRequestBody.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageRequestBodyData`
         """
@@ -83,7 +79,6 @@ class IvsExtentionByIdCardImageRequestBody:
     @data.setter
     def data(self, data):
         """Sets the data of this IvsExtentionByIdCardImageRequestBody.
-
 
         :param data: The data of this IvsExtentionByIdCardImageRequestBody.
         :type data: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageRequestBodyData`

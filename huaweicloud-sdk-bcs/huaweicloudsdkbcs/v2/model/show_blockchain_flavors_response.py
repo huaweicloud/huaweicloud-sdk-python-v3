@@ -17,7 +17,6 @@ class ShowBlockchainFlavorsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowBlockchainFlavorsResponse(SdkResponse):
     def enterprise_spec(self):
         """Gets the enterprise_spec of this ShowBlockchainFlavorsResponse.
 
-
         :return: The enterprise_spec of this ShowBlockchainFlavorsResponse.
         :rtype: :class:`huaweicloudsdkbcs.v2.InstanceSpc`
         """
@@ -58,7 +56,6 @@ class ShowBlockchainFlavorsResponse(SdkResponse):
     @enterprise_spec.setter
     def enterprise_spec(self, enterprise_spec):
         """Sets the enterprise_spec of this ShowBlockchainFlavorsResponse.
-
 
         :param enterprise_spec: The enterprise_spec of this ShowBlockchainFlavorsResponse.
         :type enterprise_spec: :class:`huaweicloudsdkbcs.v2.InstanceSpc`

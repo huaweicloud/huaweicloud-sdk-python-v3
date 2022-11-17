@@ -17,7 +17,6 @@ class CreateLabelsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class CreateLabelsRequest:
     def body(self):
         """Gets the body of this CreateLabelsRequest.
 
-
         :return: The body of this CreateLabelsRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.CreateLabelsReq`
         """
@@ -145,7 +143,6 @@ class CreateLabelsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateLabelsRequest.
-
 
         :param body: The body of this CreateLabelsRequest.
         :type body: :class:`huaweicloudsdkosm.v2.CreateLabelsReq`

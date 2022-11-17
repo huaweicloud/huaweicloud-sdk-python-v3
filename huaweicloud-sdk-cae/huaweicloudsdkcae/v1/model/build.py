@@ -17,7 +17,6 @@ class Build:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class Build:
     def archive(self):
         """Gets the archive of this Build.
 
-
         :return: The archive of this Build.
         :rtype: :class:`huaweicloudsdkcae.v1.Archive`
         """
@@ -63,7 +61,6 @@ class Build:
     @archive.setter
     def archive(self, archive):
         """Sets the archive of this Build.
-
 
         :param archive: The archive of this Build.
         :type archive: :class:`huaweicloudsdkcae.v1.Archive`
@@ -74,7 +71,6 @@ class Build:
     def parameters(self):
         """Gets the parameters of this Build.
 
-
         :return: The parameters of this Build.
         :rtype: dict(str, str)
         """
@@ -83,7 +79,6 @@ class Build:
     @parameters.setter
     def parameters(self, parameters):
         """Sets the parameters of this Build.
-
 
         :param parameters: The parameters of this Build.
         :type parameters: dict(str, str)

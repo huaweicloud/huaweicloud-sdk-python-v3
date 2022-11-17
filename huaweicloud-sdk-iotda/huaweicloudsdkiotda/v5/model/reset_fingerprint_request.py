@@ -17,7 +17,6 @@ class ResetFingerprintRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ResetFingerprintRequest:
     def body(self):
         """Gets the body of this ResetFingerprintRequest.
 
-
         :return: The body of this ResetFingerprintRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.ResetFingerprint`
         """
@@ -115,7 +113,6 @@ class ResetFingerprintRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetFingerprintRequest.
-
 
         :param body: The body of this ResetFingerprintRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.ResetFingerprint`

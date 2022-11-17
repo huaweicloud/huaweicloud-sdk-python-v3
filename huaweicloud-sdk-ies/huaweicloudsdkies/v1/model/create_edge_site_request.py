@@ -17,7 +17,6 @@ class CreateEdgeSiteRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateEdgeSiteRequest:
     def body(self):
         """Gets the body of this CreateEdgeSiteRequest.
 
-
         :return: The body of this CreateEdgeSiteRequest.
         :rtype: :class:`huaweicloudsdkies.v1.CreateEdgeSiteRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateEdgeSiteRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateEdgeSiteRequest.
-
 
         :param body: The body of this CreateEdgeSiteRequest.
         :type body: :class:`huaweicloudsdkies.v1.CreateEdgeSiteRequestBody`

@@ -17,7 +17,6 @@ class ResetGaussMySqlPasswordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ResetGaussMySqlPasswordRequest:
     def body(self):
         """Gets the body of this ResetGaussMySqlPasswordRequest.
 
-
         :return: The body of this ResetGaussMySqlPasswordRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlResetPasswordRequest`
         """
@@ -115,7 +113,6 @@ class ResetGaussMySqlPasswordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetGaussMySqlPasswordRequest.
-
 
         :param body: The body of this ResetGaussMySqlPasswordRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlResetPasswordRequest`

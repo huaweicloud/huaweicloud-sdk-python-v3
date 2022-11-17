@@ -17,7 +17,6 @@ class RecognizeShortAudioRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeShortAudioRequest:
     def body(self):
         """Gets the body of this RecognizeShortAudioRequest.
 
-
         :return: The body of this RecognizeShortAudioRequest.
         :rtype: :class:`huaweicloudsdksis.v1.PostShortAudioReq`
         """
@@ -58,7 +56,6 @@ class RecognizeShortAudioRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RecognizeShortAudioRequest.
-
 
         :param body: The body of this RecognizeShortAudioRequest.
         :type body: :class:`huaweicloudsdksis.v1.PostShortAudioReq`

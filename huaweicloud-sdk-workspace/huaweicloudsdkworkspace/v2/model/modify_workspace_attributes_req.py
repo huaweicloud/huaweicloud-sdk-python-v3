@@ -17,7 +17,6 @@ class ModifyWorkspaceAttributesReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -27,7 +26,8 @@ class ModifyWorkspaceAttributesReq:
         'dedicated_subnets': 'str',
         'subnet_ids': 'list[str]',
         'internet_access_port': 'str',
-        'enterprise_id': 'str'
+        'enterprise_id': 'str',
+        'is_send_email': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +37,11 @@ class ModifyWorkspaceAttributesReq:
         'dedicated_subnets': 'dedicated_subnets',
         'subnet_ids': 'subnet_ids',
         'internet_access_port': 'internet_access_port',
-        'enterprise_id': 'enterprise_id'
+        'enterprise_id': 'enterprise_id',
+        'is_send_email': 'is_send_email'
     }
 
-    def __init__(self, ad_info=None, ad_domains=None, access_mode=None, dedicated_subnets=None, subnet_ids=None, internet_access_port=None, enterprise_id=None):
+    def __init__(self, ad_info=None, ad_domains=None, access_mode=None, dedicated_subnets=None, subnet_ids=None, internet_access_port=None, enterprise_id=None, is_send_email=None):
         """ModifyWorkspaceAttributesReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +60,8 @@ class ModifyWorkspaceAttributesReq:
         :type internet_access_port: str
         :param enterprise_id: 企业ID。
         :type enterprise_id: str
+        :param is_send_email: 桌面退订是否发送邮件通知。
+        :type is_send_email: bool
         """
         
         
@@ -70,6 +73,7 @@ class ModifyWorkspaceAttributesReq:
         self._subnet_ids = None
         self._internet_access_port = None
         self._enterprise_id = None
+        self._is_send_email = None
         self.discriminator = None
 
         if ad_info is not None:
@@ -86,11 +90,12 @@ class ModifyWorkspaceAttributesReq:
             self.internet_access_port = internet_access_port
         if enterprise_id is not None:
             self.enterprise_id = enterprise_id
+        if is_send_email is not None:
+            self.is_send_email = is_send_email
 
     @property
     def ad_info(self):
         """Gets the ad_info of this ModifyWorkspaceAttributesReq.
-
 
         :return: The ad_info of this ModifyWorkspaceAttributesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AdDomainInfo`
@@ -101,7 +106,6 @@ class ModifyWorkspaceAttributesReq:
     def ad_info(self, ad_info):
         """Sets the ad_info of this ModifyWorkspaceAttributesReq.
 
-
         :param ad_info: The ad_info of this ModifyWorkspaceAttributesReq.
         :type ad_info: :class:`huaweicloudsdkworkspace.v2.AdDomainInfo`
         """
@@ -111,7 +115,6 @@ class ModifyWorkspaceAttributesReq:
     def ad_domains(self):
         """Gets the ad_domains of this ModifyWorkspaceAttributesReq.
 
-
         :return: The ad_domains of this ModifyWorkspaceAttributesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AdDomain`
         """
@@ -120,7 +123,6 @@ class ModifyWorkspaceAttributesReq:
     @ad_domains.setter
     def ad_domains(self, ad_domains):
         """Sets the ad_domains of this ModifyWorkspaceAttributesReq.
-
 
         :param ad_domains: The ad_domains of this ModifyWorkspaceAttributesReq.
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
@@ -236,6 +238,28 @@ class ModifyWorkspaceAttributesReq:
         :type enterprise_id: str
         """
         self._enterprise_id = enterprise_id
+
+    @property
+    def is_send_email(self):
+        """Gets the is_send_email of this ModifyWorkspaceAttributesReq.
+
+        桌面退订是否发送邮件通知。
+
+        :return: The is_send_email of this ModifyWorkspaceAttributesReq.
+        :rtype: bool
+        """
+        return self._is_send_email
+
+    @is_send_email.setter
+    def is_send_email(self, is_send_email):
+        """Sets the is_send_email of this ModifyWorkspaceAttributesReq.
+
+        桌面退订是否发送邮件通知。
+
+        :param is_send_email: The is_send_email of this ModifyWorkspaceAttributesReq.
+        :type is_send_email: bool
+        """
+        self._is_send_email = is_send_email
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,7 +17,6 @@ class MysqlUpdateBackupPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class MysqlUpdateBackupPolicyRequest:
     def backup_policy(self):
         """Gets the backup_policy of this MysqlUpdateBackupPolicyRequest.
 
-
         :return: The backup_policy of this MysqlUpdateBackupPolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupPolicy`
         """
@@ -57,7 +55,6 @@ class MysqlUpdateBackupPolicyRequest:
     @backup_policy.setter
     def backup_policy(self, backup_policy):
         """Sets the backup_policy of this MysqlUpdateBackupPolicyRequest.
-
 
         :param backup_policy: The backup_policy of this MysqlUpdateBackupPolicyRequest.
         :type backup_policy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupPolicy`

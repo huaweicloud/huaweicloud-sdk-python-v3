@@ -17,7 +17,6 @@ class CreateAnimatedGraphicsTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAnimatedGraphicsTaskRequest:
     def body(self):
         """Gets the body of this CreateAnimatedGraphicsTaskRequest.
 
-
         :return: The body of this CreateAnimatedGraphicsTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskReq`
         """
@@ -58,7 +56,6 @@ class CreateAnimatedGraphicsTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAnimatedGraphicsTaskRequest.
-
 
         :param body: The body of this CreateAnimatedGraphicsTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskReq`

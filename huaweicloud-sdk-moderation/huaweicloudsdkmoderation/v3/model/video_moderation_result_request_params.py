@@ -17,7 +17,6 @@ class VideoModerationResultRequestParams:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -74,7 +73,6 @@ class VideoModerationResultRequestParams:
     def data(self):
         """Gets the data of this VideoModerationResultRequestParams.
 
-
         :return: The data of this VideoModerationResultRequestParams.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoModerationResultRequestParamsData`
         """
@@ -83,7 +81,6 @@ class VideoModerationResultRequestParams:
     @data.setter
     def data(self, data):
         """Sets the data of this VideoModerationResultRequestParams.
-
 
         :param data: The data of this VideoModerationResultRequestParams.
         :type data: :class:`huaweicloudsdkmoderation.v3.VideoModerationResultRequestParamsData`

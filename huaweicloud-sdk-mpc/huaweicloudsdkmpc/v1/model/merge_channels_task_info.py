@@ -17,7 +17,6 @@ class MergeChannelsTaskInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -186,7 +185,6 @@ class MergeChannelsTaskInfo:
     def output(self):
         """Gets the output of this MergeChannelsTaskInfo.
 
-
         :return: The output of this MergeChannelsTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -195,7 +193,6 @@ class MergeChannelsTaskInfo:
     @output.setter
     def output(self, output):
         """Sets the output of this MergeChannelsTaskInfo.
-
 
         :param output: The output of this MergeChannelsTaskInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

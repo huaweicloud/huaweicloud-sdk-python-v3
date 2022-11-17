@@ -17,7 +17,6 @@ class DisassociateServerVirtualIpRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class DisassociateServerVirtualIpRequestBody:
     def nic(self):
         """Gets the nic of this DisassociateServerVirtualIpRequestBody.
 
-
         :return: The nic of this DisassociateServerVirtualIpRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpOption`
         """
@@ -57,7 +55,6 @@ class DisassociateServerVirtualIpRequestBody:
     @nic.setter
     def nic(self, nic):
         """Sets the nic of this DisassociateServerVirtualIpRequestBody.
-
 
         :param nic: The nic of this DisassociateServerVirtualIpRequestBody.
         :type nic: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpOption`

@@ -17,7 +17,6 @@ class ImageMediaTaggingItemBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -150,7 +149,6 @@ class ImageMediaTaggingItemBody:
     def i18n_tag(self):
         """Gets the i18n_tag of this ImageMediaTaggingItemBody.
 
-
         :return: The i18n_tag of this ImageMediaTaggingItemBody.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingItemBodyI18nTag`
         """
@@ -159,7 +157,6 @@ class ImageMediaTaggingItemBody:
     @i18n_tag.setter
     def i18n_tag(self, i18n_tag):
         """Sets the i18n_tag of this ImageMediaTaggingItemBody.
-
 
         :param i18n_tag: The i18n_tag of this ImageMediaTaggingItemBody.
         :type i18n_tag: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingItemBodyI18nTag`
@@ -170,7 +167,6 @@ class ImageMediaTaggingItemBody:
     def i18n_type(self):
         """Gets the i18n_type of this ImageMediaTaggingItemBody.
 
-
         :return: The i18n_type of this ImageMediaTaggingItemBody.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingItemBodyI18nType`
         """
@@ -179,7 +175,6 @@ class ImageMediaTaggingItemBody:
     @i18n_type.setter
     def i18n_type(self, i18n_type):
         """Sets the i18n_type of this ImageMediaTaggingItemBody.
-
 
         :param i18n_type: The i18n_type of this ImageMediaTaggingItemBody.
         :type i18n_type: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingItemBodyI18nType`

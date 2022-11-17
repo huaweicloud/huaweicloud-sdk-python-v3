@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class OsmClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class OsmClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -108,6 +104,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -134,6 +131,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -176,6 +175,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckNeedVerifyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -202,6 +202,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -240,6 +242,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckVerifyCodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -266,6 +269,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -306,6 +311,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmAuthorizationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -332,6 +338,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -372,6 +380,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCaseExtendsParamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -398,6 +407,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -439,6 +450,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCaseLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -465,6 +477,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -507,6 +521,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -533,6 +548,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -571,6 +588,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -597,6 +615,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -637,6 +657,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -663,6 +684,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -701,6 +724,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePrivilegesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -727,6 +751,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -767,6 +793,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRelationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -793,6 +820,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -833,6 +862,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScoresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -859,6 +889,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -897,6 +929,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAccessoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -923,6 +956,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -964,6 +999,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCaseLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -990,6 +1026,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1028,6 +1066,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1054,6 +1093,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1094,6 +1135,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRelationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1120,6 +1162,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1160,6 +1204,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadAccessoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1186,6 +1231,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1249,6 +1296,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1275,6 +1323,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1315,6 +1365,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1341,6 +1392,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1382,6 +1435,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAccessoryAccessUrlsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1408,6 +1462,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1444,6 +1500,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAgenciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1470,6 +1527,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1506,6 +1565,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAreaCodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1532,6 +1592,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1582,6 +1644,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1608,6 +1671,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1644,6 +1709,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseCategoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1670,6 +1736,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1706,6 +1774,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseCcEmailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1732,6 +1801,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1770,6 +1841,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseCountsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1796,6 +1868,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1834,6 +1908,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1860,6 +1935,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1896,6 +1973,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseLimitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1922,6 +2000,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1966,6 +2046,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseOperateLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1992,6 +2073,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2032,6 +2115,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2058,6 +2142,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2096,6 +2182,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCaseTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2122,6 +2209,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2186,6 +2275,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2212,6 +2302,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2248,6 +2340,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomersRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2274,6 +2367,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2316,6 +2411,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListExtendsParamsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2342,6 +2438,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2396,6 +2494,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHasVerifiedContactsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2422,6 +2521,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2472,6 +2573,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHistoryOperateLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2498,6 +2600,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2544,6 +2648,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHistorySessionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2570,6 +2675,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2614,6 +2721,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2640,6 +2748,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2684,6 +2794,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2710,6 +2821,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2756,6 +2869,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMoreInstantMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2782,6 +2896,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2825,6 +2941,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNewInstantMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2851,6 +2968,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2889,6 +3008,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPrivilegesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2915,6 +3035,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2953,6 +3075,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProblemTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2979,6 +3102,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3017,6 +3142,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductCategoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3043,6 +3169,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3079,6 +3207,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3105,6 +3234,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3143,6 +3274,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRelationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3169,6 +3301,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3205,6 +3339,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSatisfactionDimensionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3231,6 +3366,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3271,6 +3408,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSeveritiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3297,6 +3435,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3337,6 +3477,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubCustomersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3363,6 +3504,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3413,6 +3556,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTransportHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3439,6 +3583,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3480,7 +3626,77 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUnreadNewInstantMessagesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def revoke_message(self, request):
+        """撤回留言
+
+        撤回留言
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RevokeMessage
+        :type request: :class:`huaweicloudsdkosm.v2.RevokeMessageRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.RevokeMessageResponse`
+        """
+        return self.revoke_message_with_http_info(request)
+
+    def revoke_message_with_http_info(self, request):
+        all_params = ['case_id', 'message_id', 'x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
+        if 'message_id' in local_var_params:
+            path_params['message_id'] = local_var_params['message_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/cases/{case_id}/instant-messages/{message_id}/withdraw',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RevokeMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3506,6 +3722,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3544,6 +3762,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendVerifyCodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3570,6 +3789,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3606,6 +3827,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAccessoryLimitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3632,6 +3854,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3672,6 +3896,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuthorizationDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3698,6 +3923,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3738,6 +3965,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCaseDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3764,6 +3992,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3804,6 +4034,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCaseExtendsParamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3830,6 +4061,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3868,6 +4101,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCaseStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3894,6 +4128,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3930,6 +4166,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCustomerPrivilegePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3956,6 +4193,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3994,6 +4233,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLatestPublishedAgreementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4020,6 +4260,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4056,6 +4298,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPartnersCasesPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4082,6 +4325,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4122,6 +4367,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPartnersServiceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4148,6 +4394,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4186,6 +4434,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSignedLatestPublishedAgreementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4212,6 +4461,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4252,6 +4503,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SignPublishedAgreementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4278,6 +4530,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4320,6 +4574,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAuthorizationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4346,6 +4601,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4386,6 +4643,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCaseContactInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4412,6 +4670,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4454,6 +4714,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4480,6 +4741,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4520,6 +4783,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLabelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4546,6 +4810,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4586,6 +4852,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNewInstantMessagesReadResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4612,6 +4879,8 @@ class OsmClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4650,6 +4919,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadJsonAccessoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4657,7 +4927,7 @@ class OsmClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4667,9 +4937,10 @@ class OsmClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4686,6 +4957,7 @@ class OsmClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

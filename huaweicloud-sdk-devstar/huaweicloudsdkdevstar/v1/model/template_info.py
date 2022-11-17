@@ -17,7 +17,6 @@ class TemplateInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -836,7 +835,6 @@ class TemplateInfo:
     def pipeline_template(self):
         """Gets the pipeline_template of this TemplateInfo.
 
-
         :return: The pipeline_template of this TemplateInfo.
         :rtype: :class:`huaweicloudsdkdevstar.v1.PipelineTemplateInfo`
         """
@@ -845,7 +843,6 @@ class TemplateInfo:
     @pipeline_template.setter
     def pipeline_template(self, pipeline_template):
         """Sets the pipeline_template of this TemplateInfo.
-
 
         :param pipeline_template: The pipeline_template of this TemplateInfo.
         :type pipeline_template: :class:`huaweicloudsdkdevstar.v1.PipelineTemplateInfo`

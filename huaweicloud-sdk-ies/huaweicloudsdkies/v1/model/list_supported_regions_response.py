@@ -17,7 +17,6 @@ class ListSupportedRegionsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListSupportedRegionsResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListSupportedRegionsResponse.
 
-
         :return: The page_info of this ListSupportedRegionsResponse.
         :rtype: :class:`huaweicloudsdkies.v1.PageInfo`
         """
@@ -87,7 +85,6 @@ class ListSupportedRegionsResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListSupportedRegionsResponse.
-
 
         :param page_info: The page_info of this ListSupportedRegionsResponse.
         :type page_info: :class:`huaweicloudsdkies.v1.PageInfo`

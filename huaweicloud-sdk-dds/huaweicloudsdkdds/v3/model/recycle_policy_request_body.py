@@ -17,7 +17,6 @@ class RecyclePolicyRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class RecyclePolicyRequestBody:
     def recycle_policy(self):
         """Gets the recycle_policy of this RecyclePolicyRequestBody.
 
-
         :return: The recycle_policy of this RecyclePolicyRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.RecyclePolicy`
         """
@@ -57,7 +55,6 @@ class RecyclePolicyRequestBody:
     @recycle_policy.setter
     def recycle_policy(self, recycle_policy):
         """Sets the recycle_policy of this RecyclePolicyRequestBody.
-
 
         :param recycle_policy: The recycle_policy of this RecyclePolicyRequestBody.
         :type recycle_policy: :class:`huaweicloudsdkdds.v3.RecyclePolicy`

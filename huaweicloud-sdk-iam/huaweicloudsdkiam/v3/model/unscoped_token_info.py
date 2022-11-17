@@ -17,7 +17,6 @@ class UnscopedTokenInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -146,7 +145,6 @@ class UnscopedTokenInfo:
     def user(self):
         """Gets the user of this UnscopedTokenInfo.
 
-
         :return: The user of this UnscopedTokenInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.FederationUserBody`
         """
@@ -155,7 +153,6 @@ class UnscopedTokenInfo:
     @user.setter
     def user(self, user):
         """Sets the user of this UnscopedTokenInfo.
-
 
         :param user: The user of this UnscopedTokenInfo.
         :type user: :class:`huaweicloudsdkiam.v3.FederationUserBody`

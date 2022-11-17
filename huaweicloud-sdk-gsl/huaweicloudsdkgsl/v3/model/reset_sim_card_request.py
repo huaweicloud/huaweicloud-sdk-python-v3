@@ -17,7 +17,6 @@ class ResetSimCardRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ResetSimCardRequest:
     def body(self):
         """Gets the body of this ResetSimCardRequest.
 
-
         :return: The body of this ResetSimCardRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.DownUpTimeForSimCardReq`
         """
@@ -86,7 +84,6 @@ class ResetSimCardRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetSimCardRequest.
-
 
         :param body: The body of this ResetSimCardRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.DownUpTimeForSimCardReq`

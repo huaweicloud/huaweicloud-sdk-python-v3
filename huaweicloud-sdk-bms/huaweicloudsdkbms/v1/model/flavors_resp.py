@@ -17,7 +17,6 @@ class FlavorsResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -423,7 +422,6 @@ class FlavorsResp:
     def os_extra_specs(self):
         """Gets the os_extra_specs of this FlavorsResp.
 
-
         :return: The os_extra_specs of this FlavorsResp.
         :rtype: :class:`huaweicloudsdkbms.v1.OsExtraSpecs`
         """
@@ -432,7 +430,6 @@ class FlavorsResp:
     @os_extra_specs.setter
     def os_extra_specs(self, os_extra_specs):
         """Sets the os_extra_specs of this FlavorsResp.
-
 
         :param os_extra_specs: The os_extra_specs of this FlavorsResp.
         :type os_extra_specs: :class:`huaweicloudsdkbms.v1.OsExtraSpecs`

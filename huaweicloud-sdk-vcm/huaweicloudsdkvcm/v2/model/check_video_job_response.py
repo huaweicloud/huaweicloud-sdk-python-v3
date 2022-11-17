@@ -17,7 +17,6 @@ class CheckVideoJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -317,7 +316,6 @@ class CheckVideoJobResponse(SdkResponse):
     def hosting_result(self):
         """Gets the hosting_result of this CheckVideoJobResponse.
 
-
         :return: The hosting_result of this CheckVideoJobResponse.
         :rtype: :class:`huaweicloudsdkvcm.v2.VideoJobResponseHostingResult`
         """
@@ -326,7 +324,6 @@ class CheckVideoJobResponse(SdkResponse):
     @hosting_result.setter
     def hosting_result(self, hosting_result):
         """Sets the hosting_result of this CheckVideoJobResponse.
-
 
         :param hosting_result: The hosting_result of this CheckVideoJobResponse.
         :type hosting_result: :class:`huaweicloudsdkvcm.v2.VideoJobResponseHostingResult`

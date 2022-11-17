@@ -17,7 +17,6 @@ class CountEventsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CountEventsRequest:
     def body(self):
         """Gets the body of this CountEventsRequest.
 
-
         :return: The body of this CountEventsRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.EventQueryParam`
         """
@@ -87,7 +85,6 @@ class CountEventsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CountEventsRequest.
-
 
         :param body: The body of this CountEventsRequest.
         :type body: :class:`huaweicloudsdkaom.v2.EventQueryParam`

@@ -17,7 +17,6 @@ class ListInstancesByResourceTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListInstancesByResourceTagsRequest:
     def body(self):
         """Gets the body of this ListInstancesByResourceTagsRequest.
 
-
         :return: The body of this ListInstancesByResourceTagsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequestBody`
         """
@@ -58,7 +56,6 @@ class ListInstancesByResourceTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListInstancesByResourceTagsRequest.
-
 
         :param body: The body of this ListInstancesByResourceTagsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequestBody`

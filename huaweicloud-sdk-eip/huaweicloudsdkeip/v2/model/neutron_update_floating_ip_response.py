@@ -17,7 +17,6 @@ class NeutronUpdateFloatingIpResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class NeutronUpdateFloatingIpResponse(SdkResponse):
     def floatingip(self):
         """Gets the floatingip of this NeutronUpdateFloatingIpResponse.
 
-
         :return: The floatingip of this NeutronUpdateFloatingIpResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.PostAndPutFloatingIpResp`
         """
@@ -58,7 +56,6 @@ class NeutronUpdateFloatingIpResponse(SdkResponse):
     @floatingip.setter
     def floatingip(self, floatingip):
         """Sets the floatingip of this NeutronUpdateFloatingIpResponse.
-
 
         :param floatingip: The floatingip of this NeutronUpdateFloatingIpResponse.
         :type floatingip: :class:`huaweicloudsdkeip.v2.PostAndPutFloatingIpResp`

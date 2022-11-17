@@ -17,7 +17,6 @@ class ProjectVpcCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -254,7 +253,6 @@ class ProjectVpcCreate:
     def vpc_health_config(self):
         """Gets the vpc_health_config of this ProjectVpcCreate.
 
-
         :return: The vpc_health_config of this ProjectVpcCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcHealthConfig`
         """
@@ -263,7 +261,6 @@ class ProjectVpcCreate:
     @vpc_health_config.setter
     def vpc_health_config(self, vpc_health_config):
         """Sets the vpc_health_config of this ProjectVpcCreate.
-
 
         :param vpc_health_config: The vpc_health_config of this ProjectVpcCreate.
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfig`

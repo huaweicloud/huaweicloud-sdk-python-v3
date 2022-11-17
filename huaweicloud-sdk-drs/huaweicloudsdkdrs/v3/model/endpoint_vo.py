@@ -17,7 +17,6 @@ class EndpointVO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -1042,7 +1041,6 @@ class EndpointVO:
     def kerberos_vo(self):
         """Gets the kerberos_vo of this EndpointVO.
 
-
         :return: The kerberos_vo of this EndpointVO.
         :rtype: :class:`huaweicloudsdkdrs.v3.KerberosVO`
         """
@@ -1051,7 +1049,6 @@ class EndpointVO:
     @kerberos_vo.setter
     def kerberos_vo(self, kerberos_vo):
         """Sets the kerberos_vo of this EndpointVO.
-
 
         :param kerberos_vo: The kerberos_vo of this EndpointVO.
         :type kerberos_vo: :class:`huaweicloudsdkdrs.v3.KerberosVO`

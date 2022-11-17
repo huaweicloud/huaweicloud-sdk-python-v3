@@ -17,7 +17,6 @@ class ChangeBaremetalNameBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ChangeBaremetalNameBody:
     def server(self):
         """Gets the server of this ChangeBaremetalNameBody.
 
-
         :return: The server of this ChangeBaremetalNameBody.
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameServer`
         """
@@ -57,7 +55,6 @@ class ChangeBaremetalNameBody:
     @server.setter
     def server(self, server):
         """Sets the server of this ChangeBaremetalNameBody.
-
 
         :param server: The server of this ChangeBaremetalNameBody.
         :type server: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameServer`

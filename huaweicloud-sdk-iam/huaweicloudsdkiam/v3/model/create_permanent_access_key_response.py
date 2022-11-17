@@ -17,7 +17,6 @@ class CreatePermanentAccessKeyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePermanentAccessKeyResponse(SdkResponse):
     def credential(self):
         """Gets the credential of this CreatePermanentAccessKeyResponse.
 
-
         :return: The credential of this CreatePermanentAccessKeyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateCredentialResult`
         """
@@ -58,7 +56,6 @@ class CreatePermanentAccessKeyResponse(SdkResponse):
     @credential.setter
     def credential(self, credential):
         """Sets the credential of this CreatePermanentAccessKeyResponse.
-
 
         :param credential: The credential of this CreatePermanentAccessKeyResponse.
         :type credential: :class:`huaweicloudsdkiam.v3.CreateCredentialResult`

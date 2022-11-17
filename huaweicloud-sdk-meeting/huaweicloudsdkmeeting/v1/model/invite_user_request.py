@@ -17,7 +17,6 @@ class InviteUserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class InviteUserRequest:
     def body(self):
         """Gets the body of this InviteUserRequest.
 
-
         :return: The body of this InviteUserRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddUserRequestBody`
         """
@@ -116,7 +114,6 @@ class InviteUserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this InviteUserRequest.
-
 
         :param body: The body of this InviteUserRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.AddUserRequestBody`

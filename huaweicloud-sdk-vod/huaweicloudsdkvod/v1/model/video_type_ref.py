@@ -17,7 +17,6 @@ class VideoTypeRef:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -322,7 +321,6 @@ class VideoTypeRef:
     def thumbnail(self):
         """Gets the thumbnail of this VideoTypeRef.
 
-
         :return: The thumbnail of this VideoTypeRef.
         :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
@@ -331,7 +329,6 @@ class VideoTypeRef:
     @thumbnail.setter
     def thumbnail(self, thumbnail):
         """Sets the thumbnail of this VideoTypeRef.
-
 
         :param thumbnail: The thumbnail of this VideoTypeRef.
         :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -342,7 +339,6 @@ class VideoTypeRef:
     def review(self):
         """Gets the review of this VideoTypeRef.
 
-
         :return: The review of this VideoTypeRef.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
         """
@@ -351,7 +347,6 @@ class VideoTypeRef:
     @review.setter
     def review(self, review):
         """Sets the review of this VideoTypeRef.
-
 
         :param review: The review of this VideoTypeRef.
         :type review: :class:`huaweicloudsdkvod.v1.Review`

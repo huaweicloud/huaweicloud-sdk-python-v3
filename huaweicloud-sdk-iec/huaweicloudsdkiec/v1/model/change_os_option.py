@@ -17,7 +17,6 @@ class ChangeOsOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class ChangeOsOption:
     def metadata(self):
         """Gets the metadata of this ChangeOsOption.
 
-
         :return: The metadata of this ChangeOsOption.
         :rtype: :class:`huaweicloudsdkiec.v1.ChangeOsMetadata`
         """
@@ -93,7 +91,6 @@ class ChangeOsOption:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ChangeOsOption.
-
 
         :param metadata: The metadata of this ChangeOsOption.
         :type metadata: :class:`huaweicloudsdkiec.v1.ChangeOsMetadata`

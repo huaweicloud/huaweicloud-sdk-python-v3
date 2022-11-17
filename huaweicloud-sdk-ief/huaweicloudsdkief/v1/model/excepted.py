@@ -17,7 +17,6 @@ class Excepted:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class Excepted:
     def metadata(self):
         """Gets the metadata of this Excepted.
 
-
         :return: The metadata of this Excepted.
         :rtype: :class:`huaweicloudsdkief.v1.ExceptedMetadata`
         """
@@ -87,7 +85,6 @@ class Excepted:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this Excepted.
-
 
         :param metadata: The metadata of this Excepted.
         :type metadata: :class:`huaweicloudsdkief.v1.ExceptedMetadata`

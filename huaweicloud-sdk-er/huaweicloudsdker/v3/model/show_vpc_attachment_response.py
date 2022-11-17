@@ -17,7 +17,6 @@ class ShowVpcAttachmentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowVpcAttachmentResponse(SdkResponse):
     def vpc_attachment(self):
         """Gets the vpc_attachment of this ShowVpcAttachmentResponse.
 
-
         :return: The vpc_attachment of this ShowVpcAttachmentResponse.
         :rtype: :class:`huaweicloudsdker.v3.VpcAttachmentDetails`
         """
@@ -65,7 +63,6 @@ class ShowVpcAttachmentResponse(SdkResponse):
     @vpc_attachment.setter
     def vpc_attachment(self, vpc_attachment):
         """Sets the vpc_attachment of this ShowVpcAttachmentResponse.
-
 
         :param vpc_attachment: The vpc_attachment of this ShowVpcAttachmentResponse.
         :type vpc_attachment: :class:`huaweicloudsdker.v3.VpcAttachmentDetails`

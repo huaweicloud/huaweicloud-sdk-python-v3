@@ -17,7 +17,6 @@ class CreateVisionActiveCodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CreateVisionActiveCodeRequest:
     def body(self):
         """Gets the body of this CreateVisionActiveCodeRequest.
 
-
         :return: The body of this CreateVisionActiveCodeRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.VisionActiveCodeDTO`
         """
@@ -116,7 +114,6 @@ class CreateVisionActiveCodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateVisionActiveCodeRequest.
-
 
         :param body: The body of this CreateVisionActiveCodeRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.VisionActiveCodeDTO`

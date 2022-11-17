@@ -17,7 +17,6 @@ class ShowDomainFullConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDomainFullConfigResponse(SdkResponse):
     def configs(self):
         """Gets the configs of this ShowDomainFullConfigResponse.
 
-
         :return: The configs of this ShowDomainFullConfigResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.ConfigsGetBody`
         """
@@ -58,7 +56,6 @@ class ShowDomainFullConfigResponse(SdkResponse):
     @configs.setter
     def configs(self, configs):
         """Sets the configs of this ShowDomainFullConfigResponse.
-
 
         :param configs: The configs of this ShowDomainFullConfigResponse.
         :type configs: :class:`huaweicloudsdkcdn.v1.ConfigsGetBody`

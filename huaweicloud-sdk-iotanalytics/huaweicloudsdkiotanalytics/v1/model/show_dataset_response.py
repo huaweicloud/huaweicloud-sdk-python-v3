@@ -17,7 +17,6 @@ class ShowDatasetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class ShowDatasetResponse(SdkResponse):
     def sql_job(self):
         """Gets the sql_job of this ShowDatasetResponse.
 
-
         :return: The sql_job of this ShowDatasetResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobQueryDataset`
         """
@@ -145,7 +143,6 @@ class ShowDatasetResponse(SdkResponse):
     @sql_job.setter
     def sql_job(self, sql_job):
         """Sets the sql_job of this ShowDatasetResponse.
-
 
         :param sql_job: The sql_job of this ShowDatasetResponse.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobQueryDataset`

@@ -17,7 +17,6 @@ class KeystoneCreateMappingRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class KeystoneCreateMappingRequestBody:
     def mapping(self):
         """Gets the mapping of this KeystoneCreateMappingRequestBody.
 
-
         :return: The mapping of this KeystoneCreateMappingRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.MappingOption`
         """
@@ -57,7 +55,6 @@ class KeystoneCreateMappingRequestBody:
     @mapping.setter
     def mapping(self, mapping):
         """Sets the mapping of this KeystoneCreateMappingRequestBody.
-
 
         :param mapping: The mapping of this KeystoneCreateMappingRequestBody.
         :type mapping: :class:`huaweicloudsdkiam.v3.MappingOption`

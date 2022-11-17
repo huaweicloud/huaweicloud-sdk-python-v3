@@ -17,7 +17,6 @@ class DataStruct:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class DataStruct:
     def behaviors(self):
         """Gets the behaviors of this DataStruct.
 
-
         :return: The behaviors of this DataStruct.
         :rtype: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
         """
@@ -79,7 +77,6 @@ class DataStruct:
     @behaviors.setter
     def behaviors(self, behaviors):
         """Sets the behaviors of this DataStruct.
-
 
         :param behaviors: The behaviors of this DataStruct.
         :type behaviors: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
@@ -134,7 +131,6 @@ class DataStruct:
     def user_dynamic_attr(self):
         """Gets the user_dynamic_attr of this DataStruct.
 
-
         :return: The user_dynamic_attr of this DataStruct.
         :rtype: :class:`huaweicloudsdkres.v1.UserDynamicAttr`
         """
@@ -143,7 +139,6 @@ class DataStruct:
     @user_dynamic_attr.setter
     def user_dynamic_attr(self, user_dynamic_attr):
         """Sets the user_dynamic_attr of this DataStruct.
-
 
         :param user_dynamic_attr: The user_dynamic_attr of this DataStruct.
         :type user_dynamic_attr: :class:`huaweicloudsdkres.v1.UserDynamicAttr`

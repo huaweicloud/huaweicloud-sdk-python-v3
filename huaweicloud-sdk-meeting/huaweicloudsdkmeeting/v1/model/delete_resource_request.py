@@ -17,7 +17,6 @@ class DeleteResourceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class DeleteResourceRequest:
     def body(self):
         """Gets the body of this DeleteResourceRequest.
 
-
         :return: The body of this DeleteResourceRequest.
         :rtype: list[str]
         """
@@ -144,7 +142,6 @@ class DeleteResourceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteResourceRequest.
-
 
         :param body: The body of this DeleteResourceRequest.
         :type body: list[str]

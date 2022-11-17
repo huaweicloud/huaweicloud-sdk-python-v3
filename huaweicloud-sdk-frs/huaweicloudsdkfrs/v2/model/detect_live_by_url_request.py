@@ -17,7 +17,6 @@ class DetectLiveByUrlRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DetectLiveByUrlRequest:
     def body(self):
         """Gets the body of this DetectLiveByUrlRequest.
 
-
         :return: The body of this DetectLiveByUrlRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectUrlReq`
         """
@@ -58,7 +56,6 @@ class DetectLiveByUrlRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DetectLiveByUrlRequest.
-
 
         :param body: The body of this DetectLiveByUrlRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.LiveDetectUrlReq`

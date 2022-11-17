@@ -17,7 +17,6 @@ class CreateAgencyCustomPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAgencyCustomPolicyRequest:
     def body(self):
         """Gets the body of this CreateAgencyCustomPolicyRequest.
 
-
         :return: The body of this CreateAgencyCustomPolicyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyCustomPolicyRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateAgencyCustomPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAgencyCustomPolicyRequest.
-
 
         :param body: The body of this CreateAgencyCustomPolicyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateAgencyCustomPolicyRequestBody`

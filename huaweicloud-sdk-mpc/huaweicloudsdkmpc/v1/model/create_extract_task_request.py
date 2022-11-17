@@ -17,7 +17,6 @@ class CreateExtractTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateExtractTaskRequest:
     def body(self):
         """Gets the body of this CreateExtractTaskRequest.
 
-
         :return: The body of this CreateExtractTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskReq`
         """
@@ -58,7 +56,6 @@ class CreateExtractTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateExtractTaskRequest.
-
 
         :param body: The body of this CreateExtractTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskReq`

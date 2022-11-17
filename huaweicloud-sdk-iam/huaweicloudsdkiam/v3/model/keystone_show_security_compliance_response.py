@@ -17,7 +17,6 @@ class KeystoneShowSecurityComplianceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneShowSecurityComplianceResponse(SdkResponse):
     def config(self):
         """Gets the config of this KeystoneShowSecurityComplianceResponse.
 
-
         :return: The config of this KeystoneShowSecurityComplianceResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Config`
         """
@@ -58,7 +56,6 @@ class KeystoneShowSecurityComplianceResponse(SdkResponse):
     @config.setter
     def config(self, config):
         """Sets the config of this KeystoneShowSecurityComplianceResponse.
-
 
         :param config: The config of this KeystoneShowSecurityComplianceResponse.
         :type config: :class:`huaweicloudsdkiam.v3.Config`

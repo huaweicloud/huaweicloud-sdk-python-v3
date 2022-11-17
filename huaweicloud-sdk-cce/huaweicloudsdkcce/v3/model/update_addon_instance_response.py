@@ -17,7 +17,6 @@ class UpdateAddonInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class UpdateAddonInstanceResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this UpdateAddonInstanceResponse.
 
-
         :return: The metadata of this UpdateAddonInstanceResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
@@ -130,7 +128,6 @@ class UpdateAddonInstanceResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this UpdateAddonInstanceResponse.
-
 
         :param metadata: The metadata of this UpdateAddonInstanceResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -141,7 +138,6 @@ class UpdateAddonInstanceResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this UpdateAddonInstanceResponse.
 
-
         :return: The spec of this UpdateAddonInstanceResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.InstanceSpec`
         """
@@ -150,7 +146,6 @@ class UpdateAddonInstanceResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this UpdateAddonInstanceResponse.
-
 
         :param spec: The spec of this UpdateAddonInstanceResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
@@ -161,7 +156,6 @@ class UpdateAddonInstanceResponse(SdkResponse):
     def status(self):
         """Gets the status of this UpdateAddonInstanceResponse.
 
-
         :return: The status of this UpdateAddonInstanceResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
         """
@@ -170,7 +164,6 @@ class UpdateAddonInstanceResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this UpdateAddonInstanceResponse.
-
 
         :param status: The status of this UpdateAddonInstanceResponse.
         :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`

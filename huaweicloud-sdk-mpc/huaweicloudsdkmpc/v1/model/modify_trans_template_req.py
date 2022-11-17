@@ -17,7 +17,6 @@ class ModifyTransTemplateReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -118,7 +117,6 @@ class ModifyTransTemplateReq:
     def video(self):
         """Gets the video of this ModifyTransTemplateReq.
 
-
         :return: The video of this ModifyTransTemplateReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Video`
         """
@@ -127,7 +125,6 @@ class ModifyTransTemplateReq:
     @video.setter
     def video(self, video):
         """Sets the video of this ModifyTransTemplateReq.
-
 
         :param video: The video of this ModifyTransTemplateReq.
         :type video: :class:`huaweicloudsdkmpc.v1.Video`
@@ -138,7 +135,6 @@ class ModifyTransTemplateReq:
     def audio(self):
         """Gets the audio of this ModifyTransTemplateReq.
 
-
         :return: The audio of this ModifyTransTemplateReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
@@ -147,7 +143,6 @@ class ModifyTransTemplateReq:
     @audio.setter
     def audio(self, audio):
         """Sets the audio of this ModifyTransTemplateReq.
-
 
         :param audio: The audio of this ModifyTransTemplateReq.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -158,7 +153,6 @@ class ModifyTransTemplateReq:
     def common(self):
         """Gets the common of this ModifyTransTemplateReq.
 
-
         :return: The common of this ModifyTransTemplateReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
@@ -167,7 +161,6 @@ class ModifyTransTemplateReq:
     @common.setter
     def common(self, common):
         """Sets the common of this ModifyTransTemplateReq.
-
 
         :param common: The common of this ModifyTransTemplateReq.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

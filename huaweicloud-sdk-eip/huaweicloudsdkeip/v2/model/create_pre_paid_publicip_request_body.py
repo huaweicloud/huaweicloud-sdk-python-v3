@@ -17,7 +17,6 @@ class CreatePrePaidPublicipRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -68,7 +67,6 @@ class CreatePrePaidPublicipRequestBody:
     def publicip(self):
         """Gets the publicip of this CreatePrePaidPublicipRequestBody.
 
-
         :return: The publicip of this CreatePrePaidPublicipRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipOption`
         """
@@ -77,7 +75,6 @@ class CreatePrePaidPublicipRequestBody:
     @publicip.setter
     def publicip(self, publicip):
         """Sets the publicip of this CreatePrePaidPublicipRequestBody.
-
 
         :param publicip: The publicip of this CreatePrePaidPublicipRequestBody.
         :type publicip: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipOption`
@@ -88,7 +85,6 @@ class CreatePrePaidPublicipRequestBody:
     def bandwidth(self):
         """Gets the bandwidth of this CreatePrePaidPublicipRequestBody.
 
-
         :return: The bandwidth of this CreatePrePaidPublicipRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
         """
@@ -97,7 +93,6 @@ class CreatePrePaidPublicipRequestBody:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this CreatePrePaidPublicipRequestBody.
-
 
         :param bandwidth: The bandwidth of this CreatePrePaidPublicipRequestBody.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
@@ -108,7 +103,6 @@ class CreatePrePaidPublicipRequestBody:
     def extend_param(self):
         """Gets the extend_param of this CreatePrePaidPublicipRequestBody.
 
-
         :return: The extend_param of this CreatePrePaidPublicipRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`
         """
@@ -117,7 +111,6 @@ class CreatePrePaidPublicipRequestBody:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this CreatePrePaidPublicipRequestBody.
-
 
         :param extend_param: The extend_param of this CreatePrePaidPublicipRequestBody.
         :type extend_param: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`

@@ -17,7 +17,6 @@ class CinderAcceptVolumeTransferResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CinderAcceptVolumeTransferResponse(SdkResponse):
     def transfer(self):
         """Gets the transfer of this CinderAcceptVolumeTransferResponse.
 
-
         :return: The transfer of this CinderAcceptVolumeTransferResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.VolumeTransferSummary`
         """
@@ -58,7 +56,6 @@ class CinderAcceptVolumeTransferResponse(SdkResponse):
     @transfer.setter
     def transfer(self, transfer):
         """Sets the transfer of this CinderAcceptVolumeTransferResponse.
-
 
         :param transfer: The transfer of this CinderAcceptVolumeTransferResponse.
         :type transfer: :class:`huaweicloudsdkevs.v2.VolumeTransferSummary`

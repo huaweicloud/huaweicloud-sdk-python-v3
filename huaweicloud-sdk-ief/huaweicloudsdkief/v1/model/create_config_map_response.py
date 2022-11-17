@@ -17,7 +17,6 @@ class CreateConfigMapResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateConfigMapResponse(SdkResponse):
     def configmap(self):
         """Gets the configmap of this CreateConfigMapResponse.
 
-
         :return: The configmap of this CreateConfigMapResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ConfigMapResp`
         """
@@ -58,7 +56,6 @@ class CreateConfigMapResponse(SdkResponse):
     @configmap.setter
     def configmap(self, configmap):
         """Sets the configmap of this CreateConfigMapResponse.
-
 
         :param configmap: The configmap of this CreateConfigMapResponse.
         :type configmap: :class:`huaweicloudsdkief.v1.ConfigMapResp`

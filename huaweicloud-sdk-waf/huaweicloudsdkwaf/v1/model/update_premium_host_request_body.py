@@ -17,7 +17,6 @@ class UpdatePremiumHostRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -389,7 +388,6 @@ class UpdatePremiumHostRequestBody:
     def block_page(self):
         """Gets the block_page of this UpdatePremiumHostRequestBody.
 
-
         :return: The block_page of this UpdatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
@@ -398,7 +396,6 @@ class UpdatePremiumHostRequestBody:
     @block_page.setter
     def block_page(self, block_page):
         """Sets the block_page of this UpdatePremiumHostRequestBody.
-
 
         :param block_page: The block_page of this UpdatePremiumHostRequestBody.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -409,7 +406,6 @@ class UpdatePremiumHostRequestBody:
     def traffic_mark(self):
         """Gets the traffic_mark of this UpdatePremiumHostRequestBody.
 
-
         :return: The traffic_mark of this UpdatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         """
@@ -418,7 +414,6 @@ class UpdatePremiumHostRequestBody:
     @traffic_mark.setter
     def traffic_mark(self, traffic_mark):
         """Sets the traffic_mark of this UpdatePremiumHostRequestBody.
-
 
         :param traffic_mark: The traffic_mark of this UpdatePremiumHostRequestBody.
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -429,7 +424,6 @@ class UpdatePremiumHostRequestBody:
     def circuit_breaker(self):
         """Gets the circuit_breaker of this UpdatePremiumHostRequestBody.
 
-
         :return: The circuit_breaker of this UpdatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
         """
@@ -438,7 +432,6 @@ class UpdatePremiumHostRequestBody:
     @circuit_breaker.setter
     def circuit_breaker(self, circuit_breaker):
         """Sets the circuit_breaker of this UpdatePremiumHostRequestBody.
-
 
         :param circuit_breaker: The circuit_breaker of this UpdatePremiumHostRequestBody.
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
@@ -449,7 +442,6 @@ class UpdatePremiumHostRequestBody:
     def timeout_config(self):
         """Gets the timeout_config of this UpdatePremiumHostRequestBody.
 
-
         :return: The timeout_config of this UpdatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
@@ -458,7 +450,6 @@ class UpdatePremiumHostRequestBody:
     @timeout_config.setter
     def timeout_config(self, timeout_config):
         """Sets the timeout_config of this UpdatePremiumHostRequestBody.
-
 
         :param timeout_config: The timeout_config of this UpdatePremiumHostRequestBody.
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`

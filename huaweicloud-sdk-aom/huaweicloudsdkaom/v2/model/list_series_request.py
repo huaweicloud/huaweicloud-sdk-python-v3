@@ -17,7 +17,6 @@ class ListSeriesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListSeriesRequest:
     def body(self):
         """Gets the body of this ListSeriesRequest.
 
-
         :return: The body of this ListSeriesRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.SeriesAPIQueryItemParam`
         """
@@ -116,7 +114,6 @@ class ListSeriesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListSeriesRequest.
-
 
         :param body: The body of this ListSeriesRequest.
         :type body: :class:`huaweicloudsdkaom.v2.SeriesAPIQueryItemParam`

@@ -17,7 +17,6 @@ class CreateNodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class CreateNodeResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this CreateNodeResponse.
 
-
         :return: The metadata of this CreateNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeMetadata`
         """
@@ -130,7 +128,6 @@ class CreateNodeResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateNodeResponse.
-
 
         :param metadata: The metadata of this CreateNodeResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -141,7 +138,6 @@ class CreateNodeResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this CreateNodeResponse.
 
-
         :return: The spec of this CreateNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
         """
@@ -150,7 +146,6 @@ class CreateNodeResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this CreateNodeResponse.
-
 
         :param spec: The spec of this CreateNodeResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.NodeSpec`
@@ -161,7 +156,6 @@ class CreateNodeResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateNodeResponse.
 
-
         :return: The status of this CreateNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeStatus`
         """
@@ -170,7 +164,6 @@ class CreateNodeResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this CreateNodeResponse.
-
 
         :param status: The status of this CreateNodeResponse.
         :type status: :class:`huaweicloudsdkcce.v3.NodeStatus`

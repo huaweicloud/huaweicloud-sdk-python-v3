@@ -17,7 +17,6 @@ class UpdateConfigMaps:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateConfigMaps:
     def configmap(self):
         """Gets the configmap of this UpdateConfigMaps.
 
-
         :return: The configmap of this UpdateConfigMaps.
         :rtype: :class:`huaweicloudsdkief.v1.UpdateConfigMap`
         """
@@ -57,7 +55,6 @@ class UpdateConfigMaps:
     @configmap.setter
     def configmap(self, configmap):
         """Sets the configmap of this UpdateConfigMaps.
-
 
         :param configmap: The configmap of this UpdateConfigMaps.
         :type configmap: :class:`huaweicloudsdkief.v1.UpdateConfigMap`

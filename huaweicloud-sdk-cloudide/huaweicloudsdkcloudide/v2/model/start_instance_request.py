@@ -17,7 +17,6 @@ class StartInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartInstanceRequest:
     def body(self):
         """Gets the body of this StartInstanceRequest.
 
-
         :return: The body of this StartInstanceRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StartInstanceParam`
         """
@@ -86,7 +84,6 @@ class StartInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartInstanceRequest.
-
 
         :param body: The body of this StartInstanceRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.StartInstanceParam`

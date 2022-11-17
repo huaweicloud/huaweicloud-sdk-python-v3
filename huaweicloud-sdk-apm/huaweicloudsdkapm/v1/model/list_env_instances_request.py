@@ -17,7 +17,6 @@ class ListEnvInstancesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListEnvInstancesRequest:
     def body(self):
         """Gets the body of this ListEnvInstancesRequest.
 
-
         :return: The body of this ListEnvInstancesRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.InstanceSearchParam`
         """
@@ -86,7 +84,6 @@ class ListEnvInstancesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListEnvInstancesRequest.
-
 
         :param body: The body of this ListEnvInstancesRequest.
         :type body: :class:`huaweicloudsdkapm.v1.InstanceSearchParam`

@@ -17,7 +17,6 @@ class CreateSpaceAnalysisTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateSpaceAnalysisTaskRequest:
     def body(self):
         """Gets the body of this CreateSpaceAnalysisTaskRequest.
 
-
         :return: The body of this CreateSpaceAnalysisTaskRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskBody`
         """
@@ -115,7 +113,6 @@ class CreateSpaceAnalysisTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateSpaceAnalysisTaskRequest.
-
 
         :param body: The body of this CreateSpaceAnalysisTaskRequest.
         :type body: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskBody`

@@ -17,7 +17,6 @@ class ShowActiveActiveDomainParams:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -166,7 +165,6 @@ class ShowActiveActiveDomainParams:
     def local_replication_cluster(self):
         """Gets the local_replication_cluster of this ShowActiveActiveDomainParams.
 
-
         :return: The local_replication_cluster of this ShowActiveActiveDomainParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
         """
@@ -175,7 +173,6 @@ class ShowActiveActiveDomainParams:
     @local_replication_cluster.setter
     def local_replication_cluster(self, local_replication_cluster):
         """Sets the local_replication_cluster of this ShowActiveActiveDomainParams.
-
 
         :param local_replication_cluster: The local_replication_cluster of this ShowActiveActiveDomainParams.
         :type local_replication_cluster: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
@@ -186,7 +183,6 @@ class ShowActiveActiveDomainParams:
     def remote_replication_cluster(self):
         """Gets the remote_replication_cluster of this ShowActiveActiveDomainParams.
 
-
         :return: The remote_replication_cluster of this ShowActiveActiveDomainParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
         """
@@ -195,7 +191,6 @@ class ShowActiveActiveDomainParams:
     @remote_replication_cluster.setter
     def remote_replication_cluster(self, remote_replication_cluster):
         """Sets the remote_replication_cluster of this ShowActiveActiveDomainParams.
-
 
         :param remote_replication_cluster: The remote_replication_cluster of this ShowActiveActiveDomainParams.
         :type remote_replication_cluster: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`

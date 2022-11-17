@@ -17,7 +17,6 @@ class ProjectInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -62,7 +61,6 @@ class ProjectInfo:
     def domain(self):
         """Gets the domain of this ProjectInfo.
 
-
         :return: The domain of this ProjectInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.DomainInfo`
         """
@@ -71,7 +69,6 @@ class ProjectInfo:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this ProjectInfo.
-
 
         :param domain: The domain of this ProjectInfo.
         :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`

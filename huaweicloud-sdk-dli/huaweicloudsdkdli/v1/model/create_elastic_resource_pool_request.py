@@ -17,7 +17,6 @@ class CreateElasticResourcePoolRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateElasticResourcePoolRequest:
     def body(self):
         """Gets the body of this CreateElasticResourcePoolRequest.
 
-
         :return: The body of this CreateElasticResourcePoolRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolInfo`
         """
@@ -58,7 +56,6 @@ class CreateElasticResourcePoolRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateElasticResourcePoolRequest.
-
 
         :param body: The body of this CreateElasticResourcePoolRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolInfo`

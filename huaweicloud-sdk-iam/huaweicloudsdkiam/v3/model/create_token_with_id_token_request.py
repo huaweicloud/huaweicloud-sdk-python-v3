@@ -17,7 +17,6 @@ class CreateTokenWithIdTokenRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateTokenWithIdTokenRequest:
     def body(self):
         """Gets the body of this CreateTokenWithIdTokenRequest.
 
-
         :return: The body of this CreateTokenWithIdTokenRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateTokenWithIdTokenRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTokenWithIdTokenRequest.
-
 
         :param body: The body of this CreateTokenWithIdTokenRequest.
         :type body: :class:`huaweicloudsdkiam.v3.GetIdTokenRequestBody`

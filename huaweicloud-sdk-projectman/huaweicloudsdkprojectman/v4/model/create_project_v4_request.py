@@ -17,7 +17,6 @@ class CreateProjectV4Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateProjectV4Request:
     def body(self):
         """Gets the body of this CreateProjectV4Request.
 
-
         :return: The body of this CreateProjectV4Request.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4RequestBody`
         """
@@ -58,7 +56,6 @@ class CreateProjectV4Request:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateProjectV4Request.
-
 
         :param body: The body of this CreateProjectV4Request.
         :type body: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4RequestBody`

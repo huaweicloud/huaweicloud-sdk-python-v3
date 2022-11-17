@@ -17,7 +17,6 @@ class ForkProjectRepoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -220,7 +219,6 @@ class ForkProjectRepoRequest:
     def external_project_info(self):
         """Gets the external_project_info of this ForkProjectRepoRequest.
 
-
         :return: The external_project_info of this ForkProjectRepoRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
         """
@@ -229,7 +227,6 @@ class ForkProjectRepoRequest:
     @external_project_info.setter
     def external_project_info(self, external_project_info):
         """Sets the external_project_info of this ForkProjectRepoRequest.
-
 
         :param external_project_info: The external_project_info of this ForkProjectRepoRequest.
         :type external_project_info: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`

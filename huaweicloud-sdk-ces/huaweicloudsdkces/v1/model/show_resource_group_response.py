@@ -17,7 +17,6 @@ class ShowResourceGroupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -201,7 +200,6 @@ class ShowResourceGroupResponse(SdkResponse):
     def meta_data(self):
         """Gets the meta_data of this ShowResourceGroupResponse.
 
-
         :return: The meta_data of this ShowResourceGroupResponse.
         :rtype: :class:`huaweicloudsdkces.v1.MetaData`
         """
@@ -210,7 +208,6 @@ class ShowResourceGroupResponse(SdkResponse):
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this ShowResourceGroupResponse.
-
 
         :param meta_data: The meta_data of this ShowResourceGroupResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`

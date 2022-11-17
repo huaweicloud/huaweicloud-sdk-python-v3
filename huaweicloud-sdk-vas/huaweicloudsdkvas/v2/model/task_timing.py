@@ -17,7 +17,6 @@ class TaskTiming:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -221,7 +220,6 @@ class TaskTiming:
     def frequency(self):
         """Gets the frequency of this TaskTiming.
 
-
         :return: The frequency of this TaskTiming.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskTimingFrequency`
         """
@@ -230,7 +228,6 @@ class TaskTiming:
     @frequency.setter
     def frequency(self, frequency):
         """Sets the frequency of this TaskTiming.
-
 
         :param frequency: The frequency of this TaskTiming.
         :type frequency: :class:`huaweicloudsdkvas.v2.TaskTimingFrequency`

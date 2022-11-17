@@ -17,7 +17,6 @@ class ModuleContainerSettingsResDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ModuleContainerSettingsResDTO:
     def configs(self):
         """Gets the configs of this ModuleContainerSettingsResDTO.
 
-
         :return: The configs of this ModuleContainerSettingsResDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsResDTO`
         """
@@ -58,7 +56,6 @@ class ModuleContainerSettingsResDTO:
     @configs.setter
     def configs(self, configs):
         """Sets the configs of this ModuleContainerSettingsResDTO.
-
 
         :param configs: The configs of this ModuleContainerSettingsResDTO.
         :type configs: :class:`huaweicloudsdkiotedge.v2.ContainerConfigsResDTO`

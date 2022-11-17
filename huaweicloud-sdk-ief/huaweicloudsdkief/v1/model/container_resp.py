@@ -17,7 +17,6 @@ class ContainerResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -305,7 +304,6 @@ class ContainerResp:
     def liveness_probe(self):
         """Gets the liveness_probe of this ContainerResp.
 
-
         :return: The liveness_probe of this ContainerResp.
         :rtype: :class:`huaweicloudsdkief.v1.Probe`
         """
@@ -314,7 +312,6 @@ class ContainerResp:
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
         """Sets the liveness_probe of this ContainerResp.
-
 
         :param liveness_probe: The liveness_probe of this ContainerResp.
         :type liveness_probe: :class:`huaweicloudsdkief.v1.Probe`
@@ -325,7 +322,6 @@ class ContainerResp:
     def readiness_probe(self):
         """Gets the readiness_probe of this ContainerResp.
 
-
         :return: The readiness_probe of this ContainerResp.
         :rtype: :class:`huaweicloudsdkief.v1.Probe`
         """
@@ -334,7 +330,6 @@ class ContainerResp:
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
         """Sets the readiness_probe of this ContainerResp.
-
 
         :param readiness_probe: The readiness_probe of this ContainerResp.
         :type readiness_probe: :class:`huaweicloudsdkief.v1.Probe`
@@ -367,7 +362,6 @@ class ContainerResp:
     def resources(self):
         """Gets the resources of this ContainerResp.
 
-
         :return: The resources of this ContainerResp.
         :rtype: :class:`huaweicloudsdkief.v1.DeploymentResources`
         """
@@ -376,7 +370,6 @@ class ContainerResp:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this ContainerResp.
-
 
         :param resources: The resources of this ContainerResp.
         :type resources: :class:`huaweicloudsdkief.v1.DeploymentResources`

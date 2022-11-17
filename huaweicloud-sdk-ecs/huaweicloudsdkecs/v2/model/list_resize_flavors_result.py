@@ -17,7 +17,6 @@ class ListResizeFlavorsResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -418,7 +417,6 @@ class ListResizeFlavorsResult:
     def extra_specs(self):
         """Gets the extra_specs of this ListResizeFlavorsResult.
 
-
         :return: The extra_specs of this ListResizeFlavorsResult.
         :rtype: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`
         """
@@ -427,7 +425,6 @@ class ListResizeFlavorsResult:
     @extra_specs.setter
     def extra_specs(self, extra_specs):
         """Sets the extra_specs of this ListResizeFlavorsResult.
-
 
         :param extra_specs: The extra_specs of this ListResizeFlavorsResult.
         :type extra_specs: :class:`huaweicloudsdkecs.v2.FlavorExtraSpec`

@@ -17,7 +17,6 @@ class NovaCreateKeypairRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class NovaCreateKeypairRequest:
     def body(self):
         """Gets the body of this NovaCreateKeypairRequest.
 
-
         :return: The body of this NovaCreateKeypairRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequestBody`
         """
@@ -87,7 +85,6 @@ class NovaCreateKeypairRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this NovaCreateKeypairRequest.
-
 
         :param body: The body of this NovaCreateKeypairRequest.
         :type body: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequestBody`

@@ -17,13 +17,12 @@ class ListSubsetsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'total': 'int',
         'size': 'int',
-        'items': 'list[Device]'
+        'items': 'list[SubDevice]'
     }
 
     attribute_map = {
@@ -42,7 +41,7 @@ class ListSubsetsResponse(SdkResponse):
         :param size: 本次返回数量
         :type size: int
         :param items: 设备ID列表
-        :type items: list[:class:`huaweicloudsdkroma.v2.Device`]
+        :type items: list[:class:`huaweicloudsdkroma.v2.SubDevice`]
         """
         
         super(ListSubsetsResponse, self).__init__()
@@ -110,7 +109,7 @@ class ListSubsetsResponse(SdkResponse):
         设备ID列表
 
         :return: The items of this ListSubsetsResponse.
-        :rtype: list[:class:`huaweicloudsdkroma.v2.Device`]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.SubDevice`]
         """
         return self._items
 
@@ -121,7 +120,7 @@ class ListSubsetsResponse(SdkResponse):
         设备ID列表
 
         :param items: The items of this ListSubsetsResponse.
-        :type items: list[:class:`huaweicloudsdkroma.v2.Device`]
+        :type items: list[:class:`huaweicloudsdkroma.v2.SubDevice`]
         """
         self._items = items
 

@@ -17,7 +17,6 @@ class CycleSubConfConfigDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class CycleSubConfConfigDTO:
     def show_audience_count_info(self):
         """Gets the show_audience_count_info of this CycleSubConfConfigDTO.
 
-
         :return: The show_audience_count_info of this CycleSubConfConfigDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowAudienceCountInfo`
         """
@@ -174,7 +172,6 @@ class CycleSubConfConfigDTO:
     @show_audience_count_info.setter
     def show_audience_count_info(self, show_audience_count_info):
         """Sets the show_audience_count_info of this CycleSubConfConfigDTO.
-
 
         :param show_audience_count_info: The show_audience_count_info of this CycleSubConfConfigDTO.
         :type show_audience_count_info: :class:`huaweicloudsdkmeeting.v1.ShowAudienceCountInfo`

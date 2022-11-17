@@ -17,7 +17,6 @@ class ListRetentionHistoriesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListRetentionHistoriesResponse(SdkResponse):
     def content_range(self):
         """Gets the content_range of this ListRetentionHistoriesResponse.
 
-
         :return: The content_range of this ListRetentionHistoriesResponse.
         :rtype: str
         """
@@ -116,7 +114,6 @@ class ListRetentionHistoriesResponse(SdkResponse):
     @content_range.setter
     def content_range(self, content_range):
         """Sets the content_range of this ListRetentionHistoriesResponse.
-
 
         :param content_range: The content_range of this ListRetentionHistoriesResponse.
         :type content_range: str

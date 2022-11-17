@@ -17,83 +17,68 @@ class DynamicConfigInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
+        'key': 'str',
         'value': 'str',
-        'limits': 'list[ParamTypeLimits]',
-        'type': 'str',
-        'description': 'str'
+        'type': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
+        'key': 'key',
         'value': 'value',
-        'limits': 'limits',
-        'type': 'type',
-        'description': 'description'
+        'type': 'type'
     }
 
-    def __init__(self, name=None, value=None, limits=None, type=None, description=None):
+    def __init__(self, key=None, value=None, type=None):
         """DynamicConfigInfo
 
         The model defined in huaweicloud sdk
 
-        :param name: 执行部署任务时传递的参数名称
-        :type name: str
+        :param key: 执行部署任务时传递的参数名称
+        :type key: str
         :param value: 执行部署任务时传递的参数值
         :type value: str
-        :param limits: 参数值为枚举类型时，返回可选值列表
-        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
         :param type: 类型，如果填写动态参数，则类型必选
         :type type: str
-        :param description: 描述
-        :type description: str
         """
         
         
 
-        self._name = None
+        self._key = None
         self._value = None
-        self._limits = None
         self._type = None
-        self._description = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        if key is not None:
+            self.key = key
         if value is not None:
             self.value = value
-        if limits is not None:
-            self.limits = limits
         if type is not None:
             self.type = type
-        if description is not None:
-            self.description = description
 
     @property
-    def name(self):
-        """Gets the name of this DynamicConfigInfo.
+    def key(self):
+        """Gets the key of this DynamicConfigInfo.
 
         执行部署任务时传递的参数名称
 
-        :return: The name of this DynamicConfigInfo.
+        :return: The key of this DynamicConfigInfo.
         :rtype: str
         """
-        return self._name
+        return self._key
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this DynamicConfigInfo.
+    @key.setter
+    def key(self, key):
+        """Sets the key of this DynamicConfigInfo.
 
         执行部署任务时传递的参数名称
 
-        :param name: The name of this DynamicConfigInfo.
-        :type name: str
+        :param key: The key of this DynamicConfigInfo.
+        :type key: str
         """
-        self._name = name
+        self._key = key
 
     @property
     def value(self):
@@ -118,28 +103,6 @@ class DynamicConfigInfo:
         self._value = value
 
     @property
-    def limits(self):
-        """Gets the limits of this DynamicConfigInfo.
-
-        参数值为枚举类型时，返回可选值列表
-
-        :return: The limits of this DynamicConfigInfo.
-        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
-        """
-        return self._limits
-
-    @limits.setter
-    def limits(self, limits):
-        """Sets the limits of this DynamicConfigInfo.
-
-        参数值为枚举类型时，返回可选值列表
-
-        :param limits: The limits of this DynamicConfigInfo.
-        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
-        """
-        self._limits = limits
-
-    @property
     def type(self):
         """Gets the type of this DynamicConfigInfo.
 
@@ -160,28 +123,6 @@ class DynamicConfigInfo:
         :type type: str
         """
         self._type = type
-
-    @property
-    def description(self):
-        """Gets the description of this DynamicConfigInfo.
-
-        描述
-
-        :return: The description of this DynamicConfigInfo.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this DynamicConfigInfo.
-
-        描述
-
-        :param description: The description of this DynamicConfigInfo.
-        :type description: str
-        """
-        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17,7 +17,6 @@ class UpdateDomainMultiCertificatesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class UpdateDomainMultiCertificatesRequest:
     def body(self):
         """Gets the body of this UpdateDomainMultiCertificatesRequest.
 
-
         :return: The body of this UpdateDomainMultiCertificatesRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesRequestBody`
         """
@@ -87,7 +85,6 @@ class UpdateDomainMultiCertificatesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDomainMultiCertificatesRequest.
-
 
         :param body: The body of this UpdateDomainMultiCertificatesRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesRequestBody`

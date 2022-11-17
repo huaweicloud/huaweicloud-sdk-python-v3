@@ -17,7 +17,6 @@ class UpdateAutoJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateAutoJobRequest:
     def body(self):
         """Gets the body of this UpdateAutoJobRequest.
 
-
         :return: The body of this UpdateAutoJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAutJobReq`
         """
@@ -114,7 +112,6 @@ class UpdateAutoJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateAutoJobRequest.
-
 
         :param body: The body of this UpdateAutoJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateAutJobReq`

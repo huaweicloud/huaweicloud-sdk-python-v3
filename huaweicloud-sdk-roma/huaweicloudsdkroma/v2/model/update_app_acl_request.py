@@ -17,7 +17,6 @@ class UpdateAppAclRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateAppAclRequest:
     def body(self):
         """Gets the body of this UpdateAppAclRequest.
 
-
         :return: The body of this UpdateAppAclRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AppAclCreate`
         """
@@ -114,7 +112,6 @@ class UpdateAppAclRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateAppAclRequest.
-
 
         :param body: The body of this UpdateAppAclRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AppAclCreate`

@@ -17,7 +17,6 @@ class UpdatePublicationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class UpdatePublicationRequest:
     def body(self):
         """Gets the body of this UpdatePublicationRequest.
 
-
         :return: The body of this UpdatePublicationRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdatePublicationRequestDTO`
         """
@@ -144,7 +142,6 @@ class UpdatePublicationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePublicationRequest.
-
 
         :param body: The body of this UpdatePublicationRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.UpdatePublicationRequestDTO`

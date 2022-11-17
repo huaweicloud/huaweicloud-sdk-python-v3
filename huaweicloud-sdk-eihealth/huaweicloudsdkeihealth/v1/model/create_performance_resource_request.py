@@ -17,7 +17,6 @@ class CreatePerformanceResourceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePerformanceResourceRequest:
     def body(self):
         """Gets the body of this CreatePerformanceResourceRequest.
 
-
         :return: The body of this CreatePerformanceResourceRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceReq`
         """
@@ -58,7 +56,6 @@ class CreatePerformanceResourceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePerformanceResourceRequest.
-
 
         :param body: The body of this CreatePerformanceResourceRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceReq`

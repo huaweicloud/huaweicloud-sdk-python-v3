@@ -17,7 +17,6 @@ class UploadSecretBlobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UploadSecretBlobRequest:
     def body(self):
         """Gets the body of this UploadSecretBlobRequest.
 
-
         :return: The body of this UploadSecretBlobRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobRequestBody`
         """
@@ -58,7 +56,6 @@ class UploadSecretBlobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UploadSecretBlobRequest.
-
 
         :param body: The body of this UploadSecretBlobRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobRequestBody`

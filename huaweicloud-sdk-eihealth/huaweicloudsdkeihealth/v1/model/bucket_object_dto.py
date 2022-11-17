@@ -17,7 +17,6 @@ class BucketObjectDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class BucketObjectDto:
     def type(self):
         """Gets the type of this BucketObjectDto.
 
-
         :return: The type of this BucketObjectDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
         """
@@ -130,7 +128,6 @@ class BucketObjectDto:
     @type.setter
     def type(self, type):
         """Sets the type of this BucketObjectDto.
-
 
         :param type: The type of this BucketObjectDto.
         :type type: :class:`huaweicloudsdkeihealth.v1.PathType`

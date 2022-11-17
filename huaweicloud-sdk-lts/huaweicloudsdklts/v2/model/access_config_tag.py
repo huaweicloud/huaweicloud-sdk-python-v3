@@ -17,7 +17,6 @@ class AccessConfigTag:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class AccessConfigTag:
     def key(self):
         """Gets the key of this AccessConfigTag.
 
-
         :return: The key of this AccessConfigTag.
         :rtype: str
         """
@@ -65,7 +63,6 @@ class AccessConfigTag:
     @key.setter
     def key(self, key):
         """Sets the key of this AccessConfigTag.
-
 
         :param key: The key of this AccessConfigTag.
         :type key: str
@@ -76,7 +73,6 @@ class AccessConfigTag:
     def value(self):
         """Gets the value of this AccessConfigTag.
 
-
         :return: The value of this AccessConfigTag.
         :rtype: str
         """
@@ -85,7 +81,6 @@ class AccessConfigTag:
     @value.setter
     def value(self, value):
         """Sets the value of this AccessConfigTag.
-
 
         :param value: The value of this AccessConfigTag.
         :type value: str

@@ -17,7 +17,6 @@ class QueryStructDetailResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class QueryStructDetailResp:
     def struct_detail(self):
         """Gets the struct_detail of this QueryStructDetailResp.
 
-
         :return: The struct_detail of this QueryStructDetailResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryFlowCompareDataResp`
         """
@@ -144,7 +142,6 @@ class QueryStructDetailResp:
     @struct_detail.setter
     def struct_detail(self, struct_detail):
         """Sets the struct_detail of this QueryStructDetailResp.
-
 
         :param struct_detail: The struct_detail of this QueryStructDetailResp.
         :type struct_detail: :class:`huaweicloudsdkdrs.v3.QueryFlowCompareDataResp`

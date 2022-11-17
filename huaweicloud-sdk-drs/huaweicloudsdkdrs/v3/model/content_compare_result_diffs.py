@@ -17,7 +17,6 @@ class ContentCompareResultDiffs:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -30,7 +29,7 @@ class ContentCompareResultDiffs:
     attribute_map = {
         'source_db_name': 'source_db_name',
         'source_table_name': 'source_table_name',
-        'content_compare_diff': 'ContentCompareDiff',
+        'content_compare_diff': 'content_compare_diff',
         'content_compare_diff_count': 'content_compare_diff_count'
     }
 

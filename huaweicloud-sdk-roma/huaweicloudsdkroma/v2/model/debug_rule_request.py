@@ -17,7 +17,6 @@ class DebugRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DebugRuleRequest:
     def body(self):
         """Gets the body of this DebugRuleRequest.
 
-
         :return: The body of this DebugRuleRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.DebugRuleRequestBody`
         """
@@ -86,7 +84,6 @@ class DebugRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DebugRuleRequest.
-
 
         :param body: The body of this DebugRuleRequest.
         :type body: :class:`huaweicloudsdkroma.v2.DebugRuleRequestBody`

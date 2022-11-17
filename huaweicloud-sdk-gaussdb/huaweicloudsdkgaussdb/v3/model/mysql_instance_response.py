@@ -17,7 +17,6 @@ class MysqlInstanceResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -225,7 +224,6 @@ class MysqlInstanceResponse:
     def datastore(self):
         """Gets the datastore of this MysqlInstanceResponse.
 
-
         :return: The datastore of this MysqlInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         """
@@ -234,7 +232,6 @@ class MysqlInstanceResponse:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this MysqlInstanceResponse.
-
 
         :param datastore: The datastore of this MysqlInstanceResponse.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
@@ -311,7 +308,6 @@ class MysqlInstanceResponse:
     def backup_strategy(self):
         """Gets the backup_strategy of this MysqlInstanceResponse.
 
-
         :return: The backup_strategy of this MysqlInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         """
@@ -320,7 +316,6 @@ class MysqlInstanceResponse:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this MysqlInstanceResponse.
-
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -507,7 +502,6 @@ class MysqlInstanceResponse:
     def charge_info(self):
         """Gets the charge_info of this MysqlInstanceResponse.
 
-
         :return: The charge_info of this MysqlInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         """
@@ -516,7 +510,6 @@ class MysqlInstanceResponse:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this MysqlInstanceResponse.
-
 
         :param charge_info: The charge_info of this MysqlInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`

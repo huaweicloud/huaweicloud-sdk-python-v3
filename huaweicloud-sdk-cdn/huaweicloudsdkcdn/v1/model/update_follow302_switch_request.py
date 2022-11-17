@@ -17,7 +17,6 @@ class UpdateFollow302SwitchRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateFollow302SwitchRequest:
     def body(self):
         """Gets the body of this UpdateFollow302SwitchRequest.
 
-
         :return: The body of this UpdateFollow302SwitchRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.Follow302StatusRequest`
         """
@@ -115,7 +113,6 @@ class UpdateFollow302SwitchRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateFollow302SwitchRequest.
-
 
         :param body: The body of this UpdateFollow302SwitchRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.Follow302StatusRequest`

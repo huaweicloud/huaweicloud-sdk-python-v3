@@ -17,7 +17,6 @@ class NeutronUpdateFirewallRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class NeutronUpdateFirewallRuleRequest:
     def body(self):
         """Gets the body of this NeutronUpdateFirewallRuleRequest.
 
-
         :return: The body of this NeutronUpdateFirewallRuleRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleRequestBody`
         """
@@ -86,7 +84,6 @@ class NeutronUpdateFirewallRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this NeutronUpdateFirewallRuleRequest.
-
 
         :param body: The body of this NeutronUpdateFirewallRuleRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleRequestBody`

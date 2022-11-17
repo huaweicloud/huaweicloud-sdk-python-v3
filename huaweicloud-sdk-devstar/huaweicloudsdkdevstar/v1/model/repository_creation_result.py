@@ -17,7 +17,6 @@ class RepositoryCreationResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class RepositoryCreationResult:
     def repository(self):
         """Gets the repository of this RepositoryCreationResult.
 
-
         :return: The repository of this RepositoryCreationResult.
         :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryBasicInfo`
         """
@@ -79,7 +77,6 @@ class RepositoryCreationResult:
     @repository.setter
     def repository(self, repository):
         """Sets the repository of this RepositoryCreationResult.
-
 
         :param repository: The repository of this RepositoryCreationResult.
         :type repository: :class:`huaweicloudsdkdevstar.v1.RepositoryBasicInfo`

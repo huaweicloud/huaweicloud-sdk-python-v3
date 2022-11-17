@@ -17,7 +17,6 @@ class BatchShowPipelinesStatusResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchShowPipelinesStatusResponse(SdkResponse):
     def body(self):
         """Gets the body of this BatchShowPipelinesStatusResponse.
 
-
         :return: The body of this BatchShowPipelinesStatusResponse.
         :rtype: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineExecuteStates`]
         """
@@ -58,7 +56,6 @@ class BatchShowPipelinesStatusResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this BatchShowPipelinesStatusResponse.
-
 
         :param body: The body of this BatchShowPipelinesStatusResponse.
         :type body: list[:class:`huaweicloudsdkcloudpipeline.v2.PipelineExecuteStates`]

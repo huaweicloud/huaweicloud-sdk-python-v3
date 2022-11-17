@@ -17,7 +17,6 @@ class ListL7PoliciesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class ListL7PoliciesResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListL7PoliciesResponse.
 
-
         :return: The page_info of this ListL7PoliciesResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
@@ -94,7 +92,6 @@ class ListL7PoliciesResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListL7PoliciesResponse.
-
 
         :param page_info: The page_info of this ListL7PoliciesResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`

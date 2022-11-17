@@ -17,7 +17,6 @@ class UpdateDatabaseOwnerRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateDatabaseOwnerRequest:
     def body(self):
         """Gets the body of this UpdateDatabaseOwnerRequest.
 
-
         :return: The body of this UpdateDatabaseOwnerRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerReq`
         """
@@ -86,7 +84,6 @@ class UpdateDatabaseOwnerRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDatabaseOwnerRequest.
-
 
         :param body: The body of this UpdateDatabaseOwnerRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerReq`

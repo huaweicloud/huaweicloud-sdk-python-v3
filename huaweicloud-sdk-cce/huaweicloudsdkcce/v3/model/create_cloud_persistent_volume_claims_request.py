@@ -17,7 +17,6 @@ class CreateCloudPersistentVolumeClaimsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -37,7 +36,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: Namespace是对一组资源和对象的抽象集合，用来将系统内部的对象划分为不同的项目组或用户组。以小写字母开头，由小写字母、数字、中划线（-）组成，且不能以中划线（-）结尾。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先[创建Namespace](cce_02_0050.xml)  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
+        :param namespace: 指定PersistentVolumeClaim所在的命名空间。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先在集群中创建namespace  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
         :type namespace: str
         :param x_cluster_id: 集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 
         :type x_cluster_id: str
@@ -62,7 +61,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
     def namespace(self):
         """Gets the namespace of this CreateCloudPersistentVolumeClaimsRequest.
 
-        Namespace是对一组资源和对象的抽象集合，用来将系统内部的对象划分为不同的项目组或用户组。以小写字母开头，由小写字母、数字、中划线（-）组成，且不能以中划线（-）结尾。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先[创建Namespace](cce_02_0050.xml)  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
+        指定PersistentVolumeClaim所在的命名空间。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先在集群中创建namespace  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
 
         :return: The namespace of this CreateCloudPersistentVolumeClaimsRequest.
         :rtype: str
@@ -73,7 +72,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this CreateCloudPersistentVolumeClaimsRequest.
 
-        Namespace是对一组资源和对象的抽象集合，用来将系统内部的对象划分为不同的项目组或用户组。以小写字母开头，由小写字母、数字、中划线（-）组成，且不能以中划线（-）结尾。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先[创建Namespace](cce_02_0050.xml)  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
+        指定PersistentVolumeClaim所在的命名空间。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先在集群中创建namespace  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
 
         :param namespace: The namespace of this CreateCloudPersistentVolumeClaimsRequest.
         :type namespace: str
@@ -106,7 +105,6 @@ class CreateCloudPersistentVolumeClaimsRequest:
     def body(self):
         """Gets the body of this CreateCloudPersistentVolumeClaimsRequest.
 
-
         :return: The body of this CreateCloudPersistentVolumeClaimsRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaim`
         """
@@ -115,7 +113,6 @@ class CreateCloudPersistentVolumeClaimsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCloudPersistentVolumeClaimsRequest.
-
 
         :param body: The body of this CreateCloudPersistentVolumeClaimsRequest.
         :type body: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaim`

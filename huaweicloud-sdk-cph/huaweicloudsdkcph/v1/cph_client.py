@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CphClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class CphClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -100,6 +96,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchExportCloudPhoneDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +123,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +157,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchImportCloudPhoneDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -184,6 +184,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +218,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchMigrateCloudPhoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +245,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -274,6 +279,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeCloudPhoneServerModelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +306,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -332,6 +340,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCloudPhoneServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +367,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -390,6 +401,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNet2CloudPhoneServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -416,6 +428,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -448,6 +462,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteShareAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -474,6 +489,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +523,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteShareFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -532,6 +550,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -564,6 +584,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportTrafficResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -590,6 +611,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -620,6 +643,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhoneImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -646,6 +670,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -676,6 +702,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhoneModelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -702,6 +729,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -734,6 +763,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhoneServerModelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -760,6 +790,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -800,6 +832,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhoneServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -826,6 +859,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -868,6 +903,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -894,6 +930,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -934,6 +972,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEncodeServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -960,6 +999,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -994,6 +1035,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1020,6 +1062,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1058,6 +1102,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListShareFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1084,6 +1129,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1116,6 +1163,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PushShareAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1142,6 +1190,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1174,6 +1224,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PushShareFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1200,6 +1251,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1232,6 +1285,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetCloudPhoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1258,6 +1312,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1290,6 +1346,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartCloudPhoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1316,6 +1373,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1348,6 +1407,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartCloudPhoneServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1374,6 +1434,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1406,6 +1468,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartEncodeServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1432,6 +1495,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1462,6 +1527,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBandwidthDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1488,6 +1554,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1520,6 +1588,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCloudPhoneDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1546,6 +1615,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1578,6 +1649,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCloudPhoneServerDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1604,6 +1676,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1636,6 +1710,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1662,6 +1737,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1694,6 +1771,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopCloudPhoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1720,6 +1798,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1754,6 +1834,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBandwidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1780,6 +1861,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1812,6 +1895,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCloudPhonePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1838,6 +1922,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1870,6 +1956,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1896,6 +1983,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1930,6 +2019,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePhoneNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1956,6 +2046,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1990,6 +2082,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServerNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2016,6 +2109,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2048,6 +2143,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunShellCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2074,6 +2170,8 @@ class CphClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2106,6 +2204,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSyncCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2113,7 +2212,7 @@ class CphClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2123,9 +2222,10 @@ class CphClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2142,6 +2242,7 @@ class CphClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

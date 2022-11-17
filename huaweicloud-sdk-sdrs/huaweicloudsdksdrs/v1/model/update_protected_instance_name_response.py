@@ -17,7 +17,6 @@ class UpdateProtectedInstanceNameResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateProtectedInstanceNameResponse(SdkResponse):
     def protected_instance(self):
         """Gets the protected_instance of this UpdateProtectedInstanceNameResponse.
 
-
         :return: The protected_instance of this UpdateProtectedInstanceNameResponse.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
         """
@@ -58,7 +56,6 @@ class UpdateProtectedInstanceNameResponse(SdkResponse):
     @protected_instance.setter
     def protected_instance(self, protected_instance):
         """Sets the protected_instance of this UpdateProtectedInstanceNameResponse.
-
 
         :param protected_instance: The protected_instance of this UpdateProtectedInstanceNameResponse.
         :type protected_instance: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`

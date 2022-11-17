@@ -17,7 +17,6 @@ class SaveLayoutRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class SaveLayoutRequest:
     def body(self):
         """Gets the body of this SaveLayoutRequest.
 
-
         :return: The body of this SaveLayoutRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestPicLayoutBody`
         """
@@ -114,7 +112,6 @@ class SaveLayoutRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SaveLayoutRequest.
-
 
         :param body: The body of this SaveLayoutRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestPicLayoutBody`

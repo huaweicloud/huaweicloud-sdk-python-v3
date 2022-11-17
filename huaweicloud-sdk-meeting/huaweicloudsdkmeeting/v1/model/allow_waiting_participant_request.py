@@ -17,7 +17,6 @@ class AllowWaitingParticipantRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class AllowWaitingParticipantRequest:
     def body(self):
         """Gets the body of this AllowWaitingParticipantRequest.
 
-
         :return: The body of this AllowWaitingParticipantRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestAllowWaitingParticipantReqBody`
         """
@@ -114,7 +112,6 @@ class AllowWaitingParticipantRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AllowWaitingParticipantRequest.
-
 
         :param body: The body of this AllowWaitingParticipantRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestAllowWaitingParticipantReqBody`

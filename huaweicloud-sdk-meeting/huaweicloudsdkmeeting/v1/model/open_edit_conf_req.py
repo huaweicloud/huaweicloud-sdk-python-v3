@@ -17,7 +17,6 @@ class OpenEditConfReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -282,7 +281,6 @@ class OpenEditConfReq:
     def notify_setting(self):
         """Gets the notify_setting of this OpenEditConfReq.
 
-
         :return: The notify_setting of this OpenEditConfReq.
         :rtype: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
         """
@@ -291,7 +289,6 @@ class OpenEditConfReq:
     @notify_setting.setter
     def notify_setting(self, notify_setting):
         """Sets the notify_setting of this OpenEditConfReq.
-
 
         :param notify_setting: The notify_setting of this OpenEditConfReq.
         :type notify_setting: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`

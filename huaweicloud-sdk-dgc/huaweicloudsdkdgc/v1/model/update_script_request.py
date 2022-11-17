@@ -17,7 +17,6 @@ class UpdateScriptRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class UpdateScriptRequest:
     def script_name(self):
         """Gets the script_name of this UpdateScriptRequest.
 
-
         :return: The script_name of this UpdateScriptRequest.
         :rtype: str
         """
@@ -64,7 +62,6 @@ class UpdateScriptRequest:
     @script_name.setter
     def script_name(self, script_name):
         """Sets the script_name of this UpdateScriptRequest.
-
 
         :param script_name: The script_name of this UpdateScriptRequest.
         :type script_name: str
@@ -75,7 +72,6 @@ class UpdateScriptRequest:
     def body(self):
         """Gets the body of this UpdateScriptRequest.
 
-
         :return: The body of this UpdateScriptRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.ScriptInfo`
         """
@@ -84,7 +80,6 @@ class UpdateScriptRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateScriptRequest.
-
 
         :param body: The body of this UpdateScriptRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.ScriptInfo`

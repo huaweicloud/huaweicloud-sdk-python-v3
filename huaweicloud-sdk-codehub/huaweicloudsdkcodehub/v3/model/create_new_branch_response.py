@@ -17,7 +17,6 @@ class CreateNewBranchResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CreateNewBranchResponse(SdkResponse):
     def error(self):
         """Gets the error of this CreateNewBranchResponse.
 
-
         :return: The error of this CreateNewBranchResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class CreateNewBranchResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this CreateNewBranchResponse.
-
 
         :param error: The error of this CreateNewBranchResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class CreateNewBranchResponse(SdkResponse):
     def result(self):
         """Gets the result of this CreateNewBranchResponse.
 
-
         :return: The result of this CreateNewBranchResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddProtectResponse`
         """
@@ -92,7 +88,6 @@ class CreateNewBranchResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this CreateNewBranchResponse.
-
 
         :param result: The result of this CreateNewBranchResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.AddProtectResponse`

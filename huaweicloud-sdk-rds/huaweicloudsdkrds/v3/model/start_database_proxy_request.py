@@ -17,7 +17,6 @@ class StartDatabaseProxyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class StartDatabaseProxyRequest:
     def body(self):
         """Gets the body of this StartDatabaseProxyRequest.
 
-
         :return: The body of this StartDatabaseProxyRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.OpenProxyRequest`
         """
@@ -115,7 +113,6 @@ class StartDatabaseProxyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartDatabaseProxyRequest.
-
 
         :param body: The body of this StartDatabaseProxyRequest.
         :type body: :class:`huaweicloudsdkrds.v3.OpenProxyRequest`

@@ -17,7 +17,6 @@ class MetricDataDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class MetricDataDetail:
     def dimension(self):
         """Gets the dimension of this MetricDataDetail.
 
-
         :return: The dimension of this MetricDataDetail.
         :rtype: :class:`huaweicloudsdkies.v1.MetricDataDetailDimension`
         """
@@ -145,7 +143,6 @@ class MetricDataDetail:
     @dimension.setter
     def dimension(self, dimension):
         """Sets the dimension of this MetricDataDetail.
-
 
         :param dimension: The dimension of this MetricDataDetail.
         :type dimension: :class:`huaweicloudsdkies.v1.MetricDataDetailDimension`

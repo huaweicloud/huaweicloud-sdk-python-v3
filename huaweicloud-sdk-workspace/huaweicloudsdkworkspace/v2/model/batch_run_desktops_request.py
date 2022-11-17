@@ -17,7 +17,6 @@ class BatchRunDesktopsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchRunDesktopsRequest:
     def body(self):
         """Gets the body of this BatchRunDesktopsRequest.
 
-
         :return: The body of this BatchRunDesktopsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchActionDesktopsReq`
         """
@@ -58,7 +56,6 @@ class BatchRunDesktopsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchRunDesktopsRequest.
-
 
         :param body: The body of this BatchRunDesktopsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchActionDesktopsReq`

@@ -17,7 +17,6 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
     def update_devices(self):
         """Gets the update_devices of this UpdateEdgeNodeDeviceResponse.
 
-
         :return: The update_devices of this UpdateEdgeNodeDeviceResponse.
         :rtype: :class:`huaweicloudsdkief.v1.NodeDevice`
         """
@@ -145,7 +143,6 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
     @update_devices.setter
     def update_devices(self, update_devices):
         """Sets the update_devices of this UpdateEdgeNodeDeviceResponse.
-
 
         :param update_devices: The update_devices of this UpdateEdgeNodeDeviceResponse.
         :type update_devices: :class:`huaweicloudsdkief.v1.NodeDevice`

@@ -17,7 +17,6 @@ class EnableDisableEdgeNodesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class EnableDisableEdgeNodesRequest:
     def body(self):
         """Gets the body of this EnableDisableEdgeNodesRequest.
 
-
         :return: The body of this EnableDisableEdgeNodesRequest.
         :rtype: :class:`huaweicloudsdkief.v1.NodeAction`
         """
@@ -115,7 +113,6 @@ class EnableDisableEdgeNodesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this EnableDisableEdgeNodesRequest.
-
 
         :param body: The body of this EnableDisableEdgeNodesRequest.
         :type body: :class:`huaweicloudsdkief.v1.NodeAction`

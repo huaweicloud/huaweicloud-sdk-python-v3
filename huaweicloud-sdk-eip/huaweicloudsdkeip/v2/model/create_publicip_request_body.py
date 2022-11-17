@@ -17,7 +17,6 @@ class CreatePublicipRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -61,7 +60,6 @@ class CreatePublicipRequestBody:
     def bandwidth(self):
         """Gets the bandwidth of this CreatePublicipRequestBody.
 
-
         :return: The bandwidth of this CreatePublicipRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
         """
@@ -70,7 +68,6 @@ class CreatePublicipRequestBody:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this CreatePublicipRequestBody.
-
 
         :param bandwidth: The bandwidth of this CreatePublicipRequestBody.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.CreatePublicipBandwidthOption`
@@ -103,7 +100,6 @@ class CreatePublicipRequestBody:
     def publicip(self):
         """Gets the publicip of this CreatePublicipRequestBody.
 
-
         :return: The publicip of this CreatePublicipRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipOption`
         """
@@ -112,7 +108,6 @@ class CreatePublicipRequestBody:
     @publicip.setter
     def publicip(self, publicip):
         """Sets the publicip of this CreatePublicipRequestBody.
-
 
         :param publicip: The publicip of this CreatePublicipRequestBody.
         :type publicip: :class:`huaweicloudsdkeip.v2.CreatePublicipOption`

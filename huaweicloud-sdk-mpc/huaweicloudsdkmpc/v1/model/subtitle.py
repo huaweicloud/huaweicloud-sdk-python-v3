@@ -17,7 +17,6 @@ class Subtitle:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class Subtitle:
     def input(self):
         """Gets the input of this Subtitle.
 
-
         :return: The input of this Subtitle.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -72,7 +70,6 @@ class Subtitle:
     @input.setter
     def input(self, input):
         """Sets the input of this Subtitle.
-
 
         :param input: The input of this Subtitle.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

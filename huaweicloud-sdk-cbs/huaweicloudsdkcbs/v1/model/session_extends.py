@@ -17,7 +17,6 @@ class SessionExtends:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class SessionExtends:
     def tag_ids(self):
         """Gets the tag_ids of this SessionExtends.
 
-
         :return: The tag_ids of this SessionExtends.
         :rtype: :class:`huaweicloudsdkcbs.v1.Tag`
         """
@@ -72,7 +70,6 @@ class SessionExtends:
     @tag_ids.setter
     def tag_ids(self, tag_ids):
         """Sets the tag_ids of this SessionExtends.
-
 
         :param tag_ids: The tag_ids of this SessionExtends.
         :type tag_ids: :class:`huaweicloudsdkcbs.v1.Tag`

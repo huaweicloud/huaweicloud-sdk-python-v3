@@ -17,7 +17,6 @@ class ClusterList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -217,7 +216,6 @@ class ClusterList:
     def datastore(self):
         """Gets the datastore of this ClusterList.
 
-
         :return: The datastore of this ClusterList.
         :rtype: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
         """
@@ -226,7 +224,6 @@ class ClusterList:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this ClusterList.
-
 
         :param datastore: The datastore of this ClusterList.
         :type datastore: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
@@ -259,7 +256,6 @@ class ClusterList:
     def public_kibana_resp(self):
         """Gets the public_kibana_resp of this ClusterList.
 
-
         :return: The public_kibana_resp of this ClusterList.
         :rtype: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
         """
@@ -268,7 +264,6 @@ class ClusterList:
     @public_kibana_resp.setter
     def public_kibana_resp(self, public_kibana_resp):
         """Sets the public_kibana_resp of this ClusterList.
-
 
         :param public_kibana_resp: The public_kibana_resp of this ClusterList.
         :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
@@ -279,7 +274,6 @@ class ClusterList:
     def elb_white_list(self):
         """Gets the elb_white_list of this ClusterList.
 
-
         :return: The elb_white_list of this ClusterList.
         :rtype: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
         """
@@ -288,7 +282,6 @@ class ClusterList:
     @elb_white_list.setter
     def elb_white_list(self, elb_white_list):
         """Sets the elb_white_list of this ClusterList.
-
 
         :param elb_white_list: The elb_white_list of this ClusterList.
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
@@ -717,7 +710,6 @@ class ClusterList:
     def failed_reason(self):
         """Gets the failed_reason of this ClusterList.
 
-
         :return: The failed_reason of this ClusterList.
         :rtype: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
         """
@@ -726,7 +718,6 @@ class ClusterList:
     @failed_reason.setter
     def failed_reason(self, failed_reason):
         """Sets the failed_reason of this ClusterList.
-
 
         :param failed_reason: The failed_reason of this ClusterList.
         :type failed_reason: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`

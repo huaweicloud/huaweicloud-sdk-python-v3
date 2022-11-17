@@ -17,7 +17,6 @@ class SetRepoRoleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class SetRepoRoleRequest:
     def body(self):
         """Gets the body of this SetRepoRoleRequest.
 
-
         :return: The body of this SetRepoRoleRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequestBody`
         """
@@ -114,7 +112,6 @@ class SetRepoRoleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetRepoRoleRequest.
-
 
         :param body: The body of this SetRepoRoleRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequestBody`

@@ -17,7 +17,6 @@ class TryEmailConnectionReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -160,7 +159,6 @@ class TryEmailConnectionReq:
     def language(self):
         """Gets the language of this TryEmailConnectionReq.
 
-
         :return: The language of this TryEmailConnectionReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`
         """
@@ -169,7 +167,6 @@ class TryEmailConnectionReq:
     @language.setter
     def language(self, language):
         """Sets the language of this TryEmailConnectionReq.
-
 
         :param language: The language of this TryEmailConnectionReq.
         :type language: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`

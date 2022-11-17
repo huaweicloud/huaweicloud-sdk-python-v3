@@ -17,7 +17,6 @@ class UploadSecretBlobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UploadSecretBlobResponse(SdkResponse):
     def secret(self):
         """Gets the secret of this UploadSecretBlobResponse.
 
-
         :return: The secret of this UploadSecretBlobResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.Secret`
         """
@@ -58,7 +56,6 @@ class UploadSecretBlobResponse(SdkResponse):
     @secret.setter
     def secret(self, secret):
         """Sets the secret of this UploadSecretBlobResponse.
-
 
         :param secret: The secret of this UploadSecretBlobResponse.
         :type secret: :class:`huaweicloudsdkcsms.v1.Secret`

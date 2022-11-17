@@ -17,7 +17,6 @@ class UpdateDeploymentGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateDeploymentGroupRequest:
     def body(self):
         """Gets the body of this UpdateDeploymentGroupRequest.
 
-
         :return: The body of this UpdateDeploymentGroupRequest.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentGroupUpdateRequest`
         """
@@ -86,7 +84,6 @@ class UpdateDeploymentGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDeploymentGroupRequest.
-
 
         :param body: The body of this UpdateDeploymentGroupRequest.
         :type body: :class:`huaweicloudsdkclouddeploy.v2.DeploymentGroupUpdateRequest`

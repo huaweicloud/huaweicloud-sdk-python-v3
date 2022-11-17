@@ -17,7 +17,6 @@ class InputSetting:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -61,7 +60,6 @@ class InputSetting:
     def input(self):
         """Gets the input of this InputSetting.
 
-
         :return: The input of this InputSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -70,7 +68,6 @@ class InputSetting:
     @input.setter
     def input(self, input):
         """Sets the input of this InputSetting.
-
 
         :param input: The input of this InputSetting.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

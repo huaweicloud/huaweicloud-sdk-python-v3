@@ -17,7 +17,6 @@ class SampleDataValue:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class SampleDataValue:
     def sample(self):
         """Gets the sample of this SampleDataValue.
 
-
         :return: The sample of this SampleDataValue.
         :rtype: :class:`huaweicloudsdkaom.v2.QuerySample`
         """
@@ -65,7 +63,6 @@ class SampleDataValue:
     @sample.setter
     def sample(self, sample):
         """Sets the sample of this SampleDataValue.
-
 
         :param sample: The sample of this SampleDataValue.
         :type sample: :class:`huaweicloudsdkaom.v2.QuerySample`

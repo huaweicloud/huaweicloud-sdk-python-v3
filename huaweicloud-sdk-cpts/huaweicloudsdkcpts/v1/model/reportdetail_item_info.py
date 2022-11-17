@@ -17,7 +17,6 @@ class ReportdetailItemInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ReportdetailItemInfo:
     def performance(self):
         """Gets the performance of this ReportdetailItemInfo.
 
-
         :return: The performance of this ReportdetailItemInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.PerformanceInfo`
         """
@@ -116,7 +114,6 @@ class ReportdetailItemInfo:
     @performance.setter
     def performance(self, performance):
         """Sets the performance of this ReportdetailItemInfo.
-
 
         :param performance: The performance of this ReportdetailItemInfo.
         :type performance: :class:`huaweicloudsdkcpts.v1.PerformanceInfo`

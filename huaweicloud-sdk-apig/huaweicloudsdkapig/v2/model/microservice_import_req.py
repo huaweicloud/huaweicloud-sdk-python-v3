@@ -17,7 +17,6 @@ class MicroserviceImportReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -57,7 +56,7 @@ class MicroserviceImportReq:
         :type protocol: str
         :param apis: 导入的api列表
         :type apis: list[:class:`huaweicloudsdkapig.v2.MicroserviceApiCreate`]
-        :param backend_timeout: 服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000，默认5000  单位：毫秒。
+        :param backend_timeout: APIG请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000，默认5000  单位：毫秒。
         :type backend_timeout: int
         :param auth_type: API的认证方式，默认无认证[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证
         :type auth_type: str
@@ -102,7 +101,6 @@ class MicroserviceImportReq:
     def group_info(self):
         """Gets the group_info of this MicroserviceImportReq.
 
-
         :return: The group_info of this MicroserviceImportReq.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroserviceGroup`
         """
@@ -111,7 +109,6 @@ class MicroserviceImportReq:
     @group_info.setter
     def group_info(self, group_info):
         """Sets the group_info of this MicroserviceImportReq.
-
 
         :param group_info: The group_info of this MicroserviceImportReq.
         :type group_info: :class:`huaweicloudsdkapig.v2.MicroserviceGroup`
@@ -188,7 +185,7 @@ class MicroserviceImportReq:
     def backend_timeout(self):
         """Gets the backend_timeout of this MicroserviceImportReq.
 
-        服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000，默认5000  单位：毫秒。
+        APIG请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000，默认5000  单位：毫秒。
 
         :return: The backend_timeout of this MicroserviceImportReq.
         :rtype: int
@@ -199,7 +196,7 @@ class MicroserviceImportReq:
     def backend_timeout(self, backend_timeout):
         """Sets the backend_timeout of this MicroserviceImportReq.
 
-        服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000，默认5000  单位：毫秒。
+        APIG请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000，默认5000  单位：毫秒。
 
         :param backend_timeout: The backend_timeout of this MicroserviceImportReq.
         :type backend_timeout: int
@@ -254,7 +251,6 @@ class MicroserviceImportReq:
     def cse_info(self):
         """Gets the cse_info of this MicroserviceImportReq.
 
-
         :return: The cse_info of this MicroserviceImportReq.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSECreate`
         """
@@ -263,7 +259,6 @@ class MicroserviceImportReq:
     @cse_info.setter
     def cse_info(self, cse_info):
         """Sets the cse_info of this MicroserviceImportReq.
-
 
         :param cse_info: The cse_info of this MicroserviceImportReq.
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSECreate`
@@ -274,7 +269,6 @@ class MicroserviceImportReq:
     def cce_info(self):
         """Gets the cce_info of this MicroserviceImportReq.
 
-
         :return: The cce_info of this MicroserviceImportReq.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
         """
@@ -283,7 +277,6 @@ class MicroserviceImportReq:
     @cce_info.setter
     def cce_info(self, cce_info):
         """Sets the cce_info of this MicroserviceImportReq.
-
 
         :param cce_info: The cce_info of this MicroserviceImportReq.
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`

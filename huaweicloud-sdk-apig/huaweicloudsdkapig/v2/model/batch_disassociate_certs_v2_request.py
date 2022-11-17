@@ -17,7 +17,6 @@ class BatchDisassociateCertsV2Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class BatchDisassociateCertsV2Request:
     def body(self):
         """Gets the body of this BatchDisassociateCertsV2Request.
 
-
         :return: The body of this BatchDisassociateCertsV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.AttachOrDetachCertsReqBody`
         """
@@ -142,7 +140,6 @@ class BatchDisassociateCertsV2Request:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDisassociateCertsV2Request.
-
 
         :param body: The body of this BatchDisassociateCertsV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.AttachOrDetachCertsReqBody`

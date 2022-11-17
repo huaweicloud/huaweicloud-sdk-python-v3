@@ -17,7 +17,6 @@ class OpenGaussInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -207,7 +206,6 @@ class OpenGaussInstanceRequest:
     def datastore(self):
         """Gets the datastore of this OpenGaussInstanceRequest.
 
-
         :return: The datastore of this OpenGaussInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastore`
         """
@@ -216,7 +214,6 @@ class OpenGaussInstanceRequest:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this OpenGaussInstanceRequest.
-
 
         :param datastore: The datastore of this OpenGaussInstanceRequest.
         :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastore`
@@ -227,7 +224,6 @@ class OpenGaussInstanceRequest:
     def ha(self):
         """Gets the ha of this OpenGaussInstanceRequest.
 
-
         :return: The ha of this OpenGaussInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHa`
         """
@@ -236,7 +232,6 @@ class OpenGaussInstanceRequest:
     @ha.setter
     def ha(self, ha):
         """Sets the ha of this OpenGaussInstanceRequest.
-
 
         :param ha: The ha of this OpenGaussInstanceRequest.
         :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHa`
@@ -313,7 +308,6 @@ class OpenGaussInstanceRequest:
     def backup_strategy(self):
         """Gets the backup_strategy of this OpenGaussInstanceRequest.
 
-
         :return: The backup_strategy of this OpenGaussInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategy`
         """
@@ -322,7 +316,6 @@ class OpenGaussInstanceRequest:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this OpenGaussInstanceRequest.
-
 
         :param backup_strategy: The backup_strategy of this OpenGaussInstanceRequest.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategy`
@@ -399,7 +392,6 @@ class OpenGaussInstanceRequest:
     def volume(self):
         """Gets the volume of this OpenGaussInstanceRequest.
 
-
         :return: The volume of this OpenGaussInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
         """
@@ -408,7 +400,6 @@ class OpenGaussInstanceRequest:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this OpenGaussInstanceRequest.
-
 
         :param volume: The volume of this OpenGaussInstanceRequest.
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
@@ -529,7 +520,6 @@ class OpenGaussInstanceRequest:
     def charge_info(self):
         """Gets the charge_info of this OpenGaussInstanceRequest.
 
-
         :return: The charge_info of this OpenGaussInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
         """
@@ -538,7 +528,6 @@ class OpenGaussInstanceRequest:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this OpenGaussInstanceRequest.
-
 
         :param charge_info: The charge_info of this OpenGaussInstanceRequest.
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`

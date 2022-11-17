@@ -17,7 +17,6 @@ class PoolsInStatusResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -188,7 +187,6 @@ class PoolsInStatusResp:
     def healthmonitor(self):
         """Gets the healthmonitor of this PoolsInStatusResp.
 
-
         :return: The healthmonitor of this PoolsInStatusResp.
         :rtype: :class:`huaweicloudsdkelb.v2.HealthmonitorsInStatusResp`
         """
@@ -197,7 +195,6 @@ class PoolsInStatusResp:
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
         """Sets the healthmonitor of this PoolsInStatusResp.
-
 
         :param healthmonitor: The healthmonitor of this PoolsInStatusResp.
         :type healthmonitor: :class:`huaweicloudsdkelb.v2.HealthmonitorsInStatusResp`

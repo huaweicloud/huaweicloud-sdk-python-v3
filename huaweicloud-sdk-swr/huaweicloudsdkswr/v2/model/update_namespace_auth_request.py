@@ -17,7 +17,6 @@ class UpdateNamespaceAuthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateNamespaceAuthRequest:
     def body(self):
         """Gets the body of this UpdateNamespaceAuthRequest.
 
-
         :return: The body of this UpdateNamespaceAuthRequest.
         :rtype: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
         """
@@ -86,7 +84,6 @@ class UpdateNamespaceAuthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateNamespaceAuthRequest.
-
 
         :param body: The body of this UpdateNamespaceAuthRequest.
         :type body: list[:class:`huaweicloudsdkswr.v2.UserAuth`]

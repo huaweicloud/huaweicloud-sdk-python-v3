@@ -17,7 +17,6 @@ class ListScriptResultsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListScriptResultsResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListScriptResultsResponse.
 
-
         :return: The status of this ListScriptResultsResponse.
         :rtype: str
         """
@@ -65,7 +63,6 @@ class ListScriptResultsResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this ListScriptResultsResponse.
-
 
         :param status: The status of this ListScriptResultsResponse.
         :type status: str
@@ -76,7 +73,6 @@ class ListScriptResultsResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListScriptResultsResponse.
 
-
         :return: The result of this ListScriptResultsResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Result`]
         """
@@ -85,7 +81,6 @@ class ListScriptResultsResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ListScriptResultsResponse.
-
 
         :param result: The result of this ListScriptResultsResponse.
         :type result: list[:class:`huaweicloudsdkdgc.v1.Result`]

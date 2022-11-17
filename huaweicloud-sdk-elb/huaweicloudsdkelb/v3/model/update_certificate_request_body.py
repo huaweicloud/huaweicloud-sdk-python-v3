@@ -17,7 +17,6 @@ class UpdateCertificateRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateCertificateRequestBody:
     def certificate(self):
         """Gets the certificate of this UpdateCertificateRequestBody.
 
-
         :return: The certificate of this UpdateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateCertificateOption`
         """
@@ -57,7 +55,6 @@ class UpdateCertificateRequestBody:
     @certificate.setter
     def certificate(self, certificate):
         """Sets the certificate of this UpdateCertificateRequestBody.
-
 
         :param certificate: The certificate of this UpdateCertificateRequestBody.
         :type certificate: :class:`huaweicloudsdkelb.v3.UpdateCertificateOption`

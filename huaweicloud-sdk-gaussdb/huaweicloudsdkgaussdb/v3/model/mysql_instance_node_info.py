@@ -17,7 +17,6 @@ class MysqlInstanceNodeInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -298,7 +297,6 @@ class MysqlInstanceNodeInfo:
     def volume(self):
         """Gets the volume of this MysqlInstanceNodeInfo.
 
-
         :return: The volume of this MysqlInstanceNodeInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeVolumeInfo`
         """
@@ -307,7 +305,6 @@ class MysqlInstanceNodeInfo:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this MysqlInstanceNodeInfo.
-
 
         :param volume: The volume of this MysqlInstanceNodeInfo.
         :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeVolumeInfo`

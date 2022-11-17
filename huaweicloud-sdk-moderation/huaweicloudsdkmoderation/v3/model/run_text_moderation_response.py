@@ -17,7 +17,6 @@ class RunTextModerationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class RunTextModerationResponse(SdkResponse):
     def result(self):
         """Gets the result of this RunTextModerationResponse.
 
-
         :return: The result of this RunTextModerationResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.TextDetectionResult`
         """
@@ -87,7 +85,6 @@ class RunTextModerationResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RunTextModerationResponse.
-
 
         :param result: The result of this RunTextModerationResponse.
         :type result: :class:`huaweicloudsdkmoderation.v3.TextDetectionResult`

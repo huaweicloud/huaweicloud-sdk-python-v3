@@ -17,7 +17,6 @@ class UpdateCommandRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class UpdateCommandRequest:
     def body(self):
         """Gets the body of this UpdateCommandRequest.
 
-
         :return: The body of this UpdateCommandRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateCommandRequestBody`
         """
@@ -142,7 +140,6 @@ class UpdateCommandRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateCommandRequest.
-
 
         :param body: The body of this UpdateCommandRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateCommandRequestBody`

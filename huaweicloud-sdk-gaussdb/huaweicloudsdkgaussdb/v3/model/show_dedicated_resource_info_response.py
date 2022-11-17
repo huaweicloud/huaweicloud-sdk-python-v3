@@ -17,7 +17,6 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -230,7 +229,6 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def dedicated_compute_info(self):
         """Gets the dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
 
-
         :return: The dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DedicatedComputeInfo`
         """
@@ -239,7 +237,6 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     @dedicated_compute_info.setter
     def dedicated_compute_info(self, dedicated_compute_info):
         """Sets the dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
-
 
         :param dedicated_compute_info: The dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
         :type dedicated_compute_info: :class:`huaweicloudsdkgaussdb.v3.DedicatedComputeInfo`
@@ -250,7 +247,6 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     def dedicated_storage_info(self):
         """Gets the dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
 
-
         :return: The dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DedicatedStorageInfo`
         """
@@ -259,7 +255,6 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     @dedicated_storage_info.setter
     def dedicated_storage_info(self, dedicated_storage_info):
         """Sets the dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
-
 
         :param dedicated_storage_info: The dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
         :type dedicated_storage_info: :class:`huaweicloudsdkgaussdb.v3.DedicatedStorageInfo`

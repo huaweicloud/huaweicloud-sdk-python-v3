@@ -17,7 +17,6 @@ class UpdateLogGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateLogGroupRequest:
     def body(self):
         """Gets the body of this UpdateLogGroupRequest.
 
-
         :return: The body of this UpdateLogGroupRequest.
         :rtype: :class:`huaweicloudsdklts.v2.UpdateLogGroupParams`
         """
@@ -86,7 +84,6 @@ class UpdateLogGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateLogGroupRequest.
-
 
         :param body: The body of this UpdateLogGroupRequest.
         :type body: :class:`huaweicloudsdklts.v2.UpdateLogGroupParams`

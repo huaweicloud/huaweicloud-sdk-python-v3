@@ -17,7 +17,6 @@ class BatchSetSmnRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class BatchSetSmnRequest:
     def body(self):
         """Gets the body of this BatchSetSmnRequest.
 
-
         :return: The body of this BatchSetSmnRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchImportSmnInfoReq`
         """
@@ -87,7 +85,6 @@ class BatchSetSmnRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchSetSmnRequest.
-
 
         :param body: The body of this BatchSetSmnRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchImportSmnInfoReq`

@@ -17,7 +17,6 @@ class CreateEdgeAppRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateEdgeAppRequest:
     def body(self):
         """Gets the body of this CreateEdgeAppRequest.
 
-
         :return: The body of this CreateEdgeAppRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationRequestDTO`
         """
@@ -58,7 +56,6 @@ class CreateEdgeAppRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateEdgeAppRequest.
-
 
         :param body: The body of this CreateEdgeAppRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationRequestDTO`

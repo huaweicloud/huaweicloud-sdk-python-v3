@@ -17,7 +17,6 @@ class CreateAutoCreatePolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateAutoCreatePolicyRequest:
     def body(self):
         """Gets the body of this CreateAutoCreatePolicyRequest.
 
-
         :return: The body of this CreateAutoCreatePolicyRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.SetRDSBackupCnfReq`
         """
@@ -86,7 +84,6 @@ class CreateAutoCreatePolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAutoCreatePolicyRequest.
-
 
         :param body: The body of this CreateAutoCreatePolicyRequest.
         :type body: :class:`huaweicloudsdkcss.v1.SetRDSBackupCnfReq`

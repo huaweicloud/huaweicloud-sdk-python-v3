@@ -17,7 +17,6 @@ class CollectLogRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CollectLogRequest:
     def body(self):
         """Gets the body of this CollectLogRequest.
 
-
         :return: The body of this CollectLogRequest.
         :rtype: :class:`huaweicloudsdksms.v3.UploadLogRequestBody`
         """
@@ -86,7 +84,6 @@ class CollectLogRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CollectLogRequest.
-
 
         :param body: The body of this CollectLogRequest.
         :type body: :class:`huaweicloudsdksms.v3.UploadLogRequestBody`

@@ -17,7 +17,6 @@ class BatchStopMigrationTasksRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchStopMigrationTasksRequest:
     def body(self):
         """Gets the body of this BatchStopMigrationTasksRequest.
 
-
         :return: The body of this BatchStopMigrationTasksRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksBody`
         """
@@ -58,7 +56,6 @@ class BatchStopMigrationTasksRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchStopMigrationTasksRequest.
-
 
         :param body: The body of this BatchStopMigrationTasksRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksBody`

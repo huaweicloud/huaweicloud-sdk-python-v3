@@ -17,7 +17,6 @@ class BatchImportAppResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchImportAppResponse(SdkResponse):
     def body(self):
         """Gets the body of this BatchImportAppResponse.
 
-
         :return: The body of this BatchImportAppResponse.
         :rtype: list[:class:`huaweicloudsdkeihealth.v1.ImportAppRsp`]
         """
@@ -58,7 +56,6 @@ class BatchImportAppResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this BatchImportAppResponse.
-
 
         :param body: The body of this BatchImportAppResponse.
         :type body: list[:class:`huaweicloudsdkeihealth.v1.ImportAppRsp`]

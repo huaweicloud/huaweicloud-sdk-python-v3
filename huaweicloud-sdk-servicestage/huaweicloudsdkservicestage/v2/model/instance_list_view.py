@@ -17,7 +17,6 @@ class InstanceListView:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -484,7 +483,6 @@ class InstanceListView:
     def status_detail(self):
         """Gets the status_detail of this InstanceListView.
 
-
         :return: The status_detail of this InstanceListView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
         """
@@ -493,7 +491,6 @@ class InstanceListView:
     @status_detail.setter
     def status_detail(self, status_detail):
         """Sets the status_detail of this InstanceListView.
-
 
         :param status_detail: The status_detail of this InstanceListView.
         :type status_detail: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`

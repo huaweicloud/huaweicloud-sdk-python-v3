@@ -17,7 +17,6 @@ class DeleteRecordSetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class DeleteRecordSetRequest:
     def zone_id(self):
         """Gets the zone_id of this DeleteRecordSetRequest.
 
-
         :return: The zone_id of this DeleteRecordSetRequest.
         :rtype: str
         """
@@ -63,7 +61,6 @@ class DeleteRecordSetRequest:
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this DeleteRecordSetRequest.
-
 
         :param zone_id: The zone_id of this DeleteRecordSetRequest.
         :type zone_id: str
@@ -74,7 +71,6 @@ class DeleteRecordSetRequest:
     def recordset_id(self):
         """Gets the recordset_id of this DeleteRecordSetRequest.
 
-
         :return: The recordset_id of this DeleteRecordSetRequest.
         :rtype: str
         """
@@ -83,7 +79,6 @@ class DeleteRecordSetRequest:
     @recordset_id.setter
     def recordset_id(self, recordset_id):
         """Sets the recordset_id of this DeleteRecordSetRequest.
-
 
         :param recordset_id: The recordset_id of this DeleteRecordSetRequest.
         :type recordset_id: str

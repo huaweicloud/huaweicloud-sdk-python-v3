@@ -17,11 +17,10 @@ class CreatePersonalAuthResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
-        'authorization': 'AuthorizationVO'
+        'authorization': 'AuthorizationVI'
     }
 
     attribute_map = {
@@ -34,7 +33,7 @@ class CreatePersonalAuthResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param authorization: 
-        :type authorization: :class:`huaweicloudsdkservicestage.v2.AuthorizationVO`
+        :type authorization: :class:`huaweicloudsdkservicestage.v2.AuthorizationVI`
         """
         
         super(CreatePersonalAuthResponse, self).__init__()
@@ -49,9 +48,8 @@ class CreatePersonalAuthResponse(SdkResponse):
     def authorization(self):
         """Gets the authorization of this CreatePersonalAuthResponse.
 
-
         :return: The authorization of this CreatePersonalAuthResponse.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.AuthorizationVO`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.AuthorizationVI`
         """
         return self._authorization
 
@@ -59,9 +57,8 @@ class CreatePersonalAuthResponse(SdkResponse):
     def authorization(self, authorization):
         """Sets the authorization of this CreatePersonalAuthResponse.
 
-
         :param authorization: The authorization of this CreatePersonalAuthResponse.
-        :type authorization: :class:`huaweicloudsdkservicestage.v2.AuthorizationVO`
+        :type authorization: :class:`huaweicloudsdkservicestage.v2.AuthorizationVI`
         """
         self._authorization = authorization
 

@@ -17,7 +17,6 @@ class RestartCloudPhoneRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RestartCloudPhoneRequest:
     def body(self):
         """Gets the body of this RestartCloudPhoneRequest.
 
-
         :return: The body of this RestartCloudPhoneRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.ResetRestartRequestBody`
         """
@@ -58,7 +56,6 @@ class RestartCloudPhoneRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RestartCloudPhoneRequest.
-
 
         :param body: The body of this RestartCloudPhoneRequest.
         :type body: :class:`huaweicloudsdkcph.v1.ResetRestartRequestBody`

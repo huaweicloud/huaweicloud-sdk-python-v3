@@ -17,7 +17,6 @@ class SubTaskStatus:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class SubTaskStatus:
     def id(self):
         """Gets the id of this SubTaskStatus.
 
-
         :return: The id of this SubTaskStatus.
         :rtype: str
         """
@@ -93,7 +91,6 @@ class SubTaskStatus:
     @id.setter
     def id(self, id):
         """Sets the id of this SubTaskStatus.
-
 
         :param id: The id of this SubTaskStatus.
         :type id: str
@@ -104,7 +101,6 @@ class SubTaskStatus:
     def name(self):
         """Gets the name of this SubTaskStatus.
 
-
         :return: The name of this SubTaskStatus.
         :rtype: str
         """
@@ -113,7 +109,6 @@ class SubTaskStatus:
     @name.setter
     def name(self, name):
         """Sets the name of this SubTaskStatus.
-
 
         :param name: The name of this SubTaskStatus.
         :type name: str
@@ -124,7 +119,6 @@ class SubTaskStatus:
     def start_time(self):
         """Gets the start_time of this SubTaskStatus.
 
-
         :return: The start_time of this SubTaskStatus.
         :rtype: str
         """
@@ -133,7 +127,6 @@ class SubTaskStatus:
     @start_time.setter
     def start_time(self, start_time):
         """Sets the start_time of this SubTaskStatus.
-
 
         :param start_time: The start_time of this SubTaskStatus.
         :type start_time: str
@@ -144,7 +137,6 @@ class SubTaskStatus:
     def end_time(self):
         """Gets the end_time of this SubTaskStatus.
 
-
         :return: The end_time of this SubTaskStatus.
         :rtype: str
         """
@@ -153,7 +145,6 @@ class SubTaskStatus:
     @end_time.setter
     def end_time(self, end_time):
         """Sets the end_time of this SubTaskStatus.
-
 
         :param end_time: The end_time of this SubTaskStatus.
         :type end_time: str
@@ -164,7 +155,6 @@ class SubTaskStatus:
     def last_update(self):
         """Gets the last_update of this SubTaskStatus.
 
-
         :return: The last_update of this SubTaskStatus.
         :rtype: str
         """
@@ -173,7 +163,6 @@ class SubTaskStatus:
     @last_update.setter
     def last_update(self, last_update):
         """Sets the last_update of this SubTaskStatus.
-
 
         :param last_update: The last_update of this SubTaskStatus.
         :type last_update: str
@@ -184,7 +173,6 @@ class SubTaskStatus:
     def status(self):
         """Gets the status of this SubTaskStatus.
 
-
         :return: The status of this SubTaskStatus.
         :rtype: str
         """
@@ -193,7 +181,6 @@ class SubTaskStatus:
     @status.setter
     def status(self, status):
         """Sets the status of this SubTaskStatus.
-
 
         :param status: The status of this SubTaskStatus.
         :type status: str

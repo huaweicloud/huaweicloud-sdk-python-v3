@@ -17,7 +17,6 @@ class CreateInstallCmdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateInstallCmdRequest:
     def body(self):
         """Gets the body of this CreateInstallCmdRequest.
 
-
         :return: The body of this CreateInstallCmdRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequestDTO`
         """
@@ -114,7 +112,6 @@ class CreateInstallCmdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateInstallCmdRequest.
-
 
         :param body: The body of this CreateInstallCmdRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequestDTO`

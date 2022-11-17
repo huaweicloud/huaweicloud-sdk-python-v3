@@ -17,7 +17,6 @@ class TokenUserResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -132,7 +131,6 @@ class TokenUserResult:
     def domain(self):
         """Gets the domain of this TokenUserResult.
 
-
         :return: The domain of this TokenUserResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenUserDomainResult`
         """
@@ -141,7 +139,6 @@ class TokenUserResult:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this TokenUserResult.
-
 
         :param domain: The domain of this TokenUserResult.
         :type domain: :class:`huaweicloudsdkiam.v3.TokenUserDomainResult`

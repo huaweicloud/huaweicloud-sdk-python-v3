@@ -17,7 +17,6 @@ class CreateLogtankRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateLogtankRequestBody:
     def logtank(self):
         """Gets the logtank of this CreateLogtankRequestBody.
 
-
         :return: The logtank of this CreateLogtankRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateLogtankOption`
         """
@@ -57,7 +55,6 @@ class CreateLogtankRequestBody:
     @logtank.setter
     def logtank(self, logtank):
         """Sets the logtank of this CreateLogtankRequestBody.
-
 
         :param logtank: The logtank of this CreateLogtankRequestBody.
         :type logtank: :class:`huaweicloudsdkelb.v3.CreateLogtankOption`

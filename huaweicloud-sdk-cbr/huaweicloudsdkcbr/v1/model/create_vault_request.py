@@ -17,7 +17,6 @@ class CreateVaultRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateVaultRequest:
     def body(self):
         """Gets the body of this CreateVaultRequest.
 
-
         :return: The body of this CreateVaultRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultCreateReq`
         """
@@ -58,7 +56,6 @@ class CreateVaultRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateVaultRequest.
-
 
         :param body: The body of this CreateVaultRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultCreateReq`

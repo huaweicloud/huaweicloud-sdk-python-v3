@@ -17,7 +17,6 @@ class RunQueryRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunQueryRequest:
     def body(self):
         """Gets the body of this RunQueryRequest.
 
-
         :return: The body of this RunQueryRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.QueryRunRequestBody`
         """
@@ -58,7 +56,6 @@ class RunQueryRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunQueryRequest.
-
 
         :param body: The body of this RunQueryRequest.
         :type body: :class:`huaweicloudsdkrms.v1.QueryRunRequestBody`

@@ -17,7 +17,6 @@ class ShowResourceTagResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowResourceTagResponse(SdkResponse):
     def tags(self):
         """Gets the tags of this ShowResourceTagResponse.
 
-
         :return: The tags of this ShowResourceTagResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.Tag`]
         """
@@ -58,7 +56,6 @@ class ShowResourceTagResponse(SdkResponse):
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ShowResourceTagResponse.
-
 
         :param tags: The tags of this ShowResourceTagResponse.
         :type tags: list[:class:`huaweicloudsdkdns.v2.Tag`]

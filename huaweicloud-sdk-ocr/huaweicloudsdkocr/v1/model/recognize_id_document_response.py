@@ -17,11 +17,10 @@ class RecognizeIdDocumentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
-        'result': 'object'
+        'result': 'IdDocumentItem'
     }
 
     attribute_map = {
@@ -33,8 +32,8 @@ class RecognizeIdDocumentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 调用成功时表示调用结果。  调用失败时此字段为空。 
-        :type result: object
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.IdDocumentItem`
         """
         
         super(RecognizeIdDocumentResponse, self).__init__()
@@ -49,10 +48,8 @@ class RecognizeIdDocumentResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeIdDocumentResponse.
 
-        调用成功时表示调用结果。  调用失败时此字段为空。 
-
         :return: The result of this RecognizeIdDocumentResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkocr.v1.IdDocumentItem`
         """
         return self._result
 
@@ -60,10 +57,8 @@ class RecognizeIdDocumentResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeIdDocumentResponse.
 
-        调用成功时表示调用结果。  调用失败时此字段为空。 
-
         :param result: The result of this RecognizeIdDocumentResponse.
-        :type result: object
+        :type result: :class:`huaweicloudsdkocr.v1.IdDocumentItem`
         """
         self._result = result
 

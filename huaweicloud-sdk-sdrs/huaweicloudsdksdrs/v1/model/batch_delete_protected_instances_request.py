@@ -17,7 +17,6 @@ class BatchDeleteProtectedInstancesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchDeleteProtectedInstancesRequest:
     def body(self):
         """Gets the body of this BatchDeleteProtectedInstancesRequest.
 
-
         :return: The body of this BatchDeleteProtectedInstancesRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchDeleteProtectedInstancesRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchDeleteProtectedInstancesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteProtectedInstancesRequest.
-
 
         :param body: The body of this BatchDeleteProtectedInstancesRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.BatchDeleteProtectedInstancesRequestBody`

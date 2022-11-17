@@ -17,7 +17,6 @@ class MetricDataValue:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class MetricDataValue:
     def metric(self):
         """Gets the metric of this MetricDataValue.
 
-
         :return: The metric of this MetricDataValue.
         :rtype: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`
         """
@@ -87,7 +85,6 @@ class MetricDataValue:
     @metric.setter
     def metric(self, metric):
         """Sets the metric of this MetricDataValue.
-
 
         :param metric: The metric of this MetricDataValue.
         :type metric: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`

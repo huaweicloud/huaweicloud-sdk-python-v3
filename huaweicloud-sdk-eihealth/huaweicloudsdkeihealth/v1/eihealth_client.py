@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EiHealthClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class EiHealthClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchImportAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -188,6 +188,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +224,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -248,6 +251,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +289,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -310,6 +316,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +352,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -370,6 +379,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -404,6 +415,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SubscribeAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -430,6 +442,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -466,6 +480,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -492,6 +507,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -538,6 +555,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -564,6 +582,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -596,6 +616,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -622,6 +643,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -654,6 +677,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -680,6 +704,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -714,6 +740,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -740,6 +767,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -774,6 +803,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -800,6 +830,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -834,6 +866,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -860,6 +893,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -902,6 +937,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -928,6 +964,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -962,6 +1000,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -988,6 +1027,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1022,6 +1063,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1048,6 +1090,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1082,6 +1126,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1108,6 +1153,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1144,6 +1191,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1170,6 +1218,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1202,6 +1252,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateComputingResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1228,6 +1279,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1260,6 +1313,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteComputingResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1286,6 +1340,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1318,6 +1374,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListComputingResourceFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1344,6 +1401,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1380,6 +1439,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListComputingResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1406,6 +1466,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1440,6 +1502,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RebootNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1466,6 +1529,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1498,6 +1563,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBmsDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1524,6 +1590,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1554,6 +1622,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEvsQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1580,6 +1649,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1610,6 +1681,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLeftQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1636,6 +1708,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1668,6 +1742,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScheduleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1694,6 +1769,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1726,6 +1803,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1752,6 +1830,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1786,6 +1866,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1812,6 +1893,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1846,6 +1929,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateScheduleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1872,6 +1956,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1906,6 +1992,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1932,6 +2019,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1966,6 +2055,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1992,6 +2082,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2032,6 +2124,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2058,6 +2151,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2094,6 +2189,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2120,6 +2216,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2154,6 +2252,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupPathResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2180,6 +2279,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2214,6 +2315,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CopyDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2240,6 +2342,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2274,6 +2378,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2300,6 +2405,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2334,6 +2441,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2360,6 +2468,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2394,6 +2504,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2420,6 +2531,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2454,6 +2567,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportNetworkDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2480,6 +2594,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2512,6 +2628,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBucketResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2538,6 +2655,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2584,6 +2703,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2610,6 +2730,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2644,6 +2766,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='QuoteDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2670,6 +2793,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2702,6 +2827,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBucketStorageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2728,6 +2854,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2762,6 +2890,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2788,6 +2917,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2820,6 +2951,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDataPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2846,6 +2978,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2880,6 +3014,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SubscribeDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2906,6 +3041,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2940,6 +3077,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDataPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2966,6 +3104,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3014,6 +3154,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3040,6 +3181,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3074,6 +3217,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3100,6 +3244,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3134,6 +3280,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3160,6 +3307,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3194,6 +3343,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadDataJobLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3220,6 +3370,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3254,6 +3406,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCheckpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3280,6 +3433,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3336,6 +3491,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3362,6 +3518,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3396,6 +3554,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RetryDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3422,6 +3581,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3456,6 +3617,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3482,6 +3644,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3518,6 +3682,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3544,6 +3709,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3578,6 +3745,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3604,6 +3772,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3640,6 +3810,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3666,6 +3837,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3700,6 +3873,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3726,6 +3900,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3762,6 +3938,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3788,6 +3965,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3832,6 +4011,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3858,6 +4038,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3890,6 +4072,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3916,6 +4099,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3950,6 +4135,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='QuoteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3976,6 +4162,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4010,6 +4198,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4036,6 +4225,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4074,6 +4265,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4100,6 +4292,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4132,6 +4326,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4158,6 +4353,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4190,6 +4387,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4217,6 +4415,8 @@ class EiHealthClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4231,7 +4431,7 @@ class EiHealthClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Resource-Mappings"]
+        response_headers = ["X-Resource-Mappings", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4246,6 +4446,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4272,6 +4473,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4302,6 +4505,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseResourceFlavorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4328,6 +4532,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4364,6 +4570,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4390,6 +4597,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4424,6 +4633,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4450,6 +4660,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4484,6 +4696,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4510,6 +4723,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4546,6 +4761,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4572,6 +4788,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4606,6 +4824,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4632,6 +4851,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4670,6 +4891,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4696,6 +4918,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4730,6 +4954,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImageTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4756,6 +4981,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4788,6 +5015,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDockerLoginResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4814,6 +5042,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4848,6 +5078,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SubscribeImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4874,6 +5105,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4910,6 +5143,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4936,6 +5170,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4966,6 +5202,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4992,6 +5229,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5024,6 +5263,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateJobConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5050,6 +5290,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5086,6 +5328,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5112,6 +5355,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5146,6 +5391,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5172,6 +5418,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5206,6 +5454,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExecuteJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5232,6 +5481,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5291,6 +5542,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5317,6 +5569,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5351,6 +5605,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RetryJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5377,6 +5632,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5413,6 +5670,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5439,6 +5697,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5475,6 +5735,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5501,6 +5762,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5539,6 +5802,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5565,6 +5829,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5603,6 +5869,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5629,6 +5896,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5669,6 +5938,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskInstanceEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5695,6 +5965,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5735,6 +6007,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskInstancePodResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5761,6 +6034,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5799,6 +6074,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5825,6 +6101,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5857,6 +6135,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5883,6 +6162,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5915,6 +6196,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5941,6 +6223,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5971,6 +6255,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5997,6 +6282,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6031,6 +6318,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLabelPageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6057,6 +6345,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6091,6 +6381,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLabelPageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6117,6 +6408,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6149,6 +6442,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLabelPageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6175,6 +6469,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6207,6 +6503,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckEmailConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6233,6 +6530,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6263,6 +6562,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMessageEmailConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6289,6 +6589,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6333,6 +6635,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6360,6 +6663,8 @@ class EiHealthClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -6389,6 +6694,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMessageClearRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6416,6 +6722,8 @@ class EiHealthClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -6445,6 +6753,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMessageEmailConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6471,6 +6780,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6501,6 +6812,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMessageReceiveConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6527,6 +6839,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6559,6 +6873,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMessageClearRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6585,6 +6900,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6617,6 +6934,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMessageEmailConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6643,6 +6961,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6675,6 +6995,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMessageReceiveConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6701,6 +7022,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6735,6 +7058,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateNodeLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6761,6 +7085,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6791,6 +7117,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClusterAllNodeLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6817,6 +7144,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6849,6 +7178,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNodeLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6875,6 +7205,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6905,6 +7237,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPresetLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6931,6 +7264,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6965,6 +7300,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6991,6 +7327,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7025,6 +7363,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7051,6 +7390,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7091,6 +7432,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7117,6 +7459,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7149,6 +7493,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotebookToolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7175,6 +7520,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7209,6 +7556,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7235,6 +7583,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7269,6 +7619,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNotebookTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7295,6 +7646,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7331,6 +7684,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopOrStartNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7357,6 +7711,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7393,6 +7749,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7419,6 +7776,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7451,6 +7810,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListObsBucketResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7477,6 +7837,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7515,6 +7877,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListObsBucketObjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7541,6 +7904,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7571,6 +7936,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOverviewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7597,6 +7963,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7629,6 +7997,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePerformanceResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7655,6 +8024,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7687,6 +8058,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePerformanceResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7713,6 +8085,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7743,6 +8117,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPerformanceResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7769,6 +8144,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7803,6 +8180,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePerformanceResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7829,6 +8207,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7863,6 +8243,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7889,6 +8270,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7921,6 +8304,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7947,6 +8331,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7981,6 +8367,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8007,6 +8394,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8041,6 +8430,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8067,6 +8457,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8097,6 +8489,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8123,6 +8516,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8157,6 +8552,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecentJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8183,6 +8579,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8219,6 +8617,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8245,6 +8644,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8279,6 +8680,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='TransferProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8305,6 +8707,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8341,6 +8745,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8367,6 +8772,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8401,6 +8808,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8427,6 +8835,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8461,6 +8871,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadDataTraceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8487,6 +8898,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8525,6 +8938,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectTraceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8551,6 +8965,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8585,6 +9001,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectTraceDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8611,6 +9028,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8643,6 +9062,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectTrackerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8669,6 +9089,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8703,6 +9125,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectTrackerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8729,6 +9152,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8773,6 +9198,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceMetricDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8799,6 +9225,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8831,6 +9259,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8857,6 +9286,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8887,6 +9318,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8913,6 +9345,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8945,6 +9379,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8971,6 +9406,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9005,6 +9442,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPerformanceResourceStatResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9031,6 +9469,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9063,6 +9503,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkflowStatisticResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9089,6 +9530,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9119,6 +9562,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStorageResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9145,6 +9589,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9179,6 +9625,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStudyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9205,6 +9652,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9241,6 +9690,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStudyJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9267,6 +9717,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9301,6 +9753,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStudyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9327,6 +9780,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9357,6 +9812,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStudyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9383,6 +9839,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9417,6 +9875,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStudyJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9443,6 +9902,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9483,6 +9944,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='Show3dStructureContentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9509,6 +9971,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9545,6 +10009,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtremumInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9571,6 +10036,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9601,6 +10068,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListArchiveConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9627,6 +10095,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9657,6 +10127,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnvResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9683,6 +10154,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9713,6 +10186,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVendorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9739,6 +10213,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9771,6 +10247,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateArchiveConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9797,6 +10274,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9833,6 +10312,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVendorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9859,6 +10339,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9889,6 +10371,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9915,6 +10398,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9949,6 +10434,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9975,6 +10461,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10009,6 +10497,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10035,6 +10524,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10069,6 +10560,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10095,6 +10587,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10127,6 +10621,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10153,6 +10648,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10187,6 +10684,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10213,6 +10711,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10249,6 +10749,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10275,6 +10776,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10309,6 +10812,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10335,6 +10839,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10367,6 +10873,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10393,6 +10900,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10427,6 +10936,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10453,6 +10963,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10485,6 +10997,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMfaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10511,6 +11024,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10541,6 +11056,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10567,6 +11083,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10597,6 +11115,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTokenVerificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10623,6 +11142,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10655,6 +11176,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10681,6 +11203,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10713,6 +11237,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10739,6 +11264,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10773,6 +11300,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInitPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10799,6 +11327,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10833,6 +11363,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10859,6 +11390,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10893,6 +11426,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10919,6 +11453,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10953,6 +11489,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserByDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10979,6 +11516,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11013,6 +11552,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11039,6 +11579,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11073,6 +11615,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11099,6 +11642,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11133,6 +11678,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11159,6 +11705,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11189,6 +11737,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVendorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11215,6 +11764,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11249,6 +11800,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11275,6 +11827,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11309,6 +11863,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11335,6 +11890,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11369,6 +11926,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11395,6 +11953,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11431,6 +11991,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11457,6 +12018,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11493,6 +12056,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11519,6 +12083,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11553,6 +12119,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SubscribeWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11579,6 +12146,8 @@ class EiHealthClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11615,6 +12184,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11622,7 +12192,7 @@ class EiHealthClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -11632,9 +12202,10 @@ class EiHealthClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -11651,6 +12222,7 @@ class EiHealthClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

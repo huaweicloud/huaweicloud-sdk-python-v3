@@ -17,7 +17,6 @@ class CreateRecordSetWithBatchLinesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CreateRecordSetWithBatchLinesResponse(SdkResponse):
     def links(self):
         """Gets the links of this CreateRecordSetWithBatchLinesResponse.
 
-
         :return: The links of this CreateRecordSetWithBatchLinesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -72,7 +70,6 @@ class CreateRecordSetWithBatchLinesResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this CreateRecordSetWithBatchLinesResponse.
-
 
         :param links: The links of this CreateRecordSetWithBatchLinesResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -83,7 +80,6 @@ class CreateRecordSetWithBatchLinesResponse(SdkResponse):
     def recordsets(self):
         """Gets the recordsets of this CreateRecordSetWithBatchLinesResponse.
 
-
         :return: The recordsets of this CreateRecordSetWithBatchLinesResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]
         """
@@ -92,7 +88,6 @@ class CreateRecordSetWithBatchLinesResponse(SdkResponse):
     @recordsets.setter
     def recordsets(self, recordsets):
         """Sets the recordsets of this CreateRecordSetWithBatchLinesResponse.
-
 
         :param recordsets: The recordsets of this CreateRecordSetWithBatchLinesResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]
@@ -103,7 +98,6 @@ class CreateRecordSetWithBatchLinesResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this CreateRecordSetWithBatchLinesResponse.
 
-
         :return: The metadata of this CreateRecordSetWithBatchLinesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
@@ -112,7 +106,6 @@ class CreateRecordSetWithBatchLinesResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateRecordSetWithBatchLinesResponse.
-
 
         :param metadata: The metadata of this CreateRecordSetWithBatchLinesResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`

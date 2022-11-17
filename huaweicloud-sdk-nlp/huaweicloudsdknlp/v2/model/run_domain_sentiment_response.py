@@ -17,7 +17,6 @@ class RunDomainSentimentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class RunDomainSentimentResponse(SdkResponse):
     def result(self):
         """Gets the result of this RunDomainSentimentResponse.
 
-
         :return: The result of this RunDomainSentimentResponse.
         :rtype: :class:`huaweicloudsdknlp.v2.HWCloudSentimentResp`
         """
@@ -72,7 +70,6 @@ class RunDomainSentimentResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RunDomainSentimentResponse.
-
 
         :param result: The result of this RunDomainSentimentResponse.
         :type result: :class:`huaweicloudsdknlp.v2.HWCloudSentimentResp`

@@ -17,7 +17,6 @@ class CreatePoolResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreatePoolResponse(SdkResponse):
     def pool(self):
         """Gets the pool of this CreatePoolResponse.
 
-
         :return: The pool of this CreatePoolResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.Pool`
         """
@@ -87,7 +85,6 @@ class CreatePoolResponse(SdkResponse):
     @pool.setter
     def pool(self, pool):
         """Sets the pool of this CreatePoolResponse.
-
 
         :param pool: The pool of this CreatePoolResponse.
         :type pool: :class:`huaweicloudsdkelb.v3.Pool`

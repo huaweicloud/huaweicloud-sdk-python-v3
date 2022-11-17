@@ -17,7 +17,6 @@ class AdDomain:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -396,7 +395,6 @@ class AdDomain:
     def tls_config(self):
         """Gets the tls_config of this AdDomain.
 
-
         :return: The tls_config of this AdDomain.
         :rtype: :class:`huaweicloudsdkworkspace.v2.TlsConfig`
         """
@@ -405,7 +403,6 @@ class AdDomain:
     @tls_config.setter
     def tls_config(self, tls_config):
         """Sets the tls_config of this AdDomain.
-
 
         :param tls_config: The tls_config of this AdDomain.
         :type tls_config: :class:`huaweicloudsdkworkspace.v2.TlsConfig`

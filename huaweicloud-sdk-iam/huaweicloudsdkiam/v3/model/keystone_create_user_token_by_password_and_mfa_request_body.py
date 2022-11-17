@@ -17,7 +17,6 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
     def auth(self):
         """Gets the auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
 
-
         :return: The auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.MfaAuth`
         """
@@ -57,7 +55,6 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
     @auth.setter
     def auth(self, auth):
         """Sets the auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
-
 
         :param auth: The auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
         :type auth: :class:`huaweicloudsdkiam.v3.MfaAuth`

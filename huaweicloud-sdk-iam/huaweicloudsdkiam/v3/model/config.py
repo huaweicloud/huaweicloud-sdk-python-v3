@@ -17,7 +17,6 @@ class Config:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class Config:
     def security_compliance(self):
         """Gets the security_compliance of this Config.
 
-
         :return: The security_compliance of this Config.
         :rtype: :class:`huaweicloudsdkiam.v3.SecurityCompliance`
         """
@@ -57,7 +55,6 @@ class Config:
     @security_compliance.setter
     def security_compliance(self, security_compliance):
         """Sets the security_compliance of this Config.
-
 
         :param security_compliance: The security_compliance of this Config.
         :type security_compliance: :class:`huaweicloudsdkiam.v3.SecurityCompliance`

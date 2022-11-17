@@ -17,7 +17,6 @@ class NotebookImage:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class NotebookImage:
     def image_type(self):
         """Gets the image_type of this NotebookImage.
 
-
         :return: The image_type of this NotebookImage.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DevelopImageType`
         """
@@ -63,7 +61,6 @@ class NotebookImage:
     @image_type.setter
     def image_type(self, image_type):
         """Sets the image_type of this NotebookImage.
-
 
         :param image_type: The image_type of this NotebookImage.
         :type image_type: :class:`huaweicloudsdkeihealth.v1.DevelopImageType`
@@ -74,7 +71,6 @@ class NotebookImage:
     def image_info(self):
         """Gets the image_info of this NotebookImage.
 
-
         :return: The image_info of this NotebookImage.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageInfo`
         """
@@ -83,7 +79,6 @@ class NotebookImage:
     @image_info.setter
     def image_info(self, image_info):
         """Sets the image_info of this NotebookImage.
-
 
         :param image_info: The image_info of this NotebookImage.
         :type image_info: :class:`huaweicloudsdkeihealth.v1.ImageInfo`

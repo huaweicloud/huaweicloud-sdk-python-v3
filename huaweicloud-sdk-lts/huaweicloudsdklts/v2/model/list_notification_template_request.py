@@ -17,7 +17,6 @@ class ListNotificationTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListNotificationTemplateRequest:
     def body(self):
         """Gets the body of this ListNotificationTemplateRequest.
 
-
         :return: The body of this ListNotificationTemplateRequest.
         :rtype: :class:`huaweicloudsdklts.v2.PreviewTemplateBody`
         """
@@ -86,7 +84,6 @@ class ListNotificationTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListNotificationTemplateRequest.
-
 
         :param body: The body of this ListNotificationTemplateRequest.
         :type body: :class:`huaweicloudsdklts.v2.PreviewTemplateBody`

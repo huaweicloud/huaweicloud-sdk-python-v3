@@ -17,7 +17,6 @@ class Port:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -526,7 +525,6 @@ class Port:
     def bindingvif_details(self):
         """Gets the bindingvif_details of this Port.
 
-
         :return: The bindingvif_details of this Port.
         :rtype: :class:`huaweicloudsdkvpc.v2.BindingVifDetails`
         """
@@ -535,7 +533,6 @@ class Port:
     @bindingvif_details.setter
     def bindingvif_details(self, bindingvif_details):
         """Sets the bindingvif_details of this Port.
-
 
         :param bindingvif_details: The bindingvif_details of this Port.
         :type bindingvif_details: :class:`huaweicloudsdkvpc.v2.BindingVifDetails`

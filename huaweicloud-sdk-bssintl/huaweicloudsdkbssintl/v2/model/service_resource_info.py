@@ -17,7 +17,6 @@ class ServiceResourceInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ServiceResourceInfo:
     def basic_info(self):
         """Gets the basic_info of this ServiceResourceInfo.
 
-
         :return: The basic_info of this ServiceResourceInfo.
         :rtype: :class:`huaweicloudsdkbssintl.v2.ResourceBasicInfo`
         """
@@ -58,7 +56,6 @@ class ServiceResourceInfo:
     @basic_info.setter
     def basic_info(self, basic_info):
         """Sets the basic_info of this ServiceResourceInfo.
-
 
         :param basic_info: The basic_info of this ServiceResourceInfo.
         :type basic_info: :class:`huaweicloudsdkbssintl.v2.ResourceBasicInfo`

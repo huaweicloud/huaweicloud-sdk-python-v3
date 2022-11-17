@@ -17,7 +17,6 @@ class ShowPropertyValuesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowPropertyValuesRequest:
     def body(self):
         """Gets the body of this ShowPropertyValuesRequest.
 
-
         :return: The body of this ShowPropertyValuesRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.GetPropertyRequest`
         """
@@ -86,7 +84,6 @@ class ShowPropertyValuesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowPropertyValuesRequest.
-
 
         :param body: The body of this ShowPropertyValuesRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.GetPropertyRequest`

@@ -17,7 +17,6 @@ class CreateExtractTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -157,7 +156,6 @@ class CreateExtractTaskResponse(SdkResponse):
     def output(self):
         """Gets the output of this CreateExtractTaskResponse.
 
-
         :return: The output of this CreateExtractTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -166,7 +164,6 @@ class CreateExtractTaskResponse(SdkResponse):
     @output.setter
     def output(self, output):
         """Sets the output of this CreateExtractTaskResponse.
-
 
         :param output: The output of this CreateExtractTaskResponse.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -221,7 +218,6 @@ class CreateExtractTaskResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this CreateExtractTaskResponse.
 
-
         :return: The metadata of this CreateExtractTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
         """
@@ -230,7 +226,6 @@ class CreateExtractTaskResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateExtractTaskResponse.
-
 
         :param metadata: The metadata of this CreateExtractTaskResponse.
         :type metadata: :class:`huaweicloudsdkmpc.v1.MetaData`

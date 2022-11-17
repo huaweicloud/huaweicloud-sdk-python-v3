@@ -17,7 +17,6 @@ class ImportBaseResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ImportBaseResult:
     def swagger(self):
         """Gets the swagger of this ImportBaseResult.
 
-
         :return: The swagger of this ImportBaseResult.
         :rtype: :class:`huaweicloudsdkroma.v2.Swagger`
         """
@@ -116,7 +114,6 @@ class ImportBaseResult:
     @swagger.setter
     def swagger(self, swagger):
         """Sets the swagger of this ImportBaseResult.
-
 
         :param swagger: The swagger of this ImportBaseResult.
         :type swagger: :class:`huaweicloudsdkroma.v2.Swagger`

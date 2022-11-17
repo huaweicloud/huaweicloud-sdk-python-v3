@@ -17,7 +17,6 @@ class ShowJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowJobResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this ShowJobResponse.
 
-
         :return: The spec of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.JobSpec`
         """
@@ -116,7 +114,6 @@ class ShowJobResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ShowJobResponse.
-
 
         :param spec: The spec of this ShowJobResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.JobSpec`

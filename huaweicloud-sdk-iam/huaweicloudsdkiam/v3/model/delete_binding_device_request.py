@@ -17,7 +17,6 @@ class DeleteBindingDeviceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteBindingDeviceRequest:
     def body(self):
         """Gets the body of this DeleteBindingDeviceRequest.
 
-
         :return: The body of this DeleteBindingDeviceRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UnbindMfaDevice`
         """
@@ -58,7 +56,6 @@ class DeleteBindingDeviceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteBindingDeviceRequest.
-
 
         :param body: The body of this DeleteBindingDeviceRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UnbindMfaDevice`

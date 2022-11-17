@@ -17,7 +17,6 @@ class ShowTrackerConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowTrackerConfigResponse(SdkResponse):
     def channel(self):
         """Gets the channel of this ShowTrackerConfigResponse.
 
-
         :return: The channel of this ShowTrackerConfigResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
         """
@@ -72,7 +70,6 @@ class ShowTrackerConfigResponse(SdkResponse):
     @channel.setter
     def channel(self, channel):
         """Sets the channel of this ShowTrackerConfigResponse.
-
 
         :param channel: The channel of this ShowTrackerConfigResponse.
         :type channel: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
@@ -83,7 +80,6 @@ class ShowTrackerConfigResponse(SdkResponse):
     def selector(self):
         """Gets the selector of this ShowTrackerConfigResponse.
 
-
         :return: The selector of this ShowTrackerConfigResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
         """
@@ -92,7 +88,6 @@ class ShowTrackerConfigResponse(SdkResponse):
     @selector.setter
     def selector(self, selector):
         """Sets the selector of this ShowTrackerConfigResponse.
-
 
         :param selector: The selector of this ShowTrackerConfigResponse.
         :type selector: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`

@@ -17,7 +17,6 @@ class SpecificCommitInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -404,7 +403,6 @@ class SpecificCommitInfo:
     def stats(self):
         """Gets the stats of this SpecificCommitInfo.
 
-
         :return: The stats of this SpecificCommitInfo.
         :rtype: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfoStats`
         """
@@ -413,7 +411,6 @@ class SpecificCommitInfo:
     @stats.setter
     def stats(self, stats):
         """Sets the stats of this SpecificCommitInfo.
-
 
         :param stats: The stats of this SpecificCommitInfo.
         :type stats: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfoStats`
@@ -424,7 +421,6 @@ class SpecificCommitInfo:
     def last_pipeline(self):
         """Gets the last_pipeline of this SpecificCommitInfo.
 
-
         :return: The last_pipeline of this SpecificCommitInfo.
         :rtype: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfoLastPipeline`
         """
@@ -433,7 +429,6 @@ class SpecificCommitInfo:
     @last_pipeline.setter
     def last_pipeline(self, last_pipeline):
         """Sets the last_pipeline of this SpecificCommitInfo.
-
 
         :param last_pipeline: The last_pipeline of this SpecificCommitInfo.
         :type last_pipeline: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfoLastPipeline`

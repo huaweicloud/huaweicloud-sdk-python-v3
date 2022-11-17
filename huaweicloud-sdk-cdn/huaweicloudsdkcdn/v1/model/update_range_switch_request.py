@@ -17,7 +17,6 @@ class UpdateRangeSwitchRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateRangeSwitchRequest:
     def body(self):
         """Gets the body of this UpdateRangeSwitchRequest.
 
-
         :return: The body of this UpdateRangeSwitchRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.RangeStatusRequest`
         """
@@ -115,7 +113,6 @@ class UpdateRangeSwitchRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateRangeSwitchRequest.
-
 
         :param body: The body of this UpdateRangeSwitchRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.RangeStatusRequest`

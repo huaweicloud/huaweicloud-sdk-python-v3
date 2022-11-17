@@ -17,7 +17,6 @@ class GetJobInfoResponseBodyJob:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -232,7 +231,6 @@ class GetJobInfoResponseBodyJob:
     def instance(self):
         """Gets the instance of this GetJobInfoResponseBodyJob.
 
-
         :return: The instance of this GetJobInfoResponseBodyJob.
         :rtype: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobsInstance`
         """
@@ -241,7 +239,6 @@ class GetJobInfoResponseBodyJob:
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this GetJobInfoResponseBodyJob.
-
 
         :param instance: The instance of this GetJobInfoResponseBodyJob.
         :type instance: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobsInstance`

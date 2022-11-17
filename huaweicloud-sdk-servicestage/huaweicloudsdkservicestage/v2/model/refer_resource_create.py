@@ -17,7 +17,6 @@ class ReferResourceCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -90,7 +89,6 @@ class ReferResourceCreate:
     def type(self):
         """Gets the type of this ReferResourceCreate.
 
-
         :return: The type of this ReferResourceCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ResourceType`
         """
@@ -99,7 +97,6 @@ class ReferResourceCreate:
     @type.setter
     def type(self, type):
         """Sets the type of this ReferResourceCreate.
-
 
         :param type: The type of this ReferResourceCreate.
         :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`

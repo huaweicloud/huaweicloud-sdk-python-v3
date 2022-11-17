@@ -17,7 +17,6 @@ class AddSshKeyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class AddSshKeyRequest:
     def body(self):
         """Gets the body of this AddSshKeyRequest.
 
-
         :return: The body of this AddSshKeyRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddSshKeyRequestBody`
         """
@@ -58,7 +56,6 @@ class AddSshKeyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddSshKeyRequest.
-
 
         :param body: The body of this AddSshKeyRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.AddSshKeyRequestBody`

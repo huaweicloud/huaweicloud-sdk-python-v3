@@ -17,7 +17,6 @@ class BatchResetPasswordResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class BatchResetPasswordResponse(SdkResponse):
     def results(self):
         """Gets the results of this BatchResetPasswordResponse.
 
-
         :return: The results of this BatchResetPasswordResponse.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.ModifyDbPwdResp`]
         """
@@ -65,7 +63,6 @@ class BatchResetPasswordResponse(SdkResponse):
     @results.setter
     def results(self, results):
         """Sets the results of this BatchResetPasswordResponse.
-
 
         :param results: The results of this BatchResetPasswordResponse.
         :type results: list[:class:`huaweicloudsdkdrs.v3.ModifyDbPwdResp`]

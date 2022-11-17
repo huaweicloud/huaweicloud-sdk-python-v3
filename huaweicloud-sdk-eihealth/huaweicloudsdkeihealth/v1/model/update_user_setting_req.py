@@ -17,7 +17,6 @@ class UpdateUserSettingReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class UpdateUserSettingReq:
     def operation(self):
         """Gets the operation of this UpdateUserSettingReq.
 
-
         :return: The operation of this UpdateUserSettingReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.Operation`
         """
@@ -63,7 +61,6 @@ class UpdateUserSettingReq:
     @operation.setter
     def operation(self, operation):
         """Sets the operation of this UpdateUserSettingReq.
-
 
         :param operation: The operation of this UpdateUserSettingReq.
         :type operation: :class:`huaweicloudsdkeihealth.v1.Operation`
@@ -74,7 +71,6 @@ class UpdateUserSettingReq:
     def settings(self):
         """Gets the settings of this UpdateUserSettingReq.
 
-
         :return: The settings of this UpdateUserSettingReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`
         """
@@ -83,7 +79,6 @@ class UpdateUserSettingReq:
     @settings.setter
     def settings(self, settings):
         """Sets the settings of this UpdateUserSettingReq.
-
 
         :param settings: The settings of this UpdateUserSettingReq.
         :type settings: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`

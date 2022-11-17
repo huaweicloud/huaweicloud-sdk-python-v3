@@ -17,7 +17,6 @@ class IefFlinkJobMessagesReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class IefFlinkJobMessagesReq:
     def state(self):
         """Gets the state of this IefFlinkJobMessagesReq.
 
-
         :return: The state of this IefFlinkJobMessagesReq.
         :rtype: :class:`huaweicloudsdkdli.v1.State`
         """
@@ -86,7 +84,6 @@ class IefFlinkJobMessagesReq:
     @state.setter
     def state(self, state):
         """Sets the state of this IefFlinkJobMessagesReq.
-
 
         :param state: The state of this IefFlinkJobMessagesReq.
         :type state: :class:`huaweicloudsdkdli.v1.State`

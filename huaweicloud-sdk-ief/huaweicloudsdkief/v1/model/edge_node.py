@@ -17,7 +17,6 @@ class EdgeNode:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -338,7 +337,6 @@ class EdgeNode:
     def mqtt_config(self):
         """Gets the mqtt_config of this EdgeNode.
 
-
         :return: The mqtt_config of this EdgeNode.
         :rtype: :class:`huaweicloudsdkief.v1.MqttConfigs`
         """
@@ -347,7 +345,6 @@ class EdgeNode:
     @mqtt_config.setter
     def mqtt_config(self, mqtt_config):
         """Sets the mqtt_config of this EdgeNode.
-
 
         :param mqtt_config: The mqtt_config of this EdgeNode.
         :type mqtt_config: :class:`huaweicloudsdkief.v1.MqttConfigs`

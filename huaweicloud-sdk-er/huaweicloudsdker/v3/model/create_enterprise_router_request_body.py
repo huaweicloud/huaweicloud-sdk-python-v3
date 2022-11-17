@@ -17,7 +17,6 @@ class CreateEnterpriseRouterRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateEnterpriseRouterRequestBody:
     def instance(self):
         """Gets the instance of this CreateEnterpriseRouterRequestBody.
 
-
         :return: The instance of this CreateEnterpriseRouterRequestBody.
         :rtype: :class:`huaweicloudsdker.v3.CreateEnterpriseRouter`
         """
@@ -57,7 +55,6 @@ class CreateEnterpriseRouterRequestBody:
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this CreateEnterpriseRouterRequestBody.
-
 
         :param instance: The instance of this CreateEnterpriseRouterRequestBody.
         :type instance: :class:`huaweicloudsdker.v3.CreateEnterpriseRouter`

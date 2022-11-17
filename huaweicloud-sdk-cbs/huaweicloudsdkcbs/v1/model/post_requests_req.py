@@ -17,7 +17,6 @@ class PostRequestsReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -83,7 +82,6 @@ class PostRequestsReq:
     def extends(self):
         """Gets the extends of this PostRequestsReq.
 
-
         :return: The extends of this PostRequestsReq.
         :rtype: :class:`huaweicloudsdkcbs.v1.Extends`
         """
@@ -92,7 +90,6 @@ class PostRequestsReq:
     @extends.setter
     def extends(self, extends):
         """Sets the extends of this PostRequestsReq.
-
 
         :param extends: The extends of this PostRequestsReq.
         :type extends: :class:`huaweicloudsdkcbs.v1.Extends`

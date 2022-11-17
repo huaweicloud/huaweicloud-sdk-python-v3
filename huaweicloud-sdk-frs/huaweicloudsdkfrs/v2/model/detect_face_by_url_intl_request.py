@@ -17,7 +17,6 @@ class DetectFaceByUrlIntlRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DetectFaceByUrlIntlRequest:
     def body(self):
         """Gets the body of this DetectFaceByUrlIntlRequest.
 
-
         :return: The body of this DetectFaceByUrlIntlRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.FaceDetectUrlReq`
         """
@@ -58,7 +56,6 @@ class DetectFaceByUrlIntlRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DetectFaceByUrlIntlRequest.
-
 
         :param body: The body of this DetectFaceByUrlIntlRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.FaceDetectUrlReq`

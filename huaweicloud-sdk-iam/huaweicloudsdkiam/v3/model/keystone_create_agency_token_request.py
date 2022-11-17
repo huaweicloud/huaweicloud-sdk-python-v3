@@ -17,7 +17,6 @@ class KeystoneCreateAgencyTokenRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class KeystoneCreateAgencyTokenRequest:
     def body(self):
         """Gets the body of this KeystoneCreateAgencyTokenRequest.
 
-
         :return: The body of this KeystoneCreateAgencyTokenRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequestBody`
         """
@@ -87,7 +85,6 @@ class KeystoneCreateAgencyTokenRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this KeystoneCreateAgencyTokenRequest.
-
 
         :param body: The body of this KeystoneCreateAgencyTokenRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequestBody`

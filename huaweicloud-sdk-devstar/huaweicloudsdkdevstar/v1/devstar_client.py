@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DevStarClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class DevStarClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -110,6 +106,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationReleaseRepositoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -136,6 +133,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -170,6 +169,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationResDeleteStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -196,6 +196,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -234,6 +236,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationDependentResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -260,6 +263,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -294,6 +299,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationV3Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -322,6 +328,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -358,6 +366,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -384,6 +393,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -420,6 +431,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -447,6 +459,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -501,6 +515,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApplicationsV6Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -527,6 +542,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -561,6 +578,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadApplicationCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -587,6 +605,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -625,6 +645,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmDeploymentJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -654,6 +675,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -692,6 +715,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeploymentJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -718,6 +742,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -754,6 +780,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeploymentJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -789,6 +816,8 @@ class DevStarClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -822,6 +851,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunCodehubTemplateJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -857,6 +887,8 @@ class DevStarClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -890,6 +922,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDevstarTemplateJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -926,6 +959,8 @@ class DevStarClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -959,6 +994,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -985,6 +1021,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1023,6 +1061,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPipelineTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1049,6 +1088,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1083,6 +1124,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPipelineLastStatusV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1109,6 +1151,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1143,6 +1187,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartPipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1170,6 +1215,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1208,6 +1255,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1238,6 +1286,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1276,6 +1326,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRepositoryDuplicateNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1304,6 +1355,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1348,6 +1401,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryByCloudIdeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1374,6 +1428,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1408,6 +1464,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryStatisticalDataV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1434,6 +1491,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1472,6 +1531,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1498,6 +1558,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1532,6 +1594,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateViewHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1558,6 +1621,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1596,6 +1661,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPublishedTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1622,6 +1688,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1656,6 +1724,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateViewHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1682,6 +1751,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1716,6 +1787,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1742,6 +1814,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1778,6 +1852,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1804,6 +1879,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1838,6 +1915,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateV3Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1864,6 +1942,8 @@ class DevStarClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1898,6 +1978,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1905,7 +1986,7 @@ class DevStarClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1915,9 +1996,10 @@ class DevStarClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1934,6 +2016,7 @@ class DevStarClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

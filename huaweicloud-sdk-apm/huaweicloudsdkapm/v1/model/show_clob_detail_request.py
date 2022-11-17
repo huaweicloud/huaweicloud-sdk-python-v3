@@ -17,7 +17,6 @@ class ShowClobDetailRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowClobDetailRequest:
     def body(self):
         """Gets the body of this ShowClobDetailRequest.
 
-
         :return: The body of this ShowClobDetailRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.GetClobDetailParam`
         """
@@ -86,7 +84,6 @@ class ShowClobDetailRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowClobDetailRequest.
-
 
         :param body: The body of this ShowClobDetailRequest.
         :type body: :class:`huaweicloudsdkapm.v1.GetClobDetailParam`

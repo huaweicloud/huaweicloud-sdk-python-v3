@@ -17,7 +17,6 @@ class CreateEncryptReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class CreateEncryptReq:
     def input(self):
         """Gets the input of this CreateEncryptReq.
 
-
         :return: The input of this CreateEncryptReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -79,7 +77,6 @@ class CreateEncryptReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateEncryptReq.
-
 
         :param input: The input of this CreateEncryptReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -90,7 +87,6 @@ class CreateEncryptReq:
     def output(self):
         """Gets the output of this CreateEncryptReq.
 
-
         :return: The output of this CreateEncryptReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -99,7 +95,6 @@ class CreateEncryptReq:
     @output.setter
     def output(self, output):
         """Sets the output of this CreateEncryptReq.
-
 
         :param output: The output of this CreateEncryptReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -110,7 +105,6 @@ class CreateEncryptReq:
     def encryption(self):
         """Gets the encryption of this CreateEncryptReq.
 
-
         :return: The encryption of this CreateEncryptReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Encryption`
         """
@@ -119,7 +113,6 @@ class CreateEncryptReq:
     @encryption.setter
     def encryption(self, encryption):
         """Sets the encryption of this CreateEncryptReq.
-
 
         :param encryption: The encryption of this CreateEncryptReq.
         :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`

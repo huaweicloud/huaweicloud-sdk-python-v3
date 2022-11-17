@@ -17,7 +17,6 @@ class PostPaidServerDataVolume:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -220,7 +219,6 @@ class PostPaidServerDataVolume:
     def extendparam(self):
         """Gets the extendparam of this PostPaidServerDataVolume.
 
-
         :return: The extendparam of this PostPaidServerDataVolume.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeExtendParam`
         """
@@ -229,7 +227,6 @@ class PostPaidServerDataVolume:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this PostPaidServerDataVolume.
-
 
         :param extendparam: The extendparam of this PostPaidServerDataVolume.
         :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeExtendParam`
@@ -284,7 +281,6 @@ class PostPaidServerDataVolume:
     def metadata(self):
         """Gets the metadata of this PostPaidServerDataVolume.
 
-
         :return: The metadata of this PostPaidServerDataVolume.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeMetadata`
         """
@@ -293,7 +289,6 @@ class PostPaidServerDataVolume:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this PostPaidServerDataVolume.
-
 
         :param metadata: The metadata of this PostPaidServerDataVolume.
         :type metadata: :class:`huaweicloudsdkecs.v2.PostPaidServerDataVolumeMetadata`

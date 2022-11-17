@@ -17,7 +17,6 @@ class SetRecyclePolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class SetRecyclePolicyRequest:
     def body(self):
         """Gets the body of this SetRecyclePolicyRequest.
 
-
         :return: The body of this SetRecyclePolicyRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.RecyclePolicyRequestBody`
         """
@@ -58,7 +56,6 @@ class SetRecyclePolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetRecyclePolicyRequest.
-
 
         :param body: The body of this SetRecyclePolicyRequest.
         :type body: :class:`huaweicloudsdkdds.v3.RecyclePolicyRequestBody`

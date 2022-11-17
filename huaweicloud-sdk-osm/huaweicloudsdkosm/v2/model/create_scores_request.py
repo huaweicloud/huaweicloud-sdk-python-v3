@@ -17,7 +17,6 @@ class CreateScoresRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class CreateScoresRequest:
     def body(self):
         """Gets the body of this CreateScoresRequest.
 
-
         :return: The body of this CreateScoresRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.CreateScoreV2Req`
         """
@@ -173,7 +171,6 @@ class CreateScoresRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateScoresRequest.
-
 
         :param body: The body of this CreateScoresRequest.
         :type body: :class:`huaweicloudsdkosm.v2.CreateScoreV2Req`

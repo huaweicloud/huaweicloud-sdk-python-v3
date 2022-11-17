@@ -17,7 +17,6 @@ class CreateImageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateImageRequest:
     def body(self):
         """Gets the body of this CreateImageRequest.
 
-
         :return: The body of this CreateImageRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateImageReq`
         """
@@ -86,7 +84,6 @@ class CreateImageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateImageRequest.
-
 
         :param body: The body of this CreateImageRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateImageReq`

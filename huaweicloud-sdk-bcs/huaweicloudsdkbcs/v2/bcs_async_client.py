@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class BcsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddPeersToChannel
         :type request: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelResponse`
@@ -68,6 +63,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddPeersToChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateChannels
         :type request: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsResponse`
@@ -128,6 +127,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateChannelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchInviteMembersToChannel
         :type request: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelResponse`
@@ -188,6 +191,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -220,6 +225,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchInviteMembersToChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -234,6 +240,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRemoveOrgsFromChannel
         :type request: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelResponse`
@@ -246,6 +253,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRemoveOrgsFromChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRemovePeersFromChannel
         :type request: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelResponse`
@@ -308,6 +319,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +357,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRemovePeersFromChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +372,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateBlockchainCertByUserName
         :type request: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameResponse`
@@ -370,6 +385,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -408,6 +425,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBlockchainCertByUserNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -422,6 +440,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNewBlockchain
         :type request: :class:`huaweicloudsdkbcs.v2.CreateNewBlockchainRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateNewBlockchainResponse`
@@ -434,6 +453,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -466,6 +487,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNewBlockchainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -480,6 +502,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBlockchain
         :type request: :class:`huaweicloudsdkbcs.v2.DeleteBlockchainRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteBlockchainResponse`
@@ -492,6 +515,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -536,6 +561,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBlockchainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -550,6 +576,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteChannel
         :type request: :class:`huaweicloudsdkbcs.v2.DeleteChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteChannelResponse`
@@ -562,6 +589,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -596,6 +625,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -610,6 +640,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMemberInvite
         :type request: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteResponse`
@@ -622,6 +653,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -654,6 +687,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMemberInviteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -668,6 +702,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadBlockchainCert
         :type request: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainCertRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainCertResponse`
@@ -680,6 +715,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -716,6 +753,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadBlockchainCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -730,6 +768,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadBlockchainSdkConfig
         :type request: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainSdkConfigRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainSdkConfigResponse`
@@ -742,6 +781,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -776,6 +817,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadBlockchainSdkConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -790,6 +832,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for FreezeCert
         :type request: :class:`huaweicloudsdkbcs.v2.FreezeCertRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.FreezeCertResponse`
@@ -802,6 +845,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -842,6 +887,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='FreezeCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -856,6 +902,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for HandleNotification
         :type request: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationResponse`
@@ -868,6 +915,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -900,6 +949,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='HandleNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -914,6 +964,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for HandleUnionMemberQuitList
         :type request: :class:`huaweicloudsdkbcs.v2.HandleUnionMemberQuitListRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleUnionMemberQuitListResponse`
@@ -926,6 +977,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -958,6 +1011,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='HandleUnionMemberQuitListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -972,6 +1026,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBcsMetric
         :type request: :class:`huaweicloudsdkbcs.v2.ListBcsMetricRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsMetricResponse`
@@ -984,6 +1039,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1018,6 +1075,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBcsMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1032,6 +1090,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBlockchainChannels
         :type request: :class:`huaweicloudsdkbcs.v2.ListBlockchainChannelsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBlockchainChannelsResponse`
@@ -1044,6 +1103,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1076,6 +1137,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBlockchainChannelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1090,6 +1152,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBlockchains
         :type request: :class:`huaweicloudsdkbcs.v2.ListBlockchainsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBlockchainsResponse`
@@ -1102,6 +1165,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1132,6 +1197,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBlockchainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1146,6 +1212,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEntityMetric
         :type request: :class:`huaweicloudsdkbcs.v2.ListEntityMetricRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListEntityMetricResponse`
@@ -1158,6 +1225,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1192,6 +1261,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEntityMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1206,6 +1276,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstanceMetric
         :type request: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricResponse`
@@ -1218,6 +1289,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1252,6 +1325,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1266,6 +1340,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMembers
         :type request: :class:`huaweicloudsdkbcs.v2.ListMembersRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListMembersResponse`
@@ -1278,6 +1353,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1308,6 +1385,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1322,6 +1400,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNotifications
         :type request: :class:`huaweicloudsdkbcs.v2.ListNotificationsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListNotificationsResponse`
@@ -1334,6 +1413,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1364,6 +1445,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotificationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1378,6 +1460,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOpRecord
         :type request: :class:`huaweicloudsdkbcs.v2.ListOpRecordRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListOpRecordResponse`
@@ -1390,6 +1473,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1430,6 +1515,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOpRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1444,6 +1530,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkbcs.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListQuotasResponse`
@@ -1456,6 +1543,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1486,6 +1575,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1500,6 +1590,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBlockchainDetail
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainDetailRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainDetailResponse`
@@ -1512,6 +1603,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1544,6 +1637,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBlockchainDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1558,6 +1652,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBlockchainFlavors
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainFlavorsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainFlavorsResponse`
@@ -1570,6 +1665,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1604,6 +1701,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBlockchainFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1618,6 +1716,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBlockchainNodes
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainNodesRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainNodesResponse`
@@ -1630,6 +1729,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1662,6 +1763,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBlockchainNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1676,6 +1778,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBlockchainStatus
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainStatusRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainStatusResponse`
@@ -1688,6 +1791,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1720,6 +1825,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBlockchainStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1734,6 +1840,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UnfreezeCert
         :type request: :class:`huaweicloudsdkbcs.v2.UnfreezeCertRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.UnfreezeCertResponse`
@@ -1746,6 +1853,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1786,6 +1895,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnfreezeCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1800,6 +1910,7 @@ class BcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkbcs.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.UpdateInstanceResponse`
@@ -1812,6 +1923,8 @@ class BcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1846,6 +1959,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1853,7 +1967,7 @@ class BcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1864,9 +1978,10 @@ class BcsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1883,6 +1998,7 @@ class BcsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class CreateTopicRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateTopicRequest:
     def body(self):
         """Gets the body of this CreateTopicRequest.
 
-
         :return: The body of this CreateTopicRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.CreateTopicRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateTopicRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTopicRequest.
-
 
         :param body: The body of this CreateTopicRequest.
         :type body: :class:`huaweicloudsdksmn.v2.CreateTopicRequestBody`

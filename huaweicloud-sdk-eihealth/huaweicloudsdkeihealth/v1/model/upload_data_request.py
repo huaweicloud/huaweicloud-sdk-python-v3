@@ -17,7 +17,6 @@ class UploadDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -251,7 +250,6 @@ class UploadDataRequest:
     def body(self):
         """Gets the body of this UploadDataRequest.
 
-
         :return: The body of this UploadDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UploadDataRequestBody`
         """
@@ -260,7 +258,6 @@ class UploadDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UploadDataRequest.
-
 
         :param body: The body of this UploadDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UploadDataRequestBody`

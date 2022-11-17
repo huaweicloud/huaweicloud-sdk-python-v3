@@ -17,7 +17,6 @@ class InstanceConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -279,7 +278,6 @@ class InstanceConfig:
     def public_ip(self):
         """Gets the public_ip of this InstanceConfig.
 
-
         :return: The public_ip of this InstanceConfig.
         :rtype: :class:`huaweicloudsdkas.v1.PublicIp`
         """
@@ -288,7 +286,6 @@ class InstanceConfig:
     @public_ip.setter
     def public_ip(self, public_ip):
         """Sets the public_ip of this InstanceConfig.
-
 
         :param public_ip: The public_ip of this InstanceConfig.
         :type public_ip: :class:`huaweicloudsdkas.v1.PublicIp`
@@ -321,7 +318,6 @@ class InstanceConfig:
     def metadata(self):
         """Gets the metadata of this InstanceConfig.
 
-
         :return: The metadata of this InstanceConfig.
         :rtype: :class:`huaweicloudsdkas.v1.VmMetaData`
         """
@@ -330,7 +326,6 @@ class InstanceConfig:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this InstanceConfig.
-
 
         :param metadata: The metadata of this InstanceConfig.
         :type metadata: :class:`huaweicloudsdkas.v1.VmMetaData`

@@ -17,7 +17,6 @@ class ReplicationRecordGet:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -271,7 +270,6 @@ class ReplicationRecordGet:
     def extra_info(self):
         """Gets the extra_info of this ReplicationRecordGet.
 
-
         :return: The extra_info of this ReplicationRecordGet.
         :rtype: :class:`huaweicloudsdkcbr.v1.ReplicationRecordsExtraInfo`
         """
@@ -280,7 +278,6 @@ class ReplicationRecordGet:
     @extra_info.setter
     def extra_info(self, extra_info):
         """Sets the extra_info of this ReplicationRecordGet.
-
 
         :param extra_info: The extra_info of this ReplicationRecordGet.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.ReplicationRecordsExtraInfo`

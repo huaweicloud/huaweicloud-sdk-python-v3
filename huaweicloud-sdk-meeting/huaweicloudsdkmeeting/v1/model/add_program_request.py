@@ -17,7 +17,6 @@ class AddProgramRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class AddProgramRequest:
     def body(self):
         """Gets the body of this AddProgramRequest.
 
-
         :return: The body of this AddProgramRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateProgramRequestDTO`
         """
@@ -116,7 +114,6 @@ class AddProgramRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddProgramRequest.
-
 
         :param body: The body of this AddProgramRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.CreateProgramRequestDTO`

@@ -17,7 +17,6 @@ class AssociateSubnetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AssociateSubnetRequest:
     def body(self):
         """Gets the body of this AssociateSubnetRequest.
 
-
         :return: The body of this AssociateSubnetRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.AssociateSubnetRequestBody`
         """
@@ -86,7 +84,6 @@ class AssociateSubnetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AssociateSubnetRequest.
-
 
         :param body: The body of this AssociateSubnetRequest.
         :type body: :class:`huaweicloudsdkiec.v1.AssociateSubnetRequestBody`

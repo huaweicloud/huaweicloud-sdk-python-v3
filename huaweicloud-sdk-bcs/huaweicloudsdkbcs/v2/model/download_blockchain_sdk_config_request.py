@@ -17,7 +17,6 @@ class DownloadBlockchainSdkConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DownloadBlockchainSdkConfigRequest:
     def body(self):
         """Gets the body of this DownloadBlockchainSdkConfigRequest.
 
-
         :return: The body of this DownloadBlockchainSdkConfigRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.CfgRequestBody`
         """
@@ -86,7 +84,6 @@ class DownloadBlockchainSdkConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DownloadBlockchainSdkConfigRequest.
-
 
         :param body: The body of this DownloadBlockchainSdkConfigRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.CfgRequestBody`

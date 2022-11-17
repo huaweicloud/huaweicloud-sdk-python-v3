@@ -17,7 +17,6 @@ class ShowWorkFlowResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -252,7 +251,6 @@ class ShowWorkFlowResponse(SdkResponse):
     def definition(self):
         """Gets the definition of this ShowWorkFlowResponse.
 
-
         :return: The definition of this ShowWorkFlowResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
@@ -261,7 +259,6 @@ class ShowWorkFlowResponse(SdkResponse):
     @definition.setter
     def definition(self, definition):
         """Sets the definition of this ShowWorkFlowResponse.
-
 
         :param definition: The definition of this ShowWorkFlowResponse.
         :type definition: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`

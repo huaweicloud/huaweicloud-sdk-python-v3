@@ -17,7 +17,6 @@ class DeviceShadowData:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -91,7 +90,6 @@ class DeviceShadowData:
     def desired(self):
         """Gets the desired of this DeviceShadowData.
 
-
         :return: The desired of this DeviceShadowData.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
         """
@@ -100,7 +98,6 @@ class DeviceShadowData:
     @desired.setter
     def desired(self, desired):
         """Sets the desired of this DeviceShadowData.
-
 
         :param desired: The desired of this DeviceShadowData.
         :type desired: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
@@ -111,7 +108,6 @@ class DeviceShadowData:
     def reported(self):
         """Gets the reported of this DeviceShadowData.
 
-
         :return: The reported of this DeviceShadowData.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
         """
@@ -120,7 +116,6 @@ class DeviceShadowData:
     @reported.setter
     def reported(self, reported):
         """Sets the reported of this DeviceShadowData.
-
 
         :param reported: The reported of this DeviceShadowData.
         :type reported: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`

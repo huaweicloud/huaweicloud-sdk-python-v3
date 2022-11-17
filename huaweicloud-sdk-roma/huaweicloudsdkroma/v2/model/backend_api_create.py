@@ -17,7 +17,6 @@ class BackendApiCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -342,7 +341,6 @@ class BackendApiCreate:
     def vpc_channel_info(self):
         """Gets the vpc_channel_info of this BackendApiCreate.
 
-
         :return: The vpc_channel_info of this BackendApiCreate.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcInfo`
         """
@@ -351,7 +349,6 @@ class BackendApiCreate:
     @vpc_channel_info.setter
     def vpc_channel_info(self, vpc_channel_info):
         """Sets the vpc_channel_info of this BackendApiCreate.
-
 
         :param vpc_channel_info: The vpc_channel_info of this BackendApiCreate.
         :type vpc_channel_info: :class:`huaweicloudsdkroma.v2.VpcInfo`

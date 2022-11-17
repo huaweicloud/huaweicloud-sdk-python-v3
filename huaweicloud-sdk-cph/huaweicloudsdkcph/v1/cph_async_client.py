@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CphAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchExportCloudPhoneData
         :type request: :class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataResponse`
@@ -68,6 +63,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchExportCloudPhoneDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchImportCloudPhoneData
         :type request: :class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataResponse`
@@ -126,6 +125,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchImportCloudPhoneDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchMigrateCloudPhone
         :type request: :class:`huaweicloudsdkcph.v1.BatchMigrateCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchMigrateCloudPhoneResponse`
@@ -184,6 +187,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +221,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchMigrateCloudPhoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -230,6 +236,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeCloudPhoneServerModel
         :type request: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelResponse`
@@ -242,6 +249,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -274,6 +283,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeCloudPhoneServerModelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -288,6 +298,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCloudPhoneServer
         :type request: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneServerResponse`
@@ -300,6 +311,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -332,6 +345,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCloudPhoneServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -346,6 +360,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNet2CloudPhoneServer
         :type request: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerResponse`
@@ -358,6 +373,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -390,6 +407,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNet2CloudPhoneServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -404,6 +422,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteShareApps
         :type request: :class:`huaweicloudsdkcph.v1.DeleteShareAppsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareAppsResponse`
@@ -416,6 +435,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -448,6 +469,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteShareAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -462,6 +484,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteShareFiles
         :type request: :class:`huaweicloudsdkcph.v1.DeleteShareFilesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareFilesResponse`
@@ -474,6 +497,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +531,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteShareFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -520,6 +546,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportTraffic
         :type request: :class:`huaweicloudsdkcph.v1.ImportTrafficRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ImportTrafficResponse`
@@ -532,6 +559,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -564,6 +593,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportTrafficResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -578,6 +608,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCloudPhoneImages
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesResponse`
@@ -590,6 +621,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -620,6 +653,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhoneImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -634,6 +668,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCloudPhoneModels
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneModelsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneModelsResponse`
@@ -646,6 +681,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -676,6 +713,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhoneModelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -690,6 +728,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCloudPhoneServerModels
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServerModelsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServerModelsResponse`
@@ -702,6 +741,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -734,6 +775,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhoneServerModelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -748,6 +790,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCloudPhoneServers
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServersRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServersResponse`
@@ -760,6 +803,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -800,6 +845,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhoneServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -814,6 +860,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCloudPhones
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhonesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhonesResponse`
@@ -826,6 +873,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -868,6 +917,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCloudPhonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -882,6 +932,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEncodeServers
         :type request: :class:`huaweicloudsdkcph.v1.ListEncodeServersRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListEncodeServersResponse`
@@ -894,6 +945,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -934,6 +987,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEncodeServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -948,6 +1002,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListJobs
         :type request: :class:`huaweicloudsdkcph.v1.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListJobsResponse`
@@ -960,6 +1015,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -994,6 +1051,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1008,6 +1066,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListShareFiles
         :type request: :class:`huaweicloudsdkcph.v1.ListShareFilesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListShareFilesResponse`
@@ -1020,6 +1079,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1058,6 +1119,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListShareFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1072,6 +1134,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PushShareApps
         :type request: :class:`huaweicloudsdkcph.v1.PushShareAppsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.PushShareAppsResponse`
@@ -1084,6 +1147,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1116,6 +1181,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PushShareAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1130,6 +1196,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PushShareFiles
         :type request: :class:`huaweicloudsdkcph.v1.PushShareFilesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.PushShareFilesResponse`
@@ -1142,6 +1209,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1174,6 +1243,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PushShareFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1188,6 +1258,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetCloudPhone
         :type request: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneResponse`
@@ -1200,6 +1271,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1232,6 +1305,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetCloudPhoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1246,6 +1320,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartCloudPhone
         :type request: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneResponse`
@@ -1258,6 +1333,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1290,6 +1367,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartCloudPhoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1304,6 +1382,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartCloudPhoneServer
         :type request: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneServerResponse`
@@ -1316,6 +1395,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1348,6 +1429,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartCloudPhoneServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1362,6 +1444,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartEncodeServer
         :type request: :class:`huaweicloudsdkcph.v1.RestartEncodeServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RestartEncodeServerResponse`
@@ -1374,6 +1457,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1406,6 +1491,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartEncodeServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1420,6 +1506,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBandwidthDetail
         :type request: :class:`huaweicloudsdkcph.v1.ShowBandwidthDetailRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowBandwidthDetailResponse`
@@ -1432,6 +1519,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1462,6 +1551,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBandwidthDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1476,6 +1566,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCloudPhoneDetail
         :type request: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponse`
@@ -1488,6 +1579,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1520,6 +1613,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCloudPhoneDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1534,6 +1628,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCloudPhoneServerDetail
         :type request: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponse`
@@ -1546,6 +1641,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1578,6 +1675,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCloudPhoneServerDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1592,6 +1690,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkcph.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowJobResponse`
@@ -1604,6 +1703,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1636,6 +1737,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1650,6 +1752,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopCloudPhone
         :type request: :class:`huaweicloudsdkcph.v1.StopCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.StopCloudPhoneResponse`
@@ -1662,6 +1765,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1694,6 +1799,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopCloudPhoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1708,6 +1814,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateBandwidth
         :type request: :class:`huaweicloudsdkcph.v1.UpdateBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateBandwidthResponse`
@@ -1720,6 +1827,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1754,6 +1863,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBandwidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1768,6 +1878,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCloudPhoneProperty
         :type request: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyResponse`
@@ -1780,6 +1891,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1812,6 +1925,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCloudPhonePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1826,6 +1940,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateKeypair
         :type request: :class:`huaweicloudsdkcph.v1.UpdateKeypairRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateKeypairResponse`
@@ -1838,6 +1953,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1870,6 +1987,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1884,6 +2002,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePhoneName
         :type request: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameResponse`
@@ -1896,6 +2015,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1930,6 +2051,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePhoneNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1944,6 +2066,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateServerName
         :type request: :class:`huaweicloudsdkcph.v1.UpdateServerNameRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateServerNameResponse`
@@ -1956,6 +2079,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1990,6 +2115,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServerNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2004,6 +2130,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunShellCommand
         :type request: :class:`huaweicloudsdkcph.v1.RunShellCommandRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RunShellCommandResponse`
@@ -2016,6 +2143,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2048,6 +2177,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunShellCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2062,6 +2192,7 @@ class CphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunSyncCommand
         :type request: :class:`huaweicloudsdkcph.v1.RunSyncCommandRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RunSyncCommandResponse`
@@ -2074,6 +2205,8 @@ class CphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2106,6 +2239,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSyncCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2113,7 +2247,7 @@ class CphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2124,9 +2258,10 @@ class CphAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2143,6 +2278,7 @@ class CphAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

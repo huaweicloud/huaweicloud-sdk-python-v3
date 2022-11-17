@@ -17,33 +17,39 @@ class ListAuthorizationsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
-        'authorizations': 'list[AuthorizationVO]'
+        'authorizations': 'list[AuthorizationVO]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'authorizations': 'authorizations'
+        'authorizations': 'authorizations',
+        'count': 'count'
     }
 
-    def __init__(self, authorizations=None):
+    def __init__(self, authorizations=None, count=None):
         """ListAuthorizationsResponse
 
         The model defined in huaweicloud sdk
 
         :param authorizations: 授权列表。
         :type authorizations: list[:class:`huaweicloudsdkservicestage.v2.AuthorizationVO`]
+        :param count: 仓库授权数量。
+        :type count: int
         """
         
         super(ListAuthorizationsResponse, self).__init__()
 
         self._authorizations = None
+        self._count = None
         self.discriminator = None
 
         if authorizations is not None:
             self.authorizations = authorizations
+        if count is not None:
+            self.count = count
 
     @property
     def authorizations(self):
@@ -66,6 +72,28 @@ class ListAuthorizationsResponse(SdkResponse):
         :type authorizations: list[:class:`huaweicloudsdkservicestage.v2.AuthorizationVO`]
         """
         self._authorizations = authorizations
+
+    @property
+    def count(self):
+        """Gets the count of this ListAuthorizationsResponse.
+
+        仓库授权数量。
+
+        :return: The count of this ListAuthorizationsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListAuthorizationsResponse.
+
+        仓库授权数量。
+
+        :param count: The count of this ListAuthorizationsResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

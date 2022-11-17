@@ -17,7 +17,6 @@ class ApiCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -405,7 +404,6 @@ class ApiCreate:
     def auth_opt(self):
         """Gets the auth_opt of this ApiCreate.
 
-
         :return: The auth_opt of this ApiCreate.
         :rtype: :class:`huaweicloudsdkapig.v2.AuthOpt`
         """
@@ -414,7 +412,6 @@ class ApiCreate:
     @auth_opt.setter
     def auth_opt(self, auth_opt):
         """Sets the auth_opt of this ApiCreate.
-
 
         :param auth_opt: The auth_opt of this ApiCreate.
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -755,7 +752,6 @@ class ApiCreate:
     def mock_info(self):
         """Gets the mock_info of this ApiCreate.
 
-
         :return: The mock_info of this ApiCreate.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiMockCreate`
         """
@@ -764,7 +760,6 @@ class ApiCreate:
     @mock_info.setter
     def mock_info(self, mock_info):
         """Sets the mock_info of this ApiCreate.
-
 
         :param mock_info: The mock_info of this ApiCreate.
         :type mock_info: :class:`huaweicloudsdkapig.v2.ApiMockCreate`
@@ -775,7 +770,6 @@ class ApiCreate:
     def func_info(self):
         """Gets the func_info of this ApiCreate.
 
-
         :return: The func_info of this ApiCreate.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiFuncCreate`
         """
@@ -784,7 +778,6 @@ class ApiCreate:
     @func_info.setter
     def func_info(self, func_info):
         """Sets the func_info of this ApiCreate.
-
 
         :param func_info: The func_info of this ApiCreate.
         :type func_info: :class:`huaweicloudsdkapig.v2.ApiFuncCreate`
@@ -883,7 +876,6 @@ class ApiCreate:
     def backend_api(self):
         """Gets the backend_api of this ApiCreate.
 
-
         :return: The backend_api of this ApiCreate.
         :rtype: :class:`huaweicloudsdkapig.v2.BackendApiCreate`
         """
@@ -892,7 +884,6 @@ class ApiCreate:
     @backend_api.setter
     def backend_api(self, backend_api):
         """Sets the backend_api of this ApiCreate.
-
 
         :param backend_api: The backend_api of this ApiCreate.
         :type backend_api: :class:`huaweicloudsdkapig.v2.BackendApiCreate`

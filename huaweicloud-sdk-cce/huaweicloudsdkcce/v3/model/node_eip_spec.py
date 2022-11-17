@@ -17,7 +17,6 @@ class NodeEIPSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class NodeEIPSpec:
     def bandwidth(self):
         """Gets the bandwidth of this NodeEIPSpec.
 
-
         :return: The bandwidth of this NodeEIPSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeBandwidth`
         """
@@ -87,7 +85,6 @@ class NodeEIPSpec:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this NodeEIPSpec.
-
 
         :param bandwidth: The bandwidth of this NodeEIPSpec.
         :type bandwidth: :class:`huaweicloudsdkcce.v3.NodeBandwidth`

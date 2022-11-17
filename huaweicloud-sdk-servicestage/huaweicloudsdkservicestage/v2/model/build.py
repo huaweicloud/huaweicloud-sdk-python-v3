@@ -17,11 +17,10 @@ class Build:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
-        'parameters': 'BuildInfoParameters'
+        'parameters': 'BuildParameters'
     }
 
     attribute_map = {
@@ -34,7 +33,7 @@ class Build:
         The model defined in huaweicloud sdk
 
         :param parameters: 
-        :type parameters: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`
+        :type parameters: :class:`huaweicloudsdkservicestage.v2.BuildParameters`
         """
         
         
@@ -49,9 +48,8 @@ class Build:
     def parameters(self):
         """Gets the parameters of this Build.
 
-
         :return: The parameters of this Build.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`
+        :rtype: :class:`huaweicloudsdkservicestage.v2.BuildParameters`
         """
         return self._parameters
 
@@ -59,9 +57,8 @@ class Build:
     def parameters(self, parameters):
         """Sets the parameters of this Build.
 
-
         :param parameters: The parameters of this Build.
-        :type parameters: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`
+        :type parameters: :class:`huaweicloudsdkservicestage.v2.BuildParameters`
         """
         self._parameters = parameters
 

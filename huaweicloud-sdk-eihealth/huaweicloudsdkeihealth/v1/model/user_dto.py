@@ -17,7 +17,6 @@ class UserDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class UserDto:
     def domain(self):
         """Gets the domain of this UserDto.
 
-
         :return: The domain of this UserDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DomainDto`
         """
@@ -72,7 +70,6 @@ class UserDto:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this UserDto.
-
 
         :param domain: The domain of this UserDto.
         :type domain: :class:`huaweicloudsdkeihealth.v1.DomainDto`

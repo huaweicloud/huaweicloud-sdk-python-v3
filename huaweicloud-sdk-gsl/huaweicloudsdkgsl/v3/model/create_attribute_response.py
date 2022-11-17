@@ -17,7 +17,6 @@ class CreateAttributeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAttributeResponse(SdkResponse):
     def body(self):
         """Gets the body of this CreateAttributeResponse.
 
-
         :return: The body of this CreateAttributeResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class CreateAttributeResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAttributeResponse.
-
 
         :param body: The body of this CreateAttributeResponse.
         :type body: str

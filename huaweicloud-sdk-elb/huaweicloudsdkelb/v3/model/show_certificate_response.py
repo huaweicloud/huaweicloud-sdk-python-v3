@@ -17,7 +17,6 @@ class ShowCertificateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowCertificateResponse(SdkResponse):
     def certificate(self):
         """Gets the certificate of this ShowCertificateResponse.
 
-
         :return: The certificate of this ShowCertificateResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.CertificateInfo`
         """
@@ -87,7 +85,6 @@ class ShowCertificateResponse(SdkResponse):
     @certificate.setter
     def certificate(self, certificate):
         """Sets the certificate of this ShowCertificateResponse.
-
 
         :param certificate: The certificate of this ShowCertificateResponse.
         :type certificate: :class:`huaweicloudsdkelb.v3.CertificateInfo`

@@ -17,7 +17,6 @@ class CountDevicesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CountDevicesResponse(SdkResponse):
     def product_templates(self):
         """Gets the product_templates of this CountDevicesResponse.
 
-
         :return: The product_templates of this CountDevicesResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.ProductTemplatesCalculation`
         """
@@ -72,7 +70,6 @@ class CountDevicesResponse(SdkResponse):
     @product_templates.setter
     def product_templates(self, product_templates):
         """Sets the product_templates of this CountDevicesResponse.
-
 
         :param product_templates: The product_templates of this CountDevicesResponse.
         :type product_templates: :class:`huaweicloudsdkroma.v2.ProductTemplatesCalculation`
@@ -83,7 +80,6 @@ class CountDevicesResponse(SdkResponse):
     def products(self):
         """Gets the products of this CountDevicesResponse.
 
-
         :return: The products of this CountDevicesResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.ProductsCalculation`
         """
@@ -92,7 +88,6 @@ class CountDevicesResponse(SdkResponse):
     @products.setter
     def products(self, products):
         """Sets the products of this CountDevicesResponse.
-
 
         :param products: The products of this CountDevicesResponse.
         :type products: :class:`huaweicloudsdkroma.v2.ProductsCalculation`
@@ -103,7 +98,6 @@ class CountDevicesResponse(SdkResponse):
     def devices(self):
         """Gets the devices of this CountDevicesResponse.
 
-
         :return: The devices of this CountDevicesResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.DevicesCalculation`
         """
@@ -112,7 +106,6 @@ class CountDevicesResponse(SdkResponse):
     @devices.setter
     def devices(self, devices):
         """Sets the devices of this CountDevicesResponse.
-
 
         :param devices: The devices of this CountDevicesResponse.
         :type devices: :class:`huaweicloudsdkroma.v2.DevicesCalculation`

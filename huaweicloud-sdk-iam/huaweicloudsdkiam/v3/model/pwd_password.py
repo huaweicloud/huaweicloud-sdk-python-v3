@@ -17,7 +17,6 @@ class PwdPassword:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class PwdPassword:
     def user(self):
         """Gets the user of this PwdPassword.
 
-
         :return: The user of this PwdPassword.
         :rtype: :class:`huaweicloudsdkiam.v3.PwdPasswordUser`
         """
@@ -57,7 +55,6 @@ class PwdPassword:
     @user.setter
     def user(self, user):
         """Sets the user of this PwdPassword.
-
 
         :param user: The user of this PwdPassword.
         :type user: :class:`huaweicloudsdkiam.v3.PwdPasswordUser`

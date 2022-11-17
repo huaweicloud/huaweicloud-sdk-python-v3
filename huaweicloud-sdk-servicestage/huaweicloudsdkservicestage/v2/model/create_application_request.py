@@ -17,7 +17,6 @@ class CreateApplicationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateApplicationRequest:
     def body(self):
         """Gets the body of this CreateApplicationRequest.
 
-
         :return: The body of this CreateApplicationRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ApplicationCreate`
         """
@@ -58,7 +56,6 @@ class CreateApplicationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateApplicationRequest.
-
 
         :param body: The body of this CreateApplicationRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.ApplicationCreate`

@@ -17,7 +17,6 @@ class CreateRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -627,7 +626,6 @@ class CreateRequestBody:
     def cce_cluster_info(self):
         """Gets the cce_cluster_info of this CreateRequestBody.
 
-
         :return: The cce_cluster_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.CCEClusterInfo`
         """
@@ -636,7 +634,6 @@ class CreateRequestBody:
     @cce_cluster_info.setter
     def cce_cluster_info(self, cce_cluster_info):
         """Sets the cce_cluster_info of this CreateRequestBody.
-
 
         :param cce_cluster_info: The cce_cluster_info of this CreateRequestBody.
         :type cce_cluster_info: :class:`huaweicloudsdkbcs.v2.CCEClusterInfo`
@@ -647,7 +644,6 @@ class CreateRequestBody:
     def cce_create_info(self):
         """Gets the cce_create_info of this CreateRequestBody.
 
-
         :return: The cce_create_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.CCECreateInfo`
         """
@@ -656,7 +652,6 @@ class CreateRequestBody:
     @cce_create_info.setter
     def cce_create_info(self, cce_create_info):
         """Sets the cce_create_info of this CreateRequestBody.
-
 
         :param cce_create_info: The cce_create_info of this CreateRequestBody.
         :type cce_create_info: :class:`huaweicloudsdkbcs.v2.CCECreateInfo`
@@ -755,7 +750,6 @@ class CreateRequestBody:
     def couchdb_info(self):
         """Gets the couchdb_info of this CreateRequestBody.
 
-
         :return: The couchdb_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.CouchDb`
         """
@@ -764,7 +758,6 @@ class CreateRequestBody:
     @couchdb_info.setter
     def couchdb_info(self, couchdb_info):
         """Sets the couchdb_info of this CreateRequestBody.
-
 
         :param couchdb_info: The couchdb_info of this CreateRequestBody.
         :type couchdb_info: :class:`huaweicloudsdkbcs.v2.CouchDb`
@@ -775,7 +768,6 @@ class CreateRequestBody:
     def turbo_info(self):
         """Gets the turbo_info of this CreateRequestBody.
 
-
         :return: The turbo_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.TurboInfo`
         """
@@ -784,7 +776,6 @@ class CreateRequestBody:
     @turbo_info.setter
     def turbo_info(self, turbo_info):
         """Sets the turbo_info of this CreateRequestBody.
-
 
         :param turbo_info: The turbo_info of this CreateRequestBody.
         :type turbo_info: :class:`huaweicloudsdkbcs.v2.TurboInfo`
@@ -795,7 +786,6 @@ class CreateRequestBody:
     def block_info(self):
         """Gets the block_info of this CreateRequestBody.
 
-
         :return: The block_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateRequestBodyBlockInfo`
         """
@@ -804,7 +794,6 @@ class CreateRequestBody:
     @block_info.setter
     def block_info(self, block_info):
         """Sets the block_info of this CreateRequestBody.
-
 
         :param block_info: The block_info of this CreateRequestBody.
         :type block_info: :class:`huaweicloudsdkbcs.v2.CreateRequestBodyBlockInfo`
@@ -815,7 +804,6 @@ class CreateRequestBody:
     def kafka_create_info(self):
         """Gets the kafka_create_info of this CreateRequestBody.
 
-
         :return: The kafka_create_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.KafkaCreateInfo`
         """
@@ -824,7 +812,6 @@ class CreateRequestBody:
     @kafka_create_info.setter
     def kafka_create_info(self, kafka_create_info):
         """Sets the kafka_create_info of this CreateRequestBody.
-
 
         :param kafka_create_info: The kafka_create_info of this CreateRequestBody.
         :type kafka_create_info: :class:`huaweicloudsdkbcs.v2.KafkaCreateInfo`
@@ -901,7 +888,6 @@ class CreateRequestBody:
     def invitor_infos(self):
         """Gets the invitor_infos of this CreateRequestBody.
 
-
         :return: The invitor_infos of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.InvitorInfos`
         """
@@ -910,7 +896,6 @@ class CreateRequestBody:
     @invitor_infos.setter
     def invitor_infos(self, invitor_infos):
         """Sets the invitor_infos of this CreateRequestBody.
-
 
         :param invitor_infos: The invitor_infos of this CreateRequestBody.
         :type invitor_infos: :class:`huaweicloudsdkbcs.v2.InvitorInfos`

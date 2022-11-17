@@ -17,7 +17,6 @@ class UpdateEventSchemaRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateEventSchemaRequest:
     def body(self):
         """Gets the body of this UpdateEventSchemaRequest.
 
-
         :return: The body of this UpdateEventSchemaRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.CustomizeSchemaUpdateReq`
         """
@@ -86,7 +84,6 @@ class UpdateEventSchemaRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEventSchemaRequest.
-
 
         :param body: The body of this UpdateEventSchemaRequest.
         :type body: :class:`huaweicloudsdkeg.v1.CustomizeSchemaUpdateReq`

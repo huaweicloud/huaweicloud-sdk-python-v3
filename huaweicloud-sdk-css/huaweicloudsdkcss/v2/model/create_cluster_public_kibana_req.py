@@ -17,7 +17,6 @@ class CreateClusterPublicKibanaReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class CreateClusterPublicKibanaReq:
     def elb_white_list(self):
         """Gets the elb_white_list of this CreateClusterPublicKibanaReq.
 
-
         :return: The elb_white_list of this CreateClusterPublicKibanaReq.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaElbWhiteList`
         """
@@ -85,7 +83,6 @@ class CreateClusterPublicKibanaReq:
     @elb_white_list.setter
     def elb_white_list(self, elb_white_list):
         """Sets the elb_white_list of this CreateClusterPublicKibanaReq.
-
 
         :param elb_white_list: The elb_white_list of this CreateClusterPublicKibanaReq.
         :type elb_white_list: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaElbWhiteList`

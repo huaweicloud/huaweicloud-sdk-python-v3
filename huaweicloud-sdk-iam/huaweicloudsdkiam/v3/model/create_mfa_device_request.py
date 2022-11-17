@@ -17,7 +17,6 @@ class CreateMfaDeviceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateMfaDeviceRequest:
     def body(self):
         """Gets the body of this CreateMfaDeviceRequest.
 
-
         :return: The body of this CreateMfaDeviceRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceReq`
         """
@@ -58,7 +56,6 @@ class CreateMfaDeviceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateMfaDeviceRequest.
-
 
         :param body: The body of this CreateMfaDeviceRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceReq`

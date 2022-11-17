@@ -17,7 +17,6 @@ class ListStacksResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListStacksResponse(SdkResponse):
     def stack(self):
         """Gets the stack of this ListStacksResponse.
 
-
         :return: The stack of this ListStacksResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StacksTags`
         """
@@ -65,7 +63,6 @@ class ListStacksResponse(SdkResponse):
     @stack.setter
     def stack(self, stack):
         """Sets the stack of this ListStacksResponse.
-
 
         :param stack: The stack of this ListStacksResponse.
         :type stack: :class:`huaweicloudsdkcloudide.v2.StacksTags`

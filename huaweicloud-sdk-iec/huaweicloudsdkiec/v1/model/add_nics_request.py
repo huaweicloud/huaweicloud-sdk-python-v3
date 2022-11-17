@@ -17,7 +17,6 @@ class AddNicsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AddNicsRequest:
     def body(self):
         """Gets the body of this AddNicsRequest.
 
-
         :return: The body of this AddNicsRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.AddNicsRequestBody`
         """
@@ -86,7 +84,6 @@ class AddNicsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddNicsRequest.
-
 
         :param body: The body of this AddNicsRequest.
         :type body: :class:`huaweicloudsdkiec.v1.AddNicsRequestBody`

@@ -17,7 +17,6 @@ class DeleteRepositoryResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class DeleteRepositoryResponse(SdkResponse):
     def error(self):
         """Gets the error of this DeleteRepositoryResponse.
 
-
         :return: The error of this DeleteRepositoryResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class DeleteRepositoryResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this DeleteRepositoryResponse.
-
 
         :param error: The error of this DeleteRepositoryResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`

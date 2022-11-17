@@ -17,7 +17,6 @@ class UpdateRecordCallbackResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class UpdateRecordCallbackResponse(SdkResponse):
     def record_callback(self):
         """Gets the record_callback of this UpdateRecordCallbackResponse.
 
-
         :return: The record_callback of this UpdateRecordCallbackResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
         """
@@ -94,7 +92,6 @@ class UpdateRecordCallbackResponse(SdkResponse):
     @record_callback.setter
     def record_callback(self, record_callback):
         """Sets the record_callback of this UpdateRecordCallbackResponse.
-
 
         :param record_callback: The record_callback of this UpdateRecordCallbackResponse.
         :type record_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
@@ -105,7 +102,6 @@ class UpdateRecordCallbackResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this UpdateRecordCallbackResponse.
 
-
         :return: The x_request_id of this UpdateRecordCallbackResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class UpdateRecordCallbackResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this UpdateRecordCallbackResponse.
-
 
         :param x_request_id: The x_request_id of this UpdateRecordCallbackResponse.
         :type x_request_id: str

@@ -17,7 +17,6 @@ class ShowDomainRoleAssignmentsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowDomainRoleAssignmentsResponse(SdkResponse):
     def role_assignments(self):
         """Gets the role_assignments of this ShowDomainRoleAssignmentsResponse.
 
-
         :return: The role_assignments of this ShowDomainRoleAssignmentsResponse.
         :rtype: list[:class:`huaweicloudsdkiam.v3.RoleAssignmentBody`]
         """
@@ -87,7 +85,6 @@ class ShowDomainRoleAssignmentsResponse(SdkResponse):
     @role_assignments.setter
     def role_assignments(self, role_assignments):
         """Sets the role_assignments of this ShowDomainRoleAssignmentsResponse.
-
 
         :param role_assignments: The role_assignments of this ShowDomainRoleAssignmentsResponse.
         :type role_assignments: list[:class:`huaweicloudsdkiam.v3.RoleAssignmentBody`]

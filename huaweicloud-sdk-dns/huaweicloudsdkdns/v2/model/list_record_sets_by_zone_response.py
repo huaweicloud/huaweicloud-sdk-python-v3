@@ -17,7 +17,6 @@ class ListRecordSetsByZoneResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     def links(self):
         """Gets the links of this ListRecordSetsByZoneResponse.
 
-
         :return: The links of this ListRecordSetsByZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -72,7 +70,6 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ListRecordSetsByZoneResponse.
-
 
         :param links: The links of this ListRecordSetsByZoneResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -83,7 +80,6 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     def recordsets(self):
         """Gets the recordsets of this ListRecordSetsByZoneResponse.
 
-
         :return: The recordsets of this ListRecordSetsByZoneResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ListRecordSets`]
         """
@@ -92,7 +88,6 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     @recordsets.setter
     def recordsets(self, recordsets):
         """Sets the recordsets of this ListRecordSetsByZoneResponse.
-
 
         :param recordsets: The recordsets of this ListRecordSetsByZoneResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.ListRecordSets`]
@@ -103,7 +98,6 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ListRecordSetsByZoneResponse.
 
-
         :return: The metadata of this ListRecordSetsByZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
@@ -112,7 +106,6 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ListRecordSetsByZoneResponse.
-
 
         :param metadata: The metadata of this ListRecordSetsByZoneResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`

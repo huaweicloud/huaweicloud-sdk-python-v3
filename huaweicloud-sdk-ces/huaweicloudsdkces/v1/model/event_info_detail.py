@@ -17,7 +17,6 @@ class EventInfoDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -139,7 +138,6 @@ class EventInfoDetail:
     def detail(self):
         """Gets the detail of this EventInfoDetail.
 
-
         :return: The detail of this EventInfoDetail.
         :rtype: :class:`huaweicloudsdkces.v1.EventItemDetail`
         """
@@ -148,7 +146,6 @@ class EventInfoDetail:
     @detail.setter
     def detail(self, detail):
         """Sets the detail of this EventInfoDetail.
-
 
         :param detail: The detail of this EventInfoDetail.
         :type detail: :class:`huaweicloudsdkces.v1.EventItemDetail`

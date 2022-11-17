@@ -17,7 +17,6 @@ class KeystoneUpdateProtocolRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class KeystoneUpdateProtocolRequest:
     def body(self):
         """Gets the body of this KeystoneUpdateProtocolRequest.
 
-
         :return: The body of this KeystoneUpdateProtocolRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequestBody`
         """
@@ -114,7 +112,6 @@ class KeystoneUpdateProtocolRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this KeystoneUpdateProtocolRequest.
-
 
         :param body: The body of this KeystoneUpdateProtocolRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequestBody`

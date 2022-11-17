@@ -17,7 +17,6 @@ class EnlargeVolume:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class EnlargeVolume:
     def enlarge_volume(self):
         """Gets the enlarge_volume of this EnlargeVolume.
 
-
         :return: The enlarge_volume of this EnlargeVolume.
         :rtype: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`
         """
@@ -57,7 +55,6 @@ class EnlargeVolume:
     @enlarge_volume.setter
     def enlarge_volume(self, enlarge_volume):
         """Sets the enlarge_volume of this EnlargeVolume.
-
 
         :param enlarge_volume: The enlarge_volume of this EnlargeVolume.
         :type enlarge_volume: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`

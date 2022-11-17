@@ -17,7 +17,6 @@ class Association:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -281,7 +280,6 @@ class Association:
     def route_policy(self):
         """Gets the route_policy of this Association.
 
-
         :return: The route_policy of this Association.
         :rtype: :class:`huaweicloudsdker.v3.ExportRoutePolicy`
         """
@@ -290,7 +288,6 @@ class Association:
     @route_policy.setter
     def route_policy(self, route_policy):
         """Sets the route_policy of this Association.
-
 
         :param route_policy: The route_policy of this Association.
         :type route_policy: :class:`huaweicloudsdker.v3.ExportRoutePolicy`

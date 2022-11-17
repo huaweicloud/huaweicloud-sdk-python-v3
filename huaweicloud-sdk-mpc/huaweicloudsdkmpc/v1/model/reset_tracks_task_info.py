@@ -17,7 +17,6 @@ class ResetTracksTaskInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -193,7 +192,6 @@ class ResetTracksTaskInfo:
     def output(self):
         """Gets the output of this ResetTracksTaskInfo.
 
-
         :return: The output of this ResetTracksTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -202,7 +200,6 @@ class ResetTracksTaskInfo:
     @output.setter
     def output(self, output):
         """Sets the output of this ResetTracksTaskInfo.
-
 
         :param output: The output of this ResetTracksTaskInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -279,7 +276,6 @@ class ResetTracksTaskInfo:
     def input(self):
         """Gets the input of this ResetTracksTaskInfo.
 
-
         :return: The input of this ResetTracksTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -288,7 +284,6 @@ class ResetTracksTaskInfo:
     @input.setter
     def input(self, input):
         """Sets the input of this ResetTracksTaskInfo.
-
 
         :param input: The input of this ResetTracksTaskInfo.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

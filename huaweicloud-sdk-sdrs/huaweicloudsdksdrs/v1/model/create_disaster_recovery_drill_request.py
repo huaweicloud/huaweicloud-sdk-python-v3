@@ -17,7 +17,6 @@ class CreateDisasterRecoveryDrillRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateDisasterRecoveryDrillRequest:
     def body(self):
         """Gets the body of this CreateDisasterRecoveryDrillRequest.
 
-
         :return: The body of this CreateDisasterRecoveryDrillRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateDisasterRecoveryDrillRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDisasterRecoveryDrillRequest.
-
 
         :param body: The body of this CreateDisasterRecoveryDrillRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillRequestBody`

@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DeHAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -58,6 +52,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateDedicatedHostTags
         :type request: :class:`huaweicloudsdkdeh.v1.BatchCreateDedicatedHostTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.BatchCreateDedicatedHostTagsResponse`
@@ -70,6 +65,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateDedicatedHostTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -120,6 +118,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteDedicatedHostTags
         :type request: :class:`huaweicloudsdkdeh.v1.BatchDeleteDedicatedHostTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.BatchDeleteDedicatedHostTagsResponse`
@@ -132,6 +131,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteDedicatedHostTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostResponse`
@@ -192,6 +195,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +229,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDedicatedHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -238,6 +244,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.DeleteDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.DeleteDedicatedHostResponse`
@@ -250,6 +257,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDedicatedHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDedicatedHostTypes
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTypesRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTypesResponse`
@@ -308,6 +319,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +353,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDedicatedHostTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -354,6 +368,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDedicatedHosts
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsResponse`
@@ -366,6 +381,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -424,6 +441,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDedicatedHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -440,6 +458,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDedicatedHostsByTags
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsByTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsByTagsResponse`
@@ -452,6 +471,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -484,6 +505,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDedicatedHostsByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -498,6 +520,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServersDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.ListServersDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListServersDedicatedHostResponse`
@@ -510,6 +533,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -546,6 +571,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServersDedicatedHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -560,6 +586,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostResponse`
@@ -572,6 +599,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -604,6 +633,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDedicatedHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -620,6 +650,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDedicatedHostTags
         :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostTagsResponse`
@@ -632,6 +663,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -664,6 +697,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDedicatedHostTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -678,6 +712,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuotaSets
         :type request: :class:`huaweicloudsdkdeh.v1.ShowQuotaSetsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ShowQuotaSetsResponse`
@@ -690,6 +725,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -724,6 +761,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotaSetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -738,6 +776,7 @@ class DeHAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDedicatedHost
         :type request: :class:`huaweicloudsdkdeh.v1.UpdateDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.UpdateDedicatedHostResponse`
@@ -750,6 +789,8 @@ class DeHAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -784,6 +825,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDedicatedHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -791,7 +833,7 @@ class DeHAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -802,9 +844,10 @@ class DeHAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -821,6 +864,7 @@ class DeHAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

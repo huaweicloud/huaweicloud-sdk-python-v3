@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EcsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddServerGroupMember
         :type request: :class:`huaweicloudsdkecs.v2.AddServerGroupMemberRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.AddServerGroupMemberResponse`
@@ -68,6 +63,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddServerGroupMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -122,6 +120,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateServerVirtualIp
         :type request: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpResponse`
@@ -134,6 +133,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -168,6 +169,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateServerVirtualIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -182,6 +184,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AttachServerVolume
         :type request: :class:`huaweicloudsdkecs.v2.AttachServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.AttachServerVolumeResponse`
@@ -194,6 +197,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +233,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachServerVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +248,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddServerNics
         :type request: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsResponse`
@@ -254,6 +261,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -288,6 +297,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddServerNicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -302,6 +312,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAttachSharableVolumes
         :type request: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesResponse`
@@ -314,6 +325,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -348,6 +361,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAttachSharableVolumesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -364,6 +378,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateServerTags
         :type request: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsResponse`
@@ -376,6 +391,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -410,6 +427,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateServerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -424,6 +442,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteServerNics
         :type request: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsResponse`
@@ -436,6 +455,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -470,6 +491,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteServerNicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -486,6 +508,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteServerTags
         :type request: :class:`huaweicloudsdkecs.v2.BatchDeleteServerTagsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerTagsResponse`
@@ -498,6 +521,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -532,6 +557,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteServerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -546,6 +572,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRebootServers
         :type request: :class:`huaweicloudsdkecs.v2.BatchRebootServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchRebootServersResponse`
@@ -558,6 +585,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -590,6 +619,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRebootServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -604,6 +634,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchResetServersPassword
         :type request: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordResponse`
@@ -616,6 +647,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -648,6 +681,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchResetServersPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -662,6 +696,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchStartServers
         :type request: :class:`huaweicloudsdkecs.v2.BatchStartServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchStartServersResponse`
@@ -674,6 +709,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -706,6 +743,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStartServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -720,6 +758,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchStopServers
         :type request: :class:`huaweicloudsdkecs.v2.BatchStopServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchStopServersResponse`
@@ -732,6 +771,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -764,6 +805,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStopServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -779,6 +821,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUpdateServersName
         :type request: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameResponse`
@@ -791,6 +834,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -823,6 +868,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateServersNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -839,6 +885,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeServerOsWithCloudInit
         :type request: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithCloudInitRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithCloudInitResponse`
@@ -851,6 +898,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -885,6 +934,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeServerOsWithCloudInitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -901,6 +951,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeServerOsWithoutCloudInit
         :type request: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitResponse`
@@ -913,6 +964,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -947,6 +1000,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeServerOsWithoutCloudInitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -974,6 +1028,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePostPaidServers
         :type request: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersResponse`
@@ -986,6 +1041,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1020,6 +1077,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostPaidServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1036,6 +1094,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateServerGroup
         :type request: :class:`huaweicloudsdkecs.v2.CreateServerGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.CreateServerGroupResponse`
@@ -1048,6 +1107,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1080,6 +1141,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateServerGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1116,6 +1178,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateServers
         :type request: :class:`huaweicloudsdkecs.v2.CreateServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.CreateServersResponse`
@@ -1128,6 +1191,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1162,6 +1227,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1178,6 +1244,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteServerGroup
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServerGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerGroupResponse`
@@ -1190,6 +1257,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1222,6 +1291,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServerGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1236,6 +1306,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteServerGroupMember
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServerGroupMemberRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerGroupMemberResponse`
@@ -1248,6 +1319,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1282,6 +1355,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServerGroupMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1296,6 +1370,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteServerMetadata
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServerMetadataRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerMetadataResponse`
@@ -1308,6 +1383,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1342,6 +1419,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServerMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1356,6 +1434,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteServerPassword
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServerPasswordRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerPasswordResponse`
@@ -1368,6 +1447,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1400,6 +1481,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServerPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1416,6 +1498,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteServers
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServersResponse`
@@ -1428,6 +1511,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1460,6 +1545,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1474,6 +1560,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetachServerVolume
         :type request: :class:`huaweicloudsdkecs.v2.DetachServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DetachServerVolumeResponse`
@@ -1486,6 +1573,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1522,6 +1611,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetachServerVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1538,6 +1628,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateServerVirtualIp
         :type request: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpResponse`
@@ -1550,6 +1641,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1584,6 +1677,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateServerVirtualIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1598,6 +1692,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkecs.v2.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListFlavorsResponse`
@@ -1610,6 +1705,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1642,6 +1739,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1656,6 +1754,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResizeFlavors
         :type request: :class:`huaweicloudsdkecs.v2.ListResizeFlavorsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListResizeFlavorsResponse`
@@ -1668,6 +1767,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1712,6 +1813,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResizeFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1726,6 +1828,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServerBlockDevices
         :type request: :class:`huaweicloudsdkecs.v2.ListServerBlockDevicesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerBlockDevicesResponse`
@@ -1738,6 +1841,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1770,6 +1875,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServerBlockDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1786,6 +1892,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServerGroups
         :type request: :class:`huaweicloudsdkecs.v2.ListServerGroupsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerGroupsResponse`
@@ -1798,6 +1905,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1832,6 +1941,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServerGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1846,6 +1956,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServerInterfaces
         :type request: :class:`huaweicloudsdkecs.v2.ListServerInterfacesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerInterfacesResponse`
@@ -1858,6 +1969,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1890,6 +2003,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServerInterfacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1906,6 +2020,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServerTags
         :type request: :class:`huaweicloudsdkecs.v2.ListServerTagsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerTagsResponse`
@@ -1918,6 +2033,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1948,6 +2065,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1962,6 +2080,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServersByTag
         :type request: :class:`huaweicloudsdkecs.v2.ListServersByTagRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServersByTagResponse`
@@ -1974,6 +2093,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2006,6 +2127,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServersByTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2022,6 +2144,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServersDetails
         :type request: :class:`huaweicloudsdkecs.v2.ListServersDetailsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServersDetailsResponse`
@@ -2034,6 +2157,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2086,6 +2211,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServersDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2102,6 +2228,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MigrateServer
         :type request: :class:`huaweicloudsdkecs.v2.MigrateServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.MigrateServerResponse`
@@ -2114,6 +2241,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2148,6 +2277,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2164,6 +2294,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaAssociateSecurityGroup
         :type request: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupResponse`
@@ -2176,6 +2307,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2210,6 +2343,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaAssociateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2226,6 +2360,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaCreateKeypair
         :type request: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairResponse`
@@ -2238,6 +2373,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2272,6 +2409,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaCreateKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2290,6 +2428,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaCreateServers
         :type request: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersResponse`
@@ -2302,6 +2441,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2336,6 +2477,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaCreateServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2350,6 +2492,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaDeleteKeypair
         :type request: :class:`huaweicloudsdkecs.v2.NovaDeleteKeypairRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDeleteKeypairResponse`
@@ -2362,6 +2505,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2394,6 +2539,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaDeleteKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2408,6 +2554,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaDeleteServer
         :type request: :class:`huaweicloudsdkecs.v2.NovaDeleteServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDeleteServerResponse`
@@ -2420,6 +2567,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2452,6 +2601,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaDeleteServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2466,6 +2616,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaDisassociateSecurityGroup
         :type request: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupResponse`
@@ -2478,6 +2629,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2512,6 +2665,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaDisassociateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2526,6 +2680,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaListAvailabilityZones
         :type request: :class:`huaweicloudsdkecs.v2.NovaListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListAvailabilityZonesResponse`
@@ -2538,6 +2693,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2568,6 +2725,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaListAvailabilityZonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2582,6 +2740,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaListKeypairs
         :type request: :class:`huaweicloudsdkecs.v2.NovaListKeypairsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListKeypairsResponse`
@@ -2594,6 +2753,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2630,6 +2791,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaListKeypairsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2644,6 +2806,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaListServerSecurityGroups
         :type request: :class:`huaweicloudsdkecs.v2.NovaListServerSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListServerSecurityGroupsResponse`
@@ -2656,6 +2819,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2688,6 +2853,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaListServerSecurityGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2702,6 +2868,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaListServersDetails
         :type request: :class:`huaweicloudsdkecs.v2.NovaListServersDetailsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListServersDetailsResponse`
@@ -2714,6 +2881,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2770,6 +2939,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaListServersDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2784,6 +2954,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaShowKeypair
         :type request: :class:`huaweicloudsdkecs.v2.NovaShowKeypairRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaShowKeypairResponse`
@@ -2796,6 +2967,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2830,6 +3003,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaShowKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2844,6 +3018,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for NovaShowServer
         :type request: :class:`huaweicloudsdkecs.v2.NovaShowServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaShowServerResponse`
@@ -2856,6 +3031,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2890,6 +3067,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NovaShowServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2904,6 +3082,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RegisterServerAutoRecovery
         :type request: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryResponse`
@@ -2916,6 +3095,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2950,6 +3131,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterServerAutoRecoveryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2966,6 +3148,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RegisterServerMonitor
         :type request: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorResponse`
@@ -2978,6 +3161,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3012,6 +3197,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterServerMonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3028,6 +3214,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ReinstallServerWithCloudInit
         :type request: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitResponse`
@@ -3040,6 +3227,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3074,6 +3263,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ReinstallServerWithCloudInitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3090,6 +3280,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ReinstallServerWithoutCloudInit
         :type request: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitResponse`
@@ -3102,6 +3293,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3136,6 +3329,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ReinstallServerWithoutCloudInitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3150,6 +3344,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetServerPassword
         :type request: :class:`huaweicloudsdkecs.v2.ResetServerPasswordRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ResetServerPasswordResponse`
@@ -3162,6 +3357,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3196,6 +3393,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetServerPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3214,6 +3412,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizePostPaidServer
         :type request: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerResponse`
@@ -3226,6 +3425,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3260,6 +3461,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizePostPaidServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3282,6 +3484,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeServer
         :type request: :class:`huaweicloudsdkecs.v2.ResizeServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ResizeServerResponse`
@@ -3294,6 +3497,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3328,6 +3533,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3342,6 +3548,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResetPasswordFlag
         :type request: :class:`huaweicloudsdkecs.v2.ShowResetPasswordFlagRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowResetPasswordFlagResponse`
@@ -3354,6 +3561,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3386,6 +3595,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResetPasswordFlagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3402,6 +3612,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServer
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerResponse`
@@ -3414,6 +3625,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3446,6 +3659,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3460,6 +3674,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServerAutoRecovery
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerAutoRecoveryRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerAutoRecoveryResponse`
@@ -3472,6 +3687,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3504,6 +3721,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerAutoRecoveryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3518,6 +3736,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServerBlockDevice
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerBlockDeviceRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerBlockDeviceResponse`
@@ -3530,6 +3749,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3564,6 +3785,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerBlockDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3580,6 +3802,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServerGroup
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerGroupResponse`
@@ -3592,6 +3815,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3624,6 +3849,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3638,6 +3864,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServerLimits
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerLimitsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerLimitsResponse`
@@ -3650,6 +3877,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3680,6 +3909,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerLimitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3694,6 +3924,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServerPassword
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerPasswordRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerPasswordResponse`
@@ -3706,6 +3937,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3738,6 +3971,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3752,6 +3986,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServerRemoteConsole
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleResponse`
@@ -3764,6 +3999,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3798,6 +4035,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerRemoteConsoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3814,6 +4052,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServerTags
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerTagsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerTagsResponse`
@@ -3826,6 +4065,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3858,6 +4099,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3872,6 +4114,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateServer
         :type request: :class:`huaweicloudsdkecs.v2.UpdateServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerResponse`
@@ -3884,6 +4127,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3918,6 +4163,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3934,6 +4180,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateServerAutoTerminateTime
         :type request: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeResponse`
@@ -3946,6 +4193,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3980,6 +4229,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServerAutoTerminateTimeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3994,6 +4244,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateServerBlockDevice
         :type request: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceResponse`
@@ -4006,6 +4257,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4042,6 +4295,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServerBlockDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4062,6 +4316,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateServerMetadata
         :type request: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataResponse`
@@ -4074,6 +4329,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4108,6 +4365,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServerMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4124,6 +4382,7 @@ class EcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkecs.v2.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowJobResponse`
@@ -4136,6 +4395,8 @@ class EcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4168,6 +4429,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4175,7 +4437,7 @@ class EcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4186,9 +4448,10 @@ class EcsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4205,6 +4468,7 @@ class EcsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

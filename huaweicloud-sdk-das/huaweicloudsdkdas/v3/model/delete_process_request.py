@@ -17,7 +17,6 @@ class DeleteProcessRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class DeleteProcessRequest:
     def body(self):
         """Gets the body of this DeleteProcessRequest.
 
-
         :return: The body of this DeleteProcessRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteProcessReqBody`
         """
@@ -115,7 +113,6 @@ class DeleteProcessRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteProcessRequest.
-
 
         :param body: The body of this DeleteProcessRequest.
         :type body: :class:`huaweicloudsdkdas.v3.DeleteProcessReqBody`

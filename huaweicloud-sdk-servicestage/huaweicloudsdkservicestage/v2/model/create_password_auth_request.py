@@ -17,7 +17,6 @@ class CreatePasswordAuthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreatePasswordAuthRequest:
     def body(self):
         """Gets the body of this CreatePasswordAuthRequest.
 
-
         :return: The body of this CreatePasswordAuthRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.AccessPassword`
         """
@@ -86,7 +84,6 @@ class CreatePasswordAuthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePasswordAuthRequest.
-
 
         :param body: The body of this CreatePasswordAuthRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.AccessPassword`

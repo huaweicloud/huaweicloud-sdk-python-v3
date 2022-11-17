@@ -17,7 +17,6 @@ class ListLoadbalancersByTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListLoadbalancersByTagsRequest:
     def body(self):
         """Gets the body of this ListLoadbalancersByTagsRequest.
 
-
         :return: The body of this ListLoadbalancersByTagsRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.ListLoadbalancersByTagsRequestBody`
         """
@@ -58,7 +56,6 @@ class ListLoadbalancersByTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListLoadbalancersByTagsRequest.
-
 
         :param body: The body of this ListLoadbalancersByTagsRequest.
         :type body: :class:`huaweicloudsdkelb.v2.ListLoadbalancersByTagsRequestBody`

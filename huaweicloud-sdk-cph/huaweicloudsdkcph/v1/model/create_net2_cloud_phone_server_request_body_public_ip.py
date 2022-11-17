@@ -17,7 +17,6 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
     def eip(self):
         """Gets the eip of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
 
-
         :return: The eip of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIpEip`
         """
@@ -85,7 +83,6 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIp:
     @eip.setter
     def eip(self, eip):
         """Sets the eip of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
-
 
         :param eip: The eip of this CreateNet2CloudPhoneServerRequestBodyPublicIp.
         :type eip: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIpEip`

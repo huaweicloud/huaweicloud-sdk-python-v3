@@ -17,7 +17,6 @@ class StartReverseProtectionGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartReverseProtectionGroupRequest:
     def body(self):
         """Gets the body of this StartReverseProtectionGroupRequest.
 
-
         :return: The body of this StartReverseProtectionGroupRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestBody`
         """
@@ -86,7 +84,6 @@ class StartReverseProtectionGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartReverseProtectionGroupRequest.
-
 
         :param body: The body of this StartReverseProtectionGroupRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestBody`

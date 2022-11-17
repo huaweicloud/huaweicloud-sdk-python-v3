@@ -17,7 +17,6 @@ class ChangeTheDelayThresholdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ChangeTheDelayThresholdRequest:
     def body(self):
         """Gets the body of this ChangeTheDelayThresholdRequest.
 
-
         :return: The body of this ChangeTheDelayThresholdRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ChangingTheDelayThresholdRequestBody`
         """
@@ -115,7 +113,6 @@ class ChangeTheDelayThresholdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeTheDelayThresholdRequest.
-
 
         :param body: The body of this ChangeTheDelayThresholdRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ChangingTheDelayThresholdRequestBody`

@@ -17,7 +17,6 @@ class ShowRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -389,7 +388,6 @@ class ShowRuleResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this ShowRuleResponse.
 
-
         :return: The created_user of this ShowRuleResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -398,7 +396,6 @@ class ShowRuleResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this ShowRuleResponse.
-
 
         :param created_user: The created_user of this ShowRuleResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -409,7 +406,6 @@ class ShowRuleResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this ShowRuleResponse.
 
-
         :return: The last_updated_user of this ShowRuleResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -418,7 +414,6 @@ class ShowRuleResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this ShowRuleResponse.
-
 
         :param last_updated_user: The last_updated_user of this ShowRuleResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`

@@ -17,7 +17,6 @@ class ProjectTemplates:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -273,7 +272,6 @@ class ProjectTemplates:
     def source(self):
         """Gets the source of this ProjectTemplates.
 
-
         :return: The source of this ProjectTemplates.
         :rtype: :class:`huaweicloudsdkcloudide.v2.SourceStorage`
         """
@@ -282,7 +280,6 @@ class ProjectTemplates:
     @source.setter
     def source(self, source):
         """Sets the source of this ProjectTemplates.
-
 
         :param source: The source of this ProjectTemplates.
         :type source: :class:`huaweicloudsdkcloudide.v2.SourceStorage`

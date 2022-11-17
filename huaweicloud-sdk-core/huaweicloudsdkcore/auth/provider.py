@@ -115,10 +115,10 @@ class ProfileCredentialProvider(CredentialProvider):
 
         path = self._get_credentials_file_path()
         if not path_utils.is_path_exist(path) or not parser.read(path, encoding=self._ENCODING):
-            raise ApiValueError("credentials file '{}' does not exist".format(path))
+            raise ApiValueError("credentials file '%s' does not exist" % path)
 
         if not parser.has_section(self._credential_type):
-            raise ApiValueError("credential type '{}' does not exist in credentials file '{}'".format(
+            raise ApiValueError("credential type '%s' does not exist in credentials file '%s'" % (
                 self._credential_type, path))
 
         profile_dict = {}
@@ -137,14 +137,14 @@ class ProfileCredentialProvider(CredentialProvider):
         elif self._credential_type.startswith(_CredentialType.GLOBAL):
             credentials = GlobalCredentials().with_domain_id(profile_dict.get(self._DOMAIN_ID_NAME))
         else:
-            raise ApiTypeError("unsupported credential type '{}'".format(self._credential_type))
+            raise ApiTypeError("unsupported credential type '%s'" % self._credential_type)
 
         if idp_id and id_token_file:
             credentials.with_idp_id(idp_id).with_id_token_file(id_token_file)
         elif ak and sk:
             credentials.with_ak(ak).with_sk(sk).with_security_token(security_token)
         else:
-            raise ApiValueError("{}&{} or {}&{} does not exist in credentials file '{}'".format(
+            raise ApiValueError("%s&%s or %s&%s does not exist in credentials file '%s'" % (
                 self._AK_NAME, self._SK_NAME, self._AK_NAME, self._SK_NAME, path))
         if iam_endpoint:
             credentials.with_iam_endpoint(iam_endpoint)

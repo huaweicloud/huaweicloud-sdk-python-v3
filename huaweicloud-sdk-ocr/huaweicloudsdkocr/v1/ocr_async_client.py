@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class OcrAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -60,6 +54,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeAutoClassification
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeAutoClassificationRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeAutoClassificationResponse`
@@ -67,11 +62,13 @@ class OcrAsyncClient(Client):
         return self.recognize_auto_classification_with_http_info(request)
 
     def recognize_auto_classification_with_http_info(self, request):
-        all_params = ['auto_classification_request_body']
+        all_params = ['auto_classification_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -80,6 +77,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -104,6 +103,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeAutoClassificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -122,6 +122,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeBankcard
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeBankcardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBankcardResponse`
@@ -129,11 +130,13 @@ class OcrAsyncClient(Client):
         return self.recognize_bankcard_with_http_info(request)
 
     def recognize_bankcard_with_http_info(self, request):
-        all_params = ['bankcard_request_body']
+        all_params = ['bankcard_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -142,6 +145,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -166,6 +171,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeBankcardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +186,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeBusinessCard
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeBusinessCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBusinessCardResponse`
@@ -187,11 +194,13 @@ class OcrAsyncClient(Client):
         return self.recognize_business_card_with_http_info(request)
 
     def recognize_business_card_with_http_info(self, request):
-        all_params = ['business_card_request_body']
+        all_params = ['business_card_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -200,6 +209,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -224,6 +235,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeBusinessCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +254,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeBusinessLicense
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeBusinessLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBusinessLicenseResponse`
@@ -249,11 +262,13 @@ class OcrAsyncClient(Client):
         return self.recognize_business_license_with_http_info(request)
 
     def recognize_business_license_with_http_info(self, request):
-        all_params = ['business_license_request_body']
+        all_params = ['business_license_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -262,6 +277,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -286,6 +303,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeBusinessLicenseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +318,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeCambodianIdCard
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeCambodianIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeCambodianIdCardResponse`
@@ -307,11 +326,13 @@ class OcrAsyncClient(Client):
         return self.recognize_cambodian_id_card_with_http_info(request)
 
     def recognize_cambodian_id_card_with_http_info(self, request):
-        all_params = ['cambodian_id_card_request_body']
+        all_params = ['cambodian_id_card_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -320,6 +341,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -344,6 +367,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeCambodianIdCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +382,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeChileIdCard
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeChileIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeChileIdCardResponse`
@@ -365,11 +390,13 @@ class OcrAsyncClient(Client):
         return self.recognize_chile_id_card_with_http_info(request)
 
     def recognize_chile_id_card_with_http_info(self, request):
-        all_params = ['chile_id_card_request_body']
+        all_params = ['chile_id_card_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -378,6 +405,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -402,6 +431,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeChileIdCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -420,6 +450,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeDriverLicense
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeDriverLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeDriverLicenseResponse`
@@ -427,11 +458,13 @@ class OcrAsyncClient(Client):
         return self.recognize_driver_license_with_http_info(request)
 
     def recognize_driver_license_with_http_info(self, request):
-        all_params = ['driver_license_request_body']
+        all_params = ['driver_license_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -440,6 +473,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -464,6 +499,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeDriverLicenseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -478,6 +514,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeExitEntryPermit
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeExitEntryPermitRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeExitEntryPermitResponse`
@@ -485,11 +522,13 @@ class OcrAsyncClient(Client):
         return self.recognize_exit_entry_permit_with_http_info(request)
 
     def recognize_exit_entry_permit_with_http_info(self, request):
-        all_params = ['exit_entry_permit_request_body']
+        all_params = ['exit_entry_permit_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -498,6 +537,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -522,6 +563,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeExitEntryPermitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -536,6 +578,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeFinancialStatement
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeFinancialStatementRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeFinancialStatementResponse`
@@ -543,11 +586,13 @@ class OcrAsyncClient(Client):
         return self.recognize_financial_statement_with_http_info(request)
 
     def recognize_financial_statement_with_http_info(self, request):
-        all_params = ['financial_statement_request_body']
+        all_params = ['financial_statement_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -556,6 +601,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -580,6 +627,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeFinancialStatementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -598,6 +646,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeFlightItinerary
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeFlightItineraryRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeFlightItineraryResponse`
@@ -605,11 +654,13 @@ class OcrAsyncClient(Client):
         return self.recognize_flight_itinerary_with_http_info(request)
 
     def recognize_flight_itinerary_with_http_info(self, request):
-        all_params = ['flight_itinerary_request_body']
+        all_params = ['enterprise_project_id', 'flight_itinerary_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -618,6 +669,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -642,6 +695,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeFlightItineraryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -656,6 +710,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeGeneralTable
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTableRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTableResponse`
@@ -663,11 +718,13 @@ class OcrAsyncClient(Client):
         return self.recognize_general_table_with_http_info(request)
 
     def recognize_general_table_with_http_info(self, request):
-        all_params = ['general_table_request_body']
+        all_params = ['enterprise_project_id', 'general_table_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -676,6 +733,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -700,6 +759,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeGeneralTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -714,6 +774,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeGeneralText
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTextRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTextResponse`
@@ -721,11 +782,13 @@ class OcrAsyncClient(Client):
         return self.recognize_general_text_with_http_info(request)
 
     def recognize_general_text_with_http_info(self, request):
-        all_params = ['general_text_request_body']
+        all_params = ['enterprise_project_id', 'general_text_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -734,6 +797,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -758,6 +823,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeGeneralTextResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -772,6 +838,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeHandwriting
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeHandwritingRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHandwritingResponse`
@@ -779,11 +846,13 @@ class OcrAsyncClient(Client):
         return self.recognize_handwriting_with_http_info(request)
 
     def recognize_handwriting_with_http_info(self, request):
-        all_params = ['handwriting_request_body']
+        all_params = ['handwriting_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -792,6 +861,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -816,6 +887,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeHandwritingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -830,6 +902,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeHealthCode
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeHealthCodeRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHealthCodeResponse`
@@ -837,11 +910,13 @@ class OcrAsyncClient(Client):
         return self.recognize_health_code_with_http_info(request)
 
     def recognize_health_code_with_http_info(self, request):
-        all_params = ['health_code_request_body']
+        all_params = ['enterprise_project_id', 'health_code_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -850,6 +925,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -874,6 +951,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeHealthCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -888,6 +966,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeHkIdCard
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeHkIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHkIdCardResponse`
@@ -895,11 +974,13 @@ class OcrAsyncClient(Client):
         return self.recognize_hk_id_card_with_http_info(request)
 
     def recognize_hk_id_card_with_http_info(self, request):
-        all_params = ['hk_id_card_request_body']
+        all_params = ['hk_id_card_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -908,6 +989,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -932,6 +1015,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeHkIdCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -952,6 +1036,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeIdCard
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeIdCardResponse`
@@ -959,11 +1044,13 @@ class OcrAsyncClient(Client):
         return self.recognize_id_card_with_http_info(request)
 
     def recognize_id_card_with_http_info(self, request):
-        all_params = ['id_card_request_body']
+        all_params = ['id_card_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -972,6 +1059,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -996,6 +1085,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeIdCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1034,6 +1124,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeIdDocument
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeIdDocumentRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeIdDocumentResponse`
@@ -1041,11 +1132,13 @@ class OcrAsyncClient(Client):
         return self.recognize_id_document_with_http_info(request)
 
     def recognize_id_document_with_http_info(self, request):
-        all_params = ['id_document_request_body']
+        all_params = ['id_document_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1054,6 +1147,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1078,6 +1173,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeIdDocumentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1092,6 +1188,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeInsurancePolicy
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeInsurancePolicyRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeInsurancePolicyResponse`
@@ -1099,11 +1196,13 @@ class OcrAsyncClient(Client):
         return self.recognize_insurance_policy_with_http_info(request)
 
     def recognize_insurance_policy_with_http_info(self, request):
-        all_params = ['insurance_policy_request_body']
+        all_params = ['insurance_policy_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1112,6 +1211,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1136,6 +1237,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeInsurancePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1150,6 +1252,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeInvoiceVerification
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeInvoiceVerificationRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeInvoiceVerificationResponse`
@@ -1157,11 +1260,13 @@ class OcrAsyncClient(Client):
         return self.recognize_invoice_verification_with_http_info(request)
 
     def recognize_invoice_verification_with_http_info(self, request):
-        all_params = ['invoice_verification_request_body']
+        all_params = ['invoice_verification_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1170,6 +1275,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1194,6 +1301,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeInvoiceVerificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1208,6 +1316,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeLicensePlate
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeLicensePlateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeLicensePlateResponse`
@@ -1215,11 +1324,13 @@ class OcrAsyncClient(Client):
         return self.recognize_license_plate_with_http_info(request)
 
     def recognize_license_plate_with_http_info(self, request):
-        all_params = ['license_plate_request_body']
+        all_params = ['license_plate_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1228,6 +1339,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1252,6 +1365,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeLicensePlateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1266,6 +1380,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeMacaoIdCard
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMacaoIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMacaoIdCardResponse`
@@ -1273,11 +1388,13 @@ class OcrAsyncClient(Client):
         return self.recognize_macao_id_card_with_http_info(request)
 
     def recognize_macao_id_card_with_http_info(self, request):
-        all_params = ['macao_id_card_request_body']
+        all_params = ['macao_id_card_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1286,6 +1403,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1310,6 +1429,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeMacaoIdCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1324,6 +1444,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeMainlandTravelPermit
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMainlandTravelPermitRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMainlandTravelPermitResponse`
@@ -1331,11 +1452,13 @@ class OcrAsyncClient(Client):
         return self.recognize_mainland_travel_permit_with_http_info(request)
 
     def recognize_mainland_travel_permit_with_http_info(self, request):
-        all_params = ['mainland_travel_permit_request_body']
+        all_params = ['mainland_travel_permit_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1344,6 +1467,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1368,6 +1493,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeMainlandTravelPermitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1388,6 +1514,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeMvsInvoice
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMvsInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMvsInvoiceResponse`
@@ -1395,11 +1522,13 @@ class OcrAsyncClient(Client):
         return self.recognize_mvs_invoice_with_http_info(request)
 
     def recognize_mvs_invoice_with_http_info(self, request):
-        all_params = ['mvs_invoice_request_body']
+        all_params = ['mvs_invoice_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1408,6 +1537,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1432,6 +1563,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeMvsInvoiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1446,6 +1578,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeMyanmarDriverLicense
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarDriverLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarDriverLicenseResponse`
@@ -1453,11 +1586,13 @@ class OcrAsyncClient(Client):
         return self.recognize_myanmar_driver_license_with_http_info(request)
 
     def recognize_myanmar_driver_license_with_http_info(self, request):
-        all_params = ['myanmar_driver_license_request_body']
+        all_params = ['myanmar_driver_license_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1466,6 +1601,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1490,6 +1627,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeMyanmarDriverLicenseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1504,6 +1642,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeMyanmarIdcard
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarIdcardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarIdcardResponse`
@@ -1511,11 +1650,13 @@ class OcrAsyncClient(Client):
         return self.recognize_myanmar_idcard_with_http_info(request)
 
     def recognize_myanmar_idcard_with_http_info(self, request):
-        all_params = ['myanmar_idcard_request_body']
+        all_params = ['myanmar_idcard_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1524,6 +1665,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1548,6 +1691,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeMyanmarIdcardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1566,6 +1710,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizePassport
         :type request: :class:`huaweicloudsdkocr.v1.RecognizePassportRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizePassportResponse`
@@ -1573,11 +1718,13 @@ class OcrAsyncClient(Client):
         return self.recognize_passport_with_http_info(request)
 
     def recognize_passport_with_http_info(self, request):
-        all_params = ['passport_request_body']
+        all_params = ['passport_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1586,6 +1733,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1610,6 +1759,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizePassportResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1624,6 +1774,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizePcrTestRecord
         :type request: :class:`huaweicloudsdkocr.v1.RecognizePcrTestRecordRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizePcrTestRecordResponse`
@@ -1631,11 +1782,13 @@ class OcrAsyncClient(Client):
         return self.recognize_pcr_test_record_with_http_info(request)
 
     def recognize_pcr_test_record_with_http_info(self, request):
-        all_params = ['pcr_test_record_request_body']
+        all_params = ['enterprise_project_id', 'pcr_test_record_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1644,6 +1797,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1668,6 +1823,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizePcrTestRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1686,6 +1842,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeQualificationCertificate
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeQualificationCertificateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeQualificationCertificateResponse`
@@ -1693,11 +1850,13 @@ class OcrAsyncClient(Client):
         return self.recognize_qualification_certificate_with_http_info(request)
 
     def recognize_qualification_certificate_with_http_info(self, request):
-        all_params = ['qualification_certificate_request_body']
+        all_params = ['qualification_certificate_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1706,6 +1865,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1730,6 +1891,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeQualificationCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1748,6 +1910,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeQuotaInvoice
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeQuotaInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeQuotaInvoiceResponse`
@@ -1755,11 +1918,13 @@ class OcrAsyncClient(Client):
         return self.recognize_quota_invoice_with_http_info(request)
 
     def recognize_quota_invoice_with_http_info(self, request):
-        all_params = ['quota_invoice_request_body']
+        all_params = ['quota_invoice_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1768,6 +1933,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1792,6 +1959,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeQuotaInvoiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1810,6 +1978,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeTaxiInvoice
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTaxiInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTaxiInvoiceResponse`
@@ -1817,11 +1986,13 @@ class OcrAsyncClient(Client):
         return self.recognize_taxi_invoice_with_http_info(request)
 
     def recognize_taxi_invoice_with_http_info(self, request):
-        all_params = ['taxi_invoice_request_body']
+        all_params = ['taxi_invoice_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1830,6 +2001,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1854,6 +2027,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeTaxiInvoiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1868,6 +2042,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeThailandIdcard
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeThailandIdcardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeThailandIdcardResponse`
@@ -1875,11 +2050,13 @@ class OcrAsyncClient(Client):
         return self.recognize_thailand_idcard_with_http_info(request)
 
     def recognize_thailand_idcard_with_http_info(self, request):
-        all_params = ['thailand_idcard_request_body']
+        all_params = ['thailand_idcard_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1888,6 +2065,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1912,6 +2091,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeThailandIdcardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1926,6 +2106,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeThailandLicensePlate
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeThailandLicensePlateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeThailandLicensePlateResponse`
@@ -1933,11 +2114,13 @@ class OcrAsyncClient(Client):
         return self.recognize_thailand_license_plate_with_http_info(request)
 
     def recognize_thailand_license_plate_with_http_info(self, request):
-        all_params = ['thailand_license_plate_request_body']
+        all_params = ['thailand_license_plate_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1946,6 +2129,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1970,6 +2155,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeThailandLicensePlateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1988,6 +2174,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeTollInvoice
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTollInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTollInvoiceResponse`
@@ -1995,11 +2182,13 @@ class OcrAsyncClient(Client):
         return self.recognize_toll_invoice_with_http_info(request)
 
     def recognize_toll_invoice_with_http_info(self, request):
-        all_params = ['toll_invoice_request_body']
+        all_params = ['toll_invoice_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2008,6 +2197,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2032,6 +2223,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeTollInvoiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2050,6 +2242,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeTrainTicket
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTrainTicketRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTrainTicketResponse`
@@ -2057,11 +2250,13 @@ class OcrAsyncClient(Client):
         return self.recognize_train_ticket_with_http_info(request)
 
     def recognize_train_ticket_with_http_info(self, request):
-        all_params = ['train_ticket_request_body']
+        all_params = ['train_ticket_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2070,6 +2265,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2094,6 +2291,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeTrainTicketResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2110,6 +2308,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeTransportationLicense
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTransportationLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTransportationLicenseResponse`
@@ -2117,11 +2316,13 @@ class OcrAsyncClient(Client):
         return self.recognize_transportation_license_with_http_info(request)
 
     def recognize_transportation_license_with_http_info(self, request):
-        all_params = ['transportation_license_request_body']
+        all_params = ['transportation_license_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2130,6 +2331,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2154,6 +2357,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeTransportationLicenseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2176,6 +2380,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeVatInvoice
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVatInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVatInvoiceResponse`
@@ -2183,11 +2388,13 @@ class OcrAsyncClient(Client):
         return self.recognize_vat_invoice_with_http_info(request)
 
     def recognize_vat_invoice_with_http_info(self, request):
-        all_params = ['vat_invoice_request_body']
+        all_params = ['vat_invoice_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2196,6 +2403,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2220,6 +2429,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeVatInvoiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2238,6 +2448,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeVehicleLicense
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVehicleLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVehicleLicenseResponse`
@@ -2245,11 +2456,13 @@ class OcrAsyncClient(Client):
         return self.recognize_vehicle_license_with_http_info(request)
 
     def recognize_vehicle_license_with_http_info(self, request):
-        all_params = ['vehicle_license_request_body']
+        all_params = ['vehicle_license_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2258,6 +2471,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2282,6 +2497,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeVehicleLicenseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2296,6 +2512,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeWaybillElectronic
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeWaybillElectronicRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeWaybillElectronicResponse`
@@ -2303,11 +2520,13 @@ class OcrAsyncClient(Client):
         return self.recognize_waybill_electronic_with_http_info(request)
 
     def recognize_waybill_electronic_with_http_info(self, request):
-        all_params = ['waybill_electronic_request_body']
+        all_params = ['waybill_electronic_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2316,6 +2535,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2340,6 +2561,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeWaybillElectronicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2354,6 +2576,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeWebImage
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeWebImageRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeWebImageResponse`
@@ -2361,11 +2584,13 @@ class OcrAsyncClient(Client):
         return self.recognize_web_image_with_http_info(request)
 
     def recognize_web_image_with_http_info(self, request):
-        all_params = ['web_image_request_body']
+        all_params = ['web_image_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2374,6 +2599,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2398,6 +2625,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeWebImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2412,6 +2640,7 @@ class OcrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RecognizeVin
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVinRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVinResponse`
@@ -2419,11 +2648,13 @@ class OcrAsyncClient(Client):
         return self.recognize_vin_with_http_info(request)
 
     def recognize_vin_with_http_info(self, request):
-        all_params = ['vin_request_body']
+        all_params = ['vin_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2432,6 +2663,8 @@ class OcrAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2456,6 +2689,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecognizeVinResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2463,7 +2697,7 @@ class OcrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2474,9 +2708,10 @@ class OcrAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2493,6 +2728,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class ShowEdgeCloudResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class ShowEdgeCloudResponse(SdkResponse):
     def coverage(self):
         """Gets the coverage of this ShowEdgeCloudResponse.
 
-
         :return: The coverage of this ShowEdgeCloudResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.CoverageResp`
         """
@@ -201,7 +199,6 @@ class ShowEdgeCloudResponse(SdkResponse):
     @coverage.setter
     def coverage(self, coverage):
         """Sets the coverage of this ShowEdgeCloudResponse.
-
 
         :param coverage: The coverage of this ShowEdgeCloudResponse.
         :type coverage: :class:`huaweicloudsdkiec.v1.CoverageResp`
@@ -278,7 +275,6 @@ class ShowEdgeCloudResponse(SdkResponse):
     def fail_reason(self):
         """Gets the fail_reason of this ShowEdgeCloudResponse.
 
-
         :return: The fail_reason of this ShowEdgeCloudResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.FailReason`
         """
@@ -287,7 +283,6 @@ class ShowEdgeCloudResponse(SdkResponse):
     @fail_reason.setter
     def fail_reason(self, fail_reason):
         """Sets the fail_reason of this ShowEdgeCloudResponse.
-
 
         :param fail_reason: The fail_reason of this ShowEdgeCloudResponse.
         :type fail_reason: :class:`huaweicloudsdkiec.v1.FailReason`

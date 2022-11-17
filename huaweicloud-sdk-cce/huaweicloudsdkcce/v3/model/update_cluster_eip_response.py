@@ -17,7 +17,6 @@ class UpdateClusterEipResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class UpdateClusterEipResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this UpdateClusterEipResponse.
 
-
         :return: The metadata of this UpdateClusterEipResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
@@ -72,7 +70,6 @@ class UpdateClusterEipResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this UpdateClusterEipResponse.
-
 
         :param metadata: The metadata of this UpdateClusterEipResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -83,7 +80,6 @@ class UpdateClusterEipResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this UpdateClusterEipResponse.
 
-
         :return: The spec of this UpdateClusterEipResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPResponseSpec`
         """
@@ -92,7 +88,6 @@ class UpdateClusterEipResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this UpdateClusterEipResponse.
-
 
         :param spec: The spec of this UpdateClusterEipResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.MasterEIPResponseSpec`
@@ -103,7 +98,6 @@ class UpdateClusterEipResponse(SdkResponse):
     def status(self):
         """Gets the status of this UpdateClusterEipResponse.
 
-
         :return: The status of this UpdateClusterEipResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`
         """
@@ -112,7 +106,6 @@ class UpdateClusterEipResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this UpdateClusterEipResponse.
-
 
         :param status: The status of this UpdateClusterEipResponse.
         :type status: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`

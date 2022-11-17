@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DdmAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatabase
         :type request: :class:`huaweicloudsdkddm.v1.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.CreateDatabaseResponse`
@@ -68,6 +63,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkddm.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.CreateInstanceResponse`
@@ -130,6 +129,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateUsers
         :type request: :class:`huaweicloudsdkddm.v1.CreateUsersRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.CreateUsersResponse`
@@ -188,6 +191,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDatabase
         :type request: :class:`huaweicloudsdkddm.v1.DeleteDatabaseRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.DeleteDatabaseResponse`
@@ -248,6 +255,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +293,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -298,6 +308,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkddm.v1.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.DeleteInstanceResponse`
@@ -310,6 +321,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +357,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +372,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteUser
         :type request: :class:`huaweicloudsdkddm.v1.DeleteUserRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.DeleteUserResponse`
@@ -370,6 +385,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -404,6 +421,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -418,6 +436,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExpandInstanceNodes
         :type request: :class:`huaweicloudsdkddm.v1.ExpandInstanceNodesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ExpandInstanceNodesResponse`
@@ -430,6 +449,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -464,6 +485,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandInstanceNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -478,6 +500,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAvailableRdsList
         :type request: :class:`huaweicloudsdkddm.v1.ListAvailableRdsListRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListAvailableRdsListResponse`
@@ -490,6 +513,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -526,6 +551,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAvailableRdsListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -540,6 +566,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatabases
         :type request: :class:`huaweicloudsdkddm.v1.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListDatabasesResponse`
@@ -552,6 +579,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -588,6 +617,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -602,6 +632,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEngines
         :type request: :class:`huaweicloudsdkddm.v1.ListEnginesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListEnginesResponse`
@@ -614,6 +645,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -648,6 +681,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnginesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -662,6 +696,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkddm.v1.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListFlavorsResponse`
@@ -674,6 +709,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -710,6 +747,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -724,6 +762,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkddm.v1.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListInstancesResponse`
@@ -736,6 +775,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -770,6 +811,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -784,6 +826,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNodes
         :type request: :class:`huaweicloudsdkddm.v1.ListNodesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListNodesResponse`
@@ -796,6 +839,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -832,6 +877,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -846,6 +892,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListReadWriteRatio
         :type request: :class:`huaweicloudsdkddm.v1.ListReadWriteRatioRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListReadWriteRatioResponse`
@@ -858,6 +905,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -898,6 +947,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListReadWriteRatioResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -912,6 +962,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSlowLog
         :type request: :class:`huaweicloudsdkddm.v1.ListSlowLogRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListSlowLogResponse`
@@ -924,6 +975,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -964,6 +1017,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -978,6 +1032,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUsers
         :type request: :class:`huaweicloudsdkddm.v1.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListUsersResponse`
@@ -990,6 +1045,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1026,6 +1083,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1040,6 +1098,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RebuildConfig
         :type request: :class:`huaweicloudsdkddm.v1.RebuildConfigRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.RebuildConfigResponse`
@@ -1052,6 +1111,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1084,6 +1145,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RebuildConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1098,6 +1160,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetAdministrator
         :type request: :class:`huaweicloudsdkddm.v1.ResetAdministratorRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ResetAdministratorResponse`
@@ -1110,6 +1173,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1144,6 +1209,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetAdministratorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1158,6 +1224,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetUserPassword
         :type request: :class:`huaweicloudsdkddm.v1.ResetUserPasswordRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ResetUserPasswordResponse`
@@ -1170,6 +1237,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1206,6 +1275,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetUserPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1220,6 +1290,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeFlavor
         :type request: :class:`huaweicloudsdkddm.v1.ResizeFlavorRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ResizeFlavorResponse`
@@ -1232,6 +1303,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1266,6 +1339,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeFlavorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1280,6 +1354,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartInstance
         :type request: :class:`huaweicloudsdkddm.v1.RestartInstanceRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.RestartInstanceResponse`
@@ -1292,6 +1367,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1326,6 +1403,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1340,6 +1418,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDatabase
         :type request: :class:`huaweicloudsdkddm.v1.ShowDatabaseRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShowDatabaseResponse`
@@ -1352,6 +1431,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1386,6 +1467,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1400,6 +1482,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkddm.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShowInstanceResponse`
@@ -1412,6 +1495,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1444,6 +1529,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1458,6 +1544,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceParam
         :type request: :class:`huaweicloudsdkddm.v1.ShowInstanceParamRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShowInstanceParamResponse`
@@ -1470,6 +1557,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1508,6 +1597,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceParamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1522,6 +1612,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNode
         :type request: :class:`huaweicloudsdkddm.v1.ShowNodeRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShowNodeResponse`
@@ -1534,6 +1625,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1568,6 +1661,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1582,6 +1676,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShrinkInstanceNodes
         :type request: :class:`huaweicloudsdkddm.v1.ShrinkInstanceNodesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShrinkInstanceNodesResponse`
@@ -1594,6 +1689,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1628,6 +1725,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShrinkInstanceNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1642,6 +1740,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDatabaseInfo
         :type request: :class:`huaweicloudsdkddm.v1.UpdateDatabaseInfoRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateDatabaseInfoResponse`
@@ -1654,6 +1753,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1686,6 +1787,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDatabaseInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1700,6 +1802,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceName
         :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateInstanceNameResponse`
@@ -1712,6 +1815,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1746,6 +1851,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1760,6 +1866,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceParam
         :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceParamRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateInstanceParamResponse`
@@ -1772,6 +1879,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1808,6 +1917,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceParamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1822,6 +1932,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceSecurityGroup
         :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateInstanceSecurityGroupResponse`
@@ -1834,6 +1945,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1868,6 +1981,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1882,6 +1996,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateReadAndWriteStrategy
         :type request: :class:`huaweicloudsdkddm.v1.UpdateReadAndWriteStrategyRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateReadAndWriteStrategyResponse`
@@ -1894,6 +2009,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1928,6 +2045,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateReadAndWriteStrategyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1942,6 +2060,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUser
         :type request: :class:`huaweicloudsdkddm.v1.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateUserResponse`
@@ -1954,6 +2073,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1990,6 +2111,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2004,6 +2126,7 @@ class DdmAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ValidateWeakPassword
         :type request: :class:`huaweicloudsdkddm.v1.ValidateWeakPasswordRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ValidateWeakPasswordResponse`
@@ -2016,6 +2139,8 @@ class DdmAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2048,6 +2173,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateWeakPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2055,7 +2181,7 @@ class DdmAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2066,9 +2192,10 @@ class DdmAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2085,6 +2212,7 @@ class DdmAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

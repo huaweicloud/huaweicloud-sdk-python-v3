@@ -17,7 +17,6 @@ class DatabaseTriggerDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class DatabaseTriggerDto:
     def judge_mode(self):
         """Gets the judge_mode of this DatabaseTriggerDto.
 
-
         :return: The judge_mode of this DatabaseTriggerDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TriggerJudgeMode`
         """
@@ -91,7 +89,6 @@ class DatabaseTriggerDto:
     @judge_mode.setter
     def judge_mode(self, judge_mode):
         """Sets the judge_mode of this DatabaseTriggerDto.
-
 
         :param judge_mode: The judge_mode of this DatabaseTriggerDto.
         :type judge_mode: :class:`huaweicloudsdkeihealth.v1.TriggerJudgeMode`

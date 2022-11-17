@@ -17,7 +17,6 @@ class ExecuteQaChatResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -127,7 +126,6 @@ class ExecuteQaChatResponse(SdkResponse):
     def qabot_answers(self):
         """Gets the qabot_answers of this ExecuteQaChatResponse.
 
-
         :return: The qabot_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.QaBotAnswersNew`
         """
@@ -136,7 +134,6 @@ class ExecuteQaChatResponse(SdkResponse):
     @qabot_answers.setter
     def qabot_answers(self, qabot_answers):
         """Sets the qabot_answers of this ExecuteQaChatResponse.
-
 
         :param qabot_answers: The qabot_answers of this ExecuteQaChatResponse.
         :type qabot_answers: :class:`huaweicloudsdkcbs.v1.QaBotAnswersNew`
@@ -147,7 +144,6 @@ class ExecuteQaChatResponse(SdkResponse):
     def chat_answers(self):
         """Gets the chat_answers of this ExecuteQaChatResponse.
 
-
         :return: The chat_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
         """
@@ -156,7 +152,6 @@ class ExecuteQaChatResponse(SdkResponse):
     @chat_answers.setter
     def chat_answers(self, chat_answers):
         """Sets the chat_answers of this ExecuteQaChatResponse.
-
 
         :param chat_answers: The chat_answers of this ExecuteQaChatResponse.
         :type chat_answers: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
@@ -167,7 +162,6 @@ class ExecuteQaChatResponse(SdkResponse):
     def taskbot_answers(self):
         """Gets the taskbot_answers of this ExecuteQaChatResponse.
 
-
         :return: The taskbot_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
         """
@@ -176,7 +170,6 @@ class ExecuteQaChatResponse(SdkResponse):
     @taskbot_answers.setter
     def taskbot_answers(self, taskbot_answers):
         """Sets the taskbot_answers of this ExecuteQaChatResponse.
-
 
         :param taskbot_answers: The taskbot_answers of this ExecuteQaChatResponse.
         :type taskbot_answers: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
@@ -187,7 +180,6 @@ class ExecuteQaChatResponse(SdkResponse):
     def docqa_answers(self):
         """Gets the docqa_answers of this ExecuteQaChatResponse.
 
-
         :return: The docqa_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.DocBotAnswers`
         """
@@ -196,7 +188,6 @@ class ExecuteQaChatResponse(SdkResponse):
     @docqa_answers.setter
     def docqa_answers(self, docqa_answers):
         """Sets the docqa_answers of this ExecuteQaChatResponse.
-
 
         :param docqa_answers: The docqa_answers of this ExecuteQaChatResponse.
         :type docqa_answers: :class:`huaweicloudsdkcbs.v1.DocBotAnswers`
@@ -207,7 +198,6 @@ class ExecuteQaChatResponse(SdkResponse):
     def tableqa_answers(self):
         """Gets the tableqa_answers of this ExecuteQaChatResponse.
 
-
         :return: The tableqa_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.TableQaAnswers`
         """
@@ -216,7 +206,6 @@ class ExecuteQaChatResponse(SdkResponse):
     @tableqa_answers.setter
     def tableqa_answers(self, tableqa_answers):
         """Sets the tableqa_answers of this ExecuteQaChatResponse.
-
 
         :param tableqa_answers: The tableqa_answers of this ExecuteQaChatResponse.
         :type tableqa_answers: :class:`huaweicloudsdkcbs.v1.TableQaAnswers`
@@ -249,7 +238,6 @@ class ExecuteQaChatResponse(SdkResponse):
     def kbqa_answers(self):
         """Gets the kbqa_answers of this ExecuteQaChatResponse.
 
-
         :return: The kbqa_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.KbqaAnswers`
         """
@@ -258,7 +246,6 @@ class ExecuteQaChatResponse(SdkResponse):
     @kbqa_answers.setter
     def kbqa_answers(self, kbqa_answers):
         """Sets the kbqa_answers of this ExecuteQaChatResponse.
-
 
         :param kbqa_answers: The kbqa_answers of this ExecuteQaChatResponse.
         :type kbqa_answers: :class:`huaweicloudsdkcbs.v1.KbqaAnswers`

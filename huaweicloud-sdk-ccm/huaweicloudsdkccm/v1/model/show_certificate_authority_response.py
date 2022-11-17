@@ -17,7 +17,6 @@ class ShowCertificateAuthorityResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -491,7 +490,6 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def distinguished_name(self):
         """Gets the distinguished_name of this ShowCertificateAuthorityResponse.
 
-
         :return: The distinguished_name of this ShowCertificateAuthorityResponse.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
@@ -500,7 +498,6 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
         """Sets the distinguished_name of this ShowCertificateAuthorityResponse.
-
 
         :param distinguished_name: The distinguished_name of this ShowCertificateAuthorityResponse.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -511,7 +508,6 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def crl_configuration(self):
         """Gets the crl_configuration of this ShowCertificateAuthorityResponse.
 
-
         :return: The crl_configuration of this ShowCertificateAuthorityResponse.
         :rtype: :class:`huaweicloudsdkccm.v1.ListCrlConfiguration`
         """
@@ -520,7 +516,6 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     @crl_configuration.setter
     def crl_configuration(self, crl_configuration):
         """Sets the crl_configuration of this ShowCertificateAuthorityResponse.
-
 
         :param crl_configuration: The crl_configuration of this ShowCertificateAuthorityResponse.
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.ListCrlConfiguration`

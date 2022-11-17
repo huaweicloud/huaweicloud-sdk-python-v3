@@ -17,7 +17,6 @@ class OpenScheduleConfReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -260,7 +259,6 @@ class OpenScheduleConfReq:
     def notify_setting(self):
         """Gets the notify_setting of this OpenScheduleConfReq.
 
-
         :return: The notify_setting of this OpenScheduleConfReq.
         :rtype: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
         """
@@ -269,7 +267,6 @@ class OpenScheduleConfReq:
     @notify_setting.setter
     def notify_setting(self, notify_setting):
         """Sets the notify_setting of this OpenScheduleConfReq.
-
 
         :param notify_setting: The notify_setting of this OpenScheduleConfReq.
         :type notify_setting: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`

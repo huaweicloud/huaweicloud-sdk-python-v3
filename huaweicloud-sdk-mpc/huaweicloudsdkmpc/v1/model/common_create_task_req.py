@@ -17,7 +17,6 @@ class CommonCreateTaskReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CommonCreateTaskReq:
     def input(self):
         """Gets the input of this CommonCreateTaskReq.
 
-
         :return: The input of this CommonCreateTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -72,7 +70,6 @@ class CommonCreateTaskReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CommonCreateTaskReq.
-
 
         :param input: The input of this CommonCreateTaskReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -83,7 +80,6 @@ class CommonCreateTaskReq:
     def output(self):
         """Gets the output of this CommonCreateTaskReq.
 
-
         :return: The output of this CommonCreateTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -92,7 +88,6 @@ class CommonCreateTaskReq:
     @output.setter
     def output(self, output):
         """Sets the output of this CommonCreateTaskReq.
-
 
         :param output: The output of this CommonCreateTaskReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

@@ -17,7 +17,6 @@ class BatchDeleteApiAclBindingV2Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchDeleteApiAclBindingV2Request:
     def body(self):
         """Gets the body of this BatchDeleteApiAclBindingV2Request.
 
-
         :return: The body of this BatchDeleteApiAclBindingV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.AclBindingBatchDelete`
         """
@@ -114,7 +112,6 @@ class BatchDeleteApiAclBindingV2Request:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteApiAclBindingV2Request.
-
 
         :param body: The body of this BatchDeleteApiAclBindingV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.AclBindingBatchDelete`

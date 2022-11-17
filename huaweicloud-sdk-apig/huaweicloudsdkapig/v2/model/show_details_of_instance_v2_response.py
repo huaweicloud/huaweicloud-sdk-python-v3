@@ -17,7 +17,6 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -1005,7 +1004,6 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def endpoint_service(self):
         """Gets the endpoint_service of this ShowDetailsOfInstanceV2Response.
 
-
         :return: The endpoint_service of this ShowDetailsOfInstanceV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.EndpointService`
         """
@@ -1014,7 +1012,6 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     @endpoint_service.setter
     def endpoint_service(self, endpoint_service):
         """Sets the endpoint_service of this ShowDetailsOfInstanceV2Response.
-
 
         :param endpoint_service: The endpoint_service of this ShowDetailsOfInstanceV2Response.
         :type endpoint_service: :class:`huaweicloudsdkapig.v2.EndpointService`
@@ -1047,7 +1044,6 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def node_ips(self):
         """Gets the node_ips of this ShowDetailsOfInstanceV2Response.
 
-
         :return: The node_ips of this ShowDetailsOfInstanceV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.NodeIps`
         """
@@ -1056,7 +1052,6 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     @node_ips.setter
     def node_ips(self, node_ips):
         """Sets the node_ips of this ShowDetailsOfInstanceV2Response.
-
 
         :param node_ips: The node_ips of this ShowDetailsOfInstanceV2Response.
         :type node_ips: :class:`huaweicloudsdkapig.v2.NodeIps`

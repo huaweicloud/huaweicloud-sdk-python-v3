@@ -17,7 +17,6 @@ class UpdateDataSourceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateDataSourceRequest:
     def body(self):
         """Gets the body of this UpdateDataSourceRequest.
 
-
         :return: The body of this UpdateDataSourceRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDatasourceReqDTO`
         """
@@ -86,7 +84,6 @@ class UpdateDataSourceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDataSourceRequest.
-
 
         :param body: The body of this UpdateDataSourceRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.UpdateDatasourceReqDTO`

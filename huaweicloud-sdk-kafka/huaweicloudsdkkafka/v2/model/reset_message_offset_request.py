@@ -17,7 +17,6 @@ class ResetMessageOffsetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ResetMessageOffsetRequest:
     def body(self):
         """Gets the body of this ResetMessageOffsetRequest.
 
-
         :return: The body of this ResetMessageOffsetRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetReq`
         """
@@ -114,7 +112,6 @@ class ResetMessageOffsetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetMessageOffsetRequest.
-
 
         :param body: The body of this ResetMessageOffsetRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetReq`

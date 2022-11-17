@@ -17,7 +17,6 @@ class MultiTaskInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class MultiTaskInfo:
     def error(self):
         """Gets the error of this MultiTaskInfo.
 
-
         :return: The error of this MultiTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
         """
@@ -94,7 +92,6 @@ class MultiTaskInfo:
     @error.setter
     def error(self, error):
         """Sets the error of this MultiTaskInfo.
-
 
         :param error: The error of this MultiTaskInfo.
         :type error: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
@@ -105,7 +102,6 @@ class MultiTaskInfo:
     def output_file(self):
         """Gets the output_file of this MultiTaskInfo.
 
-
         :return: The output_file of this MultiTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
@@ -114,7 +110,6 @@ class MultiTaskInfo:
     @output_file.setter
     def output_file(self, output_file):
         """Sets the output_file of this MultiTaskInfo.
-
 
         :param output_file: The output_file of this MultiTaskInfo.
         :type output_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`

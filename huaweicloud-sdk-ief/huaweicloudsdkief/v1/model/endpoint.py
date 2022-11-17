@@ -17,7 +17,6 @@ class Endpoint:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class Endpoint:
     def endpoint(self):
         """Gets the endpoint of this Endpoint.
 
-
         :return: The endpoint of this Endpoint.
         :rtype: :class:`huaweicloudsdkief.v1.EndpointObj`
         """
@@ -58,7 +56,6 @@ class Endpoint:
     @endpoint.setter
     def endpoint(self, endpoint):
         """Sets the endpoint of this Endpoint.
-
 
         :param endpoint: The endpoint of this Endpoint.
         :type endpoint: :class:`huaweicloudsdkief.v1.EndpointObj`

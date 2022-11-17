@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudDeployAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTaskSuccessRate
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListTaskSuccessRateRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListTaskSuccessRateResponse`
@@ -68,6 +63,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTaskSuccessRateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProjectSuccessRate
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowProjectSuccessRateRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowProjectSuccessRateResponse`
@@ -128,6 +127,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -164,6 +165,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectSuccessRateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -178,6 +180,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDeployTaskByTemplate
         :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeployTaskByTemplateRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.CreateDeployTaskByTemplateResponse`
@@ -190,6 +193,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeployTaskByTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeployTask
         :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeployTaskRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeployTaskResponse`
@@ -248,6 +255,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -280,6 +289,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeployTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -294,6 +304,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDeployTaskHistoryByDate
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTaskHistoryByDateRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTaskHistoryByDateResponse`
@@ -306,6 +317,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -348,6 +361,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeployTaskHistoryByDateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -362,6 +376,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDeployTasks
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTasksRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListDeployTasksResponse`
@@ -374,6 +389,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -410,6 +427,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeployTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -424,6 +442,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeployTaskDetail
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeployTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowDeployTaskDetailResponse`
@@ -436,6 +455,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -468,6 +489,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeployTaskDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -482,6 +504,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartDeployTask
         :type request: :class:`huaweicloudsdkclouddeploy.v2.StartDeployTaskRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.StartDeployTaskResponse`
@@ -494,6 +517,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -528,6 +553,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartDeployTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -542,6 +568,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDeploymentHost
         :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentHostRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentHostResponse`
@@ -554,6 +581,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -588,6 +617,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeploymentHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -602,6 +632,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeploymentHost
         :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentHostRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentHostResponse`
@@ -614,6 +645,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -648,6 +681,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeploymentHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -662,6 +696,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHosts
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListHostsRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListHostsResponse`
@@ -674,6 +709,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -720,6 +757,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -734,6 +772,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeploymentHostDetail
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentHostDetailRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentHostDetailResponse`
@@ -746,6 +785,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -780,6 +821,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeploymentHostDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -794,6 +836,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDeploymentHost
         :type request: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentHostRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentHostResponse`
@@ -806,6 +849,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -842,6 +887,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeploymentHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -856,6 +902,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDeploymentGroup
         :type request: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentGroupRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.CreateDeploymentGroupResponse`
@@ -868,6 +915,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -900,6 +949,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeploymentGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -914,6 +964,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeploymentGroup
         :type request: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentGroupRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeleteDeploymentGroupResponse`
@@ -926,6 +977,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -958,6 +1011,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeploymentGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -972,6 +1026,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHostGroups
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ListHostGroupsRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ListHostGroupsResponse`
@@ -984,6 +1039,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1030,6 +1087,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1044,6 +1102,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeploymentGroupDetail
         :type request: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentGroupDetailRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.ShowDeploymentGroupDetailResponse`
@@ -1056,6 +1115,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1088,6 +1149,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeploymentGroupDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1102,6 +1164,7 @@ class CloudDeployAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDeploymentGroup
         :type request: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentGroupRequest`
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.UpdateDeploymentGroupResponse`
@@ -1114,6 +1177,8 @@ class CloudDeployAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1148,6 +1213,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeploymentGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1155,7 +1221,7 @@ class CloudDeployAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1166,9 +1232,10 @@ class CloudDeployAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1185,6 +1252,7 @@ class CloudDeployAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

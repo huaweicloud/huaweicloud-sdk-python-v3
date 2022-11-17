@@ -17,7 +17,6 @@ class CreateCompareTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateCompareTaskRequest:
     def body(self):
         """Gets the body of this CreateCompareTaskRequest.
 
-
         :return: The body of this CreateCompareTaskRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskReq`
         """
@@ -87,7 +85,6 @@ class CreateCompareTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCompareTaskRequest.
-
 
         :param body: The body of this CreateCompareTaskRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskReq`

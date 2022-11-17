@@ -17,7 +17,6 @@ class AllowGuestUnmuteRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class AllowGuestUnmuteRequest:
     def body(self):
         """Gets the body of this AllowGuestUnmuteRequest.
 
-
         :return: The body of this AllowGuestUnmuteRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestAllowUnMuteReqBody`
         """
@@ -114,7 +112,6 @@ class AllowGuestUnmuteRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AllowGuestUnmuteRequest.
-
 
         :param body: The body of this AllowGuestUnmuteRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestAllowUnMuteReqBody`

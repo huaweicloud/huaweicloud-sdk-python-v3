@@ -17,7 +17,6 @@ class CheckUserIdentityRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CheckUserIdentityRequest:
     def body(self):
         """Gets the body of this CheckUserIdentityRequest.
 
-
         :return: The body of this CheckUserIdentityRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.CheckSubcustomerUserReq`
         """
@@ -58,7 +56,6 @@ class CheckUserIdentityRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckUserIdentityRequest.
-
 
         :param body: The body of this CheckUserIdentityRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.CheckSubcustomerUserReq`

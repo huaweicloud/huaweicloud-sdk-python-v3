@@ -17,7 +17,6 @@ class ApiInfoPerPage:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -461,7 +460,6 @@ class ApiInfoPerPage:
     def auth_opt(self):
         """Gets the auth_opt of this ApiInfoPerPage.
 
-
         :return: The auth_opt of this ApiInfoPerPage.
         :rtype: :class:`huaweicloudsdkapig.v2.AuthOpt`
         """
@@ -470,7 +468,6 @@ class ApiInfoPerPage:
     @auth_opt.setter
     def auth_opt(self, auth_opt):
         """Sets the auth_opt of this ApiInfoPerPage.
-
 
         :param auth_opt: The auth_opt of this ApiInfoPerPage.
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -1097,7 +1094,6 @@ class ApiInfoPerPage:
     def backend_api(self):
         """Gets the backend_api of this ApiInfoPerPage.
 
-
         :return: The backend_api of this ApiInfoPerPage.
         :rtype: :class:`huaweicloudsdkapig.v2.BackendApi`
         """
@@ -1106,7 +1102,6 @@ class ApiInfoPerPage:
     @backend_api.setter
     def backend_api(self, backend_api):
         """Sets the backend_api of this ApiInfoPerPage.
-
 
         :param backend_api: The backend_api of this ApiInfoPerPage.
         :type backend_api: :class:`huaweicloudsdkapig.v2.BackendApi`
@@ -1117,7 +1112,6 @@ class ApiInfoPerPage:
     def api_group_info(self):
         """Gets the api_group_info of this ApiInfoPerPage.
 
-
         :return: The api_group_info of this ApiInfoPerPage.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiGroupCommonInfo`
         """
@@ -1126,7 +1120,6 @@ class ApiInfoPerPage:
     @api_group_info.setter
     def api_group_info(self, api_group_info):
         """Sets the api_group_info of this ApiInfoPerPage.
-
 
         :param api_group_info: The api_group_info of this ApiInfoPerPage.
         :type api_group_info: :class:`huaweicloudsdkapig.v2.ApiGroupCommonInfo`

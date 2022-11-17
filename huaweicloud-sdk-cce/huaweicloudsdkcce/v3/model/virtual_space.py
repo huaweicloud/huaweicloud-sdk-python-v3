@@ -17,7 +17,6 @@ class VirtualSpace:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -112,7 +111,6 @@ class VirtualSpace:
     def lvm_config(self):
         """Gets the lvm_config of this VirtualSpace.
 
-
         :return: The lvm_config of this VirtualSpace.
         :rtype: :class:`huaweicloudsdkcce.v3.LVMConfig`
         """
@@ -121,7 +119,6 @@ class VirtualSpace:
     @lvm_config.setter
     def lvm_config(self, lvm_config):
         """Sets the lvm_config of this VirtualSpace.
-
 
         :param lvm_config: The lvm_config of this VirtualSpace.
         :type lvm_config: :class:`huaweicloudsdkcce.v3.LVMConfig`
@@ -132,7 +129,6 @@ class VirtualSpace:
     def runtime_config(self):
         """Gets the runtime_config of this VirtualSpace.
 
-
         :return: The runtime_config of this VirtualSpace.
         :rtype: :class:`huaweicloudsdkcce.v3.RuntimeConfig`
         """
@@ -141,7 +137,6 @@ class VirtualSpace:
     @runtime_config.setter
     def runtime_config(self, runtime_config):
         """Sets the runtime_config of this VirtualSpace.
-
 
         :param runtime_config: The runtime_config of this VirtualSpace.
         :type runtime_config: :class:`huaweicloudsdkcce.v3.RuntimeConfig`

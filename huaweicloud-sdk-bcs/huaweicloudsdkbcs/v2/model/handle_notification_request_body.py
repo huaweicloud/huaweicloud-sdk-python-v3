@@ -17,7 +17,6 @@ class HandleNotificationRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -118,7 +117,6 @@ class HandleNotificationRequestBody:
     def invitor_info(self):
         """Gets the invitor_info of this HandleNotificationRequestBody.
 
-
         :return: The invitor_info of this HandleNotificationRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitor`
         """
@@ -127,7 +125,6 @@ class HandleNotificationRequestBody:
     @invitor_info.setter
     def invitor_info(self, invitor_info):
         """Sets the invitor_info of this HandleNotificationRequestBody.
-
 
         :param invitor_info: The invitor_info of this HandleNotificationRequestBody.
         :type invitor_info: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitor`
@@ -138,7 +135,6 @@ class HandleNotificationRequestBody:
     def invitee_info(self):
         """Gets the invitee_info of this HandleNotificationRequestBody.
 
-
         :return: The invitee_info of this HandleNotificationRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitee`
         """
@@ -147,7 +143,6 @@ class HandleNotificationRequestBody:
     @invitee_info.setter
     def invitee_info(self, invitee_info):
         """Sets the invitee_info of this HandleNotificationRequestBody.
-
 
         :param invitee_info: The invitee_info of this HandleNotificationRequestBody.
         :type invitee_info: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitee`

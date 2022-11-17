@@ -17,7 +17,6 @@ class AvailableZone:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -172,7 +171,6 @@ class AvailableZone:
     def local_name(self):
         """Gets the local_name of this AvailableZone.
 
-
         :return: The local_name of this AvailableZone.
         :rtype: :class:`huaweicloudsdkapig.v2.LocalName`
         """
@@ -181,7 +179,6 @@ class AvailableZone:
     @local_name.setter
     def local_name(self, local_name):
         """Sets the local_name of this AvailableZone.
-
 
         :param local_name: The local_name of this AvailableZone.
         :type local_name: :class:`huaweicloudsdkapig.v2.LocalName`

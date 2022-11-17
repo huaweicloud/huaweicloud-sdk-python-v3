@@ -17,69 +17,61 @@ class KeyValueDO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'value': 'str',
-        'limits': 'list[ParamTypeLimits]'
+        'key': 'str',
+        'value': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
-        'value': 'value',
-        'limits': 'limits'
+        'key': 'key',
+        'value': 'value'
     }
 
-    def __init__(self, name=None, value=None, limits=None):
+    def __init__(self, key=None, value=None):
         """KeyValueDO
 
         The model defined in huaweicloud sdk
 
-        :param name: 执行部署任务时传递的参数名称
-        :type name: str
+        :param key: 执行部署任务时传递的参数名称
+        :type key: str
         :param value: 执行部署任务时传递的参数值
         :type value: str
-        :param limits: 参数值为枚举类型时，返回可选值列表
-        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
         """
         
         
 
-        self._name = None
+        self._key = None
         self._value = None
-        self._limits = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        if key is not None:
+            self.key = key
         if value is not None:
             self.value = value
-        if limits is not None:
-            self.limits = limits
 
     @property
-    def name(self):
-        """Gets the name of this KeyValueDO.
+    def key(self):
+        """Gets the key of this KeyValueDO.
 
         执行部署任务时传递的参数名称
 
-        :return: The name of this KeyValueDO.
+        :return: The key of this KeyValueDO.
         :rtype: str
         """
-        return self._name
+        return self._key
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this KeyValueDO.
+    @key.setter
+    def key(self, key):
+        """Sets the key of this KeyValueDO.
 
         执行部署任务时传递的参数名称
 
-        :param name: The name of this KeyValueDO.
-        :type name: str
+        :param key: The key of this KeyValueDO.
+        :type key: str
         """
-        self._name = name
+        self._key = key
 
     @property
     def value(self):
@@ -102,28 +94,6 @@ class KeyValueDO:
         :type value: str
         """
         self._value = value
-
-    @property
-    def limits(self):
-        """Gets the limits of this KeyValueDO.
-
-        参数值为枚举类型时，返回可选值列表
-
-        :return: The limits of this KeyValueDO.
-        :rtype: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
-        """
-        return self._limits
-
-    @limits.setter
-    def limits(self, limits):
-        """Sets the limits of this KeyValueDO.
-
-        参数值为枚举类型时，返回可选值列表
-
-        :param limits: The limits of this KeyValueDO.
-        :type limits: list[:class:`huaweicloudsdkclouddeploy.v2.ParamTypeLimits`]
-        """
-        self._limits = limits
 
     def to_dict(self):
         """Returns the model properties as a dict"""

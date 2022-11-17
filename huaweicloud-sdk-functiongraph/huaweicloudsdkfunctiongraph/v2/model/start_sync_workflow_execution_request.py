@@ -17,7 +17,6 @@ class StartSyncWorkflowExecutionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartSyncWorkflowExecutionRequest:
     def body(self):
         """Gets the body of this StartSyncWorkflowExecutionRequest.
 
-
         :return: The body of this StartSyncWorkflowExecutionRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecuteBody`
         """
@@ -86,7 +84,6 @@ class StartSyncWorkflowExecutionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartSyncWorkflowExecutionRequest.
-
 
         :param body: The body of this StartSyncWorkflowExecutionRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecuteBody`

@@ -17,7 +17,6 @@ class DeleteTasksRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteTasksRequest:
     def body(self):
         """Gets the body of this DeleteTasksRequest.
 
-
         :return: The body of this DeleteTasksRequest.
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTasksReq`
         """
@@ -58,7 +56,6 @@ class DeleteTasksRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteTasksRequest.
-
 
         :param body: The body of this DeleteTasksRequest.
         :type body: :class:`huaweicloudsdksms.v3.DeleteTasksReq`

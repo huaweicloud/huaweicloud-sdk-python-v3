@@ -17,7 +17,6 @@ class AgencyTokenScope:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class AgencyTokenScope:
     def domain(self):
         """Gets the domain of this AgencyTokenScope.
 
-
         :return: The domain of this AgencyTokenScope.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeDomain`
         """
@@ -65,7 +63,6 @@ class AgencyTokenScope:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this AgencyTokenScope.
-
 
         :param domain: The domain of this AgencyTokenScope.
         :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeDomain`
@@ -76,7 +73,6 @@ class AgencyTokenScope:
     def project(self):
         """Gets the project of this AgencyTokenScope.
 
-
         :return: The project of this AgencyTokenScope.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeProject`
         """
@@ -85,7 +81,6 @@ class AgencyTokenScope:
     @project.setter
     def project(self, project):
         """Sets the project of this AgencyTokenScope.
-
 
         :param project: The project of this AgencyTokenScope.
         :type project: :class:`huaweicloudsdkiam.v3.AgencyTokenScopeProject`

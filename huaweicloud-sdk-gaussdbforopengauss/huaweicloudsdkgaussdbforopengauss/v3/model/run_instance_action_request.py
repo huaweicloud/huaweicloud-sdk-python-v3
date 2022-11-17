@@ -17,7 +17,6 @@ class RunInstanceActionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class RunInstanceActionRequest:
     def body(self):
         """Gets the body of this RunInstanceActionRequest.
 
-
         :return: The body of this RunInstanceActionRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceActionRequest`
         """
@@ -115,7 +113,6 @@ class RunInstanceActionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunInstanceActionRequest.
-
 
         :param body: The body of this RunInstanceActionRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceActionRequest`

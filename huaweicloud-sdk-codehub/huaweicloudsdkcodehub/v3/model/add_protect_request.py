@@ -17,7 +17,6 @@ class AddProtectRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class AddProtectRequest:
     def access_level(self):
         """Gets the access_level of this AddProtectRequest.
 
-
         :return: The access_level of this AddProtectRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddProtectAccessLevel`
         """
@@ -57,7 +55,6 @@ class AddProtectRequest:
     @access_level.setter
     def access_level(self, access_level):
         """Sets the access_level of this AddProtectRequest.
-
 
         :param access_level: The access_level of this AddProtectRequest.
         :type access_level: :class:`huaweicloudsdkcodehub.v3.AddProtectAccessLevel`

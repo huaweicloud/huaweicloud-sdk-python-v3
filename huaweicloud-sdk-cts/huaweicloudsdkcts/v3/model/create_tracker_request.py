@@ -17,7 +17,6 @@ class CreateTrackerRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateTrackerRequest:
     def body(self):
         """Gets the body of this CreateTrackerRequest.
 
-
         :return: The body of this CreateTrackerRequest.
         :rtype: :class:`huaweicloudsdkcts.v3.CreateTrackerRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateTrackerRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTrackerRequest.
-
 
         :param body: The body of this CreateTrackerRequest.
         :type body: :class:`huaweicloudsdkcts.v3.CreateTrackerRequestBody`

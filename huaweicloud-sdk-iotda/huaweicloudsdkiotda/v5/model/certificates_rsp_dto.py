@@ -17,7 +17,6 @@ class CertificatesRspDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -47,7 +46,7 @@ class CertificatesRspDTO:
 
         The model defined in huaweicloud sdk
 
-        :param certificate_id: 设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        :param certificate_id: CA证书ID，在上传CA证书时由平台分配的唯一标识。
         :type certificate_id: str
         :param cn_name: CA证书CN名称。
         :type cn_name: str
@@ -98,7 +97,7 @@ class CertificatesRspDTO:
     def certificate_id(self):
         """Gets the certificate_id of this CertificatesRspDTO.
 
-        设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        CA证书ID，在上传CA证书时由平台分配的唯一标识。
 
         :return: The certificate_id of this CertificatesRspDTO.
         :rtype: str
@@ -109,7 +108,7 @@ class CertificatesRspDTO:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this CertificatesRspDTO.
 
-        设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        CA证书ID，在上传CA证书时由平台分配的唯一标识。
 
         :param certificate_id: The certificate_id of this CertificatesRspDTO.
         :type certificate_id: str

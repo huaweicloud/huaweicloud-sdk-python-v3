@@ -17,7 +17,6 @@ class CinderListVolumeTypesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CinderListVolumeTypesResponse(SdkResponse):
     def volume_types(self):
         """Gets the volume_types of this CinderListVolumeTypesResponse.
 
-
         :return: The volume_types of this CinderListVolumeTypesResponse.
         :rtype: list[:class:`huaweicloudsdkevs.v2.VolumeType`]
         """
@@ -58,7 +56,6 @@ class CinderListVolumeTypesResponse(SdkResponse):
     @volume_types.setter
     def volume_types(self, volume_types):
         """Sets the volume_types of this CinderListVolumeTypesResponse.
-
 
         :param volume_types: The volume_types of this CinderListVolumeTypesResponse.
         :type volume_types: list[:class:`huaweicloudsdkevs.v2.VolumeType`]

@@ -17,7 +17,6 @@ class Sentences:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class Sentences:
     def result(self):
         """Gets the result of this Sentences.
 
-
         :return: The result of this Sentences.
         :rtype: :class:`huaweicloudsdksis.v1.FlashScoreResult`
         """
@@ -94,7 +92,6 @@ class Sentences:
     @result.setter
     def result(self, result):
         """Sets the result of this Sentences.
-
 
         :param result: The result of this Sentences.
         :type result: :class:`huaweicloudsdksis.v1.FlashScoreResult`

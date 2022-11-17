@@ -17,7 +17,6 @@ class UploadAttachmentsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UploadAttachmentsRequest:
     def body(self):
         """Gets the body of this UploadAttachmentsRequest.
 
-
         :return: The body of this UploadAttachmentsRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsRequestBody`
         """
@@ -114,7 +112,6 @@ class UploadAttachmentsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UploadAttachmentsRequest.
-
 
         :param body: The body of this UploadAttachmentsRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsRequestBody`

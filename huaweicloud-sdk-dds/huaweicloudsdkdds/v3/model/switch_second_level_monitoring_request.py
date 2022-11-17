@@ -17,7 +17,6 @@ class SwitchSecondLevelMonitoringRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SwitchSecondLevelMonitoringRequest:
     def body(self):
         """Gets the body of this SwitchSecondLevelMonitoringRequest.
 
-
         :return: The body of this SwitchSecondLevelMonitoringRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringRequestBody`
         """
@@ -86,7 +84,6 @@ class SwitchSecondLevelMonitoringRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SwitchSecondLevelMonitoringRequest.
-
 
         :param body: The body of this SwitchSecondLevelMonitoringRequest.
         :type body: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringRequestBody`

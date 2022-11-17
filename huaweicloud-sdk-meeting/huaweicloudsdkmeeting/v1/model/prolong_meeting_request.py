@@ -17,7 +17,6 @@ class ProlongMeetingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ProlongMeetingRequest:
     def body(self):
         """Gets the body of this ProlongMeetingRequest.
 
-
         :return: The body of this ProlongMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestProlongDurReqBody`
         """
@@ -114,7 +112,6 @@ class ProlongMeetingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ProlongMeetingRequest.
-
 
         :param body: The body of this ProlongMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestProlongDurReqBody`

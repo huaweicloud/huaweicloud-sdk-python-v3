@@ -17,7 +17,6 @@ class CreateAccessConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -186,7 +185,6 @@ class CreateAccessConfigResponse(SdkResponse):
     def access_config_detail(self):
         """Gets the access_config_detail of this CreateAccessConfigResponse.
 
-
         :return: The access_config_detail of this CreateAccessConfigResponse.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
         """
@@ -195,7 +193,6 @@ class CreateAccessConfigResponse(SdkResponse):
     @access_config_detail.setter
     def access_config_detail(self, access_config_detail):
         """Sets the access_config_detail of this CreateAccessConfigResponse.
-
 
         :param access_config_detail: The access_config_detail of this CreateAccessConfigResponse.
         :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
@@ -206,7 +203,6 @@ class CreateAccessConfigResponse(SdkResponse):
     def log_info(self):
         """Gets the log_info of this CreateAccessConfigResponse.
 
-
         :return: The log_info of this CreateAccessConfigResponse.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
         """
@@ -215,7 +211,6 @@ class CreateAccessConfigResponse(SdkResponse):
     @log_info.setter
     def log_info(self, log_info):
         """Sets the log_info of this CreateAccessConfigResponse.
-
 
         :param log_info: The log_info of this CreateAccessConfigResponse.
         :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigQueryLogInfo`
@@ -226,7 +221,6 @@ class CreateAccessConfigResponse(SdkResponse):
     def host_group_info(self):
         """Gets the host_group_info of this CreateAccessConfigResponse.
 
-
         :return: The host_group_info of this CreateAccessConfigResponse.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
         """
@@ -235,7 +229,6 @@ class CreateAccessConfigResponse(SdkResponse):
     @host_group_info.setter
     def host_group_info(self, host_group_info):
         """Sets the host_group_info of this CreateAccessConfigResponse.
-
 
         :param host_group_info: The host_group_info of this CreateAccessConfigResponse.
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
@@ -246,7 +239,6 @@ class CreateAccessConfigResponse(SdkResponse):
     def access_config_tag(self):
         """Gets the access_config_tag of this CreateAccessConfigResponse.
 
-
         :return: The access_config_tag of this CreateAccessConfigResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
@@ -255,7 +247,6 @@ class CreateAccessConfigResponse(SdkResponse):
     @access_config_tag.setter
     def access_config_tag(self, access_config_tag):
         """Sets the access_config_tag of this CreateAccessConfigResponse.
-
 
         :param access_config_tag: The access_config_tag of this CreateAccessConfigResponse.
         :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]

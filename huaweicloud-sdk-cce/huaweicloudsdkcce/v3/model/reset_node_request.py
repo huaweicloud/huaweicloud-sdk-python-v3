@@ -17,7 +17,6 @@ class ResetNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ResetNodeRequest:
     def body(self):
         """Gets the body of this ResetNodeRequest.
 
-
         :return: The body of this ResetNodeRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.ResetNodeList`
         """
@@ -86,7 +84,6 @@ class ResetNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetNodeRequest.
-
 
         :param body: The body of this ResetNodeRequest.
         :type body: :class:`huaweicloudsdkcce.v3.ResetNodeList`

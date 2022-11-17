@@ -17,7 +17,6 @@ class ContainerDef:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -219,7 +218,6 @@ class ContainerDef:
     def resources(self):
         """Gets the resources of this ContainerDef.
 
-
         :return: The resources of this ContainerDef.
         :rtype: :class:`huaweicloudsdkief.v1.DeploymentResources`
         """
@@ -228,7 +226,6 @@ class ContainerDef:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this ContainerDef.
-
 
         :param resources: The resources of this ContainerDef.
         :type resources: :class:`huaweicloudsdkief.v1.DeploymentResources`
@@ -305,7 +302,6 @@ class ContainerDef:
     def readiness_probe(self):
         """Gets the readiness_probe of this ContainerDef.
 
-
         :return: The readiness_probe of this ContainerDef.
         :rtype: :class:`huaweicloudsdkief.v1.Probe`
         """
@@ -314,7 +310,6 @@ class ContainerDef:
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
         """Sets the readiness_probe of this ContainerDef.
-
 
         :param readiness_probe: The readiness_probe of this ContainerDef.
         :type readiness_probe: :class:`huaweicloudsdkief.v1.Probe`
@@ -325,7 +320,6 @@ class ContainerDef:
     def liveness_probe(self):
         """Gets the liveness_probe of this ContainerDef.
 
-
         :return: The liveness_probe of this ContainerDef.
         :rtype: :class:`huaweicloudsdkief.v1.Probe`
         """
@@ -334,7 +328,6 @@ class ContainerDef:
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
         """Sets the liveness_probe of this ContainerDef.
-
 
         :param liveness_probe: The liveness_probe of this ContainerDef.
         :type liveness_probe: :class:`huaweicloudsdkief.v1.Probe`

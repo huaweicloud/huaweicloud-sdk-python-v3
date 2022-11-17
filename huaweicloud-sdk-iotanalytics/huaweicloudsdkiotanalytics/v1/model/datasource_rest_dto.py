@@ -17,7 +17,6 @@ class DatasourceRestDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -150,7 +149,6 @@ class DatasourceRestDTO:
     def content(self):
         """Gets the content of this DatasourceRestDTO.
 
-
         :return: The content of this DatasourceRestDTO.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
         """
@@ -159,7 +157,6 @@ class DatasourceRestDTO:
     @content.setter
     def content(self, content):
         """Sets the content of this DatasourceRestDTO.
-
 
         :param content: The content of this DatasourceRestDTO.
         :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`

@@ -17,7 +17,6 @@ class UpdateRecordCallbackRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class UpdateRecordCallbackRequest:
     def body(self):
         """Gets the body of this UpdateRecordCallbackRequest.
 
-
         :return: The body of this UpdateRecordCallbackRequest.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrlReq`
         """
@@ -201,7 +199,6 @@ class UpdateRecordCallbackRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateRecordCallbackRequest.
-
 
         :param body: The body of this UpdateRecordCallbackRequest.
         :type body: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrlReq`

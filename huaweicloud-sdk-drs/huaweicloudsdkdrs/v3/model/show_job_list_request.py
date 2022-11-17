@@ -17,7 +17,6 @@ class ShowJobListRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowJobListRequest:
     def body(self):
         """Gets the body of this ShowJobListRequest.
 
-
         :return: The body of this ShowJobListRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryJobsReq`
         """
@@ -87,7 +85,6 @@ class ShowJobListRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowJobListRequest.
-
 
         :param body: The body of this ShowJobListRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.QueryJobsReq`

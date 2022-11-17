@@ -17,7 +17,6 @@ class UpdatePublicKibanaWhitelistRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdatePublicKibanaWhitelistRequest:
     def body(self):
         """Gets the body of this UpdatePublicKibanaWhitelistRequest.
 
-
         :return: The body of this UpdatePublicKibanaWhitelistRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistReq`
         """
@@ -86,7 +84,6 @@ class UpdatePublicKibanaWhitelistRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePublicKibanaWhitelistRequest.
-
 
         :param body: The body of this UpdatePublicKibanaWhitelistRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistReq`

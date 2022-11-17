@@ -17,7 +17,6 @@ class ListDevicesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListDevicesResponse(SdkResponse):
     def page(self):
         """Gets the page of this ListDevicesResponse.
 
-
         :return: The page of this ListDevicesResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
         """
@@ -87,7 +85,6 @@ class ListDevicesResponse(SdkResponse):
     @page.setter
     def page(self, page):
         """Sets the page of this ListDevicesResponse.
-
 
         :param page: The page of this ListDevicesResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

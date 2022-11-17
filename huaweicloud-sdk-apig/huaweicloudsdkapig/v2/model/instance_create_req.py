@@ -17,7 +17,6 @@ class InstanceCreateReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -35,7 +34,8 @@ class InstanceCreateReq:
         'available_zone_ids': 'list[str]',
         'bandwidth_size': 'int',
         'ipv6_enable': 'bool',
-        'loadbalancer_provider': 'str'
+        'loadbalancer_provider': 'str',
+        'tags': 'list[TmsKeyValue]'
     }
 
     attribute_map = {
@@ -53,10 +53,11 @@ class InstanceCreateReq:
         'available_zone_ids': 'available_zone_ids',
         'bandwidth_size': 'bandwidth_size',
         'ipv6_enable': 'ipv6_enable',
-        'loadbalancer_provider': 'loadbalancer_provider'
+        'loadbalancer_provider': 'loadbalancer_provider',
+        'tags': 'tags'
     }
 
-    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, instance_id=None, spec_id=None, vpc_id=None, subnet_id=None, security_group_id=None, eip_id=None, enterprise_project_id=None, available_zone_ids=None, bandwidth_size=None, ipv6_enable=None, loadbalancer_provider=None):
+    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, instance_id=None, spec_id=None, vpc_id=None, subnet_id=None, security_group_id=None, eip_id=None, enterprise_project_id=None, available_zone_ids=None, bandwidth_size=None, ipv6_enable=None, loadbalancer_provider=None, tags=None):
         """InstanceCreateReq
 
         The model defined in huaweicloud sdk
@@ -91,6 +92,8 @@ class InstanceCreateReq:
         :type ipv6_enable: bool
         :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
         :type loadbalancer_provider: str
+        :param tags: 标签列表。  一个实例默认最多支持创建20个标签
+        :type tags: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
         """
         
         
@@ -110,6 +113,7 @@ class InstanceCreateReq:
         self._bandwidth_size = None
         self._ipv6_enable = None
         self._loadbalancer_provider = None
+        self._tags = None
         self.discriminator = None
 
         if description is not None:
@@ -142,6 +146,8 @@ class InstanceCreateReq:
             self.ipv6_enable = ipv6_enable
         if loadbalancer_provider is not None:
             self.loadbalancer_provider = loadbalancer_provider
+        if tags is not None:
+            self.tags = tags
 
     @property
     def description(self):
@@ -472,6 +478,28 @@ class InstanceCreateReq:
         :type loadbalancer_provider: str
         """
         self._loadbalancer_provider = loadbalancer_provider
+
+    @property
+    def tags(self):
+        """Gets the tags of this InstanceCreateReq.
+
+        标签列表。  一个实例默认最多支持创建20个标签
+
+        :return: The tags of this InstanceCreateReq.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this InstanceCreateReq.
+
+        标签列表。  一个实例默认最多支持创建20个标签
+
+        :param tags: The tags of this InstanceCreateReq.
+        :type tags: list[:class:`huaweicloudsdkapig.v2.TmsKeyValue`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

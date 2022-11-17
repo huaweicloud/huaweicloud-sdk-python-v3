@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class OmsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSyncEvents
         :type request: :class:`huaweicloudsdkoms.v2.CreateSyncEventsRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.CreateSyncEventsResponse`
@@ -68,6 +63,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSyncEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTask
         :type request: :class:`huaweicloudsdkoms.v2.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.CreateTaskResponse`
@@ -128,6 +127,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -160,6 +161,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -175,6 +177,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTask
         :type request: :class:`huaweicloudsdkoms.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.DeleteTaskResponse`
@@ -187,6 +190,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -219,6 +224,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -233,6 +239,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTasks
         :type request: :class:`huaweicloudsdkoms.v2.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ListTasksResponse`
@@ -245,6 +252,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -283,6 +292,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -297,6 +307,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTask
         :type request: :class:`huaweicloudsdkoms.v2.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ShowTaskResponse`
@@ -309,6 +320,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -341,6 +354,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -355,6 +369,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartTask
         :type request: :class:`huaweicloudsdkoms.v2.StartTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StartTaskResponse`
@@ -367,6 +382,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -401,6 +418,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -415,6 +433,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopTask
         :type request: :class:`huaweicloudsdkoms.v2.StopTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StopTaskResponse`
@@ -427,6 +446,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -459,6 +480,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -473,6 +495,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateBandwidthPolicy
         :type request: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyResponse`
@@ -485,6 +508,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -519,6 +544,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBandwidthPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -533,6 +559,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTaskGroup
         :type request: :class:`huaweicloudsdkoms.v2.CreateTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.CreateTaskGroupResponse`
@@ -545,6 +572,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -577,6 +606,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTaskGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -592,6 +622,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTaskGroup
         :type request: :class:`huaweicloudsdkoms.v2.DeleteTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.DeleteTaskGroupResponse`
@@ -604,6 +635,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -636,6 +669,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTaskGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -650,6 +684,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTaskGroup
         :type request: :class:`huaweicloudsdkoms.v2.ListTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ListTaskGroupResponse`
@@ -662,6 +697,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -698,6 +735,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTaskGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -712,6 +750,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RetryTaskGroup
         :type request: :class:`huaweicloudsdkoms.v2.RetryTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.RetryTaskGroupResponse`
@@ -724,6 +763,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -758,6 +799,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RetryTaskGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -772,6 +814,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskGroup
         :type request: :class:`huaweicloudsdkoms.v2.ShowTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ShowTaskGroupResponse`
@@ -784,6 +827,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -816,6 +861,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -830,6 +876,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartTaskGroup
         :type request: :class:`huaweicloudsdkoms.v2.StartTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StartTaskGroupResponse`
@@ -842,6 +889,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -876,6 +925,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartTaskGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -890,6 +940,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopTaskGroup
         :type request: :class:`huaweicloudsdkoms.v2.StopTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StopTaskGroupResponse`
@@ -902,6 +953,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -934,6 +987,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopTaskGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -948,6 +1002,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTaskGroup
         :type request: :class:`huaweicloudsdkoms.v2.UpdateTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.UpdateTaskGroupResponse`
@@ -960,6 +1015,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -994,6 +1051,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1008,6 +1066,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkoms.v2.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ListApiVersionsResponse`
@@ -1020,6 +1079,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1050,6 +1111,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1064,6 +1126,7 @@ class OmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApiInfo
         :type request: :class:`huaweicloudsdkoms.v2.ShowApiInfoRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ShowApiInfoResponse`
@@ -1076,6 +1139,8 @@ class OmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1108,6 +1173,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1115,7 +1181,7 @@ class OmsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1126,9 +1192,10 @@ class OmsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1145,6 +1212,7 @@ class OmsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

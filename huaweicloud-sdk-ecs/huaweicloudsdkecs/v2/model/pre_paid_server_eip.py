@@ -17,7 +17,6 @@ class PrePaidServerEip:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -83,7 +82,6 @@ class PrePaidServerEip:
     def bandwidth(self):
         """Gets the bandwidth of this PrePaidServerEip.
 
-
         :return: The bandwidth of this PrePaidServerEip.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerEipBandwidth`
         """
@@ -92,7 +90,6 @@ class PrePaidServerEip:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this PrePaidServerEip.
-
 
         :param bandwidth: The bandwidth of this PrePaidServerEip.
         :type bandwidth: :class:`huaweicloudsdkecs.v2.PrePaidServerEipBandwidth`
@@ -103,7 +100,6 @@ class PrePaidServerEip:
     def extendparam(self):
         """Gets the extendparam of this PrePaidServerEip.
 
-
         :return: The extendparam of this PrePaidServerEip.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerEipExtendParam`
         """
@@ -112,7 +108,6 @@ class PrePaidServerEip:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this PrePaidServerEip.
-
 
         :param extendparam: The extendparam of this PrePaidServerEip.
         :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerEipExtendParam`

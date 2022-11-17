@@ -17,7 +17,6 @@ class ApplicationConfigModify:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class ApplicationConfigModify:
     def configuration(self):
         """Gets the configuration of this ApplicationConfigModify.
 
-
         :return: The configuration of this ApplicationConfigModify.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ApplicationConfigModifyConfiguration`
         """
@@ -85,7 +83,6 @@ class ApplicationConfigModify:
     @configuration.setter
     def configuration(self, configuration):
         """Sets the configuration of this ApplicationConfigModify.
-
 
         :param configuration: The configuration of this ApplicationConfigModify.
         :type configuration: :class:`huaweicloudsdkservicestage.v2.ApplicationConfigModifyConfiguration`

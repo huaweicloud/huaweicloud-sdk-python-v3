@@ -17,7 +17,6 @@ class CreateDesktopReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -237,7 +236,6 @@ class CreateDesktopReq:
     def root_volume(self):
         """Gets the root_volume of this CreateDesktopReq.
 
-
         :return: The root_volume of this CreateDesktopReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Volume`
         """
@@ -246,7 +244,6 @@ class CreateDesktopReq:
     @root_volume.setter
     def root_volume(self, root_volume):
         """Sets the root_volume of this CreateDesktopReq.
-
 
         :param root_volume: The root_volume of this CreateDesktopReq.
         :type root_volume: :class:`huaweicloudsdkworkspace.v2.Volume`

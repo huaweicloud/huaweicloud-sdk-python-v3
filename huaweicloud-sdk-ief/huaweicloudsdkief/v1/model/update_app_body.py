@@ -17,7 +17,6 @@ class UpdateAppBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateAppBody:
     def app(self):
         """Gets the app of this UpdateAppBody.
 
-
         :return: The app of this UpdateAppBody.
         :rtype: :class:`huaweicloudsdkief.v1.AppUpdate`
         """
@@ -57,7 +55,6 @@ class UpdateAppBody:
     @app.setter
     def app(self, app):
         """Sets the app of this UpdateAppBody.
-
 
         :param app: The app of this UpdateAppBody.
         :type app: :class:`huaweicloudsdkief.v1.AppUpdate`

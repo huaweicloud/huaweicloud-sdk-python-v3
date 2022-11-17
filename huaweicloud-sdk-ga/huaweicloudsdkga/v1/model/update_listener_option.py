@@ -17,7 +17,6 @@ class UpdateListenerOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class UpdateListenerOption:
     def client_affinity(self):
         """Gets the client_affinity of this UpdateListenerOption.
 
-
         :return: The client_affinity of this UpdateListenerOption.
         :rtype: :class:`huaweicloudsdkga.v1.ClientAffinity`
         """
@@ -145,7 +143,6 @@ class UpdateListenerOption:
     @client_affinity.setter
     def client_affinity(self, client_affinity):
         """Sets the client_affinity of this UpdateListenerOption.
-
 
         :param client_affinity: The client_affinity of this UpdateListenerOption.
         :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`

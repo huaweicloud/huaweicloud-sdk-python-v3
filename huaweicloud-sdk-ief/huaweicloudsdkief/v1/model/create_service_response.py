@@ -17,7 +17,6 @@ class CreateServiceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateServiceResponse(SdkResponse):
     def service(self):
         """Gets the service of this CreateServiceResponse.
 
-
         :return: The service of this CreateServiceResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ServiceRespDetail`
         """
@@ -58,7 +56,6 @@ class CreateServiceResponse(SdkResponse):
     @service.setter
     def service(self, service):
         """Sets the service of this CreateServiceResponse.
-
 
         :param service: The service of this CreateServiceResponse.
         :type service: :class:`huaweicloudsdkief.v1.ServiceRespDetail`

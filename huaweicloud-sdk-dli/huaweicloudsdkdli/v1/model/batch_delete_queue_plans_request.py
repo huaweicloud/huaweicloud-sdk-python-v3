@@ -17,7 +17,6 @@ class BatchDeleteQueuePlansRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchDeleteQueuePlansRequest:
     def body(self):
         """Gets the body of this BatchDeleteQueuePlansRequest.
 
-
         :return: The body of this BatchDeleteQueuePlansRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.PlanIdslReq`
         """
@@ -86,7 +84,6 @@ class BatchDeleteQueuePlansRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteQueuePlansRequest.
-
 
         :param body: The body of this BatchDeleteQueuePlansRequest.
         :type body: :class:`huaweicloudsdkdli.v1.PlanIdslReq`

@@ -17,7 +17,6 @@ class UpdateSqlFilterControlRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateSqlFilterControlRequest:
     def body(self):
         """Gets the body of this UpdateSqlFilterControlRequest.
 
-
         :return: The body of this UpdateSqlFilterControlRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.OperateSqlFilterControlReq`
         """
@@ -115,7 +113,6 @@ class UpdateSqlFilterControlRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateSqlFilterControlRequest.
-
 
         :param body: The body of this UpdateSqlFilterControlRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.OperateSqlFilterControlReq`

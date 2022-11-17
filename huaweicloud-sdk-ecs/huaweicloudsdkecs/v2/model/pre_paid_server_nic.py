@@ -17,7 +17,6 @@ class PrePaidServerNic:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class PrePaidServerNic:
     def ipv6_bandwidth(self):
         """Gets the ipv6_bandwidth of this PrePaidServerNic.
 
-
         :return: The ipv6_bandwidth of this PrePaidServerNic.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerIpv6Bandwidth`
         """
@@ -144,7 +142,6 @@ class PrePaidServerNic:
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
         """Sets the ipv6_bandwidth of this PrePaidServerNic.
-
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this PrePaidServerNic.
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.PrePaidServerIpv6Bandwidth`

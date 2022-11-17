@@ -17,7 +17,6 @@ class PropertyModelResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -161,7 +160,6 @@ class PropertyModelResponse:
     def data_schema(self):
         """Gets the data_schema of this PropertyModelResponse.
 
-
         :return: The data_schema of this PropertyModelResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DataSchema`
         """
@@ -170,7 +168,6 @@ class PropertyModelResponse:
     @data_schema.setter
     def data_schema(self, data_schema):
         """Sets the data_schema of this PropertyModelResponse.
-
 
         :param data_schema: The data_schema of this PropertyModelResponse.
         :type data_schema: :class:`huaweicloudsdkiotanalytics.v1.DataSchema`

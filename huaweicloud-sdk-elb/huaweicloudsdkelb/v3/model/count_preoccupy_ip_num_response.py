@@ -17,7 +17,6 @@ class CountPreoccupyIpNumResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class CountPreoccupyIpNumResponse(SdkResponse):
     def preoccupy_ip(self):
         """Gets the preoccupy_ip of this CountPreoccupyIpNumResponse.
 
-
         :return: The preoccupy_ip of this CountPreoccupyIpNumResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PreoccupyIp`
         """
@@ -65,7 +63,6 @@ class CountPreoccupyIpNumResponse(SdkResponse):
     @preoccupy_ip.setter
     def preoccupy_ip(self, preoccupy_ip):
         """Sets the preoccupy_ip of this CountPreoccupyIpNumResponse.
-
 
         :param preoccupy_ip: The preoccupy_ip of this CountPreoccupyIpNumResponse.
         :type preoccupy_ip: :class:`huaweicloudsdkelb.v3.PreoccupyIp`

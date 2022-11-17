@@ -17,7 +17,6 @@ class GlanceDeleteImageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class GlanceDeleteImageRequest:
     def body(self):
         """Gets the body of this GlanceDeleteImageRequest.
 
-
         :return: The body of this GlanceDeleteImageRequest.
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageRequestBody`
         """
@@ -86,7 +84,6 @@ class GlanceDeleteImageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this GlanceDeleteImageRequest.
-
 
         :param body: The body of this GlanceDeleteImageRequest.
         :type body: :class:`huaweicloudsdkims.v2.GlanceDeleteImageRequestBody`

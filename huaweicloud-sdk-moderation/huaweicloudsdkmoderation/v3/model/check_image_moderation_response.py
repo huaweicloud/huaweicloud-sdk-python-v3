@@ -17,7 +17,6 @@ class CheckImageModerationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CheckImageModerationResponse(SdkResponse):
     def result(self):
         """Gets the result of this CheckImageModerationResponse.
 
-
         :return: The result of this CheckImageModerationResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v3.ImageDetectionResult`
         """
@@ -87,7 +85,6 @@ class CheckImageModerationResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this CheckImageModerationResponse.
-
 
         :param result: The result of this CheckImageModerationResponse.
         :type result: :class:`huaweicloudsdkmoderation.v3.ImageDetectionResult`

@@ -17,7 +17,6 @@ class ShowReportResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class ShowReportResponse(SdkResponse):
     def result(self):
         """Gets the result of this ShowReportResponse.
 
-
         :return: The result of this ShowReportResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportInfo`
         """
@@ -145,7 +143,6 @@ class ShowReportResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ShowReportResponse.
-
 
         :param result: The result of this ShowReportResponse.
         :type result: :class:`huaweicloudsdkcpts.v1.ReportInfo`

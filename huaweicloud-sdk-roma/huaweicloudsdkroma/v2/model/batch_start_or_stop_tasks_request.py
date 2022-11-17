@@ -17,7 +17,6 @@ class BatchStartOrStopTasksRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchStartOrStopTasksRequest:
     def body(self):
         """Gets the body of this BatchStartOrStopTasksRequest.
 
-
         :return: The body of this BatchStartOrStopTasksRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.OperateTasksBean`
         """
@@ -86,7 +84,6 @@ class BatchStartOrStopTasksRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchStartOrStopTasksRequest.
-
 
         :param body: The body of this BatchStartOrStopTasksRequest.
         :type body: :class:`huaweicloudsdkroma.v2.OperateTasksBean`

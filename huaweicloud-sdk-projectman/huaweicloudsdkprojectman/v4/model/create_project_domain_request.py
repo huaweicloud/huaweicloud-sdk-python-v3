@@ -17,7 +17,6 @@ class CreateProjectDomainRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateProjectDomainRequest:
     def body(self):
         """Gets the body of this CreateProjectDomainRequest.
 
-
         :return: The body of this CreateProjectDomainRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateProjectDomainRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateProjectDomainRequest.
-
 
         :param body: The body of this CreateProjectDomainRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequestBody`

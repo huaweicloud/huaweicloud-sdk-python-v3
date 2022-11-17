@@ -17,7 +17,6 @@ class BatchListRposAndRtosRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class BatchListRposAndRtosRequest:
     def body(self):
         """Gets the body of this BatchListRposAndRtosRequest.
 
-
         :return: The body of this BatchListRposAndRtosRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryRpoAndRtoReq`
         """
@@ -87,7 +85,6 @@ class BatchListRposAndRtosRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchListRposAndRtosRequest.
-
 
         :param body: The body of this BatchListRposAndRtosRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryRpoAndRtoReq`

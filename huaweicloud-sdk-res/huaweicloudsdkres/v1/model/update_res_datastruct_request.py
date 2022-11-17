@@ -17,7 +17,6 @@ class UpdateResDatastructRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class UpdateResDatastructRequest:
     def body(self):
         """Gets the body of this UpdateResDatastructRequest.
 
-
         :return: The body of this UpdateResDatastructRequest.
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequestBodyBody`
         """
@@ -142,7 +140,6 @@ class UpdateResDatastructRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateResDatastructRequest.
-
 
         :param body: The body of this UpdateResDatastructRequest.
         :type body: :class:`huaweicloudsdkres.v1.UpdateResDatastructRequestBodyBody`

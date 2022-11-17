@@ -17,7 +17,6 @@ class ExtensionAllSnake:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -493,7 +492,6 @@ class ExtensionAllSnake:
     def publisher(self):
         """Gets the publisher of this ExtensionAllSnake.
 
-
         :return: The publisher of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.PublisherSnake`
         """
@@ -502,7 +500,6 @@ class ExtensionAllSnake:
     @publisher.setter
     def publisher(self, publisher):
         """Sets the publisher of this ExtensionAllSnake.
-
 
         :param publisher: The publisher of this ExtensionAllSnake.
         :type publisher: :class:`huaweicloudsdkcloudide.v2.PublisherSnake`
@@ -601,7 +598,6 @@ class ExtensionAllSnake:
     def publish_manager(self):
         """Gets the publish_manager of this ExtensionAllSnake.
 
-
         :return: The publish_manager of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.PublisherSnake`
         """
@@ -610,7 +606,6 @@ class ExtensionAllSnake:
     @publish_manager.setter
     def publish_manager(self, publish_manager):
         """Sets the publish_manager of this ExtensionAllSnake.
-
 
         :param publish_manager: The publish_manager of this ExtensionAllSnake.
         :type publish_manager: :class:`huaweicloudsdkcloudide.v2.PublisherSnake`
@@ -841,7 +836,6 @@ class ExtensionAllSnake:
     def extension_statistics(self):
         """Gets the extension_statistics of this ExtensionAllSnake.
 
-
         :return: The extension_statistics of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionStatistics`
         """
@@ -850,7 +844,6 @@ class ExtensionAllSnake:
     @extension_statistics.setter
     def extension_statistics(self, extension_statistics):
         """Sets the extension_statistics of this ExtensionAllSnake.
-
 
         :param extension_statistics: The extension_statistics of this ExtensionAllSnake.
         :type extension_statistics: :class:`huaweicloudsdkcloudide.v2.ExtensionStatistics`
@@ -883,7 +876,6 @@ class ExtensionAllSnake:
     def ext_info(self):
         """Gets the ext_info of this ExtensionAllSnake.
 
-
         :return: The ext_info of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionExternalInfo`
         """
@@ -892,7 +884,6 @@ class ExtensionAllSnake:
     @ext_info.setter
     def ext_info(self, ext_info):
         """Sets the ext_info of this ExtensionAllSnake.
-
 
         :param ext_info: The ext_info of this ExtensionAllSnake.
         :type ext_info: :class:`huaweicloudsdkcloudide.v2.ExtensionExternalInfo`
@@ -925,7 +916,6 @@ class ExtensionAllSnake:
     def check_result(self):
         """Gets the check_result of this ExtensionAllSnake.
 
-
         :return: The check_result of this ExtensionAllSnake.
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckResult`
         """
@@ -934,7 +924,6 @@ class ExtensionAllSnake:
     @check_result.setter
     def check_result(self, check_result):
         """Sets the check_result of this ExtensionAllSnake.
-
 
         :param check_result: The check_result of this ExtensionAllSnake.
         :type check_result: :class:`huaweicloudsdkcloudide.v2.CheckResult`

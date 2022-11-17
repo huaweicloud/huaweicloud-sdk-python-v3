@@ -17,7 +17,6 @@ class TransformResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -92,7 +91,6 @@ class TransformResponse:
     def expression(self):
         """Gets the expression of this TransformResponse.
 
-
         :return: The expression of this TransformResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Formula`
         """
@@ -101,7 +99,6 @@ class TransformResponse:
     @expression.setter
     def expression(self, expression):
         """Sets the expression of this TransformResponse.
-
 
         :param expression: The expression of this TransformResponse.
         :type expression: :class:`huaweicloudsdkiotanalytics.v1.Formula`
@@ -134,7 +131,6 @@ class TransformResponse:
     def outputs(self):
         """Gets the outputs of this TransformResponse.
 
-
         :return: The outputs of this TransformResponse.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
         """
@@ -143,7 +139,6 @@ class TransformResponse:
     @outputs.setter
     def outputs(self, outputs):
         """Sets the outputs of this TransformResponse.
-
 
         :param outputs: The outputs of this TransformResponse.
         :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]

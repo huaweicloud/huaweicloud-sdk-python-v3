@@ -17,7 +17,6 @@ class Trigger:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class Trigger:
     def trigger_config(self):
         """Gets the trigger_config of this Trigger.
 
-
         :return: The trigger_config of this Trigger.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.OBSTriggerConfig`
         """
@@ -143,7 +141,6 @@ class Trigger:
     @trigger_config.setter
     def trigger_config(self, trigger_config):
         """Sets the trigger_config of this Trigger.
-
 
         :param trigger_config: The trigger_config of this Trigger.
         :type trigger_config: :class:`huaweicloudsdkfunctiongraph.v2.OBSTriggerConfig`

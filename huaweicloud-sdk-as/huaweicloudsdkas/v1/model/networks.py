@@ -17,7 +17,6 @@ class Networks:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -113,7 +112,6 @@ class Networks:
     def ipv6_bandwidth(self):
         """Gets the ipv6_bandwidth of this Networks.
 
-
         :return: The ipv6_bandwidth of this Networks.
         :rtype: :class:`huaweicloudsdkas.v1.Ipv6Bandwidth`
         """
@@ -122,7 +120,6 @@ class Networks:
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
         """Sets the ipv6_bandwidth of this Networks.
-
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this Networks.
         :type ipv6_bandwidth: :class:`huaweicloudsdkas.v1.Ipv6Bandwidth`

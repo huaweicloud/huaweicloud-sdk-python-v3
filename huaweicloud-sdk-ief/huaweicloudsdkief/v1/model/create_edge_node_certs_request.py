@@ -17,7 +17,6 @@ class CreateEdgeNodeCertsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateEdgeNodeCertsRequest:
     def body(self):
         """Gets the body of this CreateEdgeNodeCertsRequest.
 
-
         :return: The body of this CreateEdgeNodeCertsRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Cert`
         """
@@ -115,7 +113,6 @@ class CreateEdgeNodeCertsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateEdgeNodeCertsRequest.
-
 
         :param body: The body of this CreateEdgeNodeCertsRequest.
         :type body: :class:`huaweicloudsdkief.v1.Cert`

@@ -17,7 +17,6 @@ class CreateRouteTableResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CreateRouteTableResponse(SdkResponse):
     def route_table(self):
         """Gets the route_table of this CreateRouteTableResponse.
 
-
         :return: The route_table of this CreateRouteTableResponse.
         :rtype: :class:`huaweicloudsdker.v3.RouteTable`
         """
@@ -72,7 +70,6 @@ class CreateRouteTableResponse(SdkResponse):
     @route_table.setter
     def route_table(self, route_table):
         """Sets the route_table of this CreateRouteTableResponse.
-
 
         :param route_table: The route_table of this CreateRouteTableResponse.
         :type route_table: :class:`huaweicloudsdker.v3.RouteTable`
@@ -105,7 +102,6 @@ class CreateRouteTableResponse(SdkResponse):
     def x_client_token(self):
         """Gets the x_client_token of this CreateRouteTableResponse.
 
-
         :return: The x_client_token of this CreateRouteTableResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class CreateRouteTableResponse(SdkResponse):
     @x_client_token.setter
     def x_client_token(self, x_client_token):
         """Sets the x_client_token of this CreateRouteTableResponse.
-
 
         :param x_client_token: The x_client_token of this CreateRouteTableResponse.
         :type x_client_token: str

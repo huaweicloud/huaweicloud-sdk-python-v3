@@ -17,7 +17,6 @@ class ReqUpdateDeh:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ReqUpdateDeh:
     def dedicated_host(self):
         """Gets the dedicated_host of this ReqUpdateDeh.
 
-
         :return: The dedicated_host of this ReqUpdateDeh.
         :rtype: :class:`huaweicloudsdkdeh.v1.ReqUpdateDehMessage`
         """
@@ -57,7 +55,6 @@ class ReqUpdateDeh:
     @dedicated_host.setter
     def dedicated_host(self, dedicated_host):
         """Sets the dedicated_host of this ReqUpdateDeh.
-
 
         :param dedicated_host: The dedicated_host of this ReqUpdateDeh.
         :type dedicated_host: :class:`huaweicloudsdkdeh.v1.ReqUpdateDehMessage`

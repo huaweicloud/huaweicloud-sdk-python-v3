@@ -17,7 +17,6 @@ class PwdAuth:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class PwdAuth:
     def identity(self):
         """Gets the identity of this PwdAuth.
 
-
         :return: The identity of this PwdAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.PwdIdentity`
         """
@@ -63,7 +61,6 @@ class PwdAuth:
     @identity.setter
     def identity(self, identity):
         """Sets the identity of this PwdAuth.
-
 
         :param identity: The identity of this PwdAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.PwdIdentity`
@@ -74,7 +71,6 @@ class PwdAuth:
     def scope(self):
         """Gets the scope of this PwdAuth.
 
-
         :return: The scope of this PwdAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.AuthScope`
         """
@@ -83,7 +79,6 @@ class PwdAuth:
     @scope.setter
     def scope(self, scope):
         """Sets the scope of this PwdAuth.
-
 
         :param scope: The scope of this PwdAuth.
         :type scope: :class:`huaweicloudsdkiam.v3.AuthScope`

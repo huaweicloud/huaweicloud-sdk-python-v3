@@ -17,7 +17,6 @@ class ErrRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ErrRsp:
     def error(self):
         """Gets the error of this ErrRsp.
 
-
         :return: The error of this ErrRsp.
         :rtype: :class:`huaweicloudsdkcdn.v2.ErrMsg`
         """
@@ -57,7 +55,6 @@ class ErrRsp:
     @error.setter
     def error(self, error):
         """Sets the error of this ErrRsp.
-
 
         :param error: The error of this ErrRsp.
         :type error: :class:`huaweicloudsdkcdn.v2.ErrMsg`

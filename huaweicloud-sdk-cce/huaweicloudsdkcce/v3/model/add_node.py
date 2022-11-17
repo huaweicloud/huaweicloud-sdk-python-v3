@@ -17,7 +17,6 @@ class AddNode:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class AddNode:
     def spec(self):
         """Gets the spec of this AddNode.
 
-
         :return: The spec of this AddNode.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`
         """
@@ -85,7 +83,6 @@ class AddNode:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this AddNode.
-
 
         :param spec: The spec of this AddNode.
         :type spec: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`

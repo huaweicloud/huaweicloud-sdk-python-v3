@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CssAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAutoCreatePolicy
         :type request: :class:`huaweicloudsdkcss.v1.CreateAutoCreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateAutoCreatePolicyResponse`
@@ -68,6 +63,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAutoCreatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateBindPublic
         :type request: :class:`huaweicloudsdkcss.v1.CreateBindPublicRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateBindPublicResponse`
@@ -128,6 +127,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBindPublicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCluster
         :type request: :class:`huaweicloudsdkcss.v1.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterResponse`
@@ -188,6 +191,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -220,6 +225,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -234,6 +240,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateClustersTags
         :type request: :class:`huaweicloudsdkcss.v1.CreateClustersTagsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClustersTagsResponse`
@@ -246,6 +253,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateClustersTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLoadIkThesaurus
         :type request: :class:`huaweicloudsdkcss.v1.CreateLoadIkThesaurusRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateLoadIkThesaurusResponse`
@@ -308,6 +319,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLoadIkThesaurusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLogBackup
         :type request: :class:`huaweicloudsdkcss.v1.CreateLogBackupRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateLogBackupResponse`
@@ -368,6 +383,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +417,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLogBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -414,6 +432,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSnapshot
         :type request: :class:`huaweicloudsdkcss.v1.CreateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateSnapshotResponse`
@@ -426,6 +445,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -460,6 +481,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -476,6 +498,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCluster
         :type request: :class:`huaweicloudsdkcss.v1.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteClusterResponse`
@@ -488,6 +511,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -520,6 +545,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -534,6 +560,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteClustersTags
         :type request: :class:`huaweicloudsdkcss.v1.DeleteClustersTagsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteClustersTagsResponse`
@@ -546,6 +573,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -582,6 +611,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteClustersTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -596,6 +626,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteIkThesaurus
         :type request: :class:`huaweicloudsdkcss.v1.DeleteIkThesaurusRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteIkThesaurusResponse`
@@ -608,6 +639,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -640,6 +673,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIkThesaurusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -654,6 +688,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSnapshot
         :type request: :class:`huaweicloudsdkcss.v1.DeleteSnapshotRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteSnapshotResponse`
@@ -666,6 +701,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -700,6 +737,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -714,6 +752,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadCert
         :type request: :class:`huaweicloudsdkcss.v1.DownloadCertRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DownloadCertResponse`
@@ -726,6 +765,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -756,6 +797,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -770,6 +812,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClustersDetails
         :type request: :class:`huaweicloudsdkcss.v1.ListClustersDetailsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListClustersDetailsResponse`
@@ -782,6 +825,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -816,6 +861,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClustersDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -830,6 +876,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClustersTags
         :type request: :class:`huaweicloudsdkcss.v1.ListClustersTagsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListClustersTagsResponse`
@@ -842,6 +889,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -874,6 +923,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClustersTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -888,6 +938,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkcss.v1.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListFlavorsResponse`
@@ -900,6 +951,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -930,6 +983,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -944,6 +998,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLogsJob
         :type request: :class:`huaweicloudsdkcss.v1.ListLogsJobRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListLogsJobResponse`
@@ -956,6 +1011,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -988,6 +1045,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLogsJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1002,6 +1060,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSnapshots
         :type request: :class:`huaweicloudsdkcss.v1.ListSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListSnapshotsResponse`
@@ -1014,6 +1073,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1046,6 +1107,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSnapshotsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1060,6 +1122,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListYmls
         :type request: :class:`huaweicloudsdkcss.v1.ListYmlsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListYmlsResponse`
@@ -1072,6 +1135,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1104,6 +1169,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListYmlsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1118,6 +1184,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListYmlsJob
         :type request: :class:`huaweicloudsdkcss.v1.ListYmlsJobRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListYmlsJobResponse`
@@ -1130,6 +1197,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1162,6 +1231,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListYmlsJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1176,6 +1246,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetPassword
         :type request: :class:`huaweicloudsdkcss.v1.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ResetPasswordResponse`
@@ -1188,6 +1259,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1222,6 +1295,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1236,6 +1310,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartCluster
         :type request: :class:`huaweicloudsdkcss.v1.RestartClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.RestartClusterResponse`
@@ -1248,6 +1323,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1280,6 +1357,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1294,6 +1372,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreSnapshot
         :type request: :class:`huaweicloudsdkcss.v1.RestoreSnapshotRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.RestoreSnapshotResponse`
@@ -1306,6 +1385,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1342,6 +1423,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1356,6 +1438,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAutoCreatePolicy
         :type request: :class:`huaweicloudsdkcss.v1.ShowAutoCreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowAutoCreatePolicyResponse`
@@ -1368,6 +1451,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1400,6 +1485,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAutoCreatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1414,6 +1500,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowClusterDetail
         :type request: :class:`huaweicloudsdkcss.v1.ShowClusterDetailRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowClusterDetailResponse`
@@ -1426,6 +1513,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1458,6 +1547,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClusterDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1472,6 +1562,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowClusterTag
         :type request: :class:`huaweicloudsdkcss.v1.ShowClusterTagRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowClusterTagResponse`
@@ -1484,6 +1575,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1518,6 +1611,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClusterTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1532,6 +1626,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGetLogSetting
         :type request: :class:`huaweicloudsdkcss.v1.ShowGetLogSettingRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowGetLogSettingResponse`
@@ -1544,6 +1639,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1576,6 +1673,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGetLogSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1590,6 +1688,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIkThesaurus
         :type request: :class:`huaweicloudsdkcss.v1.ShowIkThesaurusRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowIkThesaurusResponse`
@@ -1602,6 +1701,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1634,6 +1735,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIkThesaurusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1648,6 +1750,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLogBackup
         :type request: :class:`huaweicloudsdkcss.v1.ShowLogBackupRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowLogBackupResponse`
@@ -1660,6 +1763,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1694,6 +1799,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLogBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1708,6 +1814,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVpcepConnection
         :type request: :class:`huaweicloudsdkcss.v1.ShowVpcepConnectionRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowVpcepConnectionResponse`
@@ -1720,6 +1827,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1752,6 +1861,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVpcepConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1772,6 +1882,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartAutoSetting
         :type request: :class:`huaweicloudsdkcss.v1.StartAutoSettingRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartAutoSettingResponse`
@@ -1784,6 +1895,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1816,6 +1929,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartAutoSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1830,6 +1944,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartLogAutoBackupPolicy
         :type request: :class:`huaweicloudsdkcss.v1.StartLogAutoBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartLogAutoBackupPolicyResponse`
@@ -1842,6 +1957,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1876,6 +1993,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartLogAutoBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1890,6 +2008,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartLogs
         :type request: :class:`huaweicloudsdkcss.v1.StartLogsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartLogsResponse`
@@ -1902,6 +2021,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1936,6 +2057,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1950,6 +2072,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartPublicWhitelist
         :type request: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistResponse`
@@ -1962,6 +2085,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1996,6 +2121,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartPublicWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2010,6 +2136,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartVpecp
         :type request: :class:`huaweicloudsdkcss.v1.StartVpecpRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartVpecpResponse`
@@ -2022,6 +2149,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2056,6 +2185,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartVpecpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2070,6 +2200,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopLogAutoBackupPolicy
         :type request: :class:`huaweicloudsdkcss.v1.StopLogAutoBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopLogAutoBackupPolicyResponse`
@@ -2082,6 +2213,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2114,6 +2247,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopLogAutoBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2128,6 +2262,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopLogs
         :type request: :class:`huaweicloudsdkcss.v1.StopLogsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopLogsResponse`
@@ -2140,6 +2275,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2172,6 +2309,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2186,6 +2324,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopPublicWhitelist
         :type request: :class:`huaweicloudsdkcss.v1.StopPublicWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopPublicWhitelistResponse`
@@ -2198,6 +2337,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2230,6 +2371,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopPublicWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2244,6 +2386,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopSnapshot
         :type request: :class:`huaweicloudsdkcss.v1.StopSnapshotRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopSnapshotResponse`
@@ -2256,6 +2399,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2288,6 +2433,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopSnapshotResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2302,6 +2448,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopVpecp
         :type request: :class:`huaweicloudsdkcss.v1.StopVpecpRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopVpecpResponse`
@@ -2314,6 +2461,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2346,6 +2495,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopVpecpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2360,6 +2510,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateBatchClustersTags
         :type request: :class:`huaweicloudsdkcss.v1.UpdateBatchClustersTagsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateBatchClustersTagsResponse`
@@ -2372,6 +2523,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2408,6 +2561,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBatchClustersTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2422,6 +2576,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateClusterName
         :type request: :class:`huaweicloudsdkcss.v1.UpdateClusterNameRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateClusterNameResponse`
@@ -2434,6 +2589,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2468,6 +2625,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateClusterNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2484,6 +2642,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateExtendCluster
         :type request: :class:`huaweicloudsdkcss.v1.UpdateExtendClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateExtendClusterResponse`
@@ -2496,6 +2655,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2530,6 +2691,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateExtendClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2544,6 +2706,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateExtendInstanceStorage
         :type request: :class:`huaweicloudsdkcss.v1.UpdateExtendInstanceStorageRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateExtendInstanceStorageResponse`
@@ -2556,6 +2719,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2590,6 +2755,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateExtendInstanceStorageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2604,6 +2770,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateFlavor
         :type request: :class:`huaweicloudsdkcss.v1.UpdateFlavorRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorResponse`
@@ -2616,6 +2783,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2650,6 +2819,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFlavorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2668,6 +2838,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateFlavorByType
         :type request: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeResponse`
@@ -2680,6 +2851,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2716,6 +2889,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFlavorByTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2730,6 +2904,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateLogSetting
         :type request: :class:`huaweicloudsdkcss.v1.UpdateLogSettingRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateLogSettingResponse`
@@ -2742,6 +2917,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2776,6 +2953,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLogSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2790,6 +2968,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateOndemandClusterToPeriod
         :type request: :class:`huaweicloudsdkcss.v1.UpdateOndemandClusterToPeriodRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateOndemandClusterToPeriodResponse`
@@ -2802,6 +2981,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2836,6 +3017,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateOndemandClusterToPeriodResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2850,6 +3032,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePublicBandWidth
         :type request: :class:`huaweicloudsdkcss.v1.UpdatePublicBandWidthRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicBandWidthResponse`
@@ -2862,6 +3045,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2896,6 +3081,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePublicBandWidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2910,6 +3096,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateShrinkCluster
         :type request: :class:`huaweicloudsdkcss.v1.UpdateShrinkClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateShrinkClusterResponse`
@@ -2922,6 +3109,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2956,6 +3145,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateShrinkClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2970,6 +3160,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateShrinkNodes
         :type request: :class:`huaweicloudsdkcss.v1.UpdateShrinkNodesRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateShrinkNodesResponse`
@@ -2982,6 +3173,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3016,6 +3209,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateShrinkNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3032,6 +3226,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSnapshotSetting
         :type request: :class:`huaweicloudsdkcss.v1.UpdateSnapshotSettingRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateSnapshotSettingResponse`
@@ -3044,6 +3239,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3078,6 +3275,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSnapshotSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3092,6 +3290,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUnbindPublic
         :type request: :class:`huaweicloudsdkcss.v1.UpdateUnbindPublicRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateUnbindPublicResponse`
@@ -3104,6 +3303,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3138,6 +3339,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUnbindPublicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3152,6 +3354,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateVpcepConnection
         :type request: :class:`huaweicloudsdkcss.v1.UpdateVpcepConnectionRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateVpcepConnectionResponse`
@@ -3164,6 +3367,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3198,6 +3403,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcepConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3212,6 +3418,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateVpcepWhitelist
         :type request: :class:`huaweicloudsdkcss.v1.UpdateVpcepWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateVpcepWhitelistResponse`
@@ -3224,6 +3431,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3258,6 +3467,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcepWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3272,6 +3482,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateYmls
         :type request: :class:`huaweicloudsdkcss.v1.UpdateYmlsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateYmlsResponse`
@@ -3284,6 +3495,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3318,6 +3531,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateYmlsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3332,6 +3546,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartKibanaPublic
         :type request: :class:`huaweicloudsdkcss.v1.StartKibanaPublicRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartKibanaPublicResponse`
@@ -3344,6 +3559,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3378,6 +3595,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartKibanaPublicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3392,6 +3610,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopPublicKibanaWhitelist
         :type request: :class:`huaweicloudsdkcss.v1.StopPublicKibanaWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopPublicKibanaWhitelistResponse`
@@ -3404,6 +3623,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3436,6 +3657,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopPublicKibanaWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3450,6 +3672,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAlterKibana
         :type request: :class:`huaweicloudsdkcss.v1.UpdateAlterKibanaRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateAlterKibanaResponse`
@@ -3462,6 +3685,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3496,6 +3721,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAlterKibanaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3510,6 +3736,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCloseKibana
         :type request: :class:`huaweicloudsdkcss.v1.UpdateCloseKibanaRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateCloseKibanaResponse`
@@ -3522,6 +3749,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3556,6 +3785,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCloseKibanaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3570,6 +3800,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePublicKibanaWhitelist
         :type request: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistResponse`
@@ -3582,6 +3813,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3616,6 +3849,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePublicKibanaWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3630,6 +3864,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddFavorite
         :type request: :class:`huaweicloudsdkcss.v1.AddFavoriteRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.AddFavoriteResponse`
@@ -3642,6 +3877,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3676,6 +3913,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddFavoriteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3690,6 +3928,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCnf
         :type request: :class:`huaweicloudsdkcss.v1.CreateCnfRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateCnfResponse`
@@ -3702,6 +3941,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3736,6 +3977,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCnfResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3750,6 +3992,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteConf
         :type request: :class:`huaweicloudsdkcss.v1.DeleteConfRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteConfResponse`
@@ -3762,6 +4005,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3796,6 +4041,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConfResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3810,6 +4056,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTemplate
         :type request: :class:`huaweicloudsdkcss.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteTemplateResponse`
@@ -3822,6 +4069,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3854,6 +4103,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3868,6 +4118,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListActions
         :type request: :class:`huaweicloudsdkcss.v1.ListActionsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListActionsResponse`
@@ -3880,6 +4131,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3912,6 +4165,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListActionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3926,6 +4180,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConfs
         :type request: :class:`huaweicloudsdkcss.v1.ListConfsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListConfsResponse`
@@ -3938,6 +4193,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3970,6 +4227,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3984,6 +4242,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPipelines
         :type request: :class:`huaweicloudsdkcss.v1.ListPipelinesRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListPipelinesResponse`
@@ -3996,6 +4255,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4028,6 +4289,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPipelinesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4042,6 +4304,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplates
         :type request: :class:`huaweicloudsdkcss.v1.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListTemplatesResponse`
@@ -4054,6 +4317,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4086,6 +4351,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4100,6 +4366,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowGetConfDetail
         :type request: :class:`huaweicloudsdkcss.v1.ShowGetConfDetailRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowGetConfDetailResponse`
@@ -4112,6 +4379,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4146,6 +4415,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGetConfDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4160,6 +4430,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartConnectivityTest
         :type request: :class:`huaweicloudsdkcss.v1.StartConnectivityTestRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartConnectivityTestResponse`
@@ -4172,6 +4443,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4206,6 +4479,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartConnectivityTestResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4220,6 +4494,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartPipeline
         :type request: :class:`huaweicloudsdkcss.v1.StartPipelineRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartPipelineResponse`
@@ -4232,6 +4507,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4266,6 +4543,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartPipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4280,6 +4558,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopPipeline
         :type request: :class:`huaweicloudsdkcss.v1.StopPipelineRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopPipelineResponse`
@@ -4292,6 +4571,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4324,6 +4605,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopPipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4338,6 +4620,7 @@ class CssAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCnf
         :type request: :class:`huaweicloudsdkcss.v1.UpdateCnfRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateCnfResponse`
@@ -4350,6 +4633,8 @@ class CssAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4384,6 +4669,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCnfResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4391,7 +4677,7 @@ class CssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4402,9 +4688,10 @@ class CssAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4421,6 +4708,7 @@ class CssAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

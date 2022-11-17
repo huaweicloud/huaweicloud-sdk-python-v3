@@ -17,7 +17,6 @@ class DeleteNodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class DeleteNodeResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this DeleteNodeResponse.
 
-
         :return: The metadata of this DeleteNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeMetadata`
         """
@@ -130,7 +128,6 @@ class DeleteNodeResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this DeleteNodeResponse.
-
 
         :param metadata: The metadata of this DeleteNodeResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -141,7 +138,6 @@ class DeleteNodeResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this DeleteNodeResponse.
 
-
         :return: The spec of this DeleteNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
         """
@@ -150,7 +146,6 @@ class DeleteNodeResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this DeleteNodeResponse.
-
 
         :param spec: The spec of this DeleteNodeResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.NodeSpec`
@@ -161,7 +156,6 @@ class DeleteNodeResponse(SdkResponse):
     def status(self):
         """Gets the status of this DeleteNodeResponse.
 
-
         :return: The status of this DeleteNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeStatus`
         """
@@ -170,7 +164,6 @@ class DeleteNodeResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this DeleteNodeResponse.
-
 
         :param status: The status of this DeleteNodeResponse.
         :type status: :class:`huaweicloudsdkcce.v3.NodeStatus`

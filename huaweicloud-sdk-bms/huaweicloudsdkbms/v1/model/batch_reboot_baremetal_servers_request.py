@@ -17,7 +17,6 @@ class BatchRebootBaremetalServersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchRebootBaremetalServersRequest:
     def body(self):
         """Gets the body of this BatchRebootBaremetalServersRequest.
 
-
         :return: The body of this BatchRebootBaremetalServersRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.RebootBody`
         """
@@ -58,7 +56,6 @@ class BatchRebootBaremetalServersRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchRebootBaremetalServersRequest.
-
 
         :param body: The body of this BatchRebootBaremetalServersRequest.
         :type body: :class:`huaweicloudsdkbms.v1.RebootBody`

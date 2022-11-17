@@ -17,7 +17,6 @@ class ShowProjectResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowProjectResponse(SdkResponse):
     def project(self):
         """Gets the project of this ShowProjectResponse.
 
-
         :return: The project of this ShowProjectResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.Project`
         """
@@ -116,7 +114,6 @@ class ShowProjectResponse(SdkResponse):
     @project.setter
     def project(self, project):
         """Sets the project of this ShowProjectResponse.
-
 
         :param project: The project of this ShowProjectResponse.
         :type project: :class:`huaweicloudsdkcpts.v1.Project`

@@ -17,7 +17,6 @@ class InstanceListInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -1158,7 +1157,6 @@ class InstanceListInfo:
     def features(self):
         """Gets the features of this InstanceListInfo.
 
-
         :return: The features of this InstanceListInfo.
         :rtype: :class:`huaweicloudsdkdcs.v2.Features`
         """
@@ -1167,7 +1165,6 @@ class InstanceListInfo:
     @features.setter
     def features(self, features):
         """Sets the features of this InstanceListInfo.
-
 
         :param features: The features of this InstanceListInfo.
         :type features: :class:`huaweicloudsdkdcs.v2.Features`

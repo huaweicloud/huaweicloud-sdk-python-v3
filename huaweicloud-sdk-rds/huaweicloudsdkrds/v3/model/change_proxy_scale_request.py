@@ -17,7 +17,6 @@ class ChangeProxyScaleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ChangeProxyScaleRequest:
     def body(self):
         """Gets the body of this ChangeProxyScaleRequest.
 
-
         :return: The body of this ChangeProxyScaleRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ScaleProxyRequestBody`
         """
@@ -115,7 +113,6 @@ class ChangeProxyScaleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeProxyScaleRequest.
-
 
         :param body: The body of this ChangeProxyScaleRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ScaleProxyRequestBody`

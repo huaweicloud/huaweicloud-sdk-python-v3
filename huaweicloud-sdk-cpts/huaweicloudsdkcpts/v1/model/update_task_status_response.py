@@ -17,7 +17,6 @@ class UpdateTaskStatusResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class UpdateTaskStatusResponse(SdkResponse):
     def result(self):
         """Gets the result of this UpdateTaskStatusResponse.
 
-
         :return: The result of this UpdateTaskStatusResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusResult`
         """
@@ -145,7 +143,6 @@ class UpdateTaskStatusResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this UpdateTaskStatusResponse.
-
 
         :param result: The result of this UpdateTaskStatusResponse.
         :type result: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusResult`

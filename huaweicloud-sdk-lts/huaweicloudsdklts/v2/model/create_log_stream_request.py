@@ -17,7 +17,6 @@ class CreateLogStreamRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateLogStreamRequest:
     def body(self):
         """Gets the body of this CreateLogStreamRequest.
 
-
         :return: The body of this CreateLogStreamRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateLogStreamParams`
         """
@@ -86,7 +84,6 @@ class CreateLogStreamRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateLogStreamRequest.
-
 
         :param body: The body of this CreateLogStreamRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateLogStreamParams`

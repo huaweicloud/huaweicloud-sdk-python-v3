@@ -17,7 +17,6 @@ class CreateClusterPublicIpReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -67,7 +66,6 @@ class CreateClusterPublicIpReq:
     def eip(self):
         """Gets the eip of this CreateClusterPublicIpReq.
 
-
         :return: The eip of this CreateClusterPublicIpReq.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEip`
         """
@@ -76,7 +74,6 @@ class CreateClusterPublicIpReq:
     @eip.setter
     def eip(self, eip):
         """Sets the eip of this CreateClusterPublicIpReq.
-
 
         :param eip: The eip of this CreateClusterPublicIpReq.
         :type eip: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEip`
@@ -87,7 +84,6 @@ class CreateClusterPublicIpReq:
     def elb_white_list_req(self):
         """Gets the elb_white_list_req of this CreateClusterPublicIpReq.
 
-
         :return: The elb_white_list_req of this CreateClusterPublicIpReq.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterElbWhiteList`
         """
@@ -96,7 +92,6 @@ class CreateClusterPublicIpReq:
     @elb_white_list_req.setter
     def elb_white_list_req(self, elb_white_list_req):
         """Sets the elb_white_list_req of this CreateClusterPublicIpReq.
-
 
         :param elb_white_list_req: The elb_white_list_req of this CreateClusterPublicIpReq.
         :type elb_white_list_req: :class:`huaweicloudsdkcss.v2.CreateClusterElbWhiteList`

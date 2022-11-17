@@ -17,7 +17,6 @@ class KeystoneListUsersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
     sensitive_list.append('password_expires_at')
 

@@ -17,7 +17,6 @@ class BatchCheckJobsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class BatchCheckJobsRequest:
     def body(self):
         """Gets the body of this BatchCheckJobsRequest.
 
-
         :return: The body of this BatchCheckJobsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchPrecheckReq`
         """
@@ -87,7 +85,6 @@ class BatchCheckJobsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchCheckJobsRequest.
-
 
         :param body: The body of this BatchCheckJobsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchPrecheckReq`

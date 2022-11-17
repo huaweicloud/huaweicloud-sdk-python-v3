@@ -17,7 +17,6 @@ class CreateInstanceRespItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -239,7 +238,6 @@ class CreateInstanceRespItem:
     def datastore(self):
         """Gets the datastore of this CreateInstanceRespItem.
 
-
         :return: The datastore of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.Datastore`
         """
@@ -248,7 +246,6 @@ class CreateInstanceRespItem:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CreateInstanceRespItem.
-
 
         :param datastore: The datastore of this CreateInstanceRespItem.
         :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
@@ -259,7 +256,6 @@ class CreateInstanceRespItem:
     def ha(self):
         """Gets the ha of this CreateInstanceRespItem.
 
-
         :return: The ha of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.Ha`
         """
@@ -268,7 +264,6 @@ class CreateInstanceRespItem:
     @ha.setter
     def ha(self, ha):
         """Sets the ha of this CreateInstanceRespItem.
-
 
         :param ha: The ha of this CreateInstanceRespItem.
         :type ha: :class:`huaweicloudsdkrds.v3.Ha`
@@ -323,7 +318,6 @@ class CreateInstanceRespItem:
     def backup_strategy(self):
         """Gets the backup_strategy of this CreateInstanceRespItem.
 
-
         :return: The backup_strategy of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.BackupStrategy`
         """
@@ -332,7 +326,6 @@ class CreateInstanceRespItem:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this CreateInstanceRespItem.
-
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRespItem.
         :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategy`
@@ -409,7 +402,6 @@ class CreateInstanceRespItem:
     def volume(self):
         """Gets the volume of this CreateInstanceRespItem.
 
-
         :return: The volume of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.Volume`
         """
@@ -418,7 +410,6 @@ class CreateInstanceRespItem:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this CreateInstanceRespItem.
-
 
         :param volume: The volume of this CreateInstanceRespItem.
         :type volume: :class:`huaweicloudsdkrds.v3.Volume`
@@ -539,7 +530,6 @@ class CreateInstanceRespItem:
     def charge_info(self):
         """Gets the charge_info of this CreateInstanceRespItem.
 
-
         :return: The charge_info of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.ChargeInfo`
         """
@@ -548,7 +538,6 @@ class CreateInstanceRespItem:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this CreateInstanceRespItem.
-
 
         :param charge_info: The charge_info of this CreateInstanceRespItem.
         :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfo`
@@ -581,7 +570,6 @@ class CreateInstanceRespItem:
     def restore_point(self):
         """Gets the restore_point of this CreateInstanceRespItem.
 
-
         :return: The restore_point of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.RestorePoint`
         """
@@ -590,7 +578,6 @@ class CreateInstanceRespItem:
     @restore_point.setter
     def restore_point(self, restore_point):
         """Sets the restore_point of this CreateInstanceRespItem.
-
 
         :param restore_point: The restore_point of this CreateInstanceRespItem.
         :type restore_point: :class:`huaweicloudsdkrds.v3.RestorePoint`

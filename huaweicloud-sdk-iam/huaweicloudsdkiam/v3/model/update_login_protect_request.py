@@ -17,7 +17,6 @@ class UpdateLoginProtectRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateLoginProtectRequest:
     def body(self):
         """Gets the body of this UpdateLoginProtectRequest.
 
-
         :return: The body of this UpdateLoginProtectRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateLoginProjectReq`
         """
@@ -86,7 +84,6 @@ class UpdateLoginProtectRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateLoginProtectRequest.
-
 
         :param body: The body of this UpdateLoginProtectRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateLoginProjectReq`

@@ -17,7 +17,6 @@ class ChangeAvailabilityZoneResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ChangeAvailabilityZoneResponse(SdkResponse):
     def instance(self):
         """Gets the instance of this ChangeAvailabilityZoneResponse.
 
-
         :return: The instance of this ChangeAvailabilityZoneResponse.
         :rtype: :class:`huaweicloudsdker.v3.EnterpriseRouter`
         """
@@ -65,7 +63,6 @@ class ChangeAvailabilityZoneResponse(SdkResponse):
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this ChangeAvailabilityZoneResponse.
-
 
         :param instance: The instance of this ChangeAvailabilityZoneResponse.
         :type instance: :class:`huaweicloudsdker.v3.EnterpriseRouter`

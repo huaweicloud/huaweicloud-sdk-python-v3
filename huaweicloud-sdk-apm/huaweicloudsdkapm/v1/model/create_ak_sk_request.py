@@ -17,7 +17,6 @@ class CreateAkSkRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAkSkRequest:
     def body(self):
         """Gets the body of this CreateAkSkRequest.
 
-
         :return: The body of this CreateAkSkRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.CreateAkskModel`
         """
@@ -58,7 +56,6 @@ class CreateAkSkRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAkSkRequest.
-
 
         :param body: The body of this CreateAkSkRequest.
         :type body: :class:`huaweicloudsdkapm.v1.CreateAkskModel`

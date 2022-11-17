@@ -17,7 +17,6 @@ class ImgTextConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -35,9 +34,9 @@ class ImgTextConfig:
 
         The model defined in huaweicloud sdk
 
-        :param black_glossary_names: 用户输入的console界面自定义的黑词库名，支持传入多个。
+        :param black_glossary_names: 检测时使用的自定义黑名单词库列表。
         :type black_glossary_names: list[str]
-        :param white_glossary_names: 用户输入的console界面自定义的白词库名，支持传入多个。
+        :param white_glossary_names: 检测时使用的自定义白名单词库列表。
         :type white_glossary_names: list[str]
         """
         
@@ -56,7 +55,7 @@ class ImgTextConfig:
     def black_glossary_names(self):
         """Gets the black_glossary_names of this ImgTextConfig.
 
-        用户输入的console界面自定义的黑词库名，支持传入多个。
+        检测时使用的自定义黑名单词库列表。
 
         :return: The black_glossary_names of this ImgTextConfig.
         :rtype: list[str]
@@ -67,7 +66,7 @@ class ImgTextConfig:
     def black_glossary_names(self, black_glossary_names):
         """Sets the black_glossary_names of this ImgTextConfig.
 
-        用户输入的console界面自定义的黑词库名，支持传入多个。
+        检测时使用的自定义黑名单词库列表。
 
         :param black_glossary_names: The black_glossary_names of this ImgTextConfig.
         :type black_glossary_names: list[str]
@@ -78,7 +77,7 @@ class ImgTextConfig:
     def white_glossary_names(self):
         """Gets the white_glossary_names of this ImgTextConfig.
 
-        用户输入的console界面自定义的白词库名，支持传入多个。
+        检测时使用的自定义白名单词库列表。
 
         :return: The white_glossary_names of this ImgTextConfig.
         :rtype: list[str]
@@ -89,7 +88,7 @@ class ImgTextConfig:
     def white_glossary_names(self, white_glossary_names):
         """Sets the white_glossary_names of this ImgTextConfig.
 
-        用户输入的console界面自定义的白词库名，支持传入多个。
+        检测时使用的自定义白名单词库列表。
 
         :param white_glossary_names: The white_glossary_names of this ImgTextConfig.
         :type white_glossary_names: list[str]

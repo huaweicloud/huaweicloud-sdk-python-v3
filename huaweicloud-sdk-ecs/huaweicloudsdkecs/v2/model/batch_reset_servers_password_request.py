@@ -17,7 +17,6 @@ class BatchResetServersPasswordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchResetServersPasswordRequest:
     def body(self):
         """Gets the body of this BatchResetServersPasswordRequest.
 
-
         :return: The body of this BatchResetServersPasswordRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchResetServersPasswordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchResetServersPasswordRequest.
-
 
         :param body: The body of this BatchResetServersPasswordRequest.
         :type body: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordRequestBody`

@@ -17,7 +17,6 @@ class UpdateHostMassageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateHostMassageRequest:
     def body(self):
         """Gets the body of this UpdateHostMassageRequest.
 
-
         :return: The body of this UpdateHostMassageRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateHostMassageReq`
         """
@@ -86,7 +84,6 @@ class UpdateHostMassageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateHostMassageRequest.
-
 
         :param body: The body of this UpdateHostMassageRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateHostMassageReq`

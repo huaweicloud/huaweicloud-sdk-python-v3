@@ -17,7 +17,6 @@ class Share:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -184,7 +183,6 @@ class Share:
     def metadata(self):
         """Gets the metadata of this Share.
 
-
         :return: The metadata of this Share.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.Metadata`
         """
@@ -193,7 +191,6 @@ class Share:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this Share.
-
 
         :param metadata: The metadata of this Share.
         :type metadata: :class:`huaweicloudsdksfsturbo.v1.Metadata`

@@ -17,7 +17,6 @@ class PostPaidServerNic:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class PostPaidServerNic:
     def ipv6_bandwidth(self):
         """Gets the ipv6_bandwidth of this PostPaidServerNic.
 
-
         :return: The ipv6_bandwidth of this PostPaidServerNic.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerIpv6Bandwidth`
         """
@@ -144,7 +142,6 @@ class PostPaidServerNic:
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
         """Sets the ipv6_bandwidth of this PostPaidServerNic.
-
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this PostPaidServerNic.
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.PostPaidServerIpv6Bandwidth`

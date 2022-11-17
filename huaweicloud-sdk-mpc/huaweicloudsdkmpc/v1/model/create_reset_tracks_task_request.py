@@ -17,7 +17,6 @@ class CreateResetTracksTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateResetTracksTaskRequest:
     def body(self):
         """Gets the body of this CreateResetTracksTaskRequest.
 
-
         :return: The body of this CreateResetTracksTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateResetTracksReq`
         """
@@ -58,7 +56,6 @@ class CreateResetTracksTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateResetTracksTaskRequest.
-
 
         :param body: The body of this CreateResetTracksTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateResetTracksReq`

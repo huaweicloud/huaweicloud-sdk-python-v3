@@ -17,7 +17,6 @@ class GrantDatabasePermission:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class GrantDatabasePermission:
     def databases(self):
         """Gets the databases of this GrantDatabasePermission.
 
-
         :return: The databases of this GrantDatabasePermission.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.DatabasePermission`]
         """
@@ -114,7 +112,6 @@ class GrantDatabasePermission:
     @databases.setter
     def databases(self, databases):
         """Sets the databases of this GrantDatabasePermission.
-
 
         :param databases: The databases of this GrantDatabasePermission.
         :type databases: list[:class:`huaweicloudsdkgaussdb.v3.DatabasePermission`]

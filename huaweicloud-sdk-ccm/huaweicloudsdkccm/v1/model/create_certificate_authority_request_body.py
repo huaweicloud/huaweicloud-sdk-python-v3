@@ -17,7 +17,6 @@ class CreateCertificateAuthorityRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -124,7 +123,6 @@ class CreateCertificateAuthorityRequestBody:
     def distinguished_name(self):
         """Gets the distinguished_name of this CreateCertificateAuthorityRequestBody.
 
-
         :return: The distinguished_name of this CreateCertificateAuthorityRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
@@ -133,7 +131,6 @@ class CreateCertificateAuthorityRequestBody:
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
         """Sets the distinguished_name of this CreateCertificateAuthorityRequestBody.
-
 
         :param distinguished_name: The distinguished_name of this CreateCertificateAuthorityRequestBody.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -166,7 +163,6 @@ class CreateCertificateAuthorityRequestBody:
     def validity(self):
         """Gets the validity of this CreateCertificateAuthorityRequestBody.
 
-
         :return: The validity of this CreateCertificateAuthorityRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.Validity`
         """
@@ -175,7 +171,6 @@ class CreateCertificateAuthorityRequestBody:
     @validity.setter
     def validity(self, validity):
         """Sets the validity of this CreateCertificateAuthorityRequestBody.
-
 
         :param validity: The validity of this CreateCertificateAuthorityRequestBody.
         :type validity: :class:`huaweicloudsdkccm.v1.Validity`
@@ -274,7 +269,6 @@ class CreateCertificateAuthorityRequestBody:
     def crl_configuration(self):
         """Gets the crl_configuration of this CreateCertificateAuthorityRequestBody.
 
-
         :return: The crl_configuration of this CreateCertificateAuthorityRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
         """
@@ -283,7 +277,6 @@ class CreateCertificateAuthorityRequestBody:
     @crl_configuration.setter
     def crl_configuration(self, crl_configuration):
         """Sets the crl_configuration of this CreateCertificateAuthorityRequestBody.
-
 
         :param crl_configuration: The crl_configuration of this CreateCertificateAuthorityRequestBody.
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.CrlConfiguration`

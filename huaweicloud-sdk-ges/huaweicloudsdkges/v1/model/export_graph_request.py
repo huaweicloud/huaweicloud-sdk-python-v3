@@ -17,7 +17,6 @@ class ExportGraphRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ExportGraphRequest:
     def body(self):
         """Gets the body of this ExportGraphRequest.
 
-
         :return: The body of this ExportGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.ExportGraphReq`
         """
@@ -114,7 +112,6 @@ class ExportGraphRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExportGraphRequest.
-
 
         :param body: The body of this ExportGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.ExportGraphReq`

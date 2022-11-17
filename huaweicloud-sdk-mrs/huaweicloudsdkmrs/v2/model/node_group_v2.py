@@ -17,7 +17,6 @@ class NodeGroupV2:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -168,7 +167,6 @@ class NodeGroupV2:
     def root_volume(self):
         """Gets the root_volume of this NodeGroupV2.
 
-
         :return: The root_volume of this NodeGroupV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.Volume`
         """
@@ -177,7 +175,6 @@ class NodeGroupV2:
     @root_volume.setter
     def root_volume(self, root_volume):
         """Sets the root_volume of this NodeGroupV2.
-
 
         :param root_volume: The root_volume of this NodeGroupV2.
         :type root_volume: :class:`huaweicloudsdkmrs.v2.Volume`
@@ -188,7 +185,6 @@ class NodeGroupV2:
     def data_volume(self):
         """Gets the data_volume of this NodeGroupV2.
 
-
         :return: The data_volume of this NodeGroupV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.Volume`
         """
@@ -197,7 +193,6 @@ class NodeGroupV2:
     @data_volume.setter
     def data_volume(self, data_volume):
         """Sets the data_volume of this NodeGroupV2.
-
 
         :param data_volume: The data_volume of this NodeGroupV2.
         :type data_volume: :class:`huaweicloudsdkmrs.v2.Volume`
@@ -230,7 +225,6 @@ class NodeGroupV2:
     def charge_info(self):
         """Gets the charge_info of this NodeGroupV2.
 
-
         :return: The charge_info of this NodeGroupV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
         """
@@ -239,7 +233,6 @@ class NodeGroupV2:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this NodeGroupV2.
-
 
         :param charge_info: The charge_info of this NodeGroupV2.
         :type charge_info: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
@@ -250,7 +243,6 @@ class NodeGroupV2:
     def auto_scaling_policy(self):
         """Gets the auto_scaling_policy of this NodeGroupV2.
 
-
         :return: The auto_scaling_policy of this NodeGroupV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`
         """
@@ -259,7 +251,6 @@ class NodeGroupV2:
     @auto_scaling_policy.setter
     def auto_scaling_policy(self, auto_scaling_policy):
         """Sets the auto_scaling_policy of this NodeGroupV2.
-
 
         :param auto_scaling_policy: The auto_scaling_policy of this NodeGroupV2.
         :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`

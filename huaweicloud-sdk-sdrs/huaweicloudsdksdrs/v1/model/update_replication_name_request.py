@@ -17,7 +17,6 @@ class UpdateReplicationNameRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateReplicationNameRequest:
     def body(self):
         """Gets the body of this UpdateReplicationNameRequest.
 
-
         :return: The body of this UpdateReplicationNameRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateReplicationNameRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateReplicationNameRequest.
-
 
         :param body: The body of this UpdateReplicationNameRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequestBody`

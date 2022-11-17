@@ -17,7 +17,6 @@ class AvParameters:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -62,7 +61,6 @@ class AvParameters:
     def video(self):
         """Gets the video of this AvParameters.
 
-
         :return: The video of this AvParameters.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoParameters`
         """
@@ -71,7 +69,6 @@ class AvParameters:
     @video.setter
     def video(self, video):
         """Sets the video of this AvParameters.
-
 
         :param video: The video of this AvParameters.
         :type video: :class:`huaweicloudsdkmpc.v1.VideoParameters`
@@ -82,7 +79,6 @@ class AvParameters:
     def audio(self):
         """Gets the audio of this AvParameters.
 
-
         :return: The audio of this AvParameters.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
         """
@@ -91,7 +87,6 @@ class AvParameters:
     @audio.setter
     def audio(self, audio):
         """Sets the audio of this AvParameters.
-
 
         :param audio: The audio of this AvParameters.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -102,7 +97,6 @@ class AvParameters:
     def common(self):
         """Gets the common of this AvParameters.
 
-
         :return: The common of this AvParameters.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
         """
@@ -111,7 +105,6 @@ class AvParameters:
     @common.setter
     def common(self, common):
         """Sets the common of this AvParameters.
-
 
         :param common: The common of this AvParameters.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

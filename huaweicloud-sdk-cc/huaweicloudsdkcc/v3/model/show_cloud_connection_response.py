@@ -17,7 +17,6 @@ class ShowCloudConnectionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowCloudConnectionResponse(SdkResponse):
     def cloud_connection(self):
         """Gets the cloud_connection of this ShowCloudConnectionResponse.
 
-
         :return: The cloud_connection of this ShowCloudConnectionResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CloudConnection`
         """
@@ -65,7 +63,6 @@ class ShowCloudConnectionResponse(SdkResponse):
     @cloud_connection.setter
     def cloud_connection(self, cloud_connection):
         """Sets the cloud_connection of this ShowCloudConnectionResponse.
-
 
         :param cloud_connection: The cloud_connection of this ShowCloudConnectionResponse.
         :type cloud_connection: :class:`huaweicloudsdkcc.v3.CloudConnection`

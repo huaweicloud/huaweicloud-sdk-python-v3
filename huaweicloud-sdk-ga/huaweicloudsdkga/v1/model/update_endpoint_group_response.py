@@ -17,7 +17,6 @@ class UpdateEndpointGroupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class UpdateEndpointGroupResponse(SdkResponse):
     def endpoint_group(self):
         """Gets the endpoint_group of this UpdateEndpointGroupResponse.
 
-
         :return: The endpoint_group of this UpdateEndpointGroupResponse.
         :rtype: :class:`huaweicloudsdkga.v1.EndpointGroupDetail`
         """
@@ -65,7 +63,6 @@ class UpdateEndpointGroupResponse(SdkResponse):
     @endpoint_group.setter
     def endpoint_group(self, endpoint_group):
         """Sets the endpoint_group of this UpdateEndpointGroupResponse.
-
 
         :param endpoint_group: The endpoint_group of this UpdateEndpointGroupResponse.
         :type endpoint_group: :class:`huaweicloudsdkga.v1.EndpointGroupDetail`

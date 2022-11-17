@@ -17,7 +17,6 @@ class UpdateScalingPolicyOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -150,7 +149,6 @@ class UpdateScalingPolicyOption:
     def scheduled_policy(self):
         """Gets the scheduled_policy of this UpdateScalingPolicyOption.
 
-
         :return: The scheduled_policy of this UpdateScalingPolicyOption.
         :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         """
@@ -159,7 +157,6 @@ class UpdateScalingPolicyOption:
     @scheduled_policy.setter
     def scheduled_policy(self, scheduled_policy):
         """Sets the scheduled_policy of this UpdateScalingPolicyOption.
-
 
         :param scheduled_policy: The scheduled_policy of this UpdateScalingPolicyOption.
         :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
@@ -170,7 +167,6 @@ class UpdateScalingPolicyOption:
     def scaling_policy_action(self):
         """Gets the scaling_policy_action of this UpdateScalingPolicyOption.
 
-
         :return: The scaling_policy_action of this UpdateScalingPolicyOption.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV1`
         """
@@ -179,7 +175,6 @@ class UpdateScalingPolicyOption:
     @scaling_policy_action.setter
     def scaling_policy_action(self, scaling_policy_action):
         """Sets the scaling_policy_action of this UpdateScalingPolicyOption.
-
 
         :param scaling_policy_action: The scaling_policy_action of this UpdateScalingPolicyOption.
         :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV1`

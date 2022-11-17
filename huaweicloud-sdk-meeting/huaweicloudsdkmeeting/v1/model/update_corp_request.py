@@ -17,7 +17,6 @@ class UpdateCorpRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class UpdateCorpRequest:
     def body(self):
         """Gets the body of this UpdateCorpRequest.
 
-
         :return: The body of this UpdateCorpRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ModCorpDTO`
         """
@@ -144,7 +142,6 @@ class UpdateCorpRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateCorpRequest.
-
 
         :param body: The body of this UpdateCorpRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ModCorpDTO`

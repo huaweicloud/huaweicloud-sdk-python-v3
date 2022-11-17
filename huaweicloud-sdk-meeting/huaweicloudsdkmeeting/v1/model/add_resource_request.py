@@ -17,7 +17,6 @@ class AddResourceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class AddResourceRequest:
     def body(self):
         """Gets the body of this AddResourceRequest.
 
-
         :return: The body of this AddResourceRequest.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]
         """
@@ -144,7 +142,6 @@ class AddResourceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddResourceRequest.
-
 
         :param body: The body of this AddResourceRequest.
         :type body: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]

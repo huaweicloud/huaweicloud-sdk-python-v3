@@ -17,7 +17,6 @@ class SendSmsVerificationCodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class SendSmsVerificationCodeRequest:
     def body(self):
         """Gets the body of this SendSmsVerificationCodeRequest.
 
-
         :return: The body of this SendSmsVerificationCodeRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.SendSmVerificationCodeReq`
         """
@@ -58,7 +56,6 @@ class SendSmsVerificationCodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SendSmsVerificationCodeRequest.
-
 
         :param body: The body of this SendSmsVerificationCodeRequest.
         :type body: :class:`huaweicloudsdkbss.v2.SendSmVerificationCodeReq`

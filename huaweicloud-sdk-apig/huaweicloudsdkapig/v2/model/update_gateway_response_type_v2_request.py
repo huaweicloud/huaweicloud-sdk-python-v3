@@ -17,7 +17,6 @@ class UpdateGatewayResponseTypeV2Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -161,7 +160,6 @@ class UpdateGatewayResponseTypeV2Request:
     def body(self):
         """Gets the body of this UpdateGatewayResponseTypeV2Request.
 
-
         :return: The body of this UpdateGatewayResponseTypeV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.ResponseInfo`
         """
@@ -170,7 +168,6 @@ class UpdateGatewayResponseTypeV2Request:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateGatewayResponseTypeV2Request.
-
 
         :param body: The body of this UpdateGatewayResponseTypeV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.ResponseInfo`

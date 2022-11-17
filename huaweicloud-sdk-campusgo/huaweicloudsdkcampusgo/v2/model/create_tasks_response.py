@@ -17,7 +17,6 @@ class CreateTasksResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateTasksResponse(SdkResponse):
     def body(self):
         """Gets the body of this CreateTasksResponse.
 
-
         :return: The body of this CreateTasksResponse.
         :rtype: list[:class:`huaweicloudsdkcampusgo.v2.CreateResponseBody`]
         """
@@ -58,7 +56,6 @@ class CreateTasksResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTasksResponse.
-
 
         :param body: The body of this CreateTasksResponse.
         :type body: list[:class:`huaweicloudsdkcampusgo.v2.CreateResponseBody`]

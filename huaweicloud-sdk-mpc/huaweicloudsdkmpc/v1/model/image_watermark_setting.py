@@ -17,7 +17,6 @@ class ImageWatermarkSetting:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -230,7 +229,6 @@ class ImageWatermarkSetting:
     def input(self):
         """Gets the input of this ImageWatermarkSetting.
 
-
         :return: The input of this ImageWatermarkSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -239,7 +237,6 @@ class ImageWatermarkSetting:
     @input.setter
     def input(self, input):
         """Sets the input of this ImageWatermarkSetting.
-
 
         :param input: The input of this ImageWatermarkSetting.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

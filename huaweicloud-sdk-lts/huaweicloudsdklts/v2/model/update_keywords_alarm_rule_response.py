@@ -17,7 +17,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -235,7 +234,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def frequency(self):
         """Gets the frequency of this UpdateKeywordsAlarmRuleResponse.
 
-
         :return: The frequency of this UpdateKeywordsAlarmRuleResponse.
         :rtype: :class:`huaweicloudsdklts.v2.Frequency`
         """
@@ -244,7 +242,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     @frequency.setter
     def frequency(self, frequency):
         """Sets the frequency of this UpdateKeywordsAlarmRuleResponse.
-
 
         :param frequency: The frequency of this UpdateKeywordsAlarmRuleResponse.
         :type frequency: :class:`huaweicloudsdklts.v2.Frequency`

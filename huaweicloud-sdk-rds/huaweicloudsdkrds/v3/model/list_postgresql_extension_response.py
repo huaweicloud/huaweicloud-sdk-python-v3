@@ -17,7 +17,6 @@ class ListPostgresqlExtensionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListPostgresqlExtensionResponse(SdkResponse):
     def extensions(self):
         """Gets the extensions of this ListPostgresqlExtensionResponse.
 
-
         :return: The extensions of this ListPostgresqlExtensionResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.ExtensionsResponse`]
         """
@@ -65,7 +63,6 @@ class ListPostgresqlExtensionResponse(SdkResponse):
     @extensions.setter
     def extensions(self, extensions):
         """Sets the extensions of this ListPostgresqlExtensionResponse.
-
 
         :param extensions: The extensions of this ListPostgresqlExtensionResponse.
         :type extensions: list[:class:`huaweicloudsdkrds.v3.ExtensionsResponse`]

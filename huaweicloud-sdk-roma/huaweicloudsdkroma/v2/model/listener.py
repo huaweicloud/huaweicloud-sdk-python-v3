@@ -17,7 +17,6 @@ class Listener:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class Listener:
     def backend(self):
         """Gets the backend of this Listener.
 
-
         :return: The backend of this Listener.
         :rtype: :class:`huaweicloudsdkroma.v2.Backend`
         """
@@ -123,7 +121,6 @@ class Listener:
     @backend.setter
     def backend(self, backend):
         """Sets the backend of this Listener.
-
 
         :param backend: The backend of this Listener.
         :type backend: :class:`huaweicloudsdkroma.v2.Backend`

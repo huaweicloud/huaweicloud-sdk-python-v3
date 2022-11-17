@@ -17,7 +17,6 @@ class ScalingConfiguration:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -150,7 +149,6 @@ class ScalingConfiguration:
     def instance_config(self):
         """Gets the instance_config of this ScalingConfiguration.
 
-
         :return: The instance_config of this ScalingConfiguration.
         :rtype: :class:`huaweicloudsdkas.v1.InstanceConfigResult`
         """
@@ -159,7 +157,6 @@ class ScalingConfiguration:
     @instance_config.setter
     def instance_config(self, instance_config):
         """Sets the instance_config of this ScalingConfiguration.
-
 
         :param instance_config: The instance_config of this ScalingConfiguration.
         :type instance_config: :class:`huaweicloudsdkas.v1.InstanceConfigResult`

@@ -17,7 +17,6 @@ class ScopedTokenUser:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -72,7 +71,6 @@ class ScopedTokenUser:
     def domain(self):
         """Gets the domain of this ScopedTokenUser.
 
-
         :return: The domain of this ScopedTokenUser.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
         """
@@ -81,7 +79,6 @@ class ScopedTokenUser:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this ScopedTokenUser.
-
 
         :param domain: The domain of this ScopedTokenUser.
         :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -92,7 +89,6 @@ class ScopedTokenUser:
     def os_federation(self):
         """Gets the os_federation of this ScopedTokenUser.
 
-
         :return: The os_federation of this ScopedTokenUser.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenUserOsfederation`
         """
@@ -101,7 +97,6 @@ class ScopedTokenUser:
     @os_federation.setter
     def os_federation(self, os_federation):
         """Sets the os_federation of this ScopedTokenUser.
-
 
         :param os_federation: The os_federation of this ScopedTokenUser.
         :type os_federation: :class:`huaweicloudsdkiam.v3.TokenUserOsfederation`

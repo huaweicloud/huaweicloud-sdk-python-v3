@@ -17,7 +17,6 @@ class PostPaidServerEip:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -83,7 +82,6 @@ class PostPaidServerEip:
     def bandwidth(self):
         """Gets the bandwidth of this PostPaidServerEip.
 
-
         :return: The bandwidth of this PostPaidServerEip.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerEipBandwidth`
         """
@@ -92,7 +90,6 @@ class PostPaidServerEip:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this PostPaidServerEip.
-
 
         :param bandwidth: The bandwidth of this PostPaidServerEip.
         :type bandwidth: :class:`huaweicloudsdkecs.v2.PostPaidServerEipBandwidth`
@@ -103,7 +100,6 @@ class PostPaidServerEip:
     def extendparam(self):
         """Gets the extendparam of this PostPaidServerEip.
 
-
         :return: The extendparam of this PostPaidServerEip.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerEipExtendParam`
         """
@@ -112,7 +108,6 @@ class PostPaidServerEip:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this PostPaidServerEip.
-
 
         :param extendparam: The extendparam of this PostPaidServerEip.
         :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerEipExtendParam`

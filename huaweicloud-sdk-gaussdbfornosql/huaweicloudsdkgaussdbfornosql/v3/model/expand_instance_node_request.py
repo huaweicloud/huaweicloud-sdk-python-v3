@@ -17,7 +17,6 @@ class ExpandInstanceNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ExpandInstanceNodeRequest:
     def body(self):
         """Gets the body of this ExpandInstanceNodeRequest.
 
-
         :return: The body of this ExpandInstanceNodeRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ExpandInstanceNodeRequestBody`
         """
@@ -86,7 +84,6 @@ class ExpandInstanceNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExpandInstanceNodeRequest.
-
 
         :param body: The body of this ExpandInstanceNodeRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ExpandInstanceNodeRequestBody`

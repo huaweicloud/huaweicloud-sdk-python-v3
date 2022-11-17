@@ -17,7 +17,6 @@ class JobParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class JobParam:
     def name(self):
         """Gets the name of this JobParam.
 
-
         :return: The name of this JobParam.
         :rtype: str
         """
@@ -72,7 +70,6 @@ class JobParam:
     @name.setter
     def name(self, name):
         """Sets the name of this JobParam.
-
 
         :param name: The name of this JobParam.
         :type name: str
@@ -83,7 +80,6 @@ class JobParam:
     def value(self):
         """Gets the value of this JobParam.
 
-
         :return: The value of this JobParam.
         :rtype: str
         """
@@ -92,7 +88,6 @@ class JobParam:
     @value.setter
     def value(self, value):
         """Sets the value of this JobParam.
-
 
         :param value: The value of this JobParam.
         :type value: str
@@ -103,7 +98,6 @@ class JobParam:
     def param_type(self):
         """Gets the param_type of this JobParam.
 
-
         :return: The param_type of this JobParam.
         :rtype: str
         """
@@ -112,7 +106,6 @@ class JobParam:
     @param_type.setter
     def param_type(self, param_type):
         """Sets the param_type of this JobParam.
-
 
         :param param_type: The param_type of this JobParam.
         :type param_type: str

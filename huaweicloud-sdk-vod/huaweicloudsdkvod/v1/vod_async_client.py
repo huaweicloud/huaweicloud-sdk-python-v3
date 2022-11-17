@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VodAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelAssetTranscodeTask
         :type request: :class:`huaweicloudsdkvod.v1.CancelAssetTranscodeTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CancelAssetTranscodeTaskResponse`
@@ -68,6 +63,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelAssetTranscodeTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelExtractAudioTask
         :type request: :class:`huaweicloudsdkvod.v1.CancelExtractAudioTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CancelExtractAudioTaskResponse`
@@ -126,6 +125,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelExtractAudioTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckMd5Duplication
         :type request: :class:`huaweicloudsdkvod.v1.CheckMd5DuplicationRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CheckMd5DuplicationResponse`
@@ -184,6 +187,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -218,6 +223,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckMd5DuplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -232,6 +238,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ConfirmAssetUpload
         :type request: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadResponse`
@@ -244,6 +251,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -276,6 +285,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmAssetUploadResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -290,6 +300,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ConfirmImageUpload
         :type request: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadResponse`
@@ -302,6 +313,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -334,6 +347,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmImageUploadResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -352,6 +366,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAssetByFileUpload
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadResponse`
@@ -364,6 +379,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -396,6 +413,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAssetByFileUploadResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -410,6 +428,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAssetCategory
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetCategoryResponse`
@@ -422,6 +441,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -454,6 +475,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAssetCategoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -468,6 +490,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAssetProcessTask
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetProcessTaskResponse`
@@ -480,6 +503,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -512,6 +537,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAssetProcessTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -526,6 +552,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAssetReviewTask
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetReviewTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetReviewTaskResponse`
@@ -538,6 +565,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -570,6 +599,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAssetReviewTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -584,6 +614,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateExtractAudioTask
         :type request: :class:`huaweicloudsdkvod.v1.CreateExtractAudioTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateExtractAudioTaskResponse`
@@ -596,6 +627,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -628,6 +661,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateExtractAudioTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -642,6 +676,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePreheatingAsset
         :type request: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetResponse`
@@ -654,6 +689,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -686,6 +723,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePreheatingAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -702,6 +740,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTakeOverTask
         :type request: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskResponse`
@@ -714,6 +753,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -746,6 +787,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTakeOverTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -760,6 +802,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTemplateGroup
         :type request: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupResponse`
@@ -772,6 +815,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -804,6 +849,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -818,6 +864,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTemplateGroupCollection
         :type request: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupCollectionResponse`
@@ -830,6 +877,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -862,6 +911,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateGroupCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -876,6 +926,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTranscodeTemplate
         :type request: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplateResponse`
@@ -888,6 +939,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -920,6 +973,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -934,6 +988,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateWatermarkTemplate
         :type request: :class:`huaweicloudsdkvod.v1.CreateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateWatermarkTemplateResponse`
@@ -946,6 +1001,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -978,6 +1035,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -992,6 +1050,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAssetCategory
         :type request: :class:`huaweicloudsdkvod.v1.DeleteAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteAssetCategoryResponse`
@@ -1004,6 +1063,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1036,6 +1097,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAssetCategoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1050,6 +1112,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAssets
         :type request: :class:`huaweicloudsdkvod.v1.DeleteAssetsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteAssetsResponse`
@@ -1062,6 +1125,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1097,6 +1162,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAssetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1111,6 +1177,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTemplateGroup
         :type request: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupResponse`
@@ -1123,6 +1190,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1155,6 +1224,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1169,6 +1239,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTemplateGroupCollection
         :type request: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupCollectionResponse`
@@ -1181,6 +1252,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1213,6 +1286,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateGroupCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1227,6 +1301,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTranscodeTemplate
         :type request: :class:`huaweicloudsdkvod.v1.DeleteTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTranscodeTemplateResponse`
@@ -1239,6 +1314,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1271,6 +1348,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1285,6 +1363,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteWatermarkTemplate
         :type request: :class:`huaweicloudsdkvod.v1.DeleteWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteWatermarkTemplateResponse`
@@ -1297,6 +1376,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1329,6 +1410,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1343,6 +1425,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAssetCategory
         :type request: :class:`huaweicloudsdkvod.v1.ListAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListAssetCategoryResponse`
@@ -1355,6 +1438,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1387,6 +1472,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssetCategoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1401,6 +1487,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAssetList
         :type request: :class:`huaweicloudsdkvod.v1.ListAssetListRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListAssetListResponse`
@@ -1413,6 +1500,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1468,6 +1557,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssetListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1482,6 +1572,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDomainLogs
         :type request: :class:`huaweicloudsdkvod.v1.ListDomainLogsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListDomainLogsResponse`
@@ -1494,6 +1585,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1532,6 +1625,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1546,6 +1640,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplateGroup
         :type request: :class:`huaweicloudsdkvod.v1.ListTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTemplateGroupResponse`
@@ -1558,6 +1653,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1596,6 +1693,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1610,6 +1708,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplateGroupCollection
         :type request: :class:`huaweicloudsdkvod.v1.ListTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTemplateGroupCollectionResponse`
@@ -1622,6 +1721,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1658,6 +1759,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateGroupCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1672,6 +1774,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTopStatistics
         :type request: :class:`huaweicloudsdkvod.v1.ListTopStatisticsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTopStatisticsResponse`
@@ -1684,6 +1787,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1718,6 +1823,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTopStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1732,6 +1838,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTranscodeTemplate
         :type request: :class:`huaweicloudsdkvod.v1.ListTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTranscodeTemplateResponse`
@@ -1744,6 +1851,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1784,6 +1893,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1798,6 +1908,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWatermarkTemplate
         :type request: :class:`huaweicloudsdkvod.v1.ListWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListWatermarkTemplateResponse`
@@ -1810,6 +1921,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1847,6 +1960,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1861,6 +1975,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PublishAssetFromObs
         :type request: :class:`huaweicloudsdkvod.v1.PublishAssetFromObsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetFromObsResponse`
@@ -1873,6 +1988,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1905,6 +2022,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PublishAssetFromObsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1919,6 +2037,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PublishAssets
         :type request: :class:`huaweicloudsdkvod.v1.PublishAssetsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetsResponse`
@@ -1931,6 +2050,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1963,6 +2084,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PublishAssetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1977,6 +2099,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAssetCipher
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetCipherRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetCipherResponse`
@@ -1989,6 +2112,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2021,6 +2146,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetCipherResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2035,6 +2161,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAssetDetail
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetDetailRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetDetailResponse`
@@ -2047,6 +2174,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2082,6 +2211,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2096,6 +2226,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAssetMeta
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetMetaRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetMetaResponse`
@@ -2108,6 +2239,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2164,6 +2297,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetMetaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2184,6 +2318,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAssetTempAuthority
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetTempAuthorityRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetTempAuthorityResponse`
@@ -2196,6 +2331,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2240,6 +2377,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetTempAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2254,6 +2392,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCdnStatistics
         :type request: :class:`huaweicloudsdkvod.v1.ShowCdnStatisticsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowCdnStatisticsResponse`
@@ -2266,6 +2405,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2306,6 +2447,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCdnStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2320,6 +2462,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPreheatingAsset
         :type request: :class:`huaweicloudsdkvod.v1.ShowPreheatingAssetRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowPreheatingAssetResponse`
@@ -2332,6 +2475,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2364,6 +2509,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPreheatingAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2378,6 +2524,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVodStatistics
         :type request: :class:`huaweicloudsdkvod.v1.ShowVodStatisticsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowVodStatisticsResponse`
@@ -2390,6 +2537,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2426,6 +2575,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVodStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2440,6 +2590,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UnpublishAssets
         :type request: :class:`huaweicloudsdkvod.v1.UnpublishAssetsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UnpublishAssetsResponse`
@@ -2452,6 +2603,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2484,6 +2637,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnpublishAssetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2504,6 +2658,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAsset
         :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetResponse`
@@ -2516,6 +2671,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2548,6 +2705,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2562,6 +2720,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAssetCategory
         :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetCategoryResponse`
@@ -2574,6 +2733,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2606,6 +2767,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAssetCategoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2620,6 +2782,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAssetMeta
         :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetMetaRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetMetaResponse`
@@ -2632,6 +2795,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2664,6 +2829,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAssetMetaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2678,6 +2844,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateBucketAuthorized
         :type request: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedResponse`
@@ -2690,6 +2857,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2722,6 +2891,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBucketAuthorizedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2736,6 +2906,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCoverByThumbnail
         :type request: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailResponse`
@@ -2748,6 +2919,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2780,6 +2953,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCoverByThumbnailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2794,6 +2968,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTemplateGroup
         :type request: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupResponse`
@@ -2806,6 +2981,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2838,6 +3015,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2852,6 +3030,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTemplateGroupCollection
         :type request: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupCollectionResponse`
@@ -2864,6 +3043,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2896,6 +3077,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTemplateGroupCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2910,6 +3092,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTranscodeTemplate
         :type request: :class:`huaweicloudsdkvod.v1.UpdateTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateTranscodeTemplateResponse`
@@ -2922,6 +3105,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2954,6 +3139,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2968,6 +3154,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateWatermarkTemplate
         :type request: :class:`huaweicloudsdkvod.v1.UpdateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateWatermarkTemplateResponse`
@@ -2980,6 +3167,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3012,6 +3201,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3026,6 +3216,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadMetaDataByUrl
         :type request: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlResponse`
@@ -3038,6 +3229,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3070,6 +3263,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadMetaDataByUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3084,6 +3278,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTakeOverTask
         :type request: :class:`huaweicloudsdkvod.v1.ListTakeOverTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTakeOverTaskResponse`
@@ -3096,6 +3291,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3134,6 +3331,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTakeOverTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3148,6 +3346,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTakeOverAssetDetails
         :type request: :class:`huaweicloudsdkvod.v1.ShowTakeOverAssetDetailsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowTakeOverAssetDetailsResponse`
@@ -3160,6 +3359,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3194,6 +3395,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTakeOverAssetDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3208,6 +3410,7 @@ class VodAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTakeOverTaskDetails
         :type request: :class:`huaweicloudsdkvod.v1.ShowTakeOverTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowTakeOverTaskDetailsResponse`
@@ -3220,6 +3423,8 @@ class VodAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3256,6 +3461,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTakeOverTaskDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3263,7 +3469,7 @@ class VodAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3274,9 +3480,10 @@ class VodAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3293,6 +3500,7 @@ class VodAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

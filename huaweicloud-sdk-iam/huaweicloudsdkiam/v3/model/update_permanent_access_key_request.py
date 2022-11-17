@@ -17,7 +17,6 @@ class UpdatePermanentAccessKeyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdatePermanentAccessKeyRequest:
     def body(self):
         """Gets the body of this UpdatePermanentAccessKeyRequest.
 
-
         :return: The body of this UpdatePermanentAccessKeyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdatePermanentAccessKeyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePermanentAccessKeyRequest.
-
 
         :param body: The body of this UpdatePermanentAccessKeyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyRequestBody`

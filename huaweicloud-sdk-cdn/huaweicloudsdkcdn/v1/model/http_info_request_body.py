@@ -17,7 +17,6 @@ class HttpInfoRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -250,7 +249,6 @@ class HttpInfoRequestBody:
     def force_redirect_config(self):
         """Gets the force_redirect_config of this HttpInfoRequestBody.
 
-
         :return: The force_redirect_config of this HttpInfoRequestBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
@@ -259,7 +257,6 @@ class HttpInfoRequestBody:
     @force_redirect_config.setter
     def force_redirect_config(self, force_redirect_config):
         """Sets the force_redirect_config of this HttpInfoRequestBody.
-
 
         :param force_redirect_config: The force_redirect_config of this HttpInfoRequestBody.
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`

@@ -17,7 +17,6 @@ class CreateEncryptTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateEncryptTaskRequest:
     def body(self):
         """Gets the body of this CreateEncryptTaskRequest.
 
-
         :return: The body of this CreateEncryptTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEncryptReq`
         """
@@ -58,7 +56,6 @@ class CreateEncryptTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateEncryptTaskRequest.
-
 
         :param body: The body of this CreateEncryptTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateEncryptReq`

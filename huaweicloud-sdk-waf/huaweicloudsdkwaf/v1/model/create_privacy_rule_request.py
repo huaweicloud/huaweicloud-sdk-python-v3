@@ -17,7 +17,6 @@ class CreatePrivacyRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreatePrivacyRuleRequest:
     def body(self):
         """Gets the body of this CreatePrivacyRuleRequest.
 
-
         :return: The body of this CreatePrivacyRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleRequestBody`
         """
@@ -115,7 +113,6 @@ class CreatePrivacyRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePrivacyRuleRequest.
-
 
         :param body: The body of this CreatePrivacyRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleRequestBody`

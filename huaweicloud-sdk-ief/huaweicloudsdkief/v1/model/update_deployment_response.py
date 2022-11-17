@@ -17,7 +17,6 @@ class UpdateDeploymentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -440,7 +439,6 @@ class UpdateDeploymentResponse(SdkResponse):
     def template(self):
         """Gets the template of this UpdateDeploymentResponse.
 
-
         :return: The template of this UpdateDeploymentResponse.
         :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
         """
@@ -449,7 +447,6 @@ class UpdateDeploymentResponse(SdkResponse):
     @template.setter
     def template(self, template):
         """Sets the template of this UpdateDeploymentResponse.
-
 
         :param template: The template of this UpdateDeploymentResponse.
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`

@@ -17,7 +17,6 @@ class CreateEngineRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateEngineRequest:
     def body(self):
         """Gets the body of this CreateEngineRequest.
 
-
         :return: The body of this CreateEngineRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.EngineCreateReq`
         """
@@ -87,7 +85,6 @@ class CreateEngineRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateEngineRequest.
-
 
         :param body: The body of this CreateEngineRequest.
         :type body: :class:`huaweicloudsdkcse.v1.EngineCreateReq`

@@ -17,7 +17,6 @@ class CreateServiceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -244,7 +243,6 @@ class CreateServiceResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this CreateServiceResponse.
 
-
         :return: The created_user of this CreateServiceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -253,7 +251,6 @@ class CreateServiceResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this CreateServiceResponse.
-
 
         :param created_user: The created_user of this CreateServiceResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -264,7 +261,6 @@ class CreateServiceResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this CreateServiceResponse.
 
-
         :return: The last_updated_user of this CreateServiceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -273,7 +269,6 @@ class CreateServiceResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this CreateServiceResponse.
-
 
         :param last_updated_user: The last_updated_user of this CreateServiceResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`

@@ -17,7 +17,6 @@ class CreateFunctionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateFunctionRequest:
     def body(self):
         """Gets the body of this CreateFunctionRequest.
 
-
         :return: The body of this CreateFunctionRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateFunctionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateFunctionRequest.
-
 
         :param body: The body of this CreateFunctionRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionRequestBody`

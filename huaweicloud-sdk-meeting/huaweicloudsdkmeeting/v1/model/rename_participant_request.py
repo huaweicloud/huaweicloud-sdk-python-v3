@@ -17,7 +17,6 @@ class RenameParticipantRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class RenameParticipantRequest:
     def body(self):
         """Gets the body of this RenameParticipantRequest.
 
-
         :return: The body of this RenameParticipantRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestRenamePartReqBody`
         """
@@ -114,7 +112,6 @@ class RenameParticipantRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RenameParticipantRequest.
-
 
         :param body: The body of this RenameParticipantRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestRenamePartReqBody`

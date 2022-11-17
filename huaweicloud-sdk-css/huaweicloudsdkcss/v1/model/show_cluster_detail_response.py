@@ -17,7 +17,6 @@ class ShowClusterDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -224,7 +223,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def datastore(self):
         """Gets the datastore of this ShowClusterDetailResponse.
 
-
         :return: The datastore of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.ClusterDetailDatastore`
         """
@@ -233,7 +231,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this ShowClusterDetailResponse.
-
 
         :param datastore: The datastore of this ShowClusterDetailResponse.
         :type datastore: :class:`huaweicloudsdkcss.v1.ClusterDetailDatastore`
@@ -266,7 +263,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def public_kibana_resp(self):
         """Gets the public_kibana_resp of this ShowClusterDetailResponse.
 
-
         :return: The public_kibana_resp of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
         """
@@ -275,7 +271,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @public_kibana_resp.setter
     def public_kibana_resp(self, public_kibana_resp):
         """Sets the public_kibana_resp of this ShowClusterDetailResponse.
-
 
         :param public_kibana_resp: The public_kibana_resp of this ShowClusterDetailResponse.
         :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
@@ -286,7 +281,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def elb_white_list(self):
         """Gets the elb_white_list of this ShowClusterDetailResponse.
 
-
         :return: The elb_white_list of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
         """
@@ -295,7 +289,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @elb_white_list.setter
     def elb_white_list(self, elb_white_list):
         """Sets the elb_white_list of this ShowClusterDetailResponse.
-
 
         :param elb_white_list: The elb_white_list of this ShowClusterDetailResponse.
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
@@ -746,7 +739,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def failed_reason(self):
         """Gets the failed_reason of this ShowClusterDetailResponse.
 
-
         :return: The failed_reason of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.ClusterDetailFailedReasons`
         """
@@ -755,7 +747,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @failed_reason.setter
     def failed_reason(self, failed_reason):
         """Sets the failed_reason of this ShowClusterDetailResponse.
-
 
         :param failed_reason: The failed_reason of this ShowClusterDetailResponse.
         :type failed_reason: :class:`huaweicloudsdkcss.v1.ClusterDetailFailedReasons`

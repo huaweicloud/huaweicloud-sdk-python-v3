@@ -17,7 +17,6 @@ class ExecuteGenerateReportRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ExecuteGenerateReportRequest:
     def body(self):
         """Gets the body of this ExecuteGenerateReportRequest.
 
-
         :return: The body of this ExecuteGenerateReportRequest.
         :rtype: :class:`huaweicloudsdkvss.v3.ExecuteGenerateReportRequestBody`
         """
@@ -58,7 +56,6 @@ class ExecuteGenerateReportRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExecuteGenerateReportRequest.
-
 
         :param body: The body of this ExecuteGenerateReportRequest.
         :type body: :class:`huaweicloudsdkvss.v3.ExecuteGenerateReportRequestBody`

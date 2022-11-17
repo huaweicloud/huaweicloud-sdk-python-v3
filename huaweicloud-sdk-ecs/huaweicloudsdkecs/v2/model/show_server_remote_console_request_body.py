@@ -17,7 +17,6 @@ class ShowServerRemoteConsoleRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ShowServerRemoteConsoleRequestBody:
     def remote_console(self):
         """Gets the remote_console of this ShowServerRemoteConsoleRequestBody.
 
-
         :return: The remote_console of this ShowServerRemoteConsoleRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.GetServerRemoteConsoleOption`
         """
@@ -57,7 +55,6 @@ class ShowServerRemoteConsoleRequestBody:
     @remote_console.setter
     def remote_console(self, remote_console):
         """Sets the remote_console of this ShowServerRemoteConsoleRequestBody.
-
 
         :param remote_console: The remote_console of this ShowServerRemoteConsoleRequestBody.
         :type remote_console: :class:`huaweicloudsdkecs.v2.GetServerRemoteConsoleOption`

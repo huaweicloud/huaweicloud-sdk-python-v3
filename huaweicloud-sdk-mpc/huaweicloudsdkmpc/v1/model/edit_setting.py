@@ -17,7 +17,6 @@ class EditSetting:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -170,7 +169,6 @@ class EditSetting:
     def av_parameter(self):
         """Gets the av_parameter of this EditSetting.
 
-
         :return: The av_parameter of this EditSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.AvParameters`
         """
@@ -179,7 +177,6 @@ class EditSetting:
     @av_parameter.setter
     def av_parameter(self, av_parameter):
         """Sets the av_parameter of this EditSetting.
-
 
         :param av_parameter: The av_parameter of this EditSetting.
         :type av_parameter: :class:`huaweicloudsdkmpc.v1.AvParameters`
@@ -278,7 +275,6 @@ class EditSetting:
     def output(self):
         """Gets the output of this EditSetting.
 
-
         :return: The output of this EditSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -287,7 +283,6 @@ class EditSetting:
     @output.setter
     def output(self, output):
         """Sets the output of this EditSetting.
-
 
         :param output: The output of this EditSetting.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

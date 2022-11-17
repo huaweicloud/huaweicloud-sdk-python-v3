@@ -17,7 +17,6 @@ class UpdatePublicipRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdatePublicipRequest:
     def body(self):
         """Gets the body of this UpdatePublicipRequest.
 
-
         :return: The body of this UpdatePublicipRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.UpdatePublicipsRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdatePublicipRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePublicipRequest.
-
 
         :param body: The body of this UpdatePublicipRequest.
         :type body: :class:`huaweicloudsdkeip.v2.UpdatePublicipsRequestBody`

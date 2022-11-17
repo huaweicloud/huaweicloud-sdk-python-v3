@@ -17,7 +17,6 @@ class VpcPeering:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -156,7 +155,6 @@ class VpcPeering:
     def request_vpc_info(self):
         """Gets the request_vpc_info of this VpcPeering.
 
-
         :return: The request_vpc_info of this VpcPeering.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
@@ -165,7 +163,6 @@ class VpcPeering:
     @request_vpc_info.setter
     def request_vpc_info(self, request_vpc_info):
         """Sets the request_vpc_info of this VpcPeering.
-
 
         :param request_vpc_info: The request_vpc_info of this VpcPeering.
         :type request_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`
@@ -176,7 +173,6 @@ class VpcPeering:
     def accept_vpc_info(self):
         """Gets the accept_vpc_info of this VpcPeering.
 
-
         :return: The accept_vpc_info of this VpcPeering.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcInfo`
         """
@@ -185,7 +181,6 @@ class VpcPeering:
     @accept_vpc_info.setter
     def accept_vpc_info(self, accept_vpc_info):
         """Sets the accept_vpc_info of this VpcPeering.
-
 
         :param accept_vpc_info: The accept_vpc_info of this VpcPeering.
         :type accept_vpc_info: :class:`huaweicloudsdkvpc.v2.VpcInfo`

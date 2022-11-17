@@ -17,7 +17,6 @@ class CreateThumbnailsTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -157,7 +156,6 @@ class CreateThumbnailsTaskResponse(SdkResponse):
     def output(self):
         """Gets the output of this CreateThumbnailsTaskResponse.
 
-
         :return: The output of this CreateThumbnailsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -166,7 +164,6 @@ class CreateThumbnailsTaskResponse(SdkResponse):
     @output.setter
     def output(self, output):
         """Sets the output of this CreateThumbnailsTaskResponse.
-
 
         :param output: The output of this CreateThumbnailsTaskResponse.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

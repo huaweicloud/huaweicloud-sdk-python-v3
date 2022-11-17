@@ -17,7 +17,6 @@ class VaultUpdate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -91,7 +90,6 @@ class VaultUpdate:
     def billing(self):
         """Gets the billing of this VaultUpdate.
 
-
         :return: The billing of this VaultUpdate.
         :rtype: :class:`huaweicloudsdkcbr.v1.BillingUpdate`
         """
@@ -100,7 +98,6 @@ class VaultUpdate:
     @billing.setter
     def billing(self, billing):
         """Sets the billing of this VaultUpdate.
-
 
         :param billing: The billing of this VaultUpdate.
         :type billing: :class:`huaweicloudsdkcbr.v1.BillingUpdate`
@@ -155,7 +152,6 @@ class VaultUpdate:
     def bind_rules(self):
         """Gets the bind_rules of this VaultUpdate.
 
-
         :return: The bind_rules of this VaultUpdate.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
         """
@@ -164,7 +160,6 @@ class VaultUpdate:
     @bind_rules.setter
     def bind_rules(self, bind_rules):
         """Sets the bind_rules of this VaultUpdate.
-
 
         :param bind_rules: The bind_rules of this VaultUpdate.
         :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`

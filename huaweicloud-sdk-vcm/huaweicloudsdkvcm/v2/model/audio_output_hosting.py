@@ -17,7 +17,6 @@ class AudioOutputHosting:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class AudioOutputHosting:
     def obs(self):
         """Gets the obs of this AudioOutputHosting.
 
-
         :return: The obs of this AudioOutputHosting.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioOutputHostingObs`
         """
@@ -72,7 +70,6 @@ class AudioOutputHosting:
     @obs.setter
     def obs(self, obs):
         """Sets the obs of this AudioOutputHosting.
-
 
         :param obs: The obs of this AudioOutputHosting.
         :type obs: :class:`huaweicloudsdkvcm.v2.AudioOutputHostingObs`

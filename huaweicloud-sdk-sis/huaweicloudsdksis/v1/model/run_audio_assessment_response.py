@@ -17,7 +17,6 @@ class RunAudioAssessmentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -157,7 +156,6 @@ class RunAudioAssessmentResponse(SdkResponse):
     def pronunciation(self):
         """Gets the pronunciation of this RunAudioAssessmentResponse.
 
-
         :return: The pronunciation of this RunAudioAssessmentResponse.
         :rtype: :class:`huaweicloudsdksis.v1.Pronunciation`
         """
@@ -166,7 +164,6 @@ class RunAudioAssessmentResponse(SdkResponse):
     @pronunciation.setter
     def pronunciation(self, pronunciation):
         """Sets the pronunciation of this RunAudioAssessmentResponse.
-
 
         :param pronunciation: The pronunciation of this RunAudioAssessmentResponse.
         :type pronunciation: :class:`huaweicloudsdksis.v1.Pronunciation`
@@ -177,7 +174,6 @@ class RunAudioAssessmentResponse(SdkResponse):
     def fluency(self):
         """Gets the fluency of this RunAudioAssessmentResponse.
 
-
         :return: The fluency of this RunAudioAssessmentResponse.
         :rtype: :class:`huaweicloudsdksis.v1.Fluency`
         """
@@ -186,7 +182,6 @@ class RunAudioAssessmentResponse(SdkResponse):
     @fluency.setter
     def fluency(self, fluency):
         """Sets the fluency of this RunAudioAssessmentResponse.
-
 
         :param fluency: The fluency of this RunAudioAssessmentResponse.
         :type fluency: :class:`huaweicloudsdksis.v1.Fluency`

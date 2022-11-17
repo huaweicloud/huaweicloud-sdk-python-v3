@@ -17,7 +17,6 @@ class ResetActivecodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class ResetActivecodeRequest:
     def body(self):
         """Gets the body of this ResetActivecodeRequest.
 
-
         :return: The body of this ResetActivecodeRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ActiveDTO`
         """
@@ -144,7 +142,6 @@ class ResetActivecodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetActivecodeRequest.
-
 
         :param body: The body of this ResetActivecodeRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ActiveDTO`

@@ -17,7 +17,6 @@ class ShowLastPropertyValueRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowLastPropertyValueRequest:
     def body(self):
         """Gets the body of this ShowLastPropertyValueRequest.
 
-
         :return: The body of this ShowLastPropertyValueRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.LastAssetPropertyValueRequest`
         """
@@ -86,7 +84,6 @@ class ShowLastPropertyValueRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowLastPropertyValueRequest.
-
 
         :param body: The body of this ShowLastPropertyValueRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.LastAssetPropertyValueRequest`

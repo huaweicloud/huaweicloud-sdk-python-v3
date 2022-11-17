@@ -17,7 +17,6 @@ class ApplyCertificateToHostRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ApplyCertificateToHostRequest:
     def body(self):
         """Gets the body of this ApplyCertificateToHostRequest.
 
-
         :return: The body of this ApplyCertificateToHostRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequestBody`
         """
@@ -115,7 +113,6 @@ class ApplyCertificateToHostRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ApplyCertificateToHostRequest.
-
 
         :param body: The body of this ApplyCertificateToHostRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequestBody`

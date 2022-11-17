@@ -17,7 +17,6 @@ class CreateResDatasourceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class CreateResDatasourceRequestBody:
     def specs_config(self):
         """Gets the specs_config of this CreateResDatasourceRequestBody.
 
-
         :return: The specs_config of this CreateResDatasourceRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
@@ -91,7 +89,6 @@ class CreateResDatasourceRequestBody:
     @specs_config.setter
     def specs_config(self, specs_config):
         """Sets the specs_config of this CreateResDatasourceRequestBody.
-
 
         :param specs_config: The specs_config of this CreateResDatasourceRequestBody.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -102,7 +99,6 @@ class CreateResDatasourceRequestBody:
     def data_config(self):
         """Gets the data_config of this CreateResDatasourceRequestBody.
 
-
         :return: The data_config of this CreateResDatasourceRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
         """
@@ -111,7 +107,6 @@ class CreateResDatasourceRequestBody:
     @data_config.setter
     def data_config(self, data_config):
         """Sets the data_config of this CreateResDatasourceRequestBody.
-
 
         :param data_config: The data_config of this CreateResDatasourceRequestBody.
         :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`

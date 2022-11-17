@@ -17,7 +17,6 @@ class ShowDeviceGroupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -73,7 +72,7 @@ class ShowDeviceGroupResponse(SdkResponse):
         :type created_datetime: str
         :param last_updated_datetime: 最后修改时间
         :type last_updated_datetime: str
-        :param app_name: 应用名称
+        :param app_name: 分组归属应用名称
         :type app_name: str
         """
         
@@ -251,7 +250,6 @@ class ShowDeviceGroupResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this ShowDeviceGroupResponse.
 
-
         :return: The created_user of this ShowDeviceGroupResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -260,7 +258,6 @@ class ShowDeviceGroupResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this ShowDeviceGroupResponse.
-
 
         :param created_user: The created_user of this ShowDeviceGroupResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -271,7 +268,6 @@ class ShowDeviceGroupResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this ShowDeviceGroupResponse.
 
-
         :return: The last_updated_user of this ShowDeviceGroupResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -280,7 +276,6 @@ class ShowDeviceGroupResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this ShowDeviceGroupResponse.
-
 
         :param last_updated_user: The last_updated_user of this ShowDeviceGroupResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -335,7 +330,7 @@ class ShowDeviceGroupResponse(SdkResponse):
     def app_name(self):
         """Gets the app_name of this ShowDeviceGroupResponse.
 
-        应用名称
+        分组归属应用名称
 
         :return: The app_name of this ShowDeviceGroupResponse.
         :rtype: str
@@ -346,7 +341,7 @@ class ShowDeviceGroupResponse(SdkResponse):
     def app_name(self, app_name):
         """Sets the app_name of this ShowDeviceGroupResponse.
 
-        应用名称
+        分组归属应用名称
 
         :param app_name: The app_name of this ShowDeviceGroupResponse.
         :type app_name: str

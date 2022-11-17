@@ -17,7 +17,6 @@ class SourceObject:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class SourceObject:
     def kind(self):
         """Gets the kind of this SourceObject.
 
-
         :return: The kind of this SourceObject.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceKind`
         """
@@ -65,7 +63,6 @@ class SourceObject:
     @kind.setter
     def kind(self, kind):
         """Sets the kind of this SourceObject.
-
 
         :param kind: The kind of this SourceObject.
         :type kind: :class:`huaweicloudsdkservicestage.v2.SourceKind`
@@ -76,7 +73,6 @@ class SourceObject:
     def spec(self):
         """Gets the spec of this SourceObject.
 
-
         :return: The spec of this SourceObject.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceOrArtifact`
         """
@@ -85,7 +81,6 @@ class SourceObject:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this SourceObject.
-
 
         :param spec: The spec of this SourceObject.
         :type spec: :class:`huaweicloudsdkservicestage.v2.SourceOrArtifact`

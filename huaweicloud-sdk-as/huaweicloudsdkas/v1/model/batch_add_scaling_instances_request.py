@@ -17,7 +17,6 @@ class BatchAddScalingInstancesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchAddScalingInstancesRequest:
     def body(self):
         """Gets the body of this BatchAddScalingInstancesRequest.
 
-
         :return: The body of this BatchAddScalingInstancesRequest.
         :rtype: :class:`huaweicloudsdkas.v1.BatchAddInstancesOption`
         """
@@ -86,7 +84,6 @@ class BatchAddScalingInstancesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchAddScalingInstancesRequest.
-
 
         :param body: The body of this BatchAddScalingInstancesRequest.
         :type body: :class:`huaweicloudsdkas.v1.BatchAddInstancesOption`

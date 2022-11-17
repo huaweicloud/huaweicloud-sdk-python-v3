@@ -17,7 +17,6 @@ class ShowShareResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -189,7 +188,6 @@ class ShowShareResponse(SdkResponse):
     def action_progress(self):
         """Gets the action_progress of this ShowShareResponse.
 
-
         :return: The action_progress of this ShowShareResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ActionProgress`
         """
@@ -198,7 +196,6 @@ class ShowShareResponse(SdkResponse):
     @action_progress.setter
     def action_progress(self, action_progress):
         """Sets the action_progress of this ShowShareResponse.
-
 
         :param action_progress: The action_progress of this ShowShareResponse.
         :type action_progress: :class:`huaweicloudsdksfsturbo.v1.ActionProgress`

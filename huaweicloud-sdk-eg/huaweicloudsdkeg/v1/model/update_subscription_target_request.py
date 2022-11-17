@@ -17,7 +17,6 @@ class UpdateSubscriptionTargetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateSubscriptionTargetRequest:
     def body(self):
         """Gets the body of this UpdateSubscriptionTargetRequest.
 
-
         :return: The body of this UpdateSubscriptionTargetRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionTarget`
         """
@@ -114,7 +112,6 @@ class UpdateSubscriptionTargetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateSubscriptionTargetRequest.
-
 
         :param body: The body of this UpdateSubscriptionTargetRequest.
         :type body: :class:`huaweicloudsdkeg.v1.SubscriptionTarget`

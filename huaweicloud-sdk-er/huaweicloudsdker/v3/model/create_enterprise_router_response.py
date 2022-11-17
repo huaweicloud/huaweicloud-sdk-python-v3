@@ -17,7 +17,6 @@ class CreateEnterpriseRouterResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CreateEnterpriseRouterResponse(SdkResponse):
     def instance(self):
         """Gets the instance of this CreateEnterpriseRouterResponse.
 
-
         :return: The instance of this CreateEnterpriseRouterResponse.
         :rtype: :class:`huaweicloudsdker.v3.EnterpriseRouter`
         """
@@ -72,7 +70,6 @@ class CreateEnterpriseRouterResponse(SdkResponse):
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this CreateEnterpriseRouterResponse.
-
 
         :param instance: The instance of this CreateEnterpriseRouterResponse.
         :type instance: :class:`huaweicloudsdker.v3.EnterpriseRouter`
@@ -105,7 +102,6 @@ class CreateEnterpriseRouterResponse(SdkResponse):
     def x_client_token(self):
         """Gets the x_client_token of this CreateEnterpriseRouterResponse.
 
-
         :return: The x_client_token of this CreateEnterpriseRouterResponse.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class CreateEnterpriseRouterResponse(SdkResponse):
     @x_client_token.setter
     def x_client_token(self, x_client_token):
         """Sets the x_client_token of this CreateEnterpriseRouterResponse.
-
 
         :param x_client_token: The x_client_token of this CreateEnterpriseRouterResponse.
         :type x_client_token: str

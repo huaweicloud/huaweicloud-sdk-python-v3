@@ -17,7 +17,6 @@ class UpdateProductTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateProductTemplateRequest:
     def body(self):
         """Gets the body of this UpdateProductTemplateRequest.
 
-
         :return: The body of this UpdateProductTemplateRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateRequestBody`
         """
@@ -114,7 +112,6 @@ class UpdateProductTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateProductTemplateRequest.
-
 
         :param body: The body of this UpdateProductTemplateRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateRequestBody`

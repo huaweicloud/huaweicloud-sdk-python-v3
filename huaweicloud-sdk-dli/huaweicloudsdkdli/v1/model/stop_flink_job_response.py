@@ -17,7 +17,6 @@ class StopFlinkJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class StopFlinkJobResponse(SdkResponse):
     def body(self):
         """Gets the body of this StopFlinkJobResponse.
 
-
         :return: The body of this StopFlinkJobResponse.
         :rtype: list[:class:`huaweicloudsdkdli.v1.CommonResp`]
         """
@@ -58,7 +56,6 @@ class StopFlinkJobResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this StopFlinkJobResponse.
-
 
         :param body: The body of this StopFlinkJobResponse.
         :type body: list[:class:`huaweicloudsdkdli.v1.CommonResp`]

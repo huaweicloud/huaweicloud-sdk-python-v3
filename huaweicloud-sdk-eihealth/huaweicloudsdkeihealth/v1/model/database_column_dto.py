@@ -17,7 +17,6 @@ class DatabaseColumnDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class DatabaseColumnDto:
     def type(self):
         """Gets the type of this DatabaseColumnDto.
 
-
         :return: The type of this DatabaseColumnDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ColumnType`
         """
@@ -123,7 +121,6 @@ class DatabaseColumnDto:
     @type.setter
     def type(self, type):
         """Sets the type of this DatabaseColumnDto.
-
 
         :param type: The type of this DatabaseColumnDto.
         :type type: :class:`huaweicloudsdkeihealth.v1.ColumnType`

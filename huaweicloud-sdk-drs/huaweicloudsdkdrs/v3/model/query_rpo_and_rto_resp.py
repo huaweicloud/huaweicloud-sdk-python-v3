@@ -17,7 +17,6 @@ class QueryRpoAndRtoResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -99,7 +98,6 @@ class QueryRpoAndRtoResp:
     def rpo_info(self):
         """Gets the rpo_info of this QueryRpoAndRtoResp.
 
-
         :return: The rpo_info of this QueryRpoAndRtoResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
         """
@@ -108,7 +106,6 @@ class QueryRpoAndRtoResp:
     @rpo_info.setter
     def rpo_info(self, rpo_info):
         """Sets the rpo_info of this QueryRpoAndRtoResp.
-
 
         :param rpo_info: The rpo_info of this QueryRpoAndRtoResp.
         :type rpo_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
@@ -119,7 +116,6 @@ class QueryRpoAndRtoResp:
     def rto_info(self):
         """Gets the rto_info of this QueryRpoAndRtoResp.
 
-
         :return: The rto_info of this QueryRpoAndRtoResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
         """
@@ -128,7 +124,6 @@ class QueryRpoAndRtoResp:
     @rto_info.setter
     def rto_info(self, rto_info):
         """Sets the rto_info of this QueryRpoAndRtoResp.
-
 
         :param rto_info: The rto_info of this QueryRpoAndRtoResp.
         :type rto_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`

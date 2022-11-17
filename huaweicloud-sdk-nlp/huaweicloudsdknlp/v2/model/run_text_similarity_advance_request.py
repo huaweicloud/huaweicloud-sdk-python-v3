@@ -17,7 +17,6 @@ class RunTextSimilarityAdvanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunTextSimilarityAdvanceRequest:
     def body(self):
         """Gets the body of this RunTextSimilarityAdvanceRequest.
 
-
         :return: The body of this RunTextSimilarityAdvanceRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.TextSimilarityAdvanceRequest`
         """
@@ -58,7 +56,6 @@ class RunTextSimilarityAdvanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunTextSimilarityAdvanceRequest.
-
 
         :param body: The body of this RunTextSimilarityAdvanceRequest.
         :type body: :class:`huaweicloudsdknlp.v2.TextSimilarityAdvanceRequest`

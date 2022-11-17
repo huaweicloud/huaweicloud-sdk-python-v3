@@ -17,7 +17,6 @@ class NovaCreateServersRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class NovaCreateServersRequestBody:
     def server(self):
         """Gets the server of this NovaCreateServersRequestBody.
 
-
         :return: The server of this NovaCreateServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersOption`
         """
@@ -64,7 +62,6 @@ class NovaCreateServersRequestBody:
     @server.setter
     def server(self, server):
         """Sets the server of this NovaCreateServersRequestBody.
-
 
         :param server: The server of this NovaCreateServersRequestBody.
         :type server: :class:`huaweicloudsdkecs.v2.NovaCreateServersOption`
@@ -75,7 +72,6 @@ class NovaCreateServersRequestBody:
     def osscheduler_hints(self):
         """Gets the osscheduler_hints of this NovaCreateServersRequestBody.
 
-
         :return: The osscheduler_hints of this NovaCreateServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersSchedulerHint`
         """
@@ -84,7 +80,6 @@ class NovaCreateServersRequestBody:
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
         """Sets the osscheduler_hints of this NovaCreateServersRequestBody.
-
 
         :param osscheduler_hints: The osscheduler_hints of this NovaCreateServersRequestBody.
         :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.NovaCreateServersSchedulerHint`

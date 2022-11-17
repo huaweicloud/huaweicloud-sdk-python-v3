@@ -17,7 +17,6 @@ class ShowReplicationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowReplicationResponse(SdkResponse):
     def replication(self):
         """Gets the replication of this ShowReplicationResponse.
 
-
         :return: The replication of this ShowReplicationResponse.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowReplicationParams`
         """
@@ -58,7 +56,6 @@ class ShowReplicationResponse(SdkResponse):
     @replication.setter
     def replication(self, replication):
         """Sets the replication of this ShowReplicationResponse.
-
 
         :param replication: The replication of this ShowReplicationResponse.
         :type replication: :class:`huaweicloudsdksdrs.v1.ShowReplicationParams`

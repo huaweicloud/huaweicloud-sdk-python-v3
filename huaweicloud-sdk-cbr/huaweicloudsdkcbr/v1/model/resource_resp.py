@@ -17,7 +17,6 @@ class ResourceResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -102,7 +101,6 @@ class ResourceResp:
     def extra_info(self):
         """Gets the extra_info of this ResourceResp.
 
-
         :return: The extra_info of this ResourceResp.
         :rtype: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
         """
@@ -111,7 +109,6 @@ class ResourceResp:
     @extra_info.setter
     def extra_info(self, extra_info):
         """Sets the extra_info of this ResourceResp.
-
 
         :param extra_info: The extra_info of this ResourceResp.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`

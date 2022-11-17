@@ -17,7 +17,6 @@ class CreateImageReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -141,7 +140,6 @@ class CreateImageReq:
     def type(self):
         """Gets the type of this CreateImageReq.
 
-
         :return: The type of this CreateImageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageType`
         """
@@ -150,7 +148,6 @@ class CreateImageReq:
     @type.setter
     def type(self, type):
         """Sets the type of this CreateImageReq.
-
 
         :param type: The type of this CreateImageReq.
         :type type: :class:`huaweicloudsdkeihealth.v1.ImageType`
@@ -161,7 +158,6 @@ class CreateImageReq:
     def chip_type(self):
         """Gets the chip_type of this CreateImageReq.
 
-
         :return: The chip_type of this CreateImageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
         """
@@ -170,7 +166,6 @@ class CreateImageReq:
     @chip_type.setter
     def chip_type(self, chip_type):
         """Sets the chip_type of this CreateImageReq.
-
 
         :param chip_type: The chip_type of this CreateImageReq.
         :type chip_type: :class:`huaweicloudsdkeihealth.v1.ImageChipType`

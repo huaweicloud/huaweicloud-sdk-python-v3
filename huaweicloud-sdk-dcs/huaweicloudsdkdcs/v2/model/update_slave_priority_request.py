@@ -17,7 +17,6 @@ class UpdateSlavePriorityRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class UpdateSlavePriorityRequest:
     def body(self):
         """Gets the body of this UpdateSlavePriorityRequest.
 
-
         :return: The body of this UpdateSlavePriorityRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.PriorityBody`
         """
@@ -142,7 +140,6 @@ class UpdateSlavePriorityRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateSlavePriorityRequest.
-
 
         :param body: The body of this UpdateSlavePriorityRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.PriorityBody`

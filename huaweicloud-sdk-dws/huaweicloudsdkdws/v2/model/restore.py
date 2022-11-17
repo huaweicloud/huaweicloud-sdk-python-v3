@@ -17,7 +17,6 @@ class Restore:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -229,7 +228,6 @@ class Restore:
     def public_ip(self):
         """Gets the public_ip of this Restore.
 
-
         :return: The public_ip of this Restore.
         :rtype: :class:`huaweicloudsdkdws.v2.PublicIp`
         """
@@ -238,7 +236,6 @@ class Restore:
     @public_ip.setter
     def public_ip(self, public_ip):
         """Sets the public_ip of this Restore.
-
 
         :param public_ip: The public_ip of this Restore.
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`

@@ -17,7 +17,6 @@ class RegisterDbUserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class RegisterDbUserRequest:
     def body(self):
         """Gets the body of this RegisterDbUserRequest.
 
-
         :return: The body of this RegisterDbUserRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.RegisterDbUserRequestBody`
         """
@@ -115,7 +113,6 @@ class RegisterDbUserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RegisterDbUserRequest.
-
 
         :param body: The body of this RegisterDbUserRequest.
         :type body: :class:`huaweicloudsdkdas.v3.RegisterDbUserRequestBody`

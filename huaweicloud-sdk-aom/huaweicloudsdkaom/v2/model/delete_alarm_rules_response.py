@@ -17,7 +17,6 @@ class DeleteAlarmRulesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteAlarmRulesResponse(SdkResponse):
     def body(self):
         """Gets the body of this DeleteAlarmRulesResponse.
 
-
         :return: The body of this DeleteAlarmRulesResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class DeleteAlarmRulesResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteAlarmRulesResponse.
-
 
         :param body: The body of this DeleteAlarmRulesResponse.
         :type body: str

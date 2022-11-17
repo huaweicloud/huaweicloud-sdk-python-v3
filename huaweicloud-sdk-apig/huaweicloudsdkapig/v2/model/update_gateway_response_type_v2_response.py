@@ -17,7 +17,6 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
     def body(self):
         """Gets the body of this UpdateGatewayResponseTypeV2Response.
 
-
         :return: The body of this UpdateGatewayResponseTypeV2Response.
         :rtype: dict(str, ResponseInfoResp)
         """
@@ -58,7 +56,6 @@ class UpdateGatewayResponseTypeV2Response(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateGatewayResponseTypeV2Response.
-
 
         :param body: The body of this UpdateGatewayResponseTypeV2Response.
         :type body: dict(str, ResponseInfoResp)

@@ -17,7 +17,6 @@ class Rule:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -189,7 +188,6 @@ class Rule:
     def trigger(self):
         """Gets the trigger of this Rule.
 
-
         :return: The trigger of this Rule.
         :rtype: :class:`huaweicloudsdkmrs.v1.Trigger`
         """
@@ -198,7 +196,6 @@ class Rule:
     @trigger.setter
     def trigger(self, trigger):
         """Sets the trigger of this Rule.
-
 
         :param trigger: The trigger of this Rule.
         :type trigger: :class:`huaweicloudsdkmrs.v1.Trigger`

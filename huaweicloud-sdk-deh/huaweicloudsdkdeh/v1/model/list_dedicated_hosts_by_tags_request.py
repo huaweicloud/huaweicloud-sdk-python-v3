@@ -17,7 +17,6 @@ class ListDedicatedHostsByTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListDedicatedHostsByTagsRequest:
     def body(self):
         """Gets the body of this ListDedicatedHostsByTagsRequest.
 
-
         :return: The body of this ListDedicatedHostsByTagsRequest.
         :rtype: :class:`huaweicloudsdkdeh.v1.ReqListDehByTags`
         """
@@ -58,7 +56,6 @@ class ListDedicatedHostsByTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListDedicatedHostsByTagsRequest.
-
 
         :param body: The body of this ListDedicatedHostsByTagsRequest.
         :type body: :class:`huaweicloudsdkdeh.v1.ReqListDehByTags`

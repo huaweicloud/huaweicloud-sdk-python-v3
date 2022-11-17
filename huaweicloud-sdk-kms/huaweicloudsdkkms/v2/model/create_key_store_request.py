@@ -17,7 +17,6 @@ class CreateKeyStoreRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateKeyStoreRequest:
     def body(self):
         """Gets the body of this CreateKeyStoreRequest.
 
-
         :return: The body of this CreateKeyStoreRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.CreateKeyStoreRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateKeyStoreRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateKeyStoreRequest.
-
 
         :param body: The body of this CreateKeyStoreRequest.
         :type body: :class:`huaweicloudsdkkms.v2.CreateKeyStoreRequestBody`

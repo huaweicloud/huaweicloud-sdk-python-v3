@@ -17,7 +17,6 @@ class DecryptDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DecryptDataRequest:
     def body(self):
         """Gets the body of this DecryptDataRequest.
 
-
         :return: The body of this DecryptDataRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.DecryptDataRequestBody`
         """
@@ -58,7 +56,6 @@ class DecryptDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DecryptDataRequest.
-
 
         :param body: The body of this DecryptDataRequest.
         :type body: :class:`huaweicloudsdkkms.v2.DecryptDataRequestBody`

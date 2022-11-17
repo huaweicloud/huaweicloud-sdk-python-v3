@@ -17,7 +17,6 @@ class ThumbTask:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -200,7 +199,6 @@ class ThumbTask:
     def input(self):
         """Gets the input of this ThumbTask.
 
-
         :return: The input of this ThumbTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -209,7 +207,6 @@ class ThumbTask:
     @input.setter
     def input(self, input):
         """Sets the input of this ThumbTask.
-
 
         :param input: The input of this ThumbTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -220,7 +217,6 @@ class ThumbTask:
     def output(self):
         """Gets the output of this ThumbTask.
 
-
         :return: The output of this ThumbTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -229,7 +225,6 @@ class ThumbTask:
     @output.setter
     def output(self, output):
         """Sets the output of this ThumbTask.
-
 
         :param output: The output of this ThumbTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

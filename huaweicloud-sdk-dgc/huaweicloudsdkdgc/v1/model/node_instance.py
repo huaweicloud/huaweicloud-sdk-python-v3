@@ -17,7 +17,6 @@ class NodeInstance:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -126,7 +125,6 @@ class NodeInstance:
     def node_name(self):
         """Gets the node_name of this NodeInstance.
 
-
         :return: The node_name of this NodeInstance.
         :rtype: str
         """
@@ -135,7 +133,6 @@ class NodeInstance:
     @node_name.setter
     def node_name(self, node_name):
         """Sets the node_name of this NodeInstance.
-
 
         :param node_name: The node_name of this NodeInstance.
         :type node_name: str
@@ -146,7 +143,6 @@ class NodeInstance:
     def status(self):
         """Gets the status of this NodeInstance.
 
-
         :return: The status of this NodeInstance.
         :rtype: str
         """
@@ -155,7 +151,6 @@ class NodeInstance:
     @status.setter
     def status(self, status):
         """Sets the status of this NodeInstance.
-
 
         :param status: The status of this NodeInstance.
         :type status: str
@@ -166,7 +161,6 @@ class NodeInstance:
     def plan_time(self):
         """Gets the plan_time of this NodeInstance.
 
-
         :return: The plan_time of this NodeInstance.
         :rtype: int
         """
@@ -175,7 +169,6 @@ class NodeInstance:
     @plan_time.setter
     def plan_time(self, plan_time):
         """Sets the plan_time of this NodeInstance.
-
 
         :param plan_time: The plan_time of this NodeInstance.
         :type plan_time: int
@@ -186,7 +179,6 @@ class NodeInstance:
     def start_time(self):
         """Gets the start_time of this NodeInstance.
 
-
         :return: The start_time of this NodeInstance.
         :rtype: int
         """
@@ -195,7 +187,6 @@ class NodeInstance:
     @start_time.setter
     def start_time(self, start_time):
         """Sets the start_time of this NodeInstance.
-
 
         :param start_time: The start_time of this NodeInstance.
         :type start_time: int
@@ -206,7 +197,6 @@ class NodeInstance:
     def end_time(self):
         """Gets the end_time of this NodeInstance.
 
-
         :return: The end_time of this NodeInstance.
         :rtype: int
         """
@@ -215,7 +205,6 @@ class NodeInstance:
     @end_time.setter
     def end_time(self, end_time):
         """Sets the end_time of this NodeInstance.
-
 
         :param end_time: The end_time of this NodeInstance.
         :type end_time: int
@@ -226,7 +215,6 @@ class NodeInstance:
     def execute_time(self):
         """Gets the execute_time of this NodeInstance.
 
-
         :return: The execute_time of this NodeInstance.
         :rtype: int
         """
@@ -235,7 +223,6 @@ class NodeInstance:
     @execute_time.setter
     def execute_time(self, execute_time):
         """Sets the execute_time of this NodeInstance.
-
 
         :param execute_time: The execute_time of this NodeInstance.
         :type execute_time: int
@@ -246,7 +233,6 @@ class NodeInstance:
     def node_type(self):
         """Gets the node_type of this NodeInstance.
 
-
         :return: The node_type of this NodeInstance.
         :rtype: str
         """
@@ -255,7 +241,6 @@ class NodeInstance:
     @node_type.setter
     def node_type(self, node_type):
         """Sets the node_type of this NodeInstance.
-
 
         :param node_type: The node_type of this NodeInstance.
         :type node_type: str
@@ -266,7 +251,6 @@ class NodeInstance:
     def retry_times(self):
         """Gets the retry_times of this NodeInstance.
 
-
         :return: The retry_times of this NodeInstance.
         :rtype: int
         """
@@ -275,7 +259,6 @@ class NodeInstance:
     @retry_times.setter
     def retry_times(self, retry_times):
         """Sets the retry_times of this NodeInstance.
-
 
         :param retry_times: The retry_times of this NodeInstance.
         :type retry_times: int
@@ -286,7 +269,6 @@ class NodeInstance:
     def instance_id(self):
         """Gets the instance_id of this NodeInstance.
 
-
         :return: The instance_id of this NodeInstance.
         :rtype: int
         """
@@ -295,7 +277,6 @@ class NodeInstance:
     @instance_id.setter
     def instance_id(self, instance_id):
         """Sets the instance_id of this NodeInstance.
-
 
         :param instance_id: The instance_id of this NodeInstance.
         :type instance_id: int
@@ -306,7 +287,6 @@ class NodeInstance:
     def input_row_count(self):
         """Gets the input_row_count of this NodeInstance.
 
-
         :return: The input_row_count of this NodeInstance.
         :rtype: int
         """
@@ -315,7 +295,6 @@ class NodeInstance:
     @input_row_count.setter
     def input_row_count(self, input_row_count):
         """Sets the input_row_count of this NodeInstance.
-
 
         :param input_row_count: The input_row_count of this NodeInstance.
         :type input_row_count: int
@@ -326,7 +305,6 @@ class NodeInstance:
     def output_row_count(self):
         """Gets the output_row_count of this NodeInstance.
 
-
         :return: The output_row_count of this NodeInstance.
         :rtype: int
         """
@@ -335,7 +313,6 @@ class NodeInstance:
     @output_row_count.setter
     def output_row_count(self, output_row_count):
         """Sets the output_row_count of this NodeInstance.
-
 
         :param output_row_count: The output_row_count of this NodeInstance.
         :type output_row_count: int
@@ -346,7 +323,6 @@ class NodeInstance:
     def log_path(self):
         """Gets the log_path of this NodeInstance.
 
-
         :return: The log_path of this NodeInstance.
         :rtype: str
         """
@@ -355,7 +331,6 @@ class NodeInstance:
     @log_path.setter
     def log_path(self, log_path):
         """Sets the log_path of this NodeInstance.
-
 
         :param log_path: The log_path of this NodeInstance.
         :type log_path: str

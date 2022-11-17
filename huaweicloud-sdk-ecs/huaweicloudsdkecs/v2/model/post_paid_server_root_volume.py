@@ -17,7 +17,6 @@ class PostPaidServerRootVolume:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -193,7 +192,6 @@ class PostPaidServerRootVolume:
     def extendparam(self):
         """Gets the extendparam of this PostPaidServerRootVolume.
 
-
         :return: The extendparam of this PostPaidServerRootVolume.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolumeExtendParam`
         """
@@ -202,7 +200,6 @@ class PostPaidServerRootVolume:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this PostPaidServerRootVolume.
-
 
         :param extendparam: The extendparam of this PostPaidServerRootVolume.
         :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolumeExtendParam`

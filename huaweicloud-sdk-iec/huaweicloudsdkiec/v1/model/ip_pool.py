@@ -17,7 +17,6 @@ class IpPool:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -172,7 +171,6 @@ class IpPool:
     def operator(self):
         """Gets the operator of this IpPool.
 
-
         :return: The operator of this IpPool.
         :rtype: :class:`huaweicloudsdkiec.v1.Operator`
         """
@@ -181,7 +179,6 @@ class IpPool:
     @operator.setter
     def operator(self, operator):
         """Sets the operator of this IpPool.
-
 
         :param operator: The operator of this IpPool.
         :type operator: :class:`huaweicloudsdkiec.v1.Operator`

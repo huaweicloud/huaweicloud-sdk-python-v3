@@ -17,7 +17,6 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
     def instance(self):
         """Gets the instance of this CreateGaussMySqlInstanceResponse.
 
-
         :return: The instance of this CreateGaussMySqlInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceResponse`
         """
@@ -72,7 +70,6 @@ class CreateGaussMySqlInstanceResponse(SdkResponse):
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this CreateGaussMySqlInstanceResponse.
-
 
         :param instance: The instance of this CreateGaussMySqlInstanceResponse.
         :type instance: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceResponse`

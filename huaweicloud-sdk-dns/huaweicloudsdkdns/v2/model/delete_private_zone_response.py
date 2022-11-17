@@ -17,7 +17,6 @@ class DeletePrivateZoneResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -440,7 +439,6 @@ class DeletePrivateZoneResponse(SdkResponse):
     def links(self):
         """Gets the links of this DeletePrivateZoneResponse.
 
-
         :return: The links of this DeletePrivateZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -449,7 +447,6 @@ class DeletePrivateZoneResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this DeletePrivateZoneResponse.
-
 
         :param links: The links of this DeletePrivateZoneResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

@@ -17,7 +17,6 @@ class HistoryItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -223,7 +222,6 @@ class HistoryItem:
     def resource(self):
         """Gets the resource of this HistoryItem.
 
-
         :return: The resource of this HistoryItem.
         :rtype: :class:`huaweicloudsdkrms.v1.ResourceEntity`
         """
@@ -232,7 +230,6 @@ class HistoryItem:
     @resource.setter
     def resource(self, resource):
         """Sets the resource of this HistoryItem.
-
 
         :param resource: The resource of this HistoryItem.
         :type resource: :class:`huaweicloudsdkrms.v1.ResourceEntity`

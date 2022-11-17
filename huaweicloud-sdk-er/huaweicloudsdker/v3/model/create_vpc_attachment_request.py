@@ -17,7 +17,6 @@ class CreateVpcAttachmentRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
     sensitive_list.append('x_client_token')
 
@@ -107,7 +106,6 @@ class CreateVpcAttachmentRequest:
     def body(self):
         """Gets the body of this CreateVpcAttachmentRequest.
 
-
         :return: The body of this CreateVpcAttachmentRequest.
         :rtype: :class:`huaweicloudsdker.v3.CreateVpcAttachmentBody`
         """
@@ -116,7 +114,6 @@ class CreateVpcAttachmentRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateVpcAttachmentRequest.
-
 
         :param body: The body of this CreateVpcAttachmentRequest.
         :type body: :class:`huaweicloudsdker.v3.CreateVpcAttachmentBody`

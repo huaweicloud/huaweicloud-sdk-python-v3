@@ -17,7 +17,6 @@ class UpdateInstanceConfigurationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateInstanceConfigurationRequest:
     def body(self):
         """Gets the body of this UpdateInstanceConfigurationRequest.
 
-
         :return: The body of this UpdateInstanceConfigurationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussModifyInstanceConfigurationRequest`
         """
@@ -115,7 +113,6 @@ class UpdateInstanceConfigurationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateInstanceConfigurationRequest.
-
 
         :param body: The body of this UpdateInstanceConfigurationRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussModifyInstanceConfigurationRequest`

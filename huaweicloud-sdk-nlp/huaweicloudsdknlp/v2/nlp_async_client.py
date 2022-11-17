@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class NlpAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -57,6 +51,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunAspectSentiment
         :type request: :class:`huaweicloudsdknlp.v2.RunAspectSentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunAspectSentimentResponse`
@@ -69,6 +64,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -101,6 +98,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunAspectSentimentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunAspectSentimentAdvance
         :type request: :class:`huaweicloudsdknlp.v2.RunAspectSentimentAdvanceRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunAspectSentimentAdvanceResponse`
@@ -128,6 +127,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -160,6 +161,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunAspectSentimentAdvanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -175,6 +177,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunClassification
         :type request: :class:`huaweicloudsdknlp.v2.RunClassificationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunClassificationResponse`
@@ -187,6 +190,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -219,6 +224,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunClassificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -234,6 +240,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunConstituencyParser
         :type request: :class:`huaweicloudsdknlp.v2.RunConstituencyParserRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunConstituencyParserResponse`
@@ -246,6 +253,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -278,6 +287,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunConstituencyParserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -293,6 +303,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunDependencyParser
         :type request: :class:`huaweicloudsdknlp.v2.RunDependencyParserRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunDependencyParserResponse`
@@ -305,6 +316,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -337,6 +350,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDependencyParserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -352,6 +366,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunDocClassification
         :type request: :class:`huaweicloudsdknlp.v2.RunDocClassificationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunDocClassificationResponse`
@@ -364,6 +379,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -396,6 +413,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDocClassificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -411,6 +429,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunDomainSentiment
         :type request: :class:`huaweicloudsdknlp.v2.RunDomainSentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunDomainSentimentResponse`
@@ -423,6 +442,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -455,6 +476,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDomainSentimentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -470,6 +492,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunEntityLinking
         :type request: :class:`huaweicloudsdknlp.v2.RunEntityLinkingRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunEntityLinkingResponse`
@@ -482,6 +505,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -514,6 +539,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunEntityLinkingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -529,6 +555,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunEntitySentiment
         :type request: :class:`huaweicloudsdknlp.v2.RunEntitySentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunEntitySentimentResponse`
@@ -541,6 +568,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -573,6 +602,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunEntitySentimentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -589,6 +619,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunEventExtraction
         :type request: :class:`huaweicloudsdknlp.v2.RunEventExtractionRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunEventExtractionResponse`
@@ -601,6 +632,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -633,6 +666,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunEventExtractionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -648,6 +682,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunFileTranslation
         :type request: :class:`huaweicloudsdknlp.v2.RunFileTranslationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunFileTranslationResponse`
@@ -660,6 +695,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -692,6 +729,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunFileTranslationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -706,6 +744,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunGetFileTranslationResult
         :type request: :class:`huaweicloudsdknlp.v2.RunGetFileTranslationResultRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunGetFileTranslationResultResponse`
@@ -718,6 +757,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -750,6 +791,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunGetFileTranslationResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -765,6 +807,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunKeywordExtract
         :type request: :class:`huaweicloudsdknlp.v2.RunKeywordExtractRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunKeywordExtractResponse`
@@ -777,6 +820,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -809,6 +854,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunKeywordExtractResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -824,6 +870,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunLanguageDetection
         :type request: :class:`huaweicloudsdknlp.v2.RunLanguageDetectionRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunLanguageDetectionResponse`
@@ -836,6 +883,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -868,6 +917,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunLanguageDetectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -883,6 +933,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunMultiGrainedSegment
         :type request: :class:`huaweicloudsdknlp.v2.RunMultiGrainedSegmentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunMultiGrainedSegmentResponse`
@@ -895,6 +946,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -927,6 +980,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunMultiGrainedSegmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -942,6 +996,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunNer
         :type request: :class:`huaweicloudsdknlp.v2.RunNerRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunNerResponse`
@@ -954,6 +1009,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -986,6 +1043,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunNerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1001,6 +1059,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunNerDomain
         :type request: :class:`huaweicloudsdknlp.v2.RunNerDomainRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunNerDomainResponse`
@@ -1013,6 +1072,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1045,6 +1106,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunNerDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1060,6 +1122,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunPoem
         :type request: :class:`huaweicloudsdknlp.v2.RunPoemRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunPoemResponse`
@@ -1072,6 +1135,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1104,6 +1169,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunPoemResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1119,6 +1185,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunSegment
         :type request: :class:`huaweicloudsdknlp.v2.RunSegmentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSegmentResponse`
@@ -1131,6 +1198,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1163,6 +1232,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSegmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1178,6 +1248,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunSemanticParser
         :type request: :class:`huaweicloudsdknlp.v2.RunSemanticParserRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSemanticParserResponse`
@@ -1190,6 +1261,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1222,6 +1295,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSemanticParserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1237,6 +1311,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunSentenceEmbedding
         :type request: :class:`huaweicloudsdknlp.v2.RunSentenceEmbeddingRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSentenceEmbeddingResponse`
@@ -1249,6 +1324,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1281,6 +1358,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSentenceEmbeddingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1296,6 +1374,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunSentiment
         :type request: :class:`huaweicloudsdknlp.v2.RunSentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSentimentResponse`
@@ -1308,6 +1387,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1340,6 +1421,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSentimentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1355,6 +1437,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunSummary
         :type request: :class:`huaweicloudsdknlp.v2.RunSummaryRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSummaryResponse`
@@ -1367,6 +1450,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1399,6 +1484,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSummaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1414,6 +1500,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunSummaryDomain
         :type request: :class:`huaweicloudsdknlp.v2.RunSummaryDomainRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSummaryDomainResponse`
@@ -1426,6 +1513,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1458,6 +1547,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSummaryDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1473,6 +1563,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunTextSimilarity
         :type request: :class:`huaweicloudsdknlp.v2.RunTextSimilarityRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunTextSimilarityResponse`
@@ -1485,6 +1576,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1517,6 +1610,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTextSimilarityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1532,6 +1626,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunTextSimilarityAdvance
         :type request: :class:`huaweicloudsdknlp.v2.RunTextSimilarityAdvanceRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunTextSimilarityAdvanceResponse`
@@ -1544,6 +1639,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1576,6 +1673,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTextSimilarityAdvanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1591,6 +1689,7 @@ class NlpAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunTextTranslation
         :type request: :class:`huaweicloudsdknlp.v2.RunTextTranslationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunTextTranslationResponse`
@@ -1603,6 +1702,8 @@ class NlpAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1635,6 +1736,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTextTranslationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1642,7 +1744,7 @@ class NlpAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1653,9 +1755,10 @@ class NlpAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1672,6 +1775,7 @@ class NlpAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

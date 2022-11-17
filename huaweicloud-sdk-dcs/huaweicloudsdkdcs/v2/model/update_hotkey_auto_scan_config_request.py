@@ -17,7 +17,6 @@ class UpdateHotkeyAutoScanConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateHotkeyAutoScanConfigRequest:
     def body(self):
         """Gets the body of this UpdateHotkeyAutoScanConfigRequest.
 
-
         :return: The body of this UpdateHotkeyAutoScanConfigRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.AutoscanConfigRequest`
         """
@@ -86,7 +84,6 @@ class UpdateHotkeyAutoScanConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateHotkeyAutoScanConfigRequest.
-
 
         :param body: The body of this UpdateHotkeyAutoScanConfigRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.AutoscanConfigRequest`

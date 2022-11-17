@@ -17,7 +17,6 @@ class Cluster:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -117,7 +116,6 @@ class Cluster:
     def metadata(self):
         """Gets the metadata of this Cluster.
 
-
         :return: The metadata of this Cluster.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
         """
@@ -126,7 +124,6 @@ class Cluster:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this Cluster.
-
 
         :param metadata: The metadata of this Cluster.
         :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
@@ -137,7 +134,6 @@ class Cluster:
     def spec(self):
         """Gets the spec of this Cluster.
 
-
         :return: The spec of this Cluster.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterSpec`
         """
@@ -146,7 +142,6 @@ class Cluster:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this Cluster.
-
 
         :param spec: The spec of this Cluster.
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
@@ -157,7 +152,6 @@ class Cluster:
     def status(self):
         """Gets the status of this Cluster.
 
-
         :return: The status of this Cluster.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterStatus`
         """
@@ -166,7 +160,6 @@ class Cluster:
     @status.setter
     def status(self, status):
         """Sets the status of this Cluster.
-
 
         :param status: The status of this Cluster.
         :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`

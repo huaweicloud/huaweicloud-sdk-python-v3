@@ -17,7 +17,6 @@ class RunImageBatchModerationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunImageBatchModerationRequest:
     def body(self):
         """Gets the body of this RunImageBatchModerationRequest.
 
-
         :return: The body of this RunImageBatchModerationRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v2.ImageBatchModerationReq`
         """
@@ -58,7 +56,6 @@ class RunImageBatchModerationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunImageBatchModerationRequest.
-
 
         :param body: The body of this RunImageBatchModerationRequest.
         :type body: :class:`huaweicloudsdkmoderation.v2.ImageBatchModerationReq`

@@ -17,7 +17,6 @@ class UpdateMessageReceiveConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateMessageReceiveConfigRequest:
     def body(self):
         """Gets the body of this UpdateMessageReceiveConfigRequest.
 
-
         :return: The body of this UpdateMessageReceiveConfigRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SetMessageReceiveConfigReq`
         """
@@ -58,7 +56,6 @@ class UpdateMessageReceiveConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateMessageReceiveConfigRequest.
-
 
         :param body: The body of this UpdateMessageReceiveConfigRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.SetMessageReceiveConfigReq`

@@ -17,7 +17,6 @@ class MigrateSubNetworkInterfaceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class MigrateSubNetworkInterfaceRequestBody:
     def migration_info(self):
         """Gets the migration_info of this MigrateSubNetworkInterfaceRequestBody.
 
-
         :return: The migration_info of this MigrateSubNetworkInterfaceRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceOption`
         """
@@ -86,7 +84,6 @@ class MigrateSubNetworkInterfaceRequestBody:
     @migration_info.setter
     def migration_info(self, migration_info):
         """Sets the migration_info of this MigrateSubNetworkInterfaceRequestBody.
-
 
         :param migration_info: The migration_info of this MigrateSubNetworkInterfaceRequestBody.
         :type migration_info: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceOption`

@@ -17,7 +17,6 @@ class CreateScalingConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateScalingConfigRequest:
     def body(self):
         """Gets the body of this CreateScalingConfigRequest.
 
-
         :return: The body of this CreateScalingConfigRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingConfigOption`
         """
@@ -58,7 +56,6 @@ class CreateScalingConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateScalingConfigRequest.
-
 
         :param body: The body of this CreateScalingConfigRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateScalingConfigOption`

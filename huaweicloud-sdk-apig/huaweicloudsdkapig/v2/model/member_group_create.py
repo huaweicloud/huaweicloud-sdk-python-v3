@@ -17,7 +17,6 @@ class MemberGroupCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -26,7 +25,8 @@ class MemberGroupCreate:
         'member_group_weight': 'int',
         'dict_code': 'str',
         'microservice_version': 'str',
-        'microservice_port': 'int'
+        'microservice_port': 'int',
+        'microservice_labels': 'list[MicroserviceLabel]'
     }
 
     attribute_map = {
@@ -35,10 +35,11 @@ class MemberGroupCreate:
         'member_group_weight': 'member_group_weight',
         'dict_code': 'dict_code',
         'microservice_version': 'microservice_version',
-        'microservice_port': 'microservice_port'
+        'microservice_port': 'microservice_port',
+        'microservice_labels': 'microservice_labels'
     }
 
-    def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None, microservice_version=None, microservice_port=None):
+    def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None, microservice_version=None, microservice_port=None, microservice_labels=None):
         """MemberGroupCreate
 
         The model defined in huaweicloud sdk
@@ -55,6 +56,8 @@ class MemberGroupCreate:
         :type microservice_version: str
         :param microservice_port: VPC通道后端服务器组的端口号，仅VPC通道类型为微服务时支持。端口号为0时后端服务器组下的所有地址沿用原来负载端口继承逻辑。
         :type microservice_port: int
+        :param microservice_labels: VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
+        :type microservice_labels: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
         """
         
         
@@ -65,6 +68,7 @@ class MemberGroupCreate:
         self._dict_code = None
         self._microservice_version = None
         self._microservice_port = None
+        self._microservice_labels = None
         self.discriminator = None
 
         self.member_group_name = member_group_name
@@ -78,6 +82,8 @@ class MemberGroupCreate:
             self.microservice_version = microservice_version
         if microservice_port is not None:
             self.microservice_port = microservice_port
+        if microservice_labels is not None:
+            self.microservice_labels = microservice_labels
 
     @property
     def member_group_name(self):
@@ -210,6 +216,28 @@ class MemberGroupCreate:
         :type microservice_port: int
         """
         self._microservice_port = microservice_port
+
+    @property
+    def microservice_labels(self):
+        """Gets the microservice_labels of this MemberGroupCreate.
+
+        VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
+
+        :return: The microservice_labels of this MemberGroupCreate.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
+        """
+        return self._microservice_labels
+
+    @microservice_labels.setter
+    def microservice_labels(self, microservice_labels):
+        """Sets the microservice_labels of this MemberGroupCreate.
+
+        VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
+
+        :param microservice_labels: The microservice_labels of this MemberGroupCreate.
+        :type microservice_labels: list[:class:`huaweicloudsdkapig.v2.MicroserviceLabel`]
+        """
+        self._microservice_labels = microservice_labels
 
     def to_dict(self):
         """Returns the model properties as a dict"""

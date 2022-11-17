@@ -17,7 +17,6 @@ class CreateAcceleratorOptionIpSets:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class CreateAcceleratorOptionIpSets:
     def area(self):
         """Gets the area of this CreateAcceleratorOptionIpSets.
 
-
         :return: The area of this CreateAcceleratorOptionIpSets.
         :rtype: :class:`huaweicloudsdkga.v1.Area`
         """
@@ -85,7 +83,6 @@ class CreateAcceleratorOptionIpSets:
     @area.setter
     def area(self, area):
         """Sets the area of this CreateAcceleratorOptionIpSets.
-
 
         :param area: The area of this CreateAcceleratorOptionIpSets.
         :type area: :class:`huaweicloudsdkga.v1.Area`

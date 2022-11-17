@@ -17,7 +17,6 @@ class CreatePolicyAssignmentsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePolicyAssignmentsRequest:
     def body(self):
         """Gets the body of this CreatePolicyAssignmentsRequest.
 
-
         :return: The body of this CreatePolicyAssignmentsRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.PolicyAssignmentRequestBody`
         """
@@ -58,7 +56,6 @@ class CreatePolicyAssignmentsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePolicyAssignmentsRequest.
-
 
         :param body: The body of this CreatePolicyAssignmentsRequest.
         :type body: :class:`huaweicloudsdkrms.v1.PolicyAssignmentRequestBody`

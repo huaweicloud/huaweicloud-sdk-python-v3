@@ -17,7 +17,6 @@ class StructTemplateModel:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -237,7 +236,6 @@ class StructTemplateModel:
     def rule(self):
         """Gets the rule of this StructTemplateModel.
 
-
         :return: The rule of this StructTemplateModel.
         :rtype: :class:`huaweicloudsdklts.v2.TemplateRule`
         """
@@ -246,7 +244,6 @@ class StructTemplateModel:
     @rule.setter
     def rule(self, rule):
         """Sets the rule of this StructTemplateModel.
-
 
         :param rule: The rule of this StructTemplateModel.
         :type rule: :class:`huaweicloudsdklts.v2.TemplateRule`

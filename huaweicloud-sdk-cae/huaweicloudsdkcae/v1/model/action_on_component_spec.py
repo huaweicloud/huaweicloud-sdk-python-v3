@@ -17,7 +17,6 @@ class ActionOnComponentSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class ActionOnComponentSpec:
     def source(self):
         """Gets the source of this ActionOnComponentSpec.
 
-
         :return: The source of this ActionOnComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Source`
         """
@@ -123,7 +121,6 @@ class ActionOnComponentSpec:
     @source.setter
     def source(self, source):
         """Sets the source of this ActionOnComponentSpec.
-
 
         :param source: The source of this ActionOnComponentSpec.
         :type source: :class:`huaweicloudsdkcae.v1.Source`
@@ -134,7 +131,6 @@ class ActionOnComponentSpec:
     def resource_limit(self):
         """Gets the resource_limit of this ActionOnComponentSpec.
 
-
         :return: The resource_limit of this ActionOnComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ResourceLimitForUpgrade`
         """
@@ -143,7 +139,6 @@ class ActionOnComponentSpec:
     @resource_limit.setter
     def resource_limit(self, resource_limit):
         """Sets the resource_limit of this ActionOnComponentSpec.
-
 
         :param resource_limit: The resource_limit of this ActionOnComponentSpec.
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimitForUpgrade`

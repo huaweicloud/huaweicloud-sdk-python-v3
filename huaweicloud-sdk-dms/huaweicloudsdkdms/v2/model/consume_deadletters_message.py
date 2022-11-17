@@ -17,7 +17,6 @@ class ConsumeDeadlettersMessage:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ConsumeDeadlettersMessage:
     def message(self):
         """Gets the message of this ConsumeDeadlettersMessage.
 
-
         :return: The message of this ConsumeDeadlettersMessage.
         :rtype: :class:`huaweicloudsdkdms.v2.ConsumeDeadlettersMessageMessage`
         """
@@ -65,7 +63,6 @@ class ConsumeDeadlettersMessage:
     @message.setter
     def message(self, message):
         """Sets the message of this ConsumeDeadlettersMessage.
-
 
         :param message: The message of this ConsumeDeadlettersMessage.
         :type message: :class:`huaweicloudsdkdms.v2.ConsumeDeadlettersMessageMessage`

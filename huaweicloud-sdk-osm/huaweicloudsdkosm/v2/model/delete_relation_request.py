@@ -17,7 +17,6 @@ class DeleteRelationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class DeleteRelationRequest:
     def body(self):
         """Gets the body of this DeleteRelationRequest.
 
-
         :return: The body of this DeleteRelationRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteRelationsReq`
         """
@@ -173,7 +171,6 @@ class DeleteRelationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteRelationRequest.
-
 
         :param body: The body of this DeleteRelationRequest.
         :type body: :class:`huaweicloudsdkosm.v2.DeleteRelationsReq`

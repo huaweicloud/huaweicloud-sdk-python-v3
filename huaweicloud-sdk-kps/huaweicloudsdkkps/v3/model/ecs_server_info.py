@@ -17,7 +17,6 @@ class EcsServerInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class EcsServerInfo:
     def auth(self):
         """Gets the auth of this EcsServerInfo.
 
-
         :return: The auth of this EcsServerInfo.
         :rtype: :class:`huaweicloudsdkkps.v3.Auth`
         """
@@ -93,7 +91,6 @@ class EcsServerInfo:
     @auth.setter
     def auth(self, auth):
         """Sets the auth of this EcsServerInfo.
-
 
         :param auth: The auth of this EcsServerInfo.
         :type auth: :class:`huaweicloudsdkkps.v3.Auth`

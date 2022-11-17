@@ -17,7 +17,6 @@ class AllowClientRecordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class AllowClientRecordRequest:
     def body(self):
         """Gets the body of this AllowClientRecordRequest.
 
-
         :return: The body of this AllowClientRecordRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestAllowClientRecordReqBody`
         """
@@ -142,7 +140,6 @@ class AllowClientRecordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AllowClientRecordRequest.
-
 
         :param body: The body of this AllowClientRecordRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestAllowClientRecordReqBody`

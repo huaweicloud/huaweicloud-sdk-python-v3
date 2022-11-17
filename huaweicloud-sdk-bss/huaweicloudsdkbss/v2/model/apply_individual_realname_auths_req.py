@@ -17,7 +17,6 @@ class ApplyIndividualRealnameAuthsReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -275,7 +274,6 @@ class ApplyIndividualRealnameAuthsReq:
     def bank_card_info(self):
         """Gets the bank_card_info of this ApplyIndividualRealnameAuthsReq.
 
-
         :return: The bank_card_info of this ApplyIndividualRealnameAuthsReq.
         :rtype: :class:`huaweicloudsdkbss.v2.BankCardInfoV2`
         """
@@ -284,7 +282,6 @@ class ApplyIndividualRealnameAuthsReq:
     @bank_card_info.setter
     def bank_card_info(self, bank_card_info):
         """Sets the bank_card_info of this ApplyIndividualRealnameAuthsReq.
-
 
         :param bank_card_info: The bank_card_info of this ApplyIndividualRealnameAuthsReq.
         :type bank_card_info: :class:`huaweicloudsdkbss.v2.BankCardInfoV2`

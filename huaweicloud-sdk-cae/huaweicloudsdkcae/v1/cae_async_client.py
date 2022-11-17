@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CaeAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAgency
         :type request: :class:`huaweicloudsdkcae.v1.CreateAgencyRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateAgencyResponse`
@@ -68,6 +63,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAgency
         :type request: :class:`huaweicloudsdkcae.v1.ShowAgencyRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowAgencyResponse`
@@ -126,6 +125,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -156,6 +157,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -170,6 +172,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApplication
         :type request: :class:`huaweicloudsdkcae.v1.CreateApplicationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateApplicationResponse`
@@ -182,6 +185,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -218,6 +223,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -232,6 +238,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApplication
         :type request: :class:`huaweicloudsdkcae.v1.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteApplicationResponse`
@@ -244,6 +251,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -280,6 +289,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -294,6 +304,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApplications
         :type request: :class:`huaweicloudsdkcae.v1.ListApplicationsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListApplicationsResponse`
@@ -306,6 +317,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +353,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApplicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -354,6 +368,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApplication
         :type request: :class:`huaweicloudsdkcae.v1.ShowApplicationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowApplicationResponse`
@@ -366,6 +381,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -402,6 +419,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -416,6 +434,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateComponent
         :type request: :class:`huaweicloudsdkcae.v1.CreateComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentResponse`
@@ -428,6 +447,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -466,6 +487,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -480,6 +502,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteComponent
         :type request: :class:`huaweicloudsdkcae.v1.DeleteComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteComponentResponse`
@@ -492,6 +515,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -530,6 +555,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -544,6 +570,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExecuteAction
         :type request: :class:`huaweicloudsdkcae.v1.ExecuteActionRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ExecuteActionResponse`
@@ -556,6 +583,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -596,6 +625,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExecuteActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -610,6 +640,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListComponentSnapshots
         :type request: :class:`huaweicloudsdkcae.v1.ListComponentSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentSnapshotsResponse`
@@ -622,6 +653,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -660,6 +693,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListComponentSnapshotsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -674,6 +708,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListComponents
         :type request: :class:`huaweicloudsdkcae.v1.ListComponentsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentsResponse`
@@ -686,6 +721,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -726,6 +763,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListComponentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -739,6 +777,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEvents
         :type request: :class:`huaweicloudsdkcae.v1.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListEventsResponse`
@@ -751,6 +790,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -789,6 +830,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -803,6 +845,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkcae.v1.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListInstancesResponse`
@@ -815,6 +858,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -853,6 +898,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -867,6 +913,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowComponent
         :type request: :class:`huaweicloudsdkcae.v1.ShowComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowComponentResponse`
@@ -879,6 +926,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -917,6 +966,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -931,6 +981,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateComponent
         :type request: :class:`huaweicloudsdkcae.v1.UpdateComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateComponentResponse`
@@ -943,6 +994,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -983,6 +1036,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -997,6 +1051,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateComponentConfiguration
         :type request: :class:`huaweicloudsdkcae.v1.CreateComponentConfigurationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentConfigurationResponse`
@@ -1009,6 +1064,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1049,6 +1106,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateComponentConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1062,6 +1120,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteComponentConfiguration
         :type request: :class:`huaweicloudsdkcae.v1.DeleteComponentConfigurationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteComponentConfigurationResponse`
@@ -1074,6 +1133,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1112,6 +1173,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteComponentConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1126,6 +1188,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConfigurations
         :type request: :class:`huaweicloudsdkcae.v1.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListConfigurationsResponse`
@@ -1138,6 +1201,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1176,6 +1241,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1190,6 +1256,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEnvironment
         :type request: :class:`huaweicloudsdkcae.v1.CreateEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateEnvironmentResponse`
@@ -1202,6 +1269,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1236,6 +1305,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1250,6 +1320,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEnvironment
         :type request: :class:`huaweicloudsdkcae.v1.DeleteEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteEnvironmentResponse`
@@ -1262,6 +1333,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1296,6 +1369,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1310,6 +1384,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnvironments
         :type request: :class:`huaweicloudsdkcae.v1.ListEnvironmentsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListEnvironmentsResponse`
@@ -1322,6 +1397,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1354,6 +1431,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1368,6 +1446,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RetryJob
         :type request: :class:`huaweicloudsdkcae.v1.RetryJobRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.RetryJobResponse`
@@ -1380,6 +1459,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1412,6 +1493,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RetryJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1426,6 +1508,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkcae.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowJobResponse`
@@ -1438,6 +1521,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1472,6 +1557,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1486,6 +1572,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateVolume
         :type request: :class:`huaweicloudsdkcae.v1.CreateVolumeRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateVolumeResponse`
@@ -1498,6 +1585,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1534,6 +1623,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1548,6 +1638,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteVolume
         :type request: :class:`huaweicloudsdkcae.v1.DeleteVolumeRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteVolumeResponse`
@@ -1560,6 +1651,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1596,6 +1689,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1610,6 +1704,7 @@ class CaeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVolumes
         :type request: :class:`huaweicloudsdkcae.v1.ListVolumesRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListVolumesResponse`
@@ -1622,6 +1717,8 @@ class CaeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1658,6 +1755,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVolumesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1665,7 +1763,7 @@ class CaeAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1676,9 +1774,10 @@ class CaeAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1695,6 +1794,7 @@ class CaeAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

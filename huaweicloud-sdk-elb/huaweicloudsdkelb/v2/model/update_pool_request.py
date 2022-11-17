@@ -17,7 +17,6 @@ class UpdatePoolRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdatePoolRequest:
     def body(self):
         """Gets the body of this UpdatePoolRequest.
 
-
         :return: The body of this UpdatePoolRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.UpdatePoolRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdatePoolRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePoolRequest.
-
 
         :param body: The body of this UpdatePoolRequest.
         :type body: :class:`huaweicloudsdkelb.v2.UpdatePoolRequestBody`

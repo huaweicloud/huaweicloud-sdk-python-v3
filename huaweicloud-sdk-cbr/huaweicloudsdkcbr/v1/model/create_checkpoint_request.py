@@ -17,7 +17,6 @@ class CreateCheckpointRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateCheckpointRequest:
     def body(self):
         """Gets the body of this CreateCheckpointRequest.
 
-
         :return: The body of this CreateCheckpointRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBackupReq`
         """
@@ -58,7 +56,6 @@ class CreateCheckpointRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCheckpointRequest.
-
 
         :param body: The body of this CreateCheckpointRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultBackupReq`

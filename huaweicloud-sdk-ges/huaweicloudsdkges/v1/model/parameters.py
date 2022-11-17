@@ -17,7 +17,6 @@ class Parameters:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -279,7 +278,6 @@ class Parameters:
     def parallel_edge(self):
         """Gets the parallel_edge of this Parameters.
 
-
         :return: The parallel_edge of this Parameters.
         :rtype: :class:`huaweicloudsdkges.v1.ParallelEdge`
         """
@@ -288,7 +286,6 @@ class Parameters:
     @parallel_edge.setter
     def parallel_edge(self, parallel_edge):
         """Sets the parallel_edge of this Parameters.
-
 
         :param parallel_edge: The parallel_edge of this Parameters.
         :type parallel_edge: :class:`huaweicloudsdkges.v1.ParallelEdge`

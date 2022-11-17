@@ -17,7 +17,6 @@ class ShowJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -91,7 +90,6 @@ class ShowJobResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowJobResponse.
 
-
         :return: The name of this ShowJobResponse.
         :rtype: str
         """
@@ -100,7 +98,6 @@ class ShowJobResponse(SdkResponse):
     @name.setter
     def name(self, name):
         """Sets the name of this ShowJobResponse.
-
 
         :param name: The name of this ShowJobResponse.
         :type name: str
@@ -111,7 +108,6 @@ class ShowJobResponse(SdkResponse):
     def nodes(self):
         """Gets the nodes of this ShowJobResponse.
 
-
         :return: The nodes of this ShowJobResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Node`]
         """
@@ -120,7 +116,6 @@ class ShowJobResponse(SdkResponse):
     @nodes.setter
     def nodes(self, nodes):
         """Sets the nodes of this ShowJobResponse.
-
 
         :param nodes: The nodes of this ShowJobResponse.
         :type nodes: list[:class:`huaweicloudsdkdgc.v1.Node`]
@@ -131,7 +126,6 @@ class ShowJobResponse(SdkResponse):
     def schedule(self):
         """Gets the schedule of this ShowJobResponse.
 
-
         :return: The schedule of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkdgc.v1.Schedule`
         """
@@ -140,7 +134,6 @@ class ShowJobResponse(SdkResponse):
     @schedule.setter
     def schedule(self, schedule):
         """Sets the schedule of this ShowJobResponse.
-
 
         :param schedule: The schedule of this ShowJobResponse.
         :type schedule: :class:`huaweicloudsdkdgc.v1.Schedule`
@@ -151,7 +144,6 @@ class ShowJobResponse(SdkResponse):
     def params(self):
         """Gets the params of this ShowJobResponse.
 
-
         :return: The params of this ShowJobResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
         """
@@ -160,7 +152,6 @@ class ShowJobResponse(SdkResponse):
     @params.setter
     def params(self, params):
         """Sets the params of this ShowJobResponse.
-
 
         :param params: The params of this ShowJobResponse.
         :type params: list[:class:`huaweicloudsdkdgc.v1.JobParam`]
@@ -171,7 +162,6 @@ class ShowJobResponse(SdkResponse):
     def directory(self):
         """Gets the directory of this ShowJobResponse.
 
-
         :return: The directory of this ShowJobResponse.
         :rtype: str
         """
@@ -180,7 +170,6 @@ class ShowJobResponse(SdkResponse):
     @directory.setter
     def directory(self, directory):
         """Sets the directory of this ShowJobResponse.
-
 
         :param directory: The directory of this ShowJobResponse.
         :type directory: str
@@ -191,7 +180,6 @@ class ShowJobResponse(SdkResponse):
     def job_type(self):
         """Gets the job_type of this ShowJobResponse.
 
-
         :return: The job_type of this ShowJobResponse.
         :rtype: str
         """
@@ -200,7 +188,6 @@ class ShowJobResponse(SdkResponse):
     @job_type.setter
     def job_type(self, job_type):
         """Sets the job_type of this ShowJobResponse.
-
 
         :param job_type: The job_type of this ShowJobResponse.
         :type job_type: str
@@ -211,7 +198,6 @@ class ShowJobResponse(SdkResponse):
     def basic_config(self):
         """Gets the basic_config of this ShowJobResponse.
 
-
         :return: The basic_config of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkdgc.v1.BasicInfo`
         """
@@ -220,7 +206,6 @@ class ShowJobResponse(SdkResponse):
     @basic_config.setter
     def basic_config(self, basic_config):
         """Sets the basic_config of this ShowJobResponse.
-
 
         :param basic_config: The basic_config of this ShowJobResponse.
         :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicInfo`

@@ -17,7 +17,6 @@ class RemoveNodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class RemoveNodeResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this RemoveNodeResponse.
 
-
         :return: The spec of this RemoveNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
         """
@@ -123,7 +121,6 @@ class RemoveNodeResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this RemoveNodeResponse.
-
 
         :param spec: The spec of this RemoveNodeResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
@@ -134,7 +131,6 @@ class RemoveNodeResponse(SdkResponse):
     def status(self):
         """Gets the status of this RemoveNodeResponse.
 
-
         :return: The status of this RemoveNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
@@ -143,7 +139,6 @@ class RemoveNodeResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this RemoveNodeResponse.
-
 
         :param status: The status of this RemoveNodeResponse.
         :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`

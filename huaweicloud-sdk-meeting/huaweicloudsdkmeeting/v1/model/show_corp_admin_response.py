@@ -17,7 +17,6 @@ class ShowCorpAdminResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -252,7 +251,6 @@ class ShowCorpAdminResponse(SdkResponse):
     def dept(self):
         """Gets the dept of this ShowCorpAdminResponse.
 
-
         :return: The dept of this ShowCorpAdminResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeptBasicDTO`
         """
@@ -261,7 +259,6 @@ class ShowCorpAdminResponse(SdkResponse):
     @dept.setter
     def dept(self, dept):
         """Sets the dept of this ShowCorpAdminResponse.
-
 
         :param dept: The dept of this ShowCorpAdminResponse.
         :type dept: :class:`huaweicloudsdkmeeting.v1.DeptBasicDTO`

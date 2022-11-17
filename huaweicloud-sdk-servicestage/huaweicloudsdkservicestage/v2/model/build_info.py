@@ -17,7 +17,6 @@ class BuildInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class BuildInfo:
     def parameters(self):
         """Gets the parameters of this BuildInfo.
 
-
         :return: The parameters of this BuildInfo.
         :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`
         """
@@ -87,7 +85,6 @@ class BuildInfo:
     @parameters.setter
     def parameters(self, parameters):
         """Sets the parameters of this BuildInfo.
-
 
         :param parameters: The parameters of this BuildInfo.
         :type parameters: :class:`huaweicloudsdkservicestage.v2.BuildInfoParameters`

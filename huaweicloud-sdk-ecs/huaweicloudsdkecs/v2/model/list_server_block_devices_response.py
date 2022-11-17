@@ -17,7 +17,6 @@ class ListServerBlockDevicesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListServerBlockDevicesResponse(SdkResponse):
     def attachable_quantity(self):
         """Gets the attachable_quantity of this ListServerBlockDevicesResponse.
 
-
         :return: The attachable_quantity of this ListServerBlockDevicesResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.BlockDeviceAttachableQuantity`
         """
@@ -65,7 +63,6 @@ class ListServerBlockDevicesResponse(SdkResponse):
     @attachable_quantity.setter
     def attachable_quantity(self, attachable_quantity):
         """Sets the attachable_quantity of this ListServerBlockDevicesResponse.
-
 
         :param attachable_quantity: The attachable_quantity of this ListServerBlockDevicesResponse.
         :type attachable_quantity: :class:`huaweicloudsdkecs.v2.BlockDeviceAttachableQuantity`

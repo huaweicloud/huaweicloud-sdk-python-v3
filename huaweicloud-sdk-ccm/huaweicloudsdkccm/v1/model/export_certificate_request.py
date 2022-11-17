@@ -17,7 +17,6 @@ class ExportCertificateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ExportCertificateRequest:
     def body(self):
         """Gets the body of this ExportCertificateRequest.
 
-
         :return: The body of this ExportCertificateRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateRequestBody`
         """
@@ -86,7 +84,6 @@ class ExportCertificateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExportCertificateRequest.
-
 
         :param body: The body of this ExportCertificateRequest.
         :type body: :class:`huaweicloudsdkccm.v1.ExportCertificateRequestBody`

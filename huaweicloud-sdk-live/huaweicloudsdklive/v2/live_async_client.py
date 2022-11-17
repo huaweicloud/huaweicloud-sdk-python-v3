@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class LiveAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -60,6 +54,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAreaDetail
         :type request: :class:`huaweicloudsdklive.v2.ListAreaDetailRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListAreaDetailResponse`
@@ -72,6 +67,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -110,7 +107,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -125,6 +122,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAreaDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -139,6 +137,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBandwidthDetail
         :type request: :class:`huaweicloudsdklive.v2.ListBandwidthDetailRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListBandwidthDetailResponse`
@@ -151,6 +150,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -190,7 +191,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -205,6 +206,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBandwidthDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -219,6 +221,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDomainBandwidthPeak
         :type request: :class:`huaweicloudsdklive.v2.ListDomainBandwidthPeakRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListDomainBandwidthPeakResponse`
@@ -231,6 +234,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -265,7 +270,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -280,6 +285,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainBandwidthPeakResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -294,6 +300,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDomainTrafficDetail
         :type request: :class:`huaweicloudsdklive.v2.ListDomainTrafficDetailRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListDomainTrafficDetailResponse`
@@ -306,6 +313,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,7 +351,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -357,6 +366,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainTrafficDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -371,6 +381,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDomainTrafficSummary
         :type request: :class:`huaweicloudsdklive.v2.ListDomainTrafficSummaryRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListDomainTrafficSummaryResponse`
@@ -383,6 +394,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -417,7 +430,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -432,6 +445,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainTrafficSummaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -450,6 +464,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHistoryStreams
         :type request: :class:`huaweicloudsdklive.v2.ListHistoryStreamsRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListHistoryStreamsResponse`
@@ -462,6 +477,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -491,7 +508,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -506,6 +523,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHistoryStreamsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -520,6 +538,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQueryHttpCode
         :type request: :class:`huaweicloudsdklive.v2.ListQueryHttpCodeRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListQueryHttpCodeResponse`
@@ -532,6 +551,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -563,7 +584,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -578,6 +599,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQueryHttpCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -592,6 +614,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecordData
         :type request: :class:`huaweicloudsdklive.v2.ListRecordDataRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListRecordDataResponse`
@@ -604,6 +627,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -625,7 +650,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -640,6 +665,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecordDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -654,6 +680,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSnapshotData
         :type request: :class:`huaweicloudsdklive.v2.ListSnapshotDataRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListSnapshotDataResponse`
@@ -666,6 +693,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -687,7 +716,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -702,6 +731,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSnapshotDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -716,6 +746,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTranscodeData
         :type request: :class:`huaweicloudsdklive.v2.ListTranscodeDataRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListTranscodeDataResponse`
@@ -728,6 +759,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -751,7 +784,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -766,6 +799,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTranscodeDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -780,6 +814,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUsersOfStream
         :type request: :class:`huaweicloudsdklive.v2.ListUsersOfStreamRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListUsersOfStreamResponse`
@@ -792,6 +827,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -830,7 +867,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -845,6 +882,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsersOfStreamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -859,6 +897,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowStreamCount
         :type request: :class:`huaweicloudsdklive.v2.ShowStreamCountRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ShowStreamCountResponse`
@@ -871,6 +910,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -893,7 +934,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -908,6 +949,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStreamCountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -923,6 +965,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowStreamPortrait
         :type request: :class:`huaweicloudsdklive.v2.ShowStreamPortraitRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ShowStreamPortraitResponse`
@@ -935,6 +978,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -956,7 +1001,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -971,6 +1016,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStreamPortraitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -985,6 +1031,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUpBandwidth
         :type request: :class:`huaweicloudsdklive.v2.ShowUpBandwidthRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ShowUpBandwidthResponse`
@@ -997,6 +1044,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1031,7 +1080,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1046,6 +1095,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUpBandwidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1064,6 +1114,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSingleStreamBitrate
         :type request: :class:`huaweicloudsdklive.v2.ListSingleStreamBitrateRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListSingleStreamBitrateResponse`
@@ -1076,6 +1127,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1101,7 +1154,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1116,6 +1169,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSingleStreamBitrateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1134,6 +1188,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSingleStreamDetail
         :type request: :class:`huaweicloudsdklive.v2.ListSingleStreamDetailRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListSingleStreamDetailResponse`
@@ -1146,6 +1201,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1171,7 +1228,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1186,6 +1243,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSingleStreamDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1204,6 +1262,7 @@ class LiveAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSingleStreamFramerate
         :type request: :class:`huaweicloudsdklive.v2.ListSingleStreamFramerateRequest`
         :rtype: :class:`huaweicloudsdklive.v2.ListSingleStreamFramerateResponse`
@@ -1216,6 +1275,8 @@ class LiveAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1241,7 +1302,7 @@ class LiveAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1256,6 +1317,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSingleStreamFramerateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1263,7 +1325,7 @@ class LiveAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1274,9 +1336,10 @@ class LiveAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1293,6 +1356,7 @@ class LiveAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

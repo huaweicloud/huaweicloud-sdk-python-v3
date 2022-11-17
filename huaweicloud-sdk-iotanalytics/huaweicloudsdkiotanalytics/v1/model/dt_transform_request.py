@@ -17,7 +17,6 @@ class DTTransformRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class DTTransformRequest:
     def outputs(self):
         """Gets the outputs of this DTTransformRequest.
 
-
         :return: The outputs of this DTTransformRequest.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]
         """
@@ -87,7 +85,6 @@ class DTTransformRequest:
     @outputs.setter
     def outputs(self, outputs):
         """Sets the outputs of this DTTransformRequest.
-
 
         :param outputs: The outputs of this DTTransformRequest.
         :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]

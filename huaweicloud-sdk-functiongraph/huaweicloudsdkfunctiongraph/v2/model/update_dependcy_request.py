@@ -17,7 +17,6 @@ class UpdateDependcyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateDependcyRequest:
     def body(self):
         """Gets the body of this UpdateDependcyRequest.
 
-
         :return: The body of this UpdateDependcyRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependencyRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateDependcyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDependcyRequest.
-
 
         :param body: The body of this UpdateDependcyRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependencyRequestBody`

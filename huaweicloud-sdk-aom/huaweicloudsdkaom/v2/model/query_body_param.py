@@ -17,7 +17,6 @@ class QueryBodyParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -240,7 +239,6 @@ class QueryBodyParam:
     def search_key(self):
         """Gets the search_key of this QueryBodyParam.
 
-
         :return: The search_key of this QueryBodyParam.
         :rtype: :class:`huaweicloudsdkaom.v2.SearchKey`
         """
@@ -249,7 +247,6 @@ class QueryBodyParam:
     @search_key.setter
     def search_key(self, search_key):
         """Sets the search_key of this QueryBodyParam.
-
 
         :param search_key: The search_key of this QueryBodyParam.
         :type search_key: :class:`huaweicloudsdkaom.v2.SearchKey`

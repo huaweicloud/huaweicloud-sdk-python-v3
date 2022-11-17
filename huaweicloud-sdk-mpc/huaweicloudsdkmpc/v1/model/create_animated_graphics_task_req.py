@@ -17,7 +17,6 @@ class CreateAnimatedGraphicsTaskReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class CreateAnimatedGraphicsTaskReq:
     def input(self):
         """Gets the input of this CreateAnimatedGraphicsTaskReq.
 
-
         :return: The input of this CreateAnimatedGraphicsTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -79,7 +77,6 @@ class CreateAnimatedGraphicsTaskReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateAnimatedGraphicsTaskReq.
-
 
         :param input: The input of this CreateAnimatedGraphicsTaskReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -90,7 +87,6 @@ class CreateAnimatedGraphicsTaskReq:
     def output(self):
         """Gets the output of this CreateAnimatedGraphicsTaskReq.
 
-
         :return: The output of this CreateAnimatedGraphicsTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -99,7 +95,6 @@ class CreateAnimatedGraphicsTaskReq:
     @output.setter
     def output(self, output):
         """Sets the output of this CreateAnimatedGraphicsTaskReq.
-
 
         :param output: The output of this CreateAnimatedGraphicsTaskReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -132,7 +127,6 @@ class CreateAnimatedGraphicsTaskReq:
     def output_param(self):
         """Gets the output_param of this CreateAnimatedGraphicsTaskReq.
 
-
         :return: The output_param of this CreateAnimatedGraphicsTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`
         """
@@ -141,7 +135,6 @@ class CreateAnimatedGraphicsTaskReq:
     @output_param.setter
     def output_param(self, output_param):
         """Sets the output_param of this CreateAnimatedGraphicsTaskReq.
-
 
         :param output_param: The output_param of this CreateAnimatedGraphicsTaskReq.
         :type output_param: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`

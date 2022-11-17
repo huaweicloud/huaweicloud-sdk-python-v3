@@ -17,7 +17,6 @@ class AddDeviceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -79,7 +78,7 @@ class AddDeviceResponse(SdkResponse):
         :type gateway_id: str
         :param device_name: 设备名称。
         :type device_name: str
-        :param node_type: 设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。 
+        :param node_type: 设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
         :type node_type: str
         :param description: 设备的描述信息。
         :type description: str
@@ -95,7 +94,7 @@ class AddDeviceResponse(SdkResponse):
         :type product_id: str
         :param product_name: 设备关联的产品名称。
         :type product_name: str
-        :param status: 设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
+        :param status: 设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
         :type status: str
         :param create_time: 在物联网平台注册设备的时间。格式：yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;，如20151212T121212Z。
         :type create_time: str
@@ -300,7 +299,7 @@ class AddDeviceResponse(SdkResponse):
     def node_type(self):
         """Gets the node_type of this AddDeviceResponse.
 
-        设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。 
+        设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
         :return: The node_type of this AddDeviceResponse.
         :rtype: str
@@ -311,7 +310,7 @@ class AddDeviceResponse(SdkResponse):
     def node_type(self, node_type):
         """Sets the node_type of this AddDeviceResponse.
 
-        设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。 
+        设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
         :param node_type: The node_type of this AddDeviceResponse.
         :type node_type: str
@@ -410,7 +409,6 @@ class AddDeviceResponse(SdkResponse):
     def auth_info(self):
         """Gets the auth_info of this AddDeviceResponse.
 
-
         :return: The auth_info of this AddDeviceResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.AuthInfo`
         """
@@ -419,7 +417,6 @@ class AddDeviceResponse(SdkResponse):
     @auth_info.setter
     def auth_info(self, auth_info):
         """Sets the auth_info of this AddDeviceResponse.
-
 
         :param auth_info: The auth_info of this AddDeviceResponse.
         :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfo`
@@ -474,7 +471,7 @@ class AddDeviceResponse(SdkResponse):
     def status(self):
         """Gets the status of this AddDeviceResponse.
 
-        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
+        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
         :return: The status of this AddDeviceResponse.
         :rtype: str
@@ -485,7 +482,7 @@ class AddDeviceResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this AddDeviceResponse.
 
-        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
+        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
         :param status: The status of this AddDeviceResponse.
         :type status: str

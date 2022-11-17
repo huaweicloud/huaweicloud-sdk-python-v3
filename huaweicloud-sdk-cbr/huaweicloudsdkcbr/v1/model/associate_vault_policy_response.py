@@ -17,7 +17,6 @@ class AssociateVaultPolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class AssociateVaultPolicyResponse(SdkResponse):
     def associate_policy(self):
         """Gets the associate_policy of this AssociateVaultPolicyResponse.
 
-
         :return: The associate_policy of this AssociateVaultPolicyResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`
         """
@@ -58,7 +56,6 @@ class AssociateVaultPolicyResponse(SdkResponse):
     @associate_policy.setter
     def associate_policy(self, associate_policy):
         """Sets the associate_policy of this AssociateVaultPolicyResponse.
-
 
         :param associate_policy: The associate_policy of this AssociateVaultPolicyResponse.
         :type associate_policy: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`

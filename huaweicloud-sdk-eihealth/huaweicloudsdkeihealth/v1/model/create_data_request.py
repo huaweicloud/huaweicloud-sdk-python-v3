@@ -17,7 +17,6 @@ class CreateDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateDataRequest:
     def body(self):
         """Gets the body of this CreateDataRequest.
 
-
         :return: The body of this CreateDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDataReq`
         """
@@ -86,7 +84,6 @@ class CreateDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDataRequest.
-
 
         :param body: The body of this CreateDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateDataReq`

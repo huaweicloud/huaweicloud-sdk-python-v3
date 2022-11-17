@@ -17,7 +17,6 @@ class TagSatisfactionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class TagSatisfactionRequest:
     def body(self):
         """Gets the body of this TagSatisfactionRequest.
 
-
         :return: The body of this TagSatisfactionRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.PostSatisfactionReq`
         """
@@ -114,7 +112,6 @@ class TagSatisfactionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this TagSatisfactionRequest.
-
 
         :param body: The body of this TagSatisfactionRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.PostSatisfactionReq`

@@ -17,39 +17,46 @@ class EnvExecutionBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'params': 'list[DynamicConfigInfo]',
-        'record_id': 'str'
+        'record_id': 'str',
+        'trigger_source': 'str'
     }
 
     attribute_map = {
         'params': 'params',
-        'record_id': 'record_id'
+        'record_id': 'record_id',
+        'trigger_source': 'trigger_source'
     }
 
-    def __init__(self, params=None, record_id=None):
+    def __init__(self, params=None, record_id=None, trigger_source=None):
         """EnvExecutionBody
 
         The model defined in huaweicloud sdk
 
         :param params: 部署任务执行时传递的参数
         :type params: list[:class:`huaweicloudsdkclouddeploy.v2.DynamicConfigInfo`]
-        :param record_id: 部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取。
+        :param record_id: 部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取
         :type record_id: str
+        :param trigger_source: 限制触发来源,0不限制任何执行请求来源,1时只允许通过流水线触发执行
+        :type trigger_source: str
         """
         
         
 
         self._params = None
         self._record_id = None
+        self._trigger_source = None
         self.discriminator = None
 
-        self.params = params
+        if params is not None:
+            self.params = params
         if record_id is not None:
             self.record_id = record_id
+        if trigger_source is not None:
+            self.trigger_source = trigger_source
 
     @property
     def params(self):
@@ -77,7 +84,7 @@ class EnvExecutionBody:
     def record_id(self):
         """Gets the record_id of this EnvExecutionBody.
 
-        部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取。
+        部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取
 
         :return: The record_id of this EnvExecutionBody.
         :rtype: str
@@ -88,12 +95,34 @@ class EnvExecutionBody:
     def record_id(self, record_id):
         """Sets the record_id of this EnvExecutionBody.
 
-        部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取。
+        部署任务的执行id，可通过record_id回滚至之前的部署状态。选中部署历史执行记录，在URL中获取
 
         :param record_id: The record_id of this EnvExecutionBody.
         :type record_id: str
         """
         self._record_id = record_id
+
+    @property
+    def trigger_source(self):
+        """Gets the trigger_source of this EnvExecutionBody.
+
+        限制触发来源,0不限制任何执行请求来源,1时只允许通过流水线触发执行
+
+        :return: The trigger_source of this EnvExecutionBody.
+        :rtype: str
+        """
+        return self._trigger_source
+
+    @trigger_source.setter
+    def trigger_source(self, trigger_source):
+        """Sets the trigger_source of this EnvExecutionBody.
+
+        限制触发来源,0不限制任何执行请求来源,1时只允许通过流水线触发执行
+
+        :param trigger_source: The trigger_source of this EnvExecutionBody.
+        :type trigger_source: str
+        """
+        self._trigger_source = trigger_source
 
     def to_dict(self):
         """Returns the model properties as a dict"""

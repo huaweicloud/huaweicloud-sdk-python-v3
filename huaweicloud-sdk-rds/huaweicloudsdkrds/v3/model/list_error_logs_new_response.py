@@ -17,7 +17,6 @@ class ListErrorLogsNewResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListErrorLogsNewResponse(SdkResponse):
     def error_log_list(self):
         """Gets the error_log_list of this ListErrorLogsNewResponse.
 
-
         :return: The error_log_list of this ListErrorLogsNewResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.ErrorLog`]
         """
@@ -65,7 +63,6 @@ class ListErrorLogsNewResponse(SdkResponse):
     @error_log_list.setter
     def error_log_list(self, error_log_list):
         """Sets the error_log_list of this ListErrorLogsNewResponse.
-
 
         :param error_log_list: The error_log_list of this ListErrorLogsNewResponse.
         :type error_log_list: list[:class:`huaweicloudsdkrds.v3.ErrorLog`]

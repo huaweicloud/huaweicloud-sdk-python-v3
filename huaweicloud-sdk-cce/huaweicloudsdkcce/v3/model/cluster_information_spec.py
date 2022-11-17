@@ -17,7 +17,6 @@ class ClusterInformationSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ClusterInformationSpec:
     def container_network(self):
         """Gets the container_network of this ClusterInformationSpec.
 
-
         :return: The container_network of this ClusterInformationSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ContainerNetworkUpdate`
         """
@@ -116,7 +114,6 @@ class ClusterInformationSpec:
     @container_network.setter
     def container_network(self, container_network):
         """Sets the container_network of this ClusterInformationSpec.
-
 
         :param container_network: The container_network of this ClusterInformationSpec.
         :type container_network: :class:`huaweicloudsdkcce.v3.ContainerNetworkUpdate`

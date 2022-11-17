@@ -17,7 +17,6 @@ class CreateTranscodeTemplate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -179,7 +178,6 @@ class CreateTranscodeTemplate:
     def common(self):
         """Gets the common of this CreateTranscodeTemplate.
 
-
         :return: The common of this CreateTranscodeTemplate.
         :rtype: :class:`huaweicloudsdkvod.v1.CommonInfo`
         """
@@ -188,7 +186,6 @@ class CreateTranscodeTemplate:
     @common.setter
     def common(self, common):
         """Sets the common of this CreateTranscodeTemplate.
-
 
         :param common: The common of this CreateTranscodeTemplate.
         :type common: :class:`huaweicloudsdkvod.v1.CommonInfo`

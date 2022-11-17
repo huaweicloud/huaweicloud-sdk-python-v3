@@ -17,7 +17,6 @@ class MigrateServerRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class MigrateServerRequestBody:
     def migrate(self):
         """Gets the migrate of this MigrateServerRequestBody.
 
-
         :return: The migrate of this MigrateServerRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.MigrateServerOption`
         """
@@ -57,7 +55,6 @@ class MigrateServerRequestBody:
     @migrate.setter
     def migrate(self, migrate):
         """Sets the migrate of this MigrateServerRequestBody.
-
 
         :param migrate: The migrate of this MigrateServerRequestBody.
         :type migrate: :class:`huaweicloudsdkecs.v2.MigrateServerOption`

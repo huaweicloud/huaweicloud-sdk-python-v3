@@ -17,7 +17,6 @@ class MountConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class MountConfig:
     def mount_user(self):
         """Gets the mount_user of this MountConfig.
 
-
         :return: The mount_user of this MountConfig.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountUser`
         """
@@ -63,7 +61,6 @@ class MountConfig:
     @mount_user.setter
     def mount_user(self, mount_user):
         """Sets the mount_user of this MountConfig.
-
 
         :param mount_user: The mount_user of this MountConfig.
         :type mount_user: :class:`huaweicloudsdkfunctiongraph.v2.MountUser`

@@ -17,7 +17,6 @@ class AddVpcExtendCidrResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class AddVpcExtendCidrResponse(SdkResponse):
     def vpc(self):
         """Gets the vpc of this AddVpcExtendCidrResponse.
 
-
         :return: The vpc of this AddVpcExtendCidrResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.Vpc`
         """
@@ -65,7 +63,6 @@ class AddVpcExtendCidrResponse(SdkResponse):
     @vpc.setter
     def vpc(self, vpc):
         """Sets the vpc of this AddVpcExtendCidrResponse.
-
 
         :param vpc: The vpc of this AddVpcExtendCidrResponse.
         :type vpc: :class:`huaweicloudsdkvpc.v3.Vpc`

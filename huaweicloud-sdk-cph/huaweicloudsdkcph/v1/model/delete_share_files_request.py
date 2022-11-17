@@ -17,7 +17,6 @@ class DeleteShareFilesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteShareFilesRequest:
     def body(self):
         """Gets the body of this DeleteShareFilesRequest.
 
-
         :return: The body of this DeleteShareFilesRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareFilesRequestBody`
         """
@@ -58,7 +56,6 @@ class DeleteShareFilesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteShareFilesRequest.
-
 
         :param body: The body of this DeleteShareFilesRequest.
         :type body: :class:`huaweicloudsdkcph.v1.DeleteShareFilesRequestBody`

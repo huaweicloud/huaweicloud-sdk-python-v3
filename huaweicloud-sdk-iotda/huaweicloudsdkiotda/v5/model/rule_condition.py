@@ -17,7 +17,6 @@ class RuleCondition:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -39,7 +38,7 @@ class RuleCondition:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。 - DEVICE_STATUS：设备状态类型条件。 - DEVICE_LIFE_CYCLE：设备生命周期类型条件。 - DEVICE_MESSAGE：设备消息条件。 - MESSAGE_RESULTS：下行消息结果条件。
+        :param type: **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。
         :type type: str
         :param device_property_condition: 
         :type device_property_condition: :class:`huaweicloudsdkiotda.v5.DeviceDataCondition`
@@ -69,7 +68,7 @@ class RuleCondition:
     def type(self):
         """Gets the type of this RuleCondition.
 
-        **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。 - DEVICE_STATUS：设备状态类型条件。 - DEVICE_LIFE_CYCLE：设备生命周期类型条件。 - DEVICE_MESSAGE：设备消息条件。 - MESSAGE_RESULTS：下行消息结果条件。
+        **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。
 
         :return: The type of this RuleCondition.
         :rtype: str
@@ -80,7 +79,7 @@ class RuleCondition:
     def type(self, type):
         """Sets the type of this RuleCondition.
 
-        **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。 - DEVICE_STATUS：设备状态类型条件。 - DEVICE_LIFE_CYCLE：设备生命周期类型条件。 - DEVICE_MESSAGE：设备消息条件。 - MESSAGE_RESULTS：下行消息结果条件。
+        **参数说明**：规则条件的类型。 **取值范围**： - DEVICE_DATA：设备属性数据类型条件。 - SIMPLE_TIMER：简单定时类型条件。 - DAILY_TIMER：每日定时类型条件。
 
         :param type: The type of this RuleCondition.
         :type type: str
@@ -91,7 +90,6 @@ class RuleCondition:
     def device_property_condition(self):
         """Gets the device_property_condition of this RuleCondition.
 
-
         :return: The device_property_condition of this RuleCondition.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceDataCondition`
         """
@@ -100,7 +98,6 @@ class RuleCondition:
     @device_property_condition.setter
     def device_property_condition(self, device_property_condition):
         """Sets the device_property_condition of this RuleCondition.
-
 
         :param device_property_condition: The device_property_condition of this RuleCondition.
         :type device_property_condition: :class:`huaweicloudsdkiotda.v5.DeviceDataCondition`
@@ -111,7 +108,6 @@ class RuleCondition:
     def simple_timer_condition(self):
         """Gets the simple_timer_condition of this RuleCondition.
 
-
         :return: The simple_timer_condition of this RuleCondition.
         :rtype: :class:`huaweicloudsdkiotda.v5.SimpleTimerType`
         """
@@ -120,7 +116,6 @@ class RuleCondition:
     @simple_timer_condition.setter
     def simple_timer_condition(self, simple_timer_condition):
         """Sets the simple_timer_condition of this RuleCondition.
-
 
         :param simple_timer_condition: The simple_timer_condition of this RuleCondition.
         :type simple_timer_condition: :class:`huaweicloudsdkiotda.v5.SimpleTimerType`
@@ -131,7 +126,6 @@ class RuleCondition:
     def daily_timer_condition(self):
         """Gets the daily_timer_condition of this RuleCondition.
 
-
         :return: The daily_timer_condition of this RuleCondition.
         :rtype: :class:`huaweicloudsdkiotda.v5.DailyTimerType`
         """
@@ -140,7 +134,6 @@ class RuleCondition:
     @daily_timer_condition.setter
     def daily_timer_condition(self, daily_timer_condition):
         """Sets the daily_timer_condition of this RuleCondition.
-
 
         :param daily_timer_condition: The daily_timer_condition of this RuleCondition.
         :type daily_timer_condition: :class:`huaweicloudsdkiotda.v5.DailyTimerType`

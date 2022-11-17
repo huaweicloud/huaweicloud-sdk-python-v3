@@ -17,7 +17,6 @@ class CheckEmailConnectionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CheckEmailConnectionRequest:
     def body(self):
         """Gets the body of this CheckEmailConnectionRequest.
 
-
         :return: The body of this CheckEmailConnectionRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TryEmailConnectionReq`
         """
@@ -58,7 +56,6 @@ class CheckEmailConnectionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckEmailConnectionRequest.
-
 
         :param body: The body of this CheckEmailConnectionRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.TryEmailConnectionReq`

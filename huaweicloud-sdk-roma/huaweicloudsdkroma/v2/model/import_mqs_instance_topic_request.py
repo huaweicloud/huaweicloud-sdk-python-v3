@@ -17,7 +17,6 @@ class ImportMqsInstanceTopicRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class ImportMqsInstanceTopicRequest:
     def body(self):
         """Gets the body of this ImportMqsInstanceTopicRequest.
 
-
         :return: The body of this ImportMqsInstanceTopicRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequestBody`
         """
@@ -144,7 +142,6 @@ class ImportMqsInstanceTopicRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportMqsInstanceTopicRequest.
-
 
         :param body: The body of this ImportMqsInstanceTopicRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequestBody`

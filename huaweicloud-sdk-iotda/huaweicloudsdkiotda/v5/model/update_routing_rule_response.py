@@ -17,7 +17,6 @@ class UpdateRoutingRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -57,7 +56,7 @@ class UpdateRoutingRuleResponse(SdkResponse):
         :type description: str
         :param subject: 
         :type subject: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
-        :param app_type: 租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。 
+        :param app_type: 租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。
         :type app_type: str
         :param app_id: 资源空间ID
         :type app_id: str
@@ -171,7 +170,6 @@ class UpdateRoutingRuleResponse(SdkResponse):
     def subject(self):
         """Gets the subject of this UpdateRoutingRuleResponse.
 
-
         :return: The subject of this UpdateRoutingRuleResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
         """
@@ -180,7 +178,6 @@ class UpdateRoutingRuleResponse(SdkResponse):
     @subject.setter
     def subject(self, subject):
         """Sets the subject of this UpdateRoutingRuleResponse.
-
 
         :param subject: The subject of this UpdateRoutingRuleResponse.
         :type subject: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
@@ -191,7 +188,7 @@ class UpdateRoutingRuleResponse(SdkResponse):
     def app_type(self):
         """Gets the app_type of this UpdateRoutingRuleResponse.
 
-        租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。 
+        租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。
 
         :return: The app_type of this UpdateRoutingRuleResponse.
         :rtype: str
@@ -202,7 +199,7 @@ class UpdateRoutingRuleResponse(SdkResponse):
     def app_type(self, app_type):
         """Sets the app_type of this UpdateRoutingRuleResponse.
 
-        租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。 
+        租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。
 
         :param app_type: The app_type of this UpdateRoutingRuleResponse.
         :type app_type: str

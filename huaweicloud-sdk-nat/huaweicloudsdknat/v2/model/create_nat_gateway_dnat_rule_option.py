@@ -17,7 +17,6 @@ class CreateNatGatewayDnatRuleOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateNatGatewayDnatRuleOption:
     def dnat_rule(self):
         """Gets the dnat_rule of this CreateNatGatewayDnatRuleOption.
 
-
         :return: The dnat_rule of this CreateNatGatewayDnatRuleOption.
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatOption`
         """
@@ -57,7 +55,6 @@ class CreateNatGatewayDnatRuleOption:
     @dnat_rule.setter
     def dnat_rule(self, dnat_rule):
         """Sets the dnat_rule of this CreateNatGatewayDnatRuleOption.
-
 
         :param dnat_rule: The dnat_rule of this CreateNatGatewayDnatRuleOption.
         :type dnat_rule: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatOption`

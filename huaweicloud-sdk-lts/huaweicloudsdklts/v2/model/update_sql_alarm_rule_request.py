@@ -17,7 +17,6 @@ class UpdateSqlAlarmRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateSqlAlarmRuleRequest:
     def body(self):
         """Gets the body of this UpdateSqlAlarmRuleRequest.
 
-
         :return: The body of this UpdateSqlAlarmRuleRequest.
         :rtype: :class:`huaweicloudsdklts.v2.UpdateSqlAlarmRuleRequestBody`
         """
@@ -58,7 +56,6 @@ class UpdateSqlAlarmRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateSqlAlarmRuleRequest.
-
 
         :param body: The body of this UpdateSqlAlarmRuleRequest.
         :type body: :class:`huaweicloudsdklts.v2.UpdateSqlAlarmRuleRequestBody`

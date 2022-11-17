@@ -17,7 +17,6 @@ class UpdateLoadBalancerOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -323,7 +322,6 @@ class UpdateLoadBalancerOption:
     def ipv6_bandwidth(self):
         """Gets the ipv6_bandwidth of this UpdateLoadBalancerOption.
 
-
         :return: The ipv6_bandwidth of this UpdateLoadBalancerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
@@ -332,7 +330,6 @@ class UpdateLoadBalancerOption:
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
         """Sets the ipv6_bandwidth of this UpdateLoadBalancerOption.
-
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this UpdateLoadBalancerOption.
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
@@ -409,7 +406,6 @@ class UpdateLoadBalancerOption:
     def prepaid_options(self):
         """Gets the prepaid_options of this UpdateLoadBalancerOption.
 
-
         :return: The prepaid_options of this UpdateLoadBalancerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.PrepaidUpdateOption`
         """
@@ -418,7 +414,6 @@ class UpdateLoadBalancerOption:
     @prepaid_options.setter
     def prepaid_options(self, prepaid_options):
         """Sets the prepaid_options of this UpdateLoadBalancerOption.
-
 
         :param prepaid_options: The prepaid_options of this UpdateLoadBalancerOption.
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidUpdateOption`
@@ -429,7 +424,6 @@ class UpdateLoadBalancerOption:
     def autoscaling(self):
         """Gets the autoscaling of this UpdateLoadBalancerOption.
 
-
         :return: The autoscaling of this UpdateLoadBalancerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateLoadbalancerAutoscalingOption`
         """
@@ -438,7 +432,6 @@ class UpdateLoadBalancerOption:
     @autoscaling.setter
     def autoscaling(self, autoscaling):
         """Sets the autoscaling of this UpdateLoadBalancerOption.
-
 
         :param autoscaling: The autoscaling of this UpdateLoadBalancerOption.
         :type autoscaling: :class:`huaweicloudsdkelb.v3.UpdateLoadbalancerAutoscalingOption`

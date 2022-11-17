@@ -17,7 +17,6 @@ class ChangeCloudPhoneServerModelRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ChangeCloudPhoneServerModelRequest:
     def body(self):
         """Gets the body of this ChangeCloudPhoneServerModelRequest.
 
-
         :return: The body of this ChangeCloudPhoneServerModelRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelRequestBody`
         """
@@ -58,7 +56,6 @@ class ChangeCloudPhoneServerModelRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeCloudPhoneServerModelRequest.
-
 
         :param body: The body of this ChangeCloudPhoneServerModelRequest.
         :type body: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelRequestBody`

@@ -17,7 +17,6 @@ class CheckpointCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -168,7 +167,6 @@ class CheckpointCreate:
     def vault(self):
         """Gets the vault of this CheckpointCreate.
 
-
         :return: The vault of this CheckpointCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointPlanCreate`
         """
@@ -177,7 +175,6 @@ class CheckpointCreate:
     @vault.setter
     def vault(self, vault):
         """Sets the vault of this CheckpointCreate.
-
 
         :param vault: The vault of this CheckpointCreate.
         :type vault: :class:`huaweicloudsdkcbr.v1.CheckpointPlanCreate`
@@ -188,7 +185,6 @@ class CheckpointCreate:
     def extra_info(self):
         """Gets the extra_info of this CheckpointCreate.
 
-
         :return: The extra_info of this CheckpointCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointExtraInfoResp`
         """
@@ -197,7 +193,6 @@ class CheckpointCreate:
     @extra_info.setter
     def extra_info(self, extra_info):
         """Sets the extra_info of this CheckpointCreate.
-
 
         :param extra_info: The extra_info of this CheckpointCreate.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.CheckpointExtraInfoResp`

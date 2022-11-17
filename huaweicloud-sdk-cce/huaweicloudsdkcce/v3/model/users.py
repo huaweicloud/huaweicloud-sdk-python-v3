@@ -17,7 +17,6 @@ class Users:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class Users:
     def user(self):
         """Gets the user of this Users.
 
-
         :return: The user of this Users.
         :rtype: :class:`huaweicloudsdkcce.v3.User`
         """
@@ -87,7 +85,6 @@ class Users:
     @user.setter
     def user(self, user):
         """Sets the user of this Users.
-
 
         :param user: The user of this Users.
         :type user: :class:`huaweicloudsdkcce.v3.User`

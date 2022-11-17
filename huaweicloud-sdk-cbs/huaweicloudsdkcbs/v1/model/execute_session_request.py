@@ -17,7 +17,6 @@ class ExecuteSessionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ExecuteSessionRequest:
     def body(self):
         """Gets the body of this ExecuteSessionRequest.
 
-
         :return: The body of this ExecuteSessionRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.PostQaSessionReq`
         """
@@ -114,7 +112,6 @@ class ExecuteSessionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExecuteSessionRequest.
-
 
         :param body: The body of this ExecuteSessionRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.PostQaSessionReq`

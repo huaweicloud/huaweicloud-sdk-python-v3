@@ -17,7 +17,6 @@ class UpdateEndpointConnectionsDescRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateEndpointConnectionsDescRequest:
     def body(self):
         """Gets the body of this UpdateEndpointConnectionsDescRequest.
 
-
         :return: The body of this UpdateEndpointConnectionsDescRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEpConnections`
         """
@@ -86,7 +84,6 @@ class UpdateEndpointConnectionsDescRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEndpointConnectionsDescRequest.
-
 
         :param body: The body of this UpdateEndpointConnectionsDescRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEpConnections`

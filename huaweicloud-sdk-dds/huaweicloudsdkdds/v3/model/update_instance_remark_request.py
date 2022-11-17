@@ -17,7 +17,6 @@ class UpdateInstanceRemarkRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateInstanceRemarkRequest:
     def body(self):
         """Gets the body of this UpdateInstanceRemarkRequest.
 
-
         :return: The body of this UpdateInstanceRemarkRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateInstanceRemarkRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateInstanceRemarkRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateInstanceRemarkRequest.
-
 
         :param body: The body of this UpdateInstanceRemarkRequest.
         :type body: :class:`huaweicloudsdkdds.v3.UpdateInstanceRemarkRequestBody`

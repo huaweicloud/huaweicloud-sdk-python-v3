@@ -17,7 +17,6 @@ class ChangeServerOsWithoutCloudInitRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ChangeServerOsWithoutCloudInitRequest:
     def body(self):
         """Gets the body of this ChangeServerOsWithoutCloudInitRequest.
 
-
         :return: The body of this ChangeServerOsWithoutCloudInitRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitRequestBody`
         """
@@ -86,7 +84,6 @@ class ChangeServerOsWithoutCloudInitRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeServerOsWithoutCloudInitRequest.
-
 
         :param body: The body of this ChangeServerOsWithoutCloudInitRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitRequestBody`

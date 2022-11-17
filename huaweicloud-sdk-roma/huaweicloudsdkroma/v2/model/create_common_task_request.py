@@ -17,7 +17,6 @@ class CreateCommonTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateCommonTaskRequest:
     def body(self):
         """Gets the body of this CreateCommonTaskRequest.
 
-
         :return: The body of this CreateCommonTaskRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateCommonTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCommonTaskRequest.
-
 
         :param body: The body of this CreateCommonTaskRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequestBody`

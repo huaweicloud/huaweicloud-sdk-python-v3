@@ -17,7 +17,6 @@ class PushShareFilesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class PushShareFilesRequest:
     def body(self):
         """Gets the body of this PushShareFilesRequest.
 
-
         :return: The body of this PushShareFilesRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.PushShareFilesRequestBody`
         """
@@ -58,7 +56,6 @@ class PushShareFilesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this PushShareFilesRequest.
-
 
         :param body: The body of this PushShareFilesRequest.
         :type body: :class:`huaweicloudsdkcph.v1.PushShareFilesRequestBody`

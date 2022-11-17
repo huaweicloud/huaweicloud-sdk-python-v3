@@ -17,7 +17,6 @@ class UpdateDomainMultiCertificatesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateDomainMultiCertificatesResponse(SdkResponse):
     def https(self):
         """Gets the https of this UpdateDomainMultiCertificatesResponse.
 
-
         :return: The https of this UpdateDomainMultiCertificatesResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesResponseBodyContent`
         """
@@ -58,7 +56,6 @@ class UpdateDomainMultiCertificatesResponse(SdkResponse):
     @https.setter
     def https(self, https):
         """Sets the https of this UpdateDomainMultiCertificatesResponse.
-
 
         :param https: The https of this UpdateDomainMultiCertificatesResponse.
         :type https: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesResponseBodyContent`

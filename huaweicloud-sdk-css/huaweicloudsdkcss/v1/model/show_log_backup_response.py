@@ -17,7 +17,6 @@ class ShowLogBackupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowLogBackupResponse(SdkResponse):
     def log_list(self):
         """Gets the log_list of this ShowLogBackupResponse.
 
-
         :return: The log_list of this ShowLogBackupResponse.
         :rtype: list[:class:`huaweicloudsdkcss.v1.LogList`]
         """
@@ -58,7 +56,6 @@ class ShowLogBackupResponse(SdkResponse):
     @log_list.setter
     def log_list(self, log_list):
         """Sets the log_list of this ShowLogBackupResponse.
-
 
         :param log_list: The log_list of this ShowLogBackupResponse.
         :type log_list: list[:class:`huaweicloudsdkcss.v1.LogList`]

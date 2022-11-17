@@ -17,7 +17,6 @@ class CreateHealthmonitorRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateHealthmonitorRequest:
     def body(self):
         """Gets the body of this CreateHealthmonitorRequest.
 
-
         :return: The body of this CreateHealthmonitorRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateHealthmonitorRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateHealthmonitorRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateHealthmonitorRequest.
-
 
         :param body: The body of this CreateHealthmonitorRequest.
         :type body: :class:`huaweicloudsdkelb.v2.CreateHealthmonitorRequestBody`

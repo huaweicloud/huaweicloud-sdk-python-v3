@@ -17,7 +17,6 @@ class UpdatePolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -214,7 +213,6 @@ class UpdatePolicyResponse(SdkResponse):
     def robot_action(self):
         """Gets the robot_action of this UpdatePolicyResponse.
 
-
         :return: The robot_action of this UpdatePolicyResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Action`
         """
@@ -223,7 +221,6 @@ class UpdatePolicyResponse(SdkResponse):
     @robot_action.setter
     def robot_action(self, robot_action):
         """Sets the robot_action of this UpdatePolicyResponse.
-
 
         :param robot_action: The robot_action of this UpdatePolicyResponse.
         :type robot_action: :class:`huaweicloudsdkwaf.v1.Action`
@@ -234,7 +231,6 @@ class UpdatePolicyResponse(SdkResponse):
     def action(self):
         """Gets the action of this UpdatePolicyResponse.
 
-
         :return: The action of this UpdatePolicyResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
@@ -243,7 +239,6 @@ class UpdatePolicyResponse(SdkResponse):
     @action.setter
     def action(self, action):
         """Sets the action of this UpdatePolicyResponse.
-
 
         :param action: The action of this UpdatePolicyResponse.
         :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
@@ -254,7 +249,6 @@ class UpdatePolicyResponse(SdkResponse):
     def options(self):
         """Gets the options of this UpdatePolicyResponse.
 
-
         :return: The options of this UpdatePolicyResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
@@ -263,7 +257,6 @@ class UpdatePolicyResponse(SdkResponse):
     @options.setter
     def options(self, options):
         """Sets the options of this UpdatePolicyResponse.
-
 
         :param options: The options of this UpdatePolicyResponse.
         :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`

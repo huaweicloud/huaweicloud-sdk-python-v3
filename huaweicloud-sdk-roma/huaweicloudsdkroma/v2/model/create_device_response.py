@@ -17,14 +17,12 @@ class CreateDeviceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'permissions': 'list[str]',
         'id': 'int',
-        'parent_device_id': 'int',
-        'parent_device_name': 'str',
+        'device_id': 'int',
         'product': 'ProductReferer',
         'device_name': 'str',
         'instance_id': 'str',
@@ -44,22 +42,15 @@ class CreateDeviceResponse(SdkResponse):
         'ssl_connect_address': 'str',
         'ipv6_connect_address': 'str',
         'ipv6_ssl_connect_address': 'str',
-        'last_login_datetime': 'int',
         'node_type': 'int',
         'device_type': 'int',
-        'client_ip': 'str',
-        'keep_alive': 'str',
-        'last_active_time': 'int',
-        'version': 'str',
-        'plugin_id': 'int',
         'app_id': 'str'
     }
 
     attribute_map = {
         'permissions': 'permissions',
         'id': 'id',
-        'parent_device_id': 'parent_device_id',
-        'parent_device_name': 'parent_device_name',
+        'device_id': 'device_id',
         'product': 'product',
         'device_name': 'device_name',
         'instance_id': 'instance_id',
@@ -79,18 +70,12 @@ class CreateDeviceResponse(SdkResponse):
         'ssl_connect_address': 'ssl_connect_address',
         'ipv6_connect_address': 'ipv6_connect_address',
         'ipv6_ssl_connect_address': 'ipv6_ssl_connect_address',
-        'last_login_datetime': 'last_login_datetime',
         'node_type': 'node_type',
         'device_type': 'device_type',
-        'client_ip': 'client_ip',
-        'keep_alive': 'keep_alive',
-        'last_active_time': 'last_active_time',
-        'version': 'version',
-        'plugin_id': 'plugin_id',
         'app_id': 'app_id'
     }
 
-    def __init__(self, permissions=None, id=None, parent_device_id=None, parent_device_name=None, product=None, device_name=None, instance_id=None, client_id=None, node_id=None, app_name=None, status=None, online_status=None, description=None, authentication=None, created_user=None, last_updated_user=None, tags=None, created_datetime=None, last_updated_datetime=None, connect_address=None, ssl_connect_address=None, ipv6_connect_address=None, ipv6_ssl_connect_address=None, last_login_datetime=None, node_type=None, device_type=None, client_ip=None, keep_alive=None, last_active_time=None, version=None, plugin_id=None, app_id=None):
+    def __init__(self, permissions=None, id=None, device_id=None, product=None, device_name=None, instance_id=None, client_id=None, node_id=None, app_name=None, status=None, online_status=None, description=None, authentication=None, created_user=None, last_updated_user=None, tags=None, created_datetime=None, last_updated_datetime=None, connect_address=None, ssl_connect_address=None, ipv6_connect_address=None, ipv6_ssl_connect_address=None, node_type=None, device_type=None, app_id=None):
         """CreateDeviceResponse
 
         The model defined in huaweicloud sdk
@@ -99,10 +84,8 @@ class CreateDeviceResponse(SdkResponse):
         :type permissions: list[str]
         :param id: 设备ID
         :type id: int
-        :param parent_device_id: 父设备ID
-        :type parent_device_id: int
-        :param parent_device_name: 父设备名称
-        :type parent_device_name: str
+        :param device_id: 设备ID（兼容20.0）
+        :type device_id: int
         :param product: 
         :type product: :class:`huaweicloudsdkroma.v2.ProductReferer`
         :param device_name: 设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?&#39;-@%&amp;!, 长度2-64
@@ -141,22 +124,10 @@ class CreateDeviceResponse(SdkResponse):
         :type ipv6_connect_address: str
         :param ipv6_ssl_connect_address: 设备接入IPV6 SSL地址
         :type ipv6_ssl_connect_address: str
-        :param last_login_datetime: 最后登录时间
-        :type last_login_datetime: int
         :param node_type: 节点类型 0-直连 1-网关 2-子设备
         :type node_type: int
         :param device_type: 设备类型&lt;br&gt;0-普通设备（无子设备也无父设备）&lt;br&gt;1-网关设备(可挂载子设备)&lt;br&gt;2-子设备(归属于某个网关设备)
         :type device_type: int
-        :param client_ip: 客户端ip
-        :type client_ip: str
-        :param keep_alive: 心跳时间
-        :type keep_alive: str
-        :param last_active_time: 最后登录时间
-        :type last_active_time: int
-        :param version: 设备版本
-        :type version: str
-        :param plugin_id: modbus和opcua设备特有,表示设备所属产品的类型 0-普通产品 1-modbus网关产品 2-opcua网关产品
-        :type plugin_id: int
         :param app_id: 应用ID
         :type app_id: str
         """
@@ -165,8 +136,7 @@ class CreateDeviceResponse(SdkResponse):
 
         self._permissions = None
         self._id = None
-        self._parent_device_id = None
-        self._parent_device_name = None
+        self._device_id = None
         self._product = None
         self._device_name = None
         self._instance_id = None
@@ -186,14 +156,8 @@ class CreateDeviceResponse(SdkResponse):
         self._ssl_connect_address = None
         self._ipv6_connect_address = None
         self._ipv6_ssl_connect_address = None
-        self._last_login_datetime = None
         self._node_type = None
         self._device_type = None
-        self._client_ip = None
-        self._keep_alive = None
-        self._last_active_time = None
-        self._version = None
-        self._plugin_id = None
         self._app_id = None
         self.discriminator = None
 
@@ -201,10 +165,8 @@ class CreateDeviceResponse(SdkResponse):
             self.permissions = permissions
         if id is not None:
             self.id = id
-        if parent_device_id is not None:
-            self.parent_device_id = parent_device_id
-        if parent_device_name is not None:
-            self.parent_device_name = parent_device_name
+        if device_id is not None:
+            self.device_id = device_id
         if product is not None:
             self.product = product
         if device_name is not None:
@@ -243,22 +205,10 @@ class CreateDeviceResponse(SdkResponse):
             self.ipv6_connect_address = ipv6_connect_address
         if ipv6_ssl_connect_address is not None:
             self.ipv6_ssl_connect_address = ipv6_ssl_connect_address
-        if last_login_datetime is not None:
-            self.last_login_datetime = last_login_datetime
         if node_type is not None:
             self.node_type = node_type
         if device_type is not None:
             self.device_type = device_type
-        if client_ip is not None:
-            self.client_ip = client_ip
-        if keep_alive is not None:
-            self.keep_alive = keep_alive
-        if last_active_time is not None:
-            self.last_active_time = last_active_time
-        if version is not None:
-            self.version = version
-        if plugin_id is not None:
-            self.plugin_id = plugin_id
         if app_id is not None:
             self.app_id = app_id
 
@@ -307,53 +257,30 @@ class CreateDeviceResponse(SdkResponse):
         self._id = id
 
     @property
-    def parent_device_id(self):
-        """Gets the parent_device_id of this CreateDeviceResponse.
+    def device_id(self):
+        """Gets the device_id of this CreateDeviceResponse.
 
-        父设备ID
+        设备ID（兼容20.0）
 
-        :return: The parent_device_id of this CreateDeviceResponse.
+        :return: The device_id of this CreateDeviceResponse.
         :rtype: int
         """
-        return self._parent_device_id
+        return self._device_id
 
-    @parent_device_id.setter
-    def parent_device_id(self, parent_device_id):
-        """Sets the parent_device_id of this CreateDeviceResponse.
+    @device_id.setter
+    def device_id(self, device_id):
+        """Sets the device_id of this CreateDeviceResponse.
 
-        父设备ID
+        设备ID（兼容20.0）
 
-        :param parent_device_id: The parent_device_id of this CreateDeviceResponse.
-        :type parent_device_id: int
+        :param device_id: The device_id of this CreateDeviceResponse.
+        :type device_id: int
         """
-        self._parent_device_id = parent_device_id
-
-    @property
-    def parent_device_name(self):
-        """Gets the parent_device_name of this CreateDeviceResponse.
-
-        父设备名称
-
-        :return: The parent_device_name of this CreateDeviceResponse.
-        :rtype: str
-        """
-        return self._parent_device_name
-
-    @parent_device_name.setter
-    def parent_device_name(self, parent_device_name):
-        """Sets the parent_device_name of this CreateDeviceResponse.
-
-        父设备名称
-
-        :param parent_device_name: The parent_device_name of this CreateDeviceResponse.
-        :type parent_device_name: str
-        """
-        self._parent_device_name = parent_device_name
+        self._device_id = device_id
 
     @property
     def product(self):
         """Gets the product of this CreateDeviceResponse.
-
 
         :return: The product of this CreateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.ProductReferer`
@@ -363,7 +290,6 @@ class CreateDeviceResponse(SdkResponse):
     @product.setter
     def product(self, product):
         """Sets the product of this CreateDeviceResponse.
-
 
         :param product: The product of this CreateDeviceResponse.
         :type product: :class:`huaweicloudsdkroma.v2.ProductReferer`
@@ -550,7 +476,6 @@ class CreateDeviceResponse(SdkResponse):
     def authentication(self):
         """Gets the authentication of this CreateDeviceResponse.
 
-
         :return: The authentication of this CreateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
         """
@@ -559,7 +484,6 @@ class CreateDeviceResponse(SdkResponse):
     @authentication.setter
     def authentication(self, authentication):
         """Sets the authentication of this CreateDeviceResponse.
-
 
         :param authentication: The authentication of this CreateDeviceResponse.
         :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
@@ -570,7 +494,6 @@ class CreateDeviceResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this CreateDeviceResponse.
 
-
         :return: The created_user of this CreateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -579,7 +502,6 @@ class CreateDeviceResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this CreateDeviceResponse.
-
 
         :param created_user: The created_user of this CreateDeviceResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -590,7 +512,6 @@ class CreateDeviceResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this CreateDeviceResponse.
 
-
         :return: The last_updated_user of this CreateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -599,7 +520,6 @@ class CreateDeviceResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this CreateDeviceResponse.
-
 
         :param last_updated_user: The last_updated_user of this CreateDeviceResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -761,28 +681,6 @@ class CreateDeviceResponse(SdkResponse):
         self._ipv6_ssl_connect_address = ipv6_ssl_connect_address
 
     @property
-    def last_login_datetime(self):
-        """Gets the last_login_datetime of this CreateDeviceResponse.
-
-        最后登录时间
-
-        :return: The last_login_datetime of this CreateDeviceResponse.
-        :rtype: int
-        """
-        return self._last_login_datetime
-
-    @last_login_datetime.setter
-    def last_login_datetime(self, last_login_datetime):
-        """Sets the last_login_datetime of this CreateDeviceResponse.
-
-        最后登录时间
-
-        :param last_login_datetime: The last_login_datetime of this CreateDeviceResponse.
-        :type last_login_datetime: int
-        """
-        self._last_login_datetime = last_login_datetime
-
-    @property
     def node_type(self):
         """Gets the node_type of this CreateDeviceResponse.
 
@@ -825,116 +723,6 @@ class CreateDeviceResponse(SdkResponse):
         :type device_type: int
         """
         self._device_type = device_type
-
-    @property
-    def client_ip(self):
-        """Gets the client_ip of this CreateDeviceResponse.
-
-        客户端ip
-
-        :return: The client_ip of this CreateDeviceResponse.
-        :rtype: str
-        """
-        return self._client_ip
-
-    @client_ip.setter
-    def client_ip(self, client_ip):
-        """Sets the client_ip of this CreateDeviceResponse.
-
-        客户端ip
-
-        :param client_ip: The client_ip of this CreateDeviceResponse.
-        :type client_ip: str
-        """
-        self._client_ip = client_ip
-
-    @property
-    def keep_alive(self):
-        """Gets the keep_alive of this CreateDeviceResponse.
-
-        心跳时间
-
-        :return: The keep_alive of this CreateDeviceResponse.
-        :rtype: str
-        """
-        return self._keep_alive
-
-    @keep_alive.setter
-    def keep_alive(self, keep_alive):
-        """Sets the keep_alive of this CreateDeviceResponse.
-
-        心跳时间
-
-        :param keep_alive: The keep_alive of this CreateDeviceResponse.
-        :type keep_alive: str
-        """
-        self._keep_alive = keep_alive
-
-    @property
-    def last_active_time(self):
-        """Gets the last_active_time of this CreateDeviceResponse.
-
-        最后登录时间
-
-        :return: The last_active_time of this CreateDeviceResponse.
-        :rtype: int
-        """
-        return self._last_active_time
-
-    @last_active_time.setter
-    def last_active_time(self, last_active_time):
-        """Sets the last_active_time of this CreateDeviceResponse.
-
-        最后登录时间
-
-        :param last_active_time: The last_active_time of this CreateDeviceResponse.
-        :type last_active_time: int
-        """
-        self._last_active_time = last_active_time
-
-    @property
-    def version(self):
-        """Gets the version of this CreateDeviceResponse.
-
-        设备版本
-
-        :return: The version of this CreateDeviceResponse.
-        :rtype: str
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        """Sets the version of this CreateDeviceResponse.
-
-        设备版本
-
-        :param version: The version of this CreateDeviceResponse.
-        :type version: str
-        """
-        self._version = version
-
-    @property
-    def plugin_id(self):
-        """Gets the plugin_id of this CreateDeviceResponse.
-
-        modbus和opcua设备特有,表示设备所属产品的类型 0-普通产品 1-modbus网关产品 2-opcua网关产品
-
-        :return: The plugin_id of this CreateDeviceResponse.
-        :rtype: int
-        """
-        return self._plugin_id
-
-    @plugin_id.setter
-    def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this CreateDeviceResponse.
-
-        modbus和opcua设备特有,表示设备所属产品的类型 0-普通产品 1-modbus网关产品 2-opcua网关产品
-
-        :param plugin_id: The plugin_id of this CreateDeviceResponse.
-        :type plugin_id: int
-        """
-        self._plugin_id = plugin_id
 
     @property
     def app_id(self):

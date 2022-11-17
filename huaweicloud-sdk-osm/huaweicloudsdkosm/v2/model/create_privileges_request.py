@@ -17,7 +17,6 @@ class CreatePrivilegesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class CreatePrivilegesRequest:
     def body(self):
         """Gets the body of this CreatePrivilegesRequest.
 
-
         :return: The body of this CreatePrivilegesRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.CreateAndDeletePrivilegeReq`
         """
@@ -145,7 +143,6 @@ class CreatePrivilegesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePrivilegesRequest.
-
 
         :param body: The body of this CreatePrivilegesRequest.
         :type body: :class:`huaweicloudsdkosm.v2.CreateAndDeletePrivilegeReq`

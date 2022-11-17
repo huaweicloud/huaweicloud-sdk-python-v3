@@ -17,7 +17,6 @@ class BindPublicReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class BindPublicReq:
     def eip(self):
         """Gets the eip of this BindPublicReq.
 
-
         :return: The eip of this BindPublicReq.
         :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReqEip`
         """
@@ -64,7 +62,6 @@ class BindPublicReq:
     @eip.setter
     def eip(self, eip):
         """Sets the eip of this BindPublicReq.
-
 
         :param eip: The eip of this BindPublicReq.
         :type eip: :class:`huaweicloudsdkcss.v1.BindPublicReqEip`

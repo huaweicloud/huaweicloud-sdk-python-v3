@@ -17,7 +17,6 @@ class ShowAomMappingRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowAomMappingRuleResponse(SdkResponse):
     def body(self):
         """Gets the body of this ShowAomMappingRuleResponse.
 
-
         :return: The body of this ShowAomMappingRuleResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.AomMappingRuleResp`]
         """
@@ -58,7 +56,6 @@ class ShowAomMappingRuleResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ShowAomMappingRuleResponse.
-
 
         :param body: The body of this ShowAomMappingRuleResponse.
         :type body: list[:class:`huaweicloudsdklts.v2.AomMappingRuleResp`]

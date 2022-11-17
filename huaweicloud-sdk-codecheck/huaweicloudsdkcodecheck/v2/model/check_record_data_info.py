@@ -17,7 +17,6 @@ class CheckRecordDataInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CheckRecordDataInfo:
     def issue_counts(self):
         """Gets the issue_counts of this CheckRecordDataInfo.
 
-
         :return: The issue_counts of this CheckRecordDataInfo.
         :rtype: :class:`huaweicloudsdkcodecheck.v2.CheckRecordIssueCountsInfo`
         """
@@ -116,7 +114,6 @@ class CheckRecordDataInfo:
     @issue_counts.setter
     def issue_counts(self, issue_counts):
         """Sets the issue_counts of this CheckRecordDataInfo.
-
 
         :param issue_counts: The issue_counts of this CheckRecordDataInfo.
         :type issue_counts: :class:`huaweicloudsdkcodecheck.v2.CheckRecordIssueCountsInfo`

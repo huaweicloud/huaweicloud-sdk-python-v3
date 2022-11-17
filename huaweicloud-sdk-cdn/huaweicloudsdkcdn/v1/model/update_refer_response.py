@@ -17,7 +17,6 @@ class UpdateReferResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateReferResponse(SdkResponse):
     def referer(self):
         """Gets the referer of this UpdateReferResponse.
 
-
         :return: The referer of this UpdateReferResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.RefererRsp`
         """
@@ -58,7 +56,6 @@ class UpdateReferResponse(SdkResponse):
     @referer.setter
     def referer(self, referer):
         """Sets the referer of this UpdateReferResponse.
-
 
         :param referer: The referer of this UpdateReferResponse.
         :type referer: :class:`huaweicloudsdkcdn.v1.RefererRsp`

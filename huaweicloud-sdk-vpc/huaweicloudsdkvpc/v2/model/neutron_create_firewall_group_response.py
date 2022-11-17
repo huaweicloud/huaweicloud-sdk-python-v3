@@ -17,7 +17,6 @@ class NeutronCreateFirewallGroupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class NeutronCreateFirewallGroupResponse(SdkResponse):
     def firewall_group(self):
         """Gets the firewall_group of this NeutronCreateFirewallGroupResponse.
 
-
         :return: The firewall_group of this NeutronCreateFirewallGroupResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronFirewallGroup`
         """
@@ -58,7 +56,6 @@ class NeutronCreateFirewallGroupResponse(SdkResponse):
     @firewall_group.setter
     def firewall_group(self, firewall_group):
         """Sets the firewall_group of this NeutronCreateFirewallGroupResponse.
-
 
         :param firewall_group: The firewall_group of this NeutronCreateFirewallGroupResponse.
         :type firewall_group: :class:`huaweicloudsdkvpc.v2.NeutronFirewallGroup`

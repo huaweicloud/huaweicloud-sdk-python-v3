@@ -17,7 +17,6 @@ class MysqlChangeSpecificationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class MysqlChangeSpecificationRequest:
     def resize_flavor(self):
         """Gets the resize_flavor of this MysqlChangeSpecificationRequest.
 
-
         :return: The resize_flavor of this MysqlChangeSpecificationRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlResizeFlavor`
         """
@@ -64,7 +62,6 @@ class MysqlChangeSpecificationRequest:
     @resize_flavor.setter
     def resize_flavor(self, resize_flavor):
         """Sets the resize_flavor of this MysqlChangeSpecificationRequest.
-
 
         :param resize_flavor: The resize_flavor of this MysqlChangeSpecificationRequest.
         :type resize_flavor: :class:`huaweicloudsdkgaussdb.v3.MysqlResizeFlavor`

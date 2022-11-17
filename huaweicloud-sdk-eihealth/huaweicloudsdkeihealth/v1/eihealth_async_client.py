@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EiHealthAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchImportApp
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchImportAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchImportAppResponse`
@@ -68,6 +63,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchImportAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApp
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAppResponse`
@@ -128,6 +127,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApp
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAppResponse`
@@ -188,6 +191,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApp
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListAppResponse`
@@ -248,6 +255,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +293,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -298,6 +308,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApp
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAppResponse`
@@ -310,6 +321,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +357,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +372,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SubscribeApp
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeAppResponse`
@@ -370,6 +385,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -404,6 +421,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SubscribeAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -418,6 +436,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateApp
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAppResponse`
@@ -430,6 +449,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -466,6 +487,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -480,6 +502,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAsset
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAssetRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListAssetResponse`
@@ -492,6 +515,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -538,6 +563,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -552,6 +578,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProperty
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPropertyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPropertyResponse`
@@ -564,6 +591,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -596,6 +625,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -610,6 +640,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAsset
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAssetRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAssetResponse`
@@ -622,6 +653,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -654,6 +687,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -668,6 +702,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAssetVersion
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAssetVersionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAssetVersionResponse`
@@ -680,6 +715,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -714,6 +751,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -728,6 +766,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAutoJobResponse`
@@ -740,6 +779,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -774,6 +815,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -788,6 +830,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAutoJobResponse`
@@ -800,6 +843,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -834,6 +879,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -848,6 +894,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListAutoJobResponse`
@@ -860,6 +907,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -902,6 +951,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -916,6 +966,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAutoJobResponse`
@@ -928,6 +979,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -962,6 +1015,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -976,6 +1030,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.StartAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StartAutoJobResponse`
@@ -988,6 +1043,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1022,6 +1079,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1036,6 +1094,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.StopAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopAutoJobResponse`
@@ -1048,6 +1107,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1082,6 +1143,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1096,6 +1158,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAutoJob
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAutoJobResponse`
@@ -1108,6 +1171,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1144,6 +1209,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAutoJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1158,6 +1224,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateComputingResource
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateComputingResourceResponse`
@@ -1170,6 +1237,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1202,6 +1271,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateComputingResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1216,6 +1286,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteComputingResource
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteComputingResourceResponse`
@@ -1228,6 +1299,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1260,6 +1333,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteComputingResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1274,6 +1348,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListComputingResourceFlavors
         :type request: :class:`huaweicloudsdkeihealth.v1.ListComputingResourceFlavorsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListComputingResourceFlavorsResponse`
@@ -1286,6 +1361,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1318,6 +1395,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListComputingResourceFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1332,6 +1410,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListComputingResources
         :type request: :class:`huaweicloudsdkeihealth.v1.ListComputingResourcesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListComputingResourcesResponse`
@@ -1344,6 +1423,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1380,6 +1461,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListComputingResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1394,6 +1476,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RebootNode
         :type request: :class:`huaweicloudsdkeihealth.v1.RebootNodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RebootNodeResponse`
@@ -1406,6 +1489,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1440,6 +1525,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RebootNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1454,6 +1540,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBmsDevices
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBmsDevicesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowBmsDevicesResponse`
@@ -1466,6 +1553,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1498,6 +1587,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBmsDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1512,6 +1602,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEvsQuota
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowEvsQuotaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowEvsQuotaResponse`
@@ -1524,6 +1615,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1554,6 +1647,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEvsQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1568,6 +1662,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLeftQuota
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowLeftQuotaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowLeftQuotaResponse`
@@ -1580,6 +1675,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1610,6 +1707,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLeftQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1624,6 +1722,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSchedule
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowScheduleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowScheduleResponse`
@@ -1636,6 +1735,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1668,6 +1769,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScheduleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1682,6 +1784,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartNode
         :type request: :class:`huaweicloudsdkeihealth.v1.StartNodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StartNodeResponse`
@@ -1694,6 +1797,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1726,6 +1831,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1740,6 +1846,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopNode
         :type request: :class:`huaweicloudsdkeihealth.v1.StopNodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopNodeResponse`
@@ -1752,6 +1859,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1786,6 +1895,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1800,6 +1910,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSchedule
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleResponse`
@@ -1812,6 +1923,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1846,6 +1959,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateScheduleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1860,6 +1974,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateBackup
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateBackupResponse`
@@ -1872,6 +1987,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1906,6 +2023,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1920,6 +2038,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBackup
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteBackupResponse`
@@ -1932,6 +2051,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1966,6 +2087,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1980,6 +2102,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackup
         :type request: :class:`huaweicloudsdkeihealth.v1.ListBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListBackupResponse`
@@ -1992,6 +2115,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2032,6 +2157,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2046,6 +2172,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreBackup
         :type request: :class:`huaweicloudsdkeihealth.v1.RestoreBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RestoreBackupResponse`
@@ -2058,6 +2185,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2094,6 +2223,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2108,6 +2238,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBackupPath
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBackupPathRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowBackupPathResponse`
@@ -2120,6 +2251,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2154,6 +2287,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupPathResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2168,6 +2302,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CopyData
         :type request: :class:`huaweicloudsdkeihealth.v1.CopyDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CopyDataResponse`
@@ -2180,6 +2315,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2214,6 +2351,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CopyDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2228,6 +2366,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateData
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDataResponse`
@@ -2240,6 +2379,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2274,6 +2415,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2288,6 +2430,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteData
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDataResponse`
@@ -2300,6 +2443,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2334,6 +2479,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2348,6 +2494,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportData
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportDataResponse`
@@ -2360,6 +2507,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2394,6 +2543,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2408,6 +2558,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportNetworkData
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataResponse`
@@ -2420,6 +2571,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2454,6 +2607,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportNetworkDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2468,6 +2622,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBucket
         :type request: :class:`huaweicloudsdkeihealth.v1.ListBucketRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListBucketResponse`
@@ -2480,6 +2635,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2512,6 +2669,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBucketResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2526,6 +2684,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListData
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDataResponse`
@@ -2538,6 +2697,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2584,6 +2745,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2598,6 +2760,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for QuoteData
         :type request: :class:`huaweicloudsdkeihealth.v1.QuoteDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.QuoteDataResponse`
@@ -2610,6 +2773,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2644,6 +2809,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='QuoteDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2658,6 +2824,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBucketStorage
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBucketStorageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowBucketStorageResponse`
@@ -2670,6 +2837,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2702,6 +2871,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBucketStorageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2716,6 +2886,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowData
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDataResponse`
@@ -2728,6 +2899,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2762,6 +2935,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2776,6 +2950,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDataPolicy
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDataPolicyResponse`
@@ -2788,6 +2963,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2820,6 +2997,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDataPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2834,6 +3012,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SubscribeData
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeDataResponse`
@@ -2846,6 +3025,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2880,6 +3061,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SubscribeDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2894,6 +3076,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDataPolicy
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyResponse`
@@ -2906,6 +3089,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2940,6 +3125,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDataPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2954,6 +3140,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadData
         :type request: :class:`huaweicloudsdkeihealth.v1.UploadDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UploadDataResponse`
@@ -2966,6 +3153,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3014,6 +3203,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3028,6 +3218,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.CancelDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CancelDataJobResponse`
@@ -3040,6 +3231,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3074,6 +3267,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3088,6 +3282,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDataJobResponse`
@@ -3100,6 +3295,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3134,6 +3331,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3148,6 +3346,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadDataJobLog
         :type request: :class:`huaweicloudsdkeihealth.v1.DownloadDataJobLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadDataJobLogResponse`
@@ -3160,6 +3359,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3194,6 +3395,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadDataJobLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3208,6 +3410,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCheckpoint
         :type request: :class:`huaweicloudsdkeihealth.v1.ListCheckpointRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListCheckpointResponse`
@@ -3220,6 +3423,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3254,6 +3459,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCheckpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3268,6 +3474,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDataJobResponse`
@@ -3280,6 +3487,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3336,6 +3545,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3350,6 +3560,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RetryDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RetryDataJobResponse`
@@ -3362,6 +3573,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3396,6 +3609,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RetryDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3410,6 +3624,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDataJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDataJobResponse`
@@ -3422,6 +3637,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3456,6 +3673,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDataJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3470,6 +3688,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseDataResponse`
@@ -3482,6 +3701,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3518,6 +3739,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3532,6 +3754,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateInstanceResponse`
@@ -3544,6 +3767,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3578,6 +3803,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3592,6 +3818,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseDataResponse`
@@ -3604,6 +3831,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3640,6 +3869,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3654,6 +3884,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteInstanceResponse`
@@ -3666,6 +3897,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3700,6 +3933,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3714,6 +3948,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataResponse`
@@ -3726,6 +3961,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3762,6 +3999,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3776,6 +4014,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDatabaseDataResponse`
@@ -3788,6 +4027,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3832,6 +4073,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3846,6 +4088,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.ListInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListInstanceResponse`
@@ -3858,6 +4101,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3890,6 +4135,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3904,6 +4150,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for QuoteInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.QuoteInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.QuoteInstanceResponse`
@@ -3916,6 +4163,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3950,6 +4199,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='QuoteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3964,6 +4214,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowInstanceResponse`
@@ -3976,6 +4227,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4010,6 +4263,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4024,6 +4278,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDatabaseData
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDatabaseDataResponse`
@@ -4036,6 +4291,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4074,6 +4331,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDatabaseDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4088,6 +4346,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatabaseResource
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseResourceResponse`
@@ -4100,6 +4359,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4132,6 +4393,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4146,6 +4408,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDatabaseResource
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseResourceResponse`
@@ -4158,6 +4421,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4190,6 +4455,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4204,6 +4470,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatabaseResource
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceResponse`
@@ -4216,6 +4483,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4231,7 +4500,7 @@ class EiHealthAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Resource-Mappings"]
+        response_headers = ["X-Resource-Mappings", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4246,6 +4515,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4260,6 +4530,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatabaseResourceFlavor
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceFlavorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceFlavorResponse`
@@ -4272,6 +4543,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4302,6 +4575,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseResourceFlavorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4316,6 +4590,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteTag
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteTagRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteTagResponse`
@@ -4328,6 +4603,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4364,6 +4641,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4378,6 +4656,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateImage
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateImageResponse`
@@ -4390,6 +4669,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4424,6 +4705,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4438,6 +4720,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteImage
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteImageResponse`
@@ -4450,6 +4733,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4484,6 +4769,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4498,6 +4784,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTag
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteTagResponse`
@@ -4510,6 +4797,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4546,6 +4835,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4560,6 +4850,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportImage
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportImageResponse`
@@ -4572,6 +4863,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4606,6 +4899,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4620,6 +4914,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListImage
         :type request: :class:`huaweicloudsdkeihealth.v1.ListImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListImageResponse`
@@ -4632,6 +4927,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4670,6 +4967,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4684,6 +4982,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListImageTag
         :type request: :class:`huaweicloudsdkeihealth.v1.ListImageTagRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListImageTagResponse`
@@ -4696,6 +4995,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4730,6 +5031,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImageTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4744,6 +5046,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDockerLogin
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDockerLoginRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDockerLoginResponse`
@@ -4756,6 +5059,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4788,6 +5093,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDockerLoginResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4802,6 +5108,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SubscribeImage
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeImageResponse`
@@ -4814,6 +5121,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4848,6 +5157,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SubscribeImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4862,6 +5172,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateImage
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateImageResponse`
@@ -4874,6 +5185,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4910,6 +5223,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4924,6 +5238,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobConfigResponse`
@@ -4936,6 +5251,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4966,6 +5283,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4980,6 +5298,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateJobConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateJobConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateJobConfigResponse`
@@ -4992,6 +5311,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5024,6 +5345,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateJobConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5038,6 +5360,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelJob
         :type request: :class:`huaweicloudsdkeihealth.v1.CancelJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CancelJobResponse`
@@ -5050,6 +5373,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5086,6 +5411,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5100,6 +5426,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteJob
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteJobResponse`
@@ -5112,6 +5439,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5146,6 +5475,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5160,6 +5490,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExecuteJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ExecuteJobResponse`
@@ -5172,6 +5503,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5206,6 +5539,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExecuteJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5220,6 +5554,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListJobResponse`
@@ -5232,6 +5567,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5291,6 +5628,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5305,6 +5643,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RetryJob
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RetryJobResponse`
@@ -5317,6 +5656,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5351,6 +5692,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RetryJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5365,6 +5707,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobResponse`
@@ -5377,6 +5720,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5413,6 +5758,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5427,6 +5773,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobEvent
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobEventRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobEventResponse`
@@ -5439,6 +5786,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5475,6 +5824,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5489,6 +5839,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobLog
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobLogResponse`
@@ -5501,6 +5852,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5539,6 +5892,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5553,6 +5907,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskEvents
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskEventsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskEventsResponse`
@@ -5565,6 +5920,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5603,6 +5960,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5617,6 +5975,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskInstanceEvents
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceEventsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceEventsResponse`
@@ -5629,6 +5988,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5669,6 +6030,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskInstanceEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5683,6 +6045,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskInstancePod
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancePodRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancePodResponse`
@@ -5695,6 +6058,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5735,6 +6100,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskInstancePodResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5749,6 +6115,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTaskInstances
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancesResponse`
@@ -5761,6 +6128,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5799,6 +6168,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5813,6 +6183,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLabelResponse`
@@ -5825,6 +6196,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5857,6 +6230,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5871,6 +6245,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteLabelResponse`
@@ -5883,6 +6258,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5915,6 +6292,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5929,6 +6307,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.ListLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListLabelResponse`
@@ -5941,6 +6320,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5971,6 +6352,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5985,6 +6367,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLabelPage
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageResponse`
@@ -5997,6 +6380,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6031,6 +6416,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLabelPageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6045,6 +6431,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteLabelPage
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteLabelPageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteLabelPageResponse`
@@ -6057,6 +6444,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6091,6 +6480,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLabelPageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6105,6 +6495,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLabelPage
         :type request: :class:`huaweicloudsdkeihealth.v1.ListLabelPageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListLabelPageResponse`
@@ -6117,6 +6508,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6149,6 +6542,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLabelPageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6163,6 +6557,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckEmailConnection
         :type request: :class:`huaweicloudsdkeihealth.v1.CheckEmailConnectionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CheckEmailConnectionResponse`
@@ -6175,6 +6570,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6207,6 +6604,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckEmailConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6221,6 +6619,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMessageEmailConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteMessageEmailConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteMessageEmailConfigResponse`
@@ -6233,6 +6632,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6263,6 +6664,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMessageEmailConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6277,6 +6679,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMessage
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMessageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListMessageResponse`
@@ -6289,6 +6692,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6333,6 +6738,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6347,6 +6753,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMessageClearRule
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageClearRuleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowMessageClearRuleResponse`
@@ -6359,6 +6766,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6389,6 +6798,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMessageClearRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6403,6 +6813,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMessageEmailConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageEmailConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowMessageEmailConfigResponse`
@@ -6415,6 +6826,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6445,6 +6858,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMessageEmailConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6459,6 +6873,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMessageReceiveConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageReceiveConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowMessageReceiveConfigResponse`
@@ -6471,6 +6886,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6501,6 +6918,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMessageReceiveConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6515,6 +6933,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMessageClearRule
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageClearRuleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMessageClearRuleResponse`
@@ -6527,6 +6946,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6559,6 +6980,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMessageClearRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6573,6 +6995,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMessageEmailConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageEmailConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMessageEmailConfigResponse`
@@ -6585,6 +7008,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6617,6 +7042,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMessageEmailConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6631,6 +7057,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMessageReceiveConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageReceiveConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMessageReceiveConfigResponse`
@@ -6643,6 +7070,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6675,6 +7104,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMessageReceiveConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6689,6 +7119,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUpdateNodeLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNodeLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNodeLabelResponse`
@@ -6701,6 +7132,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6735,6 +7168,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateNodeLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6749,6 +7183,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClusterAllNodeLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.ListClusterAllNodeLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListClusterAllNodeLabelResponse`
@@ -6761,6 +7196,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6791,6 +7228,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClusterAllNodeLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6805,6 +7243,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNodeLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNodeLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNodeLabelResponse`
@@ -6817,6 +7256,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6849,6 +7290,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNodeLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6863,6 +7305,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPresetLabel
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPresetLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPresetLabelResponse`
@@ -6875,6 +7318,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6905,6 +7350,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPresetLabelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6919,6 +7365,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNotebookResponse`
@@ -6931,6 +7378,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6965,6 +7414,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6979,6 +7429,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteNotebookResponse`
@@ -6991,6 +7442,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7025,6 +7478,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7039,6 +7493,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNotebookResponse`
@@ -7051,6 +7506,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7091,6 +7548,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7105,6 +7563,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNotebookTool
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNotebookToolRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNotebookToolResponse`
@@ -7117,6 +7576,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7149,6 +7610,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotebookToolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7163,6 +7625,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNotebookResponse`
@@ -7175,6 +7638,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7209,6 +7674,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7223,6 +7689,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNotebookToken
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNotebookTokenRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNotebookTokenResponse`
@@ -7235,6 +7702,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7269,6 +7738,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNotebookTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7283,6 +7753,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopOrStartNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.StopOrStartNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopOrStartNotebookResponse`
@@ -7295,6 +7766,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7331,6 +7804,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopOrStartNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7345,6 +7819,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNotebook
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookResponse`
@@ -7357,6 +7832,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7393,6 +7870,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNotebookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7407,6 +7885,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListObsBucket
         :type request: :class:`huaweicloudsdkeihealth.v1.ListObsBucketRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListObsBucketResponse`
@@ -7419,6 +7898,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7451,6 +7932,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListObsBucketResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7465,6 +7947,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListObsBucketObject
         :type request: :class:`huaweicloudsdkeihealth.v1.ListObsBucketObjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListObsBucketObjectResponse`
@@ -7477,6 +7960,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7515,6 +8000,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListObsBucketObjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7529,6 +8015,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowOverview
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowOverviewRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowOverviewResponse`
@@ -7541,6 +8028,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7571,6 +8060,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOverviewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7585,6 +8075,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePerformanceResource
         :type request: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceResponse`
@@ -7597,6 +8088,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7629,6 +8122,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePerformanceResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7643,6 +8137,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePerformanceResource
         :type request: :class:`huaweicloudsdkeihealth.v1.DeletePerformanceResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeletePerformanceResourceResponse`
@@ -7655,6 +8150,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7687,6 +8184,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePerformanceResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7701,6 +8199,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPerformanceResources
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourcesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourcesResponse`
@@ -7713,6 +8212,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7743,6 +8244,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPerformanceResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7757,6 +8259,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePerformanceResource
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdatePerformanceResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdatePerformanceResourceResponse`
@@ -7769,6 +8272,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7803,6 +8308,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePerformanceResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7817,6 +8323,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteMember
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteMemberResponse`
@@ -7829,6 +8336,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7863,6 +8372,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7877,6 +8387,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProject
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateProjectResponse`
@@ -7889,6 +8400,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7921,6 +8434,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7935,6 +8449,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMember
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteMemberResponse`
@@ -7947,6 +8462,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7981,6 +8498,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7995,6 +8513,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProject
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteProjectResponse`
@@ -8007,6 +8526,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8041,6 +8562,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8055,6 +8577,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProject
         :type request: :class:`huaweicloudsdkeihealth.v1.ListProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListProjectResponse`
@@ -8067,6 +8590,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8097,6 +8622,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8111,6 +8637,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecentJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListRecentJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListRecentJobResponse`
@@ -8123,6 +8650,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8157,6 +8686,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecentJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8171,6 +8701,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProject
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectResponse`
@@ -8183,6 +8714,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8219,6 +8752,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8233,6 +8767,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for TransferProject
         :type request: :class:`huaweicloudsdkeihealth.v1.TransferProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.TransferProjectResponse`
@@ -8245,6 +8780,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8279,6 +8816,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='TransferProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8293,6 +8831,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMember
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMemberRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMemberResponse`
@@ -8305,6 +8844,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8341,6 +8882,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8355,6 +8897,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProject
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateProjectResponse`
@@ -8367,6 +8910,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8401,6 +8946,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8415,6 +8961,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadDataTrace
         :type request: :class:`huaweicloudsdkeihealth.v1.DownloadDataTraceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadDataTraceResponse`
@@ -8427,6 +8974,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8461,6 +9010,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadDataTraceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8475,6 +9025,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProjectTrace
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceResponse`
@@ -8487,6 +9038,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8525,6 +9078,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectTraceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8539,6 +9093,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProjectTraceData
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceDataResponse`
@@ -8551,6 +9106,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8585,6 +9142,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectTraceDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8599,6 +9157,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProjectTracker
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTrackerRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectTrackerResponse`
@@ -8611,6 +9170,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8643,6 +9204,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectTrackerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8657,6 +9219,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProjectTracker
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateProjectTrackerRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateProjectTrackerResponse`
@@ -8669,6 +9232,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8703,6 +9268,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectTrackerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8717,6 +9283,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResourceMetricData
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowResourceMetricDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowResourceMetricDataResponse`
@@ -8729,6 +9296,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8773,6 +9342,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceMetricDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8787,6 +9357,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteStar
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteStarRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteStarResponse`
@@ -8799,6 +9370,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8831,6 +9404,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8845,6 +9419,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStar
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStarRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStarResponse`
@@ -8857,6 +9432,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8887,6 +9464,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8901,6 +9479,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateStar
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateStarRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateStarResponse`
@@ -8913,6 +9492,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8945,6 +9526,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8959,6 +9541,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPerformanceResourceStat
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourceStatRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourceStatResponse`
@@ -8971,6 +9554,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9005,6 +9590,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPerformanceResourceStatResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9019,6 +9605,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWorkflowStatistic
         :type request: :class:`huaweicloudsdkeihealth.v1.ListWorkflowStatisticRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListWorkflowStatisticResponse`
@@ -9031,6 +9618,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9063,6 +9652,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkflowStatisticResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9077,6 +9667,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStorageResources
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStorageResourcesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStorageResourcesResponse`
@@ -9089,6 +9680,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9119,6 +9712,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStorageResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9133,6 +9727,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateStudy
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateStudyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateStudyResponse`
@@ -9145,6 +9740,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9179,6 +9776,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStudyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9193,6 +9791,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateStudyJob
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateStudyJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateStudyJobResponse`
@@ -9205,6 +9804,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9241,6 +9842,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStudyJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9255,6 +9857,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteStudy
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteStudyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteStudyResponse`
@@ -9267,6 +9870,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9301,6 +9906,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStudyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9315,6 +9921,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStudy
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStudyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStudyResponse`
@@ -9327,6 +9934,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9357,6 +9966,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStudyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9371,6 +9981,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStudyJob
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStudyJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStudyJobResponse`
@@ -9383,6 +9994,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9417,6 +10030,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStudyJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9431,6 +10045,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for Show3dStructureContent
         :type request: :class:`huaweicloudsdkeihealth.v1.Show3dStructureContentRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.Show3dStructureContentResponse`
@@ -9443,6 +10058,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9483,6 +10100,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='Show3dStructureContentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9497,6 +10115,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowExtremumInfo
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowExtremumInfoRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowExtremumInfoResponse`
@@ -9509,6 +10128,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9545,6 +10166,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtremumInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9559,6 +10181,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListArchiveConfigs
         :type request: :class:`huaweicloudsdkeihealth.v1.ListArchiveConfigsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListArchiveConfigsResponse`
@@ -9571,6 +10194,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9601,6 +10226,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListArchiveConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9615,6 +10241,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEnv
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowEnvRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowEnvResponse`
@@ -9627,6 +10254,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9657,6 +10286,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnvResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9671,6 +10301,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVendor
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowVendorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowVendorResponse`
@@ -9683,6 +10314,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9713,6 +10346,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVendorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9727,6 +10361,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateArchiveConfig
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateArchiveConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateArchiveConfigResponse`
@@ -9739,6 +10374,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9771,6 +10408,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateArchiveConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9785,6 +10423,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateVendor
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateVendorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateVendorResponse`
@@ -9797,6 +10436,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9833,6 +10474,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVendorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9847,6 +10489,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuota
         :type request: :class:`huaweicloudsdkeihealth.v1.ListQuotaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListQuotaResponse`
@@ -9859,6 +10502,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9889,6 +10534,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9903,6 +10549,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateTemplateResponse`
@@ -9915,6 +10562,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9949,6 +10598,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9963,6 +10613,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteTemplateResponse`
@@ -9975,6 +10626,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10009,6 +10662,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10023,6 +10677,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportTemplateResponse`
@@ -10035,6 +10690,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10069,6 +10726,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10083,6 +10741,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.ListTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListTemplateResponse`
@@ -10095,6 +10754,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10127,6 +10788,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10141,6 +10803,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTemplateResponse`
@@ -10153,6 +10816,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10187,6 +10852,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10201,6 +10867,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadTemplate
         :type request: :class:`huaweicloudsdkeihealth.v1.UploadTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UploadTemplateResponse`
@@ -10213,6 +10880,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10249,6 +10918,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10263,6 +10933,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCode
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateCodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateCodeResponse`
@@ -10275,6 +10946,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10309,6 +10982,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10323,6 +10997,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateUser
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateUserResponse`
@@ -10335,6 +11010,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10367,6 +11044,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10381,6 +11059,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteUser
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteUserResponse`
@@ -10393,6 +11072,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10427,6 +11108,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10441,6 +11123,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMfa
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMfaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListMfaResponse`
@@ -10453,6 +11136,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10485,6 +11170,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMfaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10499,6 +11185,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUser
         :type request: :class:`huaweicloudsdkeihealth.v1.ListUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListUserResponse`
@@ -10511,6 +11198,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10541,6 +11230,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10555,6 +11245,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTokenVerification
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTokenVerificationRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTokenVerificationResponse`
@@ -10567,6 +11258,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10597,6 +11290,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTokenVerificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10611,6 +11305,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUser
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowUserResponse`
@@ -10623,6 +11318,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10655,6 +11352,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10669,6 +11367,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUserSetting
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowUserSettingRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowUserSettingResponse`
@@ -10681,6 +11380,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10713,6 +11414,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10727,6 +11429,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInitPassword
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateInitPasswordRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateInitPasswordResponse`
@@ -10739,6 +11442,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10773,6 +11478,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInitPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10787,6 +11493,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePassword
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdatePasswordRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdatePasswordResponse`
@@ -10799,6 +11506,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10833,6 +11542,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10847,6 +11557,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUser
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserResponse`
@@ -10859,6 +11570,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10893,6 +11606,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10907,6 +11621,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUserByDomain
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainResponse`
@@ -10919,6 +11634,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10953,6 +11670,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserByDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10967,6 +11685,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUserRole
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserRoleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserRoleResponse`
@@ -10979,6 +11698,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11013,6 +11734,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11027,6 +11749,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUserSetting
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserSettingRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserSettingResponse`
@@ -11039,6 +11762,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11073,6 +11798,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11087,6 +11813,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ValidateCode
         :type request: :class:`huaweicloudsdkeihealth.v1.ValidateCodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ValidateCodeResponse`
@@ -11099,6 +11826,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11133,6 +11862,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11147,6 +11877,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVendor
         :type request: :class:`huaweicloudsdkeihealth.v1.ListVendorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListVendorResponse`
@@ -11159,6 +11890,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11189,6 +11922,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVendorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11203,6 +11937,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateWorkflowResponse`
@@ -11215,6 +11950,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11249,6 +11986,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11263,6 +12001,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteWorkflowResponse`
@@ -11275,6 +12014,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11309,6 +12050,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11323,6 +12065,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowResponse`
@@ -11335,6 +12078,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11369,6 +12114,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11383,6 +12129,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.ListWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListWorkflowResponse`
@@ -11395,6 +12142,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11431,6 +12180,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11445,6 +12195,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowWorkflowResponse`
@@ -11457,6 +12208,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11493,6 +12246,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11507,6 +12261,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SubscribeWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeWorkflowResponse`
@@ -11519,6 +12274,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11553,6 +12310,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SubscribeWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11567,6 +12325,7 @@ class EiHealthAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateWorkflow
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateWorkflowResponse`
@@ -11579,6 +12338,8 @@ class EiHealthAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11615,6 +12376,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11622,7 +12384,7 @@ class EiHealthAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -11633,9 +12395,10 @@ class EiHealthAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -11652,6 +12415,7 @@ class EiHealthAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

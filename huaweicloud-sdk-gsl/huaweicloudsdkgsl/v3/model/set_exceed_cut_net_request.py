@@ -17,7 +17,6 @@ class SetExceedCutNetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SetExceedCutNetRequest:
     def body(self):
         """Gets the body of this SetExceedCutNetRequest.
 
-
         :return: The body of this SetExceedCutNetRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.ExceedCutNetReq`
         """
@@ -86,7 +84,6 @@ class SetExceedCutNetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetExceedCutNetRequest.
-
 
         :param body: The body of this SetExceedCutNetRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.ExceedCutNetReq`

@@ -17,7 +17,6 @@ class MappingResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class MappingResult:
     def links(self):
         """Gets the links of this MappingResult.
 
-
         :return: The links of this MappingResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
@@ -91,7 +89,6 @@ class MappingResult:
     @links.setter
     def links(self, links):
         """Sets the links of this MappingResult.
-
 
         :param links: The links of this MappingResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

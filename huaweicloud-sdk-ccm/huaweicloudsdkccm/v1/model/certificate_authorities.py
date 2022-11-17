@@ -17,7 +17,6 @@ class CertificateAuthorities:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -474,7 +473,6 @@ class CertificateAuthorities:
     def distinguished_name(self):
         """Gets the distinguished_name of this CertificateAuthorities.
 
-
         :return: The distinguished_name of this CertificateAuthorities.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
@@ -483,7 +481,6 @@ class CertificateAuthorities:
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
         """Sets the distinguished_name of this CertificateAuthorities.
-
 
         :param distinguished_name: The distinguished_name of this CertificateAuthorities.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -494,7 +491,6 @@ class CertificateAuthorities:
     def crl_configuration(self):
         """Gets the crl_configuration of this CertificateAuthorities.
 
-
         :return: The crl_configuration of this CertificateAuthorities.
         :rtype: :class:`huaweicloudsdkccm.v1.ListCrlConfiguration`
         """
@@ -503,7 +499,6 @@ class CertificateAuthorities:
     @crl_configuration.setter
     def crl_configuration(self, crl_configuration):
         """Sets the crl_configuration of this CertificateAuthorities.
-
 
         :param crl_configuration: The crl_configuration of this CertificateAuthorities.
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.ListCrlConfiguration`

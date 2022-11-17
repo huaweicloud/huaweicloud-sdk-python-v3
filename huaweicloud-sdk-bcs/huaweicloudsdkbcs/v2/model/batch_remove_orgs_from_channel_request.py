@@ -17,7 +17,6 @@ class BatchRemoveOrgsFromChannelRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchRemoveOrgsFromChannelRequest:
     def body(self):
         """Gets the body of this BatchRemoveOrgsFromChannelRequest.
 
-
         :return: The body of this BatchRemoveOrgsFromChannelRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelRequestBody`
         """
@@ -114,7 +112,6 @@ class BatchRemoveOrgsFromChannelRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchRemoveOrgsFromChannelRequest.
-
 
         :param body: The body of this BatchRemoveOrgsFromChannelRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelRequestBody`

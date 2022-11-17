@@ -17,7 +17,6 @@ class SetMultiPictureRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class SetMultiPictureRequest:
     def body(self):
         """Gets the body of this SetMultiPictureRequest.
 
-
         :return: The body of this SetMultiPictureRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestMixedPictureBody`
         """
@@ -114,7 +112,6 @@ class SetMultiPictureRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetMultiPictureRequest.
-
 
         :param body: The body of this SetMultiPictureRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestMixedPictureBody`

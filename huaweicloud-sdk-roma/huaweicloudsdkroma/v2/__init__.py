@@ -16,6 +16,7 @@ from huaweicloudsdkroma.v2.model.acl_binding_batch_failure import AclBindingBatc
 from huaweicloudsdkroma.v2.model.add_subsets_to_gateway_request import AddSubsetsToGatewayRequest
 from huaweicloudsdkroma.v2.model.add_subsets_to_gateway_request_body import AddSubsetsToGatewayRequestBody
 from huaweicloudsdkroma.v2.model.add_subsets_to_gateway_response import AddSubsetsToGatewayResponse
+from huaweicloudsdkroma.v2.model.add_subsets_to_gateway_response_body import AddSubsetsToGatewayResponseBody
 from huaweicloudsdkroma.v2.model.add_user_to_app import AddUserToApp
 from huaweicloudsdkroma.v2.model.add_user_to_app_request import AddUserToAppRequest
 from huaweicloudsdkroma.v2.model.add_user_to_app_response import AddUserToAppResponse
@@ -655,6 +656,8 @@ from huaweicloudsdkroma.v2.model.products_calculation import ProductsCalculation
 from huaweicloudsdkroma.v2.model.project_vpc_channel_info import ProjectVpcChannelInfo
 from huaweicloudsdkroma.v2.model.project_vpc_create import ProjectVpcCreate
 from huaweicloudsdkroma.v2.model.project_vpc_sync import ProjectVpcSync
+from huaweicloudsdkroma.v2.model.property_data_enum import PropertyDataEnum
+from huaweicloudsdkroma.v2.model.property_response_body import PropertyResponseBody
 from huaweicloudsdkroma.v2.model.publish_live_data_api_v2_request import PublishLiveDataApiV2Request
 from huaweicloudsdkroma.v2.model.publish_live_data_api_v2_response import PublishLiveDataApiV2Response
 from huaweicloudsdkroma.v2.model.publish_resp import PublishResp
@@ -663,6 +666,7 @@ from huaweicloudsdkroma.v2.model.req_param_base import ReqParamBase
 from huaweicloudsdkroma.v2.model.request_count_stats import RequestCountStats
 from huaweicloudsdkroma.v2.model.request_parameter import RequestParameter
 from huaweicloudsdkroma.v2.model.reset_authentication_request import ResetAuthenticationRequest
+from huaweicloudsdkroma.v2.model.reset_authentication_request_body import ResetAuthenticationRequestBody
 from huaweicloudsdkroma.v2.model.reset_authentication_response import ResetAuthenticationResponse
 from huaweicloudsdkroma.v2.model.reset_messages_req import ResetMessagesReq
 from huaweicloudsdkroma.v2.model.reset_messages_request import ResetMessagesRequest
@@ -670,6 +674,7 @@ from huaweicloudsdkroma.v2.model.reset_messages_response import ResetMessagesRes
 from huaweicloudsdkroma.v2.model.reset_multi_task_offset_request import ResetMultiTaskOffsetRequest
 from huaweicloudsdkroma.v2.model.reset_multi_task_offset_response import ResetMultiTaskOffsetResponse
 from huaweicloudsdkroma.v2.model.reset_product_authentication_request import ResetProductAuthenticationRequest
+from huaweicloudsdkroma.v2.model.reset_product_authentication_request_body import ResetProductAuthenticationRequestBody
 from huaweicloudsdkroma.v2.model.reset_product_authentication_response import ResetProductAuthenticationResponse
 from huaweicloudsdkroma.v2.model.reset_roma_app_secret_request import ResetRomaAppSecretRequest
 from huaweicloudsdkroma.v2.model.reset_roma_app_secret_response import ResetRomaAppSecretResponse
@@ -779,6 +784,7 @@ from huaweicloudsdkroma.v2.model.start_test_datasource_response import StartTest
 from huaweicloudsdkroma.v2.model.statistics_api import StatisticsAPI
 from huaweicloudsdkroma.v2.model.stop_task_request import StopTaskRequest
 from huaweicloudsdkroma.v2.model.stop_task_response import StopTaskResponse
+from huaweicloudsdkroma.v2.model.sub_device import SubDevice
 from huaweicloudsdkroma.v2.model.success import Success
 from huaweicloudsdkroma.v2.model.swagger import Swagger
 from huaweicloudsdkroma.v2.model.task_basic_request_body import TaskBasicRequestBody

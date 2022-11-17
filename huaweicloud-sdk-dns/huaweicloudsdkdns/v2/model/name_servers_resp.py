@@ -17,7 +17,6 @@ class NameServersResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class NameServersResp:
     def ns_records(self):
         """Gets the ns_records of this NameServersResp.
 
-
         :return: The ns_records of this NameServersResp.
         :rtype: list[:class:`huaweicloudsdkdns.v2.NsRecords`]
         """
@@ -116,7 +114,6 @@ class NameServersResp:
     @ns_records.setter
     def ns_records(self, ns_records):
         """Sets the ns_records of this NameServersResp.
-
 
         :param ns_records: The ns_records of this NameServersResp.
         :type ns_records: list[:class:`huaweicloudsdkdns.v2.NsRecords`]

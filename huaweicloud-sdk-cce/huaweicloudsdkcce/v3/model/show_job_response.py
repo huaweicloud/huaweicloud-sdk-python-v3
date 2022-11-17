@@ -17,7 +17,6 @@ class ShowJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class ShowJobResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ShowJobResponse.
 
-
         :return: The metadata of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.JobMetadata`
         """
@@ -130,7 +128,6 @@ class ShowJobResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ShowJobResponse.
-
 
         :param metadata: The metadata of this ShowJobResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.JobMetadata`
@@ -141,7 +138,6 @@ class ShowJobResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this ShowJobResponse.
 
-
         :return: The spec of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.JobSpec`
         """
@@ -150,7 +146,6 @@ class ShowJobResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ShowJobResponse.
-
 
         :param spec: The spec of this ShowJobResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.JobSpec`
@@ -161,7 +156,6 @@ class ShowJobResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowJobResponse.
 
-
         :return: The status of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.JobStatus`
         """
@@ -170,7 +164,6 @@ class ShowJobResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this ShowJobResponse.
-
 
         :param status: The status of this ShowJobResponse.
         :type status: :class:`huaweicloudsdkcce.v3.JobStatus`

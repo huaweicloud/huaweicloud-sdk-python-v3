@@ -17,7 +17,6 @@ class BatchDeleteRulesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchDeleteRulesRequest:
     def body(self):
         """Gets the body of this BatchDeleteRulesRequest.
 
-
         :return: The body of this BatchDeleteRulesRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesRequestBody`
         """
@@ -86,7 +84,6 @@ class BatchDeleteRulesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteRulesRequest.
-
 
         :param body: The body of this BatchDeleteRulesRequest.
         :type body: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesRequestBody`

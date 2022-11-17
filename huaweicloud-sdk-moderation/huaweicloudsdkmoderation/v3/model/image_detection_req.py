@@ -17,7 +17,6 @@ class ImageDetectionReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -43,13 +42,13 @@ class ImageDetectionReq:
 
         :param event_type: 事件类型。 可选值如下： head_image：头像 album：相册 dynamic：动态 article：帖子 comment：评论 room_cover：房间封面 group_message：群聊图片 message：私聊图片 product：商品图片
         :type event_type: str
-        :param categories: 检测场景，可添加的检测场景如下，华为云当前支持全场景的，以下仅展示部门检测能力，如果有其它检测场景的需求，请在开通服务时咨询华为云工程师：  terrorism：涉政暴恐内容的检测。  porn：鉴黄内容的检测。  politics：政治敏感人物内容的检测 image_text：图文违规内容的检测。（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）  备注：资料上线需要删除politics
+        :param categories: 检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 &gt; 每个检测场景的检测次数会分类统计。
         :type categories: list[str]
         :param image_text_config: 
         :type image_text_config: :class:`huaweicloudsdkmoderation.v3.ImgTextConfig`
-        :param url: 图片url, 与image二选一。 图片的URL路径，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详情请见配置OBS访问权限。 ​ 说明： 接口响应时间依赖图片的下载时间，如果图片下载时间过长，会返回接口调用失败。请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 图片url, 与image二选一。 图片的URL路径，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详情请见配置OBS访问权限。  说明： 接口响应时间依赖图片的下载时间，如果图片下载时间过长，会返回接口调用失败。请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。
+        :param url: 图片url, 与image二选一，目前支持： - 公网HTTP/HTTPS URL
         :type url: str
-        :param image: 与url二选一。 ​ 图片文件Base64编码字符串。要求base64编码后大小不超过10M。 ​ 支持JPG/PNG/BMP/WEBP等格式。 与url二选一。  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  支持JPG/PNG/BMP/WEBP等格式。
+        :param image: 与url二选一，图片文件Base64编码字符串，要求base64编码后大小不超过10M，支持JPG/PNG/JPEG/WEBP/GIF/TIFF/TIF/HEIF等格式。
         :type image: str
         """
         
@@ -97,7 +96,7 @@ class ImageDetectionReq:
     def categories(self):
         """Gets the categories of this ImageDetectionReq.
 
-        检测场景，可添加的检测场景如下，华为云当前支持全场景的，以下仅展示部门检测能力，如果有其它检测场景的需求，请在开通服务时咨询华为云工程师：  terrorism：涉政暴恐内容的检测。  porn：鉴黄内容的检测。  politics：政治敏感人物内容的检测 image_text：图文违规内容的检测。（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）  备注：资料上线需要删除politics
+        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 > 每个检测场景的检测次数会分类统计。
 
         :return: The categories of this ImageDetectionReq.
         :rtype: list[str]
@@ -108,7 +107,7 @@ class ImageDetectionReq:
     def categories(self, categories):
         """Sets the categories of this ImageDetectionReq.
 
-        检测场景，可添加的检测场景如下，华为云当前支持全场景的，以下仅展示部门检测能力，如果有其它检测场景的需求，请在开通服务时咨询华为云工程师：  terrorism：涉政暴恐内容的检测。  porn：鉴黄内容的检测。  politics：政治敏感人物内容的检测 image_text：图文违规内容的检测。（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）  备注：资料上线需要删除politics
+        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 > 每个检测场景的检测次数会分类统计。
 
         :param categories: The categories of this ImageDetectionReq.
         :type categories: list[str]
@@ -119,7 +118,6 @@ class ImageDetectionReq:
     def image_text_config(self):
         """Gets the image_text_config of this ImageDetectionReq.
 
-
         :return: The image_text_config of this ImageDetectionReq.
         :rtype: :class:`huaweicloudsdkmoderation.v3.ImgTextConfig`
         """
@@ -128,7 +126,6 @@ class ImageDetectionReq:
     @image_text_config.setter
     def image_text_config(self, image_text_config):
         """Sets the image_text_config of this ImageDetectionReq.
-
 
         :param image_text_config: The image_text_config of this ImageDetectionReq.
         :type image_text_config: :class:`huaweicloudsdkmoderation.v3.ImgTextConfig`
@@ -139,7 +136,7 @@ class ImageDetectionReq:
     def url(self):
         """Gets the url of this ImageDetectionReq.
 
-        图片url, 与image二选一。 图片的URL路径，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详情请见配置OBS访问权限。 ​ 说明： 接口响应时间依赖图片的下载时间，如果图片下载时间过长，会返回接口调用失败。请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 图片url, 与image二选一。 图片的URL路径，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详情请见配置OBS访问权限。  说明： 接口响应时间依赖图片的下载时间，如果图片下载时间过长，会返回接口调用失败。请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。
+        图片url, 与image二选一，目前支持： - 公网HTTP/HTTPS URL
 
         :return: The url of this ImageDetectionReq.
         :rtype: str
@@ -150,7 +147,7 @@ class ImageDetectionReq:
     def url(self, url):
         """Sets the url of this ImageDetectionReq.
 
-        图片url, 与image二选一。 图片的URL路径，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详情请见配置OBS访问权限。 ​ 说明： 接口响应时间依赖图片的下载时间，如果图片下载时间过长，会返回接口调用失败。请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 图片url, 与image二选一。 图片的URL路径，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详情请见配置OBS访问权限。  说明： 接口响应时间依赖图片的下载时间，如果图片下载时间过长，会返回接口调用失败。请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。
+        图片url, 与image二选一，目前支持： - 公网HTTP/HTTPS URL
 
         :param url: The url of this ImageDetectionReq.
         :type url: str
@@ -161,7 +158,7 @@ class ImageDetectionReq:
     def image(self):
         """Gets the image of this ImageDetectionReq.
 
-        与url二选一。 ​ 图片文件Base64编码字符串。要求base64编码后大小不超过10M。 ​ 支持JPG/PNG/BMP/WEBP等格式。 与url二选一。  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  支持JPG/PNG/BMP/WEBP等格式。
+        与url二选一，图片文件Base64编码字符串，要求base64编码后大小不超过10M，支持JPG/PNG/JPEG/WEBP/GIF/TIFF/TIF/HEIF等格式。
 
         :return: The image of this ImageDetectionReq.
         :rtype: str
@@ -172,7 +169,7 @@ class ImageDetectionReq:
     def image(self, image):
         """Sets the image of this ImageDetectionReq.
 
-        与url二选一。 ​ 图片文件Base64编码字符串。要求base64编码后大小不超过10M。 ​ 支持JPG/PNG/BMP/WEBP等格式。 与url二选一。  图片文件Base64编码字符串。要求base64编码后大小不超过10M。  支持JPG/PNG/BMP/WEBP等格式。
+        与url二选一，图片文件Base64编码字符串，要求base64编码后大小不超过10M，支持JPG/PNG/JPEG/WEBP/GIF/TIFF/TIF/HEIF等格式。
 
         :param image: The image of this ImageDetectionReq.
         :type image: str

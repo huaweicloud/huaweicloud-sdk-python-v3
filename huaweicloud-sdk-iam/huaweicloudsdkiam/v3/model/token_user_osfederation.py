@@ -17,7 +17,6 @@ class TokenUserOsfederation:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class TokenUserOsfederation:
     def identity_provider(self):
         """Gets the identity_provider of this TokenUserOsfederation.
 
-
         :return: The identity_provider of this TokenUserOsfederation.
         :rtype: :class:`huaweicloudsdkiam.v3.OsfederationIdentityprovider`
         """
@@ -91,7 +89,6 @@ class TokenUserOsfederation:
     @identity_provider.setter
     def identity_provider(self, identity_provider):
         """Sets the identity_provider of this TokenUserOsfederation.
-
 
         :param identity_provider: The identity_provider of this TokenUserOsfederation.
         :type identity_provider: :class:`huaweicloudsdkiam.v3.OsfederationIdentityprovider`
@@ -102,7 +99,6 @@ class TokenUserOsfederation:
     def protocol(self):
         """Gets the protocol of this TokenUserOsfederation.
 
-
         :return: The protocol of this TokenUserOsfederation.
         :rtype: :class:`huaweicloudsdkiam.v3.OsfederationProtocol`
         """
@@ -111,7 +107,6 @@ class TokenUserOsfederation:
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this TokenUserOsfederation.
-
 
         :param protocol: The protocol of this TokenUserOsfederation.
         :type protocol: :class:`huaweicloudsdkiam.v3.OsfederationProtocol`

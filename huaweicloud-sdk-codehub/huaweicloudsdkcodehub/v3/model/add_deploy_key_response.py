@@ -17,7 +17,6 @@ class AddDeployKeyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class AddDeployKeyResponse(SdkResponse):
     def error(self):
         """Gets the error of this AddDeployKeyResponse.
 
-
         :return: The error of this AddDeployKeyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class AddDeployKeyResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this AddDeployKeyResponse.
-
 
         :param error: The error of this AddDeployKeyResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class AddDeployKeyResponse(SdkResponse):
     def result(self):
         """Gets the result of this AddDeployKeyResponse.
 
-
         :return: The result of this AddDeployKeyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Key`
         """
@@ -92,7 +88,6 @@ class AddDeployKeyResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this AddDeployKeyResponse.
-
 
         :param result: The result of this AddDeployKeyResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.Key`

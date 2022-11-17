@@ -17,7 +17,6 @@ class ListCompareResultRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListCompareResultRequest:
     def body(self):
         """Gets the body of this ListCompareResultRequest.
 
-
         :return: The body of this ListCompareResultRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryCompareResultReq`
         """
@@ -87,7 +85,6 @@ class ListCompareResultRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListCompareResultRequest.
-
 
         :param body: The body of this ListCompareResultRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.QueryCompareResultReq`

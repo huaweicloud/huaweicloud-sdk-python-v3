@@ -17,7 +17,6 @@ class RunMultiGrainedSegmentRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunMultiGrainedSegmentRequest:
     def body(self):
         """Gets the body of this RunMultiGrainedSegmentRequest.
 
-
         :return: The body of this RunMultiGrainedSegmentRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.PostMultiGrainedSegmentReq`
         """
@@ -58,7 +56,6 @@ class RunMultiGrainedSegmentRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunMultiGrainedSegmentRequest.
-
 
         :param body: The body of this RunMultiGrainedSegmentRequest.
         :type body: :class:`huaweicloudsdknlp.v2.PostMultiGrainedSegmentReq`

@@ -17,7 +17,6 @@ class ListDrRelationsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListDrRelationsResponse(SdkResponse):
     def instance_dr_relations(self):
         """Gets the instance_dr_relations of this ListDrRelationsResponse.
 
-
         :return: The instance_dr_relations of this ListDrRelationsResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.InstanceDrRelation`]
         """
@@ -58,7 +56,6 @@ class ListDrRelationsResponse(SdkResponse):
     @instance_dr_relations.setter
     def instance_dr_relations(self, instance_dr_relations):
         """Sets the instance_dr_relations of this ListDrRelationsResponse.
-
 
         :param instance_dr_relations: The instance_dr_relations of this ListDrRelationsResponse.
         :type instance_dr_relations: list[:class:`huaweicloudsdkrds.v3.InstanceDrRelation`]

@@ -17,7 +17,6 @@ class InputModel:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class InputModel:
     def property_reference(self):
         """Gets the property_reference of this InputModel.
 
-
         :return: The property_reference of this InputModel.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceModel`
         """
@@ -85,7 +83,6 @@ class InputModel:
     @property_reference.setter
     def property_reference(self, property_reference):
         """Sets the property_reference of this InputModel.
-
 
         :param property_reference: The property_reference of this InputModel.
         :type property_reference: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceModel`

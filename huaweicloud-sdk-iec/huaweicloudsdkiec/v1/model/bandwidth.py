@@ -17,7 +17,6 @@ class Bandwidth:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -250,7 +249,6 @@ class Bandwidth:
     def operator(self):
         """Gets the operator of this Bandwidth.
 
-
         :return: The operator of this Bandwidth.
         :rtype: :class:`huaweicloudsdkiec.v1.Operator`
         """
@@ -259,7 +257,6 @@ class Bandwidth:
     @operator.setter
     def operator(self, operator):
         """Sets the operator of this Bandwidth.
-
 
         :param operator: The operator of this Bandwidth.
         :type operator: :class:`huaweicloudsdkiec.v1.Operator`

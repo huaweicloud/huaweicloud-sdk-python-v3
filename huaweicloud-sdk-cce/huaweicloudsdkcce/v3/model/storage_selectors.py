@@ -17,7 +17,6 @@ class StorageSelectors:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class StorageSelectors:
     def match_labels(self):
         """Gets the match_labels of this StorageSelectors.
 
-
         :return: The match_labels of this StorageSelectors.
         :rtype: :class:`huaweicloudsdkcce.v3.StorageSelectorsMatchLabels`
         """
@@ -114,7 +112,6 @@ class StorageSelectors:
     @match_labels.setter
     def match_labels(self, match_labels):
         """Sets the match_labels of this StorageSelectors.
-
 
         :param match_labels: The match_labels of this StorageSelectors.
         :type match_labels: :class:`huaweicloudsdkcce.v3.StorageSelectorsMatchLabels`

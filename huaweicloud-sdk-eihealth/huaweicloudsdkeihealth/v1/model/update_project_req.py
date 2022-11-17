@@ -17,7 +17,6 @@ class UpdateProjectReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -92,7 +91,6 @@ class UpdateProjectReq:
     def status(self):
         """Gets the status of this UpdateProjectReq.
 
-
         :return: The status of this UpdateProjectReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ProjectStatus`
         """
@@ -101,7 +99,6 @@ class UpdateProjectReq:
     @status.setter
     def status(self, status):
         """Sets the status of this UpdateProjectReq.
-
 
         :param status: The status of this UpdateProjectReq.
         :type status: :class:`huaweicloudsdkeihealth.v1.ProjectStatus`

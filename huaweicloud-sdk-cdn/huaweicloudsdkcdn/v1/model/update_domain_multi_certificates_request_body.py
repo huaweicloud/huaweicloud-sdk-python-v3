@@ -17,7 +17,6 @@ class UpdateDomainMultiCertificatesRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateDomainMultiCertificatesRequestBody:
     def https(self):
         """Gets the https of this UpdateDomainMultiCertificatesRequestBody.
 
-
         :return: The https of this UpdateDomainMultiCertificatesRequestBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesRequestBodyContent`
         """
@@ -58,7 +56,6 @@ class UpdateDomainMultiCertificatesRequestBody:
     @https.setter
     def https(self, https):
         """Sets the https of this UpdateDomainMultiCertificatesRequestBody.
-
 
         :param https: The https of this UpdateDomainMultiCertificatesRequestBody.
         :type https: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesRequestBodyContent`

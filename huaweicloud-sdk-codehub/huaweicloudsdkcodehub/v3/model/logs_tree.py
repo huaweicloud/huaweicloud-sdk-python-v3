@@ -17,7 +17,6 @@ class LogsTree:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class LogsTree:
     def commit(self):
         """Gets the commit of this LogsTree.
 
-
         :return: The commit of this LogsTree.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Commit`
         """
@@ -115,7 +113,6 @@ class LogsTree:
     @commit.setter
     def commit(self, commit):
         """Sets the commit of this LogsTree.
-
 
         :param commit: The commit of this LogsTree.
         :type commit: :class:`huaweicloudsdkcodehub.v3.Commit`

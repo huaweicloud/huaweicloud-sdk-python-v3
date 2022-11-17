@@ -17,7 +17,6 @@ class OpenGaussInstanceActionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class OpenGaussInstanceActionRequest:
     def expand_cluster(self):
         """Gets the expand_cluster of this OpenGaussInstanceActionRequest.
 
-
         :return: The expand_cluster of this OpenGaussInstanceActionRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussExpandCluster`
         """
@@ -72,7 +70,6 @@ class OpenGaussInstanceActionRequest:
     @expand_cluster.setter
     def expand_cluster(self, expand_cluster):
         """Sets the expand_cluster of this OpenGaussInstanceActionRequest.
-
 
         :param expand_cluster: The expand_cluster of this OpenGaussInstanceActionRequest.
         :type expand_cluster: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussExpandCluster`
@@ -83,7 +80,6 @@ class OpenGaussInstanceActionRequest:
     def enlarge_volume(self):
         """Gets the enlarge_volume of this OpenGaussInstanceActionRequest.
 
-
         :return: The enlarge_volume of this OpenGaussInstanceActionRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussEnlargeVolume`
         """
@@ -92,7 +88,6 @@ class OpenGaussInstanceActionRequest:
     @enlarge_volume.setter
     def enlarge_volume(self, enlarge_volume):
         """Sets the enlarge_volume of this OpenGaussInstanceActionRequest.
-
 
         :param enlarge_volume: The enlarge_volume of this OpenGaussInstanceActionRequest.
         :type enlarge_volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussEnlargeVolume`

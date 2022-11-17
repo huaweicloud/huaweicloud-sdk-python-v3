@@ -17,7 +17,6 @@ class UpdateResponseHeaderRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateResponseHeaderRequest:
     def body(self):
         """Gets the body of this UpdateResponseHeaderRequest.
 
-
         :return: The body of this UpdateResponseHeaderRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.HeaderBody`
         """
@@ -115,7 +113,6 @@ class UpdateResponseHeaderRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateResponseHeaderRequest.
-
 
         :param body: The body of this UpdateResponseHeaderRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.HeaderBody`

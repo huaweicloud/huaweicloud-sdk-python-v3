@@ -17,7 +17,6 @@ class CreateMetadataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateMetadataRequest:
     def body(self):
         """Gets the body of this CreateMetadataRequest.
 
-
         :return: The body of this CreateMetadataRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMetadataRequestBody`
         """
@@ -114,7 +112,6 @@ class CreateMetadataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateMetadataRequest.
-
 
         :param body: The body of this CreateMetadataRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateMetadataRequestBody`

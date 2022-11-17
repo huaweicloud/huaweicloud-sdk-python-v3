@@ -17,7 +17,6 @@ class BatchAddPeersToChannelRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchAddPeersToChannelRequest:
     def body(self):
         """Gets the body of this BatchAddPeersToChannelRequest.
 
-
         :return: The body of this BatchAddPeersToChannelRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelRequestBody`
         """
@@ -86,7 +84,6 @@ class BatchAddPeersToChannelRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchAddPeersToChannelRequest.
-
 
         :param body: The body of this BatchAddPeersToChannelRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelRequestBody`

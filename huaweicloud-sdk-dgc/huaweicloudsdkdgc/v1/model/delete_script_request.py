@@ -17,7 +17,6 @@ class DeleteScriptRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class DeleteScriptRequest:
     def script_name(self):
         """Gets the script_name of this DeleteScriptRequest.
 
-
         :return: The script_name of this DeleteScriptRequest.
         :rtype: str
         """
@@ -57,7 +55,6 @@ class DeleteScriptRequest:
     @script_name.setter
     def script_name(self, script_name):
         """Sets the script_name of this DeleteScriptRequest.
-
 
         :param script_name: The script_name of this DeleteScriptRequest.
         :type script_name: str

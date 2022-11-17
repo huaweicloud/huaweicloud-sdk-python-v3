@@ -17,7 +17,6 @@ class RunPoemRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunPoemRequest:
     def body(self):
         """Gets the body of this RunPoemRequest.
 
-
         :return: The body of this RunPoemRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.CreatePoem`
         """
@@ -58,7 +56,6 @@ class RunPoemRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunPoemRequest.
-
 
         :param body: The body of this RunPoemRequest.
         :type body: :class:`huaweicloudsdknlp.v2.CreatePoem`

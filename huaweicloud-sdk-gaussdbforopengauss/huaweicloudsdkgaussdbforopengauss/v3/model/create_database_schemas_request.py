@@ -17,7 +17,6 @@ class CreateDatabaseSchemasRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateDatabaseSchemasRequest:
     def body(self):
         """Gets the body of this CreateDatabaseSchemasRequest.
 
-
         :return: The body of this CreateDatabaseSchemasRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussDatabaseSchemaReq`
         """
@@ -115,7 +113,6 @@ class CreateDatabaseSchemasRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDatabaseSchemasRequest.
-
 
         :param body: The body of this CreateDatabaseSchemasRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussDatabaseSchemaReq`

@@ -17,7 +17,6 @@ class ShowEncryptdatasResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowEncryptdatasResponse(SdkResponse):
     def encrypt_data(self):
         """Gets the encrypt_data of this ShowEncryptdatasResponse.
 
-
         :return: The encrypt_data of this ShowEncryptdatasResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EncryptData`
         """
@@ -58,7 +56,6 @@ class ShowEncryptdatasResponse(SdkResponse):
     @encrypt_data.setter
     def encrypt_data(self, encrypt_data):
         """Sets the encrypt_data of this ShowEncryptdatasResponse.
-
 
         :param encrypt_data: The encrypt_data of this ShowEncryptdatasResponse.
         :type encrypt_data: :class:`huaweicloudsdkief.v1.EncryptData`

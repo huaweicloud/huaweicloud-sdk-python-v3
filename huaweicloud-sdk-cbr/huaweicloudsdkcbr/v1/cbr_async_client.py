@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CbrAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddMember
         :type request: :class:`huaweicloudsdkcbr.v1.AddMemberRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.AddMemberResponse`
@@ -68,6 +63,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddVaultResource
         :type request: :class:`huaweicloudsdkcbr.v1.AddVaultResourceRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.AddVaultResourceResponse`
@@ -128,6 +127,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddVaultResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateVaultPolicy
         :type request: :class:`huaweicloudsdkcbr.v1.AssociateVaultPolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.AssociateVaultPolicyResponse`
@@ -188,6 +191,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateVaultPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -243,6 +249,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateAndDeleteVaultTags
         :type request: :class:`huaweicloudsdkcbr.v1.BatchCreateAndDeleteVaultTagsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.BatchCreateAndDeleteVaultTagsResponse`
@@ -255,6 +262,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -289,6 +298,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateAndDeleteVaultTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -303,6 +313,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CopyBackup
         :type request: :class:`huaweicloudsdkcbr.v1.CopyBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CopyBackupResponse`
@@ -315,6 +326,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -349,6 +362,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CopyBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -363,6 +377,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CopyCheckpoint
         :type request: :class:`huaweicloudsdkcbr.v1.CopyCheckpointRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CopyCheckpointResponse`
@@ -375,6 +390,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -407,6 +424,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CopyCheckpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -421,6 +439,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCheckpoint
         :type request: :class:`huaweicloudsdkcbr.v1.CreateCheckpointRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CreateCheckpointResponse`
@@ -433,6 +452,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -465,6 +486,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCheckpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -479,6 +501,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePolicy
         :type request: :class:`huaweicloudsdkcbr.v1.CreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CreatePolicyResponse`
@@ -491,6 +514,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -523,6 +548,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -537,6 +563,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateVault
         :type request: :class:`huaweicloudsdkcbr.v1.CreateVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CreateVaultResponse`
@@ -549,6 +576,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -581,6 +610,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVaultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -596,6 +626,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateVaultTags
         :type request: :class:`huaweicloudsdkcbr.v1.CreateVaultTagsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CreateVaultTagsResponse`
@@ -608,6 +639,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -642,6 +675,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVaultTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -656,6 +690,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBackup
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeleteBackupResponse`
@@ -668,6 +703,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -700,6 +737,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -714,6 +752,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMember
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeleteMemberResponse`
@@ -726,6 +765,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -760,6 +801,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -774,6 +816,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePolicy
         :type request: :class:`huaweicloudsdkcbr.v1.DeletePolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeletePolicyResponse`
@@ -786,6 +829,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -818,6 +863,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -832,6 +878,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteVault
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeleteVaultResponse`
@@ -844,6 +891,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -876,6 +925,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVaultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -890,6 +940,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteVaultTag
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteVaultTagRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeleteVaultTagResponse`
@@ -902,6 +953,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -936,6 +989,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVaultTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -950,6 +1004,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateVaultPolicy
         :type request: :class:`huaweicloudsdkcbr.v1.DisassociateVaultPolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DisassociateVaultPolicyResponse`
@@ -962,6 +1017,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -996,6 +1053,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateVaultPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1010,6 +1068,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportBackup
         :type request: :class:`huaweicloudsdkcbr.v1.ImportBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ImportBackupResponse`
@@ -1022,6 +1081,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1054,6 +1115,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1068,6 +1130,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackups
         :type request: :class:`huaweicloudsdkcbr.v1.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListBackupsResponse`
@@ -1080,6 +1143,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1154,6 +1219,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1168,6 +1234,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOpLogs
         :type request: :class:`huaweicloudsdkcbr.v1.ListOpLogsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListOpLogsResponse`
@@ -1180,6 +1247,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1234,6 +1303,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOpLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1248,6 +1318,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPolicies
         :type request: :class:`huaweicloudsdkcbr.v1.ListPoliciesRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListPoliciesResponse`
@@ -1260,6 +1331,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1294,6 +1367,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1308,6 +1382,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProtectable
         :type request: :class:`huaweicloudsdkcbr.v1.ListProtectableRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListProtectableResponse`
@@ -1320,6 +1395,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1366,6 +1443,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProtectableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1380,6 +1458,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVault
         :type request: :class:`huaweicloudsdkcbr.v1.ListVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListVaultResponse`
@@ -1392,6 +1471,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1444,6 +1525,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVaultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1458,6 +1540,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MigrateVaultResource
         :type request: :class:`huaweicloudsdkcbr.v1.MigrateVaultResourceRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.MigrateVaultResourceResponse`
@@ -1470,6 +1553,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1504,6 +1589,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateVaultResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1518,6 +1604,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemoveVaultResource
         :type request: :class:`huaweicloudsdkcbr.v1.RemoveVaultResourceRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.RemoveVaultResourceResponse`
@@ -1530,6 +1617,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1564,6 +1653,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveVaultResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1578,6 +1668,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreBackup
         :type request: :class:`huaweicloudsdkcbr.v1.RestoreBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.RestoreBackupResponse`
@@ -1590,6 +1681,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1624,6 +1717,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1638,6 +1732,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBackup
         :type request: :class:`huaweicloudsdkcbr.v1.ShowBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowBackupResponse`
@@ -1650,6 +1745,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1682,6 +1779,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1696,6 +1794,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCheckpoint
         :type request: :class:`huaweicloudsdkcbr.v1.ShowCheckpointRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowCheckpointResponse`
@@ -1708,6 +1807,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1740,6 +1841,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCheckpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1754,6 +1856,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMemberDetail
         :type request: :class:`huaweicloudsdkcbr.v1.ShowMemberDetailRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowMemberDetailResponse`
@@ -1766,6 +1869,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1800,6 +1905,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMemberDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1814,6 +1920,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMembersDetail
         :type request: :class:`huaweicloudsdkcbr.v1.ShowMembersDetailRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowMembersDetailResponse`
@@ -1826,6 +1933,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1874,6 +1983,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMembersDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1888,6 +1998,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowOpLog
         :type request: :class:`huaweicloudsdkcbr.v1.ShowOpLogRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowOpLogResponse`
@@ -1900,6 +2011,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1932,6 +2045,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOpLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1946,6 +2060,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPolicy
         :type request: :class:`huaweicloudsdkcbr.v1.ShowPolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowPolicyResponse`
@@ -1958,6 +2073,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1990,6 +2107,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2004,6 +2122,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProtectable
         :type request: :class:`huaweicloudsdkcbr.v1.ShowProtectableRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowProtectableResponse`
@@ -2016,6 +2135,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2050,6 +2171,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProtectableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2064,6 +2186,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowReplicationCapabilities
         :type request: :class:`huaweicloudsdkcbr.v1.ShowReplicationCapabilitiesRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowReplicationCapabilitiesResponse`
@@ -2076,6 +2199,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2106,6 +2231,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowReplicationCapabilitiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2120,6 +2246,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVault
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowVaultResponse`
@@ -2132,6 +2259,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2164,6 +2293,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVaultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2179,6 +2309,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVaultProjectTag
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultProjectTagRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowVaultProjectTagResponse`
@@ -2191,6 +2322,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2221,6 +2354,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVaultProjectTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2236,6 +2370,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVaultResourceInstances
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowVaultResourceInstancesResponse`
@@ -2248,6 +2383,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2280,6 +2417,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVaultResourceInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2295,6 +2433,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVaultTag
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultTagRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowVaultTagResponse`
@@ -2307,6 +2446,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2339,6 +2480,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVaultTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2353,6 +2495,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMemberStatus
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateMemberStatusRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateMemberStatusResponse`
@@ -2365,6 +2508,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2401,6 +2546,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2415,6 +2561,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePolicy
         :type request: :class:`huaweicloudsdkcbr.v1.UpdatePolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdatePolicyResponse`
@@ -2427,6 +2574,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2461,6 +2610,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2475,6 +2625,7 @@ class CbrAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateVault
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateVaultResponse`
@@ -2487,6 +2638,8 @@ class CbrAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2521,6 +2674,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVaultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2528,7 +2682,7 @@ class CbrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2539,9 +2693,10 @@ class CbrAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2558,6 +2713,7 @@ class CbrAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

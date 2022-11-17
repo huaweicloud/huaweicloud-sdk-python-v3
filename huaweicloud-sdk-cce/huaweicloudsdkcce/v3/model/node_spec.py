@@ -17,7 +17,6 @@ class NodeSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -229,7 +228,6 @@ class NodeSpec:
     def login(self):
         """Gets the login of this NodeSpec.
 
-
         :return: The login of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Login`
         """
@@ -238,7 +236,6 @@ class NodeSpec:
     @login.setter
     def login(self, login):
         """Sets the login of this NodeSpec.
-
 
         :param login: The login of this NodeSpec.
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -249,7 +246,6 @@ class NodeSpec:
     def root_volume(self):
         """Gets the root_volume of this NodeSpec.
 
-
         :return: The root_volume of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Volume`
         """
@@ -258,7 +254,6 @@ class NodeSpec:
     @root_volume.setter
     def root_volume(self, root_volume):
         """Sets the root_volume of this NodeSpec.
-
 
         :param root_volume: The root_volume of this NodeSpec.
         :type root_volume: :class:`huaweicloudsdkcce.v3.Volume`
@@ -291,7 +286,6 @@ class NodeSpec:
     def storage(self):
         """Gets the storage of this NodeSpec.
 
-
         :return: The storage of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Storage`
         """
@@ -300,7 +294,6 @@ class NodeSpec:
     @storage.setter
     def storage(self, storage):
         """Sets the storage of this NodeSpec.
-
 
         :param storage: The storage of this NodeSpec.
         :type storage: :class:`huaweicloudsdkcce.v3.Storage`
@@ -311,7 +304,6 @@ class NodeSpec:
     def public_ip(self):
         """Gets the public_ip of this NodeSpec.
 
-
         :return: The public_ip of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePublicIP`
         """
@@ -320,7 +312,6 @@ class NodeSpec:
     @public_ip.setter
     def public_ip(self, public_ip):
         """Sets the public_ip of this NodeSpec.
-
 
         :param public_ip: The public_ip of this NodeSpec.
         :type public_ip: :class:`huaweicloudsdkcce.v3.NodePublicIP`
@@ -331,7 +322,6 @@ class NodeSpec:
     def node_nic_spec(self):
         """Gets the node_nic_spec of this NodeSpec.
 
-
         :return: The node_nic_spec of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeNicSpec`
         """
@@ -340,7 +330,6 @@ class NodeSpec:
     @node_nic_spec.setter
     def node_nic_spec(self, node_nic_spec):
         """Sets the node_nic_spec of this NodeSpec.
-
 
         :param node_nic_spec: The node_nic_spec of this NodeSpec.
         :type node_nic_spec: :class:`huaweicloudsdkcce.v3.NodeNicSpec`
@@ -505,7 +494,6 @@ class NodeSpec:
     def runtime(self):
         """Gets the runtime of this NodeSpec.
 
-
         :return: The runtime of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Runtime`
         """
@@ -514,7 +502,6 @@ class NodeSpec:
     @runtime.setter
     def runtime(self, runtime):
         """Sets the runtime of this NodeSpec.
-
 
         :param runtime: The runtime of this NodeSpec.
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
@@ -525,7 +512,6 @@ class NodeSpec:
     def extend_param(self):
         """Gets the extend_param of this NodeSpec.
 
-
         :return: The extend_param of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
         """
@@ -534,7 +520,6 @@ class NodeSpec:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this NodeSpec.
-
 
         :param extend_param: The extend_param of this NodeSpec.
         :type extend_param: :class:`huaweicloudsdkcce.v3.NodeExtendParam`

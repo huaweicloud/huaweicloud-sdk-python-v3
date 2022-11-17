@@ -17,7 +17,6 @@ class RebuildConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RebuildConfigResponse(SdkResponse):
     def body(self):
         """Gets the body of this RebuildConfigResponse.
 
-
         :return: The body of this RebuildConfigResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class RebuildConfigResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this RebuildConfigResponse.
-
 
         :param body: The body of this RebuildConfigResponse.
         :type body: str

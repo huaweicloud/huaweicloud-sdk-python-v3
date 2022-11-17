@@ -17,7 +17,6 @@ class ListMergeRequestResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListMergeRequestResponse(SdkResponse):
     def error(self):
         """Gets the error of this ListMergeRequestResponse.
 
-
         :return: The error of this ListMergeRequestResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ListMergeRequestResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ListMergeRequestResponse.
-
 
         :param error: The error of this ListMergeRequestResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class ListMergeRequestResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListMergeRequestResponse.
 
-
         :return: The result of this ListMergeRequestResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.MergeResult`
         """
@@ -92,7 +88,6 @@ class ListMergeRequestResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ListMergeRequestResponse.
-
 
         :param result: The result of this ListMergeRequestResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.MergeResult`

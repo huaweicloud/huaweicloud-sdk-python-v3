@@ -17,7 +17,6 @@ class RecognizeMacaoIdCardResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeMacaoIdCardResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeMacaoIdCardResponse.
 
-
         :return: The result of this RecognizeMacaoIdCardResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.MacaoIdCardResult`
         """
@@ -58,7 +56,6 @@ class RecognizeMacaoIdCardResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeMacaoIdCardResponse.
-
 
         :param result: The result of this RecognizeMacaoIdCardResponse.
         :type result: :class:`huaweicloudsdkocr.v1.MacaoIdCardResult`

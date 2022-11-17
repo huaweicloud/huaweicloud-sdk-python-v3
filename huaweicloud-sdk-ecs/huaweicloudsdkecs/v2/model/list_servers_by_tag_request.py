@@ -17,7 +17,6 @@ class ListServersByTagRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListServersByTagRequest:
     def body(self):
         """Gets the body of this ListServersByTagRequest.
 
-
         :return: The body of this ListServersByTagRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ListServersByTagRequestBody`
         """
@@ -58,7 +56,6 @@ class ListServersByTagRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListServersByTagRequest.
-
 
         :param body: The body of this ListServersByTagRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ListServersByTagRequestBody`

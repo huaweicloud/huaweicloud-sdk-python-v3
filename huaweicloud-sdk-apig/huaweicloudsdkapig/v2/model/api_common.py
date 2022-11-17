@@ -17,7 +17,6 @@ class ApiCommon:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -496,7 +495,6 @@ class ApiCommon:
     def auth_opt(self):
         """Gets the auth_opt of this ApiCommon.
 
-
         :return: The auth_opt of this ApiCommon.
         :rtype: :class:`huaweicloudsdkapig.v2.AuthOpt`
         """
@@ -505,7 +503,6 @@ class ApiCommon:
     @auth_opt.setter
     def auth_opt(self, auth_opt):
         """Sets the auth_opt of this ApiCommon.
-
 
         :param auth_opt: The auth_opt of this ApiCommon.
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -1132,7 +1129,6 @@ class ApiCommon:
     def backend_api(self):
         """Gets the backend_api of this ApiCommon.
 
-
         :return: The backend_api of this ApiCommon.
         :rtype: :class:`huaweicloudsdkapig.v2.BackendApi`
         """
@@ -1141,7 +1137,6 @@ class ApiCommon:
     @backend_api.setter
     def backend_api(self, backend_api):
         """Sets the backend_api of this ApiCommon.
-
 
         :param backend_api: The backend_api of this ApiCommon.
         :type backend_api: :class:`huaweicloudsdkapig.v2.BackendApi`
@@ -1152,7 +1147,6 @@ class ApiCommon:
     def api_group_info(self):
         """Gets the api_group_info of this ApiCommon.
 
-
         :return: The api_group_info of this ApiCommon.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiGroupCommonInfo`
         """
@@ -1161,7 +1155,6 @@ class ApiCommon:
     @api_group_info.setter
     def api_group_info(self, api_group_info):
         """Sets the api_group_info of this ApiCommon.
-
 
         :param api_group_info: The api_group_info of this ApiCommon.
         :type api_group_info: :class:`huaweicloudsdkapig.v2.ApiGroupCommonInfo`
@@ -1172,7 +1165,6 @@ class ApiCommon:
     def func_info(self):
         """Gets the func_info of this ApiCommon.
 
-
         :return: The func_info of this ApiCommon.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiFunc`
         """
@@ -1181,7 +1173,6 @@ class ApiCommon:
     @func_info.setter
     def func_info(self, func_info):
         """Sets the func_info of this ApiCommon.
-
 
         :param func_info: The func_info of this ApiCommon.
         :type func_info: :class:`huaweicloudsdkapig.v2.ApiFunc`
@@ -1192,7 +1183,6 @@ class ApiCommon:
     def mock_info(self):
         """Gets the mock_info of this ApiCommon.
 
-
         :return: The mock_info of this ApiCommon.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiMock`
         """
@@ -1201,7 +1191,6 @@ class ApiCommon:
     @mock_info.setter
     def mock_info(self, mock_info):
         """Sets the mock_info of this ApiCommon.
-
 
         :param mock_info: The mock_info of this ApiCommon.
         :type mock_info: :class:`huaweicloudsdkapig.v2.ApiMock`

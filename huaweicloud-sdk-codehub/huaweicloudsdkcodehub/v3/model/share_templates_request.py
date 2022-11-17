@@ -17,7 +17,6 @@ class ShareTemplatesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShareTemplatesRequest:
     def body(self):
         """Gets the body of this ShareTemplatesRequest.
 
-
         :return: The body of this ShareTemplatesRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO`
         """
@@ -86,7 +84,6 @@ class ShareTemplatesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShareTemplatesRequest.
-
 
         :param body: The body of this ShareTemplatesRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.RepositoryTemplateVO`

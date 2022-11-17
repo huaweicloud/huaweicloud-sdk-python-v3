@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CesAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListMetricData
         :type request: :class:`huaweicloudsdkces.v1.BatchListMetricDataRequest`
         :rtype: :class:`huaweicloudsdkces.v1.BatchListMetricDataResponse`
@@ -68,6 +63,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListMetricDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAlarm
         :type request: :class:`huaweicloudsdkces.v1.CreateAlarmRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateAlarmResponse`
@@ -126,6 +125,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAlarmResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAlarmTemplate
         :type request: :class:`huaweicloudsdkces.v1.CreateAlarmTemplateRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateAlarmTemplateResponse`
@@ -184,6 +187,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +221,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAlarmTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -230,6 +236,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEvents
         :type request: :class:`huaweicloudsdkces.v1.CreateEventsRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateEventsResponse`
@@ -242,6 +249,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -274,6 +283,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -288,6 +298,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMetricData
         :type request: :class:`huaweicloudsdkces.v1.CreateMetricDataRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateMetricDataResponse`
@@ -300,6 +311,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -332,6 +345,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMetricDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -346,6 +360,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResourceGroup
         :type request: :class:`huaweicloudsdkces.v1.CreateResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateResourceGroupResponse`
@@ -358,6 +373,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -390,6 +407,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResourceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -404,6 +422,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAlarm
         :type request: :class:`huaweicloudsdkces.v1.DeleteAlarmRequest`
         :rtype: :class:`huaweicloudsdkces.v1.DeleteAlarmResponse`
@@ -416,6 +435,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -448,6 +469,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAlarmResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -462,6 +484,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAlarmTemplate
         :type request: :class:`huaweicloudsdkces.v1.DeleteAlarmTemplateRequest`
         :rtype: :class:`huaweicloudsdkces.v1.DeleteAlarmTemplateResponse`
@@ -474,6 +497,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +531,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAlarmTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -520,6 +546,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResourceGroup
         :type request: :class:`huaweicloudsdkces.v1.DeleteResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.DeleteResourceGroupResponse`
@@ -532,6 +559,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -564,6 +593,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResourceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -578,6 +608,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAlarmHistories
         :type request: :class:`huaweicloudsdkces.v1.ListAlarmHistoriesRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListAlarmHistoriesResponse`
@@ -590,6 +621,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -640,6 +673,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAlarmHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -654,6 +688,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAlarmTemplates
         :type request: :class:`huaweicloudsdkces.v1.ListAlarmTemplatesRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListAlarmTemplatesResponse`
@@ -666,6 +701,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -706,6 +743,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAlarmTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -720,6 +758,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAlarms
         :type request: :class:`huaweicloudsdkces.v1.ListAlarmsRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListAlarmsResponse`
@@ -732,6 +771,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -768,6 +809,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAlarmsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -782,6 +824,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEventDetail
         :type request: :class:`huaweicloudsdkces.v1.ListEventDetailRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListEventDetailResponse`
@@ -794,6 +837,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -844,6 +889,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -858,6 +904,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEvents
         :type request: :class:`huaweicloudsdkces.v1.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListEventsResponse`
@@ -870,6 +917,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -912,6 +961,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -926,6 +976,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMetrics
         :type request: :class:`huaweicloudsdkces.v1.ListMetricsRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListMetricsResponse`
@@ -938,6 +989,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -984,6 +1037,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMetricsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -998,6 +1052,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResourceGroup
         :type request: :class:`huaweicloudsdkces.v1.ListResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListResourceGroupResponse`
@@ -1010,6 +1065,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1050,6 +1107,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1064,6 +1122,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAlarm
         :type request: :class:`huaweicloudsdkces.v1.ShowAlarmRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowAlarmResponse`
@@ -1076,6 +1135,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1108,6 +1169,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAlarmResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1122,6 +1184,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEventData
         :type request: :class:`huaweicloudsdkces.v1.ShowEventDataRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowEventDataResponse`
@@ -1134,6 +1197,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1180,6 +1245,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEventDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1194,6 +1260,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMetricData
         :type request: :class:`huaweicloudsdkces.v1.ShowMetricDataRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowMetricDataResponse`
@@ -1206,6 +1273,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1256,6 +1325,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMetricDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1270,6 +1340,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkces.v1.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowQuotasResponse`
@@ -1282,6 +1353,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1312,6 +1385,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1326,6 +1400,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResourceGroup
         :type request: :class:`huaweicloudsdkces.v1.ShowResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowResourceGroupResponse`
@@ -1338,6 +1413,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1380,6 +1457,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1394,6 +1472,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAlarm
         :type request: :class:`huaweicloudsdkces.v1.UpdateAlarmRequest`
         :rtype: :class:`huaweicloudsdkces.v1.UpdateAlarmResponse`
@@ -1406,6 +1485,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1440,6 +1521,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAlarmResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1454,6 +1536,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAlarmAction
         :type request: :class:`huaweicloudsdkces.v1.UpdateAlarmActionRequest`
         :rtype: :class:`huaweicloudsdkces.v1.UpdateAlarmActionResponse`
@@ -1466,6 +1549,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1500,6 +1585,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAlarmActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1514,6 +1600,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAlarmTemplate
         :type request: :class:`huaweicloudsdkces.v1.UpdateAlarmTemplateRequest`
         :rtype: :class:`huaweicloudsdkces.v1.UpdateAlarmTemplateResponse`
@@ -1526,6 +1613,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1560,6 +1649,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAlarmTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1574,6 +1664,7 @@ class CesAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResourceGroup
         :type request: :class:`huaweicloudsdkces.v1.UpdateResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.UpdateResourceGroupResponse`
@@ -1586,6 +1677,8 @@ class CesAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1620,6 +1713,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResourceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1627,7 +1721,7 @@ class CesAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1638,9 +1732,10 @@ class CesAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1657,6 +1752,7 @@ class CesAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

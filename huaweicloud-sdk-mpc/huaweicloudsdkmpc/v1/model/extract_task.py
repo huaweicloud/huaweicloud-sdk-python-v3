@@ -17,7 +17,6 @@ class ExtractTask:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -295,7 +294,6 @@ class ExtractTask:
     def input(self):
         """Gets the input of this ExtractTask.
 
-
         :return: The input of this ExtractTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -304,7 +302,6 @@ class ExtractTask:
     @input.setter
     def input(self, input):
         """Sets the input of this ExtractTask.
-
 
         :param input: The input of this ExtractTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -315,7 +312,6 @@ class ExtractTask:
     def output(self):
         """Gets the output of this ExtractTask.
 
-
         :return: The output of this ExtractTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -324,7 +320,6 @@ class ExtractTask:
     @output.setter
     def output(self, output):
         """Sets the output of this ExtractTask.
-
 
         :param output: The output of this ExtractTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -335,7 +330,6 @@ class ExtractTask:
     def metadata(self):
         """Gets the metadata of this ExtractTask.
 
-
         :return: The metadata of this ExtractTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
         """
@@ -344,7 +338,6 @@ class ExtractTask:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ExtractTask.
-
 
         :param metadata: The metadata of this ExtractTask.
         :type metadata: :class:`huaweicloudsdkmpc.v1.MetaData`

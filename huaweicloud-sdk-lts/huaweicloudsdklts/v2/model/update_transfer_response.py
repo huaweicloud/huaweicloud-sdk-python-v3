@@ -17,7 +17,6 @@ class UpdateTransferResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class UpdateTransferResponse(SdkResponse):
     def log_transfer_info(self):
         """Gets the log_transfer_info of this UpdateTransferResponse.
 
-
         :return: The log_transfer_info of this UpdateTransferResponse.
         :rtype: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfo`
         """
@@ -174,7 +172,6 @@ class UpdateTransferResponse(SdkResponse):
     @log_transfer_info.setter
     def log_transfer_info(self, log_transfer_info):
         """Sets the log_transfer_info of this UpdateTransferResponse.
-
 
         :param log_transfer_info: The log_transfer_info of this UpdateTransferResponse.
         :type log_transfer_info: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfo`

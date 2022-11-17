@@ -17,7 +17,6 @@ class TrackerConfigBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -60,7 +59,6 @@ class TrackerConfigBody:
     def channel(self):
         """Gets the channel of this TrackerConfigBody.
 
-
         :return: The channel of this TrackerConfigBody.
         :rtype: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
         """
@@ -69,7 +67,6 @@ class TrackerConfigBody:
     @channel.setter
     def channel(self, channel):
         """Sets the channel of this TrackerConfigBody.
-
 
         :param channel: The channel of this TrackerConfigBody.
         :type channel: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
@@ -80,7 +77,6 @@ class TrackerConfigBody:
     def selector(self):
         """Gets the selector of this TrackerConfigBody.
 
-
         :return: The selector of this TrackerConfigBody.
         :rtype: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
         """
@@ -89,7 +85,6 @@ class TrackerConfigBody:
     @selector.setter
     def selector(self, selector):
         """Sets the selector of this TrackerConfigBody.
-
 
         :param selector: The selector of this TrackerConfigBody.
         :type selector: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`

@@ -17,7 +17,6 @@ class NodeCreateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -111,7 +110,6 @@ class NodeCreateRequest:
     def metadata(self):
         """Gets the metadata of this NodeCreateRequest.
 
-
         :return: The metadata of this NodeCreateRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeMetadata`
         """
@@ -120,7 +118,6 @@ class NodeCreateRequest:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this NodeCreateRequest.
-
 
         :param metadata: The metadata of this NodeCreateRequest.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -131,7 +128,6 @@ class NodeCreateRequest:
     def spec(self):
         """Gets the spec of this NodeCreateRequest.
 
-
         :return: The spec of this NodeCreateRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
         """
@@ -140,7 +136,6 @@ class NodeCreateRequest:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this NodeCreateRequest.
-
 
         :param spec: The spec of this NodeCreateRequest.
         :type spec: :class:`huaweicloudsdkcce.v3.NodeSpec`

@@ -17,7 +17,6 @@ class UpdateServerRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateServerRequestBody:
     def server(self):
         """Gets the server of this UpdateServerRequestBody.
 
-
         :return: The server of this UpdateServerRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerOption`
         """
@@ -57,7 +55,6 @@ class UpdateServerRequestBody:
     @server.setter
     def server(self, server):
         """Sets the server of this UpdateServerRequestBody.
-
 
         :param server: The server of this UpdateServerRequestBody.
         :type server: :class:`huaweicloudsdkecs.v2.UpdateServerOption`

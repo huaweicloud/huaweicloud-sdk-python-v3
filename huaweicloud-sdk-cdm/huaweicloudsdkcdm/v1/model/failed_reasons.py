@@ -17,7 +17,6 @@ class FailedReasons:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class FailedReasons:
     def create_failed(self):
         """Gets the create_failed of this FailedReasons.
 
-
         :return: The create_failed of this FailedReasons.
         :rtype: :class:`huaweicloudsdkcdm.v1.FailedReasonsCREATEFAILED`
         """
@@ -58,7 +56,6 @@ class FailedReasons:
     @create_failed.setter
     def create_failed(self, create_failed):
         """Sets the create_failed of this FailedReasons.
-
 
         :param create_failed: The create_failed of this FailedReasons.
         :type create_failed: :class:`huaweicloudsdkcdm.v1.FailedReasonsCREATEFAILED`

@@ -17,7 +17,6 @@ class UpdateDomainOriginRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateDomainOriginRequest:
     def body(self):
         """Gets the body of this UpdateDomainOriginRequest.
 
-
         :return: The body of this UpdateDomainOriginRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.OriginRequest`
         """
@@ -115,7 +113,6 @@ class UpdateDomainOriginRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDomainOriginRequest.
-
 
         :param body: The body of this UpdateDomainOriginRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.OriginRequest`

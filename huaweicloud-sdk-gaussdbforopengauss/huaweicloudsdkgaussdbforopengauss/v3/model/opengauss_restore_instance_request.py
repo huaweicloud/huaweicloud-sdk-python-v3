@@ -17,7 +17,6 @@ class OpengaussRestoreInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -225,7 +224,6 @@ class OpengaussRestoreInstanceRequest:
     def volume(self):
         """Gets the volume of this OpengaussRestoreInstanceRequest.
 
-
         :return: The volume of this OpengaussRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
         """
@@ -234,7 +232,6 @@ class OpengaussRestoreInstanceRequest:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this OpengaussRestoreInstanceRequest.
-
 
         :param volume: The volume of this OpengaussRestoreInstanceRequest.
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
@@ -355,7 +352,6 @@ class OpengaussRestoreInstanceRequest:
     def charge_info(self):
         """Gets the charge_info of this OpengaussRestoreInstanceRequest.
 
-
         :return: The charge_info of this OpengaussRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
         """
@@ -364,7 +360,6 @@ class OpengaussRestoreInstanceRequest:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this OpengaussRestoreInstanceRequest.
-
 
         :param charge_info: The charge_info of this OpengaussRestoreInstanceRequest.
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
@@ -375,7 +370,6 @@ class OpengaussRestoreInstanceRequest:
     def restore_point(self):
         """Gets the restore_point of this OpengaussRestoreInstanceRequest.
 
-
         :return: The restore_point of this OpengaussRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestorePoint`
         """
@@ -384,7 +378,6 @@ class OpengaussRestoreInstanceRequest:
     @restore_point.setter
     def restore_point(self, restore_point):
         """Sets the restore_point of this OpengaussRestoreInstanceRequest.
-
 
         :param restore_point: The restore_point of this OpengaussRestoreInstanceRequest.
         :type restore_point: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestorePoint`
@@ -395,7 +388,6 @@ class OpengaussRestoreInstanceRequest:
     def backup_strategy(self):
         """Gets the backup_strategy of this OpengaussRestoreInstanceRequest.
 
-
         :return: The backup_strategy of this OpengaussRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategy`
         """
@@ -404,7 +396,6 @@ class OpengaussRestoreInstanceRequest:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this OpengaussRestoreInstanceRequest.
-
 
         :param backup_strategy: The backup_strategy of this OpengaussRestoreInstanceRequest.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategy`

@@ -17,7 +17,6 @@ class BatchRebootInstanceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchRebootInstanceRequestBody:
     def reboot(self):
         """Gets the reboot of this BatchRebootInstanceRequestBody.
 
-
         :return: The reboot of this BatchRebootInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkiec.v1.BatchReboot`
         """
@@ -58,7 +56,6 @@ class BatchRebootInstanceRequestBody:
     @reboot.setter
     def reboot(self, reboot):
         """Sets the reboot of this BatchRebootInstanceRequestBody.
-
 
         :param reboot: The reboot of this BatchRebootInstanceRequestBody.
         :type reboot: :class:`huaweicloudsdkiec.v1.BatchReboot`

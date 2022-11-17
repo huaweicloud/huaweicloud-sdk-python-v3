@@ -17,7 +17,6 @@ class HangUpRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class HangUpRequest:
     def body(self):
         """Gets the body of this HangUpRequest.
 
-
         :return: The body of this HangUpRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestBulkHangUpReqBody`
         """
@@ -114,7 +112,6 @@ class HangUpRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this HangUpRequest.
-
 
         :param body: The body of this HangUpRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestBulkHangUpReqBody`

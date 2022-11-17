@@ -17,7 +17,6 @@ class SwitchoverResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -142,7 +141,6 @@ class SwitchoverResp:
     def source_db(self):
         """Gets the source_db of this SwitchoverResp.
 
-
         :return: The source_db of this SwitchoverResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.EndpointVO`
         """
@@ -151,7 +149,6 @@ class SwitchoverResp:
     @source_db.setter
     def source_db(self, source_db):
         """Sets the source_db of this SwitchoverResp.
-
 
         :param source_db: The source_db of this SwitchoverResp.
         :type source_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`
@@ -162,7 +159,6 @@ class SwitchoverResp:
     def target_db(self):
         """Gets the target_db of this SwitchoverResp.
 
-
         :return: The target_db of this SwitchoverResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.EndpointVO`
         """
@@ -171,7 +167,6 @@ class SwitchoverResp:
     @target_db.setter
     def target_db(self, target_db):
         """Sets the target_db of this SwitchoverResp.
-
 
         :param target_db: The target_db of this SwitchoverResp.
         :type target_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`

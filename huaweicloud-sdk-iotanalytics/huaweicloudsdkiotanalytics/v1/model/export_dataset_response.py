@@ -17,7 +17,6 @@ class ExportDatasetResponse(SdkStreamResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -26,7 +25,7 @@ class ExportDatasetResponse(SdkStreamResponse):
     attribute_map = {
     }
 
-    def __init__(self,response):
+    def __init__(self, response):
         """ExportDatasetResponse
 
         The model defined in huaweicloud sdk

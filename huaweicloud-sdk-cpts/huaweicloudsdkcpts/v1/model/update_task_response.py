@@ -17,7 +17,6 @@ class UpdateTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class UpdateTaskResponse(SdkResponse):
     def task_info(self):
         """Gets the task_info of this UpdateTaskResponse.
 
-
         :return: The task_info of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.TaskInfo`
         """
@@ -116,7 +114,6 @@ class UpdateTaskResponse(SdkResponse):
     @task_info.setter
     def task_info(self, task_info):
         """Sets the task_info of this UpdateTaskResponse.
-
 
         :param task_info: The task_info of this UpdateTaskResponse.
         :type task_info: :class:`huaweicloudsdkcpts.v1.TaskInfo`

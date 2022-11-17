@@ -17,7 +17,6 @@ class ShowIpGroupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -201,7 +200,6 @@ class ShowIpGroupResponse(SdkResponse):
     def share_info(self):
         """Gets the share_info of this ShowIpGroupResponse.
 
-
         :return: The share_info of this ShowIpGroupResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.ShareInfo`
         """
@@ -210,7 +208,6 @@ class ShowIpGroupResponse(SdkResponse):
     @share_info.setter
     def share_info(self, share_info):
         """Sets the share_info of this ShowIpGroupResponse.
-
 
         :param share_info: The share_info of this ShowIpGroupResponse.
         :type share_info: :class:`huaweicloudsdkwaf.v1.ShareInfo`

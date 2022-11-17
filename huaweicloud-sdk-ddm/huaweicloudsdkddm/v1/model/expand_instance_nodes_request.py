@@ -17,7 +17,6 @@ class ExpandInstanceNodesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ExpandInstanceNodesRequest:
     def body(self):
         """Gets the body of this ExpandInstanceNodesRequest.
 
-
         :return: The body of this ExpandInstanceNodesRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.EnlargeRequest`
         """
@@ -86,7 +84,6 @@ class ExpandInstanceNodesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExpandInstanceNodesRequest.
-
 
         :param body: The body of this ExpandInstanceNodesRequest.
         :type body: :class:`huaweicloudsdkddm.v1.EnlargeRequest`

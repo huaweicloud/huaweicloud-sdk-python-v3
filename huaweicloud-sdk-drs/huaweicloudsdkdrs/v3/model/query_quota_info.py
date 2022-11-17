@@ -17,7 +17,6 @@ class QueryQuotaInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class QueryQuotaInfo:
     def resource(self):
         """Gets the resource of this QueryQuotaInfo.
 
-
         :return: The resource of this QueryQuotaInfo.
         :rtype: :class:`huaweicloudsdkdrs.v3.QuotaResource`
         """
@@ -58,7 +56,6 @@ class QueryQuotaInfo:
     @resource.setter
     def resource(self, resource):
         """Sets the resource of this QueryQuotaInfo.
-
 
         :param resource: The resource of this QueryQuotaInfo.
         :type resource: :class:`huaweicloudsdkdrs.v3.QuotaResource`

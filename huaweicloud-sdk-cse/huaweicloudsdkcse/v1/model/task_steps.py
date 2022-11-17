@@ -17,7 +17,6 @@ class TaskSteps:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -201,7 +200,6 @@ class TaskSteps:
     def task_executor_brief(self):
         """Gets the task_executor_brief of this TaskSteps.
 
-
         :return: The task_executor_brief of this TaskSteps.
         :rtype: :class:`huaweicloudsdkcse.v1.TaskExecutorBrief`
         """
@@ -210,7 +208,6 @@ class TaskSteps:
     @task_executor_brief.setter
     def task_executor_brief(self, task_executor_brief):
         """Sets the task_executor_brief of this TaskSteps.
-
 
         :param task_executor_brief: The task_executor_brief of this TaskSteps.
         :type task_executor_brief: :class:`huaweicloudsdkcse.v1.TaskExecutorBrief`

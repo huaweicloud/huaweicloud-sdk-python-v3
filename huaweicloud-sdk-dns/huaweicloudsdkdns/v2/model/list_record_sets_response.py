@@ -17,7 +17,6 @@ class ListRecordSetsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListRecordSetsResponse(SdkResponse):
     def links(self):
         """Gets the links of this ListRecordSetsResponse.
 
-
         :return: The links of this ListRecordSetsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -72,7 +70,6 @@ class ListRecordSetsResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ListRecordSetsResponse.
-
 
         :param links: The links of this ListRecordSetsResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -83,7 +80,6 @@ class ListRecordSetsResponse(SdkResponse):
     def recordsets(self):
         """Gets the recordsets of this ListRecordSetsResponse.
 
-
         :return: The recordsets of this ListRecordSetsResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.ListRecordSetsWithTags`]
         """
@@ -92,7 +88,6 @@ class ListRecordSetsResponse(SdkResponse):
     @recordsets.setter
     def recordsets(self, recordsets):
         """Sets the recordsets of this ListRecordSetsResponse.
-
 
         :param recordsets: The recordsets of this ListRecordSetsResponse.
         :type recordsets: list[:class:`huaweicloudsdkdns.v2.ListRecordSetsWithTags`]
@@ -103,7 +98,6 @@ class ListRecordSetsResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ListRecordSetsResponse.
 
-
         :return: The metadata of this ListRecordSetsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
@@ -112,7 +106,6 @@ class ListRecordSetsResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ListRecordSetsResponse.
-
 
         :param metadata: The metadata of this ListRecordSetsResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`

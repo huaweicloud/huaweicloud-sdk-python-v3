@@ -17,7 +17,6 @@ class InstallMultiTasksResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class InstallMultiTasksResponse(SdkResponse):
     def body(self):
         """Gets the body of this InstallMultiTasksResponse.
 
-
         :return: The body of this InstallMultiTasksResponse.
         :rtype: list[:class:`huaweicloudsdkroma.v2.MultiTaskInitElement`]
         """
@@ -58,7 +56,6 @@ class InstallMultiTasksResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this InstallMultiTasksResponse.
-
 
         :param body: The body of this InstallMultiTasksResponse.
         :type body: list[:class:`huaweicloudsdkroma.v2.MultiTaskInitElement`]

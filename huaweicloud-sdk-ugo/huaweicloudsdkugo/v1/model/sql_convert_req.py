@@ -17,7 +17,6 @@ class SqlConvertReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -43,7 +42,7 @@ class SqlConvertReq:
         :type source_db_type: str
         :param target_db_type: 目标数据库类型。
         :type target_db_type: str
-        :param target_db_version: 目标数据库版本。 （注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： GaussDB(for openGauss)-2020； RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
+        :param target_db_version: 目标数据库版本。 （注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： GaussDB Centralized-2.0； RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
         :type target_db_version: str
         :param sql_statement: 需要转换的SQL语句。
         :type sql_statement: str
@@ -110,7 +109,7 @@ class SqlConvertReq:
     def target_db_version(self):
         """Gets the target_db_version of this SqlConvertReq.
 
-        目标数据库版本。 （注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： GaussDB(for openGauss)-2020； RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
+        目标数据库版本。 （注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： GaussDB Centralized-2.0； RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
 
         :return: The target_db_version of this SqlConvertReq.
         :rtype: str
@@ -121,7 +120,7 @@ class SqlConvertReq:
     def target_db_version(self, target_db_version):
         """Sets the target_db_version of this SqlConvertReq.
 
-        目标数据库版本。 （注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： GaussDB(for openGauss)-2020； RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
+        目标数据库版本。 （注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： GaussDB Centralized-2.0； RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
 
         :param target_db_version: The target_db_version of this SqlConvertReq.
         :type target_db_version: str

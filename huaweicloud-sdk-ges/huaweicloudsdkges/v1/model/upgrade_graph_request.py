@@ -17,7 +17,6 @@ class UpgradeGraphRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpgradeGraphRequest:
     def body(self):
         """Gets the body of this UpgradeGraphRequest.
 
-
         :return: The body of this UpgradeGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.UpgradeGraphReq`
         """
@@ -114,7 +112,6 @@ class UpgradeGraphRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpgradeGraphRequest.
-
 
         :param body: The body of this UpgradeGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.UpgradeGraphReq`

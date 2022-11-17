@@ -17,7 +17,6 @@ class PrePaidServerPublicip:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class PrePaidServerPublicip:
     def eip(self):
         """Gets the eip of this PrePaidServerPublicip.
 
-
         :return: The eip of this PrePaidServerPublicip.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerEip`
         """
@@ -94,7 +92,6 @@ class PrePaidServerPublicip:
     @eip.setter
     def eip(self, eip):
         """Sets the eip of this PrePaidServerPublicip.
-
 
         :param eip: The eip of this PrePaidServerPublicip.
         :type eip: :class:`huaweicloudsdkecs.v2.PrePaidServerEip`

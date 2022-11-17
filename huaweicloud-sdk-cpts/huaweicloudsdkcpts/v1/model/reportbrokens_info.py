@@ -17,7 +17,6 @@ class ReportbrokensInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ReportbrokensInfo:
     def brand_brokens(self):
         """Gets the brand_brokens of this ReportbrokensInfo.
 
-
         :return: The brand_brokens of this ReportbrokensInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.BrandBrokens`
         """
@@ -86,7 +84,6 @@ class ReportbrokensInfo:
     @brand_brokens.setter
     def brand_brokens(self, brand_brokens):
         """Sets the brand_brokens of this ReportbrokensInfo.
-
 
         :param brand_brokens: The brand_brokens of this ReportbrokensInfo.
         :type brand_brokens: :class:`huaweicloudsdkcpts.v1.BrandBrokens`
@@ -119,7 +116,6 @@ class ReportbrokensInfo:
     def respcode_brokens(self):
         """Gets the respcode_brokens of this ReportbrokensInfo.
 
-
         :return: The respcode_brokens of this ReportbrokensInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.RespcodeBrokens`
         """
@@ -128,7 +124,6 @@ class ReportbrokensInfo:
     @respcode_brokens.setter
     def respcode_brokens(self, respcode_brokens):
         """Sets the respcode_brokens of this ReportbrokensInfo.
-
 
         :param respcode_brokens: The respcode_brokens of this ReportbrokensInfo.
         :type respcode_brokens: :class:`huaweicloudsdkcpts.v1.RespcodeBrokens`
@@ -139,7 +134,6 @@ class ReportbrokensInfo:
     def tps_brokens(self):
         """Gets the tps_brokens of this ReportbrokensInfo.
 
-
         :return: The tps_brokens of this ReportbrokensInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.TpsBrokens`
         """
@@ -148,7 +142,6 @@ class ReportbrokensInfo:
     @tps_brokens.setter
     def tps_brokens(self, tps_brokens):
         """Sets the tps_brokens of this ReportbrokensInfo.
-
 
         :param tps_brokens: The tps_brokens of this ReportbrokensInfo.
         :type tps_brokens: :class:`huaweicloudsdkcpts.v1.TpsBrokens`
@@ -159,7 +152,6 @@ class ReportbrokensInfo:
     def vusers_brokens(self):
         """Gets the vusers_brokens of this ReportbrokensInfo.
 
-
         :return: The vusers_brokens of this ReportbrokensInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.VusersBrokens`
         """
@@ -168,7 +160,6 @@ class ReportbrokensInfo:
     @vusers_brokens.setter
     def vusers_brokens(self, vusers_brokens):
         """Sets the vusers_brokens of this ReportbrokensInfo.
-
 
         :param vusers_brokens: The vusers_brokens of this ReportbrokensInfo.
         :type vusers_brokens: :class:`huaweicloudsdkcpts.v1.VusersBrokens`

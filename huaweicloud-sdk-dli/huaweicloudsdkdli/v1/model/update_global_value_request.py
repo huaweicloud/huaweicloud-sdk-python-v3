@@ -17,7 +17,6 @@ class UpdateGlobalValueRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateGlobalValueRequest:
     def body(self):
         """Gets the body of this UpdateGlobalValueRequest.
 
-
         :return: The body of this UpdateGlobalValueRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueReq`
         """
@@ -86,7 +84,6 @@ class UpdateGlobalValueRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateGlobalValueRequest.
-
 
         :param body: The body of this UpdateGlobalValueRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueReq`

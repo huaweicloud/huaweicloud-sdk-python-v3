@@ -17,7 +17,6 @@ class CreateAsyncCommandResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -57,7 +56,7 @@ class CreateAsyncCommandResponse(SdkResponse):
         :type service_id: str
         :param command_name: 设备命令名称，在设备关联的产品模型中定义。
         :type command_name: str
-        :param paras: 设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\&quot;value\&quot;:\&quot;1\&quot;}，具体格式需要应用和设备约定。 
+        :param paras: 设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\&quot;value\&quot;:\&quot;1\&quot;}，具体格式需要应用和设备约定。
         :type paras: object
         :param expire_time: 物联网平台缓存命令的时长， 单位秒。
         :type expire_time: int
@@ -193,7 +192,7 @@ class CreateAsyncCommandResponse(SdkResponse):
     def paras(self):
         """Gets the paras of this CreateAsyncCommandResponse.
 
-        设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
+        设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。
 
         :return: The paras of this CreateAsyncCommandResponse.
         :rtype: object
@@ -204,7 +203,7 @@ class CreateAsyncCommandResponse(SdkResponse):
     def paras(self, paras):
         """Sets the paras of this CreateAsyncCommandResponse.
 
-        设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
+        设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。
 
         :param paras: The paras of this CreateAsyncCommandResponse.
         :type paras: object

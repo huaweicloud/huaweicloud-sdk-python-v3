@@ -17,11 +17,10 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
-        'result': 'list[ThailandLicensePlateItem]'
+        'result': 'ThailandLicensePlateItem'
     }
 
     attribute_map = {
@@ -33,8 +32,8 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 调用成功时表示调用结果。 调用失败时无此字段 
-        :type result: list[:class:`huaweicloudsdkocr.v1.ThailandLicensePlateItem`]
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.ThailandLicensePlateItem`
         """
         
         super(RecognizeThailandLicensePlateResponse, self).__init__()
@@ -49,10 +48,8 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeThailandLicensePlateResponse.
 
-        调用成功时表示调用结果。 调用失败时无此字段 
-
         :return: The result of this RecognizeThailandLicensePlateResponse.
-        :rtype: list[:class:`huaweicloudsdkocr.v1.ThailandLicensePlateItem`]
+        :rtype: :class:`huaweicloudsdkocr.v1.ThailandLicensePlateItem`
         """
         return self._result
 
@@ -60,10 +57,8 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeThailandLicensePlateResponse.
 
-        调用成功时表示调用结果。 调用失败时无此字段 
-
         :param result: The result of this RecognizeThailandLicensePlateResponse.
-        :type result: list[:class:`huaweicloudsdkocr.v1.ThailandLicensePlateItem`]
+        :type result: :class:`huaweicloudsdkocr.v1.ThailandLicensePlateItem`
         """
         self._result = result
 

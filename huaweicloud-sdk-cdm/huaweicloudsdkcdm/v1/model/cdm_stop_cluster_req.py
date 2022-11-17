@@ -17,7 +17,6 @@ class CdmStopClusterReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CdmStopClusterReq:
     def stop(self):
         """Gets the stop of this CdmStopClusterReq.
 
-
         :return: The stop of this CdmStopClusterReq.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReqStop`
         """
@@ -57,7 +55,6 @@ class CdmStopClusterReq:
     @stop.setter
     def stop(self, stop):
         """Sets the stop of this CdmStopClusterReq.
-
 
         :param stop: The stop of this CdmStopClusterReq.
         :type stop: :class:`huaweicloudsdkcdm.v1.CdmStopClusterReqStop`

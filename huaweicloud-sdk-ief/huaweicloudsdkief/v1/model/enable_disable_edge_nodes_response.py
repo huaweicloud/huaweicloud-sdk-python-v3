@@ -17,7 +17,6 @@ class EnableDisableEdgeNodesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class EnableDisableEdgeNodesResponse(SdkResponse):
     def node(self):
         """Gets the node of this EnableDisableEdgeNodesResponse.
 
-
         :return: The node of this EnableDisableEdgeNodesResponse.
         :rtype: :class:`huaweicloudsdkief.v1.Action`
         """
@@ -58,7 +56,6 @@ class EnableDisableEdgeNodesResponse(SdkResponse):
     @node.setter
     def node(self, node):
         """Sets the node of this EnableDisableEdgeNodesResponse.
-
 
         :param node: The node of this EnableDisableEdgeNodesResponse.
         :type node: :class:`huaweicloudsdkief.v1.Action`

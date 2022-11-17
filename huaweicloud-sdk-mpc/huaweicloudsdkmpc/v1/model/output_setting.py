@@ -17,7 +17,6 @@ class OutputSetting:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -99,7 +98,6 @@ class OutputSetting:
     def video(self):
         """Gets the video of this OutputSetting.
 
-
         :return: The video of this OutputSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.EditVideoInfo`
         """
@@ -108,7 +106,6 @@ class OutputSetting:
     @video.setter
     def video(self, video):
         """Sets the video of this OutputSetting.
-
 
         :param video: The video of this OutputSetting.
         :type video: :class:`huaweicloudsdkmpc.v1.EditVideoInfo`
@@ -119,7 +116,6 @@ class OutputSetting:
     def audio(self):
         """Gets the audio of this OutputSetting.
 
-
         :return: The audio of this OutputSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.EditAudioInfo`
         """
@@ -128,7 +124,6 @@ class OutputSetting:
     @audio.setter
     def audio(self, audio):
         """Sets the audio of this OutputSetting.
-
 
         :param audio: The audio of this OutputSetting.
         :type audio: :class:`huaweicloudsdkmpc.v1.EditAudioInfo`
@@ -139,7 +134,6 @@ class OutputSetting:
     def hls(self):
         """Gets the hls of this OutputSetting.
 
-
         :return: The hls of this OutputSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.EditHlsInfo`
         """
@@ -148,7 +142,6 @@ class OutputSetting:
     @hls.setter
     def hls(self, hls):
         """Sets the hls of this OutputSetting.
-
 
         :param hls: The hls of this OutputSetting.
         :type hls: :class:`huaweicloudsdkmpc.v1.EditHlsInfo`
@@ -159,7 +152,6 @@ class OutputSetting:
     def output(self):
         """Gets the output of this OutputSetting.
 
-
         :return: The output of this OutputSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -168,7 +160,6 @@ class OutputSetting:
     @output.setter
     def output(self, output):
         """Sets the output of this OutputSetting.
-
 
         :param output: The output of this OutputSetting.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

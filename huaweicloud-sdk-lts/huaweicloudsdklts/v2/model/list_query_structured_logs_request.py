@@ -17,7 +17,6 @@ class ListQueryStructuredLogsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ListQueryStructuredLogsRequest:
     def body(self):
         """Gets the body of this ListQueryStructuredLogsRequest.
 
-
         :return: The body of this ListQueryStructuredLogsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParams`
         """
@@ -114,7 +112,6 @@ class ListQueryStructuredLogsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListQueryStructuredLogsRequest.
-
 
         :param body: The body of this ListQueryStructuredLogsRequest.
         :type body: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParams`

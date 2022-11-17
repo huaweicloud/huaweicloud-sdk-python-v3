@@ -17,7 +17,6 @@ class UpdateInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -579,7 +578,6 @@ class UpdateInstanceResponse(SdkResponse):
     def flavor(self):
         """Gets the flavor of this UpdateInstanceResponse.
 
-
         :return: The flavor of this UpdateInstanceResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.FlavorInstance`
         """
@@ -588,7 +586,6 @@ class UpdateInstanceResponse(SdkResponse):
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this UpdateInstanceResponse.
-
 
         :param flavor: The flavor of this UpdateInstanceResponse.
         :type flavor: :class:`huaweicloudsdkiec.v1.FlavorInstance`
@@ -1039,7 +1036,6 @@ class UpdateInstanceResponse(SdkResponse):
     def geolocation(self):
         """Gets the geolocation of this UpdateInstanceResponse.
 
-
         :return: The geolocation of this UpdateInstanceResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.GeoLocation`
         """
@@ -1048,7 +1044,6 @@ class UpdateInstanceResponse(SdkResponse):
     @geolocation.setter
     def geolocation(self, geolocation):
         """Sets the geolocation of this UpdateInstanceResponse.
-
 
         :param geolocation: The geolocation of this UpdateInstanceResponse.
         :type geolocation: :class:`huaweicloudsdkiec.v1.GeoLocation`

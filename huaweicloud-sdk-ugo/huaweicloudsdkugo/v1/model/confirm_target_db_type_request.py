@@ -17,7 +17,6 @@ class ConfirmTargetDbTypeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ConfirmTargetDbTypeRequest:
     def body(self):
         """Gets the body of this ConfirmTargetDbTypeRequest.
 
-
         :return: The body of this ConfirmTargetDbTypeRequest.
         :rtype: :class:`huaweicloudsdkugo.v1.ConfirmTargetDBReq`
         """
@@ -58,7 +56,6 @@ class ConfirmTargetDbTypeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ConfirmTargetDbTypeRequest.
-
 
         :param body: The body of this ConfirmTargetDbTypeRequest.
         :type body: :class:`huaweicloudsdkugo.v1.ConfirmTargetDBReq`

@@ -17,7 +17,6 @@ class ListCustomerselfResourceRecordDetailsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListCustomerselfResourceRecordDetailsRequest:
     def body(self):
         """Gets the body of this ListCustomerselfResourceRecordDetailsRequest.
 
-
         :return: The body of this ListCustomerselfResourceRecordDetailsRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.QueryResRecordsDetailReq`
         """
@@ -58,7 +56,6 @@ class ListCustomerselfResourceRecordDetailsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListCustomerselfResourceRecordDetailsRequest.
-
 
         :param body: The body of this ListCustomerselfResourceRecordDetailsRequest.
         :type body: :class:`huaweicloudsdkbss.v2.QueryResRecordsDetailReq`

@@ -17,7 +17,6 @@ class ChangeResourceInEnvironmentRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ChangeResourceInEnvironmentRequest:
     def body(self):
         """Gets the body of this ChangeResourceInEnvironmentRequest.
 
-
         :return: The body of this ChangeResourceInEnvironmentRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.EnvironmentResourceModify`
         """
@@ -86,7 +84,6 @@ class ChangeResourceInEnvironmentRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeResourceInEnvironmentRequest.
-
 
         :param body: The body of this ChangeResourceInEnvironmentRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.EnvironmentResourceModify`

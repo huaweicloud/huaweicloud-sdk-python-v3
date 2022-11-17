@@ -17,7 +17,6 @@ class SetMessageReceiveConfigReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class SetMessageReceiveConfigReq:
     def language(self):
         """Gets the language of this SetMessageReceiveConfigReq.
 
-
         :return: The language of this SetMessageReceiveConfigReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`
         """
@@ -115,7 +113,6 @@ class SetMessageReceiveConfigReq:
     @language.setter
     def language(self, language):
         """Sets the language of this SetMessageReceiveConfigReq.
-
 
         :param language: The language of this SetMessageReceiveConfigReq.
         :type language: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`

@@ -17,7 +17,6 @@ class StacksConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class StacksConfig:
     def attributes(self):
         """Gets the attributes of this StacksConfig.
 
-
         :return: The attributes of this StacksConfig.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StacksAttribute`
         """
@@ -65,7 +63,6 @@ class StacksConfig:
     @attributes.setter
     def attributes(self, attributes):
         """Sets the attributes of this StacksConfig.
-
 
         :param attributes: The attributes of this StacksConfig.
         :type attributes: :class:`huaweicloudsdkcloudide.v2.StacksAttribute`
@@ -76,7 +73,6 @@ class StacksConfig:
     def recipe(self):
         """Gets the recipe of this StacksConfig.
 
-
         :return: The recipe of this StacksConfig.
         :rtype: :class:`huaweicloudsdkcloudide.v2.Recipe`
         """
@@ -85,7 +81,6 @@ class StacksConfig:
     @recipe.setter
     def recipe(self, recipe):
         """Sets the recipe of this StacksConfig.
-
 
         :param recipe: The recipe of this StacksConfig.
         :type recipe: :class:`huaweicloudsdkcloudide.v2.Recipe`

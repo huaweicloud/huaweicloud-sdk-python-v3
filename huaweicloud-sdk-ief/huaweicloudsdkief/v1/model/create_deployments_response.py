@@ -17,7 +17,6 @@ class CreateDeploymentsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -447,7 +446,6 @@ class CreateDeploymentsResponse(SdkResponse):
     def template(self):
         """Gets the template of this CreateDeploymentsResponse.
 
-
         :return: The template of this CreateDeploymentsResponse.
         :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
         """
@@ -456,7 +454,6 @@ class CreateDeploymentsResponse(SdkResponse):
     @template.setter
     def template(self, template):
         """Sets the template of this CreateDeploymentsResponse.
-
 
         :param template: The template of this CreateDeploymentsResponse.
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -511,7 +508,6 @@ class CreateDeploymentsResponse(SdkResponse):
     def annotations(self):
         """Gets the annotations of this CreateDeploymentsResponse.
 
-
         :return: The annotations of this CreateDeploymentsResponse.
         :rtype: :class:`huaweicloudsdkief.v1.Annotations`
         """
@@ -520,7 +516,6 @@ class CreateDeploymentsResponse(SdkResponse):
     @annotations.setter
     def annotations(self, annotations):
         """Sets the annotations of this CreateDeploymentsResponse.
-
 
         :param annotations: The annotations of this CreateDeploymentsResponse.
         :type annotations: :class:`huaweicloudsdkief.v1.Annotations`

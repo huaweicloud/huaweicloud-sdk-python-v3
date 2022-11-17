@@ -17,7 +17,6 @@ class CreateSyncEventsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateSyncEventsRequest:
     def body(self):
         """Gets the body of this CreateSyncEventsRequest.
 
-
         :return: The body of this CreateSyncEventsRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.SyncObjectReq`
         """
@@ -86,7 +84,6 @@ class CreateSyncEventsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateSyncEventsRequest.
-
 
         :param body: The body of this CreateSyncEventsRequest.
         :type body: :class:`huaweicloudsdkoms.v2.SyncObjectReq`

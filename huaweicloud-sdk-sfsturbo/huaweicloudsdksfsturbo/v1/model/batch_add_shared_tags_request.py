@@ -17,7 +17,6 @@ class BatchAddSharedTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchAddSharedTagsRequest:
     def body(self):
         """Gets the body of this BatchAddSharedTagsRequest.
 
-
         :return: The body of this BatchAddSharedTagsRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequestBody`
         """
@@ -86,7 +84,6 @@ class BatchAddSharedTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchAddSharedTagsRequest.
-
 
         :param body: The body of this BatchAddSharedTagsRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.BatchAddSharedTagsRequestBody`

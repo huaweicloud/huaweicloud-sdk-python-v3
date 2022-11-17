@@ -17,7 +17,6 @@ class CreateCommitRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateCommitRequest:
     def body(self):
         """Gets the body of this CreateCommitRequest.
 
-
         :return: The body of this CreateCommitRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateCommitRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCommitRequest.
-
 
         :param body: The body of this CreateCommitRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequestBody`

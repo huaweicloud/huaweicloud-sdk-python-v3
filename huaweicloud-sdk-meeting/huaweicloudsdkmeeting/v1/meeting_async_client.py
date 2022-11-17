@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MeetingAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddCorp
         :type request: :class:`huaweicloudsdkmeeting.v1.AddCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddCorpResponse`
@@ -68,6 +63,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddCorpAdmin
         :type request: :class:`huaweicloudsdkmeeting.v1.AddCorpAdminRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddCorpAdminResponse`
@@ -130,6 +129,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -168,6 +169,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddCorpAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -182,6 +184,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddDepartment
         :type request: :class:`huaweicloudsdkmeeting.v1.AddDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddDepartmentResponse`
@@ -194,6 +197,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -230,6 +235,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDepartmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -244,6 +250,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddDevice
         :type request: :class:`huaweicloudsdkmeeting.v1.AddDeviceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddDeviceResponse`
@@ -256,6 +263,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -292,6 +301,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -306,6 +316,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddMaterial
         :type request: :class:`huaweicloudsdkmeeting.v1.AddMaterialRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddMaterialResponse`
@@ -318,6 +329,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -356,6 +369,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddMaterialResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -370,6 +384,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddProgram
         :type request: :class:`huaweicloudsdkmeeting.v1.AddProgramRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddProgramResponse`
@@ -382,6 +397,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -418,6 +435,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddProgramResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -432,6 +450,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddPublication
         :type request: :class:`huaweicloudsdkmeeting.v1.AddPublicationRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddPublicationResponse`
@@ -444,6 +463,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -480,6 +501,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddPublicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -494,6 +516,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddResource
         :type request: :class:`huaweicloudsdkmeeting.v1.AddResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddResourceResponse`
@@ -506,6 +529,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -544,6 +569,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -558,6 +584,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddToPersonalSpace
         :type request: :class:`huaweicloudsdkmeeting.v1.AddToPersonalSpaceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddToPersonalSpaceResponse`
@@ -570,6 +597,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -606,6 +635,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddToPersonalSpaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -621,6 +651,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddUser
         :type request: :class:`huaweicloudsdkmeeting.v1.AddUserRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddUserResponse`
@@ -633,6 +664,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -669,6 +702,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -683,6 +717,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AllowClientRecord
         :type request: :class:`huaweicloudsdkmeeting.v1.AllowClientRecordRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AllowClientRecordResponse`
@@ -695,6 +730,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -733,6 +770,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowClientRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -747,6 +785,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AllowGuestUnmute
         :type request: :class:`huaweicloudsdkmeeting.v1.AllowGuestUnmuteRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AllowGuestUnmuteResponse`
@@ -759,6 +798,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -795,6 +836,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowGuestUnmuteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -809,6 +851,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AllowWaitingParticipant
         :type request: :class:`huaweicloudsdkmeeting.v1.AllowWaitingParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AllowWaitingParticipantResponse`
@@ -821,6 +864,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -857,6 +902,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowWaitingParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -871,6 +917,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateVmr
         :type request: :class:`huaweicloudsdkmeeting.v1.AssociateVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AssociateVmrResponse`
@@ -883,6 +930,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -923,6 +972,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -937,6 +987,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteCorpAdmins
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteCorpAdminsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteCorpAdminsResponse`
@@ -949,6 +1000,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -987,6 +1040,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteCorpAdminsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1002,6 +1056,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteDevices
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteDevicesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteDevicesResponse`
@@ -1014,6 +1069,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1050,6 +1107,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1064,6 +1122,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteMaterials
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteMaterialsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteMaterialsResponse`
@@ -1076,6 +1135,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1112,6 +1173,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMaterialsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1126,6 +1188,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeletePrograms
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteProgramsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteProgramsResponse`
@@ -1138,6 +1201,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1174,6 +1239,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteProgramsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1188,6 +1254,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeletePublications
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeletePublicationsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeletePublicationsResponse`
@@ -1200,6 +1267,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1236,6 +1305,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeletePublicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1250,6 +1320,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteUsers
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteUsersRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteUsersResponse`
@@ -1262,6 +1333,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1300,6 +1373,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1314,6 +1388,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchHand
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchHandRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchHandResponse`
@@ -1326,6 +1401,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1362,6 +1439,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchHandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1376,6 +1454,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUpdateDevicesStatus
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchUpdateDevicesStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchUpdateDevicesStatusResponse`
@@ -1388,6 +1467,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1426,6 +1507,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateDevicesStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1440,6 +1522,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUpdateUserStatus
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchUpdateUserStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchUpdateUserStatusResponse`
@@ -1452,6 +1535,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1492,6 +1577,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateUserStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1506,6 +1592,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BroadcastParticipant
         :type request: :class:`huaweicloudsdkmeeting.v1.BroadcastParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BroadcastParticipantResponse`
@@ -1518,6 +1605,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1554,6 +1643,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BroadcastParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1568,6 +1658,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelBroadcast
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelBroadcastRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelBroadcastResponse`
@@ -1580,6 +1671,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1614,6 +1707,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelBroadcastResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1628,6 +1722,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelMeetingResponse`
@@ -1640,6 +1735,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1680,6 +1777,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1694,6 +1792,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelRecurringMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelRecurringMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelRecurringMeetingResponse`
@@ -1706,6 +1805,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1746,6 +1847,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelRecurringMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1760,6 +1862,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelRecurringSubMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelRecurringSubMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelRecurringSubMeetingResponse`
@@ -1772,6 +1875,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1814,6 +1919,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelRecurringSubMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1828,6 +1934,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckSlideVerifyCode
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckSlideVerifyCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckSlideVerifyCodeResponse`
@@ -1840,6 +1947,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1876,6 +1985,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckSlideVerifyCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1890,6 +2000,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckToken
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckTokenResponse`
@@ -1902,6 +2013,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1938,6 +2051,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1952,6 +2066,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckVeriCodeForUpdateUserInfo
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckVeriCodeForUpdateUserInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckVeriCodeForUpdateUserInfoResponse`
@@ -1964,6 +2079,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2000,6 +2117,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckVeriCodeForUpdateUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2014,6 +2132,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckVerifyCode
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckVerifyCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckVerifyCodeResponse`
@@ -2026,6 +2145,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2062,6 +2183,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckVerifyCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2076,6 +2198,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAnonymousAuthRandom
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateAnonymousAuthRandomRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateAnonymousAuthRandomResponse`
@@ -2088,6 +2211,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2122,6 +2247,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAnonymousAuthRandomResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2136,6 +2262,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateConfToken
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateConfTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateConfTokenResponse`
@@ -2148,6 +2275,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2188,6 +2317,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConfTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2202,6 +2332,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateMeetingResponse`
@@ -2214,6 +2345,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2252,6 +2385,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2266,6 +2400,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePortalRefNonce
         :type request: :class:`huaweicloudsdkmeeting.v1.CreatePortalRefNonceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreatePortalRefNonceResponse`
@@ -2278,6 +2413,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2312,6 +2449,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePortalRefNonceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2326,6 +2464,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRecurringMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateRecurringMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateRecurringMeetingResponse`
@@ -2338,6 +2477,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2376,6 +2517,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRecurringMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2390,6 +2532,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateVisionActiveCode
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateVisionActiveCodeResponse`
@@ -2402,6 +2545,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2438,6 +2583,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2452,6 +2598,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateWebSocketToken
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateWebSocketTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateWebSocketTokenResponse`
@@ -2464,6 +2611,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2498,6 +2647,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWebSocketTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2512,6 +2662,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateWebinar
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateWebinarResponse`
@@ -2524,6 +2675,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2560,6 +2713,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWebinarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2574,6 +2728,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAttendees
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteAttendeesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteAttendeesResponse`
@@ -2586,6 +2741,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2622,6 +2779,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAttendeesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2636,6 +2794,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCorp
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteCorpResponse`
@@ -2648,6 +2807,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2684,6 +2845,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2698,6 +2860,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCorpVmr
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteCorpVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteCorpVmrResponse`
@@ -2710,6 +2873,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2746,6 +2911,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCorpVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2760,6 +2926,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDepartment
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteDepartmentResponse`
@@ -2772,6 +2939,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2808,6 +2977,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDepartmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2822,6 +2992,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteLayout
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteLayoutRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteLayoutResponse`
@@ -2834,6 +3005,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2870,6 +3043,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLayoutResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2884,6 +3058,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRecordings
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteRecordingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteRecordingsResponse`
@@ -2896,6 +3071,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2934,6 +3111,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRecordingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2948,6 +3126,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResource
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteResourceResponse`
@@ -2960,6 +3139,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2998,6 +3179,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3012,6 +3194,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteVisionActiveCode
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteVisionActiveCodeResponse`
@@ -3024,6 +3207,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3060,6 +3245,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3074,6 +3260,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteWebHookConfig
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteWebHookConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteWebHookConfigResponse`
@@ -3086,6 +3273,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3118,6 +3307,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWebHookConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3132,6 +3322,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteWebinar
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteWebinarResponse`
@@ -3144,6 +3335,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3180,6 +3373,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWebinarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3194,6 +3388,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateVmr
         :type request: :class:`huaweicloudsdkmeeting.v1.DisassociateVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DisassociateVmrResponse`
@@ -3206,6 +3401,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3246,6 +3443,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3260,6 +3458,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for Hand
         :type request: :class:`huaweicloudsdkmeeting.v1.HandRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.HandResponse`
@@ -3272,6 +3471,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3310,6 +3511,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='HandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3324,6 +3526,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for HangUp
         :type request: :class:`huaweicloudsdkmeeting.v1.HangUpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.HangUpResponse`
@@ -3336,6 +3539,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3372,6 +3577,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='HangUpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3386,6 +3592,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for InviteOperateVideo
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteOperateVideoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteOperateVideoResponse`
@@ -3398,6 +3605,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3436,6 +3645,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteOperateVideoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3450,6 +3660,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for InviteParticipant
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteParticipantResponse`
@@ -3462,6 +3673,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3498,6 +3711,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3512,6 +3726,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for InviteShare
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteShareRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteShareResponse`
@@ -3524,6 +3739,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3562,6 +3779,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteShareResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3580,6 +3798,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for InviteUser
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteUserRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteUserResponse`
@@ -3592,6 +3811,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3628,6 +3849,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3643,6 +3865,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for InviteWithPwd
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteWithPwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteWithPwdResponse`
@@ -3655,6 +3878,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3689,6 +3914,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InviteWithPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3703,6 +3929,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHistoryWebinars
         :type request: :class:`huaweicloudsdkmeeting.v1.ListHistoryWebinarsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ListHistoryWebinarsResponse`
@@ -3715,6 +3942,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3761,6 +3990,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHistoryWebinarsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3775,6 +4005,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOngoingWebinars
         :type request: :class:`huaweicloudsdkmeeting.v1.ListOngoingWebinarsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ListOngoingWebinarsResponse`
@@ -3787,6 +4018,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3829,6 +4062,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOngoingWebinarsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3843,6 +4077,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUpComingWebinars
         :type request: :class:`huaweicloudsdkmeeting.v1.ListUpComingWebinarsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ListUpComingWebinarsResponse`
@@ -3855,6 +4090,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3897,6 +4134,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUpComingWebinarsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3911,6 +4149,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for Live
         :type request: :class:`huaweicloudsdkmeeting.v1.LiveRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.LiveResponse`
@@ -3923,6 +4162,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3959,6 +4200,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='LiveResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3973,6 +4215,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for LockMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.LockMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.LockMeetingResponse`
@@ -3985,6 +4228,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4021,6 +4266,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='LockMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4035,6 +4281,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for LockView
         :type request: :class:`huaweicloudsdkmeeting.v1.LockViewRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.LockViewResponse`
@@ -4047,6 +4294,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4085,6 +4334,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='LockViewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4099,6 +4349,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MoveToWaitingRoom
         :type request: :class:`huaweicloudsdkmeeting.v1.MoveToWaitingRoomRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.MoveToWaitingRoomResponse`
@@ -4111,6 +4362,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4147,6 +4400,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MoveToWaitingRoomResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4161,6 +4415,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MuteMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.MuteMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.MuteMeetingResponse`
@@ -4173,6 +4428,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4209,6 +4466,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MuteMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4223,6 +4481,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MuteParticipant
         :type request: :class:`huaweicloudsdkmeeting.v1.MuteParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.MuteParticipantResponse`
@@ -4235,6 +4494,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4273,6 +4534,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MuteParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4287,6 +4549,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ProlongMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.ProlongMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ProlongMeetingResponse`
@@ -4299,6 +4562,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4335,6 +4600,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ProlongMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4349,6 +4615,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for Record
         :type request: :class:`huaweicloudsdkmeeting.v1.RecordRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.RecordResponse`
@@ -4361,6 +4628,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4397,6 +4666,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4411,6 +4681,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RenameParticipant
         :type request: :class:`huaweicloudsdkmeeting.v1.RenameParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.RenameParticipantResponse`
@@ -4423,6 +4694,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4459,6 +4732,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RenameParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4473,6 +4747,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetActivecode
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetActivecodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetActivecodeResponse`
@@ -4485,6 +4760,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4523,6 +4800,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetActivecodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4537,6 +4815,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetPwd
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetPwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetPwdResponse`
@@ -4549,6 +4828,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4585,6 +4866,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4599,6 +4881,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetPwdByAdmin
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetPwdByAdminRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetPwdByAdminResponse`
@@ -4611,6 +4894,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4647,6 +4932,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPwdByAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4661,6 +4947,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetVisionActiveCode
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetVisionActiveCodeResponse`
@@ -4673,6 +4960,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4711,6 +5000,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4725,6 +5015,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RollcallParticipant
         :type request: :class:`huaweicloudsdkmeeting.v1.RollcallParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.RollcallParticipantResponse`
@@ -4737,6 +5028,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4773,6 +5066,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RollcallParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4787,6 +5081,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SaveLayout
         :type request: :class:`huaweicloudsdkmeeting.v1.SaveLayoutRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SaveLayoutResponse`
@@ -4799,6 +5094,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4835,6 +5132,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SaveLayoutResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4849,6 +5147,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchAttendanceRecordsOfHisMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchAttendanceRecordsOfHisMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchAttendanceRecordsOfHisMeetingResponse`
@@ -4861,6 +5160,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4907,6 +5208,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchAttendanceRecordsOfHisMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4921,6 +5223,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchCorp
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpResponse`
@@ -4933,6 +5236,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4973,6 +5278,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4987,6 +5293,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchCorpAdmins
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpAdminsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpAdminsResponse`
@@ -4999,6 +5306,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5039,6 +5348,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpAdminsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5053,6 +5363,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchCorpDir
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpDirRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpDirResponse`
@@ -5065,6 +5376,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5111,6 +5424,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpDirResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5125,6 +5439,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchCorpExternalDir
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpExternalDirRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpExternalDirResponse`
@@ -5137,6 +5452,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5179,6 +5496,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpExternalDirResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5193,6 +5511,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchCorpResources
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpResourcesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpResourcesResponse`
@@ -5205,6 +5524,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5259,6 +5580,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5273,6 +5595,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchCorpVmr
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpVmrResponse`
@@ -5285,6 +5608,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5329,6 +5654,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCorpVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5343,6 +5669,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchCtlRecordsOfHisMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCtlRecordsOfHisMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCtlRecordsOfHisMeetingResponse`
@@ -5355,6 +5682,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5399,6 +5728,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchCtlRecordsOfHisMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5413,6 +5743,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchDepartmentByName
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchDepartmentByNameRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchDepartmentByNameResponse`
@@ -5425,6 +5756,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5461,6 +5794,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchDepartmentByNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5476,6 +5810,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchDevices
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchDevicesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchDevicesResponse`
@@ -5488,6 +5823,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5534,6 +5871,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5551,6 +5889,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchHisMeetings
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchHisMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchHisMeetingsResponse`
@@ -5563,6 +5902,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5613,6 +5954,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchHisMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5627,6 +5969,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchMaterials
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMaterialsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMaterialsResponse`
@@ -5639,6 +5982,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5679,6 +6024,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchMaterialsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5693,6 +6039,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchMeetingFileList
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMeetingFileListRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMeetingFileListResponse`
@@ -5705,6 +6052,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5745,6 +6094,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchMeetingFileListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5761,6 +6111,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchMeetings
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMeetingsResponse`
@@ -5773,6 +6124,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5821,6 +6174,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5835,6 +6189,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchMemberVmr
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMemberVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMemberVmrResponse`
@@ -5847,6 +6202,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5889,6 +6246,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchMemberVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5903,6 +6261,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchOnlineMeetings
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchOnlineMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchOnlineMeetingsResponse`
@@ -5915,6 +6274,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5959,6 +6320,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchOnlineMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5973,6 +6335,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchPrograms
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchProgramsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchProgramsResponse`
@@ -5985,6 +6348,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6025,6 +6390,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchProgramsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6039,6 +6405,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchPublications
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchPublicationsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchPublicationsResponse`
@@ -6051,6 +6418,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6091,6 +6460,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchPublicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6105,6 +6475,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchRecordings
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchRecordingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchRecordingsResponse`
@@ -6117,6 +6488,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6167,6 +6540,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchRecordingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6181,6 +6555,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchResource
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchResourceResponse`
@@ -6193,6 +6568,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6245,6 +6622,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6259,6 +6637,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchResourceOpRecord
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchResourceOpRecordRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchResourceOpRecordResponse`
@@ -6271,6 +6650,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6327,6 +6708,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchResourceOpRecordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6341,6 +6723,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchUsers
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchUsersRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchUsersResponse`
@@ -6353,6 +6736,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6412,6 +6797,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6426,6 +6812,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchVisionActiveCode
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchVisionActiveCodeResponse`
@@ -6438,6 +6825,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6480,6 +6869,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6494,6 +6884,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SendSlideVerifyCode
         :type request: :class:`huaweicloudsdkmeeting.v1.SendSlideVerifyCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SendSlideVerifyCodeResponse`
@@ -6506,6 +6897,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6542,6 +6935,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendSlideVerifyCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6556,6 +6950,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SendVeriCodeForChangePwd
         :type request: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForChangePwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForChangePwdResponse`
@@ -6568,6 +6963,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6604,6 +7001,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendVeriCodeForChangePwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6618,6 +7016,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SendVeriCodeForUpdateUserInfo
         :type request: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForUpdateUserInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForUpdateUserInfoResponse`
@@ -6630,6 +7029,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6666,6 +7067,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendVeriCodeForUpdateUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6680,6 +7082,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetCohost
         :type request: :class:`huaweicloudsdkmeeting.v1.SetCohostRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetCohostResponse`
@@ -6692,6 +7095,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6730,6 +7135,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetCohostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6744,6 +7150,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetCustomMultiPicture
         :type request: :class:`huaweicloudsdkmeeting.v1.SetCustomMultiPictureRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetCustomMultiPictureResponse`
@@ -6756,6 +7163,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6792,6 +7201,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetCustomMultiPictureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6806,6 +7216,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetHostView
         :type request: :class:`huaweicloudsdkmeeting.v1.SetHostViewRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetHostViewResponse`
@@ -6818,6 +7229,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6854,6 +7267,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetHostViewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6868,6 +7282,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetMultiPicture
         :type request: :class:`huaweicloudsdkmeeting.v1.SetMultiPictureRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetMultiPictureResponse`
@@ -6880,6 +7295,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6916,6 +7333,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetMultiPictureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6930,6 +7348,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetParticipantView
         :type request: :class:`huaweicloudsdkmeeting.v1.SetParticipantViewRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetParticipantViewResponse`
@@ -6942,6 +7361,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6980,6 +7401,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetParticipantViewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6994,6 +7416,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetRole
         :type request: :class:`huaweicloudsdkmeeting.v1.SetRoleRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetRoleResponse`
@@ -7006,6 +7429,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7044,6 +7469,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7058,6 +7484,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetSsoConfig
         :type request: :class:`huaweicloudsdkmeeting.v1.SetSsoConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetSsoConfigResponse`
@@ -7070,6 +7497,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7106,6 +7535,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetSsoConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7120,6 +7550,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetWebHookConfig
         :type request: :class:`huaweicloudsdkmeeting.v1.SetWebHookConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetWebHookConfigResponse`
@@ -7132,6 +7563,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7164,6 +7597,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetWebHookConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7178,6 +7612,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowConfOrg
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowConfOrgRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowConfOrgResponse`
@@ -7190,6 +7625,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7222,6 +7659,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConfOrgResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7236,6 +7674,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCorp
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpResponse`
@@ -7248,6 +7687,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7284,6 +7725,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7298,6 +7740,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCorpAdmin
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpAdminRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpAdminResponse`
@@ -7310,6 +7753,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7348,6 +7793,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCorpAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7362,6 +7808,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCorpBasicInfo
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpBasicInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpBasicInfoResponse`
@@ -7374,6 +7821,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7408,6 +7857,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCorpBasicInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7422,6 +7872,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCorpResource
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpResourceResponse`
@@ -7434,6 +7885,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7468,6 +7921,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCorpResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7482,6 +7936,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDepartment
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDepartmentResponse`
@@ -7494,6 +7949,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7530,6 +7987,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDepartmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7544,6 +8002,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeptAndChildDept
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeptAndChildDeptRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeptAndChildDeptResponse`
@@ -7556,6 +8015,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7592,6 +8053,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeptAndChildDeptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7607,6 +8069,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeviceDetail
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeviceDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeviceDetailResponse`
@@ -7619,6 +8082,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7655,6 +8120,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7670,6 +8136,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeviceStatus
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeviceStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeviceStatusResponse`
@@ -7682,6 +8149,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7718,6 +8187,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7732,6 +8202,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeviceTypes
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeviceTypesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeviceTypesResponse`
@@ -7744,6 +8215,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7778,6 +8251,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7792,6 +8266,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHisMeetingDetail
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowHisMeetingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowHisMeetingDetailResponse`
@@ -7804,6 +8279,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7852,6 +8329,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHisMeetingDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7866,6 +8344,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLayout
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowLayoutRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowLayoutResponse`
@@ -7878,6 +8357,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7912,6 +8393,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLayoutResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7928,6 +8410,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMeetingDetail
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMeetingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMeetingDetailResponse`
@@ -7940,6 +8423,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7988,6 +8473,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMeetingDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8002,6 +8488,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMeetingFile
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileResponse`
@@ -8014,6 +8501,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8050,6 +8539,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMeetingFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8064,6 +8554,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMeetingFileList
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileListRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileListResponse`
@@ -8076,6 +8567,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8112,6 +8605,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMeetingFileListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8126,6 +8620,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMyInfo
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMyInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMyInfoResponse`
@@ -8138,6 +8633,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8172,6 +8669,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMyInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8186,6 +8684,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowOnlineMeetingDetail
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowOnlineMeetingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowOnlineMeetingDetailResponse`
@@ -8198,6 +8697,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8246,6 +8747,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOnlineMeetingDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8260,6 +8762,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowOrgRes
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowOrgResRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowOrgResResponse`
@@ -8272,6 +8775,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8302,6 +8807,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOrgResResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8316,6 +8822,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProgram
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowProgramRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowProgramResponse`
@@ -8328,6 +8835,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8364,6 +8873,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProgramResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8378,6 +8888,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPublication
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowPublicationRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowPublicationResponse`
@@ -8390,6 +8901,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8426,6 +8939,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPublicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8440,6 +8954,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRealTimeInfoOfMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRealTimeInfoOfMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRealTimeInfoOfMeetingResponse`
@@ -8452,6 +8967,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8486,6 +9003,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRealTimeInfoOfMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8500,6 +9018,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecordingDetail
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRecordingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRecordingDetailResponse`
@@ -8512,6 +9031,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8550,6 +9071,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordingDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8566,6 +9088,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecordingFileDownloadUrls
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRecordingFileDownloadUrlsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRecordingFileDownloadUrlsResponse`
@@ -8578,6 +9101,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8618,6 +9143,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecordingFileDownloadUrlsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8632,6 +9158,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRegionInfoOfMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRegionInfoOfMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRegionInfoOfMeetingResponse`
@@ -8644,6 +9171,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8676,6 +9205,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRegionInfoOfMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8690,6 +9220,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRoomSetting
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRoomSettingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRoomSettingResponse`
@@ -8702,6 +9233,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8738,6 +9271,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRoomSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8752,6 +9286,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSpRes
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowSpResRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowSpResResponse`
@@ -8764,6 +9299,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8794,6 +9331,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSpResResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8808,6 +9346,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSpResource
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowSpResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowSpResourceResponse`
@@ -8820,6 +9359,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8856,6 +9397,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSpResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8870,6 +9412,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSsoConfig
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowSsoConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowSsoConfigResponse`
@@ -8882,6 +9425,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8916,6 +9461,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSsoConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8930,6 +9476,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUserDetail
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowUserDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowUserDetailResponse`
@@ -8942,6 +9489,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8980,6 +9529,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8994,6 +9544,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWebHookConfig
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowWebHookConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowWebHookConfigResponse`
@@ -9006,6 +9557,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9040,6 +9593,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWebHookConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9054,6 +9608,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWebinar
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowWebinarResponse`
@@ -9066,6 +9621,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9102,6 +9659,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWebinarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9117,6 +9675,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.StartMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.StartMeetingResponse`
@@ -9129,6 +9688,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9161,6 +9722,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9177,6 +9739,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.StopMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.StopMeetingResponse`
@@ -9189,6 +9752,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9223,6 +9788,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9237,6 +9803,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SwitchMode
         :type request: :class:`huaweicloudsdkmeeting.v1.SwitchModeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SwitchModeResponse`
@@ -9249,6 +9816,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9285,6 +9854,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchModeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9299,6 +9869,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateContact
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateContactRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateContactResponse`
@@ -9311,6 +9882,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9347,6 +9920,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateContactResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9361,6 +9935,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCorp
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateCorpResponse`
@@ -9373,6 +9948,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9411,6 +9988,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCorpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9425,6 +10003,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCorpBasicInfo
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateCorpBasicInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateCorpBasicInfoResponse`
@@ -9437,6 +10016,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9473,6 +10054,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCorpBasicInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9487,6 +10069,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDepartment
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateDepartmentResponse`
@@ -9499,6 +10082,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9537,6 +10122,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDepartmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9552,6 +10138,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDevice
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateDeviceResponse`
@@ -9564,6 +10151,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9602,6 +10191,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9616,6 +10206,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMaterial
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMaterialRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMaterialResponse`
@@ -9628,6 +10219,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9666,6 +10259,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMaterialResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9680,6 +10274,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMeetingResponse`
@@ -9692,6 +10287,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9732,6 +10329,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9746,6 +10344,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMemberVmr
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMemberVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMemberVmrResponse`
@@ -9758,6 +10357,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9796,6 +10397,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberVmrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9810,6 +10412,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMyInfo
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMyInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMyInfoResponse`
@@ -9822,6 +10425,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9858,6 +10463,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMyInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9872,6 +10478,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProgram
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateProgramRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateProgramResponse`
@@ -9884,6 +10491,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9922,6 +10531,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProgramResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9936,6 +10546,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePublication
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdatePublicationRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdatePublicationResponse`
@@ -9948,6 +10559,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9986,6 +10599,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePublicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10000,6 +10614,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePwd
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdatePwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdatePwdResponse`
@@ -10012,6 +10627,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10048,6 +10665,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10062,6 +10680,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRecurringMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringMeetingResponse`
@@ -10074,6 +10693,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10114,6 +10735,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecurringMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10128,6 +10750,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRecurringSubMeeting
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringSubMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringSubMeetingResponse`
@@ -10140,6 +10763,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10180,6 +10805,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRecurringSubMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10194,6 +10820,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateResource
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateResourceResponse`
@@ -10206,6 +10833,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10244,6 +10873,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10258,6 +10888,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRoomSetting
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateRoomSettingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateRoomSettingResponse`
@@ -10270,6 +10901,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10308,6 +10941,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRoomSettingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10322,6 +10956,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateStartedConfConfig
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfConfigResponse`
@@ -10334,6 +10969,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10370,6 +11007,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStartedConfConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10384,6 +11022,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateToken
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateTokenResponse`
@@ -10396,6 +11035,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10430,6 +11071,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10444,6 +11086,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUser
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateUserResponse`
@@ -10456,6 +11099,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10496,6 +11141,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10510,6 +11156,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateWebHookConfigStatus
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateWebHookConfigStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateWebHookConfigStatusResponse`
@@ -10522,6 +11169,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10556,6 +11205,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWebHookConfigStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10570,6 +11220,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateWebinar
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateWebinarResponse`
@@ -10582,6 +11233,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10618,6 +11271,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWebinarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10632,6 +11286,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadFile
         :type request: :class:`huaweicloudsdkmeeting.v1.UploadFileRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UploadFileResponse`
@@ -10644,6 +11299,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10682,6 +11339,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10697,6 +11355,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchQosHistoryMeetings
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosHistoryMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosHistoryMeetingsResponse`
@@ -10709,6 +11368,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10749,6 +11410,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQosHistoryMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10764,6 +11426,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchQosOnlineMeetings
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosOnlineMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosOnlineMeetingsResponse`
@@ -10776,6 +11439,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10812,6 +11477,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQosOnlineMeetingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10827,6 +11493,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchQosParticipantDetail
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantDetailResponse`
@@ -10839,6 +11506,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10877,6 +11546,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQosParticipantDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10892,6 +11562,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchQosParticipants
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantsResponse`
@@ -10904,6 +11575,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10944,6 +11617,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchQosParticipantsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10959,6 +11633,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetQosThreshold
         :type request: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdResponse`
@@ -10971,6 +11646,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11005,6 +11682,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetQosThresholdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11020,6 +11698,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQosThreshold
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowQosThresholdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowQosThresholdResponse`
@@ -11032,6 +11711,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11064,6 +11745,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQosThresholdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11081,6 +11763,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchStatisticConferenceInfo
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceInfoResponse`
@@ -11093,6 +11776,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11135,6 +11820,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchStatisticConferenceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11153,6 +11839,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchStatisticConferenceParticipant
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceParticipantResponse`
@@ -11165,6 +11852,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11207,6 +11896,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchStatisticConferenceParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11223,6 +11913,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchStatisticResourceInfo
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticResourceInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticResourceInfoResponse`
@@ -11235,6 +11926,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11277,6 +11970,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchStatisticResourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11295,6 +11989,7 @@ class MeetingAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchStatisticUserInfo
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticUserInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticUserInfoResponse`
@@ -11307,6 +12002,8 @@ class MeetingAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11349,6 +12046,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchStatisticUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11356,7 +12054,7 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -11367,9 +12065,10 @@ class MeetingAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -11386,6 +12085,7 @@ class MeetingAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

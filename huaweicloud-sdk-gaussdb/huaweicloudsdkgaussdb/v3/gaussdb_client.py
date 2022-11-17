@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GaussDBClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class GaussDBClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -104,6 +100,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDatabasePermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -130,6 +127,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +165,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchTagActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -192,6 +192,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +230,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeGaussMySqlInstanceSpecificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -254,6 +257,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -292,6 +297,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeGaussMySqlProxySpecificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -318,6 +324,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -352,6 +360,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -378,6 +387,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -414,6 +425,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -440,6 +452,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -476,6 +490,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -502,6 +517,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -536,6 +553,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -562,6 +580,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -598,6 +618,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -624,6 +645,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -660,6 +683,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGaussMySqlReadonlyNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -686,6 +710,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -722,6 +748,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabasePermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -748,6 +775,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -784,6 +813,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -810,6 +840,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -846,6 +878,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -872,6 +905,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -906,6 +941,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -932,6 +968,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -968,6 +1006,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -994,6 +1033,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1030,6 +1071,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGaussMySqlReadonlyNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1056,6 +1098,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1092,6 +1136,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandGaussMySqlInstanceVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1119,6 +1164,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1155,6 +1202,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandGaussMySqlProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1181,6 +1229,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1217,6 +1267,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1243,6 +1294,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1281,6 +1334,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1307,6 +1361,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1341,6 +1397,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlDatabaseCharsetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1367,6 +1424,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1405,6 +1464,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1431,6 +1491,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1467,6 +1529,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlDedicatedResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1493,6 +1556,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1539,6 +1604,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlErrorLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1565,6 +1631,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1599,6 +1667,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlInstanceDetailInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1625,6 +1694,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1677,6 +1748,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1703,6 +1775,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1749,6 +1823,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGaussMySqlSlowLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1775,6 +1850,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1813,6 +1890,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1839,6 +1917,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1875,6 +1955,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1901,6 +1982,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1937,6 +2020,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetGaussMySqlDatabasePasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1963,6 +2047,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1999,6 +2085,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetGaussMySqlPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2025,6 +2112,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2063,6 +2152,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetGaussMySqlProxyWeightResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2089,6 +2179,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2123,6 +2215,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetGaussMySqlQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2149,6 +2242,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2183,6 +2278,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuditLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2209,6 +2305,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2243,6 +2341,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDedicatedResourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2269,6 +2368,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2315,6 +2416,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlBackupListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2341,6 +2443,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2375,6 +2479,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2401,6 +2506,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2435,6 +2542,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlEngineVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2461,6 +2569,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2501,6 +2611,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2527,6 +2638,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2561,6 +2674,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlInstanceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2587,6 +2701,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2621,6 +2737,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlJobInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2647,6 +2764,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2681,6 +2800,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlProjectQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2707,6 +2827,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2741,6 +2863,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlProxyFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2767,6 +2890,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2805,6 +2930,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlProxyListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2831,6 +2957,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2869,6 +2997,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowGaussMySqlQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2895,6 +3024,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2929,6 +3060,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceMonitorExtendResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2955,6 +3087,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2991,6 +3125,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAuditLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3017,6 +3152,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3053,6 +3190,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGaussMySqlBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3079,6 +3217,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3115,6 +3255,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGaussMySqlInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3141,6 +3282,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3175,6 +3318,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGaussMySqlQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3201,6 +3345,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3237,6 +3383,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceMonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3263,6 +3410,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3299,6 +3448,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTransactionSplitStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3325,6 +3475,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3361,6 +3513,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSqlFilterRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3387,6 +3540,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3423,6 +3578,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetSqlFilterRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3449,6 +3605,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3483,6 +3641,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSqlFilterControlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3509,6 +3668,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3547,6 +3708,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSqlFilterRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3573,6 +3735,8 @@ class GaussDBClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3609,6 +3773,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSqlFilterControlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3616,7 +3781,7 @@ class GaussDBClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3626,9 +3791,10 @@ class GaussDBClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3645,6 +3811,7 @@ class GaussDBClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

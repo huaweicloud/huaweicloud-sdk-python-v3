@@ -17,7 +17,6 @@ class CreateRecordSetReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -110,7 +109,6 @@ class CreateRecordSetReq:
     def description(self):
         """Gets the description of this CreateRecordSetReq.
 
-
         :return: The description of this CreateRecordSetReq.
         :rtype: str
         """
@@ -119,7 +117,6 @@ class CreateRecordSetReq:
     @description.setter
     def description(self, description):
         """Sets the description of this CreateRecordSetReq.
-
 
         :param description: The description of this CreateRecordSetReq.
         :type description: str
@@ -152,7 +149,6 @@ class CreateRecordSetReq:
     def status(self):
         """Gets the status of this CreateRecordSetReq.
 
-
         :return: The status of this CreateRecordSetReq.
         :rtype: str
         """
@@ -161,7 +157,6 @@ class CreateRecordSetReq:
     @status.setter
     def status(self, status):
         """Sets the status of this CreateRecordSetReq.
-
 
         :param status: The status of this CreateRecordSetReq.
         :type status: str
@@ -172,7 +167,6 @@ class CreateRecordSetReq:
     def ttl(self):
         """Gets the ttl of this CreateRecordSetReq.
 
-
         :return: The ttl of this CreateRecordSetReq.
         :rtype: int
         """
@@ -181,7 +175,6 @@ class CreateRecordSetReq:
     @ttl.setter
     def ttl(self, ttl):
         """Sets the ttl of this CreateRecordSetReq.
-
 
         :param ttl: The ttl of this CreateRecordSetReq.
         :type ttl: int

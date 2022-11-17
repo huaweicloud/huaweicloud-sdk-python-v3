@@ -17,7 +17,6 @@ class ListServerGroupsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListServerGroupsResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListServerGroupsResponse.
 
-
         :return: The page_info of this ListServerGroupsResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerGroupsPageInfoResult`
         """
@@ -87,7 +85,6 @@ class ListServerGroupsResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListServerGroupsResponse.
-
 
         :param page_info: The page_info of this ListServerGroupsResponse.
         :type page_info: :class:`huaweicloudsdkecs.v2.ListServerGroupsPageInfoResult`

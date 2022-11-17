@@ -17,7 +17,6 @@ class ClusterDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -621,7 +620,6 @@ class ClusterDetail:
     def public_ip(self):
         """Gets the public_ip of this ClusterDetail.
 
-
         :return: The public_ip of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.PublicIp`
         """
@@ -630,7 +628,6 @@ class ClusterDetail:
     @public_ip.setter
     def public_ip(self, public_ip):
         """Sets the public_ip of this ClusterDetail.
-
 
         :param public_ip: The public_ip of this ClusterDetail.
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -729,7 +726,6 @@ class ClusterDetail:
     def parameter_group(self):
         """Gets the parameter_group of this ClusterDetail.
 
-
         :return: The parameter_group of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.ParameterGroup`
         """
@@ -738,7 +734,6 @@ class ClusterDetail:
     @parameter_group.setter
     def parameter_group(self, parameter_group):
         """Sets the parameter_group of this ClusterDetail.
-
 
         :param parameter_group: The parameter_group of this ClusterDetail.
         :type parameter_group: :class:`huaweicloudsdkdws.v2.ParameterGroup`
@@ -815,7 +810,6 @@ class ClusterDetail:
     def maintain_window(self):
         """Gets the maintain_window of this ClusterDetail.
 
-
         :return: The maintain_window of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.MaintainWindow`
         """
@@ -824,7 +818,6 @@ class ClusterDetail:
     @maintain_window.setter
     def maintain_window(self, maintain_window):
         """Sets the maintain_window of this ClusterDetail.
-
 
         :param maintain_window: The maintain_window of this ClusterDetail.
         :type maintain_window: :class:`huaweicloudsdkdws.v2.MaintainWindow`
@@ -835,7 +828,6 @@ class ClusterDetail:
     def resize_info(self):
         """Gets the resize_info of this ClusterDetail.
 
-
         :return: The resize_info of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.ResizeInfo`
         """
@@ -844,7 +836,6 @@ class ClusterDetail:
     @resize_info.setter
     def resize_info(self, resize_info):
         """Sets the resize_info of this ClusterDetail.
-
 
         :param resize_info: The resize_info of this ClusterDetail.
         :type resize_info: :class:`huaweicloudsdkdws.v2.ResizeInfo`
@@ -855,7 +846,6 @@ class ClusterDetail:
     def failed_reasons(self):
         """Gets the failed_reasons of this ClusterDetail.
 
-
         :return: The failed_reasons of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.FailedReason`
         """
@@ -864,7 +854,6 @@ class ClusterDetail:
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
         """Sets the failed_reasons of this ClusterDetail.
-
 
         :param failed_reasons: The failed_reasons of this ClusterDetail.
         :type failed_reasons: :class:`huaweicloudsdkdws.v2.FailedReason`

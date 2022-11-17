@@ -17,7 +17,6 @@ class CreateEditingJobReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -178,7 +177,6 @@ class CreateEditingJobReq:
     def concat(self):
         """Gets the concat of this CreateEditingJobReq.
 
-
         :return: The concat of this CreateEditingJobReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ConcatInfo`
         """
@@ -187,7 +185,6 @@ class CreateEditingJobReq:
     @concat.setter
     def concat(self, concat):
         """Sets the concat of this CreateEditingJobReq.
-
 
         :param concat: The concat of this CreateEditingJobReq.
         :type concat: :class:`huaweicloudsdkmpc.v1.ConcatInfo`
@@ -198,7 +195,6 @@ class CreateEditingJobReq:
     def mix(self):
         """Gets the mix of this CreateEditingJobReq.
 
-
         :return: The mix of this CreateEditingJobReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.MixInfo`
         """
@@ -207,7 +203,6 @@ class CreateEditingJobReq:
     @mix.setter
     def mix(self, mix):
         """Sets the mix of this CreateEditingJobReq.
-
 
         :param mix: The mix of this CreateEditingJobReq.
         :type mix: :class:`huaweicloudsdkmpc.v1.MixInfo`
@@ -218,7 +213,6 @@ class CreateEditingJobReq:
     def input(self):
         """Gets the input of this CreateEditingJobReq.
 
-
         :return: The input of this CreateEditingJobReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -227,7 +221,6 @@ class CreateEditingJobReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateEditingJobReq.
-
 
         :param input: The input of this CreateEditingJobReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -238,7 +231,6 @@ class CreateEditingJobReq:
     def output_setting(self):
         """Gets the output_setting of this CreateEditingJobReq.
 
-
         :return: The output_setting of this CreateEditingJobReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.OutputSetting`
         """
@@ -247,7 +239,6 @@ class CreateEditingJobReq:
     @output_setting.setter
     def output_setting(self, output_setting):
         """Sets the output_setting of this CreateEditingJobReq.
-
 
         :param output_setting: The output_setting of this CreateEditingJobReq.
         :type output_setting: :class:`huaweicloudsdkmpc.v1.OutputSetting`

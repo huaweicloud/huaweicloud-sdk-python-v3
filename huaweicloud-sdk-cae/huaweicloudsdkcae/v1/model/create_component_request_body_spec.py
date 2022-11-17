@@ -17,7 +17,6 @@ class CreateComponentRequestBodySpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -124,7 +123,6 @@ class CreateComponentRequestBodySpec:
     def build(self):
         """Gets the build of this CreateComponentRequestBodySpec.
 
-
         :return: The build of this CreateComponentRequestBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Build`
         """
@@ -133,7 +131,6 @@ class CreateComponentRequestBodySpec:
     @build.setter
     def build(self, build):
         """Sets the build of this CreateComponentRequestBodySpec.
-
 
         :param build: The build of this CreateComponentRequestBodySpec.
         :type build: :class:`huaweicloudsdkcae.v1.Build`
@@ -144,7 +141,6 @@ class CreateComponentRequestBodySpec:
     def source(self):
         """Gets the source of this CreateComponentRequestBodySpec.
 
-
         :return: The source of this CreateComponentRequestBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Source`
         """
@@ -153,7 +149,6 @@ class CreateComponentRequestBodySpec:
     @source.setter
     def source(self, source):
         """Sets the source of this CreateComponentRequestBodySpec.
-
 
         :param source: The source of this CreateComponentRequestBodySpec.
         :type source: :class:`huaweicloudsdkcae.v1.Source`
@@ -164,7 +159,6 @@ class CreateComponentRequestBodySpec:
     def resource_limit(self):
         """Gets the resource_limit of this CreateComponentRequestBodySpec.
 
-
         :return: The resource_limit of this CreateComponentRequestBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ResourceLimit`
         """
@@ -173,7 +167,6 @@ class CreateComponentRequestBodySpec:
     @resource_limit.setter
     def resource_limit(self, resource_limit):
         """Sets the resource_limit of this CreateComponentRequestBodySpec.
-
 
         :param resource_limit: The resource_limit of this CreateComponentRequestBodySpec.
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimit`

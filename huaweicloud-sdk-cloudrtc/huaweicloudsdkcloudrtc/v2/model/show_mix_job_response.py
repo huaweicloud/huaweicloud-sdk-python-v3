@@ -17,7 +17,6 @@ class ShowMixJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -228,7 +227,6 @@ class ShowMixJobResponse(SdkResponse):
     def mix_param(self):
         """Gets the mix_param of this ShowMixJobResponse.
 
-
         :return: The mix_param of this ShowMixJobResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
         """
@@ -237,7 +235,6 @@ class ShowMixJobResponse(SdkResponse):
     @mix_param.setter
     def mix_param(self, mix_param):
         """Sets the mix_param of this ShowMixJobResponse.
-
 
         :param mix_param: The mix_param of this ShowMixJobResponse.
         :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
@@ -248,7 +245,6 @@ class ShowMixJobResponse(SdkResponse):
     def record_param(self):
         """Gets the record_param of this ShowMixJobResponse.
 
-
         :return: The record_param of this ShowMixJobResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
@@ -257,7 +253,6 @@ class ShowMixJobResponse(SdkResponse):
     @record_param.setter
     def record_param(self, record_param):
         """Sets the record_param of this ShowMixJobResponse.
-
 
         :param record_param: The record_param of this ShowMixJobResponse.
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
@@ -422,7 +417,6 @@ class ShowMixJobResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this ShowMixJobResponse.
 
-
         :return: The x_request_id of this ShowMixJobResponse.
         :rtype: str
         """
@@ -431,7 +425,6 @@ class ShowMixJobResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ShowMixJobResponse.
-
 
         :param x_request_id: The x_request_id of this ShowMixJobResponse.
         :type x_request_id: str

@@ -17,7 +17,6 @@ class NodeAction:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class NodeAction:
     def node(self):
         """Gets the node of this NodeAction.
 
-
         :return: The node of this NodeAction.
         :rtype: :class:`huaweicloudsdkief.v1.Action`
         """
@@ -57,7 +55,6 @@ class NodeAction:
     @node.setter
     def node(self, node):
         """Sets the node of this NodeAction.
-
 
         :param node: The node of this NodeAction.
         :type node: :class:`huaweicloudsdkief.v1.Action`

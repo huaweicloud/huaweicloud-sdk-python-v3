@@ -17,7 +17,6 @@ class CreateDeploymentJobsParams:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class CreateDeploymentJobsParams:
     def function(self):
         """Gets the function of this CreateDeploymentJobsParams.
 
-
         :return: The function of this CreateDeploymentJobsParams.
         :rtype: :class:`huaweicloudsdkdevstar.v1.FGSDeploymentJobsParam`
         """
@@ -65,7 +63,6 @@ class CreateDeploymentJobsParams:
     @function.setter
     def function(self, function):
         """Sets the function of this CreateDeploymentJobsParams.
-
 
         :param function: The function of this CreateDeploymentJobsParams.
         :type function: :class:`huaweicloudsdkdevstar.v1.FGSDeploymentJobsParam`
@@ -76,7 +73,6 @@ class CreateDeploymentJobsParams:
     def cci(self):
         """Gets the cci of this CreateDeploymentJobsParams.
 
-
         :return: The cci of this CreateDeploymentJobsParams.
         :rtype: :class:`huaweicloudsdkdevstar.v1.CciDeploymentJobsParam`
         """
@@ -85,7 +81,6 @@ class CreateDeploymentJobsParams:
     @cci.setter
     def cci(self, cci):
         """Sets the cci of this CreateDeploymentJobsParams.
-
 
         :param cci: The cci of this CreateDeploymentJobsParams.
         :type cci: :class:`huaweicloudsdkdevstar.v1.CciDeploymentJobsParam`

@@ -17,7 +17,6 @@ class CreateAccessCodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateAccessCodeRequest:
     def body(self):
         """Gets the body of this CreateAccessCodeRequest.
 
-
         :return: The body of this CreateAccessCodeRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateAccessCodeRequestBody`
         """
@@ -87,7 +85,6 @@ class CreateAccessCodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAccessCodeRequest.
-
 
         :param body: The body of this CreateAccessCodeRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.CreateAccessCodeRequestBody`

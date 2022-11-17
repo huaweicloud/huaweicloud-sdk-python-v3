@@ -17,7 +17,6 @@ class BatchCreateAndDeleteVaultTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchCreateAndDeleteVaultTagsRequest:
     def body(self):
         """Gets the body of this BatchCreateAndDeleteVaultTagsRequest.
 
-
         :return: The body of this BatchCreateAndDeleteVaultTagsRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteVaultTagsReq`
         """
@@ -86,7 +84,6 @@ class BatchCreateAndDeleteVaultTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchCreateAndDeleteVaultTagsRequest.
-
 
         :param body: The body of this BatchCreateAndDeleteVaultTagsRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.BulkCreateAndDeleteVaultTagsReq`

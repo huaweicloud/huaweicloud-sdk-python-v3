@@ -17,7 +17,6 @@ class RunDeletePictureRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RunDeletePictureRequest:
     def body(self):
         """Gets the body of this RunDeletePictureRequest.
 
-
         :return: The body of this RunDeletePictureRequest.
         :rtype: :class:`huaweicloudsdkimagesearch.v1.DeletePictureReq`
         """
@@ -86,7 +84,6 @@ class RunDeletePictureRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunDeletePictureRequest.
-
 
         :param body: The body of this RunDeletePictureRequest.
         :type body: :class:`huaweicloudsdkimagesearch.v1.DeletePictureReq`

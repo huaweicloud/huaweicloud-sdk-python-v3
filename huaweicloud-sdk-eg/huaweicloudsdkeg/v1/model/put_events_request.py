@@ -17,7 +17,6 @@ class PutEventsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class PutEventsRequest:
     def body(self):
         """Gets the body of this PutEventsRequest.
 
-
         :return: The body of this PutEventsRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.PutEventsReq`
         """
@@ -86,7 +84,6 @@ class PutEventsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this PutEventsRequest.
-
 
         :param body: The body of this PutEventsRequest.
         :type body: :class:`huaweicloudsdkeg.v1.PutEventsReq`

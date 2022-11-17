@@ -17,7 +17,6 @@ class UpdateResIntelligentSceneRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -123,7 +122,6 @@ class UpdateResIntelligentSceneRequestBody:
     def specs_config(self):
         """Gets the specs_config of this UpdateResIntelligentSceneRequestBody.
 
-
         :return: The specs_config of this UpdateResIntelligentSceneRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
@@ -132,7 +130,6 @@ class UpdateResIntelligentSceneRequestBody:
     @specs_config.setter
     def specs_config(self, specs_config):
         """Sets the specs_config of this UpdateResIntelligentSceneRequestBody.
-
 
         :param specs_config: The specs_config of this UpdateResIntelligentSceneRequestBody.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -165,7 +162,6 @@ class UpdateResIntelligentSceneRequestBody:
     def job_configs(self):
         """Gets the job_configs of this UpdateResIntelligentSceneRequestBody.
 
-
         :return: The job_configs of this UpdateResIntelligentSceneRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
         """
@@ -174,7 +170,6 @@ class UpdateResIntelligentSceneRequestBody:
     @job_configs.setter
     def job_configs(self, job_configs):
         """Sets the job_configs of this UpdateResIntelligentSceneRequestBody.
-
 
         :param job_configs: The job_configs of this UpdateResIntelligentSceneRequestBody.
         :type job_configs: :class:`huaweicloudsdkres.v1.JobConfig`

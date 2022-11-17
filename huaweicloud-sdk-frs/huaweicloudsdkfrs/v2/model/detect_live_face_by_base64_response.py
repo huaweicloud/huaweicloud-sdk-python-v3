@@ -17,7 +17,6 @@ class DetectLiveFaceByBase64Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class DetectLiveFaceByBase64Response(SdkResponse):
     def result(self):
         """Gets the result of this DetectLiveFaceByBase64Response.
 
-
         :return: The result of this DetectLiveFaceByBase64Response.
         :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
         """
@@ -65,7 +63,6 @@ class DetectLiveFaceByBase64Response(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this DetectLiveFaceByBase64Response.
-
 
         :param result: The result of this DetectLiveFaceByBase64Response.
         :type result: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`

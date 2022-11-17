@@ -17,7 +17,6 @@ class TranscodeDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class TranscodeDetail:
     def input_file(self):
         """Gets the input_file of this TranscodeDetail.
 
-
         :return: The input_file of this TranscodeDetail.
         :rtype: :class:`huaweicloudsdkmpc.v1.SourceInfo`
         """
@@ -87,7 +85,6 @@ class TranscodeDetail:
     @input_file.setter
     def input_file(self, input_file):
         """Sets the input_file of this TranscodeDetail.
-
 
         :param input_file: The input_file of this TranscodeDetail.
         :type input_file: :class:`huaweicloudsdkmpc.v1.SourceInfo`

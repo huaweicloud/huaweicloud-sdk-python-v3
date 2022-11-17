@@ -17,7 +17,6 @@ class MultiTaskInitBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class MultiTaskInitBody:
     def ext_info(self):
         """Gets the ext_info of this MultiTaskInitBody.
 
-
         :return: The ext_info of this MultiTaskInitBody.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskInitBodyExtInfo`
         """
@@ -86,7 +84,6 @@ class MultiTaskInitBody:
     @ext_info.setter
     def ext_info(self, ext_info):
         """Sets the ext_info of this MultiTaskInitBody.
-
 
         :param ext_info: The ext_info of this MultiTaskInitBody.
         :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitBodyExtInfo`

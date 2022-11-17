@@ -17,7 +17,6 @@ class NotebookEntity:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -243,7 +242,6 @@ class NotebookEntity:
     def flavor(self):
         """Gets the flavor of this NotebookEntity.
 
-
         :return: The flavor of this NotebookEntity.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
         """
@@ -252,7 +250,6 @@ class NotebookEntity:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this NotebookEntity.
-
 
         :param flavor: The flavor of this NotebookEntity.
         :type flavor: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
@@ -263,7 +260,6 @@ class NotebookEntity:
     def status(self):
         """Gets the status of this NotebookEntity.
 
-
         :return: The status of this NotebookEntity.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
         """
@@ -272,7 +268,6 @@ class NotebookEntity:
     @status.setter
     def status(self, status):
         """Sets the status of this NotebookEntity.
-
 
         :param status: The status of this NotebookEntity.
         :type status: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
@@ -283,7 +278,6 @@ class NotebookEntity:
     def image(self):
         """Gets the image of this NotebookEntity.
 
-
         :return: The image of this NotebookEntity.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
         """
@@ -292,7 +286,6 @@ class NotebookEntity:
     @image.setter
     def image(self, image):
         """Sets the image of this NotebookEntity.
-
 
         :param image: The image of this NotebookEntity.
         :type image: :class:`huaweicloudsdkeihealth.v1.NotebookImage`

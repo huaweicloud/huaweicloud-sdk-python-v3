@@ -17,7 +17,6 @@ class AddDeviceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -169,7 +168,6 @@ class AddDeviceRequestBody:
     def auth_info(self):
         """Gets the auth_info of this AddDeviceRequestBody.
 
-
         :return: The auth_info of this AddDeviceRequestBody.
         :rtype: :class:`huaweicloudsdkiotedge.v2.EdgeDeviceAuthInfo`
         """
@@ -178,7 +176,6 @@ class AddDeviceRequestBody:
     @auth_info.setter
     def auth_info(self, auth_info):
         """Sets the auth_info of this AddDeviceRequestBody.
-
 
         :param auth_info: The auth_info of this AddDeviceRequestBody.
         :type auth_info: :class:`huaweicloudsdkiotedge.v2.EdgeDeviceAuthInfo`

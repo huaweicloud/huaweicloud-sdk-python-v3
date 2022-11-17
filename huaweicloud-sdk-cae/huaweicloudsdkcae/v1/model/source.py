@@ -17,7 +17,6 @@ class Source:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -68,7 +67,6 @@ class Source:
     def code(self):
         """Gets the code of this Source.
 
-
         :return: The code of this Source.
         :rtype: :class:`huaweicloudsdkcae.v1.Repo`
         """
@@ -77,7 +75,6 @@ class Source:
     @code.setter
     def code(self, code):
         """Sets the code of this Source.
-
 
         :param code: The code of this Source.
         :type code: :class:`huaweicloudsdkcae.v1.Repo`

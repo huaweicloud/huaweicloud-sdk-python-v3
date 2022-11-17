@@ -17,7 +17,6 @@ class BatchAddDeviceToGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchAddDeviceToGroupRequest:
     def body(self):
         """Gets the body of this BatchAddDeviceToGroupRequest.
 
-
         :return: The body of this BatchAddDeviceToGroupRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequestBody`
         """
@@ -114,7 +112,6 @@ class BatchAddDeviceToGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchAddDeviceToGroupRequest.
-
 
         :param body: The body of this BatchAddDeviceToGroupRequest.
         :type body: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequestBody`

@@ -17,7 +17,6 @@ class CreateLabelPageReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class CreateLabelPageReq:
     def feature(self):
         """Gets the feature of this CreateLabelPageReq.
 
-
         :return: The feature of this CreateLabelPageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FeatureEnum`
         """
@@ -91,7 +89,6 @@ class CreateLabelPageReq:
     @feature.setter
     def feature(self, feature):
         """Sets the feature of this CreateLabelPageReq.
-
 
         :param feature: The feature of this CreateLabelPageReq.
         :type feature: :class:`huaweicloudsdkeihealth.v1.FeatureEnum`

@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IefClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -75,6 +69,8 @@ class IefClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -112,6 +108,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -138,6 +135,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -172,6 +171,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -198,6 +198,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -234,6 +236,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -260,6 +263,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -294,6 +299,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConfigMapResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -320,6 +326,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -354,6 +362,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeploymentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -380,6 +389,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -414,6 +425,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -440,6 +452,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -474,6 +488,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeviceTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -500,6 +515,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -534,6 +551,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -560,6 +578,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -596,6 +616,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeNodeCertsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -622,6 +643,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -656,6 +679,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -682,6 +706,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -716,6 +742,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -742,6 +769,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -778,6 +807,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNodeEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -804,6 +834,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -838,6 +870,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -864,6 +897,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -898,6 +933,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -924,6 +960,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -958,6 +996,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -986,6 +1025,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1024,6 +1065,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1050,6 +1092,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1084,6 +1128,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1110,6 +1155,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1146,6 +1193,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1172,6 +1220,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1206,6 +1256,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConfigMapResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1232,6 +1283,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1268,6 +1321,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1294,6 +1348,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1328,6 +1384,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1354,6 +1411,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1388,6 +1447,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1414,6 +1474,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1448,6 +1510,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1474,6 +1537,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1510,6 +1575,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeNodeCertsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1536,6 +1602,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1570,6 +1638,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1596,6 +1665,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1630,6 +1701,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEndPointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1656,6 +1728,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1692,6 +1766,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNodeEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1718,6 +1793,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1756,6 +1833,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResourceTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1782,6 +1860,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1816,6 +1896,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1842,6 +1923,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1876,6 +1959,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1902,6 +1986,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1936,6 +2022,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1962,6 +2049,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1998,6 +2087,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableDisableEdgeNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2024,6 +2114,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2062,6 +2154,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2088,6 +2181,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2130,6 +2225,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2156,6 +2252,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2194,6 +2292,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigMapsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2220,6 +2319,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2264,6 +2365,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeploymentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2290,6 +2392,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2328,6 +2432,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeviceTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2354,6 +2459,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2398,6 +2505,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2424,6 +2532,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2462,6 +2572,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEdgeNodeCertsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2490,6 +2601,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2540,6 +2653,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEdgeNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2566,6 +2680,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2604,6 +2720,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEncryptdataNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2630,6 +2747,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2668,6 +2787,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2696,6 +2816,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2738,6 +2860,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEndpointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2764,6 +2887,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2802,6 +2927,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNodeEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2828,6 +2954,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2872,6 +3000,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPodsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2898,6 +3027,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2934,6 +3065,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2960,6 +3092,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2998,6 +3132,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRuleErrorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3024,6 +3159,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3062,6 +3199,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3088,6 +3226,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3128,6 +3268,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecretsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3154,6 +3295,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3196,6 +3339,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3222,6 +3366,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3258,6 +3404,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3284,6 +3431,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3318,6 +3467,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsByResourceTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3344,6 +3494,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3380,6 +3532,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartDeploymentsPodResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3406,6 +3559,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3440,6 +3595,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3466,6 +3622,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3502,6 +3660,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppVersionDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3528,6 +3687,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3562,6 +3723,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConfigMapResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3588,6 +3750,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3622,6 +3786,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3648,6 +3813,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3682,6 +3849,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3708,6 +3876,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3742,6 +3912,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3768,6 +3939,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3802,6 +3975,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceTwinResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3828,6 +4002,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3862,6 +4038,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeNodeDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3888,6 +4065,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3922,6 +4101,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3948,6 +4128,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3982,6 +4164,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEndPointDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4008,6 +4191,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4042,6 +4227,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRuleDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4068,6 +4254,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4102,6 +4290,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4128,6 +4317,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4162,6 +4353,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServiceDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4188,6 +4380,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4222,6 +4416,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4248,6 +4443,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4282,6 +4479,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4308,6 +4506,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4344,6 +4544,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4370,6 +4571,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4408,6 +4611,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4434,6 +4638,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4470,6 +4676,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConfigMapResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4496,6 +4703,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4532,6 +4741,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4558,6 +4768,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4594,6 +4806,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4620,6 +4833,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4656,6 +4871,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceTemplateByIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4682,6 +4898,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4718,6 +4936,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceTwinResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4744,6 +4963,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4780,6 +5001,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4806,6 +5028,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4842,6 +5066,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEdgeNodeDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4868,6 +5093,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4904,6 +5131,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4930,6 +5158,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4966,6 +5196,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNodeByDeviceIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4992,6 +5223,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5028,6 +5261,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5054,6 +5288,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5090,6 +5326,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5116,6 +5353,8 @@ class IefClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5150,6 +5389,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpgradeEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5157,7 +5397,7 @@ class IefClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -5167,9 +5407,10 @@ class IefClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -5186,6 +5427,7 @@ class IefClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

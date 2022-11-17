@@ -17,7 +17,6 @@ class TokenResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class TokenResult:
     def domain(self):
         """Gets the domain of this TokenResult.
 
-
         :return: The domain of this TokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
         """
@@ -123,7 +121,6 @@ class TokenResult:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this TokenResult.
-
 
         :param domain: The domain of this TokenResult.
         :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -200,7 +197,6 @@ class TokenResult:
     def project(self):
         """Gets the project of this TokenResult.
 
-
         :return: The project of this TokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
         """
@@ -209,7 +205,6 @@ class TokenResult:
     @project.setter
     def project(self, project):
         """Sets the project of this TokenResult.
-
 
         :param project: The project of this TokenResult.
         :type project: :class:`huaweicloudsdkiam.v3.TokenProjectResult`
@@ -242,7 +237,6 @@ class TokenResult:
     def user(self):
         """Gets the user of this TokenResult.
 
-
         :return: The user of this TokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenUserResult`
         """
@@ -251,7 +245,6 @@ class TokenResult:
     @user.setter
     def user(self, user):
         """Sets the user of this TokenResult.
-
 
         :param user: The user of this TokenResult.
         :type user: :class:`huaweicloudsdkiam.v3.TokenUserResult`

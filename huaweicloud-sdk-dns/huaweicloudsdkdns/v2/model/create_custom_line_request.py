@@ -17,7 +17,6 @@ class CreateCustomLineRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateCustomLineRequest:
     def body(self):
         """Gets the body of this CreateCustomLineRequest.
 
-
         :return: The body of this CreateCustomLineRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.CreateCustomLines`
         """
@@ -58,7 +56,6 @@ class CreateCustomLineRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCustomLineRequest.
-
 
         :param body: The body of this CreateCustomLineRequest.
         :type body: :class:`huaweicloudsdkdns.v2.CreateCustomLines`

@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AttachCallbackInstanceLifeCycleHook
         :type request: :class:`huaweicloudsdkas.v1.AttachCallbackInstanceLifeCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.AttachCallbackInstanceLifeCycleHookResponse`
@@ -68,6 +63,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachCallbackInstanceLifeCycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -124,6 +122,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddScalingInstances
         :type request: :class:`huaweicloudsdkas.v1.BatchAddScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchAddScalingInstancesResponse`
@@ -136,6 +135,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -170,6 +171,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -184,6 +186,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteScalingConfigs
         :type request: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigsResponse`
@@ -196,6 +199,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +233,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteScalingConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +248,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteScalingPolicies
         :type request: :class:`huaweicloudsdkas.v1.BatchDeleteScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchDeleteScalingPoliciesResponse`
@@ -254,6 +261,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -286,6 +295,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteScalingPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +310,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchPauseScalingPolicies
         :type request: :class:`huaweicloudsdkas.v1.BatchPauseScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchPauseScalingPoliciesResponse`
@@ -312,6 +323,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +357,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchPauseScalingPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +372,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchProtectScalingInstances
         :type request: :class:`huaweicloudsdkas.v1.BatchProtectScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchProtectScalingInstancesResponse`
@@ -370,6 +385,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -404,6 +421,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchProtectScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -418,6 +436,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRemoveScalingInstances
         :type request: :class:`huaweicloudsdkas.v1.BatchRemoveScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchRemoveScalingInstancesResponse`
@@ -430,6 +449,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -464,6 +485,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRemoveScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -478,6 +500,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchResumeScalingPolicies
         :type request: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesResponse`
@@ -490,6 +513,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -522,6 +547,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchResumeScalingPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -536,6 +562,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchSetScalingInstancesStandby
         :type request: :class:`huaweicloudsdkas.v1.BatchSetScalingInstancesStandbyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchSetScalingInstancesStandbyResponse`
@@ -548,6 +575,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -582,6 +611,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSetScalingInstancesStandbyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -596,6 +626,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUnprotectScalingInstances
         :type request: :class:`huaweicloudsdkas.v1.BatchUnprotectScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchUnprotectScalingInstancesResponse`
@@ -608,6 +639,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -642,6 +675,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUnprotectScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -656,6 +690,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUnsetScalingInstancesStantby
         :type request: :class:`huaweicloudsdkas.v1.BatchUnsetScalingInstancesStantbyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchUnsetScalingInstancesStantbyResponse`
@@ -668,6 +703,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -702,6 +739,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUnsetScalingInstancesStantbyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -716,6 +754,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLifyCycleHook
         :type request: :class:`huaweicloudsdkas.v1.CreateLifyCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateLifyCycleHookResponse`
@@ -728,6 +767,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -762,6 +803,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLifyCycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -776,6 +818,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateScalingConfig
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingConfigRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingConfigResponse`
@@ -788,6 +831,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -820,6 +865,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -834,6 +880,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateScalingGroup
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingGroupResponse`
@@ -846,6 +893,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -878,6 +927,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -892,6 +942,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateScalingNotification
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingNotificationRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingNotificationResponse`
@@ -904,6 +955,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -938,6 +991,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -952,6 +1006,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateScalingPolicy
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingPolicyResponse`
@@ -964,6 +1019,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -996,6 +1053,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1010,6 +1068,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateScalingTagInfo
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingTagInfoRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingTagInfoResponse`
@@ -1022,6 +1081,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1058,6 +1119,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingTagInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1072,6 +1134,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteLifecycleHook
         :type request: :class:`huaweicloudsdkas.v1.DeleteLifecycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteLifecycleHookResponse`
@@ -1084,6 +1147,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1118,6 +1183,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLifecycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1132,6 +1198,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteScalingConfig
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingConfigRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingConfigResponse`
@@ -1144,6 +1211,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1176,6 +1245,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1190,6 +1260,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteScalingGroup
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingGroupResponse`
@@ -1202,6 +1273,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1236,6 +1309,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1250,6 +1324,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteScalingInstance
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingInstanceRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingInstanceResponse`
@@ -1262,6 +1337,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1296,6 +1373,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1310,6 +1388,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteScalingNotification
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingNotificationRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingNotificationResponse`
@@ -1322,6 +1401,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1356,6 +1437,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1370,6 +1452,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteScalingPolicy
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingPolicyResponse`
@@ -1382,6 +1465,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1414,6 +1499,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1428,6 +1514,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteScalingTagInfo
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingTagInfoRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingTagInfoResponse`
@@ -1440,6 +1527,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1476,6 +1565,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteScalingTagInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1490,6 +1580,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExecuteScalingPolicy
         :type request: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyResponse`
@@ -1502,6 +1593,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1536,6 +1629,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExecuteScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1550,6 +1644,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHookInstances
         :type request: :class:`huaweicloudsdkas.v1.ListHookInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListHookInstancesResponse`
@@ -1562,6 +1657,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1596,6 +1693,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHookInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1610,6 +1708,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLifeCycleHooks
         :type request: :class:`huaweicloudsdkas.v1.ListLifeCycleHooksRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListLifeCycleHooksResponse`
@@ -1622,6 +1721,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1654,6 +1755,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLifeCycleHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1668,6 +1770,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResourceInstances
         :type request: :class:`huaweicloudsdkas.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListResourceInstancesResponse`
@@ -1680,6 +1783,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1714,6 +1819,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1728,6 +1834,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingActivityLogs
         :type request: :class:`huaweicloudsdkas.v1.ListScalingActivityLogsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingActivityLogsResponse`
@@ -1740,6 +1847,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1780,6 +1889,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingActivityLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1794,6 +1904,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingActivityV2Logs
         :type request: :class:`huaweicloudsdkas.v1.ListScalingActivityV2LogsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingActivityV2LogsResponse`
@@ -1806,6 +1917,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1852,6 +1965,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingActivityV2LogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1866,6 +1980,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingConfigs
         :type request: :class:`huaweicloudsdkas.v1.ListScalingConfigsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingConfigsResponse`
@@ -1878,6 +1993,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1916,6 +2033,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1930,6 +2048,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingGroups
         :type request: :class:`huaweicloudsdkas.v1.ListScalingGroupsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingGroupsResponse`
@@ -1942,6 +2061,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1984,6 +2105,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1998,6 +2120,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingInstances
         :type request: :class:`huaweicloudsdkas.v1.ListScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingInstancesResponse`
@@ -2010,6 +2133,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2052,6 +2177,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2066,6 +2192,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingNotifications
         :type request: :class:`huaweicloudsdkas.v1.ListScalingNotificationsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingNotificationsResponse`
@@ -2078,6 +2205,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2110,6 +2239,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingNotificationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2124,6 +2254,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingPolicies
         :type request: :class:`huaweicloudsdkas.v1.ListScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingPoliciesResponse`
@@ -2136,6 +2267,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2178,6 +2311,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2192,6 +2326,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingPolicyExecuteLogs
         :type request: :class:`huaweicloudsdkas.v1.ListScalingPolicyExecuteLogsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingPolicyExecuteLogsResponse`
@@ -2204,6 +2339,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2252,6 +2389,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingPolicyExecuteLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2266,6 +2404,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingTagInfosByResourceId
         :type request: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByResourceIdRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByResourceIdResponse`
@@ -2278,6 +2417,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2312,6 +2453,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingTagInfosByResourceIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2326,6 +2468,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingTagInfosByTenantId
         :type request: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByTenantIdRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByTenantIdResponse`
@@ -2338,6 +2481,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2370,6 +2515,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingTagInfosByTenantIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2384,6 +2530,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PauseScalingGroup
         :type request: :class:`huaweicloudsdkas.v1.PauseScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.PauseScalingGroupResponse`
@@ -2396,6 +2543,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2430,6 +2579,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PauseScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2444,6 +2594,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PauseScalingPolicy
         :type request: :class:`huaweicloudsdkas.v1.PauseScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.PauseScalingPolicyResponse`
@@ -2456,6 +2607,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2490,6 +2643,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PauseScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2504,6 +2658,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResumeScalingGroup
         :type request: :class:`huaweicloudsdkas.v1.ResumeScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ResumeScalingGroupResponse`
@@ -2516,6 +2671,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2550,6 +2707,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResumeScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2564,6 +2722,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResumeScalingPolicy
         :type request: :class:`huaweicloudsdkas.v1.ResumeScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ResumeScalingPolicyResponse`
@@ -2576,6 +2735,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2610,6 +2771,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResumeScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2624,6 +2786,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLifeCycleHook
         :type request: :class:`huaweicloudsdkas.v1.ShowLifeCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowLifeCycleHookResponse`
@@ -2636,6 +2799,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2670,6 +2835,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLifeCycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2684,6 +2850,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPolicyAndInstanceQuota
         :type request: :class:`huaweicloudsdkas.v1.ShowPolicyAndInstanceQuotaRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowPolicyAndInstanceQuotaResponse`
@@ -2696,6 +2863,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2728,6 +2897,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPolicyAndInstanceQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2742,6 +2912,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowResourceQuota
         :type request: :class:`huaweicloudsdkas.v1.ShowResourceQuotaRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowResourceQuotaResponse`
@@ -2754,6 +2925,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2784,6 +2957,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2798,6 +2972,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowScalingConfig
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingConfigRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingConfigResponse`
@@ -2810,6 +2985,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2842,6 +3019,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScalingConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2856,6 +3034,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowScalingGroup
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingGroupResponse`
@@ -2868,6 +3047,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2900,6 +3081,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2914,6 +3096,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowScalingPolicy
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingPolicyResponse`
@@ -2926,6 +3109,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2958,6 +3143,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2972,6 +3158,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateLifeCycleHook
         :type request: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookResponse`
@@ -2984,6 +3171,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3020,6 +3209,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLifeCycleHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3034,6 +3224,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateScalingGroup
         :type request: :class:`huaweicloudsdkas.v1.UpdateScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingGroupResponse`
@@ -3046,6 +3237,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3080,6 +3273,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateScalingGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3094,6 +3288,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateScalingPolicy
         :type request: :class:`huaweicloudsdkas.v1.UpdateScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingPolicyResponse`
@@ -3106,6 +3301,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3140,6 +3337,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3154,6 +3352,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkas.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListApiVersionsResponse`
@@ -3166,6 +3365,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3196,6 +3397,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3210,6 +3412,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApiVersion
         :type request: :class:`huaweicloudsdkas.v1.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowApiVersionResponse`
@@ -3222,6 +3425,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3254,6 +3459,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3268,6 +3474,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateScalingV2Policy
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingV2PolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingV2PolicyResponse`
@@ -3280,6 +3487,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3312,6 +3521,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateScalingV2PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3326,6 +3536,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAllScalingV2Policies
         :type request: :class:`huaweicloudsdkas.v1.ListAllScalingV2PoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListAllScalingV2PoliciesResponse`
@@ -3338,6 +3549,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3390,6 +3603,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAllScalingV2PoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3404,6 +3618,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListScalingV2Policies
         :type request: :class:`huaweicloudsdkas.v1.ListScalingV2PoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingV2PoliciesResponse`
@@ -3416,6 +3631,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3458,6 +3675,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScalingV2PoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3472,6 +3690,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowScalingV2Policy
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingV2PolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingV2PolicyResponse`
@@ -3484,6 +3703,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3516,6 +3737,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScalingV2PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3530,6 +3752,7 @@ class AsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateScalingV2Policy
         :type request: :class:`huaweicloudsdkas.v1.UpdateScalingV2PolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingV2PolicyResponse`
@@ -3542,6 +3765,8 @@ class AsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3576,6 +3801,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateScalingV2PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3583,7 +3809,7 @@ class AsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3594,9 +3820,10 @@ class AsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3613,6 +3840,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

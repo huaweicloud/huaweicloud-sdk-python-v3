@@ -17,7 +17,6 @@ class ClusterDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -147,7 +146,6 @@ class ClusterDetail:
     def action_progress(self):
         """Gets the action_progress of this ClusterDetail.
 
-
         :return: The action_progress of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.ActionProgress`
         """
@@ -156,7 +154,6 @@ class ClusterDetail:
     @action_progress.setter
     def action_progress(self, action_progress):
         """Sets the action_progress of this ClusterDetail.
-
 
         :param action_progress: The action_progress of this ClusterDetail.
         :type action_progress: :class:`huaweicloudsdkcloudtable.v2.ActionProgress`

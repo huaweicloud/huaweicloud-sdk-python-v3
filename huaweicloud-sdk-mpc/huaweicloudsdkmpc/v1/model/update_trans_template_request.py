@@ -17,7 +17,6 @@ class UpdateTransTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateTransTemplateRequest:
     def body(self):
         """Gets the body of this UpdateTransTemplateRequest.
 
-
         :return: The body of this UpdateTransTemplateRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.ModifyTransTemplateReq`
         """
@@ -58,7 +56,6 @@ class UpdateTransTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateTransTemplateRequest.
-
 
         :param body: The body of this UpdateTransTemplateRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.ModifyTransTemplateReq`

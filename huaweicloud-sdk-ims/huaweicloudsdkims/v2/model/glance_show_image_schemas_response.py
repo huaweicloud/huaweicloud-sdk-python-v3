@@ -17,7 +17,6 @@ class GlanceShowImageSchemasResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class GlanceShowImageSchemasResponse(SdkResponse):
     def additional_properties(self):
         """Gets the additional_properties of this GlanceShowImageSchemasResponse.
 
-
         :return: The additional_properties of this GlanceShowImageSchemasResponse.
         :rtype: :class:`huaweicloudsdkims.v2.AdditionalProperties`
         """
@@ -79,7 +77,6 @@ class GlanceShowImageSchemasResponse(SdkResponse):
     @additional_properties.setter
     def additional_properties(self, additional_properties):
         """Sets the additional_properties of this GlanceShowImageSchemasResponse.
-
 
         :param additional_properties: The additional_properties of this GlanceShowImageSchemasResponse.
         :type additional_properties: :class:`huaweicloudsdkims.v2.AdditionalProperties`

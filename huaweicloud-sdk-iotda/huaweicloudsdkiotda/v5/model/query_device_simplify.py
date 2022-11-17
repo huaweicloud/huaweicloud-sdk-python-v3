@@ -17,7 +17,6 @@ class QueryDeviceSimplify:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -73,7 +72,7 @@ class QueryDeviceSimplify:
         :type gateway_id: str
         :param device_name: 设备名称。
         :type device_name: str
-        :param node_type: 设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。 
+        :param node_type: 设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
         :type node_type: str
         :param description: 设备的描述信息。
         :type description: str
@@ -87,7 +86,7 @@ class QueryDeviceSimplify:
         :type product_id: str
         :param product_name: 设备关联的产品名称。
         :type product_name: str
-        :param status: 设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
+        :param status: 设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
         :type status: str
         :param tags: 设备的标签列表。
         :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
@@ -279,7 +278,7 @@ class QueryDeviceSimplify:
     def node_type(self):
         """Gets the node_type of this QueryDeviceSimplify.
 
-        设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。 
+        设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
         :return: The node_type of this QueryDeviceSimplify.
         :rtype: str
@@ -290,7 +289,7 @@ class QueryDeviceSimplify:
     def node_type(self, node_type):
         """Sets the node_type of this QueryDeviceSimplify.
 
-        设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。 
+        设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
         :param node_type: The node_type of this QueryDeviceSimplify.
         :type node_type: str
@@ -433,7 +432,7 @@ class QueryDeviceSimplify:
     def status(self):
         """Gets the status of this QueryDeviceSimplify.
 
-        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
+        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
         :return: The status of this QueryDeviceSimplify.
         :rtype: str
@@ -444,7 +443,7 @@ class QueryDeviceSimplify:
     def status(self, status):
         """Sets the status of this QueryDeviceSimplify.
 
-        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
+        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
         :param status: The status of this QueryDeviceSimplify.
         :type status: str

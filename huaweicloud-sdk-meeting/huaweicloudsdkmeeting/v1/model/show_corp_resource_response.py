@@ -17,7 +17,6 @@ class ShowCorpResourceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -175,7 +174,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def te1080p_hard_count(self):
         """Gets the te1080p_hard_count of this ShowCorpResourceResponse.
 
-
         :return: The te1080p_hard_count of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -184,7 +182,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @te1080p_hard_count.setter
     def te1080p_hard_count(self, te1080p_hard_count):
         """Sets the te1080p_hard_count of this ShowCorpResourceResponse.
-
 
         :param te1080p_hard_count: The te1080p_hard_count of this ShowCorpResourceResponse.
         :type te1080p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
@@ -195,7 +192,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def te720p_hard_count(self):
         """Gets the te720p_hard_count of this ShowCorpResourceResponse.
 
-
         :return: The te720p_hard_count of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -204,7 +200,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @te720p_hard_count.setter
     def te720p_hard_count(self, te720p_hard_count):
         """Sets the te720p_hard_count of this ShowCorpResourceResponse.
-
 
         :param te720p_hard_count: The te720p_hard_count of this ShowCorpResourceResponse.
         :type te720p_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
@@ -215,7 +210,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def te_soft_count(self):
         """Gets the te_soft_count of this ShowCorpResourceResponse.
 
-
         :return: The te_soft_count of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -224,7 +218,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @te_soft_count.setter
     def te_soft_count(self, te_soft_count):
         """Sets the te_soft_count of this ShowCorpResourceResponse.
-
 
         :param te_soft_count: The te_soft_count of this ShowCorpResourceResponse.
         :type te_soft_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
@@ -235,7 +228,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def room_count(self):
         """Gets the room_count of this ShowCorpResourceResponse.
 
-
         :return: The room_count of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -244,7 +236,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @room_count.setter
     def room_count(self, room_count):
         """Sets the room_count of this ShowCorpResourceResponse.
-
 
         :param room_count: The room_count of this ShowCorpResourceResponse.
         :type room_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
@@ -255,7 +246,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def record_capability(self):
         """Gets the record_capability of this ShowCorpResourceResponse.
 
-
         :return: The record_capability of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -264,7 +254,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @record_capability.setter
     def record_capability(self, record_capability):
         """Sets the record_capability of this ShowCorpResourceResponse.
-
 
         :param record_capability: The record_capability of this ShowCorpResourceResponse.
         :type record_capability: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
@@ -275,7 +264,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def conf_call_count(self):
         """Gets the conf_call_count of this ShowCorpResourceResponse.
 
-
         :return: The conf_call_count of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -284,7 +272,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @conf_call_count.setter
     def conf_call_count(self, conf_call_count):
         """Sets the conf_call_count of this ShowCorpResourceResponse.
-
 
         :param conf_call_count: The conf_call_count of this ShowCorpResourceResponse.
         :type conf_call_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
@@ -295,7 +282,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def live_count(self):
         """Gets the live_count of this ShowCorpResourceResponse.
 
-
         :return: The live_count of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -304,7 +290,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @live_count.setter
     def live_count(self, live_count):
         """Sets the live_count of this ShowCorpResourceResponse.
-
 
         :param live_count: The live_count of this ShowCorpResourceResponse.
         :type live_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
@@ -315,7 +300,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def third_party_hard_count(self):
         """Gets the third_party_hard_count of this ShowCorpResourceResponse.
 
-
         :return: The third_party_hard_count of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -324,7 +308,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @third_party_hard_count.setter
     def third_party_hard_count(self, third_party_hard_count):
         """Sets the third_party_hard_count of this ShowCorpResourceResponse.
-
 
         :param third_party_hard_count: The third_party_hard_count of this ShowCorpResourceResponse.
         :type third_party_hard_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
@@ -335,7 +318,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def hw_vision_count(self):
         """Gets the hw_vision_count of this ShowCorpResourceResponse.
 
-
         :return: The hw_vision_count of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -344,7 +326,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @hw_vision_count.setter
     def hw_vision_count(self, hw_vision_count):
         """Sets the hw_vision_count of this ShowCorpResourceResponse.
-
 
         :param hw_vision_count: The hw_vision_count of this ShowCorpResourceResponse.
         :type hw_vision_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
@@ -355,7 +336,6 @@ class ShowCorpResourceResponse(SdkResponse):
     def idea_hub_count(self):
         """Gets the idea_hub_count of this ShowCorpResourceResponse.
 
-
         :return: The idea_hub_count of this ShowCorpResourceResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         """
@@ -364,7 +344,6 @@ class ShowCorpResourceResponse(SdkResponse):
     @idea_hub_count.setter
     def idea_hub_count(self, idea_hub_count):
         """Sets the idea_hub_count of this ShowCorpResourceResponse.
-
 
         :param idea_hub_count: The idea_hub_count of this ShowCorpResourceResponse.
         :type idea_hub_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`

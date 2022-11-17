@@ -17,7 +17,6 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeQualificationCertificateResponse.
 
-
         :return: The result of this RecognizeQualificationCertificateResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.QualificationCertificateResult`
         """
@@ -58,7 +56,6 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeQualificationCertificateResponse.
-
 
         :param result: The result of this RecognizeQualificationCertificateResponse.
         :type result: :class:`huaweicloudsdkocr.v1.QualificationCertificateResult`

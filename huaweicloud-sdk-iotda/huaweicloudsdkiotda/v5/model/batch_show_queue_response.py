@@ -17,7 +17,6 @@ class BatchShowQueueResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class BatchShowQueueResponse(SdkResponse):
     def page(self):
         """Gets the page of this BatchShowQueueResponse.
 
-
         :return: The page of this BatchShowQueueResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
         """
@@ -87,7 +85,6 @@ class BatchShowQueueResponse(SdkResponse):
     @page.setter
     def page(self, page):
         """Sets the page of this BatchShowQueueResponse.
-
 
         :param page: The page of this BatchShowQueueResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

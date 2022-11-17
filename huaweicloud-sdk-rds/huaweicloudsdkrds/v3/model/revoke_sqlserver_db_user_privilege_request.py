@@ -17,7 +17,6 @@ class RevokeSqlserverDbUserPrivilegeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class RevokeSqlserverDbUserPrivilegeRequest:
     def body(self):
         """Gets the body of this RevokeSqlserverDbUserPrivilegeRequest.
 
-
         :return: The body of this RevokeSqlserverDbUserPrivilegeRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SqlserverRevokeRequest`
         """
@@ -115,7 +113,6 @@ class RevokeSqlserverDbUserPrivilegeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RevokeSqlserverDbUserPrivilegeRequest.
-
 
         :param body: The body of this RevokeSqlserverDbUserPrivilegeRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SqlserverRevokeRequest`

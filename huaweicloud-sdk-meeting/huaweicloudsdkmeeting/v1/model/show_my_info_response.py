@@ -17,7 +17,6 @@ class ShowMyInfoResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -605,7 +604,6 @@ class ShowMyInfoResponse(SdkResponse):
     def corp(self):
         """Gets the corp of this ShowMyInfoResponse.
 
-
         :return: The corp of this ShowMyInfoResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
         """
@@ -614,7 +612,6 @@ class ShowMyInfoResponse(SdkResponse):
     @corp.setter
     def corp(self, corp):
         """Sets the corp of this ShowMyInfoResponse.
-
 
         :param corp: The corp of this ShowMyInfoResponse.
         :type corp: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
@@ -625,7 +622,6 @@ class ShowMyInfoResponse(SdkResponse):
     def function(self):
         """Gets the function of this ShowMyInfoResponse.
 
-
         :return: The function of this ShowMyInfoResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
         """
@@ -634,7 +630,6 @@ class ShowMyInfoResponse(SdkResponse):
     @function.setter
     def function(self, function):
         """Sets the function of this ShowMyInfoResponse.
-
 
         :param function: The function of this ShowMyInfoResponse.
         :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
@@ -645,7 +640,6 @@ class ShowMyInfoResponse(SdkResponse):
     def dev_type(self):
         """Gets the dev_type of this ShowMyInfoResponse.
 
-
         :return: The dev_type of this ShowMyInfoResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`
         """
@@ -654,7 +648,6 @@ class ShowMyInfoResponse(SdkResponse):
     @dev_type.setter
     def dev_type(self, dev_type):
         """Sets the dev_type of this ShowMyInfoResponse.
-
 
         :param dev_type: The dev_type of this ShowMyInfoResponse.
         :type dev_type: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`

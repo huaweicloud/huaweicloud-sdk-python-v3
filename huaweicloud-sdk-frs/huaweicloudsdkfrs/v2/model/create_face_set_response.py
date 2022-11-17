@@ -17,7 +17,6 @@ class CreateFaceSetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateFaceSetResponse(SdkResponse):
     def face_set_info(self):
         """Gets the face_set_info of this CreateFaceSetResponse.
 
-
         :return: The face_set_info of this CreateFaceSetResponse.
         :rtype: :class:`huaweicloudsdkfrs.v2.FaceSetInfo`
         """
@@ -58,7 +56,6 @@ class CreateFaceSetResponse(SdkResponse):
     @face_set_info.setter
     def face_set_info(self, face_set_info):
         """Sets the face_set_info of this CreateFaceSetResponse.
-
 
         :param face_set_info: The face_set_info of this CreateFaceSetResponse.
         :type face_set_info: :class:`huaweicloudsdkfrs.v2.FaceSetInfo`

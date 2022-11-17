@@ -17,7 +17,6 @@ class UpdateKeypairDescriptionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateKeypairDescriptionRequest:
     def body(self):
         """Gets the body of this UpdateKeypairDescriptionRequest.
 
-
         :return: The body of this UpdateKeypairDescriptionRequest.
         :rtype: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateKeypairDescriptionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateKeypairDescriptionRequest.
-
 
         :param body: The body of this UpdateKeypairDescriptionRequest.
         :type body: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionRequestBody`

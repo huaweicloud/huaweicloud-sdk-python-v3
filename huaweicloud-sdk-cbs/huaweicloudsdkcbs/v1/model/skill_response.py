@@ -17,7 +17,6 @@ class SkillResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -122,7 +121,6 @@ class SkillResponse:
     def frame(self):
         """Gets the frame of this SkillResponse.
 
-
         :return: The frame of this SkillResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.Frame`
         """
@@ -131,7 +129,6 @@ class SkillResponse:
     @frame.setter
     def frame(self, frame):
         """Sets the frame of this SkillResponse.
-
 
         :param frame: The frame of this SkillResponse.
         :type frame: :class:`huaweicloudsdkcbs.v1.Frame`
@@ -142,7 +139,6 @@ class SkillResponse:
     def candidate(self):
         """Gets the candidate of this SkillResponse.
 
-
         :return: The candidate of this SkillResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.CandidateIntention`
         """
@@ -151,7 +147,6 @@ class SkillResponse:
     @candidate.setter
     def candidate(self, candidate):
         """Sets the candidate of this SkillResponse.
-
 
         :param candidate: The candidate of this SkillResponse.
         :type candidate: :class:`huaweicloudsdkcbs.v1.CandidateIntention`

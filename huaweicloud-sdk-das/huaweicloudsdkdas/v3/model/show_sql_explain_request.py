@@ -17,7 +17,6 @@ class ShowSqlExplainRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ShowSqlExplainRequest:
     def body(self):
         """Gets the body of this ShowSqlExplainRequest.
 
-
         :return: The body of this ShowSqlExplainRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.QuerySqlPlanBody`
         """
@@ -115,7 +113,6 @@ class ShowSqlExplainRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowSqlExplainRequest.
-
 
         :param body: The body of this ShowSqlExplainRequest.
         :type body: :class:`huaweicloudsdkdas.v3.QuerySqlPlanBody`

@@ -17,7 +17,6 @@ class ShowSpecifiedApiVersionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowSpecifiedApiVersionResponse(SdkResponse):
     def version(self):
         """Gets the version of this ShowSpecifiedApiVersionResponse.
 
-
         :return: The version of this ShowSpecifiedApiVersionResponse.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowApiVersionParams`
         """
@@ -58,7 +56,6 @@ class ShowSpecifiedApiVersionResponse(SdkResponse):
     @version.setter
     def version(self, version):
         """Sets the version of this ShowSpecifiedApiVersionResponse.
-
 
         :param version: The version of this ShowSpecifiedApiVersionResponse.
         :type version: :class:`huaweicloudsdksdrs.v1.ShowApiVersionParams`

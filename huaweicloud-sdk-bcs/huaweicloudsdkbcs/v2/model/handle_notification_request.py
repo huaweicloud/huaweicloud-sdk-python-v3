@@ -17,7 +17,6 @@ class HandleNotificationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class HandleNotificationRequest:
     def body(self):
         """Gets the body of this HandleNotificationRequest.
 
-
         :return: The body of this HandleNotificationRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequestBody`
         """
@@ -58,7 +56,6 @@ class HandleNotificationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this HandleNotificationRequest.
-
 
         :param body: The body of this HandleNotificationRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequestBody`

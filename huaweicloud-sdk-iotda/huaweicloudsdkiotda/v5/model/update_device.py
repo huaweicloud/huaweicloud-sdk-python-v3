@@ -17,7 +17,6 @@ class UpdateDevice:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class UpdateDevice:
     def auth_info(self):
         """Gets the auth_info of this UpdateDevice.
 
-
         :return: The auth_info of this UpdateDevice.
         :rtype: :class:`huaweicloudsdkiotda.v5.AuthInfoWithoutSecret`
         """
@@ -145,7 +143,6 @@ class UpdateDevice:
     @auth_info.setter
     def auth_info(self, auth_info):
         """Sets the auth_info of this UpdateDevice.
-
 
         :param auth_info: The auth_info of this UpdateDevice.
         :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfoWithoutSecret`

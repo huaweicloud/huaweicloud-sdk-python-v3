@@ -17,7 +17,6 @@ class ShowDeviceStatusRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowDeviceStatusRequest:
     def body(self):
         """Gets the body of this ShowDeviceStatusRequest.
 
-
         :return: The body of this ShowDeviceStatusRequest.
         :rtype: list[str]
         """
@@ -116,7 +114,6 @@ class ShowDeviceStatusRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowDeviceStatusRequest.
-
 
         :param body: The body of this ShowDeviceStatusRequest.
         :type body: list[str]

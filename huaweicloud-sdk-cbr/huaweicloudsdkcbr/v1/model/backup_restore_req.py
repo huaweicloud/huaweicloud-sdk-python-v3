@@ -17,7 +17,6 @@ class BackupRestoreReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class BackupRestoreReq:
     def restore(self):
         """Gets the restore of this BackupRestoreReq.
 
-
         :return: The restore of this BackupRestoreReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupRestore`
         """
@@ -57,7 +55,6 @@ class BackupRestoreReq:
     @restore.setter
     def restore(self, restore):
         """Sets the restore of this BackupRestoreReq.
-
 
         :param restore: The restore of this BackupRestoreReq.
         :type restore: :class:`huaweicloudsdkcbr.v1.BackupRestore`

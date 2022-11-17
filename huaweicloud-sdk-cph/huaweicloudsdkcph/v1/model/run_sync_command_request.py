@@ -17,7 +17,6 @@ class RunSyncCommandRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunSyncCommandRequest:
     def body(self):
         """Gets the body of this RunSyncCommandRequest.
 
-
         :return: The body of this RunSyncCommandRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.RunSyncCommandRequestBody`
         """
@@ -58,7 +56,6 @@ class RunSyncCommandRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunSyncCommandRequest.
-
 
         :param body: The body of this RunSyncCommandRequest.
         :type body: :class:`huaweicloudsdkcph.v1.RunSyncCommandRequestBody`

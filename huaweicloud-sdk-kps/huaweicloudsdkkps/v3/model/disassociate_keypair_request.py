@@ -17,7 +17,6 @@ class DisassociateKeypairRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DisassociateKeypairRequest:
     def body(self):
         """Gets the body of this DisassociateKeypairRequest.
 
-
         :return: The body of this DisassociateKeypairRequest.
         :rtype: :class:`huaweicloudsdkkps.v3.DisassociateKeypairRequestBody`
         """
@@ -58,7 +56,6 @@ class DisassociateKeypairRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DisassociateKeypairRequest.
-
 
         :param body: The body of this DisassociateKeypairRequest.
         :type body: :class:`huaweicloudsdkkps.v3.DisassociateKeypairRequestBody`

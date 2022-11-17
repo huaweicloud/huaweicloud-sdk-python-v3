@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EgAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAgencies
         :type request: :class:`huaweicloudsdkeg.v1.CreateAgenciesRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateAgenciesResponse`
@@ -68,6 +63,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAgenciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateChannel
         :type request: :class:`huaweicloudsdkeg.v1.CreateChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateChannelResponse`
@@ -126,6 +125,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -143,7 +144,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -158,6 +159,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateConnection
         :type request: :class:`huaweicloudsdkeg.v1.CreateConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateConnectionResponse`
@@ -184,6 +187,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -201,7 +206,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -216,6 +221,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -230,6 +236,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEndpoint
         :type request: :class:`huaweicloudsdkeg.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEndpointResponse`
@@ -242,6 +249,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -259,7 +268,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -274,6 +283,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -288,6 +298,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSchemaResponse`
@@ -300,6 +311,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -317,7 +330,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -332,6 +345,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEventSchemaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -346,6 +360,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEventSchemaVersion
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaVersionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSchemaVersionResponse`
@@ -358,6 +373,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -377,7 +394,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -392,6 +409,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEventSchemaVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -406,6 +424,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEventSource
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSourceResponse`
@@ -418,6 +437,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -435,7 +456,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -450,6 +471,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEventSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -464,6 +486,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSubscription
         :type request: :class:`huaweicloudsdkeg.v1.CreateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateSubscriptionResponse`
@@ -476,6 +499,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -493,7 +518,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -508,6 +533,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -522,6 +548,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSubscriptionTarget
         :type request: :class:`huaweicloudsdkeg.v1.CreateSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateSubscriptionTargetResponse`
@@ -534,6 +561,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -553,7 +582,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -568,6 +597,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSubscriptionTargetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -582,6 +612,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteChannel
         :type request: :class:`huaweicloudsdkeg.v1.DeleteChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteChannelResponse`
@@ -594,6 +625,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -626,6 +659,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -640,6 +674,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteConnection
         :type request: :class:`huaweicloudsdkeg.v1.DeleteConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteConnectionResponse`
@@ -652,6 +687,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -684,6 +721,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -697,6 +735,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEndpoint
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEndpointRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEndpointResponse`
@@ -709,6 +748,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -741,6 +782,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -755,6 +797,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaResponse`
@@ -767,6 +810,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -799,6 +844,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEventSchemaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -813,6 +859,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEventSchemaVersion
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaVersionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaVersionResponse`
@@ -825,6 +872,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -859,6 +908,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEventSchemaVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -873,6 +923,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEventSource
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSourceResponse`
@@ -885,6 +936,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -917,6 +970,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEventSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -931,6 +985,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSubscription
         :type request: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionResponse`
@@ -943,6 +998,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -975,6 +1032,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -989,6 +1047,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSubscriptionTarget
         :type request: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionTargetResponse`
@@ -1001,6 +1060,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1035,6 +1096,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSubscriptionTargetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1049,6 +1111,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DiscoverEventSchemaFromData
         :type request: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataResponse`
@@ -1061,6 +1124,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1078,7 +1143,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1093,6 +1158,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DiscoverEventSchemaFromDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1106,6 +1172,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAgencies
         :type request: :class:`huaweicloudsdkeg.v1.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListAgenciesResponse`
@@ -1118,6 +1185,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1150,6 +1219,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAgenciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1164,6 +1234,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListChannels
         :type request: :class:`huaweicloudsdkeg.v1.ListChannelsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListChannelsResponse`
@@ -1176,6 +1247,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1218,6 +1291,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListChannelsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1232,6 +1306,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConnections
         :type request: :class:`huaweicloudsdkeg.v1.ListConnectionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListConnectionsResponse`
@@ -1244,6 +1319,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1284,6 +1361,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1298,6 +1376,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEndpoints
         :type request: :class:`huaweicloudsdkeg.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEndpointsResponse`
@@ -1310,6 +1389,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1339,7 +1420,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1354,6 +1435,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEndpointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1368,6 +1450,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventSchemaResponse`
@@ -1380,6 +1463,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1422,6 +1507,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventSchemaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1436,6 +1522,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEventSchemaVersions
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaVersionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventSchemaVersionsResponse`
@@ -1448,6 +1535,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1486,6 +1575,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventSchemaVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1500,6 +1590,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEventSources
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSourcesRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventSourcesResponse`
@@ -1512,6 +1603,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1558,6 +1651,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventSourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1572,6 +1666,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEventTarget
         :type request: :class:`huaweicloudsdkeg.v1.ListEventTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventTargetResponse`
@@ -1584,6 +1679,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1622,6 +1719,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventTargetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1636,6 +1734,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkeg.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListQuotasResponse`
@@ -1648,6 +1747,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1680,6 +1781,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1694,6 +1796,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSubscriptions
         :type request: :class:`huaweicloudsdkeg.v1.ListSubscriptionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListSubscriptionsResponse`
@@ -1706,6 +1809,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1748,6 +1853,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubscriptionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1762,6 +1868,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTriggers
         :type request: :class:`huaweicloudsdkeg.v1.ListTriggersRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListTriggersResponse`
@@ -1774,6 +1881,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1812,6 +1921,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTriggersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1826,6 +1936,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for OperateSubscription
         :type request: :class:`huaweicloudsdkeg.v1.OperateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.OperateSubscriptionResponse`
@@ -1838,6 +1949,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1855,7 +1968,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1870,6 +1983,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='OperateSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1884,6 +1998,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PutEvents
         :type request: :class:`huaweicloudsdkeg.v1.PutEventsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.PutEventsResponse`
@@ -1896,6 +2011,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1915,7 +2032,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1930,6 +2047,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PutEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1943,6 +2061,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailOfChannel
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfChannelResponse`
@@ -1955,6 +2074,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1987,6 +2108,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailOfChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2000,6 +2122,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailOfConnection
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfConnectionResponse`
@@ -2012,6 +2135,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2044,6 +2169,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailOfConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2058,6 +2184,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailOfEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaResponse`
@@ -2070,6 +2197,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2102,6 +2231,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailOfEventSchemaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2116,6 +2246,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailOfEventSchemaVersion
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaVersionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaVersionResponse`
@@ -2128,6 +2259,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2162,6 +2295,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailOfEventSchemaVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2176,6 +2310,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailOfEventSource
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSourceResponse`
@@ -2188,6 +2323,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2220,6 +2357,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailOfEventSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2234,6 +2372,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailOfSubscription
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionResponse`
@@ -2246,6 +2385,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2278,6 +2419,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailOfSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2292,6 +2434,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDetailOfSubscriptionTarget
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionTargetResponse`
@@ -2304,6 +2447,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2338,6 +2483,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailOfSubscriptionTargetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2352,6 +2498,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateChannel
         :type request: :class:`huaweicloudsdkeg.v1.UpdateChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateChannelResponse`
@@ -2364,6 +2511,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2383,7 +2532,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2398,6 +2547,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2412,6 +2562,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateConnection
         :type request: :class:`huaweicloudsdkeg.v1.UpdateConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateConnectionResponse`
@@ -2424,6 +2575,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2443,7 +2596,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2458,6 +2611,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2472,6 +2626,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpoint
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEndpointRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateEndpointResponse`
@@ -2484,6 +2639,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2518,6 +2675,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2532,6 +2690,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEventSchema
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEventSchemaRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateEventSchemaResponse`
@@ -2544,6 +2703,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2563,7 +2724,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2578,6 +2739,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEventSchemaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2592,6 +2754,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEventSource
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateEventSourceResponse`
@@ -2604,6 +2767,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2623,7 +2788,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2638,6 +2803,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEventSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2652,6 +2818,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSubscription
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionResponse`
@@ -2664,6 +2831,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2683,7 +2852,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2698,6 +2867,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2712,6 +2882,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSubscriptionSource
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionSourceResponse`
@@ -2724,6 +2895,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2745,7 +2918,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2760,6 +2933,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSubscriptionSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2774,6 +2948,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSubscriptionTarget
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionTargetResponse`
@@ -2786,6 +2961,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2807,7 +2984,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Request-Id"]
+        response_headers = ["X-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2822,6 +2999,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSubscriptionTargetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2836,6 +3014,7 @@ class EgAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkeg.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListApiVersionsResponse`
@@ -2848,6 +3027,8 @@ class EgAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2878,6 +3059,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2885,7 +3067,7 @@ class EgAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2896,9 +3078,10 @@ class EgAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2915,6 +3098,7 @@ class EgAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

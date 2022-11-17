@@ -17,7 +17,6 @@ class ConfigurationForCreation:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -112,7 +111,6 @@ class ConfigurationForCreation:
     def datastore(self):
         """Gets the datastore of this ConfigurationForCreation.
 
-
         :return: The datastore of this ConfigurationForCreation.
         :rtype: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`
         """
@@ -121,7 +119,6 @@ class ConfigurationForCreation:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this ConfigurationForCreation.
-
 
         :param datastore: The datastore of this ConfigurationForCreation.
         :type datastore: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`

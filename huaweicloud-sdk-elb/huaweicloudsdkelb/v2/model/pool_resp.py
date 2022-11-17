@@ -17,7 +17,6 @@ class PoolResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -340,7 +339,6 @@ class PoolResp:
     def session_persistence(self):
         """Gets the session_persistence of this PoolResp.
 
-
         :return: The session_persistence of this PoolResp.
         :rtype: :class:`huaweicloudsdkelb.v2.SessionPersistence`
         """
@@ -349,7 +347,6 @@ class PoolResp:
     @session_persistence.setter
     def session_persistence(self, session_persistence):
         """Sets the session_persistence of this PoolResp.
-
 
         :param session_persistence: The session_persistence of this PoolResp.
         :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`

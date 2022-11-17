@@ -17,7 +17,6 @@ class CreateMergeChannelsTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateMergeChannelsTaskRequest:
     def body(self):
         """Gets the body of this CreateMergeChannelsTaskRequest.
 
-
         :return: The body of this CreateMergeChannelsTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsReq`
         """
@@ -58,7 +56,6 @@ class CreateMergeChannelsTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateMergeChannelsTaskRequest.
-
 
         :param body: The body of this CreateMergeChannelsTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsReq`

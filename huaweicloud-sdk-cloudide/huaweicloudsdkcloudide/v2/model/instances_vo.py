@@ -17,7 +17,6 @@ class InstancesVO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -260,7 +259,6 @@ class InstancesVO:
     def attributes(self):
         """Gets the attributes of this InstancesVO.
 
-
         :return: The attributes of this InstancesVO.
         :rtype: :class:`huaweicloudsdkcloudide.v2.Attributes`
         """
@@ -269,7 +267,6 @@ class InstancesVO:
     @attributes.setter
     def attributes(self, attributes):
         """Sets the attributes of this InstancesVO.
-
 
         :param attributes: The attributes of this InstancesVO.
         :type attributes: :class:`huaweicloudsdkcloudide.v2.Attributes`

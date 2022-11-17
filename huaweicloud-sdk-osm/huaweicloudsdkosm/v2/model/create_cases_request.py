@@ -17,7 +17,6 @@ class CreateCasesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -194,7 +193,6 @@ class CreateCasesRequest:
     def body(self):
         """Gets the body of this CreateCasesRequest.
 
-
         :return: The body of this CreateCasesRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.CreateOrderIncidentV2Req`
         """
@@ -203,7 +201,6 @@ class CreateCasesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCasesRequest.
-
 
         :param body: The body of this CreateCasesRequest.
         :type body: :class:`huaweicloudsdkosm.v2.CreateOrderIncidentV2Req`

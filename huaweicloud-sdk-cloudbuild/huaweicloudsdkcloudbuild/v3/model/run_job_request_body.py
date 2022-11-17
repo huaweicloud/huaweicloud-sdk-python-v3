@@ -17,7 +17,6 @@ class RunJobRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class RunJobRequestBody:
     def scm(self):
         """Gets the scm of this RunJobRequestBody.
 
-
         :return: The scm of this RunJobRequestBody.
         :rtype: :class:`huaweicloudsdkcloudbuild.v3.Scm`
         """
@@ -115,7 +113,6 @@ class RunJobRequestBody:
     @scm.setter
     def scm(self, scm):
         """Sets the scm of this RunJobRequestBody.
-
 
         :param scm: The scm of this RunJobRequestBody.
         :type scm: :class:`huaweicloudsdkcloudbuild.v3.Scm`

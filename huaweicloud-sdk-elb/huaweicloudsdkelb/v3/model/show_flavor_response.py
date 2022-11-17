@@ -17,7 +17,6 @@ class ShowFlavorResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowFlavorResponse(SdkResponse):
     def flavor(self):
         """Gets the flavor of this ShowFlavorResponse.
 
-
         :return: The flavor of this ShowFlavorResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.Flavor`
         """
@@ -87,7 +85,6 @@ class ShowFlavorResponse(SdkResponse):
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this ShowFlavorResponse.
-
 
         :param flavor: The flavor of this ShowFlavorResponse.
         :type flavor: :class:`huaweicloudsdkelb.v3.Flavor`

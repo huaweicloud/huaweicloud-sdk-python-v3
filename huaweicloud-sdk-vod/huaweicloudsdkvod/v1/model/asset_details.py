@@ -17,7 +17,6 @@ class AssetDetails:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -142,7 +141,6 @@ class AssetDetails:
     def base_info(self):
         """Gets the base_info of this AssetDetails.
 
-
         :return: The base_info of this AssetDetails.
         :rtype: :class:`huaweicloudsdkvod.v1.BaseInfo`
         """
@@ -151,7 +149,6 @@ class AssetDetails:
     @base_info.setter
     def base_info(self, base_info):
         """Sets the base_info of this AssetDetails.
-
 
         :param base_info: The base_info of this AssetDetails.
         :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
@@ -162,7 +159,6 @@ class AssetDetails:
     def transcode_info(self):
         """Gets the transcode_info of this AssetDetails.
 
-
         :return: The transcode_info of this AssetDetails.
         :rtype: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
         """
@@ -171,7 +167,6 @@ class AssetDetails:
     @transcode_info.setter
     def transcode_info(self, transcode_info):
         """Sets the transcode_info of this AssetDetails.
-
 
         :param transcode_info: The transcode_info of this AssetDetails.
         :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`

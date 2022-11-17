@@ -17,7 +17,6 @@ class UpdateMemberStatusResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateMemberStatusResponse(SdkResponse):
     def member(self):
         """Gets the member of this UpdateMemberStatusResponse.
 
-
         :return: The member of this UpdateMemberStatusResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.Member`
         """
@@ -58,7 +56,6 @@ class UpdateMemberStatusResponse(SdkResponse):
     @member.setter
     def member(self, member):
         """Sets the member of this UpdateMemberStatusResponse.
-
 
         :param member: The member of this UpdateMemberStatusResponse.
         :type member: :class:`huaweicloudsdkcbr.v1.Member`

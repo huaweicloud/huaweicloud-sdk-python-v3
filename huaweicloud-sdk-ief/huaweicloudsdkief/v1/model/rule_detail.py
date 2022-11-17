@@ -17,7 +17,6 @@ class RuleDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RuleDetail:
     def rule(self):
         """Gets the rule of this RuleDetail.
 
-
         :return: The rule of this RuleDetail.
         :rtype: :class:`huaweicloudsdkief.v1.RuleConfig`
         """
@@ -58,7 +56,6 @@ class RuleDetail:
     @rule.setter
     def rule(self, rule):
         """Sets the rule of this RuleDetail.
-
 
         :param rule: The rule of this RuleDetail.
         :type rule: :class:`huaweicloudsdkief.v1.RuleConfig`

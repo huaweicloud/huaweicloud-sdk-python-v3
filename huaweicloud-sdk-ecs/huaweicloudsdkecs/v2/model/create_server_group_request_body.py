@@ -17,7 +17,6 @@ class CreateServerGroupRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateServerGroupRequestBody:
     def server_group(self):
         """Gets the server_group of this CreateServerGroupRequestBody.
 
-
         :return: The server_group of this CreateServerGroupRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.CreateServerGroupOption`
         """
@@ -57,7 +55,6 @@ class CreateServerGroupRequestBody:
     @server_group.setter
     def server_group(self, server_group):
         """Sets the server_group of this CreateServerGroupRequestBody.
-
 
         :param server_group: The server_group of this CreateServerGroupRequestBody.
         :type server_group: :class:`huaweicloudsdkecs.v2.CreateServerGroupOption`

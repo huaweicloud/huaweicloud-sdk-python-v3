@@ -17,7 +17,6 @@ class CheckVerifyCodesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class CheckVerifyCodesRequest:
     def body(self):
         """Gets the body of this CheckVerifyCodesRequest.
 
-
         :return: The body of this CheckVerifyCodesRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.VerifyVerifyCodeV2Req`
         """
@@ -145,7 +143,6 @@ class CheckVerifyCodesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckVerifyCodesRequest.
-
 
         :param body: The body of this CheckVerifyCodesRequest.
         :type body: :class:`huaweicloudsdkosm.v2.VerifyVerifyCodeV2Req`

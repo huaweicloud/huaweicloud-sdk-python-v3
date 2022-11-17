@@ -17,7 +17,6 @@ class NovaAvailabilityZone:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class NovaAvailabilityZone:
     def zone_state(self):
         """Gets the zone_state of this NovaAvailabilityZone.
 
-
         :return: The zone_state of this NovaAvailabilityZone.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAvailabilityZoneState`
         """
@@ -113,7 +111,6 @@ class NovaAvailabilityZone:
     @zone_state.setter
     def zone_state(self, zone_state):
         """Sets the zone_state of this NovaAvailabilityZone.
-
 
         :param zone_state: The zone_state of this NovaAvailabilityZone.
         :type zone_state: :class:`huaweicloudsdkecs.v2.NovaAvailabilityZoneState`

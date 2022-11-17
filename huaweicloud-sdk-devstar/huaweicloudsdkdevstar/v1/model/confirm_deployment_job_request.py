@@ -17,7 +17,6 @@ class ConfirmDeploymentJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class ConfirmDeploymentJobRequest:
     def body(self):
         """Gets the body of this ConfirmDeploymentJobRequest.
 
-
         :return: The body of this ConfirmDeploymentJobRequest.
         :rtype: :class:`huaweicloudsdkdevstar.v1.DeploymentJobConfirmType`
         """
@@ -143,7 +141,6 @@ class ConfirmDeploymentJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ConfirmDeploymentJobRequest.
-
 
         :param body: The body of this ConfirmDeploymentJobRequest.
         :type body: :class:`huaweicloudsdkdevstar.v1.DeploymentJobConfirmType`

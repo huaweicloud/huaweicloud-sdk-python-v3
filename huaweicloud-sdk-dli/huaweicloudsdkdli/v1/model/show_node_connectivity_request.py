@@ -17,7 +17,6 @@ class ShowNodeConnectivityRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class ShowNodeConnectivityRequest:
     def queue_name(self):
         """Gets the queue_name of this ShowNodeConnectivityRequest.
 
-
         :return: The queue_name of this ShowNodeConnectivityRequest.
         :rtype: str
         """
@@ -63,7 +61,6 @@ class ShowNodeConnectivityRequest:
     @queue_name.setter
     def queue_name(self, queue_name):
         """Sets the queue_name of this ShowNodeConnectivityRequest.
-
 
         :param queue_name: The queue_name of this ShowNodeConnectivityRequest.
         :type queue_name: str
@@ -74,7 +71,6 @@ class ShowNodeConnectivityRequest:
     def task_id(self):
         """Gets the task_id of this ShowNodeConnectivityRequest.
 
-
         :return: The task_id of this ShowNodeConnectivityRequest.
         :rtype: str
         """
@@ -83,7 +79,6 @@ class ShowNodeConnectivityRequest:
     @task_id.setter
     def task_id(self, task_id):
         """Sets the task_id of this ShowNodeConnectivityRequest.
-
 
         :param task_id: The task_id of this ShowNodeConnectivityRequest.
         :type task_id: str

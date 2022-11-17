@@ -17,7 +17,6 @@ class CreateLoadbalancerRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateLoadbalancerRequest:
     def body(self):
         """Gets the body of this CreateLoadbalancerRequest.
 
-
         :return: The body of this CreateLoadbalancerRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateLoadbalancerRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateLoadbalancerRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateLoadbalancerRequest.
-
 
         :param body: The body of this CreateLoadbalancerRequest.
         :type body: :class:`huaweicloudsdkelb.v2.CreateLoadbalancerRequestBody`

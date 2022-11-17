@@ -17,7 +17,6 @@ class UpdateDiskInfoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateDiskInfoRequest:
     def body(self):
         """Gets the body of this UpdateDiskInfoRequest.
 
-
         :return: The body of this UpdateDiskInfoRequest.
         :rtype: :class:`huaweicloudsdksms.v3.PutDiskInfoReq`
         """
@@ -86,7 +84,6 @@ class UpdateDiskInfoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDiskInfoRequest.
-
 
         :param body: The body of this UpdateDiskInfoRequest.
         :type body: :class:`huaweicloudsdksms.v3.PutDiskInfoReq`

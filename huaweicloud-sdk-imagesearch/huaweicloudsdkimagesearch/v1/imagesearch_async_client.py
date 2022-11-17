@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ImageSearchAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -59,6 +53,7 @@ class ImageSearchAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunAddPicture
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunAddPictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunAddPictureResponse`
@@ -71,6 +66,8 @@ class ImageSearchAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -105,6 +102,7 @@ class ImageSearchAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunAddPictureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -119,6 +117,7 @@ class ImageSearchAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunCheckPicture
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunCheckPictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunCheckPictureResponse`
@@ -131,6 +130,8 @@ class ImageSearchAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -165,6 +166,7 @@ class ImageSearchAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunCheckPictureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -179,6 +181,7 @@ class ImageSearchAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunCreateInstance
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunCreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunCreateInstanceResponse`
@@ -191,6 +194,8 @@ class ImageSearchAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -223,6 +228,7 @@ class ImageSearchAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunCreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -237,6 +243,7 @@ class ImageSearchAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunDeleteInstance
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunDeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunDeleteInstanceResponse`
@@ -249,6 +256,8 @@ class ImageSearchAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -281,6 +290,7 @@ class ImageSearchAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -295,6 +305,7 @@ class ImageSearchAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunDeletePicture
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunDeletePictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunDeletePictureResponse`
@@ -307,6 +318,8 @@ class ImageSearchAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -341,6 +354,7 @@ class ImageSearchAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDeletePictureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -355,6 +369,7 @@ class ImageSearchAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunModifyPicture
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunModifyPictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunModifyPictureResponse`
@@ -367,6 +382,8 @@ class ImageSearchAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -401,6 +418,7 @@ class ImageSearchAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunModifyPictureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -415,6 +433,7 @@ class ImageSearchAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunQueryInstance
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunQueryInstanceRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunQueryInstanceResponse`
@@ -427,6 +446,8 @@ class ImageSearchAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -459,6 +480,7 @@ class ImageSearchAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunQueryInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -473,6 +495,7 @@ class ImageSearchAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunSearchPicture
         :type request: :class:`huaweicloudsdkimagesearch.v1.RunSearchPictureRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v1.RunSearchPictureResponse`
@@ -485,6 +508,8 @@ class ImageSearchAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -519,6 +544,7 @@ class ImageSearchAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSearchPictureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -526,7 +552,7 @@ class ImageSearchAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -537,9 +563,10 @@ class ImageSearchAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -556,6 +583,7 @@ class ImageSearchAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

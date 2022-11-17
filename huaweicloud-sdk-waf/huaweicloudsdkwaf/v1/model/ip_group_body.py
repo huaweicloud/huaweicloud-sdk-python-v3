@@ -17,7 +17,6 @@ class IpGroupBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -201,7 +200,6 @@ class IpGroupBody:
     def share_info(self):
         """Gets the share_info of this IpGroupBody.
 
-
         :return: The share_info of this IpGroupBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.ShareInfo`
         """
@@ -210,7 +208,6 @@ class IpGroupBody:
     @share_info.setter
     def share_info(self, share_info):
         """Sets the share_info of this IpGroupBody.
-
 
         :param share_info: The share_info of this IpGroupBody.
         :type share_info: :class:`huaweicloudsdkwaf.v1.ShareInfo`

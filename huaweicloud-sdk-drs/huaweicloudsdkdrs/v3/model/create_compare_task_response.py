@@ -17,7 +17,6 @@ class CreateCompareTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -99,7 +98,6 @@ class CreateCompareTaskResponse(SdkResponse):
     def object_level_compare_create_result(self):
         """Gets the object_level_compare_create_result of this CreateCompareTaskResponse.
 
-
         :return: The object_level_compare_create_result of this CreateCompareTaskResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
         """
@@ -108,7 +106,6 @@ class CreateCompareTaskResponse(SdkResponse):
     @object_level_compare_create_result.setter
     def object_level_compare_create_result(self, object_level_compare_create_result):
         """Sets the object_level_compare_create_result of this CreateCompareTaskResponse.
-
 
         :param object_level_compare_create_result: The object_level_compare_create_result of this CreateCompareTaskResponse.
         :type object_level_compare_create_result: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
@@ -119,7 +116,6 @@ class CreateCompareTaskResponse(SdkResponse):
     def data_level_compare_create_result(self):
         """Gets the data_level_compare_create_result of this CreateCompareTaskResponse.
 
-
         :return: The data_level_compare_create_result of this CreateCompareTaskResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`
         """
@@ -128,7 +124,6 @@ class CreateCompareTaskResponse(SdkResponse):
     @data_level_compare_create_result.setter
     def data_level_compare_create_result(self, data_level_compare_create_result):
         """Sets the data_level_compare_create_result of this CreateCompareTaskResponse.
-
 
         :param data_level_compare_create_result: The data_level_compare_create_result of this CreateCompareTaskResponse.
         :type data_level_compare_create_result: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResult`

@@ -17,7 +17,6 @@ class ChangeEnterpriseRealnameAuthenticationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ChangeEnterpriseRealnameAuthenticationRequest:
     def body(self):
         """Gets the body of this ChangeEnterpriseRealnameAuthenticationRequest.
 
-
         :return: The body of this ChangeEnterpriseRealnameAuthenticationRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.ChangeEnterpriseRealnameAuthsReq`
         """
@@ -58,7 +56,6 @@ class ChangeEnterpriseRealnameAuthenticationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeEnterpriseRealnameAuthenticationRequest.
-
 
         :param body: The body of this ChangeEnterpriseRealnameAuthenticationRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.ChangeEnterpriseRealnameAuthsReq`

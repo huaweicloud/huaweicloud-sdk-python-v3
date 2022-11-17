@@ -17,7 +17,6 @@ class KeystoneUpdateProtocolRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class KeystoneUpdateProtocolRequestBody:
     def protocol(self):
         """Gets the protocol of this KeystoneUpdateProtocolRequestBody.
 
-
         :return: The protocol of this KeystoneUpdateProtocolRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.ProtocolOption`
         """
@@ -57,7 +55,6 @@ class KeystoneUpdateProtocolRequestBody:
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this KeystoneUpdateProtocolRequestBody.
-
 
         :param protocol: The protocol of this KeystoneUpdateProtocolRequestBody.
         :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolOption`

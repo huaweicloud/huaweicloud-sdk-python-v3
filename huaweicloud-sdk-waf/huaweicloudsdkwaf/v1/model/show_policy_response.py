@@ -17,7 +17,6 @@ class ShowPolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -214,7 +213,6 @@ class ShowPolicyResponse(SdkResponse):
     def robot_action(self):
         """Gets the robot_action of this ShowPolicyResponse.
 
-
         :return: The robot_action of this ShowPolicyResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Action`
         """
@@ -223,7 +221,6 @@ class ShowPolicyResponse(SdkResponse):
     @robot_action.setter
     def robot_action(self, robot_action):
         """Sets the robot_action of this ShowPolicyResponse.
-
 
         :param robot_action: The robot_action of this ShowPolicyResponse.
         :type robot_action: :class:`huaweicloudsdkwaf.v1.Action`
@@ -234,7 +231,6 @@ class ShowPolicyResponse(SdkResponse):
     def action(self):
         """Gets the action of this ShowPolicyResponse.
 
-
         :return: The action of this ShowPolicyResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
@@ -243,7 +239,6 @@ class ShowPolicyResponse(SdkResponse):
     @action.setter
     def action(self, action):
         """Sets the action of this ShowPolicyResponse.
-
 
         :param action: The action of this ShowPolicyResponse.
         :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
@@ -254,7 +249,6 @@ class ShowPolicyResponse(SdkResponse):
     def options(self):
         """Gets the options of this ShowPolicyResponse.
 
-
         :return: The options of this ShowPolicyResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
@@ -263,7 +257,6 @@ class ShowPolicyResponse(SdkResponse):
     @options.setter
     def options(self, options):
         """Sets the options of this ShowPolicyResponse.
-
 
         :param options: The options of this ShowPolicyResponse.
         :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`

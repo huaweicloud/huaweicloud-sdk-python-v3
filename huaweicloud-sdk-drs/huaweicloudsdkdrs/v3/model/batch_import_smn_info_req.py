@@ -17,7 +17,6 @@ class BatchImportSmnInfoReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class BatchImportSmnInfoReq:
     def alarm_notify_info(self):
         """Gets the alarm_notify_info of this BatchImportSmnInfoReq.
 
-
         :return: The alarm_notify_info of this BatchImportSmnInfoReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetAlarmNotifyInfo`
         """
@@ -85,7 +83,6 @@ class BatchImportSmnInfoReq:
     @alarm_notify_info.setter
     def alarm_notify_info(self, alarm_notify_info):
         """Sets the alarm_notify_info of this BatchImportSmnInfoReq.
-
 
         :param alarm_notify_info: The alarm_notify_info of this BatchImportSmnInfoReq.
         :type alarm_notify_info: :class:`huaweicloudsdkdrs.v3.BatchSetAlarmNotifyInfo`

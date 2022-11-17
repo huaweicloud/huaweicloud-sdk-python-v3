@@ -17,7 +17,6 @@ class ExecuteQaChatRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ExecuteQaChatRequest:
     def body(self):
         """Gets the body of this ExecuteQaChatRequest.
 
-
         :return: The body of this ExecuteQaChatRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.PostRequestsReq`
         """
@@ -86,7 +84,6 @@ class ExecuteQaChatRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExecuteQaChatRequest.
-
 
         :param body: The body of this ExecuteQaChatRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.PostRequestsReq`

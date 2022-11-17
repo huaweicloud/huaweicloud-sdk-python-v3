@@ -17,7 +17,6 @@ class CreatePostalRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreatePostalRequest:
     def body(self):
         """Gets the body of this CreatePostalRequest.
 
-
         :return: The body of this CreatePostalRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.AddPostalReq`
         """
@@ -87,7 +85,6 @@ class CreatePostalRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePostalRequest.
-
 
         :param body: The body of this CreatePostalRequest.
         :type body: :class:`huaweicloudsdkbss.v2.AddPostalReq`

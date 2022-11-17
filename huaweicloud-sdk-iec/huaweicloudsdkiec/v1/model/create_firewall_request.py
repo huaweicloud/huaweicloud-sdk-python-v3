@@ -17,7 +17,6 @@ class CreateFirewallRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateFirewallRequest:
     def body(self):
         """Gets the body of this CreateFirewallRequest.
 
-
         :return: The body of this CreateFirewallRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.CreateFirewallRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateFirewallRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateFirewallRequest.
-
 
         :param body: The body of this CreateFirewallRequest.
         :type body: :class:`huaweicloudsdkiec.v1.CreateFirewallRequestBody`

@@ -17,7 +17,6 @@ class DeleteSqlserverDatabaseRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class DeleteSqlserverDatabaseRequest:
     def body(self):
         """Gets the body of this DeleteSqlserverDatabaseRequest.
 
-
         :return: The body of this DeleteSqlserverDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DropDatabaseV3Req`
         """
@@ -143,7 +141,6 @@ class DeleteSqlserverDatabaseRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteSqlserverDatabaseRequest.
-
 
         :param body: The body of this DeleteSqlserverDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DropDatabaseV3Req`

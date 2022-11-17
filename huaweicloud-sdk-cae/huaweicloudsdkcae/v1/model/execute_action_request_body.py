@@ -17,7 +17,6 @@ class ExecuteActionRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -112,7 +111,6 @@ class ExecuteActionRequestBody:
     def metadata(self):
         """Gets the metadata of this ExecuteActionRequestBody.
 
-
         :return: The metadata of this ExecuteActionRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ExecuteActionRequestBodyMetadata`
         """
@@ -121,7 +119,6 @@ class ExecuteActionRequestBody:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ExecuteActionRequestBody.
-
 
         :param metadata: The metadata of this ExecuteActionRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.ExecuteActionRequestBodyMetadata`
@@ -132,7 +129,6 @@ class ExecuteActionRequestBody:
     def spec(self):
         """Gets the spec of this ExecuteActionRequestBody.
 
-
         :return: The spec of this ExecuteActionRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ActionOnComponentSpec`
         """
@@ -141,7 +137,6 @@ class ExecuteActionRequestBody:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ExecuteActionRequestBody.
-
 
         :param spec: The spec of this ExecuteActionRequestBody.
         :type spec: :class:`huaweicloudsdkcae.v1.ActionOnComponentSpec`

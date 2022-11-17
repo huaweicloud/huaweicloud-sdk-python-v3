@@ -17,7 +17,6 @@ class ShowUserSettingResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowUserSettingResponse(SdkResponse):
     def operation(self):
         """Gets the operation of this ShowUserSettingResponse.
 
-
         :return: The operation of this ShowUserSettingResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.Operation`
         """
@@ -65,7 +63,6 @@ class ShowUserSettingResponse(SdkResponse):
     @operation.setter
     def operation(self, operation):
         """Sets the operation of this ShowUserSettingResponse.
-
 
         :param operation: The operation of this ShowUserSettingResponse.
         :type operation: :class:`huaweicloudsdkeihealth.v1.Operation`
@@ -76,7 +73,6 @@ class ShowUserSettingResponse(SdkResponse):
     def settings(self):
         """Gets the settings of this ShowUserSettingResponse.
 
-
         :return: The settings of this ShowUserSettingResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`
         """
@@ -85,7 +81,6 @@ class ShowUserSettingResponse(SdkResponse):
     @settings.setter
     def settings(self, settings):
         """Sets the settings of this ShowUserSettingResponse.
-
 
         :param settings: The settings of this ShowUserSettingResponse.
         :type settings: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`

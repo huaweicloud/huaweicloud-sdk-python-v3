@@ -17,7 +17,6 @@ class RuleAction:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -39,7 +38,7 @@ class RuleAction:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数说明**：规则动作的类型。 **取值范围**： - DEVICE_CMD：下发设备命令消息类型。 - SMN_FORWARDING：发送SMN消息类型。 - DEVICE_ALARM：上报设备告警消息类型。当选择该类型时，condition中必须有DEVICE_DATA条件类型。该类型动作只能唯一。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - ROMA_FORWARDING：转发ROMA Connect服务消息类型。 - IoTA_FORWARDING：转发IoTA服务消息类型。 - KAFKA_FORWARDING：转发kafka消息类型。
+        :param type: **参数说明**：规则动作的类型。 **取值范围**： - DEVICE_CMD：下发设备命令消息类型。 - SMN_FORWARDING：发送SMN消息类型。 - DEVICE_ALARM：上报设备告警消息类型。当选择该类型时，condition中必须有DEVICE_DATA条件类型。该类型动作只能唯一。
         :type type: str
         :param smn_forwarding: 
         :type smn_forwarding: :class:`huaweicloudsdkiotda.v5.ActionSmnForwarding`
@@ -69,7 +68,7 @@ class RuleAction:
     def type(self):
         """Gets the type of this RuleAction.
 
-        **参数说明**：规则动作的类型。 **取值范围**： - DEVICE_CMD：下发设备命令消息类型。 - SMN_FORWARDING：发送SMN消息类型。 - DEVICE_ALARM：上报设备告警消息类型。当选择该类型时，condition中必须有DEVICE_DATA条件类型。该类型动作只能唯一。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - ROMA_FORWARDING：转发ROMA Connect服务消息类型。 - IoTA_FORWARDING：转发IoTA服务消息类型。 - KAFKA_FORWARDING：转发kafka消息类型。
+        **参数说明**：规则动作的类型。 **取值范围**： - DEVICE_CMD：下发设备命令消息类型。 - SMN_FORWARDING：发送SMN消息类型。 - DEVICE_ALARM：上报设备告警消息类型。当选择该类型时，condition中必须有DEVICE_DATA条件类型。该类型动作只能唯一。
 
         :return: The type of this RuleAction.
         :rtype: str
@@ -80,7 +79,7 @@ class RuleAction:
     def type(self, type):
         """Sets the type of this RuleAction.
 
-        **参数说明**：规则动作的类型。 **取值范围**： - DEVICE_CMD：下发设备命令消息类型。 - SMN_FORWARDING：发送SMN消息类型。 - DEVICE_ALARM：上报设备告警消息类型。当选择该类型时，condition中必须有DEVICE_DATA条件类型。该类型动作只能唯一。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - ROMA_FORWARDING：转发ROMA Connect服务消息类型。 - IoTA_FORWARDING：转发IoTA服务消息类型。 - KAFKA_FORWARDING：转发kafka消息类型。
+        **参数说明**：规则动作的类型。 **取值范围**： - DEVICE_CMD：下发设备命令消息类型。 - SMN_FORWARDING：发送SMN消息类型。 - DEVICE_ALARM：上报设备告警消息类型。当选择该类型时，condition中必须有DEVICE_DATA条件类型。该类型动作只能唯一。
 
         :param type: The type of this RuleAction.
         :type type: str
@@ -91,7 +90,6 @@ class RuleAction:
     def smn_forwarding(self):
         """Gets the smn_forwarding of this RuleAction.
 
-
         :return: The smn_forwarding of this RuleAction.
         :rtype: :class:`huaweicloudsdkiotda.v5.ActionSmnForwarding`
         """
@@ -100,7 +98,6 @@ class RuleAction:
     @smn_forwarding.setter
     def smn_forwarding(self, smn_forwarding):
         """Sets the smn_forwarding of this RuleAction.
-
 
         :param smn_forwarding: The smn_forwarding of this RuleAction.
         :type smn_forwarding: :class:`huaweicloudsdkiotda.v5.ActionSmnForwarding`
@@ -111,7 +108,6 @@ class RuleAction:
     def device_alarm(self):
         """Gets the device_alarm of this RuleAction.
 
-
         :return: The device_alarm of this RuleAction.
         :rtype: :class:`huaweicloudsdkiotda.v5.ActionDeviceAlarm`
         """
@@ -120,7 +116,6 @@ class RuleAction:
     @device_alarm.setter
     def device_alarm(self, device_alarm):
         """Sets the device_alarm of this RuleAction.
-
 
         :param device_alarm: The device_alarm of this RuleAction.
         :type device_alarm: :class:`huaweicloudsdkiotda.v5.ActionDeviceAlarm`
@@ -131,7 +126,6 @@ class RuleAction:
     def device_command(self):
         """Gets the device_command of this RuleAction.
 
-
         :return: The device_command of this RuleAction.
         :rtype: :class:`huaweicloudsdkiotda.v5.ActionDeviceCommand`
         """
@@ -140,7 +134,6 @@ class RuleAction:
     @device_command.setter
     def device_command(self, device_command):
         """Sets the device_command of this RuleAction.
-
 
         :param device_command: The device_command of this RuleAction.
         :type device_command: :class:`huaweicloudsdkiotda.v5.ActionDeviceCommand`

@@ -17,7 +17,6 @@ class DeleteServerNicsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class DeleteServerNicsRequest:
     def server_id(self):
         """Gets the server_id of this DeleteServerNicsRequest.
 
-
         :return: The server_id of this DeleteServerNicsRequest.
         :rtype: str
         """
@@ -64,7 +62,6 @@ class DeleteServerNicsRequest:
     @server_id.setter
     def server_id(self, server_id):
         """Sets the server_id of this DeleteServerNicsRequest.
-
 
         :param server_id: The server_id of this DeleteServerNicsRequest.
         :type server_id: str
@@ -75,7 +72,6 @@ class DeleteServerNicsRequest:
     def body(self):
         """Gets the body of this DeleteServerNicsRequest.
 
-
         :return: The body of this DeleteServerNicsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.DeleteServerNicsReq`
         """
@@ -84,7 +80,6 @@ class DeleteServerNicsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteServerNicsRequest.
-
 
         :param body: The body of this DeleteServerNicsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.DeleteServerNicsReq`

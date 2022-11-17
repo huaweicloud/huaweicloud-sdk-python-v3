@@ -17,7 +17,6 @@ class CopyCheckpointResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CopyCheckpointResponse(SdkResponse):
     def replication(self):
         """Gets the replication of this CopyCheckpointResponse.
 
-
         :return: The replication of this CopyCheckpointResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateRespBody`
         """
@@ -58,7 +56,6 @@ class CopyCheckpointResponse(SdkResponse):
     @replication.setter
     def replication(self, replication):
         """Sets the replication of this CopyCheckpointResponse.
-
 
         :param replication: The replication of this CopyCheckpointResponse.
         :type replication: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateRespBody`

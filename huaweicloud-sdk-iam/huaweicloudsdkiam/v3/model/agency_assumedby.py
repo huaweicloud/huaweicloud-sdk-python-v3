@@ -17,7 +17,6 @@ class AgencyAssumedby:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class AgencyAssumedby:
     def user(self):
         """Gets the user of this AgencyAssumedby.
 
-
         :return: The user of this AgencyAssumedby.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUser`
         """
@@ -57,7 +55,6 @@ class AgencyAssumedby:
     @user.setter
     def user(self, user):
         """Sets the user of this AgencyAssumedby.
-
 
         :param user: The user of this AgencyAssumedby.
         :type user: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUser`

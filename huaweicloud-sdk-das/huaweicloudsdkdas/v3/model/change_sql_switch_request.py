@@ -17,7 +17,6 @@ class ChangeSqlSwitchRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ChangeSqlSwitchRequest:
     def body(self):
         """Gets the body of this ChangeSqlSwitchRequest.
 
-
         :return: The body of this ChangeSqlSwitchRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchBody`
         """
@@ -115,7 +113,6 @@ class ChangeSqlSwitchRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeSqlSwitchRequest.
-
 
         :param body: The body of this ChangeSqlSwitchRequest.
         :type body: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchBody`

@@ -17,7 +17,6 @@ class UpdateNaResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -237,7 +236,6 @@ class UpdateNaResponse(SdkResponse):
     def access_roma_info(self):
         """Gets the access_roma_info of this UpdateNaResponse.
 
-
         :return: The access_roma_info of this UpdateNaResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.AccessRomaBriefInfo`
         """
@@ -246,7 +244,6 @@ class UpdateNaResponse(SdkResponse):
     @access_roma_info.setter
     def access_roma_info(self, access_roma_info):
         """Sets the access_roma_info of this UpdateNaResponse.
-
 
         :param access_roma_info: The access_roma_info of this UpdateNaResponse.
         :type access_roma_info: :class:`huaweicloudsdkiotedge.v2.AccessRomaBriefInfo`

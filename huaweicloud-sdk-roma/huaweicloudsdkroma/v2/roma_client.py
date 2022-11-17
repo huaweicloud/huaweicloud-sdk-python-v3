@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RomaClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class RomaClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -104,6 +100,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddSubsetsToGatewayResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -130,6 +127,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +165,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateAppsForAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -193,6 +193,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -231,6 +233,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -257,6 +260,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -293,6 +298,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -323,6 +329,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -357,6 +365,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -383,6 +392,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -419,6 +430,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddDeviceToGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -445,6 +457,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -479,6 +493,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -505,6 +520,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -539,6 +556,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -565,6 +583,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -599,6 +619,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -625,6 +646,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -659,6 +682,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchFreezeDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -685,6 +709,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -719,6 +745,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStartOrStopTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -745,6 +772,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -779,6 +808,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckLivedataApisV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -805,6 +835,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -837,6 +869,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CountDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -863,6 +896,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -895,6 +930,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CountTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -921,6 +957,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -955,6 +993,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppCodeAutoV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -981,6 +1020,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1017,6 +1058,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1043,6 +1085,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1079,6 +1123,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppConfigV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1105,6 +1150,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1139,6 +1186,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1165,6 +1213,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1201,6 +1251,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1227,6 +1278,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1261,6 +1314,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCommonTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1287,6 +1341,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1321,6 +1377,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1347,6 +1404,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1381,6 +1440,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatasourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1407,6 +1467,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1443,6 +1505,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDestinationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1469,6 +1532,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1503,6 +1568,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1529,6 +1595,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1563,6 +1631,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1589,6 +1658,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1625,6 +1696,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDispatchesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1655,6 +1727,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1689,6 +1763,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnvironmentV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1724,6 +1799,8 @@ class RomaClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -1757,6 +1834,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1785,6 +1863,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1819,6 +1899,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFeatureV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1845,6 +1926,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1881,6 +1964,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLiveDataApiScriptV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1907,6 +1991,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1941,6 +2027,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1967,6 +2054,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2001,6 +2090,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2027,6 +2117,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2063,6 +2155,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMultiTaskMappingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2089,6 +2182,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2123,6 +2218,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMultiTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2149,6 +2245,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2183,6 +2281,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2209,6 +2308,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2243,6 +2344,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2269,6 +2371,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2303,6 +2407,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProductTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2329,6 +2434,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2365,6 +2472,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProductTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2391,6 +2499,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2427,6 +2537,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2453,6 +2564,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2491,6 +2604,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRequestPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2517,6 +2631,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2551,6 +2667,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2577,6 +2694,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2615,6 +2734,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResponsePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2641,6 +2761,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2675,6 +2797,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2701,6 +2824,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2735,6 +2860,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2765,6 +2891,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2799,6 +2927,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2825,6 +2954,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2861,6 +2992,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2891,6 +3023,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2927,6 +3061,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSpecialThrottlingConfigurationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2953,6 +3088,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2989,6 +3126,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DebugLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3015,6 +3153,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3049,6 +3189,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DebugRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3075,6 +3216,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3109,6 +3252,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppAclResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3135,6 +3279,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3171,6 +3317,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3197,6 +3344,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3233,6 +3382,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppConfigV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3259,6 +3409,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3293,6 +3445,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3319,6 +3472,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3355,6 +3510,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3381,6 +3537,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3415,6 +3573,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3441,6 +3600,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3475,6 +3636,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatasourceInfoByIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3501,6 +3663,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3537,6 +3701,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDestinationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3563,6 +3728,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3597,6 +3764,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3623,6 +3791,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3659,6 +3829,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceFromGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3685,6 +3856,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3719,6 +3892,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3746,6 +3920,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3780,6 +3956,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvironmentV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3806,6 +3983,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3840,6 +4019,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3866,6 +4046,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3900,6 +4082,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3926,6 +4109,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3960,6 +4145,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3986,6 +4172,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4022,6 +4210,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMultiTaskMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4048,6 +4237,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4082,6 +4273,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4108,6 +4300,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4142,6 +4336,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4168,6 +4363,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4202,6 +4399,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProductTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4228,6 +4426,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4264,6 +4464,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProductTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4290,6 +4491,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4326,6 +4529,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4352,6 +4556,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4390,6 +4596,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRequestPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4416,6 +4623,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4450,6 +4659,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4476,6 +4686,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4514,6 +4726,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResponsePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4540,6 +4753,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4574,6 +4789,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4600,6 +4816,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4634,6 +4852,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4660,6 +4879,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4694,6 +4915,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4720,6 +4942,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4756,6 +4980,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4782,6 +5007,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4818,6 +5045,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSpecialThrottlingConfigurationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4844,6 +5072,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4878,6 +5108,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4904,6 +5135,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4940,6 +5173,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateAppQuotaWithAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4966,6 +5200,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5004,6 +5240,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5030,6 +5267,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5066,6 +5305,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5092,6 +5332,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5126,6 +5368,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5152,6 +5395,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5187,6 +5432,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5213,6 +5459,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5247,6 +5495,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5273,6 +5522,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5313,6 +5564,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5339,6 +5591,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5373,6 +5627,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InstallMultiTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5399,6 +5654,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5445,6 +5702,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5471,6 +5729,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5517,6 +5777,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisNotBoundWithSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5543,6 +5804,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5581,6 +5844,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppCodesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5607,6 +5871,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5649,6 +5915,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppConfigsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5675,6 +5942,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5715,6 +5984,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppQuotaBindableAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5741,6 +6011,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5781,6 +6053,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppQuotaBoundAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5807,6 +6080,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5845,6 +6120,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5871,6 +6147,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5917,6 +6195,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5943,6 +6222,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5985,6 +6266,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCommandsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6011,6 +6293,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6053,6 +6337,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomAuthorizersV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6079,6 +6364,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6119,6 +6406,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatasourceColumnsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6145,6 +6433,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6187,6 +6477,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatasourceTablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6213,6 +6504,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6261,6 +6554,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatasourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6287,6 +6581,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6325,6 +6621,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDestinationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6351,6 +6648,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6409,6 +6708,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6435,6 +6735,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6469,6 +6771,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesInProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6495,6 +6798,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6539,6 +6844,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentVariablesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6565,6 +6871,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6603,6 +6911,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6631,6 +6940,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6667,6 +6978,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFeaturesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6694,6 +7006,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6730,6 +7044,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLatelyApiStatisticsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6756,6 +7071,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6790,6 +7107,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataApiDeploymentHistoryV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6816,6 +7134,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6854,6 +7174,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataApiTestHistoryV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6880,6 +7201,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6928,6 +7251,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6954,6 +7278,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6994,6 +7320,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataDataSourcesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7020,6 +7347,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7052,6 +7381,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLiveDataQuotaV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7078,6 +7408,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7118,6 +7450,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMonitorInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7144,6 +7477,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7186,6 +7521,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMonitorLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7212,6 +7548,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7254,6 +7592,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMqsInstanceTopicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7280,6 +7619,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7318,6 +7659,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7344,6 +7686,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7392,6 +7736,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7418,6 +7763,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7456,6 +7803,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductTopicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7482,6 +7830,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7546,6 +7896,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7572,6 +7923,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7608,6 +7961,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectCofigsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7634,6 +7988,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7676,6 +8032,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7702,6 +8059,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7746,6 +8105,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestPropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7772,6 +8132,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7814,6 +8176,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7840,6 +8203,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7884,6 +8249,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResponsePropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7910,6 +8276,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7950,6 +8318,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7976,6 +8345,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8026,6 +8397,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8052,6 +8424,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8086,6 +8460,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListShadowsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8112,6 +8487,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8156,6 +8533,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSignatureKeysBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8182,6 +8560,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8224,6 +8604,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSignatureKeysV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8250,6 +8631,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8288,6 +8671,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8314,6 +8698,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8356,6 +8742,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSpecialThrottlingConfigurationsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8382,6 +8769,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8428,6 +8817,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStatisticsApiResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8454,6 +8844,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8498,6 +8890,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubsetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8524,6 +8917,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8560,6 +8955,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8586,6 +8982,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8646,6 +9044,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8672,6 +9071,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8718,6 +9119,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTopicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8744,6 +9146,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8780,6 +9184,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PublishLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8801,11 +9206,13 @@ class RomaClient(Client):
         return self.reset_authentication_with_http_info(request)
 
     def reset_authentication_with_http_info(self, request):
-        all_params = ['instance_id', 'device_id']
+        all_params = ['instance_id', 'device_id', 'reset_authentication_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8822,13 +9229,15 @@ class RomaClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -8840,6 +9249,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8866,6 +9276,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8902,6 +9314,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8928,6 +9341,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8964,6 +9379,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetMultiTaskOffsetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8985,11 +9401,13 @@ class RomaClient(Client):
         return self.reset_product_authentication_with_http_info(request)
 
     def reset_product_authentication_with_http_info(self, request):
-        all_params = ['instance_id', 'product_id']
+        all_params = ['instance_id', 'product_id', 'reset_product_authentication_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9006,13 +9424,15 @@ class RomaClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -9024,6 +9444,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetProductAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9050,6 +9471,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9084,6 +9507,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9110,6 +9534,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9146,6 +9572,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9172,6 +9599,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9206,6 +9635,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppBoundAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9232,6 +9662,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9266,6 +9698,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9292,6 +9725,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9326,6 +9761,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9352,6 +9788,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9388,6 +9826,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9414,6 +9853,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9448,6 +9889,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDataourceDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9474,6 +9916,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9508,6 +9952,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppAclResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9534,6 +9979,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9570,6 +10017,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9596,6 +10044,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9632,6 +10082,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppConfigV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9658,6 +10109,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9692,6 +10145,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9718,6 +10172,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9752,6 +10208,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfCustomAuthorizersV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9778,6 +10235,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9816,6 +10275,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfDomainNameCertificateV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9842,6 +10302,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9876,6 +10338,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9902,6 +10365,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9934,6 +10399,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9960,6 +10426,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9994,6 +10462,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10020,6 +10489,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10054,6 +10525,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10080,6 +10552,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10114,6 +10588,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10140,6 +10615,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10174,6 +10651,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceGroupTreeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10200,6 +10678,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10242,6 +10722,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDevicesInGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10268,6 +10749,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10302,6 +10785,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDispatchesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10328,6 +10812,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10362,6 +10848,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10389,6 +10876,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10445,6 +10934,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMqsInstanceMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10471,6 +10961,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10509,6 +11001,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMqsInstanceTopicAccessPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10535,6 +11028,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10569,6 +11064,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10595,6 +11091,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10629,6 +11127,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10655,6 +11154,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10689,6 +11190,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10715,6 +11217,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10751,6 +11255,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10777,6 +11282,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10815,6 +11322,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRequestPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10841,6 +11349,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10879,6 +11389,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResponsePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10905,6 +11416,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10937,6 +11450,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRestrictionOfInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -10963,6 +11477,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -10997,6 +11513,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11023,6 +11540,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11057,6 +11576,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11083,6 +11603,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11117,6 +11639,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11143,6 +11666,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11179,6 +11704,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartTestDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11205,6 +11731,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11239,6 +11767,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11265,6 +11794,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11299,6 +11830,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnpublishLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11325,6 +11857,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11361,6 +11895,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppAclResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11387,6 +11922,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11425,6 +11962,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppConfigV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11451,6 +11989,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11487,6 +12027,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11513,6 +12054,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11551,6 +12094,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11577,6 +12121,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11613,6 +12159,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11639,6 +12186,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11675,6 +12224,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDatasourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11701,6 +12251,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11737,6 +12289,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11763,6 +12316,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11799,6 +12354,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11825,6 +12381,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11863,6 +12421,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDispatchesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11889,6 +12448,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11927,6 +12488,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -11953,6 +12515,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -11989,6 +12553,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEnvironmentV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12015,6 +12580,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12051,6 +12618,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEnvironmentVariableV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12077,6 +12645,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12113,6 +12683,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLiveDataApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12139,6 +12710,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12173,6 +12746,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMqsInstanceTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12199,6 +12773,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12235,6 +12811,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMultiTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12261,6 +12838,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12297,6 +12876,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12323,6 +12903,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12359,6 +12941,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12385,6 +12968,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12421,6 +13006,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProductTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12447,6 +13033,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12485,6 +13073,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProductTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12511,6 +13100,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12549,6 +13140,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12575,6 +13167,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12615,6 +13209,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRequestPropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12641,6 +13236,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12677,6 +13274,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12703,6 +13301,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12743,6 +13343,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResponsePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12769,6 +13370,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12805,6 +13408,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12831,6 +13435,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12867,6 +13473,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12893,6 +13500,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12929,6 +13538,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSignatureKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -12955,6 +13565,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -12993,6 +13605,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSpecialThrottlingConfigurationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13019,6 +13632,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13055,6 +13670,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13081,6 +13697,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13115,6 +13733,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTopicAccessPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13141,6 +13760,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13177,6 +13798,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13205,6 +13827,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13241,6 +13865,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteAclV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13267,6 +13892,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13301,6 +13928,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAclStrategyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13327,6 +13955,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13361,6 +13991,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAclV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13387,6 +14018,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13433,6 +14066,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAclStrategiesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13459,6 +14093,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13493,6 +14129,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfAclPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13519,6 +14156,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13555,6 +14194,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAclStrategyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13585,6 +14225,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13619,6 +14261,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13645,6 +14288,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13681,6 +14326,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDisassociateThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13709,6 +14355,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13745,6 +14393,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchPublishOrOfflineApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13773,6 +14422,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13809,6 +14460,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeApiVersionV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13835,6 +14487,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13869,6 +14523,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckApiGroupsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13895,6 +14550,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13929,6 +14586,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckApisV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -13955,6 +14613,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -13989,6 +14649,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14017,6 +14678,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14051,6 +14714,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14081,6 +14745,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14115,6 +14781,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOrDeletePublishRecordForApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14141,6 +14808,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14177,6 +14846,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DebugApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14203,6 +14873,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14237,6 +14909,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiByVersionIdV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14265,6 +14938,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14299,6 +14974,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14327,6 +15003,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14361,6 +15039,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14387,6 +15066,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14421,6 +15102,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14449,6 +15131,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14495,6 +15179,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiGroupsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14527,6 +15212,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14563,6 +15250,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiRuntimeDefinitionV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14589,6 +15277,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14623,6 +15313,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionDetailV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14649,6 +15340,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14691,6 +15384,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14717,6 +15411,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14763,6 +15459,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14789,6 +15486,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14835,6 +15534,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisUnbindedToRequestThrottlingPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14861,6 +15561,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14921,6 +15623,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -14947,6 +15650,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -14991,6 +15696,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestThrottlingPoliciesBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15018,6 +15724,8 @@ class RomaClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -15051,6 +15759,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15078,6 +15787,8 @@ class RomaClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -15111,6 +15822,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15137,6 +15849,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15173,6 +15887,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApiGroupV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15199,6 +15914,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15235,6 +15952,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15261,6 +15979,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15297,6 +16017,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteApiAclBindingV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15325,6 +16046,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15359,6 +16082,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApiAclBindingV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15385,6 +16109,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15419,6 +16145,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApiAclBindingV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15445,6 +16172,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15491,6 +16220,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAclPolicyBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15517,6 +16247,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15561,6 +16293,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToAclPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15587,6 +16320,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15633,6 +16368,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisUnbindedToAclPolicyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15659,6 +16395,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15693,6 +16431,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelingAuthorizationV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15719,6 +16458,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15753,6 +16494,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAuthorizingAppsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15779,6 +16521,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15827,6 +16571,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisBindedToAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15853,6 +16598,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15899,6 +16646,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApisUnbindedToAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15925,6 +16673,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -15969,6 +16719,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsBindedToApiV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -15995,6 +16746,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16029,6 +16782,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDuplicateApisForAppV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16056,6 +16810,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16092,6 +16848,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddUserToAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16118,6 +16875,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16154,6 +16913,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckAuthUsersOfAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16180,6 +16940,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16216,6 +16978,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckCanAuthUsersOfAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16242,6 +17005,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16276,6 +17041,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRomaAppDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16302,6 +17068,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16336,6 +17104,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRomaAppSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16362,6 +17131,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16396,6 +17167,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16422,6 +17194,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16456,6 +17230,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16482,6 +17257,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16528,6 +17305,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16554,6 +17332,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16590,6 +17370,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetRomaAppSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16616,6 +17397,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16652,6 +17435,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16678,6 +17462,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16716,6 +17502,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateRomaAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16742,6 +17529,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16776,6 +17565,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckAssetJobStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16805,6 +17595,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16839,6 +17631,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16866,6 +17659,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16900,6 +17695,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadAssetArchiveResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16929,6 +17725,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -16963,6 +17761,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -16991,6 +17790,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17027,6 +17828,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17053,6 +17855,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17087,6 +17891,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17113,6 +17918,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17147,6 +17954,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17173,6 +17981,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17207,6 +18017,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17233,6 +18044,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17275,6 +18088,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17301,6 +18115,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17337,6 +18153,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17363,6 +18180,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17399,6 +18218,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateDictionaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17425,6 +18245,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17461,6 +18283,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRomaInstanceListV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17487,6 +18310,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17519,6 +18344,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMqsInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17545,6 +18371,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17577,6 +18405,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMqsInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17603,6 +18432,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17637,6 +18468,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17663,6 +18495,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17697,6 +18531,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportLiveDataApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17723,6 +18558,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17773,6 +18610,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17799,6 +18637,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17839,6 +18679,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportLiveDataApiDefinitionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17867,6 +18708,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17903,6 +18746,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddingBackendInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17929,6 +18773,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -17965,6 +18811,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDisableMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -17991,6 +18838,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18027,6 +18876,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchEnableMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18055,6 +18905,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18091,6 +18943,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18118,6 +18971,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18152,6 +19007,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18178,6 +19034,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18214,6 +19072,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackendInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18240,6 +19099,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18276,6 +19137,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18302,6 +19164,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18336,6 +19200,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18362,6 +19227,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18408,6 +19275,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackendInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18434,6 +19302,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18478,6 +19348,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMemberGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18504,6 +19375,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18556,6 +19429,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcChannelsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18582,6 +19456,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18618,6 +19494,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18644,6 +19521,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18678,6 +19557,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailsOfVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18704,6 +19584,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18740,6 +19622,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBackendInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18766,6 +19649,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18802,6 +19687,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHealthCheckResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18828,6 +19714,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18866,6 +19754,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18896,6 +19785,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18932,6 +19823,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -18958,6 +19850,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -18990,6 +19884,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectVpcChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -19016,6 +19911,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -19048,6 +19945,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectVpcChannelSyncsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -19074,6 +19972,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -19124,6 +20024,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectVpcChannelsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -19150,6 +20051,8 @@ class RomaClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -19182,6 +20085,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectVpcChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -19189,7 +20093,7 @@ class RomaClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -19199,9 +20103,10 @@ class RomaClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -19218,6 +20123,7 @@ class RomaClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

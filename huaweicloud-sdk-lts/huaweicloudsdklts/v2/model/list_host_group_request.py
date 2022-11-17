@@ -17,7 +17,6 @@ class ListHostGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListHostGroupRequest:
     def body(self):
         """Gets the body of this ListHostGroupRequest.
 
-
         :return: The body of this ListHostGroupRequest.
         :rtype: :class:`huaweicloudsdklts.v2.GetHostGroupListRequestBody`
         """
@@ -58,7 +56,6 @@ class ListHostGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListHostGroupRequest.
-
 
         :param body: The body of this ListHostGroupRequest.
         :type body: :class:`huaweicloudsdklts.v2.GetHostGroupListRequestBody`

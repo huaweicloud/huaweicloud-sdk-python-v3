@@ -17,7 +17,6 @@ class CreateApiTestSuiteByRepoFileRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateApiTestSuiteByRepoFileRequest:
     def body(self):
         """Gets the body of this CreateApiTestSuiteByRepoFileRequest.
 
-
         :return: The body of this CreateApiTestSuiteByRepoFileRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestSuitByRepoFileInfo`
         """
@@ -86,7 +84,6 @@ class CreateApiTestSuiteByRepoFileRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateApiTestSuiteByRepoFileRequest.
-
 
         :param body: The body of this CreateApiTestSuiteByRepoFileRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestSuitByRepoFileInfo`

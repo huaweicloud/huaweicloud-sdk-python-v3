@@ -17,7 +17,6 @@ class ListRateOnPeriodDetailRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListRateOnPeriodDetailRequest:
     def body(self):
         """Gets the body of this ListRateOnPeriodDetailRequest.
 
-
         :return: The body of this ListRateOnPeriodDetailRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.RateOnPeriodReq`
         """
@@ -58,7 +56,6 @@ class ListRateOnPeriodDetailRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListRateOnPeriodDetailRequest.
-
 
         :param body: The body of this ListRateOnPeriodDetailRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.RateOnPeriodReq`

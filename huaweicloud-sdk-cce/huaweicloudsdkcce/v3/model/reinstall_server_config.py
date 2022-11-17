@@ -17,7 +17,6 @@ class ReinstallServerConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ReinstallServerConfig:
     def root_volume(self):
         """Gets the root_volume of this ReinstallServerConfig.
 
-
         :return: The root_volume of this ReinstallServerConfig.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallVolumeSpec`
         """
@@ -87,7 +85,6 @@ class ReinstallServerConfig:
     @root_volume.setter
     def root_volume(self, root_volume):
         """Sets the root_volume of this ReinstallServerConfig.
-
 
         :param root_volume: The root_volume of this ReinstallServerConfig.
         :type root_volume: :class:`huaweicloudsdkcce.v3.ReinstallVolumeSpec`

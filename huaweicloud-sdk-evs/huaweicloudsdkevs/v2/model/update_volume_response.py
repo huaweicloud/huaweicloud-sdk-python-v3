@@ -17,7 +17,6 @@ class UpdateVolumeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -314,7 +313,6 @@ class UpdateVolumeResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this UpdateVolumeResponse.
 
-
         :return: The metadata of this UpdateVolumeResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
         """
@@ -323,7 +321,6 @@ class UpdateVolumeResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this UpdateVolumeResponse.
-
 
         :param metadata: The metadata of this UpdateVolumeResponse.
         :type metadata: :class:`huaweicloudsdkevs.v2.VolumeMetadata`

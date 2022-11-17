@@ -17,7 +17,6 @@ class InstanceResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -382,7 +381,6 @@ class InstanceResponse:
     def private_dns_names(self):
         """Gets the private_dns_names of this InstanceResponse.
 
-
         :return: The private_dns_names of this InstanceResponse.
         :rtype: list[str]
         """
@@ -391,7 +389,6 @@ class InstanceResponse:
     @private_dns_names.setter
     def private_dns_names(self, private_dns_names):
         """Sets the private_dns_names of this InstanceResponse.
-
 
         :param private_dns_names: The private_dns_names of this InstanceResponse.
         :type private_dns_names: list[str]
@@ -578,7 +575,6 @@ class InstanceResponse:
     def nodes(self):
         """Gets the nodes of this InstanceResponse.
 
-
         :return: The nodes of this InstanceResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.NodeResponse`]
         """
@@ -587,7 +583,6 @@ class InstanceResponse:
     @nodes.setter
     def nodes(self, nodes):
         """Sets the nodes of this InstanceResponse.
-
 
         :param nodes: The nodes of this InstanceResponse.
         :type nodes: list[:class:`huaweicloudsdkrds.v3.NodeResponse`]
@@ -598,7 +593,6 @@ class InstanceResponse:
     def related_instance(self):
         """Gets the related_instance of this InstanceResponse.
 
-
         :return: The related_instance of this InstanceResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.RelatedInstance`]
         """
@@ -607,7 +601,6 @@ class InstanceResponse:
     @related_instance.setter
     def related_instance(self, related_instance):
         """Sets the related_instance of this InstanceResponse.
-
 
         :param related_instance: The related_instance of this InstanceResponse.
         :type related_instance: list[:class:`huaweicloudsdkrds.v3.RelatedInstance`]
@@ -640,7 +633,6 @@ class InstanceResponse:
     def datastore(self):
         """Gets the datastore of this InstanceResponse.
 
-
         :return: The datastore of this InstanceResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.Datastore`
         """
@@ -649,7 +641,6 @@ class InstanceResponse:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this InstanceResponse.
-
 
         :param datastore: The datastore of this InstanceResponse.
         :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
@@ -660,7 +651,6 @@ class InstanceResponse:
     def ha(self):
         """Gets the ha of this InstanceResponse.
 
-
         :return: The ha of this InstanceResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.HaResponse`
         """
@@ -669,7 +659,6 @@ class InstanceResponse:
     @ha.setter
     def ha(self, ha):
         """Sets the ha of this InstanceResponse.
-
 
         :param ha: The ha of this InstanceResponse.
         :type ha: :class:`huaweicloudsdkrds.v3.HaResponse`
@@ -702,7 +691,6 @@ class InstanceResponse:
     def backup_strategy(self):
         """Gets the backup_strategy of this InstanceResponse.
 
-
         :return: The backup_strategy of this InstanceResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.BackupStrategyForResponse`
         """
@@ -711,7 +699,6 @@ class InstanceResponse:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this InstanceResponse.
-
 
         :param backup_strategy: The backup_strategy of this InstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategyForResponse`
@@ -832,7 +819,6 @@ class InstanceResponse:
     def volume(self):
         """Gets the volume of this InstanceResponse.
 
-
         :return: The volume of this InstanceResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.Volume`
         """
@@ -841,7 +827,6 @@ class InstanceResponse:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this InstanceResponse.
-
 
         :param volume: The volume of this InstanceResponse.
         :type volume: :class:`huaweicloudsdkrds.v3.Volume`
@@ -940,7 +925,6 @@ class InstanceResponse:
     def charge_info(self):
         """Gets the charge_info of this InstanceResponse.
 
-
         :return: The charge_info of this InstanceResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.ChargeInfoResponse`
         """
@@ -949,7 +933,6 @@ class InstanceResponse:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this InstanceResponse.
-
 
         :param charge_info: The charge_info of this InstanceResponse.
         :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfoResponse`
@@ -982,7 +965,6 @@ class InstanceResponse:
     def tags(self):
         """Gets the tags of this InstanceResponse.
 
-
         :return: The tags of this InstanceResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.TagResponse`]
         """
@@ -991,7 +973,6 @@ class InstanceResponse:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this InstanceResponse.
-
 
         :param tags: The tags of this InstanceResponse.
         :type tags: list[:class:`huaweicloudsdkrds.v3.TagResponse`]

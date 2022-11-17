@@ -17,7 +17,6 @@ class CycleSubConf:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -236,7 +235,6 @@ class CycleSubConf:
     def conf_config_info(self):
         """Gets the conf_config_info of this CycleSubConf.
 
-
         :return: The conf_config_info of this CycleSubConf.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
         """
@@ -245,7 +243,6 @@ class CycleSubConf:
     @conf_config_info.setter
     def conf_config_info(self, conf_config_info):
         """Sets the conf_config_info of this CycleSubConf.
-
 
         :param conf_config_info: The conf_config_info of this CycleSubConf.
         :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`

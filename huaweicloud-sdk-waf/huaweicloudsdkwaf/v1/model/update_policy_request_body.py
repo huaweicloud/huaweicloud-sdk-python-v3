@@ -17,7 +17,6 @@ class UpdatePolicyRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -178,7 +177,6 @@ class UpdatePolicyRequestBody:
     def robot_action(self):
         """Gets the robot_action of this UpdatePolicyRequestBody.
 
-
         :return: The robot_action of this UpdatePolicyRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.Action`
         """
@@ -187,7 +185,6 @@ class UpdatePolicyRequestBody:
     @robot_action.setter
     def robot_action(self, robot_action):
         """Sets the robot_action of this UpdatePolicyRequestBody.
-
 
         :param robot_action: The robot_action of this UpdatePolicyRequestBody.
         :type robot_action: :class:`huaweicloudsdkwaf.v1.Action`
@@ -198,7 +195,6 @@ class UpdatePolicyRequestBody:
     def action(self):
         """Gets the action of this UpdatePolicyRequestBody.
 
-
         :return: The action of this UpdatePolicyRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
@@ -207,7 +203,6 @@ class UpdatePolicyRequestBody:
     @action.setter
     def action(self, action):
         """Sets the action of this UpdatePolicyRequestBody.
-
 
         :param action: The action of this UpdatePolicyRequestBody.
         :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
@@ -218,7 +213,6 @@ class UpdatePolicyRequestBody:
     def options(self):
         """Gets the options of this UpdatePolicyRequestBody.
 
-
         :return: The options of this UpdatePolicyRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
@@ -227,7 +221,6 @@ class UpdatePolicyRequestBody:
     @options.setter
     def options(self, options):
         """Sets the options of this UpdatePolicyRequestBody.
-
 
         :param options: The options of this UpdatePolicyRequestBody.
         :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`

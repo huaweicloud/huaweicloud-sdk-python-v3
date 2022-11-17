@@ -17,7 +17,6 @@ class CreateSubEnterpriseAccountRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateSubEnterpriseAccountRequest:
     def body(self):
         """Gets the body of this CreateSubEnterpriseAccountRequest.
 
-
         :return: The body of this CreateSubEnterpriseAccountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.CreateSubCustomerReqV2`
         """
@@ -58,7 +56,6 @@ class CreateSubEnterpriseAccountRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateSubEnterpriseAccountRequest.
-
 
         :param body: The body of this CreateSubEnterpriseAccountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.CreateSubCustomerReqV2`

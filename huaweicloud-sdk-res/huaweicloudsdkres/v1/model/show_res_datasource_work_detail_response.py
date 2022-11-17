@@ -17,7 +17,6 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
     def error_count(self):
         """Gets the error_count of this ShowResDatasourceWorkDetailResponse.
 
-
         :return: The error_count of this ShowResDatasourceWorkDetailResponse.
         :rtype: :class:`huaweicloudsdkres.v1.ErrorCount`
         """
@@ -114,7 +112,6 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
     @error_count.setter
     def error_count(self, error_count):
         """Sets the error_count of this ShowResDatasourceWorkDetailResponse.
-
 
         :param error_count: The error_count of this ShowResDatasourceWorkDetailResponse.
         :type error_count: :class:`huaweicloudsdkres.v1.ErrorCount`
@@ -125,7 +122,6 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
     def data_struct(self):
         """Gets the data_struct of this ShowResDatasourceWorkDetailResponse.
 
-
         :return: The data_struct of this ShowResDatasourceWorkDetailResponse.
         :rtype: :class:`huaweicloudsdkres.v1.DataStruct`
         """
@@ -134,7 +130,6 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
     @data_struct.setter
     def data_struct(self, data_struct):
         """Sets the data_struct of this ShowResDatasourceWorkDetailResponse.
-
 
         :param data_struct: The data_struct of this ShowResDatasourceWorkDetailResponse.
         :type data_struct: :class:`huaweicloudsdkres.v1.DataStruct`
@@ -277,7 +272,6 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
     def final_report(self):
         """Gets the final_report of this ShowResDatasourceWorkDetailResponse.
 
-
         :return: The final_report of this ShowResDatasourceWorkDetailResponse.
         :rtype: :class:`huaweicloudsdkres.v1.FinalReport`
         """
@@ -286,7 +280,6 @@ class ShowResDatasourceWorkDetailResponse(SdkResponse):
     @final_report.setter
     def final_report(self, final_report):
         """Sets the final_report of this ShowResDatasourceWorkDetailResponse.
-
 
         :param final_report: The final_report of this ShowResDatasourceWorkDetailResponse.
         :type final_report: :class:`huaweicloudsdkres.v1.FinalReport`

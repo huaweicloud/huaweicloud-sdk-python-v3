@@ -17,7 +17,6 @@ class ListPublicZonesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListPublicZonesResponse(SdkResponse):
     def links(self):
         """Gets the links of this ListPublicZonesResponse.
 
-
         :return: The links of this ListPublicZonesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -72,7 +70,6 @@ class ListPublicZonesResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ListPublicZonesResponse.
-
 
         :param links: The links of this ListPublicZonesResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -105,7 +102,6 @@ class ListPublicZonesResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ListPublicZonesResponse.
 
-
         :return: The metadata of this ListPublicZonesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metedata`
         """
@@ -114,7 +110,6 @@ class ListPublicZonesResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ListPublicZonesResponse.
-
 
         :param metadata: The metadata of this ListPublicZonesResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`

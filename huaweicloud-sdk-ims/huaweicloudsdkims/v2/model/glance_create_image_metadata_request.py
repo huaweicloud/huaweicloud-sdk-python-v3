@@ -17,7 +17,6 @@ class GlanceCreateImageMetadataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class GlanceCreateImageMetadataRequest:
     def body(self):
         """Gets the body of this GlanceCreateImageMetadataRequest.
 
-
         :return: The body of this GlanceCreateImageMetadataRequest.
         :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequestBody`
         """
@@ -58,7 +56,6 @@ class GlanceCreateImageMetadataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this GlanceCreateImageMetadataRequest.
-
 
         :param body: The body of this GlanceCreateImageMetadataRequest.
         :type body: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequestBody`

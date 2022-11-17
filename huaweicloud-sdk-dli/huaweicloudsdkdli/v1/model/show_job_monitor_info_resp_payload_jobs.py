@@ -17,7 +17,6 @@ class ShowJobMonitorInfoRespPayloadJobs:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowJobMonitorInfoRespPayloadJobs:
     def metrics(self):
         """Gets the metrics of this ShowJobMonitorInfoRespPayloadJobs.
 
-
         :return: The metrics of this ShowJobMonitorInfoRespPayloadJobs.
         :rtype: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoRespPayloadJobsMetrics`
         """
@@ -87,7 +85,6 @@ class ShowJobMonitorInfoRespPayloadJobs:
     @metrics.setter
     def metrics(self, metrics):
         """Sets the metrics of this ShowJobMonitorInfoRespPayloadJobs.
-
 
         :param metrics: The metrics of this ShowJobMonitorInfoRespPayloadJobs.
         :type metrics: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoRespPayloadJobsMetrics`

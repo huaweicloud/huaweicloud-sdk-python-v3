@@ -17,7 +17,6 @@ class InsuranceItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class InsuranceItem:
     def insurance_name(self):
         """Gets the insurance_name of this InsuranceItem.
 
-
         :return: The insurance_name of this InsuranceItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -93,7 +91,6 @@ class InsuranceItem:
     @insurance_name.setter
     def insurance_name(self, insurance_name):
         """Sets the insurance_name of this InsuranceItem.
-
 
         :param insurance_name: The insurance_name of this InsuranceItem.
         :type insurance_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -104,7 +101,6 @@ class InsuranceItem:
     def insurance_period(self):
         """Gets the insurance_period of this InsuranceItem.
 
-
         :return: The insurance_period of this InsuranceItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -113,7 +109,6 @@ class InsuranceItem:
     @insurance_period.setter
     def insurance_period(self, insurance_period):
         """Sets the insurance_period of this InsuranceItem.
-
 
         :param insurance_period: The insurance_period of this InsuranceItem.
         :type insurance_period: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -124,7 +119,6 @@ class InsuranceItem:
     def insurance_amount(self):
         """Gets the insurance_amount of this InsuranceItem.
 
-
         :return: The insurance_amount of this InsuranceItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -133,7 +127,6 @@ class InsuranceItem:
     @insurance_amount.setter
     def insurance_amount(self, insurance_amount):
         """Sets the insurance_amount of this InsuranceItem.
-
 
         :param insurance_amount: The insurance_amount of this InsuranceItem.
         :type insurance_amount: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -144,7 +137,6 @@ class InsuranceItem:
     def payment_frequency(self):
         """Gets the payment_frequency of this InsuranceItem.
 
-
         :return: The payment_frequency of this InsuranceItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -153,7 +145,6 @@ class InsuranceItem:
     @payment_frequency.setter
     def payment_frequency(self, payment_frequency):
         """Sets the payment_frequency of this InsuranceItem.
-
 
         :param payment_frequency: The payment_frequency of this InsuranceItem.
         :type payment_frequency: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -164,7 +155,6 @@ class InsuranceItem:
     def payment_period(self):
         """Gets the payment_period of this InsuranceItem.
 
-
         :return: The payment_period of this InsuranceItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -173,7 +163,6 @@ class InsuranceItem:
     @payment_period.setter
     def payment_period(self, payment_period):
         """Sets the payment_period of this InsuranceItem.
-
 
         :param payment_period: The payment_period of this InsuranceItem.
         :type payment_period: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -184,7 +173,6 @@ class InsuranceItem:
     def payment_amount(self):
         """Gets the payment_amount of this InsuranceItem.
 
-
         :return: The payment_amount of this InsuranceItem.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -193,7 +181,6 @@ class InsuranceItem:
     @payment_amount.setter
     def payment_amount(self, payment_amount):
         """Sets the payment_amount of this InsuranceItem.
-
 
         :param payment_amount: The payment_amount of this InsuranceItem.
         :type payment_amount: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`

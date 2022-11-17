@@ -17,7 +17,6 @@ class QueryCorpResultDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class QueryCorpResultDTO:
     def basic_info(self):
         """Gets the basic_info of this QueryCorpResultDTO.
 
-
         :return: The basic_info of this QueryCorpResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
         """
@@ -86,7 +84,6 @@ class QueryCorpResultDTO:
     @basic_info.setter
     def basic_info(self, basic_info):
         """Sets the basic_info of this QueryCorpResultDTO.
-
 
         :param basic_info: The basic_info of this QueryCorpResultDTO.
         :type basic_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
@@ -97,7 +94,6 @@ class QueryCorpResultDTO:
     def admin_info(self):
         """Gets the admin_info of this QueryCorpResultDTO.
 
-
         :return: The admin_info of this QueryCorpResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
         """
@@ -106,7 +102,6 @@ class QueryCorpResultDTO:
     @admin_info.setter
     def admin_info(self, admin_info):
         """Sets the admin_info of this QueryCorpResultDTO.
-
 
         :param admin_info: The admin_info of this QueryCorpResultDTO.
         :type admin_info: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
@@ -117,7 +112,6 @@ class QueryCorpResultDTO:
     def res_info(self):
         """Gets the res_info of this QueryCorpResultDTO.
 
-
         :return: The res_info of this QueryCorpResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
         """
@@ -126,7 +120,6 @@ class QueryCorpResultDTO:
     @res_info.setter
     def res_info(self, res_info):
         """Sets the res_info of this QueryCorpResultDTO.
-
 
         :param res_info: The res_info of this QueryCorpResultDTO.
         :type res_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
@@ -137,7 +130,6 @@ class QueryCorpResultDTO:
     def group_dto(self):
         """Gets the group_dto of this QueryCorpResultDTO.
 
-
         :return: The group_dto of this QueryCorpResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
         """
@@ -146,7 +138,6 @@ class QueryCorpResultDTO:
     @group_dto.setter
     def group_dto(self, group_dto):
         """Sets the group_dto of this QueryCorpResultDTO.
-
 
         :param group_dto: The group_dto of this QueryCorpResultDTO.
         :type group_dto: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`

@@ -17,7 +17,6 @@ class ChangeAuthorizationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ChangeAuthorizationRequest:
     def body(self):
         """Gets the body of this ChangeAuthorizationRequest.
 
-
         :return: The body of this ChangeAuthorizationRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.GrantDataPermissionReq`
         """
@@ -58,7 +56,6 @@ class ChangeAuthorizationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeAuthorizationRequest.
-
 
         :param body: The body of this ChangeAuthorizationRequest.
         :type body: :class:`huaweicloudsdkdli.v1.GrantDataPermissionReq`

@@ -17,7 +17,6 @@ class JobConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -210,7 +209,6 @@ class JobConfig:
     def nearline_recall_param(self):
         """Gets the nearline_recall_param of this JobConfig.
 
-
         :return: The nearline_recall_param of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.NearLineRecallParam`
         """
@@ -219,7 +217,6 @@ class JobConfig:
     @nearline_recall_param.setter
     def nearline_recall_param(self, nearline_recall_param):
         """Sets the nearline_recall_param of this JobConfig.
-
 
         :param nearline_recall_param: The nearline_recall_param of this JobConfig.
         :type nearline_recall_param: :class:`huaweicloudsdkres.v1.NearLineRecallParam`
@@ -274,7 +271,6 @@ class JobConfig:
     def striping(self):
         """Gets the striping of this JobConfig.
 
-
         :return: The striping of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Striping`
         """
@@ -283,7 +279,6 @@ class JobConfig:
     @striping.setter
     def striping(self, striping):
         """Sets the striping of this JobConfig.
-
 
         :param striping: The striping of this JobConfig.
         :type striping: :class:`huaweicloudsdkres.v1.Striping`
@@ -316,7 +311,6 @@ class JobConfig:
     def matrix_factorization(self):
         """Gets the matrix_factorization of this JobConfig.
 
-
         :return: The matrix_factorization of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.MatrixFactorization`
         """
@@ -325,7 +319,6 @@ class JobConfig:
     @matrix_factorization.setter
     def matrix_factorization(self, matrix_factorization):
         """Sets the matrix_factorization of this JobConfig.
-
 
         :param matrix_factorization: The matrix_factorization of this JobConfig.
         :type matrix_factorization: :class:`huaweicloudsdkres.v1.MatrixFactorization`
@@ -380,7 +373,6 @@ class JobConfig:
     def ucb_param(self):
         """Gets the ucb_param of this JobConfig.
 
-
         :return: The ucb_param of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.UcbParam`
         """
@@ -389,7 +381,6 @@ class JobConfig:
     @ucb_param.setter
     def ucb_param(self, ucb_param):
         """Sets the ucb_param of this JobConfig.
-
 
         :param ucb_param: The ucb_param of this JobConfig.
         :type ucb_param: :class:`huaweicloudsdkres.v1.UcbParam`
@@ -400,7 +391,6 @@ class JobConfig:
     def behavior_gravity(self):
         """Gets the behavior_gravity of this JobConfig.
 
-
         :return: The behavior_gravity of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.BehaviorGravity`
         """
@@ -409,7 +399,6 @@ class JobConfig:
     @behavior_gravity.setter
     def behavior_gravity(self, behavior_gravity):
         """Sets the behavior_gravity of this JobConfig.
-
 
         :param behavior_gravity: The behavior_gravity of this JobConfig.
         :type behavior_gravity: :class:`huaweicloudsdkres.v1.BehaviorGravity`
@@ -420,7 +409,6 @@ class JobConfig:
     def category(self):
         """Gets the category of this JobConfig.
 
-
         :return: The category of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Category`
         """
@@ -429,7 +417,6 @@ class JobConfig:
     @category.setter
     def category(self, category):
         """Sets the category of this JobConfig.
-
 
         :param category: The category of this JobConfig.
         :type category: :class:`huaweicloudsdkres.v1.Category`
@@ -462,7 +449,6 @@ class JobConfig:
     def features_engineering(self):
         """Gets the features_engineering of this JobConfig.
 
-
         :return: The features_engineering of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.EtlBasicParameter`
         """
@@ -471,7 +457,6 @@ class JobConfig:
     @features_engineering.setter
     def features_engineering(self, features_engineering):
         """Sets the features_engineering of this JobConfig.
-
 
         :param features_engineering: The features_engineering of this JobConfig.
         :type features_engineering: :class:`huaweicloudsdkres.v1.EtlBasicParameter`
@@ -482,7 +467,6 @@ class JobConfig:
     def sample_param(self):
         """Gets the sample_param of this JobConfig.
 
-
         :return: The sample_param of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.SampleParam`
         """
@@ -491,7 +475,6 @@ class JobConfig:
     @sample_param.setter
     def sample_param(self, sample_param):
         """Sets the sample_param of this JobConfig.
-
 
         :param sample_param: The sample_param of this JobConfig.
         :type sample_param: :class:`huaweicloudsdkres.v1.SampleParam`
@@ -502,7 +485,6 @@ class JobConfig:
     def deep_learning_parameters(self):
         """Gets the deep_learning_parameters of this JobConfig.
 
-
         :return: The deep_learning_parameters of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.DeepLearingParam`
         """
@@ -511,7 +493,6 @@ class JobConfig:
     @deep_learning_parameters.setter
     def deep_learning_parameters(self, deep_learning_parameters):
         """Sets the deep_learning_parameters of this JobConfig.
-
 
         :param deep_learning_parameters: The deep_learning_parameters of this JobConfig.
         :type deep_learning_parameters: :class:`huaweicloudsdkres.v1.DeepLearingParam`
@@ -522,7 +503,6 @@ class JobConfig:
     def algorithm_specify_parameters(self):
         """Gets the algorithm_specify_parameters of this JobConfig.
 
-
         :return: The algorithm_specify_parameters of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.AlgorithmSpecifyParameters`
         """
@@ -531,7 +511,6 @@ class JobConfig:
     @algorithm_specify_parameters.setter
     def algorithm_specify_parameters(self, algorithm_specify_parameters):
         """Sets the algorithm_specify_parameters of this JobConfig.
-
 
         :param algorithm_specify_parameters: The algorithm_specify_parameters of this JobConfig.
         :type algorithm_specify_parameters: :class:`huaweicloudsdkres.v1.AlgorithmSpecifyParameters`
@@ -674,7 +653,6 @@ class JobConfig:
     def optimizer(self):
         """Gets the optimizer of this JobConfig.
 
-
         :return: The optimizer of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Optimizer`
         """
@@ -683,7 +661,6 @@ class JobConfig:
     @optimizer.setter
     def optimizer(self, optimizer):
         """Sets the optimizer of this JobConfig.
-
 
         :param optimizer: The optimizer of this JobConfig.
         :type optimizer: :class:`huaweicloudsdkres.v1.Optimizer`
@@ -694,7 +671,6 @@ class JobConfig:
     def flows(self):
         """Gets the flows of this JobConfig.
 
-
         :return: The flows of this JobConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Flow`
         """
@@ -703,7 +679,6 @@ class JobConfig:
     @flows.setter
     def flows(self, flows):
         """Sets the flows of this JobConfig.
-
 
         :param flows: The flows of this JobConfig.
         :type flows: :class:`huaweicloudsdkres.v1.Flow`

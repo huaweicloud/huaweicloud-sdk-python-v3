@@ -17,7 +17,6 @@ class AuthorizationVO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -30,7 +29,8 @@ class AuthorizationVO:
         'token_type': 'str',
         'create_time': 'int',
         'update_time': 'int',
-        'status': 'int'
+        'status': 'int',
+        'tag': 'str'
     }
 
     attribute_map = {
@@ -43,10 +43,11 @@ class AuthorizationVO:
         'token_type': 'token_type',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'status': 'status'
+        'status': 'status',
+        'tag': 'tag'
     }
 
-    def __init__(self, name=None, repo_type=None, repo_host=None, repo_home=None, repo_user=None, avartar=None, token_type=None, create_time=None, update_time=None, status=None):
+    def __init__(self, name=None, repo_type=None, repo_host=None, repo_home=None, repo_user=None, avartar=None, token_type=None, create_time=None, update_time=None, status=None, tag=None):
         """AuthorizationVO
 
         The model defined in huaweicloud sdk
@@ -71,6 +72,8 @@ class AuthorizationVO:
         :type update_time: int
         :param status: 状态。
         :type status: int
+        :param tag: 授权局点的类型，默认为null。
+        :type tag: str
         """
         
         
@@ -85,6 +88,7 @@ class AuthorizationVO:
         self._create_time = None
         self._update_time = None
         self._status = None
+        self._tag = None
         self.discriminator = None
 
         self.name = name
@@ -97,6 +101,7 @@ class AuthorizationVO:
         self.create_time = create_time
         self.update_time = update_time
         self.status = status
+        self.tag = tag
 
     @property
     def name(self):
@@ -317,6 +322,28 @@ class AuthorizationVO:
         :type status: int
         """
         self._status = status
+
+    @property
+    def tag(self):
+        """Gets the tag of this AuthorizationVO.
+
+        授权局点的类型，默认为null。
+
+        :return: The tag of this AuthorizationVO.
+        :rtype: str
+        """
+        return self._tag
+
+    @tag.setter
+    def tag(self, tag):
+        """Sets the tag of this AuthorizationVO.
+
+        授权局点的类型，默认为null。
+
+        :param tag: The tag of this AuthorizationVO.
+        :type tag: str
+        """
+        self._tag = tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

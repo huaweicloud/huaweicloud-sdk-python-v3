@@ -17,7 +17,6 @@ class UpdateL7PolicyOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -222,7 +221,6 @@ class UpdateL7PolicyOption:
     def redirect_url_config(self):
         """Gets the redirect_url_config of this UpdateL7PolicyOption.
 
-
         :return: The redirect_url_config of this UpdateL7PolicyOption.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateRedirectUrlConfig`
         """
@@ -231,7 +229,6 @@ class UpdateL7PolicyOption:
     @redirect_url_config.setter
     def redirect_url_config(self, redirect_url_config):
         """Sets the redirect_url_config of this UpdateL7PolicyOption.
-
 
         :param redirect_url_config: The redirect_url_config of this UpdateL7PolicyOption.
         :type redirect_url_config: :class:`huaweicloudsdkelb.v3.UpdateRedirectUrlConfig`
@@ -242,7 +239,6 @@ class UpdateL7PolicyOption:
     def fixed_response_config(self):
         """Gets the fixed_response_config of this UpdateL7PolicyOption.
 
-
         :return: The fixed_response_config of this UpdateL7PolicyOption.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateFixtedResponseConfig`
         """
@@ -251,7 +247,6 @@ class UpdateL7PolicyOption:
     @fixed_response_config.setter
     def fixed_response_config(self, fixed_response_config):
         """Sets the fixed_response_config of this UpdateL7PolicyOption.
-
 
         :param fixed_response_config: The fixed_response_config of this UpdateL7PolicyOption.
         :type fixed_response_config: :class:`huaweicloudsdkelb.v3.UpdateFixtedResponseConfig`

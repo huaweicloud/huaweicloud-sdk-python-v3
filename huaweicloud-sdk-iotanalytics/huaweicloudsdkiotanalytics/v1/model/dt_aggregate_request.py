@@ -17,7 +17,6 @@ class DTAggregateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class DTAggregateRequest:
     def outputs(self):
         """Gets the outputs of this DTAggregateRequest.
 
-
         :return: The outputs of this DTAggregateRequest.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]
         """
@@ -87,7 +85,6 @@ class DTAggregateRequest:
     @outputs.setter
     def outputs(self, outputs):
         """Sets the outputs of this DTAggregateRequest.
-
 
         :param outputs: The outputs of this DTAggregateRequest.
         :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]

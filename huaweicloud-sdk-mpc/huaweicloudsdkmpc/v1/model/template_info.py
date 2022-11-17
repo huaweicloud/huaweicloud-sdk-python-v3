@@ -17,7 +17,6 @@ class TemplateInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class TemplateInfo:
     def template(self):
         """Gets the template of this TemplateInfo.
 
-
         :return: The template of this TemplateInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.QueryTransTemplate`
         """
@@ -87,7 +85,6 @@ class TemplateInfo:
     @template.setter
     def template(self, template):
         """Sets the template of this TemplateInfo.
-
 
         :param template: The template of this TemplateInfo.
         :type template: :class:`huaweicloudsdkmpc.v1.QueryTransTemplate`

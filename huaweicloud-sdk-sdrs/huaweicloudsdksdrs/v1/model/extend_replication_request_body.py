@@ -17,7 +17,6 @@ class ExtendReplicationRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ExtendReplicationRequestBody:
     def extend_replication(self):
         """Gets the extend_replication of this ExtendReplicationRequestBody.
 
-
         :return: The extend_replication of this ExtendReplicationRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.ExtendReplicationRequestParams`
         """
@@ -57,7 +55,6 @@ class ExtendReplicationRequestBody:
     @extend_replication.setter
     def extend_replication(self, extend_replication):
         """Sets the extend_replication of this ExtendReplicationRequestBody.
-
 
         :param extend_replication: The extend_replication of this ExtendReplicationRequestBody.
         :type extend_replication: :class:`huaweicloudsdksdrs.v1.ExtendReplicationRequestParams`

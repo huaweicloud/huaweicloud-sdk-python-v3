@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EipAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class EipAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCommonPools
         :type request: :class:`huaweicloudsdkeip.v3.ListCommonPoolsRequest`
         :rtype: :class:`huaweicloudsdkeip.v3.ListCommonPoolsResponse`
@@ -68,6 +63,8 @@ class EipAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCommonPoolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class EipAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPublicBorderGroups
         :type request: :class:`huaweicloudsdkeip.v3.ListPublicBorderGroupsRequest`
         :rtype: :class:`huaweicloudsdkeip.v3.ListPublicBorderGroupsResponse`
@@ -130,6 +129,8 @@ class EipAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPublicBorderGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class EipAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListShareBandwidthTypes
         :type request: :class:`huaweicloudsdkeip.v3.ListShareBandwidthTypesRequest`
         :rtype: :class:`huaweicloudsdkeip.v3.ListShareBandwidthTypesResponse`
@@ -188,6 +191,8 @@ class EipAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -236,6 +241,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListShareBandwidthTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -250,6 +256,7 @@ class EipAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociatePublicips
         :type request: :class:`huaweicloudsdkeip.v3.AssociatePublicipsRequest`
         :rtype: :class:`huaweicloudsdkeip.v3.AssociatePublicipsResponse`
@@ -262,6 +269,8 @@ class EipAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -296,6 +305,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociatePublicipsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -310,6 +320,7 @@ class EipAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociatePublicips
         :type request: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsRequest`
         :rtype: :class:`huaweicloudsdkeip.v3.DisassociatePublicipsResponse`
@@ -322,6 +333,8 @@ class EipAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -356,6 +369,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociatePublicipsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -370,6 +384,7 @@ class EipAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPublicipPool
         :type request: :class:`huaweicloudsdkeip.v3.ListPublicipPoolRequest`
         :rtype: :class:`huaweicloudsdkeip.v3.ListPublicipPoolResponse`
@@ -382,6 +397,8 @@ class EipAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -436,6 +453,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPublicipPoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -450,6 +468,7 @@ class EipAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPublicips
         :type request: :class:`huaweicloudsdkeip.v3.ListPublicipsRequest`
         :rtype: :class:`huaweicloudsdkeip.v3.ListPublicipsResponse`
@@ -462,6 +481,8 @@ class EipAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -604,6 +625,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPublicipsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -618,6 +640,7 @@ class EipAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPublicip
         :type request: :class:`huaweicloudsdkeip.v3.ShowPublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v3.ShowPublicipResponse`
@@ -630,6 +653,8 @@ class EipAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -665,6 +690,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPublicipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -679,6 +705,7 @@ class EipAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPublicipPool
         :type request: :class:`huaweicloudsdkeip.v3.ShowPublicipPoolRequest`
         :rtype: :class:`huaweicloudsdkeip.v3.ShowPublicipPoolResponse`
@@ -691,6 +718,8 @@ class EipAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -725,6 +754,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPublicipPoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -732,7 +762,7 @@ class EipAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -743,9 +773,10 @@ class EipAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -762,6 +793,7 @@ class EipAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

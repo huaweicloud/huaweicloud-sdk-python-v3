@@ -17,7 +17,6 @@ class CreateSecretVersionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateSecretVersionResponse(SdkResponse):
     def version_metadata(self):
         """Gets the version_metadata of this CreateSecretVersionResponse.
 
-
         :return: The version_metadata of this CreateSecretVersionResponse.
         :rtype: :class:`huaweicloudsdkkms.v1.VersionMetadata`
         """
@@ -58,7 +56,6 @@ class CreateSecretVersionResponse(SdkResponse):
     @version_metadata.setter
     def version_metadata(self, version_metadata):
         """Sets the version_metadata of this CreateSecretVersionResponse.
-
 
         :param version_metadata: The version_metadata of this CreateSecretVersionResponse.
         :type version_metadata: :class:`huaweicloudsdkkms.v1.VersionMetadata`

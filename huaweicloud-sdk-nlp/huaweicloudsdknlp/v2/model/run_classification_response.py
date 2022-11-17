@@ -17,7 +17,6 @@ class RunClassificationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class RunClassificationResponse(SdkResponse):
     def result(self):
         """Gets the result of this RunClassificationResponse.
 
-
         :return: The result of this RunClassificationResponse.
         :rtype: :class:`huaweicloudsdknlp.v2.ClassificationResult`
         """
@@ -72,7 +70,6 @@ class RunClassificationResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RunClassificationResponse.
-
 
         :param result: The result of this RunClassificationResponse.
         :type result: :class:`huaweicloudsdknlp.v2.ClassificationResult`

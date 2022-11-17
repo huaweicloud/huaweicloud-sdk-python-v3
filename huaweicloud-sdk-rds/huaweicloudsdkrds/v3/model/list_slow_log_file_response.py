@@ -17,7 +17,6 @@ class ListSlowLogFileResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListSlowLogFileResponse(SdkResponse):
     def list(self):
         """Gets the list of this ListSlowLogFileResponse.
 
-
         :return: The list of this ListSlowLogFileResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.SlowLogFile`]
         """
@@ -65,7 +63,6 @@ class ListSlowLogFileResponse(SdkResponse):
     @list.setter
     def list(self, list):
         """Sets the list of this ListSlowLogFileResponse.
-
 
         :param list: The list of this ListSlowLogFileResponse.
         :type list: list[:class:`huaweicloudsdkrds.v3.SlowLogFile`]

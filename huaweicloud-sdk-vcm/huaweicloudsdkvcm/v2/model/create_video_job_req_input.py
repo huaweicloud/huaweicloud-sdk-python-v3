@@ -17,7 +17,6 @@ class CreateVideoJobReqInput:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateVideoJobReqInput:
     def vcn(self):
         """Gets the vcn of this CreateVideoJobReqInput.
 
-
         :return: The vcn of this CreateVideoJobReqInput.
         :rtype: :class:`huaweicloudsdkvcm.v2.InputVcn`
         """
@@ -114,7 +112,6 @@ class CreateVideoJobReqInput:
     @vcn.setter
     def vcn(self, vcn):
         """Sets the vcn of this CreateVideoJobReqInput.
-
 
         :param vcn: The vcn of this CreateVideoJobReqInput.
         :type vcn: :class:`huaweicloudsdkvcm.v2.InputVcn`

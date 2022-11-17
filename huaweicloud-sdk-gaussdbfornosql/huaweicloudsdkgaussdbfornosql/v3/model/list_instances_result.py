@@ -17,7 +17,6 @@ class ListInstancesResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -321,7 +320,6 @@ class ListInstancesResult:
     def datastore(self):
         """Gets the datastore of this ListInstancesResult.
 
-
         :return: The datastore of this ListInstancesResult.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesDatastoreResult`
         """
@@ -330,7 +328,6 @@ class ListInstancesResult:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this ListInstancesResult.
-
 
         :param datastore: The datastore of this ListInstancesResult.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesDatastoreResult`
@@ -495,7 +492,6 @@ class ListInstancesResult:
     def backup_strategy(self):
         """Gets the backup_strategy of this ListInstancesResult.
 
-
         :return: The backup_strategy of this ListInstancesResult.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesBackupStrategyResult`
         """
@@ -504,7 +500,6 @@ class ListInstancesResult:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this ListInstancesResult.
-
 
         :param backup_strategy: The backup_strategy of this ListInstancesResult.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesBackupStrategyResult`

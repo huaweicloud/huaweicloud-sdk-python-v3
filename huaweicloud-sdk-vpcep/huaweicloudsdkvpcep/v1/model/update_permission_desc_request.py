@@ -17,7 +17,6 @@ class UpdatePermissionDescRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdatePermissionDescRequest:
     def permission(self):
         """Gets the permission of this UpdatePermissionDescRequest.
 
-
         :return: The permission of this UpdatePermissionDescRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.EpsUpdatePermissionDesc`
         """
@@ -57,7 +55,6 @@ class UpdatePermissionDescRequest:
     @permission.setter
     def permission(self, permission):
         """Sets the permission of this UpdatePermissionDescRequest.
-
 
         :param permission: The permission of this UpdatePermissionDescRequest.
         :type permission: :class:`huaweicloudsdkvpcep.v1.EpsUpdatePermissionDesc`

@@ -17,7 +17,6 @@ class ListAvailableZoneRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListAvailableZoneRequest:
     def body(self):
         """Gets the body of this ListAvailableZoneRequest.
 
-
         :return: The body of this ListAvailableZoneRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryAvailableNodeTypeReq`
         """
@@ -87,7 +85,6 @@ class ListAvailableZoneRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListAvailableZoneRequest.
-
 
         :param body: The body of this ListAvailableZoneRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.QueryAvailableNodeTypeReq`

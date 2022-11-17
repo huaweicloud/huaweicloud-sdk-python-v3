@@ -17,7 +17,6 @@ class AddServerGroupMemberRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class AddServerGroupMemberRequestBody:
     def add_member(self):
         """Gets the add_member of this AddServerGroupMemberRequestBody.
 
-
         :return: The add_member of this AddServerGroupMemberRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerGroupMember`
         """
@@ -57,7 +55,6 @@ class AddServerGroupMemberRequestBody:
     @add_member.setter
     def add_member(self, add_member):
         """Sets the add_member of this AddServerGroupMemberRequestBody.
-
 
         :param add_member: The add_member of this AddServerGroupMemberRequestBody.
         :type add_member: :class:`huaweicloudsdkecs.v2.ServerGroupMember`

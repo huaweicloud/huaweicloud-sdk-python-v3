@@ -17,7 +17,6 @@ class BatchStartServersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchStartServersRequest:
     def body(self):
         """Gets the body of this BatchStartServersRequest.
 
-
         :return: The body of this BatchStartServersRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchStartServersRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchStartServersRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchStartServersRequest.
-
 
         :param body: The body of this BatchStartServersRequest.
         :type body: :class:`huaweicloudsdkecs.v2.BatchStartServersRequestBody`

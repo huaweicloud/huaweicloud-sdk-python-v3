@@ -17,12 +17,11 @@ class ResizeInstanceBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'spec_code': 'str',
-        'new_capacity': 'float',
+        'new_capacity': 'int',
         'bss_param': 'BssParamEntity',
         'reserved_ip': 'list[str]',
         'change_type': 'str',
@@ -50,7 +49,7 @@ class ResizeInstanceBody:
         :param spec_code: 产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。
         :type spec_code: str
         :param new_capacity: 新的缓存实例规格，单位：GB。 Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
-        :type new_capacity: float
+        :type new_capacity: int
         :param bss_param: 
         :type bss_param: :class:`huaweicloudsdkdcs.v2.BssParamEntity`
         :param reserved_ip: 需要保留的节点ip。cluster集群缩容时需要填写，不填写时系统将随机删除多余的分片
@@ -121,7 +120,7 @@ class ResizeInstanceBody:
         新的缓存实例规格，单位：GB。 Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 
         :return: The new_capacity of this ResizeInstanceBody.
-        :rtype: float
+        :rtype: int
         """
         return self._new_capacity
 
@@ -132,14 +131,13 @@ class ResizeInstanceBody:
         新的缓存实例规格，单位：GB。 Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 
         :param new_capacity: The new_capacity of this ResizeInstanceBody.
-        :type new_capacity: float
+        :type new_capacity: int
         """
         self._new_capacity = new_capacity
 
     @property
     def bss_param(self):
         """Gets the bss_param of this ResizeInstanceBody.
-
 
         :return: The bss_param of this ResizeInstanceBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.BssParamEntity`
@@ -149,7 +147,6 @@ class ResizeInstanceBody:
     @bss_param.setter
     def bss_param(self, bss_param):
         """Sets the bss_param of this ResizeInstanceBody.
-
 
         :param bss_param: The bss_param of this ResizeInstanceBody.
         :type bss_param: :class:`huaweicloudsdkdcs.v2.BssParamEntity`

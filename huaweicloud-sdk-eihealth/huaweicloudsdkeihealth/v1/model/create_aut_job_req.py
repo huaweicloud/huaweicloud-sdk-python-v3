@@ -17,7 +17,6 @@ class CreateAutJobReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -395,7 +394,6 @@ class CreateAutJobReq:
     def job_name_type(self):
         """Gets the job_name_type of this CreateAutJobReq.
 
-
         :return: The job_name_type of this CreateAutJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.JobNameType`
         """
@@ -404,7 +402,6 @@ class CreateAutJobReq:
     @job_name_type.setter
     def job_name_type(self, job_name_type):
         """Sets the job_name_type of this CreateAutJobReq.
-
 
         :param job_name_type: The job_name_type of this CreateAutJobReq.
         :type job_name_type: :class:`huaweicloudsdkeihealth.v1.JobNameType`

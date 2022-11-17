@@ -17,7 +17,6 @@ class IndividualStreamJobReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -228,7 +227,6 @@ class IndividualStreamJobReq:
     def publish_param(self):
         """Gets the publish_param of this IndividualStreamJobReq.
 
-
         :return: The publish_param of this IndividualStreamJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
         """
@@ -237,7 +235,6 @@ class IndividualStreamJobReq:
     @publish_param.setter
     def publish_param(self, publish_param):
         """Sets the publish_param of this IndividualStreamJobReq.
-
 
         :param publish_param: The publish_param of this IndividualStreamJobReq.
         :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
@@ -248,7 +245,6 @@ class IndividualStreamJobReq:
     def record_param(self):
         """Gets the record_param of this IndividualStreamJobReq.
 
-
         :return: The record_param of this IndividualStreamJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
@@ -257,7 +253,6 @@ class IndividualStreamJobReq:
     @record_param.setter
     def record_param(self, record_param):
         """Sets the record_param of this IndividualStreamJobReq.
-
 
         :param record_param: The record_param of this IndividualStreamJobReq.
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`

@@ -17,7 +17,6 @@ class CreateScalingGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateScalingGroupRequest:
     def body(self):
         """Gets the body of this CreateScalingGroupRequest.
 
-
         :return: The body of this CreateScalingGroupRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingGroupOption`
         """
@@ -58,7 +56,6 @@ class CreateScalingGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateScalingGroupRequest.
-
 
         :param body: The body of this CreateScalingGroupRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateScalingGroupOption`

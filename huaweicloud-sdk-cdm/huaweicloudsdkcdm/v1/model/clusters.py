@@ -17,7 +17,6 @@ class Clusters:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -204,7 +203,6 @@ class Clusters:
     def customer_config(self):
         """Gets the customer_config of this Clusters.
 
-
         :return: The customer_config of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
         """
@@ -213,7 +211,6 @@ class Clusters:
     @customer_config.setter
     def customer_config(self, customer_config):
         """Sets the customer_config of this Clusters.
-
 
         :param customer_config: The customer_config of this Clusters.
         :type customer_config: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
@@ -224,7 +221,6 @@ class Clusters:
     def datastore(self):
         """Gets the datastore of this Clusters.
 
-
         :return: The datastore of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
@@ -233,7 +229,6 @@ class Clusters:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this Clusters.
-
 
         :param datastore: The datastore of this Clusters.
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -442,7 +437,6 @@ class Clusters:
     def task(self):
         """Gets the task of this Clusters.
 
-
         :return: The task of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.ClusterTask`
         """
@@ -451,7 +445,6 @@ class Clusters:
     @task.setter
     def task(self, task):
         """Sets the task of this Clusters.
-
 
         :param task: The task of this Clusters.
         :type task: :class:`huaweicloudsdkcdm.v1.ClusterTask`
@@ -484,7 +477,6 @@ class Clusters:
     def action_progress(self):
         """Gets the action_progress of this Clusters.
 
-
         :return: The action_progress of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.ActionProgress`
         """
@@ -493,7 +485,6 @@ class Clusters:
     @action_progress.setter
     def action_progress(self, action_progress):
         """Sets the action_progress of this Clusters.
-
 
         :param action_progress: The action_progress of this Clusters.
         :type action_progress: :class:`huaweicloudsdkcdm.v1.ActionProgress`
@@ -702,7 +693,6 @@ class Clusters:
     def failed_reasons(self):
         """Gets the failed_reasons of this Clusters.
 
-
         :return: The failed_reasons of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.FailedReasons`
         """
@@ -711,7 +701,6 @@ class Clusters:
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
         """Sets the failed_reasons of this Clusters.
-
 
         :param failed_reasons: The failed_reasons of this Clusters.
         :type failed_reasons: :class:`huaweicloudsdkcdm.v1.FailedReasons`

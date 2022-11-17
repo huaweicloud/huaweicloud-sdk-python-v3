@@ -17,7 +17,6 @@ class ShowHttpInfoResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowHttpInfoResponse(SdkResponse):
     def https(self):
         """Gets the https of this ShowHttpInfoResponse.
 
-
         :return: The https of this ShowHttpInfoResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.HttpInfoResponseBody`
         """
@@ -58,7 +56,6 @@ class ShowHttpInfoResponse(SdkResponse):
     @https.setter
     def https(self, https):
         """Sets the https of this ShowHttpInfoResponse.
-
 
         :param https: The https of this ShowHttpInfoResponse.
         :type https: :class:`huaweicloudsdkcdn.v1.HttpInfoResponseBody`

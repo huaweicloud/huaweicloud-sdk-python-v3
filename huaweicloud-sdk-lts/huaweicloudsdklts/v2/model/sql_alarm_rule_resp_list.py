@@ -17,7 +17,6 @@ class SqlAlarmRuleRespList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -392,7 +391,6 @@ class SqlAlarmRuleRespList:
     def template_name(self):
         """Gets the template_name of this SqlAlarmRuleRespList.
 
-
         :return: The template_name of this SqlAlarmRuleRespList.
         :rtype: str
         """
@@ -401,7 +399,6 @@ class SqlAlarmRuleRespList:
     @template_name.setter
     def template_name(self, template_name):
         """Sets the template_name of this SqlAlarmRuleRespList.
-
 
         :param template_name: The template_name of this SqlAlarmRuleRespList.
         :type template_name: str
@@ -412,7 +409,6 @@ class SqlAlarmRuleRespList:
     def status(self):
         """Gets the status of this SqlAlarmRuleRespList.
 
-
         :return: The status of this SqlAlarmRuleRespList.
         :rtype: str
         """
@@ -421,7 +417,6 @@ class SqlAlarmRuleRespList:
     @status.setter
     def status(self, status):
         """Sets the status of this SqlAlarmRuleRespList.
-
 
         :param status: The status of this SqlAlarmRuleRespList.
         :type status: str

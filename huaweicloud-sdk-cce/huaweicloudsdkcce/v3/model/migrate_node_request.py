@@ -17,7 +17,6 @@ class MigrateNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class MigrateNodeRequest:
     def body(self):
         """Gets the body of this MigrateNodeRequest.
 
-
         :return: The body of this MigrateNodeRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodesTask`
         """
@@ -114,7 +112,6 @@ class MigrateNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this MigrateNodeRequest.
-
 
         :param body: The body of this MigrateNodeRequest.
         :type body: :class:`huaweicloudsdkcce.v3.MigrateNodesTask`

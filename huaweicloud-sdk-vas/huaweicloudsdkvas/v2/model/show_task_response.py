@@ -17,7 +17,6 @@ class ShowTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -331,7 +330,6 @@ class ShowTaskResponse(SdkResponse):
     def service_title(self):
         """Gets the service_title of this ShowTaskResponse.
 
-
         :return: The service_title of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
         """
@@ -340,7 +338,6 @@ class ShowTaskResponse(SdkResponse):
     @service_title.setter
     def service_title(self, service_title):
         """Sets the service_title of this ShowTaskResponse.
-
 
         :param service_title: The service_title of this ShowTaskResponse.
         :type service_title: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
@@ -483,7 +480,6 @@ class ShowTaskResponse(SdkResponse):
     def error(self):
         """Gets the error of this ShowTaskResponse.
 
-
         :return: The error of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
         """
@@ -492,7 +488,6 @@ class ShowTaskResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ShowTaskResponse.
-
 
         :param error: The error of this ShowTaskResponse.
         :type error: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
@@ -525,7 +520,6 @@ class ShowTaskResponse(SdkResponse):
     def timing(self):
         """Gets the timing of this ShowTaskResponse.
 
-
         :return: The timing of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskTiming`
         """
@@ -534,7 +528,6 @@ class ShowTaskResponse(SdkResponse):
     @timing.setter
     def timing(self, timing):
         """Sets the timing of this ShowTaskResponse.
-
 
         :param timing: The timing of this ShowTaskResponse.
         :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
@@ -545,7 +538,6 @@ class ShowTaskResponse(SdkResponse):
     def input(self):
         """Gets the input of this ShowTaskResponse.
 
-
         :return: The input of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskInput`
         """
@@ -554,7 +546,6 @@ class ShowTaskResponse(SdkResponse):
     @input.setter
     def input(self, input):
         """Sets the input of this ShowTaskResponse.
-
 
         :param input: The input of this ShowTaskResponse.
         :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
@@ -565,7 +556,6 @@ class ShowTaskResponse(SdkResponse):
     def output(self):
         """Gets the output of this ShowTaskResponse.
 
-
         :return: The output of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
         """
@@ -574,7 +564,6 @@ class ShowTaskResponse(SdkResponse):
     @output.setter
     def output(self, output):
         """Sets the output of this ShowTaskResponse.
-
 
         :param output: The output of this ShowTaskResponse.
         :type output: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
@@ -585,7 +574,6 @@ class ShowTaskResponse(SdkResponse):
     def service_config(self):
         """Gets the service_config of this ShowTaskResponse.
 
-
         :return: The service_config of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
         """
@@ -594,7 +582,6 @@ class ShowTaskResponse(SdkResponse):
     @service_config.setter
     def service_config(self, service_config):
         """Sets the service_config of this ShowTaskResponse.
-
 
         :param service_config: The service_config of this ShowTaskResponse.
         :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
@@ -605,7 +592,6 @@ class ShowTaskResponse(SdkResponse):
     def hosting_result(self):
         """Gets the hosting_result of this ShowTaskResponse.
 
-
         :return: The hosting_result of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`
         """
@@ -614,7 +600,6 @@ class ShowTaskResponse(SdkResponse):
     @hosting_result.setter
     def hosting_result(self, hosting_result):
         """Sets the hosting_result of this ShowTaskResponse.
-
 
         :param hosting_result: The hosting_result of this ShowTaskResponse.
         :type hosting_result: :class:`huaweicloudsdkvas.v2.TaskHostingResultHostingResult`

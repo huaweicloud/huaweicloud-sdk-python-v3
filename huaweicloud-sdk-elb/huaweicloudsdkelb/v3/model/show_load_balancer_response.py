@@ -17,7 +17,6 @@ class ShowLoadBalancerResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowLoadBalancerResponse(SdkResponse):
     def loadbalancer(self):
         """Gets the loadbalancer of this ShowLoadBalancerResponse.
 
-
         :return: The loadbalancer of this ShowLoadBalancerResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancer`
         """
@@ -87,7 +85,6 @@ class ShowLoadBalancerResponse(SdkResponse):
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
         """Sets the loadbalancer of this ShowLoadBalancerResponse.
-
 
         :param loadbalancer: The loadbalancer of this ShowLoadBalancerResponse.
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancer`

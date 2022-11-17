@@ -17,7 +17,6 @@ class ShowServerLimitsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowServerLimitsResponse(SdkResponse):
     def absolute(self):
         """Gets the absolute of this ShowServerLimitsResponse.
 
-
         :return: The absolute of this ShowServerLimitsResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerLimits`
         """
@@ -58,7 +56,6 @@ class ShowServerLimitsResponse(SdkResponse):
     @absolute.setter
     def absolute(self, absolute):
         """Sets the absolute of this ShowServerLimitsResponse.
-
 
         :param absolute: The absolute of this ShowServerLimitsResponse.
         :type absolute: :class:`huaweicloudsdkecs.v2.ServerLimits`

@@ -17,7 +17,6 @@ class RecognizeCambodianIdCardResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeCambodianIdCardResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeCambodianIdCardResponse.
 
-
         :return: The result of this RecognizeCambodianIdCardResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.CambodianIdCardResult`
         """
@@ -58,7 +56,6 @@ class RecognizeCambodianIdCardResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeCambodianIdCardResponse.
-
 
         :param result: The result of this RecognizeCambodianIdCardResponse.
         :type result: :class:`huaweicloudsdkocr.v1.CambodianIdCardResult`

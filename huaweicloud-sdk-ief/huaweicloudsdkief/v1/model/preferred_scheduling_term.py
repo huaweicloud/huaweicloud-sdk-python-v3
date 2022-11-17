@@ -17,7 +17,6 @@ class PreferredSchedulingTerm:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class PreferredSchedulingTerm:
     def preference(self):
         """Gets the preference of this PreferredSchedulingTerm.
 
-
         :return: The preference of this PreferredSchedulingTerm.
         :rtype: :class:`huaweicloudsdkief.v1.PreferredSchedulingTermPreference`
         """
@@ -65,7 +63,6 @@ class PreferredSchedulingTerm:
     @preference.setter
     def preference(self, preference):
         """Sets the preference of this PreferredSchedulingTerm.
-
 
         :param preference: The preference of this PreferredSchedulingTerm.
         :type preference: :class:`huaweicloudsdkief.v1.PreferredSchedulingTermPreference`

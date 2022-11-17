@@ -17,7 +17,6 @@ class ExpandShareRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ExpandShareRequest:
     def body(self):
         """Gets the body of this ExpandShareRequest.
 
-
         :return: The body of this ExpandShareRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequestBody`
         """
@@ -86,7 +84,6 @@ class ExpandShareRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExpandShareRequest.
-
 
         :param body: The body of this ExpandShareRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequestBody`

@@ -17,7 +17,6 @@ class BlockPage:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class BlockPage:
     def custom_page(self):
         """Gets the custom_page of this BlockPage.
 
-
         :return: The custom_page of this BlockPage.
         :rtype: :class:`huaweicloudsdkwaf.v1.CustomPage`
         """
@@ -93,7 +91,6 @@ class BlockPage:
     @custom_page.setter
     def custom_page(self, custom_page):
         """Sets the custom_page of this BlockPage.
-
 
         :param custom_page: The custom_page of this BlockPage.
         :type custom_page: :class:`huaweicloudsdkwaf.v1.CustomPage`

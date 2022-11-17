@@ -17,7 +17,6 @@ class UpdateFirewallRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateFirewallRuleRequest:
     def body(self):
         """Gets the body of this UpdateFirewallRuleRequest.
 
-
         :return: The body of this UpdateFirewallRuleRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateFirewallRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateFirewallRuleRequest.
-
 
         :param body: The body of this UpdateFirewallRuleRequest.
         :type body: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleRequestBody`

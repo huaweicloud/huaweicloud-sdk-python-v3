@@ -17,7 +17,6 @@ class ResizeClusterRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ResizeClusterRequestBody:
     def scale_out(self):
         """Gets the scale_out of this ResizeClusterRequestBody.
 
-
         :return: The scale_out of this ResizeClusterRequestBody.
         :rtype: :class:`huaweicloudsdkdws.v2.ScaleOut`
         """
@@ -58,7 +56,6 @@ class ResizeClusterRequestBody:
     @scale_out.setter
     def scale_out(self, scale_out):
         """Sets the scale_out of this ResizeClusterRequestBody.
-
 
         :param scale_out: The scale_out of this ResizeClusterRequestBody.
         :type scale_out: :class:`huaweicloudsdkdws.v2.ScaleOut`

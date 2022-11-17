@@ -17,7 +17,6 @@ class ShowClusterEndpointsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowClusterEndpointsResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ShowClusterEndpointsResponse.
 
-
         :return: The metadata of this ShowClusterEndpointsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
@@ -72,7 +70,6 @@ class ShowClusterEndpointsResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ShowClusterEndpointsResponse.
-
 
         :param metadata: The metadata of this ShowClusterEndpointsResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -83,7 +80,6 @@ class ShowClusterEndpointsResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this ShowClusterEndpointsResponse.
 
-
         :return: The spec of this ShowClusterEndpointsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.OpenAPIResponseSpec`
         """
@@ -92,7 +88,6 @@ class ShowClusterEndpointsResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ShowClusterEndpointsResponse.
-
 
         :param spec: The spec of this ShowClusterEndpointsResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.OpenAPIResponseSpec`
@@ -103,7 +98,6 @@ class ShowClusterEndpointsResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowClusterEndpointsResponse.
 
-
         :return: The status of this ShowClusterEndpointsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`
         """
@@ -112,7 +106,6 @@ class ShowClusterEndpointsResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this ShowClusterEndpointsResponse.
-
 
         :param status: The status of this ShowClusterEndpointsResponse.
         :type status: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`

@@ -17,7 +17,6 @@ class SearchFaceByFaceIdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SearchFaceByFaceIdRequest:
     def body(self):
         """Gets the body of this SearchFaceByFaceIdRequest.
 
-
         :return: The body of this SearchFaceByFaceIdRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.FaceSearchFaceIdReq`
         """
@@ -86,7 +84,6 @@ class SearchFaceByFaceIdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SearchFaceByFaceIdRequest.
-
 
         :param body: The body of this SearchFaceByFaceIdRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.FaceSearchFaceIdReq`

@@ -17,7 +17,6 @@ class UpdateResOnlineInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -161,7 +160,6 @@ class UpdateResOnlineInstanceRequest:
     def body(self):
         """Gets the body of this UpdateResOnlineInstanceRequest.
 
-
         :return: The body of this UpdateResOnlineInstanceRequest.
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceRequestBody`
         """
@@ -170,7 +168,6 @@ class UpdateResOnlineInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateResOnlineInstanceRequest.
-
 
         :param body: The body of this UpdateResOnlineInstanceRequest.
         :type body: :class:`huaweicloudsdkres.v1.UpdateResOnlineInstanceRequestBody`

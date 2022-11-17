@@ -17,7 +17,6 @@ class FlavorView:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -27,7 +26,8 @@ class FlavorView:
         'num_cpu_init': 'str',
         'memory_size': 'str',
         'memory_size_init': 'str',
-        'label': 'str'
+        'label': 'str',
+        'custom': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +37,11 @@ class FlavorView:
         'num_cpu_init': 'num_cpu_init',
         'memory_size': 'memory_size',
         'memory_size_init': 'memory_size_init',
-        'label': 'label'
+        'label': 'label',
+        'custom': 'custom'
     }
 
-    def __init__(self, flavor_id=None, storage_size=None, num_cpu=None, num_cpu_init=None, memory_size=None, memory_size_init=None, label=None):
+    def __init__(self, flavor_id=None, storage_size=None, num_cpu=None, num_cpu_init=None, memory_size=None, memory_size_init=None, label=None, custom=None):
         """FlavorView
 
         The model defined in huaweicloud sdk
@@ -59,6 +60,8 @@ class FlavorView:
         :type memory_size_init: str
         :param label: 展示标签。
         :type label: str
+        :param custom: 是否是自定义资源规格。
+        :type custom: bool
         """
         
         
@@ -70,6 +73,7 @@ class FlavorView:
         self._memory_size = None
         self._memory_size_init = None
         self._label = None
+        self._custom = None
         self.discriminator = None
 
         if flavor_id is not None:
@@ -86,11 +90,12 @@ class FlavorView:
             self.memory_size_init = memory_size_init
         if label is not None:
             self.label = label
+        if custom is not None:
+            self.custom = custom
 
     @property
     def flavor_id(self):
         """Gets the flavor_id of this FlavorView.
-
 
         :return: The flavor_id of this FlavorView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -100,7 +105,6 @@ class FlavorView:
     @flavor_id.setter
     def flavor_id(self, flavor_id):
         """Sets the flavor_id of this FlavorView.
-
 
         :param flavor_id: The flavor_id of this FlavorView.
         :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -238,6 +242,28 @@ class FlavorView:
         :type label: str
         """
         self._label = label
+
+    @property
+    def custom(self):
+        """Gets the custom of this FlavorView.
+
+        是否是自定义资源规格。
+
+        :return: The custom of this FlavorView.
+        :rtype: bool
+        """
+        return self._custom
+
+    @custom.setter
+    def custom(self, custom):
+        """Sets the custom of this FlavorView.
+
+        是否是自定义资源规格。
+
+        :param custom: The custom of this FlavorView.
+        :type custom: bool
+        """
+        self._custom = custom
 
     def to_dict(self):
         """Returns the model properties as a dict"""

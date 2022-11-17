@@ -17,7 +17,6 @@ class ListSystemTasksResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -98,7 +97,6 @@ class ListSystemTasksResponse(SdkResponse):
     def id(self):
         """Gets the id of this ListSystemTasksResponse.
 
-
         :return: The id of this ListSystemTasksResponse.
         :rtype: str
         """
@@ -107,7 +105,6 @@ class ListSystemTasksResponse(SdkResponse):
     @id.setter
     def id(self, id):
         """Sets the id of this ListSystemTasksResponse.
-
 
         :param id: The id of this ListSystemTasksResponse.
         :type id: str
@@ -118,7 +115,6 @@ class ListSystemTasksResponse(SdkResponse):
     def name(self):
         """Gets the name of this ListSystemTasksResponse.
 
-
         :return: The name of this ListSystemTasksResponse.
         :rtype: str
         """
@@ -127,7 +123,6 @@ class ListSystemTasksResponse(SdkResponse):
     @name.setter
     def name(self, name):
         """Sets the name of this ListSystemTasksResponse.
-
 
         :param name: The name of this ListSystemTasksResponse.
         :type name: str
@@ -138,7 +133,6 @@ class ListSystemTasksResponse(SdkResponse):
     def start_time(self):
         """Gets the start_time of this ListSystemTasksResponse.
 
-
         :return: The start_time of this ListSystemTasksResponse.
         :rtype: str
         """
@@ -147,7 +141,6 @@ class ListSystemTasksResponse(SdkResponse):
     @start_time.setter
     def start_time(self, start_time):
         """Sets the start_time of this ListSystemTasksResponse.
-
 
         :param start_time: The start_time of this ListSystemTasksResponse.
         :type start_time: str
@@ -158,7 +151,6 @@ class ListSystemTasksResponse(SdkResponse):
     def end_time(self):
         """Gets the end_time of this ListSystemTasksResponse.
 
-
         :return: The end_time of this ListSystemTasksResponse.
         :rtype: str
         """
@@ -167,7 +159,6 @@ class ListSystemTasksResponse(SdkResponse):
     @end_time.setter
     def end_time(self, end_time):
         """Sets the end_time of this ListSystemTasksResponse.
-
 
         :param end_time: The end_time of this ListSystemTasksResponse.
         :type end_time: str
@@ -178,7 +169,6 @@ class ListSystemTasksResponse(SdkResponse):
     def last_update(self):
         """Gets the last_update of this ListSystemTasksResponse.
 
-
         :return: The last_update of this ListSystemTasksResponse.
         :rtype: str
         """
@@ -187,7 +177,6 @@ class ListSystemTasksResponse(SdkResponse):
     @last_update.setter
     def last_update(self, last_update):
         """Sets the last_update of this ListSystemTasksResponse.
-
 
         :param last_update: The last_update of this ListSystemTasksResponse.
         :type last_update: str
@@ -198,7 +187,6 @@ class ListSystemTasksResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListSystemTasksResponse.
 
-
         :return: The status of this ListSystemTasksResponse.
         :rtype: str
         """
@@ -207,7 +195,6 @@ class ListSystemTasksResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this ListSystemTasksResponse.
-
 
         :param status: The status of this ListSystemTasksResponse.
         :type status: str
@@ -218,7 +205,6 @@ class ListSystemTasksResponse(SdkResponse):
     def message(self):
         """Gets the message of this ListSystemTasksResponse.
 
-
         :return: The message of this ListSystemTasksResponse.
         :rtype: str
         """
@@ -227,7 +213,6 @@ class ListSystemTasksResponse(SdkResponse):
     @message.setter
     def message(self, message):
         """Sets the message of this ListSystemTasksResponse.
-
 
         :param message: The message of this ListSystemTasksResponse.
         :type message: str
@@ -238,7 +223,6 @@ class ListSystemTasksResponse(SdkResponse):
     def sub_tasks(self):
         """Gets the sub_tasks of this ListSystemTasksResponse.
 
-
         :return: The sub_tasks of this ListSystemTasksResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]
         """
@@ -247,7 +231,6 @@ class ListSystemTasksResponse(SdkResponse):
     @sub_tasks.setter
     def sub_tasks(self, sub_tasks):
         """Sets the sub_tasks of this ListSystemTasksResponse.
-
 
         :param sub_tasks: The sub_tasks of this ListSystemTasksResponse.
         :type sub_tasks: list[:class:`huaweicloudsdkdgc.v1.SubTaskStatus`]

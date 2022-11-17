@@ -17,7 +17,6 @@ class CreateVideoJobReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -124,7 +123,6 @@ class CreateVideoJobReq:
     def input(self):
         """Gets the input of this CreateVideoJobReq.
 
-
         :return: The input of this CreateVideoJobReq.
         :rtype: :class:`huaweicloudsdkvcm.v2.CreateVideoJobReqInput`
         """
@@ -133,7 +131,6 @@ class CreateVideoJobReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateVideoJobReq.
-
 
         :param input: The input of this CreateVideoJobReq.
         :type input: :class:`huaweicloudsdkvcm.v2.CreateVideoJobReqInput`
@@ -144,7 +141,6 @@ class CreateVideoJobReq:
     def output(self):
         """Gets the output of this CreateVideoJobReq.
 
-
         :return: The output of this CreateVideoJobReq.
         :rtype: :class:`huaweicloudsdkvcm.v2.Output`
         """
@@ -153,7 +149,6 @@ class CreateVideoJobReq:
     @output.setter
     def output(self, output):
         """Sets the output of this CreateVideoJobReq.
-
 
         :param output: The output of this CreateVideoJobReq.
         :type output: :class:`huaweicloudsdkvcm.v2.Output`
@@ -164,7 +159,6 @@ class CreateVideoJobReq:
     def service_config(self):
         """Gets the service_config of this CreateVideoJobReq.
 
-
         :return: The service_config of this CreateVideoJobReq.
         :rtype: :class:`huaweicloudsdkvcm.v2.ServiceConfig`
         """
@@ -173,7 +167,6 @@ class CreateVideoJobReq:
     @service_config.setter
     def service_config(self, service_config):
         """Sets the service_config of this CreateVideoJobReq.
-
 
         :param service_config: The service_config of this CreateVideoJobReq.
         :type service_config: :class:`huaweicloudsdkvcm.v2.ServiceConfig`

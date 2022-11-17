@@ -17,7 +17,6 @@ class SubAudioFile:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -92,7 +91,6 @@ class SubAudioFile:
     def input(self):
         """Gets the input of this SubAudioFile.
 
-
         :return: The input of this SubAudioFile.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -101,7 +99,6 @@ class SubAudioFile:
     @input.setter
     def input(self, input):
         """Sets the input of this SubAudioFile.
-
 
         :param input: The input of this SubAudioFile.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -112,7 +109,6 @@ class SubAudioFile:
     def output(self):
         """Gets the output of this SubAudioFile.
 
-
         :return: The output of this SubAudioFile.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -121,7 +117,6 @@ class SubAudioFile:
     @output.setter
     def output(self, output):
         """Sets the output of this SubAudioFile.
-
 
         :param output: The output of this SubAudioFile.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

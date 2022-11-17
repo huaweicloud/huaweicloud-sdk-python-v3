@@ -17,7 +17,6 @@ class CreateJobReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -421,7 +420,6 @@ class CreateJobReq:
     def source_endpoint(self):
         """Gets the source_endpoint of this CreateJobReq.
 
-
         :return: The source_endpoint of this CreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
@@ -430,7 +428,6 @@ class CreateJobReq:
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
         """Sets the source_endpoint of this CreateJobReq.
-
 
         :param source_endpoint: The source_endpoint of this CreateJobReq.
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -441,7 +438,6 @@ class CreateJobReq:
     def target_endpoint(self):
         """Gets the target_endpoint of this CreateJobReq.
 
-
         :return: The target_endpoint of this CreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
@@ -450,7 +446,6 @@ class CreateJobReq:
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
         """Sets the target_endpoint of this CreateJobReq.
-
 
         :param target_endpoint: The target_endpoint of this CreateJobReq.
         :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`

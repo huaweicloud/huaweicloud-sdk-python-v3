@@ -17,7 +17,6 @@ class CreateDedicatedHostRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateDedicatedHostRequest:
     def body(self):
         """Gets the body of this CreateDedicatedHostRequest.
 
-
         :return: The body of this CreateDedicatedHostRequest.
         :rtype: :class:`huaweicloudsdkdeh.v1.ReqAllocateDeh`
         """
@@ -58,7 +56,6 @@ class CreateDedicatedHostRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDedicatedHostRequest.
-
 
         :param body: The body of this CreateDedicatedHostRequest.
         :type body: :class:`huaweicloudsdkdeh.v1.ReqAllocateDeh`

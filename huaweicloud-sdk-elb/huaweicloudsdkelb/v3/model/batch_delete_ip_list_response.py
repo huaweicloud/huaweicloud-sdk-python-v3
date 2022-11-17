@@ -17,7 +17,6 @@ class BatchDeleteIpListResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class BatchDeleteIpListResponse(SdkResponse):
     def ipgroup(self):
         """Gets the ipgroup of this BatchDeleteIpListResponse.
 
-
         :return: The ipgroup of this BatchDeleteIpListResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.IpGroup`
         """
@@ -65,7 +63,6 @@ class BatchDeleteIpListResponse(SdkResponse):
     @ipgroup.setter
     def ipgroup(self, ipgroup):
         """Sets the ipgroup of this BatchDeleteIpListResponse.
-
 
         :param ipgroup: The ipgroup of this BatchDeleteIpListResponse.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.IpGroup`

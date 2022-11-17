@@ -17,7 +17,6 @@ class PublicIp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -433,7 +432,6 @@ class PublicIp:
     def operator(self):
         """Gets the operator of this PublicIp.
 
-
         :return: The operator of this PublicIp.
         :rtype: :class:`huaweicloudsdkiec.v1.Operator`
         """
@@ -442,7 +440,6 @@ class PublicIp:
     @operator.setter
     def operator(self, operator):
         """Sets the operator of this PublicIp.
-
 
         :param operator: The operator of this PublicIp.
         :type operator: :class:`huaweicloudsdkiec.v1.Operator`

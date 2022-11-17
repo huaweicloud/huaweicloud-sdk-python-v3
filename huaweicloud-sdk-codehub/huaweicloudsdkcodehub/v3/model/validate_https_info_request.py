@@ -17,7 +17,6 @@ class ValidateHttpsInfoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ValidateHttpsInfoRequest:
     def body(self):
         """Gets the body of this ValidateHttpsInfoRequest.
 
-
         :return: The body of this ValidateHttpsInfoRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.PasswordRequest`
         """
@@ -86,7 +84,6 @@ class ValidateHttpsInfoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ValidateHttpsInfoRequest.
-
 
         :param body: The body of this ValidateHttpsInfoRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.PasswordRequest`

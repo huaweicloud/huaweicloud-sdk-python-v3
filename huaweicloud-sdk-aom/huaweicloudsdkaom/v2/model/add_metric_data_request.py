@@ -17,7 +17,6 @@ class AddMetricDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class AddMetricDataRequest:
     def body(self):
         """Gets the body of this AddMetricDataRequest.
 
-
         :return: The body of this AddMetricDataRequest.
         :rtype: list[:class:`huaweicloudsdkaom.v2.MetricDataItem`]
         """
@@ -58,7 +56,6 @@ class AddMetricDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddMetricDataRequest.
-
 
         :param body: The body of this AddMetricDataRequest.
         :type body: list[:class:`huaweicloudsdkaom.v2.MetricDataItem`]

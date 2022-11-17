@@ -17,7 +17,6 @@ class ShowScriptResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -98,7 +97,6 @@ class ShowScriptResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowScriptResponse.
 
-
         :return: The name of this ShowScriptResponse.
         :rtype: str
         """
@@ -107,7 +105,6 @@ class ShowScriptResponse(SdkResponse):
     @name.setter
     def name(self, name):
         """Sets the name of this ShowScriptResponse.
-
 
         :param name: The name of this ShowScriptResponse.
         :type name: str

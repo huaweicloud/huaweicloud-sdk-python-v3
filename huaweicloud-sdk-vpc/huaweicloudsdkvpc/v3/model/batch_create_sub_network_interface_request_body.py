@@ -17,7 +17,6 @@ class BatchCreateSubNetworkInterfaceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -83,7 +82,6 @@ class BatchCreateSubNetworkInterfaceRequestBody:
     def sub_network_interface(self):
         """Gets the sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
 
-
         :return: The sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceOption`
         """
@@ -92,7 +90,6 @@ class BatchCreateSubNetworkInterfaceRequestBody:
     @sub_network_interface.setter
     def sub_network_interface(self, sub_network_interface):
         """Sets the sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
-
 
         :param sub_network_interface: The sub_network_interface of this BatchCreateSubNetworkInterfaceRequestBody.
         :type sub_network_interface: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceOption`

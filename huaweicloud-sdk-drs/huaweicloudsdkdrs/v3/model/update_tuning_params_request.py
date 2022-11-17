@@ -17,7 +17,6 @@ class UpdateTuningParamsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -62,7 +61,6 @@ class UpdateTuningParamsRequest:
     def job_id(self):
         """Gets the job_id of this UpdateTuningParamsRequest.
 
-
         :return: The job_id of this UpdateTuningParamsRequest.
         :rtype: str
         """
@@ -71,7 +69,6 @@ class UpdateTuningParamsRequest:
     @job_id.setter
     def job_id(self, job_id):
         """Sets the job_id of this UpdateTuningParamsRequest.
-
 
         :param job_id: The job_id of this UpdateTuningParamsRequest.
         :type job_id: str
@@ -104,7 +101,6 @@ class UpdateTuningParamsRequest:
     def body(self):
         """Gets the body of this UpdateTuningParamsRequest.
 
-
         :return: The body of this UpdateTuningParamsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.ModifyTuningParamsReq`
         """
@@ -113,7 +109,6 @@ class UpdateTuningParamsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateTuningParamsRequest.
-
 
         :param body: The body of this UpdateTuningParamsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.ModifyTuningParamsReq`

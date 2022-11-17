@@ -17,7 +17,6 @@ class AddMaterialRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class AddMaterialRequest:
     def body(self):
         """Gets the body of this AddMaterialRequest.
 
-
         :return: The body of this AddMaterialRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddMaterialRequestBody`
         """
@@ -116,7 +114,6 @@ class AddMaterialRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddMaterialRequest.
-
 
         :param body: The body of this AddMaterialRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.AddMaterialRequestBody`

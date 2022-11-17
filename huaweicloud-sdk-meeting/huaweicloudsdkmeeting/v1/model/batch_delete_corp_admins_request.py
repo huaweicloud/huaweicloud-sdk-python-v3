@@ -17,7 +17,6 @@ class BatchDeleteCorpAdminsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class BatchDeleteCorpAdminsRequest:
     def body(self):
         """Gets the body of this BatchDeleteCorpAdminsRequest.
 
-
         :return: The body of this BatchDeleteCorpAdminsRequest.
         :rtype: list[str]
         """
@@ -145,7 +143,6 @@ class BatchDeleteCorpAdminsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteCorpAdminsRequest.
-
 
         :param body: The body of this BatchDeleteCorpAdminsRequest.
         :type body: list[str]

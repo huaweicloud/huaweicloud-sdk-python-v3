@@ -17,7 +17,6 @@ class UpdateLoadBalancerRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateLoadBalancerRequestBody:
     def loadbalancer(self):
         """Gets the loadbalancer of this UpdateLoadBalancerRequestBody.
 
-
         :return: The loadbalancer of this UpdateLoadBalancerRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateLoadBalancerOption`
         """
@@ -57,7 +55,6 @@ class UpdateLoadBalancerRequestBody:
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
         """Sets the loadbalancer of this UpdateLoadBalancerRequestBody.
-
 
         :param loadbalancer: The loadbalancer of this UpdateLoadBalancerRequestBody.
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.UpdateLoadBalancerOption`

@@ -17,7 +17,6 @@ class BatchDeleteAlarmRulesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchDeleteAlarmRulesRequest:
     def body(self):
         """Gets the body of this BatchDeleteAlarmRulesRequest.
 
-
         :return: The body of this BatchDeleteAlarmRulesRequest.
         :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmsRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchDeleteAlarmRulesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteAlarmRulesRequest.
-
 
         :param body: The body of this BatchDeleteAlarmRulesRequest.
         :type body: :class:`huaweicloudsdkces.v2.BatchDeleteAlarmsRequestBody`

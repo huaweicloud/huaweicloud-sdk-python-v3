@@ -17,7 +17,6 @@ class CreateKeyStoreResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateKeyStoreResponse(SdkResponse):
     def keystore(self):
         """Gets the keystore of this CreateKeyStoreResponse.
 
-
         :return: The keystore of this CreateKeyStoreResponse.
         :rtype: :class:`huaweicloudsdkkms.v2.KeystoreInfo`
         """
@@ -58,7 +56,6 @@ class CreateKeyStoreResponse(SdkResponse):
     @keystore.setter
     def keystore(self, keystore):
         """Sets the keystore of this CreateKeyStoreResponse.
-
 
         :param keystore: The keystore of this CreateKeyStoreResponse.
         :type keystore: :class:`huaweicloudsdkkms.v2.KeystoreInfo`

@@ -17,7 +17,6 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
     def language(self):
         """Gets the language of this ShowMessageReceiveConfigResponse.
 
-
         :return: The language of this ShowMessageReceiveConfigResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`
         """
@@ -116,7 +114,6 @@ class ShowMessageReceiveConfigResponse(SdkResponse):
     @language.setter
     def language(self, language):
         """Sets the language of this ShowMessageReceiveConfigResponse.
-
 
         :param language: The language of this ShowMessageReceiveConfigResponse.
         :type language: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`

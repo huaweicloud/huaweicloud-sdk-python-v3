@@ -17,7 +17,6 @@ class PostTask:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -226,7 +225,6 @@ class PostTask:
     def source_server(self):
         """Gets the source_server of this PostTask.
 
-
         :return: The source_server of this PostTask.
         :rtype: :class:`huaweicloudsdksms.v3.SourceServerByTask`
         """
@@ -235,7 +233,6 @@ class PostTask:
     @source_server.setter
     def source_server(self, source_server):
         """Sets the source_server of this PostTask.
-
 
         :param source_server: The source_server of this PostTask.
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerByTask`
@@ -246,7 +243,6 @@ class PostTask:
     def target_server(self):
         """Gets the target_server of this PostTask.
 
-
         :return: The target_server of this PostTask.
         :rtype: :class:`huaweicloudsdksms.v3.TargetServerByTask`
         """
@@ -255,7 +251,6 @@ class PostTask:
     @target_server.setter
     def target_server(self, target_server):
         """Sets the target_server of this PostTask.
-
 
         :param target_server: The target_server of this PostTask.
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerByTask`

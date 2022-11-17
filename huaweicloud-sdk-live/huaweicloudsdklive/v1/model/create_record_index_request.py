@@ -17,7 +17,6 @@ class CreateRecordIndexRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateRecordIndexRequest:
     def body(self):
         """Gets the body of this CreateRecordIndexRequest.
 
-
         :return: The body of this CreateRecordIndexRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordIndexRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateRecordIndexRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRecordIndexRequest.
-
 
         :param body: The body of this CreateRecordIndexRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordIndexRequestBody`

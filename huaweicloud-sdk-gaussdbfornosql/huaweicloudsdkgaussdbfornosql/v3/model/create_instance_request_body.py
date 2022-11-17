@@ -17,7 +17,6 @@ class CreateInstanceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -166,7 +165,6 @@ class CreateInstanceRequestBody:
     def datastore(self):
         """Gets the datastore of this CreateInstanceRequestBody.
 
-
         :return: The datastore of this CreateInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreOption`
         """
@@ -175,7 +173,6 @@ class CreateInstanceRequestBody:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CreateInstanceRequestBody.
-
 
         :param datastore: The datastore of this CreateInstanceRequestBody.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreOption`
@@ -384,7 +381,6 @@ class CreateInstanceRequestBody:
     def backup_strategy(self):
         """Gets the backup_strategy of this CreateInstanceRequestBody.
 
-
         :return: The backup_strategy of this CreateInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyOption`
         """
@@ -393,7 +389,6 @@ class CreateInstanceRequestBody:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this CreateInstanceRequestBody.
-
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRequestBody.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyOption`
@@ -470,7 +465,6 @@ class CreateInstanceRequestBody:
     def charge_info(self):
         """Gets the charge_info of this CreateInstanceRequestBody.
 
-
         :return: The charge_info of this CreateInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
         """
@@ -479,7 +473,6 @@ class CreateInstanceRequestBody:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this CreateInstanceRequestBody.
-
 
         :param charge_info: The charge_info of this CreateInstanceRequestBody.
         :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`

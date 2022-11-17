@@ -17,7 +17,6 @@ class MulInputFileInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class MulInputFileInfo:
     def input(self):
         """Gets the input of this MulInputFileInfo.
 
-
         :return: The input of this MulInputFileInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -87,7 +85,6 @@ class MulInputFileInfo:
     @input.setter
     def input(self, input):
         """Sets the input of this MulInputFileInfo.
-
 
         :param input: The input of this MulInputFileInfo.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

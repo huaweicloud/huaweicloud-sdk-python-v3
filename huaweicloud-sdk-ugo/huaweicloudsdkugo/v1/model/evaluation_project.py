@@ -17,7 +17,6 @@ class EvaluationProject:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -191,7 +190,6 @@ class EvaluationProject:
     def project_status_detail(self):
         """Gets the project_status_detail of this EvaluationProject.
 
-
         :return: The project_status_detail of this EvaluationProject.
         :rtype: :class:`huaweicloudsdkugo.v1.ProjectStatusDetail`
         """
@@ -200,7 +198,6 @@ class EvaluationProject:
     @project_status_detail.setter
     def project_status_detail(self, project_status_detail):
         """Sets the project_status_detail of this EvaluationProject.
-
 
         :param project_status_detail: The project_status_detail of this EvaluationProject.
         :type project_status_detail: :class:`huaweicloudsdkugo.v1.ProjectStatusDetail`

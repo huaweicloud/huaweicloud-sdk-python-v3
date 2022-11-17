@@ -17,7 +17,6 @@ class QueryDbParamsResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class QueryDbParamsResp:
     def params(self):
         """Gets the params of this QueryDbParamsResp.
 
-
         :return: The params of this QueryDbParamsResp.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.Params`]
         """
@@ -58,7 +56,6 @@ class QueryDbParamsResp:
     @params.setter
     def params(self, params):
         """Sets the params of this QueryDbParamsResp.
-
 
         :param params: The params of this QueryDbParamsResp.
         :type params: list[:class:`huaweicloudsdkdrs.v3.Params`]

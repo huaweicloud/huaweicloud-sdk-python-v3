@@ -17,7 +17,6 @@ class GetIdTokenAuthParams:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class GetIdTokenAuthParams:
     def id_token(self):
         """Gets the id_token of this GetIdTokenAuthParams.
 
-
         :return: The id_token of this GetIdTokenAuthParams.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenIdTokenBody`
         """
@@ -64,7 +62,6 @@ class GetIdTokenAuthParams:
     @id_token.setter
     def id_token(self, id_token):
         """Sets the id_token of this GetIdTokenAuthParams.
-
 
         :param id_token: The id_token of this GetIdTokenAuthParams.
         :type id_token: :class:`huaweicloudsdkiam.v3.GetIdTokenIdTokenBody`
@@ -75,7 +72,6 @@ class GetIdTokenAuthParams:
     def scope(self):
         """Gets the scope of this GetIdTokenAuthParams.
 
-
         :return: The scope of this GetIdTokenAuthParams.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenIdScopeBody`
         """
@@ -84,7 +80,6 @@ class GetIdTokenAuthParams:
     @scope.setter
     def scope(self, scope):
         """Sets the scope of this GetIdTokenAuthParams.
-
 
         :param scope: The scope of this GetIdTokenAuthParams.
         :type scope: :class:`huaweicloudsdkiam.v3.GetIdTokenIdScopeBody`

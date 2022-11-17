@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IoTEdgeAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEdgeNode
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeNodeResponse`
@@ -68,6 +63,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstallCmd
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdResponse`
@@ -126,6 +125,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstallCmdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEdgeNode
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeNodeResponse`
@@ -188,6 +191,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEdgeNodes
         :type request: :class:`huaweicloudsdkiotedge.v2.ListEdgeNodesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListEdgeNodesResponse`
@@ -248,6 +255,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -295,6 +304,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEdgeNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -309,6 +319,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEdgeNode
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeNodeResponse`
@@ -321,6 +332,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -353,6 +366,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -367,6 +381,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddDevice
         :type request: :class:`huaweicloudsdkiotedge.v2.AddDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddDeviceResponse`
@@ -379,6 +394,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -413,6 +430,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -427,6 +445,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDevice
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDeviceResponse`
@@ -439,6 +458,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -473,6 +494,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -487,6 +509,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDevices
         :type request: :class:`huaweicloudsdkiotedge.v2.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListDevicesResponse`
@@ -499,6 +522,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -539,6 +564,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -553,6 +579,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProductConfig
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowProductConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowProductConfigResponse`
@@ -565,6 +592,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -597,6 +626,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -611,6 +641,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDevice
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDeviceResponse`
@@ -623,6 +654,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -659,6 +692,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -673,6 +707,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListEdgeApps
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppsResponse`
@@ -685,6 +720,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -725,6 +762,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListEdgeAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -739,6 +777,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEdgeApp
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeAppResponse`
@@ -751,6 +790,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -783,6 +824,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -797,6 +839,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEdgeApp
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeAppResponse`
@@ -809,6 +852,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -841,6 +886,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -855,6 +901,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEdgeApp
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeAppResponse`
@@ -867,6 +914,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -899,6 +948,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -913,6 +963,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListEdgeAppVersions
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppVersionsResponse`
@@ -925,6 +976,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -969,6 +1022,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListEdgeAppVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -983,6 +1037,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEdgeApplicationVersion
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationVersionResponse`
@@ -995,6 +1050,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1029,6 +1086,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeApplicationVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1043,6 +1101,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEdgeApplicationVersion
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeApplicationVersionResponse`
@@ -1055,6 +1114,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1089,6 +1150,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeApplicationVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1103,6 +1165,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEdgeApplicationVersion
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeApplicationVersionResponse`
@@ -1115,6 +1178,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1149,6 +1214,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeApplicationVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1163,6 +1229,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEdgeApplicationVersion
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionResponse`
@@ -1175,6 +1242,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1211,6 +1280,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEdgeApplicationVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1225,6 +1295,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEdgeApplicationVersionState
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionStateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionStateResponse`
@@ -1237,6 +1308,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1273,6 +1346,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEdgeApplicationVersionStateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1287,6 +1361,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateExternalEntity
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateExternalEntityResponse`
@@ -1299,6 +1374,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1333,6 +1410,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateExternalEntityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1347,6 +1425,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteExternalEntity
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteExternalEntityResponse`
@@ -1359,6 +1438,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1393,6 +1474,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteExternalEntityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1407,6 +1489,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListExternalEntity
         :type request: :class:`huaweicloudsdkiotedge.v2.ListExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListExternalEntityResponse`
@@ -1419,6 +1502,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1455,6 +1540,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListExternalEntityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1469,6 +1555,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateExternalEntity
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityResponse`
@@ -1481,6 +1568,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1517,6 +1606,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateExternalEntityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1531,6 +1621,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListModules
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListModulesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListModulesResponse`
@@ -1543,6 +1634,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1583,6 +1676,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListModulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1597,6 +1691,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateModule
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateModuleResponse`
@@ -1609,6 +1704,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1643,6 +1740,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1657,6 +1755,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteModule
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteModuleResponse`
@@ -1669,6 +1768,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1703,6 +1804,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1717,6 +1819,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowModule
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowModuleResponse`
@@ -1729,6 +1832,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1763,6 +1868,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1777,6 +1883,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateModule
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateModuleResponse`
@@ -1789,6 +1896,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1825,6 +1934,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1839,6 +1949,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRoutes
         :type request: :class:`huaweicloudsdkiotedge.v2.ListRoutesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListRoutesResponse`
@@ -1851,6 +1962,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1885,6 +1998,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1899,6 +2013,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRoutes
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateRoutesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateRoutesResponse`
@@ -1911,6 +2026,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1945,6 +2062,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1959,6 +2077,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchConfirmConfigsNew
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchConfirmConfigsNewRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchConfirmConfigsNewResponse`
@@ -1971,6 +2090,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2007,6 +2128,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchConfirmConfigsNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2021,6 +2143,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchImportConfigs
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsResponse`
@@ -2033,6 +2156,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2069,6 +2194,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchImportConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2083,6 +2209,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteIaConfig
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteIaConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteIaConfigResponse`
@@ -2095,6 +2222,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2131,6 +2260,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIaConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2145,6 +2275,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIaConfigs
         :type request: :class:`huaweicloudsdkiotedge.v2.ListIaConfigsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListIaConfigsResponse`
@@ -2157,6 +2288,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2195,6 +2328,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIaConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2209,6 +2343,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIaConfig
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowIaConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowIaConfigResponse`
@@ -2221,6 +2356,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2257,6 +2394,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIaConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2271,6 +2409,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateIaConfig
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigResponse`
@@ -2283,6 +2422,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2321,6 +2462,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIaConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2336,6 +2478,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAssociateNaToNodes
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchAssociateNaToNodesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchAssociateNaToNodesResponse`
@@ -2348,6 +2491,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2384,6 +2529,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAssociateNaToNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2398,6 +2544,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNa
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteNaRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteNaResponse`
@@ -2410,6 +2557,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2442,6 +2591,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2456,6 +2606,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNaAuthorizedNodes
         :type request: :class:`huaweicloudsdkiotedge.v2.ListNaAuthorizedNodesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListNaAuthorizedNodesResponse`
@@ -2468,6 +2619,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2504,6 +2657,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNaAuthorizedNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2518,6 +2672,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNas
         :type request: :class:`huaweicloudsdkiotedge.v2.ListNasRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListNasResponse`
@@ -2530,6 +2685,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2566,6 +2723,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2580,6 +2738,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNa
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowNaRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowNaResponse`
@@ -2592,6 +2751,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2624,6 +2785,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2638,6 +2800,7 @@ class IoTEdgeAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNa
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateNaResponse`
@@ -2650,6 +2813,8 @@ class IoTEdgeAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2684,6 +2849,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2691,7 +2857,7 @@ class IoTEdgeAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2702,9 +2868,10 @@ class IoTEdgeAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2721,6 +2888,7 @@ class IoTEdgeAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

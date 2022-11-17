@@ -17,7 +17,6 @@ class ImageModerationResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ImageModerationResult:
     def category_suggestions(self):
         """Gets the category_suggestions of this ImageModerationResult.
 
-
         :return: The category_suggestions of this ImageModerationResult.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CategorySuggestions`
         """
@@ -87,7 +85,6 @@ class ImageModerationResult:
     @category_suggestions.setter
     def category_suggestions(self, category_suggestions):
         """Sets the category_suggestions of this ImageModerationResult.
-
 
         :param category_suggestions: The category_suggestions of this ImageModerationResult.
         :type category_suggestions: :class:`huaweicloudsdkmeeting.v1.CategorySuggestions`

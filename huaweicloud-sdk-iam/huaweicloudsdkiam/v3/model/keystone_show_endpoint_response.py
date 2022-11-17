@@ -17,7 +17,6 @@ class KeystoneShowEndpointResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneShowEndpointResponse(SdkResponse):
     def endpoint(self):
         """Gets the endpoint of this KeystoneShowEndpointResponse.
 
-
         :return: The endpoint of this KeystoneShowEndpointResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Endpoint`
         """
@@ -58,7 +56,6 @@ class KeystoneShowEndpointResponse(SdkResponse):
     @endpoint.setter
     def endpoint(self, endpoint):
         """Sets the endpoint of this KeystoneShowEndpointResponse.
-
 
         :param endpoint: The endpoint of this KeystoneShowEndpointResponse.
         :type endpoint: :class:`huaweicloudsdkiam.v3.Endpoint`

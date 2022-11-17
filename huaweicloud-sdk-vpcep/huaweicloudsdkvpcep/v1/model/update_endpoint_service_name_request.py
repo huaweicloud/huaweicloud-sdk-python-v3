@@ -17,7 +17,6 @@ class UpdateEndpointServiceNameRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateEndpointServiceNameRequest:
     def body(self):
         """Gets the body of this UpdateEndpointServiceNameRequest.
 
-
         :return: The body of this UpdateEndpointServiceNameRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameMode`
         """
@@ -86,7 +84,6 @@ class UpdateEndpointServiceNameRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEndpointServiceNameRequest.
-
 
         :param body: The body of this UpdateEndpointServiceNameRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameMode`

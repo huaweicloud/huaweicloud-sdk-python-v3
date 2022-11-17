@@ -17,7 +17,6 @@ class ClusterInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -589,7 +588,6 @@ class ClusterInfo:
     def public_ip(self):
         """Gets the public_ip of this ClusterInfo.
 
-
         :return: The public_ip of this ClusterInfo.
         :rtype: :class:`huaweicloudsdkdws.v2.PublicIp`
         """
@@ -598,7 +596,6 @@ class ClusterInfo:
     @public_ip.setter
     def public_ip(self, public_ip):
         """Sets the public_ip of this ClusterInfo.
-
 
         :param public_ip: The public_ip of this ClusterInfo.
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -719,7 +716,6 @@ class ClusterInfo:
     def failed_reasons(self):
         """Gets the failed_reasons of this ClusterInfo.
 
-
         :return: The failed_reasons of this ClusterInfo.
         :rtype: :class:`huaweicloudsdkdws.v2.FailedReason`
         """
@@ -728,7 +724,6 @@ class ClusterInfo:
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
         """Sets the failed_reasons of this ClusterInfo.
-
 
         :param failed_reasons: The failed_reasons of this ClusterInfo.
         :type failed_reasons: :class:`huaweicloudsdkdws.v2.FailedReason`

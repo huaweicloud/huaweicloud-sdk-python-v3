@@ -17,7 +17,6 @@ class UploadExtensionFileResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class UploadExtensionFileResponse(SdkResponse):
     def error(self):
         """Gets the error of this UploadExtensionFileResponse.
 
-
         :return: The error of this UploadExtensionFileResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.Error`
         """
@@ -72,7 +70,6 @@ class UploadExtensionFileResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this UploadExtensionFileResponse.
-
 
         :param error: The error of this UploadExtensionFileResponse.
         :type error: :class:`huaweicloudsdkcloudide.v2.Error`

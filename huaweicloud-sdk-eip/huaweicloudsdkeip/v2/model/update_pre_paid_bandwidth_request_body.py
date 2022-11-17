@@ -17,7 +17,6 @@ class UpdatePrePaidBandwidthRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class UpdatePrePaidBandwidthRequestBody:
     def bandwidth(self):
         """Gets the bandwidth of this UpdatePrePaidBandwidthRequestBody.
 
-
         :return: The bandwidth of this UpdatePrePaidBandwidthRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthOption`
         """
@@ -64,7 +62,6 @@ class UpdatePrePaidBandwidthRequestBody:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this UpdatePrePaidBandwidthRequestBody.
-
 
         :param bandwidth: The bandwidth of this UpdatePrePaidBandwidthRequestBody.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthOption`
@@ -75,7 +72,6 @@ class UpdatePrePaidBandwidthRequestBody:
     def extend_param(self):
         """Gets the extend_param of this UpdatePrePaidBandwidthRequestBody.
 
-
         :return: The extend_param of this UpdatePrePaidBandwidthRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthExtendParamOption`
         """
@@ -84,7 +80,6 @@ class UpdatePrePaidBandwidthRequestBody:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this UpdatePrePaidBandwidthRequestBody.
-
 
         :param extend_param: The extend_param of this UpdatePrePaidBandwidthRequestBody.
         :type extend_param: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthExtendParamOption`

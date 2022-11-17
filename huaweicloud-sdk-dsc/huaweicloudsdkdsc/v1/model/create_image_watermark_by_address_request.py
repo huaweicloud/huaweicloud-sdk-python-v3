@@ -17,7 +17,6 @@ class CreateImageWatermarkByAddressRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateImageWatermarkByAddressRequest:
     def body(self):
         """Gets the body of this CreateImageWatermarkByAddressRequest.
 
-
         :return: The body of this CreateImageWatermarkByAddressRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateImageWatermarkByAddressRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateImageWatermarkByAddressRequest.
-
 
         :param body: The body of this CreateImageWatermarkByAddressRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressRequestBody`

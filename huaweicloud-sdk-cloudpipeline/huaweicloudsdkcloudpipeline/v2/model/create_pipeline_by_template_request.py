@@ -17,7 +17,6 @@ class CreatePipelineByTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreatePipelineByTemplateRequest:
     def body(self):
         """Gets the body of this CreatePipelineByTemplateRequest.
 
-
         :return: The body of this CreatePipelineByTemplateRequest.
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.TemplateCddl`
         """
@@ -87,7 +85,6 @@ class CreatePipelineByTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePipelineByTemplateRequest.
-
 
         :param body: The body of this CreatePipelineByTemplateRequest.
         :type body: :class:`huaweicloudsdkcloudpipeline.v2.TemplateCddl`

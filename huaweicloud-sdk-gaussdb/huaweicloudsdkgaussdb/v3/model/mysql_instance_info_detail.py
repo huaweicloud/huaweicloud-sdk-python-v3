@@ -17,7 +17,6 @@ class MysqlInstanceInfoDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -403,7 +402,6 @@ class MysqlInstanceInfoDetail:
     def charge_info(self):
         """Gets the charge_info of this MysqlInstanceInfoDetail.
 
-
         :return: The charge_info of this MysqlInstanceInfoDetail.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceChargeInfo`
         """
@@ -412,7 +410,6 @@ class MysqlInstanceInfoDetail:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this MysqlInstanceInfoDetail.
-
 
         :param charge_info: The charge_info of this MysqlInstanceInfoDetail.
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceChargeInfo`
@@ -445,7 +442,6 @@ class MysqlInstanceInfoDetail:
     def datastore(self):
         """Gets the datastore of this MysqlInstanceInfoDetail.
 
-
         :return: The datastore of this MysqlInstanceInfoDetail.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
         """
@@ -454,7 +450,6 @@ class MysqlInstanceInfoDetail:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this MysqlInstanceInfoDetail.
-
 
         :param datastore: The datastore of this MysqlInstanceInfoDetail.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
@@ -685,7 +680,6 @@ class MysqlInstanceInfoDetail:
     def backup_strategy(self):
         """Gets the backup_strategy of this MysqlInstanceInfoDetail.
 
-
         :return: The backup_strategy of this MysqlInstanceInfoDetail.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         """
@@ -694,7 +688,6 @@ class MysqlInstanceInfoDetail:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this MysqlInstanceInfoDetail.
-
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceInfoDetail.
         :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -705,7 +698,6 @@ class MysqlInstanceInfoDetail:
     def nodes(self):
         """Gets the nodes of this MysqlInstanceInfoDetail.
 
-
         :return: The nodes of this MysqlInstanceInfoDetail.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeInfo`]
         """
@@ -714,7 +706,6 @@ class MysqlInstanceInfoDetail:
     @nodes.setter
     def nodes(self, nodes):
         """Sets the nodes of this MysqlInstanceInfoDetail.
-
 
         :param nodes: The nodes of this MysqlInstanceInfoDetail.
         :type nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeInfo`]
@@ -879,7 +870,6 @@ class MysqlInstanceInfoDetail:
     def proxies(self):
         """Gets the proxies of this MysqlInstanceInfoDetail.
 
-
         :return: The proxies of this MysqlInstanceInfoDetail.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]
         """
@@ -888,7 +878,6 @@ class MysqlInstanceInfoDetail:
     @proxies.setter
     def proxies(self, proxies):
         """Sets the proxies of this MysqlInstanceInfoDetail.
-
 
         :param proxies: The proxies of this MysqlInstanceInfoDetail.
         :type proxies: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]

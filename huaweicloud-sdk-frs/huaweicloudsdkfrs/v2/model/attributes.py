@@ -17,7 +17,6 @@ class Attributes:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -108,7 +107,6 @@ class Attributes:
     def dress(self):
         """Gets the dress of this Attributes.
 
-
         :return: The dress of this Attributes.
         :rtype: :class:`huaweicloudsdkfrs.v2.Dress`
         """
@@ -117,7 +115,6 @@ class Attributes:
     @dress.setter
     def dress(self, dress):
         """Sets the dress of this Attributes.
-
 
         :param dress: The dress of this Attributes.
         :type dress: :class:`huaweicloudsdkfrs.v2.Dress`
@@ -260,7 +257,6 @@ class Attributes:
     def quality(self):
         """Gets the quality of this Attributes.
 
-
         :return: The quality of this Attributes.
         :rtype: :class:`huaweicloudsdkfrs.v2.FaceQuality`
         """
@@ -269,7 +265,6 @@ class Attributes:
     @quality.setter
     def quality(self, quality):
         """Sets the quality of this Attributes.
-
 
         :param quality: The quality of this Attributes.
         :type quality: :class:`huaweicloudsdkfrs.v2.FaceQuality`
@@ -302,7 +297,6 @@ class Attributes:
     def expression(self):
         """Gets the expression of this Attributes.
 
-
         :return: The expression of this Attributes.
         :rtype: :class:`huaweicloudsdkfrs.v2.AttributesExpression`
         """
@@ -311,7 +305,6 @@ class Attributes:
     @expression.setter
     def expression(self, expression):
         """Sets the expression of this Attributes.
-
 
         :param expression: The expression of this Attributes.
         :type expression: :class:`huaweicloudsdkfrs.v2.AttributesExpression`

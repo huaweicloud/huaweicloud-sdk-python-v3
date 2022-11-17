@@ -17,7 +17,6 @@ class TaskNodeGroup:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -189,7 +188,6 @@ class TaskNodeGroup:
     def auto_scaling_policy(self):
         """Gets the auto_scaling_policy of this TaskNodeGroup.
 
-
         :return: The auto_scaling_policy of this TaskNodeGroup.
         :rtype: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
         """
@@ -198,7 +196,6 @@ class TaskNodeGroup:
     @auto_scaling_policy.setter
     def auto_scaling_policy(self, auto_scaling_policy):
         """Sets the auto_scaling_policy of this TaskNodeGroup.
-
 
         :param auto_scaling_policy: The auto_scaling_policy of this TaskNodeGroup.
         :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`

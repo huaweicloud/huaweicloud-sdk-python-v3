@@ -17,7 +17,6 @@ class CreateTemporaryAccessKeyByTokenResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateTemporaryAccessKeyByTokenResponse(SdkResponse):
     def credential(self):
         """Gets the credential of this CreateTemporaryAccessKeyByTokenResponse.
 
-
         :return: The credential of this CreateTemporaryAccessKeyByTokenResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Credential`
         """
@@ -58,7 +56,6 @@ class CreateTemporaryAccessKeyByTokenResponse(SdkResponse):
     @credential.setter
     def credential(self, credential):
         """Sets the credential of this CreateTemporaryAccessKeyByTokenResponse.
-
 
         :param credential: The credential of this CreateTemporaryAccessKeyByTokenResponse.
         :type credential: :class:`huaweicloudsdkiam.v3.Credential`

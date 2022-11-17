@@ -17,7 +17,6 @@ class CreateGeoipRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateGeoipRuleRequest:
     def body(self):
         """Gets the body of this CreateGeoipRuleRequest.
 
-
         :return: The body of this CreateGeoipRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateGeoIpRuleRequestBody`
         """
@@ -115,7 +113,6 @@ class CreateGeoipRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateGeoipRuleRequest.
-
 
         :param body: The body of this CreateGeoipRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateGeoIpRuleRequestBody`

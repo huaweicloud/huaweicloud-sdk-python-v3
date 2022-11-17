@@ -17,7 +17,6 @@ class HealthCheckDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -177,7 +176,6 @@ class HealthCheckDetail:
     def protocol(self):
         """Gets the protocol of this HealthCheckDetail.
 
-
         :return: The protocol of this HealthCheckDetail.
         :rtype: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
         """
@@ -186,7 +184,6 @@ class HealthCheckDetail:
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this HealthCheckDetail.
-
 
         :param protocol: The protocol of this HealthCheckDetail.
         :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
@@ -197,7 +194,6 @@ class HealthCheckDetail:
     def status(self):
         """Gets the status of this HealthCheckDetail.
 
-
         :return: The status of this HealthCheckDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
@@ -206,7 +202,6 @@ class HealthCheckDetail:
     @status.setter
     def status(self, status):
         """Sets the status of this HealthCheckDetail.
-
 
         :param status: The status of this HealthCheckDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -393,7 +388,6 @@ class HealthCheckDetail:
     def frozen_info(self):
         """Gets the frozen_info of this HealthCheckDetail.
 
-
         :return: The frozen_info of this HealthCheckDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
         """
@@ -402,7 +396,6 @@ class HealthCheckDetail:
     @frozen_info.setter
     def frozen_info(self, frozen_info):
         """Sets the frozen_info of this HealthCheckDetail.
-
 
         :param frozen_info: The frozen_info of this HealthCheckDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`

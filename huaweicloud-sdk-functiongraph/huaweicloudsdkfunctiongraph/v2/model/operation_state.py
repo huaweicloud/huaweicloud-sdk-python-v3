@@ -17,7 +17,6 @@ class OperationState:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -282,7 +281,6 @@ class OperationState:
     def state_data_filter(self):
         """Gets the state_data_filter of this OperationState.
 
-
         :return: The state_data_filter of this OperationState.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StateDataFilter`
         """
@@ -291,7 +289,6 @@ class OperationState:
     @state_data_filter.setter
     def state_data_filter(self, state_data_filter):
         """Sets the state_data_filter of this OperationState.
-
 
         :param state_data_filter: The state_data_filter of this OperationState.
         :type state_data_filter: :class:`huaweicloudsdkfunctiongraph.v2.StateDataFilter`

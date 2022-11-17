@@ -17,7 +17,6 @@ class CreateDliAgencyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateDliAgencyRequest:
     def body(self):
         """Gets the body of this CreateDliAgencyRequest.
 
-
         :return: The body of this CreateDliAgencyRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateAgencyRequest`
         """
@@ -58,7 +56,6 @@ class CreateDliAgencyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDliAgencyRequest.
-
 
         :param body: The body of this CreateDliAgencyRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateAgencyRequest`

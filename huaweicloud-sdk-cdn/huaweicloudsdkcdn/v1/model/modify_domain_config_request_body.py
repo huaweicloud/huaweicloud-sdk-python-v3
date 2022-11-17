@@ -17,7 +17,6 @@ class ModifyDomainConfigRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ModifyDomainConfigRequestBody:
     def configs(self):
         """Gets the configs of this ModifyDomainConfigRequestBody.
 
-
         :return: The configs of this ModifyDomainConfigRequestBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.Configs`
         """
@@ -58,7 +56,6 @@ class ModifyDomainConfigRequestBody:
     @configs.setter
     def configs(self, configs):
         """Sets the configs of this ModifyDomainConfigRequestBody.
-
 
         :param configs: The configs of this ModifyDomainConfigRequestBody.
         :type configs: :class:`huaweicloudsdkcdn.v1.Configs`

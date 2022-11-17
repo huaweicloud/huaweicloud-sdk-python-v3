@@ -17,7 +17,6 @@ class AssociateIssueDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class AssociateIssueDetail:
     def project(self):
         """Gets the project of this AssociateIssueDetail.
 
-
         :return: The project of this AssociateIssueDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
         """
@@ -130,7 +128,6 @@ class AssociateIssueDetail:
     @project.setter
     def project(self, project):
         """Sets the project of this AssociateIssueDetail.
-
 
         :param project: The project of this AssociateIssueDetail.
         :type project: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
@@ -141,7 +138,6 @@ class AssociateIssueDetail:
     def user(self):
         """Gets the user of this AssociateIssueDetail.
 
-
         :return: The user of this AssociateIssueDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
         """
@@ -150,7 +146,6 @@ class AssociateIssueDetail:
     @user.setter
     def user(self, user):
         """Sets the user of this AssociateIssueDetail.
-
 
         :param user: The user of this AssociateIssueDetail.
         :type user: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -161,7 +156,6 @@ class AssociateIssueDetail:
     def status(self):
         """Gets the status of this AssociateIssueDetail.
 
-
         :return: The status of this AssociateIssueDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.StatusVo`
         """
@@ -170,7 +164,6 @@ class AssociateIssueDetail:
     @status.setter
     def status(self, status):
         """Sets the status of this AssociateIssueDetail.
-
 
         :param status: The status of this AssociateIssueDetail.
         :type status: :class:`huaweicloudsdkprojectman.v4.StatusVo`

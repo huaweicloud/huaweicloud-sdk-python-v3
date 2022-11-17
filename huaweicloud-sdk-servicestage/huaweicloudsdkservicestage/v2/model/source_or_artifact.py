@@ -17,7 +17,6 @@ class SourceOrArtifact:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -25,6 +24,7 @@ class SourceOrArtifact:
         'type': 'str',
         'url': 'str',
         'auth': 'str',
+        'properties': 'ObsProperties',
         'repo_type': 'SourceRepoType',
         'repo_url': 'str',
         'repo_ref': 'str',
@@ -36,13 +36,14 @@ class SourceOrArtifact:
         'type': 'type',
         'url': 'url',
         'auth': 'auth',
+        'properties': 'properties',
         'repo_type': 'repo_type',
         'repo_url': 'repo_url',
         'repo_ref': 'repo_ref',
         'repo_auth': 'repo_auth'
     }
 
-    def __init__(self, storage=None, type=None, url=None, auth=None, repo_type=None, repo_url=None, repo_ref=None, repo_auth=None):
+    def __init__(self, storage=None, type=None, url=None, auth=None, properties=None, repo_type=None, repo_url=None, repo_ref=None, repo_auth=None):
         """SourceOrArtifact
 
         The model defined in huaweicloud sdk
@@ -55,6 +56,8 @@ class SourceOrArtifact:
         :type url: str
         :param auth: 认证方式，支持iam，none，默认是iam。
         :type auth: str
+        :param properties: 
+        :type properties: :class:`huaweicloudsdkservicestage.v2.ObsProperties`
         :param repo_type: 
         :type repo_type: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
         :param repo_url: 代码仓url，如：https://github.com/example/demo.git
@@ -71,6 +74,7 @@ class SourceOrArtifact:
         self._type = None
         self._url = None
         self._auth = None
+        self._properties = None
         self._repo_type = None
         self._repo_url = None
         self._repo_ref = None
@@ -85,6 +89,8 @@ class SourceOrArtifact:
             self.url = url
         if auth is not None:
             self.auth = auth
+        if properties is not None:
+            self.properties = properties
         if repo_type is not None:
             self.repo_type = repo_type
         if repo_url is not None:
@@ -183,9 +189,26 @@ class SourceOrArtifact:
         self._auth = auth
 
     @property
+    def properties(self):
+        """Gets the properties of this SourceOrArtifact.
+
+        :return: The properties of this SourceOrArtifact.
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ObsProperties`
+        """
+        return self._properties
+
+    @properties.setter
+    def properties(self, properties):
+        """Sets the properties of this SourceOrArtifact.
+
+        :param properties: The properties of this SourceOrArtifact.
+        :type properties: :class:`huaweicloudsdkservicestage.v2.ObsProperties`
+        """
+        self._properties = properties
+
+    @property
     def repo_type(self):
         """Gets the repo_type of this SourceOrArtifact.
-
 
         :return: The repo_type of this SourceOrArtifact.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
@@ -195,7 +218,6 @@ class SourceOrArtifact:
     @repo_type.setter
     def repo_type(self, repo_type):
         """Sets the repo_type of this SourceOrArtifact.
-
 
         :param repo_type: The repo_type of this SourceOrArtifact.
         :type repo_type: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`

@@ -17,7 +17,6 @@ class InstanceModify:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -112,7 +111,6 @@ class InstanceModify:
     def flavor_id(self):
         """Gets the flavor_id of this InstanceModify.
 
-
         :return: The flavor_id of this InstanceModify.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
@@ -121,7 +119,6 @@ class InstanceModify:
     @flavor_id.setter
     def flavor_id(self, flavor_id):
         """Sets the flavor_id of this InstanceModify.
-
 
         :param flavor_id: The flavor_id of this InstanceModify.
         :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`

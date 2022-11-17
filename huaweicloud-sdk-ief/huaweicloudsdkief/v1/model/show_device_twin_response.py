@@ -17,7 +17,6 @@ class ShowDeviceTwinResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowDeviceTwinResponse(SdkResponse):
     def property_visitors(self):
         """Gets the property_visitors of this ShowDeviceTwinResponse.
 
-
         :return: The property_visitors of this ShowDeviceTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
         """
@@ -72,7 +70,6 @@ class ShowDeviceTwinResponse(SdkResponse):
     @property_visitors.setter
     def property_visitors(self, property_visitors):
         """Sets the property_visitors of this ShowDeviceTwinResponse.
-
 
         :param property_visitors: The property_visitors of this ShowDeviceTwinResponse.
         :type property_visitors: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
@@ -83,7 +80,6 @@ class ShowDeviceTwinResponse(SdkResponse):
     def twin(self):
         """Gets the twin of this ShowDeviceTwinResponse.
 
-
         :return: The twin of this ShowDeviceTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
         """
@@ -92,7 +88,6 @@ class ShowDeviceTwinResponse(SdkResponse):
     @twin.setter
     def twin(self, twin):
         """Sets the twin of this ShowDeviceTwinResponse.
-
 
         :param twin: The twin of this ShowDeviceTwinResponse.
         :type twin: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`

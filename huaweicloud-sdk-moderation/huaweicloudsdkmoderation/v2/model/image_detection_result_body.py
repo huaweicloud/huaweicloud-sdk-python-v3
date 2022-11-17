@@ -17,7 +17,6 @@ class ImageDetectionResultBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class ImageDetectionResultBody:
     def detail(self):
         """Gets the detail of this ImageDetectionResultBody.
 
-
         :return: The detail of this ImageDetectionResultBody.
         :rtype: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
         """
@@ -79,7 +77,6 @@ class ImageDetectionResultBody:
     @detail.setter
     def detail(self, detail):
         """Sets the detail of this ImageDetectionResultBody.
-
 
         :param detail: The detail of this ImageDetectionResultBody.
         :type detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`

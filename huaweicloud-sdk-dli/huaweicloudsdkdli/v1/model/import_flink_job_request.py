@@ -17,7 +17,6 @@ class ImportFlinkJobRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ImportFlinkJobRequest:
     def body(self):
         """Gets the body of this ImportFlinkJobRequest.
 
-
         :return: The body of this ImportFlinkJobRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ImportReq`
         """
@@ -58,7 +56,6 @@ class ImportFlinkJobRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportFlinkJobRequest.
-
 
         :param body: The body of this ImportFlinkJobRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ImportReq`

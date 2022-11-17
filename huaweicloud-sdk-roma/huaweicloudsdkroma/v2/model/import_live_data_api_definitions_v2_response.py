@@ -17,7 +17,6 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
     def swagger(self):
         """Gets the swagger of this ImportLiveDataApiDefinitionsV2Response.
 
-
         :return: The swagger of this ImportLiveDataApiDefinitionsV2Response.
         :rtype: :class:`huaweicloudsdkroma.v2.Swagger`
         """
@@ -116,7 +114,6 @@ class ImportLiveDataApiDefinitionsV2Response(SdkResponse):
     @swagger.setter
     def swagger(self, swagger):
         """Sets the swagger of this ImportLiveDataApiDefinitionsV2Response.
-
 
         :param swagger: The swagger of this ImportLiveDataApiDefinitionsV2Response.
         :type swagger: :class:`huaweicloudsdkroma.v2.Swagger`

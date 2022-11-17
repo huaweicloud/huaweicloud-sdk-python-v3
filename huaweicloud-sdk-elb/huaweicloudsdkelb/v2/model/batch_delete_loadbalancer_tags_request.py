@@ -17,7 +17,6 @@ class BatchDeleteLoadbalancerTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchDeleteLoadbalancerTagsRequest:
     def body(self):
         """Gets the body of this BatchDeleteLoadbalancerTagsRequest.
 
-
         :return: The body of this BatchDeleteLoadbalancerTagsRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.BatchDeleteLoadbalancerTagsRequestBody`
         """
@@ -86,7 +84,6 @@ class BatchDeleteLoadbalancerTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteLoadbalancerTagsRequest.
-
 
         :param body: The body of this BatchDeleteLoadbalancerTagsRequest.
         :type body: :class:`huaweicloudsdkelb.v2.BatchDeleteLoadbalancerTagsRequestBody`

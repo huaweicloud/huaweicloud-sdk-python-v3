@@ -17,7 +17,6 @@ class CreateEnhancedConnectionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateEnhancedConnectionRequest:
     def body(self):
         """Gets the body of this CreateEnhancedConnectionRequest.
 
-
         :return: The body of this CreateEnhancedConnectionRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionsReq`
         """
@@ -58,7 +56,6 @@ class CreateEnhancedConnectionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateEnhancedConnectionRequest.
-
 
         :param body: The body of this CreateEnhancedConnectionRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionsReq`

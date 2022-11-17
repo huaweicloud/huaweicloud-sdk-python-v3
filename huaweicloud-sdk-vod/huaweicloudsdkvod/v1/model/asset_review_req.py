@@ -17,7 +17,6 @@ class AssetReviewReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class AssetReviewReq:
     def review(self):
         """Gets the review of this AssetReviewReq.
 
-
         :return: The review of this AssetReviewReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
         """
@@ -85,7 +83,6 @@ class AssetReviewReq:
     @review.setter
     def review(self, review):
         """Sets the review of this AssetReviewReq.
-
 
         :param review: The review of this AssetReviewReq.
         :type review: :class:`huaweicloudsdkvod.v1.Review`

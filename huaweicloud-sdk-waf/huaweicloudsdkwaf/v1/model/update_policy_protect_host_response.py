@@ -17,7 +17,6 @@ class UpdatePolicyProtectHostResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -214,7 +213,6 @@ class UpdatePolicyProtectHostResponse(SdkResponse):
     def robot_action(self):
         """Gets the robot_action of this UpdatePolicyProtectHostResponse.
 
-
         :return: The robot_action of this UpdatePolicyProtectHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Action`
         """
@@ -223,7 +221,6 @@ class UpdatePolicyProtectHostResponse(SdkResponse):
     @robot_action.setter
     def robot_action(self, robot_action):
         """Sets the robot_action of this UpdatePolicyProtectHostResponse.
-
 
         :param robot_action: The robot_action of this UpdatePolicyProtectHostResponse.
         :type robot_action: :class:`huaweicloudsdkwaf.v1.Action`
@@ -234,7 +231,6 @@ class UpdatePolicyProtectHostResponse(SdkResponse):
     def action(self):
         """Gets the action of this UpdatePolicyProtectHostResponse.
 
-
         :return: The action of this UpdatePolicyProtectHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyAction`
         """
@@ -243,7 +239,6 @@ class UpdatePolicyProtectHostResponse(SdkResponse):
     @action.setter
     def action(self, action):
         """Sets the action of this UpdatePolicyProtectHostResponse.
-
 
         :param action: The action of this UpdatePolicyProtectHostResponse.
         :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
@@ -254,7 +249,6 @@ class UpdatePolicyProtectHostResponse(SdkResponse):
     def options(self):
         """Gets the options of this UpdatePolicyProtectHostResponse.
 
-
         :return: The options of this UpdatePolicyProtectHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyOption`
         """
@@ -263,7 +257,6 @@ class UpdatePolicyProtectHostResponse(SdkResponse):
     @options.setter
     def options(self, options):
         """Sets the options of this UpdatePolicyProtectHostResponse.
-
 
         :param options: The options of this UpdatePolicyProtectHostResponse.
         :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`

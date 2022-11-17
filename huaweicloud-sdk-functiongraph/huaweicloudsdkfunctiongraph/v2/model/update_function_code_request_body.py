@@ -17,7 +17,6 @@ class UpdateFunctionCodeRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -141,7 +140,6 @@ class UpdateFunctionCodeRequestBody:
     def func_code(self):
         """Gets the func_code of this UpdateFunctionCodeRequestBody.
 
-
         :return: The func_code of this UpdateFunctionCodeRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         """
@@ -150,7 +148,6 @@ class UpdateFunctionCodeRequestBody:
     @func_code.setter
     def func_code(self, func_code):
         """Sets the func_code of this UpdateFunctionCodeRequestBody.
-
 
         :param func_code: The func_code of this UpdateFunctionCodeRequestBody.
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`

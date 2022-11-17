@@ -17,7 +17,6 @@ class PublishLiveDataApiV2Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -223,7 +222,6 @@ class PublishLiveDataApiV2Response(SdkResponse):
     def api_definition(self):
         """Gets the api_definition of this PublishLiveDataApiV2Response.
 
-
         :return: The api_definition of this PublishLiveDataApiV2Response.
         :rtype: :class:`huaweicloudsdkroma.v2.LdApiInfo`
         """
@@ -232,7 +230,6 @@ class PublishLiveDataApiV2Response(SdkResponse):
     @api_definition.setter
     def api_definition(self, api_definition):
         """Sets the api_definition of this PublishLiveDataApiV2Response.
-
 
         :param api_definition: The api_definition of this PublishLiveDataApiV2Response.
         :type api_definition: :class:`huaweicloudsdkroma.v2.LdApiInfo`

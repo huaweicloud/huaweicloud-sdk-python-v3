@@ -17,7 +17,6 @@ class BatchRestartOrDeleteInstancesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchRestartOrDeleteInstancesRequest:
     def body(self):
         """Gets the body of this BatchRestartOrDeleteInstancesRequest.
 
-
         :return: The body of this BatchRestartOrDeleteInstancesRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchRestartOrDeleteInstanceReq`
         """
@@ -58,7 +56,6 @@ class BatchRestartOrDeleteInstancesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchRestartOrDeleteInstancesRequest.
-
 
         :param body: The body of this BatchRestartOrDeleteInstancesRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.BatchRestartOrDeleteInstanceReq`

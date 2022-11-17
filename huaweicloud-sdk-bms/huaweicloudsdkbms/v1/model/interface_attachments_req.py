@@ -17,7 +17,6 @@ class InterfaceAttachmentsReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class InterfaceAttachmentsReq:
     def delete_on_termination(self):
         """Gets the delete_on_termination of this InterfaceAttachmentsReq.
 
-
         :return: The delete_on_termination of this InterfaceAttachmentsReq.
         :rtype: bool
         """
@@ -57,7 +55,6 @@ class InterfaceAttachmentsReq:
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
         """Sets the delete_on_termination of this InterfaceAttachmentsReq.
-
 
         :param delete_on_termination: The delete_on_termination of this InterfaceAttachmentsReq.
         :type delete_on_termination: bool

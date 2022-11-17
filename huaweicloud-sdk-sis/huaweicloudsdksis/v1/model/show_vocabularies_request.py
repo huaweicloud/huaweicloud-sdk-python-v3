@@ -17,7 +17,6 @@ class ShowVocabulariesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowVocabulariesRequest:
     def body(self):
         """Gets the body of this ShowVocabulariesRequest.
 
-
         :return: The body of this ShowVocabulariesRequest.
         :rtype: :class:`huaweicloudsdksis.v1.ShowVocabulariesParams`
         """
@@ -58,7 +56,6 @@ class ShowVocabulariesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowVocabulariesRequest.
-
 
         :param body: The body of this ShowVocabulariesRequest.
         :type body: :class:`huaweicloudsdksis.v1.ShowVocabulariesParams`

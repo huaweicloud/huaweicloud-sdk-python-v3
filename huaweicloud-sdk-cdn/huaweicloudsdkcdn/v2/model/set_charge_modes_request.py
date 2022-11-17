@@ -17,7 +17,6 @@ class SetChargeModesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class SetChargeModesRequest:
     def body(self):
         """Gets the body of this SetChargeModesRequest.
 
-
         :return: The body of this SetChargeModesRequest.
         :rtype: :class:`huaweicloudsdkcdn.v2.SetChargeModesBody`
         """
@@ -58,7 +56,6 @@ class SetChargeModesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetChargeModesRequest.
-
 
         :param body: The body of this SetChargeModesRequest.
         :type body: :class:`huaweicloudsdkcdn.v2.SetChargeModesBody`

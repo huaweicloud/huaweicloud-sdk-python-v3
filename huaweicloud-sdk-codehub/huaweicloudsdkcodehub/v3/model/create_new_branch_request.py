@@ -17,7 +17,6 @@ class CreateNewBranchRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateNewBranchRequest:
     def body(self):
         """Gets the body of this CreateNewBranchRequest.
 
-
         :return: The body of this CreateNewBranchRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateNewBranchRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateNewBranchRequest.
-
 
         :param body: The body of this CreateNewBranchRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchRequestBody`

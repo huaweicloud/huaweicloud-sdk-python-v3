@@ -17,7 +17,6 @@ class ListRecordSetsWithTags:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -433,7 +432,6 @@ class ListRecordSetsWithTags:
     def links(self):
         """Gets the links of this ListRecordSetsWithTags.
 
-
         :return: The links of this ListRecordSetsWithTags.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -442,7 +440,6 @@ class ListRecordSetsWithTags:
     @links.setter
     def links(self, links):
         """Sets the links of this ListRecordSetsWithTags.
-
 
         :param links: The links of this ListRecordSetsWithTags.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

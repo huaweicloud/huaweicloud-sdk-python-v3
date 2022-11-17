@@ -17,7 +17,6 @@ class FilterV2:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class FilterV2:
     def filter_factor(self):
         """Gets the filter_factor of this FilterV2.
 
-
         :return: The filter_factor of this FilterV2.
         :rtype: :class:`huaweicloudsdkbssintl.v2.FilterFactor`
         """
@@ -87,7 +85,6 @@ class FilterV2:
     @filter_factor.setter
     def filter_factor(self, filter_factor):
         """Sets the filter_factor of this FilterV2.
-
 
         :param filter_factor: The filter_factor of this FilterV2.
         :type filter_factor: :class:`huaweicloudsdkbssintl.v2.FilterFactor`

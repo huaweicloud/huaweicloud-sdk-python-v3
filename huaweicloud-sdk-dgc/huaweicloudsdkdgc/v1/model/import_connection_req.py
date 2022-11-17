@@ -17,7 +17,6 @@ class ImportConnectionReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ImportConnectionReq:
     def path(self):
         """Gets the path of this ImportConnectionReq.
 
-
         :return: The path of this ImportConnectionReq.
         :rtype: str
         """
@@ -72,7 +70,6 @@ class ImportConnectionReq:
     @path.setter
     def path(self, path):
         """Sets the path of this ImportConnectionReq.
-
 
         :param path: The path of this ImportConnectionReq.
         :type path: str
@@ -105,7 +102,6 @@ class ImportConnectionReq:
     def same_name_policy(self):
         """Gets the same_name_policy of this ImportConnectionReq.
 
-
         :return: The same_name_policy of this ImportConnectionReq.
         :rtype: str
         """
@@ -114,7 +110,6 @@ class ImportConnectionReq:
     @same_name_policy.setter
     def same_name_policy(self, same_name_policy):
         """Sets the same_name_policy of this ImportConnectionReq.
-
 
         :param same_name_policy: The same_name_policy of this ImportConnectionReq.
         :type same_name_policy: str

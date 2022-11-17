@@ -17,7 +17,6 @@ class ResizeDesktopRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ResizeDesktopRequest:
     def body(self):
         """Gets the body of this ResizeDesktopRequest.
 
-
         :return: The body of this ResizeDesktopRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopReq`
         """
@@ -58,7 +56,6 @@ class ResizeDesktopRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResizeDesktopRequest.
-
 
         :param body: The body of this ResizeDesktopRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopReq`

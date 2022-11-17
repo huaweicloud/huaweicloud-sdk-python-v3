@@ -17,7 +17,6 @@ class Events:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -90,7 +89,6 @@ class Events:
     def annotations(self):
         """Gets the annotations of this Events.
 
-
         :return: The annotations of this Events.
         :rtype: :class:`huaweicloudsdklts.v2.Annotations`
         """
@@ -99,7 +97,6 @@ class Events:
     @annotations.setter
     def annotations(self, annotations):
         """Sets the annotations of this Events.
-
 
         :param annotations: The annotations of this Events.
         :type annotations: :class:`huaweicloudsdklts.v2.Annotations`
@@ -110,7 +107,6 @@ class Events:
     def metadata(self):
         """Gets the metadata of this Events.
 
-
         :return: The metadata of this Events.
         :rtype: :class:`huaweicloudsdklts.v2.Metadata`
         """
@@ -119,7 +115,6 @@ class Events:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this Events.
-
 
         :param metadata: The metadata of this Events.
         :type metadata: :class:`huaweicloudsdklts.v2.Metadata`

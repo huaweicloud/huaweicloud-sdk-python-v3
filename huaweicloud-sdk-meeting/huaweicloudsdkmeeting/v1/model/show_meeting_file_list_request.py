@@ -17,7 +17,6 @@ class ShowMeetingFileListRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowMeetingFileListRequest:
     def body(self):
         """Gets the body of this ShowMeetingFileListRequest.
 
-
         :return: The body of this ShowMeetingFileListRequest.
         :rtype: dict(str, str)
         """
@@ -116,7 +114,6 @@ class ShowMeetingFileListRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowMeetingFileListRequest.
-
 
         :param body: The body of this ShowMeetingFileListRequest.
         :type body: dict(str, str)

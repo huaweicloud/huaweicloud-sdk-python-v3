@@ -17,7 +17,6 @@ class TagDeviceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class TagDeviceResponse(SdkResponse):
     def body(self):
         """Gets the body of this TagDeviceResponse.
 
-
         :return: The body of this TagDeviceResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class TagDeviceResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this TagDeviceResponse.
-
 
         :param body: The body of this TagDeviceResponse.
         :type body: str

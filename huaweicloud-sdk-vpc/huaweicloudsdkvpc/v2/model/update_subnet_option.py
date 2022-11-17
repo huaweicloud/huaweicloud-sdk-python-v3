@@ -17,7 +17,6 @@ class UpdateSubnetOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -61,7 +60,7 @@ class UpdateSubnetOption:
         :type secondary_dns: str
         :param dns_list: 功能说明：子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
         :type dns_list: list[str]
-        :param extra_dhcp_opts: 子网配置的NTP地址
+        :param extra_dhcp_opts: 子网配置的NTP地址或租约时间
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         """
         
@@ -251,7 +250,7 @@ class UpdateSubnetOption:
     def extra_dhcp_opts(self):
         """Gets the extra_dhcp_opts of this UpdateSubnetOption.
 
-        子网配置的NTP地址
+        子网配置的NTP地址或租约时间
 
         :return: The extra_dhcp_opts of this UpdateSubnetOption.
         :rtype: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
@@ -262,7 +261,7 @@ class UpdateSubnetOption:
     def extra_dhcp_opts(self, extra_dhcp_opts):
         """Sets the extra_dhcp_opts of this UpdateSubnetOption.
 
-        子网配置的NTP地址
+        子网配置的NTP地址或租约时间
 
         :param extra_dhcp_opts: The extra_dhcp_opts of this UpdateSubnetOption.
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]

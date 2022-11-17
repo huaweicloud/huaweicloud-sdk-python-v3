@@ -17,7 +17,6 @@ class CreateAppResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAppResponse(SdkResponse):
     def app(self):
         """Gets the app of this CreateAppResponse.
 
-
         :return: The app of this CreateAppResponse.
         :rtype: :class:`huaweicloudsdkief.v1.AppResponse`
         """
@@ -58,7 +56,6 @@ class CreateAppResponse(SdkResponse):
     @app.setter
     def app(self, app):
         """Sets the app of this CreateAppResponse.
-
 
         :param app: The app of this CreateAppResponse.
         :type app: :class:`huaweicloudsdkief.v1.AppResponse`

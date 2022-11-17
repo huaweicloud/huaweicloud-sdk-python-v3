@@ -17,7 +17,6 @@ class CreateClusterBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class CreateClusterBody:
     def backup_strategy(self):
         """Gets the backup_strategy of this CreateClusterBody.
 
-
         :return: The backup_strategy of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterBackupStrategyBody`
         """
@@ -174,7 +172,6 @@ class CreateClusterBody:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this CreateClusterBody.
-
 
         :param backup_strategy: The backup_strategy of this CreateClusterBody.
         :type backup_strategy: :class:`huaweicloudsdkcss.v2.CreateClusterBackupStrategyBody`
@@ -185,7 +182,6 @@ class CreateClusterBody:
     def roles(self):
         """Gets the roles of this CreateClusterBody.
 
-
         :return: The roles of this CreateClusterBody.
         :rtype: list[:class:`huaweicloudsdkcss.v2.CreateClusterRolesBody`]
         """
@@ -194,7 +190,6 @@ class CreateClusterBody:
     @roles.setter
     def roles(self, roles):
         """Sets the roles of this CreateClusterBody.
-
 
         :param roles: The roles of this CreateClusterBody.
         :type roles: list[:class:`huaweicloudsdkcss.v2.CreateClusterRolesBody`]
@@ -205,7 +200,6 @@ class CreateClusterBody:
     def nics(self):
         """Gets the nics of this CreateClusterBody.
 
-
         :return: The nics of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceNicsBody`
         """
@@ -214,7 +208,6 @@ class CreateClusterBody:
     @nics.setter
     def nics(self, nics):
         """Sets the nics of this CreateClusterBody.
-
 
         :param nics: The nics of this CreateClusterBody.
         :type nics: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceNicsBody`
@@ -291,7 +284,6 @@ class CreateClusterBody:
     def datastore(self):
         """Gets the datastore of this CreateClusterBody.
 
-
         :return: The datastore of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterDatastoreBody`
         """
@@ -300,7 +292,6 @@ class CreateClusterBody:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CreateClusterBody.
-
 
         :param datastore: The datastore of this CreateClusterBody.
         :type datastore: :class:`huaweicloudsdkcss.v2.CreateClusterDatastoreBody`
@@ -377,7 +368,6 @@ class CreateClusterBody:
     def public_ip_req(self):
         """Gets the public_ip_req of this CreateClusterBody.
 
-
         :return: The public_ip_req of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicIpReq`
         """
@@ -386,7 +376,6 @@ class CreateClusterBody:
     @public_ip_req.setter
     def public_ip_req(self, public_ip_req):
         """Sets the public_ip_req of this CreateClusterBody.
-
 
         :param public_ip_req: The public_ip_req of this CreateClusterBody.
         :type public_ip_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicIpReq`
@@ -397,7 +386,6 @@ class CreateClusterBody:
     def load_balance(self):
         """Gets the load_balance of this CreateClusterBody.
 
-
         :return: The load_balance of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterLoadBalance`
         """
@@ -406,7 +394,6 @@ class CreateClusterBody:
     @load_balance.setter
     def load_balance(self, load_balance):
         """Sets the load_balance of this CreateClusterBody.
-
 
         :param load_balance: The load_balance of this CreateClusterBody.
         :type load_balance: :class:`huaweicloudsdkcss.v2.CreateClusterLoadBalance`
@@ -417,7 +404,6 @@ class CreateClusterBody:
     def public_kibana_req(self):
         """Gets the public_kibana_req of this CreateClusterBody.
 
-
         :return: The public_kibana_req of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
         """
@@ -426,7 +412,6 @@ class CreateClusterBody:
     @public_kibana_req.setter
     def public_kibana_req(self, public_kibana_req):
         """Sets the public_kibana_req of this CreateClusterBody.
-
 
         :param public_kibana_req: The public_kibana_req of this CreateClusterBody.
         :type public_kibana_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
@@ -437,7 +422,6 @@ class CreateClusterBody:
     def pay_info(self):
         """Gets the pay_info of this CreateClusterBody.
 
-
         :return: The pay_info of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v2.PayInfoBody`
         """
@@ -446,7 +430,6 @@ class CreateClusterBody:
     @pay_info.setter
     def pay_info(self, pay_info):
         """Sets the pay_info of this CreateClusterBody.
-
 
         :param pay_info: The pay_info of this CreateClusterBody.
         :type pay_info: :class:`huaweicloudsdkcss.v2.PayInfoBody`

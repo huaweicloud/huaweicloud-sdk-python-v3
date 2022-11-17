@@ -17,7 +17,6 @@ class ShowDatabaseResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDatabaseResponse(SdkResponse):
     def database(self):
         """Gets the database of this ShowDatabaseResponse.
 
-
         :return: The database of this ShowDatabaseResponse.
         :rtype: :class:`huaweicloudsdkddm.v1.GetDatabaseResponseBean`
         """
@@ -58,7 +56,6 @@ class ShowDatabaseResponse(SdkResponse):
     @database.setter
     def database(self, database):
         """Sets the database of this ShowDatabaseResponse.
-
 
         :param database: The database of this ShowDatabaseResponse.
         :type database: :class:`huaweicloudsdkddm.v1.GetDatabaseResponseBean`

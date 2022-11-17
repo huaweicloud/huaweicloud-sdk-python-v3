@@ -17,7 +17,6 @@ class ImportBackupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ImportBackupRequest:
     def body(self):
         """Gets the body of this ImportBackupRequest.
 
-
         :return: The body of this ImportBackupRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupSyncReq`
         """
@@ -58,7 +56,6 @@ class ImportBackupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportBackupRequest.
-
 
         :param body: The body of this ImportBackupRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.BackupSyncReq`

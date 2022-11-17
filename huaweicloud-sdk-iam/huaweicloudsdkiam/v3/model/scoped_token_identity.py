@@ -17,7 +17,6 @@ class ScopedTokenIdentity:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class ScopedTokenIdentity:
     def token(self):
         """Gets the token of this ScopedTokenIdentity.
 
-
         :return: The token of this ScopedTokenIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopedToken`
         """
@@ -85,7 +83,6 @@ class ScopedTokenIdentity:
     @token.setter
     def token(self, token):
         """Sets the token of this ScopedTokenIdentity.
-
 
         :param token: The token of this ScopedTokenIdentity.
         :type token: :class:`huaweicloudsdkiam.v3.ScopedToken`

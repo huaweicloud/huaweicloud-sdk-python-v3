@@ -17,7 +17,6 @@ class UpdateMemberStatusRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateMemberStatusRequest:
     def body(self):
         """Gets the body of this UpdateMemberStatusRequest.
 
-
         :return: The body of this UpdateMemberStatusRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateMember`
         """
@@ -114,7 +112,6 @@ class UpdateMemberStatusRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateMemberStatusRequest.
-
 
         :param body: The body of this UpdateMemberStatusRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.UpdateMember`

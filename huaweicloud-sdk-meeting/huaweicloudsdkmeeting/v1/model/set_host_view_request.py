@@ -17,7 +17,6 @@ class SetHostViewRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class SetHostViewRequest:
     def body(self):
         """Gets the body of this SetHostViewRequest.
 
-
         :return: The body of this SetHostViewRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestChairViewReqBody`
         """
@@ -114,7 +112,6 @@ class SetHostViewRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetHostViewRequest.
-
 
         :param body: The body of this SetHostViewRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestChairViewReqBody`

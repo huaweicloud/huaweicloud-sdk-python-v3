@@ -17,7 +17,6 @@ class ShowPublicZoneResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -462,7 +461,6 @@ class ShowPublicZoneResponse(SdkResponse):
     def links(self):
         """Gets the links of this ShowPublicZoneResponse.
 
-
         :return: The links of this ShowPublicZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -471,7 +469,6 @@ class ShowPublicZoneResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this ShowPublicZoneResponse.
-
 
         :param links: The links of this ShowPublicZoneResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

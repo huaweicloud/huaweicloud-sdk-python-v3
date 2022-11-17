@@ -17,7 +17,6 @@ class CheckDisasterRecoveryOperationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CheckDisasterRecoveryOperationRequest:
     def body(self):
         """Gets the body of this CheckDisasterRecoveryOperationRequest.
 
-
         :return: The body of this CheckDisasterRecoveryOperationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.PrecheckDisasterRecoveryOperationBody`
         """
@@ -86,7 +84,6 @@ class CheckDisasterRecoveryOperationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckDisasterRecoveryOperationRequest.
-
 
         :param body: The body of this CheckDisasterRecoveryOperationRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.PrecheckDisasterRecoveryOperationBody`

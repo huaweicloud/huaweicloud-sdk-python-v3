@@ -17,7 +17,6 @@ class RegisterServerAutoRecoveryRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RegisterServerAutoRecoveryRequest:
     def body(self):
         """Gets the body of this RegisterServerAutoRecoveryRequest.
 
-
         :return: The body of this RegisterServerAutoRecoveryRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryRequestBody`
         """
@@ -86,7 +84,6 @@ class RegisterServerAutoRecoveryRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RegisterServerAutoRecoveryRequest.
-
 
         :param body: The body of this RegisterServerAutoRecoveryRequest.
         :type body: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryRequestBody`

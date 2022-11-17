@@ -17,7 +17,6 @@ class CreateConfigurationRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -112,7 +111,6 @@ class CreateConfigurationRequestBody:
     def datastore(self):
         """Gets the datastore of this CreateConfigurationRequestBody.
 
-
         :return: The datastore of this CreateConfigurationRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationDatastoreOption`
         """
@@ -121,7 +119,6 @@ class CreateConfigurationRequestBody:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CreateConfigurationRequestBody.
-
 
         :param datastore: The datastore of this CreateConfigurationRequestBody.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationDatastoreOption`

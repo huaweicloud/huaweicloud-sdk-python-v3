@@ -17,7 +17,6 @@ class CreateEndpointGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateEndpointGroupRequest:
     def body(self):
         """Gets the body of this CreateEndpointGroupRequest.
 
-
         :return: The body of this CreateEndpointGroupRequest.
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointGroupRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateEndpointGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateEndpointGroupRequest.
-
 
         :param body: The body of this CreateEndpointGroupRequest.
         :type body: :class:`huaweicloudsdkga.v1.CreateEndpointGroupRequestBody`

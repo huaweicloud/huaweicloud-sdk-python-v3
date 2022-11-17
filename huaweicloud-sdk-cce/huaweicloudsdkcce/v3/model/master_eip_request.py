@@ -17,7 +17,6 @@ class MasterEIPRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class MasterEIPRequest:
     def spec(self):
         """Gets the spec of this MasterEIPRequest.
 
-
         :return: The spec of this MasterEIPRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPRequestSpec`
         """
@@ -57,7 +55,6 @@ class MasterEIPRequest:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this MasterEIPRequest.
-
 
         :param spec: The spec of this MasterEIPRequest.
         :type spec: :class:`huaweicloudsdkcce.v3.MasterEIPRequestSpec`

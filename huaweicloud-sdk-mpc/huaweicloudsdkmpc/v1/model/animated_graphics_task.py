@@ -17,7 +17,6 @@ class AnimatedGraphicsTask:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -295,7 +294,6 @@ class AnimatedGraphicsTask:
     def input(self):
         """Gets the input of this AnimatedGraphicsTask.
 
-
         :return: The input of this AnimatedGraphicsTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -304,7 +302,6 @@ class AnimatedGraphicsTask:
     @input.setter
     def input(self, input):
         """Sets the input of this AnimatedGraphicsTask.
-
 
         :param input: The input of this AnimatedGraphicsTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -315,7 +312,6 @@ class AnimatedGraphicsTask:
     def output(self):
         """Gets the output of this AnimatedGraphicsTask.
 
-
         :return: The output of this AnimatedGraphicsTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -324,7 +320,6 @@ class AnimatedGraphicsTask:
     @output.setter
     def output(self, output):
         """Sets the output of this AnimatedGraphicsTask.
-
 
         :param output: The output of this AnimatedGraphicsTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -335,7 +330,6 @@ class AnimatedGraphicsTask:
     def output_param(self):
         """Gets the output_param of this AnimatedGraphicsTask.
 
-
         :return: The output_param of this AnimatedGraphicsTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`
         """
@@ -344,7 +338,6 @@ class AnimatedGraphicsTask:
     @output_param.setter
     def output_param(self, output_param):
         """Sets the output_param of this AnimatedGraphicsTask.
-
 
         :param output_param: The output_param of this AnimatedGraphicsTask.
         :type output_param: :class:`huaweicloudsdkmpc.v1.AnimatedGraphicsOutputParam`

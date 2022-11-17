@@ -17,7 +17,6 @@ class OrderParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class OrderParam:
     def field(self):
         """Gets the field of this OrderParam.
 
-
         :return: The field of this OrderParam.
         :rtype: str
         """
@@ -65,7 +63,6 @@ class OrderParam:
     @field.setter
     def field(self, field):
         """Sets the field of this OrderParam.
-
 
         :param field: The field of this OrderParam.
         :type field: str
@@ -76,7 +73,6 @@ class OrderParam:
     def order(self):
         """Gets the order of this OrderParam.
 
-
         :return: The order of this OrderParam.
         :rtype: str
         """
@@ -85,7 +81,6 @@ class OrderParam:
     @order.setter
     def order(self, order):
         """Sets the order of this OrderParam.
-
 
         :param order: The order of this OrderParam.
         :type order: str

@@ -17,7 +17,6 @@ class TaskInstanceSpecContainersRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class TaskInstanceSpecContainersRsp:
     def resources(self):
         """Gets the resources of this TaskInstanceSpecContainersRsp.
 
-
         :return: The resources of this TaskInstanceSpecContainersRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecConResourceRsp`
         """
@@ -58,7 +56,6 @@ class TaskInstanceSpecContainersRsp:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this TaskInstanceSpecContainersRsp.
-
 
         :param resources: The resources of this TaskInstanceSpecContainersRsp.
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecConResourceRsp`

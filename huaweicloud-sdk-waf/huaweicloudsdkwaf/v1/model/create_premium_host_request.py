@@ -17,7 +17,6 @@ class CreatePremiumHostRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreatePremiumHostRequest:
     def body(self):
         """Gets the body of this CreatePremiumHostRequest.
 
-
         :return: The body of this CreatePremiumHostRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequestBody`
         """
@@ -87,7 +85,6 @@ class CreatePremiumHostRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePremiumHostRequest.
-
 
         :param body: The body of this CreatePremiumHostRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequestBody`

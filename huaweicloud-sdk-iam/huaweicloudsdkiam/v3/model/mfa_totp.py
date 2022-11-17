@@ -17,7 +17,6 @@ class MfaTotp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class MfaTotp:
     def user(self):
         """Gets the user of this MfaTotp.
 
-
         :return: The user of this MfaTotp.
         :rtype: :class:`huaweicloudsdkiam.v3.MfaTotpUser`
         """
@@ -57,7 +55,6 @@ class MfaTotp:
     @user.setter
     def user(self, user):
         """Sets the user of this MfaTotp.
-
 
         :param user: The user of this MfaTotp.
         :type user: :class:`huaweicloudsdkiam.v3.MfaTotpUser`

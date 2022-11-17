@@ -17,7 +17,6 @@ class ListFlinkTemplatesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class ListFlinkTemplatesRequest:
     def tags(self):
         """Gets the tags of this ListFlinkTemplatesRequest.
 
-
         :return: The tags of this ListFlinkTemplatesRequest.
         :rtype: str
         """
@@ -174,7 +172,6 @@ class ListFlinkTemplatesRequest:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ListFlinkTemplatesRequest.
-
 
         :param tags: The tags of this ListFlinkTemplatesRequest.
         :type tags: str

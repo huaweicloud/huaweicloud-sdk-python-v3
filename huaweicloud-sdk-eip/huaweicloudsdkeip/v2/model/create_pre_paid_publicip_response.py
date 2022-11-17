@@ -17,7 +17,6 @@ class CreatePrePaidPublicipResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CreatePrePaidPublicipResponse(SdkResponse):
     def publicip(self):
         """Gets the publicip of this CreatePrePaidPublicipResponse.
 
-
         :return: The publicip of this CreatePrePaidPublicipResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.PublicipCreateResp`
         """
@@ -72,7 +70,6 @@ class CreatePrePaidPublicipResponse(SdkResponse):
     @publicip.setter
     def publicip(self, publicip):
         """Sets the publicip of this CreatePrePaidPublicipResponse.
-
 
         :param publicip: The publicip of this CreatePrePaidPublicipResponse.
         :type publicip: :class:`huaweicloudsdkeip.v2.PublicipCreateResp`

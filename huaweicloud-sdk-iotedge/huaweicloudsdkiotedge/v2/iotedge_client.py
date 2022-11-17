@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IoTEdgeClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class IoTEdgeClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -100,6 +96,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +123,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstallCmdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -188,6 +188,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +224,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -248,6 +251,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -295,6 +300,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEdgeNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -321,6 +327,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -353,6 +361,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -379,6 +388,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -413,6 +424,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -439,6 +451,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -473,6 +487,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -499,6 +514,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -539,6 +556,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -565,6 +583,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -597,6 +617,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -623,6 +644,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -659,6 +682,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -685,6 +709,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -725,6 +751,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListEdgeAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -751,6 +778,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -783,6 +812,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -809,6 +839,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -841,6 +873,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -867,6 +900,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -899,6 +934,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -925,6 +961,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -969,6 +1007,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListEdgeAppVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -995,6 +1034,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1029,6 +1070,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeApplicationVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1055,6 +1097,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1089,6 +1133,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeApplicationVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1115,6 +1160,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1149,6 +1196,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeApplicationVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1175,6 +1223,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1211,6 +1261,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEdgeApplicationVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1237,6 +1288,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1273,6 +1326,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEdgeApplicationVersionStateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1299,6 +1353,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1333,6 +1389,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateExternalEntityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1359,6 +1416,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1393,6 +1452,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteExternalEntityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1419,6 +1479,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1455,6 +1517,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListExternalEntityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1481,6 +1544,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1517,6 +1582,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateExternalEntityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1543,6 +1609,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1583,6 +1651,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListModulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1609,6 +1678,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1643,6 +1714,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1669,6 +1741,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1703,6 +1777,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1729,6 +1804,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1763,6 +1840,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1789,6 +1867,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1825,6 +1905,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1851,6 +1932,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1885,6 +1968,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1911,6 +1995,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1945,6 +2031,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1971,6 +2058,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2007,6 +2096,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchConfirmConfigsNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2033,6 +2123,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2069,6 +2161,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchImportConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2095,6 +2188,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2131,6 +2226,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIaConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2157,6 +2253,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2195,6 +2293,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIaConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2221,6 +2320,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2257,6 +2358,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIaConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2283,6 +2385,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2321,6 +2425,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIaConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2348,6 +2453,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2384,6 +2491,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAssociateNaToNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2410,6 +2518,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2442,6 +2552,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2468,6 +2579,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2504,6 +2617,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNaAuthorizedNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2530,6 +2644,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2566,6 +2682,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2592,6 +2709,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2624,6 +2743,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2650,6 +2770,8 @@ class IoTEdgeClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2684,6 +2806,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2691,7 +2814,7 @@ class IoTEdgeClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2701,9 +2824,10 @@ class IoTEdgeClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2720,6 +2844,7 @@ class IoTEdgeClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

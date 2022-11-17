@@ -17,28 +17,23 @@ class GroupTreeResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'id': 'int',
         'name': 'str',
         'parent_id': 'int',
-        'children': 'list[GroupTreeResponse]',
-        'app_id': 'str',
-        'permissions': 'list[str]'
+        'children': 'list[GroupTreeResponse]'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'parent_id': 'parent_id',
-        'children': 'children',
-        'app_id': 'app_id',
-        'permissions': 'permissions'
+        'children': 'children'
     }
 
-    def __init__(self, id=None, name=None, parent_id=None, children=None, app_id=None, permissions=None):
+    def __init__(self, id=None, name=None, parent_id=None, children=None):
         """GroupTreeResponse
 
         The model defined in huaweicloud sdk
@@ -51,10 +46,6 @@ class GroupTreeResponse:
         :type parent_id: int
         :param children: 子分组
         :type children: list[:class:`huaweicloudsdkroma.v2.GroupTreeResponse`]
-        :param app_id: 应用id
-        :type app_id: str
-        :param permissions: 权限
-        :type permissions: list[str]
         """
         
         
@@ -63,8 +54,6 @@ class GroupTreeResponse:
         self._name = None
         self._parent_id = None
         self._children = None
-        self._app_id = None
-        self._permissions = None
         self.discriminator = None
 
         if id is not None:
@@ -75,10 +64,6 @@ class GroupTreeResponse:
             self.parent_id = parent_id
         if children is not None:
             self.children = children
-        if app_id is not None:
-            self.app_id = app_id
-        if permissions is not None:
-            self.permissions = permissions
 
     @property
     def id(self):
@@ -167,50 +152,6 @@ class GroupTreeResponse:
         :type children: list[:class:`huaweicloudsdkroma.v2.GroupTreeResponse`]
         """
         self._children = children
-
-    @property
-    def app_id(self):
-        """Gets the app_id of this GroupTreeResponse.
-
-        应用id
-
-        :return: The app_id of this GroupTreeResponse.
-        :rtype: str
-        """
-        return self._app_id
-
-    @app_id.setter
-    def app_id(self, app_id):
-        """Sets the app_id of this GroupTreeResponse.
-
-        应用id
-
-        :param app_id: The app_id of this GroupTreeResponse.
-        :type app_id: str
-        """
-        self._app_id = app_id
-
-    @property
-    def permissions(self):
-        """Gets the permissions of this GroupTreeResponse.
-
-        权限
-
-        :return: The permissions of this GroupTreeResponse.
-        :rtype: list[str]
-        """
-        return self._permissions
-
-    @permissions.setter
-    def permissions(self, permissions):
-        """Sets the permissions of this GroupTreeResponse.
-
-        权限
-
-        :param permissions: The permissions of this GroupTreeResponse.
-        :type permissions: list[str]
-        """
-        self._permissions = permissions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

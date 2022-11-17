@@ -17,7 +17,6 @@ class BatchQueryJobReqPage:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchQueryJobReqPage:
     def page_req(self):
         """Gets the page_req of this BatchQueryJobReqPage.
 
-
         :return: The page_req of this BatchQueryJobReqPage.
         :rtype: :class:`huaweicloudsdkdrs.v3.PageReq`
         """
@@ -86,7 +84,6 @@ class BatchQueryJobReqPage:
     @page_req.setter
     def page_req(self, page_req):
         """Sets the page_req of this BatchQueryJobReqPage.
-
 
         :param page_req: The page_req of this BatchQueryJobReqPage.
         :type page_req: :class:`huaweicloudsdkdrs.v3.PageReq`

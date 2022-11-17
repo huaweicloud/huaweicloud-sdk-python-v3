@@ -17,7 +17,6 @@ class AttachCallbackInstanceLifeCycleHookRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AttachCallbackInstanceLifeCycleHookRequest:
     def body(self):
         """Gets the body of this AttachCallbackInstanceLifeCycleHookRequest.
 
-
         :return: The body of this AttachCallbackInstanceLifeCycleHookRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CallbackLifeCycleHookOption`
         """
@@ -86,7 +84,6 @@ class AttachCallbackInstanceLifeCycleHookRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AttachCallbackInstanceLifeCycleHookRequest.
-
 
         :param body: The body of this AttachCallbackInstanceLifeCycleHookRequest.
         :type body: :class:`huaweicloudsdkas.v1.CallbackLifeCycleHookOption`

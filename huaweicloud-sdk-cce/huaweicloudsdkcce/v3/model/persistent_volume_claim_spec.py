@@ -17,7 +17,6 @@ class PersistentVolumeClaimSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -198,7 +197,6 @@ class PersistentVolumeClaimSpec:
     def resources(self):
         """Gets the resources of this PersistentVolumeClaimSpec.
 
-
         :return: The resources of this PersistentVolumeClaimSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ResourceRequirements`
         """
@@ -207,7 +205,6 @@ class PersistentVolumeClaimSpec:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this PersistentVolumeClaimSpec.
-
 
         :param resources: The resources of this PersistentVolumeClaimSpec.
         :type resources: :class:`huaweicloudsdkcce.v3.ResourceRequirements`

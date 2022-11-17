@@ -17,7 +17,6 @@ class RecognizeGeneralTableResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeGeneralTableResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeGeneralTableResponse.
 
-
         :return: The result of this RecognizeGeneralTableResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.GeneralTableResult`
         """
@@ -58,7 +56,6 @@ class RecognizeGeneralTableResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeGeneralTableResponse.
-
 
         :param result: The result of this RecognizeGeneralTableResponse.
         :type result: :class:`huaweicloudsdkocr.v1.GeneralTableResult`

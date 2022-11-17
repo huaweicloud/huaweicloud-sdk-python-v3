@@ -17,7 +17,6 @@ class AzInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class AzInfo:
     def zone_state(self):
         """Gets the zone_state of this AzInfo.
 
-
         :return: The zone_state of this AzInfo.
         :rtype: :class:`huaweicloudsdkevs.v2.ZoneState`
         """
@@ -85,7 +83,6 @@ class AzInfo:
     @zone_state.setter
     def zone_state(self, zone_state):
         """Sets the zone_state of this AzInfo.
-
 
         :param zone_state: The zone_state of this AzInfo.
         :type zone_state: :class:`huaweicloudsdkevs.v2.ZoneState`

@@ -17,7 +17,6 @@ class ApplyWorkspaceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ApplyWorkspaceRequest:
     def body(self):
         """Gets the body of this ApplyWorkspaceRequest.
 
-
         :return: The body of this ApplyWorkspaceRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceReq`
         """
@@ -58,7 +56,6 @@ class ApplyWorkspaceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ApplyWorkspaceRequest.
-
 
         :param body: The body of this ApplyWorkspaceRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceReq`

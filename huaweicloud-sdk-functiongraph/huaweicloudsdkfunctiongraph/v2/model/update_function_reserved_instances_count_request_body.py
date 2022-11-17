@@ -17,7 +17,6 @@ class UpdateFunctionReservedInstancesCountRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateFunctionReservedInstancesCountRequestBody:
     def tactics_config(self):
         """Gets the tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
 
-
         :return: The tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`
         """
@@ -115,7 +113,6 @@ class UpdateFunctionReservedInstancesCountRequestBody:
     @tactics_config.setter
     def tactics_config(self, tactics_config):
         """Sets the tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
-
 
         :param tactics_config: The tactics_config of this UpdateFunctionReservedInstancesCountRequestBody.
         :type tactics_config: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`

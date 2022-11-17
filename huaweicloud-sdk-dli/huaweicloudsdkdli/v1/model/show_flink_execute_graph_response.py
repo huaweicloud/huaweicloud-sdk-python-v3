@@ -17,7 +17,6 @@ class ShowFlinkExecuteGraphResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowFlinkExecuteGraphResponse(SdkResponse):
     def execute_graph(self):
         """Gets the execute_graph of this ShowFlinkExecuteGraphResponse.
 
-
         :return: The execute_graph of this ShowFlinkExecuteGraphResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.ShowJobPlanRespPlan`
         """
@@ -116,7 +114,6 @@ class ShowFlinkExecuteGraphResponse(SdkResponse):
     @execute_graph.setter
     def execute_graph(self, execute_graph):
         """Sets the execute_graph of this ShowFlinkExecuteGraphResponse.
-
 
         :param execute_graph: The execute_graph of this ShowFlinkExecuteGraphResponse.
         :type execute_graph: :class:`huaweicloudsdkdli.v1.ShowJobPlanRespPlan`

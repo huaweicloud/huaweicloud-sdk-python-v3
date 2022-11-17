@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VpcAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceResponse`
@@ -68,6 +63,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateSubNetworkInterfaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSecurityGroup
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupResponse`
@@ -126,6 +125,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSecurityGroupRule
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleResponse`
@@ -184,6 +187,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +221,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -230,6 +236,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceResponse`
@@ -242,6 +249,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -274,6 +283,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSubNetworkInterfaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -288,6 +298,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecurityGroup
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupResponse`
@@ -300,6 +311,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -332,6 +345,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -346,6 +360,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecurityGroupRule
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRuleResponse`
@@ -358,6 +373,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -390,6 +407,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -404,6 +422,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceResponse`
@@ -416,6 +435,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -448,6 +469,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSubNetworkInterfaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -462,6 +484,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecurityGroupRules
         :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupRulesResponse`
@@ -474,6 +497,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -527,6 +552,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecurityGroupRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -541,6 +567,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecurityGroups
         :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupsResponse`
@@ -553,6 +580,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -598,6 +627,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecurityGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -612,6 +642,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSubNetworkInterfaces
         :type request: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesResponse`
@@ -624,6 +655,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -679,6 +712,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubNetworkInterfacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -693,6 +727,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MigrateSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceResponse`
@@ -705,6 +740,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -737,6 +774,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateSubNetworkInterfaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -751,6 +789,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSecurityGroup
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupResponse`
@@ -763,6 +802,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -795,6 +836,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -809,6 +851,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSecurityGroupRule
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRuleResponse`
@@ -821,6 +864,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -853,6 +898,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -867,6 +913,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceResponse`
@@ -879,6 +926,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -911,6 +960,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSubNetworkInterfaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -925,6 +975,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSubNetworkInterfacesQuantity
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfacesQuantityRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfacesQuantityResponse`
@@ -937,6 +988,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -967,6 +1020,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSubNetworkInterfacesQuantityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -981,6 +1035,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSecurityGroup
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupResponse`
@@ -993,6 +1048,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1027,6 +1084,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1041,6 +1099,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSubNetworkInterface
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceResponse`
@@ -1053,6 +1112,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1087,6 +1148,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSubNetworkInterfaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1101,6 +1163,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupResponse`
@@ -1113,6 +1176,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1145,6 +1210,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAddressGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1159,6 +1225,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteAddressGroupResponse`
@@ -1171,6 +1238,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1203,6 +1272,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAddressGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1217,6 +1287,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteIpAddressGroupForce
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteIpAddressGroupForceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteIpAddressGroupForceResponse`
@@ -1229,6 +1300,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1261,6 +1334,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIpAddressGroupForceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1275,6 +1349,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.ListAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListAddressGroupResponse`
@@ -1287,6 +1362,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1332,6 +1409,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAddressGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1346,6 +1424,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.ShowAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowAddressGroupResponse`
@@ -1358,6 +1437,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1390,6 +1471,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAddressGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1404,6 +1486,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAddressGroup
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupResponse`
@@ -1416,6 +1499,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1450,6 +1535,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAddressGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1464,6 +1550,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddVpcExtendCidr
         :type request: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrResponse`
@@ -1476,6 +1563,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1510,6 +1599,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddVpcExtendCidrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1524,6 +1614,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateVpc
         :type request: :class:`huaweicloudsdkvpc.v3.CreateVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateVpcResponse`
@@ -1536,6 +1627,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1568,6 +1661,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1582,6 +1676,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteVpc
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteVpcResponse`
@@ -1594,6 +1689,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1626,6 +1723,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1640,6 +1738,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVpcs
         :type request: :class:`huaweicloudsdkvpc.v3.ListVpcsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListVpcsResponse`
@@ -1652,6 +1751,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1698,6 +1799,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1712,6 +1814,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemoveVpcExtendCidr
         :type request: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrResponse`
@@ -1724,6 +1827,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1758,6 +1863,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveVpcExtendCidrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1772,6 +1878,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVpc
         :type request: :class:`huaweicloudsdkvpc.v3.ShowVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowVpcResponse`
@@ -1784,6 +1891,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1816,6 +1925,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1830,6 +1940,7 @@ class VpcAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateVpc
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateVpcResponse`
@@ -1842,6 +1953,8 @@ class VpcAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1876,6 +1989,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1883,7 +1997,7 @@ class VpcAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1894,9 +2008,10 @@ class VpcAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1913,6 +2028,7 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

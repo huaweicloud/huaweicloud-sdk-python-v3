@@ -17,7 +17,6 @@ class AnalysisModelResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -155,7 +154,6 @@ class AnalysisModelResponse:
     def transform(self):
         """Gets the transform of this AnalysisModelResponse.
 
-
         :return: The transform of this AnalysisModelResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformModel`
         """
@@ -164,7 +162,6 @@ class AnalysisModelResponse:
     @transform.setter
     def transform(self, transform):
         """Sets the transform of this AnalysisModelResponse.
-
 
         :param transform: The transform of this AnalysisModelResponse.
         :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformModel`
@@ -175,7 +172,6 @@ class AnalysisModelResponse:
     def aggregate(self):
         """Gets the aggregate of this AnalysisModelResponse.
 
-
         :return: The aggregate of this AnalysisModelResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateModel`
         """
@@ -184,7 +180,6 @@ class AnalysisModelResponse:
     @aggregate.setter
     def aggregate(self, aggregate):
         """Sets the aggregate of this AnalysisModelResponse.
-
 
         :param aggregate: The aggregate of this AnalysisModelResponse.
         :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateModel`
@@ -195,7 +190,6 @@ class AnalysisModelResponse:
     def stream(self):
         """Gets the stream of this AnalysisModelResponse.
 
-
         :return: The stream of this AnalysisModelResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StreamModel`
         """
@@ -204,7 +198,6 @@ class AnalysisModelResponse:
     @stream.setter
     def stream(self, stream):
         """Sets the stream of this AnalysisModelResponse.
-
 
         :param stream: The stream of this AnalysisModelResponse.
         :type stream: :class:`huaweicloudsdkiotanalytics.v1.StreamModel`

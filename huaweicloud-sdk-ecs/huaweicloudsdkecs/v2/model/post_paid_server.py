@@ -17,7 +17,6 @@ class PostPaidServer:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -329,7 +328,6 @@ class PostPaidServer:
     def extendparam(self):
         """Gets the extendparam of this PostPaidServer.
 
-
         :return: The extendparam of this PostPaidServer.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerExtendParam`
         """
@@ -338,7 +336,6 @@ class PostPaidServer:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this PostPaidServer.
-
 
         :param extendparam: The extendparam of this PostPaidServer.
         :type extendparam: :class:`huaweicloudsdkecs.v2.PostPaidServerExtendParam`
@@ -503,7 +500,6 @@ class PostPaidServer:
     def osscheduler_hints(self):
         """Gets the osscheduler_hints of this PostPaidServer.
 
-
         :return: The osscheduler_hints of this PostPaidServer.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerSchedulerHints`
         """
@@ -512,7 +508,6 @@ class PostPaidServer:
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
         """Sets the osscheduler_hints of this PostPaidServer.
-
 
         :param osscheduler_hints: The osscheduler_hints of this PostPaidServer.
         :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.PostPaidServerSchedulerHints`
@@ -523,7 +518,6 @@ class PostPaidServer:
     def publicip(self):
         """Gets the publicip of this PostPaidServer.
 
-
         :return: The publicip of this PostPaidServer.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerPublicip`
         """
@@ -532,7 +526,6 @@ class PostPaidServer:
     @publicip.setter
     def publicip(self, publicip):
         """Sets the publicip of this PostPaidServer.
-
 
         :param publicip: The publicip of this PostPaidServer.
         :type publicip: :class:`huaweicloudsdkecs.v2.PostPaidServerPublicip`
@@ -543,7 +536,6 @@ class PostPaidServer:
     def root_volume(self):
         """Gets the root_volume of this PostPaidServer.
 
-
         :return: The root_volume of this PostPaidServer.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolume`
         """
@@ -552,7 +544,6 @@ class PostPaidServer:
     @root_volume.setter
     def root_volume(self, root_volume):
         """Sets the root_volume of this PostPaidServer.
-
 
         :param root_volume: The root_volume of this PostPaidServer.
         :type root_volume: :class:`huaweicloudsdkecs.v2.PostPaidServerRootVolume`

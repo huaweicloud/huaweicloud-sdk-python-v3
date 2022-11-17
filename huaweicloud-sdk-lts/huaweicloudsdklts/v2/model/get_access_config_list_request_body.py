@@ -17,7 +17,6 @@ class GetAccessConfigListRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -160,7 +159,6 @@ class GetAccessConfigListRequestBody:
     def access_config_tag_list(self):
         """Gets the access_config_tag_list of this GetAccessConfigListRequestBody.
 
-
         :return: The access_config_tag_list of this GetAccessConfigListRequestBody.
         :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
@@ -169,7 +167,6 @@ class GetAccessConfigListRequestBody:
     @access_config_tag_list.setter
     def access_config_tag_list(self, access_config_tag_list):
         """Sets the access_config_tag_list of this GetAccessConfigListRequestBody.
-
 
         :param access_config_tag_list: The access_config_tag_list of this GetAccessConfigListRequestBody.
         :type access_config_tag_list: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]

@@ -17,7 +17,6 @@ class ListEventsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListEventsResponse(SdkResponse):
     def meta_data(self):
         """Gets the meta_data of this ListEventsResponse.
 
-
         :return: The meta_data of this ListEventsResponse.
         :rtype: :class:`huaweicloudsdkces.v1.TotalMetaData`
         """
@@ -87,7 +85,6 @@ class ListEventsResponse(SdkResponse):
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this ListEventsResponse.
-
 
         :param meta_data: The meta_data of this ListEventsResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`

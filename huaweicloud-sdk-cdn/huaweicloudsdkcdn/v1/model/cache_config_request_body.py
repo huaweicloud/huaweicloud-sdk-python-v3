@@ -17,7 +17,6 @@ class CacheConfigRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CacheConfigRequestBody:
     def cache_config(self):
         """Gets the cache_config of this CacheConfigRequestBody.
 
-
         :return: The cache_config of this CacheConfigRequestBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.CacheConfigRequest`
         """
@@ -57,7 +55,6 @@ class CacheConfigRequestBody:
     @cache_config.setter
     def cache_config(self, cache_config):
         """Sets the cache_config of this CacheConfigRequestBody.
-
 
         :param cache_config: The cache_config of this CacheConfigRequestBody.
         :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfigRequest`

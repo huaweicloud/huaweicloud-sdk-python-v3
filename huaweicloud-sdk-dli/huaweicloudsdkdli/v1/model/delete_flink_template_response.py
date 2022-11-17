@@ -17,7 +17,6 @@ class DeleteFlinkTemplateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class DeleteFlinkTemplateResponse(SdkResponse):
     def template(self):
         """Gets the template of this DeleteFlinkTemplateResponse.
 
-
         :return: The template of this DeleteFlinkTemplateResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteTemplateRespTemplate`
         """
@@ -116,7 +114,6 @@ class DeleteFlinkTemplateResponse(SdkResponse):
     @template.setter
     def template(self, template):
         """Sets the template of this DeleteFlinkTemplateResponse.
-
 
         :param template: The template of this DeleteFlinkTemplateResponse.
         :type template: :class:`huaweicloudsdkdli.v1.DeleteTemplateRespTemplate`

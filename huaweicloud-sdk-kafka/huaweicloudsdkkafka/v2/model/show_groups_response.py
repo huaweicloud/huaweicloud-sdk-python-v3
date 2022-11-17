@@ -17,7 +17,6 @@ class ShowGroupsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowGroupsResponse(SdkResponse):
     def group(self):
         """Gets the group of this ShowGroupsResponse.
 
-
         :return: The group of this ShowGroupsResponse.
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroup`
         """
@@ -58,7 +56,6 @@ class ShowGroupsResponse(SdkResponse):
     @group.setter
     def group(self, group):
         """Sets the group of this ShowGroupsResponse.
-
 
         :param group: The group of this ShowGroupsResponse.
         :type group: :class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroup`

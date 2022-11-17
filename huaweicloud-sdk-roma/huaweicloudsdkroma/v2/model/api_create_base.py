@@ -17,7 +17,6 @@ class ApiCreateBase:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -391,7 +390,6 @@ class ApiCreateBase:
     def auth_opt(self):
         """Gets the auth_opt of this ApiCreateBase.
 
-
         :return: The auth_opt of this ApiCreateBase.
         :rtype: :class:`huaweicloudsdkroma.v2.AuthOpt`
         """
@@ -400,7 +398,6 @@ class ApiCreateBase:
     @auth_opt.setter
     def auth_opt(self, auth_opt):
         """Sets the auth_opt of this ApiCreateBase.
-
 
         :param auth_opt: The auth_opt of this ApiCreateBase.
         :type auth_opt: :class:`huaweicloudsdkroma.v2.AuthOpt`
@@ -741,7 +738,6 @@ class ApiCreateBase:
     def mock_info(self):
         """Gets the mock_info of this ApiCreateBase.
 
-
         :return: The mock_info of this ApiCreateBase.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiMockCreate`
         """
@@ -750,7 +746,6 @@ class ApiCreateBase:
     @mock_info.setter
     def mock_info(self, mock_info):
         """Sets the mock_info of this ApiCreateBase.
-
 
         :param mock_info: The mock_info of this ApiCreateBase.
         :type mock_info: :class:`huaweicloudsdkroma.v2.ApiMockCreate`
@@ -761,7 +756,6 @@ class ApiCreateBase:
     def func_info(self):
         """Gets the func_info of this ApiCreateBase.
 
-
         :return: The func_info of this ApiCreateBase.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiFuncCreate`
         """
@@ -770,7 +764,6 @@ class ApiCreateBase:
     @func_info.setter
     def func_info(self, func_info):
         """Sets the func_info of this ApiCreateBase.
-
 
         :param func_info: The func_info of this ApiCreateBase.
         :type func_info: :class:`huaweicloudsdkroma.v2.ApiFuncCreate`

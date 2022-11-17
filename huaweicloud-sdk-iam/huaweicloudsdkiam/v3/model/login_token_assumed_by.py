@@ -17,7 +17,6 @@ class LoginTokenAssumedBy:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class LoginTokenAssumedBy:
     def user(self):
         """Gets the user of this LoginTokenAssumedBy.
 
-
         :return: The user of this LoginTokenAssumedBy.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenUser`
         """
@@ -58,7 +56,6 @@ class LoginTokenAssumedBy:
     @user.setter
     def user(self, user):
         """Sets the user of this LoginTokenAssumedBy.
-
 
         :param user: The user of this LoginTokenAssumedBy.
         :type user: :class:`huaweicloudsdkiam.v3.LoginTokenUser`

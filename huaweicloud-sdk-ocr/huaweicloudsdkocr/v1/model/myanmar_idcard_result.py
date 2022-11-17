@@ -17,7 +17,6 @@ class MyanmarIdcardResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -476,7 +475,6 @@ class MyanmarIdcardResult:
     def confidence(self):
         """Gets the confidence of this MyanmarIdcardResult.
 
-
         :return: The confidence of this MyanmarIdcardResult.
         :rtype: :class:`huaweicloudsdkocr.v1.MyanmarIdcardConfidence`
         """
@@ -485,7 +483,6 @@ class MyanmarIdcardResult:
     @confidence.setter
     def confidence(self, confidence):
         """Sets the confidence of this MyanmarIdcardResult.
-
 
         :param confidence: The confidence of this MyanmarIdcardResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.MyanmarIdcardConfidence`

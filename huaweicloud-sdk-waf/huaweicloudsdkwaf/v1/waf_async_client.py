@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class WafAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ApplyCertificateToHost
         :type request: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostResponse`
@@ -68,6 +63,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ApplyCertificateToHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAntiTamperRule
         :type request: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRuleResponse`
@@ -130,6 +129,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAntiTamperRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCertificate
         :type request: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCertificateResponse`
@@ -192,6 +195,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -226,6 +231,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -240,6 +246,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateGeoipRule
         :type request: :class:`huaweicloudsdkwaf.v1.CreateGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateGeoipRuleResponse`
@@ -252,6 +259,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -288,6 +297,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGeoipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -302,6 +312,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateHost
         :type request: :class:`huaweicloudsdkwaf.v1.CreateHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateHostResponse`
@@ -314,6 +325,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -348,6 +361,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -362,6 +376,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateIgnoreRule
         :type request: :class:`huaweicloudsdkwaf.v1.CreateIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateIgnoreRuleResponse`
@@ -374,6 +389,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -410,6 +427,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIgnoreRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -424,6 +442,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkwaf.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateInstanceResponse`
@@ -436,6 +455,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -470,6 +491,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -484,6 +506,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateIpGroup
         :type request: :class:`huaweicloudsdkwaf.v1.CreateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpGroupResponse`
@@ -496,6 +519,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -530,6 +555,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -544,6 +570,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePolicy
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePolicyResponse`
@@ -556,6 +583,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -590,6 +619,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -604,6 +634,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePremiumHost
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostResponse`
@@ -616,6 +647,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -650,6 +683,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -664,6 +698,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePrivacyRule
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleResponse`
@@ -676,6 +711,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -712,6 +749,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePrivacyRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -726,6 +764,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateValueList
         :type request: :class:`huaweicloudsdkwaf.v1.CreateValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateValueListResponse`
@@ -738,6 +777,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -772,6 +813,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateValueListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -786,6 +828,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateWhiteblackipRule
         :type request: :class:`huaweicloudsdkwaf.v1.CreateWhiteblackipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateWhiteblackipRuleResponse`
@@ -798,6 +841,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -834,6 +879,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWhiteblackipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -848,6 +894,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAntitamperRule
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteAntitamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAntitamperRuleResponse`
@@ -860,6 +907,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -896,6 +945,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAntitamperRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -910,6 +960,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCertificate
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCertificateResponse`
@@ -922,6 +973,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -956,6 +1009,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -970,6 +1024,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteGeoipRule
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteGeoipRuleResponse`
@@ -982,6 +1037,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1018,6 +1075,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGeoipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1032,6 +1090,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteHost
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteHostResponse`
@@ -1044,6 +1103,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1078,6 +1139,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1092,6 +1154,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteIgnoreRule
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteIgnoreRuleResponse`
@@ -1104,6 +1167,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1140,6 +1205,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIgnoreRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1154,6 +1220,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteInstanceResponse`
@@ -1166,6 +1233,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1200,6 +1269,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1214,6 +1284,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteIpGroup
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteIpGroupResponse`
@@ -1226,6 +1297,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1260,6 +1333,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1274,6 +1348,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePolicy
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePolicyResponse`
@@ -1286,6 +1361,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1320,6 +1397,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1334,6 +1412,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePremiumHost
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePremiumHostResponse`
@@ -1346,6 +1425,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1382,6 +1463,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1396,6 +1478,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePrivacyRule
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePrivacyRuleResponse`
@@ -1408,6 +1491,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1444,6 +1529,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePrivacyRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1458,6 +1544,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteValueList
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteValueListResponse`
@@ -1470,6 +1557,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1504,6 +1593,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteValueListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1518,6 +1608,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteWhiteBlackIpRule
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteWhiteBlackIpRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteWhiteBlackIpRuleResponse`
@@ -1530,6 +1621,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1566,6 +1659,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWhiteBlackIpRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1580,6 +1674,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAntitamperRule
         :type request: :class:`huaweicloudsdkwaf.v1.ListAntitamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListAntitamperRuleResponse`
@@ -1592,6 +1687,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1630,6 +1727,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAntitamperRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1644,6 +1742,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBandwidthTimeline
         :type request: :class:`huaweicloudsdkwaf.v1.ListBandwidthTimelineRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListBandwidthTimelineResponse`
@@ -1656,6 +1755,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1698,6 +1799,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBandwidthTimelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1712,6 +1814,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCertificates
         :type request: :class:`huaweicloudsdkwaf.v1.ListCertificatesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCertificatesResponse`
@@ -1724,6 +1827,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1766,6 +1871,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1780,6 +1886,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCompositeHosts
         :type request: :class:`huaweicloudsdkwaf.v1.ListCompositeHostsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCompositeHostsResponse`
@@ -1792,6 +1899,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1838,6 +1947,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCompositeHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1852,6 +1962,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEvent
         :type request: :class:`huaweicloudsdkwaf.v1.ListEventRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListEventResponse`
@@ -1864,6 +1975,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1912,6 +2025,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1926,6 +2040,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGeoipRule
         :type request: :class:`huaweicloudsdkwaf.v1.ListGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListGeoipRuleResponse`
@@ -1938,6 +2053,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1976,6 +2093,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGeoipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1990,6 +2108,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHost
         :type request: :class:`huaweicloudsdkwaf.v1.ListHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListHostResponse`
@@ -2002,6 +2121,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2042,6 +2163,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2056,6 +2178,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHostRoute
         :type request: :class:`huaweicloudsdkwaf.v1.ListHostRouteRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListHostRouteResponse`
@@ -2068,6 +2191,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2102,6 +2227,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostRouteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2116,6 +2242,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIgnoreRule
         :type request: :class:`huaweicloudsdkwaf.v1.ListIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListIgnoreRuleResponse`
@@ -2128,6 +2255,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2166,6 +2295,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIgnoreRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2180,6 +2310,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstance
         :type request: :class:`huaweicloudsdkwaf.v1.ListInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListInstanceResponse`
@@ -2192,6 +2323,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2230,6 +2363,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2244,6 +2378,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIpGroup
         :type request: :class:`huaweicloudsdkwaf.v1.ListIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListIpGroupResponse`
@@ -2256,6 +2391,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2296,6 +2433,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2310,6 +2448,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNoticeConfigs
         :type request: :class:`huaweicloudsdkwaf.v1.ListNoticeConfigsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListNoticeConfigsResponse`
@@ -2322,6 +2461,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2354,6 +2495,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNoticeConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2368,6 +2510,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOverviewsClassification
         :type request: :class:`huaweicloudsdkwaf.v1.ListOverviewsClassificationRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListOverviewsClassificationResponse`
@@ -2380,6 +2523,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2422,6 +2567,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOverviewsClassificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2436,6 +2582,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPolicy
         :type request: :class:`huaweicloudsdkwaf.v1.ListPolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPolicyResponse`
@@ -2448,6 +2595,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2486,6 +2635,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2500,6 +2650,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPremiumHost
         :type request: :class:`huaweicloudsdkwaf.v1.ListPremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPremiumHostResponse`
@@ -2512,6 +2663,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2554,6 +2707,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2568,6 +2722,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPrivacyRule
         :type request: :class:`huaweicloudsdkwaf.v1.ListPrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPrivacyRuleResponse`
@@ -2580,6 +2735,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2618,6 +2775,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPrivacyRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2632,6 +2790,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQpsTimeline
         :type request: :class:`huaweicloudsdkwaf.v1.ListQpsTimelineRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListQpsTimelineResponse`
@@ -2644,6 +2803,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2686,6 +2847,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQpsTimelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2700,6 +2862,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRequestTimeline
         :type request: :class:`huaweicloudsdkwaf.v1.ListRequestTimelineRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListRequestTimelineResponse`
@@ -2712,6 +2875,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2756,6 +2921,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestTimelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2770,6 +2936,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStatistics
         :type request: :class:`huaweicloudsdkwaf.v1.ListStatisticsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListStatisticsResponse`
@@ -2782,6 +2949,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2822,6 +2991,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2836,6 +3006,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTopAbnormal
         :type request: :class:`huaweicloudsdkwaf.v1.ListTopAbnormalRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListTopAbnormalResponse`
@@ -2848,6 +3019,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2892,6 +3065,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTopAbnormalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2906,6 +3080,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListValueList
         :type request: :class:`huaweicloudsdkwaf.v1.ListValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListValueListResponse`
@@ -2918,6 +3093,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2954,6 +3131,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListValueListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2968,6 +3146,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWhiteblackipRule
         :type request: :class:`huaweicloudsdkwaf.v1.ListWhiteblackipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListWhiteblackipRuleResponse`
@@ -2980,6 +3159,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3020,6 +3201,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWhiteblackipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3034,6 +3216,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MigrateCompositeHosts
         :type request: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsResponse`
@@ -3046,6 +3229,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3082,6 +3267,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateCompositeHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3096,6 +3282,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RenameInstance
         :type request: :class:`huaweicloudsdkwaf.v1.RenameInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.RenameInstanceResponse`
@@ -3108,6 +3295,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3144,6 +3333,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RenameInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3158,6 +3348,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCertificate
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCertificateResponse`
@@ -3170,6 +3361,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3204,6 +3397,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3218,6 +3412,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCompositeHost
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCompositeHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCompositeHostResponse`
@@ -3230,6 +3425,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3264,6 +3461,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCompositeHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3278,6 +3476,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowConsoleConfig
         :type request: :class:`huaweicloudsdkwaf.v1.ShowConsoleConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowConsoleConfigResponse`
@@ -3290,6 +3489,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3320,6 +3521,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConsoleConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3334,6 +3536,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEvent
         :type request: :class:`huaweicloudsdkwaf.v1.ShowEventRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowEventResponse`
@@ -3346,6 +3549,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3380,6 +3585,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3394,6 +3600,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHost
         :type request: :class:`huaweicloudsdkwaf.v1.ShowHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowHostResponse`
@@ -3406,6 +3613,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3440,6 +3649,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3454,6 +3664,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkwaf.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowInstanceResponse`
@@ -3466,6 +3677,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3500,6 +3713,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3514,6 +3728,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIpGroup
         :type request: :class:`huaweicloudsdkwaf.v1.ShowIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowIpGroupResponse`
@@ -3526,6 +3741,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3560,6 +3777,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3574,6 +3792,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLtsInfoConfig
         :type request: :class:`huaweicloudsdkwaf.v1.ShowLtsInfoConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowLtsInfoConfigResponse`
@@ -3586,6 +3805,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3618,6 +3839,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLtsInfoConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3632,6 +3854,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPolicy
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPolicyResponse`
@@ -3644,6 +3867,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3678,6 +3903,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3692,6 +3918,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPremiumHost
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPremiumHostResponse`
@@ -3704,6 +3931,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3738,6 +3967,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3752,6 +3982,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSourceIp
         :type request: :class:`huaweicloudsdkwaf.v1.ShowSourceIpRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowSourceIpResponse`
@@ -3764,6 +3995,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3794,6 +4027,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSourceIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3808,6 +4042,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAlertNoticeConfig
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigResponse`
@@ -3820,6 +4055,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3856,6 +4093,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAlertNoticeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3870,6 +4108,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCertificate
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCertificateResponse`
@@ -3882,6 +4121,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3918,6 +4159,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3932,6 +4174,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateGeoipRule
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleResponse`
@@ -3944,6 +4187,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3982,6 +4227,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGeoipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3996,6 +4242,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateHost
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateHostResponse`
@@ -4008,6 +4255,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4044,6 +4293,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4058,6 +4308,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateHostProtectStatus
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateHostProtectStatusRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateHostProtectStatusResponse`
@@ -4070,6 +4321,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4106,6 +4359,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHostProtectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4120,6 +4374,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateIpGroup
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupResponse`
@@ -4132,6 +4387,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4168,6 +4425,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4182,6 +4440,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateLtsInfoConfig
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateLtsInfoConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateLtsInfoConfigResponse`
@@ -4194,6 +4453,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4230,6 +4491,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLtsInfoConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4244,6 +4506,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePolicy
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyResponse`
@@ -4256,6 +4519,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4292,6 +4557,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4306,6 +4572,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePolicyProtectHost
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyProtectHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyProtectHostResponse`
@@ -4318,6 +4585,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4354,6 +4623,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePolicyProtectHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4368,6 +4638,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePolicyRuleStatus
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusResponse`
@@ -4380,6 +4651,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4420,6 +4693,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePolicyRuleStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4434,6 +4708,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePremiumHost
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostResponse`
@@ -4446,6 +4721,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4482,6 +4759,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4496,6 +4774,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePremiumHostProtectStatus
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusResponse`
@@ -4508,6 +4787,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4544,6 +4825,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePremiumHostProtectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4558,6 +4840,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePrivacyRule
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleResponse`
@@ -4570,6 +4853,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4608,6 +4893,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePrivacyRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4622,6 +4908,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateValueList
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateValueListResponse`
@@ -4634,6 +4921,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4670,6 +4959,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateValueListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4684,6 +4974,7 @@ class WafAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateWhiteblackipRule
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateWhiteblackipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateWhiteblackipRuleResponse`
@@ -4696,6 +4987,8 @@ class WafAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4734,6 +5027,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWhiteblackipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4741,7 +5035,7 @@ class WafAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4752,9 +5046,10 @@ class WafAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4771,6 +5066,7 @@ class WafAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

@@ -17,7 +17,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     def bcs(self):
         """Gets the bcs of this ShowBlockchainStatusResponse.
 
-
         :return: The bcs of this ShowBlockchainStatusResponse.
         :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
@@ -93,7 +91,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     @bcs.setter
     def bcs(self, bcs):
         """Sets the bcs of this ShowBlockchainStatusResponse.
-
 
         :param bcs: The bcs of this ShowBlockchainStatusResponse.
         :type bcs: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -104,7 +101,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     def eip(self):
         """Gets the eip of this ShowBlockchainStatusResponse.
 
-
         :return: The eip of this ShowBlockchainStatusResponse.
         :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
@@ -113,7 +109,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     @eip.setter
     def eip(self, eip):
         """Sets the eip of this ShowBlockchainStatusResponse.
-
 
         :param eip: The eip of this ShowBlockchainStatusResponse.
         :type eip: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -124,7 +119,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     def sfs(self):
         """Gets the sfs of this ShowBlockchainStatusResponse.
 
-
         :return: The sfs of this ShowBlockchainStatusResponse.
         :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
@@ -133,7 +127,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     @sfs.setter
     def sfs(self, sfs):
         """Sets the sfs of this ShowBlockchainStatusResponse.
-
 
         :param sfs: The sfs of this ShowBlockchainStatusResponse.
         :type sfs: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -144,7 +137,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     def obs(self):
         """Gets the obs of this ShowBlockchainStatusResponse.
 
-
         :return: The obs of this ShowBlockchainStatusResponse.
         :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
@@ -153,7 +145,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     @obs.setter
     def obs(self, obs):
         """Sets the obs of this ShowBlockchainStatusResponse.
-
 
         :param obs: The obs of this ShowBlockchainStatusResponse.
         :type obs: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -164,7 +155,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     def kafka(self):
         """Gets the kafka of this ShowBlockchainStatusResponse.
 
-
         :return: The kafka of this ShowBlockchainStatusResponse.
         :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
         """
@@ -173,7 +163,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     @kafka.setter
     def kafka(self, kafka):
         """Sets the kafka of this ShowBlockchainStatusResponse.
-
 
         :param kafka: The kafka of this ShowBlockchainStatusResponse.
         :type kafka: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -184,7 +173,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     def cce(self):
         """Gets the cce of this ShowBlockchainStatusResponse.
 
-
         :return: The cce of this ShowBlockchainStatusResponse.
         :rtype: :class:`huaweicloudsdkbcs.v2.ComCCE`
         """
@@ -193,7 +181,6 @@ class ShowBlockchainStatusResponse(SdkResponse):
     @cce.setter
     def cce(self, cce):
         """Sets the cce of this ShowBlockchainStatusResponse.
-
 
         :param cce: The cce of this ShowBlockchainStatusResponse.
         :type cce: :class:`huaweicloudsdkbcs.v2.ComCCE`

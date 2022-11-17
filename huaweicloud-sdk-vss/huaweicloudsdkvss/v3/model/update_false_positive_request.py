@@ -17,7 +17,6 @@ class UpdateFalsePositiveRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateFalsePositiveRequest:
     def body(self):
         """Gets the body of this UpdateFalsePositiveRequest.
 
-
         :return: The body of this UpdateFalsePositiveRequest.
         :rtype: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveRequestBody`
         """
@@ -58,7 +56,6 @@ class UpdateFalsePositiveRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateFalsePositiveRequest.
-
 
         :param body: The body of this UpdateFalsePositiveRequest.
         :type body: :class:`huaweicloudsdkvss.v3.UpdateFalsePositiveRequestBody`

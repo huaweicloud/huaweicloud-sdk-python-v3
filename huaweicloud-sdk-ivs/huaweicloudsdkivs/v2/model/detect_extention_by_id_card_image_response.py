@@ -17,7 +17,6 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
     def meta(self):
         """Gets the meta of this DetectExtentionByIdCardImageResponse.
 
-
         :return: The meta of this DetectExtentionByIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
@@ -65,7 +63,6 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
     @meta.setter
     def meta(self, meta):
         """Sets the meta of this DetectExtentionByIdCardImageResponse.
-
 
         :param meta: The meta of this DetectExtentionByIdCardImageResponse.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -76,7 +73,6 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
     def result(self):
         """Gets the result of this DetectExtentionByIdCardImageResponse.
 
-
         :return: The result of this DetectExtentionByIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageResponseBodyResult`
         """
@@ -85,7 +81,6 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this DetectExtentionByIdCardImageResponse.
-
 
         :param result: The result of this DetectExtentionByIdCardImageResponse.
         :type result: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageResponseBodyResult`

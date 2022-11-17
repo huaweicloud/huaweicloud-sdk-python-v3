@@ -17,7 +17,6 @@ class CreateTemporaryAccessKeyByAgencyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateTemporaryAccessKeyByAgencyRequest:
     def body(self):
         """Gets the body of this CreateTemporaryAccessKeyByAgencyRequest.
 
-
         :return: The body of this CreateTemporaryAccessKeyByAgencyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByAgencyRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateTemporaryAccessKeyByAgencyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTemporaryAccessKeyByAgencyRequest.
-
 
         :param body: The body of this CreateTemporaryAccessKeyByAgencyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByAgencyRequestBody`

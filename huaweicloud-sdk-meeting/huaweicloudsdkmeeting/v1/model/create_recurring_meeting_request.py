@@ -17,7 +17,6 @@ class CreateRecurringMeetingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class CreateRecurringMeetingRequest:
     def body(self):
         """Gets the body of this CreateRecurringMeetingRequest.
 
-
         :return: The body of this CreateRecurringMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestScheduleConfDTO`
         """
@@ -145,7 +143,6 @@ class CreateRecurringMeetingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRecurringMeetingRequest.
-
 
         :param body: The body of this CreateRecurringMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestScheduleConfDTO`

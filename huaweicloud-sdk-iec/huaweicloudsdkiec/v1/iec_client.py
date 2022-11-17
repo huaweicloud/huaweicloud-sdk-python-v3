@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IecClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class IecClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddNicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -189,6 +189,8 @@ class IecClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -220,6 +222,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRebootInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -247,6 +250,8 @@ class IecClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -278,6 +283,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStartInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -305,6 +311,8 @@ class IecClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -336,6 +344,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStopInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -364,6 +373,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -398,6 +409,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeOsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -431,6 +443,8 @@ class IecClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -462,6 +476,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -490,6 +505,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -522,6 +539,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -548,6 +566,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -580,6 +600,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -606,6 +627,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -640,6 +663,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -666,6 +690,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -698,6 +724,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRoutetableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -724,6 +751,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -756,6 +785,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -782,6 +812,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -814,6 +846,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -840,6 +873,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -872,6 +907,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -898,6 +934,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -930,6 +968,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -956,6 +995,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -988,6 +1029,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeCloudResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1014,6 +1056,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1046,6 +1090,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1072,6 +1117,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1104,6 +1151,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1130,6 +1178,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1164,6 +1214,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1190,6 +1241,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1222,6 +1275,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1248,6 +1302,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1282,6 +1338,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1308,6 +1365,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1340,6 +1399,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRoutetableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1366,6 +1426,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1398,6 +1460,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1424,6 +1487,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1456,6 +1521,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1482,6 +1548,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1514,6 +1582,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1540,6 +1609,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1572,6 +1643,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1598,6 +1670,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1632,6 +1706,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1658,6 +1733,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1690,6 +1767,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExecuteDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1716,6 +1794,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1748,6 +1828,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandEdgecloudResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1774,6 +1855,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1810,6 +1893,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBandwidthsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1836,6 +1920,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1876,6 +1962,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeploymentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1902,6 +1989,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1940,6 +2029,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEdgeCloudResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1966,6 +2056,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2014,6 +2106,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2043,6 +2136,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2111,6 +2206,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2137,6 +2233,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2185,6 +2283,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2211,6 +2310,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2247,6 +2348,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeypairsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2273,6 +2375,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2328,6 +2432,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPortsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2354,6 +2459,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2384,6 +2491,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2410,6 +2518,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2442,6 +2552,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRelatedRoutetablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2468,6 +2579,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2500,6 +2613,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2526,6 +2640,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2566,6 +2682,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRoutetablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2592,6 +2709,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2628,6 +2747,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecurityGroupRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2654,6 +2774,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2688,6 +2810,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecurityGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2717,6 +2840,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2763,6 +2888,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSitesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2789,6 +2915,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2827,6 +2955,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubnetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2853,6 +2982,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2891,6 +3022,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2917,6 +3049,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2949,6 +3083,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBandwidthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2975,6 +3110,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3007,6 +3144,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeCloudResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3033,6 +3171,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3065,6 +3205,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3091,6 +3232,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3123,6 +3266,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3149,6 +3293,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3181,6 +3327,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3207,6 +3354,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3239,6 +3388,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3265,6 +3415,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3297,6 +3449,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRoutetableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3323,6 +3476,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3355,6 +3510,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3381,6 +3537,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3413,6 +3571,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3439,6 +3598,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3471,6 +3632,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3497,6 +3659,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3529,6 +3693,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3555,6 +3720,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3587,6 +3754,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3613,6 +3781,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3647,6 +3817,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3673,6 +3844,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3707,6 +3880,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3733,6 +3907,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3767,6 +3943,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3793,6 +3970,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3827,6 +4006,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRoutetableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3853,6 +4033,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3887,6 +4069,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3913,6 +4096,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3947,6 +4132,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3973,6 +4159,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4005,6 +4193,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFirewallResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4031,6 +4220,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4063,6 +4254,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFirewallResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4089,6 +4281,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4127,6 +4321,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFirewallsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4153,6 +4348,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4185,6 +4382,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFirewallResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4211,6 +4409,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4245,6 +4445,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFirewallResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4271,6 +4472,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4305,6 +4508,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFirewallRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4331,6 +4535,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4363,6 +4569,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePublicIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4389,6 +4596,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4421,6 +4630,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePublicIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4447,6 +4657,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4485,6 +4697,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPublicIpsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4511,6 +4724,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4543,6 +4758,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPublicIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4569,6 +4785,8 @@ class IecClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4603,6 +4821,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePublicIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4610,7 +4829,7 @@ class IecClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4620,9 +4839,10 @@ class IecClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4639,6 +4859,7 @@ class IecClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

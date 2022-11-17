@@ -17,7 +17,6 @@ class ModifyJobReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -233,7 +232,6 @@ class ModifyJobReq:
     def alarm_notify(self):
         """Gets the alarm_notify of this ModifyJobReq.
 
-
         :return: The alarm_notify of this ModifyJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.AlarmNotifyInfo`
         """
@@ -242,7 +240,6 @@ class ModifyJobReq:
     @alarm_notify.setter
     def alarm_notify(self, alarm_notify):
         """Sets the alarm_notify of this ModifyJobReq.
-
 
         :param alarm_notify: The alarm_notify of this ModifyJobReq.
         :type alarm_notify: :class:`huaweicloudsdkdrs.v3.AlarmNotifyInfo`
@@ -275,7 +272,6 @@ class ModifyJobReq:
     def source_endpoint(self):
         """Gets the source_endpoint of this ModifyJobReq.
 
-
         :return: The source_endpoint of this ModifyJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
@@ -284,7 +280,6 @@ class ModifyJobReq:
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
         """Sets the source_endpoint of this ModifyJobReq.
-
 
         :param source_endpoint: The source_endpoint of this ModifyJobReq.
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -295,7 +290,6 @@ class ModifyJobReq:
     def target_endpoint(self):
         """Gets the target_endpoint of this ModifyJobReq.
 
-
         :return: The target_endpoint of this ModifyJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
         """
@@ -304,7 +298,6 @@ class ModifyJobReq:
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
         """Sets the target_endpoint of this ModifyJobReq.
-
 
         :param target_endpoint: The target_endpoint of this ModifyJobReq.
         :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`

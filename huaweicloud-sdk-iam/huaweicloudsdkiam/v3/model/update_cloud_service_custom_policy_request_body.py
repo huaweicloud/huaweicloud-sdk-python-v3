@@ -17,7 +17,6 @@ class UpdateCloudServiceCustomPolicyRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateCloudServiceCustomPolicyRequestBody:
     def role(self):
         """Gets the role of this UpdateCloudServiceCustomPolicyRequestBody.
 
-
         :return: The role of this UpdateCloudServiceCustomPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicyRoleOption`
         """
@@ -57,7 +55,6 @@ class UpdateCloudServiceCustomPolicyRequestBody:
     @role.setter
     def role(self, role):
         """Sets the role of this UpdateCloudServiceCustomPolicyRequestBody.
-
 
         :param role: The role of this UpdateCloudServiceCustomPolicyRequestBody.
         :type role: :class:`huaweicloudsdkiam.v3.ServicePolicyRoleOption`

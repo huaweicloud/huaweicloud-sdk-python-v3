@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ServiceStageClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -66,6 +60,8 @@ class ServiceStageClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -99,6 +95,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -122,6 +119,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -156,6 +155,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeApplicationConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -179,6 +179,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -215,6 +217,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -238,6 +241,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -272,6 +277,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -295,6 +301,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -333,6 +341,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +365,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -390,6 +401,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeResourceInEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -415,6 +427,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -447,6 +461,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -472,6 +487,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +523,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -531,6 +549,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -563,6 +583,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -586,6 +607,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -622,6 +645,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -645,6 +669,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -677,6 +703,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -700,6 +727,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -734,6 +763,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -757,6 +787,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -793,6 +825,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -816,6 +849,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -848,6 +883,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -871,6 +907,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -909,6 +947,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -932,6 +971,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -970,6 +1011,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApplicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -993,6 +1035,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1033,6 +1077,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListComponentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1056,6 +1101,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1094,6 +1141,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1117,6 +1165,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1161,6 +1211,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceSnapshotsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1184,6 +1235,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1226,6 +1279,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1249,6 +1303,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1283,6 +1339,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1306,6 +1363,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1338,6 +1397,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1361,6 +1421,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1395,6 +1457,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowComponentDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1418,6 +1481,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1450,6 +1515,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnvironmentDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1473,6 +1539,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1509,6 +1577,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1532,6 +1601,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1572,6 +1643,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1595,6 +1667,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1633,6 +1707,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1656,6 +1731,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1698,6 +1775,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1721,6 +1799,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1759,6 +1839,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1782,6 +1863,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1818,6 +1901,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1841,6 +1925,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1875,6 +1961,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePasswordAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1898,6 +1985,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1932,6 +2021,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePersonalAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1955,6 +2045,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1991,6 +2083,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2014,6 +2107,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2054,6 +2149,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2077,6 +2173,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2109,6 +2207,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAuthorizeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2132,6 +2231,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2176,6 +2277,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2199,6 +2301,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2237,6 +2341,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2260,6 +2365,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2298,6 +2405,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2321,6 +2429,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2351,6 +2461,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2374,6 +2485,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2410,6 +2523,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBranchesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2433,6 +2547,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2471,6 +2587,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCommitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2494,6 +2611,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2530,6 +2649,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2553,6 +2673,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2585,6 +2707,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNamespacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2608,6 +2731,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2642,6 +2767,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2665,6 +2791,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2701,6 +2829,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2724,6 +2853,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2762,6 +2893,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTreesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2785,6 +2917,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2825,6 +2959,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowContentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2848,6 +2983,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2882,6 +3019,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2905,6 +3043,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2939,6 +3079,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRedirectUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2962,6 +3103,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3004,6 +3147,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3027,6 +3171,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3057,6 +3203,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3080,6 +3227,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3110,6 +3259,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRuntimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3133,6 +3283,8 @@ class ServiceStageClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3163,6 +3315,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3170,7 +3323,7 @@ class ServiceStageClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3180,9 +3333,10 @@ class ServiceStageClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3199,6 +3353,7 @@ class ServiceStageClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

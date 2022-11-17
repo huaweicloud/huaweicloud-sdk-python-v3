@@ -17,7 +17,6 @@ class CheckRomaAppDetailsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -251,7 +250,6 @@ class CheckRomaAppDetailsResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this CheckRomaAppDetailsResponse.
 
-
         :return: The created_user of this CheckRomaAppDetailsResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.ServerAppInfoCreatedUser`
         """
@@ -260,7 +258,6 @@ class CheckRomaAppDetailsResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this CheckRomaAppDetailsResponse.
-
 
         :param created_user: The created_user of this CheckRomaAppDetailsResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.ServerAppInfoCreatedUser`
@@ -271,7 +268,6 @@ class CheckRomaAppDetailsResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this CheckRomaAppDetailsResponse.
 
-
         :return: The last_updated_user of this CheckRomaAppDetailsResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.ServerAppInfoLastUpdatedUser`
         """
@@ -280,7 +276,6 @@ class CheckRomaAppDetailsResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this CheckRomaAppDetailsResponse.
-
 
         :param last_updated_user: The last_updated_user of this CheckRomaAppDetailsResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.ServerAppInfoLastUpdatedUser`

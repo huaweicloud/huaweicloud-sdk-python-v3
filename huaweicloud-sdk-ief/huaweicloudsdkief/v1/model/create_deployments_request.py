@@ -17,7 +17,6 @@ class CreateDeploymentsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateDeploymentsRequest:
     def body(self):
         """Gets the body of this CreateDeploymentsRequest.
 
-
         :return: The body of this CreateDeploymentsRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Deployment`
         """
@@ -87,7 +85,6 @@ class CreateDeploymentsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDeploymentsRequest.
-
 
         :param body: The body of this CreateDeploymentsRequest.
         :type body: :class:`huaweicloudsdkief.v1.Deployment`

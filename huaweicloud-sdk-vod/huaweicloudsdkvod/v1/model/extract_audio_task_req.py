@@ -17,7 +17,6 @@ class ExtractAudioTaskReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ExtractAudioTaskReq:
     def parameter(self):
         """Gets the parameter of this ExtractAudioTaskReq.
 
-
         :return: The parameter of this ExtractAudioTaskReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Parameter`
         """
@@ -86,7 +84,6 @@ class ExtractAudioTaskReq:
     @parameter.setter
     def parameter(self, parameter):
         """Sets the parameter of this ExtractAudioTaskReq.
-
 
         :param parameter: The parameter of this ExtractAudioTaskReq.
         :type parameter: :class:`huaweicloudsdkvod.v1.Parameter`

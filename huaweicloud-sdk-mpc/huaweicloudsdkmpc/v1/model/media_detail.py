@@ -17,7 +17,6 @@ class MediaDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -99,7 +98,6 @@ class MediaDetail:
     def origin_para(self):
         """Gets the origin_para of this MediaDetail.
 
-
         :return: The origin_para of this MediaDetail.
         :rtype: :class:`huaweicloudsdkmpc.v1.OriginPara`
         """
@@ -108,7 +106,6 @@ class MediaDetail:
     @origin_para.setter
     def origin_para(self, origin_para):
         """Sets the origin_para of this MediaDetail.
-
 
         :param origin_para: The origin_para of this MediaDetail.
         :type origin_para: :class:`huaweicloudsdkmpc.v1.OriginPara`
@@ -141,7 +138,6 @@ class MediaDetail:
     def output_thumbnail_para(self):
         """Gets the output_thumbnail_para of this MediaDetail.
 
-
         :return: The output_thumbnail_para of this MediaDetail.
         :rtype: :class:`huaweicloudsdkmpc.v1.OutputThumbnailPara`
         """
@@ -150,7 +146,6 @@ class MediaDetail:
     @output_thumbnail_para.setter
     def output_thumbnail_para(self, output_thumbnail_para):
         """Sets the output_thumbnail_para of this MediaDetail.
-
 
         :param output_thumbnail_para: The output_thumbnail_para of this MediaDetail.
         :type output_thumbnail_para: :class:`huaweicloudsdkmpc.v1.OutputThumbnailPara`
@@ -161,7 +156,6 @@ class MediaDetail:
     def output_watermark_paras(self):
         """Gets the output_watermark_paras of this MediaDetail.
 
-
         :return: The output_watermark_paras of this MediaDetail.
         :rtype: :class:`huaweicloudsdkmpc.v1.OutputWatermarkPara`
         """
@@ -170,7 +164,6 @@ class MediaDetail:
     @output_watermark_paras.setter
     def output_watermark_paras(self, output_watermark_paras):
         """Sets the output_watermark_paras of this MediaDetail.
-
 
         :param output_watermark_paras: The output_watermark_paras of this MediaDetail.
         :type output_watermark_paras: :class:`huaweicloudsdkmpc.v1.OutputWatermarkPara`

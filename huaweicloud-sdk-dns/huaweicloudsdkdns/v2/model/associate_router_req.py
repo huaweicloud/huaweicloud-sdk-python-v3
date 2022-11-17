@@ -17,7 +17,6 @@ class AssociateRouterReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class AssociateRouterReq:
     def router(self):
         """Gets the router of this AssociateRouterReq.
 
-
         :return: The router of this AssociateRouterReq.
         :rtype: :class:`huaweicloudsdkdns.v2.Router`
         """
@@ -57,7 +55,6 @@ class AssociateRouterReq:
     @router.setter
     def router(self, router):
         """Sets the router of this AssociateRouterReq.
-
 
         :param router: The router of this AssociateRouterReq.
         :type router: :class:`huaweicloudsdkdns.v2.Router`

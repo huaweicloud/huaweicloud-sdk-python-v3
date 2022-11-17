@@ -17,7 +17,6 @@ class RecognizeHkIdCardResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeHkIdCardResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeHkIdCardResponse.
 
-
         :return: The result of this RecognizeHkIdCardResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.HkIdCardResult`
         """
@@ -58,7 +56,6 @@ class RecognizeHkIdCardResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeHkIdCardResponse.
-
 
         :param result: The result of this RecognizeHkIdCardResponse.
         :type result: :class:`huaweicloudsdkocr.v1.HkIdCardResult`

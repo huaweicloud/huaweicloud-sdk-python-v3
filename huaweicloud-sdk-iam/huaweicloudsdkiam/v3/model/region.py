@@ -17,7 +17,6 @@ class Region:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -122,7 +121,6 @@ class Region:
     def links(self):
         """Gets the links of this Region.
 
-
         :return: The links of this Region.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
@@ -131,7 +129,6 @@ class Region:
     @links.setter
     def links(self, links):
         """Sets the links of this Region.
-
 
         :param links: The links of this Region.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -142,7 +139,6 @@ class Region:
     def locales(self):
         """Gets the locales of this Region.
 
-
         :return: The locales of this Region.
         :rtype: :class:`huaweicloudsdkiam.v3.RegionLocales`
         """
@@ -151,7 +147,6 @@ class Region:
     @locales.setter
     def locales(self, locales):
         """Sets the locales of this Region.
-
 
         :param locales: The locales of this Region.
         :type locales: :class:`huaweicloudsdkiam.v3.RegionLocales`

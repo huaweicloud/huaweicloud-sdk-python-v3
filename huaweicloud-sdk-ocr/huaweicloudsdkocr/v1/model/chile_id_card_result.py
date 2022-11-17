@@ -17,7 +17,6 @@ class ChileIdCardResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -310,7 +309,6 @@ class ChileIdCardResult:
     def confidence(self):
         """Gets the confidence of this ChileIdCardResult.
 
-
         :return: The confidence of this ChileIdCardResult.
         :rtype: :class:`huaweicloudsdkocr.v1.ChileIdCardConfidence`
         """
@@ -319,7 +317,6 @@ class ChileIdCardResult:
     @confidence.setter
     def confidence(self, confidence):
         """Sets the confidence of this ChileIdCardResult.
-
 
         :param confidence: The confidence of this ChileIdCardResult.
         :type confidence: :class:`huaweicloudsdkocr.v1.ChileIdCardConfidence`

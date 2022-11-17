@@ -17,7 +17,6 @@ class ShowTableSchemaResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -310,7 +309,6 @@ class ShowTableSchemaResponse(SdkResponse):
     def storage_properties(self):
         """Gets the storage_properties of this ShowTableSchemaResponse.
 
-
         :return: The storage_properties of this ShowTableSchemaResponse.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.KeyValue`]
         """
@@ -319,7 +317,6 @@ class ShowTableSchemaResponse(SdkResponse):
     @storage_properties.setter
     def storage_properties(self, storage_properties):
         """Sets the storage_properties of this ShowTableSchemaResponse.
-
 
         :param storage_properties: The storage_properties of this ShowTableSchemaResponse.
         :type storage_properties: list[:class:`huaweicloudsdkiotanalytics.v1.KeyValue`]

@@ -17,7 +17,6 @@ class UpdatePremiumHostResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -444,7 +443,6 @@ class UpdatePremiumHostResponse(SdkResponse):
     def flag(self):
         """Gets the flag of this UpdatePremiumHostResponse.
 
-
         :return: The flag of this UpdatePremiumHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
@@ -453,7 +451,6 @@ class UpdatePremiumHostResponse(SdkResponse):
     @flag.setter
     def flag(self, flag):
         """Sets the flag of this UpdatePremiumHostResponse.
-
 
         :param flag: The flag of this UpdatePremiumHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -706,7 +703,6 @@ class UpdatePremiumHostResponse(SdkResponse):
     def block_page(self):
         """Gets the block_page of this UpdatePremiumHostResponse.
 
-
         :return: The block_page of this UpdatePremiumHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
@@ -715,7 +711,6 @@ class UpdatePremiumHostResponse(SdkResponse):
     @block_page.setter
     def block_page(self, block_page):
         """Sets the block_page of this UpdatePremiumHostResponse.
-
 
         :param block_page: The block_page of this UpdatePremiumHostResponse.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -726,7 +721,6 @@ class UpdatePremiumHostResponse(SdkResponse):
     def traffic_mark(self):
         """Gets the traffic_mark of this UpdatePremiumHostResponse.
 
-
         :return: The traffic_mark of this UpdatePremiumHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         """
@@ -735,7 +729,6 @@ class UpdatePremiumHostResponse(SdkResponse):
     @traffic_mark.setter
     def traffic_mark(self, traffic_mark):
         """Sets the traffic_mark of this UpdatePremiumHostResponse.
-
 
         :param traffic_mark: The traffic_mark of this UpdatePremiumHostResponse.
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -746,7 +739,6 @@ class UpdatePremiumHostResponse(SdkResponse):
     def timeout_config(self):
         """Gets the timeout_config of this UpdatePremiumHostResponse.
 
-
         :return: The timeout_config of this UpdatePremiumHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
@@ -755,7 +747,6 @@ class UpdatePremiumHostResponse(SdkResponse):
     @timeout_config.setter
     def timeout_config(self, timeout_config):
         """Sets the timeout_config of this UpdatePremiumHostResponse.
-
 
         :param timeout_config: The timeout_config of this UpdatePremiumHostResponse.
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`

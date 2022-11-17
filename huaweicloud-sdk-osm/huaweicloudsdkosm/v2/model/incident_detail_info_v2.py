@@ -17,7 +17,6 @@ class IncidentDetailInfoV2:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -559,7 +558,6 @@ class IncidentDetailInfoV2:
     def ext_info(self):
         """Gets the ext_info of this IncidentDetailInfoV2.
 
-
         :return: The ext_info of this IncidentDetailInfoV2.
         :rtype: :class:`huaweicloudsdkosm.v2.IncidentDetailExtInfoV2`
         """
@@ -568,7 +566,6 @@ class IncidentDetailInfoV2:
     @ext_info.setter
     def ext_info(self, ext_info):
         """Sets the ext_info of this IncidentDetailInfoV2.
-
 
         :param ext_info: The ext_info of this IncidentDetailInfoV2.
         :type ext_info: :class:`huaweicloudsdkosm.v2.IncidentDetailExtInfoV2`

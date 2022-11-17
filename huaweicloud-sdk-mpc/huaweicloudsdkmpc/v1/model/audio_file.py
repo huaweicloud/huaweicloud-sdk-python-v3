@@ -17,7 +17,6 @@ class AudioFile:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class AudioFile:
     def input(self):
         """Gets the input of this AudioFile.
 
-
         :return: The input of this AudioFile.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -87,7 +85,6 @@ class AudioFile:
     @input.setter
     def input(self, input):
         """Sets the input of this AudioFile.
-
 
         :param input: The input of this AudioFile.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

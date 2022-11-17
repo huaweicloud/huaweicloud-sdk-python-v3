@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CodeHubAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCommit
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponse`
@@ -68,6 +63,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCommitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCommits
         :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitsRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListCommitsResponse`
@@ -128,6 +127,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -172,6 +173,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCommitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -186,6 +188,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDiffCommit
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowDiffCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowDiffCommitResponse`
@@ -198,6 +201,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -232,6 +237,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDiffCommitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -246,6 +252,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSingleCommit
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowSingleCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowSingleCommitResponse`
@@ -258,6 +265,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -294,6 +303,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSingleCommitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -308,6 +318,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFilesByQuery
         :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesByQueryRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListFilesByQueryResponse`
@@ -320,6 +331,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -356,6 +369,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFilesByQueryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -370,6 +384,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowFile
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowFileRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowFileResponse`
@@ -382,6 +397,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -418,6 +435,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -432,6 +450,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GetAllRepositoryByProjectId
         :type request: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdResponse`
@@ -444,6 +463,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -482,6 +503,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GetAllRepositoryByProjectIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -496,6 +518,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GetProductTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesResponse`
@@ -508,6 +531,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -544,6 +569,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GetProductTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -558,6 +584,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProductTwoTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.ListProductTwoTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListProductTwoTemplatesResponse`
@@ -570,6 +597,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -606,6 +635,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductTwoTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -620,6 +650,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRepositoryNameExist
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryNameExistRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryNameExistResponse`
@@ -632,6 +663,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -666,6 +699,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryNameExistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -680,6 +714,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddRepoMembers
         :type request: :class:`huaweicloudsdkcodehub.v3.AddRepoMembersRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddRepoMembersResponse`
@@ -692,6 +727,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -726,6 +763,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddRepoMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -740,6 +778,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRepoMember
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepoMemberRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteRepoMemberResponse`
@@ -752,6 +791,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -786,6 +827,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRepoMemberResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -800,6 +842,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRepoMembers
         :type request: :class:`huaweicloudsdkcodehub.v3.ListRepoMembersRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListRepoMembersResponse`
@@ -812,6 +855,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -850,6 +895,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRepoMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -864,6 +910,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetRepoRole
         :type request: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleResponse`
@@ -876,6 +923,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -912,6 +961,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetRepoRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -926,6 +976,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddDeployKey
         :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyResponse`
@@ -938,6 +989,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -972,6 +1025,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeployKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -986,6 +1040,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddDeployKeyV2
         :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyV2Response`
@@ -998,6 +1053,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1032,6 +1089,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeployKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1046,6 +1104,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddProtectBranchV2
         :type request: :class:`huaweicloudsdkcodehub.v3.AddProtectBranchV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddProtectBranchV2Response`
@@ -1058,6 +1117,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1094,6 +1155,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddProtectBranchV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1108,6 +1170,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddTagV2
         :type request: :class:`huaweicloudsdkcodehub.v3.AddTagV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddTagV2Response`
@@ -1120,6 +1183,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1154,6 +1219,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddTagV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1168,6 +1234,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRepository
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateRepositoryRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateRepositoryResponse`
@@ -1180,6 +1247,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1212,6 +1281,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRepositoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1226,6 +1296,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeployKey
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyResponse`
@@ -1238,6 +1309,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1272,6 +1345,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeployKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1286,6 +1360,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeployKeyV2
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyV2Response`
@@ -1298,6 +1373,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1332,6 +1409,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeployKeyV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1346,6 +1424,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRepository
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepositoryRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteRepositoryResponse`
@@ -1358,6 +1437,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1390,6 +1471,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRepositoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1404,6 +1486,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GetRepositoryByProjectId
         :type request: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdResponse`
@@ -1416,6 +1499,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1448,6 +1533,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GetRepositoryByProjectIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1462,6 +1548,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for GetTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.GetTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetTemplatesResponse`
@@ -1474,6 +1561,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1526,6 +1615,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='GetTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1540,6 +1630,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBranchesByRepositoryId
         :type request: :class:`huaweicloudsdkcodehub.v3.ListBranchesByRepositoryIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListBranchesByRepositoryIdResponse`
@@ -1552,6 +1643,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1590,6 +1683,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBranchesByRepositoryIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1604,6 +1698,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCommitStatistics
         :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitStatisticsRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListCommitStatisticsResponse`
@@ -1616,6 +1711,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1650,6 +1747,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCommitStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1664,6 +1762,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFiles
         :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListFilesResponse`
@@ -1676,6 +1775,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1712,6 +1813,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1726,6 +1828,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMergeRequest
         :type request: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestResponse`
@@ -1738,6 +1841,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1778,6 +1883,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMergeRequestResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1792,6 +1898,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRepositoryStatus
         :type request: :class:`huaweicloudsdkcodehub.v3.ListRepositoryStatusRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListRepositoryStatusResponse`
@@ -1804,6 +1911,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1836,6 +1945,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRepositoryStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1850,6 +1960,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSubfiles
         :type request: :class:`huaweicloudsdkcodehub.v3.ListSubfilesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListSubfilesResponse`
@@ -1862,6 +1973,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1902,6 +2015,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubfilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1916,6 +2030,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplatesTwo
         :type request: :class:`huaweicloudsdkcodehub.v3.ListTemplatesTwoRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListTemplatesTwoResponse`
@@ -1928,6 +2043,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1962,6 +2079,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesTwoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1976,6 +2094,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTwoTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.ListTwoTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListTwoTemplatesResponse`
@@ -1988,6 +2107,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2040,6 +2161,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTwoTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2054,6 +2176,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShareTemplates
         :type request: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesResponse`
@@ -2066,6 +2189,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2100,6 +2225,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShareTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2114,6 +2240,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBranchesByRepositoryId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByRepositoryIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByRepositoryIdResponse`
@@ -2126,6 +2253,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2158,6 +2287,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBranchesByRepositoryIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2172,6 +2302,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBranchesByTwoRepositoryId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByTwoRepositoryIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByTwoRepositoryIdResponse`
@@ -2184,6 +2315,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2216,6 +2349,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBranchesByTwoRepositoryIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2230,6 +2364,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCommitsByBranch
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByBranchRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByBranchResponse`
@@ -2242,6 +2377,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2282,6 +2419,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCommitsByBranchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2296,6 +2434,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCommitsByRepoId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByRepoIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByRepoIdResponse`
@@ -2308,6 +2447,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2358,6 +2499,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCommitsByRepoIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2372,6 +2514,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHasPipeline
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowHasPipelineRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowHasPipelineResponse`
@@ -2384,6 +2527,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2416,6 +2561,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHasPipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2430,6 +2576,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowImageBlob
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowImageBlobRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowImageBlobResponse`
@@ -2442,6 +2589,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2478,6 +2627,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowImageBlobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2492,6 +2642,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMaster
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowMasterRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowMasterResponse`
@@ -2504,6 +2655,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2536,6 +2689,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMasterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2550,6 +2704,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMergeRequest
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowMergeRequestRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowMergeRequestResponse`
@@ -2562,6 +2717,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2596,6 +2753,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMergeRequestResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2610,6 +2768,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRepoId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepoIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepoIdResponse`
@@ -2622,6 +2781,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2656,6 +2817,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepoIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2670,6 +2832,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRepositoryArchive
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryArchiveRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryArchiveResponse`
@@ -2682,6 +2845,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2718,6 +2883,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryArchiveResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2732,6 +2898,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRepositoryByUuid
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryByUuidRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryByUuidResponse`
@@ -2744,6 +2911,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2776,6 +2945,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryByUuidResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2790,6 +2960,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRepositoryStatistics
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsResponse`
@@ -2802,6 +2973,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2836,6 +3009,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2850,6 +3024,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowStatisticCommit
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitResponse`
@@ -2862,6 +3037,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2900,6 +3077,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStatisticCommitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2914,6 +3092,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowStatisticCommitV3
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitV3Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitV3Response`
@@ -2926,6 +3105,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2964,6 +3145,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStatisticCommitV3Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2978,6 +3160,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowStatisticalData
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticalDataRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticalDataResponse`
@@ -2990,6 +3173,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3022,6 +3207,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStatisticalDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3036,6 +3222,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddSshKey
         :type request: :class:`huaweicloudsdkcodehub.v3.AddSshKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddSshKeyResponse`
@@ -3048,6 +3235,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3080,6 +3269,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddSshKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3094,6 +3284,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSShkey
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyResponse`
@@ -3106,6 +3297,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3138,6 +3331,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSShkeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3152,6 +3346,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSshKeys
         :type request: :class:`huaweicloudsdkcodehub.v3.ListSshKeysRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListSshKeysResponse`
@@ -3164,6 +3359,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3194,6 +3391,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSshKeysResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3208,6 +3406,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPrivateKeyVerify
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowPrivateKeyVerifyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowPrivateKeyVerifyResponse`
@@ -3220,6 +3419,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3252,6 +3453,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPrivateKeyVerifyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3266,6 +3468,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ValidateHttpsInfo
         :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoResponse`
@@ -3278,6 +3481,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3312,6 +3517,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateHttpsInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3326,6 +3532,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ValidateHttpsInfoV2
         :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoV2Response`
@@ -3338,6 +3545,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3372,6 +3581,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateHttpsInfoV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3386,6 +3596,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateIssues
         :type request: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesResponse`
@@ -3398,6 +3609,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3430,6 +3643,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateIssuesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3444,6 +3658,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProjectAndRepositories
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndRepositoriesResponse`
@@ -3456,6 +3671,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3488,6 +3705,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectAndRepositoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3502,6 +3720,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProjectAndforkRepositories
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndforkRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndforkRepositoriesResponse`
@@ -3514,6 +3733,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3546,6 +3767,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectAndforkRepositoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3560,6 +3782,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUserAllRepositories
         :type request: :class:`huaweicloudsdkcodehub.v3.ListUserAllRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListUserAllRepositoriesResponse`
@@ -3572,6 +3795,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3608,6 +3833,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserAllRepositoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3622,6 +3848,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAllRepositoryByTwoProjectId
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowAllRepositoryByTwoProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowAllRepositoryByTwoProjectIdResponse`
@@ -3634,6 +3861,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3672,6 +3901,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAllRepositoryByTwoProjectIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3686,6 +3916,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddHooks
         :type request: :class:`huaweicloudsdkcodehub.v3.AddHooksRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddHooksResponse`
@@ -3698,6 +3929,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3734,6 +3967,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3748,6 +3982,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteHooks
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteHooksRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteHooksResponse`
@@ -3760,6 +3995,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3796,6 +4033,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3810,6 +4048,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHooks
         :type request: :class:`huaweicloudsdkcodehub.v3.ListHooksRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListHooksResponse`
@@ -3822,6 +4061,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3858,6 +4099,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3872,6 +4114,7 @@ class CodeHubAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNewBranch
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchResponse`
@@ -3884,6 +4127,8 @@ class CodeHubAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3918,6 +4163,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNewBranchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3925,7 +4171,7 @@ class CodeHubAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3936,9 +4182,10 @@ class CodeHubAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3955,6 +4202,7 @@ class CodeHubAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

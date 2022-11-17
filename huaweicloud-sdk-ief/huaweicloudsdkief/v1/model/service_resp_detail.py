@@ -17,7 +17,6 @@ class ServiceRespDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -122,7 +121,6 @@ class ServiceRespDetail:
     def meta_data(self):
         """Gets the meta_data of this ServiceRespDetail.
 
-
         :return: The meta_data of this ServiceRespDetail.
         :rtype: :class:`huaweicloudsdkief.v1.SvcMetadata`
         """
@@ -131,7 +129,6 @@ class ServiceRespDetail:
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this ServiceRespDetail.
-
 
         :param meta_data: The meta_data of this ServiceRespDetail.
         :type meta_data: :class:`huaweicloudsdkief.v1.SvcMetadata`
@@ -164,7 +161,6 @@ class ServiceRespDetail:
     def spec(self):
         """Gets the spec of this ServiceRespDetail.
 
-
         :return: The spec of this ServiceRespDetail.
         :rtype: :class:`huaweicloudsdkief.v1.SvcSpec`
         """
@@ -173,7 +169,6 @@ class ServiceRespDetail:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ServiceRespDetail.
-
 
         :param spec: The spec of this ServiceRespDetail.
         :type spec: :class:`huaweicloudsdkief.v1.SvcSpec`

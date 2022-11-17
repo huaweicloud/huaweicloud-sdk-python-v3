@@ -17,7 +17,6 @@ class ShowDeviceStatusResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDeviceStatusResponse(SdkResponse):
     def body(self):
         """Gets the body of this ShowDeviceStatusResponse.
 
-
         :return: The body of this ShowDeviceStatusResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.UserStatusDTO`]
         """
@@ -58,7 +56,6 @@ class ShowDeviceStatusResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ShowDeviceStatusResponse.
-
 
         :param body: The body of this ShowDeviceStatusResponse.
         :type body: list[:class:`huaweicloudsdkmeeting.v1.UserStatusDTO`]

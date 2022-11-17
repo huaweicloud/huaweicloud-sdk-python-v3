@@ -17,7 +17,6 @@ class CreateListenerRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateListenerRequestBody:
     def listener(self):
         """Gets the listener of this CreateListenerRequestBody.
 
-
         :return: The listener of this CreateListenerRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.CreateListenerOption`
         """
@@ -57,7 +55,6 @@ class CreateListenerRequestBody:
     @listener.setter
     def listener(self, listener):
         """Sets the listener of this CreateListenerRequestBody.
-
 
         :param listener: The listener of this CreateListenerRequestBody.
         :type listener: :class:`huaweicloudsdkga.v1.CreateListenerOption`

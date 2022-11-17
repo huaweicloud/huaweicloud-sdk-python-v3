@@ -17,7 +17,6 @@ class CreatePrivateZoneReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -205,7 +204,6 @@ class CreatePrivateZoneReq:
     def router(self):
         """Gets the router of this CreatePrivateZoneReq.
 
-
         :return: The router of this CreatePrivateZoneReq.
         :rtype: :class:`huaweicloudsdkdns.v2.Router`
         """
@@ -214,7 +212,6 @@ class CreatePrivateZoneReq:
     @router.setter
     def router(self, router):
         """Sets the router of this CreatePrivateZoneReq.
-
 
         :param router: The router of this CreatePrivateZoneReq.
         :type router: :class:`huaweicloudsdkdns.v2.Router`

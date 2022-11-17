@@ -17,7 +17,6 @@ class ShowServerBlockDeviceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowServerBlockDeviceResponse(SdkResponse):
     def volume_attachment(self):
         """Gets the volume_attachment of this ShowServerBlockDeviceResponse.
 
-
         :return: The volume_attachment of this ShowServerBlockDeviceResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerBlockDevice`
         """
@@ -58,7 +56,6 @@ class ShowServerBlockDeviceResponse(SdkResponse):
     @volume_attachment.setter
     def volume_attachment(self, volume_attachment):
         """Sets the volume_attachment of this ShowServerBlockDeviceResponse.
-
 
         :param volume_attachment: The volume_attachment of this ShowServerBlockDeviceResponse.
         :type volume_attachment: :class:`huaweicloudsdkecs.v2.ServerBlockDevice`

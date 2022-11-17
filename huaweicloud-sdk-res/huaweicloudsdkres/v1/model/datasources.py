@@ -17,7 +17,6 @@ class Datasources:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -215,7 +214,6 @@ class Datasources:
     def data_config(self):
         """Gets the data_config of this Datasources.
 
-
         :return: The data_config of this Datasources.
         :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
         """
@@ -224,7 +222,6 @@ class Datasources:
     @data_config.setter
     def data_config(self, data_config):
         """Sets the data_config of this Datasources.
-
 
         :param data_config: The data_config of this Datasources.
         :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
@@ -235,7 +232,6 @@ class Datasources:
     def specs_config(self):
         """Gets the specs_config of this Datasources.
 
-
         :return: The specs_config of this Datasources.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
@@ -244,7 +240,6 @@ class Datasources:
     @specs_config.setter
     def specs_config(self, specs_config):
         """Sets the specs_config of this Datasources.
-
 
         :param specs_config: The specs_config of this Datasources.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`

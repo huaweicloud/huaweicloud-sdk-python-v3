@@ -17,7 +17,6 @@ class CreateNatGatewayRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateNatGatewayRequestBody:
     def nat_gateway(self):
         """Gets the nat_gateway of this CreateNatGatewayRequestBody.
 
-
         :return: The nat_gateway of this CreateNatGatewayRequestBody.
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayOption`
         """
@@ -57,7 +55,6 @@ class CreateNatGatewayRequestBody:
     @nat_gateway.setter
     def nat_gateway(self, nat_gateway):
         """Sets the nat_gateway of this CreateNatGatewayRequestBody.
-
 
         :param nat_gateway: The nat_gateway of this CreateNatGatewayRequestBody.
         :type nat_gateway: :class:`huaweicloudsdknat.v2.CreateNatGatewayOption`

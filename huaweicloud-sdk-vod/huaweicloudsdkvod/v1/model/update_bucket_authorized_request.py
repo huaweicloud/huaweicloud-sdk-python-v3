@@ -17,7 +17,6 @@ class UpdateBucketAuthorizedRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateBucketAuthorizedRequest:
     def body(self):
         """Gets the body of this UpdateBucketAuthorizedRequest.
 
-
         :return: The body of this UpdateBucketAuthorizedRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedReq`
         """
@@ -58,7 +56,6 @@ class UpdateBucketAuthorizedRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateBucketAuthorizedRequest.
-
 
         :param body: The body of this UpdateBucketAuthorizedRequest.
         :type body: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedReq`

@@ -17,7 +17,6 @@ class ShowResponseHeaderResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowResponseHeaderResponse(SdkResponse):
     def headers(self):
         """Gets the headers of this ShowResponseHeaderResponse.
 
-
         :return: The headers of this ShowResponseHeaderResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.HeaderMap`
         """
@@ -58,7 +56,6 @@ class ShowResponseHeaderResponse(SdkResponse):
     @headers.setter
     def headers(self, headers):
         """Sets the headers of this ShowResponseHeaderResponse.
-
 
         :param headers: The headers of this ShowResponseHeaderResponse.
         :type headers: :class:`huaweicloudsdkcdn.v1.HeaderMap`

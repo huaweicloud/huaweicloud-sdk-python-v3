@@ -17,7 +17,6 @@ class UpdateSubnetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateSubnetResponse(SdkResponse):
     def subnet(self):
         """Gets the subnet of this UpdateSubnetResponse.
 
-
         :return: The subnet of this UpdateSubnetResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateSubnetResponseObject`
         """
@@ -58,7 +56,6 @@ class UpdateSubnetResponse(SdkResponse):
     @subnet.setter
     def subnet(self, subnet):
         """Sets the subnet of this UpdateSubnetResponse.
-
 
         :param subnet: The subnet of this UpdateSubnetResponse.
         :type subnet: :class:`huaweicloudsdkiec.v1.UpdateSubnetResponseObject`

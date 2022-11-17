@@ -17,7 +17,6 @@ class ListLogsJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListLogsJobResponse(SdkResponse):
     def cluster_log_record(self):
         """Gets the cluster_log_record of this ListLogsJobResponse.
 
-
         :return: The cluster_log_record of this ListLogsJobResponse.
         :rtype: list[:class:`huaweicloudsdkcss.v1.ClusterLogRecord`]
         """
@@ -58,7 +56,6 @@ class ListLogsJobResponse(SdkResponse):
     @cluster_log_record.setter
     def cluster_log_record(self, cluster_log_record):
         """Sets the cluster_log_record of this ListLogsJobResponse.
-
 
         :param cluster_log_record: The cluster_log_record of this ListLogsJobResponse.
         :type cluster_log_record: list[:class:`huaweicloudsdkcss.v1.ClusterLogRecord`]

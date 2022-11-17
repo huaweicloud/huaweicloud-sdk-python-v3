@@ -17,7 +17,6 @@ class ListConsumeSubCustomersRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListConsumeSubCustomersRequest:
     def body(self):
         """Gets the body of this ListConsumeSubCustomersRequest.
 
-
         :return: The body of this ListConsumeSubCustomersRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.ListConsumeSubCustomersReq`
         """
@@ -87,7 +85,6 @@ class ListConsumeSubCustomersRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListConsumeSubCustomersRequest.
-
 
         :param body: The body of this ListConsumeSubCustomersRequest.
         :type body: :class:`huaweicloudsdkbss.v2.ListConsumeSubCustomersReq`

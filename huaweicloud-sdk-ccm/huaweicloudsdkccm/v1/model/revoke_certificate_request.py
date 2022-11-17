@@ -17,7 +17,6 @@ class RevokeCertificateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RevokeCertificateRequest:
     def body(self):
         """Gets the body of this RevokeCertificateRequest.
 
-
         :return: The body of this RevokeCertificateRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequestBody`
         """
@@ -86,7 +84,6 @@ class RevokeCertificateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RevokeCertificateRequest.
-
 
         :param body: The body of this RevokeCertificateRequest.
         :type body: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequestBody`

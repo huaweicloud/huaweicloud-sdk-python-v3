@@ -17,7 +17,6 @@ class CreateDomainMappingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateDomainMappingRequest:
     def body(self):
         """Gets the body of this CreateDomainMappingRequest.
 
-
         :return: The body of this CreateDomainMappingRequest.
         :rtype: :class:`huaweicloudsdklive.v1.DomainMapping`
         """
@@ -58,7 +56,6 @@ class CreateDomainMappingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDomainMappingRequest.
-
 
         :param body: The body of this CreateDomainMappingRequest.
         :type body: :class:`huaweicloudsdklive.v1.DomainMapping`

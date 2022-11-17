@@ -17,7 +17,6 @@ class UpdateRequestPropertyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -161,7 +160,6 @@ class UpdateRequestPropertyRequest:
     def body(self):
         """Gets the body of this UpdateRequestPropertyRequest.
 
-
         :return: The body of this UpdateRequestPropertyRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequestBody`
         """
@@ -170,7 +168,6 @@ class UpdateRequestPropertyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateRequestPropertyRequest.
-
 
         :param body: The body of this UpdateRequestPropertyRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequestBody`

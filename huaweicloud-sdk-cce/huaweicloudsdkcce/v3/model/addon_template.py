@@ -17,7 +17,6 @@ class AddonTemplate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -110,7 +109,6 @@ class AddonTemplate:
     def metadata(self):
         """Gets the metadata of this AddonTemplate.
 
-
         :return: The metadata of this AddonTemplate.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
@@ -119,7 +117,6 @@ class AddonTemplate:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this AddonTemplate.
-
 
         :param metadata: The metadata of this AddonTemplate.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -130,7 +127,6 @@ class AddonTemplate:
     def spec(self):
         """Gets the spec of this AddonTemplate.
 
-
         :return: The spec of this AddonTemplate.
         :rtype: :class:`huaweicloudsdkcce.v3.Templatespec`
         """
@@ -139,7 +135,6 @@ class AddonTemplate:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this AddonTemplate.
-
 
         :param spec: The spec of this AddonTemplate.
         :type spec: :class:`huaweicloudsdkcce.v3.Templatespec`

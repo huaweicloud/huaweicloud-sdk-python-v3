@@ -17,7 +17,6 @@ class UpdateTaskStatusRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -138,7 +137,6 @@ class UpdateTaskStatusRequestBody:
     def network_info(self):
         """Gets the network_info of this UpdateTaskStatusRequestBody.
 
-
         :return: The network_info of this UpdateTaskStatusRequestBody.
         :rtype: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
         """
@@ -147,7 +145,6 @@ class UpdateTaskStatusRequestBody:
     @network_info.setter
     def network_info(self, network_info):
         """Sets the network_info of this UpdateTaskStatusRequestBody.
-
 
         :param network_info: The network_info of this UpdateTaskStatusRequestBody.
         :type network_info: :class:`huaweicloudsdkcpts.v1.NetworkInfo`

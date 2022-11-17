@@ -17,7 +17,6 @@ class AddFacesByUrlRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AddFacesByUrlRequest:
     def body(self):
         """Gets the body of this AddFacesByUrlRequest.
 
-
         :return: The body of this AddFacesByUrlRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesUrlReq`
         """
@@ -86,7 +84,6 @@ class AddFacesByUrlRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddFacesByUrlRequest.
-
 
         :param body: The body of this AddFacesByUrlRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.AddFacesUrlReq`

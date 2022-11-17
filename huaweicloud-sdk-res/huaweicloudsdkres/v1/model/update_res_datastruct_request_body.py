@@ -17,7 +17,6 @@ class UpdateResDatastructRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class UpdateResDatastructRequestBody:
     def data_config(self):
         """Gets the data_config of this UpdateResDatastructRequestBody.
 
-
         :return: The data_config of this UpdateResDatastructRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
         """
@@ -91,7 +89,6 @@ class UpdateResDatastructRequestBody:
     @data_config.setter
     def data_config(self, data_config):
         """Sets the data_config of this UpdateResDatastructRequestBody.
-
 
         :param data_config: The data_config of this UpdateResDatastructRequestBody.
         :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
@@ -102,7 +99,6 @@ class UpdateResDatastructRequestBody:
     def specs_config(self):
         """Gets the specs_config of this UpdateResDatastructRequestBody.
 
-
         :return: The specs_config of this UpdateResDatastructRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
@@ -111,7 +107,6 @@ class UpdateResDatastructRequestBody:
     @specs_config.setter
     def specs_config(self, specs_config):
         """Sets the specs_config of this UpdateResDatastructRequestBody.
-
 
         :param specs_config: The specs_config of this UpdateResDatastructRequestBody.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`

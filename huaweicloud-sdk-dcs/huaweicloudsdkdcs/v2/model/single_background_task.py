@@ -17,7 +17,6 @@ class SingleBackgroundTask:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -156,7 +155,6 @@ class SingleBackgroundTask:
     def details(self):
         """Gets the details of this SingleBackgroundTask.
 
-
         :return: The details of this SingleBackgroundTask.
         :rtype: :class:`huaweicloudsdkdcs.v2.DetailsBody`
         """
@@ -165,7 +163,6 @@ class SingleBackgroundTask:
     @details.setter
     def details(self, details):
         """Sets the details of this SingleBackgroundTask.
-
 
         :param details: The details of this SingleBackgroundTask.
         :type details: :class:`huaweicloudsdkdcs.v2.DetailsBody`

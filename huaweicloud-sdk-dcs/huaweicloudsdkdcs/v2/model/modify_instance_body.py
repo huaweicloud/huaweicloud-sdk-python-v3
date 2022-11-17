@@ -17,7 +17,6 @@ class ModifyInstanceBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class ModifyInstanceBody:
     def rename_commands(self):
         """Gets the rename_commands of this ModifyInstanceBody.
 
-
         :return: The rename_commands of this ModifyInstanceBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.RenameCommandResp`
         """
@@ -173,7 +171,6 @@ class ModifyInstanceBody:
     @rename_commands.setter
     def rename_commands(self, rename_commands):
         """Sets the rename_commands of this ModifyInstanceBody.
-
 
         :param rename_commands: The rename_commands of this ModifyInstanceBody.
         :type rename_commands: :class:`huaweicloudsdkdcs.v2.RenameCommandResp`
@@ -250,7 +247,6 @@ class ModifyInstanceBody:
     def instance_backup_policy(self):
         """Gets the instance_backup_policy of this ModifyInstanceBody.
 
-
         :return: The instance_backup_policy of this ModifyInstanceBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupPolicy`
         """
@@ -259,7 +255,6 @@ class ModifyInstanceBody:
     @instance_backup_policy.setter
     def instance_backup_policy(self, instance_backup_policy):
         """Sets the instance_backup_policy of this ModifyInstanceBody.
-
 
         :param instance_backup_policy: The instance_backup_policy of this ModifyInstanceBody.
         :type instance_backup_policy: :class:`huaweicloudsdkdcs.v2.BackupPolicy`

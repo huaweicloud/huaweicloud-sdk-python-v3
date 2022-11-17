@@ -17,7 +17,6 @@ class ResExecConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ResExecConfig:
     def spark_calc_spec(self):
         """Gets the spark_calc_spec of this ResExecConfig.
 
-
         :return: The spark_calc_spec of this ResExecConfig.
         :rtype: :class:`huaweicloudsdkres.v1.SparkCalcSpec`
         """
@@ -65,7 +63,6 @@ class ResExecConfig:
     @spark_calc_spec.setter
     def spark_calc_spec(self, spark_calc_spec):
         """Sets the spark_calc_spec of this ResExecConfig.
-
 
         :param spark_calc_spec: The spark_calc_spec of this ResExecConfig.
         :type spark_calc_spec: :class:`huaweicloudsdkres.v1.SparkCalcSpec`

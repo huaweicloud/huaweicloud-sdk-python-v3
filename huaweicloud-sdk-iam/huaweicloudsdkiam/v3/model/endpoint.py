@@ -17,7 +17,6 @@ class Endpoint:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class Endpoint:
     def links(self):
         """Gets the links of this Endpoint.
 
-
         :return: The links of this Endpoint.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
@@ -143,7 +141,6 @@ class Endpoint:
     @links.setter
     def links(self, links):
         """Sets the links of this Endpoint.
-
 
         :param links: The links of this Endpoint.
         :type links: :class:`huaweicloudsdkiam.v3.Links`

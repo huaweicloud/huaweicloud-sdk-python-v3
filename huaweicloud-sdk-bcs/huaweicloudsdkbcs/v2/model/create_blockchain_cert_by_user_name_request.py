@@ -17,7 +17,6 @@ class CreateBlockchainCertByUserNameRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class CreateBlockchainCertByUserNameRequest:
     def body(self):
         """Gets the body of this CreateBlockchainCertByUserNameRequest.
 
-
         :return: The body of this CreateBlockchainCertByUserNameRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameRequestBody`
         """
@@ -142,7 +140,6 @@ class CreateBlockchainCertByUserNameRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateBlockchainCertByUserNameRequest.
-
 
         :param body: The body of this CreateBlockchainCertByUserNameRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameRequestBody`

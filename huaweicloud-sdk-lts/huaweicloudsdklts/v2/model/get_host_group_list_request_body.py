@@ -17,7 +17,6 @@ class GetHostGroupListRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class GetHostGroupListRequestBody:
     def filter(self):
         """Gets the filter of this GetHostGroupListRequestBody.
 
-
         :return: The filter of this GetHostGroupListRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.GetHostGroupListFilter`
         """
@@ -85,7 +83,6 @@ class GetHostGroupListRequestBody:
     @filter.setter
     def filter(self, filter):
         """Sets the filter of this GetHostGroupListRequestBody.
-
 
         :param filter: The filter of this GetHostGroupListRequestBody.
         :type filter: :class:`huaweicloudsdklts.v2.GetHostGroupListFilter`

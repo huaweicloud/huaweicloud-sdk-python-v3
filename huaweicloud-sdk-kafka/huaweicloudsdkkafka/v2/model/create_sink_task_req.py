@@ -17,7 +17,6 @@ class CreateSinkTaskReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -132,7 +131,6 @@ class CreateSinkTaskReq:
     def obs_destination_descriptor(self):
         """Gets the obs_destination_descriptor of this CreateSinkTaskReq.
 
-
         :return: The obs_destination_descriptor of this CreateSinkTaskReq.
         :rtype: :class:`huaweicloudsdkkafka.v2.ObsDestinationDescriptor`
         """
@@ -141,7 +139,6 @@ class CreateSinkTaskReq:
     @obs_destination_descriptor.setter
     def obs_destination_descriptor(self, obs_destination_descriptor):
         """Sets the obs_destination_descriptor of this CreateSinkTaskReq.
-
 
         :param obs_destination_descriptor: The obs_destination_descriptor of this CreateSinkTaskReq.
         :type obs_destination_descriptor: :class:`huaweicloudsdkkafka.v2.ObsDestinationDescriptor`

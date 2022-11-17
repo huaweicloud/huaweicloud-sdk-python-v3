@@ -17,7 +17,6 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeMainlandTravelPermitResponse.
 
-
         :return: The result of this RecognizeMainlandTravelPermitResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitResult`
         """
@@ -58,7 +56,6 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeMainlandTravelPermitResponse.
-
 
         :param result: The result of this RecognizeMainlandTravelPermitResponse.
         :type result: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitResult`

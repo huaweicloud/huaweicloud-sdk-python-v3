@@ -17,7 +17,6 @@ class ShowPipelineJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowPipelineJobResponse(SdkResponse):
     def pipeline_info(self):
         """Gets the pipeline_info of this ShowPipelineJobResponse.
 
-
         :return: The pipeline_info of this ShowPipelineJobResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`
         """
@@ -87,7 +85,6 @@ class ShowPipelineJobResponse(SdkResponse):
     @pipeline_info.setter
     def pipeline_info(self, pipeline_info):
         """Sets the pipeline_info of this ShowPipelineJobResponse.
-
 
         :param pipeline_info: The pipeline_info of this ShowPipelineJobResponse.
         :type pipeline_info: :class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`

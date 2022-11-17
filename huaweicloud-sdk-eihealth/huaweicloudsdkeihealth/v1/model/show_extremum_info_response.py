@@ -17,7 +17,6 @@ class ShowExtremumInfoResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowExtremumInfoResponse(SdkResponse):
     def maximum(self):
         """Gets the maximum of this ShowExtremumInfoResponse.
 
-
         :return: The maximum of this ShowExtremumInfoResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ExtremumDto`
         """
@@ -65,7 +63,6 @@ class ShowExtremumInfoResponse(SdkResponse):
     @maximum.setter
     def maximum(self, maximum):
         """Sets the maximum of this ShowExtremumInfoResponse.
-
 
         :param maximum: The maximum of this ShowExtremumInfoResponse.
         :type maximum: :class:`huaweicloudsdkeihealth.v1.ExtremumDto`
@@ -76,7 +73,6 @@ class ShowExtremumInfoResponse(SdkResponse):
     def minimum(self):
         """Gets the minimum of this ShowExtremumInfoResponse.
 
-
         :return: The minimum of this ShowExtremumInfoResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ExtremumDto`
         """
@@ -85,7 +81,6 @@ class ShowExtremumInfoResponse(SdkResponse):
     @minimum.setter
     def minimum(self, minimum):
         """Sets the minimum of this ShowExtremumInfoResponse.
-
 
         :param minimum: The minimum of this ShowExtremumInfoResponse.
         :type minimum: :class:`huaweicloudsdkeihealth.v1.ExtremumDto`

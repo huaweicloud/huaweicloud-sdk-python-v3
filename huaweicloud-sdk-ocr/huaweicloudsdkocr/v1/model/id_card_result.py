@@ -17,7 +17,6 @@ class IdCardResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -331,7 +330,6 @@ class IdCardResult:
     def verification_result(self):
         """Gets the verification_result of this IdCardResult.
 
-
         :return: The verification_result of this IdCardResult.
         :rtype: :class:`huaweicloudsdkocr.v1.IdcardVerificationResult`
         """
@@ -340,7 +338,6 @@ class IdCardResult:
     @verification_result.setter
     def verification_result(self, verification_result):
         """Sets the verification_result of this IdCardResult.
-
 
         :param verification_result: The verification_result of this IdCardResult.
         :type verification_result: :class:`huaweicloudsdkocr.v1.IdcardVerificationResult`

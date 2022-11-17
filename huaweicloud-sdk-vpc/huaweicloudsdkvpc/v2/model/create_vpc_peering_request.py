@@ -17,7 +17,6 @@ class CreateVpcPeeringRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateVpcPeeringRequest:
     def body(self):
         """Gets the body of this CreateVpcPeeringRequest.
 
-
         :return: The body of this CreateVpcPeeringRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateVpcPeeringRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateVpcPeeringRequest.
-
 
         :param body: The body of this CreateVpcPeeringRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringRequestBody`

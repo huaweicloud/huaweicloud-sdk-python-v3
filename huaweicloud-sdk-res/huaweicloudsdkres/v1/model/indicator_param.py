@@ -17,7 +17,6 @@ class IndicatorParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class IndicatorParam:
     def customize_parameter(self):
         """Gets the customize_parameter of this IndicatorParam.
 
-
         :return: The customize_parameter of this IndicatorParam.
         :rtype: :class:`huaweicloudsdkres.v1.CustomizeParameter`
         """
@@ -65,7 +63,6 @@ class IndicatorParam:
     @customize_parameter.setter
     def customize_parameter(self, customize_parameter):
         """Sets the customize_parameter of this IndicatorParam.
-
 
         :param customize_parameter: The customize_parameter of this IndicatorParam.
         :type customize_parameter: :class:`huaweicloudsdkres.v1.CustomizeParameter`
@@ -76,7 +73,6 @@ class IndicatorParam:
     def customize_formula(self):
         """Gets the customize_formula of this IndicatorParam.
 
-
         :return: The customize_formula of this IndicatorParam.
         :rtype: :class:`huaweicloudsdkres.v1.CustomizeFormula`
         """
@@ -85,7 +81,6 @@ class IndicatorParam:
     @customize_formula.setter
     def customize_formula(self, customize_formula):
         """Sets the customize_formula of this IndicatorParam.
-
 
         :param customize_formula: The customize_formula of this IndicatorParam.
         :type customize_formula: :class:`huaweicloudsdkres.v1.CustomizeFormula`

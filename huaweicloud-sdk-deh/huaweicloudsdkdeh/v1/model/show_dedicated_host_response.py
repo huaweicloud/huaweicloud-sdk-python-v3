@@ -17,7 +17,6 @@ class ShowDedicatedHostResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDedicatedHostResponse(SdkResponse):
     def dedicated_host(self):
         """Gets the dedicated_host of this ShowDedicatedHostResponse.
 
-
         :return: The dedicated_host of this ShowDedicatedHostResponse.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespDedicatedHost`
         """
@@ -58,7 +56,6 @@ class ShowDedicatedHostResponse(SdkResponse):
     @dedicated_host.setter
     def dedicated_host(self, dedicated_host):
         """Sets the dedicated_host of this ShowDedicatedHostResponse.
-
 
         :param dedicated_host: The dedicated_host of this ShowDedicatedHostResponse.
         :type dedicated_host: :class:`huaweicloudsdkdeh.v1.RespDedicatedHost`

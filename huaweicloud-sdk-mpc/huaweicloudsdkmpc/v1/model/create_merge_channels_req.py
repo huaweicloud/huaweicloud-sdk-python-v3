@@ -17,7 +17,6 @@ class CreateMergeChannelsReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateMergeChannelsReq:
     def multi_audio(self):
         """Gets the multi_audio of this CreateMergeChannelsReq.
 
-
         :return: The multi_audio of this CreateMergeChannelsReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.MpcMultiAudio`
         """
@@ -58,7 +56,6 @@ class CreateMergeChannelsReq:
     @multi_audio.setter
     def multi_audio(self, multi_audio):
         """Sets the multi_audio of this CreateMergeChannelsReq.
-
 
         :param multi_audio: The multi_audio of this CreateMergeChannelsReq.
         :type multi_audio: :class:`huaweicloudsdkmpc.v1.MpcMultiAudio`

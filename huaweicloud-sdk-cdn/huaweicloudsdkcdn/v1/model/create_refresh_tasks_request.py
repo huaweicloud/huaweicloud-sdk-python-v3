@@ -17,7 +17,6 @@ class CreateRefreshTasksRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateRefreshTasksRequest:
     def body(self):
         """Gets the body of this CreateRefreshTasksRequest.
 
-
         :return: The body of this CreateRefreshTasksRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequest`
         """
@@ -87,7 +85,6 @@ class CreateRefreshTasksRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRefreshTasksRequest.
-
 
         :param body: The body of this CreateRefreshTasksRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequest`

@@ -17,7 +17,6 @@ class AllowSqlserverDbUserPrivilegeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class AllowSqlserverDbUserPrivilegeRequest:
     def body(self):
         """Gets the body of this AllowSqlserverDbUserPrivilegeRequest.
 
-
         :return: The body of this AllowSqlserverDbUserPrivilegeRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SqlserverGrantRequest`
         """
@@ -115,7 +113,6 @@ class AllowSqlserverDbUserPrivilegeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AllowSqlserverDbUserPrivilegeRequest.
-
 
         :param body: The body of this AllowSqlserverDbUserPrivilegeRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SqlserverGrantRequest`

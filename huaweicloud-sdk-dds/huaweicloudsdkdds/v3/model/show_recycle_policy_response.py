@@ -17,7 +17,6 @@ class ShowRecyclePolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowRecyclePolicyResponse(SdkResponse):
     def recycle_policy(self):
         """Gets the recycle_policy of this ShowRecyclePolicyResponse.
 
-
         :return: The recycle_policy of this ShowRecyclePolicyResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.RecyclePolicy`
         """
@@ -58,7 +56,6 @@ class ShowRecyclePolicyResponse(SdkResponse):
     @recycle_policy.setter
     def recycle_policy(self, recycle_policy):
         """Sets the recycle_policy of this ShowRecyclePolicyResponse.
-
 
         :param recycle_policy: The recycle_policy of this ShowRecyclePolicyResponse.
         :type recycle_policy: :class:`huaweicloudsdkdds.v3.RecyclePolicy`

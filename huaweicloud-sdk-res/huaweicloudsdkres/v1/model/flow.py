@@ -17,7 +17,6 @@ class Flow:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -241,7 +240,6 @@ class Flow:
     def attribute_info(self):
         """Gets the attribute_info of this Flow.
 
-
         :return: The attribute_info of this Flow.
         :rtype: :class:`huaweicloudsdkres.v1.AttributeInfo`
         """
@@ -250,7 +248,6 @@ class Flow:
     @attribute_info.setter
     def attribute_info(self, attribute_info):
         """Sets the attribute_info of this Flow.
-
 
         :param attribute_info: The attribute_info of this Flow.
         :type attribute_info: :class:`huaweicloudsdkres.v1.AttributeInfo`
@@ -261,7 +258,6 @@ class Flow:
     def bloom_filter_conf(self):
         """Gets the bloom_filter_conf of this Flow.
 
-
         :return: The bloom_filter_conf of this Flow.
         :rtype: :class:`huaweicloudsdkres.v1.BloomFilterConf`
         """
@@ -270,7 +266,6 @@ class Flow:
     @bloom_filter_conf.setter
     def bloom_filter_conf(self, bloom_filter_conf):
         """Sets the bloom_filter_conf of this Flow.
-
 
         :param bloom_filter_conf: The bloom_filter_conf of this Flow.
         :type bloom_filter_conf: :class:`huaweicloudsdkres.v1.BloomFilterConf`
@@ -347,7 +342,6 @@ class Flow:
     def rules(self):
         """Gets the rules of this Flow.
 
-
         :return: The rules of this Flow.
         :rtype: :class:`huaweicloudsdkres.v1.Rule`
         """
@@ -356,7 +350,6 @@ class Flow:
     @rules.setter
     def rules(self, rules):
         """Sets the rules of this Flow.
-
 
         :param rules: The rules of this Flow.
         :type rules: :class:`huaweicloudsdkres.v1.Rule`

@@ -17,7 +17,6 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
     def token(self):
         """Gets the token of this KeystoneCreateScopedTokenResponse.
 
-
         :return: The token of this KeystoneCreateScopedTokenResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopeTokenResult`
         """
@@ -65,7 +63,6 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
     @token.setter
     def token(self, token):
         """Sets the token of this KeystoneCreateScopedTokenResponse.
-
 
         :param token: The token of this KeystoneCreateScopedTokenResponse.
         :type token: :class:`huaweicloudsdkiam.v3.ScopeTokenResult`
@@ -76,7 +73,6 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
     def x_subject_token(self):
         """Gets the x_subject_token of this KeystoneCreateScopedTokenResponse.
 
-
         :return: The x_subject_token of this KeystoneCreateScopedTokenResponse.
         :rtype: str
         """
@@ -85,7 +81,6 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
     @x_subject_token.setter
     def x_subject_token(self, x_subject_token):
         """Sets the x_subject_token of this KeystoneCreateScopedTokenResponse.
-
 
         :param x_subject_token: The x_subject_token of this KeystoneCreateScopedTokenResponse.
         :type x_subject_token: str

@@ -17,7 +17,6 @@ class CreatePostgresqlExtensionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreatePostgresqlExtensionRequest:
     def body(self):
         """Gets the body of this CreatePostgresqlExtensionRequest.
 
-
         :return: The body of this CreatePostgresqlExtensionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ExtensionRequest`
         """
@@ -115,7 +113,6 @@ class CreatePostgresqlExtensionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePostgresqlExtensionRequest.
-
 
         :param body: The body of this CreatePostgresqlExtensionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ExtensionRequest`

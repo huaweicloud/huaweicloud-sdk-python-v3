@@ -17,7 +17,6 @@ class MixJobReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -62,7 +61,6 @@ class MixJobReq:
     def mix_param(self):
         """Gets the mix_param of this MixJobReq.
 
-
         :return: The mix_param of this MixJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
         """
@@ -71,7 +69,6 @@ class MixJobReq:
     @mix_param.setter
     def mix_param(self, mix_param):
         """Sets the mix_param of this MixJobReq.
-
 
         :param mix_param: The mix_param of this MixJobReq.
         :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
@@ -82,7 +79,6 @@ class MixJobReq:
     def publish_param(self):
         """Gets the publish_param of this MixJobReq.
 
-
         :return: The publish_param of this MixJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
         """
@@ -91,7 +87,6 @@ class MixJobReq:
     @publish_param.setter
     def publish_param(self, publish_param):
         """Sets the publish_param of this MixJobReq.
-
 
         :param publish_param: The publish_param of this MixJobReq.
         :type publish_param: :class:`huaweicloudsdkcloudrtc.v2.PublishParam`
@@ -102,7 +97,6 @@ class MixJobReq:
     def record_param(self):
         """Gets the record_param of this MixJobReq.
 
-
         :return: The record_param of this MixJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
         """
@@ -111,7 +105,6 @@ class MixJobReq:
     @record_param.setter
     def record_param(self, record_param):
         """Sets the record_param of this MixJobReq.
-
 
         :param record_param: The record_param of this MixJobReq.
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`

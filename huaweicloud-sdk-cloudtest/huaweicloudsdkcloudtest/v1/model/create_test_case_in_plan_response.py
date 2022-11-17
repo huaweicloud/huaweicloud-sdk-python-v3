@@ -17,7 +17,6 @@ class CreateTestCaseInPlanResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CreateTestCaseInPlanResponse(SdkResponse):
     def error_detail(self):
         """Gets the error_detail of this CreateTestCaseInPlanResponse.
 
-
         :return: The error_detail of this CreateTestCaseInPlanResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ErrorDetailInfo`
         """
@@ -116,7 +114,6 @@ class CreateTestCaseInPlanResponse(SdkResponse):
     @error_detail.setter
     def error_detail(self, error_detail):
         """Sets the error_detail of this CreateTestCaseInPlanResponse.
-
 
         :param error_detail: The error_detail of this CreateTestCaseInPlanResponse.
         :type error_detail: :class:`huaweicloudsdkcloudtest.v1.ErrorDetailInfo`

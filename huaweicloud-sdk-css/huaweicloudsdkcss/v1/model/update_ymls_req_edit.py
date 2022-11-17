@@ -17,7 +17,6 @@ class UpdateYmlsReqEdit:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateYmlsReqEdit:
     def modify(self):
         """Gets the modify of this UpdateYmlsReqEdit.
 
-
         :return: The modify of this UpdateYmlsReqEdit.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
         """
@@ -57,7 +55,6 @@ class UpdateYmlsReqEdit:
     @modify.setter
     def modify(self, modify):
         """Sets the modify of this UpdateYmlsReqEdit.
-
 
         :param modify: The modify of this UpdateYmlsReqEdit.
         :type modify: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`

@@ -17,7 +17,6 @@ class RunImageMediaTaggingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunImageMediaTaggingRequest:
     def body(self):
         """Gets the body of this RunImageMediaTaggingRequest.
 
-
         :return: The body of this RunImageMediaTaggingRequest.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingReq`
         """
@@ -58,7 +56,6 @@ class RunImageMediaTaggingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunImageMediaTaggingRequest.
-
 
         :param body: The body of this RunImageMediaTaggingRequest.
         :type body: :class:`huaweicloudsdkimage.v2.ImageMediaTaggingReq`

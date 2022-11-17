@@ -17,7 +17,6 @@ class LocationDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -45,7 +44,7 @@ class LocationDetail:
 
         The model defined in huaweicloud sdk
 
-        :param name: 场地名称
+        :param name: 场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
         :type name: str
         :param description: 场地描述
         :type description: str
@@ -91,7 +90,7 @@ class LocationDetail:
     def name(self):
         """Gets the name of this LocationDetail.
 
-        场地名称
+        场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
 
         :return: The name of this LocationDetail.
         :rtype: str
@@ -102,7 +101,7 @@ class LocationDetail:
     def name(self, name):
         """Sets the name of this LocationDetail.
 
-        场地名称
+        场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
 
         :param name: The name of this LocationDetail.
         :type name: str
@@ -223,7 +222,6 @@ class LocationDetail:
     def condition(self):
         """Gets the condition of this LocationDetail.
 
-
         :return: The condition of this LocationDetail.
         :rtype: :class:`huaweicloudsdkies.v1.Condition`
         """
@@ -232,7 +230,6 @@ class LocationDetail:
     @condition.setter
     def condition(self, condition):
         """Sets the condition of this LocationDetail.
-
 
         :param condition: The condition of this LocationDetail.
         :type condition: :class:`huaweicloudsdkies.v1.Condition`

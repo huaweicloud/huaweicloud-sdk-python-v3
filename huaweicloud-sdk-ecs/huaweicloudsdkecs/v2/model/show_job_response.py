@@ -17,7 +17,6 @@ class ShowJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -178,7 +177,6 @@ class ShowJobResponse(SdkResponse):
     def entities(self):
         """Gets the entities of this ShowJobResponse.
 
-
         :return: The entities of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.JobEntities`
         """
@@ -187,7 +185,6 @@ class ShowJobResponse(SdkResponse):
     @entities.setter
     def entities(self, entities):
         """Sets the entities of this ShowJobResponse.
-
 
         :param entities: The entities of this ShowJobResponse.
         :type entities: :class:`huaweicloudsdkecs.v2.JobEntities`

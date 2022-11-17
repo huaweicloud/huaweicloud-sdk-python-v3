@@ -17,7 +17,6 @@ class ShowAppResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -163,7 +162,6 @@ class ShowAppResponse(SdkResponse):
     def state(self):
         """Gets the state of this ShowAppResponse.
 
-
         :return: The state of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppState`
         """
@@ -172,7 +170,6 @@ class ShowAppResponse(SdkResponse):
     @state.setter
     def state(self, state):
         """Sets the state of this ShowAppResponse.
-
 
         :param state: The state of this ShowAppResponse.
         :type state: :class:`huaweicloudsdkcloudrtc.v2.AppState`
@@ -271,7 +268,6 @@ class ShowAppResponse(SdkResponse):
     def authentication(self):
         """Gets the authentication of this ShowAppResponse.
 
-
         :return: The authentication of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
         """
@@ -280,7 +276,6 @@ class ShowAppResponse(SdkResponse):
     @authentication.setter
     def authentication(self, authentication):
         """Sets the authentication of this ShowAppResponse.
-
 
         :param authentication: The authentication of this ShowAppResponse.
         :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
@@ -291,7 +286,6 @@ class ShowAppResponse(SdkResponse):
     def callbacks(self):
         """Gets the callbacks of this ShowAppResponse.
 
-
         :return: The callbacks of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
         """
@@ -300,7 +294,6 @@ class ShowAppResponse(SdkResponse):
     @callbacks.setter
     def callbacks(self, callbacks):
         """Sets the callbacks of this ShowAppResponse.
-
 
         :param callbacks: The callbacks of this ShowAppResponse.
         :type callbacks: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
@@ -311,7 +304,6 @@ class ShowAppResponse(SdkResponse):
     def auto_record_mode(self):
         """Gets the auto_record_mode of this ShowAppResponse.
 
-
         :return: The auto_record_mode of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
         """
@@ -320,7 +312,6 @@ class ShowAppResponse(SdkResponse):
     @auto_record_mode.setter
     def auto_record_mode(self, auto_record_mode):
         """Sets the auto_record_mode of this ShowAppResponse.
-
 
         :param auto_record_mode: The auto_record_mode of this ShowAppResponse.
         :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
@@ -331,7 +322,6 @@ class ShowAppResponse(SdkResponse):
     def x_request_id(self):
         """Gets the x_request_id of this ShowAppResponse.
 
-
         :return: The x_request_id of this ShowAppResponse.
         :rtype: str
         """
@@ -340,7 +330,6 @@ class ShowAppResponse(SdkResponse):
     @x_request_id.setter
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ShowAppResponse.
-
 
         :param x_request_id: The x_request_id of this ShowAppResponse.
         :type x_request_id: str

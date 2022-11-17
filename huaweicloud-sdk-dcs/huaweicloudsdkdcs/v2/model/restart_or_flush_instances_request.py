@@ -17,7 +17,6 @@ class RestartOrFlushInstancesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RestartOrFlushInstancesRequest:
     def body(self):
         """Gets the body of this RestartOrFlushInstancesRequest.
 
-
         :return: The body of this RestartOrFlushInstancesRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.ChangeInstanceStatusBody`
         """
@@ -58,7 +56,6 @@ class RestartOrFlushInstancesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RestartOrFlushInstancesRequest.
-
 
         :param body: The body of this RestartOrFlushInstancesRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.ChangeInstanceStatusBody`

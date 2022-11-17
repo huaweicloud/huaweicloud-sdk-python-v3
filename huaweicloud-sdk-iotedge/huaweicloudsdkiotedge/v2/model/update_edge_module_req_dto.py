@@ -17,7 +17,6 @@ class UpdateEdgeModuleReqDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class UpdateEdgeModuleReqDTO:
     def container_settings(self):
         """Gets the container_settings of this UpdateEdgeModuleReqDTO.
 
-
         :return: The container_settings of this UpdateEdgeModuleReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
         """
@@ -116,7 +114,6 @@ class UpdateEdgeModuleReqDTO:
     @container_settings.setter
     def container_settings(self, container_settings):
         """Sets the container_settings of this UpdateEdgeModuleReqDTO.
-
 
         :param container_settings: The container_settings of this UpdateEdgeModuleReqDTO.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`

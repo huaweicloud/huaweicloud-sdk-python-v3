@@ -17,7 +17,6 @@ class BasicTaskInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -172,7 +171,6 @@ class BasicTaskInfo:
     def output(self):
         """Gets the output of this BasicTaskInfo.
 
-
         :return: The output of this BasicTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -181,7 +179,6 @@ class BasicTaskInfo:
     @output.setter
     def output(self, output):
         """Sets the output of this BasicTaskInfo.
-
 
         :param output: The output of this BasicTaskInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

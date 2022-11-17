@@ -17,7 +17,6 @@ class UpdateParametersReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateParametersReq:
     def values(self):
         """Gets the values of this UpdateParametersReq.
 
-
         :return: The values of this UpdateParametersReq.
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateParametersReqValues`
         """
@@ -57,7 +55,6 @@ class UpdateParametersReq:
     @values.setter
     def values(self, values):
         """Sets the values of this UpdateParametersReq.
-
 
         :param values: The values of this UpdateParametersReq.
         :type values: :class:`huaweicloudsdkddm.v1.UpdateParametersReqValues`

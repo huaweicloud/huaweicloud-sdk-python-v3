@@ -17,7 +17,6 @@ class ShowPrivateZoneNameServerResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowPrivateZoneNameServerResponse(SdkResponse):
     def nameservers(self):
         """Gets the nameservers of this ShowPrivateZoneNameServerResponse.
 
-
         :return: The nameservers of this ShowPrivateZoneNameServerResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.PrivateNameServer`]
         """
@@ -58,7 +56,6 @@ class ShowPrivateZoneNameServerResponse(SdkResponse):
     @nameservers.setter
     def nameservers(self, nameservers):
         """Sets the nameservers of this ShowPrivateZoneNameServerResponse.
-
 
         :param nameservers: The nameservers of this ShowPrivateZoneNameServerResponse.
         :type nameservers: list[:class:`huaweicloudsdkdns.v2.PrivateNameServer`]

@@ -17,7 +17,6 @@ class BatchDeleteRecordSetWithLineRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchDeleteRecordSetWithLineRequest:
     def body(self):
         """Gets the body of this BatchDeleteRecordSetWithLineRequest.
 
-
         :return: The body of this BatchDeleteRecordSetWithLineRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRSetWithLineReq`
         """
@@ -86,7 +84,6 @@ class BatchDeleteRecordSetWithLineRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteRecordSetWithLineRequest.
-
 
         :param body: The body of this BatchDeleteRecordSetWithLineRequest.
         :type body: :class:`huaweicloudsdkdns.v2.BatchDeleteRSetWithLineReq`

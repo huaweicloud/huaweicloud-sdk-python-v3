@@ -17,7 +17,6 @@ class ExportJobsReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ExportJobsReq:
     def job_list(self):
         """Gets the job_list of this ExportJobsReq.
 
-
         :return: The job_list of this ExportJobsReq.
         :rtype: list[str]
         """
@@ -65,7 +63,6 @@ class ExportJobsReq:
     @job_list.setter
     def job_list(self, job_list):
         """Sets the job_list of this ExportJobsReq.
-
 
         :param job_list: The job_list of this ExportJobsReq.
         :type job_list: list[str]

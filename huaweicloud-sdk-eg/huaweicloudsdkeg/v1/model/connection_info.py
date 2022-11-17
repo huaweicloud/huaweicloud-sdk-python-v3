@@ -17,7 +17,6 @@ class ConnectionInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -266,7 +265,6 @@ class ConnectionInfo:
     def flavor(self):
         """Gets the flavor of this ConnectionInfo.
 
-
         :return: The flavor of this ConnectionInfo.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
         """
@@ -275,7 +273,6 @@ class ConnectionInfo:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this ConnectionInfo.
-
 
         :param flavor: The flavor of this ConnectionInfo.
         :type flavor: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`

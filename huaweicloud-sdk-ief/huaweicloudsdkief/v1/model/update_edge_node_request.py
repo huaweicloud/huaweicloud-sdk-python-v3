@@ -17,7 +17,6 @@ class UpdateEdgeNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateEdgeNodeRequest:
     def body(self):
         """Gets the body of this UpdateEdgeNodeRequest.
 
-
         :return: The body of this UpdateEdgeNodeRequest.
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeBody`
         """
@@ -115,7 +113,6 @@ class UpdateEdgeNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEdgeNodeRequest.
-
 
         :param body: The body of this UpdateEdgeNodeRequest.
         :type body: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeBody`

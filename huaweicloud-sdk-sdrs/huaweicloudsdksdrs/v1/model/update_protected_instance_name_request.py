@@ -17,7 +17,6 @@ class UpdateProtectedInstanceNameRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateProtectedInstanceNameRequest:
     def body(self):
         """Gets the body of this UpdateProtectedInstanceNameRequest.
 
-
         :return: The body of this UpdateProtectedInstanceNameRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateProtectedInstanceNameRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateProtectedInstanceNameRequest.
-
 
         :param body: The body of this UpdateProtectedInstanceNameRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameRequestBody`

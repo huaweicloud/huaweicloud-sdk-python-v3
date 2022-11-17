@@ -17,7 +17,6 @@ class OpenWebinarBaseInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -343,7 +342,6 @@ class OpenWebinarBaseInfo:
     def state(self):
         """Gets the state of this OpenWebinarBaseInfo.
 
-
         :return: The state of this OpenWebinarBaseInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
         """
@@ -352,7 +350,6 @@ class OpenWebinarBaseInfo:
     @state.setter
     def state(self, state):
         """Sets the state of this OpenWebinarBaseInfo.
-
 
         :param state: The state of this OpenWebinarBaseInfo.
         :type state: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`

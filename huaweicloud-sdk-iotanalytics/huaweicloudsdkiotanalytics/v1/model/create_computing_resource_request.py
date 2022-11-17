@@ -17,7 +17,6 @@ class CreateComputingResourceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateComputingResourceRequest:
     def body(self):
         """Gets the body of this CreateComputingResourceRequest.
 
-
         :return: The body of this CreateComputingResourceRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateComputingResourceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateComputingResourceRequest.
-
 
         :param body: The body of this CreateComputingResourceRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequestBody`

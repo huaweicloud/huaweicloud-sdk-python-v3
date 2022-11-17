@@ -17,7 +17,6 @@ class ListExtensionsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListExtensionsRequest:
     def body(self):
         """Gets the body of this ListExtensionsRequest.
 
-
         :return: The body of this ListExtensionsRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionQueryParamSnake`
         """
@@ -58,7 +56,6 @@ class ListExtensionsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListExtensionsRequest.
-
 
         :param body: The body of this ListExtensionsRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.ExtensionQueryParamSnake`

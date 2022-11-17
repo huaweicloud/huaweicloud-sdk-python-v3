@@ -17,7 +17,6 @@ class ResetConsumeOffsetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class ResetConsumeOffsetRequest:
     def body(self):
         """Gets the body of this ResetConsumeOffsetRequest.
 
-
         :return: The body of this ResetConsumeOffsetRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetReq`
         """
@@ -142,7 +140,6 @@ class ResetConsumeOffsetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResetConsumeOffsetRequest.
-
 
         :param body: The body of this ResetConsumeOffsetRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.ResetConsumeOffsetReq`

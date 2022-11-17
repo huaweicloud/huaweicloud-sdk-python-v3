@@ -17,7 +17,6 @@ class CreateExtensionAuthorizationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateExtensionAuthorizationRequest:
     def body(self):
         """Gets the body of this CreateExtensionAuthorizationRequest.
 
-
         :return: The body of this CreateExtensionAuthorizationRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionAuthorization`
         """
@@ -86,7 +84,6 @@ class CreateExtensionAuthorizationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateExtensionAuthorizationRequest.
-
 
         :param body: The body of this CreateExtensionAuthorizationRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.ExtensionAuthorization`

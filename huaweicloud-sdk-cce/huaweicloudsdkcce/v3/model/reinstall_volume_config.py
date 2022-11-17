@@ -17,7 +17,6 @@ class ReinstallVolumeConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ReinstallVolumeConfig:
     def storage(self):
         """Gets the storage of this ReinstallVolumeConfig.
 
-
         :return: The storage of this ReinstallVolumeConfig.
         :rtype: :class:`huaweicloudsdkcce.v3.Storage`
         """
@@ -87,7 +85,6 @@ class ReinstallVolumeConfig:
     @storage.setter
     def storage(self, storage):
         """Sets the storage of this ReinstallVolumeConfig.
-
 
         :param storage: The storage of this ReinstallVolumeConfig.
         :type storage: :class:`huaweicloudsdkcce.v3.Storage`

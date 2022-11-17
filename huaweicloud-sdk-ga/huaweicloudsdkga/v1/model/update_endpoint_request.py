@@ -17,7 +17,6 @@ class UpdateEndpointRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateEndpointRequest:
     def body(self):
         """Gets the body of this UpdateEndpointRequest.
 
-
         :return: The body of this UpdateEndpointRequest.
         :rtype: :class:`huaweicloudsdkga.v1.UpdateEndpointRequestBody`
         """
@@ -114,7 +112,6 @@ class UpdateEndpointRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEndpointRequest.
-
 
         :param body: The body of this UpdateEndpointRequest.
         :type body: :class:`huaweicloudsdkga.v1.UpdateEndpointRequestBody`

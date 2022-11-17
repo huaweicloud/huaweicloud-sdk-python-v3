@@ -17,7 +17,6 @@ class CopyBackupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CopyBackupResponse(SdkResponse):
     def replication(self):
         """Gets the replication of this CopyBackupResponse.
 
-
         :return: The replication of this CopyBackupResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupReplicateRespBody`
         """
@@ -58,7 +56,6 @@ class CopyBackupResponse(SdkResponse):
     @replication.setter
     def replication(self, replication):
         """Sets the replication of this CopyBackupResponse.
-
 
         :param replication: The replication of this CopyBackupResponse.
         :type replication: :class:`huaweicloudsdkcbr.v1.BackupReplicateRespBody`

@@ -17,7 +17,6 @@ class CreateResourceGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateResourceGroupRequest:
     def body(self):
         """Gets the body of this CreateResourceGroupRequest.
 
-
         :return: The body of this CreateResourceGroupRequest.
         :rtype: :class:`huaweicloudsdkces.v1.CreateResourceGroupRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateResourceGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateResourceGroupRequest.
-
 
         :param body: The body of this CreateResourceGroupRequest.
         :type body: :class:`huaweicloudsdkces.v1.CreateResourceGroupRequestBody`

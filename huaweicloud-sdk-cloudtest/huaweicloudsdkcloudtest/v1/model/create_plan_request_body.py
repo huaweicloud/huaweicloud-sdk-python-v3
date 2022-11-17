@@ -17,7 +17,6 @@ class CreatePlanRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class CreatePlanRequestBody:
     def plan_cycle(self):
         """Gets the plan_cycle of this CreatePlanRequestBody.
 
-
         :return: The plan_cycle of this CreatePlanRequestBody.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.PlanCycle`
         """
@@ -142,7 +140,6 @@ class CreatePlanRequestBody:
     @plan_cycle.setter
     def plan_cycle(self, plan_cycle):
         """Sets the plan_cycle of this CreatePlanRequestBody.
-
 
         :param plan_cycle: The plan_cycle of this CreatePlanRequestBody.
         :type plan_cycle: :class:`huaweicloudsdkcloudtest.v1.PlanCycle`

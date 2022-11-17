@@ -17,7 +17,6 @@ class ShowCheckpointResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowCheckpointResponse(SdkResponse):
     def checkpoint(self):
         """Gets the checkpoint of this ShowCheckpointResponse.
 
-
         :return: The checkpoint of this ShowCheckpointResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointCreate`
         """
@@ -58,7 +56,6 @@ class ShowCheckpointResponse(SdkResponse):
     @checkpoint.setter
     def checkpoint(self, checkpoint):
         """Sets the checkpoint of this ShowCheckpointResponse.
-
 
         :param checkpoint: The checkpoint of this ShowCheckpointResponse.
         :type checkpoint: :class:`huaweicloudsdkcbr.v1.CheckpointCreate`

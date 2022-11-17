@@ -17,7 +17,6 @@ class CreateResJobRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -131,7 +130,6 @@ class CreateResJobRequestBody:
     def job_config(self):
         """Gets the job_config of this CreateResJobRequestBody.
 
-
         :return: The job_config of this CreateResJobRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
         """
@@ -140,7 +138,6 @@ class CreateResJobRequestBody:
     @job_config.setter
     def job_config(self, job_config):
         """Sets the job_config of this CreateResJobRequestBody.
-
 
         :param job_config: The job_config of this CreateResJobRequestBody.
         :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -151,7 +148,6 @@ class CreateResJobRequestBody:
     def exec_config(self):
         """Gets the exec_config of this CreateResJobRequestBody.
 
-
         :return: The exec_config of this CreateResJobRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.ResExecConfig`
         """
@@ -160,7 +156,6 @@ class CreateResJobRequestBody:
     @exec_config.setter
     def exec_config(self, exec_config):
         """Sets the exec_config of this CreateResJobRequestBody.
-
 
         :param exec_config: The exec_config of this CreateResJobRequestBody.
         :type exec_config: :class:`huaweicloudsdkres.v1.ResExecConfig`

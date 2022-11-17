@@ -17,7 +17,6 @@ class VaultBackupReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class VaultBackupReq:
     def checkpoint(self):
         """Gets the checkpoint of this VaultBackupReq.
 
-
         :return: The checkpoint of this VaultBackupReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBackup`
         """
@@ -57,7 +55,6 @@ class VaultBackupReq:
     @checkpoint.setter
     def checkpoint(self, checkpoint):
         """Sets the checkpoint of this VaultBackupReq.
-
 
         :param checkpoint: The checkpoint of this VaultBackupReq.
         :type checkpoint: :class:`huaweicloudsdkcbr.v1.VaultBackup`

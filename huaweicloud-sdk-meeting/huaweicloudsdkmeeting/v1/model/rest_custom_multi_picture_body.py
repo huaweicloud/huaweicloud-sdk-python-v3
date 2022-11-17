@@ -17,7 +17,6 @@ class RestCustomMultiPictureBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class RestCustomMultiPictureBody:
     def pic_layout_info(self):
         """Gets the pic_layout_info of this RestCustomMultiPictureBody.
 
-
         :return: The pic_layout_info of this RestCustomMultiPictureBody.
         :rtype: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
         """
@@ -114,7 +112,6 @@ class RestCustomMultiPictureBody:
     @pic_layout_info.setter
     def pic_layout_info(self, pic_layout_info):
         """Sets the pic_layout_info of this RestCustomMultiPictureBody.
-
 
         :param pic_layout_info: The pic_layout_info of this RestCustomMultiPictureBody.
         :type pic_layout_info: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`

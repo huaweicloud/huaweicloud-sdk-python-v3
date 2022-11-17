@@ -17,7 +17,6 @@ class DailyTimerType:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -37,7 +36,7 @@ class DailyTimerType:
 
         :param time: **参数说明**：规则触发的时间，格式：HH:MM。
         :type time: str
-        :param days_of_week: **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
+        :param days_of_week: **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。
         :type days_of_week: str
         """
         
@@ -77,7 +76,7 @@ class DailyTimerType:
     def days_of_week(self):
         """Gets the days_of_week of this DailyTimerType.
 
-        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
+        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。
 
         :return: The days_of_week of this DailyTimerType.
         :rtype: str
@@ -88,7 +87,7 @@ class DailyTimerType:
     def days_of_week(self, days_of_week):
         """Sets the days_of_week of this DailyTimerType.
 
-        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
+        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。
 
         :param days_of_week: The days_of_week of this DailyTimerType.
         :type days_of_week: str

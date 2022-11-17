@@ -17,7 +17,6 @@ class CreateRemuxTaskReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class CreateRemuxTaskReq:
     def input(self):
         """Gets the input of this CreateRemuxTaskReq.
 
-
         :return: The input of this CreateRemuxTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -79,7 +77,6 @@ class CreateRemuxTaskReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateRemuxTaskReq.
-
 
         :param input: The input of this CreateRemuxTaskReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -90,7 +87,6 @@ class CreateRemuxTaskReq:
     def output(self):
         """Gets the output of this CreateRemuxTaskReq.
 
-
         :return: The output of this CreateRemuxTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -99,7 +95,6 @@ class CreateRemuxTaskReq:
     @output.setter
     def output(self, output):
         """Sets the output of this CreateRemuxTaskReq.
-
 
         :param output: The output of this CreateRemuxTaskReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -132,7 +127,6 @@ class CreateRemuxTaskReq:
     def output_param(self):
         """Gets the output_param of this CreateRemuxTaskReq.
 
-
         :return: The output_param of this CreateRemuxTaskReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`
         """
@@ -141,7 +135,6 @@ class CreateRemuxTaskReq:
     @output_param.setter
     def output_param(self, output_param):
         """Sets the output_param of this CreateRemuxTaskReq.
-
 
         :param output_param: The output_param of this CreateRemuxTaskReq.
         :type output_param: :class:`huaweicloudsdkmpc.v1.RemuxOutputParam`

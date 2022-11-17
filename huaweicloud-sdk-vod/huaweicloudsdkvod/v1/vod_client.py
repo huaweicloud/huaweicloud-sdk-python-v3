@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VodClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class VodClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -100,6 +96,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelAssetTranscodeTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +123,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +157,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelExtractAudioTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -184,6 +184,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -218,6 +220,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckMd5DuplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -244,6 +247,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -276,6 +281,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmAssetUploadResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -302,6 +308,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -334,6 +342,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmImageUploadResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -364,6 +373,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -396,6 +407,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAssetByFileUploadResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -422,6 +434,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -454,6 +468,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAssetCategoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -480,6 +495,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -512,6 +529,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAssetProcessTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -538,6 +556,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -570,6 +590,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAssetReviewTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -596,6 +617,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -628,6 +651,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateExtractAudioTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -654,6 +678,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -686,6 +712,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePreheatingAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -714,6 +741,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -746,6 +775,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTakeOverTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -772,6 +802,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -804,6 +836,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -830,6 +863,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -862,6 +897,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateGroupCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -888,6 +924,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -920,6 +958,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -946,6 +985,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -978,6 +1019,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1004,6 +1046,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1036,6 +1080,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAssetCategoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1062,6 +1107,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1097,6 +1144,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAssetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1123,6 +1171,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1155,6 +1205,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1181,6 +1232,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1213,6 +1266,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateGroupCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1239,6 +1293,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1271,6 +1327,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1297,6 +1354,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1329,6 +1388,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1355,6 +1415,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1387,6 +1449,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssetCategoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1413,6 +1476,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1468,6 +1533,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssetListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1494,6 +1560,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1532,6 +1600,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1558,6 +1627,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1596,6 +1667,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1622,6 +1694,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1658,6 +1732,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateGroupCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1684,6 +1759,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1718,6 +1795,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTopStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1744,6 +1822,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1784,6 +1864,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1810,6 +1891,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1847,6 +1930,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1873,6 +1957,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1905,6 +1991,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PublishAssetFromObsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1931,6 +2018,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1963,6 +2052,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PublishAssetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1989,6 +2079,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2021,6 +2113,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetCipherResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2047,6 +2140,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2082,6 +2177,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2108,6 +2204,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2164,6 +2262,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetMetaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2196,6 +2295,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2240,6 +2341,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAssetTempAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2266,6 +2368,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2306,6 +2410,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCdnStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2332,6 +2437,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2364,6 +2471,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPreheatingAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2390,6 +2498,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2426,6 +2536,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVodStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2452,6 +2563,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2484,6 +2597,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnpublishAssetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2517,6 +2631,8 @@ class VodClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2548,6 +2664,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAssetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2574,6 +2691,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2606,6 +2725,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAssetCategoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2632,6 +2752,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2664,6 +2786,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAssetMetaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2690,6 +2813,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2722,6 +2847,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBucketAuthorizedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2748,6 +2874,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2780,6 +2908,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCoverByThumbnailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2806,6 +2935,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2838,6 +2969,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTemplateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2864,6 +2996,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2896,6 +3030,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTemplateGroupCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2922,6 +3057,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2954,6 +3091,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2980,6 +3118,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3012,6 +3152,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWatermarkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3038,6 +3179,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3070,6 +3213,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadMetaDataByUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3096,6 +3240,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3134,6 +3280,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTakeOverTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3160,6 +3307,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3194,6 +3343,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTakeOverAssetDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3220,6 +3370,8 @@ class VodClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3256,6 +3408,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTakeOverTaskDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3263,7 +3416,7 @@ class VodClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3273,9 +3426,10 @@ class VodClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3292,6 +3446,7 @@ class VodClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

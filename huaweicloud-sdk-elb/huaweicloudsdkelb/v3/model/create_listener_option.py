@@ -17,7 +17,6 @@ class CreateListenerOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -346,7 +345,6 @@ class CreateListenerOption:
     def insert_headers(self):
         """Gets the insert_headers of this CreateListenerOption.
 
-
         :return: The insert_headers of this CreateListenerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.ListenerInsertHeaders`
         """
@@ -355,7 +353,6 @@ class CreateListenerOption:
     @insert_headers.setter
     def insert_headers(self, insert_headers):
         """Sets the insert_headers of this CreateListenerOption.
-
 
         :param insert_headers: The insert_headers of this CreateListenerOption.
         :type insert_headers: :class:`huaweicloudsdkelb.v3.ListenerInsertHeaders`
@@ -674,7 +671,6 @@ class CreateListenerOption:
     def ipgroup(self):
         """Gets the ipgroup of this CreateListenerOption.
 
-
         :return: The ipgroup of this CreateListenerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateListenerIpGroupOption`
         """
@@ -683,7 +679,6 @@ class CreateListenerOption:
     @ipgroup.setter
     def ipgroup(self, ipgroup):
         """Sets the ipgroup of this CreateListenerOption.
-
 
         :param ipgroup: The ipgroup of this CreateListenerOption.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.CreateListenerIpGroupOption`
@@ -738,7 +733,6 @@ class CreateListenerOption:
     def quic_config(self):
         """Gets the quic_config of this CreateListenerOption.
 
-
         :return: The quic_config of this CreateListenerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateListenerQuicConfigOption`
         """
@@ -747,7 +741,6 @@ class CreateListenerOption:
     @quic_config.setter
     def quic_config(self, quic_config):
         """Sets the quic_config of this CreateListenerOption.
-
 
         :param quic_config: The quic_config of this CreateListenerOption.
         :type quic_config: :class:`huaweicloudsdkelb.v3.CreateListenerQuicConfigOption`

@@ -17,7 +17,6 @@ class ResizePostPaidServerRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ResizePostPaidServerRequest:
     def body(self):
         """Gets the body of this ResizePostPaidServerRequest.
 
-
         :return: The body of this ResizePostPaidServerRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerRequestBody`
         """
@@ -86,7 +84,6 @@ class ResizePostPaidServerRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResizePostPaidServerRequest.
-
 
         :param body: The body of this ResizePostPaidServerRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerRequestBody`

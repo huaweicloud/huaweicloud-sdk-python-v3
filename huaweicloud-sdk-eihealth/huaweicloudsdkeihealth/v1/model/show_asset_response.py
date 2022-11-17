@@ -17,7 +17,6 @@ class ShowAssetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -287,7 +286,6 @@ class ShowAssetResponse(SdkResponse):
     def latest_version(self):
         """Gets the latest_version of this ShowAssetResponse.
 
-
         :return: The latest_version of this ShowAssetResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.VersionRsp`
         """
@@ -296,7 +294,6 @@ class ShowAssetResponse(SdkResponse):
     @latest_version.setter
     def latest_version(self, latest_version):
         """Sets the latest_version of this ShowAssetResponse.
-
 
         :param latest_version: The latest_version of this ShowAssetResponse.
         :type latest_version: :class:`huaweicloudsdkeihealth.v1.VersionRsp`

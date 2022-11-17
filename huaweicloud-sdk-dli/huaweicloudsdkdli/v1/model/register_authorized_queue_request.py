@@ -17,7 +17,6 @@ class RegisterAuthorizedQueueRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RegisterAuthorizedQueueRequest:
     def body(self):
         """Gets the body of this RegisterAuthorizedQueueRequest.
 
-
         :return: The body of this RegisterAuthorizedQueueRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.GrantQueuePermissionReq`
         """
@@ -58,7 +56,6 @@ class RegisterAuthorizedQueueRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RegisterAuthorizedQueueRequest.
-
 
         :param body: The body of this RegisterAuthorizedQueueRequest.
         :type body: :class:`huaweicloudsdkdli.v1.GrantQueuePermissionReq`

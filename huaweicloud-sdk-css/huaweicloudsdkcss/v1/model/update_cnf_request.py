@@ -17,7 +17,6 @@ class UpdateCnfRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateCnfRequest:
     def body(self):
         """Gets the body of this UpdateCnfRequest.
 
-
         :return: The body of this UpdateCnfRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateCnfReq`
         """
@@ -86,7 +84,6 @@ class UpdateCnfRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateCnfRequest.
-
 
         :param body: The body of this UpdateCnfRequest.
         :type body: :class:`huaweicloudsdkcss.v1.CreateCnfReq`

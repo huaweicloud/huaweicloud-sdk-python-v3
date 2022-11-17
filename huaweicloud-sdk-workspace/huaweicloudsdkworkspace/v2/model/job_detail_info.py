@@ -17,7 +17,6 @@ class JobDetailInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -156,7 +155,6 @@ class JobDetailInfo:
     def entities(self):
         """Gets the entities of this JobDetailInfo.
 
-
         :return: The entities of this JobDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.JobEntities`
         """
@@ -165,7 +163,6 @@ class JobDetailInfo:
     @entities.setter
     def entities(self, entities):
         """Sets the entities of this JobDetailInfo.
-
 
         :param entities: The entities of this JobDetailInfo.
         :type entities: :class:`huaweicloudsdkworkspace.v2.JobEntities`

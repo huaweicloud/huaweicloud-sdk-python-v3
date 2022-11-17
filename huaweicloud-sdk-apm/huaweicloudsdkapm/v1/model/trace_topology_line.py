@@ -17,7 +17,6 @@ class TraceTopologyLine:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -157,7 +156,6 @@ class TraceTopologyLine:
     def client_info(self):
         """Gets the client_info of this TraceTopologyLine.
 
-
         :return: The client_info of this TraceTopologyLine.
         :rtype: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`
         """
@@ -166,7 +164,6 @@ class TraceTopologyLine:
     @client_info.setter
     def client_info(self, client_info):
         """Sets the client_info of this TraceTopologyLine.
-
 
         :param client_info: The client_info of this TraceTopologyLine.
         :type client_info: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`
@@ -177,7 +174,6 @@ class TraceTopologyLine:
     def server_info(self):
         """Gets the server_info of this TraceTopologyLine.
 
-
         :return: The server_info of this TraceTopologyLine.
         :rtype: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`
         """
@@ -186,7 +182,6 @@ class TraceTopologyLine:
     @server_info.setter
     def server_info(self, server_info):
         """Sets the server_info of this TraceTopologyLine.
-
 
         :param server_info: The server_info of this TraceTopologyLine.
         :type server_info: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`

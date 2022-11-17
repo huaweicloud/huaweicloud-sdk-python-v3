@@ -17,7 +17,6 @@ class ShowJobExesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowJobExesResponse(SdkResponse):
     def job_execution(self):
         """Gets the job_execution of this ShowJobExesResponse.
 
-
         :return: The job_execution of this ShowJobExesResponse.
         :rtype: :class:`huaweicloudsdkmrs.v1.JobExeResult`
         """
@@ -58,7 +56,6 @@ class ShowJobExesResponse(SdkResponse):
     @job_execution.setter
     def job_execution(self, job_execution):
         """Sets the job_execution of this ShowJobExesResponse.
-
 
         :param job_execution: The job_execution of this ShowJobExesResponse.
         :type job_execution: :class:`huaweicloudsdkmrs.v1.JobExeResult`

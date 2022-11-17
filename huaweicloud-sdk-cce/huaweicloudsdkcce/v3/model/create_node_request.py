@@ -17,7 +17,6 @@ class CreateNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateNodeRequest:
     def body(self):
         """Gets the body of this CreateNodeRequest.
 
-
         :return: The body of this CreateNodeRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeCreateRequest`
         """
@@ -115,7 +113,6 @@ class CreateNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateNodeRequest.
-
 
         :param body: The body of this CreateNodeRequest.
         :type body: :class:`huaweicloudsdkcce.v3.NodeCreateRequest`

@@ -17,7 +17,6 @@ class UpdatePtrRecordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -61,7 +60,6 @@ class UpdatePtrRecordRequest:
     def region(self):
         """Gets the region of this UpdatePtrRecordRequest.
 
-
         :return: The region of this UpdatePtrRecordRequest.
         :rtype: str
         """
@@ -70,7 +68,6 @@ class UpdatePtrRecordRequest:
     @region.setter
     def region(self, region):
         """Sets the region of this UpdatePtrRecordRequest.
-
 
         :param region: The region of this UpdatePtrRecordRequest.
         :type region: str
@@ -81,7 +78,6 @@ class UpdatePtrRecordRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this UpdatePtrRecordRequest.
 
-
         :return: The floatingip_id of this UpdatePtrRecordRequest.
         :rtype: str
         """
@@ -90,7 +86,6 @@ class UpdatePtrRecordRequest:
     @floatingip_id.setter
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this UpdatePtrRecordRequest.
-
 
         :param floatingip_id: The floatingip_id of this UpdatePtrRecordRequest.
         :type floatingip_id: str
@@ -101,7 +96,6 @@ class UpdatePtrRecordRequest:
     def body(self):
         """Gets the body of this UpdatePtrRecordRequest.
 
-
         :return: The body of this UpdatePtrRecordRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrReq`
         """
@@ -110,7 +104,6 @@ class UpdatePtrRecordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePtrRecordRequest.
-
 
         :param body: The body of this UpdatePtrRecordRequest.
         :type body: :class:`huaweicloudsdkdns.v2.UpdatePtrReq`

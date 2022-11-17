@@ -17,7 +17,6 @@ class CompareTaskListResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -28,7 +27,7 @@ class CompareTaskListResult:
     }
 
     attribute_map = {
-        'compare_task_list': 'CompareTaskList',
+        'compare_task_list': 'compare_task_list',
         'compare_task_list_count': 'compare_task_list_count',
         'error_msg': 'error_msg',
         'error_code': 'error_code'

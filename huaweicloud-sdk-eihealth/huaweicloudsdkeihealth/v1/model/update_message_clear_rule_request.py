@@ -17,7 +17,6 @@ class UpdateMessageClearRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateMessageClearRuleRequest:
     def body(self):
         """Gets the body of this UpdateMessageClearRuleRequest.
 
-
         :return: The body of this UpdateMessageClearRuleRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.GetMessageClearRuleReq`
         """
@@ -58,7 +56,6 @@ class UpdateMessageClearRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateMessageClearRuleRequest.
-
 
         :param body: The body of this UpdateMessageClearRuleRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.GetMessageClearRuleReq`

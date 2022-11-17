@@ -17,7 +17,6 @@ class RegisterServerMonitorRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RegisterServerMonitorRequest:
     def body(self):
         """Gets the body of this RegisterServerMonitorRequest.
 
-
         :return: The body of this RegisterServerMonitorRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorRequestBody`
         """
@@ -86,7 +84,6 @@ class RegisterServerMonitorRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RegisterServerMonitorRequest.
-
 
         :param body: The body of this RegisterServerMonitorRequest.
         :type body: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorRequestBody`

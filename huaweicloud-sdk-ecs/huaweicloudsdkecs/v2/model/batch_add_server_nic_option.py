@@ -17,7 +17,6 @@ class BatchAddServerNicOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class BatchAddServerNicOption:
     def ipv6_bandwidth(self):
         """Gets the ipv6_bandwidth of this BatchAddServerNicOption.
 
-
         :return: The ipv6_bandwidth of this BatchAddServerNicOption.
         :rtype: :class:`huaweicloudsdkecs.v2.Ipv6Bandwidth`
         """
@@ -173,7 +171,6 @@ class BatchAddServerNicOption:
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
         """Sets the ipv6_bandwidth of this BatchAddServerNicOption.
-
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this BatchAddServerNicOption.
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.Ipv6Bandwidth`

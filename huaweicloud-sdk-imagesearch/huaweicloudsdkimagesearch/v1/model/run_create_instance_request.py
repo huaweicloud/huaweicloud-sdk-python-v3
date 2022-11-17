@@ -17,7 +17,6 @@ class RunCreateInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunCreateInstanceRequest:
     def body(self):
         """Gets the body of this RunCreateInstanceRequest.
 
-
         :return: The body of this RunCreateInstanceRequest.
         :rtype: :class:`huaweicloudsdkimagesearch.v1.CreateInstanceReq`
         """
@@ -58,7 +56,6 @@ class RunCreateInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunCreateInstanceRequest.
-
 
         :param body: The body of this RunCreateInstanceRequest.
         :type body: :class:`huaweicloudsdkimagesearch.v1.CreateInstanceReq`

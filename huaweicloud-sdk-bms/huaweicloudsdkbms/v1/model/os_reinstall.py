@@ -17,7 +17,6 @@ class OsReinstall:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class OsReinstall:
     def metadata(self):
         """Gets the metadata of this OsReinstall.
 
-
         :return: The metadata of this OsReinstall.
         :rtype: :class:`huaweicloudsdkbms.v1.MetadataInstall`
         """
@@ -145,7 +143,6 @@ class OsReinstall:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this OsReinstall.
-
 
         :param metadata: The metadata of this OsReinstall.
         :type metadata: :class:`huaweicloudsdkbms.v1.MetadataInstall`

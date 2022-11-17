@@ -17,7 +17,6 @@ class RunConstituencyParserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunConstituencyParserRequest:
     def body(self):
         """Gets the body of this RunConstituencyParserRequest.
 
-
         :return: The body of this RunConstituencyParserRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.ConstituencyParserReq`
         """
@@ -58,7 +56,6 @@ class RunConstituencyParserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunConstituencyParserRequest.
-
 
         :param body: The body of this RunConstituencyParserRequest.
         :type body: :class:`huaweicloudsdknlp.v2.ConstituencyParserReq`

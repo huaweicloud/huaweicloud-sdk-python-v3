@@ -17,7 +17,6 @@ class VaultTagsCreateReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class VaultTagsCreateReq:
     def tag(self):
         """Gets the tag of this VaultTagsCreateReq.
 
-
         :return: The tag of this VaultTagsCreateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.Tag`
         """
@@ -58,7 +56,6 @@ class VaultTagsCreateReq:
     @tag.setter
     def tag(self, tag):
         """Sets the tag of this VaultTagsCreateReq.
-
 
         :param tag: The tag of this VaultTagsCreateReq.
         :type tag: :class:`huaweicloudsdkcbr.v1.Tag`

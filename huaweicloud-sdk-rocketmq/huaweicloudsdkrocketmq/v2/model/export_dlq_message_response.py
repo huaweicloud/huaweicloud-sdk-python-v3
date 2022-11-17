@@ -17,7 +17,6 @@ class ExportDlqMessageResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ExportDlqMessageResponse(SdkResponse):
     def body(self):
         """Gets the body of this ExportDlqMessageResponse.
 
-
         :return: The body of this ExportDlqMessageResponse.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.Message`]
         """
@@ -58,7 +56,6 @@ class ExportDlqMessageResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ExportDlqMessageResponse.
-
 
         :param body: The body of this ExportDlqMessageResponse.
         :type body: list[:class:`huaweicloudsdkrocketmq.v2.Message`]

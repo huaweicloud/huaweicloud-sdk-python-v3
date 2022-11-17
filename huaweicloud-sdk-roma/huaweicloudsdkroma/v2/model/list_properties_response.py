@@ -17,13 +17,12 @@ class ListPropertiesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'total': 'int',
         'size': 'int',
-        'items': 'list[ModelProperty]'
+        'items': 'list[PropertyResponseBody]'
     }
 
     attribute_map = {
@@ -42,7 +41,7 @@ class ListPropertiesResponse(SdkResponse):
         :param size: 本次返回数量
         :type size: int
         :param items: 属性列表
-        :type items: list[:class:`huaweicloudsdkroma.v2.ModelProperty`]
+        :type items: list[:class:`huaweicloudsdkroma.v2.PropertyResponseBody`]
         """
         
         super(ListPropertiesResponse, self).__init__()
@@ -110,7 +109,7 @@ class ListPropertiesResponse(SdkResponse):
         属性列表
 
         :return: The items of this ListPropertiesResponse.
-        :rtype: list[:class:`huaweicloudsdkroma.v2.ModelProperty`]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.PropertyResponseBody`]
         """
         return self._items
 
@@ -121,7 +120,7 @@ class ListPropertiesResponse(SdkResponse):
         属性列表
 
         :param items: The items of this ListPropertiesResponse.
-        :type items: list[:class:`huaweicloudsdkroma.v2.ModelProperty`]
+        :type items: list[:class:`huaweicloudsdkroma.v2.PropertyResponseBody`]
         """
         self._items = items
 

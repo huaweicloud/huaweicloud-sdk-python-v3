@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class KpsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateKeypair
         :type request: :class:`huaweicloudsdkkps.v3.AssociateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.AssociateKeypairResponse`
@@ -68,6 +63,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateKeypair
         :type request: :class:`huaweicloudsdkkps.v3.CreateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.CreateKeypairResponse`
@@ -126,6 +125,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAllFailedTask
         :type request: :class:`huaweicloudsdkkps.v3.DeleteAllFailedTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DeleteAllFailedTaskResponse`
@@ -184,6 +187,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -214,6 +219,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAllFailedTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -228,6 +234,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteFailedTask
         :type request: :class:`huaweicloudsdkkps.v3.DeleteFailedTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DeleteFailedTaskResponse`
@@ -240,6 +247,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -272,6 +281,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFailedTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -286,6 +296,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteKeypair
         :type request: :class:`huaweicloudsdkkps.v3.DeleteKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DeleteKeypairResponse`
@@ -298,6 +309,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -330,6 +343,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -344,6 +358,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisassociateKeypair
         :type request: :class:`huaweicloudsdkkps.v3.DisassociateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DisassociateKeypairResponse`
@@ -356,6 +371,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -388,6 +405,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateKeypairResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -402,6 +420,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFailedTask
         :type request: :class:`huaweicloudsdkkps.v3.ListFailedTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListFailedTaskResponse`
@@ -414,6 +433,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -448,6 +469,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFailedTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -462,6 +484,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListKeypairDetail
         :type request: :class:`huaweicloudsdkkps.v3.ListKeypairDetailRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairDetailResponse`
@@ -474,6 +497,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +531,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeypairDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -520,6 +546,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListKeypairTask
         :type request: :class:`huaweicloudsdkkps.v3.ListKeypairTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairTaskResponse`
@@ -532,6 +559,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -564,6 +593,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeypairTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -578,6 +608,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListKeypairs
         :type request: :class:`huaweicloudsdkkps.v3.ListKeypairsRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairsResponse`
@@ -590,6 +621,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -624,6 +657,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeypairsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -638,6 +672,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRunningTask
         :type request: :class:`huaweicloudsdkkps.v3.ListRunningTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListRunningTaskResponse`
@@ -650,6 +685,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -684,6 +721,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRunningTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -698,6 +736,7 @@ class KpsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateKeypairDescription
         :type request: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionResponse`
@@ -710,6 +749,8 @@ class KpsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -744,6 +785,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeypairDescriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -751,7 +793,7 @@ class KpsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -762,9 +804,10 @@ class KpsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -781,6 +824,7 @@ class KpsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

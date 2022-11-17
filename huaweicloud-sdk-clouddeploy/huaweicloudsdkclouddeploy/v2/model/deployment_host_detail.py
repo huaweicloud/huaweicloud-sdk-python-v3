@@ -17,7 +17,6 @@ class DeploymentHostDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -364,7 +363,6 @@ class DeploymentHostDetail:
     def authorization(self):
         """Gets the authorization of this DeploymentHostDetail.
 
-
         :return: The authorization of this DeploymentHostDetail.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
         """
@@ -373,7 +371,6 @@ class DeploymentHostDetail:
     @authorization.setter
     def authorization(self, authorization):
         """Sets the authorization of this DeploymentHostDetail.
-
 
         :param authorization: The authorization of this DeploymentHostDetail.
         :type authorization: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostAuthorizationBody`
@@ -428,7 +425,6 @@ class DeploymentHostDetail:
     def proxy_host(self):
         """Gets the proxy_host of this DeploymentHostDetail.
 
-
         :return: The proxy_host of this DeploymentHostDetail.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostDetail`
         """
@@ -437,7 +433,6 @@ class DeploymentHostDetail:
     @proxy_host.setter
     def proxy_host(self, proxy_host):
         """Sets the proxy_host of this DeploymentHostDetail.
-
 
         :param proxy_host: The proxy_host of this DeploymentHostDetail.
         :type proxy_host: :class:`huaweicloudsdkclouddeploy.v2.DeploymentHostDetail`
@@ -514,7 +509,6 @@ class DeploymentHostDetail:
     def permission(self):
         """Gets the permission of this DeploymentHostDetail.
 
-
         :return: The permission of this DeploymentHostDetail.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`
         """
@@ -523,7 +517,6 @@ class DeploymentHostDetail:
     @permission.setter
     def permission(self, permission):
         """Sets the permission of this DeploymentHostDetail.
-
 
         :param permission: The permission of this DeploymentHostDetail.
         :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`

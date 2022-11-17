@@ -17,7 +17,6 @@ class ShowSecAppTaskResultResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowSecAppTaskResultResponse(SdkResponse):
     def basic_info(self):
         """Gets the basic_info of this ShowSecAppTaskResultResponse.
 
-
         :return: The basic_info of this ShowSecAppTaskResultResponse.
         :rtype: :class:`huaweicloudsdkdevsecurity.v1.BasicInfo`
         """
@@ -86,7 +84,6 @@ class ShowSecAppTaskResultResponse(SdkResponse):
     @basic_info.setter
     def basic_info(self, basic_info):
         """Sets the basic_info of this ShowSecAppTaskResultResponse.
-
 
         :param basic_info: The basic_info of this ShowSecAppTaskResultResponse.
         :type basic_info: :class:`huaweicloudsdkdevsecurity.v1.BasicInfo`
@@ -97,7 +94,6 @@ class ShowSecAppTaskResultResponse(SdkResponse):
     def apk_component_info(self):
         """Gets the apk_component_info of this ShowSecAppTaskResultResponse.
 
-
         :return: The apk_component_info of this ShowSecAppTaskResultResponse.
         :rtype: :class:`huaweicloudsdkdevsecurity.v1.ApkComponentInfo`
         """
@@ -106,7 +102,6 @@ class ShowSecAppTaskResultResponse(SdkResponse):
     @apk_component_info.setter
     def apk_component_info(self, apk_component_info):
         """Sets the apk_component_info of this ShowSecAppTaskResultResponse.
-
 
         :param apk_component_info: The apk_component_info of this ShowSecAppTaskResultResponse.
         :type apk_component_info: :class:`huaweicloudsdkdevsecurity.v1.ApkComponentInfo`
@@ -117,7 +112,6 @@ class ShowSecAppTaskResultResponse(SdkResponse):
     def hap_component_info(self):
         """Gets the hap_component_info of this ShowSecAppTaskResultResponse.
 
-
         :return: The hap_component_info of this ShowSecAppTaskResultResponse.
         :rtype: :class:`huaweicloudsdkdevsecurity.v1.HapComponentInfo`
         """
@@ -126,7 +120,6 @@ class ShowSecAppTaskResultResponse(SdkResponse):
     @hap_component_info.setter
     def hap_component_info(self, hap_component_info):
         """Sets the hap_component_info of this ShowSecAppTaskResultResponse.
-
 
         :param hap_component_info: The hap_component_info of this ShowSecAppTaskResultResponse.
         :type hap_component_info: :class:`huaweicloudsdkdevsecurity.v1.HapComponentInfo`

@@ -17,7 +17,6 @@ class MigrateNodesSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -89,7 +88,6 @@ class MigrateNodesSpec:
     def extend_param(self):
         """Gets the extend_param of this MigrateNodesSpec.
 
-
         :return: The extend_param of this MigrateNodesSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodeExtendParam`
         """
@@ -98,7 +96,6 @@ class MigrateNodesSpec:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this MigrateNodesSpec.
-
 
         :param extend_param: The extend_param of this MigrateNodesSpec.
         :type extend_param: :class:`huaweicloudsdkcce.v3.MigrateNodeExtendParam`
@@ -109,7 +106,6 @@ class MigrateNodesSpec:
     def login(self):
         """Gets the login of this MigrateNodesSpec.
 
-
         :return: The login of this MigrateNodesSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Login`
         """
@@ -118,7 +114,6 @@ class MigrateNodesSpec:
     @login.setter
     def login(self, login):
         """Sets the login of this MigrateNodesSpec.
-
 
         :param login: The login of this MigrateNodesSpec.
         :type login: :class:`huaweicloudsdkcce.v3.Login`

@@ -17,7 +17,6 @@ class CreateTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateTemplateRequest:
     def body(self):
         """Gets the body of this CreateTemplateRequest.
 
-
         :return: The body of this CreateTemplateRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateTemplateReq`
         """
@@ -86,7 +84,6 @@ class CreateTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTemplateRequest.
-
 
         :param body: The body of this CreateTemplateRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateTemplateReq`

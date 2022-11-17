@@ -17,7 +17,6 @@ class DeleteNamespaceAuthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DeleteNamespaceAuthRequest:
     def body(self):
         """Gets the body of this DeleteNamespaceAuthRequest.
 
-
         :return: The body of this DeleteNamespaceAuthRequest.
         :rtype: list[str]
         """
@@ -86,7 +84,6 @@ class DeleteNamespaceAuthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteNamespaceAuthRequest.
-
 
         :param body: The body of this DeleteNamespaceAuthRequest.
         :type body: list[str]

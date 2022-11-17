@@ -17,7 +17,6 @@ class State:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -55,7 +54,6 @@ class State:
     def phase(self):
         """Gets the phase of this State.
 
-
         :return: The phase of this State.
         :rtype: str
         """
@@ -64,7 +62,6 @@ class State:
     @phase.setter
     def phase(self, phase):
         """Sets the phase of this State.
-
 
         :param phase: The phase of this State.
         :type phase: str
@@ -75,7 +72,6 @@ class State:
     def reason(self):
         """Gets the reason of this State.
 
-
         :return: The reason of this State.
         :rtype: str
         """
@@ -84,7 +80,6 @@ class State:
     @reason.setter
     def reason(self, reason):
         """Sets the reason of this State.
-
 
         :param reason: The reason of this State.
         :type reason: str

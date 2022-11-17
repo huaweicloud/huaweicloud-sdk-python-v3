@@ -17,7 +17,6 @@ class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
     def quotas(self):
         """Gets the quotas of this ShowGaussMySqlProjectQuotasResponse.
 
-
         :return: The quotas of this ShowGaussMySqlProjectQuotasResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ProjectQuotas`
         """
@@ -58,7 +56,6 @@ class ShowGaussMySqlProjectQuotasResponse(SdkResponse):
     @quotas.setter
     def quotas(self, quotas):
         """Sets the quotas of this ShowGaussMySqlProjectQuotasResponse.
-
 
         :param quotas: The quotas of this ShowGaussMySqlProjectQuotasResponse.
         :type quotas: :class:`huaweicloudsdkgaussdb.v3.ProjectQuotas`

@@ -17,7 +17,6 @@ class CreateInstanceRespItem:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -204,7 +203,6 @@ class CreateInstanceRespItem:
     def datastore(self):
         """Gets the datastore of this CreateInstanceRespItem.
 
-
         :return: The datastore of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
         """
@@ -213,7 +211,6 @@ class CreateInstanceRespItem:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CreateInstanceRespItem.
-
 
         :param datastore: The datastore of this CreateInstanceRespItem.
         :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
@@ -224,7 +221,6 @@ class CreateInstanceRespItem:
     def ha(self):
         """Gets the ha of this CreateInstanceRespItem.
 
-
         :return: The ha of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
         """
@@ -233,7 +229,6 @@ class CreateInstanceRespItem:
     @ha.setter
     def ha(self, ha):
         """Sets the ha of this CreateInstanceRespItem.
-
 
         :param ha: The ha of this CreateInstanceRespItem.
         :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
@@ -266,7 +261,6 @@ class CreateInstanceRespItem:
     def volume(self):
         """Gets the volume of this CreateInstanceRespItem.
 
-
         :return: The volume of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
         """
@@ -275,7 +269,6 @@ class CreateInstanceRespItem:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this CreateInstanceRespItem.
-
 
         :param volume: The volume of this CreateInstanceRespItem.
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
@@ -330,7 +323,6 @@ class CreateInstanceRespItem:
     def backup_strategy(self):
         """Gets the backup_strategy of this CreateInstanceRespItem.
 
-
         :return: The backup_strategy of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
         """
@@ -339,7 +331,6 @@ class CreateInstanceRespItem:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this CreateInstanceRespItem.
-
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRespItem.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
@@ -460,7 +451,6 @@ class CreateInstanceRespItem:
     def charge_info(self):
         """Gets the charge_info of this CreateInstanceRespItem.
 
-
         :return: The charge_info of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
         """
@@ -469,7 +459,6 @@ class CreateInstanceRespItem:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this CreateInstanceRespItem.
-
 
         :param charge_info: The charge_info of this CreateInstanceRespItem.
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`

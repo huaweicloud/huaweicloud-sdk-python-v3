@@ -17,7 +17,6 @@ class AddSubsetsToGatewayRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class AddSubsetsToGatewayRequest:
     def body(self):
         """Gets the body of this AddSubsetsToGatewayRequest.
 
-
         :return: The body of this AddSubsetsToGatewayRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequestBody`
         """
@@ -114,7 +112,6 @@ class AddSubsetsToGatewayRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddSubsetsToGatewayRequest.
-
 
         :param body: The body of this AddSubsetsToGatewayRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequestBody`

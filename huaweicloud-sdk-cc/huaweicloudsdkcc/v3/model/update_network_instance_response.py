@@ -17,7 +17,6 @@ class UpdateNetworkInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class UpdateNetworkInstanceResponse(SdkResponse):
     def network_instance(self):
         """Gets the network_instance of this UpdateNetworkInstanceResponse.
 
-
         :return: The network_instance of this UpdateNetworkInstanceResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.NetworkInstance`
         """
@@ -65,7 +63,6 @@ class UpdateNetworkInstanceResponse(SdkResponse):
     @network_instance.setter
     def network_instance(self, network_instance):
         """Sets the network_instance of this UpdateNetworkInstanceResponse.
-
 
         :param network_instance: The network_instance of this UpdateNetworkInstanceResponse.
         :type network_instance: :class:`huaweicloudsdkcc.v3.NetworkInstance`

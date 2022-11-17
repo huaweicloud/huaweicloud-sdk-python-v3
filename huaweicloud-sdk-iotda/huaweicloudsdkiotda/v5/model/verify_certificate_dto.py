@@ -17,7 +17,6 @@ class VerifyCertificateDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -33,7 +32,7 @@ class VerifyCertificateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param verify_content: **参数说明**：验证证书的内容信息。
+        :param verify_content: 验证证书的内容信息。
         :type verify_content: str
         """
         
@@ -48,7 +47,7 @@ class VerifyCertificateDTO:
     def verify_content(self):
         """Gets the verify_content of this VerifyCertificateDTO.
 
-        **参数说明**：验证证书的内容信息。
+        验证证书的内容信息。
 
         :return: The verify_content of this VerifyCertificateDTO.
         :rtype: str
@@ -59,7 +58,7 @@ class VerifyCertificateDTO:
     def verify_content(self, verify_content):
         """Sets the verify_content of this VerifyCertificateDTO.
 
-        **参数说明**：验证证书的内容信息。
+        验证证书的内容信息。
 
         :param verify_content: The verify_content of this VerifyCertificateDTO.
         :type verify_content: str

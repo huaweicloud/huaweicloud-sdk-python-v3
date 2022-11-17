@@ -17,7 +17,6 @@ class MbTasksReportReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class MbTasksReportReq:
     def parameter(self):
         """Gets the parameter of this MbTasksReportReq.
 
-
         :return: The parameter of this MbTasksReportReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.MbTaskParameter`
         """
@@ -174,7 +172,6 @@ class MbTasksReportReq:
     @parameter.setter
     def parameter(self, parameter):
         """Sets the parameter of this MbTasksReportReq.
-
 
         :param parameter: The parameter of this MbTasksReportReq.
         :type parameter: :class:`huaweicloudsdkmpc.v1.MbTaskParameter`

@@ -17,7 +17,6 @@ class Service:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -123,7 +122,6 @@ class Service:
     def links(self):
         """Gets the links of this Service.
 
-
         :return: The links of this Service.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
@@ -132,7 +130,6 @@ class Service:
     @links.setter
     def links(self, links):
         """Sets the links of this Service.
-
 
         :param links: The links of this Service.
         :type links: :class:`huaweicloudsdkiam.v3.Links`

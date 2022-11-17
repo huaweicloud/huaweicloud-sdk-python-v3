@@ -17,7 +17,6 @@ class ResizeProtectedInstanceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ResizeProtectedInstanceRequestBody:
     def resize(self):
         """Gets the resize of this ResizeProtectedInstanceRequestBody.
 
-
         :return: The resize of this ResizeProtectedInstanceRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequestParams`
         """
@@ -57,7 +55,6 @@ class ResizeProtectedInstanceRequestBody:
     @resize.setter
     def resize(self, resize):
         """Sets the resize of this ResizeProtectedInstanceRequestBody.
-
 
         :param resize: The resize of this ResizeProtectedInstanceRequestBody.
         :type resize: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequestParams`

@@ -17,7 +17,6 @@ class ShowScalingConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowScalingConfigResponse(SdkResponse):
     def scaling_configuration(self):
         """Gets the scaling_configuration of this ShowScalingConfigResponse.
 
-
         :return: The scaling_configuration of this ShowScalingConfigResponse.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingConfiguration`
         """
@@ -58,7 +56,6 @@ class ShowScalingConfigResponse(SdkResponse):
     @scaling_configuration.setter
     def scaling_configuration(self, scaling_configuration):
         """Sets the scaling_configuration of this ShowScalingConfigResponse.
-
 
         :param scaling_configuration: The scaling_configuration of this ShowScalingConfigResponse.
         :type scaling_configuration: :class:`huaweicloudsdkas.v1.ScalingConfiguration`

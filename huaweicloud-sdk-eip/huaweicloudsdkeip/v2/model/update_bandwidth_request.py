@@ -17,7 +17,6 @@ class UpdateBandwidthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateBandwidthRequest:
     def body(self):
         """Gets the body of this UpdateBandwidthRequest.
 
-
         :return: The body of this UpdateBandwidthRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.UpdateBandwidthRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateBandwidthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateBandwidthRequest.
-
 
         :param body: The body of this UpdateBandwidthRequest.
         :type body: :class:`huaweicloudsdkeip.v2.UpdateBandwidthRequestBody`

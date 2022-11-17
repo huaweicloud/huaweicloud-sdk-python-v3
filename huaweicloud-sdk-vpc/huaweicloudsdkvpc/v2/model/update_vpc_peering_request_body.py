@@ -17,7 +17,6 @@ class UpdateVpcPeeringRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateVpcPeeringRequestBody:
     def peering(self):
         """Gets the peering of this UpdateVpcPeeringRequestBody.
 
-
         :return: The peering of this UpdateVpcPeeringRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringOption`
         """
@@ -57,7 +55,6 @@ class UpdateVpcPeeringRequestBody:
     @peering.setter
     def peering(self, peering):
         """Sets the peering of this UpdateVpcPeeringRequestBody.
-
 
         :param peering: The peering of this UpdateVpcPeeringRequestBody.
         :type peering: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringOption`

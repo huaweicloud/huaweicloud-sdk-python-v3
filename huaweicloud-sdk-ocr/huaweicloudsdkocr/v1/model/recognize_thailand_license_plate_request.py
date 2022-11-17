@@ -17,38 +17,65 @@ class RecognizeThailandLicensePlateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'body': 'ThailandLicensePlateRequestBody'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'Enterprise-Project-Id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, enterprise_project_id=None, body=None):
         """RecognizeThailandLicensePlateRequest
 
         The model defined in huaweicloud sdk
 
+        :param enterprise_project_id: 企业项目ID。OCR支持通过企业项目管理（EPS）对不同用户组和用户的资源使用，进行分账。  获取方法：进入“[企业项目管理](https://console-intl.huaweicloud.com/eps/?region&#x3D;ap-southeast-2#/projects/list)”页面，单击企业项目名称，在企业项目详情页获取Enterprise-Project-Id（企业项目ID）。  企业项目创建步骤请参见用户指南。 &gt; 说明： 创建企业项目后，在传参时，有以下三类场景。 - 携带正确的ID，正常使用OCR服务，账单归到企业ID对应的企业项目中。 - 携带错误的ID，正常使用OCR服务，账单的企业项目会被分类为“未归集”。 - 不携带ID，正常使用OCR服务，账单的企业项目会被分类为“未归集”。
+        :type enterprise_project_id: str
         :param body: Body of the RecognizeThailandLicensePlateRequest
         :type body: :class:`huaweicloudsdkocr.v1.ThailandLicensePlateRequestBody`
         """
         
         
 
+        self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
 
     @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this RecognizeThailandLicensePlateRequest.
+
+        企业项目ID。OCR支持通过企业项目管理（EPS）对不同用户组和用户的资源使用，进行分账。  获取方法：进入“[企业项目管理](https://console-intl.huaweicloud.com/eps/?region=ap-southeast-2#/projects/list)”页面，单击企业项目名称，在企业项目详情页获取Enterprise-Project-Id（企业项目ID）。  企业项目创建步骤请参见用户指南。 > 说明： 创建企业项目后，在传参时，有以下三类场景。 - 携带正确的ID，正常使用OCR服务，账单归到企业ID对应的企业项目中。 - 携带错误的ID，正常使用OCR服务，账单的企业项目会被分类为“未归集”。 - 不携带ID，正常使用OCR服务，账单的企业项目会被分类为“未归集”。
+
+        :return: The enterprise_project_id of this RecognizeThailandLicensePlateRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this RecognizeThailandLicensePlateRequest.
+
+        企业项目ID。OCR支持通过企业项目管理（EPS）对不同用户组和用户的资源使用，进行分账。  获取方法：进入“[企业项目管理](https://console-intl.huaweicloud.com/eps/?region=ap-southeast-2#/projects/list)”页面，单击企业项目名称，在企业项目详情页获取Enterprise-Project-Id（企业项目ID）。  企业项目创建步骤请参见用户指南。 > 说明： 创建企业项目后，在传参时，有以下三类场景。 - 携带正确的ID，正常使用OCR服务，账单归到企业ID对应的企业项目中。 - 携带错误的ID，正常使用OCR服务，账单的企业项目会被分类为“未归集”。 - 不携带ID，正常使用OCR服务，账单的企业项目会被分类为“未归集”。
+
+        :param enterprise_project_id: The enterprise_project_id of this RecognizeThailandLicensePlateRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
     def body(self):
         """Gets the body of this RecognizeThailandLicensePlateRequest.
-
 
         :return: The body of this RecognizeThailandLicensePlateRequest.
         :rtype: :class:`huaweicloudsdkocr.v1.ThailandLicensePlateRequestBody`
@@ -58,7 +85,6 @@ class RecognizeThailandLicensePlateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RecognizeThailandLicensePlateRequest.
-
 
         :param body: The body of this RecognizeThailandLicensePlateRequest.
         :type body: :class:`huaweicloudsdkocr.v1.ThailandLicensePlateRequestBody`

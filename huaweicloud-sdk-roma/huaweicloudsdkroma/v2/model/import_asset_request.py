@@ -17,7 +17,6 @@ class ImportAssetRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ImportAssetRequest:
     def body(self):
         """Gets the body of this ImportAssetRequest.
 
-
         :return: The body of this ImportAssetRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ImportAssetRequestBody`
         """
@@ -86,7 +84,6 @@ class ImportAssetRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportAssetRequest.
-
 
         :param body: The body of this ImportAssetRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ImportAssetRequestBody`

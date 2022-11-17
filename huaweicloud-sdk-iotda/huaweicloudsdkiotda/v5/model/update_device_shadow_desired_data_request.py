@@ -17,7 +17,6 @@ class UpdateDeviceShadowDesiredDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateDeviceShadowDesiredDataRequest:
     def body(self):
         """Gets the body of this UpdateDeviceShadowDesiredDataRequest.
 
-
         :return: The body of this UpdateDeviceShadowDesiredDataRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDesireds`
         """
@@ -115,7 +113,6 @@ class UpdateDeviceShadowDesiredDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDeviceShadowDesiredDataRequest.
-
 
         :param body: The body of this UpdateDeviceShadowDesiredDataRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.UpdateDesireds`

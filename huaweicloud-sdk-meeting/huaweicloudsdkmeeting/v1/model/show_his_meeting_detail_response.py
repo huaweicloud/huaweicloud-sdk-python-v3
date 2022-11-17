@@ -17,7 +17,6 @@ class ShowHisMeetingDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowHisMeetingDetailResponse(SdkResponse):
     def conference_data(self):
         """Gets the conference_data of this ShowHisMeetingDetailResponse.
 
-
         :return: The conference_data of this ShowHisMeetingDetailResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ConferenceInfo`
         """
@@ -65,7 +63,6 @@ class ShowHisMeetingDetailResponse(SdkResponse):
     @conference_data.setter
     def conference_data(self, conference_data):
         """Sets the conference_data of this ShowHisMeetingDetailResponse.
-
 
         :param conference_data: The conference_data of this ShowHisMeetingDetailResponse.
         :type conference_data: :class:`huaweicloudsdkmeeting.v1.ConferenceInfo`
@@ -76,7 +73,6 @@ class ShowHisMeetingDetailResponse(SdkResponse):
     def data(self):
         """Gets the data of this ShowHisMeetingDetailResponse.
 
-
         :return: The data of this ShowHisMeetingDetailResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.PageParticipant`
         """
@@ -85,7 +81,6 @@ class ShowHisMeetingDetailResponse(SdkResponse):
     @data.setter
     def data(self, data):
         """Sets the data of this ShowHisMeetingDetailResponse.
-
 
         :param data: The data of this ShowHisMeetingDetailResponse.
         :type data: :class:`huaweicloudsdkmeeting.v1.PageParticipant`

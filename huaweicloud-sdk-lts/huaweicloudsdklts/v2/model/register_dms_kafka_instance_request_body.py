@@ -17,7 +17,6 @@ class RegisterDmsKafkaInstanceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class RegisterDmsKafkaInstanceRequestBody:
     def connect_info(self):
         """Gets the connect_info of this RegisterDmsKafkaInstanceRequestBody.
 
-
         :return: The connect_info of this RegisterDmsKafkaInstanceRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequestBodyConnectInfo`
         """
@@ -113,7 +111,6 @@ class RegisterDmsKafkaInstanceRequestBody:
     @connect_info.setter
     def connect_info(self, connect_info):
         """Sets the connect_info of this RegisterDmsKafkaInstanceRequestBody.
-
 
         :param connect_info: The connect_info of this RegisterDmsKafkaInstanceRequestBody.
         :type connect_info: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequestBodyConnectInfo`

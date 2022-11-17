@@ -17,7 +17,6 @@ class BackupReplicateReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class BackupReplicateReq:
     def replicate(self):
         """Gets the replicate of this BackupReplicateReq.
 
-
         :return: The replicate of this BackupReplicateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupReplicateReqBody`
         """
@@ -57,7 +55,6 @@ class BackupReplicateReq:
     @replicate.setter
     def replicate(self, replicate):
         """Sets the replicate of this BackupReplicateReq.
-
 
         :param replicate: The replicate of this BackupReplicateReq.
         :type replicate: :class:`huaweicloudsdkcbr.v1.BackupReplicateReqBody`

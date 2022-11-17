@@ -17,7 +17,6 @@ class SetAuditlogPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SetAuditlogPolicyRequest:
     def body(self):
         """Gets the body of this SetAuditlogPolicyRequest.
 
-
         :return: The body of this SetAuditlogPolicyRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.SetAuditlogPolicyRequestBody`
         """
@@ -86,7 +84,6 @@ class SetAuditlogPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetAuditlogPolicyRequest.
-
 
         :param body: The body of this SetAuditlogPolicyRequest.
         :type body: :class:`huaweicloudsdkdds.v3.SetAuditlogPolicyRequestBody`

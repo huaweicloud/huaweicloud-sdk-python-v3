@@ -17,7 +17,6 @@ class PublicipSingleShowResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -509,7 +508,6 @@ class PublicipSingleShowResp:
     def vnic(self):
         """Gets the vnic of this PublicipSingleShowResp.
 
-
         :return: The vnic of this PublicipSingleShowResp.
         :rtype: :class:`huaweicloudsdkeip.v3.VnicInfo`
         """
@@ -518,7 +516,6 @@ class PublicipSingleShowResp:
     @vnic.setter
     def vnic(self, vnic):
         """Sets the vnic of this PublicipSingleShowResp.
-
 
         :param vnic: The vnic of this PublicipSingleShowResp.
         :type vnic: :class:`huaweicloudsdkeip.v3.VnicInfo`
@@ -529,7 +526,6 @@ class PublicipSingleShowResp:
     def bandwidth(self):
         """Gets the bandwidth of this PublicipSingleShowResp.
 
-
         :return: The bandwidth of this PublicipSingleShowResp.
         :rtype: :class:`huaweicloudsdkeip.v3.PublicipBandwidthInfo`
         """
@@ -538,7 +534,6 @@ class PublicipSingleShowResp:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this PublicipSingleShowResp.
-
 
         :param bandwidth: The bandwidth of this PublicipSingleShowResp.
         :type bandwidth: :class:`huaweicloudsdkeip.v3.PublicipBandwidthInfo`
@@ -725,7 +720,6 @@ class PublicipSingleShowResp:
     def profile(self):
         """Gets the profile of this PublicipSingleShowResp.
 
-
         :return: The profile of this PublicipSingleShowResp.
         :rtype: :class:`huaweicloudsdkeip.v3.ProfileInfo`
         """
@@ -734,7 +728,6 @@ class PublicipSingleShowResp:
     @profile.setter
     def profile(self, profile):
         """Sets the profile of this PublicipSingleShowResp.
-
 
         :param profile: The profile of this PublicipSingleShowResp.
         :type profile: :class:`huaweicloudsdkeip.v3.ProfileInfo`

@@ -17,7 +17,6 @@ class ListCaseCcEmailsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListCaseCcEmailsResponse(SdkResponse):
     def cc_email_info(self):
         """Gets the cc_email_info of this ListCaseCcEmailsResponse.
 
-
         :return: The cc_email_info of this ListCaseCcEmailsResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.IncidentOrderCCEmailInfoV2`
         """
@@ -65,7 +63,6 @@ class ListCaseCcEmailsResponse(SdkResponse):
     @cc_email_info.setter
     def cc_email_info(self, cc_email_info):
         """Sets the cc_email_info of this ListCaseCcEmailsResponse.
-
 
         :param cc_email_info: The cc_email_info of this ListCaseCcEmailsResponse.
         :type cc_email_info: :class:`huaweicloudsdkosm.v2.IncidentOrderCCEmailInfoV2`

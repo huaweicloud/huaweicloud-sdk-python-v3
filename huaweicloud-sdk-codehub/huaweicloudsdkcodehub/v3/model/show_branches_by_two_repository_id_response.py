@@ -17,7 +17,6 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
     def error(self):
         """Gets the error of this ShowBranchesByTwoRepositoryIdResponse.
 
-
         :return: The error of this ShowBranchesByTwoRepositoryIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ShowBranchesByTwoRepositoryIdResponse.
-
 
         :param error: The error of this ShowBranchesByTwoRepositoryIdResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
     def result(self):
         """Gets the result of this ShowBranchesByTwoRepositoryIdResponse.
 
-
         :return: The result of this ShowBranchesByTwoRepositoryIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.TagList`
         """
@@ -92,7 +88,6 @@ class ShowBranchesByTwoRepositoryIdResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ShowBranchesByTwoRepositoryIdResponse.
-
 
         :param result: The result of this ShowBranchesByTwoRepositoryIdResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.TagList`

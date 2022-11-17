@@ -17,7 +17,6 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -405,7 +404,6 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
     def auth_opt(self):
         """Gets the auth_opt of this ListApiRuntimeDefinitionV2Response.
 
-
         :return: The auth_opt of this ListApiRuntimeDefinitionV2Response.
         :rtype: :class:`huaweicloudsdkroma.v2.AuthOpt`
         """
@@ -414,7 +412,6 @@ class ListApiRuntimeDefinitionV2Response(SdkResponse):
     @auth_opt.setter
     def auth_opt(self, auth_opt):
         """Sets the auth_opt of this ListApiRuntimeDefinitionV2Response.
-
 
         :param auth_opt: The auth_opt of this ListApiRuntimeDefinitionV2Response.
         :type auth_opt: :class:`huaweicloudsdkroma.v2.AuthOpt`

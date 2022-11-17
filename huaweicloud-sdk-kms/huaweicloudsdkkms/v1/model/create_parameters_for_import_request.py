@@ -17,7 +17,6 @@ class CreateParametersForImportRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateParametersForImportRequest:
     def body(self):
         """Gets the body of this CreateParametersForImportRequest.
 
-
         :return: The body of this CreateParametersForImportRequest.
         :rtype: :class:`huaweicloudsdkkms.v1.GetParametersForImportRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateParametersForImportRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateParametersForImportRequest.
-
 
         :param body: The body of this CreateParametersForImportRequest.
         :type body: :class:`huaweicloudsdkkms.v1.GetParametersForImportRequestBody`

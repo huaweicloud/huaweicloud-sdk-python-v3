@@ -17,7 +17,6 @@ class DeleteMemberInviteRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteMemberInviteRequest:
     def body(self):
         """Gets the body of this DeleteMemberInviteRequest.
 
-
         :return: The body of this DeleteMemberInviteRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteRequestBody`
         """
@@ -58,7 +56,6 @@ class DeleteMemberInviteRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteMemberInviteRequest.
-
 
         :param body: The body of this DeleteMemberInviteRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteRequestBody`

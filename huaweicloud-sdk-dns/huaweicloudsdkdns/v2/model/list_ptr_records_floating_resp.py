@@ -17,7 +17,6 @@ class ListPtrRecordsFloatingResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -266,7 +265,6 @@ class ListPtrRecordsFloatingResp:
     def links(self):
         """Gets the links of this ListPtrRecordsFloatingResp.
 
-
         :return: The links of this ListPtrRecordsFloatingResp.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -275,7 +273,6 @@ class ListPtrRecordsFloatingResp:
     @links.setter
     def links(self, links):
         """Sets the links of this ListPtrRecordsFloatingResp.
-
 
         :param links: The links of this ListPtrRecordsFloatingResp.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

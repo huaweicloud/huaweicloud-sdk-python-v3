@@ -17,7 +17,6 @@ class BatchDeleteMqsInstanceTopicRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchDeleteMqsInstanceTopicRequest:
     def body(self):
         """Gets the body of this BatchDeleteMqsInstanceTopicRequest.
 
-
         :return: The body of this BatchDeleteMqsInstanceTopicRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicReq`
         """
@@ -86,7 +84,6 @@ class BatchDeleteMqsInstanceTopicRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteMqsInstanceTopicRequest.
-
 
         :param body: The body of this BatchDeleteMqsInstanceTopicRequest.
         :type body: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicReq`

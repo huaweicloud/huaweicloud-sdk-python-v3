@@ -17,7 +17,6 @@ class PutTaskReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -560,7 +559,6 @@ class PutTaskReq:
     def source_server(self):
         """Gets the source_server of this PutTaskReq.
 
-
         :return: The source_server of this PutTaskReq.
         :rtype: :class:`huaweicloudsdksms.v3.PostSourceServerBody`
         """
@@ -569,7 +567,6 @@ class PutTaskReq:
     @source_server.setter
     def source_server(self, source_server):
         """Sets the source_server of this PutTaskReq.
-
 
         :param source_server: The source_server of this PutTaskReq.
         :type source_server: :class:`huaweicloudsdksms.v3.PostSourceServerBody`
@@ -580,7 +577,6 @@ class PutTaskReq:
     def target_server(self):
         """Gets the target_server of this PutTaskReq.
 
-
         :return: The target_server of this PutTaskReq.
         :rtype: :class:`huaweicloudsdksms.v3.TargetServer`
         """
@@ -589,7 +585,6 @@ class PutTaskReq:
     @target_server.setter
     def target_server(self, target_server):
         """Sets the target_server of this PutTaskReq.
-
 
         :param target_server: The target_server of this PutTaskReq.
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServer`
@@ -864,7 +859,6 @@ class PutTaskReq:
     def clone_server(self):
         """Gets the clone_server of this PutTaskReq.
 
-
         :return: The clone_server of this PutTaskReq.
         :rtype: :class:`huaweicloudsdksms.v3.CloneServer`
         """
@@ -873,7 +867,6 @@ class PutTaskReq:
     @clone_server.setter
     def clone_server(self, clone_server):
         """Sets the clone_server of this PutTaskReq.
-
 
         :param clone_server: The clone_server of this PutTaskReq.
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`

@@ -17,7 +17,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     def domain(self):
         """Gets the domain of this ListOverviewsClassificationResponse.
 
-
         :return: The domain of this ListOverviewsClassificationResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.DomainClassificationItem`
         """
@@ -86,7 +84,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this ListOverviewsClassificationResponse.
-
 
         :param domain: The domain of this ListOverviewsClassificationResponse.
         :type domain: :class:`huaweicloudsdkwaf.v1.DomainClassificationItem`
@@ -97,7 +94,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     def attack_type(self):
         """Gets the attack_type of this ListOverviewsClassificationResponse.
 
-
         :return: The attack_type of this ListOverviewsClassificationResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.AttackTypeClassificationItem`
         """
@@ -106,7 +102,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     @attack_type.setter
     def attack_type(self, attack_type):
         """Sets the attack_type of this ListOverviewsClassificationResponse.
-
 
         :param attack_type: The attack_type of this ListOverviewsClassificationResponse.
         :type attack_type: :class:`huaweicloudsdkwaf.v1.AttackTypeClassificationItem`
@@ -117,7 +112,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     def ip(self):
         """Gets the ip of this ListOverviewsClassificationResponse.
 
-
         :return: The ip of this ListOverviewsClassificationResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.IpClassificationItem`
         """
@@ -126,7 +120,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     @ip.setter
     def ip(self, ip):
         """Sets the ip of this ListOverviewsClassificationResponse.
-
 
         :param ip: The ip of this ListOverviewsClassificationResponse.
         :type ip: :class:`huaweicloudsdkwaf.v1.IpClassificationItem`
@@ -137,7 +130,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     def url(self):
         """Gets the url of this ListOverviewsClassificationResponse.
 
-
         :return: The url of this ListOverviewsClassificationResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.UrlClassificationItem`
         """
@@ -146,7 +138,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     @url.setter
     def url(self, url):
         """Sets the url of this ListOverviewsClassificationResponse.
-
 
         :param url: The url of this ListOverviewsClassificationResponse.
         :type url: :class:`huaweicloudsdkwaf.v1.UrlClassificationItem`
@@ -157,7 +148,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     def geo(self):
         """Gets the geo of this ListOverviewsClassificationResponse.
 
-
         :return: The geo of this ListOverviewsClassificationResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.GeoClassificationItem`
         """
@@ -166,7 +156,6 @@ class ListOverviewsClassificationResponse(SdkResponse):
     @geo.setter
     def geo(self, geo):
         """Sets the geo of this ListOverviewsClassificationResponse.
-
 
         :param geo: The geo of this ListOverviewsClassificationResponse.
         :type geo: :class:`huaweicloudsdkwaf.v1.GeoClassificationItem`

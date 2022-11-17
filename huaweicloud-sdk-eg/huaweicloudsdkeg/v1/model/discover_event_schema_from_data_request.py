@@ -17,7 +17,6 @@ class DiscoverEventSchemaFromDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DiscoverEventSchemaFromDataRequest:
     def body(self):
         """Gets the body of this DiscoverEventSchemaFromDataRequest.
 
-
         :return: The body of this DiscoverEventSchemaFromDataRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataReq`
         """
@@ -58,7 +56,6 @@ class DiscoverEventSchemaFromDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DiscoverEventSchemaFromDataRequest.
-
 
         :param body: The body of this DiscoverEventSchemaFromDataRequest.
         :type body: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataReq`

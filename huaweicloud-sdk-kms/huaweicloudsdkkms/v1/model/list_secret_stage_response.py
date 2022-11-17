@@ -17,7 +17,6 @@ class ListSecretStageResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListSecretStageResponse(SdkResponse):
     def stage(self):
         """Gets the stage of this ListSecretStageResponse.
 
-
         :return: The stage of this ListSecretStageResponse.
         :rtype: :class:`huaweicloudsdkkms.v1.Stage`
         """
@@ -58,7 +56,6 @@ class ListSecretStageResponse(SdkResponse):
     @stage.setter
     def stage(self, stage):
         """Sets the stage of this ListSecretStageResponse.
-
 
         :param stage: The stage of this ListSecretStageResponse.
         :type stage: :class:`huaweicloudsdkkms.v1.Stage`

@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class FrsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddFacesByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByBase64Response`
@@ -68,6 +63,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddFacesByBase64Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddFacesByFile
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByFileResponse`
@@ -128,6 +127,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -170,6 +171,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddFacesByFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -184,6 +186,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddFacesByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByUrlResponse`
@@ -196,6 +199,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -230,6 +235,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddFacesByUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -244,6 +250,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteFaces
         :type request: :class:`huaweicloudsdkfrs.v2.BatchDeleteFacesRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.BatchDeleteFacesResponse`
@@ -256,6 +263,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -290,6 +299,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteFacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -304,6 +314,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CompareFaceByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByBase64Response`
@@ -316,6 +327,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -348,6 +361,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CompareFaceByBase64Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -362,6 +376,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CompareFaceByFile
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileResponse`
@@ -374,6 +389,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -410,6 +427,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CompareFaceByFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -424,6 +442,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CompareFaceByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByUrlResponse`
@@ -436,6 +455,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -468,6 +489,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CompareFaceByUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -482,6 +504,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateFaceSet
         :type request: :class:`huaweicloudsdkfrs.v2.CreateFaceSetRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.CreateFaceSetResponse`
@@ -494,6 +517,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -526,6 +551,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFaceSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -540,6 +566,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteFaceByExternalImageId
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByExternalImageIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceByExternalImageIdResponse`
@@ -552,6 +579,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -586,6 +615,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFaceByExternalImageIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -600,6 +630,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteFaceByFaceId
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByFaceIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceByFaceIdResponse`
@@ -612,6 +643,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -646,6 +679,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFaceByFaceIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -660,6 +694,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteFaceSet
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceSetRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceSetResponse`
@@ -672,6 +707,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -704,6 +741,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFaceSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -718,6 +756,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectFaceByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64Response`
@@ -730,6 +769,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -762,6 +803,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectFaceByBase64Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -776,6 +818,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectFaceByBase64Intl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64IntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64IntlResponse`
@@ -788,6 +831,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -820,6 +865,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectFaceByBase64IntlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -834,6 +880,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectFaceByFile
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileResponse`
@@ -846,6 +893,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -882,6 +931,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectFaceByFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -896,6 +946,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectFaceByFileIntl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileIntlResponse`
@@ -908,6 +959,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -942,6 +995,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectFaceByFileIntlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -956,6 +1010,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectFaceByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlResponse`
@@ -968,6 +1023,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1000,6 +1057,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectFaceByUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1014,6 +1072,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectFaceByUrlIntl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlIntlResponse`
@@ -1026,6 +1085,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1058,6 +1119,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectFaceByUrlIntlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1072,6 +1134,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectLiveByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64Response`
@@ -1084,6 +1147,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1116,6 +1181,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectLiveByBase64Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1130,6 +1196,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectLiveByBase64Intl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64IntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64IntlResponse`
@@ -1142,6 +1209,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1174,6 +1243,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectLiveByBase64IntlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1188,6 +1258,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectLiveByFile
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileResponse`
@@ -1200,6 +1271,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1238,6 +1311,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectLiveByFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1252,6 +1326,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectLiveByFileIntl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlResponse`
@@ -1264,6 +1339,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1302,6 +1379,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectLiveByFileIntlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1316,6 +1394,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectLiveByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlResponse`
@@ -1328,6 +1407,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1360,6 +1441,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectLiveByUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1374,6 +1456,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectLiveByUrlIntl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlIntlResponse`
@@ -1386,6 +1469,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1418,6 +1503,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectLiveByUrlIntlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1432,6 +1518,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectLiveFaceByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByBase64Response`
@@ -1444,6 +1531,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1476,6 +1565,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectLiveFaceByBase64Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1490,6 +1580,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectLiveFaceByFile
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByFileResponse`
@@ -1502,6 +1593,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1536,6 +1629,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectLiveFaceByFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1550,6 +1644,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DetectLiveFaceByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByUrlResponse`
@@ -1562,6 +1657,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1594,6 +1691,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DetectLiveFaceByUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1609,6 +1707,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchFaceByBase64
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByBase64Response`
@@ -1621,6 +1720,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1655,6 +1756,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchFaceByBase64Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1670,6 +1772,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchFaceByFaceId
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFaceIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByFaceIdResponse`
@@ -1682,6 +1785,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1716,6 +1821,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchFaceByFaceIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1731,6 +1837,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchFaceByFile
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileResponse`
@@ -1743,6 +1850,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1789,6 +1898,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchFaceByFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1804,6 +1914,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SearchFaceByUrl
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByUrlResponse`
@@ -1816,6 +1927,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1850,6 +1963,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SearchFaceByUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1864,6 +1978,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAllFaceSets
         :type request: :class:`huaweicloudsdkfrs.v2.ShowAllFaceSetsRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowAllFaceSetsResponse`
@@ -1876,6 +1991,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1906,6 +2023,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAllFaceSetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1920,6 +2038,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowFaceSet
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFaceSetRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowFaceSetResponse`
@@ -1932,6 +2051,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1964,6 +2085,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFaceSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1978,6 +2100,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowFacesByFaceId
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByFaceIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowFacesByFaceIdResponse`
@@ -1990,6 +2113,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2024,6 +2149,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFacesByFaceIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2038,6 +2164,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowFacesByLimit
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByLimitRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowFacesByLimitResponse`
@@ -2050,6 +2177,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2086,6 +2215,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFacesByLimitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2100,6 +2230,7 @@ class FrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateFace
         :type request: :class:`huaweicloudsdkfrs.v2.UpdateFaceRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.UpdateFaceResponse`
@@ -2112,6 +2243,8 @@ class FrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2146,6 +2279,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2153,7 +2287,7 @@ class FrsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2164,9 +2298,10 @@ class FrsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2183,6 +2318,7 @@ class FrsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

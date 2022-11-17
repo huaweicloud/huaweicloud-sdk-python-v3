@@ -17,7 +17,6 @@ class UpdateScheduleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateScheduleRequest:
     def body(self):
         """Gets the body of this UpdateScheduleRequest.
 
-
         :return: The body of this UpdateScheduleRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleReq`
         """
@@ -86,7 +84,6 @@ class UpdateScheduleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateScheduleRequest.
-
 
         :param body: The body of this UpdateScheduleRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleReq`

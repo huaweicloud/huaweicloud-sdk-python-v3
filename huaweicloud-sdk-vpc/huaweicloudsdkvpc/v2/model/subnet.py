@@ -17,7 +17,6 @@ class Subnet:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,7 @@ class Subnet:
         :type neutron_subnet_id: str
         :param neutron_subnet_id_v6: 对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数
         :type neutron_subnet_id_v6: str
-        :param extra_dhcp_opts: 子网配置的NTP地址
+        :param extra_dhcp_opts: 子网配置的NTP地址或DHCP租约时间
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         :param scope: 功能说明：子网作用域 取值范围：center-表示作用域为中心；{azId}表示作用域为具体的AZ
         :type scope: str
@@ -559,7 +558,7 @@ class Subnet:
     def extra_dhcp_opts(self):
         """Gets the extra_dhcp_opts of this Subnet.
 
-        子网配置的NTP地址
+        子网配置的NTP地址或DHCP租约时间
 
         :return: The extra_dhcp_opts of this Subnet.
         :rtype: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
@@ -570,7 +569,7 @@ class Subnet:
     def extra_dhcp_opts(self, extra_dhcp_opts):
         """Sets the extra_dhcp_opts of this Subnet.
 
-        子网配置的NTP地址
+        子网配置的NTP地址或DHCP租约时间
 
         :param extra_dhcp_opts: The extra_dhcp_opts of this Subnet.
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]

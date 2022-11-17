@@ -17,7 +17,6 @@ class QueryStructProcessResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class QueryStructProcessResp:
     def struct_process(self):
         """Gets the struct_process of this QueryStructProcessResp.
 
-
         :return: The struct_process of this QueryStructProcessResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.StructProcessResp`
         """
@@ -144,7 +142,6 @@ class QueryStructProcessResp:
     @struct_process.setter
     def struct_process(self, struct_process):
         """Sets the struct_process of this QueryStructProcessResp.
-
 
         :param struct_process: The struct_process of this QueryStructProcessResp.
         :type struct_process: :class:`huaweicloudsdkdrs.v3.StructProcessResp`

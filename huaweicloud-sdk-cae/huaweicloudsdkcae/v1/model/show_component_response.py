@@ -17,7 +17,6 @@ class ShowComponentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class ShowComponentResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ShowComponentResponse.
 
-
         :return: The metadata of this ShowComponentResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.MetadataResponse`
         """
@@ -123,7 +121,6 @@ class ShowComponentResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ShowComponentResponse.
-
 
         :param metadata: The metadata of this ShowComponentResponse.
         :type metadata: :class:`huaweicloudsdkcae.v1.MetadataResponse`
@@ -134,7 +131,6 @@ class ShowComponentResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this ShowComponentResponse.
 
-
         :return: The spec of this ShowComponentResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentSpec`
         """
@@ -143,7 +139,6 @@ class ShowComponentResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ShowComponentResponse.
-
 
         :param spec: The spec of this ShowComponentResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.ComponentSpec`

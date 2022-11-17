@@ -17,7 +17,6 @@ class CreateVolumeRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -69,7 +68,6 @@ class CreateVolumeRequestBody:
     def bss_param(self):
         """Gets the bss_param of this CreateVolumeRequestBody.
 
-
         :return: The bss_param of this CreateVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.BssParamForCreateVolume`
         """
@@ -78,7 +76,6 @@ class CreateVolumeRequestBody:
     @bss_param.setter
     def bss_param(self, bss_param):
         """Sets the bss_param of this CreateVolumeRequestBody.
-
 
         :param bss_param: The bss_param of this CreateVolumeRequestBody.
         :type bss_param: :class:`huaweicloudsdkevs.v2.BssParamForCreateVolume`
@@ -89,7 +86,6 @@ class CreateVolumeRequestBody:
     def volume(self):
         """Gets the volume of this CreateVolumeRequestBody.
 
-
         :return: The volume of this CreateVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeOption`
         """
@@ -98,7 +94,6 @@ class CreateVolumeRequestBody:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this CreateVolumeRequestBody.
-
 
         :param volume: The volume of this CreateVolumeRequestBody.
         :type volume: :class:`huaweicloudsdkevs.v2.CreateVolumeOption`
@@ -131,7 +126,6 @@ class CreateVolumeRequestBody:
     def os_sch_hn_tscheduler_hints(self):
         """Gets the os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
 
-
         :return: The os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeSchedulerHints`
         """
@@ -140,7 +134,6 @@ class CreateVolumeRequestBody:
     @os_sch_hn_tscheduler_hints.setter
     def os_sch_hn_tscheduler_hints(self, os_sch_hn_tscheduler_hints):
         """Sets the os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
-
 
         :param os_sch_hn_tscheduler_hints: The os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
         :type os_sch_hn_tscheduler_hints: :class:`huaweicloudsdkevs.v2.CreateVolumeSchedulerHints`

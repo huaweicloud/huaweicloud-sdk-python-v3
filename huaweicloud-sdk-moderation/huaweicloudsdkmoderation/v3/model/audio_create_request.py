@@ -17,7 +17,6 @@ class AudioCreateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -67,7 +66,6 @@ class AudioCreateRequest:
     def data(self):
         """Gets the data of this AudioCreateRequest.
 
-
         :return: The data of this AudioCreateRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v3.AudioInputBody`
         """
@@ -76,7 +74,6 @@ class AudioCreateRequest:
     @data.setter
     def data(self, data):
         """Sets the data of this AudioCreateRequest.
-
 
         :param data: The data of this AudioCreateRequest.
         :type data: :class:`huaweicloudsdkmoderation.v3.AudioInputBody`

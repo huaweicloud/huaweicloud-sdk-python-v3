@@ -17,7 +17,6 @@ class ShowClusterDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -253,7 +252,6 @@ class ShowClusterDetailResponse(SdkResponse):
     def datastore(self):
         """Gets the datastore of this ShowClusterDetailResponse.
 
-
         :return: The datastore of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.Datastore`
         """
@@ -262,7 +260,6 @@ class ShowClusterDetailResponse(SdkResponse):
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this ShowClusterDetailResponse.
-
 
         :param datastore: The datastore of this ShowClusterDetailResponse.
         :type datastore: :class:`huaweicloudsdkcloudtable.v2.Datastore`

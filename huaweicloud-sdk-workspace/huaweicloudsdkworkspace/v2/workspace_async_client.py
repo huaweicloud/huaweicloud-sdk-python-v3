@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class WorkspaceAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAvailabilityZones
         :type request: :class:`huaweicloudsdkworkspace.v2.ListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListAvailabilityZonesResponse`
@@ -68,6 +63,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -98,6 +95,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAvailabilityZonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -112,6 +110,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportUserLoginInfoNew
         :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserLoginInfoNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUserLoginInfoNewResponse`
@@ -124,6 +123,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportUserLoginInfoNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHistoryOnlineInfoNew
         :type request: :class:`huaweicloudsdkworkspace.v2.ListHistoryOnlineInfoNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListHistoryOnlineInfoNewResponse`
@@ -192,6 +195,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +233,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHistoryOnlineInfoNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +248,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLoginRecordsNew
         :type request: :class:`huaweicloudsdkworkspace.v2.ListLoginRecordsNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListLoginRecordsNewResponse`
@@ -254,6 +261,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -298,6 +307,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLoginRecordsNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -312,6 +322,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteDesktops
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopsResponse`
@@ -324,6 +335,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -356,6 +369,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteDesktopsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -370,6 +384,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRunDesktops
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchRunDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchRunDesktopsResponse`
@@ -382,6 +397,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -414,6 +431,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRunDesktopsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -428,6 +446,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDesktop
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopResponse`
@@ -440,6 +459,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -472,6 +493,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDesktopResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -486,6 +508,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDesktop
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopResponse`
@@ -498,6 +521,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -534,6 +559,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDesktopResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -548,6 +574,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDesktops
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsResponse`
@@ -560,6 +587,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -600,6 +629,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDesktopsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -614,6 +644,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDesktopsDetail
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsDetailRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsDetailResponse`
@@ -626,6 +657,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -674,6 +707,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDesktopsDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -688,6 +722,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeDesktop
         :type request: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopResponse`
@@ -700,6 +735,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -732,6 +769,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeDesktopResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -746,6 +784,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDesktopDetail
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowDesktopDetailRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowDesktopDetailResponse`
@@ -758,6 +797,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -790,6 +831,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDesktopDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -804,6 +846,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListImages
         :type request: :class:`huaweicloudsdkworkspace.v2.ListImagesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListImagesResponse`
@@ -816,6 +859,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -854,6 +899,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListImagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -868,6 +914,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListItaSubJobs
         :type request: :class:`huaweicloudsdkworkspace.v2.ListItaSubJobsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListItaSubJobsResponse`
@@ -880,6 +927,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -920,6 +969,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListItaSubJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -934,6 +984,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProducts
         :type request: :class:`huaweicloudsdkworkspace.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListProductsResponse`
@@ -946,6 +997,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -988,6 +1041,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1002,6 +1056,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeUserStatus
         :type request: :class:`huaweicloudsdkworkspace.v2.ChangeUserStatusRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ChangeUserStatusResponse`
@@ -1014,6 +1069,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1048,6 +1105,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeUserStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1062,6 +1120,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDesktopUser
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopUserRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopUserResponse`
@@ -1074,6 +1133,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1106,6 +1167,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDesktopUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1120,6 +1182,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteUser
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteUserRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteUserResponse`
@@ -1132,6 +1195,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1164,6 +1229,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1178,6 +1244,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUserDetail
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUserDetailRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUserDetailResponse`
@@ -1190,6 +1257,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1222,6 +1291,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1236,6 +1306,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUsers
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUsersResponse`
@@ -1248,6 +1319,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1286,6 +1359,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1300,6 +1374,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUserInfo
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateUserInfoRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateUserInfoResponse`
@@ -1312,6 +1387,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1346,6 +1423,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1360,6 +1438,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddVolumes
         :type request: :class:`huaweicloudsdkworkspace.v2.AddVolumesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddVolumesResponse`
@@ -1372,6 +1451,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1404,6 +1485,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddVolumesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1418,6 +1500,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExpandVolumes
         :type request: :class:`huaweicloudsdkworkspace.v2.ExpandVolumesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandVolumesResponse`
@@ -1430,6 +1513,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1462,6 +1547,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandVolumesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1478,6 +1564,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ApplyWorkspace
         :type request: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceResponse`
@@ -1490,6 +1577,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1522,6 +1611,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ApplyWorkspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1536,6 +1626,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelWorkspace
         :type request: :class:`huaweicloudsdkworkspace.v2.CancelWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CancelWorkspaceResponse`
@@ -1548,6 +1639,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1578,6 +1671,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelWorkspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1592,6 +1686,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWorkspaces
         :type request: :class:`huaweicloudsdkworkspace.v2.ListWorkspacesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListWorkspacesResponse`
@@ -1604,6 +1699,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1634,6 +1731,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkspacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1648,6 +1746,7 @@ class WorkspaceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateWorkspace
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateWorkspaceResponse`
@@ -1660,6 +1759,8 @@ class WorkspaceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1692,6 +1793,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWorkspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1699,7 +1801,7 @@ class WorkspaceAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1710,9 +1812,10 @@ class WorkspaceAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1729,6 +1832,7 @@ class WorkspaceAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

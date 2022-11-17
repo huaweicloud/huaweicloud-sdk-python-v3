@@ -17,7 +17,6 @@ class ShowProgressDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowProgressDetailResponse(SdkResponse):
     def progress(self):
         """Gets the progress of this ShowProgressDetailResponse.
 
-
         :return: The progress of this ShowProgressDetailResponse.
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ProgressDetailV2`
         """
@@ -87,7 +85,6 @@ class ShowProgressDetailResponse(SdkResponse):
     @progress.setter
     def progress(self, progress):
         """Sets the progress of this ShowProgressDetailResponse.
-
 
         :param progress: The progress of this ShowProgressDetailResponse.
         :type progress: :class:`huaweicloudsdkcodecheck.v2.ProgressDetailV2`

@@ -17,7 +17,6 @@ class CreateDatabaseReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class CreateDatabaseReq:
     def import_data(self):
         """Gets the import_data of this CreateDatabaseReq.
 
-
         :return: The import_data of this CreateDatabaseReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataReq`
         """
@@ -143,7 +141,6 @@ class CreateDatabaseReq:
     @import_data.setter
     def import_data(self, import_data):
         """Sets the import_data of this CreateDatabaseReq.
-
 
         :param import_data: The import_data of this CreateDatabaseReq.
         :type import_data: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataReq`

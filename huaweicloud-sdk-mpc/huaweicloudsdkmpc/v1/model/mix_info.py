@@ -17,7 +17,6 @@ class MixInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class MixInfo:
     def layout(self):
         """Gets the layout of this MixInfo.
 
-
         :return: The layout of this MixInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.MixInfoLayout`
         """
@@ -87,7 +85,6 @@ class MixInfo:
     @layout.setter
     def layout(self, layout):
         """Sets the layout of this MixInfo.
-
 
         :param layout: The layout of this MixInfo.
         :type layout: :class:`huaweicloudsdkmpc.v1.MixInfoLayout`

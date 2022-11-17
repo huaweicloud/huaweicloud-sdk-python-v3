@@ -17,7 +17,6 @@ class KeystoneShowProtocolResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneShowProtocolResponse(SdkResponse):
     def protocol(self):
         """Gets the protocol of this KeystoneShowProtocolResponse.
 
-
         :return: The protocol of this KeystoneShowProtocolResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ProtocolResult`
         """
@@ -58,7 +56,6 @@ class KeystoneShowProtocolResponse(SdkResponse):
     @protocol.setter
     def protocol(self, protocol):
         """Sets the protocol of this KeystoneShowProtocolResponse.
-
 
         :param protocol: The protocol of this KeystoneShowProtocolResponse.
         :type protocol: :class:`huaweicloudsdkiam.v3.ProtocolResult`

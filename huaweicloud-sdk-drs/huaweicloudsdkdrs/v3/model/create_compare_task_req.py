@@ -17,7 +17,6 @@ class CreateCompareTaskReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateCompareTaskReq:
     def data_level_compare_info(self):
         """Gets the data_level_compare_info of this CreateCompareTaskReq.
 
-
         :return: The data_level_compare_info of this CreateCompareTaskReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateDataLevelCompareReq`
         """
@@ -115,7 +113,6 @@ class CreateCompareTaskReq:
     @data_level_compare_info.setter
     def data_level_compare_info(self, data_level_compare_info):
         """Sets the data_level_compare_info of this CreateCompareTaskReq.
-
 
         :param data_level_compare_info: The data_level_compare_info of this CreateCompareTaskReq.
         :type data_level_compare_info: :class:`huaweicloudsdkdrs.v3.CreateDataLevelCompareReq`

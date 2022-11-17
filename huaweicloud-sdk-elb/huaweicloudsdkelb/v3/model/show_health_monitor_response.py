@@ -17,7 +17,6 @@ class ShowHealthMonitorResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowHealthMonitorResponse(SdkResponse):
     def healthmonitor(self):
         """Gets the healthmonitor of this ShowHealthMonitorResponse.
 
-
         :return: The healthmonitor of this ShowHealthMonitorResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.HealthMonitor`
         """
@@ -87,7 +85,6 @@ class ShowHealthMonitorResponse(SdkResponse):
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
         """Sets the healthmonitor of this ShowHealthMonitorResponse.
-
 
         :param healthmonitor: The healthmonitor of this ShowHealthMonitorResponse.
         :type healthmonitor: :class:`huaweicloudsdkelb.v3.HealthMonitor`

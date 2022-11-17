@@ -17,7 +17,6 @@ class CheckTokenResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -278,7 +277,6 @@ class CheckTokenResponse(SdkResponse):
     def user(self):
         """Gets the user of this CheckTokenResponse.
 
-
         :return: The user of this CheckTokenResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UserInfo`
         """
@@ -287,7 +285,6 @@ class CheckTokenResponse(SdkResponse):
     @user.setter
     def user(self, user):
         """Sets the user of this CheckTokenResponse.
-
 
         :param user: The user of this CheckTokenResponse.
         :type user: :class:`huaweicloudsdkmeeting.v1.UserInfo`
@@ -408,7 +405,6 @@ class CheckTokenResponse(SdkResponse):
     def proxy_token(self):
         """Gets the proxy_token of this CheckTokenResponse.
 
-
         :return: The proxy_token of this CheckTokenResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ProxyTokenDTO`
         """
@@ -417,7 +413,6 @@ class CheckTokenResponse(SdkResponse):
     @proxy_token.setter
     def proxy_token(self, proxy_token):
         """Sets the proxy_token of this CheckTokenResponse.
-
 
         :param proxy_token: The proxy_token of this CheckTokenResponse.
         :type proxy_token: :class:`huaweicloudsdkmeeting.v1.ProxyTokenDTO`

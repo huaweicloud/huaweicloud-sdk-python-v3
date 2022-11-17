@@ -17,7 +17,6 @@ class CheckSqlRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CheckSqlRequest:
     def body(self):
         """Gets the body of this CheckSqlRequest.
 
-
         :return: The body of this CheckSqlRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CheckSQLGramarReq`
         """
@@ -58,7 +56,6 @@ class CheckSqlRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckSqlRequest.
-
 
         :param body: The body of this CheckSqlRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CheckSQLGramarReq`

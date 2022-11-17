@@ -17,7 +17,6 @@ class AssociateSubnetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class AssociateSubnetResponse(SdkResponse):
     def routetable(self):
         """Gets the routetable of this AssociateSubnetResponse.
 
-
         :return: The routetable of this AssociateSubnetResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Routetable`
         """
@@ -58,7 +56,6 @@ class AssociateSubnetResponse(SdkResponse):
     @routetable.setter
     def routetable(self, routetable):
         """Sets the routetable of this AssociateSubnetResponse.
-
 
         :param routetable: The routetable of this AssociateSubnetResponse.
         :type routetable: :class:`huaweicloudsdkiec.v1.Routetable`

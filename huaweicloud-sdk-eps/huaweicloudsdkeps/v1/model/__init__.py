@@ -20,11 +20,15 @@ from huaweicloudsdkeps.v1.model.list_api_versions_request import ListApiVersions
 from huaweicloudsdkeps.v1.model.list_api_versions_response import ListApiVersionsResponse
 from huaweicloudsdkeps.v1.model.list_enterprise_project_request import ListEnterpriseProjectRequest
 from huaweicloudsdkeps.v1.model.list_enterprise_project_response import ListEnterpriseProjectResponse
+from huaweicloudsdkeps.v1.model.list_providers_request import ListProvidersRequest
+from huaweicloudsdkeps.v1.model.list_providers_response import ListProvidersResponse
 from huaweicloudsdkeps.v1.model.match import Match
 from huaweicloudsdkeps.v1.model.migrate_resource import MigrateResource
 from huaweicloudsdkeps.v1.model.migrate_resource_request import MigrateResourceRequest
 from huaweicloudsdkeps.v1.model.migrate_resource_response import MigrateResourceResponse
+from huaweicloudsdkeps.v1.model.provider_response_body import ProviderResponseBody
 from huaweicloudsdkeps.v1.model.quotas_detail import QuotasDetail
+from huaweicloudsdkeps.v1.model.resource_type_body import ResourceTypeBody
 from huaweicloudsdkeps.v1.model.resources import Resources
 from huaweicloudsdkeps.v1.model.resq_ep_resouce import ResqEpResouce
 from huaweicloudsdkeps.v1.model.show_api_version_request import ShowApiVersionRequest

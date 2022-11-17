@@ -17,7 +17,6 @@ class ResizeInstanceFlavorRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ResizeInstanceFlavorRequest:
     def body(self):
         """Gets the body of this ResizeInstanceFlavorRequest.
 
-
         :return: The body of this ResizeInstanceFlavorRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequest`
         """
@@ -115,7 +113,6 @@ class ResizeInstanceFlavorRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResizeInstanceFlavorRequest.
-
 
         :param body: The body of this ResizeInstanceFlavorRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequest`

@@ -17,7 +17,6 @@ class ShowInstanceDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -235,7 +234,6 @@ class ShowInstanceDetailResponse(SdkResponse):
     def platform_type(self):
         """Gets the platform_type of this ShowInstanceDetailResponse.
 
-
         :return: The platform_type of this ShowInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
         """
@@ -244,7 +242,6 @@ class ShowInstanceDetailResponse(SdkResponse):
     @platform_type.setter
     def platform_type(self, platform_type):
         """Sets the platform_type of this ShowInstanceDetailResponse.
-
 
         :param platform_type: The platform_type of this ShowInstanceDetailResponse.
         :type platform_type: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
@@ -255,7 +252,6 @@ class ShowInstanceDetailResponse(SdkResponse):
     def flavor_id(self):
         """Gets the flavor_id of this ShowInstanceDetailResponse.
 
-
         :return: The flavor_id of this ShowInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         """
@@ -264,7 +260,6 @@ class ShowInstanceDetailResponse(SdkResponse):
     @flavor_id.setter
     def flavor_id(self, flavor_id):
         """Sets the flavor_id of this ShowInstanceDetailResponse.
-
 
         :param flavor_id: The flavor_id of this ShowInstanceDetailResponse.
         :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
@@ -451,7 +446,6 @@ class ShowInstanceDetailResponse(SdkResponse):
     def status_detail(self):
         """Gets the status_detail of this ShowInstanceDetailResponse.
 
-
         :return: The status_detail of this ShowInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`
         """
@@ -460,7 +454,6 @@ class ShowInstanceDetailResponse(SdkResponse):
     @status_detail.setter
     def status_detail(self, status_detail):
         """Sets the status_detail of this ShowInstanceDetailResponse.
-
 
         :param status_detail: The status_detail of this ShowInstanceDetailResponse.
         :type status_detail: :class:`huaweicloudsdkservicestage.v2.InstanceStatusView`

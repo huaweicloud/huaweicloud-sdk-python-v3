@@ -17,7 +17,6 @@ class UpdateWorkflowRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateWorkflowRequest:
     def body(self):
         """Gets the body of this UpdateWorkflowRequest.
 
-
         :return: The body of this UpdateWorkflowRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.WorkflowDto`
         """
@@ -114,7 +112,6 @@ class UpdateWorkflowRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateWorkflowRequest.
-
 
         :param body: The body of this UpdateWorkflowRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.WorkflowDto`

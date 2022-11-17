@@ -17,7 +17,6 @@ class DataSourceRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -353,7 +352,6 @@ class DataSourceRsp:
     def content(self):
         """Gets the content of this DataSourceRsp.
 
-
         :return: The content of this DataSourceRsp.
         :rtype: :class:`huaweicloudsdkroma.v2.Content`
         """
@@ -362,7 +360,6 @@ class DataSourceRsp:
     @content.setter
     def content(self, content):
         """Sets the content of this DataSourceRsp.
-
 
         :param content: The content of this DataSourceRsp.
         :type content: :class:`huaweicloudsdkroma.v2.Content`

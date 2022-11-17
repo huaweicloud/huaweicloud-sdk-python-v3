@@ -17,7 +17,6 @@ class ResizeClusterRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ResizeClusterRequest:
     def body(self):
         """Gets the body of this ResizeClusterRequest.
 
-
         :return: The body of this ResizeClusterRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ResizeClusterRequestBody`
         """
@@ -86,7 +84,6 @@ class ResizeClusterRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ResizeClusterRequest.
-
 
         :param body: The body of this ResizeClusterRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ResizeClusterRequestBody`

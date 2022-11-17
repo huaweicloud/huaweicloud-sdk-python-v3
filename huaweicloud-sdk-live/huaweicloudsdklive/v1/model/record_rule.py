@@ -17,7 +17,6 @@ class RecordRule:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -205,7 +204,6 @@ class RecordRule:
     def default_record_config(self):
         """Gets the default_record_config of this RecordRule.
 
-
         :return: The default_record_config of this RecordRule.
         :rtype: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
         """
@@ -214,7 +212,6 @@ class RecordRule:
     @default_record_config.setter
     def default_record_config(self, default_record_config):
         """Sets the default_record_config of this RecordRule.
-
 
         :param default_record_config: The default_record_config of this RecordRule.
         :type default_record_config: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`

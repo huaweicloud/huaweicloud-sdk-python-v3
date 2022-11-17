@@ -17,7 +17,6 @@ class Service:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -244,7 +243,6 @@ class Service:
     def created_user(self):
         """Gets the created_user of this Service.
 
-
         :return: The created_user of this Service.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -253,7 +251,6 @@ class Service:
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this Service.
-
 
         :param created_user: The created_user of this Service.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -264,7 +261,6 @@ class Service:
     def last_updated_user(self):
         """Gets the last_updated_user of this Service.
 
-
         :return: The last_updated_user of this Service.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -273,7 +269,6 @@ class Service:
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this Service.
-
 
         :param last_updated_user: The last_updated_user of this Service.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`

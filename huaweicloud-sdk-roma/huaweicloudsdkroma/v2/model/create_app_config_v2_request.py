@@ -17,7 +17,6 @@ class CreateAppConfigV2Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateAppConfigV2Request:
     def body(self):
         """Gets the body of this CreateAppConfigV2Request.
 
-
         :return: The body of this CreateAppConfigV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.AppConfigCreateRequestV2`
         """
@@ -114,7 +112,6 @@ class CreateAppConfigV2Request:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAppConfigV2Request.
-
 
         :param body: The body of this CreateAppConfigV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.AppConfigCreateRequestV2`

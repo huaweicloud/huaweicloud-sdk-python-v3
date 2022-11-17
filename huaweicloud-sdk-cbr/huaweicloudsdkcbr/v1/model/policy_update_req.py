@@ -17,7 +17,6 @@ class PolicyUpdateReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class PolicyUpdateReq:
     def policy(self):
         """Gets the policy of this PolicyUpdateReq.
 
-
         :return: The policy of this PolicyUpdateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyUpdate`
         """
@@ -57,7 +55,6 @@ class PolicyUpdateReq:
     @policy.setter
     def policy(self, policy):
         """Sets the policy of this PolicyUpdateReq.
-
 
         :param policy: The policy of this PolicyUpdateReq.
         :type policy: :class:`huaweicloudsdkcbr.v1.PolicyUpdate`

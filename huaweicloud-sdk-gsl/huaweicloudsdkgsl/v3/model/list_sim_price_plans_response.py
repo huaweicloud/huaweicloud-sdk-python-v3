@@ -17,7 +17,6 @@ class ListSimPricePlansResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListSimPricePlansResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListSimPricePlansResponse.
 
-
         :return: The body of this ListSimPricePlansResponse.
         :rtype: list[:class:`huaweicloudsdkgsl.v3.SimPricePlanVO`]
         """
@@ -58,7 +56,6 @@ class ListSimPricePlansResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ListSimPricePlansResponse.
-
 
         :param body: The body of this ListSimPricePlansResponse.
         :type body: list[:class:`huaweicloudsdkgsl.v3.SimPricePlanVO`]

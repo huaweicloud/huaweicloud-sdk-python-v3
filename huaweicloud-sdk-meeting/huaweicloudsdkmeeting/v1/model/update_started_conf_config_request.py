@@ -17,7 +17,6 @@ class UpdateStartedConfConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateStartedConfConfigRequest:
     def body(self):
         """Gets the body of this UpdateStartedConfConfigRequest.
 
-
         :return: The body of this UpdateStartedConfConfigRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfigReqBody`
         """
@@ -114,7 +112,6 @@ class UpdateStartedConfConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateStartedConfConfigRequest.
-
 
         :param body: The body of this UpdateStartedConfConfigRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfigReqBody`

@@ -17,7 +17,6 @@ class PrePaidServerDataVolume:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -220,7 +219,6 @@ class PrePaidServerDataVolume:
     def extendparam(self):
         """Gets the extendparam of this PrePaidServerDataVolume.
 
-
         :return: The extendparam of this PrePaidServerDataVolume.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerDataVolumeExtendParam`
         """
@@ -229,7 +227,6 @@ class PrePaidServerDataVolume:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this PrePaidServerDataVolume.
-
 
         :param extendparam: The extendparam of this PrePaidServerDataVolume.
         :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerDataVolumeExtendParam`
@@ -284,7 +281,6 @@ class PrePaidServerDataVolume:
     def metadata(self):
         """Gets the metadata of this PrePaidServerDataVolume.
 
-
         :return: The metadata of this PrePaidServerDataVolume.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerDataVolumeMetadata`
         """
@@ -293,7 +289,6 @@ class PrePaidServerDataVolume:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this PrePaidServerDataVolume.
-
 
         :param metadata: The metadata of this PrePaidServerDataVolume.
         :type metadata: :class:`huaweicloudsdkecs.v2.PrePaidServerDataVolumeMetadata`

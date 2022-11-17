@@ -17,7 +17,6 @@ class ListDeviceAlarmsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListDeviceAlarmsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListDeviceAlarmsResponse.
 
-
         :return: The data of this ListDeviceAlarmsResponse.
         :rtype: list[:class:`huaweicloudsdkhilens.v1.GetDeviceAlarmArrayObject`]
         """
@@ -87,7 +85,6 @@ class ListDeviceAlarmsResponse(SdkResponse):
     @data.setter
     def data(self, data):
         """Sets the data of this ListDeviceAlarmsResponse.
-
 
         :param data: The data of this ListDeviceAlarmsResponse.
         :type data: list[:class:`huaweicloudsdkhilens.v1.GetDeviceAlarmArrayObject`]

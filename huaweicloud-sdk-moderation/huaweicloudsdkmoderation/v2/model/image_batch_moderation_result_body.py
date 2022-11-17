@@ -17,7 +17,6 @@ class ImageBatchModerationResultBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class ImageBatchModerationResultBody:
     def detail(self):
         """Gets the detail of this ImageBatchModerationResultBody.
 
-
         :return: The detail of this ImageBatchModerationResultBody.
         :rtype: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
         """
@@ -144,7 +142,6 @@ class ImageBatchModerationResultBody:
     @detail.setter
     def detail(self, detail):
         """Sets the detail of this ImageBatchModerationResultBody.
-
 
         :param detail: The detail of this ImageBatchModerationResultBody.
         :type detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`

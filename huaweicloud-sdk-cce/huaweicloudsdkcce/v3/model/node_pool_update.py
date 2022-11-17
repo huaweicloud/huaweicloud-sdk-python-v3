@@ -17,7 +17,6 @@ class NodePoolUpdate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class NodePoolUpdate:
     def metadata(self):
         """Gets the metadata of this NodePoolUpdate.
 
-
         :return: The metadata of this NodePoolUpdate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadataUpdate`
         """
@@ -63,7 +61,6 @@ class NodePoolUpdate:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this NodePoolUpdate.
-
 
         :param metadata: The metadata of this NodePoolUpdate.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadataUpdate`
@@ -74,7 +71,6 @@ class NodePoolUpdate:
     def spec(self):
         """Gets the spec of this NodePoolUpdate.
 
-
         :return: The spec of this NodePoolUpdate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolSpecUpdate`
         """
@@ -83,7 +79,6 @@ class NodePoolUpdate:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this NodePoolUpdate.
-
 
         :param spec: The spec of this NodePoolUpdate.
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpecUpdate`

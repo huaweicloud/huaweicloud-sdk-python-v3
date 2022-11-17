@@ -17,7 +17,6 @@ class DatabaseResourceRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class DatabaseResourceRsp:
     def spec(self):
         """Gets the spec of this DatabaseResourceRsp.
 
-
         :return: The spec of this DatabaseResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseSpecDto`
         """
@@ -143,7 +141,6 @@ class DatabaseResourceRsp:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this DatabaseResourceRsp.
-
 
         :param spec: The spec of this DatabaseResourceRsp.
         :type spec: :class:`huaweicloudsdkeihealth.v1.DatabaseSpecDto`
@@ -154,7 +151,6 @@ class DatabaseResourceRsp:
     def disk(self):
         """Gets the disk of this DatabaseResourceRsp.
 
-
         :return: The disk of this DatabaseResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseDiskDto`
         """
@@ -163,7 +159,6 @@ class DatabaseResourceRsp:
     @disk.setter
     def disk(self, disk):
         """Sets the disk of this DatabaseResourceRsp.
-
 
         :param disk: The disk of this DatabaseResourceRsp.
         :type disk: :class:`huaweicloudsdkeihealth.v1.DatabaseDiskDto`
@@ -240,7 +235,6 @@ class DatabaseResourceRsp:
     def status(self):
         """Gets the status of this DatabaseResourceRsp.
 
-
         :return: The status of this DatabaseResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseStatusEnum`
         """
@@ -249,7 +243,6 @@ class DatabaseResourceRsp:
     @status.setter
     def status(self, status):
         """Sets the status of this DatabaseResourceRsp.
-
 
         :param status: The status of this DatabaseResourceRsp.
         :type status: :class:`huaweicloudsdkeihealth.v1.DatabaseStatusEnum`

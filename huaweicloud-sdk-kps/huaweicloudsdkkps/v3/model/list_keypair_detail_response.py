@@ -17,7 +17,6 @@ class ListKeypairDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListKeypairDetailResponse(SdkResponse):
     def keypair(self):
         """Gets the keypair of this ListKeypairDetailResponse.
 
-
         :return: The keypair of this ListKeypairDetailResponse.
         :rtype: :class:`huaweicloudsdkkps.v3.KeypairDetail`
         """
@@ -58,7 +56,6 @@ class ListKeypairDetailResponse(SdkResponse):
     @keypair.setter
     def keypair(self, keypair):
         """Sets the keypair of this ListKeypairDetailResponse.
-
 
         :param keypair: The keypair of this ListKeypairDetailResponse.
         :type keypair: :class:`huaweicloudsdkkps.v3.KeypairDetail`

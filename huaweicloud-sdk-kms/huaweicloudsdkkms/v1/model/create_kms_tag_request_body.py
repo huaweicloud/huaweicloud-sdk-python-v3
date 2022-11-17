@@ -17,7 +17,6 @@ class CreateKmsTagRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateKmsTagRequestBody:
     def tag(self):
         """Gets the tag of this CreateKmsTagRequestBody.
 
-
         :return: The tag of this CreateKmsTagRequestBody.
         :rtype: :class:`huaweicloudsdkkms.v1.TagItem`
         """
@@ -58,7 +56,6 @@ class CreateKmsTagRequestBody:
     @tag.setter
     def tag(self, tag):
         """Sets the tag of this CreateKmsTagRequestBody.
-
 
         :param tag: The tag of this CreateKmsTagRequestBody.
         :type tag: :class:`huaweicloudsdkkms.v1.TagItem`

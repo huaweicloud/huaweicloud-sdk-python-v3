@@ -17,7 +17,6 @@ class UpdateInstanceCrossVpcIpRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateInstanceCrossVpcIpRequest:
     def body(self):
         """Gets the body of this UpdateInstanceCrossVpcIpRequest.
 
-
         :return: The body of this UpdateInstanceCrossVpcIpRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpReq`
         """
@@ -86,7 +84,6 @@ class UpdateInstanceCrossVpcIpRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateInstanceCrossVpcIpRequest.
-
 
         :param body: The body of this UpdateInstanceCrossVpcIpRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.UpdateInstanceCrossVpcIpReq`

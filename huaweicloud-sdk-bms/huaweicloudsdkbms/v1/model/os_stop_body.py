@@ -17,7 +17,6 @@ class OsStopBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class OsStopBody:
     def os_stop(self):
         """Gets the os_stop of this OsStopBody.
 
-
         :return: The os_stop of this OsStopBody.
         :rtype: :class:`huaweicloudsdkbms.v1.OsStopBodyType`
         """
@@ -57,7 +55,6 @@ class OsStopBody:
     @os_stop.setter
     def os_stop(self, os_stop):
         """Sets the os_stop of this OsStopBody.
-
 
         :param os_stop: The os_stop of this OsStopBody.
         :type os_stop: :class:`huaweicloudsdkbms.v1.OsStopBodyType`

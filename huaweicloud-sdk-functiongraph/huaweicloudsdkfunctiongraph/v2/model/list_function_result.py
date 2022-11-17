@@ -17,7 +17,6 @@ class ListFunctionResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -820,7 +819,6 @@ class ListFunctionResult:
     def strategy_config(self):
         """Gets the strategy_config of this ListFunctionResult.
 
-
         :return: The strategy_config of this ListFunctionResult.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
@@ -829,7 +827,6 @@ class ListFunctionResult:
     @strategy_config.setter
     def strategy_config(self, strategy_config):
         """Sets the strategy_config of this ListFunctionResult.
-
 
         :param strategy_config: The strategy_config of this ListFunctionResult.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`

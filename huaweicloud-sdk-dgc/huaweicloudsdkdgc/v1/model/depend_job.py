@@ -17,7 +17,6 @@ class DependJob:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class DependJob:
     def jobs(self):
         """Gets the jobs of this DependJob.
 
-
         :return: The jobs of this DependJob.
         :rtype: str
         """
@@ -72,7 +70,6 @@ class DependJob:
     @jobs.setter
     def jobs(self, jobs):
         """Sets the jobs of this DependJob.
-
 
         :param jobs: The jobs of this DependJob.
         :type jobs: str
@@ -83,7 +80,6 @@ class DependJob:
     def depend_period(self):
         """Gets the depend_period of this DependJob.
 
-
         :return: The depend_period of this DependJob.
         :rtype: str
         """
@@ -92,7 +88,6 @@ class DependJob:
     @depend_period.setter
     def depend_period(self, depend_period):
         """Sets the depend_period of this DependJob.
-
 
         :param depend_period: The depend_period of this DependJob.
         :type depend_period: str
@@ -103,7 +98,6 @@ class DependJob:
     def depend_fail_policy(self):
         """Gets the depend_fail_policy of this DependJob.
 
-
         :return: The depend_fail_policy of this DependJob.
         :rtype: str
         """
@@ -112,7 +106,6 @@ class DependJob:
     @depend_fail_policy.setter
     def depend_fail_policy(self, depend_fail_policy):
         """Sets the depend_fail_policy of this DependJob.
-
 
         :param depend_fail_policy: The depend_fail_policy of this DependJob.
         :type depend_fail_policy: str

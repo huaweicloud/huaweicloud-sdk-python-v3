@@ -17,7 +17,6 @@ class DocBotAnswers:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -140,7 +139,6 @@ class DocBotAnswers:
     def answer_detail(self):
         """Gets the answer_detail of this DocBotAnswers.
 
-
         :return: The answer_detail of this DocBotAnswers.
         :rtype: :class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`
         """
@@ -149,7 +147,6 @@ class DocBotAnswers:
     @answer_detail.setter
     def answer_detail(self, answer_detail):
         """Sets the answer_detail of this DocBotAnswers.
-
 
         :param answer_detail: The answer_detail of this DocBotAnswers.
         :type answer_detail: :class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`

@@ -17,7 +17,6 @@ class JobTaskDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class JobTaskDto:
     def resources(self):
         """Gets the resources of this JobTaskDto.
 
-
         :return: The resources of this JobTaskDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
         """
@@ -115,7 +113,6 @@ class JobTaskDto:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this JobTaskDto.
-
 
         :param resources: The resources of this JobTaskDto.
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`

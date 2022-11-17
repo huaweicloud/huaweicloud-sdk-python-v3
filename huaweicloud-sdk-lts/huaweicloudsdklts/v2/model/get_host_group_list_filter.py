@@ -17,7 +17,6 @@ class GetHostGroupListFilter:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class GetHostGroupListFilter:
     def host_group_tag(self):
         """Gets the host_group_tag of this GetHostGroupListFilter.
 
-
         :return: The host_group_tag of this GetHostGroupListFilter.
         :rtype: :class:`huaweicloudsdklts.v2.GetHostGroupListTag`
         """
@@ -145,7 +143,6 @@ class GetHostGroupListFilter:
     @host_group_tag.setter
     def host_group_tag(self, host_group_tag):
         """Sets the host_group_tag of this GetHostGroupListFilter.
-
 
         :param host_group_tag: The host_group_tag of this GetHostGroupListFilter.
         :type host_group_tag: :class:`huaweicloudsdklts.v2.GetHostGroupListTag`

@@ -17,7 +17,6 @@ class Flavor:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class Flavor:
     def info(self):
         """Gets the info of this Flavor.
 
-
         :return: The info of this Flavor.
         :rtype: :class:`huaweicloudsdkelb.v3.FlavorInfo`
         """
@@ -115,7 +113,6 @@ class Flavor:
     @info.setter
     def info(self, info):
         """Sets the info of this Flavor.
-
 
         :param info: The info of this Flavor.
         :type info: :class:`huaweicloudsdkelb.v3.FlavorInfo`

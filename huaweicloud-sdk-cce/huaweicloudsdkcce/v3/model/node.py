@@ -17,7 +17,6 @@ class Node:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class Node:
     def metadata(self):
         """Gets the metadata of this Node.
 
-
         :return: The metadata of this Node.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeMetadata`
         """
@@ -130,7 +128,6 @@ class Node:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this Node.
-
 
         :param metadata: The metadata of this Node.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -141,7 +138,6 @@ class Node:
     def spec(self):
         """Gets the spec of this Node.
 
-
         :return: The spec of this Node.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
         """
@@ -150,7 +146,6 @@ class Node:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this Node.
-
 
         :param spec: The spec of this Node.
         :type spec: :class:`huaweicloudsdkcce.v3.NodeSpec`
@@ -161,7 +156,6 @@ class Node:
     def status(self):
         """Gets the status of this Node.
 
-
         :return: The status of this Node.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeStatus`
         """
@@ -170,7 +164,6 @@ class Node:
     @status.setter
     def status(self, status):
         """Sets the status of this Node.
-
 
         :param status: The status of this Node.
         :type status: :class:`huaweicloudsdkcce.v3.NodeStatus`

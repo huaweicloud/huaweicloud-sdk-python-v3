@@ -17,7 +17,6 @@ class CreateClusterResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class CreateClusterResponse(SdkResponse):
     def task(self):
         """Gets the task of this CreateClusterResponse.
 
-
         :return: The task of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.Task`
         """
@@ -130,7 +128,6 @@ class CreateClusterResponse(SdkResponse):
     @task.setter
     def task(self, task):
         """Sets the task of this CreateClusterResponse.
-
 
         :param task: The task of this CreateClusterResponse.
         :type task: :class:`huaweicloudsdkcdm.v1.Task`
@@ -141,7 +138,6 @@ class CreateClusterResponse(SdkResponse):
     def datastore(self):
         """Gets the datastore of this CreateClusterResponse.
 
-
         :return: The datastore of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
@@ -150,7 +146,6 @@ class CreateClusterResponse(SdkResponse):
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CreateClusterResponse.
-
 
         :param datastore: The datastore of this CreateClusterResponse.
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`

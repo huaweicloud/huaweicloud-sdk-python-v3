@@ -17,7 +17,6 @@ class UpdatePublicBandWidthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdatePublicBandWidthRequest:
     def body(self):
         """Gets the body of this UpdatePublicBandWidthRequest.
 
-
         :return: The body of this UpdatePublicBandWidthRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`
         """
@@ -86,7 +84,6 @@ class UpdatePublicBandWidthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePublicBandWidthRequest.
-
 
         :param body: The body of this UpdatePublicBandWidthRequest.
         :type body: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`

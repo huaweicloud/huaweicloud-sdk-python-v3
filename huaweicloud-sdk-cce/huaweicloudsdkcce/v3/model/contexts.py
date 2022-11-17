@@ -17,7 +17,6 @@ class Contexts:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class Contexts:
     def context(self):
         """Gets the context of this Contexts.
 
-
         :return: The context of this Contexts.
         :rtype: :class:`huaweicloudsdkcce.v3.Context`
         """
@@ -87,7 +85,6 @@ class Contexts:
     @context.setter
     def context(self, context):
         """Sets the context of this Contexts.
-
 
         :param context: The context of this Contexts.
         :type context: :class:`huaweicloudsdkcce.v3.Context`

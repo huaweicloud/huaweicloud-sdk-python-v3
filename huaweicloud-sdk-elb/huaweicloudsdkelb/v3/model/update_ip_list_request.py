@@ -17,7 +17,6 @@ class UpdateIpListRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateIpListRequest:
     def body(self):
         """Gets the body of this UpdateIpListRequest.
 
-
         :return: The body of this UpdateIpListRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpListRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateIpListRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateIpListRequest.
-
 
         :param body: The body of this UpdateIpListRequest.
         :type body: :class:`huaweicloudsdkelb.v3.UpdateIpListRequestBody`

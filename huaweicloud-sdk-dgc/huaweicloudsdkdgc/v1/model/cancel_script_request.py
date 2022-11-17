@@ -17,7 +17,6 @@ class CancelScriptRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class CancelScriptRequest:
     def script_name(self):
         """Gets the script_name of this CancelScriptRequest.
 
-
         :return: The script_name of this CancelScriptRequest.
         :rtype: str
         """
@@ -63,7 +61,6 @@ class CancelScriptRequest:
     @script_name.setter
     def script_name(self, script_name):
         """Sets the script_name of this CancelScriptRequest.
-
 
         :param script_name: The script_name of this CancelScriptRequest.
         :type script_name: str
@@ -74,7 +71,6 @@ class CancelScriptRequest:
     def instance_id(self):
         """Gets the instance_id of this CancelScriptRequest.
 
-
         :return: The instance_id of this CancelScriptRequest.
         :rtype: str
         """
@@ -83,7 +79,6 @@ class CancelScriptRequest:
     @instance_id.setter
     def instance_id(self, instance_id):
         """Sets the instance_id of this CancelScriptRequest.
-
 
         :param instance_id: The instance_id of this CancelScriptRequest.
         :type instance_id: str

@@ -17,7 +17,6 @@ class UpdateListenerOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -314,7 +313,6 @@ class UpdateListenerOption:
     def insert_headers(self):
         """Gets the insert_headers of this UpdateListenerOption.
 
-
         :return: The insert_headers of this UpdateListenerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.ListenerInsertHeaders`
         """
@@ -323,7 +321,6 @@ class UpdateListenerOption:
     @insert_headers.setter
     def insert_headers(self, insert_headers):
         """Sets the insert_headers of this UpdateListenerOption.
-
 
         :param insert_headers: The insert_headers of this UpdateListenerOption.
         :type insert_headers: :class:`huaweicloudsdkelb.v3.ListenerInsertHeaders`
@@ -532,7 +529,6 @@ class UpdateListenerOption:
     def ipgroup(self):
         """Gets the ipgroup of this UpdateListenerOption.
 
-
         :return: The ipgroup of this UpdateListenerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateListenerIpGroupOption`
         """
@@ -541,7 +537,6 @@ class UpdateListenerOption:
     @ipgroup.setter
     def ipgroup(self, ipgroup):
         """Sets the ipgroup of this UpdateListenerOption.
-
 
         :param ipgroup: The ipgroup of this UpdateListenerOption.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateListenerIpGroupOption`
@@ -596,7 +591,6 @@ class UpdateListenerOption:
     def quic_config(self):
         """Gets the quic_config of this UpdateListenerOption.
 
-
         :return: The quic_config of this UpdateListenerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateListenerQuicConfigOption`
         """
@@ -605,7 +599,6 @@ class UpdateListenerOption:
     @quic_config.setter
     def quic_config(self, quic_config):
         """Sets the quic_config of this UpdateListenerOption.
-
 
         :param quic_config: The quic_config of this UpdateListenerOption.
         :type quic_config: :class:`huaweicloudsdkelb.v3.UpdateListenerQuicConfigOption`

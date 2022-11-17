@@ -17,7 +17,6 @@ class HaConfigDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class HaConfigDTO:
     def active_standby_config(self):
         """Gets the active_standby_config of this HaConfigDTO.
 
-
         :return: The active_standby_config of this HaConfigDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ActiveStandbyConfigDTO`
         """
@@ -87,7 +85,6 @@ class HaConfigDTO:
     @active_standby_config.setter
     def active_standby_config(self, active_standby_config):
         """Sets the active_standby_config of this HaConfigDTO.
-
 
         :param active_standby_config: The active_standby_config of this HaConfigDTO.
         :type active_standby_config: :class:`huaweicloudsdkiotedge.v2.ActiveStandbyConfigDTO`

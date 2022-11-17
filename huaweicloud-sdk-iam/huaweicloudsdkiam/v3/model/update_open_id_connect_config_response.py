@@ -17,7 +17,6 @@ class UpdateOpenIdConnectConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateOpenIdConnectConfigResponse(SdkResponse):
     def openid_connect_config(self):
         """Gets the openid_connect_config of this UpdateOpenIdConnectConfigResponse.
 
-
         :return: The openid_connect_config of this UpdateOpenIdConnectConfigResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.OpenIdConnectConfig`
         """
@@ -58,7 +56,6 @@ class UpdateOpenIdConnectConfigResponse(SdkResponse):
     @openid_connect_config.setter
     def openid_connect_config(self, openid_connect_config):
         """Sets the openid_connect_config of this UpdateOpenIdConnectConfigResponse.
-
 
         :param openid_connect_config: The openid_connect_config of this UpdateOpenIdConnectConfigResponse.
         :type openid_connect_config: :class:`huaweicloudsdkiam.v3.OpenIdConnectConfig`

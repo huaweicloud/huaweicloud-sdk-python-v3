@@ -17,7 +17,6 @@ class CreateProductTemplateResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -186,7 +185,6 @@ class CreateProductTemplateResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this CreateProductTemplateResponse.
 
-
         :return: The created_user of this CreateProductTemplateResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -195,7 +193,6 @@ class CreateProductTemplateResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this CreateProductTemplateResponse.
-
 
         :param created_user: The created_user of this CreateProductTemplateResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -206,7 +203,6 @@ class CreateProductTemplateResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this CreateProductTemplateResponse.
 
-
         :return: The last_updated_user of this CreateProductTemplateResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -215,7 +211,6 @@ class CreateProductTemplateResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this CreateProductTemplateResponse.
-
 
         :param last_updated_user: The last_updated_user of this CreateProductTemplateResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`

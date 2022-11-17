@@ -17,7 +17,6 @@ class UpdateTopicReplicaRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateTopicReplicaRequest:
     def body(self):
         """Gets the body of this UpdateTopicReplicaRequest.
 
-
         :return: The body of this UpdateTopicReplicaRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetReplicaReq`
         """
@@ -114,7 +112,6 @@ class UpdateTopicReplicaRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateTopicReplicaRequest.
-
 
         :param body: The body of this UpdateTopicReplicaRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.ResetReplicaReq`

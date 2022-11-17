@@ -17,7 +17,6 @@ class WeightPodAffinityTermsPodAffinityTerm:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class WeightPodAffinityTermsPodAffinityTerm:
     def label_selector(self):
         """Gets the label_selector of this WeightPodAffinityTermsPodAffinityTerm.
 
-
         :return: The label_selector of this WeightPodAffinityTermsPodAffinityTerm.
         :rtype: :class:`huaweicloudsdkief.v1.LabelSelector`
         """
@@ -72,7 +70,6 @@ class WeightPodAffinityTermsPodAffinityTerm:
     @label_selector.setter
     def label_selector(self, label_selector):
         """Sets the label_selector of this WeightPodAffinityTermsPodAffinityTerm.
-
 
         :param label_selector: The label_selector of this WeightPodAffinityTermsPodAffinityTerm.
         :type label_selector: :class:`huaweicloudsdkief.v1.LabelSelector`

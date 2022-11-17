@@ -17,7 +17,6 @@ class ComponentModify:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class ComponentModify:
     def source(self):
         """Gets the source of this ComponentModify.
 
-
         :return: The source of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
@@ -123,7 +121,6 @@ class ComponentModify:
     @source.setter
     def source(self, source):
         """Sets the source of this ComponentModify.
-
 
         :param source: The source of this ComponentModify.
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -134,7 +131,6 @@ class ComponentModify:
     def build(self):
         """Gets the build of this ComponentModify.
 
-
         :return: The build of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v2.Build`
         """
@@ -143,7 +139,6 @@ class ComponentModify:
     @build.setter
     def build(self, build):
         """Sets the build of this ComponentModify.
-
 
         :param build: The build of this ComponentModify.
         :type build: :class:`huaweicloudsdkservicestage.v2.Build`

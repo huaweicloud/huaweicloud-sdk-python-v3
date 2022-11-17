@@ -17,7 +17,6 @@ class AddingBackendInstancesV2Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class AddingBackendInstancesV2Request:
     def body(self):
         """Gets the body of this AddingBackendInstancesV2Request.
 
-
         :return: The body of this AddingBackendInstancesV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcMemberCreate`
         """
@@ -114,7 +112,6 @@ class AddingBackendInstancesV2Request:
     @body.setter
     def body(self, body):
         """Sets the body of this AddingBackendInstancesV2Request.
-
 
         :param body: The body of this AddingBackendInstancesV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.VpcMemberCreate`

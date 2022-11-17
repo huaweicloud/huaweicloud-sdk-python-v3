@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class FunctionGraphAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AsyncInvokeFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeFunctionResponse`
@@ -68,6 +63,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AsyncInvokeFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AsyncInvokeReservedFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeReservedFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeReservedFunctionResponse`
@@ -128,6 +127,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -147,7 +148,7 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["Content-Type"]
+        response_headers = ["Content-Type", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -162,6 +163,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AsyncInvokeReservedFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteFunctionTriggers
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteFunctionTriggersRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteFunctionTriggersResponse`
@@ -192,6 +195,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +229,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteFunctionTriggersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -238,6 +244,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteWorkflows
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsResponse`
@@ -250,6 +257,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteWorkflowsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelAsyncInvocation
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationResponse`
@@ -308,6 +319,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelAsyncInvocationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDependency
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyResponse`
@@ -368,6 +383,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +417,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDependencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -414,6 +432,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEvent
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateEventRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateEventResponse`
@@ -426,6 +445,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -460,6 +481,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -474,6 +496,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionResponse`
@@ -486,6 +509,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -518,6 +543,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -536,6 +562,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateFunctionTrigger
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerResponse`
@@ -548,6 +575,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -582,6 +611,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFunctionTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -596,6 +626,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateFunctionVersion
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionResponse`
@@ -608,6 +639,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -642,6 +675,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFunctionVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -656,6 +690,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateVersionAlias
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateVersionAliasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateVersionAliasResponse`
@@ -668,6 +703,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -702,6 +739,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVersionAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -716,6 +754,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateWorkflow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowResponse`
@@ -728,6 +767,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -760,6 +801,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -774,6 +816,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDependency
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyResponse`
@@ -786,6 +829,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -818,6 +863,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDependencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -832,6 +878,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEvent
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteEventRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteEventResponse`
@@ -844,6 +891,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -878,6 +927,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -895,6 +945,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionResponse`
@@ -907,6 +958,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -939,6 +992,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -953,6 +1007,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteFunctionAsyncInvokeConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionAsyncInvokeConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionAsyncInvokeConfigResponse`
@@ -965,6 +1020,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -997,6 +1054,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1011,6 +1069,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteFunctionTrigger
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionTriggerRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionTriggerResponse`
@@ -1023,6 +1082,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1059,6 +1120,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFunctionTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1073,6 +1135,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteVersionAlias
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteVersionAliasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteVersionAliasResponse`
@@ -1085,6 +1148,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1119,6 +1184,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVersionAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1133,6 +1199,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableLtsLogs
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.EnableLtsLogsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.EnableLtsLogsResponse`
@@ -1145,6 +1212,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1175,6 +1244,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableLtsLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1189,6 +1259,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ExportFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ExportFunctionResponse`
@@ -1201,6 +1272,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1239,6 +1312,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1253,6 +1327,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ImportFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ImportFunctionResponse`
@@ -1265,6 +1340,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1297,6 +1374,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1311,6 +1389,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for InvokeFunction
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.InvokeFunctionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.InvokeFunctionResponse`
@@ -1323,6 +1402,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1346,7 +1427,7 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Cff-Request-Id"]
+        response_headers = ["X-Cff-Request-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1361,6 +1442,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='InvokeFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1375,6 +1457,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAsyncInvocations
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListAsyncInvocationsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListAsyncInvocationsResponse`
@@ -1387,6 +1470,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1431,6 +1516,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAsyncInvocationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1445,6 +1531,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDependencies
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResponse`
@@ -1457,6 +1544,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1501,6 +1590,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDependenciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1515,6 +1605,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEvents
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListEventsResponse`
@@ -1527,6 +1618,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1559,6 +1652,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1573,6 +1667,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFunctionAsyncInvokeConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvokeConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvokeConfigResponse`
@@ -1585,6 +1680,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1621,6 +1718,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1635,6 +1733,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFunctionStatistics
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionStatisticsResponse`
@@ -1647,6 +1746,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1681,6 +1782,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1695,6 +1797,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFunctionTriggers
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggersRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggersResponse`
@@ -1707,6 +1810,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1739,6 +1844,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionTriggersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1753,6 +1859,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFunctionVersions
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionVersionsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionVersionsResponse`
@@ -1765,6 +1872,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1801,6 +1910,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1815,6 +1925,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFunctions
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionsResponse`
@@ -1827,6 +1938,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1863,6 +1976,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFunctionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1877,6 +1991,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListQuotas
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListQuotasResponse`
@@ -1889,6 +2004,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1919,6 +2036,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1936,6 +2054,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStatistics
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListStatisticsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListStatisticsResponse`
@@ -1948,6 +2067,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1984,6 +2105,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1998,6 +2120,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVersionAliases
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListVersionAliasesRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListVersionAliasesResponse`
@@ -2010,6 +2133,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2042,6 +2167,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVersionAliasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2056,6 +2182,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWorkflow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowResponse`
@@ -2068,6 +2195,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2108,6 +2237,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2122,6 +2252,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListWorkflowExecutions
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionsResponse`
@@ -2134,6 +2265,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2174,6 +2307,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkflowExecutionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2188,6 +2322,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RetryWorkFlow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.RetryWorkFlowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.RetryWorkFlowResponse`
@@ -2200,6 +2335,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2234,6 +2371,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RetryWorkFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2248,6 +2386,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDependcy
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependcyRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependcyResponse`
@@ -2260,6 +2399,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2292,6 +2433,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDependcyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2306,6 +2448,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEvent
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowEventRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowEventResponse`
@@ -2318,6 +2461,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2352,6 +2497,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2366,6 +2512,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowFunctionAsyncInvokeConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionAsyncInvokeConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionAsyncInvokeConfigResponse`
@@ -2378,6 +2525,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2410,6 +2559,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2424,6 +2574,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowFunctionCode
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionCodeRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionCodeResponse`
@@ -2436,6 +2587,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2468,6 +2621,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFunctionCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2482,6 +2636,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowFunctionConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionConfigResponse`
@@ -2494,6 +2649,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2526,6 +2683,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFunctionConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2540,6 +2698,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowFunctionTrigger
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionTriggerRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionTriggerResponse`
@@ -2552,6 +2711,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2588,6 +2749,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFunctionTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2602,6 +2764,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowLtsLogDetails
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowLtsLogDetailsRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowLtsLogDetailsResponse`
@@ -2614,6 +2777,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2646,6 +2811,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLtsLogDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2660,6 +2826,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTenantMetric
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowTenantMetricRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowTenantMetricResponse`
@@ -2672,6 +2839,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2708,6 +2877,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTenantMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2722,6 +2892,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTracing
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowTracingRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowTracingResponse`
@@ -2734,6 +2905,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2766,6 +2939,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTracingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2780,6 +2954,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVersionAlias
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowVersionAliasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowVersionAliasResponse`
@@ -2792,6 +2967,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2826,6 +3003,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2840,6 +3018,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWorkFlow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowResponse`
@@ -2852,6 +3031,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2884,6 +3065,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2898,6 +3080,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWorkFlowMetric
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowMetricRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowMetricResponse`
@@ -2910,6 +3093,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2948,6 +3133,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkFlowMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2962,6 +3148,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWorkflowExecution
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionResponse`
@@ -2974,6 +3161,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3010,6 +3199,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkflowExecutionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3024,6 +3214,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowWorkflowExecutionForPage
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionForPageRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionForPageResponse`
@@ -3036,6 +3227,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3070,6 +3263,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkflowExecutionForPageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3084,6 +3278,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartSyncWorkflowExecution
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionResponse`
@@ -3096,6 +3291,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3130,6 +3327,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartSyncWorkflowExecutionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3144,6 +3342,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartWorkflowExecution
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionResponse`
@@ -3156,6 +3355,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3196,6 +3397,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartWorkflowExecutionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3210,6 +3412,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopWorkFlow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.StopWorkFlowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StopWorkFlowResponse`
@@ -3222,6 +3425,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3256,6 +3461,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopWorkFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3270,6 +3476,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDependcy
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependcyRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependcyResponse`
@@ -3282,6 +3489,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3316,6 +3525,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDependcyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3330,6 +3540,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEvent
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventResponse`
@@ -3342,6 +3553,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3378,6 +3591,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3392,6 +3606,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateFunctionAsyncInvokeConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigResponse`
@@ -3404,6 +3619,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3438,6 +3655,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3452,6 +3670,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateFunctionCode
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionCodeRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionCodeResponse`
@@ -3464,6 +3683,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3498,6 +3719,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3512,6 +3734,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateFunctionConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionConfigResponse`
@@ -3524,6 +3747,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3558,6 +3783,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3572,6 +3798,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateFunctionMaxInstanceConfig
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionMaxInstanceConfigRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionMaxInstanceConfigResponse`
@@ -3584,6 +3811,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3618,6 +3847,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionMaxInstanceConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3632,6 +3862,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateFunctionReservedInstancesCount
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesCountRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesCountResponse`
@@ -3644,6 +3875,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3678,6 +3911,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFunctionReservedInstancesCountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3692,6 +3926,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTracing
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTracingRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTracingResponse`
@@ -3704,6 +3939,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3738,6 +3975,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTracingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3752,6 +3990,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTrigger
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerResponse`
@@ -3764,6 +4003,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3802,6 +4043,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3816,6 +4058,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateVersionAlias
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasResponse`
@@ -3828,6 +4071,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3864,6 +4109,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVersionAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3878,6 +4124,7 @@ class FunctionGraphAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateWorkFlow
         :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateWorkFlowRequest`
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateWorkFlowResponse`
@@ -3890,6 +4137,8 @@ class FunctionGraphAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3924,6 +4173,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWorkFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3931,7 +4181,7 @@ class FunctionGraphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3942,9 +4192,10 @@ class FunctionGraphAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3961,6 +4212,7 @@ class FunctionGraphAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

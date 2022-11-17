@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DcsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateOrDeleteTags
         :type request: :class:`huaweicloudsdkdcs.v2.BatchCreateOrDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchCreateOrDeleteTagsResponse`
@@ -68,6 +63,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateOrDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteInstances
         :type request: :class:`huaweicloudsdkdcs.v2.BatchDeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchDeleteInstancesResponse`
@@ -128,6 +127,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -178,6 +180,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchShowNodesInformation
         :type request: :class:`huaweicloudsdkdcs.v2.BatchShowNodesInformationRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchShowNodesInformationResponse`
@@ -190,6 +193,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +229,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchShowNodesInformationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -238,6 +244,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchStopMigrationTasks
         :type request: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksResponse`
@@ -250,6 +257,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStopMigrationTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeMasterStandby
         :type request: :class:`huaweicloudsdkdcs.v2.ChangeMasterStandbyRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ChangeMasterStandbyResponse`
@@ -308,6 +319,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +353,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeMasterStandbyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -355,6 +369,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CopyInstance
         :type request: :class:`huaweicloudsdkdcs.v2.CopyInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CopyInstanceResponse`
@@ -367,6 +382,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -401,6 +418,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CopyInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -415,6 +433,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateBigkeyScanTask
         :type request: :class:`huaweicloudsdkdcs.v2.CreateBigkeyScanTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateBigkeyScanTaskResponse`
@@ -427,6 +446,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -459,6 +480,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBigkeyScanTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -473,6 +495,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDiagnosisTask
         :type request: :class:`huaweicloudsdkdcs.v2.CreateDiagnosisTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateDiagnosisTaskResponse`
@@ -485,6 +508,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -519,6 +544,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDiagnosisTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -535,6 +561,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateHotkeyScanTask
         :type request: :class:`huaweicloudsdkdcs.v2.CreateHotkeyScanTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateHotkeyScanTaskResponse`
@@ -547,6 +574,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -579,6 +608,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateHotkeyScanTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -593,6 +623,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkdcs.v2.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateInstanceResponse`
@@ -605,6 +636,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -637,6 +670,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -651,6 +685,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMigrationTask
         :type request: :class:`huaweicloudsdkdcs.v2.CreateMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateMigrationTaskResponse`
@@ -663,6 +698,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -695,6 +732,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMigrationTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -709,6 +747,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateOnlineMigrationTask
         :type request: :class:`huaweicloudsdkdcs.v2.CreateOnlineMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateOnlineMigrationTaskResponse`
@@ -721,6 +760,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -753,6 +794,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOnlineMigrationTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -767,6 +809,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRedislog
         :type request: :class:`huaweicloudsdkdcs.v2.CreateRedislogRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateRedislogResponse`
@@ -779,6 +822,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -817,6 +862,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRedislogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -831,6 +877,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRedislogDownloadLink
         :type request: :class:`huaweicloudsdkdcs.v2.CreateRedislogDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateRedislogDownloadLinkResponse`
@@ -843,6 +890,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -877,6 +926,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRedislogDownloadLinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -891,6 +941,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBackgroundTask
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteBackgroundTaskResponse`
@@ -903,6 +954,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -937,6 +990,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackgroundTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -951,6 +1005,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBackupFile
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteBackupFileRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteBackupFileResponse`
@@ -963,6 +1018,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -997,6 +1054,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackupFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1011,6 +1069,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBigkeyScanTask
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteBigkeyScanTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteBigkeyScanTaskResponse`
@@ -1023,6 +1082,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1057,6 +1118,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBigkeyScanTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1071,6 +1133,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteHotkeyScanTask
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteHotkeyScanTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteHotkeyScanTaskResponse`
@@ -1083,6 +1146,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1117,6 +1182,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHotkeyScanTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1131,6 +1197,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteIpFromDomainName
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteIpFromDomainNameRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteIpFromDomainNameResponse`
@@ -1143,6 +1210,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1179,6 +1248,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIpFromDomainNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1193,6 +1263,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMigrationTask
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteMigrationTaskResponse`
@@ -1205,6 +1276,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1237,6 +1310,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMigrationTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1253,6 +1327,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSingleInstance
         :type request: :class:`huaweicloudsdkdcs.v2.DeleteSingleInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.DeleteSingleInstanceResponse`
@@ -1265,6 +1340,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1297,6 +1374,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSingleInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1311,6 +1389,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAvailableZones
         :type request: :class:`huaweicloudsdkdcs.v2.ListAvailableZonesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListAvailableZonesResponse`
@@ -1323,6 +1402,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1353,6 +1434,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAvailableZonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1367,6 +1449,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackgroundTask
         :type request: :class:`huaweicloudsdkdcs.v2.ListBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListBackgroundTaskResponse`
@@ -1379,6 +1462,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1419,6 +1504,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackgroundTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1433,6 +1519,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackupFileLinks
         :type request: :class:`huaweicloudsdkdcs.v2.ListBackupFileLinksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListBackupFileLinksResponse`
@@ -1445,6 +1532,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1481,6 +1570,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupFileLinksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1495,6 +1585,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackupRecords
         :type request: :class:`huaweicloudsdkdcs.v2.ListBackupRecordsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListBackupRecordsResponse`
@@ -1507,6 +1598,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1547,6 +1640,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1561,6 +1655,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBigkeyScanTasks
         :type request: :class:`huaweicloudsdkdcs.v2.ListBigkeyScanTasksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListBigkeyScanTasksResponse`
@@ -1573,6 +1668,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1611,6 +1708,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBigkeyScanTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1625,6 +1723,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConfigurations
         :type request: :class:`huaweicloudsdkdcs.v2.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListConfigurationsResponse`
@@ -1637,6 +1736,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1669,6 +1770,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1683,6 +1785,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDiagnosisTasks
         :type request: :class:`huaweicloudsdkdcs.v2.ListDiagnosisTasksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListDiagnosisTasksResponse`
@@ -1695,6 +1798,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1731,6 +1836,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDiagnosisTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1745,6 +1851,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkdcs.v2.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListFlavorsResponse`
@@ -1757,6 +1864,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1801,6 +1910,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1815,6 +1925,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGroupReplicationInfo
         :type request: :class:`huaweicloudsdkdcs.v2.ListGroupReplicationInfoRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListGroupReplicationInfoResponse`
@@ -1827,6 +1938,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1859,6 +1972,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGroupReplicationInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1873,6 +1987,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHotKeyScanTasks
         :type request: :class:`huaweicloudsdkdcs.v2.ListHotKeyScanTasksRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListHotKeyScanTasksResponse`
@@ -1885,6 +2000,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1923,6 +2040,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHotKeyScanTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1937,6 +2055,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkdcs.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListInstancesResponse`
@@ -1949,6 +2068,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1999,6 +2120,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2013,6 +2135,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMaintenanceWindows
         :type request: :class:`huaweicloudsdkdcs.v2.ListMaintenanceWindowsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListMaintenanceWindowsResponse`
@@ -2025,6 +2148,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2055,6 +2180,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMaintenanceWindowsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2069,6 +2195,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMigrationTask
         :type request: :class:`huaweicloudsdkdcs.v2.ListMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListMigrationTaskResponse`
@@ -2081,6 +2208,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2117,6 +2246,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMigrationTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2132,6 +2262,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMonitoredObjects
         :type request: :class:`huaweicloudsdkdcs.v2.ListMonitoredObjectsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListMonitoredObjectsResponse`
@@ -2144,6 +2275,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2180,6 +2313,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMonitoredObjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2195,6 +2329,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMonitoredObjectsOfInstance
         :type request: :class:`huaweicloudsdkdcs.v2.ListMonitoredObjectsOfInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListMonitoredObjectsOfInstanceResponse`
@@ -2207,6 +2342,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2241,6 +2378,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMonitoredObjectsOfInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2255,6 +2393,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNumberOfInstancesInDifferentStatus
         :type request: :class:`huaweicloudsdkdcs.v2.ListNumberOfInstancesInDifferentStatusRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListNumberOfInstancesInDifferentStatusResponse`
@@ -2267,6 +2406,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2299,6 +2440,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNumberOfInstancesInDifferentStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2313,6 +2455,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRedislog
         :type request: :class:`huaweicloudsdkdcs.v2.ListRedislogRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListRedislogResponse`
@@ -2325,6 +2468,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2363,6 +2508,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRedislogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2377,6 +2523,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRestoreRecords
         :type request: :class:`huaweicloudsdkdcs.v2.ListRestoreRecordsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListRestoreRecordsResponse`
@@ -2389,6 +2536,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2429,6 +2578,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2443,6 +2593,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSlowlog
         :type request: :class:`huaweicloudsdkdcs.v2.ListSlowlogRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListSlowlogResponse`
@@ -2455,6 +2606,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2499,6 +2652,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowlogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2513,6 +2667,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStatisticsOfRunningInstances
         :type request: :class:`huaweicloudsdkdcs.v2.ListStatisticsOfRunningInstancesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListStatisticsOfRunningInstancesResponse`
@@ -2525,6 +2680,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2555,6 +2712,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStatisticsOfRunningInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2569,6 +2727,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTagsOfTenant
         :type request: :class:`huaweicloudsdkdcs.v2.ListTagsOfTenantRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ListTagsOfTenantResponse`
@@ -2581,6 +2740,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2611,6 +2772,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsOfTenantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2625,6 +2787,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeInstance
         :type request: :class:`huaweicloudsdkdcs.v2.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ResizeInstanceResponse`
@@ -2637,6 +2800,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2671,6 +2836,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2687,6 +2853,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartOrFlushInstances
         :type request: :class:`huaweicloudsdkdcs.v2.RestartOrFlushInstancesRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.RestartOrFlushInstancesResponse`
@@ -2699,6 +2866,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2731,6 +2900,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartOrFlushInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2746,6 +2916,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreInstance
         :type request: :class:`huaweicloudsdkdcs.v2.RestoreInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.RestoreInstanceResponse`
@@ -2758,6 +2929,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2792,6 +2965,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2806,6 +2980,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetOnlineMigrationTask
         :type request: :class:`huaweicloudsdkdcs.v2.SetOnlineMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.SetOnlineMigrationTaskResponse`
@@ -2818,6 +2993,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2852,6 +3029,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetOnlineMigrationTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2866,6 +3044,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBigkeyAutoscanConfig
         :type request: :class:`huaweicloudsdkdcs.v2.ShowBigkeyAutoscanConfigRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowBigkeyAutoscanConfigResponse`
@@ -2878,6 +3057,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2910,6 +3091,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBigkeyAutoscanConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2924,6 +3106,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBigkeyScanTaskDetails
         :type request: :class:`huaweicloudsdkdcs.v2.ShowBigkeyScanTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowBigkeyScanTaskDetailsResponse`
@@ -2936,6 +3119,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2970,6 +3155,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBigkeyScanTaskDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2984,6 +3170,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDiagnosisTaskDetails
         :type request: :class:`huaweicloudsdkdcs.v2.ShowDiagnosisTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowDiagnosisTaskDetailsResponse`
@@ -2996,6 +3183,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3028,6 +3217,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDiagnosisTaskDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3042,6 +3232,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHotkeyAutoscanConfig
         :type request: :class:`huaweicloudsdkdcs.v2.ShowHotkeyAutoscanConfigRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowHotkeyAutoscanConfigResponse`
@@ -3054,6 +3245,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3086,6 +3279,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHotkeyAutoscanConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3100,6 +3294,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHotkeyTaskDetails
         :type request: :class:`huaweicloudsdkdcs.v2.ShowHotkeyTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowHotkeyTaskDetailsResponse`
@@ -3112,6 +3307,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3146,6 +3343,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHotkeyTaskDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3160,6 +3358,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkdcs.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowInstanceResponse`
@@ -3172,6 +3371,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3204,6 +3405,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3218,6 +3420,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMigrationTask
         :type request: :class:`huaweicloudsdkdcs.v2.ShowMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowMigrationTaskResponse`
@@ -3230,6 +3433,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3262,6 +3467,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMigrationTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3276,6 +3482,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMigrationTaskStats
         :type request: :class:`huaweicloudsdkdcs.v2.ShowMigrationTaskStatsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowMigrationTaskStatsResponse`
@@ -3288,6 +3495,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3320,6 +3529,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMigrationTaskStatsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3334,6 +3544,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuotaOfTenant
         :type request: :class:`huaweicloudsdkdcs.v2.ShowQuotaOfTenantRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowQuotaOfTenantResponse`
@@ -3346,6 +3557,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3376,6 +3589,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotaOfTenantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3390,6 +3604,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTags
         :type request: :class:`huaweicloudsdkdcs.v2.ShowTagsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowTagsResponse`
@@ -3402,6 +3617,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3434,6 +3651,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3448,6 +3666,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopMigrationTask
         :type request: :class:`huaweicloudsdkdcs.v2.StopMigrationTaskRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.StopMigrationTaskResponse`
@@ -3460,6 +3679,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3492,6 +3713,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopMigrationTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3506,6 +3728,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopMigrationTaskSync
         :type request: :class:`huaweicloudsdkdcs.v2.StopMigrationTaskSyncRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.StopMigrationTaskSyncResponse`
@@ -3518,6 +3741,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3550,6 +3775,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopMigrationTaskSyncResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3564,6 +3790,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateBigkeyAutoscanConfig
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateBigkeyAutoscanConfigRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateBigkeyAutoscanConfigResponse`
@@ -3576,6 +3803,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3610,6 +3839,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateBigkeyAutoscanConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3624,6 +3854,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateConfigurations
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateConfigurationsResponse`
@@ -3636,6 +3867,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3670,6 +3903,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3684,6 +3918,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateHotkeyAutoScanConfig
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateHotkeyAutoScanConfigRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateHotkeyAutoScanConfigResponse`
@@ -3696,6 +3931,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3730,6 +3967,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHotkeyAutoScanConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3744,6 +3982,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateInstanceResponse`
@@ -3756,6 +3995,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3790,6 +4031,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3804,6 +4046,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePassword
         :type request: :class:`huaweicloudsdkdcs.v2.UpdatePasswordRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdatePasswordResponse`
@@ -3816,6 +4059,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3850,6 +4095,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3864,6 +4110,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSlavePriority
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateSlavePriorityRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateSlavePriorityResponse`
@@ -3876,6 +4123,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3914,6 +4163,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSlavePriorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3928,6 +4178,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowIpWhitelist
         :type request: :class:`huaweicloudsdkdcs.v2.ShowIpWhitelistRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.ShowIpWhitelistResponse`
@@ -3940,6 +4191,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3972,6 +4225,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIpWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3986,6 +4240,7 @@ class DcsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateIpWhitelist
         :type request: :class:`huaweicloudsdkdcs.v2.UpdateIpWhitelistRequest`
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateIpWhitelistResponse`
@@ -3998,6 +4253,8 @@ class DcsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4032,6 +4289,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIpWhitelistResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4039,7 +4297,7 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4050,9 +4308,10 @@ class DcsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4069,6 +4328,7 @@ class DcsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

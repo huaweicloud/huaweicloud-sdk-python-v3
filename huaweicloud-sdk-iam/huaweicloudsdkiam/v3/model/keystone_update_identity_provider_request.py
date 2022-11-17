@@ -17,7 +17,6 @@ class KeystoneUpdateIdentityProviderRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class KeystoneUpdateIdentityProviderRequest:
     def body(self):
         """Gets the body of this KeystoneUpdateIdentityProviderRequest.
 
-
         :return: The body of this KeystoneUpdateIdentityProviderRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderRequestBody`
         """
@@ -86,7 +84,6 @@ class KeystoneUpdateIdentityProviderRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this KeystoneUpdateIdentityProviderRequest.
-
 
         :param body: The body of this KeystoneUpdateIdentityProviderRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderRequestBody`

@@ -17,7 +17,6 @@ class BatchDeleteIpListRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchDeleteIpListRequestBody:
     def ipgroup(self):
         """Gets the ipgroup of this BatchDeleteIpListRequestBody.
 
-
         :return: The ipgroup of this BatchDeleteIpListRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListOption`
         """
@@ -58,7 +56,6 @@ class BatchDeleteIpListRequestBody:
     @ipgroup.setter
     def ipgroup(self, ipgroup):
         """Sets the ipgroup of this BatchDeleteIpListRequestBody.
-
 
         :param ipgroup: The ipgroup of this BatchDeleteIpListRequestBody.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListOption`

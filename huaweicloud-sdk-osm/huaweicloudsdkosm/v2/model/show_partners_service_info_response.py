@@ -17,7 +17,6 @@ class ShowPartnersServiceInfoResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowPartnersServiceInfoResponse(SdkResponse):
     def partners_service_info(self):
         """Gets the partners_service_info of this ShowPartnersServiceInfoResponse.
 
-
         :return: The partners_service_info of this ShowPartnersServiceInfoResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.PartnersServiceInfo`
         """
@@ -58,7 +56,6 @@ class ShowPartnersServiceInfoResponse(SdkResponse):
     @partners_service_info.setter
     def partners_service_info(self, partners_service_info):
         """Sets the partners_service_info of this ShowPartnersServiceInfoResponse.
-
 
         :param partners_service_info: The partners_service_info of this ShowPartnersServiceInfoResponse.
         :type partners_service_info: :class:`huaweicloudsdkosm.v2.PartnersServiceInfo`

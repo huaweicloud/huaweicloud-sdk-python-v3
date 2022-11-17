@@ -17,7 +17,6 @@ class FeatureTransformation:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class FeatureTransformation:
     def attr(self):
         """Gets the attr of this FeatureTransformation.
 
-
         :return: The attr of this FeatureTransformation.
         :rtype: :class:`huaweicloudsdkres.v1.Attribute`
         """
@@ -72,7 +70,6 @@ class FeatureTransformation:
     @attr.setter
     def attr(self, attr):
         """Sets the attr of this FeatureTransformation.
-
 
         :param attr: The attr of this FeatureTransformation.
         :type attr: :class:`huaweicloudsdkres.v1.Attribute`

@@ -17,7 +17,6 @@ class UpdateInstanceMonitorRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateInstanceMonitorRequest:
     def body(self):
         """Gets the body of this UpdateInstanceMonitorRequest.
 
-
         :return: The body of this UpdateInstanceMonitorRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TaurusModifyInstanceMonitorRequestBody`
         """
@@ -115,7 +113,6 @@ class UpdateInstanceMonitorRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateInstanceMonitorRequest.
-
 
         :param body: The body of this UpdateInstanceMonitorRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.TaurusModifyInstanceMonitorRequestBody`

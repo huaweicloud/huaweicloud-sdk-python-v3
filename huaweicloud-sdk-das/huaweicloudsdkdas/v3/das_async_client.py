@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DasAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersions
         :type request: :class:`huaweicloudsdkdas.v3.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListApiVersionsResponse`
@@ -68,6 +63,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -98,6 +95,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -112,6 +110,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApiVersion
         :type request: :class:`huaweicloudsdkdas.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowApiVersionResponse`
@@ -124,6 +123,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -156,6 +157,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -171,6 +173,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeSqlSwitch
         :type request: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchResponse`
@@ -183,6 +186,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -219,6 +224,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeSqlSwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -233,6 +239,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSpaceAnalysisTask
         :type request: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskResponse`
@@ -245,6 +252,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -281,6 +290,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSpaceAnalysisTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDbUser
         :type request: :class:`huaweicloudsdkdas.v3.DeleteDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteDbUserResponse`
@@ -308,6 +319,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +357,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -359,6 +373,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProcess
         :type request: :class:`huaweicloudsdkdas.v3.DeleteProcessRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteProcessResponse`
@@ -371,6 +386,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -407,6 +424,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProcessResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -421,6 +439,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportSlowQueryLogs
         :type request: :class:`huaweicloudsdkdas.v3.ExportSlowQueryLogsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportSlowQueryLogsResponse`
@@ -433,6 +452,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -477,6 +498,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportSlowQueryLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -491,6 +513,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExportSqlStatements
         :type request: :class:`huaweicloudsdkdas.v3.ExportSqlStatementsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportSqlStatementsResponse`
@@ -503,6 +526,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -547,6 +572,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportSqlStatementsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -562,6 +588,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDbUsers
         :type request: :class:`huaweicloudsdkdas.v3.ListDbUsersRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListDbUsersResponse`
@@ -574,6 +601,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -616,6 +645,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -631,6 +661,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInnodbLocks
         :type request: :class:`huaweicloudsdkdas.v3.ListInnodbLocksRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListInnodbLocksResponse`
@@ -643,6 +674,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -679,6 +712,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInnodbLocksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -694,6 +728,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMetadataLocks
         :type request: :class:`huaweicloudsdkdas.v3.ListMetadataLocksRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListMetadataLocksResponse`
@@ -706,6 +741,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -748,6 +785,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMetadataLocksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -763,6 +801,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProcesses
         :type request: :class:`huaweicloudsdkdas.v3.ListProcessesRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListProcessesResponse`
@@ -775,6 +814,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -819,6 +860,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProcessesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -833,6 +875,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSpaceAnalysis
         :type request: :class:`huaweicloudsdkdas.v3.ListSpaceAnalysisRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListSpaceAnalysisResponse`
@@ -845,6 +888,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -891,6 +936,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSpaceAnalysisResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -906,6 +952,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RegisterDbUser
         :type request: :class:`huaweicloudsdkdas.v3.RegisterDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.RegisterDbUserResponse`
@@ -918,6 +965,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -954,6 +1003,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -969,6 +1019,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDbUser
         :type request: :class:`huaweicloudsdkdas.v3.ShowDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowDbUserResponse`
@@ -981,6 +1032,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1017,6 +1070,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1031,6 +1085,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkdas.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowQuotasResponse`
@@ -1043,6 +1098,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1075,6 +1132,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1090,6 +1148,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSqlExecutionPlan
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlExecutionPlanResponse`
@@ -1102,6 +1161,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1142,6 +1203,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSqlExecutionPlanResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1158,6 +1220,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSqlExplain
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlExplainRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlExplainResponse`
@@ -1170,6 +1233,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1206,6 +1271,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSqlExplainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1220,6 +1286,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSqlSwitchStatus
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlSwitchStatusRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlSwitchStatusResponse`
@@ -1232,6 +1299,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1270,6 +1339,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSqlSwitchStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1285,6 +1355,7 @@ class DasAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDbUser
         :type request: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.UpdateDbUserResponse`
@@ -1297,6 +1368,8 @@ class DasAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1335,6 +1408,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1342,7 +1416,7 @@ class DasAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1353,9 +1427,10 @@ class DasAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1372,6 +1447,7 @@ class DasAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

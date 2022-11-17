@@ -17,7 +17,6 @@ class TaskResp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -367,7 +366,6 @@ class TaskResp:
     def dst_node(self):
         """Gets the dst_node of this TaskResp.
 
-
         :return: The dst_node of this TaskResp.
         :rtype: :class:`huaweicloudsdkoms.v2.DstNodeResp`
         """
@@ -376,7 +374,6 @@ class TaskResp:
     @dst_node.setter
     def dst_node(self, dst_node):
         """Sets the dst_node of this TaskResp.
-
 
         :param dst_node: The dst_node of this TaskResp.
         :type dst_node: :class:`huaweicloudsdkoms.v2.DstNodeResp`
@@ -475,7 +472,6 @@ class TaskResp:
     def error_reason(self):
         """Gets the error_reason of this TaskResp.
 
-
         :return: The error_reason of this TaskResp.
         :rtype: :class:`huaweicloudsdkoms.v2.ErrorReasonResp`
         """
@@ -484,7 +480,6 @@ class TaskResp:
     @error_reason.setter
     def error_reason(self, error_reason):
         """Sets the error_reason of this TaskResp.
-
 
         :param error_reason: The error_reason of this TaskResp.
         :type error_reason: :class:`huaweicloudsdkoms.v2.ErrorReasonResp`
@@ -517,7 +512,6 @@ class TaskResp:
     def failed_object_record(self):
         """Gets the failed_object_record of this TaskResp.
 
-
         :return: The failed_object_record of this TaskResp.
         :rtype: :class:`huaweicloudsdkoms.v2.FailedObjectRecordDto`
         """
@@ -526,7 +520,6 @@ class TaskResp:
     @failed_object_record.setter
     def failed_object_record(self, failed_object_record):
         """Sets the failed_object_record of this TaskResp.
-
 
         :param failed_object_record: The failed_object_record of this TaskResp.
         :type failed_object_record: :class:`huaweicloudsdkoms.v2.FailedObjectRecordDto`
@@ -757,7 +750,6 @@ class TaskResp:
     def src_node(self):
         """Gets the src_node of this TaskResp.
 
-
         :return: The src_node of this TaskResp.
         :rtype: :class:`huaweicloudsdkoms.v2.SrcNodeResp`
         """
@@ -766,7 +758,6 @@ class TaskResp:
     @src_node.setter
     def src_node(self, src_node):
         """Sets the src_node of this TaskResp.
-
 
         :param src_node: The src_node of this TaskResp.
         :type src_node: :class:`huaweicloudsdkoms.v2.SrcNodeResp`
@@ -953,7 +944,6 @@ class TaskResp:
     def smn_info(self):
         """Gets the smn_info of this TaskResp.
 
-
         :return: The smn_info of this TaskResp.
         :rtype: :class:`huaweicloudsdkoms.v2.SmnInfo`
         """
@@ -962,7 +952,6 @@ class TaskResp:
     @smn_info.setter
     def smn_info(self, smn_info):
         """Sets the smn_info of this TaskResp.
-
 
         :param smn_info: The smn_info of this TaskResp.
         :type smn_info: :class:`huaweicloudsdkoms.v2.SmnInfo`
@@ -973,7 +962,6 @@ class TaskResp:
     def source_cdn(self):
         """Gets the source_cdn of this TaskResp.
 
-
         :return: The source_cdn of this TaskResp.
         :rtype: :class:`huaweicloudsdkoms.v2.SourceCdnResp`
         """
@@ -982,7 +970,6 @@ class TaskResp:
     @source_cdn.setter
     def source_cdn(self, source_cdn):
         """Sets the source_cdn of this TaskResp.
-
 
         :param source_cdn: The source_cdn of this TaskResp.
         :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnResp`

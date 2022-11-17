@@ -17,7 +17,6 @@ class BatchStopInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchStopInstanceRequest:
     def body(self):
         """Gets the body of this BatchStopInstanceRequest.
 
-
         :return: The body of this BatchStopInstanceRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.BatchStopInstanceRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchStopInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchStopInstanceRequest.
-
 
         :param body: The body of this BatchStopInstanceRequest.
         :type body: :class:`huaweicloudsdkiec.v1.BatchStopInstanceRequestBody`

@@ -17,7 +17,6 @@ class CreateLoadBalancerOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -597,7 +596,6 @@ class CreateLoadBalancerOption:
     def ipv6_bandwidth(self):
         """Gets the ipv6_bandwidth of this CreateLoadBalancerOption.
 
-
         :return: The ipv6_bandwidth of this CreateLoadBalancerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
@@ -606,7 +604,6 @@ class CreateLoadBalancerOption:
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
         """Sets the ipv6_bandwidth of this CreateLoadBalancerOption.
-
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this CreateLoadBalancerOption.
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
@@ -639,7 +636,6 @@ class CreateLoadBalancerOption:
     def publicip(self):
         """Gets the publicip of this CreateLoadBalancerOption.
 
-
         :return: The publicip of this CreateLoadBalancerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerPublicIpOption`
         """
@@ -648,7 +644,6 @@ class CreateLoadBalancerOption:
     @publicip.setter
     def publicip(self, publicip):
         """Sets the publicip of this CreateLoadBalancerOption.
-
 
         :param publicip: The publicip of this CreateLoadBalancerOption.
         :type publicip: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerPublicIpOption`
@@ -725,7 +720,6 @@ class CreateLoadBalancerOption:
     def prepaid_options(self):
         """Gets the prepaid_options of this CreateLoadBalancerOption.
 
-
         :return: The prepaid_options of this CreateLoadBalancerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
         """
@@ -734,7 +728,6 @@ class CreateLoadBalancerOption:
     @prepaid_options.setter
     def prepaid_options(self, prepaid_options):
         """Sets the prepaid_options of this CreateLoadBalancerOption.
-
 
         :param prepaid_options: The prepaid_options of this CreateLoadBalancerOption.
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
@@ -745,7 +738,6 @@ class CreateLoadBalancerOption:
     def autoscaling(self):
         """Gets the autoscaling of this CreateLoadBalancerOption.
 
-
         :return: The autoscaling of this CreateLoadBalancerOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
         """
@@ -754,7 +746,6 @@ class CreateLoadBalancerOption:
     @autoscaling.setter
     def autoscaling(self, autoscaling):
         """Sets the autoscaling of this CreateLoadBalancerOption.
-
 
         :param autoscaling: The autoscaling of this CreateLoadBalancerOption.
         :type autoscaling: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`

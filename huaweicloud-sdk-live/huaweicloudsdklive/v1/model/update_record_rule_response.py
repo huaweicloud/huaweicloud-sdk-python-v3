@@ -17,7 +17,6 @@ class UpdateRecordRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -208,7 +207,6 @@ class UpdateRecordRuleResponse(SdkResponse):
     def default_record_config(self):
         """Gets the default_record_config of this UpdateRecordRuleResponse.
 
-
         :return: The default_record_config of this UpdateRecordRuleResponse.
         :rtype: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
         """
@@ -217,7 +215,6 @@ class UpdateRecordRuleResponse(SdkResponse):
     @default_record_config.setter
     def default_record_config(self, default_record_config):
         """Sets the default_record_config of this UpdateRecordRuleResponse.
-
 
         :param default_record_config: The default_record_config of this UpdateRecordRuleResponse.
         :type default_record_config: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`

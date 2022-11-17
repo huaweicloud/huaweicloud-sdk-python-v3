@@ -17,7 +17,6 @@ class NovaDisassociateSecurityGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class NovaDisassociateSecurityGroupRequest:
     def body(self):
         """Gets the body of this NovaDisassociateSecurityGroupRequest.
 
-
         :return: The body of this NovaDisassociateSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequestBody`
         """
@@ -86,7 +84,6 @@ class NovaDisassociateSecurityGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this NovaDisassociateSecurityGroupRequest.
-
 
         :param body: The body of this NovaDisassociateSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequestBody`

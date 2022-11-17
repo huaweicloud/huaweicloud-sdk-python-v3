@@ -17,7 +17,6 @@ class CreateTaskReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -167,7 +166,6 @@ class CreateTaskReq:
     def src_node(self):
         """Gets the src_node of this CreateTaskReq.
 
-
         :return: The src_node of this CreateTaskReq.
         :rtype: :class:`huaweicloudsdkoms.v2.SrcNodeReq`
         """
@@ -176,7 +174,6 @@ class CreateTaskReq:
     @src_node.setter
     def src_node(self, src_node):
         """Sets the src_node of this CreateTaskReq.
-
 
         :param src_node: The src_node of this CreateTaskReq.
         :type src_node: :class:`huaweicloudsdkoms.v2.SrcNodeReq`
@@ -187,7 +184,6 @@ class CreateTaskReq:
     def dst_node(self):
         """Gets the dst_node of this CreateTaskReq.
 
-
         :return: The dst_node of this CreateTaskReq.
         :rtype: :class:`huaweicloudsdkoms.v2.DstNodeReq`
         """
@@ -196,7 +192,6 @@ class CreateTaskReq:
     @dst_node.setter
     def dst_node(self, dst_node):
         """Sets the dst_node of this CreateTaskReq.
-
 
         :param dst_node: The dst_node of this CreateTaskReq.
         :type dst_node: :class:`huaweicloudsdkoms.v2.DstNodeReq`
@@ -295,7 +290,6 @@ class CreateTaskReq:
     def source_cdn(self):
         """Gets the source_cdn of this CreateTaskReq.
 
-
         :return: The source_cdn of this CreateTaskReq.
         :rtype: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
         """
@@ -304,7 +298,6 @@ class CreateTaskReq:
     @source_cdn.setter
     def source_cdn(self, source_cdn):
         """Sets the source_cdn of this CreateTaskReq.
-
 
         :param source_cdn: The source_cdn of this CreateTaskReq.
         :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
@@ -315,7 +308,6 @@ class CreateTaskReq:
     def smn_config(self):
         """Gets the smn_config of this CreateTaskReq.
 
-
         :return: The smn_config of this CreateTaskReq.
         :rtype: :class:`huaweicloudsdkoms.v2.SmnConfig`
         """
@@ -324,7 +316,6 @@ class CreateTaskReq:
     @smn_config.setter
     def smn_config(self, smn_config):
         """Sets the smn_config of this CreateTaskReq.
-
 
         :param smn_config: The smn_config of this CreateTaskReq.
         :type smn_config: :class:`huaweicloudsdkoms.v2.SmnConfig`

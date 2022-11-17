@@ -17,7 +17,6 @@ class CreateTasksRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateTasksRequest:
     def body(self):
         """Gets the body of this CreateTasksRequest.
 
-
         :return: The body of this CreateTasksRequest.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.CreateTasksRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateTasksRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTasksRequest.
-
 
         :param body: The body of this CreateTasksRequest.
         :type body: :class:`huaweicloudsdkcampusgo.v2.CreateTasksRequestBody`

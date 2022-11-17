@@ -17,7 +17,6 @@ class TaskDetailInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -236,7 +235,6 @@ class TaskDetailInfo:
     def input(self):
         """Gets the input of this TaskDetailInfo.
 
-
         :return: The input of this TaskDetailInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -245,7 +243,6 @@ class TaskDetailInfo:
     @input.setter
     def input(self, input):
         """Sets the input of this TaskDetailInfo.
-
 
         :param input: The input of this TaskDetailInfo.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -256,7 +253,6 @@ class TaskDetailInfo:
     def output(self):
         """Gets the output of this TaskDetailInfo.
 
-
         :return: The output of this TaskDetailInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -265,7 +261,6 @@ class TaskDetailInfo:
     @output.setter
     def output(self, output):
         """Sets the output of this TaskDetailInfo.
-
 
         :param output: The output of this TaskDetailInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -342,7 +337,6 @@ class TaskDetailInfo:
     def media_detail(self):
         """Gets the media_detail of this TaskDetailInfo.
 
-
         :return: The media_detail of this TaskDetailInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.MediaDetail`
         """
@@ -351,7 +345,6 @@ class TaskDetailInfo:
     @media_detail.setter
     def media_detail(self, media_detail):
         """Sets the media_detail of this TaskDetailInfo.
-
 
         :param media_detail: The media_detail of this TaskDetailInfo.
         :type media_detail: :class:`huaweicloudsdkmpc.v1.MediaDetail`
@@ -362,7 +355,6 @@ class TaskDetailInfo:
     def xcode_error(self):
         """Gets the xcode_error of this TaskDetailInfo.
 
-
         :return: The xcode_error of this TaskDetailInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ErrorResponse`
         """
@@ -371,7 +363,6 @@ class TaskDetailInfo:
     @xcode_error.setter
     def xcode_error(self, xcode_error):
         """Sets the xcode_error of this TaskDetailInfo.
-
 
         :param xcode_error: The xcode_error of this TaskDetailInfo.
         :type xcode_error: :class:`huaweicloudsdkmpc.v1.ErrorResponse`

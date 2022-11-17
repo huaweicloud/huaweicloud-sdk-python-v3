@@ -17,7 +17,6 @@ class BatchListModulesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class BatchListModulesResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this BatchListModulesResponse.
 
-
         :return: The page_info of this BatchListModulesResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
@@ -94,7 +92,6 @@ class BatchListModulesResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this BatchListModulesResponse.
-
 
         :param page_info: The page_info of this BatchListModulesResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`

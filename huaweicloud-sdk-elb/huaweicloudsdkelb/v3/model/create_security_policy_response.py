@@ -17,7 +17,6 @@ class CreateSecurityPolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class CreateSecurityPolicyResponse(SdkResponse):
     def security_policy(self):
         """Gets the security_policy of this CreateSecurityPolicyResponse.
 
-
         :return: The security_policy of this CreateSecurityPolicyResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.SecurityPolicy`
         """
@@ -65,7 +63,6 @@ class CreateSecurityPolicyResponse(SdkResponse):
     @security_policy.setter
     def security_policy(self, security_policy):
         """Sets the security_policy of this CreateSecurityPolicyResponse.
-
 
         :param security_policy: The security_policy of this CreateSecurityPolicyResponse.
         :type security_policy: :class:`huaweicloudsdkelb.v3.SecurityPolicy`

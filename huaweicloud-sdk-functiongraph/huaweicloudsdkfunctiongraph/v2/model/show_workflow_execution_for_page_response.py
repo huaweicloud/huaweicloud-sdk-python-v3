@@ -17,7 +17,6 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
     def pager(self):
         """Gets the pager of this ShowWorkflowExecutionForPageResponse.
 
-
         :return: The pager of this ShowWorkflowExecutionForPageResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.Pager`
         """
@@ -65,7 +63,6 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
     @pager.setter
     def pager(self, pager):
         """Sets the pager of this ShowWorkflowExecutionForPageResponse.
-
 
         :param pager: The pager of this ShowWorkflowExecutionForPageResponse.
         :type pager: :class:`huaweicloudsdkfunctiongraph.v2.Pager`
@@ -76,7 +73,6 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
     def his_records(self):
         """Gets the his_records of this ShowWorkflowExecutionForPageResponse.
 
-
         :return: The his_records of this ShowWorkflowExecutionForPageResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`
         """
@@ -85,7 +81,6 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
     @his_records.setter
     def his_records(self, his_records):
         """Sets the his_records of this ShowWorkflowExecutionForPageResponse.
-
 
         :param his_records: The his_records of this ShowWorkflowExecutionForPageResponse.
         :type his_records: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBriefV2`

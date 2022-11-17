@@ -17,7 +17,6 @@ class UpdateDictionaryResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -266,7 +265,6 @@ class UpdateDictionaryResponse(SdkResponse):
     def type(self):
         """Gets the type of this UpdateDictionaryResponse.
 
-
         :return: The type of this UpdateDictionaryResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.DictionaryType`
         """
@@ -275,7 +273,6 @@ class UpdateDictionaryResponse(SdkResponse):
     @type.setter
     def type(self, type):
         """Sets the type of this UpdateDictionaryResponse.
-
 
         :param type: The type of this UpdateDictionaryResponse.
         :type type: :class:`huaweicloudsdkroma.v2.DictionaryType`

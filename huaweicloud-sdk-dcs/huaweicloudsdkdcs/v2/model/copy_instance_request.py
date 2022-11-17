@@ -17,7 +17,6 @@ class CopyInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CopyInstanceRequest:
     def body(self):
         """Gets the body of this CopyInstanceRequest.
 
-
         :return: The body of this CopyInstanceRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupInstanceBody`
         """
@@ -86,7 +84,6 @@ class CopyInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CopyInstanceRequest.
-
 
         :param body: The body of this CopyInstanceRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.BackupInstanceBody`

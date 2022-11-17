@@ -17,7 +17,6 @@ class AomMappingfilesInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class AomMappingfilesInfo:
     def log_stream_info(self):
         """Gets the log_stream_info of this AomMappingfilesInfo.
 
-
         :return: The log_stream_info of this AomMappingfilesInfo.
         :rtype: :class:`huaweicloudsdklts.v2.AomMappingLogStreamInfo`
         """
@@ -85,7 +83,6 @@ class AomMappingfilesInfo:
     @log_stream_info.setter
     def log_stream_info(self, log_stream_info):
         """Sets the log_stream_info of this AomMappingfilesInfo.
-
 
         :param log_stream_info: The log_stream_info of this AomMappingfilesInfo.
         :type log_stream_info: :class:`huaweicloudsdklts.v2.AomMappingLogStreamInfo`

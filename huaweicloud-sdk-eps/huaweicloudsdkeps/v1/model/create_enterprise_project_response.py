@@ -17,7 +17,6 @@ class CreateEnterpriseProjectResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateEnterpriseProjectResponse(SdkResponse):
     def enterprise_project(self):
         """Gets the enterprise_project of this CreateEnterpriseProjectResponse.
 
-
         :return: The enterprise_project of this CreateEnterpriseProjectResponse.
         :rtype: :class:`huaweicloudsdkeps.v1.EpDetail`
         """
@@ -58,7 +56,6 @@ class CreateEnterpriseProjectResponse(SdkResponse):
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
         """Sets the enterprise_project of this CreateEnterpriseProjectResponse.
-
 
         :param enterprise_project: The enterprise_project of this CreateEnterpriseProjectResponse.
         :type enterprise_project: :class:`huaweicloudsdkeps.v1.EpDetail`

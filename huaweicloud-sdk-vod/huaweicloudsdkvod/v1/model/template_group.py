@@ -17,7 +17,6 @@ class TemplateGroup:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -281,7 +280,6 @@ class TemplateGroup:
     def common(self):
         """Gets the common of this TemplateGroup.
 
-
         :return: The common of this TemplateGroup.
         :rtype: :class:`huaweicloudsdkvod.v1.Common`
         """
@@ -290,7 +288,6 @@ class TemplateGroup:
     @common.setter
     def common(self, common):
         """Sets the common of this TemplateGroup.
-
 
         :param common: The common of this TemplateGroup.
         :type common: :class:`huaweicloudsdkvod.v1.Common`

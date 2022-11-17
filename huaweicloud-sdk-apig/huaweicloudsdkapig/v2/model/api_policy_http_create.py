@@ -17,7 +17,6 @@ class ApiPolicyHttpCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -340,7 +339,6 @@ class ApiPolicyHttpCreate:
     def vpc_channel_info(self):
         """Gets the vpc_channel_info of this ApiPolicyHttpCreate.
 
-
         :return: The vpc_channel_info of this ApiPolicyHttpCreate.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiBackendVpcReq`
         """
@@ -349,7 +347,6 @@ class ApiPolicyHttpCreate:
     @vpc_channel_info.setter
     def vpc_channel_info(self, vpc_channel_info):
         """Sets the vpc_channel_info of this ApiPolicyHttpCreate.
-
 
         :param vpc_channel_info: The vpc_channel_info of this ApiPolicyHttpCreate.
         :type vpc_channel_info: :class:`huaweicloudsdkapig.v2.ApiBackendVpcReq`

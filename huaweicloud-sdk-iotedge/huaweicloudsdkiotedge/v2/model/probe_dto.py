@@ -17,7 +17,6 @@ class ProbeDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -111,7 +110,6 @@ class ProbeDTO:
     def tcp_socket(self):
         """Gets the tcp_socket of this ProbeDTO.
 
-
         :return: The tcp_socket of this ProbeDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.TcpSocketDTO`
         """
@@ -120,7 +118,6 @@ class ProbeDTO:
     @tcp_socket.setter
     def tcp_socket(self, tcp_socket):
         """Sets the tcp_socket of this ProbeDTO.
-
 
         :param tcp_socket: The tcp_socket of this ProbeDTO.
         :type tcp_socket: :class:`huaweicloudsdkiotedge.v2.TcpSocketDTO`
@@ -131,7 +128,6 @@ class ProbeDTO:
     def http_get(self):
         """Gets the http_get of this ProbeDTO.
 
-
         :return: The http_get of this ProbeDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.HttpGetDTO`
         """
@@ -140,7 +136,6 @@ class ProbeDTO:
     @http_get.setter
     def http_get(self, http_get):
         """Sets the http_get of this ProbeDTO.
-
 
         :param http_get: The http_get of this ProbeDTO.
         :type http_get: :class:`huaweicloudsdkiotedge.v2.HttpGetDTO`

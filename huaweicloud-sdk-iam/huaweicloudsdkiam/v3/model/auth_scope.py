@@ -17,7 +17,6 @@ class AuthScope:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class AuthScope:
     def domain(self):
         """Gets the domain of this AuthScope.
 
-
         :return: The domain of this AuthScope.
         :rtype: :class:`huaweicloudsdkiam.v3.AuthScopeDomain`
         """
@@ -65,7 +63,6 @@ class AuthScope:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this AuthScope.
-
 
         :param domain: The domain of this AuthScope.
         :type domain: :class:`huaweicloudsdkiam.v3.AuthScopeDomain`
@@ -76,7 +73,6 @@ class AuthScope:
     def project(self):
         """Gets the project of this AuthScope.
 
-
         :return: The project of this AuthScope.
         :rtype: :class:`huaweicloudsdkiam.v3.AuthScopeProject`
         """
@@ -85,7 +81,6 @@ class AuthScope:
     @project.setter
     def project(self, project):
         """Sets the project of this AuthScope.
-
 
         :param project: The project of this AuthScope.
         :type project: :class:`huaweicloudsdkiam.v3.AuthScopeProject`

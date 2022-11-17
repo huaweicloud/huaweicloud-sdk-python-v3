@@ -17,32 +17,35 @@ class Condition:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'environment': 'int',
         'space': 'int',
-        'transport': 'int'
+        'transport': 'int',
+        'installation': 'str'
     }
 
     attribute_map = {
         'environment': 'environment',
         'space': 'space',
-        'transport': 'transport'
+        'transport': 'transport',
+        'installation': 'installation'
     }
 
-    def __init__(self, environment=None, space=None, transport=None):
+    def __init__(self, environment=None, space=None, transport=None, installation=None):
         """Condition
 
         The model defined in huaweicloud sdk
 
-        :param environment: 机房环境条件 取值范围：   - 0：需做详细评估   - 1：机房内已部署华为FusionModule   - 2：机房等级满足T3或同等级国家标准
+        :param environment: 机房环境条件 取值范围：   - 0：机房条件不属于上述任何一种情况   - 1：机房使用模块化数据中心方案进行建设   - 2：机房已通过国家级或行业级标准化认证
         :type environment: int
-        :param space: 机柜空间条件 取值范围：   - 0：除首柜外，同机房无预留空间   - 1：除首柜外，同机房预留3柜以上空间   - 2：除首柜外，同机房预留1-3柜空间
+        :param space: 机柜空间条件 取值范围：   - 0：暂无扩容计划，不考虑额外余量   - 1：机柜余量相对充裕，可放置空间超过3柜   - 2：机柜余量相对紧张，可放置空间3柜以内
         :type space: int
         :param transport: 运输条件 取值范围：   - 0：运输通道和机房门的高度或宽度不满足要求   - 1：运输通道，货梯，机房门均可满足整机柜滚轮搬运   - 2：运输通道，货梯，机房门不能支持整机柜滚轮搬运，沿途有台阶
         :type transport: int
+        :param installation: 整柜安装评估 取值范围：   - UNCLEAR：不清楚是否允许整柜安装，需要评估   - UNSUPPORT：不允许整柜安装，需将设备放入现有机柜   - SUPPORT：可支持整柜安装，并入现有机柜组
+        :type installation: str
         """
         
         
@@ -50,6 +53,7 @@ class Condition:
         self._environment = None
         self._space = None
         self._transport = None
+        self._installation = None
         self.discriminator = None
 
         if environment is not None:
@@ -58,12 +62,14 @@ class Condition:
             self.space = space
         if transport is not None:
             self.transport = transport
+        if installation is not None:
+            self.installation = installation
 
     @property
     def environment(self):
         """Gets the environment of this Condition.
 
-        机房环境条件 取值范围：   - 0：需做详细评估   - 1：机房内已部署华为FusionModule   - 2：机房等级满足T3或同等级国家标准
+        机房环境条件 取值范围：   - 0：机房条件不属于上述任何一种情况   - 1：机房使用模块化数据中心方案进行建设   - 2：机房已通过国家级或行业级标准化认证
 
         :return: The environment of this Condition.
         :rtype: int
@@ -74,7 +80,7 @@ class Condition:
     def environment(self, environment):
         """Sets the environment of this Condition.
 
-        机房环境条件 取值范围：   - 0：需做详细评估   - 1：机房内已部署华为FusionModule   - 2：机房等级满足T3或同等级国家标准
+        机房环境条件 取值范围：   - 0：机房条件不属于上述任何一种情况   - 1：机房使用模块化数据中心方案进行建设   - 2：机房已通过国家级或行业级标准化认证
 
         :param environment: The environment of this Condition.
         :type environment: int
@@ -85,7 +91,7 @@ class Condition:
     def space(self):
         """Gets the space of this Condition.
 
-        机柜空间条件 取值范围：   - 0：除首柜外，同机房无预留空间   - 1：除首柜外，同机房预留3柜以上空间   - 2：除首柜外，同机房预留1-3柜空间
+        机柜空间条件 取值范围：   - 0：暂无扩容计划，不考虑额外余量   - 1：机柜余量相对充裕，可放置空间超过3柜   - 2：机柜余量相对紧张，可放置空间3柜以内
 
         :return: The space of this Condition.
         :rtype: int
@@ -96,7 +102,7 @@ class Condition:
     def space(self, space):
         """Sets the space of this Condition.
 
-        机柜空间条件 取值范围：   - 0：除首柜外，同机房无预留空间   - 1：除首柜外，同机房预留3柜以上空间   - 2：除首柜外，同机房预留1-3柜空间
+        机柜空间条件 取值范围：   - 0：暂无扩容计划，不考虑额外余量   - 1：机柜余量相对充裕，可放置空间超过3柜   - 2：机柜余量相对紧张，可放置空间3柜以内
 
         :param space: The space of this Condition.
         :type space: int
@@ -124,6 +130,28 @@ class Condition:
         :type transport: int
         """
         self._transport = transport
+
+    @property
+    def installation(self):
+        """Gets the installation of this Condition.
+
+        整柜安装评估 取值范围：   - UNCLEAR：不清楚是否允许整柜安装，需要评估   - UNSUPPORT：不允许整柜安装，需将设备放入现有机柜   - SUPPORT：可支持整柜安装，并入现有机柜组
+
+        :return: The installation of this Condition.
+        :rtype: str
+        """
+        return self._installation
+
+    @installation.setter
+    def installation(self, installation):
+        """Sets the installation of this Condition.
+
+        整柜安装评估 取值范围：   - UNCLEAR：不清楚是否允许整柜安装，需要评估   - UNSUPPORT：不允许整柜安装，需将设备放入现有机柜   - SUPPORT：可支持整柜安装，并入现有机柜组
+
+        :param installation: The installation of this Condition.
+        :type installation: str
+        """
+        self._installation = installation
 
     def to_dict(self):
         """Returns the model properties as a dict"""

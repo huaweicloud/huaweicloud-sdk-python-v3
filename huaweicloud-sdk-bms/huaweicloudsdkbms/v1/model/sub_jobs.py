@@ -17,7 +17,6 @@ class SubJobs:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class SubJobs:
     def entities(self):
         """Gets the entities of this SubJobs.
 
-
         :return: The entities of this SubJobs.
         :rtype: :class:`huaweicloudsdkbms.v1.Entitie`
         """
@@ -143,7 +141,6 @@ class SubJobs:
     @entities.setter
     def entities(self, entities):
         """Sets the entities of this SubJobs.
-
 
         :param entities: The entities of this SubJobs.
         :type entities: :class:`huaweicloudsdkbms.v1.Entitie`

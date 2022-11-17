@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IoTDAAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAccessCode
         :type request: :class:`huaweicloudsdkiotda.v5.CreateAccessCodeRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateAccessCodeResponse`
@@ -68,6 +63,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAccessCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddQueue
         :type request: :class:`huaweicloudsdkiotda.v5.AddQueueRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.AddQueueResponse`
@@ -128,6 +127,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchShowQueue
         :type request: :class:`huaweicloudsdkiotda.v5.BatchShowQueueRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.BatchShowQueueResponse`
@@ -188,6 +191,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +233,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchShowQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +248,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteQueue
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteQueueRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteQueueResponse`
@@ -254,6 +261,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -288,6 +297,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -302,6 +312,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQueue
         :type request: :class:`huaweicloudsdkiotda.v5.ShowQueueRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowQueueResponse`
@@ -314,6 +325,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -348,6 +361,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -362,6 +376,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddApplication
         :type request: :class:`huaweicloudsdkiotda.v5.AddApplicationRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.AddApplicationResponse`
@@ -374,6 +389,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -408,6 +425,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -422,6 +440,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApplication
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteApplicationResponse`
@@ -434,6 +453,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -468,6 +489,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -482,6 +504,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApplication
         :type request: :class:`huaweicloudsdkiotda.v5.ShowApplicationRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowApplicationResponse`
@@ -494,6 +517,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -528,6 +553,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -542,6 +568,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApplications
         :type request: :class:`huaweicloudsdkiotda.v5.ShowApplicationsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowApplicationsResponse`
@@ -554,6 +581,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -588,6 +617,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -597,11 +627,12 @@ class IoTDAAsyncClient(Client):
     def create_async_command_async(self, request):
         """下发异步设备命令
 
-        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步通知应用服务器。 命令执行结果支持灵活的数据流转，应用服务器通过调用物联网平台的创建规则触发条件（Resource:device.command.status，Event:update）、创建规则动作并激活规则后，当命令状态变更时，物联网平台会根据规则将结果发送到规则指定的服务器，如用户自定义的HTTP服务器，AMQP服务器，以及华为云的其他储存服务器等, 详情参考[设备命令状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01212.html)。
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步通知应用服务器。 命令执行结果支持灵活的数据流转，应用服务器通过调用物联网平台的创建规则触发条件（Resource:device.command.status，Event:update）、创建规则动作并激活规则后，当命令状态变更时，物联网平台会根据规则将结果发送到规则指定的服务器，如用户自定义的HTTP服务器，AMQP服务器，以及华为云的其他储存服务器等, 详情参考[[设备命令状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01212.html)](tag:hws)[[设备命令状态变更通知](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_01212.html)](tag:hws_hk)。
         注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
+
 
         :param request: Request instance for CreateAsyncCommand
         :type request: :class:`huaweicloudsdkiotda.v5.CreateAsyncCommandRequest`
@@ -615,6 +646,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -651,6 +684,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAsyncCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -660,10 +694,11 @@ class IoTDAAsyncClient(Client):
     def show_async_device_command_async(self, request):
         """查询指定id的命令
 
-        物联网平台可查询指定id的命令。 
+        物联网平台可查询指定id的命令。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
+
 
         :param request: Request instance for ShowAsyncDeviceCommand
         :type request: :class:`huaweicloudsdkiotda.v5.ShowAsyncDeviceCommandRequest`
@@ -677,6 +712,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -713,6 +750,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAsyncDeviceCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -727,6 +765,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateBatchTask
         :type request: :class:`huaweicloudsdkiotda.v5.CreateBatchTaskRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateBatchTaskResponse`
@@ -739,6 +778,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -773,6 +814,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBatchTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -787,6 +829,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBatchTasks
         :type request: :class:`huaweicloudsdkiotda.v5.ListBatchTasksRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListBatchTasksResponse`
@@ -799,6 +842,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -843,6 +888,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBatchTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -857,6 +903,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBatchTask
         :type request: :class:`huaweicloudsdkiotda.v5.ShowBatchTaskRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowBatchTaskResponse`
@@ -869,6 +916,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -909,6 +958,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBatchTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -923,6 +973,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBatchTaskFile
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteBatchTaskFileRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteBatchTaskFileResponse`
@@ -935,6 +986,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -969,6 +1022,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBatchTaskFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -983,6 +1037,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBatchTaskFiles
         :type request: :class:`huaweicloudsdkiotda.v5.ListBatchTaskFilesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListBatchTaskFilesResponse`
@@ -995,6 +1050,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1027,6 +1084,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBatchTaskFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1036,10 +1094,11 @@ class IoTDAAsyncClient(Client):
     def add_certificate_async(self, request):
         """上传设备CA证书
 
-        应用服务器可调用此接口在物联网平台上传设备的CA证书
+        应用服务器可调用此接口在物联网平台上传设备CA证书
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
+
 
         :param request: Request instance for AddCertificate
         :type request: :class:`huaweicloudsdkiotda.v5.AddCertificateRequest`
@@ -1048,11 +1107,13 @@ class IoTDAAsyncClient(Client):
         return self.add_certificate_with_http_info(request)
 
     def add_certificate_with_http_info(self, request):
-        all_params = ['add_certificate_request_body', 'instance_id']
+        all_params = ['add_certificate_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1061,6 +1122,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1087,6 +1152,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1101,6 +1167,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckCertificate
         :type request: :class:`huaweicloudsdkiotda.v5.CheckCertificateRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CheckCertificateResponse`
@@ -1108,11 +1175,13 @@ class IoTDAAsyncClient(Client):
         return self.check_certificate_with_http_info(request)
 
     def check_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'action_id', 'check_certificate_request_body', 'instance_id']
+        all_params = ['certificate_id', 'action_id', 'check_certificate_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1125,6 +1194,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('action_id', local_var_params['action_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1151,6 +1224,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1160,10 +1234,11 @@ class IoTDAAsyncClient(Client):
     def delete_certificate_async(self, request):
         """删除设备CA证书
 
-        应用服务器可调用此接口在物联网平台删除设备的CA证书
+        应用服务器可调用此接口在物联网平台删除设备CA证书
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
+
 
         :param request: Request instance for DeleteCertificate
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteCertificateRequest`
@@ -1172,11 +1247,13 @@ class IoTDAAsyncClient(Client):
         return self.delete_certificate_with_http_info(request)
 
     def delete_certificate_with_http_info(self, request):
-        all_params = ['certificate_id', 'instance_id']
+        all_params = ['certificate_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1187,6 +1264,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1211,6 +1292,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1220,10 +1302,11 @@ class IoTDAAsyncClient(Client):
     def list_certificates_async(self, request):
         """获取设备CA证书列表
 
-        应用服务器可调用此接口在物联网平台获取设备的CA证书列表
+        应用服务器可调用此接口在物联网平台获取设备CA证书列表
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
+
 
         :param request: Request instance for ListCertificates
         :type request: :class:`huaweicloudsdkiotda.v5.ListCertificatesRequest`
@@ -1232,11 +1315,13 @@ class IoTDAAsyncClient(Client):
         return self.list_certificates_with_http_info(request)
 
     def list_certificates_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id', 'limit', 'marker', 'offset']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'app_id', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1253,6 +1338,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1277,6 +1366,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1292,6 +1382,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCommand
         :type request: :class:`huaweicloudsdkiotda.v5.CreateCommandRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateCommandResponse`
@@ -1304,6 +1395,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1340,6 +1433,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1354,6 +1448,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddDeviceGroup
         :type request: :class:`huaweicloudsdkiotda.v5.AddDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.AddDeviceGroupResponse`
@@ -1366,6 +1461,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1400,6 +1497,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1414,6 +1512,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateOrDeleteDeviceInGroup
         :type request: :class:`huaweicloudsdkiotda.v5.CreateOrDeleteDeviceInGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateOrDeleteDeviceInGroupResponse`
@@ -1426,6 +1525,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1464,6 +1565,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOrDeleteDeviceInGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1478,6 +1580,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeviceGroup
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDeviceGroupResponse`
@@ -1490,6 +1593,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1524,6 +1629,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1538,6 +1644,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDeviceGroups
         :type request: :class:`huaweicloudsdkiotda.v5.ListDeviceGroupsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListDeviceGroupsResponse`
@@ -1550,6 +1657,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1592,6 +1701,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeviceGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1606,6 +1716,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeviceGroup
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceGroupResponse`
@@ -1618,6 +1729,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1652,6 +1765,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1666,6 +1780,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDevicesInGroup
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDevicesInGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowDevicesInGroupResponse`
@@ -1678,6 +1793,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1718,6 +1835,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDevicesInGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1732,6 +1850,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDeviceGroup
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceGroupResponse`
@@ -1744,6 +1863,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1780,6 +1901,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1798,6 +1920,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddDevice
         :type request: :class:`huaweicloudsdkiotda.v5.AddDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.AddDeviceResponse`
@@ -1810,6 +1933,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1844,6 +1969,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1858,6 +1984,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDevice
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDeviceResponse`
@@ -1870,6 +1997,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1904,6 +2033,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1918,6 +2048,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for FreezeDevice
         :type request: :class:`huaweicloudsdkiotda.v5.FreezeDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.FreezeDeviceResponse`
@@ -1930,6 +2061,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1964,6 +2097,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='FreezeDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1978,6 +2112,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDevices
         :type request: :class:`huaweicloudsdkiotda.v5.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListDevicesResponse`
@@ -1990,6 +2125,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2044,6 +2181,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2058,6 +2196,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetDeviceSecret
         :type request: :class:`huaweicloudsdkiotda.v5.ResetDeviceSecretRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ResetDeviceSecretResponse`
@@ -2070,6 +2209,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2108,6 +2249,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetDeviceSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2122,6 +2264,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetFingerprint
         :type request: :class:`huaweicloudsdkiotda.v5.ResetFingerprintRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ResetFingerprintResponse`
@@ -2134,6 +2277,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2170,6 +2315,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetFingerprintResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2184,6 +2330,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDevice
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceResponse`
@@ -2196,6 +2343,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2230,6 +2379,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2244,6 +2394,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UnfreezeDevice
         :type request: :class:`huaweicloudsdkiotda.v5.UnfreezeDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UnfreezeDeviceResponse`
@@ -2256,6 +2407,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2290,6 +2443,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnfreezeDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2304,6 +2458,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDevice
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceResponse`
@@ -2316,6 +2471,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2352,6 +2509,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2376,6 +2534,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeviceShadow
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceShadowRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowDeviceShadowResponse`
@@ -2388,6 +2547,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2422,6 +2583,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceShadowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2446,6 +2608,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDeviceShadowDesiredData
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateDeviceShadowDesiredDataRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDeviceShadowDesiredDataResponse`
@@ -2458,6 +2621,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2494,6 +2659,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceShadowDesiredDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2503,11 +2669,12 @@ class IoTDAAsyncClient(Client):
     def create_message_async(self, request):
         """下发设备消息
 
-        物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。平台返回应用响应结果不一定是设备接收结果，建议用户应用通过订阅[设备消息状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01203.html)，订阅后平台会将设备接收结果推送给订阅的应用。
+        物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。平台返回应用响应结果不一定是设备接收结果，建议用户应用通过订阅[[设备消息状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01203.html)](tag:hws)[[设备消息状态变更通知](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_01203.html)](tag:hws_hk)，订阅后平台会将设备接收结果推送给订阅的应用。
         注意：此接口适用于MQTT设备消息下发，暂不支持其他协议接入的设备消息下发。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
+
 
         :param request: Request instance for CreateMessage
         :type request: :class:`huaweicloudsdkiotda.v5.CreateMessageRequest`
@@ -2521,6 +2688,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2557,6 +2726,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2566,10 +2736,11 @@ class IoTDAAsyncClient(Client):
     def list_device_messages_async(self, request):
         """查询设备消息
 
-        应用服务器可调用此接口查询平台下发给设备的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。 
+        应用服务器可调用此接口查询平台下发给设备的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
+
 
         :param request: Request instance for ListDeviceMessages
         :type request: :class:`huaweicloudsdkiotda.v5.ListDeviceMessagesRequest`
@@ -2583,6 +2754,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2617,6 +2790,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeviceMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2626,10 +2800,11 @@ class IoTDAAsyncClient(Client):
     def show_device_message_async(self, request):
         """查询指定消息id的消息
 
-        应用服务器可调用此接口查询平台下发给设备的指定消息id的消息。 
+        应用服务器可调用此接口查询平台下发给设备的指定消息id的消息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
+
 
         :param request: Request instance for ShowDeviceMessage
         :type request: :class:`huaweicloudsdkiotda.v5.ShowDeviceMessageRequest`
@@ -2643,6 +2818,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2679,6 +2856,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2693,6 +2871,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateProduct
         :type request: :class:`huaweicloudsdkiotda.v5.CreateProductRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateProductResponse`
@@ -2705,6 +2884,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2739,6 +2920,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2753,6 +2935,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteProduct
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteProductRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteProductResponse`
@@ -2765,6 +2948,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2801,6 +2986,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2815,6 +3001,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProducts
         :type request: :class:`huaweicloudsdkiotda.v5.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListProductsResponse`
@@ -2827,6 +3014,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2867,6 +3056,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2881,6 +3071,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProduct
         :type request: :class:`huaweicloudsdkiotda.v5.ShowProductRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowProductResponse`
@@ -2893,6 +3084,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2929,6 +3122,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2943,6 +3137,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProduct
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateProductRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateProductResponse`
@@ -2955,6 +3150,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2991,6 +3188,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProductResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3006,6 +3204,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProperties
         :type request: :class:`huaweicloudsdkiotda.v5.ListPropertiesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListPropertiesResponse`
@@ -3018,6 +3217,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3054,6 +3255,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3069,6 +3271,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProperties
         :type request: :class:`huaweicloudsdkiotda.v5.UpdatePropertiesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdatePropertiesResponse`
@@ -3081,6 +3284,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3117,6 +3322,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePropertiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3131,6 +3337,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRoutingRule
         :type request: :class:`huaweicloudsdkiotda.v5.CreateRoutingRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateRoutingRuleResponse`
@@ -3143,6 +3350,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3177,6 +3386,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRoutingRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3191,6 +3401,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRuleAction
         :type request: :class:`huaweicloudsdkiotda.v5.CreateRuleActionRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateRuleActionResponse`
@@ -3203,6 +3414,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3237,6 +3450,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRuleActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3251,6 +3465,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRoutingRule
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteRoutingRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteRoutingRuleResponse`
@@ -3263,6 +3478,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3297,6 +3514,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRoutingRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3311,6 +3529,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRuleAction
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteRuleActionRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteRuleActionResponse`
@@ -3323,6 +3542,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3357,6 +3578,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRuleActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3371,6 +3593,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRoutingRules
         :type request: :class:`huaweicloudsdkiotda.v5.ListRoutingRulesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListRoutingRulesResponse`
@@ -3383,6 +3606,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3431,6 +3656,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRoutingRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3445,6 +3671,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRuleActions
         :type request: :class:`huaweicloudsdkiotda.v5.ListRuleActionsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListRuleActionsResponse`
@@ -3457,6 +3684,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3503,6 +3732,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRuleActionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3517,6 +3747,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRoutingRule
         :type request: :class:`huaweicloudsdkiotda.v5.ShowRoutingRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowRoutingRuleResponse`
@@ -3529,6 +3760,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3563,6 +3796,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRoutingRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3577,6 +3811,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRuleAction
         :type request: :class:`huaweicloudsdkiotda.v5.ShowRuleActionRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowRuleActionResponse`
@@ -3589,6 +3824,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3623,6 +3860,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRuleActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3637,6 +3875,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRoutingRule
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateRoutingRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRoutingRuleResponse`
@@ -3649,6 +3888,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3685,6 +3926,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRoutingRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3699,6 +3941,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRuleAction
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateRuleActionRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRuleActionResponse`
@@ -3711,6 +3954,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3747,6 +3992,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRuleActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3761,6 +4007,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeRuleStatus
         :type request: :class:`huaweicloudsdkiotda.v5.ChangeRuleStatusRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ChangeRuleStatusResponse`
@@ -3773,6 +4020,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3809,6 +4058,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeRuleStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3823,6 +4073,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRule
         :type request: :class:`huaweicloudsdkiotda.v5.CreateRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateRuleResponse`
@@ -3835,6 +4086,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3869,6 +4122,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3883,6 +4137,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRule
         :type request: :class:`huaweicloudsdkiotda.v5.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.DeleteRuleResponse`
@@ -3895,6 +4150,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3929,6 +4186,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3943,6 +4201,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRules
         :type request: :class:`huaweicloudsdkiotda.v5.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListRulesResponse`
@@ -3955,6 +4214,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3997,6 +4258,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4011,6 +4273,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRule
         :type request: :class:`huaweicloudsdkiotda.v5.ShowRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ShowRuleResponse`
@@ -4023,6 +4286,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4057,6 +4322,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4071,6 +4337,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateRule
         :type request: :class:`huaweicloudsdkiotda.v5.UpdateRuleRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UpdateRuleResponse`
@@ -4083,6 +4350,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4119,6 +4388,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4133,6 +4403,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResourcesByTags
         :type request: :class:`huaweicloudsdkiotda.v5.ListResourcesByTagsRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.ListResourcesByTagsResponse`
@@ -4145,6 +4416,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4185,6 +4458,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourcesByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4199,6 +4473,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for TagDevice
         :type request: :class:`huaweicloudsdkiotda.v5.TagDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.TagDeviceResponse`
@@ -4211,6 +4486,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4245,6 +4522,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='TagDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4259,6 +4537,7 @@ class IoTDAAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UntagDevice
         :type request: :class:`huaweicloudsdkiotda.v5.UntagDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotda.v5.UntagDeviceResponse`
@@ -4271,6 +4550,8 @@ class IoTDAAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4305,6 +4586,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UntagDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4312,7 +4594,7 @@ class IoTDAAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4323,9 +4605,10 @@ class IoTDAAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4342,6 +4625,7 @@ class IoTDAAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

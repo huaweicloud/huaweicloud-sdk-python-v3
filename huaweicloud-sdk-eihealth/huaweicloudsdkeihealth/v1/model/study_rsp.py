@@ -17,7 +17,6 @@ class StudyRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -252,7 +251,6 @@ class StudyRsp:
     def latest_job(self):
         """Gets the latest_job of this StudyRsp.
 
-
         :return: The latest_job of this StudyRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.StudyJobRsp`
         """
@@ -261,7 +259,6 @@ class StudyRsp:
     @latest_job.setter
     def latest_job(self, latest_job):
         """Sets the latest_job of this StudyRsp.
-
 
         :param latest_job: The latest_job of this StudyRsp.
         :type latest_job: :class:`huaweicloudsdkeihealth.v1.StudyJobRsp`

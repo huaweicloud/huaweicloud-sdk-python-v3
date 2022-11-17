@@ -17,7 +17,6 @@ class UpdateImageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateImageRequest:
     def body(self):
         """Gets the body of this UpdateImageRequest.
 
-
         :return: The body of this UpdateImageRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateImageReq`
         """
@@ -114,7 +112,6 @@ class UpdateImageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateImageRequest.
-
 
         :param body: The body of this UpdateImageRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateImageReq`

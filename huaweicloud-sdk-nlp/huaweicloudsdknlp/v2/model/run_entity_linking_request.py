@@ -17,7 +17,6 @@ class RunEntityLinkingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunEntityLinkingRequest:
     def body(self):
         """Gets the body of this RunEntityLinkingRequest.
 
-
         :return: The body of this RunEntityLinkingRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.PostEntityLinkingRequest`
         """
@@ -58,7 +56,6 @@ class RunEntityLinkingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunEntityLinkingRequest.
-
 
         :param body: The body of this RunEntityLinkingRequest.
         :type body: :class:`huaweicloudsdknlp.v2.PostEntityLinkingRequest`

@@ -17,7 +17,6 @@ class ChangeBaremetalNameResponsesServers:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -467,7 +466,6 @@ class ChangeBaremetalNameResponsesServers:
     def flavor(self):
         """Gets the flavor of this ChangeBaremetalNameResponsesServers.
 
-
         :return: The flavor of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.FlavorInfo`
         """
@@ -476,7 +474,6 @@ class ChangeBaremetalNameResponsesServers:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this ChangeBaremetalNameResponsesServers.
-
 
         :param flavor: The flavor of this ChangeBaremetalNameResponsesServers.
         :type flavor: :class:`huaweicloudsdkbms.v1.FlavorInfo`
@@ -487,7 +484,6 @@ class ChangeBaremetalNameResponsesServers:
     def image(self):
         """Gets the image of this ChangeBaremetalNameResponsesServers.
 
-
         :return: The image of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.Image`
         """
@@ -496,7 +492,6 @@ class ChangeBaremetalNameResponsesServers:
     @image.setter
     def image(self, image):
         """Sets the image of this ChangeBaremetalNameResponsesServers.
-
 
         :param image: The image of this ChangeBaremetalNameResponsesServers.
         :type image: :class:`huaweicloudsdkbms.v1.Image`
@@ -573,7 +568,6 @@ class ChangeBaremetalNameResponsesServers:
     def metadata(self):
         """Gets the metadata of this ChangeBaremetalNameResponsesServers.
 
-
         :return: The metadata of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.MetadataInfos`
         """
@@ -582,7 +576,6 @@ class ChangeBaremetalNameResponsesServers:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ChangeBaremetalNameResponsesServers.
-
 
         :param metadata: The metadata of this ChangeBaremetalNameResponsesServers.
         :type metadata: :class:`huaweicloudsdkbms.v1.MetadataInfos`
@@ -615,7 +608,6 @@ class ChangeBaremetalNameResponsesServers:
     def addresses(self):
         """Gets the addresses of this ChangeBaremetalNameResponsesServers.
 
-
         :return: The addresses of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.Addresses`
         """
@@ -624,7 +616,6 @@ class ChangeBaremetalNameResponsesServers:
     @addresses.setter
     def addresses(self, addresses):
         """Sets the addresses of this ChangeBaremetalNameResponsesServers.
-
 
         :param addresses: The addresses of this ChangeBaremetalNameResponsesServers.
         :type addresses: :class:`huaweicloudsdkbms.v1.Addresses`
@@ -965,7 +956,6 @@ class ChangeBaremetalNameResponsesServers:
     def fault(self):
         """Gets the fault of this ChangeBaremetalNameResponsesServers.
 
-
         :return: The fault of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.Fault`
         """
@@ -974,7 +964,6 @@ class ChangeBaremetalNameResponsesServers:
     @fault.setter
     def fault(self, fault):
         """Sets the fault of this ChangeBaremetalNameResponsesServers.
-
 
         :param fault: The fault of this ChangeBaremetalNameResponsesServers.
         :type fault: :class:`huaweicloudsdkbms.v1.Fault`
@@ -1315,7 +1304,6 @@ class ChangeBaremetalNameResponsesServers:
     def osscheduler_hints(self):
         """Gets the osscheduler_hints of this ChangeBaremetalNameResponsesServers.
 
-
         :return: The osscheduler_hints of this ChangeBaremetalNameResponsesServers.
         :rtype: :class:`huaweicloudsdkbms.v1.ServerOsSchedulerHints`
         """
@@ -1324,7 +1312,6 @@ class ChangeBaremetalNameResponsesServers:
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
         """Sets the osscheduler_hints of this ChangeBaremetalNameResponsesServers.
-
 
         :param osscheduler_hints: The osscheduler_hints of this ChangeBaremetalNameResponsesServers.
         :type osscheduler_hints: :class:`huaweicloudsdkbms.v1.ServerOsSchedulerHints`

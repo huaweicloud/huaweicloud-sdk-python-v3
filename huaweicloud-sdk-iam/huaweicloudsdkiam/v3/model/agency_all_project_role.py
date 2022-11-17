@@ -17,7 +17,6 @@ class AgencyAllProjectRole:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class AgencyAllProjectRole:
     def links(self):
         """Gets the links of this AgencyAllProjectRole.
 
-
         :return: The links of this AgencyAllProjectRole.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
@@ -91,7 +89,6 @@ class AgencyAllProjectRole:
     @links.setter
     def links(self, links):
         """Sets the links of this AgencyAllProjectRole.
-
 
         :param links: The links of this AgencyAllProjectRole.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

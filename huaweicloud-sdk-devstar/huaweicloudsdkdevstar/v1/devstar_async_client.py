@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DevStarAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApplicationReleaseRepositories
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationReleaseRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationReleaseRepositoriesResponse`
@@ -68,6 +63,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -110,6 +107,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationReleaseRepositoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -124,6 +122,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApplicationResDeleteStatus
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationResDeleteStatusRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationResDeleteStatusResponse`
@@ -136,6 +135,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -170,6 +171,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationResDeleteStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -184,6 +186,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApplicationDependentResources
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationDependentResourcesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationDependentResourcesResponse`
@@ -196,6 +199,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -234,6 +239,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationDependentResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -248,6 +254,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApplicationV3
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationV3Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationV3Response`
@@ -260,6 +267,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -294,6 +303,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationV3Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -310,6 +320,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateApplication
         :type request: :class:`huaweicloudsdkdevstar.v1.UpdateApplicationRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.UpdateApplicationResponse`
@@ -322,6 +333,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -358,6 +371,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -372,6 +386,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApplicationV4
         :type request: :class:`huaweicloudsdkdevstar.v1.DeleteApplicationV4Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.DeleteApplicationV4Response`
@@ -384,6 +399,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -420,6 +437,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -435,6 +453,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApplicationsV6
         :type request: :class:`huaweicloudsdkdevstar.v1.ListApplicationsV6Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListApplicationsV6Response`
@@ -447,6 +466,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -501,6 +522,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApplicationsV6Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -515,6 +537,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadApplicationCode
         :type request: :class:`huaweicloudsdkdevstar.v1.DownloadApplicationCodeRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.DownloadApplicationCodeResponse`
@@ -527,6 +550,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -561,6 +586,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadApplicationCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -575,6 +601,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ConfirmDeploymentJob
         :type request: :class:`huaweicloudsdkdevstar.v1.ConfirmDeploymentJobRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ConfirmDeploymentJobResponse`
@@ -587,6 +614,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -625,6 +654,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ConfirmDeploymentJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -642,6 +672,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDeploymentJobs
         :type request: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsResponse`
@@ -654,6 +685,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -692,6 +725,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeploymentJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -706,6 +740,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeploymentJobs
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowDeploymentJobsRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowDeploymentJobsResponse`
@@ -718,6 +753,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -754,6 +791,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeploymentJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -776,6 +814,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunCodehubTemplateJob
         :type request: :class:`huaweicloudsdkdevstar.v1.RunCodehubTemplateJobRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.RunCodehubTemplateJobResponse`
@@ -788,6 +827,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -822,6 +863,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunCodehubTemplateJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -844,6 +886,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunDevstarTemplateJob
         :type request: :class:`huaweicloudsdkdevstar.v1.RunDevstarTemplateJobRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.RunDevstarTemplateJobResponse`
@@ -856,6 +899,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -890,6 +935,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDevstarTemplateJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -913,6 +959,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobDetail
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowJobDetailResponse`
@@ -925,6 +972,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -959,6 +1008,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -973,6 +1023,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPipelineTemplates
         :type request: :class:`huaweicloudsdkdevstar.v1.ListPipelineTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListPipelineTemplatesResponse`
@@ -985,6 +1036,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1023,6 +1076,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPipelineTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1037,6 +1091,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPipelineLastStatusV2
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowPipelineLastStatusV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowPipelineLastStatusV2Response`
@@ -1049,6 +1104,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1083,6 +1140,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPipelineLastStatusV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1097,6 +1155,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartPipeline
         :type request: :class:`huaweicloudsdkdevstar.v1.StartPipelineRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.StartPipelineResponse`
@@ -1109,6 +1168,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1143,6 +1204,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartPipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1158,6 +1220,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectsV4
         :type request: :class:`huaweicloudsdkdevstar.v1.ListProjectsV4Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListProjectsV4Response`
@@ -1170,6 +1233,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1208,6 +1273,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1226,6 +1292,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckRepositoryDuplicateName
         :type request: :class:`huaweicloudsdkdevstar.v1.CheckRepositoryDuplicateNameRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.CheckRepositoryDuplicateNameResponse`
@@ -1238,6 +1305,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1276,6 +1345,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckRepositoryDuplicateNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1292,6 +1362,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRepositoryByCloudIde
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryByCloudIdeRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryByCloudIdeResponse`
@@ -1304,6 +1375,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1348,6 +1421,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryByCloudIdeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1362,6 +1436,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRepositoryStatisticalDataV2
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryStatisticalDataV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryStatisticalDataV2Response`
@@ -1374,6 +1449,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1408,6 +1485,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRepositoryStatisticalDataV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1422,6 +1500,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTemplateFile
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateFileRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateFileResponse`
@@ -1434,6 +1513,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1472,6 +1553,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1486,6 +1568,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTemplateViewHistories
         :type request: :class:`huaweicloudsdkdevstar.v1.CreateTemplateViewHistoriesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.CreateTemplateViewHistoriesResponse`
@@ -1498,6 +1581,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1532,6 +1617,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateViewHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1546,6 +1632,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPublishedTemplates
         :type request: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesResponse`
@@ -1558,6 +1645,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1596,6 +1685,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPublishedTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1610,6 +1700,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplateViewHistories
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplateViewHistoriesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplateViewHistoriesResponse`
@@ -1622,6 +1713,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1656,6 +1749,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplateViewHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1670,6 +1764,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplates
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplatesResponse`
@@ -1682,6 +1777,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1716,6 +1813,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1730,6 +1828,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplatesV2
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Response`
@@ -1742,6 +1841,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1778,6 +1879,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1792,6 +1894,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTemplateV3
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateV3Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateV3Response`
@@ -1804,6 +1907,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1838,6 +1943,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateV3Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1852,6 +1958,7 @@ class DevStarAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTemplateDetail
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateDetailRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateDetailResponse`
@@ -1864,6 +1971,8 @@ class DevStarAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1898,6 +2007,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1905,7 +2015,7 @@ class DevStarAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1916,9 +2026,10 @@ class DevStarAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1935,6 +2046,7 @@ class DevStarAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

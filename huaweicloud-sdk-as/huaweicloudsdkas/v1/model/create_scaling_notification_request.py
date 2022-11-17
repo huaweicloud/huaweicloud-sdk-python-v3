@@ -17,7 +17,6 @@ class CreateScalingNotificationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateScalingNotificationRequest:
     def body(self):
         """Gets the body of this CreateScalingNotificationRequest.
 
-
         :return: The body of this CreateScalingNotificationRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateNotificationOption`
         """
@@ -86,7 +84,6 @@ class CreateScalingNotificationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateScalingNotificationRequest.
-
 
         :param body: The body of this CreateScalingNotificationRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateNotificationOption`

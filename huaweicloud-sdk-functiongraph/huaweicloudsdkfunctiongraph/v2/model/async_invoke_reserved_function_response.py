@@ -17,7 +17,6 @@ class AsyncInvokeReservedFunctionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class AsyncInvokeReservedFunctionResponse(SdkResponse):
     def content_type(self):
         """Gets the content_type of this AsyncInvokeReservedFunctionResponse.
 
-
         :return: The content_type of this AsyncInvokeReservedFunctionResponse.
         :rtype: str
         """
@@ -87,7 +85,6 @@ class AsyncInvokeReservedFunctionResponse(SdkResponse):
     @content_type.setter
     def content_type(self, content_type):
         """Sets the content_type of this AsyncInvokeReservedFunctionResponse.
-
 
         :param content_type: The content_type of this AsyncInvokeReservedFunctionResponse.
         :type content_type: str

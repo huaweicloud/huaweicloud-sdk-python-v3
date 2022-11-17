@@ -17,7 +17,6 @@ class MoveToWaitingRoomRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class MoveToWaitingRoomRequest:
     def body(self):
         """Gets the body of this MoveToWaitingRoomRequest.
 
-
         :return: The body of this MoveToWaitingRoomRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestMoveToWaitingRoomReqBody`
         """
@@ -114,7 +112,6 @@ class MoveToWaitingRoomRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this MoveToWaitingRoomRequest.
-
 
         :param body: The body of this MoveToWaitingRoomRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestMoveToWaitingRoomReqBody`

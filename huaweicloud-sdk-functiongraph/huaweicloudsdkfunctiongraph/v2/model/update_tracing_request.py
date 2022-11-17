@@ -17,7 +17,6 @@ class UpdateTracingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateTracingRequest:
     def body(self):
         """Gets the body of this UpdateTracingRequest.
 
-
         :return: The body of this UpdateTracingRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTracingRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateTracingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateTracingRequest.
-
 
         :param body: The body of this UpdateTracingRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTracingRequestBody`

@@ -17,7 +17,6 @@ class ValueInTwinResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class ValueInTwinResponse:
     def excepted(self):
         """Gets the excepted of this ValueInTwinResponse.
 
-
         :return: The excepted of this ValueInTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ExceptedActual`
         """
@@ -79,7 +77,6 @@ class ValueInTwinResponse:
     @excepted.setter
     def excepted(self, excepted):
         """Sets the excepted of this ValueInTwinResponse.
-
 
         :param excepted: The excepted of this ValueInTwinResponse.
         :type excepted: :class:`huaweicloudsdkief.v1.ExceptedActual`
@@ -90,7 +87,6 @@ class ValueInTwinResponse:
     def actual(self):
         """Gets the actual of this ValueInTwinResponse.
 
-
         :return: The actual of this ValueInTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ExceptedActual`
         """
@@ -99,7 +95,6 @@ class ValueInTwinResponse:
     @actual.setter
     def actual(self, actual):
         """Sets the actual of this ValueInTwinResponse.
-
 
         :param actual: The actual of this ValueInTwinResponse.
         :type actual: :class:`huaweicloudsdkief.v1.ExceptedActual`
@@ -110,7 +105,6 @@ class ValueInTwinResponse:
     def metadata(self):
         """Gets the metadata of this ValueInTwinResponse.
 
-
         :return: The metadata of this ValueInTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.Metadata`
         """
@@ -119,7 +113,6 @@ class ValueInTwinResponse:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ValueInTwinResponse.
-
 
         :param metadata: The metadata of this ValueInTwinResponse.
         :type metadata: :class:`huaweicloudsdkief.v1.Metadata`

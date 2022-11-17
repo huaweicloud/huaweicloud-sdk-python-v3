@@ -17,7 +17,6 @@ class ListConfigurationsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListConfigurationsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListConfigurationsResponse.
 
-
         :return: The count of this ListConfigurationsResponse.
         :rtype: int
         """
@@ -65,7 +63,6 @@ class ListConfigurationsResponse(SdkResponse):
     @count.setter
     def count(self, count):
         """Sets the count of this ListConfigurationsResponse.
-
 
         :param count: The count of this ListConfigurationsResponse.
         :type count: int
@@ -76,7 +73,6 @@ class ListConfigurationsResponse(SdkResponse):
     def configurations(self):
         """Gets the configurations of this ListConfigurationsResponse.
 
-
         :return: The configurations of this ListConfigurationsResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationSummary`]
         """
@@ -85,7 +81,6 @@ class ListConfigurationsResponse(SdkResponse):
     @configurations.setter
     def configurations(self, configurations):
         """Sets the configurations of this ListConfigurationsResponse.
-
 
         :param configurations: The configurations of this ListConfigurationsResponse.
         :type configurations: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ConfigurationSummary`]

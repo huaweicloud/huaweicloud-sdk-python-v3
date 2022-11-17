@@ -17,7 +17,6 @@ class ShowCacheRulesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowCacheRulesResponse(SdkResponse):
     def cache_config(self):
         """Gets the cache_config of this ShowCacheRulesResponse.
 
-
         :return: The cache_config of this ShowCacheRulesResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.CacheConfig`
         """
@@ -58,7 +56,6 @@ class ShowCacheRulesResponse(SdkResponse):
     @cache_config.setter
     def cache_config(self, cache_config):
         """Sets the cache_config of this ShowCacheRulesResponse.
-
 
         :param cache_config: The cache_config of this ShowCacheRulesResponse.
         :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfig`

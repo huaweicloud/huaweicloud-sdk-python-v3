@@ -17,7 +17,6 @@ class DeleteHostGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteHostGroupRequest:
     def body(self):
         """Gets the body of this DeleteHostGroupRequest.
 
-
         :return: The body of this DeleteHostGroupRequest.
         :rtype: :class:`huaweicloudsdklts.v2.DeleteHostGroupRequestBody`
         """
@@ -58,7 +56,6 @@ class DeleteHostGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteHostGroupRequest.
-
 
         :param body: The body of this DeleteHostGroupRequest.
         :type body: :class:`huaweicloudsdklts.v2.DeleteHostGroupRequestBody`

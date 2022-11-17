@@ -17,7 +17,6 @@ class PlayInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class PlayInfo:
     def meta_data(self):
         """Gets the meta_data of this PlayInfo.
 
-
         :return: The meta_data of this PlayInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.MetaData`
         """
@@ -145,7 +143,6 @@ class PlayInfo:
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this PlayInfo.
-
 
         :param meta_data: The meta_data of this PlayInfo.
         :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`

@@ -17,7 +17,6 @@ class CreateResetTracksReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateResetTracksReq:
     def audio_file(self):
         """Gets the audio_file of this CreateResetTracksReq.
 
-
         :return: The audio_file of this CreateResetTracksReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.SubAudioFile`
         """
@@ -58,7 +56,6 @@ class CreateResetTracksReq:
     @audio_file.setter
     def audio_file(self, audio_file):
         """Sets the audio_file of this CreateResetTracksReq.
-
 
         :param audio_file: The audio_file of this CreateResetTracksReq.
         :type audio_file: :class:`huaweicloudsdkmpc.v1.SubAudioFile`

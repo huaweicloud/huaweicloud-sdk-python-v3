@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IefAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -62,6 +56,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddDeleteTags
         :type request: :class:`huaweicloudsdkief.v1.BatchAddDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.BatchAddDeleteTagsResponse`
@@ -74,6 +69,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -112,6 +109,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +124,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApp
         :type request: :class:`huaweicloudsdkief.v1.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateAppResponse`
@@ -138,6 +137,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -172,6 +173,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -186,6 +188,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAppVersions
         :type request: :class:`huaweicloudsdkief.v1.CreateAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateAppVersionsResponse`
@@ -198,6 +201,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -234,6 +239,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAppVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -248,6 +254,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateConfigMap
         :type request: :class:`huaweicloudsdkief.v1.CreateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateConfigMapResponse`
@@ -260,6 +267,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -294,6 +303,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConfigMapResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -308,6 +318,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDeployments
         :type request: :class:`huaweicloudsdkief.v1.CreateDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateDeploymentsResponse`
@@ -320,6 +331,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -354,6 +367,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeploymentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -368,6 +382,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDevice
         :type request: :class:`huaweicloudsdkief.v1.CreateDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateDeviceResponse`
@@ -380,6 +395,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -414,6 +431,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -428,6 +446,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDeviceTemplate
         :type request: :class:`huaweicloudsdkief.v1.CreateDeviceTemplateRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateDeviceTemplateResponse`
@@ -440,6 +459,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -474,6 +495,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDeviceTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -488,6 +510,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEdgeNode
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeNodeResponse`
@@ -500,6 +523,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -534,6 +559,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -548,6 +574,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEdgeNodeCerts
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeNodeCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeNodeCertsResponse`
@@ -560,6 +587,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -596,6 +625,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEdgeNodeCertsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -610,6 +640,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.CreateEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEncryptdatasResponse`
@@ -622,6 +653,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -656,6 +689,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -670,6 +704,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEndpoint
         :type request: :class:`huaweicloudsdkief.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEndpointResponse`
@@ -682,6 +717,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -716,6 +753,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -730,6 +768,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNodeEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.CreateNodeEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateNodeEncryptdatasResponse`
@@ -742,6 +781,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -778,6 +819,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNodeEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -792,6 +834,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRule
         :type request: :class:`huaweicloudsdkief.v1.CreateRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateRuleResponse`
@@ -804,6 +847,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -838,6 +883,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -852,6 +898,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSecret
         :type request: :class:`huaweicloudsdkief.v1.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateSecretResponse`
@@ -864,6 +911,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -898,6 +947,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -912,6 +962,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateService
         :type request: :class:`huaweicloudsdkief.v1.CreateServiceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateServiceResponse`
@@ -924,6 +975,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -958,6 +1011,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -974,6 +1028,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTag
         :type request: :class:`huaweicloudsdkief.v1.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateTagResponse`
@@ -986,6 +1041,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1024,6 +1081,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1038,6 +1096,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApp
         :type request: :class:`huaweicloudsdkief.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteAppResponse`
@@ -1050,6 +1109,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1084,6 +1145,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1098,6 +1160,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAppVersion
         :type request: :class:`huaweicloudsdkief.v1.DeleteAppVersionRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteAppVersionResponse`
@@ -1110,6 +1173,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1146,6 +1211,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAppVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1160,6 +1226,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteConfigMap
         :type request: :class:`huaweicloudsdkief.v1.DeleteConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteConfigMapResponse`
@@ -1172,6 +1239,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1206,6 +1275,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConfigMapResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1220,6 +1290,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeployment
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeploymentRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteDeploymentResponse`
@@ -1232,6 +1303,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1268,6 +1341,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1282,6 +1356,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDevice
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteDeviceResponse`
@@ -1294,6 +1369,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1328,6 +1405,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1342,6 +1420,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDeviceTemplate
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeviceTemplateRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteDeviceTemplateResponse`
@@ -1354,6 +1433,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1388,6 +1469,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDeviceTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1402,6 +1484,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEdgeNode
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeResponse`
@@ -1414,6 +1497,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1448,6 +1533,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1462,6 +1548,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEdgeNodeCerts
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeCertsResponse`
@@ -1474,6 +1561,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1510,6 +1599,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEdgeNodeCertsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1524,6 +1614,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.DeleteEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEncryptdatasResponse`
@@ -1536,6 +1627,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1570,6 +1663,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1584,6 +1678,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEndPoint
         :type request: :class:`huaweicloudsdkief.v1.DeleteEndPointRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEndPointResponse`
@@ -1596,6 +1691,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1630,6 +1727,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEndPointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1644,6 +1742,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNodeEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.DeleteNodeEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteNodeEncryptdatasResponse`
@@ -1656,6 +1755,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1692,6 +1793,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNodeEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1706,6 +1808,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResourceTag
         :type request: :class:`huaweicloudsdkief.v1.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteResourceTagResponse`
@@ -1718,6 +1821,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1756,6 +1861,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResourceTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1770,6 +1876,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRule
         :type request: :class:`huaweicloudsdkief.v1.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteRuleResponse`
@@ -1782,6 +1889,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1816,6 +1925,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1830,6 +1940,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecret
         :type request: :class:`huaweicloudsdkief.v1.DeleteSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteSecretResponse`
@@ -1842,6 +1953,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1876,6 +1989,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1890,6 +2004,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteService
         :type request: :class:`huaweicloudsdkief.v1.DeleteServiceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteServiceResponse`
@@ -1902,6 +2017,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1936,6 +2053,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1950,6 +2068,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableDisableEdgeNodes
         :type request: :class:`huaweicloudsdkief.v1.EnableDisableEdgeNodesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.EnableDisableEdgeNodesResponse`
@@ -1962,6 +2081,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1998,6 +2119,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableDisableEdgeNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2012,6 +2134,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAppVersions
         :type request: :class:`huaweicloudsdkief.v1.ListAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListAppVersionsResponse`
@@ -2024,6 +2147,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2062,6 +2187,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2076,6 +2202,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApps
         :type request: :class:`huaweicloudsdkief.v1.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListAppsResponse`
@@ -2088,6 +2215,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2130,6 +2259,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAppsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2144,6 +2274,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConfigMaps
         :type request: :class:`huaweicloudsdkief.v1.ListConfigMapsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListConfigMapsResponse`
@@ -2156,6 +2287,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2194,6 +2327,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigMapsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2208,6 +2342,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDeployments
         :type request: :class:`huaweicloudsdkief.v1.ListDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListDeploymentsResponse`
@@ -2220,6 +2355,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2264,6 +2401,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeploymentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2278,6 +2416,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDeviceTemplates
         :type request: :class:`huaweicloudsdkief.v1.ListDeviceTemplatesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListDeviceTemplatesResponse`
@@ -2290,6 +2429,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2328,6 +2469,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDeviceTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2342,6 +2484,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDevices
         :type request: :class:`huaweicloudsdkief.v1.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListDevicesResponse`
@@ -2354,6 +2497,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2398,6 +2543,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2412,6 +2558,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEdgeNodeCerts
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeNodeCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeNodeCertsResponse`
@@ -2424,6 +2571,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2462,6 +2611,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEdgeNodeCertsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2478,6 +2628,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEdgeNodes
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeNodesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeNodesResponse`
@@ -2490,6 +2641,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2540,6 +2693,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEdgeNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2554,6 +2708,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEncryptdataNodes
         :type request: :class:`huaweicloudsdkief.v1.ListEncryptdataNodesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEncryptdataNodesResponse`
@@ -2566,6 +2721,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2604,6 +2761,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEncryptdataNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2618,6 +2776,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.ListEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEncryptdatasResponse`
@@ -2630,6 +2789,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2668,6 +2829,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2684,6 +2846,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEndpoints
         :type request: :class:`huaweicloudsdkief.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEndpointsResponse`
@@ -2696,6 +2859,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2738,6 +2903,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEndpointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2752,6 +2918,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNodeEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.ListNodeEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListNodeEncryptdatasResponse`
@@ -2764,6 +2931,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2802,6 +2971,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNodeEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2816,6 +2986,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPods
         :type request: :class:`huaweicloudsdkief.v1.ListPodsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListPodsResponse`
@@ -2828,6 +2999,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2872,6 +3045,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPodsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2886,6 +3060,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResourceByTags
         :type request: :class:`huaweicloudsdkief.v1.ListResourceByTagsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListResourceByTagsResponse`
@@ -2898,6 +3073,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2934,6 +3111,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2948,6 +3126,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRuleErrors
         :type request: :class:`huaweicloudsdkief.v1.ListRuleErrorsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListRuleErrorsResponse`
@@ -2960,6 +3139,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2998,6 +3179,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRuleErrorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3012,6 +3194,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRules
         :type request: :class:`huaweicloudsdkief.v1.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListRulesResponse`
@@ -3024,6 +3207,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3062,6 +3247,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3076,6 +3262,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecrets
         :type request: :class:`huaweicloudsdkief.v1.ListSecretsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListSecretsResponse`
@@ -3088,6 +3275,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3128,6 +3317,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecretsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3142,6 +3332,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServices
         :type request: :class:`huaweicloudsdkief.v1.ListServicesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListServicesResponse`
@@ -3154,6 +3345,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3196,6 +3389,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3210,6 +3404,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTags
         :type request: :class:`huaweicloudsdkief.v1.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListTagsResponse`
@@ -3222,6 +3417,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3258,6 +3455,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3272,6 +3470,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTagsByResourceType
         :type request: :class:`huaweicloudsdkief.v1.ListTagsByResourceTypeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListTagsByResourceTypeResponse`
@@ -3284,6 +3483,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3318,6 +3519,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsByResourceTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3332,6 +3534,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartDeploymentsPod
         :type request: :class:`huaweicloudsdkief.v1.RestartDeploymentsPodRequest`
         :rtype: :class:`huaweicloudsdkief.v1.RestartDeploymentsPodResponse`
@@ -3344,6 +3547,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3380,6 +3585,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartDeploymentsPodResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3394,6 +3600,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAppDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowAppDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowAppDetailResponse`
@@ -3406,6 +3613,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3440,6 +3649,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3454,6 +3664,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAppVersionDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowAppVersionDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowAppVersionDetailResponse`
@@ -3466,6 +3677,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3502,6 +3715,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAppVersionDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3516,6 +3730,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowConfigMap
         :type request: :class:`huaweicloudsdkief.v1.ShowConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowConfigMapResponse`
@@ -3528,6 +3743,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3562,6 +3779,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConfigMapResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3576,6 +3794,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeployment
         :type request: :class:`huaweicloudsdkief.v1.ShowDeploymentRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeploymentResponse`
@@ -3588,6 +3807,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3622,6 +3843,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3636,6 +3858,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDevice
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeviceResponse`
@@ -3648,6 +3871,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3682,6 +3907,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3696,6 +3922,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeviceTemplate
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceTemplateRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeviceTemplateResponse`
@@ -3708,6 +3935,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3742,6 +3971,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3756,6 +3986,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDeviceTwin
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceTwinRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeviceTwinResponse`
@@ -3768,6 +3999,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3802,6 +4035,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDeviceTwinResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3816,6 +4050,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEdgeNodeDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowEdgeNodeDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeNodeDetailResponse`
@@ -3828,6 +4063,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3862,6 +4099,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEdgeNodeDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3876,6 +4114,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.ShowEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEncryptdatasResponse`
@@ -3888,6 +4127,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3922,6 +4163,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3936,6 +4178,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEndPointDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowEndPointDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEndPointDetailResponse`
@@ -3948,6 +4191,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3982,6 +4227,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEndPointDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3996,6 +4242,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRuleDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowRuleDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowRuleDetailResponse`
@@ -4008,6 +4255,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4042,6 +4291,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRuleDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4056,6 +4306,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSecret
         :type request: :class:`huaweicloudsdkief.v1.ShowSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowSecretResponse`
@@ -4068,6 +4319,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4102,6 +4355,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4116,6 +4370,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServiceDetail
         :type request: :class:`huaweicloudsdkief.v1.ShowServiceDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowServiceDetailResponse`
@@ -4128,6 +4383,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4162,6 +4419,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServiceDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4176,6 +4434,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartRule
         :type request: :class:`huaweicloudsdkief.v1.StartRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StartRuleResponse`
@@ -4188,6 +4447,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4222,6 +4483,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4236,6 +4498,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopRule
         :type request: :class:`huaweicloudsdkief.v1.StopRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StopRuleResponse`
@@ -4248,6 +4511,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4282,6 +4547,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4296,6 +4562,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateApp
         :type request: :class:`huaweicloudsdkief.v1.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateAppResponse`
@@ -4308,6 +4575,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4344,6 +4613,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4358,6 +4628,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAppVersion
         :type request: :class:`huaweicloudsdkief.v1.UpdateAppVersionRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateAppVersionResponse`
@@ -4370,6 +4641,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4408,6 +4681,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAppVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4422,6 +4696,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateConfigMap
         :type request: :class:`huaweicloudsdkief.v1.UpdateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateConfigMapResponse`
@@ -4434,6 +4709,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4470,6 +4747,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConfigMapResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4484,6 +4762,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDeployment
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeploymentRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeploymentResponse`
@@ -4496,6 +4775,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4532,6 +4813,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeploymentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4546,6 +4828,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDevice
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeviceResponse`
@@ -4558,6 +4841,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4594,6 +4879,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4608,6 +4894,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDeviceTemplateById
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceTemplateByIdRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeviceTemplateByIdResponse`
@@ -4620,6 +4907,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4656,6 +4945,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceTemplateByIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4670,6 +4960,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDeviceTwin
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceTwinRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeviceTwinResponse`
@@ -4682,6 +4973,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4718,6 +5011,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDeviceTwinResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4732,6 +5026,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEdgeNode
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeResponse`
@@ -4744,6 +5039,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4780,6 +5077,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4794,6 +5092,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEdgeNodeDevice
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeDeviceResponse`
@@ -4806,6 +5105,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4842,6 +5143,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEdgeNodeDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4856,6 +5158,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEncryptdatas
         :type request: :class:`huaweicloudsdkief.v1.UpdateEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEncryptdatasResponse`
@@ -4868,6 +5171,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4904,6 +5209,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4918,6 +5224,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNodeByDeviceId
         :type request: :class:`huaweicloudsdkief.v1.UpdateNodeByDeviceIdRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateNodeByDeviceIdResponse`
@@ -4930,6 +5237,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4966,6 +5275,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNodeByDeviceIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4980,6 +5290,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSecret
         :type request: :class:`huaweicloudsdkief.v1.UpdateSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateSecretResponse`
@@ -4992,6 +5303,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5028,6 +5341,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5042,6 +5356,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateService
         :type request: :class:`huaweicloudsdkief.v1.UpdateServiceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateServiceResponse`
@@ -5054,6 +5369,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5090,6 +5407,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5104,6 +5422,7 @@ class IefAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpgradeEdgeNode
         :type request: :class:`huaweicloudsdkief.v1.UpgradeEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpgradeEdgeNodeResponse`
@@ -5116,6 +5435,8 @@ class IefAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5150,6 +5471,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpgradeEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5157,7 +5479,7 @@ class IefAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -5168,9 +5490,10 @@ class IefAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -5187,6 +5510,7 @@ class IefAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

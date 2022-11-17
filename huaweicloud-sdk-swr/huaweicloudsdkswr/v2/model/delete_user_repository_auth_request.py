@@ -17,7 +17,6 @@ class DeleteUserRepositoryAuthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class DeleteUserRepositoryAuthRequest:
     def body(self):
         """Gets the body of this DeleteUserRepositoryAuthRequest.
 
-
         :return: The body of this DeleteUserRepositoryAuthRequest.
         :rtype: list[str]
         """
@@ -114,7 +112,6 @@ class DeleteUserRepositoryAuthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteUserRepositoryAuthRequest.
-
 
         :param body: The body of this DeleteUserRepositoryAuthRequest.
         :type body: list[str]

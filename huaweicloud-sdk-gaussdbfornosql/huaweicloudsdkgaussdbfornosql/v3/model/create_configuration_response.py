@@ -17,7 +17,6 @@ class CreateConfigurationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateConfigurationResponse(SdkResponse):
     def configuration(self):
         """Gets the configuration of this CreateConfigurationResponse.
 
-
         :return: The configuration of this CreateConfigurationResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationResult`
         """
@@ -58,7 +56,6 @@ class CreateConfigurationResponse(SdkResponse):
     @configuration.setter
     def configuration(self, configuration):
         """Sets the configuration of this CreateConfigurationResponse.
-
 
         :param configuration: The configuration of this CreateConfigurationResponse.
         :type configuration: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationResult`

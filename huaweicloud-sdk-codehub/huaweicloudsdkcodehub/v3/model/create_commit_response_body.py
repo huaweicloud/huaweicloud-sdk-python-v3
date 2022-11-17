@@ -17,7 +17,6 @@ class CreateCommitResponseBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -397,7 +396,6 @@ class CreateCommitResponseBody:
     def stats(self):
         """Gets the stats of this CreateCommitResponseBody.
 
-
         :return: The stats of this CreateCommitResponseBody.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBodyStats`
         """
@@ -406,7 +404,6 @@ class CreateCommitResponseBody:
     @stats.setter
     def stats(self, stats):
         """Sets the stats of this CreateCommitResponseBody.
-
 
         :param stats: The stats of this CreateCommitResponseBody.
         :type stats: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBodyStats`

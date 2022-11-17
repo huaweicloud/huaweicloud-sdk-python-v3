@@ -17,7 +17,6 @@ class UpdateFunctionMaxInstanceConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateFunctionMaxInstanceConfigRequest:
     def body(self):
         """Gets the body of this UpdateFunctionMaxInstanceConfigRequest.
 
-
         :return: The body of this UpdateFunctionMaxInstanceConfigRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionMaxInstanceConfigRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateFunctionMaxInstanceConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateFunctionMaxInstanceConfigRequest.
-
 
         :param body: The body of this UpdateFunctionMaxInstanceConfigRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionMaxInstanceConfigRequestBody`

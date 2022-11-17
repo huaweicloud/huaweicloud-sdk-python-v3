@@ -17,7 +17,6 @@ class StartNewPipelineRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class StartNewPipelineRequest:
     def body(self):
         """Gets the body of this StartNewPipelineRequest.
 
-
         :return: The body of this StartNewPipelineRequest.
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StartPipelineParameters`
         """
@@ -115,7 +113,6 @@ class StartNewPipelineRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartNewPipelineRequest.
-
 
         :param body: The body of this StartNewPipelineRequest.
         :type body: :class:`huaweicloudsdkcloudpipeline.v2.StartPipelineParameters`

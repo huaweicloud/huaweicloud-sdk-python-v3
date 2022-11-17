@@ -17,7 +17,6 @@ class TranscriberConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -163,7 +162,6 @@ class TranscriberConfig:
     def need_analysis_info(self):
         """Gets the need_analysis_info of this TranscriberConfig.
 
-
         :return: The need_analysis_info of this TranscriberConfig.
         :rtype: :class:`huaweicloudsdksis.v1.AnalysisInfo`
         """
@@ -172,7 +170,6 @@ class TranscriberConfig:
     @need_analysis_info.setter
     def need_analysis_info(self, need_analysis_info):
         """Sets the need_analysis_info of this TranscriberConfig.
-
 
         :param need_analysis_info: The need_analysis_info of this TranscriberConfig.
         :type need_analysis_info: :class:`huaweicloudsdksis.v1.AnalysisInfo`

@@ -17,7 +17,6 @@ class RecognizeTrainTicketResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RecognizeTrainTicketResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeTrainTicketResponse.
 
-
         :return: The result of this RecognizeTrainTicketResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.TrainTicketResult`
         """
@@ -58,7 +56,6 @@ class RecognizeTrainTicketResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RecognizeTrainTicketResponse.
-
 
         :param result: The result of this RecognizeTrainTicketResponse.
         :type result: :class:`huaweicloudsdkocr.v1.TrainTicketResult`

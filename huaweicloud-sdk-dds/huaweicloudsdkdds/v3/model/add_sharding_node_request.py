@@ -17,7 +17,6 @@ class AddShardingNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AddShardingNodeRequest:
     def body(self):
         """Gets the body of this AddShardingNodeRequest.
 
-
         :return: The body of this AddShardingNodeRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.EnlargeInstanceRequestBody`
         """
@@ -86,7 +84,6 @@ class AddShardingNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddShardingNodeRequest.
-
 
         :param body: The body of this AddShardingNodeRequest.
         :type body: :class:`huaweicloudsdkdds.v3.EnlargeInstanceRequestBody`

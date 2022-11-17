@@ -17,7 +17,6 @@ class Resources:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class Resources:
     def limits(self):
         """Gets the limits of this Resources.
 
-
         :return: The limits of this Resources.
         :rtype: :class:`huaweicloudsdkief.v1.LimitsRequests`
         """
@@ -65,7 +63,6 @@ class Resources:
     @limits.setter
     def limits(self, limits):
         """Sets the limits of this Resources.
-
 
         :param limits: The limits of this Resources.
         :type limits: :class:`huaweicloudsdkief.v1.LimitsRequests`
@@ -76,7 +73,6 @@ class Resources:
     def requests(self):
         """Gets the requests of this Resources.
 
-
         :return: The requests of this Resources.
         :rtype: :class:`huaweicloudsdkief.v1.LimitsRequests`
         """
@@ -85,7 +81,6 @@ class Resources:
     @requests.setter
     def requests(self, requests):
         """Sets the requests of this Resources.
-
 
         :param requests: The requests of this Resources.
         :type requests: :class:`huaweicloudsdkief.v1.LimitsRequests`

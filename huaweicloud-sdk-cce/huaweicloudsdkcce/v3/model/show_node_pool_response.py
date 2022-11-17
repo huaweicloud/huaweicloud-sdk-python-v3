@@ -17,7 +17,6 @@ class ShowNodePoolResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class ShowNodePoolResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ShowNodePoolResponse.
 
-
         :return: The metadata of this ShowNodePoolResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
         """
@@ -130,7 +128,6 @@ class ShowNodePoolResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ShowNodePoolResponse.
-
 
         :param metadata: The metadata of this ShowNodePoolResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
@@ -141,7 +138,6 @@ class ShowNodePoolResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this ShowNodePoolResponse.
 
-
         :return: The spec of this ShowNodePoolResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
         """
@@ -150,7 +146,6 @@ class ShowNodePoolResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ShowNodePoolResponse.
-
 
         :param spec: The spec of this ShowNodePoolResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
@@ -161,7 +156,6 @@ class ShowNodePoolResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowNodePoolResponse.
 
-
         :return: The status of this ShowNodePoolResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
         """
@@ -170,7 +164,6 @@ class ShowNodePoolResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this ShowNodePoolResponse.
-
 
         :param status: The status of this ShowNodePoolResponse.
         :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`

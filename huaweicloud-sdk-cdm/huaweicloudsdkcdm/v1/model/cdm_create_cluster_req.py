@@ -17,7 +17,6 @@ class CdmCreateClusterReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -69,7 +68,6 @@ class CdmCreateClusterReq:
     def cluster(self):
         """Gets the cluster of this CdmCreateClusterReq.
 
-
         :return: The cluster of this CdmCreateClusterReq.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmCreateClusterReqCluster`
         """
@@ -78,7 +76,6 @@ class CdmCreateClusterReq:
     @cluster.setter
     def cluster(self, cluster):
         """Sets the cluster of this CdmCreateClusterReq.
-
 
         :param cluster: The cluster of this CdmCreateClusterReq.
         :type cluster: :class:`huaweicloudsdkcdm.v1.CdmCreateClusterReqCluster`

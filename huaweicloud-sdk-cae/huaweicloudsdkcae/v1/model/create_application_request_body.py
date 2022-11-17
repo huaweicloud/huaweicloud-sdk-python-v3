@@ -17,7 +17,6 @@ class CreateApplicationRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class CreateApplicationRequestBody:
     def metadata(self):
         """Gets the metadata of this CreateApplicationRequestBody.
 
-
         :return: The metadata of this CreateApplicationRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateApplicationRequestBodyMetadata`
         """
@@ -113,7 +111,6 @@ class CreateApplicationRequestBody:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateApplicationRequestBody.
-
 
         :param metadata: The metadata of this CreateApplicationRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateApplicationRequestBodyMetadata`

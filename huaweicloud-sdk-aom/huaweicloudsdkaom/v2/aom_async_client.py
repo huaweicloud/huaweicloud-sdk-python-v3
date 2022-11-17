@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AomAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.AddAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddAlarmRuleResponse`
@@ -68,6 +63,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddMetricData
         :type request: :class:`huaweicloudsdkaom.v2.AddMetricDataRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddMetricDataResponse`
@@ -126,6 +125,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddMetricDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddOrUpdateServiceDiscoveryRules
         :type request: :class:`huaweicloudsdkaom.v2.AddOrUpdateServiceDiscoveryRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddOrUpdateServiceDiscoveryRulesResponse`
@@ -184,6 +187,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +221,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddOrUpdateServiceDiscoveryRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -230,6 +236,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CountEvents
         :type request: :class:`huaweicloudsdkaom.v2.CountEventsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.CountEventsResponse`
@@ -242,6 +249,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -276,6 +285,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CountEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -290,6 +300,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleResponse`
@@ -302,6 +313,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -334,6 +347,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -348,6 +362,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAlarmRules
         :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesResponse`
@@ -360,6 +375,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -392,6 +409,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAlarmRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -406,6 +424,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteserviceDiscoveryRules
         :type request: :class:`huaweicloudsdkaom.v2.DeleteserviceDiscoveryRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteserviceDiscoveryRulesResponse`
@@ -418,6 +437,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -451,6 +472,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteserviceDiscoveryRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -465,6 +487,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.ListAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListAlarmRuleResponse`
@@ -477,6 +500,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -511,6 +536,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -525,6 +551,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEvents
         :type request: :class:`huaweicloudsdkaom.v2.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListEventsResponse`
@@ -537,6 +564,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -571,6 +600,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -585,6 +615,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLogItems
         :type request: :class:`huaweicloudsdkaom.v2.ListLogItemsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLogItemsResponse`
@@ -597,6 +628,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -631,6 +664,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLogItemsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -645,6 +679,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMetricItems
         :type request: :class:`huaweicloudsdkaom.v2.ListMetricItemsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListMetricItemsResponse`
@@ -657,6 +692,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -695,6 +732,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMetricItemsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -709,6 +747,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSample
         :type request: :class:`huaweicloudsdkaom.v2.ListSampleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListSampleResponse`
@@ -721,6 +760,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -755,6 +796,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSampleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -769,6 +811,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSeries
         :type request: :class:`huaweicloudsdkaom.v2.ListSeriesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListSeriesResponse`
@@ -781,6 +824,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -817,6 +862,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSeriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -831,6 +877,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServiceDiscoveryRules
         :type request: :class:`huaweicloudsdkaom.v2.ListServiceDiscoveryRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListServiceDiscoveryRulesResponse`
@@ -843,6 +890,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -875,6 +924,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServiceDiscoveryRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -889,6 +939,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PushEvents
         :type request: :class:`huaweicloudsdkaom.v2.PushEventsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.PushEventsResponse`
@@ -901,6 +952,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -937,6 +990,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PushEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -951,6 +1005,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.ShowAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ShowAlarmRuleResponse`
@@ -963,6 +1018,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -995,6 +1052,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1009,6 +1067,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMetricsData
         :type request: :class:`huaweicloudsdkaom.v2.ShowMetricsDataRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ShowMetricsDataResponse`
@@ -1021,6 +1080,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1055,6 +1116,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMetricsDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1069,6 +1131,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAlarmRule
         :type request: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleResponse`
@@ -1081,6 +1144,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1113,6 +1178,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1127,6 +1193,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstantQueryAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromGetResponse`
@@ -1139,6 +1206,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1173,6 +1242,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstantQueryAomPromGetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1187,6 +1257,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstantQueryAomPromPost
         :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromPostRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromPostResponse`
@@ -1199,6 +1270,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1233,6 +1306,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstantQueryAomPromPostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1247,6 +1321,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLabelValuesAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelValuesAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLabelValuesAomPromGetResponse`
@@ -1259,6 +1334,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1291,6 +1368,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLabelValuesAomPromGetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1305,6 +1383,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLabelsAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromGetResponse`
@@ -1317,6 +1396,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1347,6 +1428,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLabelsAomPromGetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1361,6 +1443,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListLabelsAomPromPost
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromPostRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromPostResponse`
@@ -1373,6 +1456,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1403,6 +1488,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLabelsAomPromPostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1417,6 +1503,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMetadataAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListMetadataAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListMetadataAomPromGetResponse`
@@ -1429,6 +1516,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1459,6 +1548,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMetadataAomPromGetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1473,6 +1563,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRangeQueryAomPromGet
         :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromGetResponse`
@@ -1485,6 +1576,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1523,6 +1616,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRangeQueryAomPromGetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1537,6 +1631,7 @@ class AomAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRangeQueryAomPromPost
         :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromPostRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromPostResponse`
@@ -1549,6 +1644,8 @@ class AomAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1587,6 +1684,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRangeQueryAomPromPostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1594,7 +1692,7 @@ class AomAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1605,9 +1703,10 @@ class AomAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1624,6 +1723,7 @@ class AomAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

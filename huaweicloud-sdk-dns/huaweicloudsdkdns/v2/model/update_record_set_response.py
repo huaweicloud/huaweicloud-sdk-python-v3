@@ -17,7 +17,6 @@ class UpdateRecordSetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -140,7 +139,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def id(self):
         """Gets the id of this UpdateRecordSetResponse.
 
-
         :return: The id of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -149,7 +147,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @id.setter
     def id(self, id):
         """Sets the id of this UpdateRecordSetResponse.
-
 
         :param id: The id of this UpdateRecordSetResponse.
         :type id: str
@@ -160,7 +157,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def name(self):
         """Gets the name of this UpdateRecordSetResponse.
 
-
         :return: The name of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -169,7 +165,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @name.setter
     def name(self, name):
         """Sets the name of this UpdateRecordSetResponse.
-
 
         :param name: The name of this UpdateRecordSetResponse.
         :type name: str
@@ -180,7 +175,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def description(self):
         """Gets the description of this UpdateRecordSetResponse.
 
-
         :return: The description of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -189,7 +183,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @description.setter
     def description(self, description):
         """Sets the description of this UpdateRecordSetResponse.
-
 
         :param description: The description of this UpdateRecordSetResponse.
         :type description: str
@@ -200,7 +193,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def zone_id(self):
         """Gets the zone_id of this UpdateRecordSetResponse.
 
-
         :return: The zone_id of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -209,7 +201,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @zone_id.setter
     def zone_id(self, zone_id):
         """Sets the zone_id of this UpdateRecordSetResponse.
-
 
         :param zone_id: The zone_id of this UpdateRecordSetResponse.
         :type zone_id: str
@@ -220,7 +211,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def zone_name(self):
         """Gets the zone_name of this UpdateRecordSetResponse.
 
-
         :return: The zone_name of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -229,7 +219,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @zone_name.setter
     def zone_name(self, zone_name):
         """Sets the zone_name of this UpdateRecordSetResponse.
-
 
         :param zone_name: The zone_name of this UpdateRecordSetResponse.
         :type zone_name: str
@@ -240,7 +229,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def type(self):
         """Gets the type of this UpdateRecordSetResponse.
 
-
         :return: The type of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -249,7 +237,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @type.setter
     def type(self, type):
         """Sets the type of this UpdateRecordSetResponse.
-
 
         :param type: The type of this UpdateRecordSetResponse.
         :type type: str
@@ -260,7 +247,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def ttl(self):
         """Gets the ttl of this UpdateRecordSetResponse.
 
-
         :return: The ttl of this UpdateRecordSetResponse.
         :rtype: int
         """
@@ -269,7 +255,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @ttl.setter
     def ttl(self, ttl):
         """Sets the ttl of this UpdateRecordSetResponse.
-
 
         :param ttl: The ttl of this UpdateRecordSetResponse.
         :type ttl: int
@@ -280,7 +265,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def records(self):
         """Gets the records of this UpdateRecordSetResponse.
 
-
         :return: The records of this UpdateRecordSetResponse.
         :rtype: list[str]
         """
@@ -289,7 +273,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @records.setter
     def records(self, records):
         """Sets the records of this UpdateRecordSetResponse.
-
 
         :param records: The records of this UpdateRecordSetResponse.
         :type records: list[str]
@@ -300,7 +283,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def create_at(self):
         """Gets the create_at of this UpdateRecordSetResponse.
 
-
         :return: The create_at of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -309,7 +291,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @create_at.setter
     def create_at(self, create_at):
         """Sets the create_at of this UpdateRecordSetResponse.
-
 
         :param create_at: The create_at of this UpdateRecordSetResponse.
         :type create_at: str
@@ -320,7 +301,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def update_at(self):
         """Gets the update_at of this UpdateRecordSetResponse.
 
-
         :return: The update_at of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -329,7 +309,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @update_at.setter
     def update_at(self, update_at):
         """Sets the update_at of this UpdateRecordSetResponse.
-
 
         :param update_at: The update_at of this UpdateRecordSetResponse.
         :type update_at: str
@@ -340,7 +319,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def status(self):
         """Gets the status of this UpdateRecordSetResponse.
 
-
         :return: The status of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -349,7 +327,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this UpdateRecordSetResponse.
-
 
         :param status: The status of this UpdateRecordSetResponse.
         :type status: str
@@ -360,7 +337,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def default(self):
         """Gets the default of this UpdateRecordSetResponse.
 
-
         :return: The default of this UpdateRecordSetResponse.
         :rtype: bool
         """
@@ -369,7 +345,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @default.setter
     def default(self, default):
         """Sets the default of this UpdateRecordSetResponse.
-
 
         :param default: The default of this UpdateRecordSetResponse.
         :type default: bool
@@ -380,7 +355,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this UpdateRecordSetResponse.
 
-
         :return: The project_id of this UpdateRecordSetResponse.
         :rtype: str
         """
@@ -389,7 +363,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @project_id.setter
     def project_id(self, project_id):
         """Sets the project_id of this UpdateRecordSetResponse.
-
 
         :param project_id: The project_id of this UpdateRecordSetResponse.
         :type project_id: str
@@ -400,7 +373,6 @@ class UpdateRecordSetResponse(SdkResponse):
     def links(self):
         """Gets the links of this UpdateRecordSetResponse.
 
-
         :return: The links of this UpdateRecordSetResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
         """
@@ -409,7 +381,6 @@ class UpdateRecordSetResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this UpdateRecordSetResponse.
-
 
         :param links: The links of this UpdateRecordSetResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

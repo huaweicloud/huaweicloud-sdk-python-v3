@@ -17,7 +17,6 @@ class UpdateDomainOriginResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateDomainOriginResponse(SdkResponse):
     def origin(self):
         """Gets the origin of this UpdateDomainOriginResponse.
 
-
         :return: The origin of this UpdateDomainOriginResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.ResourceBody`
         """
@@ -58,7 +56,6 @@ class UpdateDomainOriginResponse(SdkResponse):
     @origin.setter
     def origin(self, origin):
         """Sets the origin of this UpdateDomainOriginResponse.
-
 
         :param origin: The origin of this UpdateDomainOriginResponse.
         :type origin: :class:`huaweicloudsdkcdn.v1.ResourceBody`

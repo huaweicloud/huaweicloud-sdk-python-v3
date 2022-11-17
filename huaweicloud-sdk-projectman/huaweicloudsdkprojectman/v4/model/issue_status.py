@@ -17,7 +17,6 @@ class IssueStatus:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class IssueStatus:
     def status_attribute(self):
         """Gets the status_attribute of this IssueStatus.
 
-
         :return: The status_attribute of this IssueStatus.
         :rtype: :class:`huaweicloudsdkprojectman.v4.StatusAttribute`
         """
@@ -174,7 +172,6 @@ class IssueStatus:
     @status_attribute.setter
     def status_attribute(self, status_attribute):
         """Sets the status_attribute of this IssueStatus.
-
 
         :param status_attribute: The status_attribute of this IssueStatus.
         :type status_attribute: :class:`huaweicloudsdkprojectman.v4.StatusAttribute`

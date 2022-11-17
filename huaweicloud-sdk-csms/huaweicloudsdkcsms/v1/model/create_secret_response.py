@@ -17,7 +17,6 @@ class CreateSecretResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateSecretResponse(SdkResponse):
     def secret(self):
         """Gets the secret of this CreateSecretResponse.
 
-
         :return: The secret of this CreateSecretResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.Secret`
         """
@@ -58,7 +56,6 @@ class CreateSecretResponse(SdkResponse):
     @secret.setter
     def secret(self, secret):
         """Sets the secret of this CreateSecretResponse.
-
 
         :param secret: The secret of this CreateSecretResponse.
         :type secret: :class:`huaweicloudsdkcsms.v1.Secret`

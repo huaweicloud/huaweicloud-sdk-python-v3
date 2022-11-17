@@ -17,7 +17,6 @@ class CreatePredefineTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePredefineTagsRequest:
     def body(self):
         """Gets the body of this CreatePredefineTagsRequest.
 
-
         :return: The body of this CreatePredefineTagsRequest.
         :rtype: :class:`huaweicloudsdktms.v1.ReqCreatePredefineTag`
         """
@@ -58,7 +56,6 @@ class CreatePredefineTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePredefineTagsRequest.
-
 
         :param body: The body of this CreatePredefineTagsRequest.
         :type body: :class:`huaweicloudsdktms.v1.ReqCreatePredefineTag`

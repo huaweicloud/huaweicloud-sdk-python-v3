@@ -17,7 +17,6 @@ class NeutronCreateSecurityGroupRuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class NeutronCreateSecurityGroupRuleResponse(SdkResponse):
     def security_group_rule(self):
         """Gets the security_group_rule of this NeutronCreateSecurityGroupRuleResponse.
 
-
         :return: The security_group_rule of this NeutronCreateSecurityGroupRuleResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`
         """
@@ -58,7 +56,6 @@ class NeutronCreateSecurityGroupRuleResponse(SdkResponse):
     @security_group_rule.setter
     def security_group_rule(self, security_group_rule):
         """Sets the security_group_rule of this NeutronCreateSecurityGroupRuleResponse.
-
 
         :param security_group_rule: The security_group_rule of this NeutronCreateSecurityGroupRuleResponse.
         :type security_group_rule: :class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`

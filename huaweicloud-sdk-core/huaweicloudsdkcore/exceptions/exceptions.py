@@ -101,7 +101,7 @@ class ApiTypeError(TypeError):
         self.key_type = key_type
         full_msg = msg
         if path_to_item:
-            full_msg = "{0} at {1}".format(msg, render_path(path_to_item))
+            full_msg = "%s at %s" % (msg, render_path(path_to_item))
         super(ApiTypeError, self).__init__(full_msg)
 
 
@@ -119,7 +119,7 @@ class ApiValueError(ValueError):
         self.path_to_item = path_to_item
         full_msg = msg
         if path_to_item:
-            full_msg = "{0} at {1}".format(msg, render_path(path_to_item))
+            full_msg = "%s at %s" % (msg, render_path(path_to_item))
         super(ApiValueError, self).__init__(full_msg)
 
 
@@ -136,7 +136,7 @@ class ApiKeyError(KeyError):
         self.path_to_item = path_to_item
         full_msg = msg
         if path_to_item:
-            full_msg = "{0} at {1}".format(msg, render_path(path_to_item))
+            full_msg = "%s at %s" % (msg, render_path(path_to_item))
         super(ApiKeyError, self).__init__(full_msg)
 
 

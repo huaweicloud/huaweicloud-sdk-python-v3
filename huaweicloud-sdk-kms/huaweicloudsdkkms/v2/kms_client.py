@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class KmsClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class KmsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -102,6 +98,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateKmsTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -130,6 +127,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +161,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelGrantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -189,6 +189,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -221,6 +223,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelKeyDeletionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -255,6 +258,8 @@ class KmsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -286,6 +291,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelSelfGrantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -312,6 +318,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +352,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatakeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -370,6 +379,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -402,6 +413,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatakeyWithoutPlaintextResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -430,6 +442,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -462,6 +476,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGrantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -490,6 +505,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -522,6 +539,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -548,6 +566,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -580,6 +600,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateKeyStoreResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -606,6 +627,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -640,6 +663,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateKmsTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -667,6 +691,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -699,6 +725,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateParametersForImportResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -726,6 +753,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -758,6 +787,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRandomResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -784,6 +814,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -816,6 +848,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DecryptDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -842,6 +875,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -874,6 +909,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DecryptDatakeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -900,6 +936,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -932,6 +970,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteImportedKeyMaterialResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -958,6 +997,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -990,6 +1031,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1016,6 +1058,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1048,6 +1092,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteKeyStoreResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1074,6 +1119,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1108,6 +1155,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1135,6 +1183,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1167,6 +1217,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1193,6 +1244,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1225,6 +1278,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableKeyRotationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1251,6 +1305,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1283,6 +1339,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableKeyStoreResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1310,6 +1367,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1342,6 +1401,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1371,6 +1431,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1403,6 +1465,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableKeyRotationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1429,6 +1492,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1461,6 +1526,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableKeyStoreResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1487,6 +1553,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1519,6 +1587,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EncryptDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1545,6 +1614,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1577,6 +1648,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EncryptDatakeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1603,6 +1675,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1635,6 +1709,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportKeyMaterialResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1661,6 +1736,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1693,6 +1770,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGrantsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1719,6 +1797,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1751,6 +1831,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeyDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1777,6 +1858,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1811,6 +1894,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeyStoresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1837,6 +1921,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1869,6 +1955,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeysResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1895,6 +1982,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1929,6 +2018,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKmsByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1955,6 +2045,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1985,6 +2077,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKmsTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2011,6 +2104,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2043,6 +2138,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRetirableGrantsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2069,6 +2165,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2101,6 +2199,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowKeyRotationStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2127,6 +2226,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2159,6 +2260,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowKeyStoreResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2185,6 +2287,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2217,6 +2321,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowKmsTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2243,6 +2348,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2275,6 +2382,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPublicKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2301,6 +2409,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2331,6 +2441,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2357,6 +2468,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2387,6 +2500,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2413,6 +2527,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2445,6 +2561,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SignResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2474,6 +2591,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2506,6 +2625,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeyAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2535,6 +2655,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2567,6 +2689,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeyDescriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2593,6 +2716,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2625,6 +2750,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeyRotationIntervalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2651,6 +2777,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2683,6 +2811,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateSignatureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2709,6 +2838,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2741,6 +2872,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2767,6 +2899,8 @@ class KmsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2797,6 +2931,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2804,7 +2939,7 @@ class KmsClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2814,9 +2949,10 @@ class KmsClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2833,6 +2969,7 @@ class KmsClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

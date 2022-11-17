@@ -17,7 +17,6 @@ class CreateOpenIdConnectConfigRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateOpenIdConnectConfigRequestBody:
     def openid_connect_config(self):
         """Gets the openid_connect_config of this CreateOpenIdConnectConfigRequestBody.
 
-
         :return: The openid_connect_config of this CreateOpenIdConnectConfigRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfig`
         """
@@ -57,7 +55,6 @@ class CreateOpenIdConnectConfigRequestBody:
     @openid_connect_config.setter
     def openid_connect_config(self, openid_connect_config):
         """Sets the openid_connect_config of this CreateOpenIdConnectConfigRequestBody.
-
 
         :param openid_connect_config: The openid_connect_config of this CreateOpenIdConnectConfigRequestBody.
         :type openid_connect_config: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfig`

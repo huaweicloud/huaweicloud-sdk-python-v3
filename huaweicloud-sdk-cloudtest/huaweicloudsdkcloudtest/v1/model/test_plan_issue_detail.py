@@ -17,7 +17,6 @@ class TestPlanIssueDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -316,7 +315,6 @@ class TestPlanIssueDetail:
     def owner(self):
         """Gets the owner of this TestPlanIssueDetail.
 
-
         :return: The owner of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
@@ -325,7 +323,6 @@ class TestPlanIssueDetail:
     @owner.setter
     def owner(self, owner):
         """Sets the owner of this TestPlanIssueDetail.
-
 
         :param owner: The owner of this TestPlanIssueDetail.
         :type owner: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -336,7 +333,6 @@ class TestPlanIssueDetail:
     def severity(self):
         """Gets the severity of this TestPlanIssueDetail.
 
-
         :return: The severity of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
@@ -345,7 +341,6 @@ class TestPlanIssueDetail:
     @severity.setter
     def severity(self, severity):
         """Sets the severity of this TestPlanIssueDetail.
-
 
         :param severity: The severity of this TestPlanIssueDetail.
         :type severity: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -356,7 +351,6 @@ class TestPlanIssueDetail:
     def status(self):
         """Gets the status of this TestPlanIssueDetail.
 
-
         :return: The status of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
@@ -365,7 +359,6 @@ class TestPlanIssueDetail:
     @status.setter
     def status(self, status):
         """Sets the status of this TestPlanIssueDetail.
-
 
         :param status: The status of this TestPlanIssueDetail.
         :type status: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -376,7 +369,6 @@ class TestPlanIssueDetail:
     def tracker(self):
         """Gets the tracker of this TestPlanIssueDetail.
 
-
         :return: The tracker of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
@@ -385,7 +377,6 @@ class TestPlanIssueDetail:
     @tracker.setter
     def tracker(self, tracker):
         """Sets the tracker of this TestPlanIssueDetail.
-
 
         :param tracker: The tracker of this TestPlanIssueDetail.
         :type tracker: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -396,7 +387,6 @@ class TestPlanIssueDetail:
     def iteration(self):
         """Gets the iteration of this TestPlanIssueDetail.
 
-
         :return: The iteration of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
@@ -405,7 +395,6 @@ class TestPlanIssueDetail:
     @iteration.setter
     def iteration(self, iteration):
         """Sets the iteration of this TestPlanIssueDetail.
-
 
         :param iteration: The iteration of this TestPlanIssueDetail.
         :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
@@ -416,7 +405,6 @@ class TestPlanIssueDetail:
     def module(self):
         """Gets the module of this TestPlanIssueDetail.
 
-
         :return: The module of this TestPlanIssueDetail.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
@@ -425,7 +413,6 @@ class TestPlanIssueDetail:
     @module.setter
     def module(self, module):
         """Sets the module of this TestPlanIssueDetail.
-
 
         :param module: The module of this TestPlanIssueDetail.
         :type module: :class:`huaweicloudsdkcloudtest.v1.NameAndId`

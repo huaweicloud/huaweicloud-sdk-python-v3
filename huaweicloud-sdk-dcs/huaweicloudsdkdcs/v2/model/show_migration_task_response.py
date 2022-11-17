@@ -17,7 +17,6 @@ class ShowMigrationTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -287,7 +286,6 @@ class ShowMigrationTaskResponse(SdkResponse):
     def backup_files(self):
         """Gets the backup_files of this ShowMigrationTaskResponse.
 
-
         :return: The backup_files of this ShowMigrationTaskResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
         """
@@ -296,7 +294,6 @@ class ShowMigrationTaskResponse(SdkResponse):
     @backup_files.setter
     def backup_files(self, backup_files):
         """Sets the backup_files of this ShowMigrationTaskResponse.
-
 
         :param backup_files: The backup_files of this ShowMigrationTaskResponse.
         :type backup_files: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
@@ -329,7 +326,6 @@ class ShowMigrationTaskResponse(SdkResponse):
     def source_instance(self):
         """Gets the source_instance of this ShowMigrationTaskResponse.
 
-
         :return: The source_instance of this ShowMigrationTaskResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
         """
@@ -338,7 +334,6 @@ class ShowMigrationTaskResponse(SdkResponse):
     @source_instance.setter
     def source_instance(self, source_instance):
         """Sets the source_instance of this ShowMigrationTaskResponse.
-
 
         :param source_instance: The source_instance of this ShowMigrationTaskResponse.
         :type source_instance: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
@@ -349,7 +344,6 @@ class ShowMigrationTaskResponse(SdkResponse):
     def target_instance(self):
         """Gets the target_instance of this ShowMigrationTaskResponse.
 
-
         :return: The target_instance of this ShowMigrationTaskResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`
         """
@@ -358,7 +352,6 @@ class ShowMigrationTaskResponse(SdkResponse):
     @target_instance.setter
     def target_instance(self, target_instance):
         """Sets the target_instance of this ShowMigrationTaskResponse.
-
 
         :param target_instance: The target_instance of this ShowMigrationTaskResponse.
         :type target_instance: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`

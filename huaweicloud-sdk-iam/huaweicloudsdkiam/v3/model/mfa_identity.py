@@ -17,7 +17,6 @@ class MfaIdentity:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class MfaIdentity:
     def password(self):
         """Gets the password of this MfaIdentity.
 
-
         :return: The password of this MfaIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.PwdPassword`
         """
@@ -91,7 +89,6 @@ class MfaIdentity:
     @password.setter
     def password(self, password):
         """Sets the password of this MfaIdentity.
-
 
         :param password: The password of this MfaIdentity.
         :type password: :class:`huaweicloudsdkiam.v3.PwdPassword`
@@ -102,7 +99,6 @@ class MfaIdentity:
     def totp(self):
         """Gets the totp of this MfaIdentity.
 
-
         :return: The totp of this MfaIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.MfaTotp`
         """
@@ -111,7 +107,6 @@ class MfaIdentity:
     @totp.setter
     def totp(self, totp):
         """Sets the totp of this MfaIdentity.
-
 
         :param totp: The totp of this MfaIdentity.
         :type totp: :class:`huaweicloudsdkiam.v3.MfaTotp`

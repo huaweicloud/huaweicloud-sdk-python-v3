@@ -17,7 +17,6 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this BatchListEdgeAppVersionsResponse.
 
-
         :return: The page_info of this BatchListEdgeAppVersionsResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
@@ -94,7 +92,6 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this BatchListEdgeAppVersionsResponse.
-
 
         :param page_info: The page_info of this BatchListEdgeAppVersionsResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`

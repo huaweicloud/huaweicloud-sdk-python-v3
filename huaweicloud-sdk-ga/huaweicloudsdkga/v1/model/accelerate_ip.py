@@ -17,7 +17,6 @@ class AccelerateIp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class AccelerateIp:
     def area(self):
         """Gets the area of this AccelerateIp.
 
-
         :return: The area of this AccelerateIp.
         :rtype: :class:`huaweicloudsdkga.v1.Area`
         """
@@ -115,7 +113,6 @@ class AccelerateIp:
     @area.setter
     def area(self, area):
         """Sets the area of this AccelerateIp.
-
 
         :param area: The area of this AccelerateIp.
         :type area: :class:`huaweicloudsdkga.v1.Area`

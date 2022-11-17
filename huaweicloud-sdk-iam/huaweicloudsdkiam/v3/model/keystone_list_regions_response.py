@@ -17,7 +17,6 @@ class KeystoneListRegionsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class KeystoneListRegionsResponse(SdkResponse):
     def links(self):
         """Gets the links of this KeystoneListRegionsResponse.
 
-
         :return: The links of this KeystoneListRegionsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
@@ -65,7 +63,6 @@ class KeystoneListRegionsResponse(SdkResponse):
     @links.setter
     def links(self, links):
         """Sets the links of this KeystoneListRegionsResponse.
-
 
         :param links: The links of this KeystoneListRegionsResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`

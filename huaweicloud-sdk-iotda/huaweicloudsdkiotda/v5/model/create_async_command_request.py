@@ -17,7 +17,6 @@ class CreateAsyncCommandRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateAsyncCommandRequest:
     def body(self):
         """Gets the body of this CreateAsyncCommandRequest.
 
-
         :return: The body of this CreateAsyncCommandRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.AsyncDeviceCommandRequest`
         """
@@ -115,7 +113,6 @@ class CreateAsyncCommandRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAsyncCommandRequest.
-
 
         :param body: The body of this CreateAsyncCommandRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.AsyncDeviceCommandRequest`

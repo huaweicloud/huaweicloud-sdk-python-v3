@@ -17,7 +17,6 @@ class Deployment:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class Deployment:
     def edgecloud(self):
         """Gets the edgecloud of this Deployment.
 
-
         :return: The edgecloud of this Deployment.
         :rtype: :class:`huaweicloudsdkiec.v1.DeploymentEdgecloud`
         """
@@ -116,7 +114,6 @@ class Deployment:
     @edgecloud.setter
     def edgecloud(self, edgecloud):
         """Sets the edgecloud of this Deployment.
-
 
         :param edgecloud: The edgecloud of this Deployment.
         :type edgecloud: :class:`huaweicloudsdkiec.v1.DeploymentEdgecloud`

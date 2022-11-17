@@ -17,7 +17,6 @@ class CreateAssetReviewTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAssetReviewTaskRequest:
     def body(self):
         """Gets the body of this CreateAssetReviewTaskRequest.
 
-
         :return: The body of this CreateAssetReviewTaskRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.AssetReviewReq`
         """
@@ -58,7 +56,6 @@ class CreateAssetReviewTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAssetReviewTaskRequest.
-
 
         :param body: The body of this CreateAssetReviewTaskRequest.
         :type body: :class:`huaweicloudsdkvod.v1.AssetReviewReq`

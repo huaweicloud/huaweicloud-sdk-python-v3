@@ -17,7 +17,6 @@ class ListVpcsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListVpcsResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListVpcsResponse.
 
-
         :return: The page_info of this ListVpcsResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
@@ -116,7 +114,6 @@ class ListVpcsResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListVpcsResponse.
-
 
         :param page_info: The page_info of this ListVpcsResponse.
         :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`

@@ -17,7 +17,6 @@ class UpdateResDatastructRequestBodyBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -104,7 +103,6 @@ class UpdateResDatastructRequestBodyBody:
     def behaviors(self):
         """Gets the behaviors of this UpdateResDatastructRequestBodyBody.
 
-
         :return: The behaviors of this UpdateResDatastructRequestBodyBody.
         :rtype: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
         """
@@ -113,7 +111,6 @@ class UpdateResDatastructRequestBodyBody:
     @behaviors.setter
     def behaviors(self, behaviors):
         """Sets the behaviors of this UpdateResDatastructRequestBodyBody.
-
 
         :param behaviors: The behaviors of this UpdateResDatastructRequestBodyBody.
         :type behaviors: :class:`huaweicloudsdkres.v1.BehaviorsConfig`

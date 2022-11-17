@@ -17,7 +17,6 @@ class RestoreNewInstanceRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -345,7 +344,6 @@ class RestoreNewInstanceRequestBody:
     def backup_strategy(self):
         """Gets the backup_strategy of this RestoreNewInstanceRequestBody.
 
-
         :return: The backup_strategy of this RestoreNewInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategy`
         """
@@ -354,7 +352,6 @@ class RestoreNewInstanceRequestBody:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this RestoreNewInstanceRequestBody.
-
 
         :param backup_strategy: The backup_strategy of this RestoreNewInstanceRequestBody.
         :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
@@ -453,7 +450,6 @@ class RestoreNewInstanceRequestBody:
     def restore_point(self):
         """Gets the restore_point of this RestoreNewInstanceRequestBody.
 
-
         :return: The restore_point of this RestoreNewInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.RestorePoint`
         """
@@ -462,7 +458,6 @@ class RestoreNewInstanceRequestBody:
     @restore_point.setter
     def restore_point(self, restore_point):
         """Sets the restore_point of this RestoreNewInstanceRequestBody.
-
 
         :param restore_point: The restore_point of this RestoreNewInstanceRequestBody.
         :type restore_point: :class:`huaweicloudsdkdds.v3.RestorePoint`
@@ -473,7 +468,6 @@ class RestoreNewInstanceRequestBody:
     def charge_info(self):
         """Gets the charge_info of this RestoreNewInstanceRequestBody.
 
-
         :return: The charge_info of this RestoreNewInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`
         """
@@ -482,7 +476,6 @@ class RestoreNewInstanceRequestBody:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this RestoreNewInstanceRequestBody.
-
 
         :param charge_info: The charge_info of this RestoreNewInstanceRequestBody.
         :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`

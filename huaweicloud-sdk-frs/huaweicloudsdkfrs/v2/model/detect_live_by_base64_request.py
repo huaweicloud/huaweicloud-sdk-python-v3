@@ -17,7 +17,6 @@ class DetectLiveByBase64Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DetectLiveByBase64Request:
     def body(self):
         """Gets the body of this DetectLiveByBase64Request.
 
-
         :return: The body of this DetectLiveByBase64Request.
         :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectBase64Req`
         """
@@ -58,7 +56,6 @@ class DetectLiveByBase64Request:
     @body.setter
     def body(self, body):
         """Sets the body of this DetectLiveByBase64Request.
-
 
         :param body: The body of this DetectLiveByBase64Request.
         :type body: :class:`huaweicloudsdkfrs.v2.LiveDetectBase64Req`

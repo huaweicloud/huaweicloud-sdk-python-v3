@@ -17,7 +17,6 @@ class Script:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class Script:
     def name(self):
         """Gets the name of this Script.
 
-
         :return: The name of this Script.
         :rtype: str
         """
@@ -65,7 +63,6 @@ class Script:
     @name.setter
     def name(self, name):
         """Sets the name of this Script.
-
 
         :param name: The name of this Script.
         :type name: str
@@ -76,7 +73,6 @@ class Script:
     def path(self):
         """Gets the path of this Script.
 
-
         :return: The path of this Script.
         :rtype: str
         """
@@ -85,7 +81,6 @@ class Script:
     @path.setter
     def path(self, path):
         """Sets the path of this Script.
-
 
         :param path: The path of this Script.
         :type path: str

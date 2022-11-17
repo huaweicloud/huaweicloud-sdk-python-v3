@@ -17,7 +17,6 @@ class AddFavoriteRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AddFavoriteRequest:
     def body(self):
         """Gets the body of this AddFavoriteRequest.
 
-
         :return: The body of this AddFavoriteRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.AddFavoriteReq`
         """
@@ -86,7 +84,6 @@ class AddFavoriteRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddFavoriteRequest.
-
 
         :param body: The body of this AddFavoriteRequest.
         :type body: :class:`huaweicloudsdkcss.v1.AddFavoriteReq`

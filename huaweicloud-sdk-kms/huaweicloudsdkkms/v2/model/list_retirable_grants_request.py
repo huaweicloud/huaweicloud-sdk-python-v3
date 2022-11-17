@@ -17,7 +17,6 @@ class ListRetirableGrantsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListRetirableGrantsRequest:
     def body(self):
         """Gets the body of this ListRetirableGrantsRequest.
 
-
         :return: The body of this ListRetirableGrantsRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsRequestBody`
         """
@@ -58,7 +56,6 @@ class ListRetirableGrantsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListRetirableGrantsRequest.
-
 
         :param body: The body of this ListRetirableGrantsRequest.
         :type body: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsRequestBody`

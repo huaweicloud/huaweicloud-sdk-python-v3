@@ -17,7 +17,6 @@ class QuotaDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -37,7 +36,7 @@ class QuotaDetail:
 
         The model defined in huaweicloud sdk
 
-        :param type: 资源类型 取值范围：  - edge_site：边缘小站
+        :param type: 资源类型 取值范围：  - edge_site：边缘小站  - compute_device：计算设备
         :type type: str
         :param quota: 资源的总配额 约束：资源的默认配额数可以修改，默认配置：边缘小站（10）
         :type quota: int
@@ -63,7 +62,7 @@ class QuotaDetail:
     def type(self):
         """Gets the type of this QuotaDetail.
 
-        资源类型 取值范围：  - edge_site：边缘小站
+        资源类型 取值范围：  - edge_site：边缘小站  - compute_device：计算设备
 
         :return: The type of this QuotaDetail.
         :rtype: str
@@ -74,7 +73,7 @@ class QuotaDetail:
     def type(self, type):
         """Sets the type of this QuotaDetail.
 
-        资源类型 取值范围：  - edge_site：边缘小站
+        资源类型 取值范围：  - edge_site：边缘小站  - compute_device：计算设备
 
         :param type: The type of this QuotaDetail.
         :type type: str

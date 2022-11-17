@@ -17,7 +17,6 @@ class SubscribeDataRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SubscribeDataRequest:
     def body(self):
         """Gets the body of this SubscribeDataRequest.
 
-
         :return: The body of this SubscribeDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeDataReq`
         """
@@ -86,7 +84,6 @@ class SubscribeDataRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SubscribeDataRequest.
-
 
         :param body: The body of this SubscribeDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.SubscribeDataReq`

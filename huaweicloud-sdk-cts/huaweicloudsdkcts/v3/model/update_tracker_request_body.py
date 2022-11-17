@@ -17,7 +17,6 @@ class UpdateTrackerRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -191,7 +190,6 @@ class UpdateTrackerRequestBody:
     def obs_info(self):
         """Gets the obs_info of this UpdateTrackerRequestBody.
 
-
         :return: The obs_info of this UpdateTrackerRequestBody.
         :rtype: :class:`huaweicloudsdkcts.v3.TrackerObsInfo`
         """
@@ -200,7 +198,6 @@ class UpdateTrackerRequestBody:
     @obs_info.setter
     def obs_info(self, obs_info):
         """Sets the obs_info of this UpdateTrackerRequestBody.
-
 
         :param obs_info: The obs_info of this UpdateTrackerRequestBody.
         :type obs_info: :class:`huaweicloudsdkcts.v3.TrackerObsInfo`
@@ -277,7 +274,6 @@ class UpdateTrackerRequestBody:
     def data_bucket(self):
         """Gets the data_bucket of this UpdateTrackerRequestBody.
 
-
         :return: The data_bucket of this UpdateTrackerRequestBody.
         :rtype: :class:`huaweicloudsdkcts.v3.DataBucket`
         """
@@ -286,7 +282,6 @@ class UpdateTrackerRequestBody:
     @data_bucket.setter
     def data_bucket(self, data_bucket):
         """Sets the data_bucket of this UpdateTrackerRequestBody.
-
 
         :param data_bucket: The data_bucket of this UpdateTrackerRequestBody.
         :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucket`

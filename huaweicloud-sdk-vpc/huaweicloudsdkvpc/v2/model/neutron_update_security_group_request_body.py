@@ -17,7 +17,6 @@ class NeutronUpdateSecurityGroupRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class NeutronUpdateSecurityGroupRequestBody:
     def security_group(self):
         """Gets the security_group of this NeutronUpdateSecurityGroupRequestBody.
 
-
         :return: The security_group of this NeutronUpdateSecurityGroupRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupOption`
         """
@@ -57,7 +55,6 @@ class NeutronUpdateSecurityGroupRequestBody:
     @security_group.setter
     def security_group(self, security_group):
         """Sets the security_group of this NeutronUpdateSecurityGroupRequestBody.
-
 
         :param security_group: The security_group of this NeutronUpdateSecurityGroupRequestBody.
         :type security_group: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupOption`

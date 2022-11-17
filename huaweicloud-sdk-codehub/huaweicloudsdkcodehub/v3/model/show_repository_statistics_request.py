@@ -17,7 +17,6 @@ class ShowRepositoryStatisticsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowRepositoryStatisticsRequest:
     def body(self):
         """Gets the body of this ShowRepositoryStatisticsRequest.
 
-
         :return: The body of this ShowRepositoryStatisticsRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsRequestBody`
         """
@@ -86,7 +84,6 @@ class ShowRepositoryStatisticsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowRepositoryStatisticsRequest.
-
 
         :param body: The body of this ShowRepositoryStatisticsRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsRequestBody`

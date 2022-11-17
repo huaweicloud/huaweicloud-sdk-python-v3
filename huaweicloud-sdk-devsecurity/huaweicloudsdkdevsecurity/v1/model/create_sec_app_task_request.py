@@ -17,7 +17,6 @@ class CreateSecAppTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateSecAppTaskRequest:
     def body(self):
         """Gets the body of this CreateSecAppTaskRequest.
 
-
         :return: The body of this CreateSecAppTaskRequest.
         :rtype: :class:`huaweicloudsdkdevsecurity.v1.CreateSecAppTaskRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateSecAppTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateSecAppTaskRequest.
-
 
         :param body: The body of this CreateSecAppTaskRequest.
         :type body: :class:`huaweicloudsdkdevsecurity.v1.CreateSecAppTaskRequestBody`

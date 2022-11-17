@@ -17,7 +17,6 @@ class ContentDetailReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -119,7 +118,6 @@ class ContentDetailReq:
     def iotda_content(self):
         """Gets the iotda_content of this ContentDetailReq.
 
-
         :return: The iotda_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentReq`
         """
@@ -128,7 +126,6 @@ class ContentDetailReq:
     @iotda_content.setter
     def iotda_content(self, iotda_content):
         """Sets the iotda_content of this ContentDetailReq.
-
 
         :param iotda_content: The iotda_content of this ContentDetailReq.
         :type iotda_content: :class:`huaweicloudsdkiotanalytics.v1.IotdaContentReq`
@@ -139,7 +136,6 @@ class ContentDetailReq:
     def obs_content(self):
         """Gets the obs_content of this ContentDetailReq.
 
-
         :return: The obs_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ObsContentReq`
         """
@@ -148,7 +144,6 @@ class ContentDetailReq:
     @obs_content.setter
     def obs_content(self, obs_content):
         """Sets the obs_content of this ContentDetailReq.
-
 
         :param obs_content: The obs_content of this ContentDetailReq.
         :type obs_content: :class:`huaweicloudsdkiotanalytics.v1.ObsContentReq`
@@ -159,7 +154,6 @@ class ContentDetailReq:
     def dis_content(self):
         """Gets the dis_content of this ContentDetailReq.
 
-
         :return: The dis_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DisContentReq`
         """
@@ -168,7 +162,6 @@ class ContentDetailReq:
     @dis_content.setter
     def dis_content(self, dis_content):
         """Sets the dis_content of this ContentDetailReq.
-
 
         :param dis_content: The dis_content of this ContentDetailReq.
         :type dis_content: :class:`huaweicloudsdkiotanalytics.v1.DisContentReq`
@@ -179,7 +172,6 @@ class ContentDetailReq:
     def smn_content(self):
         """Gets the smn_content of this ContentDetailReq.
 
-
         :return: The smn_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SmnContentReq`
         """
@@ -188,7 +180,6 @@ class ContentDetailReq:
     @smn_content.setter
     def smn_content(self, smn_content):
         """Sets the smn_content of this ContentDetailReq.
-
 
         :param smn_content: The smn_content of this ContentDetailReq.
         :type smn_content: :class:`huaweicloudsdkiotanalytics.v1.SmnContentReq`
@@ -199,7 +190,6 @@ class ContentDetailReq:
     def function_graph_content(self):
         """Gets the function_graph_content of this ContentDetailReq.
 
-
         :return: The function_graph_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentReq`
         """
@@ -208,7 +198,6 @@ class ContentDetailReq:
     @function_graph_content.setter
     def function_graph_content(self, function_graph_content):
         """Sets the function_graph_content of this ContentDetailReq.
-
 
         :param function_graph_content: The function_graph_content of this ContentDetailReq.
         :type function_graph_content: :class:`huaweicloudsdkiotanalytics.v1.FunctionGraphContentReq`
@@ -219,7 +208,6 @@ class ContentDetailReq:
     def model_arts_content(self):
         """Gets the model_arts_content of this ContentDetailReq.
 
-
         :return: The model_arts_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentReq`
         """
@@ -228,7 +216,6 @@ class ContentDetailReq:
     @model_arts_content.setter
     def model_arts_content(self, model_arts_content):
         """Sets the model_arts_content of this ContentDetailReq.
-
 
         :param model_arts_content: The model_arts_content of this ContentDetailReq.
         :type model_arts_content: :class:`huaweicloudsdkiotanalytics.v1.ModelArtsContentReq`
@@ -239,7 +226,6 @@ class ContentDetailReq:
     def dcs_content(self):
         """Gets the dcs_content of this ContentDetailReq.
 
-
         :return: The dcs_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DcsContentReq`
         """
@@ -248,7 +234,6 @@ class ContentDetailReq:
     @dcs_content.setter
     def dcs_content(self, dcs_content):
         """Sets the dcs_content of this ContentDetailReq.
-
 
         :param dcs_content: The dcs_content of this ContentDetailReq.
         :type dcs_content: :class:`huaweicloudsdkiotanalytics.v1.DcsContentReq`
@@ -259,7 +244,6 @@ class ContentDetailReq:
     def kafka_content(self):
         """Gets the kafka_content of this ContentDetailReq.
 
-
         :return: The kafka_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentReq`
         """
@@ -268,7 +252,6 @@ class ContentDetailReq:
     @kafka_content.setter
     def kafka_content(self, kafka_content):
         """Sets the kafka_content of this ContentDetailReq.
-
 
         :param kafka_content: The kafka_content of this ContentDetailReq.
         :type kafka_content: :class:`huaweicloudsdkiotanalytics.v1.KafkaContentReq`
@@ -279,7 +262,6 @@ class ContentDetailReq:
     def api_content(self):
         """Gets the api_content of this ContentDetailReq.
 
-
         :return: The api_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ApiContentReq`
         """
@@ -288,7 +270,6 @@ class ContentDetailReq:
     @api_content.setter
     def api_content(self, api_content):
         """Sets the api_content of this ContentDetailReq.
-
 
         :param api_content: The api_content of this ContentDetailReq.
         :type api_content: :class:`huaweicloudsdkiotanalytics.v1.ApiContentReq`
@@ -299,7 +280,6 @@ class ContentDetailReq:
     def node_content(self):
         """Gets the node_content of this ContentDetailReq.
 
-
         :return: The node_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.NodeContentReq`
         """
@@ -308,7 +288,6 @@ class ContentDetailReq:
     @node_content.setter
     def node_content(self, node_content):
         """Sets the node_content of this ContentDetailReq.
-
 
         :param node_content: The node_content of this ContentDetailReq.
         :type node_content: :class:`huaweicloudsdkiotanalytics.v1.NodeContentReq`
@@ -319,7 +298,6 @@ class ContentDetailReq:
     def edge_content(self):
         """Gets the edge_content of this ContentDetailReq.
 
-
         :return: The edge_content of this ContentDetailReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentReq`
         """
@@ -328,7 +306,6 @@ class ContentDetailReq:
     @edge_content.setter
     def edge_content(self, edge_content):
         """Sets the edge_content of this ContentDetailReq.
-
 
         :param edge_content: The edge_content of this ContentDetailReq.
         :type edge_content: :class:`huaweicloudsdkiotanalytics.v1.EdgeContentReq`

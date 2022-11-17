@@ -17,7 +17,6 @@ class UpdateNotebookRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateNotebookRequest:
     def body(self):
         """Gets the body of this UpdateNotebookRequest.
 
-
         :return: The body of this UpdateNotebookRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookReq`
         """
@@ -114,7 +112,6 @@ class UpdateNotebookRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateNotebookRequest.
-
 
         :param body: The body of this UpdateNotebookRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookReq`

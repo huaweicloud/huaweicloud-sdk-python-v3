@@ -17,7 +17,6 @@ class RunSegmentRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunSegmentRequest:
     def body(self):
         """Gets the body of this RunSegmentRequest.
 
-
         :return: The body of this RunSegmentRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.SegmentRequest`
         """
@@ -58,7 +56,6 @@ class RunSegmentRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunSegmentRequest.
-
 
         :param body: The body of this RunSegmentRequest.
         :type body: :class:`huaweicloudsdknlp.v2.SegmentRequest`

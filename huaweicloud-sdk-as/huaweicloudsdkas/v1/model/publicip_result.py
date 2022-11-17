@@ -17,7 +17,6 @@ class PublicipResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class PublicipResult:
     def eip(self):
         """Gets the eip of this PublicipResult.
 
-
         :return: The eip of this PublicipResult.
         :rtype: :class:`huaweicloudsdkas.v1.EipResult`
         """
@@ -58,7 +56,6 @@ class PublicipResult:
     @eip.setter
     def eip(self, eip):
         """Sets the eip of this PublicipResult.
-
 
         :param eip: The eip of this PublicipResult.
         :type eip: :class:`huaweicloudsdkas.v1.EipResult`

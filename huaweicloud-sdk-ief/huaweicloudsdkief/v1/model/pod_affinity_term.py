@@ -17,7 +17,6 @@ class PodAffinityTerm:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class PodAffinityTerm:
     def label_selector(self):
         """Gets the label_selector of this PodAffinityTerm.
 
-
         :return: The label_selector of this PodAffinityTerm.
         :rtype: :class:`huaweicloudsdkief.v1.PodAffinityTermLabelSelector`
         """
@@ -72,7 +70,6 @@ class PodAffinityTerm:
     @label_selector.setter
     def label_selector(self, label_selector):
         """Sets the label_selector of this PodAffinityTerm.
-
 
         :param label_selector: The label_selector of this PodAffinityTerm.
         :type label_selector: :class:`huaweicloudsdkief.v1.PodAffinityTermLabelSelector`

@@ -17,7 +17,6 @@ class CreateRouteRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateRouteRequestBody:
     def route(self):
         """Gets the route of this CreateRouteRequestBody.
 
-
         :return: The route of this CreateRouteRequestBody.
         :rtype: :class:`huaweicloudsdker.v3.CreateRoute`
         """
@@ -57,7 +55,6 @@ class CreateRouteRequestBody:
     @route.setter
     def route(self, route):
         """Sets the route of this CreateRouteRequestBody.
-
 
         :param route: The route of this CreateRouteRequestBody.
         :type route: :class:`huaweicloudsdker.v3.CreateRoute`

@@ -17,7 +17,6 @@ class UntagDeviceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class UntagDeviceRequest:
     def body(self):
         """Gets the body of this UntagDeviceRequest.
 
-
         :return: The body of this UntagDeviceRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.UnbindTagsDTO`
         """
@@ -87,7 +85,6 @@ class UntagDeviceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UntagDeviceRequest.
-
 
         :param body: The body of this UntagDeviceRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.UnbindTagsDTO`

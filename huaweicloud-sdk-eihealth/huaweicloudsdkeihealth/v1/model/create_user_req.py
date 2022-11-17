@@ -17,7 +17,6 @@ class CreateUserReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -220,7 +219,6 @@ class CreateUserReq:
     def settings(self):
         """Gets the settings of this CreateUserReq.
 
-
         :return: The settings of this CreateUserReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`
         """
@@ -229,7 +227,6 @@ class CreateUserReq:
     @settings.setter
     def settings(self, settings):
         """Sets the settings of this CreateUserReq.
-
 
         :param settings: The settings of this CreateUserReq.
         :type settings: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`

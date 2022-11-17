@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudIDEAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -48,6 +42,254 @@ class CloudIDEAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_extension_evaluation_async(self, request):
+        """添加插件评论
+
+        添加插件评论
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for AddExtensionEvaluation
+        :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationResponse`
+        """
+        return self.add_extension_evaluation_with_http_info(request)
+
+    def add_extension_evaluation_with_http_info(self, request):
+        all_params = ['add_extension_evaluation_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/evaluation',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddExtensionEvaluationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_extension_evaluation_reply_async(self, request):
+        """添加评论回复、回复评论回复
+
+        添加评论回复、回复评论回复
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for AddExtensionEvaluationReply
+        :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationReplyRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationReplyResponse`
+        """
+        return self.add_extension_evaluation_reply_with_http_info(request)
+
+    def add_extension_evaluation_reply_with_http_info(self, request):
+        all_params = ['add_extension_evaluation_reply_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/evaluation/reply',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddExtensionEvaluationReplyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_extension_star_async(self, request):
+        """添加新评星
+
+        添加新评星
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for AddExtensionStar
+        :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionStarRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionStarResponse`
+        """
+        return self.add_extension_star_with_http_info(request)
+
+    def add_extension_star_with_http_info(self, request):
+        all_params = ['add_extension_star_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/star',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddExtensionStarResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def check_malicious_extension_evaluation_async(self, request):
+        """举报评论,举报回复
+
+        举报评论,举报回复
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckMaliciousExtensionEvaluation
+        :type request: :class:`huaweicloudsdkcloudide.v2.CheckMaliciousExtensionEvaluationRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.CheckMaliciousExtensionEvaluationResponse`
+        """
+        return self.check_malicious_extension_evaluation_with_http_info(request)
+
+    def check_malicious_extension_evaluation_with_http_info(self, request):
+        all_params = ['check_malicious_extension_evaluation_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/evaluation/accusation',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CheckMaliciousExtensionEvaluationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_extension_authorization_async(self, request):
         """设置ide实例对插件的授权
 
@@ -55,6 +297,7 @@ class CloudIDEAsyncClient(Client):
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
+
 
         :param request: Request instance for CreateExtensionAuthorization
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateExtensionAuthorizationRequest`
@@ -68,6 +311,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,7 +347,132 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateExtensionAuthorizationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_evaluation_async(self, request):
+        """删除评论
+
+        删除评论
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteEvaluation
+        :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationResponse`
+        """
+        return self.delete_evaluation_with_http_info(request)
+
+    def delete_evaluation_with_http_info(self, request):
+        all_params = ['evaluation_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'evaluation_id' in local_var_params:
+            path_params['evaluation_id'] = local_var_params['evaluation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/evaluation/{evaluation_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEvaluationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_evaluation_reply_async(self, request):
+        """删除回复
+
+        删除回复
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteEvaluationReply
+        :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationReplyRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationReplyResponse`
+        """
+        return self.delete_evaluation_reply_with_http_info(request)
+
+    def delete_evaluation_reply_with_http_info(self, request):
+        all_params = ['reply_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'reply_id' in local_var_params:
+            path_params['reply_id'] = local_var_params['reply_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/evaluation/reply/{reply_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEvaluationReplyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -116,6 +486,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListExtensions
         :type request: :class:`huaweicloudsdkcloudide.v2.ListExtensionsRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListExtensionsResponse`
@@ -128,6 +499,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -160,6 +533,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListExtensionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -174,6 +548,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectTemplates
         :type request: :class:`huaweicloudsdkcloudide.v2.ListProjectTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListProjectTemplatesResponse`
@@ -186,6 +561,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -220,6 +597,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -234,6 +612,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStacks
         :type request: :class:`huaweicloudsdkcloudide.v2.ListStacksRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListStacksResponse`
@@ -246,6 +625,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -278,6 +659,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStacksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -292,6 +674,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAccountStatus
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowAccountStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowAccountStatusResponse`
@@ -304,6 +687,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -334,6 +719,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAccountStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -348,6 +734,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowExtensionAuthorization
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionAuthorizationResponse`
@@ -360,6 +747,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -396,6 +785,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtensionAuthorizationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -410,6 +800,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowExtensionDetail
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionDetailResponse`
@@ -422,6 +813,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -454,6 +847,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtensionDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -468,6 +862,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowExtensionEvaluation
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationResponse`
@@ -480,6 +875,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -516,6 +913,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtensionEvaluationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -530,6 +928,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowExtensionEvaluationStar
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationStarRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationStarResponse`
@@ -542,6 +941,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -578,6 +979,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtensionEvaluationStarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -592,6 +994,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPrice
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowPriceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowPriceResponse`
@@ -604,6 +1007,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -634,6 +1039,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPriceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -648,6 +1054,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadExtensionFile
         :type request: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileResponse`
@@ -660,6 +1067,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -696,6 +1105,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadExtensionFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -710,6 +1120,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckInstanceAccess
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckInstanceAccessRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckInstanceAccessResponse`
@@ -722,6 +1133,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -754,6 +1167,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckInstanceAccessResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -768,6 +1182,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckName
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckNameRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckNameResponse`
@@ -780,6 +1195,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -812,6 +1229,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -826,6 +1244,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateInstanceResponse`
@@ -838,6 +1257,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -872,6 +1293,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -886,6 +1308,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstanceBy3rd
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceBy3rdRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateInstanceBy3rdResponse`
@@ -898,6 +1321,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -932,6 +1357,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceBy3rdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -946,6 +1372,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteInstanceResponse`
@@ -958,6 +1385,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -990,6 +1419,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1004,6 +1434,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkcloudide.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListInstancesResponse`
@@ -1016,6 +1447,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1060,6 +1493,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1074,6 +1508,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOrgInstances
         :type request: :class:`huaweicloudsdkcloudide.v2.ListOrgInstancesRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListOrgInstancesResponse`
@@ -1086,6 +1521,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1126,6 +1563,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOrgInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1140,6 +1578,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowInstanceResponse`
@@ -1152,6 +1591,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1184,6 +1625,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1198,6 +1640,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceStatusInfo
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowInstanceStatusInfoRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowInstanceStatusInfoResponse`
@@ -1210,6 +1653,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1242,6 +1687,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceStatusInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1256,6 +1702,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.StartInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.StartInstanceResponse`
@@ -1268,6 +1715,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1302,6 +1751,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1316,6 +1766,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.StopInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.StopInstanceResponse`
@@ -1328,6 +1779,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1360,6 +1813,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1374,6 +1828,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceResponse`
@@ -1386,6 +1841,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1420,6 +1877,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1434,6 +1892,7 @@ class CloudIDEAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceActivity
         :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceActivityRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceActivityResponse`
@@ -1446,6 +1905,8 @@ class CloudIDEAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1478,6 +1939,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceActivityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1485,7 +1947,7 @@ class CloudIDEAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1496,9 +1958,10 @@ class CloudIDEAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1515,6 +1978,7 @@ class CloudIDEAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

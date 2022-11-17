@@ -17,7 +17,6 @@ class ListGraphMetadatasResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListGraphMetadatasResponse(SdkResponse):
     def ges_metadata(self):
         """Gets the ges_metadata of this ListGraphMetadatasResponse.
 
-
         :return: The ges_metadata of this ListGraphMetadatasResponse.
         :rtype: :class:`huaweicloudsdkges.v1.GesMetaData`
         """
@@ -116,7 +114,6 @@ class ListGraphMetadatasResponse(SdkResponse):
     @ges_metadata.setter
     def ges_metadata(self, ges_metadata):
         """Sets the ges_metadata of this ListGraphMetadatasResponse.
-
 
         :param ges_metadata: The ges_metadata of this ListGraphMetadatasResponse.
         :type ges_metadata: :class:`huaweicloudsdkges.v1.GesMetaData`

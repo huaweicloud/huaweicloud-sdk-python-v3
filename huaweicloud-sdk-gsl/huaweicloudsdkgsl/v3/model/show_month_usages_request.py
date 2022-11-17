@@ -17,7 +17,6 @@ class ShowMonthUsagesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowMonthUsagesRequest:
     def body(self):
         """Gets the body of this ShowMonthUsagesRequest.
 
-
         :return: The body of this ShowMonthUsagesRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowMonthUsageReq`
         """
@@ -58,7 +56,6 @@ class ShowMonthUsagesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowMonthUsagesRequest.
-
 
         :param body: The body of this ShowMonthUsagesRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.ShowMonthUsageReq`

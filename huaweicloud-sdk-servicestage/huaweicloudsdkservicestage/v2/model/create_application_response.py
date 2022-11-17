@@ -17,7 +17,6 @@ class CreateApplicationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -28,7 +27,8 @@ class CreateApplicationResponse(SdkResponse):
         'project_id': 'str',
         'enterprise_project_id': 'str',
         'create_time': 'int',
-        'update_time': 'int'
+        'update_time': 'int',
+        'unified_model': 'str'
     }
 
     attribute_map = {
@@ -39,10 +39,11 @@ class CreateApplicationResponse(SdkResponse):
         'project_id': 'project_id',
         'enterprise_project_id': 'enterprise_project_id',
         'create_time': 'create_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'unified_model': 'unified_model'
     }
 
-    def __init__(self, id=None, name=None, description=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, description=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None, unified_model=None):
         """CreateApplicationResponse
 
         The model defined in huaweicloud sdk
@@ -63,6 +64,8 @@ class CreateApplicationResponse(SdkResponse):
         :type create_time: int
         :param update_time: 修改时间。
         :type update_time: int
+        :param unified_model: 是否统一模型
+        :type unified_model: str
         """
         
         super(CreateApplicationResponse, self).__init__()
@@ -75,6 +78,7 @@ class CreateApplicationResponse(SdkResponse):
         self._enterprise_project_id = None
         self._create_time = None
         self._update_time = None
+        self._unified_model = None
         self.discriminator = None
 
         if id is not None:
@@ -93,6 +97,8 @@ class CreateApplicationResponse(SdkResponse):
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if unified_model is not None:
+            self.unified_model = unified_model
 
     @property
     def id(self):
@@ -269,6 +275,28 @@ class CreateApplicationResponse(SdkResponse):
         :type update_time: int
         """
         self._update_time = update_time
+
+    @property
+    def unified_model(self):
+        """Gets the unified_model of this CreateApplicationResponse.
+
+        是否统一模型
+
+        :return: The unified_model of this CreateApplicationResponse.
+        :rtype: str
+        """
+        return self._unified_model
+
+    @unified_model.setter
+    def unified_model(self, unified_model):
+        """Sets the unified_model of this CreateApplicationResponse.
+
+        是否统一模型
+
+        :param unified_model: The unified_model of this CreateApplicationResponse.
+        :type unified_model: str
+        """
+        self._unified_model = unified_model
 
     def to_dict(self):
         """Returns the model properties as a dict"""

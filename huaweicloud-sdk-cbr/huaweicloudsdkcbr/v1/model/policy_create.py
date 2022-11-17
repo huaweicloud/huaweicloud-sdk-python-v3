@@ -17,7 +17,6 @@ class PolicyCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -117,7 +116,6 @@ class PolicyCreate:
     def operation_definition(self):
         """Gets the operation_definition of this PolicyCreate.
 
-
         :return: The operation_definition of this PolicyCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         """
@@ -126,7 +124,6 @@ class PolicyCreate:
     @operation_definition.setter
     def operation_definition(self, operation_definition):
         """Sets the operation_definition of this PolicyCreate.
-
 
         :param operation_definition: The operation_definition of this PolicyCreate.
         :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -159,7 +156,6 @@ class PolicyCreate:
     def trigger(self):
         """Gets the trigger of this PolicyCreate.
 
-
         :return: The trigger of this PolicyCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
         """
@@ -168,7 +164,6 @@ class PolicyCreate:
     @trigger.setter
     def trigger(self, trigger):
         """Sets the trigger of this PolicyCreate.
-
 
         :param trigger: The trigger of this PolicyCreate.
         :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`

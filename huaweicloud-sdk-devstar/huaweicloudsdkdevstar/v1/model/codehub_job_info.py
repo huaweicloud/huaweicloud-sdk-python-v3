@@ -17,7 +17,6 @@ class CodehubJobInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -248,7 +247,6 @@ class CodehubJobInfo:
     def repo_info(self):
         """Gets the repo_info of this CodehubJobInfo.
 
-
         :return: The repo_info of this CodehubJobInfo.
         :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
         """
@@ -257,7 +255,6 @@ class CodehubJobInfo:
     @repo_info.setter
     def repo_info(self, repo_info):
         """Sets the repo_info of this CodehubJobInfo.
-
 
         :param repo_info: The repo_info of this CodehubJobInfo.
         :type repo_info: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`

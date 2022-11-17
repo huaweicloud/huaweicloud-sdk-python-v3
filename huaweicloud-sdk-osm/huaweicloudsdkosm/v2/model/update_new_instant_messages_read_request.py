@@ -17,7 +17,6 @@ class UpdateNewInstantMessagesReadRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class UpdateNewInstantMessagesReadRequest:
     def body(self):
         """Gets the body of this UpdateNewInstantMessagesReadRequest.
 
-
         :return: The body of this UpdateNewInstantMessagesReadRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateUnreadNewInstantMsgV2Req`
         """
@@ -173,7 +171,6 @@ class UpdateNewInstantMessagesReadRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateNewInstantMessagesReadRequest.
-
 
         :param body: The body of this UpdateNewInstantMessagesReadRequest.
         :type body: :class:`huaweicloudsdkosm.v2.UpdateUnreadNewInstantMsgV2Req`

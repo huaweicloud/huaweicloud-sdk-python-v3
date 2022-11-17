@@ -17,7 +17,6 @@ class ShowVolumeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowVolumeResponse(SdkResponse):
     def volume(self):
         """Gets the volume of this ShowVolumeResponse.
 
-
         :return: The volume of this ShowVolumeResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.VolumeDetail`
         """
@@ -58,7 +56,6 @@ class ShowVolumeResponse(SdkResponse):
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this ShowVolumeResponse.
-
 
         :param volume: The volume of this ShowVolumeResponse.
         :type volume: :class:`huaweicloudsdkevs.v2.VolumeDetail`

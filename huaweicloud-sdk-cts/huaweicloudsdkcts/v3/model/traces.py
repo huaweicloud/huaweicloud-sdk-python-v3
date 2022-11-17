@@ -17,7 +17,6 @@ class Traces:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -453,7 +452,6 @@ class Traces:
     def user(self):
         """Gets the user of this Traces.
 
-
         :return: The user of this Traces.
         :rtype: :class:`huaweicloudsdkcts.v3.UserInfo`
         """
@@ -462,7 +460,6 @@ class Traces:
     @user.setter
     def user(self, user):
         """Sets the user of this Traces.
-
 
         :param user: The user of this Traces.
         :type user: :class:`huaweicloudsdkcts.v3.UserInfo`

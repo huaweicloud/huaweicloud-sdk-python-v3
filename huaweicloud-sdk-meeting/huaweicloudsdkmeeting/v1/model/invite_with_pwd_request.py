@@ -17,7 +17,6 @@ class InviteWithPwdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class InviteWithPwdRequest:
     def body(self):
         """Gets the body of this InviteWithPwdRequest.
 
-
         :return: The body of this InviteWithPwdRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestInviteWithPwdReqBody`
         """
@@ -86,7 +84,6 @@ class InviteWithPwdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this InviteWithPwdRequest.
-
 
         :param body: The body of this InviteWithPwdRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestInviteWithPwdReqBody`

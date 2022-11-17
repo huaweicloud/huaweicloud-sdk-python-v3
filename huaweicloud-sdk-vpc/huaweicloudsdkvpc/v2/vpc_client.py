@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VpcClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class VpcClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -100,6 +96,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AcceptVpcPeeringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +123,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -160,6 +159,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -188,6 +188,8 @@ class VpcClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -221,6 +223,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateSubnetTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -249,6 +252,8 @@ class VpcClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -282,6 +287,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteSubnetTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -308,6 +314,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +348,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -366,6 +375,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -398,6 +409,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -424,6 +436,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -456,6 +470,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -482,6 +497,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -514,6 +531,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -540,6 +558,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -572,6 +592,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -599,6 +620,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -633,6 +656,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSubnetTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -659,6 +683,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -691,6 +717,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcPeeringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -717,6 +744,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -749,6 +778,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -775,6 +805,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -807,6 +839,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -833,6 +866,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -865,6 +900,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -891,6 +927,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -923,6 +961,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -949,6 +988,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -983,6 +1024,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1010,6 +1052,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1044,6 +1088,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSubnetTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1071,6 +1116,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1103,6 +1150,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcPeeringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1129,6 +1177,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1163,6 +1213,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1189,6 +1240,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1243,6 +1296,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPortsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1269,6 +1323,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1309,6 +1365,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRouteTablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1335,6 +1392,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1371,6 +1430,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecurityGroupRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1397,6 +1457,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1435,6 +1497,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecurityGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1461,6 +1524,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1491,6 +1556,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubnetTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1517,6 +1583,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1553,6 +1621,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubnetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1579,6 +1648,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1611,6 +1682,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubnetsByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1637,6 +1709,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1681,6 +1755,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcPeeringsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1707,6 +1782,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1739,6 +1816,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RejectVpcPeeringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1765,6 +1843,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1797,6 +1877,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1823,6 +1904,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1855,6 +1938,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1881,6 +1965,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1913,6 +1999,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1939,6 +2026,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1971,6 +2060,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1997,6 +2087,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2029,6 +2121,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2055,6 +2148,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2087,6 +2182,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2113,6 +2209,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2145,6 +2243,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSubnetTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2171,6 +2270,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2203,6 +2304,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVpcPeeringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2229,6 +2331,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2263,6 +2367,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2289,6 +2394,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2323,6 +2430,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2349,6 +2457,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2385,6 +2495,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2411,6 +2522,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2445,6 +2558,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcPeeringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2471,6 +2585,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2503,6 +2619,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePrivateipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2529,6 +2646,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2561,6 +2680,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePrivateipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2587,6 +2707,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2623,6 +2745,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPrivateipsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2657,6 +2780,8 @@ class VpcClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -2688,6 +2813,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNetworkIpAvailabilitiesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2714,6 +2840,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2746,6 +2874,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPrivateipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2772,6 +2901,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2804,6 +2935,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronCreateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2830,6 +2962,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2862,6 +2996,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronCreateSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2888,6 +3023,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2920,6 +3057,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronDeleteSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2946,6 +3084,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2978,6 +3118,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronDeleteSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3004,6 +3145,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3060,6 +3203,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronListSecurityGroupRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3086,6 +3230,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3128,6 +3274,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronListSecurityGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3154,6 +3301,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3186,6 +3335,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronShowSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3212,6 +3362,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3244,6 +3396,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronShowSecurityGroupRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3270,6 +3423,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3304,6 +3459,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronUpdateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3330,6 +3486,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3364,6 +3522,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronAddFirewallRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3390,6 +3549,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3422,6 +3583,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronCreateFirewallGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3448,6 +3610,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3480,6 +3644,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronCreateFirewallPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3506,6 +3671,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3538,6 +3705,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronCreateFirewallRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3564,6 +3732,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3596,6 +3766,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronDeleteFirewallGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3622,6 +3793,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3654,6 +3827,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronDeleteFirewallPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3680,6 +3854,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3712,6 +3888,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronDeleteFirewallRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3738,6 +3915,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3785,6 +3964,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronListFirewallGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3811,6 +3991,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3856,6 +4038,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronListFirewallPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3882,6 +4065,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3929,6 +4114,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronListFirewallRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3955,6 +4141,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3989,6 +4177,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronRemoveFirewallRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4016,6 +4205,8 @@ class VpcClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4047,6 +4238,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronShowFirewallGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4074,6 +4266,8 @@ class VpcClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4105,6 +4299,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronShowFirewallPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4131,6 +4326,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4163,6 +4360,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronShowFirewallRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4189,6 +4387,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4223,6 +4423,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronUpdateFirewallGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4249,6 +4450,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4283,6 +4486,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronUpdateFirewallPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4309,6 +4513,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4343,6 +4549,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='NeutronUpdateFirewallRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4371,6 +4578,8 @@ class VpcClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4404,6 +4613,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateVpcTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4432,6 +4642,8 @@ class VpcClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -4465,6 +4677,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteVpcTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4491,6 +4704,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4523,6 +4738,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4550,6 +4766,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4584,6 +4802,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcResourceTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4610,6 +4829,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4642,6 +4863,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateVpcRouteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4668,6 +4890,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4700,6 +4924,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4726,6 +4951,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4758,6 +4985,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcRouteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4785,6 +5013,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4819,6 +5049,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteVpcTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4845,6 +5076,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4889,6 +5122,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcRoutesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4915,6 +5149,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4945,6 +5181,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4971,6 +5208,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5009,6 +5248,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5035,6 +5275,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5067,6 +5309,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVpcsByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5093,6 +5336,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5125,6 +5370,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5151,6 +5397,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5183,6 +5431,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVpcRouteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5209,6 +5458,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5241,6 +5492,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVpcTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5267,6 +5519,8 @@ class VpcClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5301,6 +5555,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5308,7 +5563,7 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -5318,9 +5573,10 @@ class VpcClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -5337,6 +5593,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

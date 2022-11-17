@@ -17,7 +17,6 @@ class JobDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -222,7 +221,6 @@ class JobDetail:
     def instance(self):
         """Gets the instance of this JobDetail.
 
-
         :return: The instance of this JobDetail.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.JobInstanceInfo`
         """
@@ -231,7 +229,6 @@ class JobDetail:
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this JobDetail.
-
 
         :param instance: The instance of this JobDetail.
         :type instance: :class:`huaweicloudsdkgaussdbforopengauss.v3.JobInstanceInfo`

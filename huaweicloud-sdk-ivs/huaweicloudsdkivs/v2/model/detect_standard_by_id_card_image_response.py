@@ -17,7 +17,6 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
     def meta(self):
         """Gets the meta of this DetectStandardByIdCardImageResponse.
 
-
         :return: The meta of this DetectStandardByIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
@@ -65,7 +63,6 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
     @meta.setter
     def meta(self, meta):
         """Sets the meta of this DetectStandardByIdCardImageResponse.
-
 
         :param meta: The meta of this DetectStandardByIdCardImageResponse.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -76,7 +73,6 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
     def result(self):
         """Gets the result of this DetectStandardByIdCardImageResponse.
 
-
         :return: The result of this DetectStandardByIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageResponseBodyResult`
         """
@@ -85,7 +81,6 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this DetectStandardByIdCardImageResponse.
-
 
         :param result: The result of this DetectStandardByIdCardImageResponse.
         :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageResponseBodyResult`

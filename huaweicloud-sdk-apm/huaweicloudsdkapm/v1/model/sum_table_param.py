@@ -17,7 +17,6 @@ class SumTableParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -148,7 +147,6 @@ class SumTableParam:
     def view_config(self):
         """Gets the view_config of this SumTableParam.
 
-
         :return: The view_config of this SumTableParam.
         :rtype: :class:`huaweicloudsdkapm.v1.SumTableView`
         """
@@ -157,7 +155,6 @@ class SumTableParam:
     @view_config.setter
     def view_config(self, view_config):
         """Sets the view_config of this SumTableParam.
-
 
         :param view_config: The view_config of this SumTableParam.
         :type view_config: :class:`huaweicloudsdkapm.v1.SumTableView`

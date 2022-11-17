@@ -17,7 +17,6 @@ class DefaultRecordConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -97,7 +96,6 @@ class DefaultRecordConfig:
     def obs_addr(self):
         """Gets the obs_addr of this DefaultRecordConfig.
 
-
         :return: The obs_addr of this DefaultRecordConfig.
         :rtype: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
         """
@@ -106,7 +104,6 @@ class DefaultRecordConfig:
     @obs_addr.setter
     def obs_addr(self, obs_addr):
         """Sets the obs_addr of this DefaultRecordConfig.
-
 
         :param obs_addr: The obs_addr of this DefaultRecordConfig.
         :type obs_addr: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
@@ -117,7 +114,6 @@ class DefaultRecordConfig:
     def hls_config(self):
         """Gets the hls_config of this DefaultRecordConfig.
 
-
         :return: The hls_config of this DefaultRecordConfig.
         :rtype: :class:`huaweicloudsdklive.v1.HLSRecordConfig`
         """
@@ -126,7 +122,6 @@ class DefaultRecordConfig:
     @hls_config.setter
     def hls_config(self, hls_config):
         """Sets the hls_config of this DefaultRecordConfig.
-
 
         :param hls_config: The hls_config of this DefaultRecordConfig.
         :type hls_config: :class:`huaweicloudsdklive.v1.HLSRecordConfig`
@@ -137,7 +132,6 @@ class DefaultRecordConfig:
     def flv_config(self):
         """Gets the flv_config of this DefaultRecordConfig.
 
-
         :return: The flv_config of this DefaultRecordConfig.
         :rtype: :class:`huaweicloudsdklive.v1.FLVRecordConfig`
         """
@@ -146,7 +140,6 @@ class DefaultRecordConfig:
     @flv_config.setter
     def flv_config(self, flv_config):
         """Sets the flv_config of this DefaultRecordConfig.
-
 
         :param flv_config: The flv_config of this DefaultRecordConfig.
         :type flv_config: :class:`huaweicloudsdklive.v1.FLVRecordConfig`
@@ -157,7 +150,6 @@ class DefaultRecordConfig:
     def mp4_config(self):
         """Gets the mp4_config of this DefaultRecordConfig.
 
-
         :return: The mp4_config of this DefaultRecordConfig.
         :rtype: :class:`huaweicloudsdklive.v1.MP4RecordConfig`
         """
@@ -166,7 +158,6 @@ class DefaultRecordConfig:
     @mp4_config.setter
     def mp4_config(self, mp4_config):
         """Sets the mp4_config of this DefaultRecordConfig.
-
 
         :param mp4_config: The mp4_config of this DefaultRecordConfig.
         :type mp4_config: :class:`huaweicloudsdklive.v1.MP4RecordConfig`

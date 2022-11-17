@@ -17,7 +17,6 @@ class RetryTaskGroupRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RetryTaskGroupRequest:
     def body(self):
         """Gets the body of this RetryTaskGroupRequest.
 
-
         :return: The body of this RetryTaskGroupRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.RetryTaskGroupReq`
         """
@@ -86,7 +84,6 @@ class RetryTaskGroupRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RetryTaskGroupRequest.
-
 
         :param body: The body of this RetryTaskGroupRequest.
         :type body: :class:`huaweicloudsdkoms.v2.RetryTaskGroupReq`

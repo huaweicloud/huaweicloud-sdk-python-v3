@@ -17,7 +17,6 @@ class RecordDetailInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -287,7 +286,6 @@ class RecordDetailInfo:
     def cluster_info(self):
         """Gets the cluster_info of this RecordDetailInfo.
 
-
         :return: The cluster_info of this RecordDetailInfo.
         :rtype: :class:`huaweicloudsdkbcs.v2.OprecordCluster`
         """
@@ -296,7 +294,6 @@ class RecordDetailInfo:
     @cluster_info.setter
     def cluster_info(self, cluster_info):
         """Sets the cluster_info of this RecordDetailInfo.
-
 
         :param cluster_info: The cluster_info of this RecordDetailInfo.
         :type cluster_info: :class:`huaweicloudsdkbcs.v2.OprecordCluster`

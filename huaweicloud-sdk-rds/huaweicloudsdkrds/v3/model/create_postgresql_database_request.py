@@ -17,7 +17,6 @@ class CreatePostgresqlDatabaseRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreatePostgresqlDatabaseRequest:
     def body(self):
         """Gets the body of this CreatePostgresqlDatabaseRequest.
 
-
         :return: The body of this CreatePostgresqlDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.PostgresqlDatabaseForCreation`
         """
@@ -115,7 +113,6 @@ class CreatePostgresqlDatabaseRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreatePostgresqlDatabaseRequest.
-
 
         :param body: The body of this CreatePostgresqlDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.PostgresqlDatabaseForCreation`

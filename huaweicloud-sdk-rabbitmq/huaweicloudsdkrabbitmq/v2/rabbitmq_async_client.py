@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class RabbitMQAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateOrDeleteRabbitMqTag
         :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteRabbitMqTagRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteRabbitMqTagResponse`
@@ -68,6 +63,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateOrDeleteRabbitMqTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -120,6 +118,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRestartOrDeleteInstances
         :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstancesResponse`
@@ -132,6 +131,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -164,6 +165,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRestartOrDeleteInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -178,6 +180,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePostPaidInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceResponse`
@@ -190,6 +193,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostPaidInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePostPaidInstanceByEngine
         :type request: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceByEngineRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceByEngineResponse`
@@ -248,6 +255,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePostPaidInstanceByEngineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBackgroundTask
         :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteBackgroundTaskResponse`
@@ -308,6 +319,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBackgroundTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteInstanceResponse`
@@ -368,6 +383,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +417,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -414,6 +432,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAvailableZones
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListAvailableZonesRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListAvailableZonesResponse`
@@ -426,6 +445,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -456,6 +477,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAvailableZonesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -470,6 +492,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackgroundTasks
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksResponse`
@@ -482,6 +505,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -522,6 +547,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackgroundTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -536,6 +562,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEngineProducts
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsResponse`
@@ -548,6 +575,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -582,6 +611,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEngineProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -596,6 +626,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstancesDetails
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListInstancesDetailsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListInstancesDetailsResponse`
@@ -608,6 +639,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -652,6 +685,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -666,6 +700,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPlugins
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListPluginsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListPluginsResponse`
@@ -678,6 +713,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -710,6 +747,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPluginsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -724,6 +762,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProducts
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListProductsResponse`
@@ -736,6 +775,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -768,6 +809,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProductsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -782,6 +824,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetPassword
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResetPasswordResponse`
@@ -794,6 +837,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -828,6 +873,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -844,6 +890,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResizeInstanceResponse`
@@ -856,6 +903,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -890,6 +939,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -904,6 +954,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBackgroundTask
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowBackgroundTaskResponse`
@@ -916,6 +967,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -950,6 +1003,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackgroundTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -964,6 +1018,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceResponse`
@@ -976,6 +1031,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1008,6 +1065,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1024,6 +1082,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceExtendProductInfo
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoResponse`
@@ -1036,6 +1095,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1072,6 +1133,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceExtendProductInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1086,6 +1148,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMaintainWindows
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowMaintainWindowsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowMaintainWindowsResponse`
@@ -1098,6 +1161,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1128,6 +1193,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMaintainWindowsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1142,6 +1208,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRabbitMqProjectTags
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProjectTagsResponse`
@@ -1154,6 +1221,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1184,6 +1253,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRabbitMqProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1198,6 +1268,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRabbitMqTags
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqTagsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqTagsResponse`
@@ -1210,6 +1281,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1242,6 +1315,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRabbitMqTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1256,6 +1330,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstance
         :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdateInstanceResponse`
@@ -1268,6 +1343,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1302,6 +1379,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1316,6 +1394,7 @@ class RabbitMQAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePlugins
         :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsResponse`
@@ -1328,6 +1407,8 @@ class RabbitMQAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1362,6 +1443,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePluginsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1369,7 +1451,7 @@ class RabbitMQAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1380,9 +1462,10 @@ class RabbitMQAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1399,6 +1482,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

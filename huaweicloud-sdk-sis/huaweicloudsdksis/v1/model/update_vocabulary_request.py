@@ -17,7 +17,6 @@ class UpdateVocabularyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateVocabularyRequest:
     def body(self):
         """Gets the body of this UpdateVocabularyRequest.
 
-
         :return: The body of this UpdateVocabularyRequest.
         :rtype: :class:`huaweicloudsdksis.v1.PutUpdateVocabReq`
         """
@@ -86,7 +84,6 @@ class UpdateVocabularyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateVocabularyRequest.
-
 
         :param body: The body of this UpdateVocabularyRequest.
         :type body: :class:`huaweicloudsdksis.v1.PutUpdateVocabReq`

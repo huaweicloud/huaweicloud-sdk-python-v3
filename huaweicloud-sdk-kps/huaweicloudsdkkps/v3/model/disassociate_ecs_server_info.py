@@ -17,7 +17,6 @@ class DisassociateEcsServerInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class DisassociateEcsServerInfo:
     def auth(self):
         """Gets the auth of this DisassociateEcsServerInfo.
 
-
         :return: The auth of this DisassociateEcsServerInfo.
         :rtype: :class:`huaweicloudsdkkps.v3.Auth`
         """
@@ -86,7 +84,6 @@ class DisassociateEcsServerInfo:
     @auth.setter
     def auth(self, auth):
         """Sets the auth of this DisassociateEcsServerInfo.
-
 
         :param auth: The auth of this DisassociateEcsServerInfo.
         :type auth: :class:`huaweicloudsdkkps.v3.Auth`

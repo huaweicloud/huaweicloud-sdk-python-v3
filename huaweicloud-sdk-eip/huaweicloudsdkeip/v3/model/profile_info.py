@@ -17,7 +17,6 @@ class ProfileInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -310,7 +309,6 @@ class ProfileInfo:
     def bandwith_info(self):
         """Gets the bandwith_info of this ProfileInfo.
 
-
         :return: The bandwith_info of this ProfileInfo.
         :rtype: :class:`huaweicloudsdkeip.v3.BandwidthInfoResp`
         """
@@ -319,7 +317,6 @@ class ProfileInfo:
     @bandwith_info.setter
     def bandwith_info(self, bandwith_info):
         """Sets the bandwith_info of this ProfileInfo.
-
 
         :param bandwith_info: The bandwith_info of this ProfileInfo.
         :type bandwith_info: :class:`huaweicloudsdkeip.v3.BandwidthInfoResp`

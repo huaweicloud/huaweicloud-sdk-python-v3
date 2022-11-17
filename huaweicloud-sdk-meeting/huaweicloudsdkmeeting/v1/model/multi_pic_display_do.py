@@ -17,7 +17,6 @@ class MultiPicDisplayDO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class MultiPicDisplayDO:
     def pic_layout_info(self):
         """Gets the pic_layout_info of this MultiPicDisplayDO.
 
-
         :return: The pic_layout_info of this MultiPicDisplayDO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
         """
@@ -174,7 +172,6 @@ class MultiPicDisplayDO:
     @pic_layout_info.setter
     def pic_layout_info(self, pic_layout_info):
         """Sets the pic_layout_info of this MultiPicDisplayDO.
-
 
         :param pic_layout_info: The pic_layout_info of this MultiPicDisplayDO.
         :type pic_layout_info: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`

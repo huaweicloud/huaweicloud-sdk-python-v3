@@ -17,7 +17,6 @@ class UpdateLocation:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -45,7 +44,7 @@ class UpdateLocation:
 
         The model defined in huaweicloud sdk
 
-        :param name: 场地名称，0-64位。只包含中文字符、英文字母（a-z、A-Z）、数字（0-9）、下划线（_）、中划线（-）。
+        :param name: 场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
         :type name: str
         :param country: 场地所在国家
         :type country: str
@@ -91,7 +90,7 @@ class UpdateLocation:
     def name(self):
         """Gets the name of this UpdateLocation.
 
-        场地名称，0-64位。只包含中文字符、英文字母（a-z、A-Z）、数字（0-9）、下划线（_）、中划线（-）。
+        场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
 
         :return: The name of this UpdateLocation.
         :rtype: str
@@ -102,7 +101,7 @@ class UpdateLocation:
     def name(self, name):
         """Sets the name of this UpdateLocation.
 
-        场地名称，0-64位。只包含中文字符、英文字母（a-z、A-Z）、数字（0-9）、下划线（_）、中划线（-）。
+        场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
 
         :param name: The name of this UpdateLocation.
         :type name: str
@@ -201,7 +200,6 @@ class UpdateLocation:
     def condition(self):
         """Gets the condition of this UpdateLocation.
 
-
         :return: The condition of this UpdateLocation.
         :rtype: :class:`huaweicloudsdkies.v1.UpdateCondition`
         """
@@ -210,7 +208,6 @@ class UpdateLocation:
     @condition.setter
     def condition(self, condition):
         """Sets the condition of this UpdateLocation.
-
 
         :param condition: The condition of this UpdateLocation.
         :type condition: :class:`huaweicloudsdkies.v1.UpdateCondition`

@@ -17,7 +17,6 @@ class ListListenersByTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListListenersByTagsRequest:
     def body(self):
         """Gets the body of this ListListenersByTagsRequest.
 
-
         :return: The body of this ListListenersByTagsRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.ListListenersByTagsRequestBody`
         """
@@ -58,7 +56,6 @@ class ListListenersByTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListListenersByTagsRequest.
-
 
         :param body: The body of this ListListenersByTagsRequest.
         :type body: :class:`huaweicloudsdkelb.v2.ListListenersByTagsRequestBody`

@@ -17,7 +17,6 @@ class BatchFreezeDevicesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchFreezeDevicesRequest:
     def body(self):
         """Gets the body of this BatchFreezeDevicesRequest.
 
-
         :return: The body of this BatchFreezeDevicesRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequestBody`
         """
@@ -86,7 +84,6 @@ class BatchFreezeDevicesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchFreezeDevicesRequest.
-
 
         :param body: The body of this BatchFreezeDevicesRequest.
         :type body: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequestBody`

@@ -17,7 +17,6 @@ class RemoveNodesTask:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -113,7 +112,6 @@ class RemoveNodesTask:
     def spec(self):
         """Gets the spec of this RemoveNodesTask.
 
-
         :return: The spec of this RemoveNodesTask.
         :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
         """
@@ -122,7 +120,6 @@ class RemoveNodesTask:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this RemoveNodesTask.
-
 
         :param spec: The spec of this RemoveNodesTask.
         :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
@@ -133,7 +130,6 @@ class RemoveNodesTask:
     def status(self):
         """Gets the status of this RemoveNodesTask.
 
-
         :return: The status of this RemoveNodesTask.
         :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
@@ -142,7 +138,6 @@ class RemoveNodesTask:
     @status.setter
     def status(self, status):
         """Sets the status of this RemoveNodesTask.
-
 
         :param status: The status of this RemoveNodesTask.
         :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`

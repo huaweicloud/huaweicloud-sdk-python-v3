@@ -17,7 +17,6 @@ class RunSummaryRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunSummaryRequest:
     def body(self):
         """Gets the body of this RunSummaryRequest.
 
-
         :return: The body of this RunSummaryRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.SummaryReq`
         """
@@ -58,7 +56,6 @@ class RunSummaryRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunSummaryRequest.
-
 
         :param body: The body of this RunSummaryRequest.
         :type body: :class:`huaweicloudsdknlp.v2.SummaryReq`

@@ -17,7 +17,6 @@ class ShowDesktopDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowDesktopDetailResponse(SdkResponse):
     def desktop(self):
         """Gets the desktop of this ShowDesktopDetailResponse.
 
-
         :return: The desktop of this ShowDesktopDetailResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DesktopDetailInfo`
         """
@@ -58,7 +56,6 @@ class ShowDesktopDetailResponse(SdkResponse):
     @desktop.setter
     def desktop(self, desktop):
         """Sets the desktop of this ShowDesktopDetailResponse.
-
 
         :param desktop: The desktop of this ShowDesktopDetailResponse.
         :type desktop: :class:`huaweicloudsdkworkspace.v2.DesktopDetailInfo`

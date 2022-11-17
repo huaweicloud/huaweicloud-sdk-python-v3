@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class WafClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class WafClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -104,6 +100,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ApplyCertificateToHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -130,6 +127,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +165,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAntiTamperRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -192,6 +192,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -226,6 +228,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -252,6 +255,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -288,6 +293,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGeoipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -314,6 +320,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -348,6 +356,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -374,6 +383,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -410,6 +421,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIgnoreRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -436,6 +448,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -470,6 +484,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -496,6 +511,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -530,6 +547,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -556,6 +574,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -590,6 +610,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -616,6 +637,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -650,6 +673,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -676,6 +700,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -712,6 +738,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePrivacyRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -738,6 +765,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -772,6 +801,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateValueListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -798,6 +828,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -834,6 +866,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateWhiteblackipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -860,6 +893,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -896,6 +931,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAntitamperRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -922,6 +958,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -956,6 +994,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -982,6 +1021,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1018,6 +1059,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGeoipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1044,6 +1086,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1078,6 +1122,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1104,6 +1149,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1140,6 +1187,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIgnoreRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1166,6 +1214,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1200,6 +1250,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1226,6 +1277,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1260,6 +1313,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1286,6 +1340,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1320,6 +1376,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1346,6 +1403,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1382,6 +1441,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1408,6 +1468,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1444,6 +1506,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePrivacyRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1470,6 +1533,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1504,6 +1569,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteValueListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1530,6 +1596,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1566,6 +1634,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteWhiteBlackIpRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1592,6 +1661,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1630,6 +1701,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAntitamperRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1656,6 +1728,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1698,6 +1772,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBandwidthTimelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1724,6 +1799,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1766,6 +1843,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCertificatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1792,6 +1870,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1838,6 +1918,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCompositeHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1864,6 +1945,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1912,6 +1995,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1938,6 +2022,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1976,6 +2062,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGeoipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2002,6 +2089,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2042,6 +2131,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2068,6 +2158,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2102,6 +2194,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostRouteResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2128,6 +2221,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2166,6 +2261,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIgnoreRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2192,6 +2288,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2230,6 +2328,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2256,6 +2355,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2296,6 +2397,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2322,6 +2424,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2354,6 +2458,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNoticeConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2380,6 +2485,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2422,6 +2529,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOverviewsClassificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2448,6 +2556,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2486,6 +2596,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2512,6 +2623,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2554,6 +2667,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2580,6 +2694,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2618,6 +2734,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPrivacyRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2644,6 +2761,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2686,6 +2805,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQpsTimelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2712,6 +2832,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2756,6 +2878,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRequestTimelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2782,6 +2905,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2822,6 +2947,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2848,6 +2974,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2892,6 +3020,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTopAbnormalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2918,6 +3047,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2954,6 +3085,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListValueListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2980,6 +3112,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3020,6 +3154,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWhiteblackipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3046,6 +3181,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3082,6 +3219,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateCompositeHostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3108,6 +3246,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3144,6 +3284,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RenameInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3170,6 +3311,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3204,6 +3347,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3230,6 +3374,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3264,6 +3410,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCompositeHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3290,6 +3437,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3320,6 +3469,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConsoleConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3346,6 +3496,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3380,6 +3532,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3406,6 +3559,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3440,6 +3595,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3466,6 +3622,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3500,6 +3658,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3526,6 +3685,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3560,6 +3721,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3586,6 +3748,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3618,6 +3782,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowLtsInfoConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3644,6 +3809,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3678,6 +3845,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3704,6 +3872,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3738,6 +3908,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3764,6 +3935,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3794,6 +3967,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSourceIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3820,6 +3994,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3856,6 +4032,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAlertNoticeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3882,6 +4059,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3918,6 +4097,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3944,6 +4124,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3982,6 +4164,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGeoipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4008,6 +4191,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4044,6 +4229,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4070,6 +4256,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4106,6 +4294,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHostProtectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4132,6 +4321,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4168,6 +4359,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIpGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4194,6 +4386,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4230,6 +4424,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLtsInfoConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4256,6 +4451,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4292,6 +4489,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4318,6 +4516,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4354,6 +4554,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePolicyProtectHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4380,6 +4581,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4420,6 +4623,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePolicyRuleStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4446,6 +4650,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4482,6 +4688,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePremiumHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4508,6 +4715,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4544,6 +4753,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePremiumHostProtectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4570,6 +4780,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4608,6 +4820,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePrivacyRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4634,6 +4847,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4670,6 +4885,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateValueListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4696,6 +4912,8 @@ class WafClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4734,6 +4952,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateWhiteblackipRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4741,7 +4960,7 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4751,9 +4970,10 @@ class WafClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4770,6 +4990,7 @@ class WafClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

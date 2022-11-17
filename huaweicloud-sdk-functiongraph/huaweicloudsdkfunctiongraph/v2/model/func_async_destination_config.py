@@ -17,7 +17,6 @@ class FuncAsyncDestinationConfig:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class FuncAsyncDestinationConfig:
     def on_success(self):
         """Gets the on_success of this FuncAsyncDestinationConfig.
 
-
         :return: The on_success of this FuncAsyncDestinationConfig.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`
         """
@@ -65,7 +63,6 @@ class FuncAsyncDestinationConfig:
     @on_success.setter
     def on_success(self, on_success):
         """Sets the on_success of this FuncAsyncDestinationConfig.
-
 
         :param on_success: The on_success of this FuncAsyncDestinationConfig.
         :type on_success: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`
@@ -76,7 +73,6 @@ class FuncAsyncDestinationConfig:
     def on_failure(self):
         """Gets the on_failure of this FuncAsyncDestinationConfig.
 
-
         :return: The on_failure of this FuncAsyncDestinationConfig.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`
         """
@@ -85,7 +81,6 @@ class FuncAsyncDestinationConfig:
     @on_failure.setter
     def on_failure(self, on_failure):
         """Sets the on_failure of this FuncAsyncDestinationConfig.
-
 
         :param on_failure: The on_failure of this FuncAsyncDestinationConfig.
         :type on_failure: :class:`huaweicloudsdkfunctiongraph.v2.FuncDestinationConfig`

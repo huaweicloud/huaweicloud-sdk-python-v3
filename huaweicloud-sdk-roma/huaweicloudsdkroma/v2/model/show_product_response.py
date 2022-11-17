@@ -17,7 +17,6 @@ class ShowProductResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -461,7 +460,6 @@ class ShowProductResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this ShowProductResponse.
 
-
         :return: The created_user of this ShowProductResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -470,7 +468,6 @@ class ShowProductResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this ShowProductResponse.
-
 
         :param created_user: The created_user of this ShowProductResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -481,7 +478,6 @@ class ShowProductResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this ShowProductResponse.
 
-
         :return: The last_updated_user of this ShowProductResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -490,7 +486,6 @@ class ShowProductResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this ShowProductResponse.
-
 
         :param last_updated_user: The last_updated_user of this ShowProductResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -501,7 +496,6 @@ class ShowProductResponse(SdkResponse):
     def authentication(self):
         """Gets the authentication of this ShowProductResponse.
 
-
         :return: The authentication of this ShowProductResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
         """
@@ -510,7 +504,6 @@ class ShowProductResponse(SdkResponse):
     @authentication.setter
     def authentication(self, authentication):
         """Sets the authentication of this ShowProductResponse.
-
 
         :param authentication: The authentication of this ShowProductResponse.
         :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`

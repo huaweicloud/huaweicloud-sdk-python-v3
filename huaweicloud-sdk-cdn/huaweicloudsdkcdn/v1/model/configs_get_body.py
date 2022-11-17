@@ -17,7 +17,6 @@ class ConfigsGetBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -191,7 +190,6 @@ class ConfigsGetBody:
     def url_auth(self):
         """Gets the url_auth of this ConfigsGetBody.
 
-
         :return: The url_auth of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.UrlAuthGetBody`
         """
@@ -200,7 +198,6 @@ class ConfigsGetBody:
     @url_auth.setter
     def url_auth(self, url_auth):
         """Sets the url_auth of this ConfigsGetBody.
-
 
         :param url_auth: The url_auth of this ConfigsGetBody.
         :type url_auth: :class:`huaweicloudsdkcdn.v1.UrlAuthGetBody`
@@ -211,7 +208,6 @@ class ConfigsGetBody:
     def https(self):
         """Gets the https of this ConfigsGetBody.
 
-
         :return: The https of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.HttpGetBody`
         """
@@ -220,7 +216,6 @@ class ConfigsGetBody:
     @https.setter
     def https(self, https):
         """Sets the https of this ConfigsGetBody.
-
 
         :param https: The https of this ConfigsGetBody.
         :type https: :class:`huaweicloudsdkcdn.v1.HttpGetBody`
@@ -275,7 +270,6 @@ class ConfigsGetBody:
     def force_redirect(self):
         """Gets the force_redirect of this ConfigsGetBody.
 
-
         :return: The force_redirect of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
         """
@@ -284,7 +278,6 @@ class ConfigsGetBody:
     @force_redirect.setter
     def force_redirect(self, force_redirect):
         """Sets the force_redirect of this ConfigsGetBody.
-
 
         :param force_redirect: The force_redirect of this ConfigsGetBody.
         :type force_redirect: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
@@ -295,7 +288,6 @@ class ConfigsGetBody:
     def compress(self):
         """Gets the compress of this ConfigsGetBody.
 
-
         :return: The compress of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.Compress`
         """
@@ -304,7 +296,6 @@ class ConfigsGetBody:
     @compress.setter
     def compress(self, compress):
         """Sets the compress of this ConfigsGetBody.
-
 
         :param compress: The compress of this ConfigsGetBody.
         :type compress: :class:`huaweicloudsdkcdn.v1.Compress`
@@ -315,7 +306,6 @@ class ConfigsGetBody:
     def cache_url_parameter_filter(self):
         """Gets the cache_url_parameter_filter of this ConfigsGetBody.
 
-
         :return: The cache_url_parameter_filter of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
         """
@@ -324,7 +314,6 @@ class ConfigsGetBody:
     @cache_url_parameter_filter.setter
     def cache_url_parameter_filter(self, cache_url_parameter_filter):
         """Sets the cache_url_parameter_filter of this ConfigsGetBody.
-
 
         :param cache_url_parameter_filter: The cache_url_parameter_filter of this ConfigsGetBody.
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
@@ -401,7 +390,6 @@ class ConfigsGetBody:
     def user_agent_filter(self):
         """Gets the user_agent_filter of this ConfigsGetBody.
 
-
         :return: The user_agent_filter of this ConfigsGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.UserAgentFilter`
         """
@@ -410,7 +398,6 @@ class ConfigsGetBody:
     @user_agent_filter.setter
     def user_agent_filter(self, user_agent_filter):
         """Sets the user_agent_filter of this ConfigsGetBody.
-
 
         :param user_agent_filter: The user_agent_filter of this ConfigsGetBody.
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v1.UserAgentFilter`

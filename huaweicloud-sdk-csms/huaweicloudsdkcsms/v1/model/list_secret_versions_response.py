@@ -17,7 +17,6 @@ class ListSecretVersionsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListSecretVersionsResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListSecretVersionsResponse.
 
-
         :return: The page_info of this ListSecretVersionsResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.PageInfo`
         """
@@ -87,7 +85,6 @@ class ListSecretVersionsResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListSecretVersionsResponse.
-
 
         :param page_info: The page_info of this ListSecretVersionsResponse.
         :type page_info: :class:`huaweicloudsdkcsms.v1.PageInfo`

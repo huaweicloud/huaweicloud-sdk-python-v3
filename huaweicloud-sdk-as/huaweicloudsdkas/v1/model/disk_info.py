@@ -17,7 +17,6 @@ class DiskInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -220,7 +219,6 @@ class DiskInfo:
     def metadata(self):
         """Gets the metadata of this DiskInfo.
 
-
         :return: The metadata of this DiskInfo.
         :rtype: :class:`huaweicloudsdkas.v1.MetaData`
         """
@@ -229,7 +227,6 @@ class DiskInfo:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this DiskInfo.
-
 
         :param metadata: The metadata of this DiskInfo.
         :type metadata: :class:`huaweicloudsdkas.v1.MetaData`

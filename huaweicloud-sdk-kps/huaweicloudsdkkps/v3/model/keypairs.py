@@ -17,7 +17,6 @@ class Keypairs:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class Keypairs:
     def keypair(self):
         """Gets the keypair of this Keypairs.
 
-
         :return: The keypair of this Keypairs.
         :rtype: :class:`huaweicloudsdkkps.v3.Keypair`
         """
@@ -57,7 +55,6 @@ class Keypairs:
     @keypair.setter
     def keypair(self, keypair):
         """Sets the keypair of this Keypairs.
-
 
         :param keypair: The keypair of this Keypairs.
         :type keypair: :class:`huaweicloudsdkkps.v3.Keypair`

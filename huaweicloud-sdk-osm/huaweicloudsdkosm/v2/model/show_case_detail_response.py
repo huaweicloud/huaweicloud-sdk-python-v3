@@ -17,7 +17,6 @@ class ShowCaseDetailResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowCaseDetailResponse(SdkResponse):
     def incident_detail_info(self):
         """Gets the incident_detail_info of this ShowCaseDetailResponse.
 
-
         :return: The incident_detail_info of this ShowCaseDetailResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.IncidentDetailInfoV2`
         """
@@ -58,7 +56,6 @@ class ShowCaseDetailResponse(SdkResponse):
     @incident_detail_info.setter
     def incident_detail_info(self, incident_detail_info):
         """Sets the incident_detail_info of this ShowCaseDetailResponse.
-
 
         :param incident_detail_info: The incident_detail_info of this ShowCaseDetailResponse.
         :type incident_detail_info: :class:`huaweicloudsdkosm.v2.IncidentDetailInfoV2`

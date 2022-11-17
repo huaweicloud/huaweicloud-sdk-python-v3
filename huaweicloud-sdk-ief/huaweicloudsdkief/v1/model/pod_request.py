@@ -17,7 +17,6 @@ class PodRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -68,7 +67,6 @@ class PodRequest:
     def configs(self):
         """Gets the configs of this PodRequest.
 
-
         :return: The configs of this PodRequest.
         :rtype: :class:`huaweicloudsdkief.v1.PodConfigs`
         """
@@ -77,7 +75,6 @@ class PodRequest:
     @configs.setter
     def configs(self, configs):
         """Sets the configs of this PodRequest.
-
 
         :param configs: The configs of this PodRequest.
         :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`
@@ -88,7 +85,6 @@ class PodRequest:
     def affinity(self):
         """Gets the affinity of this PodRequest.
 
-
         :return: The affinity of this PodRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Affinity`
         """
@@ -97,7 +93,6 @@ class PodRequest:
     @affinity.setter
     def affinity(self, affinity):
         """Sets the affinity of this PodRequest.
-
 
         :param affinity: The affinity of this PodRequest.
         :type affinity: :class:`huaweicloudsdkief.v1.Affinity`

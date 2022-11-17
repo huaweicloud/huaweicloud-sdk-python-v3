@@ -17,7 +17,6 @@ class UpdateServerBlockDeviceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateServerBlockDeviceRequest:
     def body(self):
         """Gets the body of this UpdateServerBlockDeviceRequest.
 
-
         :return: The body of this UpdateServerBlockDeviceRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceReq`
         """
@@ -114,7 +112,6 @@ class UpdateServerBlockDeviceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateServerBlockDeviceRequest.
-
 
         :param body: The body of this UpdateServerBlockDeviceRequest.
         :type body: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceReq`

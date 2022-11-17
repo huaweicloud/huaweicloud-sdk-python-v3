@@ -17,7 +17,6 @@ class DeleteAomMappingRulesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteAomMappingRulesResponse(SdkResponse):
     def body(self):
         """Gets the body of this DeleteAomMappingRulesResponse.
 
-
         :return: The body of this DeleteAomMappingRulesResponse.
         :rtype: list[str]
         """
@@ -58,7 +56,6 @@ class DeleteAomMappingRulesResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteAomMappingRulesResponse.
-
 
         :param body: The body of this DeleteAomMappingRulesResponse.
         :type body: list[str]

@@ -17,7 +17,6 @@ class ApplyWorkspaceReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -27,7 +26,8 @@ class ApplyWorkspaceReq:
         'subnet_ids': 'list[Subnet]',
         'manage_subnet_cidr': 'str',
         'access_mode': 'str',
-        'dedicated_subnets': 'str'
+        'dedicated_subnets': 'str',
+        'is_send_email': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +37,11 @@ class ApplyWorkspaceReq:
         'subnet_ids': 'subnet_ids',
         'manage_subnet_cidr': 'manage_subnet_cidr',
         'access_mode': 'access_mode',
-        'dedicated_subnets': 'dedicated_subnets'
+        'dedicated_subnets': 'dedicated_subnets',
+        'is_send_email': 'is_send_email'
     }
 
-    def __init__(self, ad_domains=None, enterprise_id=None, vpc_id=None, subnet_ids=None, manage_subnet_cidr=None, access_mode=None, dedicated_subnets=None):
+    def __init__(self, ad_domains=None, enterprise_id=None, vpc_id=None, subnet_ids=None, manage_subnet_cidr=None, access_mode=None, dedicated_subnets=None, is_send_email=None):
         """ApplyWorkspaceReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +60,8 @@ class ApplyWorkspaceReq:
         :type access_mode: str
         :param dedicated_subnets: 专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
         :type dedicated_subnets: str
+        :param is_send_email: 桌面退订是否发送邮件通知。
+        :type is_send_email: bool
         """
         
         
@@ -70,23 +73,28 @@ class ApplyWorkspaceReq:
         self._manage_subnet_cidr = None
         self._access_mode = None
         self._dedicated_subnets = None
+        self._is_send_email = None
         self.discriminator = None
 
         self.ad_domains = ad_domains
         if enterprise_id is not None:
             self.enterprise_id = enterprise_id
-        self.vpc_id = vpc_id
-        self.subnet_ids = subnet_ids
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if subnet_ids is not None:
+            self.subnet_ids = subnet_ids
         if manage_subnet_cidr is not None:
             self.manage_subnet_cidr = manage_subnet_cidr
-        self.access_mode = access_mode
+        if access_mode is not None:
+            self.access_mode = access_mode
         if dedicated_subnets is not None:
             self.dedicated_subnets = dedicated_subnets
+        if is_send_email is not None:
+            self.is_send_email = is_send_email
 
     @property
     def ad_domains(self):
         """Gets the ad_domains of this ApplyWorkspaceReq.
-
 
         :return: The ad_domains of this ApplyWorkspaceReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AdDomain`
@@ -96,7 +104,6 @@ class ApplyWorkspaceReq:
     @ad_domains.setter
     def ad_domains(self, ad_domains):
         """Sets the ad_domains of this ApplyWorkspaceReq.
-
 
         :param ad_domains: The ad_domains of this ApplyWorkspaceReq.
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdDomain`
@@ -234,6 +241,28 @@ class ApplyWorkspaceReq:
         :type dedicated_subnets: str
         """
         self._dedicated_subnets = dedicated_subnets
+
+    @property
+    def is_send_email(self):
+        """Gets the is_send_email of this ApplyWorkspaceReq.
+
+        桌面退订是否发送邮件通知。
+
+        :return: The is_send_email of this ApplyWorkspaceReq.
+        :rtype: bool
+        """
+        return self._is_send_email
+
+    @is_send_email.setter
+    def is_send_email(self, is_send_email):
+        """Sets the is_send_email of this ApplyWorkspaceReq.
+
+        桌面退订是否发送邮件通知。
+
+        :param is_send_email: The is_send_email of this ApplyWorkspaceReq.
+        :type is_send_email: bool
+        """
+        self._is_send_email = is_send_email
 
     def to_dict(self):
         """Returns the model properties as a dict"""

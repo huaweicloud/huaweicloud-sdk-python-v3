@@ -17,7 +17,6 @@ class ListJobsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -162,7 +161,6 @@ class ListJobsRequest:
     def db_name(self):
         """Gets the db_name of this ListJobsRequest.
 
-
         :return: The db_name of this ListJobsRequest.
         :rtype: str
         """
@@ -171,7 +169,6 @@ class ListJobsRequest:
     @db_name.setter
     def db_name(self, db_name):
         """Sets the db_name of this ListJobsRequest.
-
 
         :param db_name: The db_name of this ListJobsRequest.
         :type db_name: str
@@ -204,7 +201,6 @@ class ListJobsRequest:
     def engine_type(self):
         """Gets the engine_type of this ListJobsRequest.
 
-
         :return: The engine_type of this ListJobsRequest.
         :rtype: str
         """
@@ -213,7 +209,6 @@ class ListJobsRequest:
     @engine_type.setter
     def engine_type(self, engine_type):
         """Sets the engine_type of this ListJobsRequest.
-
 
         :param engine_type: The engine_type of this ListJobsRequest.
         :type engine_type: str
@@ -224,7 +219,6 @@ class ListJobsRequest:
     def job_status(self):
         """Gets the job_status of this ListJobsRequest.
 
-
         :return: The job_status of this ListJobsRequest.
         :rtype: str
         """
@@ -233,7 +227,6 @@ class ListJobsRequest:
     @job_status.setter
     def job_status(self, job_status):
         """Sets the job_status of this ListJobsRequest.
-
 
         :param job_status: The job_status of this ListJobsRequest.
         :type job_status: str
@@ -398,7 +391,6 @@ class ListJobsRequest:
     def table_name(self):
         """Gets the table_name of this ListJobsRequest.
 
-
         :return: The table_name of this ListJobsRequest.
         :rtype: str
         """
@@ -407,7 +399,6 @@ class ListJobsRequest:
     @table_name.setter
     def table_name(self, table_name):
         """Sets the table_name of this ListJobsRequest.
-
 
         :param table_name: The table_name of this ListJobsRequest.
         :type table_name: str

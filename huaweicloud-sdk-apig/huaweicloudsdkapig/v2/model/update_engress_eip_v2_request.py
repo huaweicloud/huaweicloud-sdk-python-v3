@@ -17,7 +17,6 @@ class UpdateEngressEipV2Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateEngressEipV2Request:
     def body(self):
         """Gets the body of this UpdateEngressEipV2Request.
 
-
         :return: The body of this UpdateEngressEipV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.OpenEngressEipReq`
         """
@@ -86,7 +84,6 @@ class UpdateEngressEipV2Request:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEngressEipV2Request.
-
 
         :param body: The body of this UpdateEngressEipV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.OpenEngressEipReq`

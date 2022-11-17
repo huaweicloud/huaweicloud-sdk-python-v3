@@ -17,7 +17,6 @@ class CreateDispatchesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateDispatchesRequest:
     def body(self):
         """Gets the body of this CreateDispatchesRequest.
 
-
         :return: The body of this CreateDispatchesRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.TaskDispatch`
         """
@@ -114,7 +112,6 @@ class CreateDispatchesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDispatchesRequest.
-
 
         :param body: The body of this CreateDispatchesRequest.
         :type body: :class:`huaweicloudsdkroma.v2.TaskDispatch`

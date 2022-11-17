@@ -17,7 +17,6 @@ class AssetProcessReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -142,7 +141,6 @@ class AssetProcessReq:
     def thumbnail(self):
         """Gets the thumbnail of this AssetProcessReq.
 
-
         :return: The thumbnail of this AssetProcessReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
@@ -151,7 +149,6 @@ class AssetProcessReq:
     @thumbnail.setter
     def thumbnail(self, thumbnail):
         """Sets the thumbnail of this AssetProcessReq.
-
 
         :param thumbnail: The thumbnail of this AssetProcessReq.
         :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`

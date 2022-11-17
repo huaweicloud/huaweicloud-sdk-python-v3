@@ -17,7 +17,6 @@ class CreateFlinkJarRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateFlinkJarRequest:
     def body(self):
         """Gets the body of this CreateFlinkJarRequest.
 
-
         :return: The body of this CreateFlinkJarRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkdefinedJobsReq`
         """
@@ -58,7 +56,6 @@ class CreateFlinkJarRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateFlinkJarRequest.
-
 
         :param body: The body of this CreateFlinkJarRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkdefinedJobsReq`

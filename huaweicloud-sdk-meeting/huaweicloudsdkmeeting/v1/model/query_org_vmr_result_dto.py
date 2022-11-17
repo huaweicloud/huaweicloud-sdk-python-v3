@@ -17,7 +17,6 @@ class QueryOrgVmrResultDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -251,7 +250,6 @@ class QueryOrgVmrResultDTO:
     def member(self):
         """Gets the member of this QueryOrgVmrResultDTO.
 
-
         :return: The member of this QueryOrgVmrResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
         """
@@ -260,7 +258,6 @@ class QueryOrgVmrResultDTO:
     @member.setter
     def member(self, member):
         """Sets the member of this QueryOrgVmrResultDTO.
-
 
         :param member: The member of this QueryOrgVmrResultDTO.
         :type member: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
@@ -271,7 +268,6 @@ class QueryOrgVmrResultDTO:
     def device(self):
         """Gets the device of this QueryOrgVmrResultDTO.
 
-
         :return: The device of this QueryOrgVmrResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
         """
@@ -280,7 +276,6 @@ class QueryOrgVmrResultDTO:
     @device.setter
     def device(self, device):
         """Sets the device of this QueryOrgVmrResultDTO.
-
 
         :param device: The device of this QueryOrgVmrResultDTO.
         :type device: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`

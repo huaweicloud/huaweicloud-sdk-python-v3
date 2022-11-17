@@ -17,7 +17,6 @@ class CreateSinkTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateSinkTaskRequest:
     def body(self):
         """Gets the body of this CreateSinkTaskRequest.
 
-
         :return: The body of this CreateSinkTaskRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskReq`
         """
@@ -86,7 +84,6 @@ class CreateSinkTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateSinkTaskRequest.
-
 
         :param body: The body of this CreateSinkTaskRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.CreateSinkTaskReq`

@@ -17,7 +17,6 @@ class ReinstallServerWithCloudInitOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -143,7 +142,6 @@ class ReinstallServerWithCloudInitOption:
     def metadata(self):
         """Gets the metadata of this ReinstallServerWithCloudInitOption.
 
-
         :return: The metadata of this ReinstallServerWithCloudInitOption.
         :rtype: :class:`huaweicloudsdkecs.v2.ReinstallSeverMetadata`
         """
@@ -152,7 +150,6 @@ class ReinstallServerWithCloudInitOption:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ReinstallServerWithCloudInitOption.
-
 
         :param metadata: The metadata of this ReinstallServerWithCloudInitOption.
         :type metadata: :class:`huaweicloudsdkecs.v2.ReinstallSeverMetadata`

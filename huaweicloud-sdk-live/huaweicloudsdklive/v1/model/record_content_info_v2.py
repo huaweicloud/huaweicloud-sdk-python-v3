@@ -17,7 +17,6 @@ class RecordContentInfoV2:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -258,7 +257,6 @@ class RecordContentInfoV2:
     def obs_addr(self):
         """Gets the obs_addr of this RecordContentInfoV2.
 
-
         :return: The obs_addr of this RecordContentInfoV2.
         :rtype: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
         """
@@ -267,7 +265,6 @@ class RecordContentInfoV2:
     @obs_addr.setter
     def obs_addr(self, obs_addr):
         """Sets the obs_addr of this RecordContentInfoV2.
-
 
         :param obs_addr: The obs_addr of this RecordContentInfoV2.
         :type obs_addr: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
@@ -278,7 +275,6 @@ class RecordContentInfoV2:
     def vod_info(self):
         """Gets the vod_info of this RecordContentInfoV2.
 
-
         :return: The vod_info of this RecordContentInfoV2.
         :rtype: :class:`huaweicloudsdklive.v1.VodInfoV2`
         """
@@ -287,7 +283,6 @@ class RecordContentInfoV2:
     @vod_info.setter
     def vod_info(self, vod_info):
         """Sets the vod_info of this RecordContentInfoV2.
-
 
         :param vod_info: The vod_info of this RecordContentInfoV2.
         :type vod_info: :class:`huaweicloudsdklive.v1.VodInfoV2`

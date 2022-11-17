@@ -17,7 +17,6 @@ class InsurancePolicyResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -148,7 +147,6 @@ class InsurancePolicyResult:
     def bill_number(self):
         """Gets the bill_number of this InsurancePolicyResult.
 
-
         :return: The bill_number of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -157,7 +155,6 @@ class InsurancePolicyResult:
     @bill_number.setter
     def bill_number(self, bill_number):
         """Sets the bill_number of this InsurancePolicyResult.
-
 
         :param bill_number: The bill_number of this InsurancePolicyResult.
         :type bill_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -168,7 +165,6 @@ class InsurancePolicyResult:
     def company(self):
         """Gets the company of this InsurancePolicyResult.
 
-
         :return: The company of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -177,7 +173,6 @@ class InsurancePolicyResult:
     @company.setter
     def company(self, company):
         """Sets the company of this InsurancePolicyResult.
-
 
         :param company: The company of this InsurancePolicyResult.
         :type company: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -188,7 +183,6 @@ class InsurancePolicyResult:
     def effective_date(self):
         """Gets the effective_date of this InsurancePolicyResult.
 
-
         :return: The effective_date of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -197,7 +191,6 @@ class InsurancePolicyResult:
     @effective_date.setter
     def effective_date(self, effective_date):
         """Sets the effective_date of this InsurancePolicyResult.
-
 
         :param effective_date: The effective_date of this InsurancePolicyResult.
         :type effective_date: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -208,7 +201,6 @@ class InsurancePolicyResult:
     def applicant_name(self):
         """Gets the applicant_name of this InsurancePolicyResult.
 
-
         :return: The applicant_name of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -217,7 +209,6 @@ class InsurancePolicyResult:
     @applicant_name.setter
     def applicant_name(self, applicant_name):
         """Sets the applicant_name of this InsurancePolicyResult.
-
 
         :param applicant_name: The applicant_name of this InsurancePolicyResult.
         :type applicant_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -228,7 +219,6 @@ class InsurancePolicyResult:
     def applicant_sex(self):
         """Gets the applicant_sex of this InsurancePolicyResult.
 
-
         :return: The applicant_sex of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -237,7 +227,6 @@ class InsurancePolicyResult:
     @applicant_sex.setter
     def applicant_sex(self, applicant_sex):
         """Sets the applicant_sex of this InsurancePolicyResult.
-
 
         :param applicant_sex: The applicant_sex of this InsurancePolicyResult.
         :type applicant_sex: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -248,7 +237,6 @@ class InsurancePolicyResult:
     def applicant_birthday(self):
         """Gets the applicant_birthday of this InsurancePolicyResult.
 
-
         :return: The applicant_birthday of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -257,7 +245,6 @@ class InsurancePolicyResult:
     @applicant_birthday.setter
     def applicant_birthday(self, applicant_birthday):
         """Sets the applicant_birthday of this InsurancePolicyResult.
-
 
         :param applicant_birthday: The applicant_birthday of this InsurancePolicyResult.
         :type applicant_birthday: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -268,7 +255,6 @@ class InsurancePolicyResult:
     def applicant_id_type(self):
         """Gets the applicant_id_type of this InsurancePolicyResult.
 
-
         :return: The applicant_id_type of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -277,7 +263,6 @@ class InsurancePolicyResult:
     @applicant_id_type.setter
     def applicant_id_type(self, applicant_id_type):
         """Sets the applicant_id_type of this InsurancePolicyResult.
-
 
         :param applicant_id_type: The applicant_id_type of this InsurancePolicyResult.
         :type applicant_id_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -288,7 +273,6 @@ class InsurancePolicyResult:
     def applicant_id_number(self):
         """Gets the applicant_id_number of this InsurancePolicyResult.
 
-
         :return: The applicant_id_number of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
         """
@@ -297,7 +281,6 @@ class InsurancePolicyResult:
     @applicant_id_number.setter
     def applicant_id_number(self, applicant_id_number):
         """Sets the applicant_id_number of this InsurancePolicyResult.
-
 
         :param applicant_id_number: The applicant_id_number of this InsurancePolicyResult.
         :type applicant_id_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`

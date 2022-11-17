@@ -17,7 +17,6 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -836,7 +835,6 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     def func_vpc(self):
         """Gets the func_vpc of this UpdateFunctionMaxInstanceConfigResponse.
 
-
         :return: The func_vpc of this UpdateFunctionMaxInstanceConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         """
@@ -845,7 +843,6 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     @func_vpc.setter
     def func_vpc(self, func_vpc):
         """Sets the func_vpc of this UpdateFunctionMaxInstanceConfigResponse.
-
 
         :param func_vpc: The func_vpc of this UpdateFunctionMaxInstanceConfigResponse.
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -856,7 +853,6 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     def mount_config(self):
         """Gets the mount_config of this UpdateFunctionMaxInstanceConfigResponse.
 
-
         :return: The mount_config of this UpdateFunctionMaxInstanceConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         """
@@ -865,7 +861,6 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     @mount_config.setter
     def mount_config(self, mount_config):
         """Sets the mount_config of this UpdateFunctionMaxInstanceConfigResponse.
-
 
         :param mount_config: The mount_config of this UpdateFunctionMaxInstanceConfigResponse.
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
@@ -876,7 +871,6 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     def strategy_config(self):
         """Gets the strategy_config of this UpdateFunctionMaxInstanceConfigResponse.
 
-
         :return: The strategy_config of this UpdateFunctionMaxInstanceConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
@@ -885,7 +879,6 @@ class UpdateFunctionMaxInstanceConfigResponse(SdkResponse):
     @strategy_config.setter
     def strategy_config(self, strategy_config):
         """Sets the strategy_config of this UpdateFunctionMaxInstanceConfigResponse.
-
 
         :param strategy_config: The strategy_config of this UpdateFunctionMaxInstanceConfigResponse.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`

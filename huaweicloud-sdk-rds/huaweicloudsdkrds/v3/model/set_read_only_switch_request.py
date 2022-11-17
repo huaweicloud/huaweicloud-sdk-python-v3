@@ -17,7 +17,6 @@ class SetReadOnlySwitchRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class SetReadOnlySwitchRequest:
     def body(self):
         """Gets the body of this SetReadOnlySwitchRequest.
 
-
         :return: The body of this SetReadOnlySwitchRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.MysqlReadOnlySwitch`
         """
@@ -115,7 +113,6 @@ class SetReadOnlySwitchRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetReadOnlySwitchRequest.
-
 
         :param body: The body of this SetReadOnlySwitchRequest.
         :type body: :class:`huaweicloudsdkrds.v3.MysqlReadOnlySwitch`

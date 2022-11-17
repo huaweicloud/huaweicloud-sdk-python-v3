@@ -17,7 +17,6 @@ class TagDeviceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class TagDeviceRequest:
     def body(self):
         """Gets the body of this TagDeviceRequest.
 
-
         :return: The body of this TagDeviceRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.BindTagsDTO`
         """
@@ -87,7 +85,6 @@ class TagDeviceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this TagDeviceRequest.
-
 
         :param body: The body of this TagDeviceRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.BindTagsDTO`

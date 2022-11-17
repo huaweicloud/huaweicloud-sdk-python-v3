@@ -17,7 +17,6 @@ class UpdatePhoneNameRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdatePhoneNameRequest:
     def body(self):
         """Gets the body of this UpdatePhoneNameRequest.
 
-
         :return: The body of this UpdatePhoneNameRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdatePhoneNameRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePhoneNameRequest.
-
 
         :param body: The body of this UpdatePhoneNameRequest.
         :type body: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameRequestBody`

@@ -17,7 +17,6 @@ class SetGaussMySqlQuotasRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class SetGaussMySqlQuotasRequest:
     def body(self):
         """Gets the body of this SetGaussMySqlQuotasRequest.
 
-
         :return: The body of this SetGaussMySqlQuotasRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetQuotasRequestBody`
         """
@@ -87,7 +85,6 @@ class SetGaussMySqlQuotasRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetGaussMySqlQuotasRequest.
-
 
         :param body: The body of this SetGaussMySqlQuotasRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.SetQuotasRequestBody`

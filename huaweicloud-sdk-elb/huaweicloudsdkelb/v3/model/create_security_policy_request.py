@@ -17,7 +17,6 @@ class CreateSecurityPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateSecurityPolicyRequest:
     def body(self):
         """Gets the body of this CreateSecurityPolicyRequest.
 
-
         :return: The body of this CreateSecurityPolicyRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateSecurityPolicyRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateSecurityPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateSecurityPolicyRequest.
-
 
         :param body: The body of this CreateSecurityPolicyRequest.
         :type body: :class:`huaweicloudsdkelb.v3.CreateSecurityPolicyRequestBody`

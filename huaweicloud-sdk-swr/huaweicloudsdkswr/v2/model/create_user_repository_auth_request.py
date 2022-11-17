@@ -17,7 +17,6 @@ class CreateUserRepositoryAuthRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateUserRepositoryAuthRequest:
     def body(self):
         """Gets the body of this CreateUserRepositoryAuthRequest.
 
-
         :return: The body of this CreateUserRepositoryAuthRequest.
         :rtype: list[:class:`huaweicloudsdkswr.v2.UserAuth`]
         """
@@ -114,7 +112,6 @@ class CreateUserRepositoryAuthRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateUserRepositoryAuthRequest.
-
 
         :param body: The body of this CreateUserRepositoryAuthRequest.
         :type body: list[:class:`huaweicloudsdkswr.v2.UserAuth`]

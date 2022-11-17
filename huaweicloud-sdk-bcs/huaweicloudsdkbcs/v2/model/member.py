@@ -17,7 +17,6 @@ class Member:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -143,7 +142,6 @@ class Member:
     def invitor_info(self):
         """Gets the invitor_info of this Member.
 
-
         :return: The invitor_info of this Member.
         :rtype: :class:`huaweicloudsdkbcs.v2.MemberInvitor`
         """
@@ -152,7 +150,6 @@ class Member:
     @invitor_info.setter
     def invitor_info(self, invitor_info):
         """Sets the invitor_info of this Member.
-
 
         :param invitor_info: The invitor_info of this Member.
         :type invitor_info: :class:`huaweicloudsdkbcs.v2.MemberInvitor`
@@ -163,7 +160,6 @@ class Member:
     def invitee_info(self):
         """Gets the invitee_info of this Member.
 
-
         :return: The invitee_info of this Member.
         :rtype: :class:`huaweicloudsdkbcs.v2.MemberInvitee`
         """
@@ -172,7 +168,6 @@ class Member:
     @invitee_info.setter
     def invitee_info(self, invitee_info):
         """Sets the invitee_info of this Member.
-
 
         :param invitee_info: The invitee_info of this Member.
         :type invitee_info: :class:`huaweicloudsdkbcs.v2.MemberInvitee`

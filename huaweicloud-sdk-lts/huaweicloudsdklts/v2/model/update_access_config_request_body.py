@@ -17,7 +17,6 @@ class UpdateAccessConfigRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -91,7 +90,6 @@ class UpdateAccessConfigRequestBody:
     def access_config_detail(self):
         """Gets the access_config_detail of this UpdateAccessConfigRequestBody.
 
-
         :return: The access_config_detail of this UpdateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
         """
@@ -100,7 +98,6 @@ class UpdateAccessConfigRequestBody:
     @access_config_detail.setter
     def access_config_detail(self, access_config_detail):
         """Sets the access_config_detail of this UpdateAccessConfigRequestBody.
-
 
         :param access_config_detail: The access_config_detail of this UpdateAccessConfigRequestBody.
         :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatil`
@@ -111,7 +108,6 @@ class UpdateAccessConfigRequestBody:
     def host_group_info(self):
         """Gets the host_group_info of this UpdateAccessConfigRequestBody.
 
-
         :return: The host_group_info of this UpdateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
         """
@@ -120,7 +116,6 @@ class UpdateAccessConfigRequestBody:
     @host_group_info.setter
     def host_group_info(self, host_group_info):
         """Sets the host_group_info of this UpdateAccessConfigRequestBody.
-
 
         :param host_group_info: The host_group_info of this UpdateAccessConfigRequestBody.
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
@@ -131,7 +126,6 @@ class UpdateAccessConfigRequestBody:
     def access_config_tag(self):
         """Gets the access_config_tag of this UpdateAccessConfigRequestBody.
 
-
         :return: The access_config_tag of this UpdateAccessConfigRequestBody.
         :rtype: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]
         """
@@ -140,7 +134,6 @@ class UpdateAccessConfigRequestBody:
     @access_config_tag.setter
     def access_config_tag(self, access_config_tag):
         """Sets the access_config_tag of this UpdateAccessConfigRequestBody.
-
 
         :param access_config_tag: The access_config_tag of this UpdateAccessConfigRequestBody.
         :type access_config_tag: list[:class:`huaweicloudsdklts.v2.AccessConfigTag`]

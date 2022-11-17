@@ -17,7 +17,6 @@ class UpdateRetentionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class UpdateRetentionRequest:
     def body(self):
         """Gets the body of this UpdateRetentionRequest.
 
-
         :return: The body of this UpdateRetentionRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRetentionRequestBody`
         """
@@ -142,7 +140,6 @@ class UpdateRetentionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateRetentionRequest.
-
 
         :param body: The body of this UpdateRetentionRequest.
         :type body: :class:`huaweicloudsdkswr.v2.UpdateRetentionRequestBody`

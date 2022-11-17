@@ -17,7 +17,6 @@ class LineCompareResultDetails:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -28,7 +27,7 @@ class LineCompareResultDetails:
 
     attribute_map = {
         'source_db_name': 'source_db_name',
-        'line_compare_detail': 'LineCompareDetail',
+        'line_compare_detail': 'line_compare_detail',
         'line_compare_detail_count': 'line_compare_detail_count'
     }
 

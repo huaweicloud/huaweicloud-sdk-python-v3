@@ -17,7 +17,6 @@ class UpdateDDosRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateDDosRequest:
     def body(self):
         """Gets the body of this UpdateDDosRequest.
 
-
         :return: The body of this UpdateDDosRequest.
         :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAntiDDosServiceRequestBody`
         """
@@ -115,7 +113,6 @@ class UpdateDDosRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDDosRequest.
-
 
         :param body: The body of this UpdateDDosRequest.
         :type body: :class:`huaweicloudsdkantiddos.v1.UpdateAntiDDosServiceRequestBody`

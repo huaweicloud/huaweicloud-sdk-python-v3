@@ -17,7 +17,6 @@ class ShowMigprojectResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -221,7 +220,6 @@ class ShowMigprojectResponse(SdkResponse):
     def template(self):
         """Gets the template of this ShowMigprojectResponse.
 
-
         :return: The template of this ShowMigprojectResponse.
         :rtype: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
         """
@@ -230,7 +228,6 @@ class ShowMigprojectResponse(SdkResponse):
     @template.setter
     def template(self, template):
         """Sets the template of this ShowMigprojectResponse.
-
 
         :param template: The template of this ShowMigprojectResponse.
         :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`

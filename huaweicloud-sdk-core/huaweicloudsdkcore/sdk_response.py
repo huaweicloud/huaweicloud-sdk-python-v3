@@ -44,7 +44,7 @@ class FutureSdkResponse:
         try:
             future_response = self._future.result().result()
             response = future_response.data \
-                if hasattr(future_response, 'data') and future_response.data is not None else future_response
+                if hasattr(future_response, "data") and future_response.data is not None else future_response
         except ConnectionError as connectionError:
             for each in connectionError.args:
                 if isinstance(each.reason, SSLError):

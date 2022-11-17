@@ -17,7 +17,6 @@ class ListNameServersResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListNameServersResponse(SdkResponse):
     def nameservers(self):
         """Gets the nameservers of this ListNameServersResponse.
 
-
         :return: The nameservers of this ListNameServersResponse.
         :rtype: list[:class:`huaweicloudsdkdns.v2.NameServersResp`]
         """
@@ -58,7 +56,6 @@ class ListNameServersResponse(SdkResponse):
     @nameservers.setter
     def nameservers(self, nameservers):
         """Sets the nameservers of this ListNameServersResponse.
-
 
         :param nameservers: The nameservers of this ListNameServersResponse.
         :type nameservers: list[:class:`huaweicloudsdkdns.v2.NameServersResp`]

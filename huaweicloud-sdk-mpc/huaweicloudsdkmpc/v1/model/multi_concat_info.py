@@ -17,7 +17,6 @@ class MultiConcatInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -141,7 +140,6 @@ class MultiConcatInfo:
     def output(self):
         """Gets the output of this MultiConcatInfo.
 
-
         :return: The output of this MultiConcatInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -150,7 +148,6 @@ class MultiConcatInfo:
     @output.setter
     def output(self, output):
         """Sets the output of this MultiConcatInfo.
-
 
         :param output: The output of this MultiConcatInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

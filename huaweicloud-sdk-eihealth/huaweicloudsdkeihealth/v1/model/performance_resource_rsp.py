@@ -17,7 +17,6 @@ class PerformanceResourceRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -181,7 +180,6 @@ class PerformanceResourceRsp:
     def spec(self):
         """Gets the spec of this PerformanceResourceRsp.
 
-
         :return: The spec of this PerformanceResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SpecDto`
         """
@@ -190,7 +188,6 @@ class PerformanceResourceRsp:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this PerformanceResourceRsp.
-
 
         :param spec: The spec of this PerformanceResourceRsp.
         :type spec: :class:`huaweicloudsdkeihealth.v1.SpecDto`

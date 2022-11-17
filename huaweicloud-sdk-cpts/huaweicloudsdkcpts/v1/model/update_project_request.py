@@ -17,7 +17,6 @@ class UpdateProjectRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateProjectRequest:
     def body(self):
         """Gets the body of this UpdateProjectRequest.
 
-
         :return: The body of this UpdateProjectRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateProjectRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateProjectRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateProjectRequest.
-
 
         :param body: The body of this UpdateProjectRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.UpdateProjectRequestBody`

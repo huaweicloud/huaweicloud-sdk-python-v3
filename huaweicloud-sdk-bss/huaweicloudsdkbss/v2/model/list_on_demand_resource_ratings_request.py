@@ -17,7 +17,6 @@ class ListOnDemandResourceRatingsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListOnDemandResourceRatingsRequest:
     def body(self):
         """Gets the body of this ListOnDemandResourceRatingsRequest.
 
-
         :return: The body of this ListOnDemandResourceRatingsRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.RateOnDemandReq`
         """
@@ -58,7 +56,6 @@ class ListOnDemandResourceRatingsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListOnDemandResourceRatingsRequest.
-
 
         :param body: The body of this ListOnDemandResourceRatingsRequest.
         :type body: :class:`huaweicloudsdkbss.v2.RateOnDemandReq`

@@ -17,7 +17,6 @@ class ClipInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ClipInfo:
     def input(self):
         """Gets the input of this ClipInfo.
 
-
         :return: The input of this ClipInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -72,7 +70,6 @@ class ClipInfo:
     @input.setter
     def input(self, input):
         """Sets the input of this ClipInfo.
-
 
         :param input: The input of this ClipInfo.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

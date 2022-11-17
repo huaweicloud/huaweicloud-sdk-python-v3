@@ -17,7 +17,6 @@ class UpdateAgencyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateAgencyRequest:
     def body(self):
         """Gets the body of this UpdateAgencyRequest.
 
-
         :return: The body of this UpdateAgencyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateAgencyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateAgencyRequest.
-
 
         :param body: The body of this UpdateAgencyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequestBody`

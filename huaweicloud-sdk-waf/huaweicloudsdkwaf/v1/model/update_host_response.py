@@ -17,7 +17,6 @@ class UpdateHostResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -648,7 +647,6 @@ class UpdateHostResponse(SdkResponse):
     def block_page(self):
         """Gets the block_page of this UpdateHostResponse.
 
-
         :return: The block_page of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
@@ -657,7 +655,6 @@ class UpdateHostResponse(SdkResponse):
     @block_page.setter
     def block_page(self, block_page):
         """Sets the block_page of this UpdateHostResponse.
-
 
         :param block_page: The block_page of this UpdateHostResponse.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -712,7 +709,6 @@ class UpdateHostResponse(SdkResponse):
     def traffic_mark(self):
         """Gets the traffic_mark of this UpdateHostResponse.
 
-
         :return: The traffic_mark of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         """
@@ -721,7 +717,6 @@ class UpdateHostResponse(SdkResponse):
     @traffic_mark.setter
     def traffic_mark(self, traffic_mark):
         """Sets the traffic_mark of this UpdateHostResponse.
-
 
         :param traffic_mark: The traffic_mark of this UpdateHostResponse.
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -732,7 +727,6 @@ class UpdateHostResponse(SdkResponse):
     def circuit_breaker(self):
         """Gets the circuit_breaker of this UpdateHostResponse.
 
-
         :return: The circuit_breaker of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
         """
@@ -741,7 +735,6 @@ class UpdateHostResponse(SdkResponse):
     @circuit_breaker.setter
     def circuit_breaker(self, circuit_breaker):
         """Sets the circuit_breaker of this UpdateHostResponse.
-
 
         :param circuit_breaker: The circuit_breaker of this UpdateHostResponse.
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
@@ -774,7 +767,6 @@ class UpdateHostResponse(SdkResponse):
     def timeout_config(self):
         """Gets the timeout_config of this UpdateHostResponse.
 
-
         :return: The timeout_config of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
@@ -783,7 +775,6 @@ class UpdateHostResponse(SdkResponse):
     @timeout_config.setter
     def timeout_config(self, timeout_config):
         """Sets the timeout_config of this UpdateHostResponse.
-
 
         :param timeout_config: The timeout_config of this UpdateHostResponse.
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
@@ -794,7 +785,6 @@ class UpdateHostResponse(SdkResponse):
     def flag(self):
         """Gets the flag of this UpdateHostResponse.
 
-
         :return: The flag of this UpdateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
@@ -803,7 +793,6 @@ class UpdateHostResponse(SdkResponse):
     @flag.setter
     def flag(self, flag):
         """Sets the flag of this UpdateHostResponse.
-
 
         :param flag: The flag of this UpdateHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`

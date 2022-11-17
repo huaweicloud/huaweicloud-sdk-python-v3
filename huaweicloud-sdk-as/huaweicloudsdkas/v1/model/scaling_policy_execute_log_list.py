@@ -17,7 +17,6 @@ class ScalingPolicyExecuteLogList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -455,7 +454,6 @@ class ScalingPolicyExecuteLogList:
     def meta_data(self):
         """Gets the meta_data of this ScalingPolicyExecuteLogList.
 
-
         :return: The meta_data of this ScalingPolicyExecuteLogList.
         :rtype: :class:`huaweicloudsdkas.v1.EipMetaData`
         """
@@ -464,7 +462,6 @@ class ScalingPolicyExecuteLogList:
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this ScalingPolicyExecuteLogList.
-
 
         :param meta_data: The meta_data of this ScalingPolicyExecuteLogList.
         :type meta_data: :class:`huaweicloudsdkas.v1.EipMetaData`

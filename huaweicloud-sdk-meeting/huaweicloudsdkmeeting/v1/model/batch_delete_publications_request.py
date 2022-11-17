@@ -17,7 +17,6 @@ class BatchDeletePublicationsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class BatchDeletePublicationsRequest:
     def body(self):
         """Gets the body of this BatchDeletePublicationsRequest.
 
-
         :return: The body of this BatchDeletePublicationsRequest.
         :rtype: list[str]
         """
@@ -116,7 +114,6 @@ class BatchDeletePublicationsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeletePublicationsRequest.
-
 
         :param body: The body of this BatchDeletePublicationsRequest.
         :type body: list[str]

@@ -17,7 +17,6 @@ class UpdateInstanceAutoCreateTopicRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateInstanceAutoCreateTopicRequest:
     def body(self):
         """Gets the body of this UpdateInstanceAutoCreateTopicRequest.
 
-
         :return: The body of this UpdateInstanceAutoCreateTopicRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicReq`
         """
@@ -86,7 +84,6 @@ class UpdateInstanceAutoCreateTopicRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateInstanceAutoCreateTopicRequest.
-
 
         :param body: The body of this UpdateInstanceAutoCreateTopicRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicReq`

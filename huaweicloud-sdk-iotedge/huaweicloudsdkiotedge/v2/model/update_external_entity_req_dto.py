@@ -17,7 +17,6 @@ class UpdateExternalEntityReqDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateExternalEntityReqDTO:
     def mqtt_connection_info(self):
         """Gets the mqtt_connection_info of this UpdateExternalEntityReqDTO.
 
-
         :return: The mqtt_connection_info of this UpdateExternalEntityReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
         """
@@ -114,7 +112,6 @@ class UpdateExternalEntityReqDTO:
     @mqtt_connection_info.setter
     def mqtt_connection_info(self, mqtt_connection_info):
         """Sets the mqtt_connection_info of this UpdateExternalEntityReqDTO.
-
 
         :param mqtt_connection_info: The mqtt_connection_info of this UpdateExternalEntityReqDTO.
         :type mqtt_connection_info: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`

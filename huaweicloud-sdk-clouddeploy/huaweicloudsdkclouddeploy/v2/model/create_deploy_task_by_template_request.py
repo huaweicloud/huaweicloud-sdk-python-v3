@@ -17,7 +17,6 @@ class CreateDeployTaskByTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateDeployTaskByTemplateRequest:
     def body(self):
         """Gets the body of this CreateDeployTaskByTemplateRequest.
 
-
         :return: The body of this CreateDeployTaskByTemplateRequest.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.TemplateTaskRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateDeployTaskByTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDeployTaskByTemplateRequest.
-
 
         :param body: The body of this CreateDeployTaskByTemplateRequest.
         :type body: :class:`huaweicloudsdkclouddeploy.v2.TemplateTaskRequestBody`

@@ -17,7 +17,6 @@ class CreateInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -197,7 +196,6 @@ class CreateInstanceResponse(SdkResponse):
     def datastore(self):
         """Gets the datastore of this CreateInstanceResponse.
 
-
         :return: The datastore of this CreateInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreResult`
         """
@@ -206,7 +204,6 @@ class CreateInstanceResponse(SdkResponse):
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CreateInstanceResponse.
-
 
         :param datastore: The datastore of this CreateInstanceResponse.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreResult`
@@ -437,7 +434,6 @@ class CreateInstanceResponse(SdkResponse):
     def backup_strategy(self):
         """Gets the backup_strategy of this CreateInstanceResponse.
 
-
         :return: The backup_strategy of this CreateInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyResult`
         """
@@ -446,7 +442,6 @@ class CreateInstanceResponse(SdkResponse):
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this CreateInstanceResponse.
-
 
         :param backup_strategy: The backup_strategy of this CreateInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyResult`
@@ -567,7 +562,6 @@ class CreateInstanceResponse(SdkResponse):
     def charge_info(self):
         """Gets the charge_info of this CreateInstanceResponse.
 
-
         :return: The charge_info of this CreateInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoResult`
         """
@@ -576,7 +570,6 @@ class CreateInstanceResponse(SdkResponse):
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this CreateInstanceResponse.
-
 
         :param charge_info: The charge_info of this CreateInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoResult`

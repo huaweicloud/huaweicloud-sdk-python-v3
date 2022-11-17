@@ -17,7 +17,6 @@ class SearchFaceByFileRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SearchFaceByFileRequest:
     def body(self):
         """Gets the body of this SearchFaceByFileRequest.
 
-
         :return: The body of this SearchFaceByFileRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileRequestBody`
         """
@@ -86,7 +84,6 @@ class SearchFaceByFileRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SearchFaceByFileRequest.
-
 
         :param body: The body of this SearchFaceByFileRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileRequestBody`

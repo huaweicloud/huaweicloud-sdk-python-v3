@@ -17,7 +17,6 @@ class ListProductTwoTemplatesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListProductTwoTemplatesResponse(SdkResponse):
     def error(self):
         """Gets the error of this ListProductTwoTemplatesResponse.
 
-
         :return: The error of this ListProductTwoTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ListProductTwoTemplatesResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ListProductTwoTemplatesResponse.
-
 
         :param error: The error of this ListProductTwoTemplatesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class ListProductTwoTemplatesResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListProductTwoTemplatesResponse.
 
-
         :return: The result of this ListProductTwoTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.TemplateListInfo`
         """
@@ -92,7 +88,6 @@ class ListProductTwoTemplatesResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ListProductTwoTemplatesResponse.
-
 
         :param result: The result of this ListProductTwoTemplatesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.TemplateListInfo`

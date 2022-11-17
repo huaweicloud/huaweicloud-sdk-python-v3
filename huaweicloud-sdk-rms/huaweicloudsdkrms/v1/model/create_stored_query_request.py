@@ -17,7 +17,6 @@ class CreateStoredQueryRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateStoredQueryRequest:
     def body(self):
         """Gets the body of this CreateStoredQueryRequest.
 
-
         :return: The body of this CreateStoredQueryRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.StoredQueryRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateStoredQueryRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateStoredQueryRequest.
-
 
         :param body: The body of this CreateStoredQueryRequest.
         :type body: :class:`huaweicloudsdkrms.v1.StoredQueryRequestBody`

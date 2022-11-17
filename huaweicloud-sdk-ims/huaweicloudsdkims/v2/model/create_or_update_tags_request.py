@@ -17,7 +17,6 @@ class CreateOrUpdateTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateOrUpdateTagsRequest:
     def body(self):
         """Gets the body of this CreateOrUpdateTagsRequest.
 
-
         :return: The body of this CreateOrUpdateTagsRequest.
         :rtype: :class:`huaweicloudsdkims.v2.AddOrUpdateTagsRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateOrUpdateTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateOrUpdateTagsRequest.
-
 
         :param body: The body of this CreateOrUpdateTagsRequest.
         :type body: :class:`huaweicloudsdkims.v2.AddOrUpdateTagsRequestBody`

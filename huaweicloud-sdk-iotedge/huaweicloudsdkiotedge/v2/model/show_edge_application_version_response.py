@@ -17,7 +17,6 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -409,7 +408,6 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
     def liveness_probe(self):
         """Gets the liveness_probe of this ShowEdgeApplicationVersionResponse.
 
-
         :return: The liveness_probe of this ShowEdgeApplicationVersionResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
@@ -418,7 +416,6 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
         """Sets the liveness_probe of this ShowEdgeApplicationVersionResponse.
-
 
         :param liveness_probe: The liveness_probe of this ShowEdgeApplicationVersionResponse.
         :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -429,7 +426,6 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
     def readiness_probe(self):
         """Gets the readiness_probe of this ShowEdgeApplicationVersionResponse.
 
-
         :return: The readiness_probe of this ShowEdgeApplicationVersionResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
@@ -438,7 +434,6 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
         """Sets the readiness_probe of this ShowEdgeApplicationVersionResponse.
-
 
         :param readiness_probe: The readiness_probe of this ShowEdgeApplicationVersionResponse.
         :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -515,7 +510,6 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
     def container_settings(self):
         """Gets the container_settings of this ShowEdgeApplicationVersionResponse.
 
-
         :return: The container_settings of this ShowEdgeApplicationVersionResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         """
@@ -524,7 +518,6 @@ class ShowEdgeApplicationVersionResponse(SdkResponse):
     @container_settings.setter
     def container_settings(self, container_settings):
         """Sets the container_settings of this ShowEdgeApplicationVersionResponse.
-
 
         :param container_settings: The container_settings of this ShowEdgeApplicationVersionResponse.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`

@@ -17,7 +17,6 @@ class QuoteInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class QuoteInstanceResponse(SdkResponse):
     def body(self):
         """Gets the body of this QuoteInstanceResponse.
 
-
         :return: The body of this QuoteInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkeihealth.v1.QuoteDatabaseResultRsp`]
         """
@@ -58,7 +56,6 @@ class QuoteInstanceResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this QuoteInstanceResponse.
-
 
         :param body: The body of this QuoteInstanceResponse.
         :type body: list[:class:`huaweicloudsdkeihealth.v1.QuoteDatabaseResultRsp`]

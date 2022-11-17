@@ -17,7 +17,6 @@ class DeepLearingParam:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -98,7 +97,6 @@ class DeepLearingParam:
     def initial_parameters(self):
         """Gets the initial_parameters of this DeepLearingParam.
 
-
         :return: The initial_parameters of this DeepLearingParam.
         :rtype: :class:`huaweicloudsdkres.v1.Initial`
         """
@@ -107,7 +105,6 @@ class DeepLearingParam:
     @initial_parameters.setter
     def initial_parameters(self, initial_parameters):
         """Sets the initial_parameters of this DeepLearingParam.
-
 
         :param initial_parameters: The initial_parameters of this DeepLearingParam.
         :type initial_parameters: :class:`huaweicloudsdkres.v1.Initial`
@@ -118,7 +115,6 @@ class DeepLearingParam:
     def optimize_parameters(self):
         """Gets the optimize_parameters of this DeepLearingParam.
 
-
         :return: The optimize_parameters of this DeepLearingParam.
         :rtype: :class:`huaweicloudsdkres.v1.Optimizer`
         """
@@ -127,7 +123,6 @@ class DeepLearingParam:
     @optimize_parameters.setter
     def optimize_parameters(self, optimize_parameters):
         """Sets the optimize_parameters of this DeepLearingParam.
-
 
         :param optimize_parameters: The optimize_parameters of this DeepLearingParam.
         :type optimize_parameters: :class:`huaweicloudsdkres.v1.Optimizer`
@@ -138,7 +133,6 @@ class DeepLearingParam:
     def regular_parameters(self):
         """Gets the regular_parameters of this DeepLearingParam.
 
-
         :return: The regular_parameters of this DeepLearingParam.
         :rtype: :class:`huaweicloudsdkres.v1.Regular`
         """
@@ -147,7 +141,6 @@ class DeepLearingParam:
     @regular_parameters.setter
     def regular_parameters(self, regular_parameters):
         """Sets the regular_parameters of this DeepLearingParam.
-
 
         :param regular_parameters: The regular_parameters of this DeepLearingParam.
         :type regular_parameters: :class:`huaweicloudsdkres.v1.Regular`

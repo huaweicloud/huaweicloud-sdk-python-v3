@@ -17,7 +17,6 @@ class CreateBatchTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateBatchTaskRequest:
     def body(self):
         """Gets the body of this CreateBatchTaskRequest.
 
-
         :return: The body of this CreateBatchTaskRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateBatchTask`
         """
@@ -87,7 +85,6 @@ class CreateBatchTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateBatchTaskRequest.
-
 
         :param body: The body of this CreateBatchTaskRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.CreateBatchTask`

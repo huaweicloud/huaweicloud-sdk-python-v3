@@ -17,7 +17,6 @@ class ShowPrivateKeyVerifyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowPrivateKeyVerifyResponse(SdkResponse):
     def error(self):
         """Gets the error of this ShowPrivateKeyVerifyResponse.
 
-
         :return: The error of this ShowPrivateKeyVerifyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ShowPrivateKeyVerifyResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ShowPrivateKeyVerifyResponse.
-
 
         :param error: The error of this ShowPrivateKeyVerifyResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`

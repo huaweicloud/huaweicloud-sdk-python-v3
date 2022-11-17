@@ -17,7 +17,6 @@ class ListMetricItemsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ListMetricItemsResponse(SdkResponse):
     def meta_data(self):
         """Gets the meta_data of this ListMetricItemsResponse.
 
-
         :return: The meta_data of this ListMetricItemsResponse.
         :rtype: :class:`huaweicloudsdkaom.v2.MetaData`
         """
@@ -65,7 +63,6 @@ class ListMetricItemsResponse(SdkResponse):
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this ListMetricItemsResponse.
-
 
         :param meta_data: The meta_data of this ListMetricItemsResponse.
         :type meta_data: :class:`huaweicloudsdkaom.v2.MetaData`

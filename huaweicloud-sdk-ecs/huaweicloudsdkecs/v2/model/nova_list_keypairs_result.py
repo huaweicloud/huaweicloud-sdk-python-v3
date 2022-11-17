@@ -17,7 +17,6 @@ class NovaListKeypairsResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class NovaListKeypairsResult:
     def keypair(self):
         """Gets the keypair of this NovaListKeypairsResult.
 
-
         :return: The keypair of this NovaListKeypairsResult.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaSimpleKeypair`
         """
@@ -57,7 +55,6 @@ class NovaListKeypairsResult:
     @keypair.setter
     def keypair(self, keypair):
         """Sets the keypair of this NovaListKeypairsResult.
-
 
         :param keypair: The keypair of this NovaListKeypairsResult.
         :type keypair: :class:`huaweicloudsdkecs.v2.NovaSimpleKeypair`

@@ -17,7 +17,6 @@ class CreateComponentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -206,7 +205,6 @@ class CreateComponentResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this CreateComponentResponse.
 
-
         :return: The runtime of this CreateComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
         """
@@ -215,7 +213,6 @@ class CreateComponentResponse(SdkResponse):
     @runtime.setter
     def runtime(self, runtime):
         """Sets the runtime of this CreateComponentResponse.
-
 
         :param runtime: The runtime of this CreateComponentResponse.
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -226,7 +223,6 @@ class CreateComponentResponse(SdkResponse):
     def category(self):
         """Gets the category of this CreateComponentResponse.
 
-
         :return: The category of this CreateComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
         """
@@ -235,7 +231,6 @@ class CreateComponentResponse(SdkResponse):
     @category.setter
     def category(self, category):
         """Sets the category of this CreateComponentResponse.
-
 
         :param category: The category of this CreateComponentResponse.
         :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
@@ -246,7 +241,6 @@ class CreateComponentResponse(SdkResponse):
     def sub_category(self):
         """Gets the sub_category of this CreateComponentResponse.
 
-
         :return: The sub_category of this CreateComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
         """
@@ -255,7 +249,6 @@ class CreateComponentResponse(SdkResponse):
     @sub_category.setter
     def sub_category(self, sub_category):
         """Sets the sub_category of this CreateComponentResponse.
-
 
         :param sub_category: The sub_category of this CreateComponentResponse.
         :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
@@ -332,7 +325,6 @@ class CreateComponentResponse(SdkResponse):
     def source(self):
         """Gets the source of this CreateComponentResponse.
 
-
         :return: The source of this CreateComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
         """
@@ -341,7 +333,6 @@ class CreateComponentResponse(SdkResponse):
     @source.setter
     def source(self, source):
         """Sets the source of this CreateComponentResponse.
-
 
         :param source: The source of this CreateComponentResponse.
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -352,7 +343,6 @@ class CreateComponentResponse(SdkResponse):
     def build(self):
         """Gets the build of this CreateComponentResponse.
 
-
         :return: The build of this CreateComponentResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
         """
@@ -361,7 +351,6 @@ class CreateComponentResponse(SdkResponse):
     @build.setter
     def build(self, build):
         """Sets the build of this CreateComponentResponse.
-
 
         :param build: The build of this CreateComponentResponse.
         :type build: :class:`huaweicloudsdkservicestage.v2.BuildInfo`

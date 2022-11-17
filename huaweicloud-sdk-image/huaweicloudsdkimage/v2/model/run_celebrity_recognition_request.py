@@ -17,7 +17,6 @@ class RunCelebrityRecognitionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunCelebrityRecognitionRequest:
     def body(self):
         """Gets the body of this RunCelebrityRecognitionRequest.
 
-
         :return: The body of this RunCelebrityRecognitionRequest.
         :rtype: :class:`huaweicloudsdkimage.v2.CelebrityRecognitionReq`
         """
@@ -58,7 +56,6 @@ class RunCelebrityRecognitionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunCelebrityRecognitionRequest.
-
 
         :param body: The body of this RunCelebrityRecognitionRequest.
         :type body: :class:`huaweicloudsdkimage.v2.CelebrityRecognitionReq`

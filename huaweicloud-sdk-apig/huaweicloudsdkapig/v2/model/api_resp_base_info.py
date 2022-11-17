@@ -17,7 +17,6 @@ class ApiRespBaseInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -454,7 +453,6 @@ class ApiRespBaseInfo:
     def auth_opt(self):
         """Gets the auth_opt of this ApiRespBaseInfo.
 
-
         :return: The auth_opt of this ApiRespBaseInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.AuthOpt`
         """
@@ -463,7 +461,6 @@ class ApiRespBaseInfo:
     @auth_opt.setter
     def auth_opt(self, auth_opt):
         """Sets the auth_opt of this ApiRespBaseInfo.
-
 
         :param auth_opt: The auth_opt of this ApiRespBaseInfo.
         :type auth_opt: :class:`huaweicloudsdkapig.v2.AuthOpt`
@@ -1090,7 +1087,6 @@ class ApiRespBaseInfo:
     def backend_api(self):
         """Gets the backend_api of this ApiRespBaseInfo.
 
-
         :return: The backend_api of this ApiRespBaseInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.BackendApi`
         """
@@ -1099,7 +1095,6 @@ class ApiRespBaseInfo:
     @backend_api.setter
     def backend_api(self, backend_api):
         """Sets the backend_api of this ApiRespBaseInfo.
-
 
         :param backend_api: The backend_api of this ApiRespBaseInfo.
         :type backend_api: :class:`huaweicloudsdkapig.v2.BackendApi`
@@ -1110,7 +1105,6 @@ class ApiRespBaseInfo:
     def api_group_info(self):
         """Gets the api_group_info of this ApiRespBaseInfo.
 
-
         :return: The api_group_info of this ApiRespBaseInfo.
         :rtype: :class:`huaweicloudsdkapig.v2.ApiGroupCommonInfo`
         """
@@ -1119,7 +1113,6 @@ class ApiRespBaseInfo:
     @api_group_info.setter
     def api_group_info(self, api_group_info):
         """Sets the api_group_info of this ApiRespBaseInfo.
-
 
         :param api_group_info: The api_group_info of this ApiRespBaseInfo.
         :type api_group_info: :class:`huaweicloudsdkapig.v2.ApiGroupCommonInfo`

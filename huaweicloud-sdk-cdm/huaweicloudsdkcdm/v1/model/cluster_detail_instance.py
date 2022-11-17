@@ -17,7 +17,6 @@ class ClusterDetailInstance:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -189,7 +188,6 @@ class ClusterDetailInstance:
     def flavor(self):
         """Gets the flavor of this ClusterDetailInstance.
 
-
         :return: The flavor of this ClusterDetailInstance.
         :rtype: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceFlavor`
         """
@@ -198,7 +196,6 @@ class ClusterDetailInstance:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this ClusterDetailInstance.
-
 
         :param flavor: The flavor of this ClusterDetailInstance.
         :type flavor: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceFlavor`
@@ -209,7 +206,6 @@ class ClusterDetailInstance:
     def volume(self):
         """Gets the volume of this ClusterDetailInstance.
 
-
         :return: The volume of this ClusterDetailInstance.
         :rtype: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceVolume`
         """
@@ -218,7 +214,6 @@ class ClusterDetailInstance:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this ClusterDetailInstance.
-
 
         :param volume: The volume of this ClusterDetailInstance.
         :type volume: :class:`huaweicloudsdkcdm.v1.ClusterDetailInstanceVolume`

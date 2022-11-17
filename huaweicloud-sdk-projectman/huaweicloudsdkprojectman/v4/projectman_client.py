@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ProjectManClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class ProjectManClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -104,6 +100,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddApplyJoinProjectForAgcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -130,6 +127,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -164,6 +163,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddMemberV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -190,6 +190,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +226,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddMembersV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -250,6 +253,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +289,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteMembersV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -310,6 +316,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +350,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateChildNickNamesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -368,6 +377,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +411,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckProjectNameV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -426,6 +438,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -458,6 +472,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -484,6 +499,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -516,6 +533,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProjectV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -542,6 +560,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -576,6 +596,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainNotAddedProjectsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -602,6 +623,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -634,6 +657,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectBugStaticsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -660,6 +684,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -692,6 +718,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectDemandStaticV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -718,6 +745,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -754,6 +783,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectMembersV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -780,6 +810,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -824,6 +856,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -850,6 +883,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -886,6 +921,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkitemStatusRecordsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -912,6 +948,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -950,6 +988,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListWorkitemsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -976,6 +1015,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1008,6 +1049,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1034,6 +1076,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1068,6 +1112,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBugDensityV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1094,6 +1139,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1128,6 +1175,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBugsPerDeveloperResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1154,6 +1202,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1188,6 +1238,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCompletionRateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1214,6 +1265,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1244,6 +1297,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCurUserInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1270,6 +1324,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1302,6 +1358,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCurUserRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1328,6 +1385,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1360,6 +1419,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectInfoV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1386,6 +1446,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1418,6 +1480,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectSummaryV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1444,6 +1507,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1478,6 +1543,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowWorkItemWrokflowConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1504,6 +1570,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1538,6 +1606,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMembesRoleV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1564,6 +1633,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1596,6 +1667,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNickNameV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1622,6 +1694,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1656,6 +1730,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1682,6 +1757,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1716,6 +1793,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteIssuesV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1742,6 +1820,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1776,6 +1856,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteIterationsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1802,6 +1883,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1836,6 +1919,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelProjectDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1862,6 +1946,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1896,6 +1982,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCustomfieldsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1922,6 +2009,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1956,6 +2045,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1982,6 +2072,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2016,6 +2108,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2042,6 +2135,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2076,6 +2171,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2102,6 +2198,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2136,6 +2234,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2162,6 +2261,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2196,6 +2297,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSystemIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2222,6 +2324,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2256,6 +2360,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2282,6 +2387,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2316,6 +2423,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2342,6 +2450,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2376,6 +2486,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteProjectModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2402,6 +2513,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2436,6 +2549,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadImageFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2462,6 +2576,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2500,6 +2616,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssociatedIssuesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2526,6 +2643,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2564,6 +2683,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssociatedTestCasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2590,6 +2710,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2628,6 +2750,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAssociatedWikisResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2654,6 +2777,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2688,6 +2813,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListChildIssuesV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2714,6 +2840,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2754,6 +2882,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssueAssociatedCommitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2780,6 +2909,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2818,6 +2949,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssueCommentsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2844,6 +2976,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2878,6 +3012,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssueCustomFieldsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2904,6 +3039,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2942,6 +3079,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssueRecordsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2968,6 +3106,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3010,6 +3150,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssuesSfV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3036,6 +3177,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3070,6 +3213,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIssuesV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3096,6 +3240,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3132,6 +3278,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIterationHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3158,6 +3305,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3194,6 +3343,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3220,6 +3370,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3258,6 +3410,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectIssuesRecordsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3284,6 +3437,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3320,6 +3475,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectIterationsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3346,6 +3502,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3382,6 +3540,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectModulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3408,6 +3567,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3440,6 +3601,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectWorkHoursResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3466,6 +3628,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3504,6 +3668,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListScrumProjectStatusesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3530,6 +3695,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3562,6 +3729,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIssueCompletionRateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3588,6 +3756,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3622,6 +3792,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3648,6 +3819,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3682,6 +3855,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIssuesWrokFlowConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3708,6 +3882,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3740,6 +3916,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3766,6 +3943,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3800,6 +3979,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectWorkHoursResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3826,6 +4006,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3862,6 +4044,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIssueV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3888,6 +4071,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3924,6 +4109,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3950,6 +4136,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3986,6 +4174,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4012,6 +4201,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4048,6 +4239,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4074,6 +4266,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4112,6 +4306,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadAttachmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4138,6 +4333,8 @@ class ProjectManClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4174,6 +4371,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadIssueImgResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4181,7 +4379,7 @@ class ProjectManClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -4191,9 +4389,10 @@ class ProjectManClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -4210,6 +4409,7 @@ class ProjectManClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

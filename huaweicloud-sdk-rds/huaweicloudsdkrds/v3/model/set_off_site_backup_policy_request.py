@@ -17,7 +17,6 @@ class SetOffSiteBackupPolicyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class SetOffSiteBackupPolicyRequest:
     def body(self):
         """Gets the body of this SetOffSiteBackupPolicyRequest.
 
-
         :return: The body of this SetOffSiteBackupPolicyRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyRequestBody`
         """
@@ -115,7 +113,6 @@ class SetOffSiteBackupPolicyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetOffSiteBackupPolicyRequest.
-
 
         :param body: The body of this SetOffSiteBackupPolicyRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyRequestBody`

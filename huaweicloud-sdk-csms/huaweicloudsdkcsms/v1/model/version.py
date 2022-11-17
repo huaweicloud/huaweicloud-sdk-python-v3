@@ -17,7 +17,6 @@ class Version:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class Version:
     def version_metadata(self):
         """Gets the version_metadata of this Version.
 
-
         :return: The version_metadata of this Version.
         :rtype: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
         """
@@ -72,7 +70,6 @@ class Version:
     @version_metadata.setter
     def version_metadata(self, version_metadata):
         """Sets the version_metadata of this Version.
-
 
         :param version_metadata: The version_metadata of this Version.
         :type version_metadata: :class:`huaweicloudsdkcsms.v1.VersionMetadata`

@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DdsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddReadonlyNode
         :type request: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeResponse`
@@ -68,6 +63,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddReadonlyNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddShardingNode
         :type request: :class:`huaweicloudsdkdds.v3.AddShardingNodeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.AddShardingNodeResponse`
@@ -128,6 +127,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddShardingNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AttachEip
         :type request: :class:`huaweicloudsdkdds.v3.AttachEipRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.AttachEipResponse`
@@ -188,6 +191,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachEipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AttachInternalIp
         :type request: :class:`huaweicloudsdkdds.v3.AttachInternalIpRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.AttachInternalIpResponse`
@@ -248,6 +255,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AttachInternalIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchTagAction
         :type request: :class:`huaweicloudsdkdds.v3.BatchTagActionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.BatchTagActionResponse`
@@ -308,6 +319,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchTagActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelEip
         :type request: :class:`huaweicloudsdkdds.v3.CancelEipRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CancelEipResponse`
@@ -368,6 +383,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +417,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelEipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -414,6 +432,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeOpsWindow
         :type request: :class:`huaweicloudsdkdds.v3.ChangeOpsWindowRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ChangeOpsWindowResponse`
@@ -426,6 +445,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -460,6 +481,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeOpsWindowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -474,6 +496,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckPassword
         :type request: :class:`huaweicloudsdkdds.v3.CheckPasswordRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CheckPasswordResponse`
@@ -486,6 +509,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -520,6 +545,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -534,6 +560,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckWeakPassword
         :type request: :class:`huaweicloudsdkdds.v3.CheckWeakPasswordRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CheckWeakPasswordResponse`
@@ -546,6 +573,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -580,6 +609,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckWeakPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -594,6 +624,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateConfiguration
         :type request: :class:`huaweicloudsdkdds.v3.CreateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateConfigurationResponse`
@@ -606,6 +637,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -638,6 +671,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -652,6 +686,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatabaseRole
         :type request: :class:`huaweicloudsdkdds.v3.CreateDatabaseRoleRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateDatabaseRoleResponse`
@@ -664,6 +699,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -698,6 +735,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -712,6 +750,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatabaseUser
         :type request: :class:`huaweicloudsdkdds.v3.CreateDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateDatabaseUserResponse`
@@ -724,6 +763,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -758,6 +799,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -772,6 +814,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkdds.v3.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateInstanceResponse`
@@ -784,6 +827,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -816,6 +861,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -830,6 +876,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateIp
         :type request: :class:`huaweicloudsdkdds.v3.CreateIpRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateIpResponse`
@@ -842,6 +889,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -876,6 +925,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -890,6 +940,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateManualBackup
         :type request: :class:`huaweicloudsdkdds.v3.CreateManualBackupRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateManualBackupResponse`
@@ -902,6 +953,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -934,6 +987,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -948,6 +1002,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAuditLog
         :type request: :class:`huaweicloudsdkdds.v3.DeleteAuditLogRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteAuditLogResponse`
@@ -960,6 +1015,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -996,6 +1053,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAuditLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1010,6 +1068,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteConfiguration
         :type request: :class:`huaweicloudsdkdds.v3.DeleteConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteConfigurationResponse`
@@ -1022,6 +1081,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1054,6 +1115,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1068,6 +1130,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDatabaseRole
         :type request: :class:`huaweicloudsdkdds.v3.DeleteDatabaseRoleRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteDatabaseRoleResponse`
@@ -1080,6 +1143,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1114,6 +1179,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1128,6 +1194,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDatabaseUser
         :type request: :class:`huaweicloudsdkdds.v3.DeleteDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteDatabaseUserResponse`
@@ -1140,6 +1207,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1174,6 +1243,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1188,6 +1258,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkdds.v3.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteInstanceResponse`
@@ -1200,6 +1271,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1232,6 +1305,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1246,6 +1320,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteManualBackup
         :type request: :class:`huaweicloudsdkdds.v3.DeleteManualBackupRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteManualBackupResponse`
@@ -1258,6 +1333,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1290,6 +1367,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1304,6 +1382,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSession
         :type request: :class:`huaweicloudsdkdds.v3.DeleteSessionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteSessionResponse`
@@ -1316,6 +1395,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1350,6 +1431,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1364,6 +1446,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadErrorlog
         :type request: :class:`huaweicloudsdkdds.v3.DownloadErrorlogRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DownloadErrorlogResponse`
@@ -1376,6 +1459,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1410,6 +1495,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadErrorlogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1424,6 +1510,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadSlowlog
         :type request: :class:`huaweicloudsdkdds.v3.DownloadSlowlogRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DownloadSlowlogResponse`
@@ -1436,6 +1523,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1470,6 +1559,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadSlowlogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1484,6 +1574,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ExpandReplicasetNode
         :type request: :class:`huaweicloudsdkdds.v3.ExpandReplicasetNodeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ExpandReplicasetNodeResponse`
@@ -1496,6 +1587,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1530,6 +1623,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExpandReplicasetNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1544,6 +1638,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAuditlogLinks
         :type request: :class:`huaweicloudsdkdds.v3.ListAuditlogLinksRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListAuditlogLinksResponse`
@@ -1556,6 +1651,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1590,6 +1687,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuditlogLinksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1604,6 +1702,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAuditlogs
         :type request: :class:`huaweicloudsdkdds.v3.ListAuditlogsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListAuditlogsResponse`
@@ -1616,6 +1715,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1660,6 +1761,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuditlogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1674,6 +1776,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAz2Migrate
         :type request: :class:`huaweicloudsdkdds.v3.ListAz2MigrateRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListAz2MigrateResponse`
@@ -1686,6 +1789,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1718,6 +1823,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAz2MigrateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1732,6 +1838,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackups
         :type request: :class:`huaweicloudsdkdds.v3.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListBackupsResponse`
@@ -1744,6 +1851,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1790,6 +1899,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1804,6 +1914,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConfigurations
         :type request: :class:`huaweicloudsdkdds.v3.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListConfigurationsResponse`
@@ -1816,6 +1927,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1850,6 +1963,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1864,6 +1978,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatabaseRoles
         :type request: :class:`huaweicloudsdkdds.v3.ListDatabaseRolesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListDatabaseRolesResponse`
@@ -1876,6 +1991,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1916,6 +2033,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseRolesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1930,6 +2048,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatabaseUsers
         :type request: :class:`huaweicloudsdkdds.v3.ListDatabaseUsersRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListDatabaseUsersResponse`
@@ -1942,6 +2061,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1982,6 +2103,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1996,6 +2118,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatastoreVersions
         :type request: :class:`huaweicloudsdkdds.v3.ListDatastoreVersionsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListDatastoreVersionsResponse`
@@ -2008,6 +2131,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2040,6 +2165,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatastoreVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2054,6 +2180,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListErrorLogs
         :type request: :class:`huaweicloudsdkdds.v3.ListErrorLogsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListErrorLogsResponse`
@@ -2066,6 +2193,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2110,6 +2239,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListErrorLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2124,6 +2254,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFlavorInfos
         :type request: :class:`huaweicloudsdkdds.v3.ListFlavorInfosRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListFlavorInfosResponse`
@@ -2136,6 +2267,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2174,6 +2307,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2188,6 +2322,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkdds.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListFlavorsResponse`
@@ -2200,6 +2335,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2234,6 +2371,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2248,6 +2386,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstanceTags
         :type request: :class:`huaweicloudsdkdds.v3.ListInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListInstanceTagsResponse`
@@ -2260,6 +2399,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2292,6 +2433,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2306,6 +2448,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkdds.v3.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListInstancesResponse`
@@ -2318,6 +2461,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2366,6 +2511,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2380,6 +2526,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstancesByTags
         :type request: :class:`huaweicloudsdkdds.v3.ListInstancesByTagsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListInstancesByTagsResponse`
@@ -2392,6 +2539,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2424,6 +2573,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2438,6 +2588,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectTags
         :type request: :class:`huaweicloudsdkdds.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListProjectTagsResponse`
@@ -2450,6 +2601,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2480,6 +2633,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2494,6 +2648,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRecycleInstances
         :type request: :class:`huaweicloudsdkdds.v3.ListRecycleInstancesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListRecycleInstancesResponse`
@@ -2506,6 +2661,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2542,6 +2699,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRecycleInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2556,6 +2714,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRestoreCollections
         :type request: :class:`huaweicloudsdkdds.v3.ListRestoreCollectionsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListRestoreCollectionsResponse`
@@ -2568,6 +2727,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2610,6 +2771,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreCollectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2624,6 +2786,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRestoreDatabases
         :type request: :class:`huaweicloudsdkdds.v3.ListRestoreDatabasesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListRestoreDatabasesResponse`
@@ -2636,6 +2799,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2676,6 +2841,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2690,6 +2856,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRestoreTimes
         :type request: :class:`huaweicloudsdkdds.v3.ListRestoreTimesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListRestoreTimesResponse`
@@ -2702,6 +2869,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2738,6 +2907,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreTimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2752,6 +2922,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSessions
         :type request: :class:`huaweicloudsdkdds.v3.ListSessionsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListSessionsResponse`
@@ -2764,6 +2935,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2808,6 +2981,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSessionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2822,6 +2996,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSlowLogs
         :type request: :class:`huaweicloudsdkdds.v3.ListSlowLogsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListSlowLogsResponse`
@@ -2834,6 +3009,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2878,6 +3055,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSlowLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2892,6 +3070,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSslCertDownloadAddress
         :type request: :class:`huaweicloudsdkdds.v3.ListSslCertDownloadAddressRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListSslCertDownloadAddressResponse`
@@ -2904,6 +3083,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2938,6 +3119,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSslCertDownloadAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2952,6 +3134,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStorageType
         :type request: :class:`huaweicloudsdkdds.v3.ListStorageTypeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListStorageTypeResponse`
@@ -2964,6 +3147,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2996,6 +3181,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStorageTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3010,6 +3196,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MigrateAz
         :type request: :class:`huaweicloudsdkdds.v3.MigrateAzRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.MigrateAzResponse`
@@ -3022,6 +3209,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3056,6 +3245,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateAzResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3070,6 +3260,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetPassword
         :type request: :class:`huaweicloudsdkdds.v3.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ResetPasswordResponse`
@@ -3082,6 +3273,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3116,6 +3309,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3130,6 +3324,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeInstance
         :type request: :class:`huaweicloudsdkdds.v3.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ResizeInstanceResponse`
@@ -3142,6 +3337,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3176,6 +3373,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3190,6 +3388,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeInstanceVolume
         :type request: :class:`huaweicloudsdkdds.v3.ResizeInstanceVolumeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ResizeInstanceVolumeResponse`
@@ -3202,6 +3401,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3236,6 +3437,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3250,6 +3452,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartInstance
         :type request: :class:`huaweicloudsdkdds.v3.RestartInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.RestartInstanceResponse`
@@ -3262,6 +3465,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3296,6 +3501,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3310,6 +3516,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreInstance
         :type request: :class:`huaweicloudsdkdds.v3.RestoreInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.RestoreInstanceResponse`
@@ -3322,6 +3529,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3356,6 +3565,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3370,6 +3580,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreInstanceFromCollection
         :type request: :class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionResponse`
@@ -3382,6 +3593,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3418,6 +3631,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreInstanceFromCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3432,6 +3646,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreNewInstance
         :type request: :class:`huaweicloudsdkdds.v3.RestoreNewInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.RestoreNewInstanceResponse`
@@ -3444,6 +3659,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3476,6 +3693,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreNewInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3490,6 +3708,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetAuditlogPolicy
         :type request: :class:`huaweicloudsdkdds.v3.SetAuditlogPolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetAuditlogPolicyResponse`
@@ -3502,6 +3721,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3536,6 +3757,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetAuditlogPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3550,6 +3772,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetBackupPolicy
         :type request: :class:`huaweicloudsdkdds.v3.SetBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetBackupPolicyResponse`
@@ -3562,6 +3785,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3596,6 +3821,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3610,6 +3836,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetBalancerSwitch
         :type request: :class:`huaweicloudsdkdds.v3.SetBalancerSwitchRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetBalancerSwitchResponse`
@@ -3622,6 +3849,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3656,6 +3885,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBalancerSwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3670,6 +3900,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetBalancerWindow
         :type request: :class:`huaweicloudsdkdds.v3.SetBalancerWindowRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetBalancerWindowResponse`
@@ -3682,6 +3913,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3716,6 +3949,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBalancerWindowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3730,6 +3964,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetRecyclePolicy
         :type request: :class:`huaweicloudsdkdds.v3.SetRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetRecyclePolicyResponse`
@@ -3742,6 +3977,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3774,6 +4011,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetRecyclePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3788,6 +4026,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAuditlogPolicy
         :type request: :class:`huaweicloudsdkdds.v3.ShowAuditlogPolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowAuditlogPolicyResponse`
@@ -3800,6 +4039,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3834,6 +4075,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAuditlogPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3848,6 +4090,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBackupDownloadLink
         :type request: :class:`huaweicloudsdkdds.v3.ShowBackupDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowBackupDownloadLinkResponse`
@@ -3860,6 +4103,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3896,6 +4141,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupDownloadLinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3910,6 +4156,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBackupPolicy
         :type request: :class:`huaweicloudsdkdds.v3.ShowBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowBackupPolicyResponse`
@@ -3922,6 +4169,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3954,6 +4203,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3968,6 +4218,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowConfigurationParameter
         :type request: :class:`huaweicloudsdkdds.v3.ShowConfigurationParameterRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowConfigurationParameterResponse`
@@ -3980,6 +4231,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4012,6 +4265,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConfigurationParameterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4026,6 +4280,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowConnectionStatistics
         :type request: :class:`huaweicloudsdkdds.v3.ShowConnectionStatisticsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowConnectionStatisticsResponse`
@@ -4038,6 +4293,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4072,6 +4329,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowConnectionStatisticsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4086,6 +4344,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDiskUsage
         :type request: :class:`huaweicloudsdkdds.v3.ShowDiskUsageRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowDiskUsageResponse`
@@ -4098,6 +4357,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4132,6 +4393,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDiskUsageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4146,6 +4408,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEntityConfiguration
         :type request: :class:`huaweicloudsdkdds.v3.ShowEntityConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowEntityConfigurationResponse`
@@ -4158,6 +4421,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4192,6 +4457,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEntityConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4206,6 +4472,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobDetail
         :type request: :class:`huaweicloudsdkdds.v3.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowJobDetailResponse`
@@ -4218,6 +4485,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4250,6 +4519,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4264,6 +4534,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkdds.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowQuotasResponse`
@@ -4276,6 +4547,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4306,6 +4579,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4320,6 +4594,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRecyclePolicy
         :type request: :class:`huaweicloudsdkdds.v3.ShowRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowRecyclePolicyResponse`
@@ -4332,6 +4607,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4364,6 +4641,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRecyclePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4378,6 +4656,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSecondLevelMonitoringStatus
         :type request: :class:`huaweicloudsdkdds.v3.ShowSecondLevelMonitoringStatusRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowSecondLevelMonitoringStatusResponse`
@@ -4390,6 +4669,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4422,6 +4703,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecondLevelMonitoringStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4436,6 +4718,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowShardingBalancer
         :type request: :class:`huaweicloudsdkdds.v3.ShowShardingBalancerRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowShardingBalancerResponse`
@@ -4448,6 +4731,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4480,6 +4765,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowShardingBalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4494,6 +4780,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSlowlogDesensitizationSwitch
         :type request: :class:`huaweicloudsdkdds.v3.ShowSlowlogDesensitizationSwitchRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowSlowlogDesensitizationSwitchResponse`
@@ -4506,6 +4793,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4540,6 +4829,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSlowlogDesensitizationSwitchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4554,6 +4844,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUpgradeDuration
         :type request: :class:`huaweicloudsdkdds.v3.ShowUpgradeDurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowUpgradeDurationResponse`
@@ -4566,6 +4857,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4600,6 +4893,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUpgradeDurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4614,6 +4908,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SwitchConfiguration
         :type request: :class:`huaweicloudsdkdds.v3.SwitchConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchConfigurationResponse`
@@ -4626,6 +4921,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4660,6 +4957,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4674,6 +4972,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SwitchSecondLevelMonitoring
         :type request: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringResponse`
@@ -4686,6 +4985,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4720,6 +5021,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchSecondLevelMonitoringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4734,6 +5036,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SwitchSlowlogDesensitization
         :type request: :class:`huaweicloudsdkdds.v3.SwitchSlowlogDesensitizationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchSlowlogDesensitizationResponse`
@@ -4746,6 +5049,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4782,6 +5087,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchSlowlogDesensitizationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4796,6 +5102,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SwitchSsl
         :type request: :class:`huaweicloudsdkdds.v3.SwitchSslRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchSslResponse`
@@ -4808,6 +5115,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4842,6 +5151,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchSslResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4856,6 +5166,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SwitchoverReplicaSet
         :type request: :class:`huaweicloudsdkdds.v3.SwitchoverReplicaSetRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchoverReplicaSetResponse`
@@ -4868,6 +5179,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4900,6 +5213,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchoverReplicaSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4914,6 +5228,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateClientNetwork
         :type request: :class:`huaweicloudsdkdds.v3.UpdateClientNetworkRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateClientNetworkResponse`
@@ -4926,6 +5241,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4960,6 +5277,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateClientNetworkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4974,6 +5292,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateConfigurationParameter
         :type request: :class:`huaweicloudsdkdds.v3.UpdateConfigurationParameterRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateConfigurationParameterResponse`
@@ -4986,6 +5305,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5020,6 +5341,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateConfigurationParameterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5034,6 +5356,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEntityConfiguration
         :type request: :class:`huaweicloudsdkdds.v3.UpdateEntityConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateEntityConfigurationResponse`
@@ -5046,6 +5369,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5080,6 +5405,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEntityConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5094,6 +5420,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceName
         :type request: :class:`huaweicloudsdkdds.v3.UpdateInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateInstanceNameResponse`
@@ -5106,6 +5433,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5140,6 +5469,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5154,6 +5484,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstancePort
         :type request: :class:`huaweicloudsdkdds.v3.UpdateInstancePortRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateInstancePortResponse`
@@ -5166,6 +5497,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5200,6 +5533,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstancePortResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5214,6 +5548,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceRemark
         :type request: :class:`huaweicloudsdkdds.v3.UpdateInstanceRemarkRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateInstanceRemarkResponse`
@@ -5226,6 +5561,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5260,6 +5597,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceRemarkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5274,6 +5612,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSecurityGroup
         :type request: :class:`huaweicloudsdkdds.v3.UpdateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateSecurityGroupResponse`
@@ -5286,6 +5625,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5320,6 +5661,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5334,6 +5676,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpgradeDatabaseVersion
         :type request: :class:`huaweicloudsdkdds.v3.UpgradeDatabaseVersionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpgradeDatabaseVersionResponse`
@@ -5346,6 +5689,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5380,6 +5725,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpgradeDatabaseVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5394,6 +5740,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApiVersion
         :type request: :class:`huaweicloudsdkdds.v3.ListApiVersionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListApiVersionResponse`
@@ -5406,6 +5753,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5436,6 +5785,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5450,6 +5800,7 @@ class DdsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowApiVersion
         :type request: :class:`huaweicloudsdkdds.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowApiVersionResponse`
@@ -5462,6 +5813,8 @@ class DdsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5494,6 +5847,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5501,7 +5855,7 @@ class DdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -5512,9 +5866,10 @@ class DdsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -5531,6 +5886,7 @@ class DdsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

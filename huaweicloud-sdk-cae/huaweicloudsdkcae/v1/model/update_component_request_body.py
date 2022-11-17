@@ -17,7 +17,6 @@ class UpdateComponentRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -112,7 +111,6 @@ class UpdateComponentRequestBody:
     def metadata(self):
         """Gets the metadata of this UpdateComponentRequestBody.
 
-
         :return: The metadata of this UpdateComponentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.Metadata`
         """
@@ -121,7 +119,6 @@ class UpdateComponentRequestBody:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this UpdateComponentRequestBody.
-
 
         :param metadata: The metadata of this UpdateComponentRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.Metadata`
@@ -132,7 +129,6 @@ class UpdateComponentRequestBody:
     def spec(self):
         """Gets the spec of this UpdateComponentRequestBody.
 
-
         :return: The spec of this UpdateComponentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestSpec`
         """
@@ -141,7 +137,6 @@ class UpdateComponentRequestBody:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this UpdateComponentRequestBody.
-
 
         :param spec: The spec of this UpdateComponentRequestBody.
         :type spec: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestSpec`

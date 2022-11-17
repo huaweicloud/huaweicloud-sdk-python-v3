@@ -17,7 +17,6 @@ class UserInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class UserInfo:
     def domain(self):
         """Gets the domain of this UserInfo.
 
-
         :return: The domain of this UserInfo.
         :rtype: :class:`huaweicloudsdkcts.v3.BaseUser`
         """
@@ -116,7 +114,6 @@ class UserInfo:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this UserInfo.
-
 
         :param domain: The domain of this UserInfo.
         :type domain: :class:`huaweicloudsdkcts.v3.BaseUser`

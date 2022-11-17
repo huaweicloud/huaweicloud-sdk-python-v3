@@ -17,7 +17,6 @@ class ListStructuredLogsWithTimeRangeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListStructuredLogsWithTimeRangeRequest:
     def body(self):
         """Gets the body of this ListStructuredLogsWithTimeRangeRequest.
 
-
         :return: The body of this ListStructuredLogsWithTimeRangeRequest.
         :rtype: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParamsNew`
         """
@@ -86,7 +84,6 @@ class ListStructuredLogsWithTimeRangeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListStructuredLogsWithTimeRangeRequest.
-
 
         :param body: The body of this ListStructuredLogsWithTimeRangeRequest.
         :type body: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParamsNew`

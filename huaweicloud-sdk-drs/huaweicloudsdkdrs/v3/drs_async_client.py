@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DrsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchChangeData
         :type request: :class:`huaweicloudsdkdrs.v3.BatchChangeDataRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchChangeDataResponse`
@@ -68,6 +63,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchChangeDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCheckJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCheckJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchCheckJobsResponse`
@@ -128,6 +127,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCheckJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCheckResults
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCheckResultsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchCheckResultsResponse`
@@ -188,6 +191,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCheckResultsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCreateJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchCreateJobsResponse`
@@ -248,6 +255,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchDeleteJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchDeleteJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchDeleteJobsResponse`
@@ -308,6 +319,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListJobDetails
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListJobDetailsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListJobDetailsResponse`
@@ -368,6 +383,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -402,6 +419,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListJobDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -416,6 +434,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListJobStatus
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListJobStatusRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListJobStatusResponse`
@@ -428,6 +447,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -462,6 +483,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListJobStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -476,6 +498,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListProgresses
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListProgressesRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListProgressesResponse`
@@ -488,6 +511,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -522,6 +547,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListProgressesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -536,6 +562,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListRposAndRtos
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListRposAndRtosRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListRposAndRtosResponse`
@@ -548,6 +575,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -582,6 +611,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListRposAndRtosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -596,6 +626,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListStructDetail
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListStructDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListStructDetailResponse`
@@ -608,6 +639,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -644,6 +677,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListStructDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -658,6 +692,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchListStructProcess
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListStructProcessRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListStructProcessResponse`
@@ -670,6 +705,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -704,6 +741,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchListStructProcessResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -718,6 +756,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchResetPassword
         :type request: :class:`huaweicloudsdkdrs.v3.BatchResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchResetPasswordResponse`
@@ -730,6 +769,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -764,6 +805,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchResetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -778,6 +820,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchRestoreTask
         :type request: :class:`huaweicloudsdkdrs.v3.BatchRestoreTaskRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchRestoreTaskResponse`
@@ -790,6 +833,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -824,6 +869,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchRestoreTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -840,6 +886,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchSetDefiner
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetDefinerRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetDefinerResponse`
@@ -852,6 +899,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -886,6 +935,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSetDefinerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -900,6 +950,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchSetObjects
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetObjectsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetObjectsResponse`
@@ -912,6 +963,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -946,6 +999,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSetObjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -961,6 +1015,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchSetPolicy
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetPolicyRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetPolicyResponse`
@@ -973,6 +1028,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1007,6 +1064,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSetPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1022,6 +1080,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchSetSmn
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetSmnRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetSmnResponse`
@@ -1034,6 +1093,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1068,6 +1129,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSetSmnResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1084,6 +1146,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchSetSpeed
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetSpeedRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetSpeedResponse`
@@ -1096,6 +1159,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1130,6 +1195,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSetSpeedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1144,6 +1210,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchShowParams
         :type request: :class:`huaweicloudsdkdrs.v3.BatchShowParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchShowParamsResponse`
@@ -1156,6 +1223,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1190,6 +1259,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchShowParamsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1204,6 +1274,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchStartJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchStartJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchStartJobsResponse`
@@ -1216,6 +1287,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1250,6 +1323,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStartJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1264,6 +1338,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchStopJobs
         :type request: :class:`huaweicloudsdkdrs.v3.BatchStopJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchStopJobsResponse`
@@ -1276,6 +1351,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1310,6 +1387,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchStopJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1324,6 +1402,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchSwitchover
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverResponse`
@@ -1336,6 +1415,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1370,6 +1451,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSwitchoverResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1384,6 +1466,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUpdateJob
         :type request: :class:`huaweicloudsdkdrs.v3.BatchUpdateJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchUpdateJobResponse`
@@ -1396,6 +1479,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1430,6 +1515,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1444,6 +1530,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchUpdateUser
         :type request: :class:`huaweicloudsdkdrs.v3.BatchUpdateUserRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchUpdateUserResponse`
@@ -1456,6 +1543,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1490,6 +1579,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchUpdateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1505,6 +1595,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchValidateClustersConnections
         :type request: :class:`huaweicloudsdkdrs.v3.BatchValidateClustersConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchValidateClustersConnectionsResponse`
@@ -1517,6 +1608,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1551,6 +1644,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchValidateClustersConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1565,6 +1659,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchValidateConnections
         :type request: :class:`huaweicloudsdkdrs.v3.BatchValidateConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchValidateConnectionsResponse`
@@ -1577,6 +1672,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1611,6 +1708,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchValidateConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1625,6 +1723,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCompareTask
         :type request: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResponse`
@@ -1637,6 +1736,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1671,6 +1772,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCompareTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1685,6 +1787,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAvailableZone
         :type request: :class:`huaweicloudsdkdrs.v3.ListAvailableZoneRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListAvailableZoneResponse`
@@ -1697,6 +1800,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1731,6 +1836,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAvailableZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1745,6 +1851,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCompareResult
         :type request: :class:`huaweicloudsdkdrs.v3.ListCompareResultRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListCompareResultResponse`
@@ -1757,6 +1864,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1791,6 +1900,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCompareResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1805,6 +1915,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUsers
         :type request: :class:`huaweicloudsdkdrs.v3.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListUsersResponse`
@@ -1817,6 +1928,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1851,6 +1964,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1865,6 +1979,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobList
         :type request: :class:`huaweicloudsdkdrs.v3.ShowJobListRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ShowJobListResponse`
@@ -1877,6 +1992,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1911,6 +2028,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1925,6 +2043,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMonitoringData
         :type request: :class:`huaweicloudsdkdrs.v3.ShowMonitoringDataRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ShowMonitoringDataResponse`
@@ -1937,6 +2056,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1971,6 +2092,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMonitoringDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1985,6 +2107,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkdrs.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ShowQuotasResponse`
@@ -1997,6 +2120,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2029,6 +2154,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2043,6 +2169,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateParams
         :type request: :class:`huaweicloudsdkdrs.v3.UpdateParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.UpdateParamsResponse`
@@ -2055,6 +2182,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2091,6 +2220,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateParamsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2105,6 +2235,7 @@ class DrsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTuningParams
         :type request: :class:`huaweicloudsdkdrs.v3.UpdateTuningParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.UpdateTuningParamsResponse`
@@ -2117,6 +2248,8 @@ class DrsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2153,6 +2286,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTuningParamsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2160,7 +2294,7 @@ class DrsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2171,9 +2305,10 @@ class DrsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2190,6 +2325,7 @@ class DrsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

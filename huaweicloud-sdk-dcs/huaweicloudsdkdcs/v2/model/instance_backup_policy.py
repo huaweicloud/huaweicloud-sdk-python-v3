@@ -17,7 +17,6 @@ class InstanceBackupPolicy:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -143,7 +142,6 @@ class InstanceBackupPolicy:
     def policy(self):
         """Gets the policy of this InstanceBackupPolicy.
 
-
         :return: The policy of this InstanceBackupPolicy.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupPolicy`
         """
@@ -152,7 +150,6 @@ class InstanceBackupPolicy:
     @policy.setter
     def policy(self, policy):
         """Sets the policy of this InstanceBackupPolicy.
-
 
         :param policy: The policy of this InstanceBackupPolicy.
         :type policy: :class:`huaweicloudsdkdcs.v2.BackupPolicy`

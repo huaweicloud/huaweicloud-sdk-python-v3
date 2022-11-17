@@ -17,7 +17,6 @@ class ShowJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -439,7 +438,6 @@ class ShowJobResponse(SdkResponse):
     def tool_info(self):
         """Gets the tool_info of this ShowJobResponse.
 
-
         :return: The tool_info of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
         """
@@ -448,7 +446,6 @@ class ShowJobResponse(SdkResponse):
     @tool_info.setter
     def tool_info(self, tool_info):
         """Sets the tool_info of this ShowJobResponse.
-
 
         :param tool_info: The tool_info of this ShowJobResponse.
         :type tool_info: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
@@ -547,7 +544,6 @@ class ShowJobResponse(SdkResponse):
     def io_acc_info(self):
         """Gets the io_acc_info of this ShowJobResponse.
 
-
         :return: The io_acc_info of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.IoAccInfoDto`
         """
@@ -556,7 +552,6 @@ class ShowJobResponse(SdkResponse):
     @io_acc_info.setter
     def io_acc_info(self, io_acc_info):
         """Sets the io_acc_info of this ShowJobResponse.
-
 
         :param io_acc_info: The io_acc_info of this ShowJobResponse.
         :type io_acc_info: :class:`huaweicloudsdkeihealth.v1.IoAccInfoDto`

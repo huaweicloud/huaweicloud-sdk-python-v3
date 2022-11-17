@@ -17,7 +17,6 @@ class BatchCreateOrDeleteResourceTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class BatchCreateOrDeleteResourceTagsRequest:
     def body(self):
         """Gets the body of this BatchCreateOrDeleteResourceTagsRequest.
 
-
         :return: The body of this BatchCreateOrDeleteResourceTagsRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.BatchCreateOrDeleteResourceTagsRequestBody`
         """
@@ -114,7 +112,6 @@ class BatchCreateOrDeleteResourceTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchCreateOrDeleteResourceTagsRequest.
-
 
         :param body: The body of this BatchCreateOrDeleteResourceTagsRequest.
         :type body: :class:`huaweicloudsdksmn.v2.BatchCreateOrDeleteResourceTagsRequestBody`

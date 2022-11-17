@@ -17,7 +17,6 @@ class Task:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -208,7 +207,6 @@ class Task:
     def task_run_info(self):
         """Gets the task_run_info of this Task.
 
-
         :return: The task_run_info of this Task.
         :rtype: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
         """
@@ -217,7 +215,6 @@ class Task:
     @task_run_info.setter
     def task_run_info(self, task_run_info):
         """Sets the task_run_info of this Task.
-
 
         :param task_run_info: The task_run_info of this Task.
         :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`

@@ -17,7 +17,6 @@ class QosInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -92,7 +91,6 @@ class QosInfo:
     def send(self):
         """Gets the send of this QosInfo.
 
-
         :return: The send of this QosInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
         """
@@ -101,7 +99,6 @@ class QosInfo:
     @send.setter
     def send(self, send):
         """Sets the send of this QosInfo.
-
 
         :param send: The send of this QosInfo.
         :type send: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
@@ -112,7 +109,6 @@ class QosInfo:
     def receive(self):
         """Gets the receive of this QosInfo.
 
-
         :return: The receive of this QosInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
         """
@@ -121,7 +117,6 @@ class QosInfo:
     @receive.setter
     def receive(self, receive):
         """Sets the receive of this QosInfo.
-
 
         :param receive: The receive of this QosInfo.
         :type receive: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
@@ -132,7 +127,6 @@ class QosInfo:
     def cpu(self):
         """Gets the cpu of this QosInfo.
 
-
         :return: The cpu of this QosInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QosCpuInfo`
         """
@@ -141,7 +135,6 @@ class QosInfo:
     @cpu.setter
     def cpu(self, cpu):
         """Sets the cpu of this QosInfo.
-
 
         :param cpu: The cpu of this QosInfo.
         :type cpu: :class:`huaweicloudsdkmeeting.v1.QosCpuInfo`

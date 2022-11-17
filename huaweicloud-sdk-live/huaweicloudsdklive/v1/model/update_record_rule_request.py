@@ -17,7 +17,6 @@ class UpdateRecordRuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateRecordRuleRequest:
     def body(self):
         """Gets the body of this UpdateRecordRuleRequest.
 
-
         :return: The body of this UpdateRecordRuleRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordRuleRequest`
         """
@@ -86,7 +84,6 @@ class UpdateRecordRuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateRecordRuleRequest.
-
 
         :param body: The body of this UpdateRecordRuleRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordRuleRequest`

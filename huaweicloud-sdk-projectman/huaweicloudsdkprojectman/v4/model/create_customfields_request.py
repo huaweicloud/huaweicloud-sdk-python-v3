@@ -17,7 +17,6 @@ class CreateCustomfieldsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateCustomfieldsRequest:
     def body(self):
         """Gets the body of this CreateCustomfieldsRequest.
 
-
         :return: The body of this CreateCustomfieldsRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldV1Req`
         """
@@ -86,7 +84,6 @@ class CreateCustomfieldsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateCustomfieldsRequest.
-
 
         :param body: The body of this CreateCustomfieldsRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldV1Req`

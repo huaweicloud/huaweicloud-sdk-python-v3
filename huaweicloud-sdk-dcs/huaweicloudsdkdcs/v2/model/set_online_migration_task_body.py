@@ -17,7 +17,6 @@ class SetOnlineMigrationTaskBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -139,7 +138,6 @@ class SetOnlineMigrationTaskBody:
     def source_instance(self):
         """Gets the source_instance of this SetOnlineMigrationTaskBody.
 
-
         :return: The source_instance of this SetOnlineMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
         """
@@ -148,7 +146,6 @@ class SetOnlineMigrationTaskBody:
     @source_instance.setter
     def source_instance(self, source_instance):
         """Sets the source_instance of this SetOnlineMigrationTaskBody.
-
 
         :param source_instance: The source_instance of this SetOnlineMigrationTaskBody.
         :type source_instance: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
@@ -159,7 +156,6 @@ class SetOnlineMigrationTaskBody:
     def target_instance(self):
         """Gets the target_instance of this SetOnlineMigrationTaskBody.
 
-
         :return: The target_instance of this SetOnlineMigrationTaskBody.
         :rtype: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`
         """
@@ -168,7 +164,6 @@ class SetOnlineMigrationTaskBody:
     @target_instance.setter
     def target_instance(self, target_instance):
         """Sets the target_instance of this SetOnlineMigrationTaskBody.
-
 
         :param target_instance: The target_instance of this SetOnlineMigrationTaskBody.
         :type target_instance: :class:`huaweicloudsdkdcs.v2.ConfigMigrationInstanceBody`

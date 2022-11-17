@@ -17,7 +17,6 @@ class CreateFlinkSqlResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CreateFlinkSqlResponse(SdkResponse):
     def job(self):
         """Gets the job of this CreateFlinkSqlResponse.
 
-
         :return: The job of this CreateFlinkSqlResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateJobRespJob`
         """
@@ -116,7 +114,6 @@ class CreateFlinkSqlResponse(SdkResponse):
     @job.setter
     def job(self, job):
         """Sets the job of this CreateFlinkSqlResponse.
-
 
         :param job: The job of this CreateFlinkSqlResponse.
         :type job: :class:`huaweicloudsdkdli.v1.CreateJobRespJob`

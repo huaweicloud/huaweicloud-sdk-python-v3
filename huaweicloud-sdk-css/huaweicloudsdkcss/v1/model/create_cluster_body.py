@@ -17,7 +17,6 @@ class CreateClusterBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -115,7 +114,6 @@ class CreateClusterBody:
     def instance(self):
         """Gets the instance of this CreateClusterBody.
 
-
         :return: The instance of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceBody`
         """
@@ -124,7 +122,6 @@ class CreateClusterBody:
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this CreateClusterBody.
-
 
         :param instance: The instance of this CreateClusterBody.
         :type instance: :class:`huaweicloudsdkcss.v1.CreateClusterInstanceBody`
@@ -135,7 +132,6 @@ class CreateClusterBody:
     def datastore(self):
         """Gets the datastore of this CreateClusterBody.
 
-
         :return: The datastore of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterDatastoreBody`
         """
@@ -144,7 +140,6 @@ class CreateClusterBody:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this CreateClusterBody.
-
 
         :param datastore: The datastore of this CreateClusterBody.
         :type datastore: :class:`huaweicloudsdkcss.v1.CreateClusterDatastoreBody`
@@ -199,7 +194,6 @@ class CreateClusterBody:
     def backup_strategy(self):
         """Gets the backup_strategy of this CreateClusterBody.
 
-
         :return: The backup_strategy of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterBackupStrategyBody`
         """
@@ -208,7 +202,6 @@ class CreateClusterBody:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this CreateClusterBody.
-
 
         :param backup_strategy: The backup_strategy of this CreateClusterBody.
         :type backup_strategy: :class:`huaweicloudsdkcss.v1.CreateClusterBackupStrategyBody`
@@ -329,7 +322,6 @@ class CreateClusterBody:
     def pay_info(self):
         """Gets the pay_info of this CreateClusterBody.
 
-
         :return: The pay_info of this CreateClusterBody.
         :rtype: :class:`huaweicloudsdkcss.v1.PayInfoBody`
         """
@@ -338,7 +330,6 @@ class CreateClusterBody:
     @pay_info.setter
     def pay_info(self, pay_info):
         """Sets the pay_info of this CreateClusterBody.
-
 
         :param pay_info: The pay_info of this CreateClusterBody.
         :type pay_info: :class:`huaweicloudsdkcss.v1.PayInfoBody`

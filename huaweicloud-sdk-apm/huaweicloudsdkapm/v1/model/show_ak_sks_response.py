@@ -17,7 +17,6 @@ class ShowAkSksResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowAkSksResponse(SdkResponse):
     def access_ak_sk_models(self):
         """Gets the access_ak_sk_models of this ShowAkSksResponse.
 
-
         :return: The access_ak_sk_models of this ShowAkSksResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.AccessAkskVO`]
         """
@@ -58,7 +56,6 @@ class ShowAkSksResponse(SdkResponse):
     @access_ak_sk_models.setter
     def access_ak_sk_models(self, access_ak_sk_models):
         """Sets the access_ak_sk_models of this ShowAkSksResponse.
-
 
         :param access_ak_sk_models: The access_ak_sk_models of this ShowAkSksResponse.
         :type access_ak_sk_models: list[:class:`huaweicloudsdkapm.v1.AccessAkskVO`]

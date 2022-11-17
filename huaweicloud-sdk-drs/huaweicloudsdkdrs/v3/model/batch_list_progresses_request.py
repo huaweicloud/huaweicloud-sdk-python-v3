@@ -17,7 +17,6 @@ class BatchListProgressesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class BatchListProgressesRequest:
     def body(self):
         """Gets the body of this BatchListProgressesRequest.
 
-
         :return: The body of this BatchListProgressesRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryProgressReq`
         """
@@ -87,7 +85,6 @@ class BatchListProgressesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchListProgressesRequest.
-
 
         :param body: The body of this BatchListProgressesRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryProgressReq`

@@ -17,7 +17,6 @@ class RunOnceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RunOnceRequest:
     def body(self):
         """Gets the body of this RunOnceRequest.
 
-
         :return: The body of this RunOnceRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.StartJobReq`
         """
@@ -86,7 +84,6 @@ class RunOnceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunOnceRequest.
-
 
         :param body: The body of this RunOnceRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.StartJobReq`

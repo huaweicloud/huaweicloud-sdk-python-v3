@@ -17,7 +17,6 @@ class UpdateModuleRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class UpdateModuleRequest:
     def body(self):
         """Gets the body of this UpdateModuleRequest.
 
-
         :return: The body of this UpdateModuleRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeModuleReqDTO`
         """
@@ -114,7 +112,6 @@ class UpdateModuleRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateModuleRequest.
-
 
         :param body: The body of this UpdateModuleRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeModuleReqDTO`

@@ -17,7 +17,6 @@ class ListHistoryRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ListHistoryRequest:
     def body(self):
         """Gets the body of this ListHistoryRequest.
 
-
         :return: The body of this ListHistoryRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.GetHistoryRequest`
         """
@@ -86,7 +84,6 @@ class ListHistoryRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListHistoryRequest.
-
 
         :param body: The body of this ListHistoryRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.GetHistoryRequest`

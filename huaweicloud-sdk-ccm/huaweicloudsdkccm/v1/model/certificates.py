@@ -17,7 +17,6 @@ class Certificates:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -412,7 +411,6 @@ class Certificates:
     def distinguished_name(self):
         """Gets the distinguished_name of this Certificates.
 
-
         :return: The distinguished_name of this Certificates.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
         """
@@ -421,7 +419,6 @@ class Certificates:
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
         """Sets the distinguished_name of this Certificates.
-
 
         :param distinguished_name: The distinguished_name of this Certificates.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`

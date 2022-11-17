@@ -17,7 +17,6 @@ class UpdateSubEnterpriseAmountRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateSubEnterpriseAmountRequest:
     def body(self):
         """Gets the body of this UpdateSubEnterpriseAmountRequest.
 
-
         :return: The body of this UpdateSubEnterpriseAmountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.TransferEnterpriseMultiAccountReq`
         """
@@ -58,7 +56,6 @@ class UpdateSubEnterpriseAmountRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateSubEnterpriseAmountRequest.
-
 
         :param body: The body of this UpdateSubEnterpriseAmountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.TransferEnterpriseMultiAccountReq`

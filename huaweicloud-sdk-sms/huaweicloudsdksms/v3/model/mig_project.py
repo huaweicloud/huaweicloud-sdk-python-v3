@@ -17,7 +17,6 @@ class MigProject:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -215,7 +214,6 @@ class MigProject:
     def template(self):
         """Gets the template of this MigProject.
 
-
         :return: The template of this MigProject.
         :rtype: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
         """
@@ -224,7 +222,6 @@ class MigProject:
     @template.setter
     def template(self, template):
         """Sets the template of this MigProject.
-
 
         :param template: The template of this MigProject.
         :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`

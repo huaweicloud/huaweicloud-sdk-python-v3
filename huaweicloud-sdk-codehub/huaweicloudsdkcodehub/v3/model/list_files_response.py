@@ -17,7 +17,6 @@ class ListFilesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ListFilesResponse(SdkResponse):
     def error(self):
         """Gets the error of this ListFilesResponse.
 
-
         :return: The error of this ListFilesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ListFilesResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ListFilesResponse.
-
 
         :param error: The error of this ListFilesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class ListFilesResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListFilesResponse.
 
-
         :return: The result of this ListFilesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.FilesResponseInfo`
         """
@@ -92,7 +88,6 @@ class ListFilesResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ListFilesResponse.
-
 
         :param result: The result of this ListFilesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.FilesResponseInfo`

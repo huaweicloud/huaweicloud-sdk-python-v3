@@ -17,7 +17,6 @@ class DeleteHostResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -257,7 +256,6 @@ class DeleteHostResponse(SdkResponse):
     def flag(self):
         """Gets the flag of this DeleteHostResponse.
 
-
         :return: The flag of this DeleteHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
@@ -266,7 +264,6 @@ class DeleteHostResponse(SdkResponse):
     @flag.setter
     def flag(self, flag):
         """Sets the flag of this DeleteHostResponse.
-
 
         :param flag: The flag of this DeleteHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`

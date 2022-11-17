@@ -17,7 +17,6 @@ class CreateTrackerResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -228,7 +227,6 @@ class CreateTrackerResponse(SdkResponse):
     def lts(self):
         """Gets the lts of this CreateTrackerResponse.
 
-
         :return: The lts of this CreateTrackerResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.Lts`
         """
@@ -237,7 +235,6 @@ class CreateTrackerResponse(SdkResponse):
     @lts.setter
     def lts(self, lts):
         """Sets the lts of this CreateTrackerResponse.
-
 
         :param lts: The lts of this CreateTrackerResponse.
         :type lts: :class:`huaweicloudsdkcts.v3.Lts`
@@ -402,7 +399,6 @@ class CreateTrackerResponse(SdkResponse):
     def obs_info(self):
         """Gets the obs_info of this CreateTrackerResponse.
 
-
         :return: The obs_info of this CreateTrackerResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.ObsInfo`
         """
@@ -411,7 +407,6 @@ class CreateTrackerResponse(SdkResponse):
     @obs_info.setter
     def obs_info(self, obs_info):
         """Sets the obs_info of this CreateTrackerResponse.
-
 
         :param obs_info: The obs_info of this CreateTrackerResponse.
         :type obs_info: :class:`huaweicloudsdkcts.v3.ObsInfo`
@@ -422,7 +417,6 @@ class CreateTrackerResponse(SdkResponse):
     def data_bucket(self):
         """Gets the data_bucket of this CreateTrackerResponse.
 
-
         :return: The data_bucket of this CreateTrackerResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.DataBucketQuery`
         """
@@ -431,7 +425,6 @@ class CreateTrackerResponse(SdkResponse):
     @data_bucket.setter
     def data_bucket(self, data_bucket):
         """Sets the data_bucket of this CreateTrackerResponse.
-
 
         :param data_bucket: The data_bucket of this CreateTrackerResponse.
         :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucketQuery`

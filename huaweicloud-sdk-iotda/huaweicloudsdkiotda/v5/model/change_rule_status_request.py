@@ -17,7 +17,6 @@ class ChangeRuleStatusRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ChangeRuleStatusRequest:
     def body(self):
         """Gets the body of this ChangeRuleStatusRequest.
 
-
         :return: The body of this ChangeRuleStatusRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.RuleStatus`
         """
@@ -115,7 +113,6 @@ class ChangeRuleStatusRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeRuleStatusRequest.
-
 
         :param body: The body of this ChangeRuleStatusRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.RuleStatus`

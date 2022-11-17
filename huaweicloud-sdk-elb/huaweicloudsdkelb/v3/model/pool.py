@@ -17,7 +17,6 @@ class Pool:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -400,7 +399,6 @@ class Pool:
     def session_persistence(self):
         """Gets the session_persistence of this Pool.
 
-
         :return: The session_persistence of this Pool.
         :rtype: :class:`huaweicloudsdkelb.v3.SessionPersistence`
         """
@@ -409,7 +407,6 @@ class Pool:
     @session_persistence.setter
     def session_persistence(self, session_persistence):
         """Sets the session_persistence of this Pool.
-
 
         :param session_persistence: The session_persistence of this Pool.
         :type session_persistence: :class:`huaweicloudsdkelb.v3.SessionPersistence`
@@ -442,7 +439,6 @@ class Pool:
     def slow_start(self):
         """Gets the slow_start of this Pool.
 
-
         :return: The slow_start of this Pool.
         :rtype: :class:`huaweicloudsdkelb.v3.SlowStart`
         """
@@ -451,7 +447,6 @@ class Pool:
     @slow_start.setter
     def slow_start(self, slow_start):
         """Sets the slow_start of this Pool.
-
 
         :param slow_start: The slow_start of this Pool.
         :type slow_start: :class:`huaweicloudsdkelb.v3.SlowStart`

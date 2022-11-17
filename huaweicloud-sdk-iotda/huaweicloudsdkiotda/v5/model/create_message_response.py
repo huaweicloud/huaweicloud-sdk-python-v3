@@ -17,7 +17,6 @@ class CreateMessageResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateMessageResponse(SdkResponse):
     def result(self):
         """Gets the result of this CreateMessageResponse.
 
-
         :return: The result of this CreateMessageResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.MessageResult`
         """
@@ -87,7 +85,6 @@ class CreateMessageResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this CreateMessageResponse.
-
 
         :param result: The result of this CreateMessageResponse.
         :type result: :class:`huaweicloudsdkiotda.v5.MessageResult`

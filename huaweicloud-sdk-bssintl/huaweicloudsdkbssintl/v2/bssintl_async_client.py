@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class BssintlAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConversions
         :type request: :class:`huaweicloudsdkbssintl.v2.ListConversionsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListConversionsResponse`
@@ -68,6 +63,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConversionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCosts
         :type request: :class:`huaweicloudsdkbssintl.v2.ListCostsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListCostsResponse`
@@ -128,6 +127,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCostsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFreeResourceUsages
         :type request: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceUsagesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceUsagesResponse`
@@ -188,6 +191,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFreeResourceUsagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMeasureUnits
         :type request: :class:`huaweicloudsdkbssintl.v2.ListMeasureUnitsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListMeasureUnitsResponse`
@@ -248,6 +255,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -280,6 +289,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMeasureUnitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -294,6 +304,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResourceTypes
         :type request: :class:`huaweicloudsdkbssintl.v2.ListResourceTypesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListResourceTypesResponse`
@@ -306,6 +317,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServiceTypes
         :type request: :class:`huaweicloudsdkbssintl.v2.ListServiceTypesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListServiceTypesResponse`
@@ -368,6 +383,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -404,6 +421,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServiceTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -418,6 +436,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ChangeEnterpriseRealnameAuthentication
         :type request: :class:`huaweicloudsdkbssintl.v2.ChangeEnterpriseRealnameAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ChangeEnterpriseRealnameAuthenticationResponse`
@@ -430,6 +449,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -462,6 +483,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeEnterpriseRealnameAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -476,6 +498,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckUserIdentity
         :type request: :class:`huaweicloudsdkbssintl.v2.CheckUserIdentityRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.CheckUserIdentityResponse`
@@ -488,6 +511,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -520,6 +545,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckUserIdentityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -534,6 +560,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEnterpriseRealnameAuthentication
         :type request: :class:`huaweicloudsdkbssintl.v2.CreateEnterpriseRealnameAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.CreateEnterpriseRealnameAuthenticationResponse`
@@ -546,6 +573,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -578,6 +607,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnterpriseRealnameAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -592,6 +622,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePersonalRealnameAuth
         :type request: :class:`huaweicloudsdkbssintl.v2.CreatePersonalRealnameAuthRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.CreatePersonalRealnameAuthResponse`
@@ -604,6 +635,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -636,6 +669,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePersonalRealnameAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -650,6 +684,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSubCustomer
         :type request: :class:`huaweicloudsdkbssintl.v2.CreateSubCustomerRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.CreateSubCustomerResponse`
@@ -662,6 +697,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -694,6 +731,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSubCustomerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -708,6 +746,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for FreezeSubCustomers
         :type request: :class:`huaweicloudsdkbssintl.v2.FreezeSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.FreezeSubCustomersResponse`
@@ -720,6 +759,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -752,6 +793,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='FreezeSubCustomersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -766,6 +808,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCustomerOnDemandResources
         :type request: :class:`huaweicloudsdkbssintl.v2.ListCustomerOnDemandResourcesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListCustomerOnDemandResourcesResponse`
@@ -778,6 +821,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -812,6 +857,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerOnDemandResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -826,6 +872,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCustomerselfResourceRecordDetails
         :type request: :class:`huaweicloudsdkbssintl.v2.ListCustomerselfResourceRecordDetailsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListCustomerselfResourceRecordDetailsResponse`
@@ -838,6 +885,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -870,6 +919,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerselfResourceRecordDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -884,6 +934,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCustomerselfResourceRecords
         :type request: :class:`huaweicloudsdkbssintl.v2.ListCustomerselfResourceRecordsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListCustomerselfResourceRecordsResponse`
@@ -896,6 +947,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -958,6 +1011,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerselfResourceRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -972,6 +1026,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFreeResourceInfos
         :type request: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceInfosRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceInfosResponse`
@@ -984,6 +1039,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1018,6 +1075,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFreeResourceInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1034,6 +1092,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListIndirectPartners
         :type request: :class:`huaweicloudsdkbssintl.v2.ListIndirectPartnersRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListIndirectPartnersResponse`
@@ -1046,6 +1105,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1078,6 +1139,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListIndirectPartnersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1092,6 +1154,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInvoices
         :type request: :class:`huaweicloudsdkbssintl.v2.ListInvoicesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListInvoicesResponse`
@@ -1104,6 +1167,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1142,6 +1207,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInvoicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1156,6 +1222,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMonthlyExpenditures
         :type request: :class:`huaweicloudsdkbssintl.v2.ListMonthlyExpendituresRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListMonthlyExpendituresResponse`
@@ -1168,6 +1235,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1206,6 +1275,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMonthlyExpendituresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1220,6 +1290,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOnDemandResourceRatings
         :type request: :class:`huaweicloudsdkbssintl.v2.ListOnDemandResourceRatingsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListOnDemandResourceRatingsResponse`
@@ -1232,6 +1303,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1264,6 +1337,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOnDemandResourceRatingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1278,6 +1352,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListOrderDiscounts
         :type request: :class:`huaweicloudsdkbssintl.v2.ListOrderDiscountsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListOrderDiscountsResponse`
@@ -1290,6 +1365,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1322,6 +1399,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOrderDiscountsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1336,6 +1414,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPostpaidBillSum
         :type request: :class:`huaweicloudsdkbssintl.v2.ListPostpaidBillSumRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListPostpaidBillSumResponse`
@@ -1348,6 +1427,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1380,6 +1461,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPostpaidBillSumResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1394,6 +1476,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRateOnPeriodDetail
         :type request: :class:`huaweicloudsdkbssintl.v2.ListRateOnPeriodDetailRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListRateOnPeriodDetailResponse`
@@ -1406,6 +1489,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1438,6 +1523,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRateOnPeriodDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1452,6 +1538,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServiceResources
         :type request: :class:`huaweicloudsdkbssintl.v2.ListServiceResourcesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListServiceResourcesResponse`
@@ -1464,6 +1551,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1502,6 +1591,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServiceResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1516,6 +1606,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSubCustomerCoupons
         :type request: :class:`huaweicloudsdkbssintl.v2.ListSubCustomerCouponsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListSubCustomerCouponsResponse`
@@ -1528,6 +1619,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1578,6 +1671,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubCustomerCouponsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1592,6 +1686,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSubCustomers
         :type request: :class:`huaweicloudsdkbssintl.v2.ListSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListSubCustomersResponse`
@@ -1604,6 +1699,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1636,6 +1733,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubCustomersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1650,6 +1748,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUsageTypes
         :type request: :class:`huaweicloudsdkbssintl.v2.ListUsageTypesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListUsageTypesResponse`
@@ -1662,6 +1761,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1700,6 +1801,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsageTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1714,6 +1816,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SendVerificationMessageCode
         :type request: :class:`huaweicloudsdkbssintl.v2.SendVerificationMessageCodeRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.SendVerificationMessageCodeResponse`
@@ -1726,6 +1829,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1758,6 +1863,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SendVerificationMessageCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1772,6 +1878,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCustomerAccountBalances
         :type request: :class:`huaweicloudsdkbssintl.v2.ShowCustomerAccountBalancesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ShowCustomerAccountBalancesResponse`
@@ -1784,6 +1891,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1814,6 +1923,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCustomerAccountBalancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1828,6 +1938,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRealnameAuthenticationReviewResult
         :type request: :class:`huaweicloudsdkbssintl.v2.ShowRealnameAuthenticationReviewResultRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ShowRealnameAuthenticationReviewResultResponse`
@@ -1840,6 +1951,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1872,6 +1985,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRealnameAuthenticationReviewResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1886,6 +2000,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSubCustomerBudget
         :type request: :class:`huaweicloudsdkbssintl.v2.ShowSubCustomerBudgetRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ShowSubCustomerBudgetResponse`
@@ -1898,6 +2013,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1932,6 +2049,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSubCustomerBudgetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1946,6 +2064,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UnfreezeSubCustomers
         :type request: :class:`huaweicloudsdkbssintl.v2.UnfreezeSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.UnfreezeSubCustomersResponse`
@@ -1958,6 +2077,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1990,6 +2111,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnfreezeSubCustomersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2004,6 +2126,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePeriodToOnDemand
         :type request: :class:`huaweicloudsdkbssintl.v2.UpdatePeriodToOnDemandRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.UpdatePeriodToOnDemandResponse`
@@ -2016,6 +2139,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2048,6 +2173,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePeriodToOnDemandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2062,6 +2188,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSubCustomerBudget
         :type request: :class:`huaweicloudsdkbssintl.v2.UpdateSubCustomerBudgetRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.UpdateSubCustomerBudgetResponse`
@@ -2074,6 +2201,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2106,6 +2235,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSubCustomerBudgetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2120,6 +2250,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AutoRenewalResources
         :type request: :class:`huaweicloudsdkbssintl.v2.AutoRenewalResourcesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.AutoRenewalResourcesResponse`
@@ -2132,6 +2263,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2164,6 +2297,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AutoRenewalResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2178,6 +2312,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelAutoRenewalResources
         :type request: :class:`huaweicloudsdkbssintl.v2.CancelAutoRenewalResourcesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.CancelAutoRenewalResourcesResponse`
@@ -2190,6 +2325,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2222,6 +2359,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelAutoRenewalResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2236,6 +2374,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelCustomerOrder
         :type request: :class:`huaweicloudsdkbssintl.v2.CancelCustomerOrderRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.CancelCustomerOrderResponse`
@@ -2248,6 +2387,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2280,6 +2421,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelCustomerOrderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2294,6 +2436,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelResourcesSubscription
         :type request: :class:`huaweicloudsdkbssintl.v2.CancelResourcesSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.CancelResourcesSubscriptionResponse`
@@ -2306,6 +2449,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2338,6 +2483,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelResourcesSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2352,6 +2498,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCustomerOrders
         :type request: :class:`huaweicloudsdkbssintl.v2.ListCustomerOrdersRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListCustomerOrdersResponse`
@@ -2364,6 +2511,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2420,6 +2569,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomerOrdersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2434,6 +2584,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPayPerUseCustomerResources
         :type request: :class:`huaweicloudsdkbssintl.v2.ListPayPerUseCustomerResourcesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ListPayPerUseCustomerResourcesResponse`
@@ -2446,6 +2597,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2478,6 +2631,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPayPerUseCustomerResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2492,6 +2646,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PayOrders
         :type request: :class:`huaweicloudsdkbssintl.v2.PayOrdersRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.PayOrdersResponse`
@@ -2504,6 +2659,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2536,6 +2693,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PayOrdersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2550,6 +2708,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RenewalResources
         :type request: :class:`huaweicloudsdkbssintl.v2.RenewalResourcesRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.RenewalResourcesResponse`
@@ -2562,6 +2721,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2594,6 +2755,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RenewalResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2608,6 +2770,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCustomerOrderDetails
         :type request: :class:`huaweicloudsdkbssintl.v2.ShowCustomerOrderDetailsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ShowCustomerOrderDetailsResponse`
@@ -2620,6 +2783,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2660,6 +2825,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCustomerOrderDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2674,6 +2840,7 @@ class BssintlAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRefundOrderDetails
         :type request: :class:`huaweicloudsdkbssintl.v2.ShowRefundOrderDetailsRequest`
         :rtype: :class:`huaweicloudsdkbssintl.v2.ShowRefundOrderDetailsResponse`
@@ -2686,6 +2853,8 @@ class BssintlAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2718,6 +2887,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRefundOrderDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2725,7 +2895,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2736,9 +2906,10 @@ class BssintlAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2755,6 +2926,7 @@ class BssintlAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

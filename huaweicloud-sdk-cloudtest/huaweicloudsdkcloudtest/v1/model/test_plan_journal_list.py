@@ -17,7 +17,6 @@ class TestPlanJournalList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -143,7 +142,6 @@ class TestPlanJournalList:
     def operator(self):
         """Gets the operator of this TestPlanJournalList.
 
-
         :return: The operator of this TestPlanJournalList.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndId`
         """
@@ -152,7 +150,6 @@ class TestPlanJournalList:
     @operator.setter
     def operator(self, operator):
         """Sets the operator of this TestPlanJournalList.
-
 
         :param operator: The operator of this TestPlanJournalList.
         :type operator: :class:`huaweicloudsdkcloudtest.v1.NameAndId`

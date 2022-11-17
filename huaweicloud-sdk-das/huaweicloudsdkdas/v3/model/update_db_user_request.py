@@ -17,7 +17,6 @@ class UpdateDbUserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class UpdateDbUserRequest:
     def body(self):
         """Gets the body of this UpdateDbUserRequest.
 
-
         :return: The body of this UpdateDbUserRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequestBody`
         """
@@ -143,7 +141,6 @@ class UpdateDbUserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDbUserRequest.
-
 
         :param body: The body of this UpdateDbUserRequest.
         :type body: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequestBody`

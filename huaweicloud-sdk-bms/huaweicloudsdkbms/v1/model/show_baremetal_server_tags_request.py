@@ -17,7 +17,6 @@ class ShowBaremetalServerTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class ShowBaremetalServerTagsRequest:
     def server_id(self):
         """Gets the server_id of this ShowBaremetalServerTagsRequest.
 
-
         :return: The server_id of this ShowBaremetalServerTagsRequest.
         :rtype: str
         """
@@ -57,7 +55,6 @@ class ShowBaremetalServerTagsRequest:
     @server_id.setter
     def server_id(self, server_id):
         """Sets the server_id of this ShowBaremetalServerTagsRequest.
-
 
         :param server_id: The server_id of this ShowBaremetalServerTagsRequest.
         :type server_id: str

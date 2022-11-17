@@ -17,7 +17,6 @@ class EngineCreateReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -344,7 +343,6 @@ class EngineCreateReq:
     def auth_cred(self):
         """Gets the auth_cred of this EngineCreateReq.
 
-
         :return: The auth_cred of this EngineCreateReq.
         :rtype: :class:`huaweicloudsdkcse.v1.EngineRbacPwd`
         """
@@ -353,7 +351,6 @@ class EngineCreateReq:
     @auth_cred.setter
     def auth_cred(self, auth_cred):
         """Sets the auth_cred of this EngineCreateReq.
-
 
         :param auth_cred: The auth_cred of this EngineCreateReq.
         :type auth_cred: :class:`huaweicloudsdkcse.v1.EngineRbacPwd`

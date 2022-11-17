@@ -17,7 +17,6 @@ class CreateNotificationRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class CreateNotificationRequestBody:
     def filter(self):
         """Gets the filter of this CreateNotificationRequestBody.
 
-
         :return: The filter of this CreateNotificationRequestBody.
         :rtype: :class:`huaweicloudsdkcts.v3.Filter`
         """
@@ -201,7 +199,6 @@ class CreateNotificationRequestBody:
     @filter.setter
     def filter(self, filter):
         """Sets the filter of this CreateNotificationRequestBody.
-
 
         :param filter: The filter of this CreateNotificationRequestBody.
         :type filter: :class:`huaweicloudsdkcts.v3.Filter`

@@ -17,7 +17,6 @@ class UpdateVaultResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateVaultResponse(SdkResponse):
     def vault(self):
         """Gets the vault of this UpdateVaultResponse.
 
-
         :return: The vault of this UpdateVaultResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.Vault`
         """
@@ -58,7 +56,6 @@ class UpdateVaultResponse(SdkResponse):
     @vault.setter
     def vault(self, vault):
         """Sets the vault of this UpdateVaultResponse.
-
 
         :param vault: The vault of this UpdateVaultResponse.
         :type vault: :class:`huaweicloudsdkcbr.v1.Vault`

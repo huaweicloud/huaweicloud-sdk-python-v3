@@ -17,7 +17,6 @@ class CreateTaskGroupReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -144,7 +143,6 @@ class CreateTaskGroupReq:
     def src_node(self):
         """Gets the src_node of this CreateTaskGroupReq.
 
-
         :return: The src_node of this CreateTaskGroupReq.
         :rtype: :class:`huaweicloudsdkoms.v2.TaskGroupSrcNode`
         """
@@ -153,7 +151,6 @@ class CreateTaskGroupReq:
     @src_node.setter
     def src_node(self, src_node):
         """Sets the src_node of this CreateTaskGroupReq.
-
 
         :param src_node: The src_node of this CreateTaskGroupReq.
         :type src_node: :class:`huaweicloudsdkoms.v2.TaskGroupSrcNode`
@@ -186,7 +183,6 @@ class CreateTaskGroupReq:
     def dst_node(self):
         """Gets the dst_node of this CreateTaskGroupReq.
 
-
         :return: The dst_node of this CreateTaskGroupReq.
         :rtype: :class:`huaweicloudsdkoms.v2.TaskGroupDstNode`
         """
@@ -195,7 +191,6 @@ class CreateTaskGroupReq:
     @dst_node.setter
     def dst_node(self, dst_node):
         """Sets the dst_node of this CreateTaskGroupReq.
-
 
         :param dst_node: The dst_node of this CreateTaskGroupReq.
         :type dst_node: :class:`huaweicloudsdkoms.v2.TaskGroupDstNode`
@@ -338,7 +333,6 @@ class CreateTaskGroupReq:
     def smn_config(self):
         """Gets the smn_config of this CreateTaskGroupReq.
 
-
         :return: The smn_config of this CreateTaskGroupReq.
         :rtype: :class:`huaweicloudsdkoms.v2.SmnConfig`
         """
@@ -347,7 +341,6 @@ class CreateTaskGroupReq:
     @smn_config.setter
     def smn_config(self, smn_config):
         """Sets the smn_config of this CreateTaskGroupReq.
-
 
         :param smn_config: The smn_config of this CreateTaskGroupReq.
         :type smn_config: :class:`huaweicloudsdkoms.v2.SmnConfig`
@@ -358,7 +351,6 @@ class CreateTaskGroupReq:
     def source_cdn(self):
         """Gets the source_cdn of this CreateTaskGroupReq.
 
-
         :return: The source_cdn of this CreateTaskGroupReq.
         :rtype: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
         """
@@ -367,7 +359,6 @@ class CreateTaskGroupReq:
     @source_cdn.setter
     def source_cdn(self, source_cdn):
         """Sets the source_cdn of this CreateTaskGroupReq.
-
 
         :param source_cdn: The source_cdn of this CreateTaskGroupReq.
         :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnReq`

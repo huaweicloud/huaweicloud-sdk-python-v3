@@ -17,7 +17,6 @@ class Authentication:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class Authentication:
     def authenticating_proxy(self):
         """Gets the authenticating_proxy of this Authentication.
 
-
         :return: The authenticating_proxy of this Authentication.
         :rtype: :class:`huaweicloudsdkcce.v3.AuthenticatingProxy`
         """
@@ -87,7 +85,6 @@ class Authentication:
     @authenticating_proxy.setter
     def authenticating_proxy(self, authenticating_proxy):
         """Sets the authenticating_proxy of this Authentication.
-
 
         :param authenticating_proxy: The authenticating_proxy of this Authentication.
         :type authenticating_proxy: :class:`huaweicloudsdkcce.v3.AuthenticatingProxy`

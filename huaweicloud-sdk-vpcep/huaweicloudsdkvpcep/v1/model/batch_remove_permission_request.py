@@ -17,7 +17,6 @@ class BatchRemovePermissionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class BatchRemovePermissionRequest:
     def permissions(self):
         """Gets the permissions of this BatchRemovePermissionRequest.
 
-
         :return: The permissions of this BatchRemovePermissionRequest.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.EpsRemovePermissionRequest`]
         """
@@ -57,7 +55,6 @@ class BatchRemovePermissionRequest:
     @permissions.setter
     def permissions(self, permissions):
         """Sets the permissions of this BatchRemovePermissionRequest.
-
 
         :param permissions: The permissions of this BatchRemovePermissionRequest.
         :type permissions: list[:class:`huaweicloudsdkvpcep.v1.EpsRemovePermissionRequest`]

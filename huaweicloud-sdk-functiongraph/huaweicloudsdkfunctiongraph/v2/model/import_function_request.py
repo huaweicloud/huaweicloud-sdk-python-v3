@@ -17,7 +17,6 @@ class ImportFunctionRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ImportFunctionRequest:
     def body(self):
         """Gets the body of this ImportFunctionRequest.
 
-
         :return: The body of this ImportFunctionRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ImportFunctionRequestBody`
         """
@@ -58,7 +56,6 @@ class ImportFunctionRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportFunctionRequest.
-
 
         :param body: The body of this ImportFunctionRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.ImportFunctionRequestBody`

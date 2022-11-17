@@ -17,7 +17,6 @@ class KeystoneCreateGroupRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class KeystoneCreateGroupRequestBody:
     def group(self):
         """Gets the group of this KeystoneCreateGroupRequestBody.
 
-
         :return: The group of this KeystoneCreateGroupRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupOption`
         """
@@ -57,7 +55,6 @@ class KeystoneCreateGroupRequestBody:
     @group.setter
     def group(self, group):
         """Sets the group of this KeystoneCreateGroupRequestBody.
-
 
         :param group: The group of this KeystoneCreateGroupRequestBody.
         :type group: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupOption`

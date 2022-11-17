@@ -17,7 +17,6 @@ class EndpointGroupDetail:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -185,7 +184,6 @@ class EndpointGroupDetail:
     def status(self):
         """Gets the status of this EndpointGroupDetail.
 
-
         :return: The status of this EndpointGroupDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
         """
@@ -194,7 +192,6 @@ class EndpointGroupDetail:
     @status.setter
     def status(self, status):
         """Sets the status of this EndpointGroupDetail.
-
 
         :param status: The status of this EndpointGroupDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -337,7 +334,6 @@ class EndpointGroupDetail:
     def frozen_info(self):
         """Gets the frozen_info of this EndpointGroupDetail.
 
-
         :return: The frozen_info of this EndpointGroupDetail.
         :rtype: :class:`huaweicloudsdkga.v1.FrozenInfo`
         """
@@ -346,7 +342,6 @@ class EndpointGroupDetail:
     @frozen_info.setter
     def frozen_info(self, frozen_info):
         """Sets the frozen_info of this EndpointGroupDetail.
-
 
         :param frozen_info: The frozen_info of this EndpointGroupDetail.
         :type frozen_info: :class:`huaweicloudsdkga.v1.FrozenInfo`

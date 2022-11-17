@@ -17,7 +17,6 @@ class ShowVpcRouteResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowVpcRouteResponse(SdkResponse):
     def route(self):
         """Gets the route of this ShowVpcRouteResponse.
 
-
         :return: The route of this ShowVpcRouteResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcRoute`
         """
@@ -58,7 +56,6 @@ class ShowVpcRouteResponse(SdkResponse):
     @route.setter
     def route(self, route):
         """Sets the route of this ShowVpcRouteResponse.
-
 
         :param route: The route of this ShowVpcRouteResponse.
         :type route: :class:`huaweicloudsdkvpc.v2.VpcRoute`

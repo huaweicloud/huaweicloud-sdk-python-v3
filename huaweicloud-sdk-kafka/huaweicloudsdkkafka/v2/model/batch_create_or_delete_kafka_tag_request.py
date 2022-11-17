@@ -17,7 +17,6 @@ class BatchCreateOrDeleteKafkaTagRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class BatchCreateOrDeleteKafkaTagRequest:
     def body(self):
         """Gets the body of this BatchCreateOrDeleteKafkaTagRequest.
 
-
         :return: The body of this BatchCreateOrDeleteKafkaTagRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteTagReq`
         """
@@ -86,7 +84,6 @@ class BatchCreateOrDeleteKafkaTagRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchCreateOrDeleteKafkaTagRequest.
-
 
         :param body: The body of this BatchCreateOrDeleteKafkaTagRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.BatchCreateOrDeleteTagReq`

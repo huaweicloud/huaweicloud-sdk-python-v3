@@ -17,7 +17,6 @@ class RunSentenceEmbeddingRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunSentenceEmbeddingRequest:
     def body(self):
         """Gets the body of this RunSentenceEmbeddingRequest.
 
-
         :return: The body of this RunSentenceEmbeddingRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.PostSentenceEmbeddingReq`
         """
@@ -58,7 +56,6 @@ class RunSentenceEmbeddingRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunSentenceEmbeddingRequest.
-
 
         :param body: The body of this RunSentenceEmbeddingRequest.
         :type body: :class:`huaweicloudsdknlp.v2.PostSentenceEmbeddingReq`

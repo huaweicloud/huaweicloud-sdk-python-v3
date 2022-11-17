@@ -17,7 +17,6 @@ class UpdateNatGatewayResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateNatGatewayResponse(SdkResponse):
     def nat_gateway(self):
         """Gets the nat_gateway of this UpdateNatGatewayResponse.
 
-
         :return: The nat_gateway of this UpdateNatGatewayResponse.
         :rtype: :class:`huaweicloudsdknat.v2.NatGatewayResponseBody`
         """
@@ -58,7 +56,6 @@ class UpdateNatGatewayResponse(SdkResponse):
     @nat_gateway.setter
     def nat_gateway(self, nat_gateway):
         """Sets the nat_gateway of this UpdateNatGatewayResponse.
-
 
         :param nat_gateway: The nat_gateway of this UpdateNatGatewayResponse.
         :type nat_gateway: :class:`huaweicloudsdknat.v2.NatGatewayResponseBody`

@@ -17,7 +17,6 @@ class CustomerOrderV3:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -462,7 +461,6 @@ class CustomerOrderV3:
     def amount_info(self):
         """Gets the amount_info of this CustomerOrderV3.
 
-
         :return: The amount_info of this CustomerOrderV3.
         :rtype: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`
         """
@@ -471,7 +469,6 @@ class CustomerOrderV3:
     @amount_info.setter
     def amount_info(self, amount_info):
         """Sets the amount_info of this CustomerOrderV3.
-
 
         :param amount_info: The amount_info of this CustomerOrderV3.
         :type amount_info: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`

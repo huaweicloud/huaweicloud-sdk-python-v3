@@ -17,7 +17,6 @@ class CompareFaceByBase64Response(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CompareFaceByBase64Response(SdkResponse):
     def image1_face(self):
         """Gets the image1_face of this CompareFaceByBase64Response.
 
-
         :return: The image1_face of this CompareFaceByBase64Response.
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFace`
         """
@@ -72,7 +70,6 @@ class CompareFaceByBase64Response(SdkResponse):
     @image1_face.setter
     def image1_face(self, image1_face):
         """Sets the image1_face of this CompareFaceByBase64Response.
-
 
         :param image1_face: The image1_face of this CompareFaceByBase64Response.
         :type image1_face: :class:`huaweicloudsdkfrs.v2.CompareFace`
@@ -83,7 +80,6 @@ class CompareFaceByBase64Response(SdkResponse):
     def image2_face(self):
         """Gets the image2_face of this CompareFaceByBase64Response.
 
-
         :return: The image2_face of this CompareFaceByBase64Response.
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFace`
         """
@@ -92,7 +88,6 @@ class CompareFaceByBase64Response(SdkResponse):
     @image2_face.setter
     def image2_face(self, image2_face):
         """Sets the image2_face of this CompareFaceByBase64Response.
-
 
         :param image2_face: The image2_face of this CompareFaceByBase64Response.
         :type image2_face: :class:`huaweicloudsdkfrs.v2.CompareFace`

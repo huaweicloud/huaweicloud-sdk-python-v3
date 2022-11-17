@@ -17,7 +17,6 @@ class BatchUpdateChildNickNamesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class BatchUpdateChildNickNamesRequest:
     def body(self):
         """Gets the body of this BatchUpdateChildNickNamesRequest.
 
-
         :return: The body of this BatchUpdateChildNickNamesRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildUserNickNamesRequestBody`
         """
@@ -58,7 +56,6 @@ class BatchUpdateChildNickNamesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchUpdateChildNickNamesRequest.
-
 
         :param body: The body of this BatchUpdateChildNickNamesRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildUserNickNamesRequestBody`

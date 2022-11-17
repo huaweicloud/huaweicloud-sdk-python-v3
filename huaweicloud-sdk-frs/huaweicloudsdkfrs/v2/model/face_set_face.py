@@ -17,7 +17,6 @@ class FaceSetFace:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -66,7 +65,6 @@ class FaceSetFace:
     def bounding_box(self):
         """Gets the bounding_box of this FaceSetFace.
 
-
         :return: The bounding_box of this FaceSetFace.
         :rtype: :class:`huaweicloudsdkfrs.v2.BoundingBox`
         """
@@ -75,7 +73,6 @@ class FaceSetFace:
     @bounding_box.setter
     def bounding_box(self, bounding_box):
         """Sets the bounding_box of this FaceSetFace.
-
 
         :param bounding_box: The bounding_box of this FaceSetFace.
         :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`

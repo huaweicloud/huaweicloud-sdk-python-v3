@@ -17,7 +17,6 @@ class CacheConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -114,7 +113,6 @@ class CacheConfigRequest:
     def compress(self):
         """Gets the compress of this CacheConfigRequest.
 
-
         :return: The compress of this CacheConfigRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.CompressRequest`
         """
@@ -123,7 +121,6 @@ class CacheConfigRequest:
     @compress.setter
     def compress(self, compress):
         """Sets the compress of this CacheConfigRequest.
-
 
         :param compress: The compress of this CacheConfigRequest.
         :type compress: :class:`huaweicloudsdkcdn.v1.CompressRequest`

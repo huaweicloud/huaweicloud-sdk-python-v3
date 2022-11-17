@@ -17,7 +17,6 @@ class ExportJobListRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ExportJobListRequest:
     def body(self):
         """Gets the body of this ExportJobListRequest.
 
-
         :return: The body of this ExportJobListRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`
         """
@@ -58,7 +56,6 @@ class ExportJobListRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ExportJobListRequest.
-
 
         :param body: The body of this ExportJobListRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`

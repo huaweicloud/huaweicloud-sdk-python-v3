@@ -17,7 +17,6 @@ class ShowTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -567,7 +566,6 @@ class ShowTaskResponse(SdkResponse):
     def source_server(self):
         """Gets the source_server of this ShowTaskResponse.
 
-
         :return: The source_server of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdksms.v3.SourceServerResponse`
         """
@@ -576,7 +574,6 @@ class ShowTaskResponse(SdkResponse):
     @source_server.setter
     def source_server(self, source_server):
         """Sets the source_server of this ShowTaskResponse.
-
 
         :param source_server: The source_server of this ShowTaskResponse.
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerResponse`
@@ -587,7 +584,6 @@ class ShowTaskResponse(SdkResponse):
     def target_server(self):
         """Gets the target_server of this ShowTaskResponse.
 
-
         :return: The target_server of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdksms.v3.TaskTargetServer`
         """
@@ -596,7 +592,6 @@ class ShowTaskResponse(SdkResponse):
     @target_server.setter
     def target_server(self, target_server):
         """Sets the target_server of this ShowTaskResponse.
-
 
         :param target_server: The target_server of this ShowTaskResponse.
         :type target_server: :class:`huaweicloudsdksms.v3.TaskTargetServer`
@@ -893,7 +888,6 @@ class ShowTaskResponse(SdkResponse):
     def clone_server(self):
         """Gets the clone_server of this ShowTaskResponse.
 
-
         :return: The clone_server of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdksms.v3.CloneServer`
         """
@@ -902,7 +896,6 @@ class ShowTaskResponse(SdkResponse):
     @clone_server.setter
     def clone_server(self, clone_server):
         """Sets the clone_server of this ShowTaskResponse.
-
 
         :param clone_server: The clone_server of this ShowTaskResponse.
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`

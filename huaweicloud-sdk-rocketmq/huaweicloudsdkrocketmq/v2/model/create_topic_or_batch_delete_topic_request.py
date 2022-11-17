@@ -17,7 +17,6 @@ class CreateTopicOrBatchDeleteTopicRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateTopicOrBatchDeleteTopicRequest:
     def body(self):
         """Gets the body of this CreateTopicOrBatchDeleteTopicRequest.
 
-
         :return: The body of this CreateTopicOrBatchDeleteTopicRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateTopicOrBatchDeleteTopicReq`
         """
@@ -115,7 +113,6 @@ class CreateTopicOrBatchDeleteTopicRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateTopicOrBatchDeleteTopicRequest.
-
 
         :param body: The body of this CreateTopicOrBatchDeleteTopicRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.CreateTopicOrBatchDeleteTopicReq`

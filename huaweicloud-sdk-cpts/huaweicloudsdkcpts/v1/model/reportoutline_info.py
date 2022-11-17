@@ -17,7 +17,6 @@ class ReportoutlineInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -759,7 +758,6 @@ class ReportoutlineInfo:
     def progress_state(self):
         """Gets the progress_state of this ReportoutlineInfo.
 
-
         :return: The progress_state of this ReportoutlineInfo.
         :rtype: str
         """
@@ -768,7 +766,6 @@ class ReportoutlineInfo:
     @progress_state.setter
     def progress_state(self, progress_state):
         """Sets the progress_state of this ReportoutlineInfo.
-
 
         :param progress_state: The progress_state of this ReportoutlineInfo.
         :type progress_state: str
@@ -779,7 +776,6 @@ class ReportoutlineInfo:
     def create_by(self):
         """Gets the create_by of this ReportoutlineInfo.
 
-
         :return: The create_by of this ReportoutlineInfo.
         :rtype: str
         """
@@ -788,7 +784,6 @@ class ReportoutlineInfo:
     @create_by.setter
     def create_by(self, create_by):
         """Sets the create_by of this ReportoutlineInfo.
-
 
         :param create_by: The create_by of this ReportoutlineInfo.
         :type create_by: str
@@ -799,7 +794,6 @@ class ReportoutlineInfo:
     def status_value(self):
         """Gets the status_value of this ReportoutlineInfo.
 
-
         :return: The status_value of this ReportoutlineInfo.
         :rtype: str
         """
@@ -808,7 +802,6 @@ class ReportoutlineInfo:
     @status_value.setter
     def status_value(self, status_value):
         """Sets the status_value of this ReportoutlineInfo.
-
 
         :param status_value: The status_value of this ReportoutlineInfo.
         :type status_value: str

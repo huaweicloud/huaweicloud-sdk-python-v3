@@ -17,7 +17,6 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
     def proxy(self):
         """Gets the proxy of this ShowInformationAboutDatabaseProxyResponse.
 
-
         :return: The proxy of this ShowInformationAboutDatabaseProxyResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.Proxy`
         """
@@ -72,7 +70,6 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
     @proxy.setter
     def proxy(self, proxy):
         """Sets the proxy of this ShowInformationAboutDatabaseProxyResponse.
-
 
         :param proxy: The proxy of this ShowInformationAboutDatabaseProxyResponse.
         :type proxy: :class:`huaweicloudsdkrds.v3.Proxy`
@@ -83,7 +80,6 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
     def master_instance(self):
         """Gets the master_instance of this ShowInformationAboutDatabaseProxyResponse.
 
-
         :return: The master_instance of this ShowInformationAboutDatabaseProxyResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.MasterInstance`
         """
@@ -92,7 +88,6 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
     @master_instance.setter
     def master_instance(self, master_instance):
         """Sets the master_instance of this ShowInformationAboutDatabaseProxyResponse.
-
 
         :param master_instance: The master_instance of this ShowInformationAboutDatabaseProxyResponse.
         :type master_instance: :class:`huaweicloudsdkrds.v3.MasterInstance`

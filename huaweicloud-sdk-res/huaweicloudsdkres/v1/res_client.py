@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ResClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class ResClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -104,6 +100,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -130,6 +127,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +165,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResIntelligentSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -192,6 +192,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -230,6 +232,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -256,6 +259,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -294,6 +299,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -320,6 +326,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -358,6 +366,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResOnlineInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -384,6 +393,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -420,6 +431,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -446,6 +458,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -480,6 +494,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResWorkspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -506,6 +521,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -542,6 +559,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -568,6 +586,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -606,6 +626,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -632,6 +653,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -670,6 +693,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResOnlineInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -696,6 +720,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -732,6 +758,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -758,6 +785,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -792,6 +821,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResWorkspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -818,6 +848,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -852,6 +884,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResDatasourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -878,6 +911,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -910,6 +945,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResEnterprisesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -936,6 +972,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -974,6 +1012,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResOnlineServiceDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1000,6 +1039,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1032,6 +1073,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResResourceSpecResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1058,6 +1100,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1094,6 +1138,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResScenesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1120,6 +1165,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1152,6 +1199,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResWorkspacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1178,6 +1226,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1214,6 +1264,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1240,6 +1291,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1278,6 +1331,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResDatasourceWorkDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1304,6 +1358,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1342,6 +1398,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1368,6 +1425,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1406,6 +1465,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResRecallSetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1432,6 +1492,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1468,6 +1530,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1494,6 +1557,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1528,6 +1593,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResWrokspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1554,6 +1620,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1594,6 +1662,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1620,6 +1689,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1658,6 +1729,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartResSceneJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1684,6 +1756,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1722,6 +1796,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResDatasourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1748,6 +1823,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1786,6 +1863,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResDatastructResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1812,6 +1890,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1850,6 +1930,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResIntelligentSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1876,6 +1957,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1916,6 +1999,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1942,6 +2026,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1982,6 +2068,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResOnlineInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2008,6 +2095,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2046,6 +2135,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2072,6 +2162,8 @@ class ResClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2108,6 +2200,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateResWorkspaceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2115,7 +2208,7 @@ class ResClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2125,9 +2218,10 @@ class ResClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2144,6 +2238,7 @@ class ResClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

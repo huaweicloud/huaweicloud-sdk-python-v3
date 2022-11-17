@@ -17,7 +17,6 @@ class CheckPasswordRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CheckPasswordRequest:
     def body(self):
         """Gets the body of this CheckPasswordRequest.
 
-
         :return: The body of this CheckPasswordRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.CheckPasswordRequestBody`
         """
@@ -86,7 +84,6 @@ class CheckPasswordRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CheckPasswordRequest.
-
 
         :param body: The body of this CheckPasswordRequest.
         :type body: :class:`huaweicloudsdkdds.v3.CheckPasswordRequestBody`

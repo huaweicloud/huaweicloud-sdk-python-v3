@@ -17,7 +17,6 @@ class CreateLinkRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class CreateLinkRequest:
     def body(self):
         """Gets the body of this CreateLinkRequest.
 
-
         :return: The body of this CreateLinkRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`
         """
@@ -115,7 +113,6 @@ class CreateLinkRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateLinkRequest.
-
 
         :param body: The body of this CreateLinkRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`

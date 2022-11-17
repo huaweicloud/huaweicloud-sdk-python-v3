@@ -17,7 +17,6 @@ class CreateEdgeNodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -338,7 +337,6 @@ class CreateEdgeNodeResponse(SdkResponse):
     def base_path(self):
         """Gets the base_path of this CreateEdgeNodeResponse.
 
-
         :return: The base_path of this CreateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
         """
@@ -347,7 +345,6 @@ class CreateEdgeNodeResponse(SdkResponse):
     @base_path.setter
     def base_path(self, base_path):
         """Sets the base_path of this CreateEdgeNodeResponse.
-
 
         :param base_path: The base_path of this CreateEdgeNodeResponse.
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`

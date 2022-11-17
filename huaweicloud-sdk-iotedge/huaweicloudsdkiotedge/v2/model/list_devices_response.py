@@ -17,7 +17,6 @@ class ListDevicesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ListDevicesResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListDevicesResponse.
 
-
         :return: The page_info of this ListDevicesResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
@@ -116,7 +114,6 @@ class ListDevicesResponse(SdkResponse):
     @page_info.setter
     def page_info(self, page_info):
         """Sets the page_info of this ListDevicesResponse.
-
 
         :param page_info: The page_info of this ListDevicesResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`

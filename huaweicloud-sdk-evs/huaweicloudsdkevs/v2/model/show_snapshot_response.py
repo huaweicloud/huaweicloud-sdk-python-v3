@@ -17,7 +17,6 @@ class ShowSnapshotResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowSnapshotResponse(SdkResponse):
     def snapshot(self):
         """Gets the snapshot of this ShowSnapshotResponse.
 
-
         :return: The snapshot of this ShowSnapshotResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.SnapshotDetails`
         """
@@ -58,7 +56,6 @@ class ShowSnapshotResponse(SdkResponse):
     @snapshot.setter
     def snapshot(self, snapshot):
         """Sets the snapshot of this ShowSnapshotResponse.
-
 
         :param snapshot: The snapshot of this ShowSnapshotResponse.
         :type snapshot: :class:`huaweicloudsdkevs.v2.SnapshotDetails`

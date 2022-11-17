@@ -17,7 +17,6 @@ class CreateKeypairAction:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -193,7 +192,6 @@ class CreateKeypairAction:
     def key_protection(self):
         """Gets the key_protection of this CreateKeypairAction.
 
-
         :return: The key_protection of this CreateKeypairAction.
         :rtype: :class:`huaweicloudsdkkps.v3.KeyProtection`
         """
@@ -202,7 +200,6 @@ class CreateKeypairAction:
     @key_protection.setter
     def key_protection(self, key_protection):
         """Sets the key_protection of this CreateKeypairAction.
-
 
         :param key_protection: The key_protection of this CreateKeypairAction.
         :type key_protection: :class:`huaweicloudsdkkps.v3.KeyProtection`

@@ -17,7 +17,6 @@ class KeystoneShowRegionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class KeystoneShowRegionResponse(SdkResponse):
     def region(self):
         """Gets the region of this KeystoneShowRegionResponse.
 
-
         :return: The region of this KeystoneShowRegionResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Region`
         """
@@ -58,7 +56,6 @@ class KeystoneShowRegionResponse(SdkResponse):
     @region.setter
     def region(self, region):
         """Sets the region of this KeystoneShowRegionResponse.
-
 
         :param region: The region of this KeystoneShowRegionResponse.
         :type region: :class:`huaweicloudsdkiam.v3.Region`

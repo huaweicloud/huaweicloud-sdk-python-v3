@@ -17,7 +17,6 @@ class UpdateHostRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -403,7 +402,6 @@ class UpdateHostRequestBody:
     def block_page(self):
         """Gets the block_page of this UpdateHostRequestBody.
 
-
         :return: The block_page of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
@@ -412,7 +410,6 @@ class UpdateHostRequestBody:
     @block_page.setter
     def block_page(self, block_page):
         """Sets the block_page of this UpdateHostRequestBody.
-
 
         :param block_page: The block_page of this UpdateHostRequestBody.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -423,7 +420,6 @@ class UpdateHostRequestBody:
     def traffic_mark(self):
         """Gets the traffic_mark of this UpdateHostRequestBody.
 
-
         :return: The traffic_mark of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         """
@@ -432,7 +428,6 @@ class UpdateHostRequestBody:
     @traffic_mark.setter
     def traffic_mark(self, traffic_mark):
         """Sets the traffic_mark of this UpdateHostRequestBody.
-
 
         :param traffic_mark: The traffic_mark of this UpdateHostRequestBody.
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -443,7 +438,6 @@ class UpdateHostRequestBody:
     def flag(self):
         """Gets the flag of this UpdateHostRequestBody.
 
-
         :return: The flag of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
@@ -452,7 +446,6 @@ class UpdateHostRequestBody:
     @flag.setter
     def flag(self, flag):
         """Sets the flag of this UpdateHostRequestBody.
-
 
         :param flag: The flag of this UpdateHostRequestBody.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -485,7 +478,6 @@ class UpdateHostRequestBody:
     def circuit_breaker(self):
         """Gets the circuit_breaker of this UpdateHostRequestBody.
 
-
         :return: The circuit_breaker of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
         """
@@ -494,7 +486,6 @@ class UpdateHostRequestBody:
     @circuit_breaker.setter
     def circuit_breaker(self, circuit_breaker):
         """Sets the circuit_breaker of this UpdateHostRequestBody.
-
 
         :param circuit_breaker: The circuit_breaker of this UpdateHostRequestBody.
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
@@ -505,7 +496,6 @@ class UpdateHostRequestBody:
     def timeout_config(self):
         """Gets the timeout_config of this UpdateHostRequestBody.
 
-
         :return: The timeout_config of this UpdateHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
@@ -514,7 +504,6 @@ class UpdateHostRequestBody:
     @timeout_config.setter
     def timeout_config(self, timeout_config):
         """Sets the timeout_config of this UpdateHostRequestBody.
-
 
         :param timeout_config: The timeout_config of this UpdateHostRequestBody.
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`

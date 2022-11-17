@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class LtsClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class LtsClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -100,6 +96,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAccessConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +123,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +157,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateHostGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -184,6 +184,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +218,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateKeywordsAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +245,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -274,6 +279,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLogDumpObsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +306,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -332,6 +340,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLogGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +367,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -392,6 +403,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLogStreamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -418,6 +430,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -452,6 +466,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNotificationTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -478,6 +493,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -510,6 +527,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStructConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -536,6 +554,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -568,6 +588,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStructTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -594,6 +615,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -626,6 +649,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -652,6 +676,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -684,6 +710,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAccessConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -710,6 +737,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -744,6 +773,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteActiveAlarmsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -770,6 +800,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -802,6 +834,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHostGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -828,6 +861,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -860,6 +895,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteKeywordsAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -886,6 +922,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -918,6 +956,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLogGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -944,6 +983,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -978,6 +1019,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteLogStreamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1004,6 +1046,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1038,6 +1082,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNotificationTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1064,6 +1109,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1096,6 +1143,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteStructTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1122,6 +1170,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1154,6 +1204,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1180,6 +1231,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1210,6 +1263,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableLogCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1236,6 +1290,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1266,6 +1322,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableLogCollectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1292,6 +1349,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1324,6 +1383,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAccessConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1350,6 +1410,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1390,6 +1452,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListActiveOrHistoryAlarmsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1416,6 +1479,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1446,6 +1511,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBreifStructTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1472,6 +1538,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1510,6 +1578,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListChartsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1536,6 +1605,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1568,6 +1639,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1594,6 +1666,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1626,6 +1700,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHostGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1652,6 +1727,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1682,6 +1759,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeywordsAlarmRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1708,6 +1786,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1738,6 +1818,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLogGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1764,6 +1845,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1796,6 +1879,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLogHistogramResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1822,6 +1906,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1856,6 +1942,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLogStreamResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1882,6 +1969,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1920,6 +2009,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLogStreamsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1946,6 +2036,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1982,6 +2074,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2008,6 +2101,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2042,6 +2137,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotificationTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2068,6 +2164,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2104,6 +2202,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotificationTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2130,6 +2229,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2164,6 +2265,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNotificationTopicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2190,6 +2292,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2226,6 +2330,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQueryStructuredLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2252,6 +2357,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2284,6 +2391,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStructTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2310,6 +2418,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2344,6 +2454,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStructuredLogsWithTimeRangeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2370,6 +2481,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2410,6 +2523,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTransfersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2436,6 +2550,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2468,6 +2584,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterDmsKafkaInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2494,6 +2611,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2528,6 +2647,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNotificationTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2554,6 +2674,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2588,6 +2710,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowStructTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2614,6 +2737,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2646,6 +2771,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAccessConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2672,6 +2798,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2704,6 +2832,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHostGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2730,6 +2859,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2762,6 +2893,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeywordsAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2788,6 +2920,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2822,6 +2956,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLogGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2848,6 +2983,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2882,6 +3019,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNotificationTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2908,6 +3046,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2940,6 +3080,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStructConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2966,6 +3107,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2998,6 +3141,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateStructTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3024,6 +3168,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3056,6 +3202,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3082,6 +3229,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3116,6 +3265,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAomMappingRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3142,6 +3292,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3174,6 +3326,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAomMappingRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3200,6 +3353,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3232,6 +3387,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAomMappingRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3258,6 +3414,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3288,6 +3446,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAomMappingRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3314,6 +3473,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3346,6 +3507,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAomMappingRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3372,6 +3534,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3404,6 +3568,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSqlAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3430,6 +3595,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3462,6 +3629,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSqlAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3488,6 +3656,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3518,6 +3688,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSqlAlarmRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3544,6 +3715,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3576,6 +3749,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAlarmRuleStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3602,6 +3776,8 @@ class LtsClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3634,6 +3810,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSqlAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3641,7 +3818,7 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3651,9 +3828,10 @@ class LtsClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3670,6 +3848,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

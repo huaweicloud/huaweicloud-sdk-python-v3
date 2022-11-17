@@ -17,7 +17,6 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -252,7 +251,6 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
     def port_id(self):
         """Gets the port_id of this CreateKubernetesClusterCertResponse.
 
-
         :return: The port_id of this CreateKubernetesClusterCertResponse.
         :rtype: str
         """
@@ -261,7 +259,6 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
     @port_id.setter
     def port_id(self, port_id):
         """Sets the port_id of this CreateKubernetesClusterCertResponse.
-
 
         :param port_id: The port_id of this CreateKubernetesClusterCertResponse.
         :type port_id: str

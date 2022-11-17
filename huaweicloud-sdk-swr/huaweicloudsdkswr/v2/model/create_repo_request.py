@@ -17,7 +17,6 @@ class CreateRepoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateRepoRequest:
     def body(self):
         """Gets the body of this CreateRepoRequest.
 
-
         :return: The body of this CreateRepoRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoRequestBody`
         """
@@ -86,7 +84,6 @@ class CreateRepoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateRepoRequest.
-
 
         :param body: The body of this CreateRepoRequest.
         :type body: :class:`huaweicloudsdkswr.v2.CreateRepoRequestBody`

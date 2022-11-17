@@ -17,7 +17,6 @@ class ListRepositoryTagsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListRepositoryTagsResponse(SdkResponse):
     def content_range(self):
         """Gets the content_range of this ListRepositoryTagsResponse.
 
-
         :return: The content_range of this ListRepositoryTagsResponse.
         :rtype: str
         """
@@ -87,7 +85,6 @@ class ListRepositoryTagsResponse(SdkResponse):
     @content_range.setter
     def content_range(self, content_range):
         """Sets the content_range of this ListRepositoryTagsResponse.
-
 
         :param content_range: The content_range of this ListRepositoryTagsResponse.
         :type content_range: str

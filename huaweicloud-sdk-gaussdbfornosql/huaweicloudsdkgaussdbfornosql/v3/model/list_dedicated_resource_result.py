@@ -17,7 +17,6 @@ class ListDedicatedResourceResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -194,7 +193,6 @@ class ListDedicatedResourceResult:
     def capacity(self):
         """Gets the capacity of this ListDedicatedResourceResult.
 
-
         :return: The capacity of this ListDedicatedResourceResult.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DedicatedResourceCapacity`
         """
@@ -203,7 +201,6 @@ class ListDedicatedResourceResult:
     @capacity.setter
     def capacity(self, capacity):
         """Sets the capacity of this ListDedicatedResourceResult.
-
 
         :param capacity: The capacity of this ListDedicatedResourceResult.
         :type capacity: :class:`huaweicloudsdkgaussdbfornosql.v3.DedicatedResourceCapacity`

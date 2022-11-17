@@ -17,7 +17,6 @@ class ProtectPolicyOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ProtectPolicyOption:
     def allow_user(self):
         """Gets the allow_user of this ProtectPolicyOption.
 
-
         :return: The allow_user of this ProtectPolicyOption.
         :rtype: :class:`huaweicloudsdkiam.v3.AllowUserBody`
         """
@@ -114,7 +112,6 @@ class ProtectPolicyOption:
     @allow_user.setter
     def allow_user(self, allow_user):
         """Sets the allow_user of this ProtectPolicyOption.
-
 
         :param allow_user: The allow_user of this ProtectPolicyOption.
         :type allow_user: :class:`huaweicloudsdkiam.v3.AllowUserBody`

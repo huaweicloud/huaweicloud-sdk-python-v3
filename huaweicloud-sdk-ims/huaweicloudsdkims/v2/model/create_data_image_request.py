@@ -17,7 +17,6 @@ class CreateDataImageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateDataImageRequest:
     def body(self):
         """Gets the body of this CreateDataImageRequest.
 
-
         :return: The body of this CreateDataImageRequest.
         :rtype: :class:`huaweicloudsdkims.v2.CreateDataImageRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateDataImageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDataImageRequest.
-
 
         :param body: The body of this CreateDataImageRequest.
         :type body: :class:`huaweicloudsdkims.v2.CreateDataImageRequestBody`

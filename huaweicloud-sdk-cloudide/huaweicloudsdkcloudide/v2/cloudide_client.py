@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudIDEClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -48,6 +42,250 @@ class CloudIDEClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_extension_evaluation(self, request):
+        """添加插件评论
+
+        添加插件评论
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AddExtensionEvaluation
+        :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationResponse`
+        """
+        return self.add_extension_evaluation_with_http_info(request)
+
+    def add_extension_evaluation_with_http_info(self, request):
+        all_params = ['add_extension_evaluation_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/evaluation',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddExtensionEvaluationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_extension_evaluation_reply(self, request):
+        """添加评论回复、回复评论回复
+
+        添加评论回复、回复评论回复
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AddExtensionEvaluationReply
+        :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationReplyRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationReplyResponse`
+        """
+        return self.add_extension_evaluation_reply_with_http_info(request)
+
+    def add_extension_evaluation_reply_with_http_info(self, request):
+        all_params = ['add_extension_evaluation_reply_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/evaluation/reply',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddExtensionEvaluationReplyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_extension_star(self, request):
+        """添加新评星
+
+        添加新评星
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AddExtensionStar
+        :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionStarRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionStarResponse`
+        """
+        return self.add_extension_star_with_http_info(request)
+
+    def add_extension_star_with_http_info(self, request):
+        all_params = ['add_extension_star_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/star',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddExtensionStarResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def check_malicious_extension_evaluation(self, request):
+        """举报评论,举报回复
+
+        举报评论,举报回复
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CheckMaliciousExtensionEvaluation
+        :type request: :class:`huaweicloudsdkcloudide.v2.CheckMaliciousExtensionEvaluationRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.CheckMaliciousExtensionEvaluationResponse`
+        """
+        return self.check_malicious_extension_evaluation_with_http_info(request)
+
+    def check_malicious_extension_evaluation_with_http_info(self, request):
+        all_params = ['check_malicious_extension_evaluation_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/evaluation/accusation',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CheckMaliciousExtensionEvaluationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_extension_authorization(self, request):
         """设置ide实例对插件的授权
 
@@ -68,6 +306,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,7 +342,130 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateExtensionAuthorizationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_evaluation(self, request):
+        """删除评论
+
+        删除评论
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEvaluation
+        :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationResponse`
+        """
+        return self.delete_evaluation_with_http_info(request)
+
+    def delete_evaluation_with_http_info(self, request):
+        all_params = ['evaluation_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'evaluation_id' in local_var_params:
+            path_params['evaluation_id'] = local_var_params['evaluation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/evaluation/{evaluation_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEvaluationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_evaluation_reply(self, request):
+        """删除回复
+
+        删除回复
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEvaluationReply
+        :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationReplyRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationReplyResponse`
+        """
+        return self.delete_evaluation_reply_with_http_info(request)
+
+    def delete_evaluation_reply_with_http_info(self, request):
+        all_params = ['reply_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'reply_id' in local_var_params:
+            path_params['reply_id'] = local_var_params['reply_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/evaluation/reply/{reply_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEvaluationReplyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -128,6 +491,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -160,6 +525,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListExtensionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -186,6 +552,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -220,6 +588,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -246,6 +615,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -278,6 +649,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStacksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -304,6 +676,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -334,6 +708,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAccountStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -360,6 +735,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -396,6 +773,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtensionAuthorizationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -422,6 +800,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -454,6 +834,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtensionDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -480,6 +861,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -516,6 +899,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtensionEvaluationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -542,6 +926,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -578,6 +964,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowExtensionEvaluationStarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -604,6 +991,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -634,6 +1023,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPriceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -660,6 +1050,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -696,6 +1088,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadExtensionFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -722,6 +1115,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -754,6 +1149,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckInstanceAccessResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -780,6 +1176,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -812,6 +1210,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -838,6 +1237,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -872,6 +1273,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -898,6 +1300,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -932,6 +1336,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceBy3rdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -958,6 +1363,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -990,6 +1397,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1016,6 +1424,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1060,6 +1470,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1086,6 +1497,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1126,6 +1539,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListOrgInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1152,6 +1566,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1184,6 +1600,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1210,6 +1627,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1242,6 +1661,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceStatusInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1268,6 +1688,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1302,6 +1724,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1328,6 +1751,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1360,6 +1785,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1386,6 +1812,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1420,6 +1848,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1446,6 +1875,8 @@ class CloudIDEClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1478,6 +1909,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceActivityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1485,7 +1917,7 @@ class CloudIDEClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1495,9 +1927,10 @@ class CloudIDEClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1514,6 +1947,7 @@ class CloudIDEClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

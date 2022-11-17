@@ -17,7 +17,6 @@ class AppDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -276,7 +275,6 @@ class AppDto:
     def resources(self):
         """Gets the resources of this AppDto.
 
-
         :return: The resources of this AppDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ResourceDto`
         """
@@ -285,7 +283,6 @@ class AppDto:
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this AppDto.
-
 
         :param resources: The resources of this AppDto.
         :type resources: :class:`huaweicloudsdkeihealth.v1.ResourceDto`

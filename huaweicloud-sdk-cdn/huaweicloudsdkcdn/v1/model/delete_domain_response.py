@@ -17,7 +17,6 @@ class DeleteDomainResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeleteDomainResponse(SdkResponse):
     def domain(self):
         """Gets the domain of this DeleteDomainResponse.
 
-
         :return: The domain of this DeleteDomainResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.DomainsWithPort`
         """
@@ -58,7 +56,6 @@ class DeleteDomainResponse(SdkResponse):
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this DeleteDomainResponse.
-
 
         :param domain: The domain of this DeleteDomainResponse.
         :type domain: :class:`huaweicloudsdkcdn.v1.DomainsWithPort`

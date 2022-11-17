@@ -17,7 +17,6 @@ class AddProtectedInstanceTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class AddProtectedInstanceTagsRequest:
     def body(self):
         """Gets the body of this AddProtectedInstanceTagsRequest.
 
-
         :return: The body of this AddProtectedInstanceTagsRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddTagsRequestBody`
         """
@@ -86,7 +84,6 @@ class AddProtectedInstanceTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AddProtectedInstanceTagsRequest.
-
 
         :param body: The body of this AddProtectedInstanceTagsRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddTagsRequestBody`

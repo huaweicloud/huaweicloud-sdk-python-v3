@@ -17,7 +17,6 @@ class CreateLoadBalancerPublicIpOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -163,7 +162,6 @@ class CreateLoadBalancerPublicIpOption:
     def bandwidth(self):
         """Gets the bandwidth of this CreateLoadBalancerPublicIpOption.
 
-
         :return: The bandwidth of this CreateLoadBalancerPublicIpOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerBandwidthOption`
         """
@@ -172,7 +170,6 @@ class CreateLoadBalancerPublicIpOption:
     @bandwidth.setter
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this CreateLoadBalancerPublicIpOption.
-
 
         :param bandwidth: The bandwidth of this CreateLoadBalancerPublicIpOption.
         :type bandwidth: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerBandwidthOption`

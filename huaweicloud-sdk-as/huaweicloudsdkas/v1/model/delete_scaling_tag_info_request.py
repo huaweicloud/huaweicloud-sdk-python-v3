@@ -17,7 +17,6 @@ class DeleteScalingTagInfoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class DeleteScalingTagInfoRequest:
     def body(self):
         """Gets the body of this DeleteScalingTagInfoRequest.
 
-
         :return: The body of this DeleteScalingTagInfoRequest.
         :rtype: :class:`huaweicloudsdkas.v1.DeleteTagsOption`
         """
@@ -114,7 +112,6 @@ class DeleteScalingTagInfoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteScalingTagInfoRequest.
-
 
         :param body: The body of this DeleteScalingTagInfoRequest.
         :type body: :class:`huaweicloudsdkas.v1.DeleteTagsOption`

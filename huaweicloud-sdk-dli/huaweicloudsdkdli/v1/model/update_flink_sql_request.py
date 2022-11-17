@@ -17,7 +17,6 @@ class UpdateFlinkSqlRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateFlinkSqlRequest:
     def body(self):
         """Gets the body of this UpdateFlinkSqlRequest.
 
-
         :return: The body of this UpdateFlinkSqlRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateSQLJobReq`
         """
@@ -86,7 +84,6 @@ class UpdateFlinkSqlRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateFlinkSqlRequest.
-
 
         :param body: The body of this UpdateFlinkSqlRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateSQLJobReq`

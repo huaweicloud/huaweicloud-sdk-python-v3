@@ -17,7 +17,6 @@ class IvsStandardByNameAndIdRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class IvsStandardByNameAndIdRequestBody:
     def meta(self):
         """Gets the meta of this IvsStandardByNameAndIdRequestBody.
 
-
         :return: The meta of this IvsStandardByNameAndIdRequestBody.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
         """
@@ -63,7 +61,6 @@ class IvsStandardByNameAndIdRequestBody:
     @meta.setter
     def meta(self, meta):
         """Sets the meta of this IvsStandardByNameAndIdRequestBody.
-
 
         :param meta: The meta of this IvsStandardByNameAndIdRequestBody.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -74,7 +71,6 @@ class IvsStandardByNameAndIdRequestBody:
     def data(self):
         """Gets the data of this IvsStandardByNameAndIdRequestBody.
 
-
         :return: The data of this IvsStandardByNameAndIdRequestBody.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBodyData`
         """
@@ -83,7 +79,6 @@ class IvsStandardByNameAndIdRequestBody:
     @data.setter
     def data(self, data):
         """Sets the data of this IvsStandardByNameAndIdRequestBody.
-
 
         :param data: The data of this IvsStandardByNameAndIdRequestBody.
         :type data: :class:`huaweicloudsdkivs.v2.IvsStandardByNameAndIdRequestBodyData`

@@ -17,7 +17,6 @@ class Spec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -222,7 +221,6 @@ class Spec:
     def cluster_nodes(self):
         """Gets the cluster_nodes of this Spec.
 
-
         :return: The cluster_nodes of this Spec.
         :rtype: :class:`huaweicloudsdkcse.v1.SpecClusterNode`
         """
@@ -231,7 +229,6 @@ class Spec:
     @cluster_nodes.setter
     def cluster_nodes(self, cluster_nodes):
         """Sets the cluster_nodes of this Spec.
-
 
         :param cluster_nodes: The cluster_nodes of this Spec.
         :type cluster_nodes: :class:`huaweicloudsdkcse.v1.SpecClusterNode`

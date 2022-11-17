@@ -17,7 +17,6 @@ class UpdateAlertConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateAlertConfigRequest:
     def body(self):
         """Gets the body of this UpdateAlertConfigRequest.
 
-
         :return: The body of this UpdateAlertConfigRequest.
         :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequestBody`
         """
@@ -58,7 +56,6 @@ class UpdateAlertConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateAlertConfigRequest.
-
 
         :param body: The body of this UpdateAlertConfigRequest.
         :type body: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequestBody`

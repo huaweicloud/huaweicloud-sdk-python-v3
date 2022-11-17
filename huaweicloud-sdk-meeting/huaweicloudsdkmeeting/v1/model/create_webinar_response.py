@@ -17,7 +17,6 @@ class CreateWebinarResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -350,7 +349,6 @@ class CreateWebinarResponse(SdkResponse):
     def state(self):
         """Gets the state of this CreateWebinarResponse.
 
-
         :return: The state of this CreateWebinarResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
         """
@@ -359,7 +357,6 @@ class CreateWebinarResponse(SdkResponse):
     @state.setter
     def state(self, state):
         """Sets the state of this CreateWebinarResponse.
-
 
         :param state: The state of this CreateWebinarResponse.
         :type state: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`

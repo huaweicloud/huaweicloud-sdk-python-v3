@@ -17,7 +17,6 @@ class OutputVideoPara:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class OutputVideoPara:
     def video(self):
         """Gets the video of this OutputVideoPara.
 
-
         :return: The video of this OutputVideoPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         """
@@ -173,7 +171,6 @@ class OutputVideoPara:
     @video.setter
     def video(self, video):
         """Sets the video of this OutputVideoPara.
-
 
         :param video: The video of this OutputVideoPara.
         :type video: :class:`huaweicloudsdkmpc.v1.VideoInfo`
@@ -184,7 +181,6 @@ class OutputVideoPara:
     def audio(self):
         """Gets the audio of this OutputVideoPara.
 
-
         :return: The audio of this OutputVideoPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.AudioInfo`
         """
@@ -193,7 +189,6 @@ class OutputVideoPara:
     @audio.setter
     def audio(self, audio):
         """Sets the audio of this OutputVideoPara.
-
 
         :param audio: The audio of this OutputVideoPara.
         :type audio: :class:`huaweicloudsdkmpc.v1.AudioInfo`
@@ -248,7 +243,6 @@ class OutputVideoPara:
     def error(self):
         """Gets the error of this OutputVideoPara.
 
-
         :return: The error of this OutputVideoPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.XCodeError`
         """
@@ -257,7 +251,6 @@ class OutputVideoPara:
     @error.setter
     def error(self, error):
         """Sets the error of this OutputVideoPara.
-
 
         :param error: The error of this OutputVideoPara.
         :type error: :class:`huaweicloudsdkmpc.v1.XCodeError`

@@ -17,7 +17,6 @@ class CreateProjectRepoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -192,7 +191,6 @@ class CreateProjectRepoRequest:
     def external_project_info(self):
         """Gets the external_project_info of this CreateProjectRepoRequest.
 
-
         :return: The external_project_info of this CreateProjectRepoRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`
         """
@@ -201,7 +199,6 @@ class CreateProjectRepoRequest:
     @external_project_info.setter
     def external_project_info(self, external_project_info):
         """Sets the external_project_info of this CreateProjectRepoRequest.
-
 
         :param external_project_info: The external_project_info of this CreateProjectRepoRequest.
         :type external_project_info: :class:`huaweicloudsdkcodehub.v3.ExternalKeyMessage`

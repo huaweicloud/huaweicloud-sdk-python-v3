@@ -17,7 +17,6 @@ class SaveMonitorItemConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SaveMonitorItemConfigRequest:
     def body(self):
         """Gets the body of this SaveMonitorItemConfigRequest.
 
-
         :return: The body of this SaveMonitorItemConfigRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.SaveMonitorItemParam`
         """
@@ -86,7 +84,6 @@ class SaveMonitorItemConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SaveMonitorItemConfigRequest.
-
 
         :param body: The body of this SaveMonitorItemConfigRequest.
         :type body: :class:`huaweicloudsdkapm.v1.SaveMonitorItemParam`

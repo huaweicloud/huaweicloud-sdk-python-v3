@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GaussDBforopenGaussAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AllowDbPrivileges
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.AllowDbPrivilegesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.AllowDbPrivilegesResponse`
@@ -68,6 +63,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AllowDbPrivilegesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -118,6 +116,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatabase
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseResponse`
@@ -130,6 +129,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatabaseSchemas
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseSchemasRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseSchemasResponse`
@@ -192,6 +195,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +233,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +248,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDbUser
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDbUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDbUserResponse`
@@ -254,6 +261,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -290,6 +299,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDbUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -304,6 +314,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateInstanceResponse`
@@ -316,6 +327,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -350,6 +363,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -364,6 +378,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateManualBackup
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateManualBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateManualBackupResponse`
@@ -376,6 +391,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -410,6 +427,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -424,6 +442,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRestoreInstance
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateRestoreInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateRestoreInstanceResponse`
@@ -436,6 +455,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -470,6 +491,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRestoreInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -484,6 +506,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteInstanceResponse`
@@ -496,6 +519,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -530,6 +555,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -544,6 +570,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteManualBackup
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteManualBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteManualBackupResponse`
@@ -556,6 +583,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -590,6 +619,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -604,6 +634,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackups
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListBackupsResponse`
@@ -616,6 +647,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -662,6 +695,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -676,6 +710,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListComponentInfos
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListComponentInfosRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListComponentInfosResponse`
@@ -688,6 +723,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -726,6 +763,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListComponentInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -740,6 +778,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListConfigurations
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListConfigurationsResponse`
@@ -752,6 +791,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -788,6 +829,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -802,6 +844,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatabaseSchemas
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabaseSchemasRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabaseSchemasResponse`
@@ -814,6 +857,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -854,6 +899,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseSchemasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -868,6 +914,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatabases
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabasesResponse`
@@ -880,6 +927,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -918,6 +967,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -932,6 +982,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDatastores
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastoresRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastoresResponse`
@@ -944,6 +995,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -976,6 +1029,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatastoresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -990,6 +1044,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDbUsers
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDbUsersRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDbUsersResponse`
@@ -1002,6 +1057,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1040,6 +1097,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1054,6 +1112,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorsResponse`
@@ -1066,6 +1125,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1108,6 +1169,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1122,6 +1184,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstancesResponse`
@@ -1134,6 +1197,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1185,6 +1250,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1200,6 +1266,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRestoreTimes
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRestoreTimesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRestoreTimesResponse`
@@ -1212,6 +1279,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1248,6 +1317,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRestoreTimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1262,6 +1332,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListStorageTypes
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListStorageTypesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListStorageTypesResponse`
@@ -1274,6 +1345,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1310,6 +1383,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListStorageTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1324,6 +1398,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetPwd
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetPwdRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResetPwdResponse`
@@ -1336,6 +1411,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1372,6 +1449,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1386,6 +1464,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResizeInstanceFlavor
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResizeInstanceFlavorRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResizeInstanceFlavorResponse`
@@ -1398,6 +1477,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1434,6 +1515,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResizeInstanceFlavorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1448,6 +1530,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestartInstance
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestartInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RestartInstanceResponse`
@@ -1460,6 +1543,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1494,6 +1579,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestartInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1508,6 +1594,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RunInstanceAction
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.RunInstanceActionRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RunInstanceActionResponse`
@@ -1520,6 +1607,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1556,6 +1645,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunInstanceActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1570,6 +1660,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetBackupPolicy
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetBackupPolicyResponse`
@@ -1582,6 +1673,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1618,6 +1711,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1632,6 +1726,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetDbUserPwd
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetDbUserPwdRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetDbUserPwdResponse`
@@ -1644,6 +1739,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1680,6 +1777,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetDbUserPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1694,6 +1792,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetRecyclePolicy
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetRecyclePolicyResponse`
@@ -1706,6 +1805,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1738,6 +1839,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetRecyclePolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1752,6 +1854,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowBackupPolicy
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowBackupPolicyResponse`
@@ -1764,6 +1867,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1798,6 +1903,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1812,6 +1918,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceConfiguration
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowInstanceConfigurationResponse`
@@ -1824,6 +1931,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1858,6 +1967,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1872,6 +1982,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJobDetail
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowJobDetailResponse`
@@ -1884,6 +1995,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1916,6 +2029,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1930,6 +2044,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SwitchShard
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardResponse`
@@ -1942,6 +2057,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1978,6 +2095,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SwitchShardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1992,6 +2110,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceConfiguration
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceConfigurationResponse`
@@ -2004,6 +2123,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2040,6 +2161,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2054,6 +2176,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateInstanceName
         :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceNameResponse`
@@ -2066,6 +2189,8 @@ class GaussDBforopenGaussAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2102,6 +2227,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2109,7 +2235,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2120,9 +2246,10 @@ class GaussDBforopenGaussAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2139,6 +2266,7 @@ class GaussDBforopenGaussAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

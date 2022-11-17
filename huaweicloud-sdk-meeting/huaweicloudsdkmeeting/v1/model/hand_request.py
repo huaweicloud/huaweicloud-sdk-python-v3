@@ -17,7 +17,6 @@ class HandRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class HandRequest:
     def body(self):
         """Gets the body of this HandRequest.
 
-
         :return: The body of this HandRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestHandsUpReqBody`
         """
@@ -142,7 +140,6 @@ class HandRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this HandRequest.
-
 
         :param body: The body of this HandRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestHandsUpReqBody`

@@ -17,7 +17,6 @@ class CreateTasksRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -221,7 +220,6 @@ class CreateTasksRequestBody:
     def task_config(self):
         """Gets the task_config of this CreateTasksRequestBody.
 
-
         :return: The task_config of this CreateTasksRequestBody.
         :rtype: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`
         """
@@ -230,7 +228,6 @@ class CreateTasksRequestBody:
     @task_config.setter
     def task_config(self, task_config):
         """Sets the task_config of this CreateTasksRequestBody.
-
 
         :param task_config: The task_config of this CreateTasksRequestBody.
         :type task_config: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`

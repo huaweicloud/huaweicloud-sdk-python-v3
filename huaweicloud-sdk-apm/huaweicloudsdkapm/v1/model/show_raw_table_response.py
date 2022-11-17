@@ -17,7 +17,6 @@ class ShowRawTableResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class ShowRawTableResponse(SdkResponse):
     def row_list(self):
         """Gets the row_list of this ShowRawTableResponse.
 
-
         :return: The row_list of this ShowRawTableResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.FrontRow`]
         """
@@ -93,7 +91,6 @@ class ShowRawTableResponse(SdkResponse):
     @row_list.setter
     def row_list(self, row_list):
         """Sets the row_list of this ShowRawTableResponse.
-
 
         :param row_list: The row_list of this ShowRawTableResponse.
         :type row_list: list[:class:`huaweicloudsdkapm.v1.FrontRow`]

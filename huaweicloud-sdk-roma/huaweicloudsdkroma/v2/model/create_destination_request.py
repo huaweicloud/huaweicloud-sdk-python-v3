@@ -17,7 +17,6 @@ class CreateDestinationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateDestinationRequest:
     def body(self):
         """Gets the body of this CreateDestinationRequest.
 
-
         :return: The body of this CreateDestinationRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDestinationRequestBody`
         """
@@ -114,7 +112,6 @@ class CreateDestinationRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateDestinationRequest.
-
 
         :param body: The body of this CreateDestinationRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateDestinationRequestBody`

@@ -17,7 +17,6 @@ class AssociatedTestCase:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -207,7 +206,6 @@ class AssociatedTestCase:
     def status(self):
         """Gets the status of this AssociatedTestCase.
 
-
         :return: The status of this AssociatedTestCase.
         :rtype: :class:`huaweicloudsdkprojectman.v4.StatusVo`
         """
@@ -216,7 +214,6 @@ class AssociatedTestCase:
     @status.setter
     def status(self, status):
         """Sets the status of this AssociatedTestCase.
-
 
         :param status: The status of this AssociatedTestCase.
         :type status: :class:`huaweicloudsdkprojectman.v4.StatusVo`
@@ -227,7 +224,6 @@ class AssociatedTestCase:
     def creator(self):
         """Gets the creator of this AssociatedTestCase.
 
-
         :return: The creator of this AssociatedTestCase.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
         """
@@ -236,7 +232,6 @@ class AssociatedTestCase:
     @creator.setter
     def creator(self, creator):
         """Sets the creator of this AssociatedTestCase.
-
 
         :param creator: The creator of this AssociatedTestCase.
         :type creator: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -247,7 +242,6 @@ class AssociatedTestCase:
     def owner(self):
         """Gets the owner of this AssociatedTestCase.
 
-
         :return: The owner of this AssociatedTestCase.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
         """
@@ -256,7 +250,6 @@ class AssociatedTestCase:
     @owner.setter
     def owner(self, owner):
         """Sets the owner of this AssociatedTestCase.
-
 
         :param owner: The owner of this AssociatedTestCase.
         :type owner: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -267,7 +260,6 @@ class AssociatedTestCase:
     def project(self):
         """Gets the project of this AssociatedTestCase.
 
-
         :return: The project of this AssociatedTestCase.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
         """
@@ -276,7 +268,6 @@ class AssociatedTestCase:
     @project.setter
     def project(self, project):
         """Sets the project of this AssociatedTestCase.
-
 
         :param project: The project of this AssociatedTestCase.
         :type project: :class:`huaweicloudsdkprojectman.v4.SimpleProject`

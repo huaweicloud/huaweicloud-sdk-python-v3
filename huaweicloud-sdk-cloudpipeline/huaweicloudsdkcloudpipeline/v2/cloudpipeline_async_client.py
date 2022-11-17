@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CloudPipelineAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchShowPipelinesStatus
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.BatchShowPipelinesStatusResponse`
@@ -68,6 +63,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchShowPipelinesStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -116,6 +114,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePipelineByTemplate
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.CreatePipelineByTemplateResponse`
@@ -128,6 +127,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -162,6 +163,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePipelineByTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -176,6 +178,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPipelineSimpleInfo
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipelineSimpleInfoResponse`
@@ -188,6 +191,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -222,6 +227,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPipelineSimpleInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -236,6 +242,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPipleineBuildResult
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListPipleineBuildResultRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListPipleineBuildResultResponse`
@@ -248,6 +255,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -290,6 +299,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPipleineBuildResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -304,6 +314,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplates
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ListTemplatesResponse`
@@ -316,6 +327,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -362,6 +375,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -376,6 +390,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemovePipeline
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.RemovePipelineRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.RemovePipelineResponse`
@@ -388,6 +403,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -422,6 +439,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemovePipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -436,6 +454,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowInstanceStatus
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowInstanceStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowInstanceStatusResponse`
@@ -448,6 +467,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -482,6 +503,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -496,6 +518,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPipleineStatus
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipleineStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowPipleineStatusResponse`
@@ -508,6 +531,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -544,6 +569,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPipleineStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -558,6 +584,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTemplateDetail
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowTemplateDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowTemplateDetailResponse`
@@ -570,6 +597,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -608,6 +637,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -622,6 +652,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartNewPipeline
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.StartNewPipelineRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StartNewPipelineResponse`
@@ -634,6 +665,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -670,6 +703,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartNewPipelineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -684,6 +718,7 @@ class CloudPipelineAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopPipelineNew
         :type request: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineNewRequest`
         :rtype: :class:`huaweicloudsdkcloudpipeline.v2.StopPipelineNewResponse`
@@ -696,6 +731,8 @@ class CloudPipelineAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -732,6 +769,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopPipelineNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -739,7 +777,7 @@ class CloudPipelineAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -750,9 +788,10 @@ class CloudPipelineAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -769,6 +808,7 @@ class CloudPipelineAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

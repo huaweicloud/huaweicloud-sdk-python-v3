@@ -17,7 +17,6 @@ class ShowOpLogResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowOpLogResponse(SdkResponse):
     def operation_log(self):
         """Gets the operation_log of this ShowOpLogResponse.
 
-
         :return: The operation_log of this ShowOpLogResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.OperationLog`
         """
@@ -58,7 +56,6 @@ class ShowOpLogResponse(SdkResponse):
     @operation_log.setter
     def operation_log(self, operation_log):
         """Sets the operation_log of this ShowOpLogResponse.
-
 
         :param operation_log: The operation_log of this ShowOpLogResponse.
         :type operation_log: :class:`huaweicloudsdkcbr.v1.OperationLog`

@@ -17,7 +17,6 @@ class HandleUnionMemberQuitListRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class HandleUnionMemberQuitListRequest:
     def body(self):
         """Gets the body of this HandleUnionMemberQuitListRequest.
 
-
         :return: The body of this HandleUnionMemberQuitListRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.QuitUnionFromMemberListRequestBody`
         """
@@ -58,7 +56,6 @@ class HandleUnionMemberQuitListRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this HandleUnionMemberQuitListRequest.
-
 
         :param body: The body of this HandleUnionMemberQuitListRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.QuitUnionFromMemberListRequestBody`

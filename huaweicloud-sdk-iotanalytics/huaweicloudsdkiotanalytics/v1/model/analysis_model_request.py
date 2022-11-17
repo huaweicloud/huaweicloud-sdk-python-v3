@@ -17,7 +17,6 @@ class AnalysisModelRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -148,7 +147,6 @@ class AnalysisModelRequest:
     def transform(self):
         """Gets the transform of this AnalysisModelRequest.
 
-
         :return: The transform of this AnalysisModelRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformModel`
         """
@@ -157,7 +155,6 @@ class AnalysisModelRequest:
     @transform.setter
     def transform(self, transform):
         """Sets the transform of this AnalysisModelRequest.
-
 
         :param transform: The transform of this AnalysisModelRequest.
         :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformModel`
@@ -168,7 +165,6 @@ class AnalysisModelRequest:
     def aggregate(self):
         """Gets the aggregate of this AnalysisModelRequest.
 
-
         :return: The aggregate of this AnalysisModelRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateModel`
         """
@@ -177,7 +173,6 @@ class AnalysisModelRequest:
     @aggregate.setter
     def aggregate(self, aggregate):
         """Sets the aggregate of this AnalysisModelRequest.
-
 
         :param aggregate: The aggregate of this AnalysisModelRequest.
         :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateModel`
@@ -188,7 +183,6 @@ class AnalysisModelRequest:
     def stream(self):
         """Gets the stream of this AnalysisModelRequest.
 
-
         :return: The stream of this AnalysisModelRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StreamModel`
         """
@@ -197,7 +191,6 @@ class AnalysisModelRequest:
     @stream.setter
     def stream(self, stream):
         """Sets the stream of this AnalysisModelRequest.
-
 
         :param stream: The stream of this AnalysisModelRequest.
         :type stream: :class:`huaweicloudsdkiotanalytics.v1.StreamModel`

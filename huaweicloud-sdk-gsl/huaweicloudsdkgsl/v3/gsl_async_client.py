@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GslAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackPoolMembers
         :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersResponse`
@@ -68,6 +63,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -108,6 +105,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackPoolMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -122,6 +120,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListBackPools
         :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolsResponse`
@@ -134,6 +133,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -172,6 +173,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBackPoolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -186,6 +188,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProPricePlans
         :type request: :class:`huaweicloudsdkgsl.v3.ListProPricePlansRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListProPricePlansResponse`
@@ -198,6 +201,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -244,6 +249,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProPricePlansResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -258,6 +264,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchSetAttributes
         :type request: :class:`huaweicloudsdkgsl.v3.BatchSetAttributesRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.BatchSetAttributesResponse`
@@ -270,6 +277,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -302,6 +311,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSetAttributesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -316,6 +326,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAttribute
         :type request: :class:`huaweicloudsdkgsl.v3.CreateAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.CreateAttributeResponse`
@@ -328,6 +339,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -360,6 +373,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAttributeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -374,6 +388,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisableAttribute
         :type request: :class:`huaweicloudsdkgsl.v3.DisableAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.DisableAttributeResponse`
@@ -386,6 +401,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -418,6 +435,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableAttributeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -432,6 +450,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableAttribute
         :type request: :class:`huaweicloudsdkgsl.v3.EnableAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.EnableAttributeResponse`
@@ -444,6 +463,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -476,6 +497,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableAttributeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -490,6 +512,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAttributes
         :type request: :class:`huaweicloudsdkgsl.v3.ListAttributesRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListAttributesResponse`
@@ -502,6 +525,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -540,6 +565,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAttributesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -554,6 +580,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAttribute
         :type request: :class:`huaweicloudsdkgsl.v3.UpdateAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.UpdateAttributeResponse`
@@ -566,6 +593,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -600,6 +629,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAttributeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -614,6 +644,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteRealName
         :type request: :class:`huaweicloudsdkgsl.v3.DeleteRealNameRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.DeleteRealNameResponse`
@@ -626,6 +657,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -658,6 +691,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteRealNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -672,6 +706,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableSimCard
         :type request: :class:`huaweicloudsdkgsl.v3.EnableSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.EnableSimCardResponse`
@@ -684,6 +719,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -716,6 +753,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableSimCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -730,6 +768,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSimCards
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimCardsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimCardsResponse`
@@ -742,6 +781,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -821,6 +862,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSimCardsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -835,6 +877,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RegisterImei
         :type request: :class:`huaweicloudsdkgsl.v3.RegisterImeiRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.RegisterImeiResponse`
@@ -847,6 +890,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -881,6 +926,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterImeiResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -895,6 +941,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetSimCard
         :type request: :class:`huaweicloudsdkgsl.v3.ResetSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ResetSimCardResponse`
@@ -907,6 +954,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -941,6 +990,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetSimCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -955,6 +1005,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetExceedCutNet
         :type request: :class:`huaweicloudsdkgsl.v3.SetExceedCutNetRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.SetExceedCutNetResponse`
@@ -967,6 +1018,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1001,6 +1054,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetExceedCutNetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1015,6 +1069,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for SetSpeedValue
         :type request: :class:`huaweicloudsdkgsl.v3.SetSpeedValueRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.SetSpeedValueResponse`
@@ -1027,6 +1082,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1061,6 +1118,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SetSpeedValueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1075,6 +1133,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMonthUsages
         :type request: :class:`huaweicloudsdkgsl.v3.ShowMonthUsagesRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowMonthUsagesResponse`
@@ -1087,6 +1146,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1119,6 +1180,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMonthUsagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1133,6 +1195,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowRealNamed
         :type request: :class:`huaweicloudsdkgsl.v3.ShowRealNamedRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowRealNamedResponse`
@@ -1145,6 +1208,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1177,6 +1242,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRealNamedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1191,6 +1257,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSimCard
         :type request: :class:`huaweicloudsdkgsl.v3.ShowSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowSimCardResponse`
@@ -1203,6 +1270,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1235,6 +1304,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSimCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1249,6 +1319,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StartStopNet
         :type request: :class:`huaweicloudsdkgsl.v3.StartStopNetRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.StartStopNetResponse`
@@ -1261,6 +1332,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1295,6 +1368,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StartStopNetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1309,6 +1383,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for StopSimCard
         :type request: :class:`huaweicloudsdkgsl.v3.StopSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.StopSimCardResponse`
@@ -1321,6 +1396,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1355,6 +1432,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopSimCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1369,6 +1447,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSimPoolMembers
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimPoolMembersRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimPoolMembersResponse`
@@ -1381,6 +1460,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1421,6 +1502,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSimPoolMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1435,6 +1517,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSimPools
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimPoolsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimPoolsResponse`
@@ -1447,6 +1530,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1485,6 +1570,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSimPoolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1499,6 +1585,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListFlowBySimCards
         :type request: :class:`huaweicloudsdkgsl.v3.ListFlowBySimCardsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListFlowBySimCardsResponse`
@@ -1511,6 +1598,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1543,6 +1632,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlowBySimCardsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1557,6 +1647,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSimPricePlans
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimPricePlansRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimPricePlansResponse`
@@ -1569,6 +1660,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1607,6 +1700,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSimPricePlansResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1621,6 +1715,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchSetTags
         :type request: :class:`huaweicloudsdkgsl.v3.BatchSetTagsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.BatchSetTagsResponse`
@@ -1633,6 +1728,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1665,6 +1762,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchSetTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1679,6 +1777,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTag
         :type request: :class:`huaweicloudsdkgsl.v3.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.CreateTagResponse`
@@ -1691,6 +1790,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1723,6 +1824,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1737,6 +1839,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTag
         :type request: :class:`huaweicloudsdkgsl.v3.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.DeleteTagResponse`
@@ -1749,6 +1852,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1781,6 +1886,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1795,6 +1901,7 @@ class GslAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTags
         :type request: :class:`huaweicloudsdkgsl.v3.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListTagsResponse`
@@ -1807,6 +1914,8 @@ class GslAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1845,6 +1954,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1852,7 +1962,7 @@ class GslAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1863,9 +1973,10 @@ class GslAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1882,6 +1993,7 @@ class GslAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

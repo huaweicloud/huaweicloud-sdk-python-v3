@@ -17,7 +17,6 @@ class RunMultiModalAssessmentRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunMultiModalAssessmentRequest:
     def body(self):
         """Gets the body of this RunMultiModalAssessmentRequest.
 
-
         :return: The body of this RunMultiModalAssessmentRequest.
         :rtype: :class:`huaweicloudsdksis.v1.PostMultiModalAssessmentReq`
         """
@@ -58,7 +56,6 @@ class RunMultiModalAssessmentRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunMultiModalAssessmentRequest.
-
 
         :param body: The body of this RunMultiModalAssessmentRequest.
         :type body: :class:`huaweicloudsdksis.v1.PostMultiModalAssessmentReq`

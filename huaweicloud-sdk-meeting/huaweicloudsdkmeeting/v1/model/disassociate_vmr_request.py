@@ -17,7 +17,6 @@ class DisassociateVmrRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -164,7 +163,6 @@ class DisassociateVmrRequest:
     def body(self):
         """Gets the body of this DisassociateVmrRequest.
 
-
         :return: The body of this DisassociateVmrRequest.
         :rtype: list[str]
         """
@@ -173,7 +171,6 @@ class DisassociateVmrRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DisassociateVmrRequest.
-
 
         :param body: The body of this DisassociateVmrRequest.
         :type body: list[str]

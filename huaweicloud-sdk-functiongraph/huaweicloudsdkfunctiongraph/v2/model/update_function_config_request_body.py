@@ -17,7 +17,6 @@ class UpdateFunctionConfigRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -390,7 +389,6 @@ class UpdateFunctionConfigRequestBody:
     def func_vpc(self):
         """Gets the func_vpc of this UpdateFunctionConfigRequestBody.
 
-
         :return: The func_vpc of this UpdateFunctionConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
         """
@@ -399,7 +397,6 @@ class UpdateFunctionConfigRequestBody:
     @func_vpc.setter
     def func_vpc(self, func_vpc):
         """Sets the func_vpc of this UpdateFunctionConfigRequestBody.
-
 
         :param func_vpc: The func_vpc of this UpdateFunctionConfigRequestBody.
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -410,7 +407,6 @@ class UpdateFunctionConfigRequestBody:
     def mount_config(self):
         """Gets the mount_config of this UpdateFunctionConfigRequestBody.
 
-
         :return: The mount_config of this UpdateFunctionConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         """
@@ -419,7 +415,6 @@ class UpdateFunctionConfigRequestBody:
     @mount_config.setter
     def mount_config(self, mount_config):
         """Sets the mount_config of this UpdateFunctionConfigRequestBody.
-
 
         :param mount_config: The mount_config of this UpdateFunctionConfigRequestBody.
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
@@ -430,7 +425,6 @@ class UpdateFunctionConfigRequestBody:
     def strategy_config(self):
         """Gets the strategy_config of this UpdateFunctionConfigRequestBody.
 
-
         :return: The strategy_config of this UpdateFunctionConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
@@ -439,7 +433,6 @@ class UpdateFunctionConfigRequestBody:
     @strategy_config.setter
     def strategy_config(self, strategy_config):
         """Sets the strategy_config of this UpdateFunctionConfigRequestBody.
-
 
         :param strategy_config: The strategy_config of this UpdateFunctionConfigRequestBody.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`

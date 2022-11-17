@@ -17,7 +17,6 @@ class StackInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -161,7 +160,6 @@ class StackInfo:
     def arm_config(self):
         """Gets the arm_config of this StackInfo.
 
-
         :return: The arm_config of this StackInfo.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
         """
@@ -170,7 +168,6 @@ class StackInfo:
     @arm_config.setter
     def arm_config(self, arm_config):
         """Sets the arm_config of this StackInfo.
-
 
         :param arm_config: The arm_config of this StackInfo.
         :type arm_config: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
@@ -203,7 +200,6 @@ class StackInfo:
     def config(self):
         """Gets the config of this StackInfo.
 
-
         :return: The config of this StackInfo.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StacksConfig`
         """
@@ -212,7 +208,6 @@ class StackInfo:
     @config.setter
     def config(self, config):
         """Sets the config of this StackInfo.
-
 
         :param config: The config of this StackInfo.
         :type config: :class:`huaweicloudsdkcloudide.v2.StacksConfig`

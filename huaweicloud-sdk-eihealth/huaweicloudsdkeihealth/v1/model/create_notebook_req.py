@@ -17,7 +17,6 @@ class CreateNotebookReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -117,7 +116,6 @@ class CreateNotebookReq:
     def flavor(self):
         """Gets the flavor of this CreateNotebookReq.
 
-
         :return: The flavor of this CreateNotebookReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
         """
@@ -126,7 +124,6 @@ class CreateNotebookReq:
     @flavor.setter
     def flavor(self, flavor):
         """Sets the flavor of this CreateNotebookReq.
-
 
         :param flavor: The flavor of this CreateNotebookReq.
         :type flavor: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
@@ -137,7 +134,6 @@ class CreateNotebookReq:
     def image(self):
         """Gets the image of this CreateNotebookReq.
 
-
         :return: The image of this CreateNotebookReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
         """
@@ -146,7 +142,6 @@ class CreateNotebookReq:
     @image.setter
     def image(self, image):
         """Sets the image of this CreateNotebookReq.
-
 
         :param image: The image of this CreateNotebookReq.
         :type image: :class:`huaweicloudsdkeihealth.v1.NotebookImage`

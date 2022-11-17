@@ -17,7 +17,6 @@ class ShowAppResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -344,7 +343,6 @@ class ShowAppResponse(SdkResponse):
     def resources(self):
         """Gets the resources of this ShowAppResponse.
 
-
         :return: The resources of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ResourceDto`
         """
@@ -353,7 +351,6 @@ class ShowAppResponse(SdkResponse):
     @resources.setter
     def resources(self, resources):
         """Sets the resources of this ShowAppResponse.
-
 
         :param resources: The resources of this ShowAppResponse.
         :type resources: :class:`huaweicloudsdkeihealth.v1.ResourceDto`

@@ -17,7 +17,6 @@ class ShowConnectionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class ShowConnectionResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowConnectionResponse.
 
-
         :return: The name of this ShowConnectionResponse.
         :rtype: str
         """
@@ -79,7 +77,6 @@ class ShowConnectionResponse(SdkResponse):
     @name.setter
     def name(self, name):
         """Sets the name of this ShowConnectionResponse.
-
 
         :param name: The name of this ShowConnectionResponse.
         :type name: str
@@ -90,7 +87,6 @@ class ShowConnectionResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowConnectionResponse.
 
-
         :return: The type of this ShowConnectionResponse.
         :rtype: str
         """
@@ -99,7 +95,6 @@ class ShowConnectionResponse(SdkResponse):
     @type.setter
     def type(self, type):
         """Sets the type of this ShowConnectionResponse.
-
 
         :param type: The type of this ShowConnectionResponse.
         :type type: str
@@ -110,7 +105,6 @@ class ShowConnectionResponse(SdkResponse):
     def config(self):
         """Gets the config of this ShowConnectionResponse.
 
-
         :return: The config of this ShowConnectionResponse.
         :rtype: object
         """
@@ -119,7 +113,6 @@ class ShowConnectionResponse(SdkResponse):
     @config.setter
     def config(self, config):
         """Sets the config of this ShowConnectionResponse.
-
 
         :param config: The config of this ShowConnectionResponse.
         :type config: object
@@ -130,7 +123,6 @@ class ShowConnectionResponse(SdkResponse):
     def description(self):
         """Gets the description of this ShowConnectionResponse.
 
-
         :return: The description of this ShowConnectionResponse.
         :rtype: str
         """
@@ -139,7 +131,6 @@ class ShowConnectionResponse(SdkResponse):
     @description.setter
     def description(self, description):
         """Sets the description of this ShowConnectionResponse.
-
 
         :param description: The description of this ShowConnectionResponse.
         :type description: str

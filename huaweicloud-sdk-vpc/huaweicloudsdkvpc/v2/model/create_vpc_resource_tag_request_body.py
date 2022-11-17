@@ -17,7 +17,6 @@ class CreateVpcResourceTagRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateVpcResourceTagRequestBody:
     def tag(self):
         """Gets the tag of this CreateVpcResourceTagRequestBody.
 
-
         :return: The tag of this CreateVpcResourceTagRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.ResourceTag`
         """
@@ -57,7 +55,6 @@ class CreateVpcResourceTagRequestBody:
     @tag.setter
     def tag(self, tag):
         """Sets the tag of this CreateVpcResourceTagRequestBody.
-
 
         :param tag: The tag of this CreateVpcResourceTagRequestBody.
         :type tag: :class:`huaweicloudsdkvpc.v2.ResourceTag`

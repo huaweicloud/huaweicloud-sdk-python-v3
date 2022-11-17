@@ -17,7 +17,6 @@ class UpdatePeriodToOnDemandRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdatePeriodToOnDemandRequest:
     def body(self):
         """Gets the body of this UpdatePeriodToOnDemandRequest.
 
-
         :return: The body of this UpdatePeriodToOnDemandRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.PeriodToOnDemandReq`
         """
@@ -58,7 +56,6 @@ class UpdatePeriodToOnDemandRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdatePeriodToOnDemandRequest.
-
 
         :param body: The body of this UpdatePeriodToOnDemandRequest.
         :type body: :class:`huaweicloudsdkbss.v2.PeriodToOnDemandReq`

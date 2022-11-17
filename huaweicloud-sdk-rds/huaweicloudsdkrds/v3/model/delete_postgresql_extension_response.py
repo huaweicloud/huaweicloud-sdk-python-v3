@@ -17,7 +17,6 @@ class DeletePostgresqlExtensionResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DeletePostgresqlExtensionResponse(SdkResponse):
     def body(self):
         """Gets the body of this DeletePostgresqlExtensionResponse.
 
-
         :return: The body of this DeletePostgresqlExtensionResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class DeletePostgresqlExtensionResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this DeletePostgresqlExtensionResponse.
-
 
         :param body: The body of this DeletePostgresqlExtensionResponse.
         :type body: str

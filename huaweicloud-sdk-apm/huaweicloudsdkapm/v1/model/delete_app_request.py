@@ -17,7 +17,6 @@ class DeleteAppRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class DeleteAppRequest:
     def application_id(self):
         """Gets the application_id of this DeleteAppRequest.
 
-
         :return: The application_id of this DeleteAppRequest.
         :rtype: int
         """
@@ -63,7 +61,6 @@ class DeleteAppRequest:
     @application_id.setter
     def application_id(self, application_id):
         """Sets the application_id of this DeleteAppRequest.
-
 
         :param application_id: The application_id of this DeleteAppRequest.
         :type application_id: int

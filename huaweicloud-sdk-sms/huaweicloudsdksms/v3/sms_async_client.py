@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SmsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckNetAcl
         :type request: :class:`huaweicloudsdksms.v3.CheckNetAclRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CheckNetAclResponse`
@@ -68,6 +63,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -106,6 +103,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckNetAclResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -120,6 +118,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CollectLog
         :type request: :class:`huaweicloudsdksms.v3.CollectLogRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CollectLogResponse`
@@ -132,6 +131,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CollectLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -180,6 +182,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMigproject
         :type request: :class:`huaweicloudsdksms.v3.CreateMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreateMigprojectResponse`
@@ -192,6 +195,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +229,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -238,6 +244,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTask
         :type request: :class:`huaweicloudsdksms.v3.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreateTaskResponse`
@@ -250,6 +257,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -282,6 +291,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -296,6 +306,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTemplate
         :type request: :class:`huaweicloudsdksms.v3.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreateTemplateResponse`
@@ -308,6 +319,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +353,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -354,6 +368,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMigproject
         :type request: :class:`huaweicloudsdksms.v3.DeleteMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteMigprojectResponse`
@@ -366,6 +381,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -398,6 +415,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -412,6 +430,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteServer
         :type request: :class:`huaweicloudsdksms.v3.DeleteServerRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteServerResponse`
@@ -424,6 +443,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -456,6 +477,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -470,6 +492,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteServers
         :type request: :class:`huaweicloudsdksms.v3.DeleteServersRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteServersResponse`
@@ -482,6 +505,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -514,6 +539,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -528,6 +554,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTask
         :type request: :class:`huaweicloudsdksms.v3.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTaskResponse`
@@ -540,6 +567,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -572,6 +601,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -586,6 +616,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTasks
         :type request: :class:`huaweicloudsdksms.v3.DeleteTasksRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTasksResponse`
@@ -598,6 +629,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -630,6 +663,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -644,6 +678,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTemplate
         :type request: :class:`huaweicloudsdksms.v3.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTemplateResponse`
@@ -656,6 +691,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -688,6 +725,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -702,6 +740,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTemplates
         :type request: :class:`huaweicloudsdksms.v3.DeleteTemplatesRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTemplatesResponse`
@@ -714,6 +753,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -746,6 +787,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -760,6 +802,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListErrorServers
         :type request: :class:`huaweicloudsdksms.v3.ListErrorServersRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListErrorServersResponse`
@@ -772,6 +815,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -810,6 +855,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListErrorServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -824,6 +870,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMigprojects
         :type request: :class:`huaweicloudsdksms.v3.ListMigprojectsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListMigprojectsResponse`
@@ -836,6 +883,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -870,6 +919,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMigprojectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -884,6 +934,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListServers
         :type request: :class:`huaweicloudsdksms.v3.ListServersRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListServersResponse`
@@ -896,6 +947,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -946,6 +999,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListServersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -960,6 +1014,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTasks
         :type request: :class:`huaweicloudsdksms.v3.ListTasksRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListTasksResponse`
@@ -972,6 +1027,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1016,6 +1073,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1030,6 +1088,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTemplates
         :type request: :class:`huaweicloudsdksms.v3.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListTemplatesResponse`
@@ -1042,6 +1101,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1082,6 +1143,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1096,6 +1158,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RegisterServer
         :type request: :class:`huaweicloudsdksms.v3.RegisterServerRequest`
         :rtype: :class:`huaweicloudsdksms.v3.RegisterServerResponse`
@@ -1108,6 +1171,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1140,6 +1205,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1154,6 +1220,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCertKey
         :type request: :class:`huaweicloudsdksms.v3.ShowCertKeyRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowCertKeyResponse`
@@ -1166,6 +1233,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1198,6 +1267,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCertKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1212,6 +1282,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCommand
         :type request: :class:`huaweicloudsdksms.v3.ShowCommandRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowCommandResponse`
@@ -1224,6 +1295,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1256,6 +1329,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCommandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1270,6 +1344,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMigproject
         :type request: :class:`huaweicloudsdksms.v3.ShowMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowMigprojectResponse`
@@ -1282,6 +1357,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1314,6 +1391,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1328,6 +1406,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowOverview
         :type request: :class:`huaweicloudsdksms.v3.ShowOverviewRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowOverviewResponse`
@@ -1340,6 +1419,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1370,6 +1451,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOverviewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1384,6 +1466,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPassphrase
         :type request: :class:`huaweicloudsdksms.v3.ShowPassphraseRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowPassphraseResponse`
@@ -1396,6 +1479,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1428,6 +1513,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPassphraseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1442,6 +1528,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowServer
         :type request: :class:`huaweicloudsdksms.v3.ShowServerRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowServerResponse`
@@ -1454,6 +1541,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1486,6 +1575,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1500,6 +1590,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSha256
         :type request: :class:`huaweicloudsdksms.v3.ShowSha256Request`
         :rtype: :class:`huaweicloudsdksms.v3.ShowSha256Response`
@@ -1512,6 +1603,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1544,6 +1637,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSha256Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1558,6 +1652,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTargetPassword
         :type request: :class:`huaweicloudsdksms.v3.ShowTargetPasswordRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowTargetPasswordResponse`
@@ -1570,6 +1665,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1602,6 +1699,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTargetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1616,6 +1714,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTask
         :type request: :class:`huaweicloudsdksms.v3.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowTaskResponse`
@@ -1628,6 +1727,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1660,6 +1761,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1674,6 +1776,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowTemplate
         :type request: :class:`huaweicloudsdksms.v3.ShowTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowTemplateResponse`
@@ -1686,6 +1789,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1718,6 +1823,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1732,6 +1838,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowsSpeedLimits
         :type request: :class:`huaweicloudsdksms.v3.ShowsSpeedLimitsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowsSpeedLimitsResponse`
@@ -1744,6 +1851,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1776,6 +1885,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowsSpeedLimitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1790,6 +1900,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UnlockTargetEcs
         :type request: :class:`huaweicloudsdksms.v3.UnlockTargetEcsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UnlockTargetEcsResponse`
@@ -1802,6 +1913,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1834,6 +1947,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UnlockTargetEcsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1848,6 +1962,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCommandResult
         :type request: :class:`huaweicloudsdksms.v3.UpdateCommandResultRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateCommandResultResponse`
@@ -1860,6 +1975,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1894,6 +2011,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCommandResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1908,6 +2026,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCopyState
         :type request: :class:`huaweicloudsdksms.v3.UpdateCopyStateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateCopyStateResponse`
@@ -1920,6 +2039,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1954,6 +2075,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCopyStateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1968,6 +2090,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDefaultMigproject
         :type request: :class:`huaweicloudsdksms.v3.UpdateDefaultMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateDefaultMigprojectResponse`
@@ -1980,6 +2103,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2012,6 +2137,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDefaultMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2026,6 +2152,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDiskInfo
         :type request: :class:`huaweicloudsdksms.v3.UpdateDiskInfoRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateDiskInfoResponse`
@@ -2038,6 +2165,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2072,6 +2201,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDiskInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2086,6 +2216,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMigproject
         :type request: :class:`huaweicloudsdksms.v3.UpdateMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateMigprojectResponse`
@@ -2098,6 +2229,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2132,6 +2265,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMigprojectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2146,6 +2280,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateServerName
         :type request: :class:`huaweicloudsdksms.v3.UpdateServerNameRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateServerNameResponse`
@@ -2158,6 +2293,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2192,6 +2329,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateServerNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2206,6 +2344,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSpeed
         :type request: :class:`huaweicloudsdksms.v3.UpdateSpeedRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateSpeedResponse`
@@ -2218,6 +2357,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2252,6 +2393,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSpeedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2266,6 +2408,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTask
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskResponse`
@@ -2278,6 +2421,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2312,6 +2457,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2328,6 +2474,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTaskSpeed
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedResponse`
@@ -2340,6 +2487,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2374,6 +2523,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskSpeedResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2388,6 +2538,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTaskStatus
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskStatusRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskStatusResponse`
@@ -2400,6 +2551,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2434,6 +2587,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTaskStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2448,6 +2602,7 @@ class SmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTemplate
         :type request: :class:`huaweicloudsdksms.v3.UpdateTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTemplateResponse`
@@ -2460,6 +2615,8 @@ class SmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2494,6 +2651,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2501,7 +2659,7 @@ class SmsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2512,9 +2670,10 @@ class SmsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2531,6 +2690,7 @@ class SmsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

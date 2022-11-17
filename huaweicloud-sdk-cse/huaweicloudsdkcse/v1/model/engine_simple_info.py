@@ -17,7 +17,6 @@ class EngineSimpleInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -745,7 +744,6 @@ class EngineSimpleInfo:
     def reference(self):
         """Gets the reference of this EngineSimpleInfo.
 
-
         :return: The reference of this EngineSimpleInfo.
         :rtype: :class:`huaweicloudsdkcse.v1.EngineReference`
         """
@@ -754,7 +752,6 @@ class EngineSimpleInfo:
     @reference.setter
     def reference(self, reference):
         """Sets the reference of this EngineSimpleInfo.
-
 
         :param reference: The reference of this EngineSimpleInfo.
         :type reference: :class:`huaweicloudsdkcse.v1.EngineReference`

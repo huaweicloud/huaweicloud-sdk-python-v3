@@ -17,7 +17,6 @@ class ListVolumesByTagsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListVolumesByTagsRequest:
     def body(self):
         """Gets the body of this ListVolumesByTagsRequest.
 
-
         :return: The body of this ListVolumesByTagsRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumesByTagsRequestBody`
         """
@@ -58,7 +56,6 @@ class ListVolumesByTagsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListVolumesByTagsRequest.
-
 
         :param body: The body of this ListVolumesByTagsRequest.
         :type body: :class:`huaweicloudsdkevs.v2.ListVolumesByTagsRequestBody`

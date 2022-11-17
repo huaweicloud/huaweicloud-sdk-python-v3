@@ -17,7 +17,6 @@ class ActionResources:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -92,7 +91,6 @@ class ActionResources:
     def resource_detail(self):
         """Gets the resource_detail of this ActionResources.
 
-
         :return: The resource_detail of this ActionResources.
         :rtype: :class:`huaweicloudsdkkms.v2.KeyDetails`
         """
@@ -101,7 +99,6 @@ class ActionResources:
     @resource_detail.setter
     def resource_detail(self, resource_detail):
         """Sets the resource_detail of this ActionResources.
-
 
         :param resource_detail: The resource_detail of this ActionResources.
         :type resource_detail: :class:`huaweicloudsdkkms.v2.KeyDetails`

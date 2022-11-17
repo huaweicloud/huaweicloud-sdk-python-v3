@@ -17,7 +17,6 @@ class Cluster:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -166,7 +165,6 @@ class Cluster:
     def instance(self):
         """Gets the instance of this Cluster.
 
-
         :return: The instance of this Cluster.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.Instance`
         """
@@ -175,7 +173,6 @@ class Cluster:
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this Cluster.
-
 
         :param instance: The instance of this Cluster.
         :type instance: :class:`huaweicloudsdkcloudtable.v2.Instance`
@@ -274,7 +271,6 @@ class Cluster:
     def datastore(self):
         """Gets the datastore of this Cluster.
 
-
         :return: The datastore of this Cluster.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.Datastore`
         """
@@ -283,7 +279,6 @@ class Cluster:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this Cluster.
-
 
         :param datastore: The datastore of this Cluster.
         :type datastore: :class:`huaweicloudsdkcloudtable.v2.Datastore`

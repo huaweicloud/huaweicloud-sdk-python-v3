@@ -17,7 +17,6 @@ class CreateResIntelligentSceneRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateResIntelligentSceneRequest:
     def body(self):
         """Gets the body of this CreateResIntelligentSceneRequest.
 
-
         :return: The body of this CreateResIntelligentSceneRequest.
         :rtype: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneRequestNBody`
         """
@@ -114,7 +112,6 @@ class CreateResIntelligentSceneRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateResIntelligentSceneRequest.
-
 
         :param body: The body of this CreateResIntelligentSceneRequest.
         :type body: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneRequestNBody`

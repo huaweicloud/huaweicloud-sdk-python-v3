@@ -17,7 +17,6 @@ class UpdateUserResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -399,7 +398,6 @@ class UpdateUserResult:
     def links(self):
         """Gets the links of this UpdateUserResult.
 
-
         :return: The links of this UpdateUserResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
@@ -408,7 +406,6 @@ class UpdateUserResult:
     @links.setter
     def links(self, links):
         """Sets the links of this UpdateUserResult.
-
 
         :param links: The links of this UpdateUserResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

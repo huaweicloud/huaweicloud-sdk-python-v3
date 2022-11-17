@@ -17,7 +17,6 @@ class GetMetricsValue:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -84,7 +83,6 @@ class GetMetricsValue:
     def transform(self):
         """Gets the transform of this GetMetricsValue.
 
-
         :return: The transform of this GetMetricsValue.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformMetricsRequest`
         """
@@ -93,7 +91,6 @@ class GetMetricsValue:
     @transform.setter
     def transform(self, transform):
         """Sets the transform of this GetMetricsValue.
-
 
         :param transform: The transform of this GetMetricsValue.
         :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformMetricsRequest`
@@ -104,7 +101,6 @@ class GetMetricsValue:
     def aggregate(self):
         """Gets the aggregate of this GetMetricsValue.
 
-
         :return: The aggregate of this GetMetricsValue.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetricsRequest`
         """
@@ -113,7 +109,6 @@ class GetMetricsValue:
     @aggregate.setter
     def aggregate(self, aggregate):
         """Sets the aggregate of this GetMetricsValue.
-
 
         :param aggregate: The aggregate of this GetMetricsValue.
         :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetricsRequest`

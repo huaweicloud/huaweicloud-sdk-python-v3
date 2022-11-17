@@ -17,20 +17,21 @@ class DeviceInfoSimple:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'id': 'int',
-        'device_name': 'str'
+        'device_name': 'str',
+        'device_id': 'int'
     }
 
     attribute_map = {
         'id': 'id',
-        'device_name': 'device_name'
+        'device_name': 'device_name',
+        'device_id': 'device_id'
     }
 
-    def __init__(self, id=None, device_name=None):
+    def __init__(self, id=None, device_name=None, device_id=None):
         """DeviceInfoSimple
 
         The model defined in huaweicloud sdk
@@ -39,18 +40,23 @@ class DeviceInfoSimple:
         :type id: int
         :param device_name: 设备名称
         :type device_name: str
+        :param device_id: 设备ID（兼容20.0）
+        :type device_id: int
         """
         
         
 
         self._id = None
         self._device_name = None
+        self._device_id = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if device_name is not None:
             self.device_name = device_name
+        if device_id is not None:
+            self.device_id = device_id
 
     @property
     def id(self):
@@ -95,6 +101,28 @@ class DeviceInfoSimple:
         :type device_name: str
         """
         self._device_name = device_name
+
+    @property
+    def device_id(self):
+        """Gets the device_id of this DeviceInfoSimple.
+
+        设备ID（兼容20.0）
+
+        :return: The device_id of this DeviceInfoSimple.
+        :rtype: int
+        """
+        return self._device_id
+
+    @device_id.setter
+    def device_id(self, device_id):
+        """Sets the device_id of this DeviceInfoSimple.
+
+        设备ID（兼容20.0）
+
+        :param device_id: The device_id of this DeviceInfoSimple.
+        :type device_id: int
+        """
+        self._device_id = device_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

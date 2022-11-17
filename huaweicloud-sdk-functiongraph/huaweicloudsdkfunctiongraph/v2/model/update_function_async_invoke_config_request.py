@@ -17,7 +17,6 @@ class UpdateFunctionAsyncInvokeConfigRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateFunctionAsyncInvokeConfigRequest:
     def body(self):
         """Gets the body of this UpdateFunctionAsyncInvokeConfigRequest.
 
-
         :return: The body of this UpdateFunctionAsyncInvokeConfigRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateFunctionAsyncInvokeConfigRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateFunctionAsyncInvokeConfigRequest.
-
 
         :param body: The body of this UpdateFunctionAsyncInvokeConfigRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionAsyncInvokeConfigRequestBody`

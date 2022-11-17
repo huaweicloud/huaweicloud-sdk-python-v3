@@ -17,7 +17,6 @@ class ShowKeyRotationStatusRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowKeyRotationStatusRequest:
     def body(self):
         """Gets the body of this ShowKeyRotationStatusRequest.
 
-
         :return: The body of this ShowKeyRotationStatusRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
         """
@@ -58,7 +56,6 @@ class ShowKeyRotationStatusRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowKeyRotationStatusRequest.
-
 
         :param body: The body of this ShowKeyRotationStatusRequest.
         :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`

@@ -17,7 +17,6 @@ class ConnectionInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -68,7 +67,6 @@ class ConnectionInfo:
     def name(self):
         """Gets the name of this ConnectionInfo.
 
-
         :return: The name of this ConnectionInfo.
         :rtype: str
         """
@@ -77,7 +75,6 @@ class ConnectionInfo:
     @name.setter
     def name(self, name):
         """Sets the name of this ConnectionInfo.
-
 
         :param name: The name of this ConnectionInfo.
         :type name: str
@@ -88,7 +85,6 @@ class ConnectionInfo:
     def type(self):
         """Gets the type of this ConnectionInfo.
 
-
         :return: The type of this ConnectionInfo.
         :rtype: str
         """
@@ -97,7 +93,6 @@ class ConnectionInfo:
     @type.setter
     def type(self, type):
         """Sets the type of this ConnectionInfo.
-
 
         :param type: The type of this ConnectionInfo.
         :type type: str
@@ -108,7 +103,6 @@ class ConnectionInfo:
     def config(self):
         """Gets the config of this ConnectionInfo.
 
-
         :return: The config of this ConnectionInfo.
         :rtype: object
         """
@@ -117,7 +111,6 @@ class ConnectionInfo:
     @config.setter
     def config(self, config):
         """Sets the config of this ConnectionInfo.
-
 
         :param config: The config of this ConnectionInfo.
         :type config: object
@@ -128,7 +121,6 @@ class ConnectionInfo:
     def description(self):
         """Gets the description of this ConnectionInfo.
 
-
         :return: The description of this ConnectionInfo.
         :rtype: str
         """
@@ -137,7 +129,6 @@ class ConnectionInfo:
     @description.setter
     def description(self, description):
         """Sets the description of this ConnectionInfo.
-
 
         :param description: The description of this ConnectionInfo.
         :type description: str

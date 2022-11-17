@@ -17,7 +17,6 @@ class CreateVpcAttachmentBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateVpcAttachmentBody:
     def vpc_attachment(self):
         """Gets the vpc_attachment of this CreateVpcAttachmentBody.
 
-
         :return: The vpc_attachment of this CreateVpcAttachmentBody.
         :rtype: :class:`huaweicloudsdker.v3.VpcAttachmentCreateRequest`
         """
@@ -57,7 +55,6 @@ class CreateVpcAttachmentBody:
     @vpc_attachment.setter
     def vpc_attachment(self, vpc_attachment):
         """Sets the vpc_attachment of this CreateVpcAttachmentBody.
-
 
         :param vpc_attachment: The vpc_attachment of this CreateVpcAttachmentBody.
         :type vpc_attachment: :class:`huaweicloudsdker.v3.VpcAttachmentCreateRequest`

@@ -17,20 +17,21 @@ class ResetProductAuthenticationRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
         'instance_id': 'str',
-        'product_id': 'int'
+        'product_id': 'int',
+        'body': 'ResetProductAuthenticationRequestBody'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'product_id': 'product_id'
+        'product_id': 'product_id',
+        'body': 'body'
     }
 
-    def __init__(self, instance_id=None, product_id=None):
+    def __init__(self, instance_id=None, product_id=None, body=None):
         """ResetProductAuthenticationRequest
 
         The model defined in huaweicloud sdk
@@ -39,16 +40,21 @@ class ResetProductAuthenticationRequest:
         :type instance_id: str
         :param product_id: 产品ID
         :type product_id: int
+        :param body: Body of the ResetProductAuthenticationRequest
+        :type body: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequestBody`
         """
         
         
 
         self._instance_id = None
         self._product_id = None
+        self._body = None
         self.discriminator = None
 
         self.instance_id = instance_id
         self.product_id = product_id
+        if body is not None:
+            self.body = body
 
     @property
     def instance_id(self):
@@ -93,6 +99,24 @@ class ResetProductAuthenticationRequest:
         :type product_id: int
         """
         self._product_id = product_id
+
+    @property
+    def body(self):
+        """Gets the body of this ResetProductAuthenticationRequest.
+
+        :return: The body of this ResetProductAuthenticationRequest.
+        :rtype: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequestBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this ResetProductAuthenticationRequest.
+
+        :param body: The body of this ResetProductAuthenticationRequest.
+        :type body: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequestBody`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

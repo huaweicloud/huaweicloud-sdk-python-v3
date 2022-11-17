@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class KmsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateKmsTags
         :type request: :class:`huaweicloudsdkkms.v1.BatchCreateKmsTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.BatchCreateKmsTagsResponse`
@@ -68,6 +63,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -104,6 +101,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateKmsTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -120,6 +118,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelGrant
         :type request: :class:`huaweicloudsdkkms.v1.CancelGrantRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CancelGrantResponse`
@@ -132,6 +131,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -166,6 +167,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelGrantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -182,6 +184,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelKeyDeletion
         :type request: :class:`huaweicloudsdkkms.v1.CancelKeyDeletionRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CancelKeyDeletionResponse`
@@ -194,6 +197,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +233,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelKeyDeletionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -249,6 +255,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelSelfGrant
         :type request: :class:`huaweicloudsdkkms.v1.CancelSelfGrantRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CancelSelfGrantResponse`
@@ -261,6 +268,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -295,6 +304,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelSelfGrantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -309,6 +319,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatakey
         :type request: :class:`huaweicloudsdkkms.v1.CreateDatakeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CreateDatakeyResponse`
@@ -321,6 +332,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -355,6 +368,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatakeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -369,6 +383,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatakeyWithoutPlaintext
         :type request: :class:`huaweicloudsdkkms.v1.CreateDatakeyWithoutPlaintextRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CreateDatakeyWithoutPlaintextResponse`
@@ -381,6 +396,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -415,6 +432,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatakeyWithoutPlaintextResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -431,6 +449,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateGrant
         :type request: :class:`huaweicloudsdkkms.v1.CreateGrantRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CreateGrantResponse`
@@ -443,6 +462,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -477,6 +498,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGrantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -493,6 +515,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateKey
         :type request: :class:`huaweicloudsdkkms.v1.CreateKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CreateKeyResponse`
@@ -505,6 +528,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -539,6 +564,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -553,6 +579,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateKmsTag
         :type request: :class:`huaweicloudsdkkms.v1.CreateKmsTagRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CreateKmsTagResponse`
@@ -565,6 +592,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -601,6 +630,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateKmsTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -616,6 +646,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateParametersForImport
         :type request: :class:`huaweicloudsdkkms.v1.CreateParametersForImportRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CreateParametersForImportResponse`
@@ -628,6 +659,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -662,6 +695,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateParametersForImportResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -677,6 +711,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateRandom
         :type request: :class:`huaweicloudsdkkms.v1.CreateRandomRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CreateRandomResponse`
@@ -689,6 +724,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -723,6 +760,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateRandomResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -742,6 +780,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSecret
         :type request: :class:`huaweicloudsdkkms.v1.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CreateSecretResponse`
@@ -754,6 +793,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -786,6 +827,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -800,6 +842,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSecretVersion
         :type request: :class:`huaweicloudsdkkms.v1.CreateSecretVersionRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.CreateSecretVersionResponse`
@@ -812,6 +855,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -846,6 +891,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecretVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -860,6 +906,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DecryptData
         :type request: :class:`huaweicloudsdkkms.v1.DecryptDataRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DecryptDataResponse`
@@ -872,6 +919,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -906,6 +955,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DecryptDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -920,6 +970,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DecryptDatakey
         :type request: :class:`huaweicloudsdkkms.v1.DecryptDatakeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DecryptDatakeyResponse`
@@ -932,6 +983,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -966,6 +1019,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DecryptDatakeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -980,6 +1034,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteImportedKeyMaterial
         :type request: :class:`huaweicloudsdkkms.v1.DeleteImportedKeyMaterialRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DeleteImportedKeyMaterialResponse`
@@ -992,6 +1047,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1026,6 +1083,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteImportedKeyMaterialResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1040,6 +1098,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteKey
         :type request: :class:`huaweicloudsdkkms.v1.DeleteKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DeleteKeyResponse`
@@ -1052,6 +1111,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1086,6 +1147,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1100,6 +1162,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecret
         :type request: :class:`huaweicloudsdkkms.v1.DeleteSecretRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DeleteSecretResponse`
@@ -1112,6 +1175,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1144,6 +1209,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1158,6 +1224,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecretForSchedule
         :type request: :class:`huaweicloudsdkkms.v1.DeleteSecretForScheduleRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DeleteSecretForScheduleResponse`
@@ -1170,6 +1237,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1204,6 +1273,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecretForScheduleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1218,6 +1288,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecretStage
         :type request: :class:`huaweicloudsdkkms.v1.DeleteSecretStageRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DeleteSecretStageResponse`
@@ -1230,6 +1301,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1264,6 +1337,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecretStageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1278,6 +1352,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTag
         :type request: :class:`huaweicloudsdkkms.v1.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DeleteTagResponse`
@@ -1290,6 +1365,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1326,6 +1403,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1342,6 +1420,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisableKey
         :type request: :class:`huaweicloudsdkkms.v1.DisableKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DisableKeyResponse`
@@ -1354,6 +1433,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1388,6 +1469,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1402,6 +1484,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DisableKeyRotation
         :type request: :class:`huaweicloudsdkkms.v1.DisableKeyRotationRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.DisableKeyRotationResponse`
@@ -1414,6 +1497,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1448,6 +1533,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisableKeyRotationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1464,6 +1550,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableKey
         :type request: :class:`huaweicloudsdkkms.v1.EnableKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.EnableKeyResponse`
@@ -1476,6 +1563,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1510,6 +1599,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1527,6 +1617,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EnableKeyRotation
         :type request: :class:`huaweicloudsdkkms.v1.EnableKeyRotationRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.EnableKeyRotationResponse`
@@ -1539,6 +1630,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1573,6 +1666,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EnableKeyRotationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1587,6 +1681,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EncryptData
         :type request: :class:`huaweicloudsdkkms.v1.EncryptDataRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.EncryptDataResponse`
@@ -1599,6 +1694,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1633,6 +1730,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EncryptDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1647,6 +1745,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for EncryptDatakey
         :type request: :class:`huaweicloudsdkkms.v1.EncryptDatakeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.EncryptDatakeyResponse`
@@ -1659,6 +1758,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1693,6 +1794,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='EncryptDatakeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1707,6 +1809,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ImportKeyMaterial
         :type request: :class:`huaweicloudsdkkms.v1.ImportKeyMaterialRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ImportKeyMaterialResponse`
@@ -1719,6 +1822,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1753,6 +1858,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportKeyMaterialResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1767,6 +1873,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGrants
         :type request: :class:`huaweicloudsdkkms.v1.ListGrantsRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ListGrantsResponse`
@@ -1779,6 +1886,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1813,6 +1922,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGrantsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1827,6 +1937,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListKeyDetail
         :type request: :class:`huaweicloudsdkkms.v1.ListKeyDetailRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ListKeyDetailResponse`
@@ -1839,6 +1950,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1873,6 +1986,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeyDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1887,6 +2001,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListKeys
         :type request: :class:`huaweicloudsdkkms.v1.ListKeysRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ListKeysResponse`
@@ -1899,6 +2014,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1933,6 +2050,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKeysResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1947,6 +2065,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListKmsByTags
         :type request: :class:`huaweicloudsdkkms.v1.ListKmsByTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ListKmsByTagsResponse`
@@ -1959,6 +2078,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1995,6 +2116,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKmsByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2009,6 +2131,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListKmsTags
         :type request: :class:`huaweicloudsdkkms.v1.ListKmsTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ListKmsTagsResponse`
@@ -2021,6 +2144,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2053,6 +2178,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListKmsTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2067,6 +2193,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRetirableGrants
         :type request: :class:`huaweicloudsdkkms.v1.ListRetirableGrantsRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ListRetirableGrantsResponse`
@@ -2079,6 +2206,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2113,6 +2242,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRetirableGrantsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2127,6 +2257,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecretStage
         :type request: :class:`huaweicloudsdkkms.v1.ListSecretStageRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ListSecretStageResponse`
@@ -2139,6 +2270,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2173,6 +2306,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecretStageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2187,6 +2321,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecretVersions
         :type request: :class:`huaweicloudsdkkms.v1.ListSecretVersionsRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ListSecretVersionsResponse`
@@ -2199,6 +2334,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2231,6 +2368,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecretVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2245,6 +2383,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecrets
         :type request: :class:`huaweicloudsdkkms.v1.ListSecretsRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ListSecretsResponse`
@@ -2257,6 +2396,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2291,6 +2432,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecretsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2305,6 +2447,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreSecret
         :type request: :class:`huaweicloudsdkkms.v1.RestoreSecretRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.RestoreSecretResponse`
@@ -2317,6 +2460,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2349,6 +2494,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2363,6 +2509,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowKeyRotationStatus
         :type request: :class:`huaweicloudsdkkms.v1.ShowKeyRotationStatusRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ShowKeyRotationStatusResponse`
@@ -2375,6 +2522,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2409,6 +2558,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowKeyRotationStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2423,6 +2573,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowKmsTags
         :type request: :class:`huaweicloudsdkkms.v1.ShowKmsTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ShowKmsTagsResponse`
@@ -2435,6 +2586,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2469,6 +2622,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowKmsTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2483,6 +2637,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPublicKey
         :type request: :class:`huaweicloudsdkkms.v1.ShowPublicKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ShowPublicKeyResponse`
@@ -2495,6 +2650,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2529,6 +2686,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPublicKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2543,6 +2701,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSecret
         :type request: :class:`huaweicloudsdkkms.v1.ShowSecretRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ShowSecretResponse`
@@ -2555,6 +2714,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2587,6 +2748,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2602,6 +2764,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSecretVersion
         :type request: :class:`huaweicloudsdkkms.v1.ShowSecretVersionRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ShowSecretVersionResponse`
@@ -2614,6 +2777,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2648,6 +2813,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecretVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2662,6 +2828,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUserInstances
         :type request: :class:`huaweicloudsdkkms.v1.ShowUserInstancesRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ShowUserInstancesResponse`
@@ -2674,6 +2841,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2706,6 +2875,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2720,6 +2890,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUserQuotas
         :type request: :class:`huaweicloudsdkkms.v1.ShowUserQuotasRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ShowUserQuotasResponse`
@@ -2732,6 +2903,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2764,6 +2937,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2778,6 +2952,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for Sign
         :type request: :class:`huaweicloudsdkkms.v1.SignRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.SignResponse`
@@ -2790,6 +2965,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2824,6 +3001,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='SignResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2841,6 +3019,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateKeyAlias
         :type request: :class:`huaweicloudsdkkms.v1.UpdateKeyAliasRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.UpdateKeyAliasResponse`
@@ -2853,6 +3032,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2887,6 +3068,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeyAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2904,6 +3086,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateKeyDescription
         :type request: :class:`huaweicloudsdkkms.v1.UpdateKeyDescriptionRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.UpdateKeyDescriptionResponse`
@@ -2916,6 +3099,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2950,6 +3135,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeyDescriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2964,6 +3150,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateKeyRotationInterval
         :type request: :class:`huaweicloudsdkkms.v1.UpdateKeyRotationIntervalRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.UpdateKeyRotationIntervalResponse`
@@ -2976,6 +3163,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3010,6 +3199,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateKeyRotationIntervalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3024,6 +3214,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSecret
         :type request: :class:`huaweicloudsdkkms.v1.UpdateSecretRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.UpdateSecretResponse`
@@ -3036,6 +3227,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3070,6 +3263,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3084,6 +3278,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSecretStage
         :type request: :class:`huaweicloudsdkkms.v1.UpdateSecretStageRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.UpdateSecretStageResponse`
@@ -3096,6 +3291,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3132,6 +3329,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecretStageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3146,6 +3344,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ValidateSignature
         :type request: :class:`huaweicloudsdkkms.v1.ValidateSignatureRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ValidateSignatureResponse`
@@ -3158,6 +3357,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3192,6 +3393,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ValidateSignatureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3206,6 +3408,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVersion
         :type request: :class:`huaweicloudsdkkms.v1.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ShowVersionResponse`
@@ -3218,6 +3421,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3250,6 +3455,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3264,6 +3470,7 @@ class KmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVersions
         :type request: :class:`huaweicloudsdkkms.v1.ShowVersionsRequest`
         :rtype: :class:`huaweicloudsdkkms.v1.ShowVersionsResponse`
@@ -3276,6 +3483,8 @@ class KmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3306,6 +3515,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3313,7 +3523,7 @@ class KmsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3324,9 +3534,10 @@ class KmsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3343,6 +3554,7 @@ class KmsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

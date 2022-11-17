@@ -17,7 +17,6 @@ class SetGaussMySqlProxyWeightRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class SetGaussMySqlProxyWeightRequest:
     def body(self):
         """Gets the body of this SetGaussMySqlProxyWeightRequest.
 
-
         :return: The body of this SetGaussMySqlProxyWeightRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TaurusModifyProxyWeightRequest`
         """
@@ -143,7 +141,6 @@ class SetGaussMySqlProxyWeightRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetGaussMySqlProxyWeightRequest.
-
 
         :param body: The body of this SetGaussMySqlProxyWeightRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.TaurusModifyProxyWeightRequest`

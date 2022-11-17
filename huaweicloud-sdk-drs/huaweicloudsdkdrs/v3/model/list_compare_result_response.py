@@ -17,7 +17,6 @@ class ListCompareResultResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -113,7 +112,6 @@ class ListCompareResultResponse(SdkResponse):
     def object_level_compare_results(self):
         """Gets the object_level_compare_results of this ListCompareResultResponse.
 
-
         :return: The object_level_compare_results of this ListCompareResultResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.ObjectCompareResult`
         """
@@ -122,7 +120,6 @@ class ListCompareResultResponse(SdkResponse):
     @object_level_compare_results.setter
     def object_level_compare_results(self, object_level_compare_results):
         """Sets the object_level_compare_results of this ListCompareResultResponse.
-
 
         :param object_level_compare_results: The object_level_compare_results of this ListCompareResultResponse.
         :type object_level_compare_results: :class:`huaweicloudsdkdrs.v3.ObjectCompareResult`
@@ -133,7 +130,6 @@ class ListCompareResultResponse(SdkResponse):
     def line_compare_results(self):
         """Gets the line_compare_results of this ListCompareResultResponse.
 
-
         :return: The line_compare_results of this ListCompareResultResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.LineCompareResult`
         """
@@ -142,7 +138,6 @@ class ListCompareResultResponse(SdkResponse):
     @line_compare_results.setter
     def line_compare_results(self, line_compare_results):
         """Sets the line_compare_results of this ListCompareResultResponse.
-
 
         :param line_compare_results: The line_compare_results of this ListCompareResultResponse.
         :type line_compare_results: :class:`huaweicloudsdkdrs.v3.LineCompareResult`
@@ -153,7 +148,6 @@ class ListCompareResultResponse(SdkResponse):
     def content_compare_results(self):
         """Gets the content_compare_results of this ListCompareResultResponse.
 
-
         :return: The content_compare_results of this ListCompareResultResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.ContentCompareResult`
         """
@@ -162,7 +156,6 @@ class ListCompareResultResponse(SdkResponse):
     @content_compare_results.setter
     def content_compare_results(self, content_compare_results):
         """Sets the content_compare_results of this ListCompareResultResponse.
-
 
         :param content_compare_results: The content_compare_results of this ListCompareResultResponse.
         :type content_compare_results: :class:`huaweicloudsdkdrs.v3.ContentCompareResult`
@@ -173,7 +166,6 @@ class ListCompareResultResponse(SdkResponse):
     def compare_task_list_results(self):
         """Gets the compare_task_list_results of this ListCompareResultResponse.
 
-
         :return: The compare_task_list_results of this ListCompareResultResponse.
         :rtype: :class:`huaweicloudsdkdrs.v3.CompareTaskListResult`
         """
@@ -182,7 +174,6 @@ class ListCompareResultResponse(SdkResponse):
     @compare_task_list_results.setter
     def compare_task_list_results(self, compare_task_list_results):
         """Sets the compare_task_list_results of this ListCompareResultResponse.
-
 
         :param compare_task_list_results: The compare_task_list_results of this ListCompareResultResponse.
         :type compare_task_list_results: :class:`huaweicloudsdkdrs.v3.CompareTaskListResult`

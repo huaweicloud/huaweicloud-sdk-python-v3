@@ -17,7 +17,6 @@ class Backend:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class Backend:
     def health_check(self):
         """Gets the health_check of this Backend.
 
-
         :return: The health_check of this Backend.
         :rtype: :class:`huaweicloudsdkroma.v2.HealthCheck`
         """
@@ -116,7 +114,6 @@ class Backend:
     @health_check.setter
     def health_check(self, health_check):
         """Sets the health_check of this Backend.
-
 
         :param health_check: The health_check of this Backend.
         :type health_check: :class:`huaweicloudsdkroma.v2.HealthCheck`

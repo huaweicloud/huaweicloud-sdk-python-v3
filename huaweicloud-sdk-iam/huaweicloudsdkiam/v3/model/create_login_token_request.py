@@ -17,7 +17,6 @@ class CreateLoginTokenRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateLoginTokenRequest:
     def body(self):
         """Gets the body of this CreateLoginTokenRequest.
 
-
         :return: The body of this CreateLoginTokenRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateLoginTokenRequestBody`
         """
@@ -58,7 +56,6 @@ class CreateLoginTokenRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateLoginTokenRequest.
-
 
         :param body: The body of this CreateLoginTokenRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateLoginTokenRequestBody`

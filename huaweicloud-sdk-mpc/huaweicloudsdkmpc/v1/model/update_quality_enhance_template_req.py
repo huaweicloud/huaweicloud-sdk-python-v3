@@ -17,7 +17,6 @@ class UpdateQualityEnhanceTemplateReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class UpdateQualityEnhanceTemplateReq:
     def template(self):
         """Gets the template of this UpdateQualityEnhanceTemplateReq.
 
-
         :return: The template of this UpdateQualityEnhanceTemplateReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
         """
@@ -87,7 +85,6 @@ class UpdateQualityEnhanceTemplateReq:
     @template.setter
     def template(self, template):
         """Sets the template of this UpdateQualityEnhanceTemplateReq.
-
 
         :param template: The template of this UpdateQualityEnhanceTemplateReq.
         :type template: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`

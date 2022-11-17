@@ -17,7 +17,6 @@ class ChangeFailoverStrategyRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class ChangeFailoverStrategyRequest:
     def body(self):
         """Gets the body of this ChangeFailoverStrategyRequest.
 
-
         :return: The body of this ChangeFailoverStrategyRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.FailoverStrategyRequest`
         """
@@ -115,7 +113,6 @@ class ChangeFailoverStrategyRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeFailoverStrategyRequest.
-
 
         :param body: The body of this ChangeFailoverStrategyRequest.
         :type body: :class:`huaweicloudsdkrds.v3.FailoverStrategyRequest`

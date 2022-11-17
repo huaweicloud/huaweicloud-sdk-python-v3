@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DscAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchAddDataMask
         :type request: :class:`huaweicloudsdkdsc.v1.BatchAddDataMaskRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.BatchAddDataMaskResponse`
@@ -68,6 +63,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchAddDataMaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDatabaseWaterMark
         :type request: :class:`huaweicloudsdkdsc.v1.CreateDatabaseWaterMarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateDatabaseWaterMarkResponse`
@@ -126,6 +125,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseWaterMarkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDocWatermark
         :type request: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkResponse`
@@ -184,6 +187,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -240,6 +245,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDocWatermarkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -254,6 +260,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateDocWatermarkByAddress
         :type request: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkByAddressResponse`
@@ -266,6 +273,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -298,6 +307,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDocWatermarkByAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -312,6 +322,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateImageWatermark
         :type request: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkResponse`
@@ -324,6 +335,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -362,6 +375,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateImageWatermarkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -376,6 +390,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateImageWatermarkByAddress
         :type request: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressResponse`
@@ -388,6 +403,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -420,6 +437,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateImageWatermarkByAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -434,6 +452,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDatabaseWaterMark
         :type request: :class:`huaweicloudsdkdsc.v1.ShowDatabaseWaterMarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDatabaseWaterMarkResponse`
@@ -446,6 +465,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -478,6 +499,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDatabaseWaterMarkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -492,6 +514,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDocWatermark
         :type request: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkResponse`
@@ -504,6 +527,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -542,6 +567,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDocWatermarkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -556,6 +582,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDocWatermarkByAddress
         :type request: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressResponse`
@@ -568,6 +595,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -600,6 +629,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDocWatermarkByAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -614,6 +644,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowImageWatermark
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkResponse`
@@ -626,6 +657,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -662,6 +695,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowImageWatermarkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -676,6 +710,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowImageWatermarkByAddress
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkByAddressResponse`
@@ -688,6 +723,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -720,6 +757,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowImageWatermarkByAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -734,6 +772,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowImageWatermarkWithImage
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageResponse`
@@ -746,6 +785,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -780,6 +821,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowImageWatermarkWithImageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -794,6 +836,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowImageWatermarkWithImageByAddress
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageByAddressResponse`
@@ -806,6 +849,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -838,6 +883,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowImageWatermarkWithImageByAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -852,6 +898,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowScanJobResults
         :type request: :class:`huaweicloudsdkdsc.v1.ShowScanJobResultsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowScanJobResultsResponse`
@@ -864,6 +911,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -906,6 +955,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScanJobResultsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -920,6 +970,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowScanJobs
         :type request: :class:`huaweicloudsdkdsc.v1.ShowScanJobsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowScanJobsResponse`
@@ -932,6 +983,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -972,6 +1025,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowScanJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -986,6 +1040,7 @@ class DscAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowOpenApiCalledRecords
         :type request: :class:`huaweicloudsdkdsc.v1.ShowOpenApiCalledRecordsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowOpenApiCalledRecordsResponse`
@@ -998,6 +1053,8 @@ class DscAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1038,6 +1095,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOpenApiCalledRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1045,7 +1103,7 @@ class DscAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1056,9 +1114,10 @@ class DscAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1075,6 +1134,7 @@ class DscAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

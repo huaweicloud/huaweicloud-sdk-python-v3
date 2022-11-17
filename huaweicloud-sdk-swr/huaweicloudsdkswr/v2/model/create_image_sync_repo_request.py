@@ -17,7 +17,6 @@ class CreateImageSyncRepoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class CreateImageSyncRepoRequest:
     def body(self):
         """Gets the body of this CreateImageSyncRepoRequest.
 
-
         :return: The body of this CreateImageSyncRepoRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequestBody`
         """
@@ -114,7 +112,6 @@ class CreateImageSyncRepoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateImageSyncRepoRequest.
-
 
         :param body: The body of this CreateImageSyncRepoRequest.
         :type body: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequestBody`

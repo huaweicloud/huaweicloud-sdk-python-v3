@@ -17,7 +17,6 @@ class BaseInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -352,7 +351,6 @@ class BaseInfo:
     def meta_data(self):
         """Gets the meta_data of this BaseInfo.
 
-
         :return: The meta_data of this BaseInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.MetaData`
         """
@@ -361,7 +359,6 @@ class BaseInfo:
     @meta_data.setter
     def meta_data(self, meta_data):
         """Sets the meta_data of this BaseInfo.
-
 
         :param meta_data: The meta_data of this BaseInfo.
         :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`
@@ -460,7 +457,6 @@ class BaseInfo:
     def source_path(self):
         """Gets the source_path of this BaseInfo.
 
-
         :return: The source_path of this BaseInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
@@ -469,7 +465,6 @@ class BaseInfo:
     @source_path.setter
     def source_path(self, source_path):
         """Sets the source_path of this BaseInfo.
-
 
         :param source_path: The source_path of this BaseInfo.
         :type source_path: :class:`huaweicloudsdkvod.v1.FileAddr`
@@ -480,7 +475,6 @@ class BaseInfo:
     def output_path(self):
         """Gets the output_path of this BaseInfo.
 
-
         :return: The output_path of this BaseInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
@@ -489,7 +483,6 @@ class BaseInfo:
     @output_path.setter
     def output_path(self, output_path):
         """Sets the output_path of this BaseInfo.
-
 
         :param output_path: The output_path of this BaseInfo.
         :type output_path: :class:`huaweicloudsdkvod.v1.FileAddr`

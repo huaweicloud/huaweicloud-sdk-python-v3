@@ -17,11 +17,10 @@ class AddSubsetsToGatewayResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[Device]'
+        'body': 'list[AddSubsetsToGatewayResponseBody]'
     }
 
     attribute_map = {
@@ -34,7 +33,7 @@ class AddSubsetsToGatewayResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: list[:class:`huaweicloudsdkroma.v2.Device`]
+        :type body: list[:class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayResponseBody`]
         """
         
         super(AddSubsetsToGatewayResponse, self).__init__()
@@ -49,9 +48,8 @@ class AddSubsetsToGatewayResponse(SdkResponse):
     def body(self):
         """Gets the body of this AddSubsetsToGatewayResponse.
 
-
         :return: The body of this AddSubsetsToGatewayResponse.
-        :rtype: list[:class:`huaweicloudsdkroma.v2.Device`]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayResponseBody`]
         """
         return self._body
 
@@ -59,9 +57,8 @@ class AddSubsetsToGatewayResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this AddSubsetsToGatewayResponse.
 
-
         :param body: The body of this AddSubsetsToGatewayResponse.
-        :type body: list[:class:`huaweicloudsdkroma.v2.Device`]
+        :type body: list[:class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayResponseBody`]
         """
         self._body = body
 

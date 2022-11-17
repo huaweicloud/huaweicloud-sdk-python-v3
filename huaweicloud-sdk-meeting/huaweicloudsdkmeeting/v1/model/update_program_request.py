@@ -17,7 +17,6 @@ class UpdateProgramRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class UpdateProgramRequest:
     def body(self):
         """Gets the body of this UpdateProgramRequest.
 
-
         :return: The body of this UpdateProgramRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateProgramRequestDTO`
         """
@@ -144,7 +142,6 @@ class UpdateProgramRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateProgramRequest.
-
 
         :param body: The body of this UpdateProgramRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.UpdateProgramRequestDTO`

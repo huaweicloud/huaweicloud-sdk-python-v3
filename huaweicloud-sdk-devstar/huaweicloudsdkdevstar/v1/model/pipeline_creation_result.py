@@ -17,7 +17,6 @@ class PipelineCreationResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class PipelineCreationResult:
     def pipeline(self):
         """Gets the pipeline of this PipelineCreationResult.
 
-
         :return: The pipeline of this PipelineCreationResult.
         :rtype: :class:`huaweicloudsdkdevstar.v1.PipelineBasic`
         """
@@ -79,7 +77,6 @@ class PipelineCreationResult:
     @pipeline.setter
     def pipeline(self, pipeline):
         """Sets the pipeline of this PipelineCreationResult.
-
 
         :param pipeline: The pipeline of this PipelineCreationResult.
         :type pipeline: :class:`huaweicloudsdkdevstar.v1.PipelineBasic`

@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IamAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -58,6 +52,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateAgencyWithAllProjectsPermission
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithAllProjectsPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithAllProjectsPermissionResponse`
@@ -70,6 +65,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -106,6 +103,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateAgencyWithAllProjectsPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -122,6 +120,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateAgencyWithDomainPermission
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithDomainPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithDomainPermissionResponse`
@@ -134,6 +133,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -170,6 +171,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateAgencyWithDomainPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -186,6 +188,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateAgencyWithProjectPermission
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithProjectPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithProjectPermissionResponse`
@@ -198,6 +201,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -234,6 +239,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateAgencyWithProjectPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -250,6 +256,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateRoleToGroupOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToGroupOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateRoleToGroupOnEnterpriseProjectResponse`
@@ -262,6 +269,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -298,6 +307,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRoleToGroupOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -313,6 +323,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AssociateRoleToUserOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToUserOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateRoleToUserOnEnterpriseProjectResponse`
@@ -325,6 +336,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -361,6 +374,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateRoleToUserOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -377,6 +391,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckAllProjectsPermissionForAgency
         :type request: :class:`huaweicloudsdkiam.v3.CheckAllProjectsPermissionForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CheckAllProjectsPermissionForAgencyResponse`
@@ -389,6 +404,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -425,6 +442,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckAllProjectsPermissionForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -441,6 +459,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckDomainPermissionForAgency
         :type request: :class:`huaweicloudsdkiam.v3.CheckDomainPermissionForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CheckDomainPermissionForAgencyResponse`
@@ -453,6 +472,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -489,6 +510,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckDomainPermissionForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -505,6 +527,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CheckProjectPermissionForAgency
         :type request: :class:`huaweicloudsdkiam.v3.CheckProjectPermissionForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CheckProjectPermissionForAgencyResponse`
@@ -517,6 +540,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -553,6 +578,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckProjectPermissionForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -569,6 +595,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAgency
         :type request: :class:`huaweicloudsdkiam.v3.CreateAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyResponse`
@@ -581,6 +608,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -613,6 +642,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -629,6 +659,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAgencyCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.CreateAgencyCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyCustomPolicyResponse`
@@ -641,6 +672,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -673,6 +706,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAgencyCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -689,6 +723,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCloudServiceCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.CreateCloudServiceCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateCloudServiceCustomPolicyResponse`
@@ -701,6 +736,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -733,6 +770,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCloudServiceCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -751,6 +789,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateLoginToken
         :type request: :class:`huaweicloudsdkiam.v3.CreateLoginTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateLoginTokenResponse`
@@ -763,6 +802,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -780,7 +821,7 @@ class IamAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-LoginToken"]
+        response_headers = ["X-Subject-LoginToken", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -795,6 +836,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateLoginTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -813,6 +855,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMetadata
         :type request: :class:`huaweicloudsdkiam.v3.CreateMetadataRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMetadataResponse`
@@ -825,6 +868,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -861,6 +906,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -875,6 +921,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateOpenIdConnectConfig
         :type request: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigResponse`
@@ -887,6 +934,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -921,6 +970,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOpenIdConnectConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -935,6 +985,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTokenWithIdToken
         :type request: :class:`huaweicloudsdkiam.v3.CreateTokenWithIdTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTokenWithIdTokenResponse`
@@ -947,6 +998,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -966,7 +1019,7 @@ class IamAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -981,6 +1034,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTokenWithIdTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -995,6 +1049,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateUnscopedTokenWithIdToken
         :type request: :class:`huaweicloudsdkiam.v3.CreateUnscopedTokenWithIdTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateUnscopedTokenWithIdTokenResponse`
@@ -1007,6 +1062,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1028,7 +1085,7 @@ class IamAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1043,6 +1100,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateUnscopedTokenWithIdTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1059,6 +1117,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAgency
         :type request: :class:`huaweicloudsdkiam.v3.DeleteAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteAgencyResponse`
@@ -1071,6 +1130,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1103,6 +1164,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1119,6 +1181,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.DeleteCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteCustomPolicyResponse`
@@ -1131,6 +1194,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1163,6 +1228,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1179,6 +1245,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteDomainGroupInheritedRole
         :type request: :class:`huaweicloudsdkiam.v3.DeleteDomainGroupInheritedRoleRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteDomainGroupInheritedRoleResponse`
@@ -1191,6 +1258,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1227,6 +1296,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDomainGroupInheritedRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1243,6 +1313,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneAddUserToGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAddUserToGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneAddUserToGroupResponse`
@@ -1255,6 +1326,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1289,6 +1362,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneAddUserToGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1305,6 +1379,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneAssociateGroupWithDomainPermission
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithDomainPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithDomainPermissionResponse`
@@ -1317,6 +1392,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1353,6 +1430,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneAssociateGroupWithDomainPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1369,6 +1447,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneAssociateGroupWithProjectPermission
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithProjectPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithProjectPermissionResponse`
@@ -1381,6 +1460,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1417,6 +1498,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneAssociateGroupWithProjectPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1433,6 +1515,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCheckDomainPermissionForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckDomainPermissionForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckDomainPermissionForGroupResponse`
@@ -1445,6 +1528,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1481,6 +1566,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCheckDomainPermissionForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1497,6 +1583,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCheckProjectPermissionForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckProjectPermissionForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckProjectPermissionForGroupResponse`
@@ -1509,6 +1596,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1545,6 +1634,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCheckProjectPermissionForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1561,6 +1651,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCheckUserInGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckUserInGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckUserInGroupResponse`
@@ -1573,6 +1664,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1607,6 +1700,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCheckUserInGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1623,6 +1717,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCheckroleForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckroleForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckroleForGroupResponse`
@@ -1635,6 +1730,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1671,6 +1768,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCheckroleForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1687,6 +1785,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupResponse`
@@ -1699,6 +1798,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1731,6 +1832,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1747,6 +1849,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateIdentityProvider
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderResponse`
@@ -1759,6 +1862,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1793,6 +1898,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateIdentityProviderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1809,6 +1915,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateMapping
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingResponse`
@@ -1821,6 +1928,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1855,6 +1964,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1871,6 +1981,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateProject
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectResponse`
@@ -1883,6 +1994,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1915,6 +2028,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1931,6 +2045,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateProtocol
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolResponse`
@@ -1943,6 +2058,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1979,6 +2096,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateProtocolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1995,6 +2113,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateScopedToken
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateScopedTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateScopedTokenResponse`
@@ -2007,6 +2126,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2024,7 +2145,7 @@ class IamAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -2039,6 +2160,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateScopedTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2055,6 +2177,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneDeleteGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteGroupResponse`
@@ -2067,6 +2190,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2099,6 +2224,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2115,6 +2241,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneDeleteIdentityProvider
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteIdentityProviderResponse`
@@ -2127,6 +2254,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2159,6 +2288,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteIdentityProviderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2175,6 +2305,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneDeleteMapping
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteMappingResponse`
@@ -2187,6 +2318,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2219,6 +2352,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2235,6 +2369,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneDeleteProtocol
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteProtocolResponse`
@@ -2247,6 +2382,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2281,6 +2418,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteProtocolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2295,6 +2433,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListAllProjectPermissionsForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAllProjectPermissionsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListAllProjectPermissionsForGroupResponse`
@@ -2307,6 +2446,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2341,6 +2482,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListAllProjectPermissionsForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2357,6 +2499,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListAuthDomains
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAuthDomainsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListAuthDomainsResponse`
@@ -2369,6 +2512,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2399,6 +2544,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListAuthDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2415,6 +2561,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListAuthProjects
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAuthProjectsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListAuthProjectsResponse`
@@ -2427,6 +2574,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2457,6 +2606,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListAuthProjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2473,6 +2623,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListDomainPermissionsForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListDomainPermissionsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListDomainPermissionsForGroupResponse`
@@ -2485,6 +2636,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2519,6 +2672,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListDomainPermissionsForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2535,6 +2689,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListEndpoints
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListEndpointsResponse`
@@ -2547,6 +2702,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2581,6 +2738,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListEndpointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2598,6 +2756,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListFederationDomains
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListFederationDomainsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListFederationDomainsResponse`
@@ -2610,6 +2769,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2640,6 +2801,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListFederationDomainsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2656,6 +2818,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListGroups
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsResponse`
@@ -2668,6 +2831,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2702,6 +2867,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2718,6 +2884,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListIdentityProviders
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListIdentityProvidersRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListIdentityProvidersResponse`
@@ -2730,6 +2897,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2760,6 +2929,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListIdentityProvidersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2776,6 +2946,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListMappings
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListMappingsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListMappingsResponse`
@@ -2788,6 +2959,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2818,6 +2991,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListMappingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2834,6 +3008,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListPermissions
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListPermissionsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListPermissionsResponse`
@@ -2846,6 +3021,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2892,6 +3069,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListPermissionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2908,6 +3086,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListProjectPermissionsForGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectPermissionsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProjectPermissionsForGroupResponse`
@@ -2920,6 +3099,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2954,6 +3135,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListProjectPermissionsForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2970,6 +3152,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListProjects
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsResponse`
@@ -2982,6 +3165,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3026,6 +3211,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListProjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3042,6 +3228,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListProjectsForUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsForUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsForUserResponse`
@@ -3054,6 +3241,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3086,6 +3275,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListProjectsForUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3102,6 +3292,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListProtocols
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProtocolsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProtocolsResponse`
@@ -3114,6 +3305,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3146,6 +3339,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListProtocolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3162,6 +3356,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListRegions
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListRegionsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListRegionsResponse`
@@ -3174,6 +3369,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3204,6 +3401,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3220,6 +3418,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListServices
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListServicesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListServicesResponse`
@@ -3232,6 +3431,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3264,6 +3465,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListServicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3280,6 +3482,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListUsersForGroupByAdmin
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminResponse`
@@ -3292,6 +3495,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3324,6 +3529,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListUsersForGroupByAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3340,6 +3546,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListVersions
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListVersionsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListVersionsResponse`
@@ -3352,6 +3559,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3382,6 +3591,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3398,6 +3608,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneRemoveDomainPermissionFromGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveDomainPermissionFromGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneRemoveDomainPermissionFromGroupResponse`
@@ -3410,6 +3621,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3446,6 +3659,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneRemoveDomainPermissionFromGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3462,6 +3676,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneRemoveProjectPermissionFromGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveProjectPermissionFromGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneRemoveProjectPermissionFromGroupResponse`
@@ -3474,6 +3689,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3510,6 +3727,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneRemoveProjectPermissionFromGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3526,6 +3744,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneRemoveUserFromGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveUserFromGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneRemoveUserFromGroupResponse`
@@ -3538,6 +3757,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3572,6 +3793,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneRemoveUserFromGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3588,6 +3810,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowCatalog
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowCatalogRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowCatalogResponse`
@@ -3600,6 +3823,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3630,6 +3855,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowCatalogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3646,6 +3872,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowEndpoint
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowEndpointRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowEndpointResponse`
@@ -3658,6 +3885,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3690,6 +3919,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3706,6 +3936,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowGroupResponse`
@@ -3718,6 +3949,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3750,6 +3983,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3766,6 +4000,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowIdentityProvider
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowIdentityProviderResponse`
@@ -3778,6 +4013,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3810,6 +4047,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowIdentityProviderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3826,6 +4064,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowMapping
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowMappingResponse`
@@ -3838,6 +4077,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3870,6 +4111,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3886,6 +4128,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowPermission
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowPermissionResponse`
@@ -3898,6 +4141,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3930,6 +4175,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3946,6 +4192,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowProject
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowProjectResponse`
@@ -3958,6 +4205,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3990,6 +4239,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4006,6 +4256,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowProtocol
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowProtocolResponse`
@@ -4018,6 +4269,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4052,6 +4305,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowProtocolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4068,6 +4322,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowRegion
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowRegionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowRegionResponse`
@@ -4080,6 +4335,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4112,6 +4369,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowRegionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4128,6 +4386,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowSecurityCompliance
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceResponse`
@@ -4140,6 +4399,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4172,6 +4433,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowSecurityComplianceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4188,6 +4450,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowSecurityComplianceByOption
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceByOptionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceByOptionResponse`
@@ -4200,6 +4463,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4234,6 +4499,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowSecurityComplianceByOptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4250,6 +4516,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowService
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowServiceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowServiceResponse`
@@ -4262,6 +4529,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4294,6 +4563,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4310,6 +4580,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowVersion
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowVersionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowVersionResponse`
@@ -4322,6 +4593,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4352,6 +4625,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4368,6 +4642,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneUpdateGroup
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupResponse`
@@ -4380,6 +4655,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4414,6 +4691,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4430,6 +4708,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneUpdateIdentityProvider
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderResponse`
@@ -4442,6 +4721,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4476,6 +4757,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateIdentityProviderResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4492,6 +4774,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneUpdateMapping
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateMappingResponse`
@@ -4504,6 +4787,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4538,6 +4823,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4554,6 +4840,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneUpdateProject
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectResponse`
@@ -4566,6 +4853,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4600,6 +4889,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4616,6 +4906,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneUpdateProtocol
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolResponse`
@@ -4628,6 +4919,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4664,6 +4957,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateProtocolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4680,6 +4974,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAgencies
         :type request: :class:`huaweicloudsdkiam.v3.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListAgenciesResponse`
@@ -4692,6 +4987,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4728,6 +5025,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAgenciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4744,6 +5042,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAllProjectsPermissionsForAgency
         :type request: :class:`huaweicloudsdkiam.v3.ListAllProjectsPermissionsForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListAllProjectsPermissionsForAgencyResponse`
@@ -4756,6 +5055,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4790,6 +5091,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAllProjectsPermissionsForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4806,6 +5108,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListCustomPolicies
         :type request: :class:`huaweicloudsdkiam.v3.ListCustomPoliciesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListCustomPoliciesResponse`
@@ -4818,6 +5121,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4852,6 +5157,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCustomPoliciesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4868,6 +5174,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListDomainPermissionsForAgency
         :type request: :class:`huaweicloudsdkiam.v3.ListDomainPermissionsForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListDomainPermissionsForAgencyResponse`
@@ -4880,6 +5187,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4914,6 +5223,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDomainPermissionsForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4930,6 +5240,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnterpriseProjectsForGroup
         :type request: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForGroupResponse`
@@ -4942,6 +5253,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4974,6 +5287,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnterpriseProjectsForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4990,6 +5304,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEnterpriseProjectsForUser
         :type request: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForUserResponse`
@@ -5002,6 +5317,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5034,6 +5351,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnterpriseProjectsForUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5050,6 +5368,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListGroupsForEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.ListGroupsForEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListGroupsForEnterpriseProjectResponse`
@@ -5062,6 +5381,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5094,6 +5415,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGroupsForEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5110,6 +5432,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectPermissionsForAgency
         :type request: :class:`huaweicloudsdkiam.v3.ListProjectPermissionsForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListProjectPermissionsForAgencyResponse`
@@ -5122,6 +5445,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5156,6 +5481,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectPermissionsForAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5172,6 +5498,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRolesForGroupOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.ListRolesForGroupOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListRolesForGroupOnEnterpriseProjectResponse`
@@ -5184,6 +5511,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5218,6 +5547,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRolesForGroupOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5233,6 +5563,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRolesForUserOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.ListRolesForUserOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListRolesForUserOnEnterpriseProjectResponse`
@@ -5245,6 +5576,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5279,6 +5612,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRolesForUserOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5294,6 +5628,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUsersForEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectResponse`
@@ -5306,6 +5641,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5338,6 +5675,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUsersForEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5354,6 +5692,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemoveAllProjectsPermissionFromAgency
         :type request: :class:`huaweicloudsdkiam.v3.RemoveAllProjectsPermissionFromAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RemoveAllProjectsPermissionFromAgencyResponse`
@@ -5366,6 +5705,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5402,6 +5743,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveAllProjectsPermissionFromAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5418,6 +5760,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemoveDomainPermissionFromAgency
         :type request: :class:`huaweicloudsdkiam.v3.RemoveDomainPermissionFromAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RemoveDomainPermissionFromAgencyResponse`
@@ -5430,6 +5773,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5466,6 +5811,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveDomainPermissionFromAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5482,6 +5828,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemoveProjectPermissionFromAgency
         :type request: :class:`huaweicloudsdkiam.v3.RemoveProjectPermissionFromAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RemoveProjectPermissionFromAgencyResponse`
@@ -5494,6 +5841,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5530,6 +5879,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveProjectPermissionFromAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5546,6 +5896,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RevokeRoleFromGroupOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromGroupOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RevokeRoleFromGroupOnEnterpriseProjectResponse`
@@ -5558,6 +5909,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5594,6 +5947,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeRoleFromGroupOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5609,6 +5963,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RevokeRoleFromUserOnEnterpriseProject
         :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromUserOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RevokeRoleFromUserOnEnterpriseProjectResponse`
@@ -5621,6 +5976,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5657,6 +6014,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RevokeRoleFromUserOnEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5673,6 +6031,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAgency
         :type request: :class:`huaweicloudsdkiam.v3.ShowAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowAgencyResponse`
@@ -5685,6 +6044,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5717,6 +6078,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5733,6 +6095,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowCustomPolicyResponse`
@@ -5745,6 +6108,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5777,6 +6142,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5793,6 +6159,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainApiAclPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainApiAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainApiAclPolicyResponse`
@@ -5805,6 +6172,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5837,6 +6206,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainApiAclPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5853,6 +6223,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainConsoleAclPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainConsoleAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainConsoleAclPolicyResponse`
@@ -5865,6 +6236,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5897,6 +6270,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainConsoleAclPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5913,6 +6287,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainLoginPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainLoginPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainLoginPolicyResponse`
@@ -5925,6 +6300,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5957,6 +6334,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainLoginPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5973,6 +6351,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainPasswordPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainPasswordPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainPasswordPolicyResponse`
@@ -5985,6 +6364,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6017,6 +6398,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainPasswordPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6033,6 +6415,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainProtectPolicy
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponse`
@@ -6045,6 +6428,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6077,6 +6462,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainProtectPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6093,6 +6479,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainQuota
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainQuotaRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainQuotaResponse`
@@ -6105,6 +6492,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6139,6 +6528,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6154,6 +6544,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowDomainRoleAssignments
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainRoleAssignmentsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainRoleAssignmentsResponse`
@@ -6166,6 +6557,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6224,6 +6617,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDomainRoleAssignmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6240,6 +6634,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowMetadata
         :type request: :class:`huaweicloudsdkiam.v3.ShowMetadataRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowMetadataResponse`
@@ -6252,6 +6647,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6286,6 +6683,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6300,6 +6698,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowOpenIdConnectConfig
         :type request: :class:`huaweicloudsdkiam.v3.ShowOpenIdConnectConfigRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowOpenIdConnectConfigResponse`
@@ -6312,6 +6711,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6344,6 +6745,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowOpenIdConnectConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6360,6 +6762,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProjectDetailsAndStatus
         :type request: :class:`huaweicloudsdkiam.v3.ShowProjectDetailsAndStatusRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowProjectDetailsAndStatusResponse`
@@ -6372,6 +6775,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6404,6 +6809,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectDetailsAndStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6420,6 +6826,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowProjectQuota
         :type request: :class:`huaweicloudsdkiam.v3.ShowProjectQuotaRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowProjectQuotaResponse`
@@ -6432,6 +6839,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6464,6 +6873,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectQuotaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6480,6 +6890,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAgency
         :type request: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyResponse`
@@ -6492,6 +6903,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6526,6 +6939,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6542,6 +6956,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAgencyCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateAgencyCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyCustomPolicyResponse`
@@ -6554,6 +6969,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6588,6 +7005,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAgencyCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6604,6 +7022,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCloudServiceCustomPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyResponse`
@@ -6616,6 +7035,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6650,6 +7071,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateCloudServiceCustomPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6666,6 +7088,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainApiAclPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainApiAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainApiAclPolicyResponse`
@@ -6678,6 +7101,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6712,6 +7137,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainApiAclPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6728,6 +7154,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainConsoleAclPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainConsoleAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainConsoleAclPolicyResponse`
@@ -6740,6 +7167,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6774,6 +7203,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainConsoleAclPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6790,6 +7220,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainGroupInheritRole
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainGroupInheritRoleRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainGroupInheritRoleResponse`
@@ -6802,6 +7233,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6838,6 +7271,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainGroupInheritRoleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6854,6 +7288,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainLoginPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyResponse`
@@ -6866,6 +7301,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6900,6 +7337,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainLoginPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6916,6 +7354,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainPasswordPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainPasswordPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainPasswordPolicyResponse`
@@ -6928,6 +7367,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6962,6 +7403,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainPasswordPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6978,6 +7420,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateDomainProtectPolicy
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainProtectPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainProtectPolicyResponse`
@@ -6990,6 +7433,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7024,6 +7469,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDomainProtectPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7038,6 +7484,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateOpenIdConnectConfig
         :type request: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigResponse`
@@ -7050,6 +7497,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7084,6 +7533,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateOpenIdConnectConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7100,6 +7550,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateProjectStatus
         :type request: :class:`huaweicloudsdkiam.v3.UpdateProjectStatusRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateProjectStatusResponse`
@@ -7112,6 +7563,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7146,6 +7599,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateProjectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7164,6 +7618,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreatePermanentAccessKey
         :type request: :class:`huaweicloudsdkiam.v3.CreatePermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreatePermanentAccessKeyResponse`
@@ -7176,6 +7631,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7208,6 +7665,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePermanentAccessKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7226,6 +7684,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTemporaryAccessKeyByAgency
         :type request: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByAgencyResponse`
@@ -7238,6 +7697,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7270,6 +7731,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemporaryAccessKeyByAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7288,6 +7750,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTemporaryAccessKeyByToken
         :type request: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenResponse`
@@ -7300,6 +7763,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7332,6 +7797,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTemporaryAccessKeyByTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7348,6 +7814,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeletePermanentAccessKey
         :type request: :class:`huaweicloudsdkiam.v3.DeletePermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeletePermanentAccessKeyResponse`
@@ -7360,6 +7827,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7392,6 +7861,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeletePermanentAccessKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7408,6 +7878,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListPermanentAccessKeys
         :type request: :class:`huaweicloudsdkiam.v3.ListPermanentAccessKeysRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListPermanentAccessKeysResponse`
@@ -7420,6 +7891,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7452,6 +7925,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListPermanentAccessKeysResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7468,6 +7942,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowPermanentAccessKey
         :type request: :class:`huaweicloudsdkiam.v3.ShowPermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowPermanentAccessKeyResponse`
@@ -7480,6 +7955,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7512,6 +7989,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPermanentAccessKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7528,6 +8006,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdatePermanentAccessKey
         :type request: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyResponse`
@@ -7540,6 +8019,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7574,6 +8055,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdatePermanentAccessKeyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7590,6 +8072,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateBindingDevice
         :type request: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceResponse`
@@ -7602,6 +8085,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7634,6 +8119,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBindingDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7650,6 +8136,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMfaDevice
         :type request: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceResponse`
@@ -7662,6 +8149,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7694,6 +8183,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMfaDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7710,6 +8200,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateUser
         :type request: :class:`huaweicloudsdkiam.v3.CreateUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateUserResponse`
@@ -7722,6 +8213,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7754,6 +8247,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7770,6 +8264,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteBindingDevice
         :type request: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceResponse`
@@ -7782,6 +8277,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7814,6 +8311,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBindingDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7830,6 +8328,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMfaDevice
         :type request: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceResponse`
@@ -7842,6 +8341,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7876,6 +8377,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMfaDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7892,6 +8394,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserResponse`
@@ -7904,6 +8407,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7936,6 +8441,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -7952,6 +8458,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneDeleteUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteUserResponse`
@@ -7964,6 +8471,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -7996,6 +8505,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneDeleteUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8012,6 +8522,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListGroupsForUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsForUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsForUserResponse`
@@ -8024,6 +8535,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8056,6 +8569,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListGroupsForUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8072,6 +8586,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneListUsers
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListUsersResponse`
@@ -8084,6 +8599,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8122,6 +8639,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneListUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8138,6 +8656,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneShowUser
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowUserResponse`
@@ -8150,6 +8669,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8182,6 +8703,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneShowUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8198,6 +8720,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneUpdateUserByAdmin
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminResponse`
@@ -8210,6 +8733,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8244,6 +8769,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateUserByAdminResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8260,6 +8786,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneUpdateUserPassword
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordResponse`
@@ -8272,6 +8799,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8306,6 +8835,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneUpdateUserPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8322,6 +8852,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUserLoginProtects
         :type request: :class:`huaweicloudsdkiam.v3.ListUserLoginProtectsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListUserLoginProtectsResponse`
@@ -8334,6 +8865,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8364,6 +8897,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserLoginProtectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8380,6 +8914,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListUserMfaDevices
         :type request: :class:`huaweicloudsdkiam.v3.ListUserMfaDevicesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListUserMfaDevicesResponse`
@@ -8392,6 +8927,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8422,6 +8959,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListUserMfaDevicesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8438,6 +8976,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUser
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserResponse`
@@ -8450,6 +8989,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8482,6 +9023,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8498,6 +9040,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUserLoginProtect
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserLoginProtectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserLoginProtectResponse`
@@ -8510,6 +9053,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8542,6 +9087,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserLoginProtectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8558,6 +9104,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowUserMfaDevice
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserMfaDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserMfaDeviceResponse`
@@ -8570,6 +9117,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8602,6 +9151,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowUserMfaDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8618,6 +9168,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateLoginProtect
         :type request: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectResponse`
@@ -8630,6 +9181,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8664,6 +9217,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateLoginProtectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8680,6 +9234,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUser
         :type request: :class:`huaweicloudsdkiam.v3.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateUserResponse`
@@ -8692,6 +9247,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8726,6 +9283,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8742,6 +9300,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateUserInformation
         :type request: :class:`huaweicloudsdkiam.v3.UpdateUserInformationRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateUserInformationResponse`
@@ -8754,6 +9313,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8788,6 +9349,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateUserInformationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8810,6 +9372,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateAgencyToken
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenResponse`
@@ -8822,6 +9385,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8841,7 +9406,7 @@ class IamAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -8856,6 +9421,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateAgencyTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8877,6 +9443,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateUserTokenByPassword
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordResponse`
@@ -8889,6 +9456,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8908,7 +9477,7 @@ class IamAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -8923,6 +9492,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateUserTokenByPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -8944,6 +9514,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneCreateUserTokenByPasswordAndMfa
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaResponse`
@@ -8956,6 +9527,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -8975,7 +9548,7 @@ class IamAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -8990,6 +9563,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneCreateUserTokenByPasswordAndMfaResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9006,6 +9580,7 @@ class IamAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for KeystoneValidateToken
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneValidateTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneValidateTokenResponse`
@@ -9018,6 +9593,8 @@ class IamAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -9037,7 +9614,7 @@ class IamAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-Subject-Token"]
+        response_headers = ["X-Subject-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -9052,6 +9629,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='KeystoneValidateTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -9059,7 +9637,7 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -9070,9 +9648,10 @@ class IamAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -9089,6 +9668,7 @@ class IamAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

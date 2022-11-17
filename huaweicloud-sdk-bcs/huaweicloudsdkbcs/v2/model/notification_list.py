@@ -17,7 +17,6 @@ class NotificationList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -200,7 +199,6 @@ class NotificationList:
     def invitor_info(self):
         """Gets the invitor_info of this NotificationList.
 
-
         :return: The invitor_info of this NotificationList.
         :rtype: :class:`huaweicloudsdkbcs.v2.InvitorInfo`
         """
@@ -209,7 +207,6 @@ class NotificationList:
     @invitor_info.setter
     def invitor_info(self, invitor_info):
         """Sets the invitor_info of this NotificationList.
-
 
         :param invitor_info: The invitor_info of this NotificationList.
         :type invitor_info: :class:`huaweicloudsdkbcs.v2.InvitorInfo`
@@ -220,7 +217,6 @@ class NotificationList:
     def invitee_info(self):
         """Gets the invitee_info of this NotificationList.
 
-
         :return: The invitee_info of this NotificationList.
         :rtype: :class:`huaweicloudsdkbcs.v2.InviteeInfo`
         """
@@ -229,7 +225,6 @@ class NotificationList:
     @invitee_info.setter
     def invitee_info(self, invitee_info):
         """Sets the invitee_info of this NotificationList.
-
 
         :param invitee_info: The invitee_info of this NotificationList.
         :type invitee_info: :class:`huaweicloudsdkbcs.v2.InviteeInfo`

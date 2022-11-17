@@ -17,7 +17,6 @@ class ConfirmDeadLettersMessagesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ConfirmDeadLettersMessagesRequest:
     def body(self):
         """Gets the body of this ConfirmDeadLettersMessagesRequest.
 
-
         :return: The body of this ConfirmDeadLettersMessagesRequest.
         :rtype: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesReq`
         """
@@ -114,7 +112,6 @@ class ConfirmDeadLettersMessagesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ConfirmDeadLettersMessagesRequest.
-
 
         :param body: The body of this ConfirmDeadLettersMessagesRequest.
         :type body: :class:`huaweicloudsdkdms.v2.ConfirmDeadLettersMessagesReq`

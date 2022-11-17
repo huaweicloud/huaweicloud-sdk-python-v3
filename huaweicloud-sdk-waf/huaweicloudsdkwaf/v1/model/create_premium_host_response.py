@@ -17,7 +17,6 @@ class CreatePremiumHostResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -395,7 +394,6 @@ class CreatePremiumHostResponse(SdkResponse):
     def flag(self):
         """Gets the flag of this CreatePremiumHostResponse.
 
-
         :return: The flag of this CreatePremiumHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
         """
@@ -404,7 +402,6 @@ class CreatePremiumHostResponse(SdkResponse):
     @flag.setter
     def flag(self, flag):
         """Sets the flag of this CreatePremiumHostResponse.
-
 
         :param flag: The flag of this CreatePremiumHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -569,7 +566,6 @@ class CreatePremiumHostResponse(SdkResponse):
     def block_page(self):
         """Gets the block_page of this CreatePremiumHostResponse.
 
-
         :return: The block_page of this CreatePremiumHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
         """
@@ -578,7 +574,6 @@ class CreatePremiumHostResponse(SdkResponse):
     @block_page.setter
     def block_page(self, block_page):
         """Sets the block_page of this CreatePremiumHostResponse.
-
 
         :param block_page: The block_page of this CreatePremiumHostResponse.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`

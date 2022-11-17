@@ -17,7 +17,6 @@ class ShowCommitsByBranchResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class ShowCommitsByBranchResponse(SdkResponse):
     def error(self):
         """Gets the error of this ShowCommitsByBranchResponse.
 
-
         :return: The error of this ShowCommitsByBranchResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class ShowCommitsByBranchResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this ShowCommitsByBranchResponse.
-
 
         :param error: The error of this ShowCommitsByBranchResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class ShowCommitsByBranchResponse(SdkResponse):
     def result(self):
         """Gets the result of this ShowCommitsByBranchResponse.
 
-
         :return: The result of this ShowCommitsByBranchResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitList`
         """
@@ -92,7 +88,6 @@ class ShowCommitsByBranchResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this ShowCommitsByBranchResponse.
-
 
         :param result: The result of this ShowCommitsByBranchResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.CommitList`

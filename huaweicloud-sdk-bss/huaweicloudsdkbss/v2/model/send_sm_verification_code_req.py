@@ -17,7 +17,6 @@ class SendSmVerificationCodeReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -62,8 +61,7 @@ class SendSmVerificationCodeReq:
             self.timeout = timeout
         if language is not None:
             self.language = language
-        if sm_template_args is not None:
-            self.sm_template_args = sm_template_args
+        self.sm_template_args = sm_template_args
 
     @property
     def mobile_phone(self):

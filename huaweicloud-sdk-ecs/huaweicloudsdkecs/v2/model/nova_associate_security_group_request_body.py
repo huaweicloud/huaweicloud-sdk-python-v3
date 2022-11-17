@@ -17,7 +17,6 @@ class NovaAssociateSecurityGroupRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class NovaAssociateSecurityGroupRequestBody:
     def add_security_group(self):
         """Gets the add_security_group of this NovaAssociateSecurityGroupRequestBody.
 
-
         :return: The add_security_group of this NovaAssociateSecurityGroupRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAddSecurityGroupOption`
         """
@@ -57,7 +55,6 @@ class NovaAssociateSecurityGroupRequestBody:
     @add_security_group.setter
     def add_security_group(self, add_security_group):
         """Sets the add_security_group of this NovaAssociateSecurityGroupRequestBody.
-
 
         :param add_security_group: The add_security_group of this NovaAssociateSecurityGroupRequestBody.
         :type add_security_group: :class:`huaweicloudsdkecs.v2.NovaAddSecurityGroupOption`

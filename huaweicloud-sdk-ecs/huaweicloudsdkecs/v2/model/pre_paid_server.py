@@ -17,7 +17,6 @@ class PrePaidServer:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -395,7 +394,6 @@ class PrePaidServer:
     def publicip(self):
         """Gets the publicip of this PrePaidServer.
 
-
         :return: The publicip of this PrePaidServer.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerPublicip`
         """
@@ -404,7 +402,6 @@ class PrePaidServer:
     @publicip.setter
     def publicip(self, publicip):
         """Sets the publicip of this PrePaidServer.
-
 
         :param publicip: The publicip of this PrePaidServer.
         :type publicip: :class:`huaweicloudsdkecs.v2.PrePaidServerPublicip`
@@ -459,7 +456,6 @@ class PrePaidServer:
     def root_volume(self):
         """Gets the root_volume of this PrePaidServer.
 
-
         :return: The root_volume of this PrePaidServer.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolume`
         """
@@ -468,7 +464,6 @@ class PrePaidServer:
     @root_volume.setter
     def root_volume(self, root_volume):
         """Sets the root_volume of this PrePaidServer.
-
 
         :param root_volume: The root_volume of this PrePaidServer.
         :type root_volume: :class:`huaweicloudsdkecs.v2.PrePaidServerRootVolume`
@@ -567,7 +562,6 @@ class PrePaidServer:
     def extendparam(self):
         """Gets the extendparam of this PrePaidServer.
 
-
         :return: The extendparam of this PrePaidServer.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerExtendParam`
         """
@@ -576,7 +570,6 @@ class PrePaidServer:
     @extendparam.setter
     def extendparam(self, extendparam):
         """Sets the extendparam of this PrePaidServer.
-
 
         :param extendparam: The extendparam of this PrePaidServer.
         :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerExtendParam`
@@ -609,7 +602,6 @@ class PrePaidServer:
     def osscheduler_hints(self):
         """Gets the osscheduler_hints of this PrePaidServer.
 
-
         :return: The osscheduler_hints of this PrePaidServer.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerSchedulerHints`
         """
@@ -618,7 +610,6 @@ class PrePaidServer:
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
         """Sets the osscheduler_hints of this PrePaidServer.
-
 
         :param osscheduler_hints: The osscheduler_hints of this PrePaidServer.
         :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.PrePaidServerSchedulerHints`

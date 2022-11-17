@@ -17,7 +17,6 @@ class UpdateEnterpriseRouterRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateEnterpriseRouterRequest:
     def body(self):
         """Gets the body of this UpdateEnterpriseRouterRequest.
 
-
         :return: The body of this UpdateEnterpriseRouterRequest.
         :rtype: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateEnterpriseRouterRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateEnterpriseRouterRequest.
-
 
         :param body: The body of this UpdateEnterpriseRouterRequest.
         :type body: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterRequestBody`

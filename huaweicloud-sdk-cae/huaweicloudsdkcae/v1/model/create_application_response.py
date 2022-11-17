@@ -17,7 +17,6 @@ class CreateApplicationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class CreateApplicationResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this CreateApplicationResponse.
 
-
         :return: The metadata of this CreateApplicationResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApplicationMetadata`
         """
@@ -116,7 +114,6 @@ class CreateApplicationResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateApplicationResponse.
-
 
         :param metadata: The metadata of this CreateApplicationResponse.
         :type metadata: :class:`huaweicloudsdkcae.v1.ApplicationMetadata`

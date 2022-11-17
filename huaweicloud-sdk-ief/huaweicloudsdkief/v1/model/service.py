@@ -17,7 +17,6 @@ class Service:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class Service:
     def service(self):
         """Gets the service of this Service.
 
-
         :return: The service of this Service.
         :rtype: :class:`huaweicloudsdkief.v1.ServiceReqDetail`
         """
@@ -58,7 +56,6 @@ class Service:
     @service.setter
     def service(self, service):
         """Sets the service of this Service.
-
 
         :param service: The service of this Service.
         :type service: :class:`huaweicloudsdkief.v1.ServiceReqDetail`

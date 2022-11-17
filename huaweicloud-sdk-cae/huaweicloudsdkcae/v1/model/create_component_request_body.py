@@ -17,7 +17,6 @@ class CreateComponentRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -112,7 +111,6 @@ class CreateComponentRequestBody:
     def metadata(self):
         """Gets the metadata of this CreateComponentRequestBody.
 
-
         :return: The metadata of this CreateComponentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentRequestBodyMetadata`
         """
@@ -121,7 +119,6 @@ class CreateComponentRequestBody:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this CreateComponentRequestBody.
-
 
         :param metadata: The metadata of this CreateComponentRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateComponentRequestBodyMetadata`
@@ -132,7 +129,6 @@ class CreateComponentRequestBody:
     def spec(self):
         """Gets the spec of this CreateComponentRequestBody.
 
-
         :return: The spec of this CreateComponentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentRequestBodySpec`
         """
@@ -141,7 +137,6 @@ class CreateComponentRequestBody:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this CreateComponentRequestBody.
-
 
         :param spec: The spec of this CreateComponentRequestBody.
         :type spec: :class:`huaweicloudsdkcae.v1.CreateComponentRequestBodySpec`

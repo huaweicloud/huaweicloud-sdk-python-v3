@@ -17,7 +17,6 @@ class CheckAudioJobResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -200,7 +199,6 @@ class CheckAudioJobResponse(SdkResponse):
     def service_config(self):
         """Gets the service_config of this CheckAudioJobResponse.
 
-
         :return: The service_config of this CheckAudioJobResponse.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioServiceConfig`
         """
@@ -209,7 +207,6 @@ class CheckAudioJobResponse(SdkResponse):
     @service_config.setter
     def service_config(self, service_config):
         """Sets the service_config of this CheckAudioJobResponse.
-
 
         :param service_config: The service_config of this CheckAudioJobResponse.
         :type service_config: :class:`huaweicloudsdkvcm.v2.AudioServiceConfig`
@@ -220,7 +217,6 @@ class CheckAudioJobResponse(SdkResponse):
     def input(self):
         """Gets the input of this CheckAudioJobResponse.
 
-
         :return: The input of this CheckAudioJobResponse.
         :rtype: :class:`huaweicloudsdkvcm.v2.CheckAudioJobResponseBodyInput`
         """
@@ -229,7 +225,6 @@ class CheckAudioJobResponse(SdkResponse):
     @input.setter
     def input(self, input):
         """Sets the input of this CheckAudioJobResponse.
-
 
         :param input: The input of this CheckAudioJobResponse.
         :type input: :class:`huaweicloudsdkvcm.v2.CheckAudioJobResponseBodyInput`
@@ -240,7 +235,6 @@ class CheckAudioJobResponse(SdkResponse):
     def output(self):
         """Gets the output of this CheckAudioJobResponse.
 
-
         :return: The output of this CheckAudioJobResponse.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioResponseOutput`
         """
@@ -249,7 +243,6 @@ class CheckAudioJobResponse(SdkResponse):
     @output.setter
     def output(self, output):
         """Sets the output of this CheckAudioJobResponse.
-
 
         :param output: The output of this CheckAudioJobResponse.
         :type output: :class:`huaweicloudsdkvcm.v2.AudioResponseOutput`

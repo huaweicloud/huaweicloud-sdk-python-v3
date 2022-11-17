@@ -17,7 +17,6 @@ class TrackerResponseBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -242,7 +241,6 @@ class TrackerResponseBody:
     def lts(self):
         """Gets the lts of this TrackerResponseBody.
 
-
         :return: The lts of this TrackerResponseBody.
         :rtype: :class:`huaweicloudsdkcts.v3.Lts`
         """
@@ -251,7 +249,6 @@ class TrackerResponseBody:
     @lts.setter
     def lts(self, lts):
         """Sets the lts of this TrackerResponseBody.
-
 
         :param lts: The lts of this TrackerResponseBody.
         :type lts: :class:`huaweicloudsdkcts.v3.Lts`
@@ -460,7 +457,6 @@ class TrackerResponseBody:
     def obs_info(self):
         """Gets the obs_info of this TrackerResponseBody.
 
-
         :return: The obs_info of this TrackerResponseBody.
         :rtype: :class:`huaweicloudsdkcts.v3.ObsInfo`
         """
@@ -469,7 +465,6 @@ class TrackerResponseBody:
     @obs_info.setter
     def obs_info(self, obs_info):
         """Sets the obs_info of this TrackerResponseBody.
-
 
         :param obs_info: The obs_info of this TrackerResponseBody.
         :type obs_info: :class:`huaweicloudsdkcts.v3.ObsInfo`
@@ -480,7 +475,6 @@ class TrackerResponseBody:
     def data_bucket(self):
         """Gets the data_bucket of this TrackerResponseBody.
 
-
         :return: The data_bucket of this TrackerResponseBody.
         :rtype: :class:`huaweicloudsdkcts.v3.DataBucketQuery`
         """
@@ -489,7 +483,6 @@ class TrackerResponseBody:
     @data_bucket.setter
     def data_bucket(self, data_bucket):
         """Sets the data_bucket of this TrackerResponseBody.
-
 
         :param data_bucket: The data_bucket of this TrackerResponseBody.
         :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucketQuery`

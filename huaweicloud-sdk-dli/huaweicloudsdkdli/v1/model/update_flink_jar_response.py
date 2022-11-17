@@ -17,7 +17,6 @@ class UpdateFlinkJarResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class UpdateFlinkJarResponse(SdkResponse):
     def job(self):
         """Gets the job of this UpdateFlinkJarResponse.
 
-
         :return: The job of this UpdateFlinkJarResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateJobRespJob`
         """
@@ -116,7 +114,6 @@ class UpdateFlinkJarResponse(SdkResponse):
     @job.setter
     def job(self, job):
         """Sets the job of this UpdateFlinkJarResponse.
-
 
         :param job: The job of this UpdateFlinkJarResponse.
         :type job: :class:`huaweicloudsdkdli.v1.UpdateJobRespJob`

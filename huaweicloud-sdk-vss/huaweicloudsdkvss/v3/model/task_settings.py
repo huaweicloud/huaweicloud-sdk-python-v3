@@ -17,7 +17,6 @@ class TaskSettings:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class TaskSettings:
     def task_config(self):
         """Gets the task_config of this TaskSettings.
 
-
         :return: The task_config of this TaskSettings.
         :rtype: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`
         """
@@ -145,7 +143,6 @@ class TaskSettings:
     @task_config.setter
     def task_config(self, task_config):
         """Sets the task_config of this TaskSettings.
-
 
         :param task_config: The task_config of this TaskSettings.
         :type task_config: :class:`huaweicloudsdkvss.v3.TaskSettingsTaskConfig`

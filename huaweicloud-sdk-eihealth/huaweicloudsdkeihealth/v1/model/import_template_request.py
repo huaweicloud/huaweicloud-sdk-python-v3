@@ -17,7 +17,6 @@ class ImportTemplateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ImportTemplateRequest:
     def body(self):
         """Gets the body of this ImportTemplateRequest.
 
-
         :return: The body of this ImportTemplateRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportTemplateReq`
         """
@@ -86,7 +84,6 @@ class ImportTemplateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportTemplateRequest.
-
 
         :param body: The body of this ImportTemplateRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ImportTemplateReq`

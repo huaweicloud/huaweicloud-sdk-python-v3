@@ -17,7 +17,6 @@ class TaskInput:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class TaskInput:
     def vcn(self):
         """Gets the vcn of this TaskInput.
 
-
         :return: The vcn of this TaskInput.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskInputVcn`
         """
@@ -114,7 +112,6 @@ class TaskInput:
     @vcn.setter
     def vcn(self, vcn):
         """Sets the vcn of this TaskInput.
-
 
         :param vcn: The vcn of this TaskInput.
         :type vcn: :class:`huaweicloudsdkcampusgo.v2.TaskInputVcn`

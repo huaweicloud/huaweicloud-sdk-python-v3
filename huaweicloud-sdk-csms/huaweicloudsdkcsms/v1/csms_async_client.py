@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CsmsAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateOrDeleteTags
         :type request: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsResponse`
@@ -68,6 +63,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateOrDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -120,6 +118,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSecret
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretResponse`
@@ -132,6 +131,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -164,6 +165,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -178,6 +180,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSecretTag
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretTagRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretTagResponse`
@@ -190,6 +193,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -224,6 +229,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecretTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -238,6 +244,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateSecretVersion
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionResponse`
@@ -250,6 +257,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +293,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateSecretVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -298,6 +308,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecret
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretResponse`
@@ -310,6 +321,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -342,6 +355,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -356,6 +370,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecretForSchedule
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleResponse`
@@ -368,6 +383,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -402,6 +419,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecretForScheduleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -416,6 +434,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecretStage
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretStageRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretStageResponse`
@@ -428,6 +447,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -462,6 +483,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecretStageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -476,6 +498,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteSecretTag
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretTagRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretTagResponse`
@@ -488,6 +511,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -522,6 +547,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteSecretTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -536,6 +562,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DownloadSecretBlob
         :type request: :class:`huaweicloudsdkcsms.v1.DownloadSecretBlobRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DownloadSecretBlobResponse`
@@ -548,6 +575,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -580,6 +609,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DownloadSecretBlobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -594,6 +624,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectSecretsTags
         :type request: :class:`huaweicloudsdkcsms.v1.ListProjectSecretsTagsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListProjectSecretsTagsResponse`
@@ -606,6 +637,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -636,6 +669,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectSecretsTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -650,6 +684,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResourceInstances
         :type request: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesResponse`
@@ -662,6 +697,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -696,6 +733,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -710,6 +748,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecretTags
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretTagsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretTagsResponse`
@@ -722,6 +761,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -754,6 +795,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecretTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -768,6 +810,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecretVersions
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretVersionsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretVersionsResponse`
@@ -780,6 +823,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -816,6 +861,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecretVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -830,6 +876,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSecrets
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretsResponse`
@@ -842,6 +889,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -876,6 +925,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSecretsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -890,6 +940,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RestoreSecret
         :type request: :class:`huaweicloudsdkcsms.v1.RestoreSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.RestoreSecretResponse`
@@ -902,6 +953,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -934,6 +987,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RestoreSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -948,6 +1002,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSecret
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretResponse`
@@ -960,6 +1015,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -992,6 +1049,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1006,6 +1064,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSecretStage
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretStageRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretStageResponse`
@@ -1018,6 +1077,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1052,6 +1113,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecretStageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1067,6 +1129,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowSecretVersion
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretVersionRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretVersionResponse`
@@ -1079,6 +1142,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1113,6 +1178,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowSecretVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1127,6 +1193,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSecret
         :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretResponse`
@@ -1139,6 +1206,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1173,6 +1242,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecretResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1187,6 +1257,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateSecretStage
         :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageResponse`
@@ -1199,6 +1270,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1235,6 +1308,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateSecretStageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1249,6 +1323,7 @@ class CsmsAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UploadSecretBlob
         :type request: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobResponse`
@@ -1261,6 +1336,8 @@ class CsmsAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1293,6 +1370,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadSecretBlobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1300,7 +1378,7 @@ class CsmsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1311,9 +1389,10 @@ class CsmsAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1330,6 +1409,7 @@ class CsmsAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

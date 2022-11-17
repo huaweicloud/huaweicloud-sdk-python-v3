@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ServiceStageAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -53,6 +47,7 @@ class ServiceStageAsyncClient(Client):
 
         此API通过应用ID修改应用信息。
 
+
         :param request: Request instance for ChangeApplication
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationResponse`
@@ -65,6 +60,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -99,6 +96,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -109,6 +107,7 @@ class ServiceStageAsyncClient(Client):
         """修改应用配置信息
 
         通过此API修改应用配置信息。
+
 
         :param request: Request instance for ChangeApplicationConfiguration
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationConfigurationRequest`
@@ -122,6 +121,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -156,6 +157,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeApplicationConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -166,6 +168,7 @@ class ServiceStageAsyncClient(Client):
         """根据组件ID修改组件信息
 
         此API通过组件ID修改组件信息。
+
 
         :param request: Request instance for ChangeComponent
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeComponentRequest`
@@ -179,6 +182,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -215,6 +220,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -225,6 +231,7 @@ class ServiceStageAsyncClient(Client):
         """修改环境信息
 
         此API通过环境ID修改环境信息。
+
 
         :param request: Request instance for ChangeEnvironment
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeEnvironmentRequest`
@@ -238,6 +245,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -272,6 +281,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -282,6 +292,7 @@ class ServiceStageAsyncClient(Client):
         """修改应用组件实例
 
         通过此API修改应用组件实例。
+
 
         :param request: Request instance for ChangeInstance
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeInstanceRequest`
@@ -295,6 +306,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -333,6 +346,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -343,6 +357,7 @@ class ServiceStageAsyncClient(Client):
         """修改环境资源
 
         此API用来修改环境资源。
+
 
         :param request: Request instance for ChangeResourceInEnvironment
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeResourceInEnvironmentRequest`
@@ -356,6 +371,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -390,6 +407,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeResourceInEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -403,6 +421,7 @@ class ServiceStageAsyncClient(Client):
         
         此API用来创建应用。
 
+
         :param request: Request instance for CreateApplication
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateApplicationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateApplicationResponse`
@@ -415,6 +434,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -447,6 +468,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -460,6 +482,7 @@ class ServiceStageAsyncClient(Client):
         
         此API用来在应用中创建组件。
 
+
         :param request: Request instance for CreateComponent
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateComponentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateComponentResponse`
@@ -472,6 +495,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -506,6 +531,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -519,6 +545,7 @@ class ServiceStageAsyncClient(Client):
         
         此API用来创建环境。
 
+
         :param request: Request instance for CreateEnvironment
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateEnvironmentResponse`
@@ -531,6 +558,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -563,6 +592,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -573,6 +603,7 @@ class ServiceStageAsyncClient(Client):
         """创建组件实例
 
         此API用来创建应用组件实例。
+
 
         :param request: Request instance for CreateInstance
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateInstanceRequest`
@@ -586,6 +617,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -622,6 +655,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -632,6 +666,7 @@ class ServiceStageAsyncClient(Client):
         """根据应用ID删除应用
 
         此API通过应用ID删除应用。
+
 
         :param request: Request instance for DeleteApplication
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationRequest`
@@ -645,6 +680,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -677,6 +714,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -687,6 +725,7 @@ class ServiceStageAsyncClient(Client):
         """删除应用配置
 
         通过此API删除应用配置信息。
+
 
         :param request: Request instance for DeleteApplicationConfiguration
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationConfigurationRequest`
@@ -700,6 +739,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -734,6 +775,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -744,6 +786,7 @@ class ServiceStageAsyncClient(Client):
         """根据应用组件ID删除应用组件
 
         此API通过应用组件ID删除应用组件。
+
 
         :param request: Request instance for DeleteComponent
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteComponentRequest`
@@ -757,6 +800,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -793,6 +838,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteComponentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -803,6 +849,7 @@ class ServiceStageAsyncClient(Client):
         """根据环境ID删除环境
 
         此API通过环境ID删除环境。
+
 
         :param request: Request instance for DeleteEnvironment
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteEnvironmentRequest`
@@ -816,6 +863,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -848,6 +897,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnvironmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -858,6 +908,7 @@ class ServiceStageAsyncClient(Client):
         """删除应用组件实例
 
         通过此API删除应用组件实例。
+
 
         :param request: Request instance for DeleteInstance
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceRequest`
@@ -871,6 +922,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -909,6 +962,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -919,6 +973,7 @@ class ServiceStageAsyncClient(Client):
         """获取所有应用
 
         通过此API可以获取所有已经创建的应用。
+
 
         :param request: Request instance for ListApplications
         :type request: :class:`huaweicloudsdkservicestage.v2.ListApplicationsRequest`
@@ -932,6 +987,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -970,6 +1027,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApplicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -980,6 +1038,7 @@ class ServiceStageAsyncClient(Client):
         """获取应用所有组件
 
         通过此API获取应用下所有应用组件。
+
 
         :param request: Request instance for ListComponents
         :type request: :class:`huaweicloudsdkservicestage.v2.ListComponentsRequest`
@@ -993,6 +1052,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1033,6 +1094,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListComponentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1043,6 +1105,7 @@ class ServiceStageAsyncClient(Client):
         """获取所有环境
 
         此API用来获取所有已经创建环境。
+
 
         :param request: Request instance for ListEnvironments
         :type request: :class:`huaweicloudsdkservicestage.v2.ListEnvironmentsRequest`
@@ -1056,6 +1119,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1094,6 +1159,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnvironmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1104,6 +1170,7 @@ class ServiceStageAsyncClient(Client):
         """获取组件实例快照
 
         通过此API获取应用组件实例快照信息。
+
 
         :param request: Request instance for ListInstanceSnapshots
         :type request: :class:`huaweicloudsdkservicestage.v2.ListInstanceSnapshotsRequest`
@@ -1117,6 +1184,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1161,6 +1230,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstanceSnapshotsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1171,6 +1241,7 @@ class ServiceStageAsyncClient(Client):
         """获取应用组件实例
 
         通过此API获取组件下的所有组件实例。
+
 
         :param request: Request instance for ListInstances
         :type request: :class:`huaweicloudsdkservicestage.v2.ListInstancesRequest`
@@ -1184,6 +1255,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1226,6 +1299,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1236,6 +1310,7 @@ class ServiceStageAsyncClient(Client):
         """获取应用配置
 
         通过此API获取应用配置信息。
+
 
         :param request: Request instance for ShowApplicationConfiguration
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowApplicationConfigurationRequest`
@@ -1249,6 +1324,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1283,6 +1360,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1293,6 +1371,7 @@ class ServiceStageAsyncClient(Client):
         """根据应用ID获取应用详细信息
 
         此API通过应用ID获取应用详细信息。
+
 
         :param request: Request instance for ShowApplicationDetail
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowApplicationDetailRequest`
@@ -1306,6 +1385,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1338,6 +1419,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowApplicationDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1348,6 +1430,7 @@ class ServiceStageAsyncClient(Client):
         """根据组件ID获取应用组件信息
 
         通过组件ID获取应用组件信息。
+
 
         :param request: Request instance for ShowComponentDetail
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowComponentDetailRequest`
@@ -1361,6 +1444,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1395,6 +1480,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowComponentDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1405,6 +1491,7 @@ class ServiceStageAsyncClient(Client):
         """根据环境ID获取环境详细信息
 
         此API通过环境ID获取环境详细信息。
+
 
         :param request: Request instance for ShowEnvironmentDetail
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowEnvironmentDetailRequest`
@@ -1418,6 +1505,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1450,6 +1539,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnvironmentDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1460,6 +1550,7 @@ class ServiceStageAsyncClient(Client):
         """根据实例ID获取实例详细信息
 
         此API通过实例ID获取实例详细信息。
+
 
         :param request: Request instance for ShowInstanceDetail
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowInstanceDetailRequest`
@@ -1473,6 +1564,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1509,6 +1602,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowInstanceDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1519,6 +1613,7 @@ class ServiceStageAsyncClient(Client):
         """获取部署任务详细信息
 
         通过此API获取部署任务详细信息。
+
 
         :param request: Request instance for ShowJobDetail
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowJobDetailRequest`
@@ -1532,6 +1627,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1572,6 +1669,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1582,6 +1680,7 @@ class ServiceStageAsyncClient(Client):
         """对组件实例的操作
 
         通过此API获取对组件实例的操作。
+
 
         :param request: Request instance for UpdateInstanceAction
         :type request: :class:`huaweicloudsdkservicestage.v2.UpdateInstanceActionRequest`
@@ -1595,6 +1694,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1633,6 +1734,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateInstanceActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1643,6 +1745,7 @@ class ServiceStageAsyncClient(Client):
         """创建仓库文件
 
         在指定仓库项目下创建文件。
+
 
         :param request: Request instance for CreateFile
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateFileRequest`
@@ -1656,6 +1759,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1698,6 +1803,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1708,6 +1814,7 @@ class ServiceStageAsyncClient(Client):
         """创建项目hook
 
         创建指定项目的hook。
+
 
         :param request: Request instance for CreateHook
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateHookRequest`
@@ -1721,6 +1828,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1759,6 +1868,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1769,6 +1879,7 @@ class ServiceStageAsyncClient(Client):
         """创建OAuth授权
 
         创建指定Git仓库类型的OAuth授权。
+
 
         :param request: Request instance for CreateOAuth
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateOAuthRequest`
@@ -1782,6 +1893,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1818,6 +1931,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateOAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1828,6 +1942,7 @@ class ServiceStageAsyncClient(Client):
         """创建口令授权
 
         创建指定Git仓库类型的口令授权。
+
 
         :param request: Request instance for CreatePasswordAuth
         :type request: :class:`huaweicloudsdkservicestage.v2.CreatePasswordAuthRequest`
@@ -1841,6 +1956,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1875,6 +1992,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePasswordAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1885,6 +2003,7 @@ class ServiceStageAsyncClient(Client):
         """创建私人令牌授权
 
         创建指定Git仓库类型的私人令牌授权。
+
 
         :param request: Request instance for CreatePersonalAuth
         :type request: :class:`huaweicloudsdkservicestage.v2.CreatePersonalAuthRequest`
@@ -1898,6 +2017,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1932,6 +2053,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreatePersonalAuthResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1942,6 +2064,7 @@ class ServiceStageAsyncClient(Client):
         """创建软件仓库项目
 
         创建指定组织下的软件仓库项目。
+
 
         :param request: Request instance for CreateProject
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateProjectRequest`
@@ -1955,6 +2078,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1991,6 +2116,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2001,6 +2127,7 @@ class ServiceStageAsyncClient(Client):
         """创建项目tag标签
 
         创建指定项目的tag标签。
+
 
         :param request: Request instance for CreateTag
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateTagRequest`
@@ -2014,6 +2141,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2054,6 +2183,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2064,6 +2194,7 @@ class ServiceStageAsyncClient(Client):
         """删除仓库授权
 
         通过名称删除仓库授权。
+
 
         :param request: Request instance for DeleteAuthorize
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteAuthorizeRequest`
@@ -2077,6 +2208,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2109,6 +2242,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAuthorizeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2119,6 +2253,7 @@ class ServiceStageAsyncClient(Client):
         """删除仓库文件
 
         删除指定项目仓库下的文件。
+
 
         :param request: Request instance for DeleteFile
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteFileRequest`
@@ -2132,6 +2267,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2176,6 +2313,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2186,6 +2324,7 @@ class ServiceStageAsyncClient(Client):
         """删除项目hook
 
         删除指定项目的hook。
+
 
         :param request: Request instance for DeleteHook
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteHookRequest`
@@ -2199,6 +2338,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2237,6 +2378,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHookResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2247,6 +2389,7 @@ class ServiceStageAsyncClient(Client):
         """删除项目tag标签
 
         删除指定项目的tag标签。
+
 
         :param request: Request instance for DeleteTag
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteTagRequest`
@@ -2260,6 +2403,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2298,6 +2443,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2308,6 +2454,7 @@ class ServiceStageAsyncClient(Client):
         """获取仓库授权列表
 
         获取所有Git仓库授权信息。
+
 
         :param request: Request instance for ListAuthorizations
         :type request: :class:`huaweicloudsdkservicestage.v2.ListAuthorizationsRequest`
@@ -2321,6 +2468,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2351,6 +2500,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAuthorizationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2361,6 +2511,7 @@ class ServiceStageAsyncClient(Client):
         """获取项目分支
 
         获取指定项目的所有分支列表。
+
 
         :param request: Request instance for ListBranches
         :type request: :class:`huaweicloudsdkservicestage.v2.ListBranchesRequest`
@@ -2374,6 +2525,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2410,6 +2563,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBranchesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2420,6 +2574,7 @@ class ServiceStageAsyncClient(Client):
         """获取项目commit提交记录
 
         获取指定项目的最近10次commit提交记录。
+
 
         :param request: Request instance for ListCommits
         :type request: :class:`huaweicloudsdkservicestage.v2.ListCommitsRequest`
@@ -2433,6 +2588,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2471,6 +2628,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListCommitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2481,6 +2639,7 @@ class ServiceStageAsyncClient(Client):
         """获取项目hooks
 
         获取指定项目的所有hooks
+
 
         :param request: Request instance for ListHooks
         :type request: :class:`huaweicloudsdkservicestage.v2.ListHooksRequest`
@@ -2494,6 +2653,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2530,6 +2691,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHooksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2540,6 +2702,7 @@ class ServiceStageAsyncClient(Client):
         """获取仓库的namespaces
 
         获取仓库的namespaces。
+
 
         :param request: Request instance for ListNamespaces
         :type request: :class:`huaweicloudsdkservicestage.v2.ListNamespacesRequest`
@@ -2553,6 +2716,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2585,6 +2750,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNamespacesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2595,6 +2761,7 @@ class ServiceStageAsyncClient(Client):
         """获取组织下所有项目
 
         获取指定组织下的所有项目。
+
 
         :param request: Request instance for ListProjects
         :type request: :class:`huaweicloudsdkservicestage.v2.ListProjectsRequest`
@@ -2608,6 +2775,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2642,6 +2811,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2652,6 +2822,7 @@ class ServiceStageAsyncClient(Client):
         """获取项目的所有tag标签
 
         获取指定项目的所有tag标签。
+
 
         :param request: Request instance for ListTags
         :type request: :class:`huaweicloudsdkservicestage.v2.ListTagsRequest`
@@ -2665,6 +2836,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2701,6 +2874,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2711,6 +2885,7 @@ class ServiceStageAsyncClient(Client):
         """获取仓库文件列表
 
         获取指定项目仓库的文件列表。
+
 
         :param request: Request instance for ListTrees
         :type request: :class:`huaweicloudsdkservicestage.v2.ListTreesRequest`
@@ -2724,6 +2899,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2762,6 +2939,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTreesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2772,6 +2950,7 @@ class ServiceStageAsyncClient(Client):
         """获取仓库文件内容
 
         获取指定项目仓库下文件的内容。
+
 
         :param request: Request instance for ShowContent
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowContentRequest`
@@ -2785,6 +2964,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2825,6 +3006,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowContentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2835,6 +3017,7 @@ class ServiceStageAsyncClient(Client):
         """通过clone url 获取仓库信息
 
         通过指定的clone url 获取仓库信息。
+
 
         :param request: Request instance for ShowProjectDetail
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowProjectDetailRequest`
@@ -2848,6 +3031,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2882,6 +3067,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowProjectDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2892,6 +3078,7 @@ class ServiceStageAsyncClient(Client):
         """获取授权重定向URL
 
         获取指定Git仓库类型的授权重定向URL。
+
 
         :param request: Request instance for ShowRedirectUrl
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowRedirectUrlRequest`
@@ -2905,6 +3092,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2939,6 +3128,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowRedirectUrlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2949,6 +3139,7 @@ class ServiceStageAsyncClient(Client):
         """更新仓库文件内容
 
         更新指定项目仓库下的文件内容。
+
 
         :param request: Request instance for UpdateFile
         :type request: :class:`huaweicloudsdkservicestage.v2.UpdateFileRequest`
@@ -2962,6 +3153,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3004,6 +3197,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3014,6 +3208,7 @@ class ServiceStageAsyncClient(Client):
         """获取所有支持的应用资源规格
 
         通过此API获取所用支持的应用资源规格。
+
 
         :param request: Request instance for ListFlavors
         :type request: :class:`huaweicloudsdkservicestage.v2.ListFlavorsRequest`
@@ -3027,6 +3222,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3057,6 +3254,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3067,6 +3265,7 @@ class ServiceStageAsyncClient(Client):
         """获取所有支持的应用组件运行时类型
 
         此API用来获取所有支持应用组件运行时类型。
+
 
         :param request: Request instance for ListRuntimes
         :type request: :class:`huaweicloudsdkservicestage.v2.ListRuntimesRequest`
@@ -3080,6 +3279,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3110,6 +3311,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRuntimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3120,6 +3322,7 @@ class ServiceStageAsyncClient(Client):
         """获取所有支持的应用组件模板
 
         此API用来获取所有内置应用组件模板。
+
 
         :param request: Request instance for ListTemplates
         :type request: :class:`huaweicloudsdkservicestage.v2.ListTemplatesRequest`
@@ -3133,6 +3336,8 @@ class ServiceStageAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3163,6 +3368,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3170,7 +3376,7 @@ class ServiceStageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -3181,9 +3387,10 @@ class ServiceStageAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -3200,6 +3407,7 @@ class ServiceStageAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

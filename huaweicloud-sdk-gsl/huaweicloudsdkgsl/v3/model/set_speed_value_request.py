@@ -17,7 +17,6 @@ class SetSpeedValueRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SetSpeedValueRequest:
     def body(self):
         """Gets the body of this SetSpeedValueRequest.
 
-
         :return: The body of this SetSpeedValueRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.SetSpeedValueReq`
         """
@@ -86,7 +84,6 @@ class SetSpeedValueRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SetSpeedValueRequest.
-
 
         :param body: The body of this SetSpeedValueRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.SetSpeedValueReq`

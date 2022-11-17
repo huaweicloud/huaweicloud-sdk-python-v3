@@ -17,7 +17,6 @@ class ListFlowBySimCardsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ListFlowBySimCardsResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListFlowBySimCardsResponse.
 
-
         :return: The body of this ListFlowBySimCardsResponse.
         :rtype: list[:class:`huaweicloudsdkgsl.v3.SimCardsFlowVO`]
         """
@@ -58,7 +56,6 @@ class ListFlowBySimCardsResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this ListFlowBySimCardsResponse.
-
 
         :param body: The body of this ListFlowBySimCardsResponse.
         :type body: list[:class:`huaweicloudsdkgsl.v3.SimCardsFlowVO`]

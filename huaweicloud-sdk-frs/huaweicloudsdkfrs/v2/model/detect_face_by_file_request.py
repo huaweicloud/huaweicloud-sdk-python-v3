@@ -17,7 +17,6 @@ class DetectFaceByFileRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DetectFaceByFileRequest:
     def body(self):
         """Gets the body of this DetectFaceByFileRequest.
 
-
         :return: The body of this DetectFaceByFileRequest.
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileRequestBody`
         """
@@ -58,7 +56,6 @@ class DetectFaceByFileRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DetectFaceByFileRequest.
-
 
         :param body: The body of this DetectFaceByFileRequest.
         :type body: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileRequestBody`

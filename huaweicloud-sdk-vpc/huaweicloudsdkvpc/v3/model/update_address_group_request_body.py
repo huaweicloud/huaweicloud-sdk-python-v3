@@ -17,7 +17,6 @@ class UpdateAddressGroupRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateAddressGroupRequestBody:
     def address_group(self):
         """Gets the address_group of this UpdateAddressGroupRequestBody.
 
-
         :return: The address_group of this UpdateAddressGroupRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupOption`
         """
@@ -86,7 +84,6 @@ class UpdateAddressGroupRequestBody:
     @address_group.setter
     def address_group(self, address_group):
         """Sets the address_group of this UpdateAddressGroupRequestBody.
-
 
         :param address_group: The address_group of this UpdateAddressGroupRequestBody.
         :type address_group: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupOption`

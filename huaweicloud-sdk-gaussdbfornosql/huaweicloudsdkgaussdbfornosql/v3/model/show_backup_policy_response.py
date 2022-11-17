@@ -17,7 +17,6 @@ class ShowBackupPolicyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowBackupPolicyResponse(SdkResponse):
     def backup_policy(self):
         """Gets the backup_policy of this ShowBackupPolicyResponse.
 
-
         :return: The backup_policy of this ShowBackupPolicyResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyResult`
         """
@@ -58,7 +56,6 @@ class ShowBackupPolicyResponse(SdkResponse):
     @backup_policy.setter
     def backup_policy(self, backup_policy):
         """Sets the backup_policy of this ShowBackupPolicyResponse.
-
 
         :param backup_policy: The backup_policy of this ShowBackupPolicyResponse.
         :type backup_policy: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyResult`

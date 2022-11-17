@@ -17,7 +17,6 @@ class GetRepositoryByProjectIdResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class GetRepositoryByProjectIdResponse(SdkResponse):
     def error(self):
         """Gets the error of this GetRepositoryByProjectIdResponse.
 
-
         :return: The error of this GetRepositoryByProjectIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
@@ -72,7 +70,6 @@ class GetRepositoryByProjectIdResponse(SdkResponse):
     @error.setter
     def error(self, error):
         """Sets the error of this GetRepositoryByProjectIdResponse.
-
 
         :param error: The error of this GetRepositoryByProjectIdResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -83,7 +80,6 @@ class GetRepositoryByProjectIdResponse(SdkResponse):
     def result(self):
         """Gets the result of this GetRepositoryByProjectIdResponse.
 
-
         :return: The result of this GetRepositoryByProjectIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoInfo`
         """
@@ -92,7 +88,6 @@ class GetRepositoryByProjectIdResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this GetRepositoryByProjectIdResponse.
-
 
         :param result: The result of this GetRepositoryByProjectIdResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepoInfo`

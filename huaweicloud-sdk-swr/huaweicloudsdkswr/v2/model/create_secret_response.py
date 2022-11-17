@@ -17,7 +17,6 @@ class CreateSecretResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateSecretResponse(SdkResponse):
     def x_swr_dockerlogin(self):
         """Gets the x_swr_dockerlogin of this CreateSecretResponse.
 
-
         :return: The x_swr_dockerlogin of this CreateSecretResponse.
         :rtype: str
         """
@@ -87,7 +85,6 @@ class CreateSecretResponse(SdkResponse):
     @x_swr_dockerlogin.setter
     def x_swr_dockerlogin(self, x_swr_dockerlogin):
         """Sets the x_swr_dockerlogin of this CreateSecretResponse.
-
 
         :param x_swr_dockerlogin: The x_swr_dockerlogin of this CreateSecretResponse.
         :type x_swr_dockerlogin: str

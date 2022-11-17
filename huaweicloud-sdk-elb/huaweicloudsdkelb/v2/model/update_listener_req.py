@@ -17,7 +17,6 @@ class UpdateListenerReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -295,7 +294,6 @@ class UpdateListenerReq:
     def insert_headers(self):
         """Gets the insert_headers of this UpdateListenerReq.
 
-
         :return: The insert_headers of this UpdateListenerReq.
         :rtype: :class:`huaweicloudsdkelb.v2.InsertHeader`
         """
@@ -304,7 +302,6 @@ class UpdateListenerReq:
     @insert_headers.setter
     def insert_headers(self, insert_headers):
         """Sets the insert_headers of this UpdateListenerReq.
-
 
         :param insert_headers: The insert_headers of this UpdateListenerReq.
         :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`

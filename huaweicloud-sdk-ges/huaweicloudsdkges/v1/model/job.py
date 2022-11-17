@@ -17,7 +17,6 @@ class Job:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -261,7 +260,6 @@ class Job:
     def job_detail(self):
         """Gets the job_detail of this Job.
 
-
         :return: The job_detail of this Job.
         :rtype: :class:`huaweicloudsdkges.v1.JobDetail`
         """
@@ -270,7 +268,6 @@ class Job:
     @job_detail.setter
     def job_detail(self, job_detail):
         """Sets the job_detail of this Job.
-
 
         :param job_detail: The job_detail of this Job.
         :type job_detail: :class:`huaweicloudsdkges.v1.JobDetail`

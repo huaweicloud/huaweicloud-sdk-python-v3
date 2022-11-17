@@ -17,7 +17,6 @@ class ListInstantQueryAomPromGetResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ListInstantQueryAomPromGetResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListInstantQueryAomPromGetResponse.
 
-
         :return: The data of this ListInstantQueryAomPromGetResponse.
         :rtype: object
         """
@@ -87,7 +85,6 @@ class ListInstantQueryAomPromGetResponse(SdkResponse):
     @data.setter
     def data(self, data):
         """Sets the data of this ListInstantQueryAomPromGetResponse.
-
 
         :param data: The data of this ListInstantQueryAomPromGetResponse.
         :type data: object

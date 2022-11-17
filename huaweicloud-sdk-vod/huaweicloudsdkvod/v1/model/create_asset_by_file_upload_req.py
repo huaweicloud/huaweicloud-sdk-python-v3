@@ -17,7 +17,6 @@ class CreateAssetByFileUploadReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -466,7 +465,6 @@ class CreateAssetByFileUploadReq:
     def thumbnail(self):
         """Gets the thumbnail of this CreateAssetByFileUploadReq.
 
-
         :return: The thumbnail of this CreateAssetByFileUploadReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
@@ -475,7 +473,6 @@ class CreateAssetByFileUploadReq:
     @thumbnail.setter
     def thumbnail(self, thumbnail):
         """Sets the thumbnail of this CreateAssetByFileUploadReq.
-
 
         :param thumbnail: The thumbnail of this CreateAssetByFileUploadReq.
         :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -486,7 +483,6 @@ class CreateAssetByFileUploadReq:
     def review(self):
         """Gets the review of this CreateAssetByFileUploadReq.
 
-
         :return: The review of this CreateAssetByFileUploadReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
         """
@@ -495,7 +491,6 @@ class CreateAssetByFileUploadReq:
     @review.setter
     def review(self, review):
         """Sets the review of this CreateAssetByFileUploadReq.
-
 
         :param review: The review of this CreateAssetByFileUploadReq.
         :type review: :class:`huaweicloudsdkvod.v1.Review`

@@ -17,7 +17,6 @@ class VideoCreateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -74,7 +73,6 @@ class VideoCreateRequest:
     def data(self):
         """Gets the data of this VideoCreateRequest.
 
-
         :return: The data of this VideoCreateRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoCreateRequestData`
         """
@@ -83,7 +81,6 @@ class VideoCreateRequest:
     @data.setter
     def data(self, data):
         """Sets the data of this VideoCreateRequest.
-
 
         :param data: The data of this VideoCreateRequest.
         :type data: :class:`huaweicloudsdkmoderation.v3.VideoCreateRequestData`

@@ -17,7 +17,6 @@ class CreateClusterPublicEip:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateClusterPublicEip:
     def band_width(self):
         """Gets the band_width of this CreateClusterPublicEip.
 
-
         :return: The band_width of this CreateClusterPublicEip.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEipSize`
         """
@@ -57,7 +55,6 @@ class CreateClusterPublicEip:
     @band_width.setter
     def band_width(self, band_width):
         """Sets the band_width of this CreateClusterPublicEip.
-
 
         :param band_width: The band_width of this CreateClusterPublicEip.
         :type band_width: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEipSize`

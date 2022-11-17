@@ -17,7 +17,6 @@ class UpdateDomainSettingsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateDomainSettingsRequest:
     def body(self):
         """Gets the body of this UpdateDomainSettingsRequest.
 
-
         :return: The body of this UpdateDomainSettingsRequest.
         :rtype: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsRequestBody`
         """
@@ -58,7 +56,6 @@ class UpdateDomainSettingsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDomainSettingsRequest.
-
 
         :param body: The body of this UpdateDomainSettingsRequest.
         :type body: :class:`huaweicloudsdkvss.v3.UpdateDomainSettingsRequestBody`

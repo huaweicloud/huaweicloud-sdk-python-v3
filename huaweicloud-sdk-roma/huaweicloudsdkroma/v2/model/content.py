@@ -17,7 +17,6 @@ class Content:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -966,7 +965,6 @@ class Content:
     def api_auth_detail(self):
         """Gets the api_auth_detail of this Content.
 
-
         :return: The api_auth_detail of this Content.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiAuthDetail`
         """
@@ -975,7 +973,6 @@ class Content:
     @api_auth_detail.setter
     def api_auth_detail(self, api_auth_detail):
         """Sets the api_auth_detail of this Content.
-
 
         :param api_auth_detail: The api_auth_detail of this Content.
         :type api_auth_detail: :class:`huaweicloudsdkroma.v2.ApiAuthDetail`

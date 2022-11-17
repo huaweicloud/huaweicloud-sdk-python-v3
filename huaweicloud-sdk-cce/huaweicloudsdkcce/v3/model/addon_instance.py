@@ -17,7 +17,6 @@ class AddonInstance:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -117,7 +116,6 @@ class AddonInstance:
     def metadata(self):
         """Gets the metadata of this AddonInstance.
 
-
         :return: The metadata of this AddonInstance.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
@@ -126,7 +124,6 @@ class AddonInstance:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this AddonInstance.
-
 
         :param metadata: The metadata of this AddonInstance.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -137,7 +134,6 @@ class AddonInstance:
     def spec(self):
         """Gets the spec of this AddonInstance.
 
-
         :return: The spec of this AddonInstance.
         :rtype: :class:`huaweicloudsdkcce.v3.InstanceSpec`
         """
@@ -146,7 +142,6 @@ class AddonInstance:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this AddonInstance.
-
 
         :param spec: The spec of this AddonInstance.
         :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
@@ -157,7 +152,6 @@ class AddonInstance:
     def status(self):
         """Gets the status of this AddonInstance.
 
-
         :return: The status of this AddonInstance.
         :rtype: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
         """
@@ -166,7 +160,6 @@ class AddonInstance:
     @status.setter
     def status(self, status):
         """Sets the status of this AddonInstance.
-
 
         :param status: The status of this AddonInstance.
         :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`

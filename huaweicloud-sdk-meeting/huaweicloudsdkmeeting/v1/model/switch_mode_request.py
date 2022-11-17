@@ -17,7 +17,6 @@ class SwitchModeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class SwitchModeRequest:
     def body(self):
         """Gets the body of this SwitchModeRequest.
 
-
         :return: The body of this SwitchModeRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestSwitchModeReqBody`
         """
@@ -114,7 +112,6 @@ class SwitchModeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SwitchModeRequest.
-
 
         :param body: The body of this SwitchModeRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestSwitchModeReqBody`

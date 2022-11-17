@@ -17,7 +17,6 @@ class CreateAgencyResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAgencyResponse(SdkResponse):
     def agency(self):
         """Gets the agency of this CreateAgencyResponse.
 
-
         :return: The agency of this CreateAgencyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyResult`
         """
@@ -58,7 +56,6 @@ class CreateAgencyResponse(SdkResponse):
     @agency.setter
     def agency(self, agency):
         """Sets the agency of this CreateAgencyResponse.
-
 
         :param agency: The agency of this CreateAgencyResponse.
         :type agency: :class:`huaweicloudsdkiam.v3.AgencyResult`

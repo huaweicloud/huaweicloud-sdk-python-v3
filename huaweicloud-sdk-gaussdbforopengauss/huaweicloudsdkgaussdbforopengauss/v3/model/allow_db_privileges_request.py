@@ -17,7 +17,6 @@ class AllowDbPrivilegesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class AllowDbPrivilegesRequest:
     def body(self):
         """Gets the body of this AllowDbPrivilegesRequest.
 
-
         :return: The body of this AllowDbPrivilegesRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussGrantRequest`
         """
@@ -115,7 +113,6 @@ class AllowDbPrivilegesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AllowDbPrivilegesRequest.
-
 
         :param body: The body of this AllowDbPrivilegesRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussGrantRequest`

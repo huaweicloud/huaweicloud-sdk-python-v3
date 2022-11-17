@@ -17,7 +17,6 @@ class UpdateHttpsInfoRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateHttpsInfoRequest:
     def body(self):
         """Gets the body of this UpdateHttpsInfoRequest.
 
-
         :return: The body of this UpdateHttpsInfoRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.HttpInfoRequest`
         """
@@ -115,7 +113,6 @@ class UpdateHttpsInfoRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateHttpsInfoRequest.
-
 
         :param body: The body of this UpdateHttpsInfoRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.HttpInfoRequest`

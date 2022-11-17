@@ -17,7 +17,6 @@ class KeywordsAlarmRuleRespList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -420,7 +419,6 @@ class KeywordsAlarmRuleRespList:
     def template_name(self):
         """Gets the template_name of this KeywordsAlarmRuleRespList.
 
-
         :return: The template_name of this KeywordsAlarmRuleRespList.
         :rtype: str
         """
@@ -429,7 +427,6 @@ class KeywordsAlarmRuleRespList:
     @template_name.setter
     def template_name(self, template_name):
         """Sets the template_name of this KeywordsAlarmRuleRespList.
-
 
         :param template_name: The template_name of this KeywordsAlarmRuleRespList.
         :type template_name: str
@@ -440,7 +437,6 @@ class KeywordsAlarmRuleRespList:
     def status(self):
         """Gets the status of this KeywordsAlarmRuleRespList.
 
-
         :return: The status of this KeywordsAlarmRuleRespList.
         :rtype: str
         """
@@ -449,7 +445,6 @@ class KeywordsAlarmRuleRespList:
     @status.setter
     def status(self, status):
         """Sets the status of this KeywordsAlarmRuleRespList.
-
 
         :param status: The status of this KeywordsAlarmRuleRespList.
         :type status: str

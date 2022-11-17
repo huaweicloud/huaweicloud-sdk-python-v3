@@ -17,7 +17,6 @@ class DataRsp:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -135,7 +134,6 @@ class DataRsp:
     def type(self):
         """Gets the type of this DataRsp.
 
-
         :return: The type of this DataRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
         """
@@ -144,7 +142,6 @@ class DataRsp:
     @type.setter
     def type(self, type):
         """Sets the type of this DataRsp.
-
 
         :param type: The type of this DataRsp.
         :type type: :class:`huaweicloudsdkeihealth.v1.PathType`

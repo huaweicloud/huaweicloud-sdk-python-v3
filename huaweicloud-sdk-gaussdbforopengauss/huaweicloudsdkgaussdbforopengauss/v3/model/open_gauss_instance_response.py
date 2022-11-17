@@ -17,7 +17,6 @@ class OpenGaussInstanceResponse:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -212,7 +211,6 @@ class OpenGaussInstanceResponse:
     def datastore(self):
         """Gets the datastore of this OpenGaussInstanceResponse.
 
-
         :return: The datastore of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
         """
@@ -221,7 +219,6 @@ class OpenGaussInstanceResponse:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this OpenGaussInstanceResponse.
-
 
         :param datastore: The datastore of this OpenGaussInstanceResponse.
         :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastoreResponse`
@@ -232,7 +229,6 @@ class OpenGaussInstanceResponse:
     def ha(self):
         """Gets the ha of this OpenGaussInstanceResponse.
 
-
         :return: The ha of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
         """
@@ -241,7 +237,6 @@ class OpenGaussInstanceResponse:
     @ha.setter
     def ha(self, ha):
         """Sets the ha of this OpenGaussInstanceResponse.
-
 
         :param ha: The ha of this OpenGaussInstanceResponse.
         :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHaResponse`
@@ -274,7 +269,6 @@ class OpenGaussInstanceResponse:
     def backup_strategy(self):
         """Gets the backup_strategy of this OpenGaussInstanceResponse.
 
-
         :return: The backup_strategy of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
         """
@@ -283,7 +277,6 @@ class OpenGaussInstanceResponse:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this OpenGaussInstanceResponse.
-
 
         :param backup_strategy: The backup_strategy of this OpenGaussInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForResponse`
@@ -360,7 +353,6 @@ class OpenGaussInstanceResponse:
     def volume(self):
         """Gets the volume of this OpenGaussInstanceResponse.
 
-
         :return: The volume of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
         """
@@ -369,7 +361,6 @@ class OpenGaussInstanceResponse:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this OpenGaussInstanceResponse.
-
 
         :param volume: The volume of this OpenGaussInstanceResponse.
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolumeResponse`
@@ -490,7 +481,6 @@ class OpenGaussInstanceResponse:
     def charge_info(self):
         """Gets the charge_info of this OpenGaussInstanceResponse.
 
-
         :return: The charge_info of this OpenGaussInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoResponse`
         """
@@ -499,7 +489,6 @@ class OpenGaussInstanceResponse:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this OpenGaussInstanceResponse.
-
 
         :param charge_info: The charge_info of this OpenGaussInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoResponse`

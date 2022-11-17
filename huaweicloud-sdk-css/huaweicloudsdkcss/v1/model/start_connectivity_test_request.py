@@ -17,7 +17,6 @@ class StartConnectivityTestRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StartConnectivityTestRequest:
     def body(self):
         """Gets the body of this StartConnectivityTestRequest.
 
-
         :return: The body of this StartConnectivityTestRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.StartConnectivityTestReq`
         """
@@ -86,7 +84,6 @@ class StartConnectivityTestRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StartConnectivityTestRequest.
-
 
         :param body: The body of this StartConnectivityTestRequest.
         :type body: :class:`huaweicloudsdkcss.v1.StartConnectivityTestReq`

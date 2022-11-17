@@ -17,7 +17,6 @@ class RebootBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class RebootBody:
     def reboot(self):
         """Gets the reboot of this RebootBody.
 
-
         :return: The reboot of this RebootBody.
         :rtype: :class:`huaweicloudsdkbms.v1.ServersInfoType`
         """
@@ -57,7 +55,6 @@ class RebootBody:
     @reboot.setter
     def reboot(self, reboot):
         """Sets the reboot of this RebootBody.
-
 
         :param reboot: The reboot of this RebootBody.
         :type reboot: :class:`huaweicloudsdkbms.v1.ServersInfoType`

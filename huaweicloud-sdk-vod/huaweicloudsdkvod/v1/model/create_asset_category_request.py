@@ -17,7 +17,6 @@ class CreateAssetCategoryRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateAssetCategoryRequest:
     def body(self):
         """Gets the body of this CreateAssetCategoryRequest.
 
-
         :return: The body of this CreateAssetCategoryRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.CreateCategoryReq`
         """
@@ -58,7 +56,6 @@ class CreateAssetCategoryRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateAssetCategoryRequest.
-
 
         :param body: The body of this CreateAssetCategoryRequest.
         :type body: :class:`huaweicloudsdkvod.v1.CreateCategoryReq`

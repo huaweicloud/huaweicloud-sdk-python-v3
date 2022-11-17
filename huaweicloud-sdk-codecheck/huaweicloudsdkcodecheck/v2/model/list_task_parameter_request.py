@@ -17,7 +17,6 @@ class ListTaskParameterRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ListTaskParameterRequest:
     def body(self):
         """Gets the body of this ListTaskParameterRequest.
 
-
         :return: The body of this ListTaskParameterRequest.
         :rtype: :class:`huaweicloudsdkcodecheck.v2.ConfigTaskParameterBody`
         """
@@ -114,7 +112,6 @@ class ListTaskParameterRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ListTaskParameterRequest.
-
 
         :param body: The body of this ListTaskParameterRequest.
         :type body: :class:`huaweicloudsdkcodecheck.v2.ConfigTaskParameterBody`

@@ -17,7 +17,6 @@ class NotebookToolDto:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class NotebookToolDto:
     def profile(self):
         """Gets the profile of this NotebookToolDto.
 
-
         :return: The profile of this NotebookToolDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.Profile`
         """
@@ -85,7 +83,6 @@ class NotebookToolDto:
     @profile.setter
     def profile(self, profile):
         """Sets the profile of this NotebookToolDto.
-
 
         :param profile: The profile of this NotebookToolDto.
         :type profile: :class:`huaweicloudsdkeihealth.v1.Profile`

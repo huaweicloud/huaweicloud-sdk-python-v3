@@ -17,7 +17,6 @@ class Event:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -54,7 +53,6 @@ class Event:
     def metadata(self):
         """Gets the metadata of this Event.
 
-
         :return: The metadata of this Event.
         :rtype: :class:`huaweicloudsdklts.v2.Metadata`
         """
@@ -63,7 +61,6 @@ class Event:
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this Event.
-
 
         :param metadata: The metadata of this Event.
         :type metadata: :class:`huaweicloudsdklts.v2.Metadata`

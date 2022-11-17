@@ -17,7 +17,6 @@ class CreateVariableResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -85,7 +84,6 @@ class CreateVariableResponse(SdkResponse):
     def json(self):
         """Gets the json of this CreateVariableResponse.
 
-
         :return: The json of this CreateVariableResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateVariableResultJson`
         """
@@ -94,7 +92,6 @@ class CreateVariableResponse(SdkResponse):
     @json.setter
     def json(self, json):
         """Sets the json of this CreateVariableResponse.
-
 
         :param json: The json of this CreateVariableResponse.
         :type json: :class:`huaweicloudsdkcpts.v1.CreateVariableResultJson`

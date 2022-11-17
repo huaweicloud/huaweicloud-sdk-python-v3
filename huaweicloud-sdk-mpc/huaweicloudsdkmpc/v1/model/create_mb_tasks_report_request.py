@@ -17,7 +17,6 @@ class CreateMbTasksReportRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateMbTasksReportRequest:
     def body(self):
         """Gets the body of this CreateMbTasksReportRequest.
 
-
         :return: The body of this CreateMbTasksReportRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.MbTasksReportReq`
         """
@@ -58,7 +56,6 @@ class CreateMbTasksReportRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateMbTasksReportRequest.
-
 
         :param body: The body of this CreateMbTasksReportRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.MbTasksReportReq`

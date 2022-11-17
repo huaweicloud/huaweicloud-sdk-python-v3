@@ -17,7 +17,6 @@ class UploadPythonFilesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class UploadPythonFilesRequest:
     def user_id(self):
         """Gets the user_id of this UploadPythonFilesRequest.
 
-
         :return: The user_id of this UploadPythonFilesRequest.
         :rtype: str
         """
@@ -65,7 +63,6 @@ class UploadPythonFilesRequest:
     @user_id.setter
     def user_id(self, user_id):
         """Sets the user_id of this UploadPythonFilesRequest.
-
 
         :param user_id: The user_id of this UploadPythonFilesRequest.
         :type user_id: str
@@ -76,7 +73,6 @@ class UploadPythonFilesRequest:
     def body(self):
         """Gets the body of this UploadPythonFilesRequest.
 
-
         :return: The body of this UploadPythonFilesRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UploadGroupPackageReq`
         """
@@ -85,7 +81,6 @@ class UploadPythonFilesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UploadPythonFilesRequest.
-
 
         :param body: The body of this UploadPythonFilesRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UploadGroupPackageReq`

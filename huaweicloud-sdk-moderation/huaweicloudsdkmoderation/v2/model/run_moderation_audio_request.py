@@ -17,7 +17,6 @@ class RunModerationAudioRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunModerationAudioRequest:
     def body(self):
         """Gets the body of this RunModerationAudioRequest.
 
-
         :return: The body of this RunModerationAudioRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioRequestBody`
         """
@@ -58,7 +56,6 @@ class RunModerationAudioRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RunModerationAudioRequest.
-
 
         :param body: The body of this RunModerationAudioRequest.
         :type body: :class:`huaweicloudsdkmoderation.v2.RunModerationAudioRequestBody`

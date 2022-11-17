@@ -17,7 +17,6 @@ class NodeNicSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class NodeNicSpec:
     def primary_nic(self):
         """Gets the primary_nic of this NodeNicSpec.
 
-
         :return: The primary_nic of this NodeNicSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NicSpec`
         """
@@ -65,7 +63,6 @@ class NodeNicSpec:
     @primary_nic.setter
     def primary_nic(self, primary_nic):
         """Sets the primary_nic of this NodeNicSpec.
-
 
         :param primary_nic: The primary_nic of this NodeNicSpec.
         :type primary_nic: :class:`huaweicloudsdkcce.v3.NicSpec`

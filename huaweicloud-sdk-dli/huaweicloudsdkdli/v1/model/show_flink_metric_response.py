@@ -17,7 +17,6 @@ class ShowFlinkMetricResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowFlinkMetricResponse(SdkResponse):
     def metrics(self):
         """Gets the metrics of this ShowFlinkMetricResponse.
 
-
         :return: The metrics of this ShowFlinkMetricResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoRespPayload`
         """
@@ -116,7 +114,6 @@ class ShowFlinkMetricResponse(SdkResponse):
     @metrics.setter
     def metrics(self, metrics):
         """Sets the metrics of this ShowFlinkMetricResponse.
-
 
         :param metrics: The metrics of this ShowFlinkMetricResponse.
         :type metrics: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoRespPayload`

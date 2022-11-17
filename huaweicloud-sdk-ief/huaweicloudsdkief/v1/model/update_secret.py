@@ -17,7 +17,6 @@ class UpdateSecret:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class UpdateSecret:
     def secret(self):
         """Gets the secret of this UpdateSecret.
 
-
         :return: The secret of this UpdateSecret.
         :rtype: :class:`huaweicloudsdkief.v1.UpdateSecretDetail`
         """
@@ -57,7 +55,6 @@ class UpdateSecret:
     @secret.setter
     def secret(self, secret):
         """Sets the secret of this UpdateSecret.
-
 
         :param secret: The secret of this UpdateSecret.
         :type secret: :class:`huaweicloudsdkief.v1.UpdateSecretDetail`

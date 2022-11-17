@@ -17,7 +17,6 @@ class UnpublishAssetsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UnpublishAssetsResponse(SdkResponse):
     def asset_info_array(self):
         """Gets the asset_info_array of this UnpublishAssetsResponse.
 
-
         :return: The asset_info_array of this UnpublishAssetsResponse.
         :rtype: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]
         """
@@ -58,7 +56,6 @@ class UnpublishAssetsResponse(SdkResponse):
     @asset_info_array.setter
     def asset_info_array(self, asset_info_array):
         """Sets the asset_info_array of this UnpublishAssetsResponse.
-
 
         :param asset_info_array: The asset_info_array of this UnpublishAssetsResponse.
         :type asset_info_array: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]

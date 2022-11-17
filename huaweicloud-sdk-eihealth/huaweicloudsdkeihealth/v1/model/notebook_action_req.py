@@ -17,7 +17,6 @@ class NotebookActionReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class NotebookActionReq:
     def action(self):
         """Gets the action of this NotebookActionReq.
 
-
         :return: The action of this NotebookActionReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ActionType`
         """
@@ -57,7 +55,6 @@ class NotebookActionReq:
     @action.setter
     def action(self, action):
         """Sets the action of this NotebookActionReq.
-
 
         :param action: The action of this NotebookActionReq.
         :type action: :class:`huaweicloudsdkeihealth.v1.ActionType`

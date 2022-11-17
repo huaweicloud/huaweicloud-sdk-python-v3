@@ -17,7 +17,6 @@ class ShowCompletionRateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ShowCompletionRateRequest:
     def body(self):
         """Gets the body of this ShowCompletionRateRequest.
 
-
         :return: The body of this ShowCompletionRateRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest3`
         """
@@ -86,7 +84,6 @@ class ShowCompletionRateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowCompletionRateRequest.
-
 
         :param body: The body of this ShowCompletionRateRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.MetricRequest3`

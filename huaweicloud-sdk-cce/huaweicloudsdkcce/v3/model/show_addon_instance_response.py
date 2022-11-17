@@ -17,7 +17,6 @@ class ShowAddonInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -121,7 +120,6 @@ class ShowAddonInstanceResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this ShowAddonInstanceResponse.
 
-
         :return: The metadata of this ShowAddonInstanceResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
         """
@@ -130,7 +128,6 @@ class ShowAddonInstanceResponse(SdkResponse):
     @metadata.setter
     def metadata(self, metadata):
         """Sets the metadata of this ShowAddonInstanceResponse.
-
 
         :param metadata: The metadata of this ShowAddonInstanceResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -141,7 +138,6 @@ class ShowAddonInstanceResponse(SdkResponse):
     def spec(self):
         """Gets the spec of this ShowAddonInstanceResponse.
 
-
         :return: The spec of this ShowAddonInstanceResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.InstanceSpec`
         """
@@ -150,7 +146,6 @@ class ShowAddonInstanceResponse(SdkResponse):
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this ShowAddonInstanceResponse.
-
 
         :param spec: The spec of this ShowAddonInstanceResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
@@ -161,7 +156,6 @@ class ShowAddonInstanceResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowAddonInstanceResponse.
 
-
         :return: The status of this ShowAddonInstanceResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
         """
@@ -170,7 +164,6 @@ class ShowAddonInstanceResponse(SdkResponse):
     @status.setter
     def status(self, status):
         """Sets the status of this ShowAddonInstanceResponse.
-
 
         :param status: The status of this ShowAddonInstanceResponse.
         :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`

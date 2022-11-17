@@ -17,7 +17,6 @@ class CreateMediaProcessTaskRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateMediaProcessTaskRequest:
     def body(self):
         """Gets the body of this CreateMediaProcessTaskRequest.
 
-
         :return: The body of this CreateMediaProcessTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessReq`
         """
@@ -58,7 +56,6 @@ class CreateMediaProcessTaskRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateMediaProcessTaskRequest.
-
 
         :param body: The body of this CreateMediaProcessTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessReq`

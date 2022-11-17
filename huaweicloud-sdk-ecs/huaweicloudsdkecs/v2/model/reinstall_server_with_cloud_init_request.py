@@ -17,7 +17,6 @@ class ReinstallServerWithCloudInitRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class ReinstallServerWithCloudInitRequest:
     def body(self):
         """Gets the body of this ReinstallServerWithCloudInitRequest.
 
-
         :return: The body of this ReinstallServerWithCloudInitRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitRequestBody`
         """
@@ -86,7 +84,6 @@ class ReinstallServerWithCloudInitRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ReinstallServerWithCloudInitRequest.
-
 
         :param body: The body of this ReinstallServerWithCloudInitRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitRequestBody`

@@ -17,7 +17,6 @@ class UpdateWhitelistRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateWhitelistRequest:
     def body(self):
         """Gets the body of this UpdateWhitelistRequest.
 
-
         :return: The body of this UpdateWhitelistRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateWhitelistRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateWhitelistRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateWhitelistRequest.
-
 
         :param body: The body of this UpdateWhitelistRequest.
         :type body: :class:`huaweicloudsdkelb.v2.UpdateWhitelistRequestBody`

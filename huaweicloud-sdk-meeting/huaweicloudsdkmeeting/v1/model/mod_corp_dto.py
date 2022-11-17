@@ -17,7 +17,6 @@ class ModCorpDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -70,7 +69,6 @@ class ModCorpDTO:
     def basic_info(self):
         """Gets the basic_info of this ModCorpDTO.
 
-
         :return: The basic_info of this ModCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ModCorpBasicDTO`
         """
@@ -79,7 +77,6 @@ class ModCorpDTO:
     @basic_info.setter
     def basic_info(self, basic_info):
         """Sets the basic_info of this ModCorpDTO.
-
 
         :param basic_info: The basic_info of this ModCorpDTO.
         :type basic_info: :class:`huaweicloudsdkmeeting.v1.ModCorpBasicDTO`
@@ -90,7 +87,6 @@ class ModCorpDTO:
     def admin_info(self):
         """Gets the admin_info of this ModCorpDTO.
 
-
         :return: The admin_info of this ModCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ModAdminDTO`
         """
@@ -99,7 +95,6 @@ class ModCorpDTO:
     @admin_info.setter
     def admin_info(self, admin_info):
         """Sets the admin_info of this ModCorpDTO.
-
 
         :param admin_info: The admin_info of this ModCorpDTO.
         :type admin_info: :class:`huaweicloudsdkmeeting.v1.ModAdminDTO`

@@ -17,7 +17,6 @@ class ShowInstanceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -822,7 +821,6 @@ class ShowInstanceResponse(SdkResponse):
     def instance_backup_policy(self):
         """Gets the instance_backup_policy of this ShowInstanceResponse.
 
-
         :return: The instance_backup_policy of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.InstanceBackupPolicy`
         """
@@ -831,7 +829,6 @@ class ShowInstanceResponse(SdkResponse):
     @instance_backup_policy.setter
     def instance_backup_policy(self, instance_backup_policy):
         """Sets the instance_backup_policy of this ShowInstanceResponse.
-
 
         :param instance_backup_policy: The instance_backup_policy of this ShowInstanceResponse.
         :type instance_backup_policy: :class:`huaweicloudsdkdcs.v2.InstanceBackupPolicy`
@@ -1348,7 +1345,6 @@ class ShowInstanceResponse(SdkResponse):
     def features(self):
         """Gets the features of this ShowInstanceResponse.
 
-
         :return: The features of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.Features`
         """
@@ -1357,7 +1353,6 @@ class ShowInstanceResponse(SdkResponse):
     @features.setter
     def features(self, features):
         """Sets the features of this ShowInstanceResponse.
-
 
         :param features: The features of this ShowInstanceResponse.
         :type features: :class:`huaweicloudsdkdcs.v2.Features`
@@ -1368,7 +1363,6 @@ class ShowInstanceResponse(SdkResponse):
     def domain_name_info(self):
         """Gets the domain_name_info of this ShowInstanceResponse.
 
-
         :return: The domain_name_info of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.DomainNameInfo`
         """
@@ -1377,7 +1371,6 @@ class ShowInstanceResponse(SdkResponse):
     @domain_name_info.setter
     def domain_name_info(self, domain_name_info):
         """Sets the domain_name_info of this ShowInstanceResponse.
-
 
         :param domain_name_info: The domain_name_info of this ShowInstanceResponse.
         :type domain_name_info: :class:`huaweicloudsdkdcs.v2.DomainNameInfo`
@@ -1696,7 +1689,6 @@ class ShowInstanceResponse(SdkResponse):
     def bandwidth_info(self):
         """Gets the bandwidth_info of this ShowInstanceResponse.
 
-
         :return: The bandwidth_info of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.BandwidthInfo`
         """
@@ -1705,7 +1697,6 @@ class ShowInstanceResponse(SdkResponse):
     @bandwidth_info.setter
     def bandwidth_info(self, bandwidth_info):
         """Sets the bandwidth_info of this ShowInstanceResponse.
-
 
         :param bandwidth_info: The bandwidth_info of this ShowInstanceResponse.
         :type bandwidth_info: :class:`huaweicloudsdkdcs.v2.BandwidthInfo`

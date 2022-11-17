@@ -17,7 +17,6 @@ class CreateStreamForbiddenRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreateStreamForbiddenRequest:
     def body(self):
         """Gets the body of this CreateStreamForbiddenRequest.
 
-
         :return: The body of this CreateStreamForbiddenRequest.
         :rtype: :class:`huaweicloudsdklive.v1.StreamForbiddenSetting`
         """
@@ -58,7 +56,6 @@ class CreateStreamForbiddenRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateStreamForbiddenRequest.
-
 
         :param body: The body of this CreateStreamForbiddenRequest.
         :type body: :class:`huaweicloudsdklive.v1.StreamForbiddenSetting`

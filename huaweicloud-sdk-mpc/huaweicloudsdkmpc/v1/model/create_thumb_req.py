@@ -17,7 +17,6 @@ class CreateThumbReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -88,7 +87,6 @@ class CreateThumbReq:
     def input(self):
         """Gets the input of this CreateThumbReq.
 
-
         :return: The input of this CreateThumbReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -97,7 +95,6 @@ class CreateThumbReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateThumbReq.
-
 
         :param input: The input of this CreateThumbReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -108,7 +105,6 @@ class CreateThumbReq:
     def output(self):
         """Gets the output of this CreateThumbReq.
 
-
         :return: The output of this CreateThumbReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -117,7 +113,6 @@ class CreateThumbReq:
     @output.setter
     def output(self, output):
         """Sets the output of this CreateThumbReq.
-
 
         :param output: The output of this CreateThumbReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -150,7 +145,6 @@ class CreateThumbReq:
     def thumbnail_para(self):
         """Gets the thumbnail_para of this CreateThumbReq.
 
-
         :return: The thumbnail_para of this CreateThumbReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
         """
@@ -159,7 +153,6 @@ class CreateThumbReq:
     @thumbnail_para.setter
     def thumbnail_para(self, thumbnail_para):
         """Sets the thumbnail_para of this CreateThumbReq.
-
 
         :param thumbnail_para: The thumbnail_para of this CreateThumbReq.
         :type thumbnail_para: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`

@@ -17,7 +17,6 @@ class DataSource:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -76,7 +75,6 @@ class DataSource:
     def parameters(self):
         """Gets the parameters of this DataSource.
 
-
         :return: The parameters of this DataSource.
         :rtype: :class:`huaweicloudsdkges.v1.Parameters`
         """
@@ -85,7 +83,6 @@ class DataSource:
     @parameters.setter
     def parameters(self, parameters):
         """Sets the parameters of this DataSource.
-
 
         :param parameters: The parameters of this DataSource.
         :type parameters: :class:`huaweicloudsdkges.v1.Parameters`

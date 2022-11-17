@@ -17,7 +17,6 @@ class CreateIpGroupRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateIpGroupRequestBody:
     def ipgroup(self):
         """Gets the ipgroup of this CreateIpGroupRequestBody.
 
-
         :return: The ipgroup of this CreateIpGroupRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateIpGroupOption`
         """
@@ -57,7 +55,6 @@ class CreateIpGroupRequestBody:
     @ipgroup.setter
     def ipgroup(self, ipgroup):
         """Sets the ipgroup of this CreateIpGroupRequestBody.
-
 
         :param ipgroup: The ipgroup of this CreateIpGroupRequestBody.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.CreateIpGroupOption`

@@ -17,7 +17,6 @@ class TransformMetrics:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -67,7 +66,6 @@ class TransformMetrics:
     def time_span(self):
         """Gets the time_span of this TransformMetrics.
 
-
         :return: The time_span of this TransformMetrics.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`
         """
@@ -76,7 +74,6 @@ class TransformMetrics:
     @time_span.setter
     def time_span(self, time_span):
         """Sets the time_span of this TransformMetrics.
-
 
         :param time_span: The time_span of this TransformMetrics.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpan`

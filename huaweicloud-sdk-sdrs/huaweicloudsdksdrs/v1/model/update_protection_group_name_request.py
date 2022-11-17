@@ -17,7 +17,6 @@ class UpdateProtectionGroupNameRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateProtectionGroupNameRequest:
     def body(self):
         """Gets the body of this UpdateProtectionGroupNameRequest.
 
-
         :return: The body of this UpdateProtectionGroupNameRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateProtectionGroupNameRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateProtectionGroupNameRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateProtectionGroupNameRequest.
-
 
         :param body: The body of this UpdateProtectionGroupNameRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.UpdateProtectionGroupNameRequestBody`

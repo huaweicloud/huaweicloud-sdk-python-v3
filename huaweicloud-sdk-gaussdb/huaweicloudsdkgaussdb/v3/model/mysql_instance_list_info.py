@@ -17,7 +17,6 @@ class MysqlInstanceListInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -384,7 +383,6 @@ class MysqlInstanceListInfo:
     def datastore(self):
         """Gets the datastore of this MysqlInstanceListInfo.
 
-
         :return: The datastore of this MysqlInstanceListInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
         """
@@ -393,7 +391,6 @@ class MysqlInstanceListInfo:
     @datastore.setter
     def datastore(self, datastore):
         """Sets the datastore of this MysqlInstanceListInfo.
-
 
         :param datastore: The datastore of this MysqlInstanceListInfo.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
@@ -558,7 +555,6 @@ class MysqlInstanceListInfo:
     def flavor_info(self):
         """Gets the flavor_info of this MysqlInstanceListInfo.
 
-
         :return: The flavor_info of this MysqlInstanceListInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlFlavorInfo`
         """
@@ -567,7 +563,6 @@ class MysqlInstanceListInfo:
     @flavor_info.setter
     def flavor_info(self, flavor_info):
         """Sets the flavor_info of this MysqlInstanceListInfo.
-
 
         :param flavor_info: The flavor_info of this MysqlInstanceListInfo.
         :type flavor_info: :class:`huaweicloudsdkgaussdb.v3.MysqlFlavorInfo`
@@ -578,7 +573,6 @@ class MysqlInstanceListInfo:
     def volume(self):
         """Gets the volume of this MysqlInstanceListInfo.
 
-
         :return: The volume of this MysqlInstanceListInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeInfo`
         """
@@ -587,7 +581,6 @@ class MysqlInstanceListInfo:
     @volume.setter
     def volume(self, volume):
         """Sets the volume of this MysqlInstanceListInfo.
-
 
         :param volume: The volume of this MysqlInstanceListInfo.
         :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolumeInfo`
@@ -598,7 +591,6 @@ class MysqlInstanceListInfo:
     def backup_strategy(self):
         """Gets the backup_strategy of this MysqlInstanceListInfo.
 
-
         :return: The backup_strategy of this MysqlInstanceListInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         """
@@ -607,7 +599,6 @@ class MysqlInstanceListInfo:
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
         """Sets the backup_strategy of this MysqlInstanceListInfo.
-
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceListInfo.
         :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -662,7 +653,6 @@ class MysqlInstanceListInfo:
     def charge_info(self):
         """Gets the charge_info of this MysqlInstanceListInfo.
 
-
         :return: The charge_info of this MysqlInstanceListInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         """
@@ -671,7 +661,6 @@ class MysqlInstanceListInfo:
     @charge_info.setter
     def charge_info(self, charge_info):
         """Sets the charge_info of this MysqlInstanceListInfo.
-
 
         :param charge_info: The charge_info of this MysqlInstanceListInfo.
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`

@@ -17,7 +17,6 @@ class ChangeApiVersionV2Request:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -105,7 +104,6 @@ class ChangeApiVersionV2Request:
     def body(self):
         """Gets the body of this ChangeApiVersionV2Request.
 
-
         :return: The body of this ChangeApiVersionV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiVersion`
         """
@@ -114,7 +112,6 @@ class ChangeApiVersionV2Request:
     @body.setter
     def body(self, body):
         """Sets the body of this ChangeApiVersionV2Request.
-
 
         :param body: The body of this ChangeApiVersionV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.ApiVersion`

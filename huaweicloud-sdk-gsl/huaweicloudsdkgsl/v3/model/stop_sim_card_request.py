@@ -17,7 +17,6 @@ class StopSimCardRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class StopSimCardRequest:
     def body(self):
         """Gets the body of this StopSimCardRequest.
 
-
         :return: The body of this StopSimCardRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.DownUpTimeForSimCardReq`
         """
@@ -86,7 +84,6 @@ class StopSimCardRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this StopSimCardRequest.
-
 
         :param body: The body of this StopSimCardRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.DownUpTimeForSimCardReq`

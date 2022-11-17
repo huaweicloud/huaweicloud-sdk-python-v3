@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class NlpClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -70,6 +64,8 @@ class NlpClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -101,6 +97,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunAspectSentimentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -128,6 +125,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -160,6 +159,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunAspectSentimentAdvanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -187,6 +187,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -219,6 +221,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunClassificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -246,6 +249,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -278,6 +283,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunConstituencyParserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -305,6 +311,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -337,6 +345,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDependencyParserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -364,6 +373,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -396,6 +407,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDocClassificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -423,6 +435,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -455,6 +469,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunDomainSentimentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -482,6 +497,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -514,6 +531,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunEntityLinkingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -541,6 +559,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -573,6 +593,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunEntitySentimentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -601,6 +622,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -633,6 +656,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunEventExtractionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -660,6 +684,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -692,6 +718,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunFileTranslationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -718,6 +745,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -750,6 +779,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunGetFileTranslationResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -777,6 +807,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -809,6 +841,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunKeywordExtractResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -836,6 +869,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -868,6 +903,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunLanguageDetectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -895,6 +931,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -927,6 +965,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunMultiGrainedSegmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -954,6 +993,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -986,6 +1027,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunNerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1013,6 +1055,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1045,6 +1089,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunNerDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1072,6 +1117,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1104,6 +1151,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunPoemResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1131,6 +1179,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1163,6 +1213,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSegmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1190,6 +1241,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1222,6 +1275,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSemanticParserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1249,6 +1303,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1281,6 +1337,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSentenceEmbeddingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1308,6 +1365,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1340,6 +1399,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSentimentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1367,6 +1427,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1399,6 +1461,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSummaryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1426,6 +1489,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1458,6 +1523,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunSummaryDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1485,6 +1551,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1517,6 +1585,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTextSimilarityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1544,6 +1613,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1576,6 +1647,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTextSimilarityAdvanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1603,6 +1675,8 @@ class NlpClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1635,6 +1709,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunTextTranslationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1642,7 +1717,7 @@ class NlpClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1652,9 +1727,10 @@ class NlpClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1671,6 +1747,7 @@ class NlpClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

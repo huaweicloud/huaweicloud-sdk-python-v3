@@ -17,7 +17,6 @@ class CreateMediaProcessReq:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CreateMediaProcessReq:
     def input(self):
         """Gets the input of this CreateMediaProcessReq.
 
-
         :return: The input of this CreateMediaProcessReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -72,7 +70,6 @@ class CreateMediaProcessReq:
     @input.setter
     def input(self, input):
         """Sets the input of this CreateMediaProcessReq.
-
 
         :param input: The input of this CreateMediaProcessReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -83,7 +80,6 @@ class CreateMediaProcessReq:
     def output(self):
         """Gets the output of this CreateMediaProcessReq.
 
-
         :return: The output of this CreateMediaProcessReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
@@ -92,7 +88,6 @@ class CreateMediaProcessReq:
     @output.setter
     def output(self, output):
         """Sets the output of this CreateMediaProcessReq.
-
 
         :param output: The output of this CreateMediaProcessReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

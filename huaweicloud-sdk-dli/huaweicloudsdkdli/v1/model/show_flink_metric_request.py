@@ -17,7 +17,6 @@ class ShowFlinkMetricRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowFlinkMetricRequest:
     def body(self):
         """Gets the body of this ShowFlinkMetricRequest.
 
-
         :return: The body of this ShowFlinkMetricRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoReq`
         """
@@ -58,7 +56,6 @@ class ShowFlinkMetricRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowFlinkMetricRequest.
-
 
         :param body: The body of this ShowFlinkMetricRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ShowJobMonitorInfoReq`

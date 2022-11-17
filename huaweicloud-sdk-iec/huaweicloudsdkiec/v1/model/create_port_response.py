@@ -17,7 +17,6 @@ class CreatePortResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class CreatePortResponse(SdkResponse):
     def port(self):
         """Gets the port of this CreatePortResponse.
 
-
         :return: The port of this CreatePortResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Port`
         """
@@ -58,7 +56,6 @@ class CreatePortResponse(SdkResponse):
     @port.setter
     def port(self, port):
         """Sets the port of this CreatePortResponse.
-
 
         :param port: The port of this CreatePortResponse.
         :type port: :class:`huaweicloudsdkiec.v1.Port`

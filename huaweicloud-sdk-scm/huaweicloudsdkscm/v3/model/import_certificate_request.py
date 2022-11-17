@@ -17,7 +17,6 @@ class ImportCertificateRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ImportCertificateRequest:
     def body(self):
         """Gets the body of this ImportCertificateRequest.
 
-
         :return: The body of this ImportCertificateRequest.
         :rtype: :class:`huaweicloudsdkscm.v3.ImportCertificateRequestBody`
         """
@@ -58,7 +56,6 @@ class ImportCertificateRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportCertificateRequest.
-
 
         :param body: The body of this ImportCertificateRequest.
         :type body: :class:`huaweicloudsdkscm.v3.ImportCertificateRequestBody`

@@ -17,7 +17,6 @@ class ShowModuleResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -368,7 +367,6 @@ class ShowModuleResponse(SdkResponse):
     def container_settings(self):
         """Gets the container_settings of this ShowModuleResponse.
 
-
         :return: The container_settings of this ShowModuleResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ModuleContainerSettingsResDTO`
         """
@@ -377,7 +375,6 @@ class ShowModuleResponse(SdkResponse):
     @container_settings.setter
     def container_settings(self, container_settings):
         """Sets the container_settings of this ShowModuleResponse.
-
 
         :param container_settings: The container_settings of this ShowModuleResponse.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ModuleContainerSettingsResDTO`

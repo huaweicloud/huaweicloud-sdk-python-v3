@@ -17,7 +17,6 @@ class AdDomainInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -37,7 +36,7 @@ class AdDomainInfo:
 
         The model defined in huaweicloud sdk
 
-        :param domain_type: 域类型。 - LITE_AS：LiteAS。 - LOCAL_AD：本地AD。  说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与“LOCAL_AD”所属网络可连通。
+        :param domain_type: 域类型。 - LITE_AS：LiteAS。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与“LOCAL_AD”所属网络可连通。
         :type domain_type: str
         :param domain_admin_account: 域管理员帐号。
         :type domain_admin_account: str
@@ -60,7 +59,7 @@ class AdDomainInfo:
     def domain_type(self):
         """Gets the domain_type of this AdDomainInfo.
 
-        域类型。 - LITE_AS：LiteAS。 - LOCAL_AD：本地AD。  说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与“LOCAL_AD”所属网络可连通。
+        域类型。 - LITE_AS：LiteAS。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与“LOCAL_AD”所属网络可连通。
 
         :return: The domain_type of this AdDomainInfo.
         :rtype: str
@@ -71,7 +70,7 @@ class AdDomainInfo:
     def domain_type(self, domain_type):
         """Sets the domain_type of this AdDomainInfo.
 
-        域类型。 - LITE_AS：LiteAS。 - LOCAL_AD：本地AD。  说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与“LOCAL_AD”所属网络可连通。
+        域类型。 - LITE_AS：LiteAS。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与“LOCAL_AD”所属网络可连通。
 
         :param domain_type: The domain_type of this AdDomainInfo.
         :type domain_type: str

@@ -17,7 +17,6 @@ class Cron:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class Cron:
     def start_time(self):
         """Gets the start_time of this Cron.
 
-
         :return: The start_time of this Cron.
         :rtype: str
         """
@@ -86,7 +84,6 @@ class Cron:
     @start_time.setter
     def start_time(self, start_time):
         """Sets the start_time of this Cron.
-
 
         :param start_time: The start_time of this Cron.
         :type start_time: str
@@ -97,7 +94,6 @@ class Cron:
     def end_time(self):
         """Gets the end_time of this Cron.
 
-
         :return: The end_time of this Cron.
         :rtype: str
         """
@@ -106,7 +102,6 @@ class Cron:
     @end_time.setter
     def end_time(self, end_time):
         """Sets the end_time of this Cron.
-
 
         :param end_time: The end_time of this Cron.
         :type end_time: str

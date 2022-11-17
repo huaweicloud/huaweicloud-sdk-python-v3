@@ -17,7 +17,6 @@ class AttachEipRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class AttachEipRequest:
     def body(self):
         """Gets the body of this AttachEipRequest.
 
-
         :return: The body of this AttachEipRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.BindEipRequest`
         """
@@ -115,7 +113,6 @@ class AttachEipRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this AttachEipRequest.
-
 
         :param body: The body of this AttachEipRequest.
         :type body: :class:`huaweicloudsdkrds.v3.BindEipRequest`

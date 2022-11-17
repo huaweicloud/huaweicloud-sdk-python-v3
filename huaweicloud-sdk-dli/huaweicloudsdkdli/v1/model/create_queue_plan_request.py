@@ -17,7 +17,6 @@ class CreateQueuePlanRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateQueuePlanRequest:
     def body(self):
         """Gets the body of this CreateQueuePlanRequest.
 
-
         :return: The body of this CreateQueuePlanRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.SetQueuePlanReq`
         """
@@ -86,7 +84,6 @@ class CreateQueuePlanRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateQueuePlanRequest.
-
 
         :param body: The body of this CreateQueuePlanRequest.
         :type body: :class:`huaweicloudsdkdli.v1.SetQueuePlanReq`

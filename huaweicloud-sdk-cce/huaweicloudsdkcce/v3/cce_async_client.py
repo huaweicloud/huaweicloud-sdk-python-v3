@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CceAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -57,6 +51,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddNode
         :type request: :class:`huaweicloudsdkcce.v3.AddNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.AddNodeResponse`
@@ -69,6 +64,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -103,6 +100,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -117,6 +115,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AwakeCluster
         :type request: :class:`huaweicloudsdkcce.v3.AwakeClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.AwakeClusterResponse`
@@ -129,6 +128,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -161,6 +162,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AwakeClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -175,6 +177,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAddonInstance
         :type request: :class:`huaweicloudsdkcce.v3.CreateAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateAddonInstanceResponse`
@@ -187,6 +190,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -219,6 +224,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAddonInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -235,6 +241,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCloudPersistentVolumeClaims
         :type request: :class:`huaweicloudsdkcce.v3.CreateCloudPersistentVolumeClaimsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateCloudPersistentVolumeClaimsResponse`
@@ -247,6 +254,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -283,6 +292,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateCloudPersistentVolumeClaimsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +310,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateCluster
         :type request: :class:`huaweicloudsdkcce.v3.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateClusterResponse`
@@ -312,6 +323,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -344,6 +357,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -358,6 +372,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateKubernetesClusterCert
         :type request: :class:`huaweicloudsdkcce.v3.CreateKubernetesClusterCertRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateKubernetesClusterCertResponse`
@@ -370,6 +385,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -389,7 +406,7 @@ class CceAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["Port-ID"]
+        response_headers = ["Port-ID", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -404,6 +421,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateKubernetesClusterCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -420,6 +438,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNode
         :type request: :class:`huaweicloudsdkcce.v3.CreateNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateNodeResponse`
@@ -432,6 +451,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -468,6 +489,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -485,6 +507,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateNodePool
         :type request: :class:`huaweicloudsdkcce.v3.CreateNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateNodePoolResponse`
@@ -497,6 +520,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -531,6 +556,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateNodePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -545,6 +571,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAddonInstance
         :type request: :class:`huaweicloudsdkcce.v3.DeleteAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteAddonInstanceResponse`
@@ -557,6 +584,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -591,6 +620,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAddonInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -607,6 +637,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCloudPersistentVolumeClaims
         :type request: :class:`huaweicloudsdkcce.v3.DeleteCloudPersistentVolumeClaimsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteCloudPersistentVolumeClaimsResponse`
@@ -619,6 +650,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -659,6 +692,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteCloudPersistentVolumeClaimsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -674,6 +708,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteCluster
         :type request: :class:`huaweicloudsdkcce.v3.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteClusterResponse`
@@ -686,6 +721,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -732,6 +769,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -747,6 +785,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNode
         :type request: :class:`huaweicloudsdkcce.v3.DeleteNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteNodeResponse`
@@ -759,6 +798,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -795,6 +836,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -810,6 +852,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteNodePool
         :type request: :class:`huaweicloudsdkcce.v3.DeleteNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteNodePoolResponse`
@@ -822,6 +865,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -856,6 +901,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteNodePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -870,6 +916,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for HibernateCluster
         :type request: :class:`huaweicloudsdkcce.v3.HibernateClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.HibernateClusterResponse`
@@ -882,6 +929,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -914,6 +963,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='HibernateClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -928,6 +978,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAddonInstances
         :type request: :class:`huaweicloudsdkcce.v3.ListAddonInstancesRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListAddonInstancesResponse`
@@ -940,6 +991,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -972,6 +1025,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAddonInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -986,6 +1040,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAddonTemplates
         :type request: :class:`huaweicloudsdkcce.v3.ListAddonTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListAddonTemplatesResponse`
@@ -998,6 +1053,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1030,6 +1087,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAddonTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1044,6 +1102,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListClusters
         :type request: :class:`huaweicloudsdkcce.v3.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListClustersResponse`
@@ -1056,6 +1115,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1094,6 +1155,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListClustersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1110,6 +1172,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNodePools
         :type request: :class:`huaweicloudsdkcce.v3.ListNodePoolsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListNodePoolsResponse`
@@ -1122,6 +1185,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1156,6 +1221,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNodePoolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1171,6 +1237,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListNodes
         :type request: :class:`huaweicloudsdkcce.v3.ListNodesRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListNodesResponse`
@@ -1183,6 +1250,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1215,6 +1284,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1230,6 +1300,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for MigrateNode
         :type request: :class:`huaweicloudsdkcce.v3.MigrateNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodeResponse`
@@ -1242,6 +1313,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1278,6 +1351,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='MigrateNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1293,6 +1367,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for RemoveNode
         :type request: :class:`huaweicloudsdkcce.v3.RemoveNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodeResponse`
@@ -1305,6 +1380,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1339,6 +1416,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RemoveNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1354,6 +1432,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ResetNode
         :type request: :class:`huaweicloudsdkcce.v3.ResetNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ResetNodeResponse`
@@ -1366,6 +1445,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1400,6 +1481,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ResetNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1414,6 +1496,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAddonInstance
         :type request: :class:`huaweicloudsdkcce.v3.ShowAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowAddonInstanceResponse`
@@ -1426,6 +1509,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1460,6 +1545,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAddonInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1475,6 +1561,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowCluster
         :type request: :class:`huaweicloudsdkcce.v3.ShowClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterResponse`
@@ -1487,6 +1574,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1521,6 +1610,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1536,6 +1626,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowClusterEndpoints
         :type request: :class:`huaweicloudsdkcce.v3.ShowClusterEndpointsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterEndpointsResponse`
@@ -1548,6 +1639,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1580,6 +1673,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowClusterEndpointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1598,6 +1692,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowJob
         :type request: :class:`huaweicloudsdkcce.v3.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowJobResponse`
@@ -1610,6 +1705,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1642,6 +1739,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1657,6 +1755,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNode
         :type request: :class:`huaweicloudsdkcce.v3.ShowNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowNodeResponse`
@@ -1669,6 +1768,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1703,6 +1804,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1718,6 +1820,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowNodePool
         :type request: :class:`huaweicloudsdkcce.v3.ShowNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowNodePoolResponse`
@@ -1730,6 +1833,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1764,6 +1869,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNodePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1778,6 +1884,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowQuotas
         :type request: :class:`huaweicloudsdkcce.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowQuotasResponse`
@@ -1790,6 +1897,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1820,6 +1929,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1834,6 +1944,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAddonInstance
         :type request: :class:`huaweicloudsdkcce.v3.UpdateAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateAddonInstanceResponse`
@@ -1846,6 +1957,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1880,6 +1993,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAddonInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1895,6 +2009,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateCluster
         :type request: :class:`huaweicloudsdkcce.v3.UpdateClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateClusterResponse`
@@ -1907,6 +2022,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1941,6 +2058,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateClusterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1956,6 +2074,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateClusterEip
         :type request: :class:`huaweicloudsdkcce.v3.UpdateClusterEipRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateClusterEipResponse`
@@ -1968,6 +2087,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2002,6 +2123,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateClusterEipResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2018,6 +2140,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNode
         :type request: :class:`huaweicloudsdkcce.v3.UpdateNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateNodeResponse`
@@ -2030,6 +2153,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2066,6 +2191,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2083,6 +2209,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateNodePool
         :type request: :class:`huaweicloudsdkcce.v3.UpdateNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateNodePoolResponse`
@@ -2095,6 +2222,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2131,6 +2260,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateNodePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2145,6 +2275,7 @@ class CceAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowVersion
         :type request: :class:`huaweicloudsdkcce.v3.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowVersionResponse`
@@ -2157,6 +2288,8 @@ class CceAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2187,6 +2320,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2194,7 +2328,7 @@ class CceAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2205,9 +2339,10 @@ class CceAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2224,6 +2359,7 @@ class CceAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

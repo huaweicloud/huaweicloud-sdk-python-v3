@@ -17,7 +17,6 @@ class CreateL7ruleRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -48,7 +47,6 @@ class CreateL7ruleRequestBody:
     def rule(self):
         """Gets the rule of this CreateL7ruleRequestBody.
 
-
         :return: The rule of this CreateL7ruleRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateL7ruleReq`
         """
@@ -57,7 +55,6 @@ class CreateL7ruleRequestBody:
     @rule.setter
     def rule(self, rule):
         """Sets the rule of this CreateL7ruleRequestBody.
-
 
         :param rule: The rule of this CreateL7ruleRequestBody.
         :type rule: :class:`huaweicloudsdkelb.v2.CreateL7ruleReq`

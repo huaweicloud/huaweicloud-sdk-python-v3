@@ -17,7 +17,6 @@ class CreatePropertyRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -30,7 +29,9 @@ class CreatePropertyRequestBody:
         'step': 'str',
         'max_length': 'int',
         'unit': 'str',
-        'enum_list': 'str'
+        'enum_list': 'str',
+        'enum_dict': 'PropertyDataEnum',
+        'method': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,12 @@ class CreatePropertyRequestBody:
         'step': 'step',
         'max_length': 'max_length',
         'unit': 'unit',
-        'enum_list': 'enum_list'
+        'enum_list': 'enum_list',
+        'enum_dict': 'enum_dict',
+        'method': 'method'
     }
 
-    def __init__(self, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None):
+    def __init__(self, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None, enum_dict=None, method=None):
         """CreatePropertyRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,6 +74,10 @@ class CreatePropertyRequestBody:
         :type unit: str
         :param enum_list: string的枚举值数组，使用逗号分隔
         :type enum_list: str
+        :param enum_dict: 
+        :type enum_dict: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        :param method: 访问模式（兼容20.0，R属性可读，W属性可写，E属性可执行）
+        :type method: str
         """
         
         
@@ -85,6 +92,8 @@ class CreatePropertyRequestBody:
         self._max_length = None
         self._unit = None
         self._enum_list = None
+        self._enum_dict = None
+        self._method = None
         self.discriminator = None
 
         self.property_name = property_name
@@ -104,6 +113,10 @@ class CreatePropertyRequestBody:
             self.unit = unit
         if enum_list is not None:
             self.enum_list = enum_list
+        if enum_dict is not None:
+            self.enum_dict = enum_dict
+        if method is not None:
+            self.method = method
 
     @property
     def property_name(self):
@@ -324,6 +337,46 @@ class CreatePropertyRequestBody:
         :type enum_list: str
         """
         self._enum_list = enum_list
+
+    @property
+    def enum_dict(self):
+        """Gets the enum_dict of this CreatePropertyRequestBody.
+
+        :return: The enum_dict of this CreatePropertyRequestBody.
+        :rtype: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        """
+        return self._enum_dict
+
+    @enum_dict.setter
+    def enum_dict(self, enum_dict):
+        """Sets the enum_dict of this CreatePropertyRequestBody.
+
+        :param enum_dict: The enum_dict of this CreatePropertyRequestBody.
+        :type enum_dict: :class:`huaweicloudsdkroma.v2.PropertyDataEnum`
+        """
+        self._enum_dict = enum_dict
+
+    @property
+    def method(self):
+        """Gets the method of this CreatePropertyRequestBody.
+
+        访问模式（兼容20.0，R属性可读，W属性可写，E属性可执行）
+
+        :return: The method of this CreatePropertyRequestBody.
+        :rtype: str
+        """
+        return self._method
+
+    @method.setter
+    def method(self, method):
+        """Sets the method of this CreatePropertyRequestBody.
+
+        访问模式（兼容20.0，R属性可读，W属性可写，E属性可执行）
+
+        :param method: The method of this CreatePropertyRequestBody.
+        :type method: str
+        """
+        self._method = method
 
     def to_dict(self):
         """Returns the model properties as a dict"""

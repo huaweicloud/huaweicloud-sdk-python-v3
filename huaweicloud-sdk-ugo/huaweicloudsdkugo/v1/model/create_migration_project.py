@@ -17,7 +17,6 @@ class CreateMigrationProject:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -111,7 +110,6 @@ class CreateMigrationProject:
     def target_db_info(self):
         """Gets the target_db_info of this CreateMigrationProject.
 
-
         :return: The target_db_info of this CreateMigrationProject.
         :rtype: :class:`huaweicloudsdkugo.v1.TargetDBInfo`
         """
@@ -120,7 +118,6 @@ class CreateMigrationProject:
     @target_db_info.setter
     def target_db_info(self, target_db_info):
         """Sets the target_db_info of this CreateMigrationProject.
-
 
         :param target_db_info: The target_db_info of this CreateMigrationProject.
         :type target_db_info: :class:`huaweicloudsdkugo.v1.TargetDBInfo`
@@ -131,7 +128,6 @@ class CreateMigrationProject:
     def open_gauss_config(self):
         """Gets the open_gauss_config of this CreateMigrationProject.
 
-
         :return: The open_gauss_config of this CreateMigrationProject.
         :rtype: :class:`huaweicloudsdkugo.v1.OpenGaussConfig`
         """
@@ -140,7 +136,6 @@ class CreateMigrationProject:
     @open_gauss_config.setter
     def open_gauss_config(self, open_gauss_config):
         """Sets the open_gauss_config of this CreateMigrationProject.
-
 
         :param open_gauss_config: The open_gauss_config of this CreateMigrationProject.
         :type open_gauss_config: :class:`huaweicloudsdkugo.v1.OpenGaussConfig`

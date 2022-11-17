@@ -17,7 +17,6 @@ class AddUserDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -446,7 +445,6 @@ class AddUserDTO:
     def function(self):
         """Gets the function of this AddUserDTO.
 
-
         :return: The function of this AddUserDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
         """
@@ -455,7 +453,6 @@ class AddUserDTO:
     @function.setter
     def function(self, function):
         """Sets the function of this AddUserDTO.
-
 
         :param function: The function of this AddUserDTO.
         :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`

@@ -17,7 +17,6 @@ class MigrateAzRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class MigrateAzRequest:
     def body(self):
         """Gets the body of this MigrateAzRequest.
 
-
         :return: The body of this MigrateAzRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.MigrateAzRequestBody`
         """
@@ -86,7 +84,6 @@ class MigrateAzRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this MigrateAzRequest.
-
 
         :param body: The body of this MigrateAzRequest.
         :type body: :class:`huaweicloudsdkdds.v3.MigrateAzRequestBody`

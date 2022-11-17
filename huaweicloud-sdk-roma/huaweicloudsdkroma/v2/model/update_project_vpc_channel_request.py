@@ -17,7 +17,6 @@ class UpdateProjectVpcChannelRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UpdateProjectVpcChannelRequest:
     def body(self):
         """Gets the body of this UpdateProjectVpcChannelRequest.
 
-
         :return: The body of this UpdateProjectVpcChannelRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ProjectVpcCreate`
         """
@@ -58,7 +56,6 @@ class UpdateProjectVpcChannelRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateProjectVpcChannelRequest.
-
 
         :param body: The body of this UpdateProjectVpcChannelRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ProjectVpcCreate`

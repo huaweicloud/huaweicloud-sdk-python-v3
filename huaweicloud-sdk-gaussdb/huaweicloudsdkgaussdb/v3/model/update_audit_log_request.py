@@ -17,7 +17,6 @@ class UpdateAuditLogRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateAuditLogRequest:
     def body(self):
         """Gets the body of this UpdateAuditLogRequest.
 
-
         :return: The body of this UpdateAuditLogRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.OperateAuditLogRequestV3Body`
         """
@@ -115,7 +113,6 @@ class UpdateAuditLogRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateAuditLogRequest.
-
 
         :param body: The body of this UpdateAuditLogRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.OperateAuditLogRequestV3Body`

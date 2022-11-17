@@ -17,7 +17,6 @@ class RunCheckResultResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class RunCheckResultResponse(SdkResponse):
     def result(self):
         """Gets the result of this RunCheckResultResponse.
 
-
         :return: The result of this RunCheckResultResponse.
         :rtype: :class:`huaweicloudsdkmoderation.v2.CheckResultResultBody`
         """
@@ -58,7 +56,6 @@ class RunCheckResultResponse(SdkResponse):
     @result.setter
     def result(self, result):
         """Sets the result of this RunCheckResultResponse.
-
 
         :param result: The result of this RunCheckResultResponse.
         :type result: :class:`huaweicloudsdkmoderation.v2.CheckResultResultBody`

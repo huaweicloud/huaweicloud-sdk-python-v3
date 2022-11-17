@@ -17,7 +17,6 @@ class UpdateEnterpriseRouterResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class UpdateEnterpriseRouterResponse(SdkResponse):
     def instance(self):
         """Gets the instance of this UpdateEnterpriseRouterResponse.
 
-
         :return: The instance of this UpdateEnterpriseRouterResponse.
         :rtype: :class:`huaweicloudsdker.v3.EnterpriseRouter`
         """
@@ -65,7 +63,6 @@ class UpdateEnterpriseRouterResponse(SdkResponse):
     @instance.setter
     def instance(self, instance):
         """Sets the instance of this UpdateEnterpriseRouterResponse.
-
 
         :param instance: The instance of this UpdateEnterpriseRouterResponse.
         :type instance: :class:`huaweicloudsdker.v3.EnterpriseRouter`

@@ -17,7 +17,6 @@ class DetectExtentionByNameAndIdRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class DetectExtentionByNameAndIdRequest:
     def body(self):
         """Gets the body of this DetectExtentionByNameAndIdRequest.
 
-
         :return: The body of this DetectExtentionByNameAndIdRequest.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdRequestBody`
         """
@@ -58,7 +56,6 @@ class DetectExtentionByNameAndIdRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DetectExtentionByNameAndIdRequest.
-
 
         :param body: The body of this DetectExtentionByNameAndIdRequest.
         :type body: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdRequestBody`

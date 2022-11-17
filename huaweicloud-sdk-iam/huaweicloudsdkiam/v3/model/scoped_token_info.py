@@ -17,7 +17,6 @@ class ScopedTokenInfo:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -158,7 +157,6 @@ class ScopedTokenInfo:
     def user(self):
         """Gets the user of this ScopedTokenInfo.
 
-
         :return: The user of this ScopedTokenInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.FederationUserBody`
         """
@@ -167,7 +165,6 @@ class ScopedTokenInfo:
     @user.setter
     def user(self, user):
         """Sets the user of this ScopedTokenInfo.
-
 
         :param user: The user of this ScopedTokenInfo.
         :type user: :class:`huaweicloudsdkiam.v3.FederationUserBody`
@@ -178,7 +175,6 @@ class ScopedTokenInfo:
     def domain(self):
         """Gets the domain of this ScopedTokenInfo.
 
-
         :return: The domain of this ScopedTokenInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.DomainInfo`
         """
@@ -187,7 +183,6 @@ class ScopedTokenInfo:
     @domain.setter
     def domain(self, domain):
         """Sets the domain of this ScopedTokenInfo.
-
 
         :param domain: The domain of this ScopedTokenInfo.
         :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`
@@ -198,7 +193,6 @@ class ScopedTokenInfo:
     def project(self):
         """Gets the project of this ScopedTokenInfo.
 
-
         :return: The project of this ScopedTokenInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.ProjectInfo`
         """
@@ -207,7 +201,6 @@ class ScopedTokenInfo:
     @project.setter
     def project(self, project):
         """Sets the project of this ScopedTokenInfo.
-
 
         :param project: The project of this ScopedTokenInfo.
         :type project: :class:`huaweicloudsdkiam.v3.ProjectInfo`

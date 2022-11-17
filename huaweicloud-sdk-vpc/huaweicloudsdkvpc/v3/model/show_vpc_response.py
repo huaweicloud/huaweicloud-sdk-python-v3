@@ -17,7 +17,6 @@ class ShowVpcResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class ShowVpcResponse(SdkResponse):
     def vpc(self):
         """Gets the vpc of this ShowVpcResponse.
 
-
         :return: The vpc of this ShowVpcResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.Vpc`
         """
@@ -87,7 +85,6 @@ class ShowVpcResponse(SdkResponse):
     @vpc.setter
     def vpc(self, vpc):
         """Sets the vpc of this ShowVpcResponse.
-
 
         :param vpc: The vpc of this ShowVpcResponse.
         :type vpc: :class:`huaweicloudsdkvpc.v3.Vpc`

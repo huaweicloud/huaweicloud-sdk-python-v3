@@ -17,7 +17,6 @@ class ShowAttachmentResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class ShowAttachmentResponse(SdkResponse):
     def attachment(self):
         """Gets the attachment of this ShowAttachmentResponse.
 
-
         :return: The attachment of this ShowAttachmentResponse.
         :rtype: :class:`huaweicloudsdker.v3.AttachmentResponse`
         """
@@ -65,7 +63,6 @@ class ShowAttachmentResponse(SdkResponse):
     @attachment.setter
     def attachment(self, attachment):
         """Sets the attachment of this ShowAttachmentResponse.
-
 
         :param attachment: The attachment of this ShowAttachmentResponse.
         :type attachment: :class:`huaweicloudsdker.v3.AttachmentResponse`

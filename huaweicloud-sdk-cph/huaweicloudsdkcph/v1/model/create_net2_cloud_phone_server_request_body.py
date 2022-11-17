@@ -17,7 +17,6 @@ class CreateNet2CloudPhoneServerRequestBody:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -277,7 +276,6 @@ class CreateNet2CloudPhoneServerRequestBody:
     def extend_param(self):
         """Gets the extend_param of this CreateNet2CloudPhoneServerRequestBody.
 
-
         :return: The extend_param of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyExtendParam`
         """
@@ -286,7 +284,6 @@ class CreateNet2CloudPhoneServerRequestBody:
     @extend_param.setter
     def extend_param(self, extend_param):
         """Sets the extend_param of this CreateNet2CloudPhoneServerRequestBody.
-
 
         :param extend_param: The extend_param of this CreateNet2CloudPhoneServerRequestBody.
         :type extend_param: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyExtendParam`
@@ -341,7 +338,6 @@ class CreateNet2CloudPhoneServerRequestBody:
     def public_ip(self):
         """Gets the public_ip of this CreateNet2CloudPhoneServerRequestBody.
 
-
         :return: The public_ip of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIp`
         """
@@ -350,7 +346,6 @@ class CreateNet2CloudPhoneServerRequestBody:
     @public_ip.setter
     def public_ip(self, public_ip):
         """Sets the public_ip of this CreateNet2CloudPhoneServerRequestBody.
-
 
         :param public_ip: The public_ip of this CreateNet2CloudPhoneServerRequestBody.
         :type public_ip: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPublicIp`
@@ -361,7 +356,6 @@ class CreateNet2CloudPhoneServerRequestBody:
     def band_width(self):
         """Gets the band_width of this CreateNet2CloudPhoneServerRequestBody.
 
-
         :return: The band_width of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyBandWidth`
         """
@@ -370,7 +364,6 @@ class CreateNet2CloudPhoneServerRequestBody:
     @band_width.setter
     def band_width(self, band_width):
         """Sets the band_width of this CreateNet2CloudPhoneServerRequestBody.
-
 
         :param band_width: The band_width of this CreateNet2CloudPhoneServerRequestBody.
         :type band_width: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyBandWidth`

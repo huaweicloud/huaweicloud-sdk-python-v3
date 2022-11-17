@@ -17,7 +17,6 @@ class UploadMetaDataByUrl:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -350,7 +349,6 @@ class UploadMetaDataByUrl:
     def thumbnail(self):
         """Gets the thumbnail of this UploadMetaDataByUrl.
 
-
         :return: The thumbnail of this UploadMetaDataByUrl.
         :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
         """
@@ -359,7 +357,6 @@ class UploadMetaDataByUrl:
     @thumbnail.setter
     def thumbnail(self, thumbnail):
         """Sets the thumbnail of this UploadMetaDataByUrl.
-
 
         :param thumbnail: The thumbnail of this UploadMetaDataByUrl.
         :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -370,7 +367,6 @@ class UploadMetaDataByUrl:
     def review(self):
         """Gets the review of this UploadMetaDataByUrl.
 
-
         :return: The review of this UploadMetaDataByUrl.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
         """
@@ -379,7 +375,6 @@ class UploadMetaDataByUrl:
     @review.setter
     def review(self, review):
         """Sets the review of this UploadMetaDataByUrl.
-
 
         :param review: The review of this UploadMetaDataByUrl.
         :type review: :class:`huaweicloudsdkvod.v1.Review`

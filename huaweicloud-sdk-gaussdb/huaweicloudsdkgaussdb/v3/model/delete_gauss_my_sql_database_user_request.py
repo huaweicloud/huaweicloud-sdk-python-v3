@@ -17,7 +17,6 @@ class DeleteGaussMySqlDatabaseUserRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class DeleteGaussMySqlDatabaseUserRequest:
     def body(self):
         """Gets the body of this DeleteGaussMySqlDatabaseUserRequest.
 
-
         :return: The body of this DeleteGaussMySqlDatabaseUserRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabaseUserRequest`
         """
@@ -115,7 +113,6 @@ class DeleteGaussMySqlDatabaseUserRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this DeleteGaussMySqlDatabaseUserRequest.
-
 
         :param body: The body of this DeleteGaussMySqlDatabaseUserRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabaseUserRequest`

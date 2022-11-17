@@ -17,7 +17,6 @@ class UnfreezeDeviceResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class UnfreezeDeviceResponse(SdkResponse):
     def body(self):
         """Gets the body of this UnfreezeDeviceResponse.
 
-
         :return: The body of this UnfreezeDeviceResponse.
         :rtype: str
         """
@@ -58,7 +56,6 @@ class UnfreezeDeviceResponse(SdkResponse):
     @body.setter
     def body(self, body):
         """Sets the body of this UnfreezeDeviceResponse.
-
 
         :param body: The body of this UnfreezeDeviceResponse.
         :type body: str

@@ -17,7 +17,6 @@ class Tags:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -309,7 +308,6 @@ class Tags:
     def sorted(self):
         """Gets the sorted of this Tags.
 
-
         :return: The sorted of this Tags.
         :rtype: :class:`huaweicloudsdkief.v1.Sorted`
         """
@@ -318,7 +316,6 @@ class Tags:
     @sorted.setter
     def sorted(self, sorted):
         """Sets the sorted of this Tags.
-
 
         :param sorted: The sorted of this Tags.
         :type sorted: :class:`huaweicloudsdkief.v1.Sorted`

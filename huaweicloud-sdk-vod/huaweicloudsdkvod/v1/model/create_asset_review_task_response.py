@@ -17,7 +17,6 @@ class CreateAssetReviewTaskResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class CreateAssetReviewTaskResponse(SdkResponse):
     def review(self):
         """Gets the review of this CreateAssetReviewTaskResponse.
 
-
         :return: The review of this CreateAssetReviewTaskResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
         """
@@ -87,7 +85,6 @@ class CreateAssetReviewTaskResponse(SdkResponse):
     @review.setter
     def review(self, review):
         """Sets the review of this CreateAssetReviewTaskResponse.
-
 
         :param review: The review of this CreateAssetReviewTaskResponse.
         :type review: :class:`huaweicloudsdkvod.v1.Review`

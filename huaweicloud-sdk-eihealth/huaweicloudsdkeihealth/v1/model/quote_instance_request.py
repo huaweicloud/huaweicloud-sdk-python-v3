@@ -17,7 +17,6 @@ class QuoteInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class QuoteInstanceRequest:
     def body(self):
         """Gets the body of this QuoteInstanceRequest.
 
-
         :return: The body of this QuoteInstanceRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.QuoteDatabaseReq`
         """
@@ -86,7 +84,6 @@ class QuoteInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this QuoteInstanceRequest.
-
 
         :param body: The body of this QuoteInstanceRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.QuoteDatabaseReq`

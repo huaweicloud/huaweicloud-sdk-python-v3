@@ -17,7 +17,6 @@ class Clusters:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -78,7 +77,6 @@ class Clusters:
     def cluster(self):
         """Gets the cluster of this Clusters.
 
-
         :return: The cluster of this Clusters.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterCert`
         """
@@ -87,7 +85,6 @@ class Clusters:
     @cluster.setter
     def cluster(self, cluster):
         """Sets the cluster of this Clusters.
-
 
         :param cluster: The cluster of this Clusters.
         :type cluster: :class:`huaweicloudsdkcce.v3.ClusterCert`

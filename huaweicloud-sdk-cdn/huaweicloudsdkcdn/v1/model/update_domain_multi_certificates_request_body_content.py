@@ -17,7 +17,6 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -198,7 +197,6 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     def force_redirect_config(self):
         """Gets the force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
 
-
         :return: The force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
         :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
         """
@@ -207,7 +205,6 @@ class UpdateDomainMultiCertificatesRequestBodyContent:
     @force_redirect_config.setter
     def force_redirect_config(self, force_redirect_config):
         """Sets the force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
-
 
         :param force_redirect_config: The force_redirect_config of this UpdateDomainMultiCertificatesRequestBodyContent.
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`

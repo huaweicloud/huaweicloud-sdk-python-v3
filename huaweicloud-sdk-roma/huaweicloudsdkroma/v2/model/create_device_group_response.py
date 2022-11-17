@@ -17,7 +17,6 @@ class CreateDeviceGroupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -30,8 +29,7 @@ class CreateDeviceGroupResponse(SdkResponse):
         'created_user': 'CreatedUser',
         'last_updated_user': 'LastUpdatedUser',
         'created_datetime': 'str',
-        'last_updated_datetime': 'str',
-        'app_name': 'str'
+        'last_updated_datetime': 'str'
     }
 
     attribute_map = {
@@ -44,11 +42,10 @@ class CreateDeviceGroupResponse(SdkResponse):
         'created_user': 'created_user',
         'last_updated_user': 'last_updated_user',
         'created_datetime': 'created_datetime',
-        'last_updated_datetime': 'last_updated_datetime',
-        'app_name': 'app_name'
+        'last_updated_datetime': 'last_updated_datetime'
     }
 
-    def __init__(self, permissions=None, parent_id=None, id=None, name=None, description=None, app_id=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None, app_name=None):
+    def __init__(self, permissions=None, parent_id=None, id=None, name=None, description=None, app_id=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None):
         """CreateDeviceGroupResponse
 
         The model defined in huaweicloud sdk
@@ -73,8 +70,6 @@ class CreateDeviceGroupResponse(SdkResponse):
         :type created_datetime: str
         :param last_updated_datetime: 最后修改时间
         :type last_updated_datetime: str
-        :param app_name: 应用名称
-        :type app_name: str
         """
         
         super(CreateDeviceGroupResponse, self).__init__()
@@ -89,7 +84,6 @@ class CreateDeviceGroupResponse(SdkResponse):
         self._last_updated_user = None
         self._created_datetime = None
         self._last_updated_datetime = None
-        self._app_name = None
         self.discriminator = None
 
         if permissions is not None:
@@ -112,8 +106,6 @@ class CreateDeviceGroupResponse(SdkResponse):
             self.created_datetime = created_datetime
         if last_updated_datetime is not None:
             self.last_updated_datetime = last_updated_datetime
-        if app_name is not None:
-            self.app_name = app_name
 
     @property
     def permissions(self):
@@ -251,7 +243,6 @@ class CreateDeviceGroupResponse(SdkResponse):
     def created_user(self):
         """Gets the created_user of this CreateDeviceGroupResponse.
 
-
         :return: The created_user of this CreateDeviceGroupResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
         """
@@ -260,7 +251,6 @@ class CreateDeviceGroupResponse(SdkResponse):
     @created_user.setter
     def created_user(self, created_user):
         """Sets the created_user of this CreateDeviceGroupResponse.
-
 
         :param created_user: The created_user of this CreateDeviceGroupResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -271,7 +261,6 @@ class CreateDeviceGroupResponse(SdkResponse):
     def last_updated_user(self):
         """Gets the last_updated_user of this CreateDeviceGroupResponse.
 
-
         :return: The last_updated_user of this CreateDeviceGroupResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
         """
@@ -280,7 +269,6 @@ class CreateDeviceGroupResponse(SdkResponse):
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
         """Sets the last_updated_user of this CreateDeviceGroupResponse.
-
 
         :param last_updated_user: The last_updated_user of this CreateDeviceGroupResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -330,28 +318,6 @@ class CreateDeviceGroupResponse(SdkResponse):
         :type last_updated_datetime: str
         """
         self._last_updated_datetime = last_updated_datetime
-
-    @property
-    def app_name(self):
-        """Gets the app_name of this CreateDeviceGroupResponse.
-
-        应用名称
-
-        :return: The app_name of this CreateDeviceGroupResponse.
-        :rtype: str
-        """
-        return self._app_name
-
-    @app_name.setter
-    def app_name(self, app_name):
-        """Sets the app_name of this CreateDeviceGroupResponse.
-
-        应用名称
-
-        :param app_name: The app_name of this CreateDeviceGroupResponse.
-        :type app_name: str
-        """
-        self._app_name = app_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

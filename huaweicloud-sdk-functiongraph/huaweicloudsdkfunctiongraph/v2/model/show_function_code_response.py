@@ -17,7 +17,6 @@ class ShowFunctionCodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -360,7 +359,6 @@ class ShowFunctionCodeResponse(SdkResponse):
     def func_code(self):
         """Gets the func_code of this ShowFunctionCodeResponse.
 
-
         :return: The func_code of this ShowFunctionCodeResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
         """
@@ -369,7 +367,6 @@ class ShowFunctionCodeResponse(SdkResponse):
     @func_code.setter
     def func_code(self, func_code):
         """Sets the func_code of this ShowFunctionCodeResponse.
-
 
         :param func_code: The func_code of this ShowFunctionCodeResponse.
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
@@ -402,7 +399,6 @@ class ShowFunctionCodeResponse(SdkResponse):
     def strategy_config(self):
         """Gets the strategy_config of this ShowFunctionCodeResponse.
 
-
         :return: The strategy_config of this ShowFunctionCodeResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
@@ -411,7 +407,6 @@ class ShowFunctionCodeResponse(SdkResponse):
     @strategy_config.setter
     def strategy_config(self, strategy_config):
         """Sets the strategy_config of this ShowFunctionCodeResponse.
-
 
         :param strategy_config: The strategy_config of this ShowFunctionCodeResponse.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`

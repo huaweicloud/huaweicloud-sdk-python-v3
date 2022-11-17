@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class GaAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateAccelerator
         :type request: :class:`huaweicloudsdkga.v1.CreateAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateAcceleratorResponse`
@@ -68,6 +63,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -100,6 +97,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateAcceleratorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -114,6 +112,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteAccelerator
         :type request: :class:`huaweicloudsdkga.v1.DeleteAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteAcceleratorResponse`
@@ -126,6 +125,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +159,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteAcceleratorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -172,6 +174,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListAccelerators
         :type request: :class:`huaweicloudsdkga.v1.ListAcceleratorsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListAcceleratorsResponse`
@@ -184,6 +187,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -228,6 +233,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAcceleratorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +248,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowAccelerator
         :type request: :class:`huaweicloudsdkga.v1.ShowAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowAcceleratorResponse`
@@ -254,6 +261,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -286,6 +295,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowAcceleratorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +310,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateAccelerator
         :type request: :class:`huaweicloudsdkga.v1.UpdateAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateAcceleratorResponse`
@@ -312,6 +323,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -346,6 +359,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateAcceleratorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -360,6 +374,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEndpoint
         :type request: :class:`huaweicloudsdkga.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointResponse`
@@ -372,6 +387,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -406,6 +423,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -420,6 +438,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEndpoint
         :type request: :class:`huaweicloudsdkga.v1.DeleteEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteEndpointResponse`
@@ -432,6 +451,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -466,6 +487,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -480,6 +502,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEndpoints
         :type request: :class:`huaweicloudsdkga.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListEndpointsResponse`
@@ -492,6 +515,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -534,6 +559,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEndpointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -548,6 +574,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEndpoint
         :type request: :class:`huaweicloudsdkga.v1.ShowEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowEndpointResponse`
@@ -560,6 +587,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -594,6 +623,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -608,6 +638,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpoint
         :type request: :class:`huaweicloudsdkga.v1.UpdateEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateEndpointResponse`
@@ -620,6 +651,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -656,6 +689,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -670,6 +704,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateEndpointGroup
         :type request: :class:`huaweicloudsdkga.v1.CreateEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointGroupResponse`
@@ -682,6 +717,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -714,6 +751,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEndpointGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -728,6 +766,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteEndpointGroup
         :type request: :class:`huaweicloudsdkga.v1.DeleteEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteEndpointGroupResponse`
@@ -740,6 +779,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -772,6 +813,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEndpointGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -786,6 +828,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListEndpointGroups
         :type request: :class:`huaweicloudsdkga.v1.ListEndpointGroupsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListEndpointGroupsResponse`
@@ -798,6 +841,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -842,6 +887,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEndpointGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -856,6 +902,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowEndpointGroup
         :type request: :class:`huaweicloudsdkga.v1.ShowEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowEndpointGroupResponse`
@@ -868,6 +915,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -900,6 +949,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEndpointGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -914,6 +964,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateEndpointGroup
         :type request: :class:`huaweicloudsdkga.v1.UpdateEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateEndpointGroupResponse`
@@ -926,6 +977,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -960,6 +1013,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateEndpointGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -974,6 +1028,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateHealthCheck
         :type request: :class:`huaweicloudsdkga.v1.CreateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateHealthCheckResponse`
@@ -986,6 +1041,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1018,6 +1075,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateHealthCheckResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1032,6 +1090,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteHealthCheck
         :type request: :class:`huaweicloudsdkga.v1.DeleteHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteHealthCheckResponse`
@@ -1044,6 +1103,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1076,6 +1137,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteHealthCheckResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1090,6 +1152,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListHealthChecks
         :type request: :class:`huaweicloudsdkga.v1.ListHealthChecksRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListHealthChecksResponse`
@@ -1102,6 +1165,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1144,6 +1209,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListHealthChecksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1158,6 +1224,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowHealthCheck
         :type request: :class:`huaweicloudsdkga.v1.ShowHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowHealthCheckResponse`
@@ -1170,6 +1237,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1202,6 +1271,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowHealthCheckResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1216,6 +1286,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateHealthCheck
         :type request: :class:`huaweicloudsdkga.v1.UpdateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateHealthCheckResponse`
@@ -1228,6 +1299,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1262,6 +1335,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHealthCheckResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1276,6 +1350,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateListener
         :type request: :class:`huaweicloudsdkga.v1.CreateListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateListenerResponse`
@@ -1288,6 +1363,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1320,6 +1397,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1334,6 +1412,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteListener
         :type request: :class:`huaweicloudsdkga.v1.DeleteListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteListenerResponse`
@@ -1346,6 +1425,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1378,6 +1459,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1392,6 +1474,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListListeners
         :type request: :class:`huaweicloudsdkga.v1.ListListenersRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListListenersResponse`
@@ -1404,6 +1487,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1448,6 +1533,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListListenersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1462,6 +1548,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ShowListener
         :type request: :class:`huaweicloudsdkga.v1.ShowListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowListenerResponse`
@@ -1474,6 +1561,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1506,6 +1595,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1520,6 +1610,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateListener
         :type request: :class:`huaweicloudsdkga.v1.UpdateListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateListenerResponse`
@@ -1532,6 +1623,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1566,6 +1659,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateListenerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1580,6 +1674,7 @@ class GaAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListRegions
         :type request: :class:`huaweicloudsdkga.v1.ListRegionsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListRegionsResponse`
@@ -1592,6 +1687,8 @@ class GaAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1622,6 +1719,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1629,7 +1727,7 @@ class GaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -1640,9 +1738,10 @@ class GaAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -1659,6 +1758,7 @@ class GaAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

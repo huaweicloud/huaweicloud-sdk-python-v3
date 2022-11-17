@@ -17,7 +17,6 @@ class CreateConfTokenResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -63,7 +62,6 @@ class CreateConfTokenResponse(SdkResponse):
     def data(self):
         """Gets the data of this CreateConfTokenResponse.
 
-
         :return: The data of this CreateConfTokenResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.TokenInfo`
         """
@@ -72,7 +70,6 @@ class CreateConfTokenResponse(SdkResponse):
     @data.setter
     def data(self, data):
         """Sets the data of this CreateConfTokenResponse.
-
 
         :param data: The data of this CreateConfTokenResponse.
         :type data: :class:`huaweicloudsdkmeeting.v1.TokenInfo`

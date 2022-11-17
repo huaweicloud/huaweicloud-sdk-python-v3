@@ -17,7 +17,6 @@ class ShowExtensionDetailRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowExtensionDetailRequest:
     def body(self):
         """Gets the body of this ShowExtensionDetailRequest.
 
-
         :return: The body of this ShowExtensionDetailRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionSearchUserInputParamCustomizeForDetail`
         """
@@ -58,7 +56,6 @@ class ShowExtensionDetailRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ShowExtensionDetailRequest.
-
 
         :param body: The body of this ShowExtensionDetailRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.ExtensionSearchUserInputParamCustomizeForDetail`

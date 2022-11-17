@@ -17,7 +17,6 @@ class ShowTokenVerificationResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -92,7 +91,6 @@ class ShowTokenVerificationResponse(SdkResponse):
     def project(self):
         """Gets the project of this ShowTokenVerificationResponse.
 
-
         :return: The project of this ShowTokenVerificationResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ProjectDto`
         """
@@ -101,7 +99,6 @@ class ShowTokenVerificationResponse(SdkResponse):
     @project.setter
     def project(self, project):
         """Sets the project of this ShowTokenVerificationResponse.
-
 
         :param project: The project of this ShowTokenVerificationResponse.
         :type project: :class:`huaweicloudsdkeihealth.v1.ProjectDto`
@@ -134,7 +131,6 @@ class ShowTokenVerificationResponse(SdkResponse):
     def user(self):
         """Gets the user of this ShowTokenVerificationResponse.
 
-
         :return: The user of this ShowTokenVerificationResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UserDto`
         """
@@ -143,7 +139,6 @@ class ShowTokenVerificationResponse(SdkResponse):
     @user.setter
     def user(self, user):
         """Sets the user of this ShowTokenVerificationResponse.
-
 
         :param user: The user of this ShowTokenVerificationResponse.
         :type user: :class:`huaweicloudsdkeihealth.v1.UserDto`

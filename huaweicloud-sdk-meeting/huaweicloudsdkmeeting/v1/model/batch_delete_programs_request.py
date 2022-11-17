@@ -17,7 +17,6 @@ class BatchDeleteProgramsRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class BatchDeleteProgramsRequest:
     def body(self):
         """Gets the body of this BatchDeleteProgramsRequest.
 
-
         :return: The body of this BatchDeleteProgramsRequest.
         :rtype: list[str]
         """
@@ -116,7 +114,6 @@ class BatchDeleteProgramsRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this BatchDeleteProgramsRequest.
-
 
         :param body: The body of this BatchDeleteProgramsRequest.
         :type body: list[str]

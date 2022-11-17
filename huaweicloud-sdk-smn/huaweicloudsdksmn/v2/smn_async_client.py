@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class SmnAsyncClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -56,6 +50,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for AddSubscription
         :type request: :class:`huaweicloudsdksmn.v2.AddSubscriptionRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.AddSubscriptionResponse`
@@ -68,6 +63,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -102,6 +99,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AddSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -119,6 +117,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for BatchCreateOrDeleteResourceTags
         :type request: :class:`huaweicloudsdksmn.v2.BatchCreateOrDeleteResourceTagsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.BatchCreateOrDeleteResourceTagsResponse`
@@ -131,6 +130,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -167,6 +168,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchCreateOrDeleteResourceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -181,6 +183,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CancelSubscription
         :type request: :class:`huaweicloudsdksmn.v2.CancelSubscriptionRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CancelSubscriptionResponse`
@@ -193,6 +196,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -225,6 +230,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelSubscriptionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -240,6 +246,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateMessageTemplate
         :type request: :class:`huaweicloudsdksmn.v2.CreateMessageTemplateRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateMessageTemplateResponse`
@@ -252,6 +259,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -284,6 +293,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateMessageTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -298,6 +308,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateResourceTag
         :type request: :class:`huaweicloudsdksmn.v2.CreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateResourceTagResponse`
@@ -310,6 +321,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -346,6 +359,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateResourceTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -361,6 +375,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateTopic
         :type request: :class:`huaweicloudsdksmn.v2.CreateTopicRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateTopicResponse`
@@ -373,6 +388,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -405,6 +422,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -419,6 +437,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteMessageTemplate
         :type request: :class:`huaweicloudsdksmn.v2.DeleteMessageTemplateRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteMessageTemplateResponse`
@@ -431,6 +450,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -463,6 +484,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteMessageTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -477,6 +499,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteResourceTag
         :type request: :class:`huaweicloudsdksmn.v2.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteResourceTagResponse`
@@ -489,6 +512,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -525,6 +550,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResourceTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -539,6 +565,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTopic
         :type request: :class:`huaweicloudsdksmn.v2.DeleteTopicRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteTopicResponse`
@@ -551,6 +578,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -583,6 +612,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -597,6 +627,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTopicAttributeByName
         :type request: :class:`huaweicloudsdksmn.v2.DeleteTopicAttributeByNameRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteTopicAttributeByNameResponse`
@@ -609,6 +640,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -643,6 +676,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTopicAttributeByNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -657,6 +691,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteTopicAttributes
         :type request: :class:`huaweicloudsdksmn.v2.DeleteTopicAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteTopicAttributesResponse`
@@ -669,6 +704,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -701,6 +738,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTopicAttributesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -715,6 +753,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMessageTemplateDetails
         :type request: :class:`huaweicloudsdksmn.v2.ListMessageTemplateDetailsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListMessageTemplateDetailsResponse`
@@ -727,6 +766,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -759,6 +800,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMessageTemplateDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -773,6 +815,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListMessageTemplates
         :type request: :class:`huaweicloudsdksmn.v2.ListMessageTemplatesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListMessageTemplatesResponse`
@@ -785,6 +828,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -823,6 +868,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListMessageTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -837,6 +883,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListProjectTags
         :type request: :class:`huaweicloudsdksmn.v2.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListProjectTagsResponse`
@@ -849,6 +896,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -881,6 +930,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -895,6 +945,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResourceInstances
         :type request: :class:`huaweicloudsdksmn.v2.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListResourceInstancesResponse`
@@ -907,6 +958,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -941,6 +994,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -955,6 +1009,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListResourceTags
         :type request: :class:`huaweicloudsdksmn.v2.ListResourceTagsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListResourceTagsResponse`
@@ -967,6 +1022,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1001,6 +1058,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1015,6 +1073,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSubscriptions
         :type request: :class:`huaweicloudsdksmn.v2.ListSubscriptionsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListSubscriptionsResponse`
@@ -1027,6 +1086,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1067,6 +1128,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubscriptionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1081,6 +1143,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListSubscriptionsByTopic
         :type request: :class:`huaweicloudsdksmn.v2.ListSubscriptionsByTopicRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListSubscriptionsByTopicResponse`
@@ -1093,6 +1156,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1129,6 +1194,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListSubscriptionsByTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1143,6 +1209,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTopicAttributes
         :type request: :class:`huaweicloudsdksmn.v2.ListTopicAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListTopicAttributesResponse`
@@ -1155,6 +1222,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1189,6 +1258,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTopicAttributesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1203,6 +1273,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTopicDetails
         :type request: :class:`huaweicloudsdksmn.v2.ListTopicDetailsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListTopicDetailsResponse`
@@ -1215,6 +1286,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1247,6 +1320,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTopicDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1261,6 +1335,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListTopics
         :type request: :class:`huaweicloudsdksmn.v2.ListTopicsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListTopicsResponse`
@@ -1273,6 +1348,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1313,6 +1390,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTopicsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1327,6 +1405,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVersion
         :type request: :class:`huaweicloudsdksmn.v2.ListVersionRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListVersionResponse`
@@ -1339,6 +1418,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1371,6 +1452,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1385,6 +1467,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListVersions
         :type request: :class:`huaweicloudsdksmn.v2.ListVersionsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListVersionsResponse`
@@ -1397,6 +1480,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1427,6 +1512,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1450,6 +1536,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PublishMessage
         :type request: :class:`huaweicloudsdksmn.v2.PublishMessageRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.PublishMessageResponse`
@@ -1462,6 +1549,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1496,6 +1585,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PublishMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1510,6 +1600,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateMessageTemplate
         :type request: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateResponse`
@@ -1522,6 +1613,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1556,6 +1649,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateMessageTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1570,6 +1664,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTopic
         :type request: :class:`huaweicloudsdksmn.v2.UpdateTopicRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateTopicResponse`
@@ -1582,6 +1677,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1616,6 +1713,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTopicResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1630,6 +1728,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateTopicAttribute
         :type request: :class:`huaweicloudsdksmn.v2.UpdateTopicAttributeRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateTopicAttributeResponse`
@@ -1642,6 +1741,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1678,6 +1779,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTopicAttributeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1692,6 +1794,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApplication
         :type request: :class:`huaweicloudsdksmn.v2.CreateApplicationRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateApplicationResponse`
@@ -1704,6 +1807,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1736,6 +1841,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1750,6 +1856,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApplication
         :type request: :class:`huaweicloudsdksmn.v2.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteApplicationResponse`
@@ -1762,6 +1869,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1794,6 +1903,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1808,6 +1918,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApplicationAttributes
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesResponse`
@@ -1820,6 +1931,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1852,6 +1965,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApplicationAttributesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1866,6 +1980,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApplications
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationsResponse`
@@ -1878,6 +1993,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1916,6 +2033,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApplicationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1930,6 +2048,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for PublishAppMessage
         :type request: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.PublishAppMessageResponse`
@@ -1942,6 +2061,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1976,6 +2097,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='PublishAppMessageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1990,6 +2112,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateApplication
         :type request: :class:`huaweicloudsdksmn.v2.UpdateApplicationRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationResponse`
@@ -2002,6 +2125,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2036,6 +2161,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApplicationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2050,6 +2176,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for CreateApplicationEndpoint
         :type request: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointResponse`
@@ -2062,6 +2189,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2096,6 +2225,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateApplicationEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2110,6 +2240,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for DeleteApplicationEndpoint
         :type request: :class:`huaweicloudsdksmn.v2.DeleteApplicationEndpointRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteApplicationEndpointResponse`
@@ -2122,6 +2253,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2154,6 +2287,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteApplicationEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2168,6 +2302,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApplicationEndpointAttributes
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointAttributesResponse`
@@ -2180,6 +2315,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2212,6 +2349,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApplicationEndpointAttributesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2226,6 +2364,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for ListApplicationEndpoints
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointsResponse`
@@ -2238,6 +2377,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2280,6 +2421,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListApplicationEndpointsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2294,6 +2436,7 @@ class SmnAsyncClient(Client):
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
+
         :param request: Request instance for UpdateApplicationEndpoint
         :type request: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointResponse`
@@ -2306,6 +2449,8 @@ class SmnAsyncClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2340,6 +2485,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateApplicationEndpointResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2347,7 +2493,7 @@ class SmnAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -2358,9 +2504,10 @@ class SmnAsyncClient(Client):
         :param header_params: Header parameters to be
             placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -2377,6 +2524,7 @@ class SmnAsyncClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

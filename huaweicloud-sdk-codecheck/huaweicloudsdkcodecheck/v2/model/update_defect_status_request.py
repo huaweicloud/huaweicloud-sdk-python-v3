@@ -17,7 +17,6 @@ class UpdateDefectStatusRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class UpdateDefectStatusRequest:
     def body(self):
         """Gets the body of this UpdateDefectStatusRequest.
 
-
         :return: The body of this UpdateDefectStatusRequest.
         :rtype: :class:`huaweicloudsdkcodecheck.v2.UpdateDefectRequestBody`
         """
@@ -86,7 +84,6 @@ class UpdateDefectStatusRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateDefectStatusRequest.
-
 
         :param body: The body of this UpdateDefectStatusRequest.
         :type body: :class:`huaweicloudsdkcodecheck.v2.UpdateDefectRequestBody`

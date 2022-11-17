@@ -17,7 +17,6 @@ class ShowResultsResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -107,7 +106,6 @@ class ShowResultsResponse(SdkResponse):
     def statistics(self):
         """Gets the statistics of this ShowResultsResponse.
 
-
         :return: The statistics of this ShowResultsResponse.
         :rtype: :class:`huaweicloudsdkvss.v3.VulnsLevel`
         """
@@ -116,7 +114,6 @@ class ShowResultsResponse(SdkResponse):
     @statistics.setter
     def statistics(self, statistics):
         """Sets the statistics of this ShowResultsResponse.
-
 
         :param statistics: The statistics of this ShowResultsResponse.
         :type statistics: :class:`huaweicloudsdkvss.v3.VulnsLevel`

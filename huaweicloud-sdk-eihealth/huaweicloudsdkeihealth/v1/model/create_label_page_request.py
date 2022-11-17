@@ -17,7 +17,6 @@ class CreateLabelPageRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class CreateLabelPageRequest:
     def body(self):
         """Gets the body of this CreateLabelPageRequest.
 
-
         :return: The body of this CreateLabelPageRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageReq`
         """
@@ -86,7 +84,6 @@ class CreateLabelPageRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateLabelPageRequest.
-
 
         :param body: The body of this CreateLabelPageRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageReq`

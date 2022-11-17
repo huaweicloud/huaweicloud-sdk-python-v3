@@ -17,7 +17,6 @@ class ListWorkspacesResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -42,7 +41,8 @@ class ListWorkspacesResponse(SdkResponse):
         'job_id': 'str',
         'fail_code': 'int',
         'fail_reason': 'str',
-        'enterprise_id': 'str'
+        'enterprise_id': 'str',
+        'is_send_email': 'bool'
     }
 
     attribute_map = {
@@ -67,10 +67,11 @@ class ListWorkspacesResponse(SdkResponse):
         'job_id': 'job_id',
         'fail_code': 'fail_code',
         'fail_reason': 'fail_reason',
-        'enterprise_id': 'enterprise_id'
+        'enterprise_id': 'enterprise_id',
+        'is_send_email': 'is_send_email'
     }
 
-    def __init__(self, id=None, ad_domains=None, vpc_id=None, vpc_name=None, access_mode=None, dedicated_subnets=None, dedicated_access_address=None, internet_access_address=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None):
+    def __init__(self, id=None, ad_domains=None, vpc_id=None, vpc_name=None, access_mode=None, dedicated_subnets=None, dedicated_access_address=None, internet_access_address=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, is_send_email=None):
         """ListWorkspacesResponse
 
         The model defined in huaweicloud sdk
@@ -119,6 +120,8 @@ class ListWorkspacesResponse(SdkResponse):
         :type fail_reason: str
         :param enterprise_id: 企业ID。
         :type enterprise_id: str
+        :param is_send_email: 桌面退订是否发送邮件通知。
+        :type is_send_email: bool
         """
         
         super(ListWorkspacesResponse, self).__init__()
@@ -145,6 +148,7 @@ class ListWorkspacesResponse(SdkResponse):
         self._fail_code = None
         self._fail_reason = None
         self._enterprise_id = None
+        self._is_send_email = None
         self.discriminator = None
 
         if id is not None:
@@ -191,6 +195,8 @@ class ListWorkspacesResponse(SdkResponse):
             self.fail_reason = fail_reason
         if enterprise_id is not None:
             self.enterprise_id = enterprise_id
+        if is_send_email is not None:
+            self.is_send_email = is_send_email
 
     @property
     def id(self):
@@ -218,7 +224,6 @@ class ListWorkspacesResponse(SdkResponse):
     def ad_domains(self):
         """Gets the ad_domains of this ListWorkspacesResponse.
 
-
         :return: The ad_domains of this ListWorkspacesResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AdInfo`
         """
@@ -227,7 +232,6 @@ class ListWorkspacesResponse(SdkResponse):
     @ad_domains.setter
     def ad_domains(self, ad_domains):
         """Sets the ad_domains of this ListWorkspacesResponse.
-
 
         :param ad_domains: The ad_domains of this ListWorkspacesResponse.
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdInfo`
@@ -480,7 +484,6 @@ class ListWorkspacesResponse(SdkResponse):
     def infrastructure_security_group(self):
         """Gets the infrastructure_security_group of this ListWorkspacesResponse.
 
-
         :return: The infrastructure_security_group of this ListWorkspacesResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
         """
@@ -489,7 +492,6 @@ class ListWorkspacesResponse(SdkResponse):
     @infrastructure_security_group.setter
     def infrastructure_security_group(self, infrastructure_security_group):
         """Sets the infrastructure_security_group of this ListWorkspacesResponse.
-
 
         :param infrastructure_security_group: The infrastructure_security_group of this ListWorkspacesResponse.
         :type infrastructure_security_group: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
@@ -500,7 +502,6 @@ class ListWorkspacesResponse(SdkResponse):
     def desktop_security_group(self):
         """Gets the desktop_security_group of this ListWorkspacesResponse.
 
-
         :return: The desktop_security_group of this ListWorkspacesResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
         """
@@ -509,7 +510,6 @@ class ListWorkspacesResponse(SdkResponse):
     @desktop_security_group.setter
     def desktop_security_group(self, desktop_security_group):
         """Sets the desktop_security_group of this ListWorkspacesResponse.
-
 
         :param desktop_security_group: The desktop_security_group of this ListWorkspacesResponse.
         :type desktop_security_group: :class:`huaweicloudsdkworkspace.v2.SecurityGroup`
@@ -669,6 +669,28 @@ class ListWorkspacesResponse(SdkResponse):
         :type enterprise_id: str
         """
         self._enterprise_id = enterprise_id
+
+    @property
+    def is_send_email(self):
+        """Gets the is_send_email of this ListWorkspacesResponse.
+
+        桌面退订是否发送邮件通知。
+
+        :return: The is_send_email of this ListWorkspacesResponse.
+        :rtype: bool
+        """
+        return self._is_send_email
+
+    @is_send_email.setter
+    def is_send_email(self, is_send_email):
+        """Sets the is_send_email of this ListWorkspacesResponse.
+
+        桌面退订是否发送邮件通知。
+
+        :param is_send_email: The is_send_email of this ListWorkspacesResponse.
+        :type is_send_email: bool
+        """
+        self._is_send_email = is_send_email
 
     def to_dict(self):
         """Returns the model properties as a dict"""

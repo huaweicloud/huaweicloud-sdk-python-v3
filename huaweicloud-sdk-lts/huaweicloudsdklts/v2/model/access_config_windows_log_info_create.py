@@ -17,7 +17,6 @@ class AccessConfigWindowsLogInfoCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -82,7 +81,6 @@ class AccessConfigWindowsLogInfoCreate:
     def time_offset(self):
         """Gets the time_offset of this AccessConfigWindowsLogInfoCreate.
 
-
         :return: The time_offset of this AccessConfigWindowsLogInfoCreate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`
         """
@@ -91,7 +89,6 @@ class AccessConfigWindowsLogInfoCreate:
     @time_offset.setter
     def time_offset(self, time_offset):
         """Sets the time_offset of this AccessConfigWindowsLogInfoCreate.
-
 
         :param time_offset: The time_offset of this AccessConfigWindowsLogInfoCreate.
         :type time_offset: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`

@@ -17,7 +17,6 @@ class AuthProjectResult:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class AuthProjectResult:
     def links(self):
         """Gets the links of this AuthProjectResult.
 
-
         :return: The links of this AuthProjectResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
         """
@@ -143,7 +141,6 @@ class AuthProjectResult:
     @links.setter
     def links(self, links):
         """Sets the links of this AuthProjectResult.
-
 
         :param links: The links of this AuthProjectResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

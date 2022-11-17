@@ -17,7 +17,6 @@ class ShowProtectionGroupResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ShowProtectionGroupResponse(SdkResponse):
     def server_group(self):
         """Gets the server_group of this ShowProtectionGroupResponse.
 
-
         :return: The server_group of this ShowProtectionGroupResponse.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectionGroupParams`
         """
@@ -58,7 +56,6 @@ class ShowProtectionGroupResponse(SdkResponse):
     @server_group.setter
     def server_group(self, server_group):
         """Sets the server_group of this ShowProtectionGroupResponse.
-
 
         :param server_group: The server_group of this ShowProtectionGroupResponse.
         :type server_group: :class:`huaweicloudsdksdrs.v1.ShowProtectionGroupParams`

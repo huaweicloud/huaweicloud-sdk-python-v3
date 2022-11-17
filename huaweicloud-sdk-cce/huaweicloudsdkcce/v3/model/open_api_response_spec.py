@@ -17,7 +17,6 @@ class OpenAPIResponseSpec:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class OpenAPIResponseSpec:
     def spec(self):
         """Gets the spec of this OpenAPIResponseSpec.
 
-
         :return: The spec of this OpenAPIResponseSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.OpenAPIResponseSpecSpec`
         """
@@ -58,7 +56,6 @@ class OpenAPIResponseSpec:
     @spec.setter
     def spec(self, spec):
         """Sets the spec of this OpenAPIResponseSpec.
-
 
         :param spec: The spec of this OpenAPIResponseSpec.
         :type spec: :class:`huaweicloudsdkcce.v3.OpenAPIResponseSpecSpec`

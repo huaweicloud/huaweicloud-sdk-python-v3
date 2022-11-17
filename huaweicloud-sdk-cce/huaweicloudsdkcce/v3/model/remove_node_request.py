@@ -17,7 +17,6 @@ class RemoveNodeRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class RemoveNodeRequest:
     def body(self):
         """Gets the body of this RemoveNodeRequest.
 
-
         :return: The body of this RemoveNodeRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodesTask`
         """
@@ -86,7 +84,6 @@ class RemoveNodeRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this RemoveNodeRequest.
-
 
         :param body: The body of this RemoveNodeRequest.
         :type body: :class:`huaweicloudsdkcce.v3.RemoveNodesTask`

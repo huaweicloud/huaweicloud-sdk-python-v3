@@ -17,7 +17,6 @@ class CreateAssetByFileUploadResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -165,7 +164,6 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     def target(self):
         """Gets the target of this CreateAssetByFileUploadResponse.
 
-
         :return: The target of this CreateAssetByFileUploadResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.FileAddr`
         """
@@ -174,7 +172,6 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     @target.setter
     def target(self, target):
         """Sets the target of this CreateAssetByFileUploadResponse.
-
 
         :param target: The target of this CreateAssetByFileUploadResponse.
         :type target: :class:`huaweicloudsdkvod.v1.FileAddr`

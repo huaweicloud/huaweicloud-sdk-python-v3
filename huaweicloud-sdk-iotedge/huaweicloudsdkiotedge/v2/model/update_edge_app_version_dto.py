@@ -17,7 +17,6 @@ class UpdateEdgeAppVersionDTO:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -199,7 +198,6 @@ class UpdateEdgeAppVersionDTO:
     def container_settings(self):
         """Gets the container_settings of this UpdateEdgeAppVersionDTO.
 
-
         :return: The container_settings of this UpdateEdgeAppVersionDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         """
@@ -208,7 +206,6 @@ class UpdateEdgeAppVersionDTO:
     @container_settings.setter
     def container_settings(self, container_settings):
         """Sets the container_settings of this UpdateEdgeAppVersionDTO.
-
 
         :param container_settings: The container_settings of this UpdateEdgeAppVersionDTO.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
@@ -219,7 +216,6 @@ class UpdateEdgeAppVersionDTO:
     def liveness_probe(self):
         """Gets the liveness_probe of this UpdateEdgeAppVersionDTO.
 
-
         :return: The liveness_probe of this UpdateEdgeAppVersionDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
@@ -228,7 +224,6 @@ class UpdateEdgeAppVersionDTO:
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
         """Sets the liveness_probe of this UpdateEdgeAppVersionDTO.
-
 
         :param liveness_probe: The liveness_probe of this UpdateEdgeAppVersionDTO.
         :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
@@ -239,7 +234,6 @@ class UpdateEdgeAppVersionDTO:
     def readiness_probe(self):
         """Gets the readiness_probe of this UpdateEdgeAppVersionDTO.
 
-
         :return: The readiness_probe of this UpdateEdgeAppVersionDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
@@ -248,7 +242,6 @@ class UpdateEdgeAppVersionDTO:
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
         """Sets the readiness_probe of this UpdateEdgeAppVersionDTO.
-
 
         :param readiness_probe: The readiness_probe of this UpdateEdgeAppVersionDTO.
         :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`

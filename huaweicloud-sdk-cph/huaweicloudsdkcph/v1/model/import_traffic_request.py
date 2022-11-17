@@ -17,7 +17,6 @@ class ImportTrafficRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -49,7 +48,6 @@ class ImportTrafficRequest:
     def body(self):
         """Gets the body of this ImportTrafficRequest.
 
-
         :return: The body of this ImportTrafficRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.ImportTrafficRequestBody`
         """
@@ -58,7 +56,6 @@ class ImportTrafficRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this ImportTrafficRequest.
-
 
         :param body: The body of this ImportTrafficRequest.
         :type body: :class:`huaweicloudsdkcph.v1.ImportTrafficRequestBody`

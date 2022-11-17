@@ -17,7 +17,6 @@ class EnvironmentCreate:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -183,7 +182,6 @@ class EnvironmentCreate:
     def charge_mode(self):
         """Gets the charge_mode of this EnvironmentCreate.
 
-
         :return: The charge_mode of this EnvironmentCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
         """
@@ -192,7 +190,6 @@ class EnvironmentCreate:
     @charge_mode.setter
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this EnvironmentCreate.
-
 
         :param charge_mode: The charge_mode of this EnvironmentCreate.
         :type charge_mode: :class:`huaweicloudsdkservicestage.v2.ChargeMode`

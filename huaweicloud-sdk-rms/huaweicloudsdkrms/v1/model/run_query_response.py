@@ -17,7 +17,6 @@ class RunQueryResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -56,7 +55,6 @@ class RunQueryResponse(SdkResponse):
     def query_info(self):
         """Gets the query_info of this RunQueryResponse.
 
-
         :return: The query_info of this RunQueryResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.QueryInfo`
         """
@@ -65,7 +63,6 @@ class RunQueryResponse(SdkResponse):
     @query_info.setter
     def query_info(self, query_info):
         """Sets the query_info of this RunQueryResponse.
-
 
         :param query_info: The query_info of this RunQueryResponse.
         :type query_info: :class:`huaweicloudsdkrms.v1.QueryInfo`

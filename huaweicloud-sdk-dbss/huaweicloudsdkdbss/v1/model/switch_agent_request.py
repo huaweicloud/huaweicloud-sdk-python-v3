@@ -17,7 +17,6 @@ class SwitchAgentRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,6 @@ class SwitchAgentRequest:
     def body(self):
         """Gets the body of this SwitchAgentRequest.
 
-
         :return: The body of this SwitchAgentRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.AgentSwitchRequest`
         """
@@ -86,7 +84,6 @@ class SwitchAgentRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this SwitchAgentRequest.
-
 
         :param body: The body of this SwitchAgentRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.AgentSwitchRequest`

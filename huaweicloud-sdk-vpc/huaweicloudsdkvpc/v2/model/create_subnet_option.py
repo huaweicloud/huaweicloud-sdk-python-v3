@@ -17,7 +17,6 @@ class CreateSubnetOption:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -77,7 +76,7 @@ class CreateSubnetOption:
         :type dns_list: list[str]
         :param availability_zone: 功能说明：子网所在的可用分区标识 约束：系统存在的可用分区标识
         :type availability_zone: str
-        :param extra_dhcp_opts: 子网配置的NTP地址
+        :param extra_dhcp_opts: 子网配置的NTP地址或租约时间
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         """
         
@@ -364,7 +363,7 @@ class CreateSubnetOption:
     def extra_dhcp_opts(self):
         """Gets the extra_dhcp_opts of this CreateSubnetOption.
 
-        子网配置的NTP地址
+        子网配置的NTP地址或租约时间
 
         :return: The extra_dhcp_opts of this CreateSubnetOption.
         :rtype: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
@@ -375,7 +374,7 @@ class CreateSubnetOption:
     def extra_dhcp_opts(self, extra_dhcp_opts):
         """Sets the extra_dhcp_opts of this CreateSubnetOption.
 
-        子网配置的NTP地址
+        子网配置的NTP地址或租约时间
 
         :param extra_dhcp_opts: The extra_dhcp_opts of this CreateSubnetOption.
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]

@@ -17,7 +17,6 @@ class SearchVisionActiveCodeResponse(SdkResponse):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -136,7 +135,6 @@ class SearchVisionActiveCodeResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchVisionActiveCodeResponse.
 
-
         :return: The data of this SearchVisionActiveCodeResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryVisionActiveCodeResultDTO`]
         """
@@ -145,7 +143,6 @@ class SearchVisionActiveCodeResponse(SdkResponse):
     @data.setter
     def data(self, data):
         """Sets the data of this SearchVisionActiveCodeResponse.
-
 
         :param data: The data of this SearchVisionActiveCodeResponse.
         :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryVisionActiveCodeResultDTO`]

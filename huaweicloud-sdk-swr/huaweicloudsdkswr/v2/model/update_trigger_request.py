@@ -17,7 +17,6 @@ class UpdateTriggerRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class UpdateTriggerRequest:
     def body(self):
         """Gets the body of this UpdateTriggerRequest.
 
-
         :return: The body of this UpdateTriggerRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequestBody`
         """
@@ -142,7 +140,6 @@ class UpdateTriggerRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateTriggerRequest.
-
 
         :param body: The body of this UpdateTriggerRequest.
         :type body: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequestBody`

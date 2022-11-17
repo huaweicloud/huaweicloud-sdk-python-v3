@@ -17,7 +17,6 @@ class CreateResOnlineInstanceRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -133,7 +132,6 @@ class CreateResOnlineInstanceRequest:
     def body(self):
         """Gets the body of this CreateResOnlineInstanceRequest.
 
-
         :return: The body of this CreateResOnlineInstanceRequest.
         :rtype: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequestBody`
         """
@@ -142,7 +140,6 @@ class CreateResOnlineInstanceRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this CreateResOnlineInstanceRequest.
-
 
         :param body: The body of this CreateResOnlineInstanceRequest.
         :type body: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequestBody`

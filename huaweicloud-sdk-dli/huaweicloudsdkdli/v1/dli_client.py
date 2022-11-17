@@ -15,12 +15,6 @@ from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DliClient(Client):
-    """
-    :param configuration: .Configuration object for this client
-    :param pool_threads: The number of threads to use for async requests
-        to the API. More threads means more concurrent API requests.
-    """
-
     PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
     NATIVE_TYPES_MAPPING = {
         'int': int,
@@ -69,6 +63,8 @@ class DliClient(Client):
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
 
+        cname = None
+
         collection_formats = {}
 
         path_params = {}
@@ -100,6 +96,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFlinkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -126,6 +123,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -158,6 +157,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateGlobleValueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -184,6 +184,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -216,6 +218,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFlinkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -242,6 +245,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -274,6 +279,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteGlobalValueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -300,6 +306,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -340,6 +348,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlinkTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -366,6 +375,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -400,6 +411,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListGlobalValuesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -426,6 +438,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -460,6 +474,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFlinkTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -486,6 +501,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -520,6 +537,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGlobalValueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -546,6 +564,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -580,6 +600,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateConnectionQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -606,6 +627,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -640,6 +663,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='AssociateQueueToElasticResourcePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -666,6 +690,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -698,6 +724,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeFlinkJobStatusReportResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -727,6 +754,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -759,6 +788,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatasourceConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -785,6 +815,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -817,6 +849,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateElasticResourcePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -843,6 +876,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -875,6 +910,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateEnhancedConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -901,6 +937,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -933,6 +971,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFlinkJarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -959,6 +998,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -991,6 +1032,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateFlinkSqlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1017,6 +1059,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1049,6 +1093,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIefMessageChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1075,6 +1120,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1107,6 +1154,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateIefSystemEventsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1133,6 +1181,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1167,6 +1217,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateStreamGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1193,6 +1244,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1225,6 +1278,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteBatchFlinkJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1253,6 +1307,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1285,6 +1341,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatasourceConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1311,6 +1368,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1343,6 +1402,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteElasticResourcePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1369,6 +1429,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1401,6 +1463,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteEnhancedConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1427,6 +1490,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1459,6 +1524,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteFlinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1485,6 +1551,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1519,6 +1587,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DisassociateConnectionQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1545,6 +1614,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1577,6 +1648,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportFlinkJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1603,6 +1675,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1635,6 +1709,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportFlinkJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1661,6 +1736,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1693,6 +1770,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatasourceConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1719,6 +1797,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1757,6 +1837,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListElasticResourcePoolQueuesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1783,6 +1864,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1823,6 +1906,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListElasticResourcePoolsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1849,6 +1933,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1889,6 +1975,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListEnhancedConnectionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1915,6 +2002,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -1969,6 +2058,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListFlinkJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -1995,6 +2085,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2027,6 +2119,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterBucketResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2053,6 +2146,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2085,6 +2180,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunFlinkJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2111,6 +2207,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2143,6 +2241,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunIefJobActionCallBackResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2169,6 +2268,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2201,6 +2302,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDatasourceConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2227,6 +2329,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2259,6 +2363,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnhancedConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2285,6 +2390,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2317,6 +2424,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowEnhancedPrivilegeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2343,6 +2451,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2375,6 +2485,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFlinkExecuteGraphResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2401,6 +2512,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2433,6 +2546,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFlinkJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2459,6 +2573,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2491,6 +2607,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowFlinkMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2517,6 +2634,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2549,6 +2668,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='StopFlinkJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2575,6 +2695,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2609,6 +2731,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateElasticResourcePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2635,6 +2758,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2671,6 +2796,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateElasticResourcePoolQueueInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2697,6 +2823,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2731,6 +2859,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFlinkJarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2757,6 +2886,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2791,6 +2922,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateFlinkSqlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2817,6 +2949,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2851,6 +2985,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateHostMassageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2877,6 +3012,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2909,6 +3046,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDliAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2935,6 +3073,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -2965,6 +3105,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDliAgencyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -2991,6 +3132,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3025,6 +3168,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='BatchDeleteQueuePlansResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3051,6 +3195,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3083,6 +3229,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3111,6 +3258,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3143,6 +3292,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeAuthorizationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3169,6 +3319,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3205,6 +3357,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ChangeQueuePlanResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3231,6 +3384,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3265,6 +3420,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckConnectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3291,6 +3447,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3323,6 +3481,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CheckSqlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3349,6 +3508,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3381,6 +3542,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3407,6 +3569,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3439,6 +3603,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateDownloadJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3465,6 +3630,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3497,6 +3664,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3523,6 +3691,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3557,6 +3727,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateQueuePlanResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3583,6 +3754,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3617,6 +3790,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3643,6 +3817,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3679,6 +3855,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteDatabaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3707,6 +3884,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3739,6 +3918,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3765,6 +3945,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3799,6 +3981,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteQueuePlanResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3825,6 +4008,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3861,6 +4046,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3887,6 +4073,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3919,6 +4107,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -3945,6 +4134,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -3979,6 +4170,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ExportJobResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4005,6 +4197,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4037,6 +4231,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ImportDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4063,6 +4258,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4107,6 +4304,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListAllTablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4133,6 +4331,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4165,6 +4365,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabaseUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4191,6 +4392,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4231,6 +4434,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListDatabasesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4257,6 +4461,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4315,6 +4521,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4341,6 +4548,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4373,6 +4582,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQueuePlansResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4399,6 +4609,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4431,6 +4643,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQueueUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4457,6 +4670,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4495,6 +4710,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListQueuesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4521,6 +4737,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4557,6 +4775,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTablePrivilegesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4583,6 +4802,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4617,6 +4838,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListTableUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4643,6 +4865,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4675,6 +4899,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RegisterAuthorizedQueueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4703,6 +4928,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4735,6 +4962,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4761,6 +4989,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4795,6 +5025,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='RunQueueActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4821,6 +5052,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4855,6 +5088,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDescribeTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4881,6 +5115,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4913,6 +5149,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowDetailInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4939,6 +5176,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -4971,6 +5210,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobProgressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -4998,6 +5238,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5032,6 +5274,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5058,6 +5301,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5090,6 +5335,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowJobStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5116,6 +5362,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5150,6 +5398,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowNodeConnectivityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5176,6 +5425,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5208,6 +5459,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowObjectUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5233,6 +5485,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5271,6 +5525,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowPartitionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5297,6 +5552,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5329,6 +5586,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowQueueDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5355,6 +5613,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5391,6 +5651,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowTableContentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5417,6 +5678,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5451,6 +5714,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateDatabaseOwnerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5479,6 +5743,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5513,6 +5779,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateQueueCidrResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5539,6 +5806,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5575,6 +5844,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateTableOwnerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5601,6 +5871,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5633,6 +5905,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CancelBatchJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5659,6 +5932,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5693,6 +5968,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='CreateBatchJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5719,6 +5995,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5753,6 +6031,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='DeleteResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5779,6 +6058,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5827,6 +6108,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListBatchesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5853,6 +6135,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5887,6 +6171,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ListResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5913,6 +6198,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -5945,6 +6232,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBatchInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -5971,6 +6259,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6011,6 +6301,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBatchLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6037,6 +6328,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6069,6 +6362,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowBatchStateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6095,6 +6389,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6129,6 +6425,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='ShowResourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6155,6 +6452,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6187,6 +6486,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UpdateGroupOrResourceOwnerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6214,6 +6514,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6248,6 +6550,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6275,6 +6578,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6309,6 +6614,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadJarsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6336,6 +6642,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6370,6 +6678,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadPythonFilesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6396,6 +6705,8 @@ class DliClient(Client):
         for attr in request.attribute_map:
             if hasattr(request, attr):
                 local_var_params[attr] = getattr(request, attr)
+
+        cname = None
 
         collection_formats = {}
 
@@ -6430,6 +6741,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
+            cname=cname,
             response_type='UploadResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
@@ -6437,7 +6749,7 @@ class DliClient(Client):
             request_type=request.__class__.__name__)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
-                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
@@ -6447,9 +6759,10 @@ class DliClient(Client):
         :param query_params: Query parameters in the url.
         :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
-        :param post_params dict: Request post form parameters,
+        :param post_params: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
-        :param auth_settings list: Auth Settings names for the request.
+        :param cname: Used for obs endpoint.
+        :param auth_settings: Auth Settings names for the request.
         :param response_type: Response data type.
         :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
@@ -6466,6 +6779,7 @@ class DliClient(Client):
             header_params=header_params,
             body=body,
             post_params=post_params,
+            cname=cname,
             response_type=response_type,
             response_headers=response_headers,
             collection_formats=collection_formats,

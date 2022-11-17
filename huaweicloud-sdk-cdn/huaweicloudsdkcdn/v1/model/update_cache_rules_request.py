@@ -17,7 +17,6 @@ class UpdateCacheRulesRequest:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -106,7 +105,6 @@ class UpdateCacheRulesRequest:
     def body(self):
         """Gets the body of this UpdateCacheRulesRequest.
 
-
         :return: The body of this UpdateCacheRulesRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.CacheConfigRequestBody`
         """
@@ -115,7 +113,6 @@ class UpdateCacheRulesRequest:
     @body.setter
     def body(self, body):
         """Sets the body of this UpdateCacheRulesRequest.
-
 
         :param body: The body of this UpdateCacheRulesRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.CacheConfigRequestBody`

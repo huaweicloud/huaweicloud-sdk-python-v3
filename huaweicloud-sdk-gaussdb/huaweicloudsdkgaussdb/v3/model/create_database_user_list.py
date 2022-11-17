@@ -17,7 +17,6 @@ class CreateDatabaseUserList:
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
-
     sensitive_list = []
 
     openapi_types = {
@@ -134,7 +133,6 @@ class CreateDatabaseUserList:
     def databases(self):
         """Gets the databases of this CreateDatabaseUserList.
 
-
         :return: The databases of this CreateDatabaseUserList.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.CreateDatabaseList`]
         """
@@ -143,7 +141,6 @@ class CreateDatabaseUserList:
     @databases.setter
     def databases(self, databases):
         """Sets the databases of this CreateDatabaseUserList.
-
 
         :param databases: The databases of this CreateDatabaseUserList.
         :type databases: list[:class:`huaweicloudsdkgaussdb.v3.CreateDatabaseList`]
