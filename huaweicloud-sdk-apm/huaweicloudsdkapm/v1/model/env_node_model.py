@@ -52,27 +52,27 @@ class EnvNodeModel:
 
         The model defined in huaweicloud sdk
 
-        :param id: 环境id
+        :param id: 环境id。
         :type id: int
-        :param gmt_create: 创建时间
+        :param gmt_create: 创建时间。
         :type gmt_create: date
-        :param gmt_modify: 修改时间
+        :param gmt_modify: 修改时间。
         :type gmt_modify: date
-        :param app_id: 组件id
+        :param app_id: 组件id。
         :type app_id: int
-        :param business_name: 应用名称
+        :param business_name: 应用名称。
         :type business_name: str
-        :param inner_domain_id: 租户id
+        :param inner_domain_id: 租户id。
         :type inner_domain_id: int
-        :param name: 环境名称
+        :param name: 环境名称。
         :type name: str
-        :param is_default: 是否是默认环境
+        :param is_default: 是否是默认环境。
         :type is_default: bool
-        :param app_name: 组件名称
+        :param app_name: 组件名称。
         :type app_name: str
-        :param business_id: 应用id
+        :param business_id: 应用id。
         :type business_id: int
-        :param region: 区域
+        :param region: 区域。
         :type region: str
         """
         
@@ -118,7 +118,7 @@ class EnvNodeModel:
     def id(self):
         """Gets the id of this EnvNodeModel.
 
-        环境id
+        环境id。
 
         :return: The id of this EnvNodeModel.
         :rtype: int
@@ -129,7 +129,7 @@ class EnvNodeModel:
     def id(self, id):
         """Sets the id of this EnvNodeModel.
 
-        环境id
+        环境id。
 
         :param id: The id of this EnvNodeModel.
         :type id: int
@@ -140,7 +140,7 @@ class EnvNodeModel:
     def gmt_create(self):
         """Gets the gmt_create of this EnvNodeModel.
 
-        创建时间
+        创建时间。
 
         :return: The gmt_create of this EnvNodeModel.
         :rtype: date
@@ -151,7 +151,7 @@ class EnvNodeModel:
     def gmt_create(self, gmt_create):
         """Sets the gmt_create of this EnvNodeModel.
 
-        创建时间
+        创建时间。
 
         :param gmt_create: The gmt_create of this EnvNodeModel.
         :type gmt_create: date
@@ -162,7 +162,7 @@ class EnvNodeModel:
     def gmt_modify(self):
         """Gets the gmt_modify of this EnvNodeModel.
 
-        修改时间
+        修改时间。
 
         :return: The gmt_modify of this EnvNodeModel.
         :rtype: date
@@ -173,7 +173,7 @@ class EnvNodeModel:
     def gmt_modify(self, gmt_modify):
         """Sets the gmt_modify of this EnvNodeModel.
 
-        修改时间
+        修改时间。
 
         :param gmt_modify: The gmt_modify of this EnvNodeModel.
         :type gmt_modify: date
@@ -184,7 +184,7 @@ class EnvNodeModel:
     def app_id(self):
         """Gets the app_id of this EnvNodeModel.
 
-        组件id
+        组件id。
 
         :return: The app_id of this EnvNodeModel.
         :rtype: int
@@ -195,7 +195,7 @@ class EnvNodeModel:
     def app_id(self, app_id):
         """Sets the app_id of this EnvNodeModel.
 
-        组件id
+        组件id。
 
         :param app_id: The app_id of this EnvNodeModel.
         :type app_id: int
@@ -206,7 +206,7 @@ class EnvNodeModel:
     def business_name(self):
         """Gets the business_name of this EnvNodeModel.
 
-        应用名称
+        应用名称。
 
         :return: The business_name of this EnvNodeModel.
         :rtype: str
@@ -217,7 +217,7 @@ class EnvNodeModel:
     def business_name(self, business_name):
         """Sets the business_name of this EnvNodeModel.
 
-        应用名称
+        应用名称。
 
         :param business_name: The business_name of this EnvNodeModel.
         :type business_name: str
@@ -228,7 +228,7 @@ class EnvNodeModel:
     def inner_domain_id(self):
         """Gets the inner_domain_id of this EnvNodeModel.
 
-        租户id
+        租户id。
 
         :return: The inner_domain_id of this EnvNodeModel.
         :rtype: int
@@ -239,7 +239,7 @@ class EnvNodeModel:
     def inner_domain_id(self, inner_domain_id):
         """Sets the inner_domain_id of this EnvNodeModel.
 
-        租户id
+        租户id。
 
         :param inner_domain_id: The inner_domain_id of this EnvNodeModel.
         :type inner_domain_id: int
@@ -250,7 +250,7 @@ class EnvNodeModel:
     def name(self):
         """Gets the name of this EnvNodeModel.
 
-        环境名称
+        环境名称。
 
         :return: The name of this EnvNodeModel.
         :rtype: str
@@ -261,7 +261,7 @@ class EnvNodeModel:
     def name(self, name):
         """Sets the name of this EnvNodeModel.
 
-        环境名称
+        环境名称。
 
         :param name: The name of this EnvNodeModel.
         :type name: str
@@ -272,7 +272,7 @@ class EnvNodeModel:
     def is_default(self):
         """Gets the is_default of this EnvNodeModel.
 
-        是否是默认环境
+        是否是默认环境。
 
         :return: The is_default of this EnvNodeModel.
         :rtype: bool
@@ -283,7 +283,7 @@ class EnvNodeModel:
     def is_default(self, is_default):
         """Sets the is_default of this EnvNodeModel.
 
-        是否是默认环境
+        是否是默认环境。
 
         :param is_default: The is_default of this EnvNodeModel.
         :type is_default: bool
@@ -294,7 +294,7 @@ class EnvNodeModel:
     def app_name(self):
         """Gets the app_name of this EnvNodeModel.
 
-        组件名称
+        组件名称。
 
         :return: The app_name of this EnvNodeModel.
         :rtype: str
@@ -305,7 +305,7 @@ class EnvNodeModel:
     def app_name(self, app_name):
         """Sets the app_name of this EnvNodeModel.
 
-        组件名称
+        组件名称。
 
         :param app_name: The app_name of this EnvNodeModel.
         :type app_name: str
@@ -316,7 +316,7 @@ class EnvNodeModel:
     def business_id(self):
         """Gets the business_id of this EnvNodeModel.
 
-        应用id
+        应用id。
 
         :return: The business_id of this EnvNodeModel.
         :rtype: int
@@ -327,7 +327,7 @@ class EnvNodeModel:
     def business_id(self, business_id):
         """Sets the business_id of this EnvNodeModel.
 
-        应用id
+        应用id。
 
         :param business_id: The business_id of this EnvNodeModel.
         :type business_id: int
@@ -338,7 +338,7 @@ class EnvNodeModel:
     def region(self):
         """Gets the region of this EnvNodeModel.
 
-        区域
+        区域。
 
         :return: The region of this EnvNodeModel.
         :rtype: str
@@ -349,7 +349,7 @@ class EnvNodeModel:
     def region(self, region):
         """Sets the region of this EnvNodeModel.
 
-        区域
+        区域。
 
         :param region: The region of this EnvNodeModel.
         :type region: str

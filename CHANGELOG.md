@@ -1,3 +1,340 @@
+# 3.1.12 2022-11-24
+
+### HuaweiCloud SDK DWR
+
+- _Features_
+  - Support the service `Data Warehouse Report`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - Support the interfaces `ListStackEvents`, `ListStackResources`, `DeleteStack`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK APM
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowBusinessDetail`
+    - `ShowSubBusinessDetail`
+    - `ListAlarmData`
+    - `ListAlarmNotify`
+    - `SearchBusinessTopology`
+    - `SearchEnvTopology`
+    - `SearchTransactionConfig`
+    - `ListBusinessEnv`
+    - `SearchTransaction`
+    - `ShowTransactionDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `DeleteEnv`
+  - Changes of the interface `ListAkSk`:
+    - Modify the type `date` -> `string` of the response parameter `gmt_create`
+    - Modify the type `date` -> `string` of the response parameter `gmt_modify`
+  - The request parameter `monitor_item_id`, `env_id` changed to required of the interface `SaveMonitorItemConfig`
+  - The request parameter `x-business-id` changed to not required of the interface `ListEnvMonitorItem`
+  - The request parameter `business_id` changed to not required of the interface `ShowTopologyTree`
+  - Changes of the interface `ListEnvTags`:
+    - The request parameter `business_id` changed to required
+    - Modify the type `date` -> `string` of the response parameter `gmt_create`
+    - Modify the type `date` -> `string` of the response parameter `gmt_modify`
+  - The request parameter `region`, `biz_id` changed to required of the interface `ShowSpanSearch`
+  - The request parameter `view_type`, `collector_name`, `metric_set`, `title`, `table_direction`, `group_by`, `filter`, `span`, `span_field`, `page`, `page_size`, `search_word`, `instance_id`, `monitor_item_id`, `env_id`, `start_time`, `end_time` changed to required of the interface `ShowRawTable`
+  - The request parameter `env_id`, `clob_id` changed to required of the interface `ShowClobDetail`
+  - The request parameter `env_id`, `page`, `page_size` changed to required of the interface `ListEnvInstances`
+  - Changes of the interface `ShowAkSks`:
+    - Modify the type `date` -> `string` of the response parameter `gmt_create`
+    - Modify the type `date` -> `string` of the response parameter `gmt_modify`
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `sub_service_type_code`, `sub_service_type_name`, `sub_resource_type_code`, `sub_resource_type_name`, `sub_resource_id`, `sub_resource_name` to the interface `ListSubCustomerBillDetail`
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `children` to the interface `ShowBackup`
+  - Add the response parameter `children` to the interface `ListBackups`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `configurationsOverride` to the interface `CreateCluster`
+  - Add the response parameter `configurationsOverride` to the interface `ListClusters`
+  - Changes of the interface `UpdateCluster`:
+    - Add the request parameters `eniNetwork`, `hostNetwork`
+    - Add the response parameter `configurationsOverride`
+  - Changes of the interface `DeleteCluster`:
+    - Add the request parameter `delete_sfs30`
+    - Add the response parameter `configurationsOverride`
+  - Add the response parameter `configurationsOverride` to the interface `ShowCluster`
+  - Add the request parameter `initializedConditions` to the interface `CreateNode`
+  - Add the response parameter `initializedConditions` to the interface `ListNodes`
+  - Add the response parameter `initializedConditions` to the interface `UpdateNode`
+  - Add the response parameter `initializedConditions` to the interface `DeleteNode`
+  - Add the response parameter `initializedConditions` to the interface `ShowNode`
+  - Add the request parameter `initializedConditions` to the interface `AddNode`
+  - Add the request parameter `initializedConditions` to the interface `ResetNode`
+  - Add the request parameters `customSecurityGroups`, `initializedConditions` to the interface `CreateNodePool`
+  - Add the response parameters `customSecurityGroups`, `initializedConditions` to the interface `ListNodePools`
+  - Changes of the interface `UpdateNodePool`:
+    - Add the request parameter `initializedConditions`
+    - Add the response parameters `customSecurityGroups`, `initializedConditions`
+  - Add the response parameters `customSecurityGroups`, `initializedConditions` to the interface `DeleteNodePool`
+  - Add the response parameters `customSecurityGroups`, `initializedConditions` to the interface `ShowNodePool`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAlarmTemplates`
+    - `CreateAlarmTemplate`
+    - `BatchDeleteAlarmTemplates`
+    - `ShowAlarmTemplate`
+    - `UpdateAlarmTemplate`
+    - `ListAlarmTemplateAssociationAlarms`
+    - `ListResourceGroups`
+    - `CreateResourceGroup`
+    - `ShowResourceGroup`
+    - `UpdateResourceGroup`
+    - `ListResourceGroupsServicesResources`
+    - `BatchDeleteResourceGroups`
+    - `BatchCreateResources`
+    - `BatchDeleteResources`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - Support the interfaces `UpgradeEngine`, `RetryEngine`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - Support the interfaces `UpdateInstance`, `ChangeMode`, `AddIndependentNode`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `totalSize`, `volume` to the interface `ListClustersDetails`
+  - Add the response parameter `volume` to the interface `ShowClusterDetail`
+  - The request parameter `endpointWithDnsName` changed to not required of the interface `StartVpecp`
+
+### HuaweiCloud SDK DAS
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowSqlLimitSwitchStatus`
+    - `ChangeSqlLimitSwitchStatus`
+    - `ListSqlLimitRules`
+    - `CreateSqlLimitRules`
+    - `DeleteSqlLimitRules`
+    - `ExportTopSqlTemplatesDetails`
+    - `ShowSqlLimitJobInfo`
+    - `ExportSlowSqlTemplatesDetails`
+    - `ExportTopSqlTrendDetails`
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `object` -> `array` of the response parameter `quotas` of the interface `ShowQuotas`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListAppliedInstances`
+    - `ShowConfigurationAppliedHistory`
+    - `ShowConfigurationModifyHistory`
+    - `CompareConfiguration`
+    - `CopyConfiguration`
+    - `ResetConfiguration`
+    - `ListTasks`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `is_auto_pay` to the interface `AddReadonlyNode`
+
+### HuaweiCloud SDK DNS
+
+- _Features_
+  - Support the following interfaces：
+    - `SetPrivateZoneProxyPattern`
+    - `AssociateHealthCheck`
+    - `DisassociateHealthCheck`
+    - `CreateRetrieval`
+    - `ShowRetrieval`
+    - `CreateRetrievalVerification`
+    - `ShowRetrievalVerification`
+    - `CreateEndpoint`
+    - `ShowEndpoint`
+    - `ListEndpoints`
+    - `UpdateEndpoint`
+    - `DeleteEndpoint`
+    - `AssociateEndpointIpaddress`
+    - `ListEndpointIpaddresses`
+    - `DisassociateEndpointIpaddress`
+    - `ListEndpointVpcs`
+    - `CreateResolveRule`
+    - `ShowResoleRule`
+    - `ListResoleRules`
+    - `UpdateResolveRule`
+    - `DeleteResolveRule`
+    - `CreateLineGroup`
+    - `ListLineGroups`
+    - `ShowLineGroup`
+    - `UpdateLineGroups`
+    - `DeleteLineGroup`
+    - `BatchDeleteZones`
+    - `BatchDeletePtrRecords`
+    - `BatchSetZonesStatus`
+    - `BatchSetRecordSetsStatus`
+    - `BatchDeleteRecordSets`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - Support the following interfaces：
+    - `CreateDependencyVersion`
+    - `ListDependencyVersion`
+    - `ShowDependencyVersion`
+    - `DeleteDependencyVersion`
+    - `ListReservedInstanceConfigs`
+    - `ListFunctionReservedInstances`
+    - `ListFunctionAsMetric`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `AsyncInvokeReservedFunction`
+  - Add the request parameter `custom_image` to the interface `UpdateFunctionConfig`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the following interfaces：
+    - `ResizeColdVolume`
+    - `CreateColdVolume`
+    - `ModifyPublicIp`
+    - `SwitchSsl`
+    - `SetAutoEnlargePolicy`
+    - `RestartInstance`
+    - `ShowApplicableInstances`
+    - `ShowModifyHistory`
+    - `ShowApplyHistory`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `restore_info`, `port` to the interface `CreateInstance`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `test_interval` to the interface `RecognizeHealthCode`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ShowDomainName`, `ShowDnsName`, `ShowReplicationStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ROMA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateDatasourceInfo`:
+    - Add the request parameter `ssl`
+    - Remove the request parameter `custom_plugin_id`
+    - The request parameter `datasource_name`, `datasource_type`, `app_id` changed to required
+  - Add the response parameter `ssl` to the interface `ListDatasources`
+  - Changes of the interface `UpdateDatasourceInfo`:
+    - Add the request parameter `ssl`
+    - Add the response parameter `ssl`
+    - Remove the request parameter `custom_plugin_id`
+    - The request parameter `datasource_name`, `datasource_type`, `app_id` changed to required
+  - Add the response parameter `ssl` to the interface `ShowDataourceDetail`
+  - Changes of the interface `StartTestDatasource`:
+    - Add the request parameter `ssl`
+    - Remove the request parameter `custom_plugin_id`
+    - The request parameter `datasource_name`, `datasource_type`, `app_id` changed to required
+  - Changes of the interface `CreateCommonTask`:
+    - Remove the response parameter `created_by`
+    - The request parameter `task_name`, `task_type`, `source_datasource_id`, `target_datasource_id`, `task_detail` changed to required
+  - Changes of the interface `UpdateTask`:
+    - Remove the response parameter `created_by`
+    - The request parameter `task_name`, `task_type`, `source_datasource_id`, `target_datasource_id`, `task_detail` changed to required
+  - Remove the response parameter `created_by` from the interface `ShowTask`
+  - The request parameter `action_id` changed to required of the interface `BatchStartOrStopTasks`
+  - The request parameter `task_name`, `operation_types` changed to required of the interface `CreateMultiTasks`
+  - The request parameter `operation_types`, `repulling_snapshot` changed to required of the interface `UpdateMultiTasks`
+  - The request parameter `source_datasource_id`, `target_datasource_id` changed to required of the interface `CreateMultiTaskMappings`
+
+### HuaweiCloud SDK SA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ImportEvents`:
+    - Add the request parameters `dest_ip`, `cve_ids`
+    - Remove the request parameter `destc_ip`
+    - Modify the type `string` -> `date-time` of the request parameter `first_observed_time`
+    - Modify the type `string` -> `date-time` of the request parameter `last_observed_time`
+    - Modify the type `string` -> `date-time` of the request parameter `create_time`
+    - Modify the type `string` -> `date-time` of the request parameter `arrive_time`
+    - Modify the type `string` -> `date-time` of the request parameter `release_time`
+    - Modify the type `string` -> `date-time` of the request parameter `start_time`
+    - Modify the type `string` -> `date-time` of the request parameter `modified`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - Support the interfaces `CreatePrepaidCloudWaf`, `ChangePrepaidCloudWaf`, `ShowSubscriptionInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.11 2022-11-17
 
 ### HuaweiCloud SDK AOS

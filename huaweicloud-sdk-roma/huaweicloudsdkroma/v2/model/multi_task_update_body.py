@@ -60,10 +60,8 @@ class MultiTaskUpdateBody:
             self.description = description
         if task_tag is not None:
             self.task_tag = task_tag
-        if operation_types is not None:
-            self.operation_types = operation_types
-        if repulling_snapshot is not None:
-            self.repulling_snapshot = repulling_snapshot
+        self.operation_types = operation_types
+        self.repulling_snapshot = repulling_snapshot
 
     @property
     def description(self):

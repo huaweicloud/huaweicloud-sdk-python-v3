@@ -35,7 +35,9 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'str',
         'dedicated_resource_id': 'str',
         'ssl_option': 'str',
-        'charge_info': 'ChargeInfoOption'
+        'charge_info': 'ChargeInfoOption',
+        'restore_info': 'RestoreInfo',
+        'port': 'str'
     }
 
     attribute_map = {
@@ -54,10 +56,12 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'enterprise_project_id',
         'dedicated_resource_id': 'dedicated_resource_id',
         'ssl_option': 'ssl_option',
-        'charge_info': 'charge_info'
+        'charge_info': 'charge_info',
+        'restore_info': 'restore_info',
+        'port': 'port'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None):
         """CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -94,6 +98,10 @@ class CreateInstanceRequestBody:
         :type ssl_option: str
         :param charge_info: 
         :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
+        :param restore_info: 
+        :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
+        :param port: 数据库访问端口号。 目前仅支持GaussDB(for Redis)实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GaussDB(for Redis)实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
+        :type port: str
         """
         
         
@@ -114,6 +122,8 @@ class CreateInstanceRequestBody:
         self._dedicated_resource_id = None
         self._ssl_option = None
         self._charge_info = None
+        self._restore_info = None
+        self._port = None
         self.discriminator = None
 
         self.name = name
@@ -138,6 +148,10 @@ class CreateInstanceRequestBody:
             self.ssl_option = ssl_option
         if charge_info is not None:
             self.charge_info = charge_info
+        if restore_info is not None:
+            self.restore_info = restore_info
+        if port is not None:
+            self.port = port
 
     @property
     def name(self):
@@ -478,6 +492,46 @@ class CreateInstanceRequestBody:
         :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
         """
         self._charge_info = charge_info
+
+    @property
+    def restore_info(self):
+        """Gets the restore_info of this CreateInstanceRequestBody.
+
+        :return: The restore_info of this CreateInstanceRequestBody.
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
+        """
+        return self._restore_info
+
+    @restore_info.setter
+    def restore_info(self, restore_info):
+        """Sets the restore_info of this CreateInstanceRequestBody.
+
+        :param restore_info: The restore_info of this CreateInstanceRequestBody.
+        :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
+        """
+        self._restore_info = restore_info
+
+    @property
+    def port(self):
+        """Gets the port of this CreateInstanceRequestBody.
+
+        数据库访问端口号。 目前仅支持GaussDB(for Redis)实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GaussDB(for Redis)实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
+
+        :return: The port of this CreateInstanceRequestBody.
+        :rtype: str
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this CreateInstanceRequestBody.
+
+        数据库访问端口号。 目前仅支持GaussDB(for Redis)实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GaussDB(for Redis)实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
+
+        :param port: The port of this CreateInstanceRequestBody.
+        :type port: str
+        """
+        self._port = port
 
     def to_dict(self):
         """Returns the model properties as a dict"""

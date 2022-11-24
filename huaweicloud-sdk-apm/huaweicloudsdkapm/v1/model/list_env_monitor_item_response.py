@@ -36,11 +36,11 @@ class ListEnvMonitorItemResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param monitor_item_list: 监控项列表
+        :param monitor_item_list: 监控项列表。
         :type monitor_item_list: list[:class:`huaweicloudsdkapm.v1.MonitorItem`]
-        :param total_count: 总数
+        :param total_count: 总数。
         :type total_count: int
-        :param total_page: 总页数
+        :param total_page: 总页数。
         :type total_page: int
         """
         
@@ -62,7 +62,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
     def monitor_item_list(self):
         """Gets the monitor_item_list of this ListEnvMonitorItemResponse.
 
-        监控项列表
+        监控项列表。
 
         :return: The monitor_item_list of this ListEnvMonitorItemResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.MonitorItem`]
@@ -73,7 +73,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
     def monitor_item_list(self, monitor_item_list):
         """Sets the monitor_item_list of this ListEnvMonitorItemResponse.
 
-        监控项列表
+        监控项列表。
 
         :param monitor_item_list: The monitor_item_list of this ListEnvMonitorItemResponse.
         :type monitor_item_list: list[:class:`huaweicloudsdkapm.v1.MonitorItem`]
@@ -84,7 +84,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListEnvMonitorItemResponse.
 
-        总数
+        总数。
 
         :return: The total_count of this ListEnvMonitorItemResponse.
         :rtype: int
@@ -95,7 +95,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListEnvMonitorItemResponse.
 
-        总数
+        总数。
 
         :param total_count: The total_count of this ListEnvMonitorItemResponse.
         :type total_count: int
@@ -106,7 +106,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
     def total_page(self):
         """Gets the total_page of this ListEnvMonitorItemResponse.
 
-        总页数
+        总页数。
 
         :return: The total_page of this ListEnvMonitorItemResponse.
         :rtype: int
@@ -117,7 +117,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
     def total_page(self, total_page):
         """Sets the total_page of this ListEnvMonitorItemResponse.
 
-        总页数
+        总页数。
 
         :param total_page: The total_page of this ListEnvMonitorItemResponse.
         :type total_page: int

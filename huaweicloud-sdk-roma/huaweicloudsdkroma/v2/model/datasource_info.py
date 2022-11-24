@@ -23,7 +23,6 @@ class DatasourceInfo:
         'datasource_name': 'str',
         'datasource_type': 'str',
         'app_id': 'str',
-        'custom_plugin_id': 'str',
         'content': 'Content',
         'description': 'str'
     }
@@ -32,12 +31,11 @@ class DatasourceInfo:
         'datasource_name': 'datasource_name',
         'datasource_type': 'datasource_type',
         'app_id': 'app_id',
-        'custom_plugin_id': 'custom_plugin_id',
         'content': 'content',
         'description': 'description'
     }
 
-    def __init__(self, datasource_name=None, datasource_type=None, app_id=None, custom_plugin_id=None, content=None, description=None):
+    def __init__(self, datasource_name=None, datasource_type=None, app_id=None, content=None, description=None):
         """DatasourceInfo
 
         The model defined in huaweicloud sdk
@@ -48,8 +46,6 @@ class DatasourceInfo:
         :type datasource_type: str
         :param app_id: 数据源所属应用ID
         :type app_id: str
-        :param custom_plugin_id: 数据源所属连接器Id，自定义数据源必填
-        :type custom_plugin_id: str
         :param content: 
         :type content: :class:`huaweicloudsdkroma.v2.Content`
         :param description: 数据源描述
@@ -61,21 +57,14 @@ class DatasourceInfo:
         self._datasource_name = None
         self._datasource_type = None
         self._app_id = None
-        self._custom_plugin_id = None
         self._content = None
         self._description = None
         self.discriminator = None
 
-        if datasource_name is not None:
-            self.datasource_name = datasource_name
-        if datasource_type is not None:
-            self.datasource_type = datasource_type
-        if app_id is not None:
-            self.app_id = app_id
-        if custom_plugin_id is not None:
-            self.custom_plugin_id = custom_plugin_id
-        if content is not None:
-            self.content = content
+        self.datasource_name = datasource_name
+        self.datasource_type = datasource_type
+        self.app_id = app_id
+        self.content = content
         if description is not None:
             self.description = description
 
@@ -144,28 +133,6 @@ class DatasourceInfo:
         :type app_id: str
         """
         self._app_id = app_id
-
-    @property
-    def custom_plugin_id(self):
-        """Gets the custom_plugin_id of this DatasourceInfo.
-
-        数据源所属连接器Id，自定义数据源必填
-
-        :return: The custom_plugin_id of this DatasourceInfo.
-        :rtype: str
-        """
-        return self._custom_plugin_id
-
-    @custom_plugin_id.setter
-    def custom_plugin_id(self, custom_plugin_id):
-        """Sets the custom_plugin_id of this DatasourceInfo.
-
-        数据源所属连接器Id，自定义数据源必填
-
-        :param custom_plugin_id: The custom_plugin_id of this DatasourceInfo.
-        :type custom_plugin_id: str
-        """
-        self._custom_plugin_id = custom_plugin_id
 
     @property
     def content(self):

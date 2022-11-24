@@ -36,7 +36,7 @@ class ImportEventsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 
+        :param x_language: 语言。
         :type x_language: str
         :param project_id: 租户项目ID。
         :type project_id: str
@@ -61,6 +61,8 @@ class ImportEventsRequest:
     def x_language(self):
         """Gets the x_language of this ImportEventsRequest.
 
+        语言。
+
         :return: The x_language of this ImportEventsRequest.
         :rtype: str
         """
@@ -69,6 +71,8 @@ class ImportEventsRequest:
     @x_language.setter
     def x_language(self, x_language):
         """Sets the x_language of this ImportEventsRequest.
+
+        语言。
 
         :param x_language: The x_language of this ImportEventsRequest.
         :type x_language: str

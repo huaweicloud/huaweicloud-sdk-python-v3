@@ -44,19 +44,19 @@ class AppNodeModel:
 
         The model defined in huaweicloud sdk
 
-        :param id: 组件id
+        :param id: 组件id。
         :type id: int
-        :param gmt_create: 创建时间
+        :param gmt_create: 创建时间。
         :type gmt_create: date
-        :param gmt_modify: 修改时间
+        :param gmt_modify: 修改时间。
         :type gmt_modify: date
-        :param name: 组件名称
+        :param name: 组件名称。
         :type name: str
-        :param business_id: 应用id
+        :param business_id: 应用id。
         :type business_id: int
-        :param sub_business_id: 子应用id
+        :param sub_business_id: 子应用id。
         :type sub_business_id: int
-        :param inner_domain_id: 租户id
+        :param inner_domain_id: 租户id。
         :type inner_domain_id: int
         """
         
@@ -90,7 +90,7 @@ class AppNodeModel:
     def id(self):
         """Gets the id of this AppNodeModel.
 
-        组件id
+        组件id。
 
         :return: The id of this AppNodeModel.
         :rtype: int
@@ -101,7 +101,7 @@ class AppNodeModel:
     def id(self, id):
         """Sets the id of this AppNodeModel.
 
-        组件id
+        组件id。
 
         :param id: The id of this AppNodeModel.
         :type id: int
@@ -112,7 +112,7 @@ class AppNodeModel:
     def gmt_create(self):
         """Gets the gmt_create of this AppNodeModel.
 
-        创建时间
+        创建时间。
 
         :return: The gmt_create of this AppNodeModel.
         :rtype: date
@@ -123,7 +123,7 @@ class AppNodeModel:
     def gmt_create(self, gmt_create):
         """Sets the gmt_create of this AppNodeModel.
 
-        创建时间
+        创建时间。
 
         :param gmt_create: The gmt_create of this AppNodeModel.
         :type gmt_create: date
@@ -134,7 +134,7 @@ class AppNodeModel:
     def gmt_modify(self):
         """Gets the gmt_modify of this AppNodeModel.
 
-        修改时间
+        修改时间。
 
         :return: The gmt_modify of this AppNodeModel.
         :rtype: date
@@ -145,7 +145,7 @@ class AppNodeModel:
     def gmt_modify(self, gmt_modify):
         """Sets the gmt_modify of this AppNodeModel.
 
-        修改时间
+        修改时间。
 
         :param gmt_modify: The gmt_modify of this AppNodeModel.
         :type gmt_modify: date
@@ -156,7 +156,7 @@ class AppNodeModel:
     def name(self):
         """Gets the name of this AppNodeModel.
 
-        组件名称
+        组件名称。
 
         :return: The name of this AppNodeModel.
         :rtype: str
@@ -167,7 +167,7 @@ class AppNodeModel:
     def name(self, name):
         """Sets the name of this AppNodeModel.
 
-        组件名称
+        组件名称。
 
         :param name: The name of this AppNodeModel.
         :type name: str
@@ -178,7 +178,7 @@ class AppNodeModel:
     def business_id(self):
         """Gets the business_id of this AppNodeModel.
 
-        应用id
+        应用id。
 
         :return: The business_id of this AppNodeModel.
         :rtype: int
@@ -189,7 +189,7 @@ class AppNodeModel:
     def business_id(self, business_id):
         """Sets the business_id of this AppNodeModel.
 
-        应用id
+        应用id。
 
         :param business_id: The business_id of this AppNodeModel.
         :type business_id: int
@@ -200,7 +200,7 @@ class AppNodeModel:
     def sub_business_id(self):
         """Gets the sub_business_id of this AppNodeModel.
 
-        子应用id
+        子应用id。
 
         :return: The sub_business_id of this AppNodeModel.
         :rtype: int
@@ -211,7 +211,7 @@ class AppNodeModel:
     def sub_business_id(self, sub_business_id):
         """Sets the sub_business_id of this AppNodeModel.
 
-        子应用id
+        子应用id。
 
         :param sub_business_id: The sub_business_id of this AppNodeModel.
         :type sub_business_id: int
@@ -222,7 +222,7 @@ class AppNodeModel:
     def inner_domain_id(self):
         """Gets the inner_domain_id of this AppNodeModel.
 
-        租户id
+        租户id。
 
         :return: The inner_domain_id of this AppNodeModel.
         :rtype: int
@@ -233,7 +233,7 @@ class AppNodeModel:
     def inner_domain_id(self, inner_domain_id):
         """Sets the inner_domain_id of this AppNodeModel.
 
-        租户id
+        租户id。
 
         :param inner_domain_id: The inner_domain_id of this AppNodeModel.
         :type inner_domain_id: int

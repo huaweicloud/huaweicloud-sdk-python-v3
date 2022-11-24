@@ -34,9 +34,9 @@ class FrontPoint:
 
         The model defined in huaweicloud sdk
 
-        :param time: 时间
+        :param time: 时间。
         :type time: int
-        :param value: 值
+        :param value: 值。
         :type value: object
         """
         
@@ -55,7 +55,7 @@ class FrontPoint:
     def time(self):
         """Gets the time of this FrontPoint.
 
-        时间
+        时间。
 
         :return: The time of this FrontPoint.
         :rtype: int
@@ -66,7 +66,7 @@ class FrontPoint:
     def time(self, time):
         """Sets the time of this FrontPoint.
 
-        时间
+        时间。
 
         :param time: The time of this FrontPoint.
         :type time: int
@@ -77,7 +77,7 @@ class FrontPoint:
     def value(self):
         """Gets the value of this FrontPoint.
 
-        值
+        值。
 
         :return: The value of this FrontPoint.
         :rtype: object
@@ -88,7 +88,7 @@ class FrontPoint:
     def value(self, value):
         """Sets the value of this FrontPoint.
 
-        值
+        值。
 
         :param value: The value of this FrontPoint.
         :type value: object

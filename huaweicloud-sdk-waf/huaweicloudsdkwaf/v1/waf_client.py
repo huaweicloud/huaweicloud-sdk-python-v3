@@ -107,6 +107,72 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def change_prepaid_cloud_waf(self, request):
+        """变更包周期云模式waf规格
+
+        变更包周期云模式waf规格。注：
+         - 1.变更某产品规格的前提是必须已购买该产品 
+         - 2.waf版本只支持升配，不支持降配；扩展包数量可以增加或者减少，但不支持数量减少为0 
+         - 3.不支持同时升降配，如增加域名扩展包数量，同时减少规则扩展包数量
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ChangePrepaidCloudWaf
+        :type request: :class:`huaweicloudsdkwaf.v1.ChangePrepaidCloudWafRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ChangePrepaidCloudWafResponse`
+        """
+        return self.change_prepaid_cloud_waf_with_http_info(request)
+
+    def change_prepaid_cloud_waf_with_http_info(self, request):
+        all_params = ['change_prepaid_cloud_waf_request_body', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/subscription/batchalter/prepaid-cloud-waf',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangePrepaidCloudWafResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_anti_tamper_rule(self, request):
         """创建防篡改规则
 
@@ -431,7 +497,7 @@ class WafClient(Client):
     def create_instance(self, request):
         """创建WAF独享引擎实例
 
-        创建WAF独享引擎实例
+        创建WAF独享引擎实例。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -675,6 +741,69 @@ class WafClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreatePremiumHostResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_prepaid_cloud_waf(self, request):
+        """购买包周期云模式waf
+
+        购买包周期云模式waf
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreatePrepaidCloudWaf
+        :type request: :class:`huaweicloudsdkwaf.v1.CreatePrepaidCloudWafRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreatePrepaidCloudWafResponse`
+        """
+        return self.create_prepaid_cloud_waf_with_http_info(request)
+
+    def create_prepaid_cloud_waf_with_http_info(self, request):
+        all_params = ['create_prepaid_cloud_waf_request_body', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/subscription/purchase/prepaid-cloud-waf',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatePrepaidCloudWafResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1197,7 +1326,7 @@ class WafClient(Client):
     def delete_instance(self, request):
         """删除WAF独享引擎信息
 
-        删除WAF独享引擎信息
+        删除WAF独享引擎信息。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2271,7 +2400,7 @@ class WafClient(Client):
     def list_instance(self, request):
         """查询WAF独享引擎列表
 
-        查询WAF独享引擎列表
+        查询WAF独享引擎列表。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3229,7 +3358,7 @@ class WafClient(Client):
     def rename_instance(self, request):
         """重命名WAF独享引擎
 
-        重命名WAF独享引擎
+        重命名WAF独享引擎。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3605,7 +3734,7 @@ class WafClient(Client):
     def show_instance(self, request):
         """查询WAF独享引擎信息
 
-        查询WAF独享引擎信息
+        查询WAF独享引擎信息。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3969,6 +4098,65 @@ class WafClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowSourceIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_subscription_info(self, request):
+        """查询租户订购信息
+
+        查询租户订购信息，包括云模式包周期、按需计费、独享模式
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowSubscriptionInfo
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowSubscriptionInfoRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowSubscriptionInfoResponse`
+        """
+        return self.show_subscription_info_with_http_info(request)
+
+    def show_subscription_info_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/subscription',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowSubscriptionInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

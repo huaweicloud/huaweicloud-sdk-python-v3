@@ -48,7 +48,7 @@ class ListCostsReq:
         :type time_condition: :class:`huaweicloudsdkbss.v2.TimeCondition`
         :param groupby: 查询维度，具体请参见表 GroupBy。
         :type groupby: list[:class:`huaweicloudsdkbss.v2.GroupBy`]
-        :param cost_type: 成本类型。UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本
+        :param cost_type: 成本类型。ORIGINAL_COST：原始成本AMORTIZED_COST：摊销成本
         :type cost_type: str
         :param amount_type: 展示的金额类型。PAYMENT_AMOUNT：应付NET_AMOUNT：实付
         :type amount_type: str
@@ -126,7 +126,7 @@ class ListCostsReq:
     def cost_type(self):
         """Gets the cost_type of this ListCostsReq.
 
-        成本类型。UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本
+        成本类型。ORIGINAL_COST：原始成本AMORTIZED_COST：摊销成本
 
         :return: The cost_type of this ListCostsReq.
         :rtype: str
@@ -137,7 +137,7 @@ class ListCostsReq:
     def cost_type(self, cost_type):
         """Sets the cost_type of this ListCostsReq.
 
-        成本类型。UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本
+        成本类型。ORIGINAL_COST：原始成本AMORTIZED_COST：摊销成本
 
         :param cost_type: The cost_type of this ListCostsReq.
         :type cost_type: str

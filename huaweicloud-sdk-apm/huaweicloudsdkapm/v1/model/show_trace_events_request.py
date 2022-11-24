@@ -32,7 +32,7 @@ class ShowTraceEventsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param trace_id: 调用链ID
+        :param trace_id: 调用链ID。
         :type trace_id: str
         """
         
@@ -47,7 +47,7 @@ class ShowTraceEventsRequest:
     def trace_id(self):
         """Gets the trace_id of this ShowTraceEventsRequest.
 
-        调用链ID
+        调用链ID。
 
         :return: The trace_id of this ShowTraceEventsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ShowTraceEventsRequest:
     def trace_id(self, trace_id):
         """Sets the trace_id of this ShowTraceEventsRequest.
 
-        调用链ID
+        调用链ID。
 
         :param trace_id: The trace_id of this ShowTraceEventsRequest.
         :type trace_id: str

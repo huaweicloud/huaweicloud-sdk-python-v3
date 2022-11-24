@@ -74,49 +74,49 @@ class ClientSpanInfo:
 
         The model defined in huaweicloud sdk
 
-        :param global_trace_id: vTraceId，虚拟traceI
+        :param global_trace_id: vTraceId，虚拟traceI。
         :type global_trace_id: str
-        :param global_path: 
+        :param global_path: 虚拟traceId经过的path路径。
         :type global_path: str
-        :param trace_id: 
+        :param trace_id: traceId。
         :type trace_id: str
-        :param span_id: 
+        :param span_id: span id。
         :type span_id: str
-        :param env_id: 
+        :param env_id: 环境Iid。
         :type env_id: int
-        :param instance_id: 
+        :param instance_id: 实例id。
         :type instance_id: int
-        :param app_id: 
+        :param app_id: 组件id。
         :type app_id: int
-        :param biz_id: 
+        :param biz_id: 应用id。
         :type biz_id: int
-        :param domain_id: 
+        :param domain_id: 租户id。
         :type domain_id: int
-        :param source: 
+        :param source: 只有是根event也就是span的时候有值。
         :type source: str
-        :param real_source: 
+        :param real_source: 根event 的时候存在，实际调用的url。
         :type real_source: str
-        :param start_time: 
+        :param start_time: 开始时间。
         :type start_time: int
-        :param time_used: 
+        :param time_used: 耗时。
         :type time_used: int
-        :param code: 
+        :param code: 状态码，针对http的调用有效。
         :type code: int
-        :param class_name: 
+        :param class_name: 类名。
         :type class_name: str
-        :param is_async: 
+        :param is_async: 是否异步。
         :type is_async: bool
-        :param tags: 
+        :param tags: 包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
         :type tags: dict(str, str)
-        :param has_error: 
+        :param has_error: 是否报错。
         :type has_error: bool
-        :param error_reasons: 
+        :param error_reasons: 报错原因。
         :type error_reasons: str
-        :param type: 类型，mysql，kafka等
+        :param type: 类型，mysql，kafka等。
         :type type: str
-        :param http_method: 这里的method实际上是tags里面的http_method，只有url监控项才有
+        :param http_method: 这里的method实际上是tags里面的http_method，只有url监控项才有。
         :type http_method: str
-        :param biz_code: 业务状态码的采集
+        :param biz_code: 业务状态码的采集。
         :type biz_code: str
         """
         
@@ -195,7 +195,7 @@ class ClientSpanInfo:
     def global_trace_id(self):
         """Gets the global_trace_id of this ClientSpanInfo.
 
-        vTraceId，虚拟traceI
+        vTraceId，虚拟traceI。
 
         :return: The global_trace_id of this ClientSpanInfo.
         :rtype: str
@@ -206,7 +206,7 @@ class ClientSpanInfo:
     def global_trace_id(self, global_trace_id):
         """Sets the global_trace_id of this ClientSpanInfo.
 
-        vTraceId，虚拟traceI
+        vTraceId，虚拟traceI。
 
         :param global_trace_id: The global_trace_id of this ClientSpanInfo.
         :type global_trace_id: str
@@ -217,6 +217,8 @@ class ClientSpanInfo:
     def global_path(self):
         """Gets the global_path of this ClientSpanInfo.
 
+        虚拟traceId经过的path路径。
+
         :return: The global_path of this ClientSpanInfo.
         :rtype: str
         """
@@ -225,6 +227,8 @@ class ClientSpanInfo:
     @global_path.setter
     def global_path(self, global_path):
         """Sets the global_path of this ClientSpanInfo.
+
+        虚拟traceId经过的path路径。
 
         :param global_path: The global_path of this ClientSpanInfo.
         :type global_path: str
@@ -235,6 +239,8 @@ class ClientSpanInfo:
     def trace_id(self):
         """Gets the trace_id of this ClientSpanInfo.
 
+        traceId。
+
         :return: The trace_id of this ClientSpanInfo.
         :rtype: str
         """
@@ -243,6 +249,8 @@ class ClientSpanInfo:
     @trace_id.setter
     def trace_id(self, trace_id):
         """Sets the trace_id of this ClientSpanInfo.
+
+        traceId。
 
         :param trace_id: The trace_id of this ClientSpanInfo.
         :type trace_id: str
@@ -253,6 +261,8 @@ class ClientSpanInfo:
     def span_id(self):
         """Gets the span_id of this ClientSpanInfo.
 
+        span id。
+
         :return: The span_id of this ClientSpanInfo.
         :rtype: str
         """
@@ -261,6 +271,8 @@ class ClientSpanInfo:
     @span_id.setter
     def span_id(self, span_id):
         """Sets the span_id of this ClientSpanInfo.
+
+        span id。
 
         :param span_id: The span_id of this ClientSpanInfo.
         :type span_id: str
@@ -271,6 +283,8 @@ class ClientSpanInfo:
     def env_id(self):
         """Gets the env_id of this ClientSpanInfo.
 
+        环境Iid。
+
         :return: The env_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -279,6 +293,8 @@ class ClientSpanInfo:
     @env_id.setter
     def env_id(self, env_id):
         """Sets the env_id of this ClientSpanInfo.
+
+        环境Iid。
 
         :param env_id: The env_id of this ClientSpanInfo.
         :type env_id: int
@@ -289,6 +305,8 @@ class ClientSpanInfo:
     def instance_id(self):
         """Gets the instance_id of this ClientSpanInfo.
 
+        实例id。
+
         :return: The instance_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -297,6 +315,8 @@ class ClientSpanInfo:
     @instance_id.setter
     def instance_id(self, instance_id):
         """Sets the instance_id of this ClientSpanInfo.
+
+        实例id。
 
         :param instance_id: The instance_id of this ClientSpanInfo.
         :type instance_id: int
@@ -307,6 +327,8 @@ class ClientSpanInfo:
     def app_id(self):
         """Gets the app_id of this ClientSpanInfo.
 
+        组件id。
+
         :return: The app_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -315,6 +337,8 @@ class ClientSpanInfo:
     @app_id.setter
     def app_id(self, app_id):
         """Sets the app_id of this ClientSpanInfo.
+
+        组件id。
 
         :param app_id: The app_id of this ClientSpanInfo.
         :type app_id: int
@@ -325,6 +349,8 @@ class ClientSpanInfo:
     def biz_id(self):
         """Gets the biz_id of this ClientSpanInfo.
 
+        应用id。
+
         :return: The biz_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -333,6 +359,8 @@ class ClientSpanInfo:
     @biz_id.setter
     def biz_id(self, biz_id):
         """Sets the biz_id of this ClientSpanInfo.
+
+        应用id。
 
         :param biz_id: The biz_id of this ClientSpanInfo.
         :type biz_id: int
@@ -343,6 +371,8 @@ class ClientSpanInfo:
     def domain_id(self):
         """Gets the domain_id of this ClientSpanInfo.
 
+        租户id。
+
         :return: The domain_id of this ClientSpanInfo.
         :rtype: int
         """
@@ -351,6 +381,8 @@ class ClientSpanInfo:
     @domain_id.setter
     def domain_id(self, domain_id):
         """Sets the domain_id of this ClientSpanInfo.
+
+        租户id。
 
         :param domain_id: The domain_id of this ClientSpanInfo.
         :type domain_id: int
@@ -361,6 +393,8 @@ class ClientSpanInfo:
     def source(self):
         """Gets the source of this ClientSpanInfo.
 
+        只有是根event也就是span的时候有值。
+
         :return: The source of this ClientSpanInfo.
         :rtype: str
         """
@@ -369,6 +403,8 @@ class ClientSpanInfo:
     @source.setter
     def source(self, source):
         """Sets the source of this ClientSpanInfo.
+
+        只有是根event也就是span的时候有值。
 
         :param source: The source of this ClientSpanInfo.
         :type source: str
@@ -379,6 +415,8 @@ class ClientSpanInfo:
     def real_source(self):
         """Gets the real_source of this ClientSpanInfo.
 
+        根event 的时候存在，实际调用的url。
+
         :return: The real_source of this ClientSpanInfo.
         :rtype: str
         """
@@ -387,6 +425,8 @@ class ClientSpanInfo:
     @real_source.setter
     def real_source(self, real_source):
         """Sets the real_source of this ClientSpanInfo.
+
+        根event 的时候存在，实际调用的url。
 
         :param real_source: The real_source of this ClientSpanInfo.
         :type real_source: str
@@ -397,6 +437,8 @@ class ClientSpanInfo:
     def start_time(self):
         """Gets the start_time of this ClientSpanInfo.
 
+        开始时间。
+
         :return: The start_time of this ClientSpanInfo.
         :rtype: int
         """
@@ -405,6 +447,8 @@ class ClientSpanInfo:
     @start_time.setter
     def start_time(self, start_time):
         """Sets the start_time of this ClientSpanInfo.
+
+        开始时间。
 
         :param start_time: The start_time of this ClientSpanInfo.
         :type start_time: int
@@ -415,6 +459,8 @@ class ClientSpanInfo:
     def time_used(self):
         """Gets the time_used of this ClientSpanInfo.
 
+        耗时。
+
         :return: The time_used of this ClientSpanInfo.
         :rtype: int
         """
@@ -423,6 +469,8 @@ class ClientSpanInfo:
     @time_used.setter
     def time_used(self, time_used):
         """Sets the time_used of this ClientSpanInfo.
+
+        耗时。
 
         :param time_used: The time_used of this ClientSpanInfo.
         :type time_used: int
@@ -433,6 +481,8 @@ class ClientSpanInfo:
     def code(self):
         """Gets the code of this ClientSpanInfo.
 
+        状态码，针对http的调用有效。
+
         :return: The code of this ClientSpanInfo.
         :rtype: int
         """
@@ -441,6 +491,8 @@ class ClientSpanInfo:
     @code.setter
     def code(self, code):
         """Sets the code of this ClientSpanInfo.
+
+        状态码，针对http的调用有效。
 
         :param code: The code of this ClientSpanInfo.
         :type code: int
@@ -451,6 +503,8 @@ class ClientSpanInfo:
     def class_name(self):
         """Gets the class_name of this ClientSpanInfo.
 
+        类名。
+
         :return: The class_name of this ClientSpanInfo.
         :rtype: str
         """
@@ -459,6 +513,8 @@ class ClientSpanInfo:
     @class_name.setter
     def class_name(self, class_name):
         """Sets the class_name of this ClientSpanInfo.
+
+        类名。
 
         :param class_name: The class_name of this ClientSpanInfo.
         :type class_name: str
@@ -469,6 +525,8 @@ class ClientSpanInfo:
     def is_async(self):
         """Gets the is_async of this ClientSpanInfo.
 
+        是否异步。
+
         :return: The is_async of this ClientSpanInfo.
         :rtype: bool
         """
@@ -477,6 +535,8 @@ class ClientSpanInfo:
     @is_async.setter
     def is_async(self, is_async):
         """Sets the is_async of this ClientSpanInfo.
+
+        是否异步。
 
         :param is_async: The is_async of this ClientSpanInfo.
         :type is_async: bool
@@ -487,6 +547,8 @@ class ClientSpanInfo:
     def tags(self):
         """Gets the tags of this ClientSpanInfo.
 
+        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
+
         :return: The tags of this ClientSpanInfo.
         :rtype: dict(str, str)
         """
@@ -495,6 +557,8 @@ class ClientSpanInfo:
     @tags.setter
     def tags(self, tags):
         """Sets the tags of this ClientSpanInfo.
+
+        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
         :param tags: The tags of this ClientSpanInfo.
         :type tags: dict(str, str)
@@ -505,6 +569,8 @@ class ClientSpanInfo:
     def has_error(self):
         """Gets the has_error of this ClientSpanInfo.
 
+        是否报错。
+
         :return: The has_error of this ClientSpanInfo.
         :rtype: bool
         """
@@ -513,6 +579,8 @@ class ClientSpanInfo:
     @has_error.setter
     def has_error(self, has_error):
         """Sets the has_error of this ClientSpanInfo.
+
+        是否报错。
 
         :param has_error: The has_error of this ClientSpanInfo.
         :type has_error: bool
@@ -523,6 +591,8 @@ class ClientSpanInfo:
     def error_reasons(self):
         """Gets the error_reasons of this ClientSpanInfo.
 
+        报错原因。
+
         :return: The error_reasons of this ClientSpanInfo.
         :rtype: str
         """
@@ -531,6 +601,8 @@ class ClientSpanInfo:
     @error_reasons.setter
     def error_reasons(self, error_reasons):
         """Sets the error_reasons of this ClientSpanInfo.
+
+        报错原因。
 
         :param error_reasons: The error_reasons of this ClientSpanInfo.
         :type error_reasons: str
@@ -541,7 +613,7 @@ class ClientSpanInfo:
     def type(self):
         """Gets the type of this ClientSpanInfo.
 
-        类型，mysql，kafka等
+        类型，mysql，kafka等。
 
         :return: The type of this ClientSpanInfo.
         :rtype: str
@@ -552,7 +624,7 @@ class ClientSpanInfo:
     def type(self, type):
         """Sets the type of this ClientSpanInfo.
 
-        类型，mysql，kafka等
+        类型，mysql，kafka等。
 
         :param type: The type of this ClientSpanInfo.
         :type type: str
@@ -563,7 +635,7 @@ class ClientSpanInfo:
     def http_method(self):
         """Gets the http_method of this ClientSpanInfo.
 
-        这里的method实际上是tags里面的http_method，只有url监控项才有
+        这里的method实际上是tags里面的http_method，只有url监控项才有。
 
         :return: The http_method of this ClientSpanInfo.
         :rtype: str
@@ -574,7 +646,7 @@ class ClientSpanInfo:
     def http_method(self, http_method):
         """Sets the http_method of this ClientSpanInfo.
 
-        这里的method实际上是tags里面的http_method，只有url监控项才有
+        这里的method实际上是tags里面的http_method，只有url监控项才有。
 
         :param http_method: The http_method of this ClientSpanInfo.
         :type http_method: str
@@ -585,7 +657,7 @@ class ClientSpanInfo:
     def biz_code(self):
         """Gets the biz_code of this ClientSpanInfo.
 
-        业务状态码的采集
+        业务状态码的采集。
 
         :return: The biz_code of this ClientSpanInfo.
         :rtype: str
@@ -596,7 +668,7 @@ class ClientSpanInfo:
     def biz_code(self, biz_code):
         """Sets the biz_code of this ClientSpanInfo.
 
-        业务状态码的采集
+        业务状态码的采集。
 
         :param biz_code: The biz_code of this ClientSpanInfo.
         :type biz_code: str

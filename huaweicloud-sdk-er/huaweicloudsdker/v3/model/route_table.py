@@ -27,7 +27,6 @@ class RouteTable:
         'is_default_propagation': 'bool',
         'state': 'str',
         'tags': 'list[Tag]',
-        'bgp_options': 'BgpOptions',
         'created_at': 'datetime',
         'updated_at': 'datetime'
     }
@@ -40,12 +39,11 @@ class RouteTable:
         'is_default_propagation': 'is_default_propagation',
         'state': 'state',
         'tags': 'tags',
-        'bgp_options': 'bgp_options',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, description=None, is_default_association=None, is_default_propagation=None, state=None, tags=None, bgp_options=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, description=None, is_default_association=None, is_default_propagation=None, state=None, tags=None, created_at=None, updated_at=None):
         """RouteTable
 
         The model defined in huaweicloud sdk
@@ -64,8 +62,6 @@ class RouteTable:
         :type state: str
         :param tags: 标签
         :type tags: list[:class:`huaweicloudsdker.v3.Tag`]
-        :param bgp_options: 
-        :type bgp_options: :class:`huaweicloudsdker.v3.BgpOptions`
         :param created_at: 创建时间
         :type created_at: datetime
         :param updated_at: 更新时间
@@ -81,7 +77,6 @@ class RouteTable:
         self._is_default_propagation = None
         self._state = None
         self._tags = None
-        self._bgp_options = None
         self._created_at = None
         self._updated_at = None
         self.discriminator = None
@@ -96,8 +91,6 @@ class RouteTable:
         self.state = state
         if tags is not None:
             self.tags = tags
-        if bgp_options is not None:
-            self.bgp_options = bgp_options
         self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
@@ -255,24 +248,6 @@ class RouteTable:
         :type tags: list[:class:`huaweicloudsdker.v3.Tag`]
         """
         self._tags = tags
-
-    @property
-    def bgp_options(self):
-        """Gets the bgp_options of this RouteTable.
-
-        :return: The bgp_options of this RouteTable.
-        :rtype: :class:`huaweicloudsdker.v3.BgpOptions`
-        """
-        return self._bgp_options
-
-    @bgp_options.setter
-    def bgp_options(self, bgp_options):
-        """Sets the bgp_options of this RouteTable.
-
-        :param bgp_options: The bgp_options of this RouteTable.
-        :type bgp_options: :class:`huaweicloudsdker.v3.BgpOptions`
-        """
-        self._bgp_options = bgp_options
 
     @property
     def created_at(self):

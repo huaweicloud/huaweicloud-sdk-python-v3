@@ -78,10 +78,8 @@ class MultiTaskMappingCreateBody:
 
         if ext_info is not None:
             self.ext_info = ext_info
-        if source_datasource_id is not None:
-            self.source_datasource_id = source_datasource_id
-        if target_datasource_id is not None:
-            self.target_datasource_id = target_datasource_id
+        self.source_datasource_id = source_datasource_id
+        self.target_datasource_id = target_datasource_id
         if source_columns is not None:
             self.source_columns = source_columns
         if target_columns is not None:

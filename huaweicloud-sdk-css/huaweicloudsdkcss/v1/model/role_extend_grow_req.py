@@ -40,7 +40,7 @@ class RoleExtendGrowReq:
         :type type: str
         :param nodesize: 扩容实例个数。集群已有实例个数和增加实例个数总和不能超过32。若无需扩容该参数将该参数设置为0即可。
         :type nodesize: int
-        :param disksize: 扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应默认实例存储容量上限。若无需扩容该参数将该参数设置为0即可。[当集群为包周期集群时不支持同时修改节点个数和磁盘容量。](tag: hc,tag: hws) 单位：GB。 - ess节点、ess-cold节点扩容步长为20。 - ess-master节点、ess-client节点不允许扩容存储。
+        :param disksize: 扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应默认实例存储容量上限。若无需扩容该参数将该参数设置为0即可。[当集群为包周期集群时不支持同时修改节点个数和磁盘容量。](tag: hc,tag: hws)  单位：GB。  - ess节点、ess-cold节点扩容步长为20。  - ess-master节点、ess-client节点不允许扩容存储。
         :type disksize: int
         """
         
@@ -103,7 +103,7 @@ class RoleExtendGrowReq:
     def disksize(self):
         """Gets the disksize of this RoleExtendGrowReq.
 
-        扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应默认实例存储容量上限。若无需扩容该参数将该参数设置为0即可。[当集群为包周期集群时不支持同时修改节点个数和磁盘容量。](tag: hc,tag: hws) 单位：GB。 - ess节点、ess-cold节点扩容步长为20。 - ess-master节点、ess-client节点不允许扩容存储。
+        扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应默认实例存储容量上限。若无需扩容该参数将该参数设置为0即可。[当集群为包周期集群时不支持同时修改节点个数和磁盘容量。](tag: hc,tag: hws)  单位：GB。  - ess节点、ess-cold节点扩容步长为20。  - ess-master节点、ess-client节点不允许扩容存储。
 
         :return: The disksize of this RoleExtendGrowReq.
         :rtype: int
@@ -114,7 +114,7 @@ class RoleExtendGrowReq:
     def disksize(self, disksize):
         """Sets the disksize of this RoleExtendGrowReq.
 
-        扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应默认实例存储容量上限。若无需扩容该参数将该参数设置为0即可。[当集群为包周期集群时不支持同时修改节点个数和磁盘容量。](tag: hc,tag: hws) 单位：GB。 - ess节点、ess-cold节点扩容步长为20。 - ess-master节点、ess-client节点不允许扩容存储。
+        扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应默认实例存储容量上限。若无需扩容该参数将该参数设置为0即可。[当集群为包周期集群时不支持同时修改节点个数和磁盘容量。](tag: hc,tag: hws)  单位：GB。  - ess节点、ess-cold节点扩容步长为20。  - ess-master节点、ess-client节点不允许扩容存储。
 
         :param disksize: The disksize of this RoleExtendGrowReq.
         :type disksize: int

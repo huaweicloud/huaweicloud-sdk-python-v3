@@ -34,9 +34,9 @@ class ShowSpanSearchResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 返回的总数
+        :param total: 返回的总数。
         :type total: int
-        :param span_info_list: span信息
+        :param span_info_list: span信息。
         :type span_info_list: list[:class:`huaweicloudsdkapm.v1.ClientSpanInfo`]
         """
         
@@ -55,7 +55,7 @@ class ShowSpanSearchResponse(SdkResponse):
     def total(self):
         """Gets the total of this ShowSpanSearchResponse.
 
-        返回的总数
+        返回的总数。
 
         :return: The total of this ShowSpanSearchResponse.
         :rtype: int
@@ -66,7 +66,7 @@ class ShowSpanSearchResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ShowSpanSearchResponse.
 
-        返回的总数
+        返回的总数。
 
         :param total: The total of this ShowSpanSearchResponse.
         :type total: int
@@ -77,7 +77,7 @@ class ShowSpanSearchResponse(SdkResponse):
     def span_info_list(self):
         """Gets the span_info_list of this ShowSpanSearchResponse.
 
-        span信息
+        span信息。
 
         :return: The span_info_list of this ShowSpanSearchResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.ClientSpanInfo`]
@@ -88,7 +88,7 @@ class ShowSpanSearchResponse(SdkResponse):
     def span_info_list(self, span_info_list):
         """Sets the span_info_list of this ShowSpanSearchResponse.
 
-        span信息
+        span信息。
 
         :param span_info_list: The span_info_list of this ShowSpanSearchResponse.
         :type span_info_list: list[:class:`huaweicloudsdkapm.v1.ClientSpanInfo`]

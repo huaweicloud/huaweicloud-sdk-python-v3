@@ -38,13 +38,13 @@ class CollectorCategoryInfo:
 
         The model defined in huaweicloud sdk
 
-        :param category_id: 采集器类别id
+        :param category_id: 采集器类别id。
         :type category_id: int
-        :param category_name: 采集器类别名称
+        :param category_name: 采集器类别名称。
         :type category_name: str
-        :param display_name: 采集器类别展示名称
+        :param display_name: 采集器类别展示名称。
         :type display_name: str
-        :param sequence: 序列号
+        :param sequence: 序列号。
         :type sequence: int
         """
         
@@ -69,7 +69,7 @@ class CollectorCategoryInfo:
     def category_id(self):
         """Gets the category_id of this CollectorCategoryInfo.
 
-        采集器类别id
+        采集器类别id。
 
         :return: The category_id of this CollectorCategoryInfo.
         :rtype: int
@@ -80,7 +80,7 @@ class CollectorCategoryInfo:
     def category_id(self, category_id):
         """Sets the category_id of this CollectorCategoryInfo.
 
-        采集器类别id
+        采集器类别id。
 
         :param category_id: The category_id of this CollectorCategoryInfo.
         :type category_id: int
@@ -91,7 +91,7 @@ class CollectorCategoryInfo:
     def category_name(self):
         """Gets the category_name of this CollectorCategoryInfo.
 
-        采集器类别名称
+        采集器类别名称。
 
         :return: The category_name of this CollectorCategoryInfo.
         :rtype: str
@@ -102,7 +102,7 @@ class CollectorCategoryInfo:
     def category_name(self, category_name):
         """Sets the category_name of this CollectorCategoryInfo.
 
-        采集器类别名称
+        采集器类别名称。
 
         :param category_name: The category_name of this CollectorCategoryInfo.
         :type category_name: str
@@ -113,7 +113,7 @@ class CollectorCategoryInfo:
     def display_name(self):
         """Gets the display_name of this CollectorCategoryInfo.
 
-        采集器类别展示名称
+        采集器类别展示名称。
 
         :return: The display_name of this CollectorCategoryInfo.
         :rtype: str
@@ -124,7 +124,7 @@ class CollectorCategoryInfo:
     def display_name(self, display_name):
         """Sets the display_name of this CollectorCategoryInfo.
 
-        采集器类别展示名称
+        采集器类别展示名称。
 
         :param display_name: The display_name of this CollectorCategoryInfo.
         :type display_name: str
@@ -135,7 +135,7 @@ class CollectorCategoryInfo:
     def sequence(self):
         """Gets the sequence of this CollectorCategoryInfo.
 
-        序列号
+        序列号。
 
         :return: The sequence of this CollectorCategoryInfo.
         :rtype: int
@@ -146,7 +146,7 @@ class CollectorCategoryInfo:
     def sequence(self, sequence):
         """Sets the sequence of this CollectorCategoryInfo.
 
-        序列号
+        序列号。
 
         :param sequence: The sequence of this CollectorCategoryInfo.
         :type sequence: int

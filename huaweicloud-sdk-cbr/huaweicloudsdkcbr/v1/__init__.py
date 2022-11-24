@@ -13,7 +13,6 @@ from huaweicloudsdkcbr.v1.model.add_vault_resource_request import AddVaultResour
 from huaweicloudsdkcbr.v1.model.add_vault_resource_response import AddVaultResourceResponse
 from huaweicloudsdkcbr.v1.model.associate_vault_policy_request import AssociateVaultPolicyRequest
 from huaweicloudsdkcbr.v1.model.associate_vault_policy_response import AssociateVaultPolicyResponse
-from huaweicloudsdkcbr.v1.model.backup_detail import BackupDetail
 from huaweicloudsdkcbr.v1.model.backup_extend_info import BackupExtendInfo
 from huaweicloudsdkcbr.v1.model.backup_replicate_req import BackupReplicateReq
 from huaweicloudsdkcbr.v1.model.backup_replicate_req_body import BackupReplicateReqBody

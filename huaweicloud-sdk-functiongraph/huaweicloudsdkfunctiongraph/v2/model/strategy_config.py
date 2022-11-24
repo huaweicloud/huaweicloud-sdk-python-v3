@@ -34,7 +34,7 @@ class StrategyConfig:
 
         The model defined in huaweicloud sdk
 
-        :param concurrency: 单函数最大实例数，v1取值0和-1，v2取值-1到1000
+        :param concurrency: 单函数最大实例数，v1取值0和-1，v2取值-1到1000 -1代表该函数实例数无限制 0代表该函数被禁用
         :type concurrency: int
         :param concurrent_num: 单实例最大并发数，v2版本才支持，取值-1到200000
         :type concurrent_num: int
@@ -53,7 +53,7 @@ class StrategyConfig:
     def concurrency(self):
         """Gets the concurrency of this StrategyConfig.
 
-        单函数最大实例数，v1取值0和-1，v2取值-1到1000
+        单函数最大实例数，v1取值0和-1，v2取值-1到1000 -1代表该函数实例数无限制 0代表该函数被禁用
 
         :return: The concurrency of this StrategyConfig.
         :rtype: int
@@ -64,7 +64,7 @@ class StrategyConfig:
     def concurrency(self, concurrency):
         """Sets the concurrency of this StrategyConfig.
 
-        单函数最大实例数，v1取值0和-1，v2取值-1到1000
+        单函数最大实例数，v1取值0和-1，v2取值-1到1000 -1代表该函数实例数无限制 0代表该函数被禁用
 
         :param concurrency: The concurrency of this StrategyConfig.
         :type concurrency: int

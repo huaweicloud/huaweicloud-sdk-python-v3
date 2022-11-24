@@ -176,6 +176,74 @@ class AosAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_stack_async(self, request):
+        """删除堆栈
+
+        删除堆栈
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteStack
+        :type request: :class:`huaweicloudsdkaos.v1.DeleteStackRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.DeleteStackResponse`
+        """
+        return self.delete_stack_with_http_info(request)
+
+    def delete_stack_with_http_info(self, request):
+        all_params = ['client_request_id', 'stack_name', 'stack_id', 'executor']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_name' in local_var_params:
+            path_params['stack_name'] = local_var_params['stack_name']
+
+        query_params = []
+        if 'stack_id' in local_var_params:
+            query_params.append(('stack_id', local_var_params['stack_id']))
+        if 'executor' in local_var_params:
+            query_params.append(('executor', local_var_params['executor']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stacks/{stack_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteStackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def estimate_execution_plan_price_async(self, request):
         """预估执行计划的价格
 
@@ -382,6 +450,80 @@ class AosAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_stack_events_async(self, request):
+        """获取栈的细节更新状态
+
+        获取栈的细节更新状态，可以获取整个栈从生成到当前时间点的所有状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListStackEvents
+        :type request: :class:`huaweicloudsdkaos.v1.ListStackEventsRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ListStackEventsResponse`
+        """
+        return self.list_stack_events_with_http_info(request)
+
+    def list_stack_events_with_http_info(self, request):
+        all_params = ['client_request_id', 'stack_name', 'stack_id', 'deployment_id', 'limit', 'marker', 'executor']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_name' in local_var_params:
+            path_params['stack_name'] = local_var_params['stack_name']
+
+        query_params = []
+        if 'stack_id' in local_var_params:
+            query_params.append(('stack_id', local_var_params['stack_id']))
+        if 'deployment_id' in local_var_params:
+            query_params.append(('deployment_id', local_var_params['deployment_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'executor' in local_var_params:
+            query_params.append(('executor', local_var_params['executor']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stacks/{stack_name}/events',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListStackEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_stack_outputs_async(self, request):
         """列举堆栈的输出
 
@@ -449,6 +591,74 @@ class AosAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListStackOutputsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_stack_resources_async(self, request):
+        """获取堆栈的资源列表
+
+        获取堆栈的资源列表，可以获取整个栈从生成到当前时间点的所有状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListStackResources
+        :type request: :class:`huaweicloudsdkaos.v1.ListStackResourcesRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ListStackResourcesResponse`
+        """
+        return self.list_stack_resources_with_http_info(request)
+
+    def list_stack_resources_with_http_info(self, request):
+        all_params = ['client_request_id', 'stack_name', 'stack_id', 'executor']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_name' in local_var_params:
+            path_params['stack_name'] = local_var_params['stack_name']
+
+        query_params = []
+        if 'stack_id' in local_var_params:
+            query_params.append(('stack_id', local_var_params['stack_id']))
+        if 'executor' in local_var_params:
+            query_params.append(('executor', local_var_params['executor']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/stacks/{stack_name}/resources',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListStackResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

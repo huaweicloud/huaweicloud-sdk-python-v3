@@ -34,9 +34,9 @@ class ListEnvTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param env_tags: 环境标签数据模型
+        :param env_tags: 环境标签数据列表。
         :type env_tags: list[:class:`huaweicloudsdkapm.v1.CmdbTagEntity`]
-        :param total_count: 总条数
+        :param total_count: 总条数。
         :type total_count: int
         """
         
@@ -55,7 +55,7 @@ class ListEnvTagsResponse(SdkResponse):
     def env_tags(self):
         """Gets the env_tags of this ListEnvTagsResponse.
 
-        环境标签数据模型
+        环境标签数据列表。
 
         :return: The env_tags of this ListEnvTagsResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.CmdbTagEntity`]
@@ -66,7 +66,7 @@ class ListEnvTagsResponse(SdkResponse):
     def env_tags(self, env_tags):
         """Sets the env_tags of this ListEnvTagsResponse.
 
-        环境标签数据模型
+        环境标签数据列表。
 
         :param env_tags: The env_tags of this ListEnvTagsResponse.
         :type env_tags: list[:class:`huaweicloudsdkapm.v1.CmdbTagEntity`]
@@ -77,7 +77,7 @@ class ListEnvTagsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListEnvTagsResponse.
 
-        总条数
+        总条数。
 
         :return: The total_count of this ListEnvTagsResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class ListEnvTagsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListEnvTagsResponse.
 
-        总条数
+        总条数。
 
         :param total_count: The total_count of this ListEnvTagsResponse.
         :type total_count: int

@@ -54,29 +54,29 @@ class SumTableParam:
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 上次请求的id
+        :param request_id: 上次请求的id。
         :type request_id: str
         :param view_config: 
         :type view_config: :class:`huaweicloudsdkapm.v1.SumTableView`
-        :param strategy: 策略
+        :param strategy: 策略。
         :type strategy: str
-        :param page: 当前页码
+        :param page: 当前页码。
         :type page: int
-        :param page_size: 每页数据总数
+        :param page_size: 每页数据总数。
         :type page_size: int
-        :param order_by: 排序规则
+        :param order_by: 排序规则。
         :type order_by: str
-        :param search_word: 搜索关键字
+        :param search_word: 搜索关键字。
         :type search_word: str
-        :param instance_id: 实例id
+        :param instance_id: 实例id。
         :type instance_id: int
-        :param monitor_item_id: 监控项id
+        :param monitor_item_id: 监控项id。
         :type monitor_item_id: int
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param start_time: 起始时间
+        :param start_time: 起始时间。
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: 结束时间。
         :type end_time: str
         """
         
@@ -125,7 +125,7 @@ class SumTableParam:
     def request_id(self):
         """Gets the request_id of this SumTableParam.
 
-        上次请求的id
+        上次请求的id。
 
         :return: The request_id of this SumTableParam.
         :rtype: str
@@ -136,7 +136,7 @@ class SumTableParam:
     def request_id(self, request_id):
         """Sets the request_id of this SumTableParam.
 
-        上次请求的id
+        上次请求的id。
 
         :param request_id: The request_id of this SumTableParam.
         :type request_id: str
@@ -165,7 +165,7 @@ class SumTableParam:
     def strategy(self):
         """Gets the strategy of this SumTableParam.
 
-        策略
+        策略。
 
         :return: The strategy of this SumTableParam.
         :rtype: str
@@ -176,7 +176,7 @@ class SumTableParam:
     def strategy(self, strategy):
         """Sets the strategy of this SumTableParam.
 
-        策略
+        策略。
 
         :param strategy: The strategy of this SumTableParam.
         :type strategy: str
@@ -187,7 +187,7 @@ class SumTableParam:
     def page(self):
         """Gets the page of this SumTableParam.
 
-        当前页码
+        当前页码。
 
         :return: The page of this SumTableParam.
         :rtype: int
@@ -198,7 +198,7 @@ class SumTableParam:
     def page(self, page):
         """Sets the page of this SumTableParam.
 
-        当前页码
+        当前页码。
 
         :param page: The page of this SumTableParam.
         :type page: int
@@ -209,7 +209,7 @@ class SumTableParam:
     def page_size(self):
         """Gets the page_size of this SumTableParam.
 
-        每页数据总数
+        每页数据总数。
 
         :return: The page_size of this SumTableParam.
         :rtype: int
@@ -220,7 +220,7 @@ class SumTableParam:
     def page_size(self, page_size):
         """Sets the page_size of this SumTableParam.
 
-        每页数据总数
+        每页数据总数。
 
         :param page_size: The page_size of this SumTableParam.
         :type page_size: int
@@ -231,7 +231,7 @@ class SumTableParam:
     def order_by(self):
         """Gets the order_by of this SumTableParam.
 
-        排序规则
+        排序规则。
 
         :return: The order_by of this SumTableParam.
         :rtype: str
@@ -242,7 +242,7 @@ class SumTableParam:
     def order_by(self, order_by):
         """Sets the order_by of this SumTableParam.
 
-        排序规则
+        排序规则。
 
         :param order_by: The order_by of this SumTableParam.
         :type order_by: str
@@ -253,7 +253,7 @@ class SumTableParam:
     def search_word(self):
         """Gets the search_word of this SumTableParam.
 
-        搜索关键字
+        搜索关键字。
 
         :return: The search_word of this SumTableParam.
         :rtype: str
@@ -264,7 +264,7 @@ class SumTableParam:
     def search_word(self, search_word):
         """Sets the search_word of this SumTableParam.
 
-        搜索关键字
+        搜索关键字。
 
         :param search_word: The search_word of this SumTableParam.
         :type search_word: str
@@ -275,7 +275,7 @@ class SumTableParam:
     def instance_id(self):
         """Gets the instance_id of this SumTableParam.
 
-        实例id
+        实例id。
 
         :return: The instance_id of this SumTableParam.
         :rtype: int
@@ -286,7 +286,7 @@ class SumTableParam:
     def instance_id(self, instance_id):
         """Sets the instance_id of this SumTableParam.
 
-        实例id
+        实例id。
 
         :param instance_id: The instance_id of this SumTableParam.
         :type instance_id: int
@@ -297,7 +297,7 @@ class SumTableParam:
     def monitor_item_id(self):
         """Gets the monitor_item_id of this SumTableParam.
 
-        监控项id
+        监控项id。
 
         :return: The monitor_item_id of this SumTableParam.
         :rtype: int
@@ -308,7 +308,7 @@ class SumTableParam:
     def monitor_item_id(self, monitor_item_id):
         """Sets the monitor_item_id of this SumTableParam.
 
-        监控项id
+        监控项id。
 
         :param monitor_item_id: The monitor_item_id of this SumTableParam.
         :type monitor_item_id: int
@@ -319,7 +319,7 @@ class SumTableParam:
     def env_id(self):
         """Gets the env_id of this SumTableParam.
 
-        环境id
+        环境id。
 
         :return: The env_id of this SumTableParam.
         :rtype: int
@@ -330,7 +330,7 @@ class SumTableParam:
     def env_id(self, env_id):
         """Sets the env_id of this SumTableParam.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this SumTableParam.
         :type env_id: int
@@ -341,7 +341,7 @@ class SumTableParam:
     def start_time(self):
         """Gets the start_time of this SumTableParam.
 
-        起始时间
+        起始时间。
 
         :return: The start_time of this SumTableParam.
         :rtype: str
@@ -352,7 +352,7 @@ class SumTableParam:
     def start_time(self, start_time):
         """Sets the start_time of this SumTableParam.
 
-        起始时间
+        起始时间。
 
         :param start_time: The start_time of this SumTableParam.
         :type start_time: str
@@ -363,7 +363,7 @@ class SumTableParam:
     def end_time(self):
         """Gets the end_time of this SumTableParam.
 
-        结束时间
+        结束时间。
 
         :return: The end_time of this SumTableParam.
         :rtype: str
@@ -374,7 +374,7 @@ class SumTableParam:
     def end_time(self, end_time):
         """Sets the end_time of this SumTableParam.
 
-        结束时间
+        结束时间。
 
         :param end_time: The end_time of this SumTableParam.
         :type end_time: str

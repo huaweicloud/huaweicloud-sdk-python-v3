@@ -58,7 +58,7 @@ class ListAssociationsRequest:
         :type marker: str
         :param attachment_id: 连接ID
         :type attachment_id: list[str]
-        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering
         :type resource_type: list[str]
         :param state: 状态
         :type state: list[str]
@@ -212,7 +212,7 @@ class ListAssociationsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListAssociationsRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :return: The resource_type of this ListAssociationsRequest.
         :rtype: list[str]
@@ -223,7 +223,7 @@ class ListAssociationsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListAssociationsRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :param resource_type: The resource_type of this ListAssociationsRequest.
         :type resource_type: list[str]

@@ -27,7 +27,7 @@ class ThreatIntel:
         'information_source': 'str',
         'severity': 'int',
         'description': 'str',
-        'modified': 'str',
+        'modified': 'datetime',
         'valid_from': 'str',
         'valid_until': 'str',
         'properties': 'ThreatIntelProperties'
@@ -67,7 +67,7 @@ class ThreatIntel:
         :param description: 威胁情报描述。
         :type description: str
         :param modified: 威胁情报的更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
-        :type modified: str
+        :type modified: datetime
         :param valid_from: 有效期开始（可读字符串）。
         :type valid_from: str
         :param valid_until: 有效期结束（可读字符串）。
@@ -272,7 +272,7 @@ class ThreatIntel:
         威胁情报的更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :return: The modified of this ThreatIntel.
-        :rtype: str
+        :rtype: datetime
         """
         return self._modified
 
@@ -283,7 +283,7 @@ class ThreatIntel:
         威胁情报的更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :param modified: The modified of this ThreatIntel.
-        :type modified: str
+        :type modified: datetime
         """
         self._modified = modified
 

@@ -235,6 +235,70 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_cold_volume_async(self, request):
+        """‘创建冷数据存储’
+
+        ‘创建冷数据存储’
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateColdVolume
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateColdVolumeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateColdVolumeResponse`
+        """
+        return self.create_cold_volume_with_http_info(request)
+
+    def create_cold_volume_with_http_info(self, request):
+        all_params = ['instance_id', 'create_cold_volume_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/cold-volume',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateColdVolumeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_configuration_async(self, request):
         """创建参数模板
 
@@ -1521,6 +1585,72 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def modify_public_ip_async(self, request):
+        """绑定/解绑弹性公网IP
+
+        实例下的节点绑定弹性公网IP/解绑弹性公网IP
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyPublicIp
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPublicIpRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPublicIpResponse`
+        """
+        return self.modify_public_ip_with_http_info(request)
+
+    def modify_public_ip_with_http_info(self, request):
+        all_params = ['instance_id', 'node_id', 'bind_eip_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/public-ip',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyPublicIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def reset_password_async(self, request):
         """修改实例的管理员密码
 
@@ -1580,6 +1710,70 @@ class GaussDBforNoSQLAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ResetPasswordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def resize_cold_volume_async(self, request):
+        """扩容冷数据存储
+
+        扩容冷数据存储。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ResizeColdVolume
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeColdVolumeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeColdVolumeResponse`
+        """
+        return self.resize_cold_volume_with_http_info(request)
+
+    def resize_cold_volume_with_http_info(self, request):
+        all_params = ['instance_id', 'resize_cold_volume_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/cold-volume',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResizeColdVolumeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1713,6 +1907,68 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def restart_instance_async(self, request):
+        """重启实例的数据库服务
+
+        重启实例的数据库服务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for RestartInstance
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.RestartInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestartInstanceResponse`
+        """
+        return self.restart_instance_with_http_info(request)
+
+    def restart_instance_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/restart',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RestartInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def restore_existing_instance_async(self, request):
         """恢复到已有实例
 
@@ -1777,6 +2033,68 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def set_auto_enlarge_policy_async(self, request):
+        """设置磁盘自动扩容策略
+
+        设置磁盘自动扩容策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for SetAutoEnlargePolicy
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SetAutoEnlargePolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetAutoEnlargePolicyResponse`
+        """
+        return self.set_auto_enlarge_policy_with_http_info(request)
+
+    def set_auto_enlarge_policy_with_http_info(self, request):
+        all_params = ['set_auto_enlarge_policy_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/disk-auto-expansion',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SetAutoEnlargePolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def set_backup_policy_async(self, request):
         """设置自动备份策略
 
@@ -1836,6 +2154,137 @@ class GaussDBforNoSQLAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='SetBackupPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_applicable_instances_async(self, request):
+        """查询参数模板可应用的实例列表
+
+        查询参数模板可应用的实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowApplicableInstances
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApplicableInstancesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApplicableInstancesResponse`
+        """
+        return self.show_applicable_instances_with_http_info(request)
+
+    def show_applicable_instances_with_http_info(self, request):
+        all_params = ['config_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations/{config_id}/applicable-instances',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowApplicableInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_apply_history_async(self, request):
+        """查询参数模板应用历史
+
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowApplyHistory
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApplyHistoryRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApplyHistoryResponse`
+        """
+        return self.show_apply_history_with_http_info(request)
+
+    def show_apply_history_with_http_info(self, request):
+        all_params = ['config_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations/{config_id}/applied-histories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowApplyHistoryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2089,6 +2538,72 @@ class GaussDBforNoSQLAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_modify_history_async(self, request):
+        """查询实例参数的修改历史
+
+        查询实例参数的修改历史
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowModifyHistory
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowModifyHistoryRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowModifyHistoryResponse`
+        """
+        return self.show_modify_history_with_http_info(request)
+
+    def show_modify_history_with_http_info(self, request):
+        all_params = ['instance_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/configuration-histories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowModifyHistoryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_quotas_async(self, request):
         """查询配额
 
@@ -2274,6 +2789,70 @@ class GaussDBforNoSQLAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShrinkInstanceNodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def switch_ssl_async(self, request):
+        """切换实例SSL开关
+
+        切换实例SSL开关。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for SwitchSsl
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSslRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSslResponse`
+        """
+        return self.switch_ssl_with_http_info(request)
+
+    def switch_ssl_with_http_info(self, request):
+        all_params = ['instance_id', 'switch_ssl_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/ssl-option',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SwitchSslResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

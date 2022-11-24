@@ -46,10 +46,8 @@ class CreateCommonTaskRequestBody:
         self._task_detail = None
         self.discriminator = None
 
-        if task is not None:
-            self.task = task
-        if task_detail is not None:
-            self.task_detail = task_detail
+        self.task = task
+        self.task_detail = task_detail
 
     @property
     def task(self):

@@ -106,81 +106,81 @@ class SpanEventInfo:
 
         The model defined in huaweicloud sdk
 
-        :param env_name: 环境名称
+        :param env_name: 环境名称。
         :type env_name: str
-        :param app_name: 组件名称
+        :param app_name: 组件名称。
         :type app_name: str
-        :param indent: 缩进
+        :param indent: 缩进。
         :type indent: int
-        :param region: 区域
+        :param region: 区域。
         :type region: str
-        :param host_name: 主机名称
+        :param host_name: 主机名称。
         :type host_name: str
-        :param ip_address: ip地址
+        :param ip_address: ip地址。
         :type ip_address: str
-        :param instance_name: 实例名称
+        :param instance_name: 实例名称。
         :type instance_name: str
-        :param event_id: event的ID，在一个具体的span下面event的编号，一般是1-1-2 这种格式
+        :param event_id: event的ID，在一个具体的span下面event的编号，一般是1-1-2这种格式。
         :type event_id: str
-        :param next_span_id: 产生下一个span的源的eventId
+        :param next_span_id: 产生下一个span的源的eventId。
         :type next_span_id: str
-        :param source_event_id: 调用方的eventid
+        :param source_event_id: 调用方的eventid。
         :type source_event_id: str
-        :param method: 方法名
+        :param method: 方法名。
         :type method: str
-        :param children_event_count: 子event的个数
+        :param children_event_count: 子event的个数。
         :type children_event_count: int
-        :param discard: 丢弃的子event个数，key是类型
+        :param discard: 丢弃的子event个数，key是类型。
         :type discard: list[:class:`huaweicloudsdkapm.v1.DiscardInfo`]
-        :param argument: 界面展示的参数，每个类型的event自己来实现
+        :param argument: 界面展示的参数，每个类型的event自己来实现。
         :type argument: str
-        :param attachment: 注册信息里面的attachment
+        :param attachment: 注册信息里面的attachment。
         :type attachment: dict(str, str)
-        :param global_trace_id: vTraceId，虚拟traceId
+        :param global_trace_id: vTraceId，虚拟traceId。
         :type global_trace_id: str
-        :param global_path: 虚拟traceId经过的path路径
+        :param global_path: 虚拟traceId经过的path路径。
         :type global_path: str
-        :param trace_id: traceId
+        :param trace_id: traceId。
         :type trace_id: str
-        :param span_id: span id
+        :param span_id: span id。
         :type span_id: str
-        :param env_id: 环境ID
+        :param env_id: 环境id。
         :type env_id: int
-        :param instance_id: 实例ID
+        :param instance_id: 实例id。
         :type instance_id: int
-        :param app_id: 组件id
+        :param app_id: 组件id。
         :type app_id: int
-        :param biz_id: 应用id
+        :param biz_id: 应用id。
         :type biz_id: int
-        :param domain_id: 租户ID
+        :param domain_id: 租户id。
         :type domain_id: int
-        :param source: 只有是根event也就是span的时候有值
+        :param source: 只有是根event也就是span的时候有值。
         :type source: str
-        :param real_source: 根event 的时候存在，实际调用的url
+        :param real_source: 根event的时候存在，实际调用的url。
         :type real_source: str
-        :param start_time: 开始时间
+        :param start_time: 开始时间。
         :type start_time: int
-        :param time_used: 耗时
+        :param time_used: 耗时。
         :type time_used: int
-        :param code: 状态码，针对http的调用有效
+        :param code: 状态码，针对http的调用有效。
         :type code: int
-        :param class_name: 类名
+        :param class_name: 类名。
         :type class_name: str
-        :param is_async: 是否异步的event
+        :param is_async: 是否异步的event。
         :type is_async: bool
-        :param tags: 包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数
+        :param tags: 包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
         :type tags: dict(str, str)
-        :param has_error: 是否有错误，主要用在span的场景
+        :param has_error: 是否有错误，主要用在span的场景。
         :type has_error: bool
-        :param error_reasons: 错误类型 主要有这么几种 ErrorType枚举的几种，可以逗号分隔多种类型
+        :param error_reasons: 错误原因。
         :type error_reasons: str
-        :param type: 类型，mysql，kafka等
+        :param type: 类型，mysql，kafka等。
         :type type: str
-        :param http_method: 这里的method实际上是tags里面的http_method，只有url监控项才有
+        :param http_method: 这里的method实际上是tags里面的http_method，只有url监控项才有。
         :type http_method: str
-        :param biz_code: 业务状态码的采集
+        :param biz_code: 业务状态码的采集。
         :type biz_code: str
-        :param id: spanId
+        :param id: spanId。
         :type id: str
         """
         
@@ -307,7 +307,7 @@ class SpanEventInfo:
     def env_name(self):
         """Gets the env_name of this SpanEventInfo.
 
-        环境名称
+        环境名称。
 
         :return: The env_name of this SpanEventInfo.
         :rtype: str
@@ -318,7 +318,7 @@ class SpanEventInfo:
     def env_name(self, env_name):
         """Sets the env_name of this SpanEventInfo.
 
-        环境名称
+        环境名称。
 
         :param env_name: The env_name of this SpanEventInfo.
         :type env_name: str
@@ -329,7 +329,7 @@ class SpanEventInfo:
     def app_name(self):
         """Gets the app_name of this SpanEventInfo.
 
-        组件名称
+        组件名称。
 
         :return: The app_name of this SpanEventInfo.
         :rtype: str
@@ -340,7 +340,7 @@ class SpanEventInfo:
     def app_name(self, app_name):
         """Sets the app_name of this SpanEventInfo.
 
-        组件名称
+        组件名称。
 
         :param app_name: The app_name of this SpanEventInfo.
         :type app_name: str
@@ -351,7 +351,7 @@ class SpanEventInfo:
     def indent(self):
         """Gets the indent of this SpanEventInfo.
 
-        缩进
+        缩进。
 
         :return: The indent of this SpanEventInfo.
         :rtype: int
@@ -362,7 +362,7 @@ class SpanEventInfo:
     def indent(self, indent):
         """Sets the indent of this SpanEventInfo.
 
-        缩进
+        缩进。
 
         :param indent: The indent of this SpanEventInfo.
         :type indent: int
@@ -373,7 +373,7 @@ class SpanEventInfo:
     def region(self):
         """Gets the region of this SpanEventInfo.
 
-        区域
+        区域。
 
         :return: The region of this SpanEventInfo.
         :rtype: str
@@ -384,7 +384,7 @@ class SpanEventInfo:
     def region(self, region):
         """Sets the region of this SpanEventInfo.
 
-        区域
+        区域。
 
         :param region: The region of this SpanEventInfo.
         :type region: str
@@ -395,7 +395,7 @@ class SpanEventInfo:
     def host_name(self):
         """Gets the host_name of this SpanEventInfo.
 
-        主机名称
+        主机名称。
 
         :return: The host_name of this SpanEventInfo.
         :rtype: str
@@ -406,7 +406,7 @@ class SpanEventInfo:
     def host_name(self, host_name):
         """Sets the host_name of this SpanEventInfo.
 
-        主机名称
+        主机名称。
 
         :param host_name: The host_name of this SpanEventInfo.
         :type host_name: str
@@ -417,7 +417,7 @@ class SpanEventInfo:
     def ip_address(self):
         """Gets the ip_address of this SpanEventInfo.
 
-        ip地址
+        ip地址。
 
         :return: The ip_address of this SpanEventInfo.
         :rtype: str
@@ -428,7 +428,7 @@ class SpanEventInfo:
     def ip_address(self, ip_address):
         """Sets the ip_address of this SpanEventInfo.
 
-        ip地址
+        ip地址。
 
         :param ip_address: The ip_address of this SpanEventInfo.
         :type ip_address: str
@@ -439,7 +439,7 @@ class SpanEventInfo:
     def instance_name(self):
         """Gets the instance_name of this SpanEventInfo.
 
-        实例名称
+        实例名称。
 
         :return: The instance_name of this SpanEventInfo.
         :rtype: str
@@ -450,7 +450,7 @@ class SpanEventInfo:
     def instance_name(self, instance_name):
         """Sets the instance_name of this SpanEventInfo.
 
-        实例名称
+        实例名称。
 
         :param instance_name: The instance_name of this SpanEventInfo.
         :type instance_name: str
@@ -461,7 +461,7 @@ class SpanEventInfo:
     def event_id(self):
         """Gets the event_id of this SpanEventInfo.
 
-        event的ID，在一个具体的span下面event的编号，一般是1-1-2 这种格式
+        event的ID，在一个具体的span下面event的编号，一般是1-1-2这种格式。
 
         :return: The event_id of this SpanEventInfo.
         :rtype: str
@@ -472,7 +472,7 @@ class SpanEventInfo:
     def event_id(self, event_id):
         """Sets the event_id of this SpanEventInfo.
 
-        event的ID，在一个具体的span下面event的编号，一般是1-1-2 这种格式
+        event的ID，在一个具体的span下面event的编号，一般是1-1-2这种格式。
 
         :param event_id: The event_id of this SpanEventInfo.
         :type event_id: str
@@ -483,7 +483,7 @@ class SpanEventInfo:
     def next_span_id(self):
         """Gets the next_span_id of this SpanEventInfo.
 
-        产生下一个span的源的eventId
+        产生下一个span的源的eventId。
 
         :return: The next_span_id of this SpanEventInfo.
         :rtype: str
@@ -494,7 +494,7 @@ class SpanEventInfo:
     def next_span_id(self, next_span_id):
         """Sets the next_span_id of this SpanEventInfo.
 
-        产生下一个span的源的eventId
+        产生下一个span的源的eventId。
 
         :param next_span_id: The next_span_id of this SpanEventInfo.
         :type next_span_id: str
@@ -505,7 +505,7 @@ class SpanEventInfo:
     def source_event_id(self):
         """Gets the source_event_id of this SpanEventInfo.
 
-        调用方的eventid
+        调用方的eventid。
 
         :return: The source_event_id of this SpanEventInfo.
         :rtype: str
@@ -516,7 +516,7 @@ class SpanEventInfo:
     def source_event_id(self, source_event_id):
         """Sets the source_event_id of this SpanEventInfo.
 
-        调用方的eventid
+        调用方的eventid。
 
         :param source_event_id: The source_event_id of this SpanEventInfo.
         :type source_event_id: str
@@ -527,7 +527,7 @@ class SpanEventInfo:
     def method(self):
         """Gets the method of this SpanEventInfo.
 
-        方法名
+        方法名。
 
         :return: The method of this SpanEventInfo.
         :rtype: str
@@ -538,7 +538,7 @@ class SpanEventInfo:
     def method(self, method):
         """Sets the method of this SpanEventInfo.
 
-        方法名
+        方法名。
 
         :param method: The method of this SpanEventInfo.
         :type method: str
@@ -549,7 +549,7 @@ class SpanEventInfo:
     def children_event_count(self):
         """Gets the children_event_count of this SpanEventInfo.
 
-        子event的个数
+        子event的个数。
 
         :return: The children_event_count of this SpanEventInfo.
         :rtype: int
@@ -560,7 +560,7 @@ class SpanEventInfo:
     def children_event_count(self, children_event_count):
         """Sets the children_event_count of this SpanEventInfo.
 
-        子event的个数
+        子event的个数。
 
         :param children_event_count: The children_event_count of this SpanEventInfo.
         :type children_event_count: int
@@ -571,7 +571,7 @@ class SpanEventInfo:
     def discard(self):
         """Gets the discard of this SpanEventInfo.
 
-        丢弃的子event个数，key是类型
+        丢弃的子event个数，key是类型。
 
         :return: The discard of this SpanEventInfo.
         :rtype: list[:class:`huaweicloudsdkapm.v1.DiscardInfo`]
@@ -582,7 +582,7 @@ class SpanEventInfo:
     def discard(self, discard):
         """Sets the discard of this SpanEventInfo.
 
-        丢弃的子event个数，key是类型
+        丢弃的子event个数，key是类型。
 
         :param discard: The discard of this SpanEventInfo.
         :type discard: list[:class:`huaweicloudsdkapm.v1.DiscardInfo`]
@@ -593,7 +593,7 @@ class SpanEventInfo:
     def argument(self):
         """Gets the argument of this SpanEventInfo.
 
-        界面展示的参数，每个类型的event自己来实现
+        界面展示的参数，每个类型的event自己来实现。
 
         :return: The argument of this SpanEventInfo.
         :rtype: str
@@ -604,7 +604,7 @@ class SpanEventInfo:
     def argument(self, argument):
         """Sets the argument of this SpanEventInfo.
 
-        界面展示的参数，每个类型的event自己来实现
+        界面展示的参数，每个类型的event自己来实现。
 
         :param argument: The argument of this SpanEventInfo.
         :type argument: str
@@ -615,7 +615,7 @@ class SpanEventInfo:
     def attachment(self):
         """Gets the attachment of this SpanEventInfo.
 
-        注册信息里面的attachment
+        注册信息里面的attachment。
 
         :return: The attachment of this SpanEventInfo.
         :rtype: dict(str, str)
@@ -626,7 +626,7 @@ class SpanEventInfo:
     def attachment(self, attachment):
         """Sets the attachment of this SpanEventInfo.
 
-        注册信息里面的attachment
+        注册信息里面的attachment。
 
         :param attachment: The attachment of this SpanEventInfo.
         :type attachment: dict(str, str)
@@ -637,7 +637,7 @@ class SpanEventInfo:
     def global_trace_id(self):
         """Gets the global_trace_id of this SpanEventInfo.
 
-        vTraceId，虚拟traceId
+        vTraceId，虚拟traceId。
 
         :return: The global_trace_id of this SpanEventInfo.
         :rtype: str
@@ -648,7 +648,7 @@ class SpanEventInfo:
     def global_trace_id(self, global_trace_id):
         """Sets the global_trace_id of this SpanEventInfo.
 
-        vTraceId，虚拟traceId
+        vTraceId，虚拟traceId。
 
         :param global_trace_id: The global_trace_id of this SpanEventInfo.
         :type global_trace_id: str
@@ -659,7 +659,7 @@ class SpanEventInfo:
     def global_path(self):
         """Gets the global_path of this SpanEventInfo.
 
-        虚拟traceId经过的path路径
+        虚拟traceId经过的path路径。
 
         :return: The global_path of this SpanEventInfo.
         :rtype: str
@@ -670,7 +670,7 @@ class SpanEventInfo:
     def global_path(self, global_path):
         """Sets the global_path of this SpanEventInfo.
 
-        虚拟traceId经过的path路径
+        虚拟traceId经过的path路径。
 
         :param global_path: The global_path of this SpanEventInfo.
         :type global_path: str
@@ -681,7 +681,7 @@ class SpanEventInfo:
     def trace_id(self):
         """Gets the trace_id of this SpanEventInfo.
 
-        traceId
+        traceId。
 
         :return: The trace_id of this SpanEventInfo.
         :rtype: str
@@ -692,7 +692,7 @@ class SpanEventInfo:
     def trace_id(self, trace_id):
         """Sets the trace_id of this SpanEventInfo.
 
-        traceId
+        traceId。
 
         :param trace_id: The trace_id of this SpanEventInfo.
         :type trace_id: str
@@ -703,7 +703,7 @@ class SpanEventInfo:
     def span_id(self):
         """Gets the span_id of this SpanEventInfo.
 
-        span id
+        span id。
 
         :return: The span_id of this SpanEventInfo.
         :rtype: str
@@ -714,7 +714,7 @@ class SpanEventInfo:
     def span_id(self, span_id):
         """Sets the span_id of this SpanEventInfo.
 
-        span id
+        span id。
 
         :param span_id: The span_id of this SpanEventInfo.
         :type span_id: str
@@ -725,7 +725,7 @@ class SpanEventInfo:
     def env_id(self):
         """Gets the env_id of this SpanEventInfo.
 
-        环境ID
+        环境id。
 
         :return: The env_id of this SpanEventInfo.
         :rtype: int
@@ -736,7 +736,7 @@ class SpanEventInfo:
     def env_id(self, env_id):
         """Sets the env_id of this SpanEventInfo.
 
-        环境ID
+        环境id。
 
         :param env_id: The env_id of this SpanEventInfo.
         :type env_id: int
@@ -747,7 +747,7 @@ class SpanEventInfo:
     def instance_id(self):
         """Gets the instance_id of this SpanEventInfo.
 
-        实例ID
+        实例id。
 
         :return: The instance_id of this SpanEventInfo.
         :rtype: int
@@ -758,7 +758,7 @@ class SpanEventInfo:
     def instance_id(self, instance_id):
         """Sets the instance_id of this SpanEventInfo.
 
-        实例ID
+        实例id。
 
         :param instance_id: The instance_id of this SpanEventInfo.
         :type instance_id: int
@@ -769,7 +769,7 @@ class SpanEventInfo:
     def app_id(self):
         """Gets the app_id of this SpanEventInfo.
 
-        组件id
+        组件id。
 
         :return: The app_id of this SpanEventInfo.
         :rtype: int
@@ -780,7 +780,7 @@ class SpanEventInfo:
     def app_id(self, app_id):
         """Sets the app_id of this SpanEventInfo.
 
-        组件id
+        组件id。
 
         :param app_id: The app_id of this SpanEventInfo.
         :type app_id: int
@@ -791,7 +791,7 @@ class SpanEventInfo:
     def biz_id(self):
         """Gets the biz_id of this SpanEventInfo.
 
-        应用id
+        应用id。
 
         :return: The biz_id of this SpanEventInfo.
         :rtype: int
@@ -802,7 +802,7 @@ class SpanEventInfo:
     def biz_id(self, biz_id):
         """Sets the biz_id of this SpanEventInfo.
 
-        应用id
+        应用id。
 
         :param biz_id: The biz_id of this SpanEventInfo.
         :type biz_id: int
@@ -813,7 +813,7 @@ class SpanEventInfo:
     def domain_id(self):
         """Gets the domain_id of this SpanEventInfo.
 
-        租户ID
+        租户id。
 
         :return: The domain_id of this SpanEventInfo.
         :rtype: int
@@ -824,7 +824,7 @@ class SpanEventInfo:
     def domain_id(self, domain_id):
         """Sets the domain_id of this SpanEventInfo.
 
-        租户ID
+        租户id。
 
         :param domain_id: The domain_id of this SpanEventInfo.
         :type domain_id: int
@@ -835,7 +835,7 @@ class SpanEventInfo:
     def source(self):
         """Gets the source of this SpanEventInfo.
 
-        只有是根event也就是span的时候有值
+        只有是根event也就是span的时候有值。
 
         :return: The source of this SpanEventInfo.
         :rtype: str
@@ -846,7 +846,7 @@ class SpanEventInfo:
     def source(self, source):
         """Sets the source of this SpanEventInfo.
 
-        只有是根event也就是span的时候有值
+        只有是根event也就是span的时候有值。
 
         :param source: The source of this SpanEventInfo.
         :type source: str
@@ -857,7 +857,7 @@ class SpanEventInfo:
     def real_source(self):
         """Gets the real_source of this SpanEventInfo.
 
-        根event 的时候存在，实际调用的url
+        根event的时候存在，实际调用的url。
 
         :return: The real_source of this SpanEventInfo.
         :rtype: str
@@ -868,7 +868,7 @@ class SpanEventInfo:
     def real_source(self, real_source):
         """Sets the real_source of this SpanEventInfo.
 
-        根event 的时候存在，实际调用的url
+        根event的时候存在，实际调用的url。
 
         :param real_source: The real_source of this SpanEventInfo.
         :type real_source: str
@@ -879,7 +879,7 @@ class SpanEventInfo:
     def start_time(self):
         """Gets the start_time of this SpanEventInfo.
 
-        开始时间
+        开始时间。
 
         :return: The start_time of this SpanEventInfo.
         :rtype: int
@@ -890,7 +890,7 @@ class SpanEventInfo:
     def start_time(self, start_time):
         """Sets the start_time of this SpanEventInfo.
 
-        开始时间
+        开始时间。
 
         :param start_time: The start_time of this SpanEventInfo.
         :type start_time: int
@@ -901,7 +901,7 @@ class SpanEventInfo:
     def time_used(self):
         """Gets the time_used of this SpanEventInfo.
 
-        耗时
+        耗时。
 
         :return: The time_used of this SpanEventInfo.
         :rtype: int
@@ -912,7 +912,7 @@ class SpanEventInfo:
     def time_used(self, time_used):
         """Sets the time_used of this SpanEventInfo.
 
-        耗时
+        耗时。
 
         :param time_used: The time_used of this SpanEventInfo.
         :type time_used: int
@@ -923,7 +923,7 @@ class SpanEventInfo:
     def code(self):
         """Gets the code of this SpanEventInfo.
 
-        状态码，针对http的调用有效
+        状态码，针对http的调用有效。
 
         :return: The code of this SpanEventInfo.
         :rtype: int
@@ -934,7 +934,7 @@ class SpanEventInfo:
     def code(self, code):
         """Sets the code of this SpanEventInfo.
 
-        状态码，针对http的调用有效
+        状态码，针对http的调用有效。
 
         :param code: The code of this SpanEventInfo.
         :type code: int
@@ -945,7 +945,7 @@ class SpanEventInfo:
     def class_name(self):
         """Gets the class_name of this SpanEventInfo.
 
-        类名
+        类名。
 
         :return: The class_name of this SpanEventInfo.
         :rtype: str
@@ -956,7 +956,7 @@ class SpanEventInfo:
     def class_name(self, class_name):
         """Sets the class_name of this SpanEventInfo.
 
-        类名
+        类名。
 
         :param class_name: The class_name of this SpanEventInfo.
         :type class_name: str
@@ -967,7 +967,7 @@ class SpanEventInfo:
     def is_async(self):
         """Gets the is_async of this SpanEventInfo.
 
-        是否异步的event
+        是否异步的event。
 
         :return: The is_async of this SpanEventInfo.
         :rtype: bool
@@ -978,7 +978,7 @@ class SpanEventInfo:
     def is_async(self, is_async):
         """Sets the is_async of this SpanEventInfo.
 
-        是否异步的event
+        是否异步的event。
 
         :param is_async: The is_async of this SpanEventInfo.
         :type is_async: bool
@@ -989,7 +989,7 @@ class SpanEventInfo:
     def tags(self):
         """Gets the tags of this SpanEventInfo.
 
-        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数
+        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
         :return: The tags of this SpanEventInfo.
         :rtype: dict(str, str)
@@ -1000,7 +1000,7 @@ class SpanEventInfo:
     def tags(self, tags):
         """Sets the tags of this SpanEventInfo.
 
-        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数
+        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
         :param tags: The tags of this SpanEventInfo.
         :type tags: dict(str, str)
@@ -1011,7 +1011,7 @@ class SpanEventInfo:
     def has_error(self):
         """Gets the has_error of this SpanEventInfo.
 
-        是否有错误，主要用在span的场景
+        是否有错误，主要用在span的场景。
 
         :return: The has_error of this SpanEventInfo.
         :rtype: bool
@@ -1022,7 +1022,7 @@ class SpanEventInfo:
     def has_error(self, has_error):
         """Sets the has_error of this SpanEventInfo.
 
-        是否有错误，主要用在span的场景
+        是否有错误，主要用在span的场景。
 
         :param has_error: The has_error of this SpanEventInfo.
         :type has_error: bool
@@ -1033,7 +1033,7 @@ class SpanEventInfo:
     def error_reasons(self):
         """Gets the error_reasons of this SpanEventInfo.
 
-        错误类型 主要有这么几种 ErrorType枚举的几种，可以逗号分隔多种类型
+        错误原因。
 
         :return: The error_reasons of this SpanEventInfo.
         :rtype: str
@@ -1044,7 +1044,7 @@ class SpanEventInfo:
     def error_reasons(self, error_reasons):
         """Sets the error_reasons of this SpanEventInfo.
 
-        错误类型 主要有这么几种 ErrorType枚举的几种，可以逗号分隔多种类型
+        错误原因。
 
         :param error_reasons: The error_reasons of this SpanEventInfo.
         :type error_reasons: str
@@ -1055,7 +1055,7 @@ class SpanEventInfo:
     def type(self):
         """Gets the type of this SpanEventInfo.
 
-        类型，mysql，kafka等
+        类型，mysql，kafka等。
 
         :return: The type of this SpanEventInfo.
         :rtype: str
@@ -1066,7 +1066,7 @@ class SpanEventInfo:
     def type(self, type):
         """Sets the type of this SpanEventInfo.
 
-        类型，mysql，kafka等
+        类型，mysql，kafka等。
 
         :param type: The type of this SpanEventInfo.
         :type type: str
@@ -1077,7 +1077,7 @@ class SpanEventInfo:
     def http_method(self):
         """Gets the http_method of this SpanEventInfo.
 
-        这里的method实际上是tags里面的http_method，只有url监控项才有
+        这里的method实际上是tags里面的http_method，只有url监控项才有。
 
         :return: The http_method of this SpanEventInfo.
         :rtype: str
@@ -1088,7 +1088,7 @@ class SpanEventInfo:
     def http_method(self, http_method):
         """Sets the http_method of this SpanEventInfo.
 
-        这里的method实际上是tags里面的http_method，只有url监控项才有
+        这里的method实际上是tags里面的http_method，只有url监控项才有。
 
         :param http_method: The http_method of this SpanEventInfo.
         :type http_method: str
@@ -1099,7 +1099,7 @@ class SpanEventInfo:
     def biz_code(self):
         """Gets the biz_code of this SpanEventInfo.
 
-        业务状态码的采集
+        业务状态码的采集。
 
         :return: The biz_code of this SpanEventInfo.
         :rtype: str
@@ -1110,7 +1110,7 @@ class SpanEventInfo:
     def biz_code(self, biz_code):
         """Sets the biz_code of this SpanEventInfo.
 
-        业务状态码的采集
+        业务状态码的采集。
 
         :param biz_code: The biz_code of this SpanEventInfo.
         :type biz_code: str
@@ -1121,7 +1121,7 @@ class SpanEventInfo:
     def id(self):
         """Gets the id of this SpanEventInfo.
 
-        spanId
+        spanId。
 
         :return: The id of this SpanEventInfo.
         :rtype: str
@@ -1132,7 +1132,7 @@ class SpanEventInfo:
     def id(self, id):
         """Sets the id of this SpanEventInfo.
 
-        spanId
+        spanId。
 
         :param id: The id of this SpanEventInfo.
         :type id: str

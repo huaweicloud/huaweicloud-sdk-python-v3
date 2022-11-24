@@ -38,13 +38,13 @@ class FrontRow:
 
         The model defined in huaweicloud sdk
 
-        :param cell_list: 数据单元集合
+        :param cell_list: 数据单元集合。
         :type cell_list: list[:class:`huaweicloudsdkapm.v1.FrontCell`]
-        :param filter: 将group by的字段拼接成过滤字符串，用于后续点网格点击使用
+        :param filter: 将group by的字段拼接成过滤字符串，用于后续点网格点击使用。
         :type filter: str
-        :param header: 是否是header信息
+        :param header: 是否是header信息。
         :type header: bool
-        :param tx_id: 是否是事务
+        :param tx_id: Url跟踪id。
         :type tx_id: int
         """
         
@@ -69,7 +69,7 @@ class FrontRow:
     def cell_list(self):
         """Gets the cell_list of this FrontRow.
 
-        数据单元集合
+        数据单元集合。
 
         :return: The cell_list of this FrontRow.
         :rtype: list[:class:`huaweicloudsdkapm.v1.FrontCell`]
@@ -80,7 +80,7 @@ class FrontRow:
     def cell_list(self, cell_list):
         """Sets the cell_list of this FrontRow.
 
-        数据单元集合
+        数据单元集合。
 
         :param cell_list: The cell_list of this FrontRow.
         :type cell_list: list[:class:`huaweicloudsdkapm.v1.FrontCell`]
@@ -91,7 +91,7 @@ class FrontRow:
     def filter(self):
         """Gets the filter of this FrontRow.
 
-        将group by的字段拼接成过滤字符串，用于后续点网格点击使用
+        将group by的字段拼接成过滤字符串，用于后续点网格点击使用。
 
         :return: The filter of this FrontRow.
         :rtype: str
@@ -102,7 +102,7 @@ class FrontRow:
     def filter(self, filter):
         """Sets the filter of this FrontRow.
 
-        将group by的字段拼接成过滤字符串，用于后续点网格点击使用
+        将group by的字段拼接成过滤字符串，用于后续点网格点击使用。
 
         :param filter: The filter of this FrontRow.
         :type filter: str
@@ -113,7 +113,7 @@ class FrontRow:
     def header(self):
         """Gets the header of this FrontRow.
 
-        是否是header信息
+        是否是header信息。
 
         :return: The header of this FrontRow.
         :rtype: bool
@@ -124,7 +124,7 @@ class FrontRow:
     def header(self, header):
         """Sets the header of this FrontRow.
 
-        是否是header信息
+        是否是header信息。
 
         :param header: The header of this FrontRow.
         :type header: bool
@@ -135,7 +135,7 @@ class FrontRow:
     def tx_id(self):
         """Gets the tx_id of this FrontRow.
 
-        是否是事务
+        Url跟踪id。
 
         :return: The tx_id of this FrontRow.
         :rtype: int
@@ -146,7 +146,7 @@ class FrontRow:
     def tx_id(self, tx_id):
         """Sets the tx_id of this FrontRow.
 
-        是否是事务
+        Url跟踪id。
 
         :param tx_id: The tx_id of this FrontRow.
         :type tx_id: int

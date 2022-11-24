@@ -34,7 +34,7 @@ class ListEnvMonitorItemRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_business_id: 
+        :param x_business_id: 应用id。
         :type x_business_id: int
         :param body: Body of the ListEnvMonitorItemRequest
         :type body: :class:`huaweicloudsdkapm.v1.GetEnvMonitorItemListParam`
@@ -46,14 +46,15 @@ class ListEnvMonitorItemRequest:
         self._body = None
         self.discriminator = None
 
-        if x_business_id is not None:
-            self.x_business_id = x_business_id
+        self.x_business_id = x_business_id
         if body is not None:
             self.body = body
 
     @property
     def x_business_id(self):
         """Gets the x_business_id of this ListEnvMonitorItemRequest.
+
+        应用id。
 
         :return: The x_business_id of this ListEnvMonitorItemRequest.
         :rtype: int
@@ -63,6 +64,8 @@ class ListEnvMonitorItemRequest:
     @x_business_id.setter
     def x_business_id(self, x_business_id):
         """Sets the x_business_id of this ListEnvMonitorItemRequest.
+
+        应用id。
 
         :param x_business_id: The x_business_id of this ListEnvMonitorItemRequest.
         :type x_business_id: int

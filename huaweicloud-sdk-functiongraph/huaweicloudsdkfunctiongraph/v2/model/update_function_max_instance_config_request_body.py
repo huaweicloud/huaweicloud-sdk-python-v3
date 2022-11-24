@@ -32,7 +32,7 @@ class UpdateFunctionMaxInstanceConfigRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param max_instance_num: 最大实例数
+        :param max_instance_num: 最大实例数；-1代表该函数实例数无限制，0代表该函数被禁用
         :type max_instance_num: int
         """
         
@@ -48,7 +48,7 @@ class UpdateFunctionMaxInstanceConfigRequestBody:
     def max_instance_num(self):
         """Gets the max_instance_num of this UpdateFunctionMaxInstanceConfigRequestBody.
 
-        最大实例数
+        最大实例数；-1代表该函数实例数无限制，0代表该函数被禁用
 
         :return: The max_instance_num of this UpdateFunctionMaxInstanceConfigRequestBody.
         :rtype: int
@@ -59,7 +59,7 @@ class UpdateFunctionMaxInstanceConfigRequestBody:
     def max_instance_num(self, max_instance_num):
         """Sets the max_instance_num of this UpdateFunctionMaxInstanceConfigRequestBody.
 
-        最大实例数
+        最大实例数；-1代表该函数实例数无限制，0代表该函数被禁用
 
         :param max_instance_num: The max_instance_num of this UpdateFunctionMaxInstanceConfigRequestBody.
         :type max_instance_num: int

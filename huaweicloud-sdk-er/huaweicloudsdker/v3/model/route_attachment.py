@@ -38,7 +38,7 @@ class RouteAttachment:
 
         :param resource_id: 连接关联的资源ID
         :type resource_id: str
-        :param resource_type: 连接关联的资源类型：vpc|vgw|vpn|peering|gdgw
+        :param resource_type: 连接关联的资源类型：vpc|vgw|vpn|peering
         :type resource_type: str
         :param attachment_id: 连接ID
         :type attachment_id: str
@@ -81,7 +81,7 @@ class RouteAttachment:
     def resource_type(self):
         """Gets the resource_type of this RouteAttachment.
 
-        连接关联的资源类型：vpc|vgw|vpn|peering|gdgw
+        连接关联的资源类型：vpc|vgw|vpn|peering
 
         :return: The resource_type of this RouteAttachment.
         :rtype: str
@@ -92,7 +92,7 @@ class RouteAttachment:
     def resource_type(self, resource_type):
         """Sets the resource_type of this RouteAttachment.
 
-        连接关联的资源类型：vpc|vgw|vpn|peering|gdgw
+        连接关联的资源类型：vpc|vgw|vpn|peering
 
         :param resource_type: The resource_type of this RouteAttachment.
         :type resource_type: str

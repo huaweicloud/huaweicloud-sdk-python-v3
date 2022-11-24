@@ -54,29 +54,29 @@ class RawTableView:
 
         The model defined in huaweicloud sdk
 
-        :param view_type: 视图类型
+        :param view_type: 视图类型。
         :type view_type: str
-        :param collector_name: 采集器名称
+        :param collector_name: 采集器名称。
         :type collector_name: str
-        :param metric_set: 视图对应的指标集的名称
+        :param metric_set: 视图对应的指标集的名称。
         :type metric_set: str
-        :param title: 图标所需展示的标题
+        :param title: 图标所需展示的标题。
         :type title: str
-        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向
+        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向。
         :type table_direction: str
-        :param group_by: 分组规则
+        :param group_by: 分组规则。
         :type group_by: str
-        :param filter: 过滤列表模型
+        :param filter: 过滤列表模型。
         :type filter: str
-        :param field_item_list: 所需展示的字段列表模型集合
+        :param field_item_list: 所需展示的字段列表模型集合。
         :type field_item_list: list[:class:`huaweicloudsdkapm.v1.FieldItem`]
-        :param span: 跨度
+        :param span: 跨度。
         :type span: bool
-        :param span_field: 跨度字段
+        :param span_field: 跨度字段。
         :type span_field: str
-        :param order_by: 排序规则
+        :param order_by: 排序规则。
         :type order_by: str
-        :param latest: 是否只展示最近一笔数据
+        :param latest: 是否只展示最近一笔数据。
         :type latest: bool
         """
         
@@ -96,26 +96,16 @@ class RawTableView:
         self._latest = None
         self.discriminator = None
 
-        if view_type is not None:
-            self.view_type = view_type
-        if collector_name is not None:
-            self.collector_name = collector_name
-        if metric_set is not None:
-            self.metric_set = metric_set
-        if title is not None:
-            self.title = title
-        if table_direction is not None:
-            self.table_direction = table_direction
-        if group_by is not None:
-            self.group_by = group_by
-        if filter is not None:
-            self.filter = filter
-        if field_item_list is not None:
-            self.field_item_list = field_item_list
-        if span is not None:
-            self.span = span
-        if span_field is not None:
-            self.span_field = span_field
+        self.view_type = view_type
+        self.collector_name = collector_name
+        self.metric_set = metric_set
+        self.title = title
+        self.table_direction = table_direction
+        self.group_by = group_by
+        self.filter = filter
+        self.field_item_list = field_item_list
+        self.span = span
+        self.span_field = span_field
         if order_by is not None:
             self.order_by = order_by
         if latest is not None:
@@ -125,7 +115,7 @@ class RawTableView:
     def view_type(self):
         """Gets the view_type of this RawTableView.
 
-        视图类型
+        视图类型。
 
         :return: The view_type of this RawTableView.
         :rtype: str
@@ -136,7 +126,7 @@ class RawTableView:
     def view_type(self, view_type):
         """Sets the view_type of this RawTableView.
 
-        视图类型
+        视图类型。
 
         :param view_type: The view_type of this RawTableView.
         :type view_type: str
@@ -147,7 +137,7 @@ class RawTableView:
     def collector_name(self):
         """Gets the collector_name of this RawTableView.
 
-        采集器名称
+        采集器名称。
 
         :return: The collector_name of this RawTableView.
         :rtype: str
@@ -158,7 +148,7 @@ class RawTableView:
     def collector_name(self, collector_name):
         """Sets the collector_name of this RawTableView.
 
-        采集器名称
+        采集器名称。
 
         :param collector_name: The collector_name of this RawTableView.
         :type collector_name: str
@@ -169,7 +159,7 @@ class RawTableView:
     def metric_set(self):
         """Gets the metric_set of this RawTableView.
 
-        视图对应的指标集的名称
+        视图对应的指标集的名称。
 
         :return: The metric_set of this RawTableView.
         :rtype: str
@@ -180,7 +170,7 @@ class RawTableView:
     def metric_set(self, metric_set):
         """Sets the metric_set of this RawTableView.
 
-        视图对应的指标集的名称
+        视图对应的指标集的名称。
 
         :param metric_set: The metric_set of this RawTableView.
         :type metric_set: str
@@ -191,7 +181,7 @@ class RawTableView:
     def title(self):
         """Gets the title of this RawTableView.
 
-        图标所需展示的标题
+        图标所需展示的标题。
 
         :return: The title of this RawTableView.
         :rtype: str
@@ -202,7 +192,7 @@ class RawTableView:
     def title(self, title):
         """Sets the title of this RawTableView.
 
-        图标所需展示的标题
+        图标所需展示的标题。
 
         :param title: The title of this RawTableView.
         :type title: str
@@ -213,7 +203,7 @@ class RawTableView:
     def table_direction(self):
         """Gets the table_direction of this RawTableView.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :return: The table_direction of this RawTableView.
         :rtype: str
@@ -224,7 +214,7 @@ class RawTableView:
     def table_direction(self, table_direction):
         """Sets the table_direction of this RawTableView.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :param table_direction: The table_direction of this RawTableView.
         :type table_direction: str
@@ -235,7 +225,7 @@ class RawTableView:
     def group_by(self):
         """Gets the group_by of this RawTableView.
 
-        分组规则
+        分组规则。
 
         :return: The group_by of this RawTableView.
         :rtype: str
@@ -246,7 +236,7 @@ class RawTableView:
     def group_by(self, group_by):
         """Sets the group_by of this RawTableView.
 
-        分组规则
+        分组规则。
 
         :param group_by: The group_by of this RawTableView.
         :type group_by: str
@@ -257,7 +247,7 @@ class RawTableView:
     def filter(self):
         """Gets the filter of this RawTableView.
 
-        过滤列表模型
+        过滤列表模型。
 
         :return: The filter of this RawTableView.
         :rtype: str
@@ -268,7 +258,7 @@ class RawTableView:
     def filter(self, filter):
         """Sets the filter of this RawTableView.
 
-        过滤列表模型
+        过滤列表模型。
 
         :param filter: The filter of this RawTableView.
         :type filter: str
@@ -279,7 +269,7 @@ class RawTableView:
     def field_item_list(self):
         """Gets the field_item_list of this RawTableView.
 
-        所需展示的字段列表模型集合
+        所需展示的字段列表模型集合。
 
         :return: The field_item_list of this RawTableView.
         :rtype: list[:class:`huaweicloudsdkapm.v1.FieldItem`]
@@ -290,7 +280,7 @@ class RawTableView:
     def field_item_list(self, field_item_list):
         """Sets the field_item_list of this RawTableView.
 
-        所需展示的字段列表模型集合
+        所需展示的字段列表模型集合。
 
         :param field_item_list: The field_item_list of this RawTableView.
         :type field_item_list: list[:class:`huaweicloudsdkapm.v1.FieldItem`]
@@ -301,7 +291,7 @@ class RawTableView:
     def span(self):
         """Gets the span of this RawTableView.
 
-        跨度
+        跨度。
 
         :return: The span of this RawTableView.
         :rtype: bool
@@ -312,7 +302,7 @@ class RawTableView:
     def span(self, span):
         """Sets the span of this RawTableView.
 
-        跨度
+        跨度。
 
         :param span: The span of this RawTableView.
         :type span: bool
@@ -323,7 +313,7 @@ class RawTableView:
     def span_field(self):
         """Gets the span_field of this RawTableView.
 
-        跨度字段
+        跨度字段。
 
         :return: The span_field of this RawTableView.
         :rtype: str
@@ -334,7 +324,7 @@ class RawTableView:
     def span_field(self, span_field):
         """Sets the span_field of this RawTableView.
 
-        跨度字段
+        跨度字段。
 
         :param span_field: The span_field of this RawTableView.
         :type span_field: str
@@ -345,7 +335,7 @@ class RawTableView:
     def order_by(self):
         """Gets the order_by of this RawTableView.
 
-        排序规则
+        排序规则。
 
         :return: The order_by of this RawTableView.
         :rtype: str
@@ -356,7 +346,7 @@ class RawTableView:
     def order_by(self, order_by):
         """Sets the order_by of this RawTableView.
 
-        排序规则
+        排序规则。
 
         :param order_by: The order_by of this RawTableView.
         :type order_by: str
@@ -367,7 +357,7 @@ class RawTableView:
     def latest(self):
         """Gets the latest of this RawTableView.
 
-        是否只展示最近一笔数据
+        是否只展示最近一笔数据。
 
         :return: The latest of this RawTableView.
         :rtype: bool
@@ -378,7 +368,7 @@ class RawTableView:
     def latest(self, latest):
         """Sets the latest of this RawTableView.
 
-        是否只展示最近一笔数据
+        是否只展示最近一笔数据。
 
         :param latest: The latest of this RawTableView.
         :type latest: bool

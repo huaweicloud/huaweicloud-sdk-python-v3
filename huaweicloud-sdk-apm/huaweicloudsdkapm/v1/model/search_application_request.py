@@ -34,7 +34,7 @@ class SearchApplicationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_business_id: 应用id
+        :param x_business_id: 应用id。
         :type x_business_id: int
         :param body: Body of the SearchApplicationRequest
         :type body: :class:`huaweicloudsdkapm.v1.AppSearchParam`
@@ -54,7 +54,7 @@ class SearchApplicationRequest:
     def x_business_id(self):
         """Gets the x_business_id of this SearchApplicationRequest.
 
-        应用id
+        应用id。
 
         :return: The x_business_id of this SearchApplicationRequest.
         :rtype: int
@@ -65,7 +65,7 @@ class SearchApplicationRequest:
     def x_business_id(self, x_business_id):
         """Sets the x_business_id of this SearchApplicationRequest.
 
-        应用id
+        应用id。
 
         :param x_business_id: The x_business_id of this SearchApplicationRequest.
         :type x_business_id: int

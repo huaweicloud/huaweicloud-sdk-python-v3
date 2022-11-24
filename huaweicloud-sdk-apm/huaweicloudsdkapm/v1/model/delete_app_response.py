@@ -32,7 +32,7 @@ class DeleteAppResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param ok: 返回ok的结果，表示删除成功
+        :param ok: 返回ok的结果，表示删除成功。
         :type ok: str
         """
         
@@ -48,7 +48,7 @@ class DeleteAppResponse(SdkResponse):
     def ok(self):
         """Gets the ok of this DeleteAppResponse.
 
-        返回ok的结果，表示删除成功
+        返回ok的结果，表示删除成功。
 
         :return: The ok of this DeleteAppResponse.
         :rtype: str
@@ -59,7 +59,7 @@ class DeleteAppResponse(SdkResponse):
     def ok(self, ok):
         """Sets the ok of this DeleteAppResponse.
 
-        返回ok的结果，表示删除成功
+        返回ok的结果，表示删除成功。
 
         :param ok: The ok of this DeleteAppResponse.
         :type ok: str

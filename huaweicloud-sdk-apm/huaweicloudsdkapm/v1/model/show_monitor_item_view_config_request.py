@@ -36,9 +36,9 @@ class ShowMonitorItemViewConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param collector_id: 采集器id
+        :param collector_id: 采集器id。
         :type collector_id: int
         :param x_business_id: 应用id。
         :type x_business_id: int
@@ -59,7 +59,7 @@ class ShowMonitorItemViewConfigRequest:
     def env_id(self):
         """Gets the env_id of this ShowMonitorItemViewConfigRequest.
 
-        环境id
+        环境id。
 
         :return: The env_id of this ShowMonitorItemViewConfigRequest.
         :rtype: int
@@ -70,7 +70,7 @@ class ShowMonitorItemViewConfigRequest:
     def env_id(self, env_id):
         """Sets the env_id of this ShowMonitorItemViewConfigRequest.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this ShowMonitorItemViewConfigRequest.
         :type env_id: int
@@ -81,7 +81,7 @@ class ShowMonitorItemViewConfigRequest:
     def collector_id(self):
         """Gets the collector_id of this ShowMonitorItemViewConfigRequest.
 
-        采集器id
+        采集器id。
 
         :return: The collector_id of this ShowMonitorItemViewConfigRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class ShowMonitorItemViewConfigRequest:
     def collector_id(self, collector_id):
         """Sets the collector_id of this ShowMonitorItemViewConfigRequest.
 
-        采集器id
+        采集器id。
 
         :param collector_id: The collector_id of this ShowMonitorItemViewConfigRequest.
         :type collector_id: int

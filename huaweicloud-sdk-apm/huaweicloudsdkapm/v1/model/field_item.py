@@ -44,19 +44,19 @@ class FieldItem:
 
         The model defined in huaweicloud sdk
 
-        :param function: 表达式
+        :param function: 表达式。
         :type function: str
-        :param _as: 作为
+        :param _as: 作为。
         :type _as: str
-        :param default_value: 默认值
+        :param default_value: 默认值。
         :type default_value: str
-        :param trace: 是否是trace
+        :param trace: 是否是trace。
         :type trace: bool
-        :param precision: 百分比
+        :param precision: 百分比。
         :type precision: int
-        :param unit: 单位
+        :param unit: 单位。
         :type unit: str
-        :param visible: 是否可见
+        :param visible: 是否可见。
         :type visible: bool
         """
         
@@ -90,7 +90,7 @@ class FieldItem:
     def function(self):
         """Gets the function of this FieldItem.
 
-        表达式
+        表达式。
 
         :return: The function of this FieldItem.
         :rtype: str
@@ -101,7 +101,7 @@ class FieldItem:
     def function(self, function):
         """Sets the function of this FieldItem.
 
-        表达式
+        表达式。
 
         :param function: The function of this FieldItem.
         :type function: str
@@ -112,7 +112,7 @@ class FieldItem:
     def _as(self):
         """Gets the _as of this FieldItem.
 
-        作为
+        作为。
 
         :return: The _as of this FieldItem.
         :rtype: str
@@ -123,7 +123,7 @@ class FieldItem:
     def _as(self, _as):
         """Sets the _as of this FieldItem.
 
-        作为
+        作为。
 
         :param _as: The _as of this FieldItem.
         :type _as: str
@@ -134,7 +134,7 @@ class FieldItem:
     def default_value(self):
         """Gets the default_value of this FieldItem.
 
-        默认值
+        默认值。
 
         :return: The default_value of this FieldItem.
         :rtype: str
@@ -145,7 +145,7 @@ class FieldItem:
     def default_value(self, default_value):
         """Sets the default_value of this FieldItem.
 
-        默认值
+        默认值。
 
         :param default_value: The default_value of this FieldItem.
         :type default_value: str
@@ -156,7 +156,7 @@ class FieldItem:
     def trace(self):
         """Gets the trace of this FieldItem.
 
-        是否是trace
+        是否是trace。
 
         :return: The trace of this FieldItem.
         :rtype: bool
@@ -167,7 +167,7 @@ class FieldItem:
     def trace(self, trace):
         """Sets the trace of this FieldItem.
 
-        是否是trace
+        是否是trace。
 
         :param trace: The trace of this FieldItem.
         :type trace: bool
@@ -178,7 +178,7 @@ class FieldItem:
     def precision(self):
         """Gets the precision of this FieldItem.
 
-        百分比
+        百分比。
 
         :return: The precision of this FieldItem.
         :rtype: int
@@ -189,7 +189,7 @@ class FieldItem:
     def precision(self, precision):
         """Sets the precision of this FieldItem.
 
-        百分比
+        百分比。
 
         :param precision: The precision of this FieldItem.
         :type precision: int
@@ -200,7 +200,7 @@ class FieldItem:
     def unit(self):
         """Gets the unit of this FieldItem.
 
-        单位
+        单位。
 
         :return: The unit of this FieldItem.
         :rtype: str
@@ -211,7 +211,7 @@ class FieldItem:
     def unit(self, unit):
         """Sets the unit of this FieldItem.
 
-        单位
+        单位。
 
         :param unit: The unit of this FieldItem.
         :type unit: str
@@ -222,7 +222,7 @@ class FieldItem:
     def visible(self):
         """Gets the visible of this FieldItem.
 
-        是否可见
+        是否可见。
 
         :return: The visible of this FieldItem.
         :rtype: bool
@@ -233,7 +233,7 @@ class FieldItem:
     def visible(self, visible):
         """Sets the visible of this FieldItem.
 
-        是否可见
+        是否可见。
 
         :param visible: The visible of this FieldItem.
         :type visible: bool

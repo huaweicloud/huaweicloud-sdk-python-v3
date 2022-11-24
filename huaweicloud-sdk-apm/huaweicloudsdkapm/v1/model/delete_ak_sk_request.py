@@ -32,7 +32,7 @@ class DeleteAkSkRequest:
 
         The model defined in huaweicloud sdk
 
-        :param ak: 需要删除的ak信息
+        :param ak: 需要删除的ak信息。
         :type ak: str
         """
         
@@ -47,7 +47,7 @@ class DeleteAkSkRequest:
     def ak(self):
         """Gets the ak of this DeleteAkSkRequest.
 
-        需要删除的ak信息
+        需要删除的ak信息。
 
         :return: The ak of this DeleteAkSkRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class DeleteAkSkRequest:
     def ak(self, ak):
         """Sets the ak of this DeleteAkSkRequest.
 
-        需要删除的ak信息
+        需要删除的ak信息。
 
         :param ak: The ak of this DeleteAkSkRequest.
         :type ak: str

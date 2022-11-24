@@ -50,7 +50,7 @@ class Route:
 
         :param id: 路由id
         :type id: str
-        :param type: 路由表类型，只支持static和propagated
+        :param type: 路由类型
         :type type: str
         :param state: 路由状态
         :type state: str
@@ -120,7 +120,7 @@ class Route:
     def type(self):
         """Gets the type of this Route.
 
-        路由表类型，只支持static和propagated
+        路由类型
 
         :return: The type of this Route.
         :rtype: str
@@ -131,7 +131,7 @@ class Route:
     def type(self, type):
         """Sets the type of this Route.
 
-        路由表类型，只支持static和propagated
+        路由类型
 
         :param type: The type of this Route.
         :type type: str

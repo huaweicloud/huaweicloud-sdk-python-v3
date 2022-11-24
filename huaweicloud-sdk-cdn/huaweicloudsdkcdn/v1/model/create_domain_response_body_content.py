@@ -76,7 +76,7 @@ class CreateDomainResponseBodyContent:
         :type service_area: str
         :param user_domain_id: 域名所属用户的domain_id。
         :type user_domain_id: str
-        :param domain_status: 加速域名状态。取值意义：online表示“已开启”、offline表示“已停用”、configuring表示“配置中”、configure_failed表示“配置失败”、checking表示“审核中”、check_failed表示“审核未通过”、deleting表示“删除中”。
+        :param domain_status: 加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
         :type domain_status: str
         :param cname: 加速域名对应的CNAME。
         :type cname: str
@@ -277,7 +277,7 @@ class CreateDomainResponseBodyContent:
     def domain_status(self):
         """Gets the domain_status of this CreateDomainResponseBodyContent.
 
-        加速域名状态。取值意义：online表示“已开启”、offline表示“已停用”、configuring表示“配置中”、configure_failed表示“配置失败”、checking表示“审核中”、check_failed表示“审核未通过”、deleting表示“删除中”。
+        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
         :return: The domain_status of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -288,7 +288,7 @@ class CreateDomainResponseBodyContent:
     def domain_status(self, domain_status):
         """Sets the domain_status of this CreateDomainResponseBodyContent.
 
-        加速域名状态。取值意义：online表示“已开启”、offline表示“已停用”、configuring表示“配置中”、configure_failed表示“配置失败”、checking表示“审核中”、check_failed表示“审核未通过”、deleting表示“删除中”。
+        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
         :param domain_status: The domain_status of this CreateDomainResponseBodyContent.
         :type domain_status: str

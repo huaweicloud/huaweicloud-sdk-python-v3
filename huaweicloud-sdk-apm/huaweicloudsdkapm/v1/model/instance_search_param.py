@@ -42,17 +42,17 @@ class InstanceSearchParam:
 
         The model defined in huaweicloud sdk
 
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param page: 当前页码
+        :param page: 当前页码。
         :type page: int
-        :param page_size: 每页数据容量
+        :param page_size: 每页数据容量。
         :type page_size: int
-        :param keyword: 关键字
+        :param keyword: 关键字。
         :type keyword: str
-        :param status: 实例状态
+        :param status: 实例状态。
         :type status: int
-        :param return_count: 是否返回计数结果
+        :param return_count: 是否返回计数结果。
         :type return_count: bool
         """
         
@@ -66,12 +66,9 @@ class InstanceSearchParam:
         self._return_count = None
         self.discriminator = None
 
-        if env_id is not None:
-            self.env_id = env_id
-        if page is not None:
-            self.page = page
-        if page_size is not None:
-            self.page_size = page_size
+        self.env_id = env_id
+        self.page = page
+        self.page_size = page_size
         if keyword is not None:
             self.keyword = keyword
         if status is not None:
@@ -83,7 +80,7 @@ class InstanceSearchParam:
     def env_id(self):
         """Gets the env_id of this InstanceSearchParam.
 
-        环境id
+        环境id。
 
         :return: The env_id of this InstanceSearchParam.
         :rtype: int
@@ -94,7 +91,7 @@ class InstanceSearchParam:
     def env_id(self, env_id):
         """Sets the env_id of this InstanceSearchParam.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this InstanceSearchParam.
         :type env_id: int
@@ -105,7 +102,7 @@ class InstanceSearchParam:
     def page(self):
         """Gets the page of this InstanceSearchParam.
 
-        当前页码
+        当前页码。
 
         :return: The page of this InstanceSearchParam.
         :rtype: int
@@ -116,7 +113,7 @@ class InstanceSearchParam:
     def page(self, page):
         """Sets the page of this InstanceSearchParam.
 
-        当前页码
+        当前页码。
 
         :param page: The page of this InstanceSearchParam.
         :type page: int
@@ -127,7 +124,7 @@ class InstanceSearchParam:
     def page_size(self):
         """Gets the page_size of this InstanceSearchParam.
 
-        每页数据容量
+        每页数据容量。
 
         :return: The page_size of this InstanceSearchParam.
         :rtype: int
@@ -138,7 +135,7 @@ class InstanceSearchParam:
     def page_size(self, page_size):
         """Sets the page_size of this InstanceSearchParam.
 
-        每页数据容量
+        每页数据容量。
 
         :param page_size: The page_size of this InstanceSearchParam.
         :type page_size: int
@@ -149,7 +146,7 @@ class InstanceSearchParam:
     def keyword(self):
         """Gets the keyword of this InstanceSearchParam.
 
-        关键字
+        关键字。
 
         :return: The keyword of this InstanceSearchParam.
         :rtype: str
@@ -160,7 +157,7 @@ class InstanceSearchParam:
     def keyword(self, keyword):
         """Sets the keyword of this InstanceSearchParam.
 
-        关键字
+        关键字。
 
         :param keyword: The keyword of this InstanceSearchParam.
         :type keyword: str
@@ -171,7 +168,7 @@ class InstanceSearchParam:
     def status(self):
         """Gets the status of this InstanceSearchParam.
 
-        实例状态
+        实例状态。
 
         :return: The status of this InstanceSearchParam.
         :rtype: int
@@ -182,7 +179,7 @@ class InstanceSearchParam:
     def status(self, status):
         """Sets the status of this InstanceSearchParam.
 
-        实例状态
+        实例状态。
 
         :param status: The status of this InstanceSearchParam.
         :type status: int
@@ -193,7 +190,7 @@ class InstanceSearchParam:
     def return_count(self):
         """Gets the return_count of this InstanceSearchParam.
 
-        是否返回计数结果
+        是否返回计数结果。
 
         :return: The return_count of this InstanceSearchParam.
         :rtype: bool
@@ -204,7 +201,7 @@ class InstanceSearchParam:
     def return_count(self, return_count):
         """Sets the return_count of this InstanceSearchParam.
 
-        是否返回计数结果
+        是否返回计数结果。
 
         :param return_count: The return_count of this InstanceSearchParam.
         :type return_count: bool

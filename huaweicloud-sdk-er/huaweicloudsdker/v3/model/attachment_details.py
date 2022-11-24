@@ -78,7 +78,7 @@ class AttachmentDetails:
         :type er_id: str
         :param resource_id: 内部连接关联的资源ID
         :type resource_id: str
-        :param resource_type: - vgw：云专线的虚拟网关 - vpn：vpn网关 - gdgw：下一代专线网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 - can：智能云接入网关
+        :param resource_type: - vgw：云专线的虚拟网关 - vpn：vpn网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接
         :type resource_type: str
         :param resource_project_id: 资源所属项目ID
         :type resource_project_id: str
@@ -354,7 +354,7 @@ class AttachmentDetails:
     def resource_type(self):
         """Gets the resource_type of this AttachmentDetails.
 
-        - vgw：云专线的虚拟网关 - vpn：vpn网关 - gdgw：下一代专线网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 - can：智能云接入网关
+        - vgw：云专线的虚拟网关 - vpn：vpn网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接
 
         :return: The resource_type of this AttachmentDetails.
         :rtype: str
@@ -365,7 +365,7 @@ class AttachmentDetails:
     def resource_type(self, resource_type):
         """Sets the resource_type of this AttachmentDetails.
 
-        - vgw：云专线的虚拟网关 - vpn：vpn网关 - gdgw：下一代专线网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 - can：智能云接入网关
+        - vgw：云专线的虚拟网关 - vpn：vpn网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接
 
         :param resource_type: The resource_type of this AttachmentDetails.
         :type resource_type: str

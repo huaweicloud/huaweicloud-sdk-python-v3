@@ -40,15 +40,15 @@ class Region:
 
         The model defined in huaweicloud sdk
 
-        :param region_id: 区域id
+        :param region_id: 区域id。
         :type region_id: str
-        :param region_name: 区域名称
+        :param region_name: 区域名称。
         :type region_name: str
-        :param region: 区域
+        :param region: 区域。
         :type region: str
-        :param project_id: 企业项目id
+        :param project_id: 企业项目id。
         :type project_id: str
-        :param status: 区域状态
+        :param status: 区域状态。
         :type status: str
         """
         
@@ -76,7 +76,7 @@ class Region:
     def region_id(self):
         """Gets the region_id of this Region.
 
-        区域id
+        区域id。
 
         :return: The region_id of this Region.
         :rtype: str
@@ -87,7 +87,7 @@ class Region:
     def region_id(self, region_id):
         """Sets the region_id of this Region.
 
-        区域id
+        区域id。
 
         :param region_id: The region_id of this Region.
         :type region_id: str
@@ -98,7 +98,7 @@ class Region:
     def region_name(self):
         """Gets the region_name of this Region.
 
-        区域名称
+        区域名称。
 
         :return: The region_name of this Region.
         :rtype: str
@@ -109,7 +109,7 @@ class Region:
     def region_name(self, region_name):
         """Sets the region_name of this Region.
 
-        区域名称
+        区域名称。
 
         :param region_name: The region_name of this Region.
         :type region_name: str
@@ -120,7 +120,7 @@ class Region:
     def region(self):
         """Gets the region of this Region.
 
-        区域
+        区域。
 
         :return: The region of this Region.
         :rtype: str
@@ -131,7 +131,7 @@ class Region:
     def region(self, region):
         """Sets the region of this Region.
 
-        区域
+        区域。
 
         :param region: The region of this Region.
         :type region: str
@@ -142,7 +142,7 @@ class Region:
     def project_id(self):
         """Gets the project_id of this Region.
 
-        企业项目id
+        企业项目id。
 
         :return: The project_id of this Region.
         :rtype: str
@@ -153,7 +153,7 @@ class Region:
     def project_id(self, project_id):
         """Sets the project_id of this Region.
 
-        企业项目id
+        企业项目id。
 
         :param project_id: The project_id of this Region.
         :type project_id: str
@@ -164,7 +164,7 @@ class Region:
     def status(self):
         """Gets the status of this Region.
 
-        区域状态
+        区域状态。
 
         :return: The status of this Region.
         :rtype: str
@@ -175,7 +175,7 @@ class Region:
     def status(self, status):
         """Sets the status of this Region.
 
-        区域状态
+        区域状态。
 
         :param status: The status of this Region.
         :type status: str

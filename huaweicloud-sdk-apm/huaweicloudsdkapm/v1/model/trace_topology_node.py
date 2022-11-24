@@ -36,11 +36,11 @@ class TraceTopologyNode:
 
         The model defined in huaweicloud sdk
 
-        :param node_id: 节点id
+        :param node_id: 节点id。
         :type node_id: int
-        :param node_name: 节点名称
+        :param node_name: 节点名称。
         :type node_name: str
-        :param hint: 节点提示字段
+        :param hint: 节点提示字段。
         :type hint: str
         """
         
@@ -62,7 +62,7 @@ class TraceTopologyNode:
     def node_id(self):
         """Gets the node_id of this TraceTopologyNode.
 
-        节点id
+        节点id。
 
         :return: The node_id of this TraceTopologyNode.
         :rtype: int
@@ -73,7 +73,7 @@ class TraceTopologyNode:
     def node_id(self, node_id):
         """Sets the node_id of this TraceTopologyNode.
 
-        节点id
+        节点id。
 
         :param node_id: The node_id of this TraceTopologyNode.
         :type node_id: int
@@ -84,7 +84,7 @@ class TraceTopologyNode:
     def node_name(self):
         """Gets the node_name of this TraceTopologyNode.
 
-        节点名称
+        节点名称。
 
         :return: The node_name of this TraceTopologyNode.
         :rtype: str
@@ -95,7 +95,7 @@ class TraceTopologyNode:
     def node_name(self, node_name):
         """Sets the node_name of this TraceTopologyNode.
 
-        节点名称
+        节点名称。
 
         :param node_name: The node_name of this TraceTopologyNode.
         :type node_name: str
@@ -106,7 +106,7 @@ class TraceTopologyNode:
     def hint(self):
         """Gets the hint of this TraceTopologyNode.
 
-        节点提示字段
+        节点提示字段。
 
         :return: The hint of this TraceTopologyNode.
         :rtype: str
@@ -117,7 +117,7 @@ class TraceTopologyNode:
     def hint(self, hint):
         """Sets the hint of this TraceTopologyNode.
 
-        节点提示字段
+        节点提示字段。
 
         :param hint: The hint of this TraceTopologyNode.
         :type hint: str

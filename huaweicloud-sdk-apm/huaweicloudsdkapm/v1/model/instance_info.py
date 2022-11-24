@@ -60,35 +60,35 @@ class InstanceInfo:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例id
+        :param instance_id: 实例id。
         :type instance_id: int
-        :param business_name: 应用名称
+        :param business_name: 应用名称。
         :type business_name: str
-        :param business_id: 应用id
+        :param business_id: 应用id。
         :type business_id: int
-        :param app_name: 组件名称
+        :param app_name: 组件名称。
         :type app_name: str
-        :param host_name: 主机名称
+        :param host_name: 主机名称。
         :type host_name: str
-        :param instance_name: 实例名称
+        :param instance_name: 实例名称。
         :type instance_name: str
-        :param ip_address: 主机ip地址
+        :param ip_address: 主机ip地址。
         :type ip_address: str
-        :param env_id: 环境ID
+        :param env_id: 环境ID。
         :type env_id: int
-        :param agent_version: Javaagent版本
+        :param agent_version: Javaagent版本。
         :type agent_version: str
-        :param last_heartbeat: 最后心跳时间
+        :param last_heartbeat: 最后心跳时间。
         :type last_heartbeat: int
-        :param register_time: 注册时间
+        :param register_time: 注册时间。
         :type register_time: int
-        :param last_modify_user_id: 最后修改用户id
+        :param last_modify_user_id: 最后修改用户id。
         :type last_modify_user_id: str
-        :param instance_status: 实例状态
+        :param instance_status: 实例状态。
         :type instance_status: int
-        :param last_modify_user_name: 最后修改用户名称
+        :param last_modify_user_name: 最后修改用户名称。
         :type last_modify_user_name: str
-        :param last_modify_time: 最后修改时间
+        :param last_modify_time: 最后修改时间。
         :type last_modify_time: int
         """
         
@@ -146,7 +146,7 @@ class InstanceInfo:
     def instance_id(self):
         """Gets the instance_id of this InstanceInfo.
 
-        实例id
+        实例id。
 
         :return: The instance_id of this InstanceInfo.
         :rtype: int
@@ -157,7 +157,7 @@ class InstanceInfo:
     def instance_id(self, instance_id):
         """Sets the instance_id of this InstanceInfo.
 
-        实例id
+        实例id。
 
         :param instance_id: The instance_id of this InstanceInfo.
         :type instance_id: int
@@ -168,7 +168,7 @@ class InstanceInfo:
     def business_name(self):
         """Gets the business_name of this InstanceInfo.
 
-        应用名称
+        应用名称。
 
         :return: The business_name of this InstanceInfo.
         :rtype: str
@@ -179,7 +179,7 @@ class InstanceInfo:
     def business_name(self, business_name):
         """Sets the business_name of this InstanceInfo.
 
-        应用名称
+        应用名称。
 
         :param business_name: The business_name of this InstanceInfo.
         :type business_name: str
@@ -190,7 +190,7 @@ class InstanceInfo:
     def business_id(self):
         """Gets the business_id of this InstanceInfo.
 
-        应用id
+        应用id。
 
         :return: The business_id of this InstanceInfo.
         :rtype: int
@@ -201,7 +201,7 @@ class InstanceInfo:
     def business_id(self, business_id):
         """Sets the business_id of this InstanceInfo.
 
-        应用id
+        应用id。
 
         :param business_id: The business_id of this InstanceInfo.
         :type business_id: int
@@ -212,7 +212,7 @@ class InstanceInfo:
     def app_name(self):
         """Gets the app_name of this InstanceInfo.
 
-        组件名称
+        组件名称。
 
         :return: The app_name of this InstanceInfo.
         :rtype: str
@@ -223,7 +223,7 @@ class InstanceInfo:
     def app_name(self, app_name):
         """Sets the app_name of this InstanceInfo.
 
-        组件名称
+        组件名称。
 
         :param app_name: The app_name of this InstanceInfo.
         :type app_name: str
@@ -234,7 +234,7 @@ class InstanceInfo:
     def host_name(self):
         """Gets the host_name of this InstanceInfo.
 
-        主机名称
+        主机名称。
 
         :return: The host_name of this InstanceInfo.
         :rtype: str
@@ -245,7 +245,7 @@ class InstanceInfo:
     def host_name(self, host_name):
         """Sets the host_name of this InstanceInfo.
 
-        主机名称
+        主机名称。
 
         :param host_name: The host_name of this InstanceInfo.
         :type host_name: str
@@ -256,7 +256,7 @@ class InstanceInfo:
     def instance_name(self):
         """Gets the instance_name of this InstanceInfo.
 
-        实例名称
+        实例名称。
 
         :return: The instance_name of this InstanceInfo.
         :rtype: str
@@ -267,7 +267,7 @@ class InstanceInfo:
     def instance_name(self, instance_name):
         """Sets the instance_name of this InstanceInfo.
 
-        实例名称
+        实例名称。
 
         :param instance_name: The instance_name of this InstanceInfo.
         :type instance_name: str
@@ -278,7 +278,7 @@ class InstanceInfo:
     def ip_address(self):
         """Gets the ip_address of this InstanceInfo.
 
-        主机ip地址
+        主机ip地址。
 
         :return: The ip_address of this InstanceInfo.
         :rtype: str
@@ -289,7 +289,7 @@ class InstanceInfo:
     def ip_address(self, ip_address):
         """Sets the ip_address of this InstanceInfo.
 
-        主机ip地址
+        主机ip地址。
 
         :param ip_address: The ip_address of this InstanceInfo.
         :type ip_address: str
@@ -300,7 +300,7 @@ class InstanceInfo:
     def env_id(self):
         """Gets the env_id of this InstanceInfo.
 
-        环境ID
+        环境ID。
 
         :return: The env_id of this InstanceInfo.
         :rtype: int
@@ -311,7 +311,7 @@ class InstanceInfo:
     def env_id(self, env_id):
         """Sets the env_id of this InstanceInfo.
 
-        环境ID
+        环境ID。
 
         :param env_id: The env_id of this InstanceInfo.
         :type env_id: int
@@ -322,7 +322,7 @@ class InstanceInfo:
     def agent_version(self):
         """Gets the agent_version of this InstanceInfo.
 
-        Javaagent版本
+        Javaagent版本。
 
         :return: The agent_version of this InstanceInfo.
         :rtype: str
@@ -333,7 +333,7 @@ class InstanceInfo:
     def agent_version(self, agent_version):
         """Sets the agent_version of this InstanceInfo.
 
-        Javaagent版本
+        Javaagent版本。
 
         :param agent_version: The agent_version of this InstanceInfo.
         :type agent_version: str
@@ -344,7 +344,7 @@ class InstanceInfo:
     def last_heartbeat(self):
         """Gets the last_heartbeat of this InstanceInfo.
 
-        最后心跳时间
+        最后心跳时间。
 
         :return: The last_heartbeat of this InstanceInfo.
         :rtype: int
@@ -355,7 +355,7 @@ class InstanceInfo:
     def last_heartbeat(self, last_heartbeat):
         """Sets the last_heartbeat of this InstanceInfo.
 
-        最后心跳时间
+        最后心跳时间。
 
         :param last_heartbeat: The last_heartbeat of this InstanceInfo.
         :type last_heartbeat: int
@@ -366,7 +366,7 @@ class InstanceInfo:
     def register_time(self):
         """Gets the register_time of this InstanceInfo.
 
-        注册时间
+        注册时间。
 
         :return: The register_time of this InstanceInfo.
         :rtype: int
@@ -377,7 +377,7 @@ class InstanceInfo:
     def register_time(self, register_time):
         """Sets the register_time of this InstanceInfo.
 
-        注册时间
+        注册时间。
 
         :param register_time: The register_time of this InstanceInfo.
         :type register_time: int
@@ -388,7 +388,7 @@ class InstanceInfo:
     def last_modify_user_id(self):
         """Gets the last_modify_user_id of this InstanceInfo.
 
-        最后修改用户id
+        最后修改用户id。
 
         :return: The last_modify_user_id of this InstanceInfo.
         :rtype: str
@@ -399,7 +399,7 @@ class InstanceInfo:
     def last_modify_user_id(self, last_modify_user_id):
         """Sets the last_modify_user_id of this InstanceInfo.
 
-        最后修改用户id
+        最后修改用户id。
 
         :param last_modify_user_id: The last_modify_user_id of this InstanceInfo.
         :type last_modify_user_id: str
@@ -410,7 +410,7 @@ class InstanceInfo:
     def instance_status(self):
         """Gets the instance_status of this InstanceInfo.
 
-        实例状态
+        实例状态。
 
         :return: The instance_status of this InstanceInfo.
         :rtype: int
@@ -421,7 +421,7 @@ class InstanceInfo:
     def instance_status(self, instance_status):
         """Sets the instance_status of this InstanceInfo.
 
-        实例状态
+        实例状态。
 
         :param instance_status: The instance_status of this InstanceInfo.
         :type instance_status: int
@@ -432,7 +432,7 @@ class InstanceInfo:
     def last_modify_user_name(self):
         """Gets the last_modify_user_name of this InstanceInfo.
 
-        最后修改用户名称
+        最后修改用户名称。
 
         :return: The last_modify_user_name of this InstanceInfo.
         :rtype: str
@@ -443,7 +443,7 @@ class InstanceInfo:
     def last_modify_user_name(self, last_modify_user_name):
         """Sets the last_modify_user_name of this InstanceInfo.
 
-        最后修改用户名称
+        最后修改用户名称。
 
         :param last_modify_user_name: The last_modify_user_name of this InstanceInfo.
         :type last_modify_user_name: str
@@ -454,7 +454,7 @@ class InstanceInfo:
     def last_modify_time(self):
         """Gets the last_modify_time of this InstanceInfo.
 
-        最后修改时间
+        最后修改时间。
 
         :return: The last_modify_time of this InstanceInfo.
         :rtype: int
@@ -465,7 +465,7 @@ class InstanceInfo:
     def last_modify_time(self, last_modify_time):
         """Sets the last_modify_time of this InstanceInfo.
 
-        最后修改时间
+        最后修改时间。
 
         :param last_modify_time: The last_modify_time of this InstanceInfo.
         :type last_modify_time: int

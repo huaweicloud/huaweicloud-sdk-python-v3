@@ -912,7 +912,7 @@ class EvsClient(Client):
             request_type=request.__class__.__name__)
 
     def list_snapshots(self, request):
-        """查询云硬盘快照详细列表信息
+        """查询云硬盘快照详情列表
 
         查询云硬盘快照详细列表信息。
         
@@ -1401,7 +1401,7 @@ class EvsClient(Client):
             request_type=request.__class__.__name__)
 
     def show_snapshot(self, request):
-        """查询单个云硬盘快照详细信息
+        """查询单个云硬盘快照详情
 
         查询单个云硬盘快照信息。支持企业项目授权功能。
         

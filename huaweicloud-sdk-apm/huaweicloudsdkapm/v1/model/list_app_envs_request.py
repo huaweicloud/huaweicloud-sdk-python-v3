@@ -34,9 +34,9 @@ class ListAppEnvsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param app_id: 组件id
+        :param app_id: 组件id。
         :type app_id: int
-        :param x_business_id: 应用id
+        :param x_business_id: 应用id。
         :type x_business_id: int
         """
         
@@ -53,7 +53,7 @@ class ListAppEnvsRequest:
     def app_id(self):
         """Gets the app_id of this ListAppEnvsRequest.
 
-        组件id
+        组件id。
 
         :return: The app_id of this ListAppEnvsRequest.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAppEnvsRequest:
     def app_id(self, app_id):
         """Sets the app_id of this ListAppEnvsRequest.
 
-        组件id
+        组件id。
 
         :param app_id: The app_id of this ListAppEnvsRequest.
         :type app_id: int
@@ -75,7 +75,7 @@ class ListAppEnvsRequest:
     def x_business_id(self):
         """Gets the x_business_id of this ListAppEnvsRequest.
 
-        应用id
+        应用id。
 
         :return: The x_business_id of this ListAppEnvsRequest.
         :rtype: int
@@ -86,7 +86,7 @@ class ListAppEnvsRequest:
     def x_business_id(self, x_business_id):
         """Sets the x_business_id of this ListAppEnvsRequest.
 
-        应用id
+        应用id。
 
         :param x_business_id: The x_business_id of this ListAppEnvsRequest.
         :type x_business_id: int

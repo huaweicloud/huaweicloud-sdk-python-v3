@@ -34,9 +34,9 @@ class ListAppsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param business_id: 应用id
+        :param business_id: 应用id。
         :type business_id: int
-        :param x_business_id: 应用id
+        :param x_business_id: 应用id。
         :type x_business_id: int
         """
         
@@ -53,7 +53,7 @@ class ListAppsRequest:
     def business_id(self):
         """Gets the business_id of this ListAppsRequest.
 
-        应用id
+        应用id。
 
         :return: The business_id of this ListAppsRequest.
         :rtype: int
@@ -64,7 +64,7 @@ class ListAppsRequest:
     def business_id(self, business_id):
         """Sets the business_id of this ListAppsRequest.
 
-        应用id
+        应用id。
 
         :param business_id: The business_id of this ListAppsRequest.
         :type business_id: int
@@ -75,7 +75,7 @@ class ListAppsRequest:
     def x_business_id(self):
         """Gets the x_business_id of this ListAppsRequest.
 
-        应用id
+        应用id。
 
         :return: The x_business_id of this ListAppsRequest.
         :rtype: int
@@ -86,7 +86,7 @@ class ListAppsRequest:
     def x_business_id(self, x_business_id):
         """Sets the x_business_id of this ListAppsRequest.
 
-        应用id
+        应用id。
 
         :param x_business_id: The x_business_id of this ListAppsRequest.
         :type x_business_id: int

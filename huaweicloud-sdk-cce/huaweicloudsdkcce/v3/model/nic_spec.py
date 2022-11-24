@@ -36,7 +36,7 @@ class NicSpec:
 
         The model defined in huaweicloud sdk
 
-        :param subnet_id: 网卡所在子网的ID。主网卡创建时若未指定subnetId,将使用集群子网。拓展网卡创建时必须指定subnetId。  
+        :param subnet_id: 网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。拓展网卡创建时必须指定subnetId。  
         :type subnet_id: str
         :param fixed_ips: 主网卡的IP将通过fixedIps指定，数量不得大于创建的节点数。fixedIps或ipBlock同时只能指定一个。
         :type fixed_ips: list[str]
@@ -62,7 +62,7 @@ class NicSpec:
     def subnet_id(self):
         """Gets the subnet_id of this NicSpec.
 
-        网卡所在子网的ID。主网卡创建时若未指定subnetId,将使用集群子网。拓展网卡创建时必须指定subnetId。  
+        网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。拓展网卡创建时必须指定subnetId。  
 
         :return: The subnet_id of this NicSpec.
         :rtype: str
@@ -73,7 +73,7 @@ class NicSpec:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this NicSpec.
 
-        网卡所在子网的ID。主网卡创建时若未指定subnetId,将使用集群子网。拓展网卡创建时必须指定subnetId。  
+        网卡所在子网的网络ID。主网卡创建时若未指定subnetId,将使用集群子网。拓展网卡创建时必须指定subnetId。  
 
         :param subnet_id: The subnet_id of this NicSpec.
         :type subnet_id: str

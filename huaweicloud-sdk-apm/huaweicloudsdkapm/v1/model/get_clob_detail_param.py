@@ -34,9 +34,9 @@ class GetClobDetailParam:
 
         The model defined in huaweicloud sdk
 
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param clob_id: clobId
+        :param clob_id: clobId。
         :type clob_id: str
         """
         
@@ -46,16 +46,14 @@ class GetClobDetailParam:
         self._clob_id = None
         self.discriminator = None
 
-        if env_id is not None:
-            self.env_id = env_id
-        if clob_id is not None:
-            self.clob_id = clob_id
+        self.env_id = env_id
+        self.clob_id = clob_id
 
     @property
     def env_id(self):
         """Gets the env_id of this GetClobDetailParam.
 
-        环境id
+        环境id。
 
         :return: The env_id of this GetClobDetailParam.
         :rtype: int
@@ -66,7 +64,7 @@ class GetClobDetailParam:
     def env_id(self, env_id):
         """Sets the env_id of this GetClobDetailParam.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this GetClobDetailParam.
         :type env_id: int
@@ -77,7 +75,7 @@ class GetClobDetailParam:
     def clob_id(self):
         """Gets the clob_id of this GetClobDetailParam.
 
-        clobId
+        clobId。
 
         :return: The clob_id of this GetClobDetailParam.
         :rtype: str
@@ -88,7 +86,7 @@ class GetClobDetailParam:
     def clob_id(self, clob_id):
         """Sets the clob_id of this GetClobDetailParam.
 
-        clobId
+        clobId。
 
         :param clob_id: The clob_id of this GetClobDetailParam.
         :type clob_id: str

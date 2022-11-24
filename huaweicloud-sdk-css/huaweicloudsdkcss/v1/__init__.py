@@ -11,6 +11,8 @@ from huaweicloudsdkcss.v1.model.add_favorite_req import AddFavoriteReq
 from huaweicloudsdkcss.v1.model.add_favorite_req_template import AddFavoriteReqTemplate
 from huaweicloudsdkcss.v1.model.add_favorite_request import AddFavoriteRequest
 from huaweicloudsdkcss.v1.model.add_favorite_response import AddFavoriteResponse
+from huaweicloudsdkcss.v1.model.add_independent_node_request import AddIndependentNodeRequest
+from huaweicloudsdkcss.v1.model.add_independent_node_response import AddIndependentNodeResponse
 from huaweicloudsdkcss.v1.model.address_and_ports import AddressAndPorts
 from huaweicloudsdkcss.v1.model.backup_rsp import BackupRsp
 from huaweicloudsdkcss.v1.model.batch_add_or_delete_tag_on_cluster_req import BatchAddOrDeleteTagOnClusterReq
@@ -18,6 +20,9 @@ from huaweicloudsdkcss.v1.model.bind_public_req import BindPublicReq
 from huaweicloudsdkcss.v1.model.bind_public_req_eip import BindPublicReqEip
 from huaweicloudsdkcss.v1.model.bind_public_req_eip_band_width import BindPublicReqEipBandWidth
 from huaweicloudsdkcss.v1.model.bind_public_req_eip_req import BindPublicReqEipReq
+from huaweicloudsdkcss.v1.model.change_mode_request import ChangeModeRequest
+from huaweicloudsdkcss.v1.model.change_mode_request_body import ChangeModeRequestBody
+from huaweicloudsdkcss.v1.model.change_mode_response import ChangeModeResponse
 from huaweicloudsdkcss.v1.model.close_kibana_public_req import CloseKibanaPublicReq
 from huaweicloudsdkcss.v1.model.cluster_detail_datastore import ClusterDetailDatastore
 from huaweicloudsdkcss.v1.model.cluster_detail_failed_reasons import ClusterDetailFailedReasons
@@ -29,6 +34,7 @@ from huaweicloudsdkcss.v1.model.cluster_list_failed_reasons import ClusterListFa
 from huaweicloudsdkcss.v1.model.cluster_list_instances import ClusterListInstances
 from huaweicloudsdkcss.v1.model.cluster_list_tags import ClusterListTags
 from huaweicloudsdkcss.v1.model.cluster_log_record import ClusterLogRecord
+from huaweicloudsdkcss.v1.model.cluster_volume_rsp import ClusterVolumeRsp
 from huaweicloudsdkcss.v1.model.config_list_rsp import ConfigListRsp
 from huaweicloudsdkcss.v1.model.confs import Confs
 from huaweicloudsdkcss.v1.model.connections import Connections
@@ -82,6 +88,8 @@ from huaweicloudsdkcss.v1.model.esflavors_versions_resp import EsflavorsVersions
 from huaweicloudsdkcss.v1.model.extend_cluster_grow_req import ExtendClusterGrowReq
 from huaweicloudsdkcss.v1.model.extend_cluster_req import ExtendClusterReq
 from huaweicloudsdkcss.v1.model.get_log_backup_req import GetLogBackupReq
+from huaweicloudsdkcss.v1.model.independent_req import IndependentReq
+from huaweicloudsdkcss.v1.model.independent_request_body import IndependentRequestBody
 from huaweicloudsdkcss.v1.model.kibana_elb_white_list_resp import KibanaElbWhiteListResp
 from huaweicloudsdkcss.v1.model.list_actions_request import ListActionsRequest
 from huaweicloudsdkcss.v1.model.list_actions_response import ListActionsResponse
@@ -134,6 +142,7 @@ from huaweicloudsdkcss.v1.model.show_cluster_detail_request import ShowClusterDe
 from huaweicloudsdkcss.v1.model.show_cluster_detail_response import ShowClusterDetailResponse
 from huaweicloudsdkcss.v1.model.show_cluster_tag_request import ShowClusterTagRequest
 from huaweicloudsdkcss.v1.model.show_cluster_tag_response import ShowClusterTagResponse
+from huaweicloudsdkcss.v1.model.show_cluster_volume_rsp import ShowClusterVolumeRsp
 from huaweicloudsdkcss.v1.model.show_get_conf_detail_request import ShowGetConfDetailRequest
 from huaweicloudsdkcss.v1.model.show_get_conf_detail_response import ShowGetConfDetailResponse
 from huaweicloudsdkcss.v1.model.show_get_log_setting_request import ShowGetLogSettingRequest
@@ -213,6 +222,8 @@ from huaweicloudsdkcss.v1.model.update_flavor_by_type_response import UpdateFlav
 from huaweicloudsdkcss.v1.model.update_flavor_req import UpdateFlavorReq
 from huaweicloudsdkcss.v1.model.update_flavor_request import UpdateFlavorRequest
 from huaweicloudsdkcss.v1.model.update_flavor_response import UpdateFlavorResponse
+from huaweicloudsdkcss.v1.model.update_instance_request import UpdateInstanceRequest
+from huaweicloudsdkcss.v1.model.update_instance_response import UpdateInstanceResponse
 from huaweicloudsdkcss.v1.model.update_log_setting_req import UpdateLogSettingReq
 from huaweicloudsdkcss.v1.model.update_log_setting_request import UpdateLogSettingRequest
 from huaweicloudsdkcss.v1.model.update_log_setting_response import UpdateLogSettingResponse

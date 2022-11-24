@@ -22,18 +22,16 @@ class CreateRouteTable:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'bgp_options': 'BgpOptions',
         'tags': 'list[Tag]'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'bgp_options': 'bgp_options',
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, bgp_options=None, tags=None):
+    def __init__(self, name=None, description=None, tags=None):
         """CreateRouteTable
 
         The model defined in huaweicloud sdk
@@ -42,8 +40,6 @@ class CreateRouteTable:
         :type name: str
         :param description: 路由器表描述信息
         :type description: str
-        :param bgp_options: 
-        :type bgp_options: :class:`huaweicloudsdker.v3.BgpOptions`
         :param tags: 标签信息
         :type tags: list[:class:`huaweicloudsdker.v3.Tag`]
         """
@@ -52,15 +48,12 @@ class CreateRouteTable:
 
         self._name = None
         self._description = None
-        self._bgp_options = None
         self._tags = None
         self.discriminator = None
 
         self.name = name
         if description is not None:
             self.description = description
-        if bgp_options is not None:
-            self.bgp_options = bgp_options
         if tags is not None:
             self.tags = tags
 
@@ -107,24 +100,6 @@ class CreateRouteTable:
         :type description: str
         """
         self._description = description
-
-    @property
-    def bgp_options(self):
-        """Gets the bgp_options of this CreateRouteTable.
-
-        :return: The bgp_options of this CreateRouteTable.
-        :rtype: :class:`huaweicloudsdker.v3.BgpOptions`
-        """
-        return self._bgp_options
-
-    @bgp_options.setter
-    def bgp_options(self, bgp_options):
-        """Sets the bgp_options of this CreateRouteTable.
-
-        :param bgp_options: The bgp_options of this CreateRouteTable.
-        :type bgp_options: :class:`huaweicloudsdker.v3.BgpOptions`
-        """
-        self._bgp_options = bgp_options
 
     @property
     def tags(self):

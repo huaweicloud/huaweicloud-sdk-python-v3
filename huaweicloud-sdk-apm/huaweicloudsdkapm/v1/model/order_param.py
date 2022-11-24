@@ -34,9 +34,9 @@ class OrderParam:
 
         The model defined in huaweicloud sdk
 
-        :param field: 
+        :param field: timeUsed：响应时间，startTime：产生时间。
         :type field: str
-        :param order: 
+        :param order: ASC：正序，DESC：逆序。
         :type order: str
         """
         
@@ -55,6 +55,8 @@ class OrderParam:
     def field(self):
         """Gets the field of this OrderParam.
 
+        timeUsed：响应时间，startTime：产生时间。
+
         :return: The field of this OrderParam.
         :rtype: str
         """
@@ -63,6 +65,8 @@ class OrderParam:
     @field.setter
     def field(self, field):
         """Sets the field of this OrderParam.
+
+        timeUsed：响应时间，startTime：产生时间。
 
         :param field: The field of this OrderParam.
         :type field: str
@@ -73,6 +77,8 @@ class OrderParam:
     def order(self):
         """Gets the order of this OrderParam.
 
+        ASC：正序，DESC：逆序。
+
         :return: The order of this OrderParam.
         :rtype: str
         """
@@ -81,6 +87,8 @@ class OrderParam:
     @order.setter
     def order(self, order):
         """Sets the order of this OrderParam.
+
+        ASC：正序，DESC：逆序。
 
         :param order: The order of this OrderParam.
         :type order: str

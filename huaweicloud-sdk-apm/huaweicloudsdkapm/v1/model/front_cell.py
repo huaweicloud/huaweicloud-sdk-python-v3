@@ -48,23 +48,23 @@ class FrontCell:
 
         The model defined in huaweicloud sdk
 
-        :param data_type: 数据类型
+        :param data_type: 数据类型。
         :type data_type: str
-        :param function: 函数
+        :param function: 函数。
         :type function: str
-        :param trace: 是否调用链
+        :param trace: 是否调用链。
         :type trace: bool
-        :param span: 是否是span信息，如果是就跳到调用链搜索页面
+        :param span: 是否是span信息，如果是就跳到调用链搜索页面。
         :type span: bool
-        :param span_field: span字段
+        :param span_field: span字段。
         :type span_field: str
-        :param precision: 小数点位数
+        :param precision: 小数点位数。
         :type precision: int
-        :param text: 文本信息
+        :param text: 文本信息。
         :type text: str
-        :param unit: 单位
+        :param unit: 单位。
         :type unit: str
-        :param visible: 是否可见
+        :param visible: 是否可见。
         :type visible: bool
         """
         
@@ -104,7 +104,7 @@ class FrontCell:
     def data_type(self):
         """Gets the data_type of this FrontCell.
 
-        数据类型
+        数据类型。
 
         :return: The data_type of this FrontCell.
         :rtype: str
@@ -115,7 +115,7 @@ class FrontCell:
     def data_type(self, data_type):
         """Sets the data_type of this FrontCell.
 
-        数据类型
+        数据类型。
 
         :param data_type: The data_type of this FrontCell.
         :type data_type: str
@@ -126,7 +126,7 @@ class FrontCell:
     def function(self):
         """Gets the function of this FrontCell.
 
-        函数
+        函数。
 
         :return: The function of this FrontCell.
         :rtype: str
@@ -137,7 +137,7 @@ class FrontCell:
     def function(self, function):
         """Sets the function of this FrontCell.
 
-        函数
+        函数。
 
         :param function: The function of this FrontCell.
         :type function: str
@@ -148,7 +148,7 @@ class FrontCell:
     def trace(self):
         """Gets the trace of this FrontCell.
 
-        是否调用链
+        是否调用链。
 
         :return: The trace of this FrontCell.
         :rtype: bool
@@ -159,7 +159,7 @@ class FrontCell:
     def trace(self, trace):
         """Sets the trace of this FrontCell.
 
-        是否调用链
+        是否调用链。
 
         :param trace: The trace of this FrontCell.
         :type trace: bool
@@ -170,7 +170,7 @@ class FrontCell:
     def span(self):
         """Gets the span of this FrontCell.
 
-        是否是span信息，如果是就跳到调用链搜索页面
+        是否是span信息，如果是就跳到调用链搜索页面。
 
         :return: The span of this FrontCell.
         :rtype: bool
@@ -181,7 +181,7 @@ class FrontCell:
     def span(self, span):
         """Sets the span of this FrontCell.
 
-        是否是span信息，如果是就跳到调用链搜索页面
+        是否是span信息，如果是就跳到调用链搜索页面。
 
         :param span: The span of this FrontCell.
         :type span: bool
@@ -192,7 +192,7 @@ class FrontCell:
     def span_field(self):
         """Gets the span_field of this FrontCell.
 
-        span字段
+        span字段。
 
         :return: The span_field of this FrontCell.
         :rtype: str
@@ -203,7 +203,7 @@ class FrontCell:
     def span_field(self, span_field):
         """Sets the span_field of this FrontCell.
 
-        span字段
+        span字段。
 
         :param span_field: The span_field of this FrontCell.
         :type span_field: str
@@ -214,7 +214,7 @@ class FrontCell:
     def precision(self):
         """Gets the precision of this FrontCell.
 
-        小数点位数
+        小数点位数。
 
         :return: The precision of this FrontCell.
         :rtype: int
@@ -225,7 +225,7 @@ class FrontCell:
     def precision(self, precision):
         """Sets the precision of this FrontCell.
 
-        小数点位数
+        小数点位数。
 
         :param precision: The precision of this FrontCell.
         :type precision: int
@@ -236,7 +236,7 @@ class FrontCell:
     def text(self):
         """Gets the text of this FrontCell.
 
-        文本信息
+        文本信息。
 
         :return: The text of this FrontCell.
         :rtype: str
@@ -247,7 +247,7 @@ class FrontCell:
     def text(self, text):
         """Sets the text of this FrontCell.
 
-        文本信息
+        文本信息。
 
         :param text: The text of this FrontCell.
         :type text: str
@@ -258,7 +258,7 @@ class FrontCell:
     def unit(self):
         """Gets the unit of this FrontCell.
 
-        单位
+        单位。
 
         :return: The unit of this FrontCell.
         :rtype: str
@@ -269,7 +269,7 @@ class FrontCell:
     def unit(self, unit):
         """Sets the unit of this FrontCell.
 
-        单位
+        单位。
 
         :param unit: The unit of this FrontCell.
         :type unit: str
@@ -280,7 +280,7 @@ class FrontCell:
     def visible(self):
         """Gets the visible of this FrontCell.
 
-        是否可见
+        是否可见。
 
         :return: The visible of this FrontCell.
         :rtype: bool
@@ -291,7 +291,7 @@ class FrontCell:
     def visible(self, visible):
         """Sets the visible of this FrontCell.
 
-        是否可见
+        是否可见。
 
         :param visible: The visible of this FrontCell.
         :type visible: bool

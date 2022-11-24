@@ -102,77 +102,77 @@ class TraceSearchParam:
 
         The model defined in huaweicloud sdk
 
-        :param region: region名称
+        :param region: region名称。
         :type region: str
         :param order_param: 
         :type order_param: :class:`huaweicloudsdkapm.v1.OrderParam`
-        :param real_source_full_match: 是否为精确搜索
+        :param real_source_full_match: 是否为精确搜索。
         :type real_source_full_match: bool
-        :param source_full_match: 全匹配搜索
+        :param source_full_match: 全匹配搜索。
         :type source_full_match: bool
-        :param tags_content: header或body体，或自定义参数，或其他tags里字段的关键词搜索
+        :param tags_content: header或body体，或自定义参数，或其他tags里字段的关键词搜索。
         :type tags_content: str
-        :param start_time_string: 开始时间
+        :param start_time_string: 开始时间。
         :type start_time_string: str
-        :param end_time_string: 结束时间
+        :param end_time_string: 结束时间。
         :type end_time_string: str
-        :param time_used_min: 最小耗时
+        :param time_used_min: 最小耗时。
         :type time_used_min: int
-        :param time_used_max: 最大耗时
+        :param time_used_max: 最大耗时。
         :type time_used_max: str
-        :param contain_tags_content: 搜索结果是否包含tags内容详情
+        :param contain_tags_content: 搜索结果是否包含tags内容详情。
         :type contain_tags_content: bool
-        :param page_size: 每一页返回的行数
+        :param page_size: 每一页返回的行数。
         :type page_size: int
-        :param page: 查询第几页的数据,默认查询第一页
+        :param page: 查询第几页的数据,默认查询第一页。
         :type page: int
-        :param parameters: 参数
+        :param parameters: 参数。
         :type parameters: str
-        :param codes: 字符串格式的的状态码，用于支持多个状态码查询
+        :param codes: 字符串格式的的状态码，用于支持多个状态码查询。
         :type codes: list[int]
-        :param global_trace_id: vTraceId，虚拟traceId，一个vTraceId对应多个实际的traceId， vTraceId会从开始一直往下应用传输
+        :param global_trace_id: vTraceId，虚拟traceId，一个vTraceId对应多个实际的traceId， vTraceId会从开始一直往下应用传输。
         :type global_trace_id: str
-        :param global_path: 虚拟traceId经过的path路径
+        :param global_path: 虚拟traceId经过的path路径。
         :type global_path: str
-        :param trace_id: 在root的span调用产生的全局id，以此往后透传
+        :param trace_id: 在root的span调用产生的全局id，以此往后透传。
         :type trace_id: str
-        :param span_id: 代表一次rpc的调用的id，对于root的调用，值为字符串1，对于当前span调用的下一个spanId编号为1-1,1-2等格式，以此往后类推
+        :param span_id: 代表一次rpc的调用的id，对于root的调用，值为字符串1，对于当前span调用的下一个spanId编号为1-1,1-2等格式，以此往后类推。
         :type span_id: str
-        :param env_id: 环境ID
+        :param env_id: 环境id。
         :type env_id: int
-        :param instance_id: 实例ID
+        :param instance_id: 实例id。
         :type instance_id: int
-        :param app_id: 组件ID
+        :param app_id: 组件id。
         :type app_id: int
-        :param biz_id: 应用ID
+        :param biz_id: 应用id。
         :type biz_id: int
-        :param domain_id: 租户ID
+        :param domain_id: 租户id。
         :type domain_id: int
-        :param source: 只有是根event也就是span的时候有值
+        :param source: 只有是根event也就是span的时候有值。
         :type source: str
-        :param real_source: 根event 的时候存在，实际调用的url
+        :param real_source: 根event 的时候存在，实际调用的url。
         :type real_source: str
-        :param start_time: 开始时间
+        :param start_time: 开始时间。
         :type start_time: int
-        :param time_used: 耗时
+        :param time_used: 耗时。
         :type time_used: int
-        :param code: 状态码，针对http的调用有效
+        :param code: 状态码，针对http的调用有效。
         :type code: int
-        :param class_name: 类名
+        :param class_name: 类名。
         :type class_name: str
-        :param is_async: 是否异步的event
+        :param is_async: 是否异步的event。
         :type is_async: bool
-        :param tags: 包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数
+        :param tags: 包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
         :type tags: dict(str, str)
-        :param has_error: 是否有错误
+        :param has_error: 是否有错误。
         :type has_error: bool
-        :param error_reasons: 错误类型
+        :param error_reasons: 错误类型。
         :type error_reasons: str
-        :param type: 类型
+        :param type: 类型。
         :type type: str
-        :param http_method: 这里的method实际上是tags里面的http_method，只有url监控项才有
+        :param http_method: 这里的method实际上是tags里面的http_method，只有url监控项才有。
         :type http_method: str
-        :param biz_code: 业务状态码的采集
+        :param biz_code: 业务状态码的采集。
         :type biz_code: str
         """
         
@@ -216,8 +216,7 @@ class TraceSearchParam:
         self._biz_code = None
         self.discriminator = None
 
-        if region is not None:
-            self.region = region
+        self.region = region
         if order_param is not None:
             self.order_param = order_param
         if real_source_full_match is not None:
@@ -258,8 +257,7 @@ class TraceSearchParam:
             self.instance_id = instance_id
         if app_id is not None:
             self.app_id = app_id
-        if biz_id is not None:
-            self.biz_id = biz_id
+        self.biz_id = biz_id
         if domain_id is not None:
             self.domain_id = domain_id
         if source is not None:
@@ -293,7 +291,7 @@ class TraceSearchParam:
     def region(self):
         """Gets the region of this TraceSearchParam.
 
-        region名称
+        region名称。
 
         :return: The region of this TraceSearchParam.
         :rtype: str
@@ -304,7 +302,7 @@ class TraceSearchParam:
     def region(self, region):
         """Sets the region of this TraceSearchParam.
 
-        region名称
+        region名称。
 
         :param region: The region of this TraceSearchParam.
         :type region: str
@@ -333,7 +331,7 @@ class TraceSearchParam:
     def real_source_full_match(self):
         """Gets the real_source_full_match of this TraceSearchParam.
 
-        是否为精确搜索
+        是否为精确搜索。
 
         :return: The real_source_full_match of this TraceSearchParam.
         :rtype: bool
@@ -344,7 +342,7 @@ class TraceSearchParam:
     def real_source_full_match(self, real_source_full_match):
         """Sets the real_source_full_match of this TraceSearchParam.
 
-        是否为精确搜索
+        是否为精确搜索。
 
         :param real_source_full_match: The real_source_full_match of this TraceSearchParam.
         :type real_source_full_match: bool
@@ -355,7 +353,7 @@ class TraceSearchParam:
     def source_full_match(self):
         """Gets the source_full_match of this TraceSearchParam.
 
-        全匹配搜索
+        全匹配搜索。
 
         :return: The source_full_match of this TraceSearchParam.
         :rtype: bool
@@ -366,7 +364,7 @@ class TraceSearchParam:
     def source_full_match(self, source_full_match):
         """Sets the source_full_match of this TraceSearchParam.
 
-        全匹配搜索
+        全匹配搜索。
 
         :param source_full_match: The source_full_match of this TraceSearchParam.
         :type source_full_match: bool
@@ -377,7 +375,7 @@ class TraceSearchParam:
     def tags_content(self):
         """Gets the tags_content of this TraceSearchParam.
 
-        header或body体，或自定义参数，或其他tags里字段的关键词搜索
+        header或body体，或自定义参数，或其他tags里字段的关键词搜索。
 
         :return: The tags_content of this TraceSearchParam.
         :rtype: str
@@ -388,7 +386,7 @@ class TraceSearchParam:
     def tags_content(self, tags_content):
         """Sets the tags_content of this TraceSearchParam.
 
-        header或body体，或自定义参数，或其他tags里字段的关键词搜索
+        header或body体，或自定义参数，或其他tags里字段的关键词搜索。
 
         :param tags_content: The tags_content of this TraceSearchParam.
         :type tags_content: str
@@ -399,7 +397,7 @@ class TraceSearchParam:
     def start_time_string(self):
         """Gets the start_time_string of this TraceSearchParam.
 
-        开始时间
+        开始时间。
 
         :return: The start_time_string of this TraceSearchParam.
         :rtype: str
@@ -410,7 +408,7 @@ class TraceSearchParam:
     def start_time_string(self, start_time_string):
         """Sets the start_time_string of this TraceSearchParam.
 
-        开始时间
+        开始时间。
 
         :param start_time_string: The start_time_string of this TraceSearchParam.
         :type start_time_string: str
@@ -421,7 +419,7 @@ class TraceSearchParam:
     def end_time_string(self):
         """Gets the end_time_string of this TraceSearchParam.
 
-        结束时间
+        结束时间。
 
         :return: The end_time_string of this TraceSearchParam.
         :rtype: str
@@ -432,7 +430,7 @@ class TraceSearchParam:
     def end_time_string(self, end_time_string):
         """Sets the end_time_string of this TraceSearchParam.
 
-        结束时间
+        结束时间。
 
         :param end_time_string: The end_time_string of this TraceSearchParam.
         :type end_time_string: str
@@ -443,7 +441,7 @@ class TraceSearchParam:
     def time_used_min(self):
         """Gets the time_used_min of this TraceSearchParam.
 
-        最小耗时
+        最小耗时。
 
         :return: The time_used_min of this TraceSearchParam.
         :rtype: int
@@ -454,7 +452,7 @@ class TraceSearchParam:
     def time_used_min(self, time_used_min):
         """Sets the time_used_min of this TraceSearchParam.
 
-        最小耗时
+        最小耗时。
 
         :param time_used_min: The time_used_min of this TraceSearchParam.
         :type time_used_min: int
@@ -465,7 +463,7 @@ class TraceSearchParam:
     def time_used_max(self):
         """Gets the time_used_max of this TraceSearchParam.
 
-        最大耗时
+        最大耗时。
 
         :return: The time_used_max of this TraceSearchParam.
         :rtype: str
@@ -476,7 +474,7 @@ class TraceSearchParam:
     def time_used_max(self, time_used_max):
         """Sets the time_used_max of this TraceSearchParam.
 
-        最大耗时
+        最大耗时。
 
         :param time_used_max: The time_used_max of this TraceSearchParam.
         :type time_used_max: str
@@ -487,7 +485,7 @@ class TraceSearchParam:
     def contain_tags_content(self):
         """Gets the contain_tags_content of this TraceSearchParam.
 
-        搜索结果是否包含tags内容详情
+        搜索结果是否包含tags内容详情。
 
         :return: The contain_tags_content of this TraceSearchParam.
         :rtype: bool
@@ -498,7 +496,7 @@ class TraceSearchParam:
     def contain_tags_content(self, contain_tags_content):
         """Sets the contain_tags_content of this TraceSearchParam.
 
-        搜索结果是否包含tags内容详情
+        搜索结果是否包含tags内容详情。
 
         :param contain_tags_content: The contain_tags_content of this TraceSearchParam.
         :type contain_tags_content: bool
@@ -509,7 +507,7 @@ class TraceSearchParam:
     def page_size(self):
         """Gets the page_size of this TraceSearchParam.
 
-        每一页返回的行数
+        每一页返回的行数。
 
         :return: The page_size of this TraceSearchParam.
         :rtype: int
@@ -520,7 +518,7 @@ class TraceSearchParam:
     def page_size(self, page_size):
         """Sets the page_size of this TraceSearchParam.
 
-        每一页返回的行数
+        每一页返回的行数。
 
         :param page_size: The page_size of this TraceSearchParam.
         :type page_size: int
@@ -531,7 +529,7 @@ class TraceSearchParam:
     def page(self):
         """Gets the page of this TraceSearchParam.
 
-        查询第几页的数据,默认查询第一页
+        查询第几页的数据,默认查询第一页。
 
         :return: The page of this TraceSearchParam.
         :rtype: int
@@ -542,7 +540,7 @@ class TraceSearchParam:
     def page(self, page):
         """Sets the page of this TraceSearchParam.
 
-        查询第几页的数据,默认查询第一页
+        查询第几页的数据,默认查询第一页。
 
         :param page: The page of this TraceSearchParam.
         :type page: int
@@ -553,7 +551,7 @@ class TraceSearchParam:
     def parameters(self):
         """Gets the parameters of this TraceSearchParam.
 
-        参数
+        参数。
 
         :return: The parameters of this TraceSearchParam.
         :rtype: str
@@ -564,7 +562,7 @@ class TraceSearchParam:
     def parameters(self, parameters):
         """Sets the parameters of this TraceSearchParam.
 
-        参数
+        参数。
 
         :param parameters: The parameters of this TraceSearchParam.
         :type parameters: str
@@ -575,7 +573,7 @@ class TraceSearchParam:
     def codes(self):
         """Gets the codes of this TraceSearchParam.
 
-        字符串格式的的状态码，用于支持多个状态码查询
+        字符串格式的的状态码，用于支持多个状态码查询。
 
         :return: The codes of this TraceSearchParam.
         :rtype: list[int]
@@ -586,7 +584,7 @@ class TraceSearchParam:
     def codes(self, codes):
         """Sets the codes of this TraceSearchParam.
 
-        字符串格式的的状态码，用于支持多个状态码查询
+        字符串格式的的状态码，用于支持多个状态码查询。
 
         :param codes: The codes of this TraceSearchParam.
         :type codes: list[int]
@@ -597,7 +595,7 @@ class TraceSearchParam:
     def global_trace_id(self):
         """Gets the global_trace_id of this TraceSearchParam.
 
-        vTraceId，虚拟traceId，一个vTraceId对应多个实际的traceId， vTraceId会从开始一直往下应用传输
+        vTraceId，虚拟traceId，一个vTraceId对应多个实际的traceId， vTraceId会从开始一直往下应用传输。
 
         :return: The global_trace_id of this TraceSearchParam.
         :rtype: str
@@ -608,7 +606,7 @@ class TraceSearchParam:
     def global_trace_id(self, global_trace_id):
         """Sets the global_trace_id of this TraceSearchParam.
 
-        vTraceId，虚拟traceId，一个vTraceId对应多个实际的traceId， vTraceId会从开始一直往下应用传输
+        vTraceId，虚拟traceId，一个vTraceId对应多个实际的traceId， vTraceId会从开始一直往下应用传输。
 
         :param global_trace_id: The global_trace_id of this TraceSearchParam.
         :type global_trace_id: str
@@ -619,7 +617,7 @@ class TraceSearchParam:
     def global_path(self):
         """Gets the global_path of this TraceSearchParam.
 
-        虚拟traceId经过的path路径
+        虚拟traceId经过的path路径。
 
         :return: The global_path of this TraceSearchParam.
         :rtype: str
@@ -630,7 +628,7 @@ class TraceSearchParam:
     def global_path(self, global_path):
         """Sets the global_path of this TraceSearchParam.
 
-        虚拟traceId经过的path路径
+        虚拟traceId经过的path路径。
 
         :param global_path: The global_path of this TraceSearchParam.
         :type global_path: str
@@ -641,7 +639,7 @@ class TraceSearchParam:
     def trace_id(self):
         """Gets the trace_id of this TraceSearchParam.
 
-        在root的span调用产生的全局id，以此往后透传
+        在root的span调用产生的全局id，以此往后透传。
 
         :return: The trace_id of this TraceSearchParam.
         :rtype: str
@@ -652,7 +650,7 @@ class TraceSearchParam:
     def trace_id(self, trace_id):
         """Sets the trace_id of this TraceSearchParam.
 
-        在root的span调用产生的全局id，以此往后透传
+        在root的span调用产生的全局id，以此往后透传。
 
         :param trace_id: The trace_id of this TraceSearchParam.
         :type trace_id: str
@@ -663,7 +661,7 @@ class TraceSearchParam:
     def span_id(self):
         """Gets the span_id of this TraceSearchParam.
 
-        代表一次rpc的调用的id，对于root的调用，值为字符串1，对于当前span调用的下一个spanId编号为1-1,1-2等格式，以此往后类推
+        代表一次rpc的调用的id，对于root的调用，值为字符串1，对于当前span调用的下一个spanId编号为1-1,1-2等格式，以此往后类推。
 
         :return: The span_id of this TraceSearchParam.
         :rtype: str
@@ -674,7 +672,7 @@ class TraceSearchParam:
     def span_id(self, span_id):
         """Sets the span_id of this TraceSearchParam.
 
-        代表一次rpc的调用的id，对于root的调用，值为字符串1，对于当前span调用的下一个spanId编号为1-1,1-2等格式，以此往后类推
+        代表一次rpc的调用的id，对于root的调用，值为字符串1，对于当前span调用的下一个spanId编号为1-1,1-2等格式，以此往后类推。
 
         :param span_id: The span_id of this TraceSearchParam.
         :type span_id: str
@@ -685,7 +683,7 @@ class TraceSearchParam:
     def env_id(self):
         """Gets the env_id of this TraceSearchParam.
 
-        环境ID
+        环境id。
 
         :return: The env_id of this TraceSearchParam.
         :rtype: int
@@ -696,7 +694,7 @@ class TraceSearchParam:
     def env_id(self, env_id):
         """Sets the env_id of this TraceSearchParam.
 
-        环境ID
+        环境id。
 
         :param env_id: The env_id of this TraceSearchParam.
         :type env_id: int
@@ -707,7 +705,7 @@ class TraceSearchParam:
     def instance_id(self):
         """Gets the instance_id of this TraceSearchParam.
 
-        实例ID
+        实例id。
 
         :return: The instance_id of this TraceSearchParam.
         :rtype: int
@@ -718,7 +716,7 @@ class TraceSearchParam:
     def instance_id(self, instance_id):
         """Sets the instance_id of this TraceSearchParam.
 
-        实例ID
+        实例id。
 
         :param instance_id: The instance_id of this TraceSearchParam.
         :type instance_id: int
@@ -729,7 +727,7 @@ class TraceSearchParam:
     def app_id(self):
         """Gets the app_id of this TraceSearchParam.
 
-        组件ID
+        组件id。
 
         :return: The app_id of this TraceSearchParam.
         :rtype: int
@@ -740,7 +738,7 @@ class TraceSearchParam:
     def app_id(self, app_id):
         """Sets the app_id of this TraceSearchParam.
 
-        组件ID
+        组件id。
 
         :param app_id: The app_id of this TraceSearchParam.
         :type app_id: int
@@ -751,7 +749,7 @@ class TraceSearchParam:
     def biz_id(self):
         """Gets the biz_id of this TraceSearchParam.
 
-        应用ID
+        应用id。
 
         :return: The biz_id of this TraceSearchParam.
         :rtype: int
@@ -762,7 +760,7 @@ class TraceSearchParam:
     def biz_id(self, biz_id):
         """Sets the biz_id of this TraceSearchParam.
 
-        应用ID
+        应用id。
 
         :param biz_id: The biz_id of this TraceSearchParam.
         :type biz_id: int
@@ -773,7 +771,7 @@ class TraceSearchParam:
     def domain_id(self):
         """Gets the domain_id of this TraceSearchParam.
 
-        租户ID
+        租户id。
 
         :return: The domain_id of this TraceSearchParam.
         :rtype: int
@@ -784,7 +782,7 @@ class TraceSearchParam:
     def domain_id(self, domain_id):
         """Sets the domain_id of this TraceSearchParam.
 
-        租户ID
+        租户id。
 
         :param domain_id: The domain_id of this TraceSearchParam.
         :type domain_id: int
@@ -795,7 +793,7 @@ class TraceSearchParam:
     def source(self):
         """Gets the source of this TraceSearchParam.
 
-        只有是根event也就是span的时候有值
+        只有是根event也就是span的时候有值。
 
         :return: The source of this TraceSearchParam.
         :rtype: str
@@ -806,7 +804,7 @@ class TraceSearchParam:
     def source(self, source):
         """Sets the source of this TraceSearchParam.
 
-        只有是根event也就是span的时候有值
+        只有是根event也就是span的时候有值。
 
         :param source: The source of this TraceSearchParam.
         :type source: str
@@ -817,7 +815,7 @@ class TraceSearchParam:
     def real_source(self):
         """Gets the real_source of this TraceSearchParam.
 
-        根event 的时候存在，实际调用的url
+        根event 的时候存在，实际调用的url。
 
         :return: The real_source of this TraceSearchParam.
         :rtype: str
@@ -828,7 +826,7 @@ class TraceSearchParam:
     def real_source(self, real_source):
         """Sets the real_source of this TraceSearchParam.
 
-        根event 的时候存在，实际调用的url
+        根event 的时候存在，实际调用的url。
 
         :param real_source: The real_source of this TraceSearchParam.
         :type real_source: str
@@ -839,7 +837,7 @@ class TraceSearchParam:
     def start_time(self):
         """Gets the start_time of this TraceSearchParam.
 
-        开始时间
+        开始时间。
 
         :return: The start_time of this TraceSearchParam.
         :rtype: int
@@ -850,7 +848,7 @@ class TraceSearchParam:
     def start_time(self, start_time):
         """Sets the start_time of this TraceSearchParam.
 
-        开始时间
+        开始时间。
 
         :param start_time: The start_time of this TraceSearchParam.
         :type start_time: int
@@ -861,7 +859,7 @@ class TraceSearchParam:
     def time_used(self):
         """Gets the time_used of this TraceSearchParam.
 
-        耗时
+        耗时。
 
         :return: The time_used of this TraceSearchParam.
         :rtype: int
@@ -872,7 +870,7 @@ class TraceSearchParam:
     def time_used(self, time_used):
         """Sets the time_used of this TraceSearchParam.
 
-        耗时
+        耗时。
 
         :param time_used: The time_used of this TraceSearchParam.
         :type time_used: int
@@ -883,7 +881,7 @@ class TraceSearchParam:
     def code(self):
         """Gets the code of this TraceSearchParam.
 
-        状态码，针对http的调用有效
+        状态码，针对http的调用有效。
 
         :return: The code of this TraceSearchParam.
         :rtype: int
@@ -894,7 +892,7 @@ class TraceSearchParam:
     def code(self, code):
         """Sets the code of this TraceSearchParam.
 
-        状态码，针对http的调用有效
+        状态码，针对http的调用有效。
 
         :param code: The code of this TraceSearchParam.
         :type code: int
@@ -905,7 +903,7 @@ class TraceSearchParam:
     def class_name(self):
         """Gets the class_name of this TraceSearchParam.
 
-        类名
+        类名。
 
         :return: The class_name of this TraceSearchParam.
         :rtype: str
@@ -916,7 +914,7 @@ class TraceSearchParam:
     def class_name(self, class_name):
         """Sets the class_name of this TraceSearchParam.
 
-        类名
+        类名。
 
         :param class_name: The class_name of this TraceSearchParam.
         :type class_name: str
@@ -927,7 +925,7 @@ class TraceSearchParam:
     def is_async(self):
         """Gets the is_async of this TraceSearchParam.
 
-        是否异步的event
+        是否异步的event。
 
         :return: The is_async of this TraceSearchParam.
         :rtype: bool
@@ -938,7 +936,7 @@ class TraceSearchParam:
     def is_async(self, is_async):
         """Sets the is_async of this TraceSearchParam.
 
-        是否异步的event
+        是否异步的event。
 
         :param is_async: The is_async of this TraceSearchParam.
         :type is_async: bool
@@ -949,7 +947,7 @@ class TraceSearchParam:
     def tags(self):
         """Gets the tags of this TraceSearchParam.
 
-        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数
+        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
         :return: The tags of this TraceSearchParam.
         :rtype: dict(str, str)
@@ -960,7 +958,7 @@ class TraceSearchParam:
     def tags(self, tags):
         """Sets the tags of this TraceSearchParam.
 
-        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数
+        包含用户自定义参数，header或body体里的内容，httpMethod, bizCode，以及后续可能新增参数。
 
         :param tags: The tags of this TraceSearchParam.
         :type tags: dict(str, str)
@@ -971,7 +969,7 @@ class TraceSearchParam:
     def has_error(self):
         """Gets the has_error of this TraceSearchParam.
 
-        是否有错误
+        是否有错误。
 
         :return: The has_error of this TraceSearchParam.
         :rtype: bool
@@ -982,7 +980,7 @@ class TraceSearchParam:
     def has_error(self, has_error):
         """Sets the has_error of this TraceSearchParam.
 
-        是否有错误
+        是否有错误。
 
         :param has_error: The has_error of this TraceSearchParam.
         :type has_error: bool
@@ -993,7 +991,7 @@ class TraceSearchParam:
     def error_reasons(self):
         """Gets the error_reasons of this TraceSearchParam.
 
-        错误类型
+        错误类型。
 
         :return: The error_reasons of this TraceSearchParam.
         :rtype: str
@@ -1004,7 +1002,7 @@ class TraceSearchParam:
     def error_reasons(self, error_reasons):
         """Sets the error_reasons of this TraceSearchParam.
 
-        错误类型
+        错误类型。
 
         :param error_reasons: The error_reasons of this TraceSearchParam.
         :type error_reasons: str
@@ -1015,7 +1013,7 @@ class TraceSearchParam:
     def type(self):
         """Gets the type of this TraceSearchParam.
 
-        类型
+        类型。
 
         :return: The type of this TraceSearchParam.
         :rtype: str
@@ -1026,7 +1024,7 @@ class TraceSearchParam:
     def type(self, type):
         """Sets the type of this TraceSearchParam.
 
-        类型
+        类型。
 
         :param type: The type of this TraceSearchParam.
         :type type: str
@@ -1037,7 +1035,7 @@ class TraceSearchParam:
     def http_method(self):
         """Gets the http_method of this TraceSearchParam.
 
-        这里的method实际上是tags里面的http_method，只有url监控项才有
+        这里的method实际上是tags里面的http_method，只有url监控项才有。
 
         :return: The http_method of this TraceSearchParam.
         :rtype: str
@@ -1048,7 +1046,7 @@ class TraceSearchParam:
     def http_method(self, http_method):
         """Sets the http_method of this TraceSearchParam.
 
-        这里的method实际上是tags里面的http_method，只有url监控项才有
+        这里的method实际上是tags里面的http_method，只有url监控项才有。
 
         :param http_method: The http_method of this TraceSearchParam.
         :type http_method: str
@@ -1059,7 +1057,7 @@ class TraceSearchParam:
     def biz_code(self):
         """Gets the biz_code of this TraceSearchParam.
 
-        业务状态码的采集
+        业务状态码的采集。
 
         :return: The biz_code of this TraceSearchParam.
         :rtype: str
@@ -1070,7 +1068,7 @@ class TraceSearchParam:
     def biz_code(self, biz_code):
         """Sets the biz_code of this TraceSearchParam.
 
-        业务状态码的采集
+        业务状态码的采集。
 
         :param biz_code: The biz_code of this TraceSearchParam.
         :type biz_code: str

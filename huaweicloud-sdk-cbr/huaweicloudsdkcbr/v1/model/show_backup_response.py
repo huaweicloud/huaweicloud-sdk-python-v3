@@ -20,7 +20,7 @@ class ShowBackupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'backup': 'BackupDetail'
+        'backup': 'BackupResp'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ShowBackupResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param backup: 
-        :type backup: :class:`huaweicloudsdkcbr.v1.BackupDetail`
+        :type backup: :class:`huaweicloudsdkcbr.v1.BackupResp`
         """
         
         super(ShowBackupResponse, self).__init__()
@@ -49,7 +49,7 @@ class ShowBackupResponse(SdkResponse):
         """Gets the backup of this ShowBackupResponse.
 
         :return: The backup of this ShowBackupResponse.
-        :rtype: :class:`huaweicloudsdkcbr.v1.BackupDetail`
+        :rtype: :class:`huaweicloudsdkcbr.v1.BackupResp`
         """
         return self._backup
 
@@ -58,7 +58,7 @@ class ShowBackupResponse(SdkResponse):
         """Sets the backup of this ShowBackupResponse.
 
         :param backup: The backup of this ShowBackupResponse.
-        :type backup: :class:`huaweicloudsdkcbr.v1.BackupDetail`
+        :type backup: :class:`huaweicloudsdkcbr.v1.BackupResp`
         """
         self._backup = backup
 

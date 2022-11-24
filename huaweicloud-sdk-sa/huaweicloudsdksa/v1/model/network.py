@@ -26,7 +26,7 @@ class Network:
         'src_port': 'int',
         'src_domain': 'str',
         'src_geo': 'Geo',
-        'destc_ip': 'str',
+        'dest_ip': 'str',
         'dest_port': 'int',
         'dest_domain': 'str',
         'dest_geo': 'Geo'
@@ -39,13 +39,13 @@ class Network:
         'src_port': 'src_port',
         'src_domain': 'src_domain',
         'src_geo': 'src_geo',
-        'destc_ip': 'destc_ip',
+        'dest_ip': 'dest_ip',
         'dest_port': 'dest_port',
         'dest_domain': 'dest_domain',
         'dest_geo': 'dest_geo'
     }
 
-    def __init__(self, direction=None, protocol=None, src_ip=None, src_port=None, src_domain=None, src_geo=None, destc_ip=None, dest_port=None, dest_domain=None, dest_geo=None):
+    def __init__(self, direction=None, protocol=None, src_ip=None, src_port=None, src_domain=None, src_geo=None, dest_ip=None, dest_port=None, dest_domain=None, dest_geo=None):
         """Network
 
         The model defined in huaweicloud sdk
@@ -62,8 +62,8 @@ class Network:
         :type src_domain: str
         :param src_geo: 
         :type src_geo: :class:`huaweicloudsdksa.v1.Geo`
-        :param destc_ip: 目标IP地址。
-        :type destc_ip: str
+        :param dest_ip: 目标IP地址。
+        :type dest_ip: str
         :param dest_port: 目标端口，0–65535。
         :type dest_port: int
         :param dest_domain: 目标域名，最大128个字符。
@@ -80,7 +80,7 @@ class Network:
         self._src_port = None
         self._src_domain = None
         self._src_geo = None
-        self._destc_ip = None
+        self._dest_ip = None
         self._dest_port = None
         self._dest_domain = None
         self._dest_geo = None
@@ -98,8 +98,8 @@ class Network:
             self.src_domain = src_domain
         if src_geo is not None:
             self.src_geo = src_geo
-        if destc_ip is not None:
-            self.destc_ip = destc_ip
+        if dest_ip is not None:
+            self.dest_ip = dest_ip
         if dest_port is not None:
             self.dest_port = dest_port
         if dest_domain is not None:
@@ -236,26 +236,26 @@ class Network:
         self._src_geo = src_geo
 
     @property
-    def destc_ip(self):
-        """Gets the destc_ip of this Network.
+    def dest_ip(self):
+        """Gets the dest_ip of this Network.
 
         目标IP地址。
 
-        :return: The destc_ip of this Network.
+        :return: The dest_ip of this Network.
         :rtype: str
         """
-        return self._destc_ip
+        return self._dest_ip
 
-    @destc_ip.setter
-    def destc_ip(self, destc_ip):
-        """Sets the destc_ip of this Network.
+    @dest_ip.setter
+    def dest_ip(self, dest_ip):
+        """Sets the dest_ip of this Network.
 
         目标IP地址。
 
-        :param destc_ip: The destc_ip of this Network.
-        :type destc_ip: str
+        :param dest_ip: The dest_ip of this Network.
+        :type dest_ip: str
         """
-        self._destc_ip = destc_ip
+        self._dest_ip = dest_ip
 
     @property
     def dest_port(self):

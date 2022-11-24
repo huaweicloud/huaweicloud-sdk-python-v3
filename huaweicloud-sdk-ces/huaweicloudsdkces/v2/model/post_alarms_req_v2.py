@@ -66,7 +66,7 @@ class PostAlarmsReqV2:
         :type description: str
         :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
         :type namespace: str
-        :param resource_group_id: 资源分组ID，监控范围为资源分组时必传
+        :param resource_group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
         :type resource_group_id: str
         :param resources: 资源列表，监控范围为指定资源时必传
         :type resources: list[list[Dimension]]
@@ -205,7 +205,7 @@ class PostAlarmsReqV2:
     def resource_group_id(self):
         """Gets the resource_group_id of this PostAlarmsReqV2.
 
-        资源分组ID，监控范围为资源分组时必传
+        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
         :return: The resource_group_id of this PostAlarmsReqV2.
         :rtype: str
@@ -216,7 +216,7 @@ class PostAlarmsReqV2:
     def resource_group_id(self, resource_group_id):
         """Sets the resource_group_id of this PostAlarmsReqV2.
 
-        资源分组ID，监控范围为资源分组时必传
+        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
         :param resource_group_id: The resource_group_id of this PostAlarmsReqV2.
         :type resource_group_id: str

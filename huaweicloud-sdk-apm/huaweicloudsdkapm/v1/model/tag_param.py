@@ -60,35 +60,35 @@ class TagParam:
 
         The model defined in huaweicloud sdk
 
-        :param tag_id: 环境标签id
+        :param tag_id: 环境标签id。
         :type tag_id: int
-        :param tag_name: 环境标签名称
+        :param tag_name: 环境标签名称。
         :type tag_name: str
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param descp: 描述信息
+        :param descp: 描述信息。
         :type descp: str
-        :param business_id: 应用id
+        :param business_id: 应用id。
         :type business_id: int
-        :param env_id_list: 环境id列表
+        :param env_id_list: 环境id列表。
         :type env_id_list: list[int]
-        :param tag_id_list: 环境标签id列表
+        :param tag_id_list: 环境标签id列表。
         :type tag_id_list: list[int]
-        :param keyword: 关键字
+        :param keyword: 关键字。
         :type keyword: str
-        :param page_enable: 是否分页
+        :param page_enable: 是否分页。
         :type page_enable: bool
-        :param page_number: 每页容量
+        :param page_number: 每页容量。
         :type page_number: int
-        :param page_size: 当前也码
+        :param page_size: 当前页码。
         :type page_size: int
-        :param add_env_id_list: 新增环境id列表
+        :param add_env_id_list: 新增环境id列表。
         :type add_env_id_list: list[int]
-        :param add_tag_id_list: 新增环境标签id列表
+        :param add_tag_id_list: 新增环境标签id列表。
         :type add_tag_id_list: list[int]
-        :param remove_tag_id_list: 移除环境标签id列表
+        :param remove_tag_id_list: 移除环境标签id列表。
         :type remove_tag_id_list: list[int]
-        :param remove_env_id_list: 移除的环境id列表
+        :param remove_env_id_list: 移除的环境id列表。
         :type remove_env_id_list: list[int]
         """
         
@@ -119,8 +119,7 @@ class TagParam:
             self.env_id = env_id
         if descp is not None:
             self.descp = descp
-        if business_id is not None:
-            self.business_id = business_id
+        self.business_id = business_id
         if env_id_list is not None:
             self.env_id_list = env_id_list
         if tag_id_list is not None:
@@ -146,7 +145,7 @@ class TagParam:
     def tag_id(self):
         """Gets the tag_id of this TagParam.
 
-        环境标签id
+        环境标签id。
 
         :return: The tag_id of this TagParam.
         :rtype: int
@@ -157,7 +156,7 @@ class TagParam:
     def tag_id(self, tag_id):
         """Sets the tag_id of this TagParam.
 
-        环境标签id
+        环境标签id。
 
         :param tag_id: The tag_id of this TagParam.
         :type tag_id: int
@@ -168,7 +167,7 @@ class TagParam:
     def tag_name(self):
         """Gets the tag_name of this TagParam.
 
-        环境标签名称
+        环境标签名称。
 
         :return: The tag_name of this TagParam.
         :rtype: str
@@ -179,7 +178,7 @@ class TagParam:
     def tag_name(self, tag_name):
         """Sets the tag_name of this TagParam.
 
-        环境标签名称
+        环境标签名称。
 
         :param tag_name: The tag_name of this TagParam.
         :type tag_name: str
@@ -190,7 +189,7 @@ class TagParam:
     def env_id(self):
         """Gets the env_id of this TagParam.
 
-        环境id
+        环境id。
 
         :return: The env_id of this TagParam.
         :rtype: int
@@ -201,7 +200,7 @@ class TagParam:
     def env_id(self, env_id):
         """Sets the env_id of this TagParam.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this TagParam.
         :type env_id: int
@@ -212,7 +211,7 @@ class TagParam:
     def descp(self):
         """Gets the descp of this TagParam.
 
-        描述信息
+        描述信息。
 
         :return: The descp of this TagParam.
         :rtype: str
@@ -223,7 +222,7 @@ class TagParam:
     def descp(self, descp):
         """Sets the descp of this TagParam.
 
-        描述信息
+        描述信息。
 
         :param descp: The descp of this TagParam.
         :type descp: str
@@ -234,7 +233,7 @@ class TagParam:
     def business_id(self):
         """Gets the business_id of this TagParam.
 
-        应用id
+        应用id。
 
         :return: The business_id of this TagParam.
         :rtype: int
@@ -245,7 +244,7 @@ class TagParam:
     def business_id(self, business_id):
         """Sets the business_id of this TagParam.
 
-        应用id
+        应用id。
 
         :param business_id: The business_id of this TagParam.
         :type business_id: int
@@ -256,7 +255,7 @@ class TagParam:
     def env_id_list(self):
         """Gets the env_id_list of this TagParam.
 
-        环境id列表
+        环境id列表。
 
         :return: The env_id_list of this TagParam.
         :rtype: list[int]
@@ -267,7 +266,7 @@ class TagParam:
     def env_id_list(self, env_id_list):
         """Sets the env_id_list of this TagParam.
 
-        环境id列表
+        环境id列表。
 
         :param env_id_list: The env_id_list of this TagParam.
         :type env_id_list: list[int]
@@ -278,7 +277,7 @@ class TagParam:
     def tag_id_list(self):
         """Gets the tag_id_list of this TagParam.
 
-        环境标签id列表
+        环境标签id列表。
 
         :return: The tag_id_list of this TagParam.
         :rtype: list[int]
@@ -289,7 +288,7 @@ class TagParam:
     def tag_id_list(self, tag_id_list):
         """Sets the tag_id_list of this TagParam.
 
-        环境标签id列表
+        环境标签id列表。
 
         :param tag_id_list: The tag_id_list of this TagParam.
         :type tag_id_list: list[int]
@@ -300,7 +299,7 @@ class TagParam:
     def keyword(self):
         """Gets the keyword of this TagParam.
 
-        关键字
+        关键字。
 
         :return: The keyword of this TagParam.
         :rtype: str
@@ -311,7 +310,7 @@ class TagParam:
     def keyword(self, keyword):
         """Sets the keyword of this TagParam.
 
-        关键字
+        关键字。
 
         :param keyword: The keyword of this TagParam.
         :type keyword: str
@@ -322,7 +321,7 @@ class TagParam:
     def page_enable(self):
         """Gets the page_enable of this TagParam.
 
-        是否分页
+        是否分页。
 
         :return: The page_enable of this TagParam.
         :rtype: bool
@@ -333,7 +332,7 @@ class TagParam:
     def page_enable(self, page_enable):
         """Sets the page_enable of this TagParam.
 
-        是否分页
+        是否分页。
 
         :param page_enable: The page_enable of this TagParam.
         :type page_enable: bool
@@ -344,7 +343,7 @@ class TagParam:
     def page_number(self):
         """Gets the page_number of this TagParam.
 
-        每页容量
+        每页容量。
 
         :return: The page_number of this TagParam.
         :rtype: int
@@ -355,7 +354,7 @@ class TagParam:
     def page_number(self, page_number):
         """Sets the page_number of this TagParam.
 
-        每页容量
+        每页容量。
 
         :param page_number: The page_number of this TagParam.
         :type page_number: int
@@ -366,7 +365,7 @@ class TagParam:
     def page_size(self):
         """Gets the page_size of this TagParam.
 
-        当前也码
+        当前页码。
 
         :return: The page_size of this TagParam.
         :rtype: int
@@ -377,7 +376,7 @@ class TagParam:
     def page_size(self, page_size):
         """Sets the page_size of this TagParam.
 
-        当前也码
+        当前页码。
 
         :param page_size: The page_size of this TagParam.
         :type page_size: int
@@ -388,7 +387,7 @@ class TagParam:
     def add_env_id_list(self):
         """Gets the add_env_id_list of this TagParam.
 
-        新增环境id列表
+        新增环境id列表。
 
         :return: The add_env_id_list of this TagParam.
         :rtype: list[int]
@@ -399,7 +398,7 @@ class TagParam:
     def add_env_id_list(self, add_env_id_list):
         """Sets the add_env_id_list of this TagParam.
 
-        新增环境id列表
+        新增环境id列表。
 
         :param add_env_id_list: The add_env_id_list of this TagParam.
         :type add_env_id_list: list[int]
@@ -410,7 +409,7 @@ class TagParam:
     def add_tag_id_list(self):
         """Gets the add_tag_id_list of this TagParam.
 
-        新增环境标签id列表
+        新增环境标签id列表。
 
         :return: The add_tag_id_list of this TagParam.
         :rtype: list[int]
@@ -421,7 +420,7 @@ class TagParam:
     def add_tag_id_list(self, add_tag_id_list):
         """Sets the add_tag_id_list of this TagParam.
 
-        新增环境标签id列表
+        新增环境标签id列表。
 
         :param add_tag_id_list: The add_tag_id_list of this TagParam.
         :type add_tag_id_list: list[int]
@@ -432,7 +431,7 @@ class TagParam:
     def remove_tag_id_list(self):
         """Gets the remove_tag_id_list of this TagParam.
 
-        移除环境标签id列表
+        移除环境标签id列表。
 
         :return: The remove_tag_id_list of this TagParam.
         :rtype: list[int]
@@ -443,7 +442,7 @@ class TagParam:
     def remove_tag_id_list(self, remove_tag_id_list):
         """Sets the remove_tag_id_list of this TagParam.
 
-        移除环境标签id列表
+        移除环境标签id列表。
 
         :param remove_tag_id_list: The remove_tag_id_list of this TagParam.
         :type remove_tag_id_list: list[int]
@@ -454,7 +453,7 @@ class TagParam:
     def remove_env_id_list(self):
         """Gets the remove_env_id_list of this TagParam.
 
-        移除的环境id列表
+        移除的环境id列表。
 
         :return: The remove_env_id_list of this TagParam.
         :rtype: list[int]
@@ -465,7 +464,7 @@ class TagParam:
     def remove_env_id_list(self, remove_env_id_list):
         """Sets the remove_env_id_list of this TagParam.
 
-        移除的环境id列表
+        移除的环境id列表。
 
         :param remove_env_id_list: The remove_env_id_list of this TagParam.
         :type remove_env_id_list: list[int]

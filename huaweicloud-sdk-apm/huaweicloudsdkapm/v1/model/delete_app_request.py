@@ -34,9 +34,9 @@ class DeleteAppRequest:
 
         The model defined in huaweicloud sdk
 
-        :param application_id: 
+        :param application_id: 组件id。
         :type application_id: int
-        :param x_business_id: 应用id，用于鉴权
+        :param x_business_id: 应用id，用于鉴权。
         :type x_business_id: int
         """
         
@@ -53,6 +53,8 @@ class DeleteAppRequest:
     def application_id(self):
         """Gets the application_id of this DeleteAppRequest.
 
+        组件id。
+
         :return: The application_id of this DeleteAppRequest.
         :rtype: int
         """
@@ -61,6 +63,8 @@ class DeleteAppRequest:
     @application_id.setter
     def application_id(self, application_id):
         """Sets the application_id of this DeleteAppRequest.
+
+        组件id。
 
         :param application_id: The application_id of this DeleteAppRequest.
         :type application_id: int
@@ -71,7 +75,7 @@ class DeleteAppRequest:
     def x_business_id(self):
         """Gets the x_business_id of this DeleteAppRequest.
 
-        应用id，用于鉴权
+        应用id，用于鉴权。
 
         :return: The x_business_id of this DeleteAppRequest.
         :rtype: int
@@ -82,7 +86,7 @@ class DeleteAppRequest:
     def x_business_id(self, x_business_id):
         """Sets the x_business_id of this DeleteAppRequest.
 
-        应用id，用于鉴权
+        应用id，用于鉴权。
 
         :param x_business_id: The x_business_id of this DeleteAppRequest.
         :type x_business_id: int

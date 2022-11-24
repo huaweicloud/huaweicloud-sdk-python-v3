@@ -32,7 +32,7 @@ class SaveMonitorItemConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param flag: 保存监控系项返回状态
+        :param flag: 保存监控项返回状态。
         :type flag: str
         """
         
@@ -48,7 +48,7 @@ class SaveMonitorItemConfigResponse(SdkResponse):
     def flag(self):
         """Gets the flag of this SaveMonitorItemConfigResponse.
 
-        保存监控系项返回状态
+        保存监控项返回状态。
 
         :return: The flag of this SaveMonitorItemConfigResponse.
         :rtype: str
@@ -59,7 +59,7 @@ class SaveMonitorItemConfigResponse(SdkResponse):
     def flag(self, flag):
         """Sets the flag of this SaveMonitorItemConfigResponse.
 
-        保存监控系项返回状态
+        保存监控项返回状态。
 
         :param flag: The flag of this SaveMonitorItemConfigResponse.
         :type flag: str

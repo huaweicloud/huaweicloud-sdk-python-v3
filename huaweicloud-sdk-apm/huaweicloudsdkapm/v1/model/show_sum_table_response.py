@@ -46,21 +46,21 @@ class ShowSumTableResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result_id: 结果的ID信息，分页查询的时候带过来
+        :param result_id: 结果的ID信息，分页查询的时候带过来。
         :type result_id: str
-        :param row_list: 数据行列表
+        :param row_list: 数据行列表。
         :type row_list: list[:class:`huaweicloudsdkapm.v1.FrontRow`]
-        :param latest_data_time: 最近一笔数据的时间
+        :param latest_data_time: 最近一笔数据的时间。
         :type latest_data_time: int
-        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向
+        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向。
         :type table_direction: str
-        :param real_start_time: 实际开始的时间
+        :param real_start_time: 实际开始的时间。
         :type real_start_time: int
-        :param real_end_time: 实际结束的时间
+        :param real_end_time: 实际结束的时间。
         :type real_end_time: int
-        :param notice_msg: 提示信息
+        :param notice_msg: 提示信息。
         :type notice_msg: str
-        :param total_count: 总数
+        :param total_count: 总数。
         :type total_count: int
         """
         
@@ -97,7 +97,7 @@ class ShowSumTableResponse(SdkResponse):
     def result_id(self):
         """Gets the result_id of this ShowSumTableResponse.
 
-        结果的ID信息，分页查询的时候带过来
+        结果的ID信息，分页查询的时候带过来。
 
         :return: The result_id of this ShowSumTableResponse.
         :rtype: str
@@ -108,7 +108,7 @@ class ShowSumTableResponse(SdkResponse):
     def result_id(self, result_id):
         """Sets the result_id of this ShowSumTableResponse.
 
-        结果的ID信息，分页查询的时候带过来
+        结果的ID信息，分页查询的时候带过来。
 
         :param result_id: The result_id of this ShowSumTableResponse.
         :type result_id: str
@@ -119,7 +119,7 @@ class ShowSumTableResponse(SdkResponse):
     def row_list(self):
         """Gets the row_list of this ShowSumTableResponse.
 
-        数据行列表
+        数据行列表。
 
         :return: The row_list of this ShowSumTableResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.FrontRow`]
@@ -130,7 +130,7 @@ class ShowSumTableResponse(SdkResponse):
     def row_list(self, row_list):
         """Sets the row_list of this ShowSumTableResponse.
 
-        数据行列表
+        数据行列表。
 
         :param row_list: The row_list of this ShowSumTableResponse.
         :type row_list: list[:class:`huaweicloudsdkapm.v1.FrontRow`]
@@ -141,7 +141,7 @@ class ShowSumTableResponse(SdkResponse):
     def latest_data_time(self):
         """Gets the latest_data_time of this ShowSumTableResponse.
 
-        最近一笔数据的时间
+        最近一笔数据的时间。
 
         :return: The latest_data_time of this ShowSumTableResponse.
         :rtype: int
@@ -152,7 +152,7 @@ class ShowSumTableResponse(SdkResponse):
     def latest_data_time(self, latest_data_time):
         """Sets the latest_data_time of this ShowSumTableResponse.
 
-        最近一笔数据的时间
+        最近一笔数据的时间。
 
         :param latest_data_time: The latest_data_time of this ShowSumTableResponse.
         :type latest_data_time: int
@@ -163,7 +163,7 @@ class ShowSumTableResponse(SdkResponse):
     def table_direction(self):
         """Gets the table_direction of this ShowSumTableResponse.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :return: The table_direction of this ShowSumTableResponse.
         :rtype: str
@@ -174,7 +174,7 @@ class ShowSumTableResponse(SdkResponse):
     def table_direction(self, table_direction):
         """Sets the table_direction of this ShowSumTableResponse.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :param table_direction: The table_direction of this ShowSumTableResponse.
         :type table_direction: str
@@ -185,7 +185,7 @@ class ShowSumTableResponse(SdkResponse):
     def real_start_time(self):
         """Gets the real_start_time of this ShowSumTableResponse.
 
-        实际开始的时间
+        实际开始的时间。
 
         :return: The real_start_time of this ShowSumTableResponse.
         :rtype: int
@@ -196,7 +196,7 @@ class ShowSumTableResponse(SdkResponse):
     def real_start_time(self, real_start_time):
         """Sets the real_start_time of this ShowSumTableResponse.
 
-        实际开始的时间
+        实际开始的时间。
 
         :param real_start_time: The real_start_time of this ShowSumTableResponse.
         :type real_start_time: int
@@ -207,7 +207,7 @@ class ShowSumTableResponse(SdkResponse):
     def real_end_time(self):
         """Gets the real_end_time of this ShowSumTableResponse.
 
-        实际结束的时间
+        实际结束的时间。
 
         :return: The real_end_time of this ShowSumTableResponse.
         :rtype: int
@@ -218,7 +218,7 @@ class ShowSumTableResponse(SdkResponse):
     def real_end_time(self, real_end_time):
         """Sets the real_end_time of this ShowSumTableResponse.
 
-        实际结束的时间
+        实际结束的时间。
 
         :param real_end_time: The real_end_time of this ShowSumTableResponse.
         :type real_end_time: int
@@ -229,7 +229,7 @@ class ShowSumTableResponse(SdkResponse):
     def notice_msg(self):
         """Gets the notice_msg of this ShowSumTableResponse.
 
-        提示信息
+        提示信息。
 
         :return: The notice_msg of this ShowSumTableResponse.
         :rtype: str
@@ -240,7 +240,7 @@ class ShowSumTableResponse(SdkResponse):
     def notice_msg(self, notice_msg):
         """Sets the notice_msg of this ShowSumTableResponse.
 
-        提示信息
+        提示信息。
 
         :param notice_msg: The notice_msg of this ShowSumTableResponse.
         :type notice_msg: str
@@ -251,7 +251,7 @@ class ShowSumTableResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ShowSumTableResponse.
 
-        总数
+        总数。
 
         :return: The total_count of this ShowSumTableResponse.
         :rtype: int
@@ -262,7 +262,7 @@ class ShowSumTableResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ShowSumTableResponse.
 
-        总数
+        总数。
 
         :param total_count: The total_count of this ShowSumTableResponse.
         :type total_count: int

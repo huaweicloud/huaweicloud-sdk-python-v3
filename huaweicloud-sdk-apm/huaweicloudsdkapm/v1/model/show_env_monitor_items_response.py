@@ -34,9 +34,9 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param category_info_list: 采集器类别集合
+        :param category_info_list: 采集器类别集合。
         :type category_info_list: list[:class:`huaweicloudsdkapm.v1.CollectorCategoryInfo`]
-        :param monitor_item_info_list: 监控项集合
+        :param monitor_item_info_list: 监控项集合。
         :type monitor_item_info_list: list[:class:`huaweicloudsdkapm.v1.MonitorItemEntity`]
         """
         
@@ -55,7 +55,7 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
     def category_info_list(self):
         """Gets the category_info_list of this ShowEnvMonitorItemsResponse.
 
-        采集器类别集合
+        采集器类别集合。
 
         :return: The category_info_list of this ShowEnvMonitorItemsResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.CollectorCategoryInfo`]
@@ -66,7 +66,7 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
     def category_info_list(self, category_info_list):
         """Sets the category_info_list of this ShowEnvMonitorItemsResponse.
 
-        采集器类别集合
+        采集器类别集合。
 
         :param category_info_list: The category_info_list of this ShowEnvMonitorItemsResponse.
         :type category_info_list: list[:class:`huaweicloudsdkapm.v1.CollectorCategoryInfo`]
@@ -77,7 +77,7 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
     def monitor_item_info_list(self):
         """Gets the monitor_item_info_list of this ShowEnvMonitorItemsResponse.
 
-        监控项集合
+        监控项集合。
 
         :return: The monitor_item_info_list of this ShowEnvMonitorItemsResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.MonitorItemEntity`]
@@ -88,7 +88,7 @@ class ShowEnvMonitorItemsResponse(SdkResponse):
     def monitor_item_info_list(self, monitor_item_info_list):
         """Sets the monitor_item_info_list of this ShowEnvMonitorItemsResponse.
 
-        监控项集合
+        监控项集合。
 
         :param monitor_item_info_list: The monitor_item_info_list of this ShowEnvMonitorItemsResponse.
         :type monitor_item_info_list: list[:class:`huaweicloudsdkapm.v1.MonitorItemEntity`]

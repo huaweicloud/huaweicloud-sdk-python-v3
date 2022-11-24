@@ -34,9 +34,9 @@ class DeleteAkSkResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param ak: 创建/删除的ak信息
+        :param ak: 创建/删除的ak信息。
         :type ak: str
-        :param sk: 创建/删除的sk信息
+        :param sk: 创建/删除的sk信息。
         :type sk: str
         """
         
@@ -55,7 +55,7 @@ class DeleteAkSkResponse(SdkResponse):
     def ak(self):
         """Gets the ak of this DeleteAkSkResponse.
 
-        创建/删除的ak信息
+        创建/删除的ak信息。
 
         :return: The ak of this DeleteAkSkResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class DeleteAkSkResponse(SdkResponse):
     def ak(self, ak):
         """Sets the ak of this DeleteAkSkResponse.
 
-        创建/删除的ak信息
+        创建/删除的ak信息。
 
         :param ak: The ak of this DeleteAkSkResponse.
         :type ak: str
@@ -77,7 +77,7 @@ class DeleteAkSkResponse(SdkResponse):
     def sk(self):
         """Gets the sk of this DeleteAkSkResponse.
 
-        创建/删除的sk信息
+        创建/删除的sk信息。
 
         :return: The sk of this DeleteAkSkResponse.
         :rtype: str
@@ -88,7 +88,7 @@ class DeleteAkSkResponse(SdkResponse):
     def sk(self, sk):
         """Sets the sk of this DeleteAkSkResponse.
 
-        创建/删除的sk信息
+        创建/删除的sk信息。
 
         :param sk: The sk of this DeleteAkSkResponse.
         :type sk: str

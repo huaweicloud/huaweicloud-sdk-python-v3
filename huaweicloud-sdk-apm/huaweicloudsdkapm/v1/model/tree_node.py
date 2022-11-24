@@ -56,31 +56,31 @@ class TreeNode:
 
         The model defined in huaweicloud sdk
 
-        :param id: 拓扑树节点id
+        :param id: 拓扑树节点id。
         :type id: str
-        :param parent: 拓扑树节点的父节点
+        :param parent: 拓扑树节点的父节点。
         :type parent: str
-        :param real_id: 拓扑树节点的实际id
+        :param real_id: 拓扑树节点的实际id。
         :type real_id: int
-        :param name: 拓扑树节点名称
+        :param name: 拓扑树节点名称。
         :type name: str
-        :param display_name: 拓扑树节点展示名称
+        :param display_name: 拓扑树节点展示名称。
         :type display_name: str
-        :param app_name: 组件名称
+        :param app_name: 组件名称。
         :type app_name: str
-        :param app_id: 组件id
+        :param app_id: 组件id。
         :type app_id: int
-        :param is_admin: 是否是管理节点
+        :param is_admin: 是否是管理节点。
         :type is_admin: bool
-        :param is_root: 是否是根节点
+        :param is_root: 是否是根节点。
         :type is_root: bool
-        :param business_id: 应用id
+        :param business_id: 应用id。
         :type business_id: int
-        :param node_type: 节点类型
+        :param node_type: 节点类型。
         :type node_type: str
-        :param region: 区域
+        :param region: 区域。
         :type region: str
-        :param is_default: 是否是默认的节点
+        :param is_default: 是否是默认的节点。
         :type is_default: bool
         """
         
@@ -132,7 +132,7 @@ class TreeNode:
     def id(self):
         """Gets the id of this TreeNode.
 
-        拓扑树节点id
+        拓扑树节点id。
 
         :return: The id of this TreeNode.
         :rtype: str
@@ -143,7 +143,7 @@ class TreeNode:
     def id(self, id):
         """Sets the id of this TreeNode.
 
-        拓扑树节点id
+        拓扑树节点id。
 
         :param id: The id of this TreeNode.
         :type id: str
@@ -154,7 +154,7 @@ class TreeNode:
     def parent(self):
         """Gets the parent of this TreeNode.
 
-        拓扑树节点的父节点
+        拓扑树节点的父节点。
 
         :return: The parent of this TreeNode.
         :rtype: str
@@ -165,7 +165,7 @@ class TreeNode:
     def parent(self, parent):
         """Sets the parent of this TreeNode.
 
-        拓扑树节点的父节点
+        拓扑树节点的父节点。
 
         :param parent: The parent of this TreeNode.
         :type parent: str
@@ -176,7 +176,7 @@ class TreeNode:
     def real_id(self):
         """Gets the real_id of this TreeNode.
 
-        拓扑树节点的实际id
+        拓扑树节点的实际id。
 
         :return: The real_id of this TreeNode.
         :rtype: int
@@ -187,7 +187,7 @@ class TreeNode:
     def real_id(self, real_id):
         """Sets the real_id of this TreeNode.
 
-        拓扑树节点的实际id
+        拓扑树节点的实际id。
 
         :param real_id: The real_id of this TreeNode.
         :type real_id: int
@@ -198,7 +198,7 @@ class TreeNode:
     def name(self):
         """Gets the name of this TreeNode.
 
-        拓扑树节点名称
+        拓扑树节点名称。
 
         :return: The name of this TreeNode.
         :rtype: str
@@ -209,7 +209,7 @@ class TreeNode:
     def name(self, name):
         """Sets the name of this TreeNode.
 
-        拓扑树节点名称
+        拓扑树节点名称。
 
         :param name: The name of this TreeNode.
         :type name: str
@@ -220,7 +220,7 @@ class TreeNode:
     def display_name(self):
         """Gets the display_name of this TreeNode.
 
-        拓扑树节点展示名称
+        拓扑树节点展示名称。
 
         :return: The display_name of this TreeNode.
         :rtype: str
@@ -231,7 +231,7 @@ class TreeNode:
     def display_name(self, display_name):
         """Sets the display_name of this TreeNode.
 
-        拓扑树节点展示名称
+        拓扑树节点展示名称。
 
         :param display_name: The display_name of this TreeNode.
         :type display_name: str
@@ -242,7 +242,7 @@ class TreeNode:
     def app_name(self):
         """Gets the app_name of this TreeNode.
 
-        组件名称
+        组件名称。
 
         :return: The app_name of this TreeNode.
         :rtype: str
@@ -253,7 +253,7 @@ class TreeNode:
     def app_name(self, app_name):
         """Sets the app_name of this TreeNode.
 
-        组件名称
+        组件名称。
 
         :param app_name: The app_name of this TreeNode.
         :type app_name: str
@@ -264,7 +264,7 @@ class TreeNode:
     def app_id(self):
         """Gets the app_id of this TreeNode.
 
-        组件id
+        组件id。
 
         :return: The app_id of this TreeNode.
         :rtype: int
@@ -275,7 +275,7 @@ class TreeNode:
     def app_id(self, app_id):
         """Sets the app_id of this TreeNode.
 
-        组件id
+        组件id。
 
         :param app_id: The app_id of this TreeNode.
         :type app_id: int
@@ -286,7 +286,7 @@ class TreeNode:
     def is_admin(self):
         """Gets the is_admin of this TreeNode.
 
-        是否是管理节点
+        是否是管理节点。
 
         :return: The is_admin of this TreeNode.
         :rtype: bool
@@ -297,7 +297,7 @@ class TreeNode:
     def is_admin(self, is_admin):
         """Sets the is_admin of this TreeNode.
 
-        是否是管理节点
+        是否是管理节点。
 
         :param is_admin: The is_admin of this TreeNode.
         :type is_admin: bool
@@ -308,7 +308,7 @@ class TreeNode:
     def is_root(self):
         """Gets the is_root of this TreeNode.
 
-        是否是根节点
+        是否是根节点。
 
         :return: The is_root of this TreeNode.
         :rtype: bool
@@ -319,7 +319,7 @@ class TreeNode:
     def is_root(self, is_root):
         """Sets the is_root of this TreeNode.
 
-        是否是根节点
+        是否是根节点。
 
         :param is_root: The is_root of this TreeNode.
         :type is_root: bool
@@ -330,7 +330,7 @@ class TreeNode:
     def business_id(self):
         """Gets the business_id of this TreeNode.
 
-        应用id
+        应用id。
 
         :return: The business_id of this TreeNode.
         :rtype: int
@@ -341,7 +341,7 @@ class TreeNode:
     def business_id(self, business_id):
         """Sets the business_id of this TreeNode.
 
-        应用id
+        应用id。
 
         :param business_id: The business_id of this TreeNode.
         :type business_id: int
@@ -352,7 +352,7 @@ class TreeNode:
     def node_type(self):
         """Gets the node_type of this TreeNode.
 
-        节点类型
+        节点类型。
 
         :return: The node_type of this TreeNode.
         :rtype: str
@@ -363,7 +363,7 @@ class TreeNode:
     def node_type(self, node_type):
         """Sets the node_type of this TreeNode.
 
-        节点类型
+        节点类型。
 
         :param node_type: The node_type of this TreeNode.
         :type node_type: str
@@ -374,7 +374,7 @@ class TreeNode:
     def region(self):
         """Gets the region of this TreeNode.
 
-        区域
+        区域。
 
         :return: The region of this TreeNode.
         :rtype: str
@@ -385,7 +385,7 @@ class TreeNode:
     def region(self, region):
         """Sets the region of this TreeNode.
 
-        区域
+        区域。
 
         :param region: The region of this TreeNode.
         :type region: str
@@ -396,7 +396,7 @@ class TreeNode:
     def is_default(self):
         """Gets the is_default of this TreeNode.
 
-        是否是默认的节点
+        是否是默认的节点。
 
         :return: The is_default of this TreeNode.
         :rtype: bool
@@ -407,7 +407,7 @@ class TreeNode:
     def is_default(self, is_default):
         """Sets the is_default of this TreeNode.
 
-        是否是默认的节点
+        是否是默认的节点。
 
         :param is_default: The is_default of this TreeNode.
         :type is_default: bool

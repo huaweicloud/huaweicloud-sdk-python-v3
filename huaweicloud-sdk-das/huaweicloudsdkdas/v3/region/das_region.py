@@ -22,6 +22,8 @@ class DasRegion:
 
     CN_EAST_2 = Region(id="cn-east-2", endpoint="https://das.cn-east-2.myhuaweicloud.com")
 
+    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://das.cn-southwest-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
         "cn-south-2": CN_SOUTH_2,
@@ -29,6 +31,7 @@ class DasRegion:
         "cn-north-4": CN_NORTH_4,
         "cn-east-3": CN_EAST_3,
         "cn-east-2": CN_EAST_2,
+        "cn-southwest-2": CN_SOUTHWEST_2,
     }
 
     @classmethod

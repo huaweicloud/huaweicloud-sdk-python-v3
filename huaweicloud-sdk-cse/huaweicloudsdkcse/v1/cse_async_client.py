@@ -366,6 +366,72 @@ class CseAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def retry_engine_async(self, request):
+        """对微服务引擎专享版进行重试
+
+        对微服务引擎专享版进行重试
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for RetryEngine
+        :type request: :class:`huaweicloudsdkcse.v1.RetryEngineRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.RetryEngineResponse`
+        """
+        return self.retry_engine_with_http_info(request)
+
+    def retry_engine_with_http_info(self, request):
+        all_params = ['engine_id', 'retry_engine_request_body', 'x_enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine_id' in local_var_params:
+            path_params['engine_id'] = local_var_params['engine_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/enginemgr/engines/{engine_id}/actions',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RetryEngineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_engine_async(self, request):
         """查询微服务引擎专享版详情
 
@@ -491,6 +557,72 @@ class CseAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowEngineJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upgrade_engine_async(self, request):
+        """升级微服务引擎专享版
+
+        升级微服务引擎专享版
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for UpgradeEngine
+        :type request: :class:`huaweicloudsdkcse.v1.UpgradeEngineRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.UpgradeEngineResponse`
+        """
+        return self.upgrade_engine_with_http_info(request)
+
+    def upgrade_engine_with_http_info(self, request):
+        all_params = ['engine_id', 'upgrade_engine_request_body', 'x_enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine_id' in local_var_params:
+            path_params['engine_id'] = local_var_params['engine_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/enginemgr/engines/{engine_id}/upgrade',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpgradeEngineResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

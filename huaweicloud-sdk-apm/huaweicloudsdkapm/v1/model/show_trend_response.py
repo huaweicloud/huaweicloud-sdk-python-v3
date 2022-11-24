@@ -34,9 +34,9 @@ class ShowTrendResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param line_list: 趋势图数据列表
+        :param line_list: 趋势图数据列表。
         :type line_list: list[:class:`huaweicloudsdkapm.v1.FrontLine`]
-        :param latest_data_time: 最后日期时间
+        :param latest_data_time: 最后日期时间。
         :type latest_data_time: int
         """
         
@@ -55,7 +55,7 @@ class ShowTrendResponse(SdkResponse):
     def line_list(self):
         """Gets the line_list of this ShowTrendResponse.
 
-        趋势图数据列表
+        趋势图数据列表。
 
         :return: The line_list of this ShowTrendResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.FrontLine`]
@@ -66,7 +66,7 @@ class ShowTrendResponse(SdkResponse):
     def line_list(self, line_list):
         """Sets the line_list of this ShowTrendResponse.
 
-        趋势图数据列表
+        趋势图数据列表。
 
         :param line_list: The line_list of this ShowTrendResponse.
         :type line_list: list[:class:`huaweicloudsdkapm.v1.FrontLine`]
@@ -77,7 +77,7 @@ class ShowTrendResponse(SdkResponse):
     def latest_data_time(self):
         """Gets the latest_data_time of this ShowTrendResponse.
 
-        最后日期时间
+        最后日期时间。
 
         :return: The latest_data_time of this ShowTrendResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class ShowTrendResponse(SdkResponse):
     def latest_data_time(self, latest_data_time):
         """Sets the latest_data_time of this ShowTrendResponse.
 
-        最后日期时间
+        最后日期时间。
 
         :param latest_data_time: The latest_data_time of this ShowTrendResponse.
         :type latest_data_time: int

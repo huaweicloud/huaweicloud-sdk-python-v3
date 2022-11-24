@@ -32,7 +32,7 @@ class ListAppEnvsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param envs: 环境信息列表
+        :param envs: 环境信息列表。
         :type envs: list[:class:`huaweicloudsdkapm.v1.EnvNodeModel`]
         """
         
@@ -48,7 +48,7 @@ class ListAppEnvsResponse(SdkResponse):
     def envs(self):
         """Gets the envs of this ListAppEnvsResponse.
 
-        环境信息列表
+        环境信息列表。
 
         :return: The envs of this ListAppEnvsResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.EnvNodeModel`]
@@ -59,7 +59,7 @@ class ListAppEnvsResponse(SdkResponse):
     def envs(self, envs):
         """Sets the envs of this ListAppEnvsResponse.
 
-        环境信息列表
+        环境信息列表。
 
         :param envs: The envs of this ListAppEnvsResponse.
         :type envs: list[:class:`huaweicloudsdkapm.v1.EnvNodeModel`]

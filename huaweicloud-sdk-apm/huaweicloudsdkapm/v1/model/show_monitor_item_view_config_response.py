@@ -38,13 +38,13 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param title: 标题
+        :param title: 标题。
         :type title: str
-        :param collector_name: 采集器名称
+        :param collector_name: 采集器名称。
         :type collector_name: str
-        :param view_row_list: 视图的列表，内部每个List代表的是一行图表
+        :param view_row_list: 视图的列表，内部每个List代表的是一行图表。
         :type view_row_list: list[:class:`huaweicloudsdkapm.v1.ViewRow`]
-        :param style: 类型
+        :param style: 类型。
         :type style: str
         """
         
@@ -69,7 +69,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
     def title(self):
         """Gets the title of this ShowMonitorItemViewConfigResponse.
 
-        标题
+        标题。
 
         :return: The title of this ShowMonitorItemViewConfigResponse.
         :rtype: str
@@ -80,7 +80,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
     def title(self, title):
         """Sets the title of this ShowMonitorItemViewConfigResponse.
 
-        标题
+        标题。
 
         :param title: The title of this ShowMonitorItemViewConfigResponse.
         :type title: str
@@ -91,7 +91,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
     def collector_name(self):
         """Gets the collector_name of this ShowMonitorItemViewConfigResponse.
 
-        采集器名称
+        采集器名称。
 
         :return: The collector_name of this ShowMonitorItemViewConfigResponse.
         :rtype: str
@@ -102,7 +102,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
     def collector_name(self, collector_name):
         """Sets the collector_name of this ShowMonitorItemViewConfigResponse.
 
-        采集器名称
+        采集器名称。
 
         :param collector_name: The collector_name of this ShowMonitorItemViewConfigResponse.
         :type collector_name: str
@@ -113,7 +113,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
     def view_row_list(self):
         """Gets the view_row_list of this ShowMonitorItemViewConfigResponse.
 
-        视图的列表，内部每个List代表的是一行图表
+        视图的列表，内部每个List代表的是一行图表。
 
         :return: The view_row_list of this ShowMonitorItemViewConfigResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.ViewRow`]
@@ -124,7 +124,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
     def view_row_list(self, view_row_list):
         """Sets the view_row_list of this ShowMonitorItemViewConfigResponse.
 
-        视图的列表，内部每个List代表的是一行图表
+        视图的列表，内部每个List代表的是一行图表。
 
         :param view_row_list: The view_row_list of this ShowMonitorItemViewConfigResponse.
         :type view_row_list: list[:class:`huaweicloudsdkapm.v1.ViewRow`]
@@ -135,7 +135,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
     def style(self):
         """Gets the style of this ShowMonitorItemViewConfigResponse.
 
-        类型
+        类型。
 
         :return: The style of this ShowMonitorItemViewConfigResponse.
         :rtype: str
@@ -146,7 +146,7 @@ class ShowMonitorItemViewConfigResponse(SdkResponse):
     def style(self, style):
         """Sets the style of this ShowMonitorItemViewConfigResponse.
 
-        类型
+        类型。
 
         :param style: The style of this ShowMonitorItemViewConfigResponse.
         :type style: str

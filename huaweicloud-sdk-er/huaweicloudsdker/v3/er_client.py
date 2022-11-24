@@ -177,7 +177,7 @@ class ErClient(Client):
     def list_associations(self, request):
         """查询路由关联列表
 
-        支持分页查询, 支持过滤查询：state, resource_type, attachment_id。支持单字段排序，排序字段有[id,created_at,updated_at]，不支持多字段排序。
+        查询路由关联列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -259,10 +259,7 @@ class ErClient(Client):
     def list_attachments(self, request):
         """查询连接列表
 
-        查询企业路由器实例下的连接列表：
-         1，支持过滤查询，过滤条件有state，resource_type，resource_id过滤条件可以重复和组合 
-        2，支持分页查询，limit和marker组合实现分页查询 
-        3，支持单字段排序，排序字段有[id,name,description,created_at,updated_at]，不支持多字段排序。
+        查询企业路由器实例下的连接列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -657,8 +654,7 @@ class ErClient(Client):
     def delete_enterprise_router(self, request):
         """删除企业路由器
 
-        1. 只能删除企业路由器实例和其创建的默认路由表，如果存在其他路由表和连接，那么需要先删除其他路由表、连接、关联、传播和路由条目等。
-        2. 企业路由器实例状态为available，deleting和failed的时候才能删除。
+        删除企业路由器。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -717,9 +713,9 @@ class ErClient(Client):
             request_type=request.__class__.__name__)
 
     def list_enterprise_routers(self, request):
-        """查询企业路由器实例列表
+        """查询企业路由器列表
 
-        分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。支持单字段排序，排序字段有[id,name,description,created_at,updated_at]，不支持多字段排序。
+        查询企业路由器列表
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -861,7 +857,7 @@ class ErClient(Client):
     def update_enterprise_router(self, request):
         """更新企业路由器
 
-        除了name和description，其它信息只有在企业路由器实例状态为available的时候才能更新。
+        更新企业路由器基本信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1056,7 +1052,7 @@ class ErClient(Client):
     def list_propagations(self, request):
         """查询路由传播列表
 
-        支持分页查询, 支持过滤查询：state, resource_type, attachment_id。支持单字段排序，排序字段有[id,created_at,updated_at]，不支持多字段排序。
+        查询路由传播列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1337,7 +1333,7 @@ class ErClient(Client):
     def list_static_routes(self, request):
         """查询静态路由列表
 
-        支持分页查询，支持过滤查询：destination，attachment_id, resource_type, type.支持单字段排序，排序字段有[id,destination,created_at,updated_at]，不支持多字段排序。
+        查询静态路由列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1415,9 +1411,9 @@ class ErClient(Client):
             request_type=request.__class__.__name__)
 
     def show_static_route(self, request):
-        """查询路由详情
+        """查询静态路由详情
 
-        查询路由详情
+        查询静态路由详情
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1478,9 +1474,9 @@ class ErClient(Client):
             request_type=request.__class__.__name__)
 
     def update_static_route(self, request):
-        """修改路由
+        """更新静态路由
 
-        修改静态路由
+        更新静态路由
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1673,7 +1669,7 @@ class ErClient(Client):
     def list_route_tables(self, request):
         """查询路由表列表
 
-        支持分页查询, 支持过滤查询：state, is_default_propagation_route_table, is_default_association_route_table。支持单字段排序，排序字段有[id,name,description,created_at,updated_at]，不支持多字段排序。
+        查询路由表列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1876,6 +1872,260 @@ class ErClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_resource_tag(self, request):
+        """创建资源标签
+
+        为特定类型的资源创建标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateResourceTag
+        :type request: :class:`huaweicloudsdker.v3.CreateResourceTagRequest`
+        :rtype: :class:`huaweicloudsdker.v3.CreateResourceTagResponse`
+        """
+        return self.create_resource_tag_with_http_info(request)
+
+    def create_resource_tag_with_http_info(self, request):
+        all_params = ['resource_id', 'resource_type', 'create_resource_tag_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateResourceTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_resource_tag(self, request):
+        """删除资源标签
+
+        删除特定类型资源的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteResourceTag
+        :type request: :class:`huaweicloudsdker.v3.DeleteResourceTagRequest`
+        :rtype: :class:`huaweicloudsdker.v3.DeleteResourceTagResponse`
+        """
+        return self.delete_resource_tag_with_http_info(request)
+
+    def delete_resource_tag_with_http_info(self, request):
+        all_params = ['key', 'resource_id', 'resource_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteResourceTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_project_tags(self, request):
+        """查询项目标签
+
+        查询特定类型资源的标签集合。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectTags
+        :type request: :class:`huaweicloudsdker.v3.ListProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdker.v3.ListProjectTagsResponse`
+        """
+        return self.list_project_tags_with_http_info(request)
+
+    def list_project_tags_with_http_info(self, request):
+        all_params = ['resource_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/{resource_type}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListProjectTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_resource_tag(self, request):
+        """查询资源标签
+
+        查询特定类型资源的标签信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowResourceTag
+        :type request: :class:`huaweicloudsdker.v3.ShowResourceTagRequest`
+        :rtype: :class:`huaweicloudsdker.v3.ShowResourceTagResponse`
+        """
+        return self.show_resource_tag_with_http_info(request)
+
+    def show_resource_tag_with_http_info(self, request):
+        all_params = ['resource_id', 'resource_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowResourceTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_vpc_attachment(self, request):
         """创建VPC连接
 
@@ -1944,7 +2194,7 @@ class ErClient(Client):
     def delete_vpc_attachment(self, request):
         """删除VPC连接
 
-        VPC连接状态为available，deleting和failed的时候才能删除。
+        删除VPC连接。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2007,10 +2257,7 @@ class ErClient(Client):
     def list_vpc_attachments(self, request):
         """查询VPC连接列表
 
-        查询企业路由器实例下的VPC连接列表：
-        1，支持过滤查询，过滤条件有id，state，enterprise_project_id，vpc_id，过滤条件可以重复和组合
-        2，支持分页查询，limit和marker组合实现分页查询
-        3，支持单字段排序功能，排序字段有[id,name,description,created_at,updated_at]，不支持多字段排序。
+        查询企业路由器实例下的VPC连接列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

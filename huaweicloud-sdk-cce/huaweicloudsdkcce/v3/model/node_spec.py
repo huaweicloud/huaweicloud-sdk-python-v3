@@ -37,6 +37,7 @@ class NodeSpec:
         'dedicated_host_id': 'str',
         'user_tags': 'list[UserTag]',
         'runtime': 'Runtime',
+        'initialized_conditions': 'list[str]',
         'extend_param': 'NodeExtendParam'
     }
 
@@ -58,10 +59,11 @@ class NodeSpec:
         'dedicated_host_id': 'dedicatedHostId',
         'user_tags': 'userTags',
         'runtime': 'runtime',
+        'initialized_conditions': 'initializedConditions',
         'extend_param': 'extendParam'
     }
 
-    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, extend_param=None):
+    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None):
         """NodeSpec
 
         The model defined in huaweicloud sdk
@@ -100,6 +102,8 @@ class NodeSpec:
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         :param runtime: 
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
+        :param initialized_conditions: 自定义初始化标记。CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions&#x3D;CCEInitial_CustomedInitial。当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。 - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个
+        :type initialized_conditions: list[str]
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
         """
@@ -123,6 +127,7 @@ class NodeSpec:
         self._dedicated_host_id = None
         self._user_tags = None
         self._runtime = None
+        self._initialized_conditions = None
         self._extend_param = None
         self.discriminator = None
 
@@ -155,6 +160,8 @@ class NodeSpec:
             self.user_tags = user_tags
         if runtime is not None:
             self.runtime = runtime
+        if initialized_conditions is not None:
+            self.initialized_conditions = initialized_conditions
         if extend_param is not None:
             self.extend_param = extend_param
 
@@ -507,6 +514,28 @@ class NodeSpec:
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
         """
         self._runtime = runtime
+
+    @property
+    def initialized_conditions(self):
+        """Gets the initialized_conditions of this NodeSpec.
+
+        自定义初始化标记。CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions=CCEInitial_CustomedInitial。当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。 - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个
+
+        :return: The initialized_conditions of this NodeSpec.
+        :rtype: list[str]
+        """
+        return self._initialized_conditions
+
+    @initialized_conditions.setter
+    def initialized_conditions(self, initialized_conditions):
+        """Sets the initialized_conditions of this NodeSpec.
+
+        自定义初始化标记。CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions=CCEInitial_CustomedInitial。当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。 - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个
+
+        :param initialized_conditions: The initialized_conditions of this NodeSpec.
+        :type initialized_conditions: list[str]
+        """
+        self._initialized_conditions = initialized_conditions
 
     @property
     def extend_param(self):

@@ -46,8 +46,7 @@ class OperateTasksBean:
         self._list = None
         self.discriminator = None
 
-        if action_id is not None:
-            self.action_id = action_id
+        self.action_id = action_id
         if list is not None:
             self.list = list
 

@@ -45,7 +45,7 @@ class SaAsyncClient(Client):
     def check_product_healthy_async(self, request):
         """检查心跳健康
 
-        SA提供心跳接口，集成产品定时（例如：每五分钟）发送心跳报文到SA，用来确认集成产品与SA之间的通路是否健康。
+        SA提供心跳接口，集成产品定时（每五分钟）发送心跳报文到态势感知，用来确认集成产品与态势感知之间的通路是否健康。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -109,7 +109,7 @@ class SaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def import_events_async(self, request):
-        """上报安全产品数据(V2)
+        """上报安全产品数据
 
         批量数据上报，每批次最多不超过50条。
         

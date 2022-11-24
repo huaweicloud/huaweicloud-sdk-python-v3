@@ -44,11 +44,11 @@ class ResourcePriceResponse:
 
         :param charge_mode: 计费模式，包周期计费、按需计费、免费的返回，不支持的资源不返回 PRE_PAID 包周期计费 POST_PAID 按需计费 FREE 免费
         :type charge_mode: str
-        :param sale_price: 执行计划中的每个资源部署后最终优惠后的金额，保留小数点后2位，向下取整，默认单位是元
+        :param sale_price: 执行计划中的每个资源部署后最终优惠后的金额（只考虑商务折扣以及伙伴折扣，不包含促销折扣及优惠券），保留小数点后2位，向上取整，默认单位是元
         :type sale_price: object
-        :param discount: 执行计划中的每个资源部署后的优惠额，保留小数点后2位，向下取整，默认单位是元
+        :param discount: 执行计划中的每个资源部署后的优惠额，保留小数点后2位，向上取整，默认单位是元
         :type discount: object
-        :param original_price: 执行计划中的每个资源部署后的原价，保留小数点后2位，向下取整，默认单位是元
+        :param original_price: 执行计划中的每个资源部署后的原价，保留小数点后2位，向上取整，默认单位是元
         :type original_price: object
         :param period_type: 包周期和按需的计费单位，包周期计费和按需计费返回，免费不会返回 HOUR：小时，包周期计费和按需计费返回，免费不会返回 DAY：天，包周期计费返回，按需计费和免费不会返回 WEEK：周，包周期计费返回，按需计费和免费不会返回 MONTH：月，包周期计费返回，按需计费和免费不会返回 YEAR：年，包周期计费返回，按需计费和免费不会返回 BYTE：字节，按需计费返回，包周期计费和免费不会返回 MB：百万字节，按需计费返回，包周期计费和免费不会返回 GB：千兆字节，按需计费返回，包周期计费和免费不会返回
         :type period_type: str
@@ -105,7 +105,7 @@ class ResourcePriceResponse:
     def sale_price(self):
         """Gets the sale_price of this ResourcePriceResponse.
 
-        执行计划中的每个资源部署后最终优惠后的金额，保留小数点后2位，向下取整，默认单位是元
+        执行计划中的每个资源部署后最终优惠后的金额（只考虑商务折扣以及伙伴折扣，不包含促销折扣及优惠券），保留小数点后2位，向上取整，默认单位是元
 
         :return: The sale_price of this ResourcePriceResponse.
         :rtype: object
@@ -116,7 +116,7 @@ class ResourcePriceResponse:
     def sale_price(self, sale_price):
         """Sets the sale_price of this ResourcePriceResponse.
 
-        执行计划中的每个资源部署后最终优惠后的金额，保留小数点后2位，向下取整，默认单位是元
+        执行计划中的每个资源部署后最终优惠后的金额（只考虑商务折扣以及伙伴折扣，不包含促销折扣及优惠券），保留小数点后2位，向上取整，默认单位是元
 
         :param sale_price: The sale_price of this ResourcePriceResponse.
         :type sale_price: object
@@ -127,7 +127,7 @@ class ResourcePriceResponse:
     def discount(self):
         """Gets the discount of this ResourcePriceResponse.
 
-        执行计划中的每个资源部署后的优惠额，保留小数点后2位，向下取整，默认单位是元
+        执行计划中的每个资源部署后的优惠额，保留小数点后2位，向上取整，默认单位是元
 
         :return: The discount of this ResourcePriceResponse.
         :rtype: object
@@ -138,7 +138,7 @@ class ResourcePriceResponse:
     def discount(self, discount):
         """Sets the discount of this ResourcePriceResponse.
 
-        执行计划中的每个资源部署后的优惠额，保留小数点后2位，向下取整，默认单位是元
+        执行计划中的每个资源部署后的优惠额，保留小数点后2位，向上取整，默认单位是元
 
         :param discount: The discount of this ResourcePriceResponse.
         :type discount: object
@@ -149,7 +149,7 @@ class ResourcePriceResponse:
     def original_price(self):
         """Gets the original_price of this ResourcePriceResponse.
 
-        执行计划中的每个资源部署后的原价，保留小数点后2位，向下取整，默认单位是元
+        执行计划中的每个资源部署后的原价，保留小数点后2位，向上取整，默认单位是元
 
         :return: The original_price of this ResourcePriceResponse.
         :rtype: object
@@ -160,7 +160,7 @@ class ResourcePriceResponse:
     def original_price(self, original_price):
         """Sets the original_price of this ResourcePriceResponse.
 
-        执行计划中的每个资源部署后的原价，保留小数点后2位，向下取整，默认单位是元
+        执行计划中的每个资源部署后的原价，保留小数点后2位，向上取整，默认单位是元
 
         :param original_price: The original_price of this ResourcePriceResponse.
         :type original_price: object

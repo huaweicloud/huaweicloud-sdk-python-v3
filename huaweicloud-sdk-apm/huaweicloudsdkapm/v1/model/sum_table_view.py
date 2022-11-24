@@ -54,29 +54,29 @@ class SumTableView:
 
         The model defined in huaweicloud sdk
 
-        :param view_type: 视图类型
+        :param view_type: 视图类型。
         :type view_type: str
-        :param collector_name: 采集器名称
+        :param collector_name: 采集器名称。
         :type collector_name: str
-        :param metric_set: 视图对应的指标集的名称
+        :param metric_set: 视图对应的指标集的名称。
         :type metric_set: str
-        :param title: 图标所需展示的标题
+        :param title: 图标所需展示的标题。
         :type title: str
-        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向
+        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向。
         :type table_direction: str
-        :param group_by: 分组规则
+        :param group_by: 分组规则。
         :type group_by: str
-        :param filter: 过滤列表模型
+        :param filter: 过滤列表模型。
         :type filter: str
-        :param field_item_list: 所需展示的字段列表模型列表
+        :param field_item_list: 所需展示的字段列表模型列表。
         :type field_item_list: list[:class:`huaweicloudsdkapm.v1.FieldItem`]
-        :param span: 跨度
+        :param span: 跨度。
         :type span: bool
-        :param span_field: 跨度字段
+        :param span_field: 跨度字段。
         :type span_field: str
-        :param order_by: 排序规则
+        :param order_by: 排序规则。
         :type order_by: str
-        :param latest: 是否只展示最近一笔数据
+        :param latest: 是否只展示最近一笔数据。
         :type latest: bool
         """
         
@@ -125,7 +125,7 @@ class SumTableView:
     def view_type(self):
         """Gets the view_type of this SumTableView.
 
-        视图类型
+        视图类型。
 
         :return: The view_type of this SumTableView.
         :rtype: str
@@ -136,7 +136,7 @@ class SumTableView:
     def view_type(self, view_type):
         """Sets the view_type of this SumTableView.
 
-        视图类型
+        视图类型。
 
         :param view_type: The view_type of this SumTableView.
         :type view_type: str
@@ -147,7 +147,7 @@ class SumTableView:
     def collector_name(self):
         """Gets the collector_name of this SumTableView.
 
-        采集器名称
+        采集器名称。
 
         :return: The collector_name of this SumTableView.
         :rtype: str
@@ -158,7 +158,7 @@ class SumTableView:
     def collector_name(self, collector_name):
         """Sets the collector_name of this SumTableView.
 
-        采集器名称
+        采集器名称。
 
         :param collector_name: The collector_name of this SumTableView.
         :type collector_name: str
@@ -169,7 +169,7 @@ class SumTableView:
     def metric_set(self):
         """Gets the metric_set of this SumTableView.
 
-        视图对应的指标集的名称
+        视图对应的指标集的名称。
 
         :return: The metric_set of this SumTableView.
         :rtype: str
@@ -180,7 +180,7 @@ class SumTableView:
     def metric_set(self, metric_set):
         """Sets the metric_set of this SumTableView.
 
-        视图对应的指标集的名称
+        视图对应的指标集的名称。
 
         :param metric_set: The metric_set of this SumTableView.
         :type metric_set: str
@@ -191,7 +191,7 @@ class SumTableView:
     def title(self):
         """Gets the title of this SumTableView.
 
-        图标所需展示的标题
+        图标所需展示的标题。
 
         :return: The title of this SumTableView.
         :rtype: str
@@ -202,7 +202,7 @@ class SumTableView:
     def title(self, title):
         """Sets the title of this SumTableView.
 
-        图标所需展示的标题
+        图标所需展示的标题。
 
         :param title: The title of this SumTableView.
         :type title: str
@@ -213,7 +213,7 @@ class SumTableView:
     def table_direction(self):
         """Gets the table_direction of this SumTableView.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :return: The table_direction of this SumTableView.
         :rtype: str
@@ -224,7 +224,7 @@ class SumTableView:
     def table_direction(self, table_direction):
         """Sets the table_direction of this SumTableView.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :param table_direction: The table_direction of this SumTableView.
         :type table_direction: str
@@ -235,7 +235,7 @@ class SumTableView:
     def group_by(self):
         """Gets the group_by of this SumTableView.
 
-        分组规则
+        分组规则。
 
         :return: The group_by of this SumTableView.
         :rtype: str
@@ -246,7 +246,7 @@ class SumTableView:
     def group_by(self, group_by):
         """Sets the group_by of this SumTableView.
 
-        分组规则
+        分组规则。
 
         :param group_by: The group_by of this SumTableView.
         :type group_by: str
@@ -257,7 +257,7 @@ class SumTableView:
     def filter(self):
         """Gets the filter of this SumTableView.
 
-        过滤列表模型
+        过滤列表模型。
 
         :return: The filter of this SumTableView.
         :rtype: str
@@ -268,7 +268,7 @@ class SumTableView:
     def filter(self, filter):
         """Sets the filter of this SumTableView.
 
-        过滤列表模型
+        过滤列表模型。
 
         :param filter: The filter of this SumTableView.
         :type filter: str
@@ -279,7 +279,7 @@ class SumTableView:
     def field_item_list(self):
         """Gets the field_item_list of this SumTableView.
 
-        所需展示的字段列表模型列表
+        所需展示的字段列表模型列表。
 
         :return: The field_item_list of this SumTableView.
         :rtype: list[:class:`huaweicloudsdkapm.v1.FieldItem`]
@@ -290,7 +290,7 @@ class SumTableView:
     def field_item_list(self, field_item_list):
         """Sets the field_item_list of this SumTableView.
 
-        所需展示的字段列表模型列表
+        所需展示的字段列表模型列表。
 
         :param field_item_list: The field_item_list of this SumTableView.
         :type field_item_list: list[:class:`huaweicloudsdkapm.v1.FieldItem`]
@@ -301,7 +301,7 @@ class SumTableView:
     def span(self):
         """Gets the span of this SumTableView.
 
-        跨度
+        跨度。
 
         :return: The span of this SumTableView.
         :rtype: bool
@@ -312,7 +312,7 @@ class SumTableView:
     def span(self, span):
         """Sets the span of this SumTableView.
 
-        跨度
+        跨度。
 
         :param span: The span of this SumTableView.
         :type span: bool
@@ -323,7 +323,7 @@ class SumTableView:
     def span_field(self):
         """Gets the span_field of this SumTableView.
 
-        跨度字段
+        跨度字段。
 
         :return: The span_field of this SumTableView.
         :rtype: str
@@ -334,7 +334,7 @@ class SumTableView:
     def span_field(self, span_field):
         """Sets the span_field of this SumTableView.
 
-        跨度字段
+        跨度字段。
 
         :param span_field: The span_field of this SumTableView.
         :type span_field: str
@@ -345,7 +345,7 @@ class SumTableView:
     def order_by(self):
         """Gets the order_by of this SumTableView.
 
-        排序规则
+        排序规则。
 
         :return: The order_by of this SumTableView.
         :rtype: str
@@ -356,7 +356,7 @@ class SumTableView:
     def order_by(self, order_by):
         """Sets the order_by of this SumTableView.
 
-        排序规则
+        排序规则。
 
         :param order_by: The order_by of this SumTableView.
         :type order_by: str
@@ -367,7 +367,7 @@ class SumTableView:
     def latest(self):
         """Gets the latest of this SumTableView.
 
-        是否只展示最近一笔数据
+        是否只展示最近一笔数据。
 
         :return: The latest of this SumTableView.
         :rtype: bool
@@ -378,7 +378,7 @@ class SumTableView:
     def latest(self, latest):
         """Sets the latest of this SumTableView.
 
-        是否只展示最近一笔数据
+        是否只展示最近一笔数据。
 
         :param latest: The latest of this SumTableView.
         :type latest: bool

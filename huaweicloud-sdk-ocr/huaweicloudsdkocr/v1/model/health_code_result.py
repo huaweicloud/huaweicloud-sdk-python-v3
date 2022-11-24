@@ -29,6 +29,7 @@ class HealthCodeResult:
         'time': 'str',
         'color': 'str',
         'vaccination_status': 'str',
+        'test_interval': 'str',
         'pcr_test_result': 'str',
         'pcr_test_organization': 'str',
         'pcr_test_time': 'str',
@@ -49,6 +50,7 @@ class HealthCodeResult:
         'time': 'time',
         'color': 'color',
         'vaccination_status': 'vaccination_status',
+        'test_interval': 'test_interval',
         'pcr_test_result': 'pcr_test_result',
         'pcr_test_organization': 'pcr_test_organization',
         'pcr_test_time': 'pcr_test_time',
@@ -59,7 +61,7 @@ class HealthCodeResult:
         'words_block_list': 'words_block_list'
     }
 
-    def __init__(self, type=None, name=None, idcard_number=None, phone_number=None, province=None, city=None, time=None, color=None, vaccination_status=None, pcr_test_result=None, pcr_test_organization=None, pcr_test_time=None, pcr_sampling_time=None, reached_city=None, confidence=None, words_block_count=None, words_block_list=None):
+    def __init__(self, type=None, name=None, idcard_number=None, phone_number=None, province=None, city=None, time=None, color=None, vaccination_status=None, test_interval=None, pcr_test_result=None, pcr_test_organization=None, pcr_test_time=None, pcr_sampling_time=None, reached_city=None, confidence=None, words_block_count=None, words_block_list=None):
         """HealthCodeResult
 
         The model defined in huaweicloud sdk
@@ -80,8 +82,10 @@ class HealthCodeResult:
         :type time: str
         :param color: 健康码或行程卡颜色。 健康码颜色可选值包括：  - \&quot;green\&quot;，绿码 - \&quot;yellow\&quot;，黄码 - \&quot;red\&quot;，红码 - \&quot;gray\&quot;，灰码  行程卡颜色可选值包括：  - \&quot;green\&quot;，绿码 - \&quot;yellow\&quot;，黄码 - \&quot;red\&quot;，红码 
         :type color: str
-        :param vaccination_status: 疫苗接种情况 
+        :param vaccination_status: 疫苗接种情况，可选值包括：  - 未接种 - 接种中 - 无接种记录 - 已接种1针 - 已接种2针 - 已接种3针 - 已完成新冠疫苗接种 
         :type vaccination_status: str
+        :param test_interval: 核酸检测间隔时长，可选值包括： - 24小时内 - 48小时内 - 72小时内 - 5天内 - 7天内 - 7天外 
+        :type test_interval: str
         :param pcr_test_result: 核酸检测结果，可选值包括： - \&quot;positive\&quot;,即阳性 - \&quot;negative\&quot;,即阴性 - \&quot;unknown\&quot;,未知 
         :type pcr_test_result: str
         :param pcr_test_organization: 核酸检测机构 
@@ -111,6 +115,7 @@ class HealthCodeResult:
         self._time = None
         self._color = None
         self._vaccination_status = None
+        self._test_interval = None
         self._pcr_test_result = None
         self._pcr_test_organization = None
         self._pcr_test_time = None
@@ -130,6 +135,7 @@ class HealthCodeResult:
         self.time = time
         self.color = color
         self.vaccination_status = vaccination_status
+        self.test_interval = test_interval
         self.pcr_test_result = pcr_test_result
         self.pcr_test_organization = pcr_test_organization
         self.pcr_test_time = pcr_test_time
@@ -319,7 +325,7 @@ class HealthCodeResult:
     def vaccination_status(self):
         """Gets the vaccination_status of this HealthCodeResult.
 
-        疫苗接种情况 
+        疫苗接种情况，可选值包括：  - 未接种 - 接种中 - 无接种记录 - 已接种1针 - 已接种2针 - 已接种3针 - 已完成新冠疫苗接种 
 
         :return: The vaccination_status of this HealthCodeResult.
         :rtype: str
@@ -330,12 +336,34 @@ class HealthCodeResult:
     def vaccination_status(self, vaccination_status):
         """Sets the vaccination_status of this HealthCodeResult.
 
-        疫苗接种情况 
+        疫苗接种情况，可选值包括：  - 未接种 - 接种中 - 无接种记录 - 已接种1针 - 已接种2针 - 已接种3针 - 已完成新冠疫苗接种 
 
         :param vaccination_status: The vaccination_status of this HealthCodeResult.
         :type vaccination_status: str
         """
         self._vaccination_status = vaccination_status
+
+    @property
+    def test_interval(self):
+        """Gets the test_interval of this HealthCodeResult.
+
+        核酸检测间隔时长，可选值包括： - 24小时内 - 48小时内 - 72小时内 - 5天内 - 7天内 - 7天外 
+
+        :return: The test_interval of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._test_interval
+
+    @test_interval.setter
+    def test_interval(self, test_interval):
+        """Sets the test_interval of this HealthCodeResult.
+
+        核酸检测间隔时长，可选值包括： - 24小时内 - 48小时内 - 72小时内 - 5天内 - 7天内 - 7天外 
+
+        :param test_interval: The test_interval of this HealthCodeResult.
+        :type test_interval: str
+        """
+        self._test_interval = test_interval
 
     @property
     def pcr_test_result(self):

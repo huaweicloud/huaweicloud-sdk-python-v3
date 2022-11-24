@@ -58,7 +58,7 @@ class ListPropagationsRequest:
         :type marker: str
         :param attachment_id: 连接ID
         :type attachment_id: list[str]
-        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering
         :type resource_type: list[str]
         :param state: 企业路由器实例状态
         :type state: list[str]
@@ -212,7 +212,7 @@ class ListPropagationsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListPropagationsRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :return: The resource_type of this ListPropagationsRequest.
         :rtype: list[str]
@@ -223,7 +223,7 @@ class ListPropagationsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListPropagationsRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :param resource_type: The resource_type of this ListPropagationsRequest.
         :type resource_type: list[str]

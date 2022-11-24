@@ -36,8 +36,7 @@ class TaskBasicRsp:
         'created_date': 'int',
         'last_modified_date': 'int',
         'description': 'str',
-        'task_tag': 'str',
-        'created_by': 'str'
+        'task_tag': 'str'
     }
 
     attribute_map = {
@@ -57,11 +56,10 @@ class TaskBasicRsp:
         'created_date': 'created_date',
         'last_modified_date': 'last_modified_date',
         'description': 'description',
-        'task_tag': 'task_tag',
-        'created_by': 'created_by'
+        'task_tag': 'task_tag'
     }
 
-    def __init__(self, task_id=None, task_name=None, task_type=None, status=None, project_id=None, source_datasource_id=None, target_datasource_id=None, source_datasource_name=None, target_datasource_name=None, source_app_id=None, target_app_id=None, source_app_name=None, target_app_name=None, created_date=None, last_modified_date=None, description=None, task_tag=None, created_by=None):
+    def __init__(self, task_id=None, task_name=None, task_type=None, status=None, project_id=None, source_datasource_id=None, target_datasource_id=None, source_datasource_name=None, target_datasource_name=None, source_app_id=None, target_app_id=None, source_app_name=None, target_app_name=None, created_date=None, last_modified_date=None, description=None, task_tag=None):
         """TaskBasicRsp
 
         The model defined in huaweicloud sdk
@@ -100,8 +98,6 @@ class TaskBasicRsp:
         :type description: str
         :param task_tag: 任务标签,只能包含字母、数字、中划线、下划线
         :type task_tag: str
-        :param created_by: 任务的创建者
-        :type created_by: str
         """
         
         
@@ -123,7 +119,6 @@ class TaskBasicRsp:
         self._last_modified_date = None
         self._description = None
         self._task_tag = None
-        self._created_by = None
         self.discriminator = None
 
         if task_id is not None:
@@ -160,8 +155,6 @@ class TaskBasicRsp:
             self.description = description
         if task_tag is not None:
             self.task_tag = task_tag
-        if created_by is not None:
-            self.created_by = created_by
 
     @property
     def task_id(self):
@@ -536,28 +529,6 @@ class TaskBasicRsp:
         :type task_tag: str
         """
         self._task_tag = task_tag
-
-    @property
-    def created_by(self):
-        """Gets the created_by of this TaskBasicRsp.
-
-        任务的创建者
-
-        :return: The created_by of this TaskBasicRsp.
-        :rtype: str
-        """
-        return self._created_by
-
-    @created_by.setter
-    def created_by(self, created_by):
-        """Sets the created_by of this TaskBasicRsp.
-
-        任务的创建者
-
-        :param created_by: The created_by of this TaskBasicRsp.
-        :type created_by: str
-        """
-        self._created_by = created_by
 
     def to_dict(self):
         """Returns the model properties as a dict"""

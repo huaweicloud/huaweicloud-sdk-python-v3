@@ -36,11 +36,11 @@ class DiscardInfo:
 
         The model defined in huaweicloud sdk
 
-        :param type: 类型
+        :param type: 类型。
         :type type: str
-        :param count: 数量
+        :param count: 数量。
         :type count: int
-        :param total_time: 总时间
+        :param total_time: 总时间。
         :type total_time: int
         """
         
@@ -62,7 +62,7 @@ class DiscardInfo:
     def type(self):
         """Gets the type of this DiscardInfo.
 
-        类型
+        类型。
 
         :return: The type of this DiscardInfo.
         :rtype: str
@@ -73,7 +73,7 @@ class DiscardInfo:
     def type(self, type):
         """Sets the type of this DiscardInfo.
 
-        类型
+        类型。
 
         :param type: The type of this DiscardInfo.
         :type type: str
@@ -84,7 +84,7 @@ class DiscardInfo:
     def count(self):
         """Gets the count of this DiscardInfo.
 
-        数量
+        数量。
 
         :return: The count of this DiscardInfo.
         :rtype: int
@@ -95,7 +95,7 @@ class DiscardInfo:
     def count(self, count):
         """Sets the count of this DiscardInfo.
 
-        数量
+        数量。
 
         :param count: The count of this DiscardInfo.
         :type count: int
@@ -106,7 +106,7 @@ class DiscardInfo:
     def total_time(self):
         """Gets the total_time of this DiscardInfo.
 
-        总时间
+        总时间。
 
         :return: The total_time of this DiscardInfo.
         :rtype: int
@@ -117,7 +117,7 @@ class DiscardInfo:
     def total_time(self, total_time):
         """Sets the total_time of this DiscardInfo.
 
-        总时间
+        总时间。
 
         :param total_time: The total_time of this DiscardInfo.
         :type total_time: int

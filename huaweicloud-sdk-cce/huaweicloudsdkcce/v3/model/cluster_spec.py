@@ -39,7 +39,8 @@ class ClusterSpec:
         'kube_proxy_mode': 'str',
         'az': 'str',
         'extend_param': 'ClusterExtendParam',
-        'support_istio': 'bool'
+        'support_istio': 'bool',
+        'configurations_override': 'list[PackageConfiguration]'
     }
 
     attribute_map = {
@@ -62,10 +63,11 @@ class ClusterSpec:
         'kube_proxy_mode': 'kubeProxyMode',
         'az': 'az',
         'extend_param': 'extendParam',
-        'support_istio': 'supportIstio'
+        'support_istio': 'supportIstio',
+        'configurations_override': 'configurationsOverride'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, configurations_override=None):
         """ClusterSpec
 
         The model defined in huaweicloud sdk
@@ -76,7 +78,7 @@ class ClusterSpec:
         :type type: str
         :param flavor: 字段默认值：创建CCE集群[或鲲鹏集群](tag:hws,hws_hk)时，如果是非专属云为 cce.s1.small，专属云则为cce.dec.s1.small；   集群规格，集群创建完成后规格不可再变更，请按实际业务需求进行选择：   - cce.s1.small: 小规模单控制节点CCE集群（最大50节点）  - cce.s1.medium: 中等规模单控制节点CCE集群（最大200节点）  - cce.s2.small: 小规模多控制节点CCE集群（最大50节点）  - cce.s2.medium: 中等规模多控制节点CCE集群（最大200节点）  - cce.s2.large: 大规模多控制节点CCE集群（最大1000节点）  - cce.s2.xlarge: 超大规模多控制节点CCE集群（最大2000节点）   &gt;    - s1：单控制节点CCE集群。 &gt;    - s2：多控制节点CCE集群。 &gt;    - dec：专属CCE集群规格。如cce.dec.s1.small为小规模单控制节点专属CCE集群（最大50节点）。 &gt;    - 最大节点数：当前集群支持管理的最大节点规模，请根据业务需求选择。 &gt;    - 单控制节点集群：普通集群是单控制节点，控制节点故障后，集群将不可用，但已运行工作负载不受影响。 &gt;    - 多控制节点集群：即高可用集群，当某个控制节点故障时，集群仍然可用。 
         :type flavor: str
-        :param version: 集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  &gt;    - 若不配置，默认创建最新版本的集群。 &gt;    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
+        :param version: 集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  &gt;    - 若不配置，默认创建最新版本的集群。 &gt;    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。 &gt;    - Turbo集群支持1.19及以上版本商用。
         :type version: str
         :param platform_version: CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。不支持用户指定，集群创建时自动选择对应集群版本的最新平台版本。   platformVersion格式为：cce.X.Y   - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。  - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。
         :type platform_version: str
@@ -110,6 +112,8 @@ class ClusterSpec:
         :type extend_param: :class:`huaweicloudsdkcce.v3.ClusterExtendParam`
         :param support_istio: 支持Istio
         :type support_istio: bool
+        :param configurations_override: 覆盖集群默认组件配置  若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。  当前支持的可配置组件及其参数详见 [[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)](tag:hws) [[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)](tag:hws_hk)
+        :type configurations_override: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
         """
         
         
@@ -134,6 +138,7 @@ class ClusterSpec:
         self._az = None
         self._extend_param = None
         self._support_istio = None
+        self._configurations_override = None
         self.discriminator = None
 
         if category is not None:
@@ -173,6 +178,8 @@ class ClusterSpec:
             self.extend_param = extend_param
         if support_istio is not None:
             self.support_istio = support_istio
+        if configurations_override is not None:
+            self.configurations_override = configurations_override
 
     @property
     def category(self):
@@ -244,7 +251,7 @@ class ClusterSpec:
     def version(self):
         """Gets the version of this ClusterSpec.
 
-        集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  >    - 若不配置，默认创建最新版本的集群。 >    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
+        集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  >    - 若不配置，默认创建最新版本的集群。 >    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。 >    - Turbo集群支持1.19及以上版本商用。
 
         :return: The version of this ClusterSpec.
         :rtype: str
@@ -255,7 +262,7 @@ class ClusterSpec:
     def version(self, version):
         """Sets the version of this ClusterSpec.
 
-        集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  >    - 若不配置，默认创建最新版本的集群。 >    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。
+        集群版本，与Kubernetes社区基线版本保持一致，建议选择最新版本。  在CCE控制台支持创建两种最新版本的集群。可登录CCE控制台创建集群，在“版本”处获取到集群版本。 其它集群版本，当前仍可通过api创建，但后续会逐渐下线，具体下线策略请关注CCE官方公告。  >    - 若不配置，默认创建最新版本的集群。 >    - 若指定集群基线版本但是不指定具体r版本，则系统默认选择对应集群版本的最新r版本。建议不指定具体r版本由系统选择最新版本。 >    - Turbo集群支持1.19及以上版本商用。
 
         :param version: The version of this ClusterSpec.
         :type version: str
@@ -593,6 +600,28 @@ class ClusterSpec:
         :type support_istio: bool
         """
         self._support_istio = support_istio
+
+    @property
+    def configurations_override(self):
+        """Gets the configurations_override of this ClusterSpec.
+
+        覆盖集群默认组件配置  若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。  当前支持的可配置组件及其参数详见 [[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)](tag:hws) [[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)](tag:hws_hk)
+
+        :return: The configurations_override of this ClusterSpec.
+        :rtype: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
+        """
+        return self._configurations_override
+
+    @configurations_override.setter
+    def configurations_override(self, configurations_override):
+        """Sets the configurations_override of this ClusterSpec.
+
+        覆盖集群默认组件配置  若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。  当前支持的可配置组件及其参数详见 [[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)](tag:hws) [[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)](tag:hws_hk)
+
+        :param configurations_override: The configurations_override of this ClusterSpec.
+        :type configurations_override: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
+        """
+        self._configurations_override = configurations_override
 
     def to_dict(self):
         """Returns the model properties as a dict"""

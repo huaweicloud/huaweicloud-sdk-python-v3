@@ -20,29 +20,58 @@ class ListClustersDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'total_size': 'int',
         'clusters': 'list[ClusterList]'
     }
 
     attribute_map = {
+        'total_size': 'totalSize',
         'clusters': 'clusters'
     }
 
-    def __init__(self, clusters=None):
+    def __init__(self, total_size=None, clusters=None):
         """ListClustersDetailsResponse
 
         The model defined in huaweicloud sdk
 
+        :param total_size: 集群个数。
+        :type total_size: int
         :param clusters: 集群对象列表。
         :type clusters: list[:class:`huaweicloudsdkcss.v1.ClusterList`]
         """
         
         super(ListClustersDetailsResponse, self).__init__()
 
+        self._total_size = None
         self._clusters = None
         self.discriminator = None
 
+        if total_size is not None:
+            self.total_size = total_size
         if clusters is not None:
             self.clusters = clusters
+
+    @property
+    def total_size(self):
+        """Gets the total_size of this ListClustersDetailsResponse.
+
+        集群个数。
+
+        :return: The total_size of this ListClustersDetailsResponse.
+        :rtype: int
+        """
+        return self._total_size
+
+    @total_size.setter
+    def total_size(self, total_size):
+        """Sets the total_size of this ListClustersDetailsResponse.
+
+        集群个数。
+
+        :param total_size: The total_size of this ListClustersDetailsResponse.
+        :type total_size: int
+        """
+        self._total_size = total_size
 
     @property
     def clusters(self):

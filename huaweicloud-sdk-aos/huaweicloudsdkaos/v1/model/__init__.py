@@ -17,6 +17,8 @@ from huaweicloudsdkaos.v1.model.create_execution_plan_response import CreateExec
 from huaweicloudsdkaos.v1.model.create_stack_request import CreateStackRequest
 from huaweicloudsdkaos.v1.model.create_stack_request_body import CreateStackRequestBody
 from huaweicloudsdkaos.v1.model.create_stack_response import CreateStackResponse
+from huaweicloudsdkaos.v1.model.delete_stack_request import DeleteStackRequest
+from huaweicloudsdkaos.v1.model.delete_stack_response import DeleteStackResponse
 from huaweicloudsdkaos.v1.model.deploy_stack_request import DeployStackRequest
 from huaweicloudsdkaos.v1.model.deploy_stack_request_body import DeployStackRequestBody
 from huaweicloudsdkaos.v1.model.deploy_stack_response import DeployStackResponse
@@ -33,8 +35,12 @@ from huaweicloudsdkaos.v1.model.items_response import ItemsResponse
 from huaweicloudsdkaos.v1.model.kms_structure import KmsStructure
 from huaweicloudsdkaos.v1.model.list_execution_plans_request import ListExecutionPlansRequest
 from huaweicloudsdkaos.v1.model.list_execution_plans_response import ListExecutionPlansResponse
+from huaweicloudsdkaos.v1.model.list_stack_events_request import ListStackEventsRequest
+from huaweicloudsdkaos.v1.model.list_stack_events_response import ListStackEventsResponse
 from huaweicloudsdkaos.v1.model.list_stack_outputs_request import ListStackOutputsRequest
 from huaweicloudsdkaos.v1.model.list_stack_outputs_response import ListStackOutputsResponse
+from huaweicloudsdkaos.v1.model.list_stack_resources_request import ListStackResourcesRequest
+from huaweicloudsdkaos.v1.model.list_stack_resources_response import ListStackResourcesResponse
 from huaweicloudsdkaos.v1.model.list_stacks_request import ListStacksRequest
 from huaweicloudsdkaos.v1.model.list_stacks_response import ListStacksResponse
 from huaweicloudsdkaos.v1.model.parse_template_variables_request import ParseTemplateVariablesRequest
@@ -43,9 +49,11 @@ from huaweicloudsdkaos.v1.model.parse_template_variables_response import ParseTe
 from huaweicloudsdkaos.v1.model.resource_price_response import ResourcePriceResponse
 from huaweicloudsdkaos.v1.model.stack import Stack
 from huaweicloudsdkaos.v1.model.stack_description_primitive_type_holder import StackDescriptionPrimitiveTypeHolder
+from huaweicloudsdkaos.v1.model.stack_event_response import StackEventResponse
 from huaweicloudsdkaos.v1.model.stack_id_primitive_type_holder import StackIdPrimitiveTypeHolder
 from huaweicloudsdkaos.v1.model.stack_name_primitive_type_holder import StackNamePrimitiveTypeHolder
 from huaweicloudsdkaos.v1.model.stack_output import StackOutput
+from huaweicloudsdkaos.v1.model.stack_resource import StackResource
 from huaweicloudsdkaos.v1.model.stack_status_primitive_type_holder import StackStatusPrimitiveTypeHolder
 from huaweicloudsdkaos.v1.model.template_body_primitive_type_holder import TemplateBodyPrimitiveTypeHolder
 from huaweicloudsdkaos.v1.model.template_uri_primitive_type_holder import TemplateURIPrimitiveTypeHolder

@@ -7,6 +7,7 @@ from huaweicloudsdkwaf.v1.model.access_progress import AccessProgress
 from huaweicloudsdkwaf.v1.model.action import Action
 from huaweicloudsdkwaf.v1.model.advanced import Advanced
 from huaweicloudsdkwaf.v1.model.alert_notice_config_response import AlertNoticeConfigResponse
+from huaweicloudsdkwaf.v1.model.alter_waf_product_info import AlterWafProductInfo
 from huaweicloudsdkwaf.v1.model.anti_tamper_rule_response_body import AntiTamperRuleResponseBody
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request import ApplyCertificateToHostRequest
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request_body import ApplyCertificateToHostRequestBody
@@ -18,6 +19,9 @@ from huaweicloudsdkwaf.v1.model.bind_host import BindHost
 from huaweicloudsdkwaf.v1.model.block_page import BlockPage
 from huaweicloudsdkwaf.v1.model.certificate_body import CertificateBody
 from huaweicloudsdkwaf.v1.model.certificate_bunding_host_body import CertificateBundingHostBody
+from huaweicloudsdkwaf.v1.model.change_prepaid_cloud_waf_request import ChangePrepaidCloudWafRequest
+from huaweicloudsdkwaf.v1.model.change_prepaid_cloud_waf_request_body import ChangePrepaidCloudWafRequestBody
+from huaweicloudsdkwaf.v1.model.change_prepaid_cloud_waf_response import ChangePrepaidCloudWafResponse
 from huaweicloudsdkwaf.v1.model.circuit_breaker import CircuitBreaker
 from huaweicloudsdkwaf.v1.model.cloud_waf_host_item import CloudWafHostItem
 from huaweicloudsdkwaf.v1.model.cloud_waf_server import CloudWafServer
@@ -52,6 +56,9 @@ from huaweicloudsdkwaf.v1.model.create_policy_response import CreatePolicyRespon
 from huaweicloudsdkwaf.v1.model.create_premium_host_request import CreatePremiumHostRequest
 from huaweicloudsdkwaf.v1.model.create_premium_host_request_body import CreatePremiumHostRequestBody
 from huaweicloudsdkwaf.v1.model.create_premium_host_response import CreatePremiumHostResponse
+from huaweicloudsdkwaf.v1.model.create_prepaid_cloud_waf_request import CreatePrepaidCloudWafRequest
+from huaweicloudsdkwaf.v1.model.create_prepaid_cloud_waf_request_body import CreatePrepaidCloudWafRequestBody
+from huaweicloudsdkwaf.v1.model.create_prepaid_cloud_waf_response import CreatePrepaidCloudWafResponse
 from huaweicloudsdkwaf.v1.model.create_privacy_rule_request import CreatePrivacyRuleRequest
 from huaweicloudsdkwaf.v1.model.create_privacy_rule_request_body import CreatePrivacyRuleRequestBody
 from huaweicloudsdkwaf.v1.model.create_privacy_rule_response import CreatePrivacyRuleResponse
@@ -88,6 +95,7 @@ from huaweicloudsdkwaf.v1.model.delete_white_black_ip_rule_request import Delete
 from huaweicloudsdkwaf.v1.model.delete_white_black_ip_rule_response import DeleteWhiteBlackIpRuleResponse
 from huaweicloudsdkwaf.v1.model.domain_classification_item import DomainClassificationItem
 from huaweicloudsdkwaf.v1.model.domain_item import DomainItem
+from huaweicloudsdkwaf.v1.model.expack_product_info import ExpackProductInfo
 from huaweicloudsdkwaf.v1.model.flag import Flag
 from huaweicloudsdkwaf.v1.model.ge_o_ip_item import GeOIpItem
 from huaweicloudsdkwaf.v1.model.geo_classification_item import GeoClassificationItem
@@ -153,12 +161,14 @@ from huaweicloudsdkwaf.v1.model.migrate_composite_hosts_response import MigrateC
 from huaweicloudsdkwaf.v1.model.policy_action import PolicyAction
 from huaweicloudsdkwaf.v1.model.policy_option import PolicyOption
 from huaweicloudsdkwaf.v1.model.policy_response import PolicyResponse
+from huaweicloudsdkwaf.v1.model.premium import Premium
 from huaweicloudsdkwaf.v1.model.premium_waf_instances import PremiumWafInstances
 from huaweicloudsdkwaf.v1.model.premium_waf_server import PremiumWafServer
 from huaweicloudsdkwaf.v1.model.privacy_response_body import PrivacyResponseBody
 from huaweicloudsdkwaf.v1.model.rename_instance_request import RenameInstanceRequest
 from huaweicloudsdkwaf.v1.model.rename_instance_request_body import RenameInstanceRequestBody
 from huaweicloudsdkwaf.v1.model.rename_instance_response import RenameInstanceResponse
+from huaweicloudsdkwaf.v1.model.resource_response import ResourceResponse
 from huaweicloudsdkwaf.v1.model.route_body import RouteBody
 from huaweicloudsdkwaf.v1.model.route_server_body import RouteServerBody
 from huaweicloudsdkwaf.v1.model.rule_info import RuleInfo
@@ -186,6 +196,8 @@ from huaweicloudsdkwaf.v1.model.show_premium_host_request import ShowPremiumHost
 from huaweicloudsdkwaf.v1.model.show_premium_host_response import ShowPremiumHostResponse
 from huaweicloudsdkwaf.v1.model.show_source_ip_request import ShowSourceIpRequest
 from huaweicloudsdkwaf.v1.model.show_source_ip_response import ShowSourceIpResponse
+from huaweicloudsdkwaf.v1.model.show_subscription_info_request import ShowSubscriptionInfoRequest
+from huaweicloudsdkwaf.v1.model.show_subscription_info_response import ShowSubscriptionInfoResponse
 from huaweicloudsdkwaf.v1.model.simple_premium_waf_host import SimplePremiumWafHost
 from huaweicloudsdkwaf.v1.model.statistics_timeline_item import StatisticsTimelineItem
 from huaweicloudsdkwaf.v1.model.time_line_item import TimeLineItem
@@ -239,4 +251,5 @@ from huaweicloudsdkwaf.v1.model.url_classification_item import UrlClassification
 from huaweicloudsdkwaf.v1.model.url_count_item import UrlCountItem
 from huaweicloudsdkwaf.v1.model.url_item import UrlItem
 from huaweicloudsdkwaf.v1.model.value_list_response_body import ValueListResponseBody
+from huaweicloudsdkwaf.v1.model.waf_product_info import WafProductInfo
 from huaweicloudsdkwaf.v1.model.white_black_ip_response_body import WhiteBlackIpResponseBody

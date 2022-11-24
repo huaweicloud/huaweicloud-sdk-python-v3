@@ -26,7 +26,8 @@ class ClusterListInstances:
         'name': 'str',
         'spec_code': 'str',
         'az_code': 'str',
-        'ip': 'str'
+        'ip': 'str',
+        'volume': 'ClusterVolumeRsp'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ClusterListInstances:
         'name': 'name',
         'spec_code': 'specCode',
         'az_code': 'azCode',
-        'ip': 'ip'
+        'ip': 'ip',
+        'volume': 'volume'
     }
 
-    def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None):
+    def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None):
         """ClusterListInstances
 
         The model defined in huaweicloud sdk
@@ -58,6 +60,8 @@ class ClusterListInstances:
         :type az_code: str
         :param ip: 实例ip信息。
         :type ip: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkcss.v1.ClusterVolumeRsp`
         """
         
         
@@ -69,6 +73,7 @@ class ClusterListInstances:
         self._spec_code = None
         self._az_code = None
         self._ip = None
+        self._volume = None
         self.discriminator = None
 
         if status is not None:
@@ -85,6 +90,8 @@ class ClusterListInstances:
             self.az_code = az_code
         if ip is not None:
             self.ip = ip
+        if volume is not None:
+            self.volume = volume
 
     @property
     def status(self):
@@ -239,6 +246,24 @@ class ClusterListInstances:
         :type ip: str
         """
         self._ip = ip
+
+    @property
+    def volume(self):
+        """Gets the volume of this ClusterListInstances.
+
+        :return: The volume of this ClusterListInstances.
+        :rtype: :class:`huaweicloudsdkcss.v1.ClusterVolumeRsp`
+        """
+        return self._volume
+
+    @volume.setter
+    def volume(self, volume):
+        """Sets the volume of this ClusterListInstances.
+
+        :param volume: The volume of this ClusterListInstances.
+        :type volume: :class:`huaweicloudsdkcss.v1.ClusterVolumeRsp`
+        """
+        self._volume = volume
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -38,13 +38,13 @@ class TraceTopologyLineInfo:
 
         The model defined in huaweicloud sdk
 
-        :param start_time: 开始时间
+        :param start_time: 开始时间。
         :type start_time: int
-        :param time_used: 耗时
+        :param time_used: 耗时。
         :type time_used: int
-        :param argument: 参数信息，比如调用的url信息等
+        :param argument: 参数信息，比如调用的url信息等。
         :type argument: str
-        :param event_id: event的id
+        :param event_id: event的id。
         :type event_id: str
         """
         
@@ -69,7 +69,7 @@ class TraceTopologyLineInfo:
     def start_time(self):
         """Gets the start_time of this TraceTopologyLineInfo.
 
-        开始时间
+        开始时间。
 
         :return: The start_time of this TraceTopologyLineInfo.
         :rtype: int
@@ -80,7 +80,7 @@ class TraceTopologyLineInfo:
     def start_time(self, start_time):
         """Sets the start_time of this TraceTopologyLineInfo.
 
-        开始时间
+        开始时间。
 
         :param start_time: The start_time of this TraceTopologyLineInfo.
         :type start_time: int
@@ -91,7 +91,7 @@ class TraceTopologyLineInfo:
     def time_used(self):
         """Gets the time_used of this TraceTopologyLineInfo.
 
-        耗时
+        耗时。
 
         :return: The time_used of this TraceTopologyLineInfo.
         :rtype: int
@@ -102,7 +102,7 @@ class TraceTopologyLineInfo:
     def time_used(self, time_used):
         """Sets the time_used of this TraceTopologyLineInfo.
 
-        耗时
+        耗时。
 
         :param time_used: The time_used of this TraceTopologyLineInfo.
         :type time_used: int
@@ -113,7 +113,7 @@ class TraceTopologyLineInfo:
     def argument(self):
         """Gets the argument of this TraceTopologyLineInfo.
 
-        参数信息，比如调用的url信息等
+        参数信息，比如调用的url信息等。
 
         :return: The argument of this TraceTopologyLineInfo.
         :rtype: str
@@ -124,7 +124,7 @@ class TraceTopologyLineInfo:
     def argument(self, argument):
         """Sets the argument of this TraceTopologyLineInfo.
 
-        参数信息，比如调用的url信息等
+        参数信息，比如调用的url信息等。
 
         :param argument: The argument of this TraceTopologyLineInfo.
         :type argument: str
@@ -135,7 +135,7 @@ class TraceTopologyLineInfo:
     def event_id(self):
         """Gets the event_id of this TraceTopologyLineInfo.
 
-        event的id
+        event的id。
 
         :return: The event_id of this TraceTopologyLineInfo.
         :rtype: str
@@ -146,7 +146,7 @@ class TraceTopologyLineInfo:
     def event_id(self, event_id):
         """Sets the event_id of this TraceTopologyLineInfo.
 
-        event的id
+        event的id。
 
         :param event_id: The event_id of this TraceTopologyLineInfo.
         :type event_id: str

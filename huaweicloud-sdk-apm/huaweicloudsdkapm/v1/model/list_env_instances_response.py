@@ -40,15 +40,15 @@ class ListEnvInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instance_info_list: 实例信息列表
+        :param instance_info_list: 实例信息列表。
         :type instance_info_list: list[:class:`huaweicloudsdkapm.v1.InstanceInfo`]
-        :param total_count: 实例总数
+        :param total_count: 实例总数。
         :type total_count: int
-        :param online_count: 在线实例总数
+        :param online_count: 在线实例总数。
         :type online_count: int
-        :param offline_count: 离线实例总数
+        :param offline_count: 离线实例总数。
         :type offline_count: int
-        :param disable_count: 停止实例总受
+        :param disable_count: 停止实例总数。
         :type disable_count: int
         """
         
@@ -76,7 +76,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def instance_info_list(self):
         """Gets the instance_info_list of this ListEnvInstancesResponse.
 
-        实例信息列表
+        实例信息列表。
 
         :return: The instance_info_list of this ListEnvInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.InstanceInfo`]
@@ -87,7 +87,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def instance_info_list(self, instance_info_list):
         """Sets the instance_info_list of this ListEnvInstancesResponse.
 
-        实例信息列表
+        实例信息列表。
 
         :param instance_info_list: The instance_info_list of this ListEnvInstancesResponse.
         :type instance_info_list: list[:class:`huaweicloudsdkapm.v1.InstanceInfo`]
@@ -98,7 +98,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListEnvInstancesResponse.
 
-        实例总数
+        实例总数。
 
         :return: The total_count of this ListEnvInstancesResponse.
         :rtype: int
@@ -109,7 +109,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListEnvInstancesResponse.
 
-        实例总数
+        实例总数。
 
         :param total_count: The total_count of this ListEnvInstancesResponse.
         :type total_count: int
@@ -120,7 +120,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def online_count(self):
         """Gets the online_count of this ListEnvInstancesResponse.
 
-        在线实例总数
+        在线实例总数。
 
         :return: The online_count of this ListEnvInstancesResponse.
         :rtype: int
@@ -131,7 +131,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def online_count(self, online_count):
         """Sets the online_count of this ListEnvInstancesResponse.
 
-        在线实例总数
+        在线实例总数。
 
         :param online_count: The online_count of this ListEnvInstancesResponse.
         :type online_count: int
@@ -142,7 +142,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def offline_count(self):
         """Gets the offline_count of this ListEnvInstancesResponse.
 
-        离线实例总数
+        离线实例总数。
 
         :return: The offline_count of this ListEnvInstancesResponse.
         :rtype: int
@@ -153,7 +153,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def offline_count(self, offline_count):
         """Sets the offline_count of this ListEnvInstancesResponse.
 
-        离线实例总数
+        离线实例总数。
 
         :param offline_count: The offline_count of this ListEnvInstancesResponse.
         :type offline_count: int
@@ -164,7 +164,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def disable_count(self):
         """Gets the disable_count of this ListEnvInstancesResponse.
 
-        停止实例总受
+        停止实例总数。
 
         :return: The disable_count of this ListEnvInstancesResponse.
         :rtype: int
@@ -175,7 +175,7 @@ class ListEnvInstancesResponse(SdkResponse):
     def disable_count(self, disable_count):
         """Sets the disable_count of this ListEnvInstancesResponse.
 
-        停止实例总受
+        停止实例总数。
 
         :param disable_count: The disable_count of this ListEnvInstancesResponse.
         :type disable_count: int

@@ -34,9 +34,9 @@ class ShowMasterAddressResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param region_name: region的id，英文名称。
+        :param region_name: region的英文名称。
         :type region_name: str
-        :param master_address: APMmaster服务对对外暴露的地址，提供服务注册和心跳上报。
+        :param master_address: APMmaster服务对外暴露的地址，提供服务注册和心跳上报。
         :type master_address: str
         """
         
@@ -55,7 +55,7 @@ class ShowMasterAddressResponse(SdkResponse):
     def region_name(self):
         """Gets the region_name of this ShowMasterAddressResponse.
 
-        region的id，英文名称。
+        region的英文名称。
 
         :return: The region_name of this ShowMasterAddressResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class ShowMasterAddressResponse(SdkResponse):
     def region_name(self, region_name):
         """Sets the region_name of this ShowMasterAddressResponse.
 
-        region的id，英文名称。
+        region的英文名称。
 
         :param region_name: The region_name of this ShowMasterAddressResponse.
         :type region_name: str
@@ -77,7 +77,7 @@ class ShowMasterAddressResponse(SdkResponse):
     def master_address(self):
         """Gets the master_address of this ShowMasterAddressResponse.
 
-        APMmaster服务对对外暴露的地址，提供服务注册和心跳上报。
+        APMmaster服务对外暴露的地址，提供服务注册和心跳上报。
 
         :return: The master_address of this ShowMasterAddressResponse.
         :rtype: str
@@ -88,7 +88,7 @@ class ShowMasterAddressResponse(SdkResponse):
     def master_address(self, master_address):
         """Sets the master_address of this ShowMasterAddressResponse.
 
-        APMmaster服务对对外暴露的地址，提供服务注册和心跳上报。
+        APMmaster服务对外暴露的地址，提供服务注册和心跳上报。
 
         :param master_address: The master_address of this ShowMasterAddressResponse.
         :type master_address: str

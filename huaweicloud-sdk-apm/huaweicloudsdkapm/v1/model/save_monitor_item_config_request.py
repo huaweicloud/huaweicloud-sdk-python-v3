@@ -34,7 +34,7 @@ class SaveMonitorItemConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_business_id: 业务id
+        :param x_business_id: 应用id。
         :type x_business_id: int
         :param body: Body of the SaveMonitorItemConfigRequest
         :type body: :class:`huaweicloudsdkapm.v1.SaveMonitorItemParam`
@@ -54,7 +54,7 @@ class SaveMonitorItemConfigRequest:
     def x_business_id(self):
         """Gets the x_business_id of this SaveMonitorItemConfigRequest.
 
-        业务id
+        应用id。
 
         :return: The x_business_id of this SaveMonitorItemConfigRequest.
         :rtype: int
@@ -65,7 +65,7 @@ class SaveMonitorItemConfigRequest:
     def x_business_id(self, x_business_id):
         """Sets the x_business_id of this SaveMonitorItemConfigRequest.
 
-        业务id
+        应用id。
 
         :param x_business_id: The x_business_id of this SaveMonitorItemConfigRequest.
         :type x_business_id: int

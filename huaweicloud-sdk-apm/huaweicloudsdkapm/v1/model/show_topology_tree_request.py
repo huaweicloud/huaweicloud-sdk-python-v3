@@ -40,15 +40,15 @@ class ShowTopologyTreeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region_id: 区域id
+        :param region_id: 区域id。
         :type region_id: str
-        :param business_id: 应用id
+        :param business_id: 应用id。
         :type business_id: int
-        :param env_tag_id: 环境标签id
+        :param env_tag_id: 环境标签id。
         :type env_tag_id: int
-        :param env_keyword: 环境关键字
+        :param env_keyword: 环境关键字。
         :type env_keyword: str
-        :param x_business_id: 应用id
+        :param x_business_id: 应用id。
         :type x_business_id: int
         """
         
@@ -63,8 +63,7 @@ class ShowTopologyTreeRequest:
 
         if region_id is not None:
             self.region_id = region_id
-        if business_id is not None:
-            self.business_id = business_id
+        self.business_id = business_id
         if env_tag_id is not None:
             self.env_tag_id = env_tag_id
         if env_keyword is not None:
@@ -75,7 +74,7 @@ class ShowTopologyTreeRequest:
     def region_id(self):
         """Gets the region_id of this ShowTopologyTreeRequest.
 
-        区域id
+        区域id。
 
         :return: The region_id of this ShowTopologyTreeRequest.
         :rtype: str
@@ -86,7 +85,7 @@ class ShowTopologyTreeRequest:
     def region_id(self, region_id):
         """Sets the region_id of this ShowTopologyTreeRequest.
 
-        区域id
+        区域id。
 
         :param region_id: The region_id of this ShowTopologyTreeRequest.
         :type region_id: str
@@ -97,7 +96,7 @@ class ShowTopologyTreeRequest:
     def business_id(self):
         """Gets the business_id of this ShowTopologyTreeRequest.
 
-        应用id
+        应用id。
 
         :return: The business_id of this ShowTopologyTreeRequest.
         :rtype: int
@@ -108,7 +107,7 @@ class ShowTopologyTreeRequest:
     def business_id(self, business_id):
         """Sets the business_id of this ShowTopologyTreeRequest.
 
-        应用id
+        应用id。
 
         :param business_id: The business_id of this ShowTopologyTreeRequest.
         :type business_id: int
@@ -119,7 +118,7 @@ class ShowTopologyTreeRequest:
     def env_tag_id(self):
         """Gets the env_tag_id of this ShowTopologyTreeRequest.
 
-        环境标签id
+        环境标签id。
 
         :return: The env_tag_id of this ShowTopologyTreeRequest.
         :rtype: int
@@ -130,7 +129,7 @@ class ShowTopologyTreeRequest:
     def env_tag_id(self, env_tag_id):
         """Sets the env_tag_id of this ShowTopologyTreeRequest.
 
-        环境标签id
+        环境标签id。
 
         :param env_tag_id: The env_tag_id of this ShowTopologyTreeRequest.
         :type env_tag_id: int
@@ -141,7 +140,7 @@ class ShowTopologyTreeRequest:
     def env_keyword(self):
         """Gets the env_keyword of this ShowTopologyTreeRequest.
 
-        环境关键字
+        环境关键字。
 
         :return: The env_keyword of this ShowTopologyTreeRequest.
         :rtype: str
@@ -152,7 +151,7 @@ class ShowTopologyTreeRequest:
     def env_keyword(self, env_keyword):
         """Sets the env_keyword of this ShowTopologyTreeRequest.
 
-        环境关键字
+        环境关键字。
 
         :param env_keyword: The env_keyword of this ShowTopologyTreeRequest.
         :type env_keyword: str
@@ -163,7 +162,7 @@ class ShowTopologyTreeRequest:
     def x_business_id(self):
         """Gets the x_business_id of this ShowTopologyTreeRequest.
 
-        应用id
+        应用id。
 
         :return: The x_business_id of this ShowTopologyTreeRequest.
         :rtype: int
@@ -174,7 +173,7 @@ class ShowTopologyTreeRequest:
     def x_business_id(self, x_business_id):
         """Sets the x_business_id of this ShowTopologyTreeRequest.
 
-        应用id
+        应用id。
 
         :param x_business_id: The x_business_id of this ShowTopologyTreeRequest.
         :type x_business_id: int

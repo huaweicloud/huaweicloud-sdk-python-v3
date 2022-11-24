@@ -24,7 +24,7 @@ class ThreatIntelProperties:
         'file_sha1': 'str',
         'file_sha256': 'str',
         'file_name': 'str',
-        'create_time': 'str',
+        'create_time': 'datetime',
         'file_class': 'str',
         'file_family': 'str',
         'file_maltype': 'str',
@@ -75,7 +75,7 @@ class ThreatIntelProperties:
         :param file_name: 文件名称。
         :type file_name: str
         :param create_time: 编译时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
-        :type create_time: str
+        :type create_time: datetime
         :param file_class: 文件类别，TEXT|XCODE。
         :type file_class: str
         :param file_family: 家族，例如：wannacry（勒索软件）。
@@ -258,7 +258,7 @@ class ThreatIntelProperties:
         编译时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :return: The create_time of this ThreatIntelProperties.
-        :rtype: str
+        :rtype: datetime
         """
         return self._create_time
 
@@ -269,7 +269,7 @@ class ThreatIntelProperties:
         编译时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :param create_time: The create_time of this ThreatIntelProperties.
-        :type create_time: str
+        :type create_time: datetime
         """
         self._create_time = create_time
 

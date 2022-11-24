@@ -32,7 +32,7 @@ class ShowMasterAddressRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region_name: region英文名称
+        :param region_name: region英文名称。
         :type region_name: str
         """
         
@@ -47,7 +47,7 @@ class ShowMasterAddressRequest:
     def region_name(self):
         """Gets the region_name of this ShowMasterAddressRequest.
 
-        region英文名称
+        region英文名称。
 
         :return: The region_name of this ShowMasterAddressRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ShowMasterAddressRequest:
     def region_name(self, region_name):
         """Sets the region_name of this ShowMasterAddressRequest.
 
-        region英文名称
+        region英文名称。
 
         :param region_name: The region_name of this ShowMasterAddressRequest.
         :type region_name: str

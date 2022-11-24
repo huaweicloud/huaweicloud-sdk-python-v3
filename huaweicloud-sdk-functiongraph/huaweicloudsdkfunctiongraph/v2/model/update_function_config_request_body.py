@@ -33,6 +33,7 @@ class UpdateFunctionConfigRequestBody:
         'func_vpc': 'FuncVpc',
         'mount_config': 'MountConfig',
         'strategy_config': 'StrategyConfig',
+        'custom_image': 'CustomImage',
         'extend_config': 'str',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
@@ -55,6 +56,7 @@ class UpdateFunctionConfigRequestBody:
         'func_vpc': 'func_vpc',
         'mount_config': 'mount_config',
         'strategy_config': 'strategy_config',
+        'custom_image': 'custom_image',
         'extend_config': 'extend_config',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
@@ -63,7 +65,7 @@ class UpdateFunctionConfigRequestBody:
         'domain_names': 'domain_names'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, is_stateful_function=None, domain_names=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, is_stateful_function=None, domain_names=None):
         """UpdateFunctionConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -94,6 +96,8 @@ class UpdateFunctionConfigRequestBody:
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
         :param strategy_config: 
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
+        :param custom_image: 
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         :param extend_config: 函数扩展配置。
         :type extend_config: str
         :param initializer_handler: 函数初始化入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
@@ -123,6 +127,7 @@ class UpdateFunctionConfigRequestBody:
         self._func_vpc = None
         self._mount_config = None
         self._strategy_config = None
+        self._custom_image = None
         self._extend_config = None
         self._initializer_handler = None
         self._initializer_timeout = None
@@ -152,6 +157,8 @@ class UpdateFunctionConfigRequestBody:
             self.mount_config = mount_config
         if strategy_config is not None:
             self.strategy_config = strategy_config
+        if custom_image is not None:
+            self.custom_image = custom_image
         if extend_config is not None:
             self.extend_config = extend_config
         if initializer_handler is not None:
@@ -438,6 +445,24 @@ class UpdateFunctionConfigRequestBody:
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
         """
         self._strategy_config = strategy_config
+
+    @property
+    def custom_image(self):
+        """Gets the custom_image of this UpdateFunctionConfigRequestBody.
+
+        :return: The custom_image of this UpdateFunctionConfigRequestBody.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        return self._custom_image
+
+    @custom_image.setter
+    def custom_image(self, custom_image):
+        """Sets the custom_image of this UpdateFunctionConfigRequestBody.
+
+        :param custom_image: The custom_image of this UpdateFunctionConfigRequestBody.
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        self._custom_image = custom_image
 
     @property
     def extend_config(self):

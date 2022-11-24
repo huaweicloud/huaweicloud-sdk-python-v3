@@ -32,7 +32,7 @@ class CreateAkskModel:
 
         The model defined in huaweicloud sdk
 
-        :param descp: 描述信息
+        :param descp: 描述信息。
         :type descp: str
         """
         
@@ -48,7 +48,7 @@ class CreateAkskModel:
     def descp(self):
         """Gets the descp of this CreateAkskModel.
 
-        描述信息
+        描述信息。
 
         :return: The descp of this CreateAkskModel.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateAkskModel:
     def descp(self, descp):
         """Sets the descp of this CreateAkskModel.
 
-        描述信息
+        描述信息。
 
         :param descp: The descp of this CreateAkskModel.
         :type descp: str

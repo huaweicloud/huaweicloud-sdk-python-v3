@@ -38,13 +38,13 @@ class SaveMonitorItemParam:
 
         The model defined in huaweicloud sdk
 
-        :param monitor_item_id: 监控项id
+        :param monitor_item_id: 监控项id。
         :type monitor_item_id: int
-        :param interval: 采集间隔
+        :param interval: 采集间隔。
         :type interval: int
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param config_value_list: 配置项列表
+        :param config_value_list: 配置项列表。
         :type config_value_list: list[:class:`huaweicloudsdkapm.v1.ConfigItem`]
         """
         
@@ -56,12 +56,10 @@ class SaveMonitorItemParam:
         self._config_value_list = None
         self.discriminator = None
 
-        if monitor_item_id is not None:
-            self.monitor_item_id = monitor_item_id
+        self.monitor_item_id = monitor_item_id
         if interval is not None:
             self.interval = interval
-        if env_id is not None:
-            self.env_id = env_id
+        self.env_id = env_id
         if config_value_list is not None:
             self.config_value_list = config_value_list
 
@@ -69,7 +67,7 @@ class SaveMonitorItemParam:
     def monitor_item_id(self):
         """Gets the monitor_item_id of this SaveMonitorItemParam.
 
-        监控项id
+        监控项id。
 
         :return: The monitor_item_id of this SaveMonitorItemParam.
         :rtype: int
@@ -80,7 +78,7 @@ class SaveMonitorItemParam:
     def monitor_item_id(self, monitor_item_id):
         """Sets the monitor_item_id of this SaveMonitorItemParam.
 
-        监控项id
+        监控项id。
 
         :param monitor_item_id: The monitor_item_id of this SaveMonitorItemParam.
         :type monitor_item_id: int
@@ -91,7 +89,7 @@ class SaveMonitorItemParam:
     def interval(self):
         """Gets the interval of this SaveMonitorItemParam.
 
-        采集间隔
+        采集间隔。
 
         :return: The interval of this SaveMonitorItemParam.
         :rtype: int
@@ -102,7 +100,7 @@ class SaveMonitorItemParam:
     def interval(self, interval):
         """Sets the interval of this SaveMonitorItemParam.
 
-        采集间隔
+        采集间隔。
 
         :param interval: The interval of this SaveMonitorItemParam.
         :type interval: int
@@ -113,7 +111,7 @@ class SaveMonitorItemParam:
     def env_id(self):
         """Gets the env_id of this SaveMonitorItemParam.
 
-        环境id
+        环境id。
 
         :return: The env_id of this SaveMonitorItemParam.
         :rtype: int
@@ -124,7 +122,7 @@ class SaveMonitorItemParam:
     def env_id(self, env_id):
         """Sets the env_id of this SaveMonitorItemParam.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this SaveMonitorItemParam.
         :type env_id: int
@@ -135,7 +133,7 @@ class SaveMonitorItemParam:
     def config_value_list(self):
         """Gets the config_value_list of this SaveMonitorItemParam.
 
-        配置项列表
+        配置项列表。
 
         :return: The config_value_list of this SaveMonitorItemParam.
         :rtype: list[:class:`huaweicloudsdkapm.v1.ConfigItem`]
@@ -146,7 +144,7 @@ class SaveMonitorItemParam:
     def config_value_list(self, config_value_list):
         """Sets the config_value_list of this SaveMonitorItemParam.
 
-        配置项列表
+        配置项列表。
 
         :param config_value_list: The config_value_list of this SaveMonitorItemParam.
         :type config_value_list: list[:class:`huaweicloudsdkapm.v1.ConfigItem`]

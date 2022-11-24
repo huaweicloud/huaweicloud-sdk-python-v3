@@ -46,7 +46,7 @@ class FlavorInfo:
 
         :param engine_name: 引擎名称。
         :type engine_name: str
-        :param type: 节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single
+        :param type: 节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single - readonly
         :type type: str
         :param vcpus: CPU核数。
         :type vcpus: str
@@ -105,7 +105,7 @@ class FlavorInfo:
     def type(self):
         """Gets the type of this FlavorInfo.
 
-        节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single
+        节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single - readonly
 
         :return: The type of this FlavorInfo.
         :rtype: str
@@ -116,7 +116,7 @@ class FlavorInfo:
     def type(self, type):
         """Sets the type of this FlavorInfo.
 
-        节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single
+        节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single - readonly
 
         :param type: The type of this FlavorInfo.
         :type type: str

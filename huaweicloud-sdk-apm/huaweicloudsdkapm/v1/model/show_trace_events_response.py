@@ -32,7 +32,7 @@ class ShowTraceEventsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param span_event_list: span event信息列表
+        :param span_event_list: span event信息列表。
         :type span_event_list: list[:class:`huaweicloudsdkapm.v1.SpanEventInfo`]
         """
         
@@ -48,7 +48,7 @@ class ShowTraceEventsResponse(SdkResponse):
     def span_event_list(self):
         """Gets the span_event_list of this ShowTraceEventsResponse.
 
-        span event信息列表
+        span event信息列表。
 
         :return: The span_event_list of this ShowTraceEventsResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.SpanEventInfo`]
@@ -59,7 +59,7 @@ class ShowTraceEventsResponse(SdkResponse):
     def span_event_list(self, span_event_list):
         """Sets the span_event_list of this ShowTraceEventsResponse.
 
-        span event信息列表
+        span event信息列表。
 
         :param span_event_list: The span_event_list of this ShowTraceEventsResponse.
         :type span_event_list: list[:class:`huaweicloudsdkapm.v1.SpanEventInfo`]

@@ -20,8 +20,8 @@ class AssetOperateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'apps': 'list[str]',
-        'tasks': 'list[AssetOperateRequestTasks]'
+        'apps': 'list[AssetExportRequestApps]',
+        'tasks': 'list[AssetExportRequestTasks]'
     }
 
     attribute_map = {
@@ -35,9 +35,9 @@ class AssetOperateRequest:
         The model defined in huaweicloud sdk
 
         :param apps: 应用列表
-        :type apps: list[str]
+        :type apps: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestApps`]
         :param tasks: 任务列表
-        :type tasks: list[:class:`huaweicloudsdkroma.v2.AssetOperateRequestTasks`]
+        :type tasks: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestTasks`]
         """
         
         
@@ -56,7 +56,7 @@ class AssetOperateRequest:
         应用列表
 
         :return: The apps of this AssetOperateRequest.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestApps`]
         """
         return self._apps
 
@@ -67,7 +67,7 @@ class AssetOperateRequest:
         应用列表
 
         :param apps: The apps of this AssetOperateRequest.
-        :type apps: list[str]
+        :type apps: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestApps`]
         """
         self._apps = apps
 
@@ -78,7 +78,7 @@ class AssetOperateRequest:
         任务列表
 
         :return: The tasks of this AssetOperateRequest.
-        :rtype: list[:class:`huaweicloudsdkroma.v2.AssetOperateRequestTasks`]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestTasks`]
         """
         return self._tasks
 
@@ -89,7 +89,7 @@ class AssetOperateRequest:
         任务列表
 
         :param tasks: The tasks of this AssetOperateRequest.
-        :type tasks: list[:class:`huaweicloudsdkroma.v2.AssetOperateRequestTasks`]
+        :type tasks: list[:class:`huaweicloudsdkroma.v2.AssetExportRequestTasks`]
         """
         self._tasks = tasks
 

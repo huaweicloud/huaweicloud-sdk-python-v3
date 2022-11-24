@@ -21,17 +21,15 @@ class UpdateRouteTable:
 
     openapi_types = {
         'name': 'str',
-        'description': 'str',
-        'bgp_options': 'BgpOptions'
+        'description': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'description': 'description',
-        'bgp_options': 'bgp_options'
+        'description': 'description'
     }
 
-    def __init__(self, name=None, description=None, bgp_options=None):
+    def __init__(self, name=None, description=None):
         """UpdateRouteTable
 
         The model defined in huaweicloud sdk
@@ -40,23 +38,18 @@ class UpdateRouteTable:
         :type name: str
         :param description: 路由器表描述信息
         :type description: str
-        :param bgp_options: 
-        :type bgp_options: :class:`huaweicloudsdker.v3.BgpOptions`
         """
         
         
 
         self._name = None
         self._description = None
-        self._bgp_options = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         if description is not None:
             self.description = description
-        if bgp_options is not None:
-            self.bgp_options = bgp_options
 
     @property
     def name(self):
@@ -101,24 +94,6 @@ class UpdateRouteTable:
         :type description: str
         """
         self._description = description
-
-    @property
-    def bgp_options(self):
-        """Gets the bgp_options of this UpdateRouteTable.
-
-        :return: The bgp_options of this UpdateRouteTable.
-        :rtype: :class:`huaweicloudsdker.v3.BgpOptions`
-        """
-        return self._bgp_options
-
-    @bgp_options.setter
-    def bgp_options(self, bgp_options):
-        """Sets the bgp_options of this UpdateRouteTable.
-
-        :param bgp_options: The bgp_options of this UpdateRouteTable.
-        :type bgp_options: :class:`huaweicloudsdker.v3.BgpOptions`
-        """
-        self._bgp_options = bgp_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

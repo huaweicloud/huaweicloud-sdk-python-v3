@@ -32,7 +32,7 @@ class ListBusinessResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param business_nodes: 获取业务列表数据结构
+        :param business_nodes: 获取应用列表数据结构。
         :type business_nodes: list[:class:`huaweicloudsdkapm.v1.BusinessNodeModel`]
         """
         
@@ -48,7 +48,7 @@ class ListBusinessResponse(SdkResponse):
     def business_nodes(self):
         """Gets the business_nodes of this ListBusinessResponse.
 
-        获取业务列表数据结构
+        获取应用列表数据结构。
 
         :return: The business_nodes of this ListBusinessResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.BusinessNodeModel`]
@@ -59,7 +59,7 @@ class ListBusinessResponse(SdkResponse):
     def business_nodes(self, business_nodes):
         """Sets the business_nodes of this ListBusinessResponse.
 
-        获取业务列表数据结构
+        获取应用列表数据结构。
 
         :param business_nodes: The business_nodes of this ListBusinessResponse.
         :type business_nodes: list[:class:`huaweicloudsdkapm.v1.BusinessNodeModel`]

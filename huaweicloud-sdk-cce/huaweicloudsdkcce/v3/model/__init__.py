@@ -23,12 +23,14 @@ from huaweicloudsdkcce.v3.model.cluster_endpoints import ClusterEndpoints
 from huaweicloudsdkcce.v3.model.cluster_extend_param import ClusterExtendParam
 from huaweicloudsdkcce.v3.model.cluster_information import ClusterInformation
 from huaweicloudsdkcce.v3.model.cluster_information_spec import ClusterInformationSpec
+from huaweicloudsdkcce.v3.model.cluster_information_spec_host_network import ClusterInformationSpecHostNetwork
 from huaweicloudsdkcce.v3.model.cluster_metadata import ClusterMetadata
 from huaweicloudsdkcce.v3.model.cluster_node_information import ClusterNodeInformation
 from huaweicloudsdkcce.v3.model.cluster_node_information_metadata import ClusterNodeInformationMetadata
 from huaweicloudsdkcce.v3.model.cluster_spec import ClusterSpec
 from huaweicloudsdkcce.v3.model.cluster_status import ClusterStatus
 from huaweicloudsdkcce.v3.model.clusters import Clusters
+from huaweicloudsdkcce.v3.model.configuration_item import ConfigurationItem
 from huaweicloudsdkcce.v3.model.container_cidr import ContainerCIDR
 from huaweicloudsdkcce.v3.model.container_network import ContainerNetwork
 from huaweicloudsdkcce.v3.model.container_network_update import ContainerNetworkUpdate
@@ -60,6 +62,7 @@ from huaweicloudsdkcce.v3.model.delete_status import DeleteStatus
 from huaweicloudsdkcce.v3.model.eip_spec import EipSpec
 from huaweicloudsdkcce.v3.model.eip_spec_bandwidth import EipSpecBandwidth
 from huaweicloudsdkcce.v3.model.eni_network import EniNetwork
+from huaweicloudsdkcce.v3.model.eni_network_update import EniNetworkUpdate
 from huaweicloudsdkcce.v3.model.hibernate_cluster_request import HibernateClusterRequest
 from huaweicloudsdkcce.v3.model.hibernate_cluster_response import HibernateClusterResponse
 from huaweicloudsdkcce.v3.model.host_network import HostNetwork
@@ -122,6 +125,7 @@ from huaweicloudsdkcce.v3.model.node_spec_update import NodeSpecUpdate
 from huaweicloudsdkcce.v3.model.node_status import NodeStatus
 from huaweicloudsdkcce.v3.model.open_api_response_spec import OpenAPIResponseSpec
 from huaweicloudsdkcce.v3.model.open_api_response_spec_spec import OpenAPIResponseSpecSpec
+from huaweicloudsdkcce.v3.model.package_configuration import PackageConfiguration
 from huaweicloudsdkcce.v3.model.persistent_volume_claim import PersistentVolumeClaim
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_metadata import PersistentVolumeClaimMetadata
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_spec import PersistentVolumeClaimSpec

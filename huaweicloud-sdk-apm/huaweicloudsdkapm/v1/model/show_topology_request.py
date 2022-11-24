@@ -32,7 +32,7 @@ class ShowTopologyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param trace_id: 调用链tracId
+        :param trace_id: 调用链traceId。
         :type trace_id: str
         """
         
@@ -47,7 +47,7 @@ class ShowTopologyRequest:
     def trace_id(self):
         """Gets the trace_id of this ShowTopologyRequest.
 
-        调用链tracId
+        调用链traceId。
 
         :return: The trace_id of this ShowTopologyRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ShowTopologyRequest:
     def trace_id(self, trace_id):
         """Sets the trace_id of this ShowTopologyRequest.
 
-        调用链tracId
+        调用链traceId。
 
         :param trace_id: The trace_id of this ShowTopologyRequest.
         :type trace_id: str

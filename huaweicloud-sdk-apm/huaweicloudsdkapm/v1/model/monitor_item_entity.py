@@ -48,23 +48,23 @@ class MonitorItemEntity:
 
         The model defined in huaweicloud sdk
 
-        :param category_id: 
+        :param category_id: 采集器类别id。
         :type category_id: int
-        :param collector_name: 
+        :param collector_name: 采集器名称。
         :type collector_name: str
-        :param display_name: 
+        :param display_name: 采集器类别展示名称。
         :type display_name: str
-        :param show_in_total: 
+        :param show_in_total: 是否展示标题。
         :type show_in_total: bool
-        :param monitor_item_id: 
+        :param monitor_item_id: 监控项id。
         :type monitor_item_id: int
-        :param disabled: 
+        :param disabled: 是否禁用。
         :type disabled: bool
-        :param collector_id: 
+        :param collector_id: 采集器id。
         :type collector_id: int
-        :param sequence: 
+        :param sequence: 序列号。
         :type sequence: int
-        :param collect_interval: 
+        :param collect_interval: 默认数据采集间隔。
         :type collect_interval: int
         """
         
@@ -104,6 +104,8 @@ class MonitorItemEntity:
     def category_id(self):
         """Gets the category_id of this MonitorItemEntity.
 
+        采集器类别id。
+
         :return: The category_id of this MonitorItemEntity.
         :rtype: int
         """
@@ -112,6 +114,8 @@ class MonitorItemEntity:
     @category_id.setter
     def category_id(self, category_id):
         """Sets the category_id of this MonitorItemEntity.
+
+        采集器类别id。
 
         :param category_id: The category_id of this MonitorItemEntity.
         :type category_id: int
@@ -122,6 +126,8 @@ class MonitorItemEntity:
     def collector_name(self):
         """Gets the collector_name of this MonitorItemEntity.
 
+        采集器名称。
+
         :return: The collector_name of this MonitorItemEntity.
         :rtype: str
         """
@@ -130,6 +136,8 @@ class MonitorItemEntity:
     @collector_name.setter
     def collector_name(self, collector_name):
         """Sets the collector_name of this MonitorItemEntity.
+
+        采集器名称。
 
         :param collector_name: The collector_name of this MonitorItemEntity.
         :type collector_name: str
@@ -140,6 +148,8 @@ class MonitorItemEntity:
     def display_name(self):
         """Gets the display_name of this MonitorItemEntity.
 
+        采集器类别展示名称。
+
         :return: The display_name of this MonitorItemEntity.
         :rtype: str
         """
@@ -148,6 +158,8 @@ class MonitorItemEntity:
     @display_name.setter
     def display_name(self, display_name):
         """Sets the display_name of this MonitorItemEntity.
+
+        采集器类别展示名称。
 
         :param display_name: The display_name of this MonitorItemEntity.
         :type display_name: str
@@ -158,6 +170,8 @@ class MonitorItemEntity:
     def show_in_total(self):
         """Gets the show_in_total of this MonitorItemEntity.
 
+        是否展示标题。
+
         :return: The show_in_total of this MonitorItemEntity.
         :rtype: bool
         """
@@ -166,6 +180,8 @@ class MonitorItemEntity:
     @show_in_total.setter
     def show_in_total(self, show_in_total):
         """Sets the show_in_total of this MonitorItemEntity.
+
+        是否展示标题。
 
         :param show_in_total: The show_in_total of this MonitorItemEntity.
         :type show_in_total: bool
@@ -176,6 +192,8 @@ class MonitorItemEntity:
     def monitor_item_id(self):
         """Gets the monitor_item_id of this MonitorItemEntity.
 
+        监控项id。
+
         :return: The monitor_item_id of this MonitorItemEntity.
         :rtype: int
         """
@@ -184,6 +202,8 @@ class MonitorItemEntity:
     @monitor_item_id.setter
     def monitor_item_id(self, monitor_item_id):
         """Sets the monitor_item_id of this MonitorItemEntity.
+
+        监控项id。
 
         :param monitor_item_id: The monitor_item_id of this MonitorItemEntity.
         :type monitor_item_id: int
@@ -194,6 +214,8 @@ class MonitorItemEntity:
     def disabled(self):
         """Gets the disabled of this MonitorItemEntity.
 
+        是否禁用。
+
         :return: The disabled of this MonitorItemEntity.
         :rtype: bool
         """
@@ -202,6 +224,8 @@ class MonitorItemEntity:
     @disabled.setter
     def disabled(self, disabled):
         """Sets the disabled of this MonitorItemEntity.
+
+        是否禁用。
 
         :param disabled: The disabled of this MonitorItemEntity.
         :type disabled: bool
@@ -212,6 +236,8 @@ class MonitorItemEntity:
     def collector_id(self):
         """Gets the collector_id of this MonitorItemEntity.
 
+        采集器id。
+
         :return: The collector_id of this MonitorItemEntity.
         :rtype: int
         """
@@ -220,6 +246,8 @@ class MonitorItemEntity:
     @collector_id.setter
     def collector_id(self, collector_id):
         """Sets the collector_id of this MonitorItemEntity.
+
+        采集器id。
 
         :param collector_id: The collector_id of this MonitorItemEntity.
         :type collector_id: int
@@ -230,6 +258,8 @@ class MonitorItemEntity:
     def sequence(self):
         """Gets the sequence of this MonitorItemEntity.
 
+        序列号。
+
         :return: The sequence of this MonitorItemEntity.
         :rtype: int
         """
@@ -238,6 +268,8 @@ class MonitorItemEntity:
     @sequence.setter
     def sequence(self, sequence):
         """Sets the sequence of this MonitorItemEntity.
+
+        序列号。
 
         :param sequence: The sequence of this MonitorItemEntity.
         :type sequence: int
@@ -248,6 +280,8 @@ class MonitorItemEntity:
     def collect_interval(self):
         """Gets the collect_interval of this MonitorItemEntity.
 
+        默认数据采集间隔。
+
         :return: The collect_interval of this MonitorItemEntity.
         :rtype: int
         """
@@ -256,6 +290,8 @@ class MonitorItemEntity:
     @collect_interval.setter
     def collect_interval(self, collect_interval):
         """Sets the collect_interval of this MonitorItemEntity.
+
+        默认数据采集间隔。
 
         :param collect_interval: The collect_interval of this MonitorItemEntity.
         :type collect_interval: int

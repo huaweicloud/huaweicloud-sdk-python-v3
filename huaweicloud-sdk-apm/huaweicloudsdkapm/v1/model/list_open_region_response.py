@@ -32,7 +32,7 @@ class ListOpenRegionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param region_list: region列表
+        :param region_list: region列表。
         :type region_list: list[:class:`huaweicloudsdkapm.v1.Region`]
         """
         
@@ -48,7 +48,7 @@ class ListOpenRegionResponse(SdkResponse):
     def region_list(self):
         """Gets the region_list of this ListOpenRegionResponse.
 
-        region列表
+        region列表。
 
         :return: The region_list of this ListOpenRegionResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.Region`]
@@ -59,7 +59,7 @@ class ListOpenRegionResponse(SdkResponse):
     def region_list(self, region_list):
         """Sets the region_list of this ListOpenRegionResponse.
 
-        region列表
+        region列表。
 
         :param region_list: The region_list of this ListOpenRegionResponse.
         :type region_list: list[:class:`huaweicloudsdkapm.v1.Region`]

@@ -32,7 +32,7 @@ class TopologyTree:
 
         The model defined in huaweicloud sdk
 
-        :param tree: 拓扑树节点
+        :param tree: 拓扑树节点。
         :type tree: list[:class:`huaweicloudsdkapm.v1.TreeNode`]
         """
         
@@ -48,7 +48,7 @@ class TopologyTree:
     def tree(self):
         """Gets the tree of this TopologyTree.
 
-        拓扑树节点
+        拓扑树节点。
 
         :return: The tree of this TopologyTree.
         :rtype: list[:class:`huaweicloudsdkapm.v1.TreeNode`]
@@ -59,7 +59,7 @@ class TopologyTree:
     def tree(self, tree):
         """Sets the tree of this TopologyTree.
 
-        拓扑树节点
+        拓扑树节点。
 
         :param tree: The tree of this TopologyTree.
         :type tree: list[:class:`huaweicloudsdkapm.v1.TreeNode`]

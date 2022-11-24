@@ -36,11 +36,11 @@ class ConfigItem:
 
         The model defined in huaweicloud sdk
 
-        :param config_name: 配置项名称
+        :param config_name: 配置项名称。
         :type config_name: str
-        :param config_value: 配置项值
+        :param config_value: 配置项值。
         :type config_value: str
-        :param should_override: 是否重写
+        :param should_override: 是否重写。
         :type should_override: bool
         """
         
@@ -62,7 +62,7 @@ class ConfigItem:
     def config_name(self):
         """Gets the config_name of this ConfigItem.
 
-        配置项名称
+        配置项名称。
 
         :return: The config_name of this ConfigItem.
         :rtype: str
@@ -73,7 +73,7 @@ class ConfigItem:
     def config_name(self, config_name):
         """Sets the config_name of this ConfigItem.
 
-        配置项名称
+        配置项名称。
 
         :param config_name: The config_name of this ConfigItem.
         :type config_name: str
@@ -84,7 +84,7 @@ class ConfigItem:
     def config_value(self):
         """Gets the config_value of this ConfigItem.
 
-        配置项值
+        配置项值。
 
         :return: The config_value of this ConfigItem.
         :rtype: str
@@ -95,7 +95,7 @@ class ConfigItem:
     def config_value(self, config_value):
         """Sets the config_value of this ConfigItem.
 
-        配置项值
+        配置项值。
 
         :param config_value: The config_value of this ConfigItem.
         :type config_value: str
@@ -106,7 +106,7 @@ class ConfigItem:
     def should_override(self):
         """Gets the should_override of this ConfigItem.
 
-        是否重写
+        是否重写。
 
         :return: The should_override of this ConfigItem.
         :rtype: bool
@@ -117,7 +117,7 @@ class ConfigItem:
     def should_override(self, should_override):
         """Sets the should_override of this ConfigItem.
 
-        是否重写
+        是否重写。
 
         :param should_override: The should_override of this ConfigItem.
         :type should_override: bool

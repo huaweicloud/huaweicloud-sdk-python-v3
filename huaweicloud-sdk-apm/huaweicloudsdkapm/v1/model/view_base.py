@@ -54,29 +54,29 @@ class ViewBase:
 
         The model defined in huaweicloud sdk
 
-        :param collector_name: 采集器名称
+        :param collector_name: 采集器名称。
         :type collector_name: str
-        :param metric_set: 视图对应的指标集的名称
+        :param metric_set: 视图对应的指标集的名称。
         :type metric_set: str
-        :param title: 图标所需展示的标题
+        :param title: 图标所需展示的标题。
         :type title: str
-        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向
+        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向。
         :type table_direction: str
-        :param group_by: 分组规则
+        :param group_by: 分组规则。
         :type group_by: str
-        :param filter: 过滤列表模型
+        :param filter: 过滤列表模型。
         :type filter: str
-        :param field_item_list: 所需展示的字段列表模型
+        :param field_item_list: 所需展示的字段列表模型。
         :type field_item_list: list[:class:`huaweicloudsdkapm.v1.FieldItem`]
-        :param span: span信息
+        :param span: span信息。
         :type span: bool
-        :param span_field: span字段属性
+        :param span_field: span字段属性。
         :type span_field: str
-        :param order_by: 排序规则
+        :param order_by: 排序规则。
         :type order_by: str
-        :param latest: 是否只展示最近一笔数据
+        :param latest: 是否只展示最近一笔数据。
         :type latest: str
-        :param view_type: 视图类型
+        :param view_type: 视图类型。
         :type view_type: str
         """
         
@@ -125,7 +125,7 @@ class ViewBase:
     def collector_name(self):
         """Gets the collector_name of this ViewBase.
 
-        采集器名称
+        采集器名称。
 
         :return: The collector_name of this ViewBase.
         :rtype: str
@@ -136,7 +136,7 @@ class ViewBase:
     def collector_name(self, collector_name):
         """Sets the collector_name of this ViewBase.
 
-        采集器名称
+        采集器名称。
 
         :param collector_name: The collector_name of this ViewBase.
         :type collector_name: str
@@ -147,7 +147,7 @@ class ViewBase:
     def metric_set(self):
         """Gets the metric_set of this ViewBase.
 
-        视图对应的指标集的名称
+        视图对应的指标集的名称。
 
         :return: The metric_set of this ViewBase.
         :rtype: str
@@ -158,7 +158,7 @@ class ViewBase:
     def metric_set(self, metric_set):
         """Sets the metric_set of this ViewBase.
 
-        视图对应的指标集的名称
+        视图对应的指标集的名称。
 
         :param metric_set: The metric_set of this ViewBase.
         :type metric_set: str
@@ -169,7 +169,7 @@ class ViewBase:
     def title(self):
         """Gets the title of this ViewBase.
 
-        图标所需展示的标题
+        图标所需展示的标题。
 
         :return: The title of this ViewBase.
         :rtype: str
@@ -180,7 +180,7 @@ class ViewBase:
     def title(self, title):
         """Sets the title of this ViewBase.
 
-        图标所需展示的标题
+        图标所需展示的标题。
 
         :param title: The title of this ViewBase.
         :type title: str
@@ -191,7 +191,7 @@ class ViewBase:
     def table_direction(self):
         """Gets the table_direction of this ViewBase.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :return: The table_direction of this ViewBase.
         :rtype: str
@@ -202,7 +202,7 @@ class ViewBase:
     def table_direction(self, table_direction):
         """Sets the table_direction of this ViewBase.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :param table_direction: The table_direction of this ViewBase.
         :type table_direction: str
@@ -213,7 +213,7 @@ class ViewBase:
     def group_by(self):
         """Gets the group_by of this ViewBase.
 
-        分组规则
+        分组规则。
 
         :return: The group_by of this ViewBase.
         :rtype: str
@@ -224,7 +224,7 @@ class ViewBase:
     def group_by(self, group_by):
         """Sets the group_by of this ViewBase.
 
-        分组规则
+        分组规则。
 
         :param group_by: The group_by of this ViewBase.
         :type group_by: str
@@ -235,7 +235,7 @@ class ViewBase:
     def filter(self):
         """Gets the filter of this ViewBase.
 
-        过滤列表模型
+        过滤列表模型。
 
         :return: The filter of this ViewBase.
         :rtype: str
@@ -246,7 +246,7 @@ class ViewBase:
     def filter(self, filter):
         """Sets the filter of this ViewBase.
 
-        过滤列表模型
+        过滤列表模型。
 
         :param filter: The filter of this ViewBase.
         :type filter: str
@@ -257,7 +257,7 @@ class ViewBase:
     def field_item_list(self):
         """Gets the field_item_list of this ViewBase.
 
-        所需展示的字段列表模型
+        所需展示的字段列表模型。
 
         :return: The field_item_list of this ViewBase.
         :rtype: list[:class:`huaweicloudsdkapm.v1.FieldItem`]
@@ -268,7 +268,7 @@ class ViewBase:
     def field_item_list(self, field_item_list):
         """Sets the field_item_list of this ViewBase.
 
-        所需展示的字段列表模型
+        所需展示的字段列表模型。
 
         :param field_item_list: The field_item_list of this ViewBase.
         :type field_item_list: list[:class:`huaweicloudsdkapm.v1.FieldItem`]
@@ -279,7 +279,7 @@ class ViewBase:
     def span(self):
         """Gets the span of this ViewBase.
 
-        span信息
+        span信息。
 
         :return: The span of this ViewBase.
         :rtype: bool
@@ -290,7 +290,7 @@ class ViewBase:
     def span(self, span):
         """Sets the span of this ViewBase.
 
-        span信息
+        span信息。
 
         :param span: The span of this ViewBase.
         :type span: bool
@@ -301,7 +301,7 @@ class ViewBase:
     def span_field(self):
         """Gets the span_field of this ViewBase.
 
-        span字段属性
+        span字段属性。
 
         :return: The span_field of this ViewBase.
         :rtype: str
@@ -312,7 +312,7 @@ class ViewBase:
     def span_field(self, span_field):
         """Sets the span_field of this ViewBase.
 
-        span字段属性
+        span字段属性。
 
         :param span_field: The span_field of this ViewBase.
         :type span_field: str
@@ -323,7 +323,7 @@ class ViewBase:
     def order_by(self):
         """Gets the order_by of this ViewBase.
 
-        排序规则
+        排序规则。
 
         :return: The order_by of this ViewBase.
         :rtype: str
@@ -334,7 +334,7 @@ class ViewBase:
     def order_by(self, order_by):
         """Sets the order_by of this ViewBase.
 
-        排序规则
+        排序规则。
 
         :param order_by: The order_by of this ViewBase.
         :type order_by: str
@@ -345,7 +345,7 @@ class ViewBase:
     def latest(self):
         """Gets the latest of this ViewBase.
 
-        是否只展示最近一笔数据
+        是否只展示最近一笔数据。
 
         :return: The latest of this ViewBase.
         :rtype: str
@@ -356,7 +356,7 @@ class ViewBase:
     def latest(self, latest):
         """Sets the latest of this ViewBase.
 
-        是否只展示最近一笔数据
+        是否只展示最近一笔数据。
 
         :param latest: The latest of this ViewBase.
         :type latest: str
@@ -367,7 +367,7 @@ class ViewBase:
     def view_type(self):
         """Gets the view_type of this ViewBase.
 
-        视图类型
+        视图类型。
 
         :return: The view_type of this ViewBase.
         :rtype: str
@@ -378,7 +378,7 @@ class ViewBase:
     def view_type(self, view_type):
         """Sets the view_type of this ViewBase.
 
-        视图类型
+        视图类型。
 
         :param view_type: The view_type of this ViewBase.
         :type view_type: str

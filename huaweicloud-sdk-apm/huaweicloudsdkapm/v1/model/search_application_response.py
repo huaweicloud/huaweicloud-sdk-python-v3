@@ -36,11 +36,11 @@ class SearchApplicationResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param app_info_list: 应用列表
+        :param app_info_list: 组件列表。
         :type app_info_list: list[:class:`huaweicloudsdkapm.v1.AppInfo`]
-        :param app_total_count: 应用总数目
+        :param app_total_count: 组件总数目。
         :type app_total_count: int
-        :param app_info_map: 应用名称和应用详情map表
+        :param app_info_map: 组件名称和组件详情map表。
         :type app_info_map: dict(str, AppInfo)
         """
         
@@ -62,7 +62,7 @@ class SearchApplicationResponse(SdkResponse):
     def app_info_list(self):
         """Gets the app_info_list of this SearchApplicationResponse.
 
-        应用列表
+        组件列表。
 
         :return: The app_info_list of this SearchApplicationResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.AppInfo`]
@@ -73,7 +73,7 @@ class SearchApplicationResponse(SdkResponse):
     def app_info_list(self, app_info_list):
         """Sets the app_info_list of this SearchApplicationResponse.
 
-        应用列表
+        组件列表。
 
         :param app_info_list: The app_info_list of this SearchApplicationResponse.
         :type app_info_list: list[:class:`huaweicloudsdkapm.v1.AppInfo`]
@@ -84,7 +84,7 @@ class SearchApplicationResponse(SdkResponse):
     def app_total_count(self):
         """Gets the app_total_count of this SearchApplicationResponse.
 
-        应用总数目
+        组件总数目。
 
         :return: The app_total_count of this SearchApplicationResponse.
         :rtype: int
@@ -95,7 +95,7 @@ class SearchApplicationResponse(SdkResponse):
     def app_total_count(self, app_total_count):
         """Sets the app_total_count of this SearchApplicationResponse.
 
-        应用总数目
+        组件总数目。
 
         :param app_total_count: The app_total_count of this SearchApplicationResponse.
         :type app_total_count: int
@@ -106,7 +106,7 @@ class SearchApplicationResponse(SdkResponse):
     def app_info_map(self):
         """Gets the app_info_map of this SearchApplicationResponse.
 
-        应用名称和应用详情map表
+        组件名称和组件详情map表。
 
         :return: The app_info_map of this SearchApplicationResponse.
         :rtype: dict(str, AppInfo)
@@ -117,7 +117,7 @@ class SearchApplicationResponse(SdkResponse):
     def app_info_map(self, app_info_map):
         """Sets the app_info_map of this SearchApplicationResponse.
 
-        应用名称和应用详情map表
+        组件名称和组件详情map表。
 
         :param app_info_map: The app_info_map of this SearchApplicationResponse.
         :type app_info_map: dict(str, AppInfo)

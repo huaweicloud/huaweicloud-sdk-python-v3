@@ -38,13 +38,13 @@ class ShowEventDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param trace_id: trace id
+        :param trace_id: trace id。
         :type trace_id: str
-        :param span_id: span id
+        :param span_id: span id。
         :type span_id: str
-        :param event_id: event id
+        :param event_id: event id。
         :type event_id: str
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
         """
         
@@ -65,7 +65,7 @@ class ShowEventDetailRequest:
     def trace_id(self):
         """Gets the trace_id of this ShowEventDetailRequest.
 
-        trace id
+        trace id。
 
         :return: The trace_id of this ShowEventDetailRequest.
         :rtype: str
@@ -76,7 +76,7 @@ class ShowEventDetailRequest:
     def trace_id(self, trace_id):
         """Sets the trace_id of this ShowEventDetailRequest.
 
-        trace id
+        trace id。
 
         :param trace_id: The trace_id of this ShowEventDetailRequest.
         :type trace_id: str
@@ -87,7 +87,7 @@ class ShowEventDetailRequest:
     def span_id(self):
         """Gets the span_id of this ShowEventDetailRequest.
 
-        span id
+        span id。
 
         :return: The span_id of this ShowEventDetailRequest.
         :rtype: str
@@ -98,7 +98,7 @@ class ShowEventDetailRequest:
     def span_id(self, span_id):
         """Sets the span_id of this ShowEventDetailRequest.
 
-        span id
+        span id。
 
         :param span_id: The span_id of this ShowEventDetailRequest.
         :type span_id: str
@@ -109,7 +109,7 @@ class ShowEventDetailRequest:
     def event_id(self):
         """Gets the event_id of this ShowEventDetailRequest.
 
-        event id
+        event id。
 
         :return: The event_id of this ShowEventDetailRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ShowEventDetailRequest:
     def event_id(self, event_id):
         """Sets the event_id of this ShowEventDetailRequest.
 
-        event id
+        event id。
 
         :param event_id: The event_id of this ShowEventDetailRequest.
         :type event_id: str
@@ -131,7 +131,7 @@ class ShowEventDetailRequest:
     def env_id(self):
         """Gets the env_id of this ShowEventDetailRequest.
 
-        环境id
+        环境id。
 
         :return: The env_id of this ShowEventDetailRequest.
         :rtype: int
@@ -142,7 +142,7 @@ class ShowEventDetailRequest:
     def env_id(self, env_id):
         """Sets the env_id of this ShowEventDetailRequest.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this ShowEventDetailRequest.
         :type env_id: int

@@ -22,16 +22,20 @@ class ClusterInformationSpec:
     openapi_types = {
         'description': 'str',
         'custom_san': 'list[str]',
-        'container_network': 'ContainerNetworkUpdate'
+        'container_network': 'ContainerNetworkUpdate',
+        'eni_network': 'EniNetworkUpdate',
+        'host_network': 'ClusterInformationSpecHostNetwork'
     }
 
     attribute_map = {
         'description': 'description',
         'custom_san': 'customSan',
-        'container_network': 'containerNetwork'
+        'container_network': 'containerNetwork',
+        'eni_network': 'eniNetwork',
+        'host_network': 'hostNetwork'
     }
 
-    def __init__(self, description=None, custom_san=None, container_network=None):
+    def __init__(self, description=None, custom_san=None, container_network=None, eni_network=None, host_network=None):
         """ClusterInformationSpec
 
         The model defined in huaweicloud sdk
@@ -42,6 +46,10 @@ class ClusterInformationSpec:
         :type custom_san: list[str]
         :param container_network: 
         :type container_network: :class:`huaweicloudsdkcce.v3.ContainerNetworkUpdate`
+        :param eni_network: 
+        :type eni_network: :class:`huaweicloudsdkcce.v3.EniNetworkUpdate`
+        :param host_network: 
+        :type host_network: :class:`huaweicloudsdkcce.v3.ClusterInformationSpecHostNetwork`
         """
         
         
@@ -49,6 +57,8 @@ class ClusterInformationSpec:
         self._description = None
         self._custom_san = None
         self._container_network = None
+        self._eni_network = None
+        self._host_network = None
         self.discriminator = None
 
         if description is not None:
@@ -57,6 +67,10 @@ class ClusterInformationSpec:
             self.custom_san = custom_san
         if container_network is not None:
             self.container_network = container_network
+        if eni_network is not None:
+            self.eni_network = eni_network
+        if host_network is not None:
+            self.host_network = host_network
 
     @property
     def description(self):
@@ -119,6 +133,42 @@ class ClusterInformationSpec:
         :type container_network: :class:`huaweicloudsdkcce.v3.ContainerNetworkUpdate`
         """
         self._container_network = container_network
+
+    @property
+    def eni_network(self):
+        """Gets the eni_network of this ClusterInformationSpec.
+
+        :return: The eni_network of this ClusterInformationSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.EniNetworkUpdate`
+        """
+        return self._eni_network
+
+    @eni_network.setter
+    def eni_network(self, eni_network):
+        """Sets the eni_network of this ClusterInformationSpec.
+
+        :param eni_network: The eni_network of this ClusterInformationSpec.
+        :type eni_network: :class:`huaweicloudsdkcce.v3.EniNetworkUpdate`
+        """
+        self._eni_network = eni_network
+
+    @property
+    def host_network(self):
+        """Gets the host_network of this ClusterInformationSpec.
+
+        :return: The host_network of this ClusterInformationSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterInformationSpecHostNetwork`
+        """
+        return self._host_network
+
+    @host_network.setter
+    def host_network(self, host_network):
+        """Sets the host_network of this ClusterInformationSpec.
+
+        :param host_network: The host_network of this ClusterInformationSpec.
+        :type host_network: :class:`huaweicloudsdkcce.v3.ClusterInformationSpecHostNetwork`
+        """
+        self._host_network = host_network
 
     def to_dict(self):
         """Returns the model properties as a dict"""

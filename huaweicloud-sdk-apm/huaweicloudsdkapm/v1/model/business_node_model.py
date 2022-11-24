@@ -48,23 +48,23 @@ class BusinessNodeModel:
 
         The model defined in huaweicloud sdk
 
-        :param default: 默认业务
+        :param default: 默认应用。
         :type default: bool
-        :param display_name: 业务展示名称
+        :param display_name: 应用展示名称。
         :type display_name: str
-        :param eps_id: 企业项目的id
+        :param eps_id: 企业项目的id。
         :type eps_id: str
-        :param gmt_create: 创建时间
+        :param gmt_create: 创建时间。
         :type gmt_create: date
-        :param gmt_modify: 修改时间
+        :param gmt_modify: 修改时间。
         :type gmt_modify: date
-        :param id: 业务id
+        :param id: 应用id。
         :type id: int
-        :param inner_domain_id: 内部租户id
+        :param inner_domain_id: 内部租户id。
         :type inner_domain_id: int
-        :param is_default: 是否是默认的业务
+        :param is_default: 是否是默认的应用。
         :type is_default: bool
-        :param name: 业务的英文名称
+        :param name: 应用的英文名称。
         :type name: str
         """
         
@@ -104,7 +104,7 @@ class BusinessNodeModel:
     def default(self):
         """Gets the default of this BusinessNodeModel.
 
-        默认业务
+        默认应用。
 
         :return: The default of this BusinessNodeModel.
         :rtype: bool
@@ -115,7 +115,7 @@ class BusinessNodeModel:
     def default(self, default):
         """Sets the default of this BusinessNodeModel.
 
-        默认业务
+        默认应用。
 
         :param default: The default of this BusinessNodeModel.
         :type default: bool
@@ -126,7 +126,7 @@ class BusinessNodeModel:
     def display_name(self):
         """Gets the display_name of this BusinessNodeModel.
 
-        业务展示名称
+        应用展示名称。
 
         :return: The display_name of this BusinessNodeModel.
         :rtype: str
@@ -137,7 +137,7 @@ class BusinessNodeModel:
     def display_name(self, display_name):
         """Sets the display_name of this BusinessNodeModel.
 
-        业务展示名称
+        应用展示名称。
 
         :param display_name: The display_name of this BusinessNodeModel.
         :type display_name: str
@@ -148,7 +148,7 @@ class BusinessNodeModel:
     def eps_id(self):
         """Gets the eps_id of this BusinessNodeModel.
 
-        企业项目的id
+        企业项目的id。
 
         :return: The eps_id of this BusinessNodeModel.
         :rtype: str
@@ -159,7 +159,7 @@ class BusinessNodeModel:
     def eps_id(self, eps_id):
         """Sets the eps_id of this BusinessNodeModel.
 
-        企业项目的id
+        企业项目的id。
 
         :param eps_id: The eps_id of this BusinessNodeModel.
         :type eps_id: str
@@ -170,7 +170,7 @@ class BusinessNodeModel:
     def gmt_create(self):
         """Gets the gmt_create of this BusinessNodeModel.
 
-        创建时间
+        创建时间。
 
         :return: The gmt_create of this BusinessNodeModel.
         :rtype: date
@@ -181,7 +181,7 @@ class BusinessNodeModel:
     def gmt_create(self, gmt_create):
         """Sets the gmt_create of this BusinessNodeModel.
 
-        创建时间
+        创建时间。
 
         :param gmt_create: The gmt_create of this BusinessNodeModel.
         :type gmt_create: date
@@ -192,7 +192,7 @@ class BusinessNodeModel:
     def gmt_modify(self):
         """Gets the gmt_modify of this BusinessNodeModel.
 
-        修改时间
+        修改时间。
 
         :return: The gmt_modify of this BusinessNodeModel.
         :rtype: date
@@ -203,7 +203,7 @@ class BusinessNodeModel:
     def gmt_modify(self, gmt_modify):
         """Sets the gmt_modify of this BusinessNodeModel.
 
-        修改时间
+        修改时间。
 
         :param gmt_modify: The gmt_modify of this BusinessNodeModel.
         :type gmt_modify: date
@@ -214,7 +214,7 @@ class BusinessNodeModel:
     def id(self):
         """Gets the id of this BusinessNodeModel.
 
-        业务id
+        应用id。
 
         :return: The id of this BusinessNodeModel.
         :rtype: int
@@ -225,7 +225,7 @@ class BusinessNodeModel:
     def id(self, id):
         """Sets the id of this BusinessNodeModel.
 
-        业务id
+        应用id。
 
         :param id: The id of this BusinessNodeModel.
         :type id: int
@@ -236,7 +236,7 @@ class BusinessNodeModel:
     def inner_domain_id(self):
         """Gets the inner_domain_id of this BusinessNodeModel.
 
-        内部租户id
+        内部租户id。
 
         :return: The inner_domain_id of this BusinessNodeModel.
         :rtype: int
@@ -247,7 +247,7 @@ class BusinessNodeModel:
     def inner_domain_id(self, inner_domain_id):
         """Sets the inner_domain_id of this BusinessNodeModel.
 
-        内部租户id
+        内部租户id。
 
         :param inner_domain_id: The inner_domain_id of this BusinessNodeModel.
         :type inner_domain_id: int
@@ -258,7 +258,7 @@ class BusinessNodeModel:
     def is_default(self):
         """Gets the is_default of this BusinessNodeModel.
 
-        是否是默认的业务
+        是否是默认的应用。
 
         :return: The is_default of this BusinessNodeModel.
         :rtype: bool
@@ -269,7 +269,7 @@ class BusinessNodeModel:
     def is_default(self, is_default):
         """Sets the is_default of this BusinessNodeModel.
 
-        是否是默认的业务
+        是否是默认的应用。
 
         :param is_default: The is_default of this BusinessNodeModel.
         :type is_default: bool
@@ -280,7 +280,7 @@ class BusinessNodeModel:
     def name(self):
         """Gets the name of this BusinessNodeModel.
 
-        业务的英文名称
+        应用的英文名称。
 
         :return: The name of this BusinessNodeModel.
         :rtype: str
@@ -291,7 +291,7 @@ class BusinessNodeModel:
     def name(self, name):
         """Sets the name of this BusinessNodeModel.
 
-        业务的英文名称
+        应用的英文名称。
 
         :param name: The name of this BusinessNodeModel.
         :type name: str

@@ -13,13 +13,15 @@ from huaweicloudsdker.v3.model.association_request_body import AssociationReques
 from huaweicloudsdker.v3.model.attachment_details import AttachmentDetails
 from huaweicloudsdker.v3.model.attachment_response import AttachmentResponse
 from huaweicloudsdker.v3.model.available_zone import AvailableZone
-from huaweicloudsdker.v3.model.bgp_options import BgpOptions
 from huaweicloudsdker.v3.model.change_availability_zone_request import ChangeAvailabilityZoneRequest
 from huaweicloudsdker.v3.model.change_availability_zone_response import ChangeAvailabilityZoneResponse
 from huaweicloudsdker.v3.model.create_enterprise_router import CreateEnterpriseRouter
 from huaweicloudsdker.v3.model.create_enterprise_router_request import CreateEnterpriseRouterRequest
 from huaweicloudsdker.v3.model.create_enterprise_router_request_body import CreateEnterpriseRouterRequestBody
 from huaweicloudsdker.v3.model.create_enterprise_router_response import CreateEnterpriseRouterResponse
+from huaweicloudsdker.v3.model.create_resource_tag_request import CreateResourceTagRequest
+from huaweicloudsdker.v3.model.create_resource_tag_request_body import CreateResourceTagRequestBody
+from huaweicloudsdker.v3.model.create_resource_tag_response import CreateResourceTagResponse
 from huaweicloudsdker.v3.model.create_route import CreateRoute
 from huaweicloudsdker.v3.model.create_route_request_body import CreateRouteRequestBody
 from huaweicloudsdker.v3.model.create_route_table import CreateRouteTable
@@ -33,6 +35,8 @@ from huaweicloudsdker.v3.model.create_vpc_attachment_request import CreateVpcAtt
 from huaweicloudsdker.v3.model.create_vpc_attachment_response import CreateVpcAttachmentResponse
 from huaweicloudsdker.v3.model.delete_enterprise_router_request import DeleteEnterpriseRouterRequest
 from huaweicloudsdker.v3.model.delete_enterprise_router_response import DeleteEnterpriseRouterResponse
+from huaweicloudsdker.v3.model.delete_resource_tag_request import DeleteResourceTagRequest
+from huaweicloudsdker.v3.model.delete_resource_tag_response import DeleteResourceTagResponse
 from huaweicloudsdker.v3.model.delete_route_table_request import DeleteRouteTableRequest
 from huaweicloudsdker.v3.model.delete_route_table_response import DeleteRouteTableResponse
 from huaweicloudsdker.v3.model.delete_static_route_request import DeleteStaticRouteRequest
@@ -60,6 +64,8 @@ from huaweicloudsdker.v3.model.list_effective_routes_request import ListEffectiv
 from huaweicloudsdker.v3.model.list_effective_routes_response import ListEffectiveRoutesResponse
 from huaweicloudsdker.v3.model.list_enterprise_routers_request import ListEnterpriseRoutersRequest
 from huaweicloudsdker.v3.model.list_enterprise_routers_response import ListEnterpriseRoutersResponse
+from huaweicloudsdker.v3.model.list_project_tags_request import ListProjectTagsRequest
+from huaweicloudsdker.v3.model.list_project_tags_response import ListProjectTagsResponse
 from huaweicloudsdker.v3.model.list_propagations_request import ListPropagationsRequest
 from huaweicloudsdker.v3.model.list_propagations_response import ListPropagationsResponse
 from huaweicloudsdker.v3.model.list_route_tables_request import ListRouteTablesRequest
@@ -78,6 +84,8 @@ from huaweicloudsdker.v3.model.show_attachment_request import ShowAttachmentRequ
 from huaweicloudsdker.v3.model.show_attachment_response import ShowAttachmentResponse
 from huaweicloudsdker.v3.model.show_enterprise_router_request import ShowEnterpriseRouterRequest
 from huaweicloudsdker.v3.model.show_enterprise_router_response import ShowEnterpriseRouterResponse
+from huaweicloudsdker.v3.model.show_resource_tag_request import ShowResourceTagRequest
+from huaweicloudsdker.v3.model.show_resource_tag_response import ShowResourceTagResponse
 from huaweicloudsdker.v3.model.show_route_table_request import ShowRouteTableRequest
 from huaweicloudsdker.v3.model.show_route_table_response import ShowRouteTableResponse
 from huaweicloudsdker.v3.model.show_static_route_request import ShowStaticRouteRequest
@@ -85,6 +93,7 @@ from huaweicloudsdker.v3.model.show_static_route_response import ShowStaticRoute
 from huaweicloudsdker.v3.model.show_vpc_attachment_request import ShowVpcAttachmentRequest
 from huaweicloudsdker.v3.model.show_vpc_attachment_response import ShowVpcAttachmentResponse
 from huaweicloudsdker.v3.model.tag import Tag
+from huaweicloudsdker.v3.model.tags import Tags
 from huaweicloudsdker.v3.model.update_attachment_body import UpdateAttachmentBody
 from huaweicloudsdker.v3.model.update_attachment_request import UpdateAttachmentRequest
 from huaweicloudsdker.v3.model.update_attachment_request_body import UpdateAttachmentRequestBody

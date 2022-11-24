@@ -38,7 +38,7 @@ class NodePoolSpecUpdate:
 
         :param node_template: 
         :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpecUpdate`
-        :param initial_node_count: 节点池初始化节点个数。查询时为节点池目标节点数量。
+        :param initial_node_count: 节点池初始化节点个数。查询时为节点池目标节点数量。默认值为0。
         :type initial_node_count: int
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
@@ -77,7 +77,7 @@ class NodePoolSpecUpdate:
     def initial_node_count(self):
         """Gets the initial_node_count of this NodePoolSpecUpdate.
 
-        节点池初始化节点个数。查询时为节点池目标节点数量。
+        节点池初始化节点个数。查询时为节点池目标节点数量。默认值为0。
 
         :return: The initial_node_count of this NodePoolSpecUpdate.
         :rtype: int
@@ -88,7 +88,7 @@ class NodePoolSpecUpdate:
     def initial_node_count(self, initial_node_count):
         """Sets the initial_node_count of this NodePoolSpecUpdate.
 
-        节点池初始化节点个数。查询时为节点池目标节点数量。
+        节点池初始化节点个数。查询时为节点池目标节点数量。默认值为0。
 
         :param initial_node_count: The initial_node_count of this NodePoolSpecUpdate.
         :type initial_node_count: int

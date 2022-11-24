@@ -44,19 +44,19 @@ class TraceTopologyLine:
 
         The model defined in huaweicloud sdk
 
-        :param start_node_id: 开始节点id
+        :param start_node_id: 开始节点id。
         :type start_node_id: int
-        :param end_node_id: 结束节点id
+        :param end_node_id: 结束节点id。
         :type end_node_id: int
-        :param span_id: 调用跨度id
+        :param span_id: 调用跨度id。
         :type span_id: str
         :param client_info: 
         :type client_info: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`
         :param server_info: 
         :type server_info: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`
-        :param id: id
+        :param id: id。
         :type id: str
-        :param hint: 获取一条线的提示信息
+        :param hint: 获取一条线的提示信息。
         :type hint: str
         """
         
@@ -90,7 +90,7 @@ class TraceTopologyLine:
     def start_node_id(self):
         """Gets the start_node_id of this TraceTopologyLine.
 
-        开始节点id
+        开始节点id。
 
         :return: The start_node_id of this TraceTopologyLine.
         :rtype: int
@@ -101,7 +101,7 @@ class TraceTopologyLine:
     def start_node_id(self, start_node_id):
         """Sets the start_node_id of this TraceTopologyLine.
 
-        开始节点id
+        开始节点id。
 
         :param start_node_id: The start_node_id of this TraceTopologyLine.
         :type start_node_id: int
@@ -112,7 +112,7 @@ class TraceTopologyLine:
     def end_node_id(self):
         """Gets the end_node_id of this TraceTopologyLine.
 
-        结束节点id
+        结束节点id。
 
         :return: The end_node_id of this TraceTopologyLine.
         :rtype: int
@@ -123,7 +123,7 @@ class TraceTopologyLine:
     def end_node_id(self, end_node_id):
         """Sets the end_node_id of this TraceTopologyLine.
 
-        结束节点id
+        结束节点id。
 
         :param end_node_id: The end_node_id of this TraceTopologyLine.
         :type end_node_id: int
@@ -134,7 +134,7 @@ class TraceTopologyLine:
     def span_id(self):
         """Gets the span_id of this TraceTopologyLine.
 
-        调用跨度id
+        调用跨度id。
 
         :return: The span_id of this TraceTopologyLine.
         :rtype: str
@@ -145,7 +145,7 @@ class TraceTopologyLine:
     def span_id(self, span_id):
         """Sets the span_id of this TraceTopologyLine.
 
-        调用跨度id
+        调用跨度id。
 
         :param span_id: The span_id of this TraceTopologyLine.
         :type span_id: str
@@ -192,7 +192,7 @@ class TraceTopologyLine:
     def id(self):
         """Gets the id of this TraceTopologyLine.
 
-        id
+        id。
 
         :return: The id of this TraceTopologyLine.
         :rtype: str
@@ -203,7 +203,7 @@ class TraceTopologyLine:
     def id(self, id):
         """Sets the id of this TraceTopologyLine.
 
-        id
+        id。
 
         :param id: The id of this TraceTopologyLine.
         :type id: str
@@ -214,7 +214,7 @@ class TraceTopologyLine:
     def hint(self):
         """Gets the hint of this TraceTopologyLine.
 
-        获取一条线的提示信息
+        获取一条线的提示信息。
 
         :return: The hint of this TraceTopologyLine.
         :rtype: str
@@ -225,7 +225,7 @@ class TraceTopologyLine:
     def hint(self, hint):
         """Sets the hint of this TraceTopologyLine.
 
-        获取一条线的提示信息
+        获取一条线的提示信息。
 
         :param hint: The hint of this TraceTopologyLine.
         :type hint: str

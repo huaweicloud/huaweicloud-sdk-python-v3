@@ -27,6 +27,7 @@ class DeleteClusterRequest:
         'delete_net': 'str',
         'delete_obs': 'str',
         'delete_sfs': 'str',
+        'delete_sfs30': 'str',
         'tobedeleted': 'str'
     }
 
@@ -38,10 +39,11 @@ class DeleteClusterRequest:
         'delete_net': 'delete_net',
         'delete_obs': 'delete_obs',
         'delete_sfs': 'delete_sfs',
+        'delete_sfs30': 'delete_sfs30',
         'tobedeleted': 'tobedeleted'
     }
 
-    def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None, tobedeleted=None):
+    def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None, delete_sfs30=None, tobedeleted=None):
         """DeleteClusterRequest
 
         The model defined in huaweicloud sdk
@@ -60,6 +62,8 @@ class DeleteClusterRequest:
         :type delete_obs: str
         :param delete_sfs: 是否删除sfs（文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
         :type delete_sfs: str
+        :param delete_sfs30: 是否删除sfs3.0（文件存储卷3.0）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        :type delete_sfs30: str
         :param tobedeleted: 是否使用包周期集群删除参数预置模式（仅对包周期集群生效）。 需要和其他删除选项参数一起使用，未指定的参数，则使用默认值。 使用该参数，集群不执行真正的删除，仅将本次请求的全部query参数都预置到集群数据库中，用于包周期集群退订时识别用户要删除的资源。 允许重复执行，覆盖预置的删除参数。 枚举取值： - true  (预置模式，仅预置query参数，不执行删除)
         :type tobedeleted: str
         """
@@ -73,6 +77,7 @@ class DeleteClusterRequest:
         self._delete_net = None
         self._delete_obs = None
         self._delete_sfs = None
+        self._delete_sfs30 = None
         self._tobedeleted = None
         self.discriminator = None
 
@@ -89,6 +94,8 @@ class DeleteClusterRequest:
             self.delete_obs = delete_obs
         if delete_sfs is not None:
             self.delete_sfs = delete_sfs
+        if delete_sfs30 is not None:
+            self.delete_sfs30 = delete_sfs30
         if tobedeleted is not None:
             self.tobedeleted = tobedeleted
 
@@ -245,6 +252,28 @@ class DeleteClusterRequest:
         :type delete_sfs: str
         """
         self._delete_sfs = delete_sfs
+
+    @property
+    def delete_sfs30(self):
+        """Gets the delete_sfs30 of this DeleteClusterRequest.
+
+        是否删除sfs3.0（文件存储卷3.0）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+
+        :return: The delete_sfs30 of this DeleteClusterRequest.
+        :rtype: str
+        """
+        return self._delete_sfs30
+
+    @delete_sfs30.setter
+    def delete_sfs30(self, delete_sfs30):
+        """Sets the delete_sfs30 of this DeleteClusterRequest.
+
+        是否删除sfs3.0（文件存储卷3.0）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+
+        :param delete_sfs30: The delete_sfs30 of this DeleteClusterRequest.
+        :type delete_sfs30: str
+        """
+        self._delete_sfs30 = delete_sfs30
 
     @property
     def tobedeleted(self):

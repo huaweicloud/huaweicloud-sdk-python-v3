@@ -44,15 +44,15 @@ class TrendParam:
 
         :param view_config: 
         :type view_config: :class:`huaweicloudsdkapm.v1.TrendView`
-        :param instance_id: 实例id
+        :param instance_id: 实例id。
         :type instance_id: int
-        :param monitor_item_id: 监控项id
+        :param monitor_item_id: 监控项id。
         :type monitor_item_id: int
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param start_time: 开始时间
+        :param start_time: 开始时间。
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: 结束时间。
         :type end_time: str
         """
         
@@ -101,7 +101,7 @@ class TrendParam:
     def instance_id(self):
         """Gets the instance_id of this TrendParam.
 
-        实例id
+        实例id。
 
         :return: The instance_id of this TrendParam.
         :rtype: int
@@ -112,7 +112,7 @@ class TrendParam:
     def instance_id(self, instance_id):
         """Sets the instance_id of this TrendParam.
 
-        实例id
+        实例id。
 
         :param instance_id: The instance_id of this TrendParam.
         :type instance_id: int
@@ -123,7 +123,7 @@ class TrendParam:
     def monitor_item_id(self):
         """Gets the monitor_item_id of this TrendParam.
 
-        监控项id
+        监控项id。
 
         :return: The monitor_item_id of this TrendParam.
         :rtype: int
@@ -134,7 +134,7 @@ class TrendParam:
     def monitor_item_id(self, monitor_item_id):
         """Sets the monitor_item_id of this TrendParam.
 
-        监控项id
+        监控项id。
 
         :param monitor_item_id: The monitor_item_id of this TrendParam.
         :type monitor_item_id: int
@@ -145,7 +145,7 @@ class TrendParam:
     def env_id(self):
         """Gets the env_id of this TrendParam.
 
-        环境id
+        环境id。
 
         :return: The env_id of this TrendParam.
         :rtype: int
@@ -156,7 +156,7 @@ class TrendParam:
     def env_id(self, env_id):
         """Sets the env_id of this TrendParam.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this TrendParam.
         :type env_id: int
@@ -167,7 +167,7 @@ class TrendParam:
     def start_time(self):
         """Gets the start_time of this TrendParam.
 
-        开始时间
+        开始时间。
 
         :return: The start_time of this TrendParam.
         :rtype: str
@@ -178,7 +178,7 @@ class TrendParam:
     def start_time(self, start_time):
         """Sets the start_time of this TrendParam.
 
-        开始时间
+        开始时间。
 
         :param start_time: The start_time of this TrendParam.
         :type start_time: str
@@ -189,7 +189,7 @@ class TrendParam:
     def end_time(self):
         """Gets the end_time of this TrendParam.
 
-        结束时间
+        结束时间。
 
         :return: The end_time of this TrendParam.
         :rtype: str
@@ -200,7 +200,7 @@ class TrendParam:
     def end_time(self, end_time):
         """Sets the end_time of this TrendParam.
 
-        结束时间
+        结束时间。
 
         :param end_time: The end_time of this TrendParam.
         :type end_time: str

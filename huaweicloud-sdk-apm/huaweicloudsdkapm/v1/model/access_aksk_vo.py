@@ -21,8 +21,8 @@ class AccessAkskVO:
 
     openapi_types = {
         'id': 'int',
-        'gmt_create': 'date',
-        'gmt_modify': 'date',
+        'gmt_create': 'str',
+        'gmt_modify': 'str',
         'inner_domain_id': 'int',
         'ak': 'str',
         'sk': 'str',
@@ -46,21 +46,21 @@ class AccessAkskVO:
 
         The model defined in huaweicloud sdk
 
-        :param id: ak/sk的id
+        :param id: ak/sk的id。
         :type id: int
-        :param gmt_create: ak/sk的生成时间
-        :type gmt_create: date
-        :param gmt_modify: ak/sk的修改时间
-        :type gmt_modify: date
-        :param inner_domain_id: 内部租户id
+        :param gmt_create: ak/sk的生成时间。
+        :type gmt_create: str
+        :param gmt_modify: ak/sk的修改时间。
+        :type gmt_modify: str
+        :param inner_domain_id: 内部租户id。
         :type inner_domain_id: int
-        :param ak: 生成的ak
+        :param ak: 生成的ak。
         :type ak: str
-        :param sk: 生成的sk
+        :param sk: 生成的sk。
         :type sk: str
-        :param status: ak/sk的状态
+        :param status: ak/sk的状态。
         :type status: str
-        :param descp: ak/sk的描述信息
+        :param descp: ak/sk的描述信息。
         :type descp: str
         """
         
@@ -97,7 +97,7 @@ class AccessAkskVO:
     def id(self):
         """Gets the id of this AccessAkskVO.
 
-        ak/sk的id
+        ak/sk的id。
 
         :return: The id of this AccessAkskVO.
         :rtype: int
@@ -108,7 +108,7 @@ class AccessAkskVO:
     def id(self, id):
         """Sets the id of this AccessAkskVO.
 
-        ak/sk的id
+        ak/sk的id。
 
         :param id: The id of this AccessAkskVO.
         :type id: int
@@ -119,10 +119,10 @@ class AccessAkskVO:
     def gmt_create(self):
         """Gets the gmt_create of this AccessAkskVO.
 
-        ak/sk的生成时间
+        ak/sk的生成时间。
 
         :return: The gmt_create of this AccessAkskVO.
-        :rtype: date
+        :rtype: str
         """
         return self._gmt_create
 
@@ -130,10 +130,10 @@ class AccessAkskVO:
     def gmt_create(self, gmt_create):
         """Sets the gmt_create of this AccessAkskVO.
 
-        ak/sk的生成时间
+        ak/sk的生成时间。
 
         :param gmt_create: The gmt_create of this AccessAkskVO.
-        :type gmt_create: date
+        :type gmt_create: str
         """
         self._gmt_create = gmt_create
 
@@ -141,10 +141,10 @@ class AccessAkskVO:
     def gmt_modify(self):
         """Gets the gmt_modify of this AccessAkskVO.
 
-        ak/sk的修改时间
+        ak/sk的修改时间。
 
         :return: The gmt_modify of this AccessAkskVO.
-        :rtype: date
+        :rtype: str
         """
         return self._gmt_modify
 
@@ -152,10 +152,10 @@ class AccessAkskVO:
     def gmt_modify(self, gmt_modify):
         """Sets the gmt_modify of this AccessAkskVO.
 
-        ak/sk的修改时间
+        ak/sk的修改时间。
 
         :param gmt_modify: The gmt_modify of this AccessAkskVO.
-        :type gmt_modify: date
+        :type gmt_modify: str
         """
         self._gmt_modify = gmt_modify
 
@@ -163,7 +163,7 @@ class AccessAkskVO:
     def inner_domain_id(self):
         """Gets the inner_domain_id of this AccessAkskVO.
 
-        内部租户id
+        内部租户id。
 
         :return: The inner_domain_id of this AccessAkskVO.
         :rtype: int
@@ -174,7 +174,7 @@ class AccessAkskVO:
     def inner_domain_id(self, inner_domain_id):
         """Sets the inner_domain_id of this AccessAkskVO.
 
-        内部租户id
+        内部租户id。
 
         :param inner_domain_id: The inner_domain_id of this AccessAkskVO.
         :type inner_domain_id: int
@@ -185,7 +185,7 @@ class AccessAkskVO:
     def ak(self):
         """Gets the ak of this AccessAkskVO.
 
-        生成的ak
+        生成的ak。
 
         :return: The ak of this AccessAkskVO.
         :rtype: str
@@ -196,7 +196,7 @@ class AccessAkskVO:
     def ak(self, ak):
         """Sets the ak of this AccessAkskVO.
 
-        生成的ak
+        生成的ak。
 
         :param ak: The ak of this AccessAkskVO.
         :type ak: str
@@ -207,7 +207,7 @@ class AccessAkskVO:
     def sk(self):
         """Gets the sk of this AccessAkskVO.
 
-        生成的sk
+        生成的sk。
 
         :return: The sk of this AccessAkskVO.
         :rtype: str
@@ -218,7 +218,7 @@ class AccessAkskVO:
     def sk(self, sk):
         """Sets the sk of this AccessAkskVO.
 
-        生成的sk
+        生成的sk。
 
         :param sk: The sk of this AccessAkskVO.
         :type sk: str
@@ -229,7 +229,7 @@ class AccessAkskVO:
     def status(self):
         """Gets the status of this AccessAkskVO.
 
-        ak/sk的状态
+        ak/sk的状态。
 
         :return: The status of this AccessAkskVO.
         :rtype: str
@@ -240,7 +240,7 @@ class AccessAkskVO:
     def status(self, status):
         """Sets the status of this AccessAkskVO.
 
-        ak/sk的状态
+        ak/sk的状态。
 
         :param status: The status of this AccessAkskVO.
         :type status: str
@@ -251,7 +251,7 @@ class AccessAkskVO:
     def descp(self):
         """Gets the descp of this AccessAkskVO.
 
-        ak/sk的描述信息
+        ak/sk的描述信息。
 
         :return: The descp of this AccessAkskVO.
         :rtype: str
@@ -262,7 +262,7 @@ class AccessAkskVO:
     def descp(self, descp):
         """Sets the descp of this AccessAkskVO.
 
-        ak/sk的描述信息
+        ak/sk的描述信息。
 
         :param descp: The descp of this AccessAkskVO.
         :type descp: str

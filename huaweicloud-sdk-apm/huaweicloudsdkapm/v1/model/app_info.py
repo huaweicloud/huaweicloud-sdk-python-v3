@@ -44,19 +44,19 @@ class AppInfo:
 
         The model defined in huaweicloud sdk
 
-        :param env_name: 环境名称
+        :param env_name: 环境名称。
         :type env_name: str
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param app_name: 应用空名称
+        :param app_name: 组件名称。
         :type app_name: str
-        :param app_id: 应用id
+        :param app_id: 组件id。
         :type app_id: int
-        :param online_count: 在线探针数
+        :param online_count: 在线探针数。
         :type online_count: int
-        :param disable_count: 手动停止探针数
+        :param disable_count: 手动停止探针数。
         :type disable_count: int
-        :param offline_count: 离线探针数
+        :param offline_count: 离线探针数。
         :type offline_count: int
         """
         
@@ -90,7 +90,7 @@ class AppInfo:
     def env_name(self):
         """Gets the env_name of this AppInfo.
 
-        环境名称
+        环境名称。
 
         :return: The env_name of this AppInfo.
         :rtype: str
@@ -101,7 +101,7 @@ class AppInfo:
     def env_name(self, env_name):
         """Sets the env_name of this AppInfo.
 
-        环境名称
+        环境名称。
 
         :param env_name: The env_name of this AppInfo.
         :type env_name: str
@@ -112,7 +112,7 @@ class AppInfo:
     def env_id(self):
         """Gets the env_id of this AppInfo.
 
-        环境id
+        环境id。
 
         :return: The env_id of this AppInfo.
         :rtype: int
@@ -123,7 +123,7 @@ class AppInfo:
     def env_id(self, env_id):
         """Sets the env_id of this AppInfo.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this AppInfo.
         :type env_id: int
@@ -134,7 +134,7 @@ class AppInfo:
     def app_name(self):
         """Gets the app_name of this AppInfo.
 
-        应用空名称
+        组件名称。
 
         :return: The app_name of this AppInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class AppInfo:
     def app_name(self, app_name):
         """Sets the app_name of this AppInfo.
 
-        应用空名称
+        组件名称。
 
         :param app_name: The app_name of this AppInfo.
         :type app_name: str
@@ -156,7 +156,7 @@ class AppInfo:
     def app_id(self):
         """Gets the app_id of this AppInfo.
 
-        应用id
+        组件id。
 
         :return: The app_id of this AppInfo.
         :rtype: int
@@ -167,7 +167,7 @@ class AppInfo:
     def app_id(self, app_id):
         """Sets the app_id of this AppInfo.
 
-        应用id
+        组件id。
 
         :param app_id: The app_id of this AppInfo.
         :type app_id: int
@@ -178,7 +178,7 @@ class AppInfo:
     def online_count(self):
         """Gets the online_count of this AppInfo.
 
-        在线探针数
+        在线探针数。
 
         :return: The online_count of this AppInfo.
         :rtype: int
@@ -189,7 +189,7 @@ class AppInfo:
     def online_count(self, online_count):
         """Sets the online_count of this AppInfo.
 
-        在线探针数
+        在线探针数。
 
         :param online_count: The online_count of this AppInfo.
         :type online_count: int
@@ -200,7 +200,7 @@ class AppInfo:
     def disable_count(self):
         """Gets the disable_count of this AppInfo.
 
-        手动停止探针数
+        手动停止探针数。
 
         :return: The disable_count of this AppInfo.
         :rtype: int
@@ -211,7 +211,7 @@ class AppInfo:
     def disable_count(self, disable_count):
         """Sets the disable_count of this AppInfo.
 
-        手动停止探针数
+        手动停止探针数。
 
         :param disable_count: The disable_count of this AppInfo.
         :type disable_count: int
@@ -222,7 +222,7 @@ class AppInfo:
     def offline_count(self):
         """Gets the offline_count of this AppInfo.
 
-        离线探针数
+        离线探针数。
 
         :return: The offline_count of this AppInfo.
         :rtype: int
@@ -233,7 +233,7 @@ class AppInfo:
     def offline_count(self, offline_count):
         """Sets the offline_count of this AppInfo.
 
-        离线探针数
+        离线探针数。
 
         :param offline_count: The offline_count of this AppInfo.
         :type offline_count: int

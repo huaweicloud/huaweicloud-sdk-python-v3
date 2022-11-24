@@ -45,7 +45,7 @@ class ApmAsyncClient(Client):
     def create_ak_sk_async(self, request):
         """创建aksk
 
-        创建aksk
+        创建aksk。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -107,7 +107,7 @@ class ApmAsyncClient(Client):
     def delete_ak_sk_async(self, request):
         """删除aksk
 
-        删除aksk
+        删除aksk。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -169,7 +169,7 @@ class ApmAsyncClient(Client):
     def show_ak_sks_async(self, request):
         """查询租户的aksk
 
-        查询租户的aksk
+        查询租户的aksk。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -221,6 +221,134 @@ class ApmAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowAkSksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_alarm_data_async(self, request):
+        """查询告警列表
+
+        查询系统中存在的告警。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlarmData
+        :type request: :class:`huaweicloudsdkapm.v1.ListAlarmDataRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ListAlarmDataResponse`
+        """
+        return self.list_alarm_data_with_http_info(request)
+
+    def list_alarm_data_with_http_info(self, request):
+        all_params = ['x_business_id', 'alarm_data_list_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/alarm/data/get-alarm-data-list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAlarmDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_alarm_notify_async(self, request):
+        """查询告警消息列表
+
+        查询单个告警的触发详情与历史。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlarmNotify
+        :type request: :class:`huaweicloudsdkapm.v1.ListAlarmNotifyRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ListAlarmNotifyResponse`
+        """
+        return self.list_alarm_notify_with_http_info(request)
+
+    def list_alarm_notify_with_http_info(self, request):
+        all_params = ['x_business_id', 'alarm_notify_list_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/alarm/data/get-alarm-notify-list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAlarmNotifyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -287,9 +415,9 @@ class ApmAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_business_async(self, request):
-        """查询业务列表
+        """查询应用列表
 
-        该接口用于查询对应用户下的业务。
+        该接口用于查询对应用户下的应用。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -349,7 +477,7 @@ class ApmAsyncClient(Client):
     def list_env_monitor_item_async(self, request):
         """查询监控项列表
 
-        查询监控项列表
+        查询监控项列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -413,7 +541,7 @@ class ApmAsyncClient(Client):
     def save_monitor_item_config_async(self, request):
         """保存监控项
 
-        保存监控项
+        保存监控项。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -475,9 +603,9 @@ class ApmAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def search_application_async(self, request):
-        """对指定区域下的应用和环境及其探针情况进行搜索
+        """对指定区域下的组件和环境及其探针情况进行搜索
 
-        对指定区域下的应用和环境及其探针情况进行搜索
+        对指定区域下的组件和环境及其探针情况进行搜索。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -541,7 +669,7 @@ class ApmAsyncClient(Client):
     def show_master_address_async(self, request):
         """查询master地址
 
-        根据region名称获取该名称下的master服务podlb地址信息。
+        根据region名称获取该region下的master服务podlb地址信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -603,7 +731,7 @@ class ApmAsyncClient(Client):
     def delete_app_async(self, request):
         """根据组件id删除指定的组件
 
-        该接口用于删除指定的组件
+        该接口用于删除指定的组件。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -664,74 +792,10 @@ class ApmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def delete_env_async(self, request):
-        """根据环境id删除指定的环境
-
-        该接口用于删除指定的环境
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteEnv
-        :type request: :class:`huaweicloudsdkapm.v1.DeleteEnvRequest`
-        :rtype: :class:`huaweicloudsdkapm.v1.DeleteEnvResponse`
-        """
-        return self.delete_env_with_http_info(request)
-
-    def delete_env_with_http_info(self, request):
-        all_params = ['env_id', 'x_business_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'env_id' in local_var_params:
-            path_params['env_id'] = local_var_params['env_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_business_id' in local_var_params:
-            header_params['x-business-id'] = local_var_params['x_business_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/cmdb/envs/delete-env/{env_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def list_app_envs_async(self, request):
         """获取组件下的环境列表
 
-        获取组件下的环境列表
+        获取组件下的环境列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -795,7 +859,7 @@ class ApmAsyncClient(Client):
     def list_apps_async(self, request):
         """获取组件列表
 
-        获取组件列表
+        获取组件列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -859,7 +923,7 @@ class ApmAsyncClient(Client):
     def list_env_tags_async(self, request):
         """查询环境标签
 
-        查询环境标签接口
+        查询环境标签接口。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -920,10 +984,138 @@ class ApmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def show_topology_tree_async(self, request):
-        """获取业务树
+    def show_business_detail_async(self, request):
+        """查询单个应用的详情
 
-        获取业务树
+        查询单个应用的详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBusinessDetail
+        :type request: :class:`huaweicloudsdkapm.v1.ShowBusinessDetailRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ShowBusinessDetailResponse`
+        """
+        return self.show_business_detail_with_http_info(request)
+
+    def show_business_detail_with_http_info(self, request):
+        all_params = ['business_id', 'x_business_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'business_id' in local_var_params:
+            path_params['business_id'] = local_var_params['business_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/cmdb/business/get-business-detail/{business_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowBusinessDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_sub_business_detail_async(self, request):
+        """查询子应用详情
+
+        查询单个子应用详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSubBusinessDetail
+        :type request: :class:`huaweicloudsdkapm.v1.ShowSubBusinessDetailRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ShowSubBusinessDetailResponse`
+        """
+        return self.show_sub_business_detail_with_http_info(request)
+
+    def show_sub_business_detail_with_http_info(self, request):
+        all_params = ['sub_business_id', 'x_business_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_business_id' in local_var_params:
+            path_params['sub_business_id'] = local_var_params['sub_business_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/cmdb/sub-business/get-sub-business-detail/{sub_business_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowSubBusinessDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_topology_tree_async(self, request):
+        """获取应用树
+
+        获取应用树。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -936,7 +1128,7 @@ class ApmAsyncClient(Client):
         return self.show_topology_tree_with_http_info(request)
 
     def show_topology_tree_with_http_info(self, request):
-        all_params = ['x_business_id', 'region_id', 'business_id', 'env_tag_id', 'env_keyword']
+        all_params = ['business_id', 'x_business_id', 'region_id', 'env_tag_id', 'env_keyword']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -993,7 +1185,7 @@ class ApmAsyncClient(Client):
     def list_open_region_async(self, request):
         """查询开通的region
 
-        该接口用于查询用户开通的region信息
+        该接口用于查询用户开通的region信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1110,10 +1302,394 @@ class ApmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def search_business_topology_async(self, request):
+        """查询应用全局拓扑图
+
+        查询应用级别全局拓扑图信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchBusinessTopology
+        :type request: :class:`huaweicloudsdkapm.v1.SearchBusinessTopologyRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.SearchBusinessTopologyResponse`
+        """
+        return self.search_business_topology_with_http_info(request)
+
+    def search_business_topology_with_http_info(self, request):
+        all_params = ['x_business_id', 'business_topo_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/topology/business-search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SearchBusinessTopologyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_env_topology_async(self, request):
+        """查询组件环境拓扑图
+
+        查询组件环境级别全局拓扑图信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchEnvTopology
+        :type request: :class:`huaweicloudsdkapm.v1.SearchEnvTopologyRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.SearchEnvTopologyResponse`
+        """
+        return self.search_env_topology_with_http_info(request)
+
+    def search_env_topology_with_http_info(self, request):
+        all_params = ['x_business_id', 'env_topo_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/topology/env-search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SearchEnvTopologyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_business_env_async(self, request):
+        """查询URL跟踪Region环境列表
+
+        查询所选Region下设置了URL跟踪的环境列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBusinessEnv
+        :type request: :class:`huaweicloudsdkapm.v1.ListBusinessEnvRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ListBusinessEnvResponse`
+        """
+        return self.list_business_env_with_http_info(request)
+
+    def list_business_env_with_http_info(self, request):
+        all_params = ['x_business_id', 'business_env_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/transaction/business-env',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListBusinessEnvResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_transaction_async(self, request):
+        """查询URL跟踪视图列表
+
+        查询当前被调用的URL跟踪视图列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchTransaction
+        :type request: :class:`huaweicloudsdkapm.v1.SearchTransactionRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.SearchTransactionResponse`
+        """
+        return self.search_transaction_with_http_info(request)
+
+    def search_transaction_with_http_info(self, request):
+        all_params = ['x_business_id', 'tx_search_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/transaction/search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SearchTransactionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_transaction_config_async(self, request):
+        """查询URL跟踪配置列表
+
+        查询已配置好的URL跟踪配置列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchTransactionConfig
+        :type request: :class:`huaweicloudsdkapm.v1.SearchTransactionConfigRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.SearchTransactionConfigResponse`
+        """
+        return self.search_transaction_config_with_http_info(request)
+
+    def search_transaction_config_with_http_info(self, request):
+        all_params = ['x_business_id', 'transaction_config_search_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/transaction/transaction-config-search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SearchTransactionConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_transaction_detail_async(self, request):
+        """查询URL跟踪视图详情
+
+        查询某条URL跟踪视图详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTransactionDetail
+        :type request: :class:`huaweicloudsdkapm.v1.ShowTransactionDetailRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ShowTransactionDetailResponse`
+        """
+        return self.show_transaction_detail_with_http_info(request)
+
+    def show_transaction_detail_with_http_info(self, request):
+        all_params = ['x_business_id', 'tx_detail_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/transaction/detail',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTransactionDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_env_instances_async(self, request):
         """获取实例信息列表
 
-        获取实例信息列表
+        获取实例信息列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1177,7 +1753,7 @@ class ApmAsyncClient(Client):
     def show_clob_detail_async(self, request):
         """获取原始数据详情
 
-        获取原始数据详情
+        获取原始数据详情。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1239,8 +1815,9 @@ class ApmAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_env_monitor_items_async(self, request):
-        """show_env_monitor_items
+        """获取监控项信息
 
+        获取监控项信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1304,7 +1881,7 @@ class ApmAsyncClient(Client):
     def show_event_detail_async(self, request):
         """获取event的详情
 
-        获取event的详情
+        获取event的详情。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1372,7 +1949,7 @@ class ApmAsyncClient(Client):
     def show_monitor_item_view_config_async(self, request):
         """查询监控项配置信息
 
-        查询监控项配置信息
+        查询监控项配置信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1438,7 +2015,7 @@ class ApmAsyncClient(Client):
     def show_raw_table_async(self, request):
         """获取原始数据表格
 
-        获取原始数据表格
+        获取原始数据表格。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1502,7 +2079,7 @@ class ApmAsyncClient(Client):
     def show_span_search_async(self, request):
         """查询span数据
 
-        span数据查询接口
+        span数据查询接口。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1566,7 +2143,7 @@ class ApmAsyncClient(Client):
     def show_sum_table_async(self, request):
         """获取汇总表格数据
 
-        获取汇总表格数据
+        获取汇总表格数据。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1630,7 +2207,7 @@ class ApmAsyncClient(Client):
     def show_topology_async(self, request):
         """调用链拓扑图
 
-        调用链拓扑图
+        调用链拓扑图。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1692,7 +2269,7 @@ class ApmAsyncClient(Client):
     def show_trace_events_async(self, request):
         """获取一个trace的所有调用链数据
 
-        获取一个trace的所有调用链数据
+        获取一个trace的所有调用链数据。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1754,7 +2331,7 @@ class ApmAsyncClient(Client):
     def show_trend_async(self, request):
         """获取趋势图
 
-        获取趋势图
+        获取趋势图。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

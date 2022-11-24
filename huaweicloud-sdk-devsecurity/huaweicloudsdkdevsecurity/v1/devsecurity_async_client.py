@@ -98,7 +98,7 @@ class DevSecurityAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/hmcontrol/v1/{project_id}/secapp/task',
+            resource_path='/v1/{project_id}/secapp/task',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -160,7 +160,7 @@ class DevSecurityAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/hmcontrol/v1/{project_id}/secapp/task',
+            resource_path='/v1/{project_id}/secapp/task',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -222,7 +222,7 @@ class DevSecurityAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/hmcontrol/v1/{project_id}/secapp/task-result',
+            resource_path='/v1/{project_id}/secapp/task-result',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -284,7 +284,7 @@ class DevSecurityAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/hmcontrol/v1/{project_id}/secapp/task-status',
+            resource_path='/v1/{project_id}/secapp/task-status',
             method='GET',
             path_params=path_params,
             query_params=query_params,

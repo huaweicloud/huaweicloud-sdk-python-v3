@@ -42,6 +42,67 @@ class CdnClient(Client):
 
         return ClientBuilder(clazz, "GlobalCredentials")
 
+    def batch_copy_domain(self, request):
+        """批量域名复制
+
+        批量域名复制接口
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchCopyDomain
+        :type request: :class:`huaweicloudsdkcdn.v2.BatchCopyDomainRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.BatchCopyDomainResponse`
+        """
+        return self.batch_copy_domain_with_http_info(request)
+
+    def batch_copy_domain_with_http_info(self, request):
+        all_params = ['batch_copy_d_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/configuration/domains/batch-copy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCopyDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def download_region_carrier_excel(self, request):
         """下载区域运营商指标数据表格文件
 

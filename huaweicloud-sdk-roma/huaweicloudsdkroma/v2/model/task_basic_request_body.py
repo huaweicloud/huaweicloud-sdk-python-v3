@@ -66,14 +66,10 @@ class TaskBasicRequestBody:
         self._task_tag = None
         self.discriminator = None
 
-        if task_name is not None:
-            self.task_name = task_name
-        if task_type is not None:
-            self.task_type = task_type
-        if source_datasource_id is not None:
-            self.source_datasource_id = source_datasource_id
-        if target_datasource_id is not None:
-            self.target_datasource_id = target_datasource_id
+        self.task_name = task_name
+        self.task_type = task_type
+        self.source_datasource_id = source_datasource_id
+        self.target_datasource_id = target_datasource_id
         if description is not None:
             self.description = description
         if task_tag is not None:

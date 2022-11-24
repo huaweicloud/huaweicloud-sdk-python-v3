@@ -36,11 +36,11 @@ class GetEnvMonitorItemListParam:
 
         The model defined in huaweicloud sdk
 
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param page: 页码
+        :param page: 页码。
         :type page: int
-        :param page_size: 每页数量
+        :param page_size: 每页数量。
         :type page_size: int
         """
         
@@ -59,7 +59,7 @@ class GetEnvMonitorItemListParam:
     def env_id(self):
         """Gets the env_id of this GetEnvMonitorItemListParam.
 
-        环境id
+        环境id。
 
         :return: The env_id of this GetEnvMonitorItemListParam.
         :rtype: int
@@ -70,7 +70,7 @@ class GetEnvMonitorItemListParam:
     def env_id(self, env_id):
         """Sets the env_id of this GetEnvMonitorItemListParam.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this GetEnvMonitorItemListParam.
         :type env_id: int
@@ -81,7 +81,7 @@ class GetEnvMonitorItemListParam:
     def page(self):
         """Gets the page of this GetEnvMonitorItemListParam.
 
-        页码
+        页码。
 
         :return: The page of this GetEnvMonitorItemListParam.
         :rtype: int
@@ -92,7 +92,7 @@ class GetEnvMonitorItemListParam:
     def page(self, page):
         """Sets the page of this GetEnvMonitorItemListParam.
 
-        页码
+        页码。
 
         :param page: The page of this GetEnvMonitorItemListParam.
         :type page: int
@@ -103,7 +103,7 @@ class GetEnvMonitorItemListParam:
     def page_size(self):
         """Gets the page_size of this GetEnvMonitorItemListParam.
 
-        每页数量
+        每页数量。
 
         :return: The page_size of this GetEnvMonitorItemListParam.
         :rtype: int
@@ -114,7 +114,7 @@ class GetEnvMonitorItemListParam:
     def page_size(self, page_size):
         """Sets the page_size of this GetEnvMonitorItemListParam.
 
-        每页数量
+        每页数量。
 
         :param page_size: The page_size of this GetEnvMonitorItemListParam.
         :type page_size: int

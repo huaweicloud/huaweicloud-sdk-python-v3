@@ -44,15 +44,15 @@ class ShowRawTableResponse(SdkResponse):
 
         :param row_list: 
         :type row_list: list[:class:`huaweicloudsdkapm.v1.FrontRow`]
-        :param latest_data_time: 最近一笔数据的时间
+        :param latest_data_time: 最近一笔数据的时间。
         :type latest_data_time: str
-        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向
+        :param table_direction: 表格的方向，H：默认，表头横向，V：表头纵向。
         :type table_direction: str
-        :param result_id: 上次请求id
+        :param result_id: 上次请求id。
         :type result_id: str
-        :param real_start_time: 实际开始的时间，主要用于下一次调用，特别是分页调用的时候传的参数
+        :param real_start_time: 实际开始的时间，主要用于下一次调用，特别是分页调用的时候传的参数。
         :type real_start_time: int
-        :param real_end_time: 实际结束的时间
+        :param real_end_time: 实际结束的时间。
         :type real_end_time: int
         """
         
@@ -101,7 +101,7 @@ class ShowRawTableResponse(SdkResponse):
     def latest_data_time(self):
         """Gets the latest_data_time of this ShowRawTableResponse.
 
-        最近一笔数据的时间
+        最近一笔数据的时间。
 
         :return: The latest_data_time of this ShowRawTableResponse.
         :rtype: str
@@ -112,7 +112,7 @@ class ShowRawTableResponse(SdkResponse):
     def latest_data_time(self, latest_data_time):
         """Sets the latest_data_time of this ShowRawTableResponse.
 
-        最近一笔数据的时间
+        最近一笔数据的时间。
 
         :param latest_data_time: The latest_data_time of this ShowRawTableResponse.
         :type latest_data_time: str
@@ -123,7 +123,7 @@ class ShowRawTableResponse(SdkResponse):
     def table_direction(self):
         """Gets the table_direction of this ShowRawTableResponse.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :return: The table_direction of this ShowRawTableResponse.
         :rtype: str
@@ -134,7 +134,7 @@ class ShowRawTableResponse(SdkResponse):
     def table_direction(self, table_direction):
         """Sets the table_direction of this ShowRawTableResponse.
 
-        表格的方向，H：默认，表头横向，V：表头纵向
+        表格的方向，H：默认，表头横向，V：表头纵向。
 
         :param table_direction: The table_direction of this ShowRawTableResponse.
         :type table_direction: str
@@ -145,7 +145,7 @@ class ShowRawTableResponse(SdkResponse):
     def result_id(self):
         """Gets the result_id of this ShowRawTableResponse.
 
-        上次请求id
+        上次请求id。
 
         :return: The result_id of this ShowRawTableResponse.
         :rtype: str
@@ -156,7 +156,7 @@ class ShowRawTableResponse(SdkResponse):
     def result_id(self, result_id):
         """Sets the result_id of this ShowRawTableResponse.
 
-        上次请求id
+        上次请求id。
 
         :param result_id: The result_id of this ShowRawTableResponse.
         :type result_id: str
@@ -167,7 +167,7 @@ class ShowRawTableResponse(SdkResponse):
     def real_start_time(self):
         """Gets the real_start_time of this ShowRawTableResponse.
 
-        实际开始的时间，主要用于下一次调用，特别是分页调用的时候传的参数
+        实际开始的时间，主要用于下一次调用，特别是分页调用的时候传的参数。
 
         :return: The real_start_time of this ShowRawTableResponse.
         :rtype: int
@@ -178,7 +178,7 @@ class ShowRawTableResponse(SdkResponse):
     def real_start_time(self, real_start_time):
         """Sets the real_start_time of this ShowRawTableResponse.
 
-        实际开始的时间，主要用于下一次调用，特别是分页调用的时候传的参数
+        实际开始的时间，主要用于下一次调用，特别是分页调用的时候传的参数。
 
         :param real_start_time: The real_start_time of this ShowRawTableResponse.
         :type real_start_time: int
@@ -189,7 +189,7 @@ class ShowRawTableResponse(SdkResponse):
     def real_end_time(self):
         """Gets the real_end_time of this ShowRawTableResponse.
 
-        实际结束的时间
+        实际结束的时间。
 
         :return: The real_end_time of this ShowRawTableResponse.
         :rtype: int
@@ -200,7 +200,7 @@ class ShowRawTableResponse(SdkResponse):
     def real_end_time(self, real_end_time):
         """Sets the real_end_time of this ShowRawTableResponse.
 
-        实际结束的时间
+        实际结束的时间。
 
         :param real_end_time: The real_end_time of this ShowRawTableResponse.
         :type real_end_time: int

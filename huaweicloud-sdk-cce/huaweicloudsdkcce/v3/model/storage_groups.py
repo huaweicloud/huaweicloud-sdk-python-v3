@@ -38,7 +38,7 @@ class StorageGroups:
 
         The model defined in huaweicloud sdk
 
-        :param name: storageGroups的名字，作为虚拟存储组的名字，因此各个group个名字不能重复。
+        :param name: storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。
         :type name: str
         :param cce_managed: k8s及runtime所属存储空间。有且仅有一个group被设置为true，不填默认false。
         :type cce_managed: bool
@@ -66,7 +66,7 @@ class StorageGroups:
     def name(self):
         """Gets the name of this StorageGroups.
 
-        storageGroups的名字，作为虚拟存储组的名字，因此各个group个名字不能重复。
+        storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。
 
         :return: The name of this StorageGroups.
         :rtype: str
@@ -77,7 +77,7 @@ class StorageGroups:
     def name(self, name):
         """Sets the name of this StorageGroups.
 
-        storageGroups的名字，作为虚拟存储组的名字，因此各个group个名字不能重复。
+        storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。
 
         :param name: The name of this StorageGroups.
         :type name: str

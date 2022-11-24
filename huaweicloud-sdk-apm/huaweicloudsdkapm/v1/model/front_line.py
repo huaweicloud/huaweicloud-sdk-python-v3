@@ -42,17 +42,17 @@ class FrontLine:
 
         The model defined in huaweicloud sdk
 
-        :param point_list: 数据点集合
+        :param point_list: 数据点集合。
         :type point_list: list[:class:`huaweicloudsdkapm.v1.FrontPoint`]
-        :param title: 标题
+        :param title: 标题。
         :type title: str
-        :param unit: 单位
+        :param unit: 单位。
         :type unit: str
-        :param precision: 百分比
+        :param precision: 百分比。
         :type precision: int
-        :param data_type: 日期类型
+        :param data_type: 日期类型。
         :type data_type: str
-        :param visible: 是否可见
+        :param visible: 是否可见。
         :type visible: bool
         """
         
@@ -83,7 +83,7 @@ class FrontLine:
     def point_list(self):
         """Gets the point_list of this FrontLine.
 
-        数据点集合
+        数据点集合。
 
         :return: The point_list of this FrontLine.
         :rtype: list[:class:`huaweicloudsdkapm.v1.FrontPoint`]
@@ -94,7 +94,7 @@ class FrontLine:
     def point_list(self, point_list):
         """Sets the point_list of this FrontLine.
 
-        数据点集合
+        数据点集合。
 
         :param point_list: The point_list of this FrontLine.
         :type point_list: list[:class:`huaweicloudsdkapm.v1.FrontPoint`]
@@ -105,7 +105,7 @@ class FrontLine:
     def title(self):
         """Gets the title of this FrontLine.
 
-        标题
+        标题。
 
         :return: The title of this FrontLine.
         :rtype: str
@@ -116,7 +116,7 @@ class FrontLine:
     def title(self, title):
         """Sets the title of this FrontLine.
 
-        标题
+        标题。
 
         :param title: The title of this FrontLine.
         :type title: str
@@ -127,7 +127,7 @@ class FrontLine:
     def unit(self):
         """Gets the unit of this FrontLine.
 
-        单位
+        单位。
 
         :return: The unit of this FrontLine.
         :rtype: str
@@ -138,7 +138,7 @@ class FrontLine:
     def unit(self, unit):
         """Sets the unit of this FrontLine.
 
-        单位
+        单位。
 
         :param unit: The unit of this FrontLine.
         :type unit: str
@@ -149,7 +149,7 @@ class FrontLine:
     def precision(self):
         """Gets the precision of this FrontLine.
 
-        百分比
+        百分比。
 
         :return: The precision of this FrontLine.
         :rtype: int
@@ -160,7 +160,7 @@ class FrontLine:
     def precision(self, precision):
         """Sets the precision of this FrontLine.
 
-        百分比
+        百分比。
 
         :param precision: The precision of this FrontLine.
         :type precision: int
@@ -171,7 +171,7 @@ class FrontLine:
     def data_type(self):
         """Gets the data_type of this FrontLine.
 
-        日期类型
+        日期类型。
 
         :return: The data_type of this FrontLine.
         :rtype: str
@@ -182,7 +182,7 @@ class FrontLine:
     def data_type(self, data_type):
         """Sets the data_type of this FrontLine.
 
-        日期类型
+        日期类型。
 
         :param data_type: The data_type of this FrontLine.
         :type data_type: str
@@ -193,7 +193,7 @@ class FrontLine:
     def visible(self):
         """Gets the visible of this FrontLine.
 
-        是否可见
+        是否可见。
 
         :return: The visible of this FrontLine.
         :rtype: bool
@@ -204,7 +204,7 @@ class FrontLine:
     def visible(self, visible):
         """Sets the visible of this FrontLine.
 
-        是否可见
+        是否可见。
 
         :param visible: The visible of this FrontLine.
         :type visible: bool

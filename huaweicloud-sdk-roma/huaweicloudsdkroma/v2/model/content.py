@@ -43,6 +43,7 @@ class Content:
         'auth_method': 'str',
         'api_auth_detail': 'ApiAuthDetail',
         'broker': 'str',
+        'ssl': 'bool',
         'ssl_enable': 'bool',
         'ssl_username': 'str',
         'ssl_password': 'str',
@@ -112,6 +113,7 @@ class Content:
         'auth_method': 'auth_method',
         'api_auth_detail': 'api_auth_detail',
         'broker': 'broker',
+        'ssl': 'ssl',
         'ssl_enable': 'ssl_enable',
         'ssl_username': 'ssl_username',
         'ssl_password': 'ssl_password',
@@ -157,7 +159,7 @@ class Content:
         'connector_params': 'connector_params'
     }
 
-    def __init__(self, gauss100_version=None, host=None, port=None, database_name=None, redis_database=None, user_name=None, password=None, mode=None, cdc_mode=None, multi_oracle_address=None, oracle_service_name=None, ftp_connect_mode=None, ftp_protocol=None, address=None, ak=None, sk=None, bucket_name=None, https=None, url=None, api_method=None, auth_method=None, api_auth_detail=None, broker=None, ssl_enable=None, ssl_username=None, ssl_password=None, mongodb_auth_source=None, mongodb_cluster_enable=None, mongodb_replica_set=None, encoding=None, mysql_timeout=None, trust_store_password=None, trust_store=None, trust_store_file_type=None, ssl_auth_method=None, key_store=None, key_store_file_type=None, key_store_password=None, key_store_key_password=None, dis_tunnel_name=None, dis_data_type=None, dis_setting_type=None, dis_endpoint=None, dis_region=None, dis_source_project_id=None, hl7_position=None, hl7_whitelist_enable=None, hl7_whitelist=None, ldap_security_auth_type=None, rabbitmq_virtual_host=None, rabbitmq_ssl_protocol=None, sap_client=None, sap_sysnr=None, snmp_network_protocol=None, snmp_version=None, snmp_community=None, ibmmq_ccs_id=None, ibmmq_queue_manager=None, ibmmq_channel=None, ibmmq_cipher_suite=None, hdfs_path=None, principal_name=None, config_file_name=None, config_file_content=None, connection_instance_id=None, connector_params=None):
+    def __init__(self, gauss100_version=None, host=None, port=None, database_name=None, redis_database=None, user_name=None, password=None, mode=None, cdc_mode=None, multi_oracle_address=None, oracle_service_name=None, ftp_connect_mode=None, ftp_protocol=None, address=None, ak=None, sk=None, bucket_name=None, https=None, url=None, api_method=None, auth_method=None, api_auth_detail=None, broker=None, ssl=None, ssl_enable=None, ssl_username=None, ssl_password=None, mongodb_auth_source=None, mongodb_cluster_enable=None, mongodb_replica_set=None, encoding=None, mysql_timeout=None, trust_store_password=None, trust_store=None, trust_store_file_type=None, ssl_auth_method=None, key_store=None, key_store_file_type=None, key_store_password=None, key_store_key_password=None, dis_tunnel_name=None, dis_data_type=None, dis_setting_type=None, dis_endpoint=None, dis_region=None, dis_source_project_id=None, hl7_position=None, hl7_whitelist_enable=None, hl7_whitelist=None, ldap_security_auth_type=None, rabbitmq_virtual_host=None, rabbitmq_ssl_protocol=None, sap_client=None, sap_sysnr=None, snmp_network_protocol=None, snmp_version=None, snmp_community=None, ibmmq_ccs_id=None, ibmmq_queue_manager=None, ibmmq_channel=None, ibmmq_cipher_suite=None, hdfs_path=None, principal_name=None, config_file_name=None, config_file_content=None, connection_instance_id=None, connector_params=None):
         """Content
 
         The model defined in huaweicloud sdk
@@ -208,6 +210,8 @@ class Content:
         :type api_auth_detail: :class:`huaweicloudsdkroma.v2.ApiAuthDetail`
         :param broker: KAFKA、ACTIVEMQ的服务器地址，多个IP:PORT, 使用\&quot;,\&quot;分隔
         :type broker: str
+        :param ssl: 是否开启SSL认证 - 连接MQS内网地址时，若MQS开启了SSL，请选择“是”
+        :type ssl: bool
         :param ssl_enable: 是否开启SSL认证 - 数据源为KAFKA时需要配置，连接MQS内网地址时，若MQS同时开启了SSL与VPC内网明文访问，请选择“否” - 数据源为ARTEMISMQ、ACTIVEMQ、RABBITMQ、IBMMQ时需要配置， - 数据源为HL7时且作为源端时需要配置
         :type ssl_enable: bool
         :param ssl_username: SSL用户名/应用Key - 数据源为KAFKA且开启SSL认证时需要配置
@@ -321,6 +325,7 @@ class Content:
         self._auth_method = None
         self._api_auth_detail = None
         self._broker = None
+        self._ssl = None
         self._ssl_enable = None
         self._ssl_username = None
         self._ssl_password = None
@@ -412,6 +417,8 @@ class Content:
             self.api_auth_detail = api_auth_detail
         if broker is not None:
             self.broker = broker
+        if ssl is not None:
+            self.ssl = ssl
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
         if ssl_username is not None:
@@ -1000,6 +1007,28 @@ class Content:
         :type broker: str
         """
         self._broker = broker
+
+    @property
+    def ssl(self):
+        """Gets the ssl of this Content.
+
+        是否开启SSL认证 - 连接MQS内网地址时，若MQS开启了SSL，请选择“是”
+
+        :return: The ssl of this Content.
+        :rtype: bool
+        """
+        return self._ssl
+
+    @ssl.setter
+    def ssl(self, ssl):
+        """Sets the ssl of this Content.
+
+        是否开启SSL认证 - 连接MQS内网地址时，若MQS开启了SSL，请选择“是”
+
+        :param ssl: The ssl of this Content.
+        :type ssl: bool
+        """
+        self._ssl = ssl
 
     @property
     def ssl_enable(self):

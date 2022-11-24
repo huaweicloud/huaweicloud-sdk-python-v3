@@ -54,7 +54,7 @@ class ListAttachmentsRequest:
         :type marker: str
         :param state: 连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request
         :type state: list[str]
-        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering
         :type resource_type: list[str]
         :param resource_id: 连接对应的资源ID列表
         :type resource_id: list[str]
@@ -184,7 +184,7 @@ class ListAttachmentsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListAttachmentsRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :return: The resource_type of this ListAttachmentsRequest.
         :rtype: list[str]
@@ -195,7 +195,7 @@ class ListAttachmentsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListAttachmentsRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :param resource_type: The resource_type of this ListAttachmentsRequest.
         :type resource_type: list[str]

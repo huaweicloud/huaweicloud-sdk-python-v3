@@ -76,8 +76,7 @@ class MultiTaskRequestBody:
         self._target_app_id = None
         self.discriminator = None
 
-        if task_name is not None:
-            self.task_name = task_name
+        self.task_name = task_name
         if task_id is not None:
             self.task_id = task_id
         if task_type is not None:
@@ -86,8 +85,7 @@ class MultiTaskRequestBody:
             self.description = description
         if task_tag is not None:
             self.task_tag = task_tag
-        if operation_types is not None:
-            self.operation_types = operation_types
+        self.operation_types = operation_types
         if source_app_id is not None:
             self.source_app_id = source_app_id
         if target_app_id is not None:

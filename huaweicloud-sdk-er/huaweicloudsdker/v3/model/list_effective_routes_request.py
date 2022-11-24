@@ -48,7 +48,7 @@ class ListEffectiveRoutesRequest:
         :type marker: str
         :param destination: 路由目的地址
         :type destination: list[str]
-        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering
         :type resource_type: list[str]
         """
         
@@ -163,7 +163,7 @@ class ListEffectiveRoutesRequest:
     def resource_type(self):
         """Gets the resource_type of this ListEffectiveRoutesRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :return: The resource_type of this ListEffectiveRoutesRequest.
         :rtype: list[str]
@@ -174,7 +174,7 @@ class ListEffectiveRoutesRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListEffectiveRoutesRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :param resource_type: The resource_type of this ListEffectiveRoutesRequest.
         :type resource_type: list[str]

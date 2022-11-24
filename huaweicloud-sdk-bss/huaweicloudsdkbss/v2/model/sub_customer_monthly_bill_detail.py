@@ -59,7 +59,13 @@ class SubCustomerMonthlyBillDetail:
         'period_type': 'int',
         'account_manager_id': 'str',
         'partner_id': 'str',
-        'region_name': 'str'
+        'region_name': 'str',
+        'sub_service_type_code': 'str',
+        'sub_service_type_name': 'str',
+        'sub_resource_type_code': 'str',
+        'sub_resource_type_name': 'str',
+        'sub_resource_id': 'str',
+        'sub_resource_name': 'str'
     }
 
     attribute_map = {
@@ -102,10 +108,16 @@ class SubCustomerMonthlyBillDetail:
         'period_type': 'period_type',
         'account_manager_id': 'account_manager_id',
         'partner_id': 'partner_id',
-        'region_name': 'region_name'
+        'region_name': 'region_name',
+        'sub_service_type_code': 'sub_service_type_code',
+        'sub_service_type_name': 'sub_service_type_name',
+        'sub_resource_type_code': 'sub_resource_type_code',
+        'sub_resource_type_name': 'sub_resource_type_name',
+        'sub_resource_id': 'sub_resource_id',
+        'sub_resource_name': 'sub_resource_name'
     }
 
-    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None):
+    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
         """SubCustomerMonthlyBillDetail
 
         The model defined in huaweicloud sdk
@@ -190,6 +202,18 @@ class SubCustomerMonthlyBillDetail:
         :type partner_id: str
         :param region_name: 云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
         :type region_name: str
+        :param sub_service_type_code: 该字段为预留字段。
+        :type sub_service_type_code: str
+        :param sub_service_type_name: 该字段为预留字段。
+        :type sub_service_type_name: str
+        :param sub_resource_type_code: 该字段为预留字段。
+        :type sub_resource_type_code: str
+        :param sub_resource_type_name: 该字段为预留字段。
+        :type sub_resource_type_name: str
+        :param sub_resource_id: 该字段为预留字段。
+        :type sub_resource_id: str
+        :param sub_resource_name: 该字段为预留字段。
+        :type sub_resource_name: str
         """
         
         
@@ -234,6 +258,12 @@ class SubCustomerMonthlyBillDetail:
         self._account_manager_id = None
         self._partner_id = None
         self._region_name = None
+        self._sub_service_type_code = None
+        self._sub_service_type_name = None
+        self._sub_resource_type_code = None
+        self._sub_resource_type_name = None
+        self._sub_resource_id = None
+        self._sub_resource_name = None
         self.discriminator = None
 
         if bill_cycle is not None:
@@ -316,6 +346,18 @@ class SubCustomerMonthlyBillDetail:
             self.partner_id = partner_id
         if region_name is not None:
             self.region_name = region_name
+        if sub_service_type_code is not None:
+            self.sub_service_type_code = sub_service_type_code
+        if sub_service_type_name is not None:
+            self.sub_service_type_name = sub_service_type_name
+        if sub_resource_type_code is not None:
+            self.sub_resource_type_code = sub_resource_type_code
+        if sub_resource_type_name is not None:
+            self.sub_resource_type_name = sub_resource_type_name
+        if sub_resource_id is not None:
+            self.sub_resource_id = sub_resource_id
+        if sub_resource_name is not None:
+            self.sub_resource_name = sub_resource_name
 
     @property
     def bill_cycle(self):
@@ -1196,6 +1238,138 @@ class SubCustomerMonthlyBillDetail:
         :type region_name: str
         """
         self._region_name = region_name
+
+    @property
+    def sub_service_type_code(self):
+        """Gets the sub_service_type_code of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :return: The sub_service_type_code of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._sub_service_type_code
+
+    @sub_service_type_code.setter
+    def sub_service_type_code(self, sub_service_type_code):
+        """Sets the sub_service_type_code of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :param sub_service_type_code: The sub_service_type_code of this SubCustomerMonthlyBillDetail.
+        :type sub_service_type_code: str
+        """
+        self._sub_service_type_code = sub_service_type_code
+
+    @property
+    def sub_service_type_name(self):
+        """Gets the sub_service_type_name of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :return: The sub_service_type_name of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._sub_service_type_name
+
+    @sub_service_type_name.setter
+    def sub_service_type_name(self, sub_service_type_name):
+        """Sets the sub_service_type_name of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :param sub_service_type_name: The sub_service_type_name of this SubCustomerMonthlyBillDetail.
+        :type sub_service_type_name: str
+        """
+        self._sub_service_type_name = sub_service_type_name
+
+    @property
+    def sub_resource_type_code(self):
+        """Gets the sub_resource_type_code of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_type_code of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._sub_resource_type_code
+
+    @sub_resource_type_code.setter
+    def sub_resource_type_code(self, sub_resource_type_code):
+        """Sets the sub_resource_type_code of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :param sub_resource_type_code: The sub_resource_type_code of this SubCustomerMonthlyBillDetail.
+        :type sub_resource_type_code: str
+        """
+        self._sub_resource_type_code = sub_resource_type_code
+
+    @property
+    def sub_resource_type_name(self):
+        """Gets the sub_resource_type_name of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_type_name of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._sub_resource_type_name
+
+    @sub_resource_type_name.setter
+    def sub_resource_type_name(self, sub_resource_type_name):
+        """Sets the sub_resource_type_name of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :param sub_resource_type_name: The sub_resource_type_name of this SubCustomerMonthlyBillDetail.
+        :type sub_resource_type_name: str
+        """
+        self._sub_resource_type_name = sub_resource_type_name
+
+    @property
+    def sub_resource_id(self):
+        """Gets the sub_resource_id of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_id of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._sub_resource_id
+
+    @sub_resource_id.setter
+    def sub_resource_id(self, sub_resource_id):
+        """Sets the sub_resource_id of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :param sub_resource_id: The sub_resource_id of this SubCustomerMonthlyBillDetail.
+        :type sub_resource_id: str
+        """
+        self._sub_resource_id = sub_resource_id
+
+    @property
+    def sub_resource_name(self):
+        """Gets the sub_resource_name of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :return: The sub_resource_name of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._sub_resource_name
+
+    @sub_resource_name.setter
+    def sub_resource_name(self, sub_resource_name):
+        """Sets the sub_resource_name of this SubCustomerMonthlyBillDetail.
+
+        该字段为预留字段。
+
+        :param sub_resource_name: The sub_resource_name of this SubCustomerMonthlyBillDetail.
+        :type sub_resource_name: str
+        """
+        self._sub_resource_name = sub_resource_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

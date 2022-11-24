@@ -42,6 +42,388 @@ class DnsAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def associate_endpoint_ipaddress_async(self, request):
+        """绑定ip地址。
+
+        绑定单个IP地址到终端节点
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociateEndpointIpaddress
+        :type request: :class:`huaweicloudsdkdns.v2.AssociateEndpointIpaddressRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.AssociateEndpointIpaddressResponse`
+        """
+        return self.associate_endpoint_ipaddress_with_http_info(request)
+
+    def associate_endpoint_ipaddress_with_http_info(self, request):
+        all_params = ['endpoint_id', 'bind_ipaddress_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/endpoint/{endpoint_id}/ipaddress',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociateEndpointIpaddressResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_ptr_records_async(self, request):
+        """批量删除PTR
+
+        批量删除PTR。本接口为原子操作，所有记录应全部删除成功或全部失败。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeletePtrRecords
+        :type request: :class:`huaweicloudsdkdns.v2.BatchDeletePtrRecordsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchDeletePtrRecordsResponse`
+        """
+        return self.batch_delete_ptr_records_with_http_info(request)
+
+    def batch_delete_ptr_records_with_http_info(self, request):
+        all_params = ['delete_ptr_record_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/reverse/floatingips',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeletePtrRecordsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_record_sets_async(self, request):
+        """批量删除Record Set
+
+        批量删除Record Set。
+        响应结果中只包含本次实际删除的Record Set。
+        支持批量删除公网域名和内网域名的记录集。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteRecordSets
+        :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetsResponse`
+        """
+        return self.batch_delete_record_sets_with_http_info(request)
+
+    def batch_delete_record_sets_with_http_info(self, request):
+        all_params = ['batch_set_record_sets_status_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/recordsets',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteRecordSetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_zones_async(self, request):
+        """批量删除Zone
+
+        批量删除Zone。
+        本接口为原子操作，所有记录应全部删除成功或全部失败。
+        仅支持公网Zone、内网Zone。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteZones
+        :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteZonesRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteZonesResponse`
+        """
+        return self.batch_delete_zones_with_http_info(request)
+
+    def batch_delete_zones_with_http_info(self, request):
+        all_params = ['delete_zones_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/zones',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteZonesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_set_record_sets_status_async(self, request):
+        """批量设置Record Set状态
+
+        批量设置Record Set状态。
+        响应结果中只包含本次实际更新的Record Set。
+        仅支持公网域名记录集。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchSetRecordSetsStatus
+        :type request: :class:`huaweicloudsdkdns.v2.BatchSetRecordSetsStatusRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchSetRecordSetsStatusResponse`
+        """
+        return self.batch_set_record_sets_status_with_http_info(request)
+
+    def batch_set_record_sets_status_with_http_info(self, request):
+        all_params = ['batch_set_record_sets_status_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/recordsets/statuses',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchSetRecordSetsStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_set_zones_status_async(self, request):
+        """批量设置Zone状态
+
+        批量设置Zone状态。
+        响应结果中只包含本次实际更新的Zone。
+        仅支持公网Zone。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchSetZonesStatus
+        :type request: :class:`huaweicloudsdkdns.v2.BatchSetZonesStatusRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchSetZonesStatusResponse`
+        """
+        return self.batch_set_zones_status_with_http_info(request)
+
+    def batch_set_zones_status_with_http_info(self, request):
+        all_params = ['batch_set_zone_status_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/zones/statuses',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchSetZonesStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_custom_line_async(self, request):
         """创建单个自定义线路
 
@@ -104,6 +486,316 @@ class DnsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_endpoint_async(self, request):
+        """创建终端节点。
+
+        创建单个终端节点。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateEndpoint
+        :type request: :class:`huaweicloudsdkdns.v2.CreateEndpointRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateEndpointResponse`
+        """
+        return self.create_endpoint_with_http_info(request)
+
+    def create_endpoint_with_http_info(self, request):
+        all_params = ['create_endpoint_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/endpoint',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateEndpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_line_group_async(self, request):
+        """创建线路分组。
+
+        创建一个线路分组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateLineGroup
+        :type request: :class:`huaweicloudsdkdns.v2.CreateLineGroupRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateLineGroupResponse`
+        """
+        return self.create_line_group_with_http_info(request)
+
+    def create_line_group_with_http_info(self, request):
+        all_params = ['create_line_groups_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/linegroups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateLineGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_resolve_rule_async(self, request):
+        """创建解析规则。
+
+        创建一个解析规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateResolveRule
+        :type request: :class:`huaweicloudsdkdns.v2.CreateResolveRuleRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateResolveRuleResponse`
+        """
+        return self.create_resolve_rule_with_http_info(request)
+
+    def create_resolve_rule_with_http_info(self, request):
+        all_params = ['resolve_rule_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/resolverrule',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateResolveRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_retrieval_async(self, request):
+        """创建公网域名找回请求。
+
+        创建公网域名找回请求。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRetrieval
+        :type request: :class:`huaweicloudsdkdns.v2.CreateRetrievalRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateRetrievalResponse`
+        """
+        return self.create_retrieval_with_http_info(request)
+
+    def create_retrieval_with_http_info(self, request):
+        all_params = ['create_public_zone_find_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/retrieval',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateRetrievalResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_retrieval_verification_async(self, request):
+        """请求立即验证域名找回。
+
+        请求服务器立即执行找回验证。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRetrievalVerification
+        :type request: :class:`huaweicloudsdkdns.v2.CreateRetrievalVerificationRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateRetrievalVerificationResponse`
+        """
+        return self.create_retrieval_verification_with_http_info(request)
+
+    def create_retrieval_verification_with_http_info(self, request):
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/retrieval/verification/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateRetrievalVerificationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_custom_line_async(self, request):
         """删除单个自定义线路
 
@@ -161,6 +853,256 @@ class DnsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteCustomLineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_endpoint_async(self, request):
+        """删除终端节点。
+
+        删除终端节点。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteEndpoint
+        :type request: :class:`huaweicloudsdkdns.v2.DeleteEndpointRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeleteEndpointResponse`
+        """
+        return self.delete_endpoint_with_http_info(request)
+
+    def delete_endpoint_with_http_info(self, request):
+        all_params = ['endpoint_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/endpoint/{endpoint_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteEndpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_line_group_async(self, request):
+        """删除线路分组。
+
+        删除单个线路分组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteLineGroup
+        :type request: :class:`huaweicloudsdkdns.v2.DeleteLineGroupRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeleteLineGroupResponse`
+        """
+        return self.delete_line_group_with_http_info(request)
+
+    def delete_line_group_with_http_info(self, request):
+        all_params = ['linegroup_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'linegroup_id' in local_var_params:
+            path_params['linegroup_id'] = local_var_params['linegroup_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/linegroups/{linegroup_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteLineGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_resolve_rule_async(self, request):
+        """删除解析规则。
+
+        删除解析规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteResolveRule
+        :type request: :class:`huaweicloudsdkdns.v2.DeleteResolveRuleRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DeleteResolveRuleResponse`
+        """
+        return self.delete_resolve_rule_with_http_info(request)
+
+    def delete_resolve_rule_with_http_info(self, request):
+        all_params = ['resolverrule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resolverrule_id' in local_var_params:
+            path_params['resolverrule_id'] = local_var_params['resolverrule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/resolverrule/{resolverrule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteResolveRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def disassociate_endpoint_ipaddress_async(self, request):
+        """解关联ip地址。
+
+        解除endpoint绑定的IP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for DisassociateEndpointIpaddress
+        :type request: :class:`huaweicloudsdkdns.v2.DisassociateEndpointIpaddressRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DisassociateEndpointIpaddressResponse`
+        """
+        return self.disassociate_endpoint_ipaddress_with_http_info(request)
+
+    def disassociate_endpoint_ipaddress_with_http_info(self, request):
+        all_params = ['endpoint_id', 'ipaddress_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+        if 'ipaddress_id' in local_var_params:
+            path_params['ipaddress_id'] = local_var_params['ipaddress_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='v2.1/endpoint/{endpoint_id}/ipaddress/{ipaddress_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisassociateEndpointIpaddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -296,6 +1238,266 @@ class DnsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_endpoint_ipaddresses_async(self, request):
+        """查询ip地址列表。
+
+        查询某个endpoint下的ip地址列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEndpointIpaddresses
+        :type request: :class:`huaweicloudsdkdns.v2.ListEndpointIpaddressesRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListEndpointIpaddressesResponse`
+        """
+        return self.list_endpoint_ipaddresses_with_http_info(request)
+
+    def list_endpoint_ipaddresses_with_http_info(self, request):
+        all_params = ['endpoint_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/endpoint/{endpoint_id}/ipaddress',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEndpointIpaddressesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_endpoint_vpcs_async(self, request):
+        """查询vpc信息。
+
+        查询vpc的终端节点信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEndpointVpcs
+        :type request: :class:`huaweicloudsdkdns.v2.ListEndpointVpcsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListEndpointVpcsResponse`
+        """
+        return self.list_endpoint_vpcs_with_http_info(request)
+
+    def list_endpoint_vpcs_with_http_info(self, request):
+        all_params = ['vpc_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/vpc',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEndpointVpcsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_endpoints_async(self, request):
+        """查询终端节点列表。
+
+        查询终端节点列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEndpoints
+        :type request: :class:`huaweicloudsdkdns.v2.ListEndpointsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListEndpointsResponse`
+        """
+        return self.list_endpoints_with_http_info(request)
+
+    def list_endpoints_with_http_info(self, request):
+        all_params = ['direction', 'vpc_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/endpoint',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListEndpointsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_line_groups_async(self, request):
+        """查询线路分组列表。
+
+        查询线路分组列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLineGroups
+        :type request: :class:`huaweicloudsdkdns.v2.ListLineGroupsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListLineGroupsResponse`
+        """
+        return self.list_line_groups_with_http_info(request)
+
+    def list_line_groups_with_http_info(self, request):
+        all_params = ['limit', 'line_id', 'name', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'line_id' in local_var_params:
+            query_params.append(('line_id', local_var_params['line_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/linegroups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListLineGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_name_servers_async(self, request):
         """查询名称服务器列表
 
@@ -355,6 +1557,72 @@ class DnsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListNameServersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_resole_rules_async(self, request):
+        """查询解析规则列表。
+
+        查询解析规则的列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResoleRules
+        :type request: :class:`huaweicloudsdkdns.v2.ListResoleRulesRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ListResoleRulesResponse`
+        """
+        return self.list_resole_rules_with_http_info(request)
+
+    def list_resole_rules_with_http_info(self, request):
+        all_params = ['domain_name', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/resolverrule',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListResoleRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -484,6 +1752,316 @@ class DnsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_endpoint_async(self, request):
+        """查询endpoint。
+
+        查询终端单个节点。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowEndpoint
+        :type request: :class:`huaweicloudsdkdns.v2.ShowEndpointRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowEndpointResponse`
+        """
+        return self.show_endpoint_with_http_info(request)
+
+    def show_endpoint_with_http_info(self, request):
+        all_params = ['endpoint_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/endpoint/{endpoint_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowEndpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_line_group_async(self, request):
+        """查询线路分组。
+
+        查询线路分组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowLineGroup
+        :type request: :class:`huaweicloudsdkdns.v2.ShowLineGroupRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowLineGroupResponse`
+        """
+        return self.show_line_group_with_http_info(request)
+
+    def show_line_group_with_http_info(self, request):
+        all_params = ['linegroup_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'linegroup_id' in local_var_params:
+            path_params['linegroup_id'] = local_var_params['linegroup_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/linegroups/{linegroup_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowLineGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_resole_rule_async(self, request):
+        """查询单个解析规则。
+
+        查询单个解析规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResoleRule
+        :type request: :class:`huaweicloudsdkdns.v2.ShowResoleRuleRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowResoleRuleResponse`
+        """
+        return self.show_resole_rule_with_http_info(request)
+
+    def show_resole_rule_with_http_info(self, request):
+        all_params = ['resolverrule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resolverrule_id' in local_var_params:
+            path_params['resolverrule_id'] = local_var_params['resolverrule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/resolverrule/{resolverrule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowResoleRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_retrieval_async(self, request):
+        """查询域名找回。
+
+        查询域名找回请求。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRetrieval
+        :type request: :class:`huaweicloudsdkdns.v2.ShowRetrievalRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowRetrievalResponse`
+        """
+        return self.show_retrieval_with_http_info(request)
+
+    def show_retrieval_with_http_info(self, request):
+        all_params = ['query_zone_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/retrieval',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowRetrievalResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_retrieval_verification_async(self, request):
+        """查询域名找回结果。
+
+        查询域名找回结果。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRetrievalVerification
+        :type request: :class:`huaweicloudsdkdns.v2.ShowRetrievalVerificationRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowRetrievalVerificationResponse`
+        """
+        return self.show_retrieval_verification_with_http_info(request)
+
+    def show_retrieval_verification_with_http_info(self, request):
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/retrieval/verification/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowRetrievalVerificationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_custom_line_async(self, request):
         """更新单个自定义线路
 
@@ -543,6 +2121,196 @@ class DnsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateCustomLineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_endpoint_async(self, request):
+        """修改终端节点
+
+        修改终端节点
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateEndpoint
+        :type request: :class:`huaweicloudsdkdns.v2.UpdateEndpointRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateEndpointResponse`
+        """
+        return self.update_endpoint_with_http_info(request)
+
+    def update_endpoint_with_http_info(self, request):
+        all_params = ['endpoint_id', 'name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/endpoint/{endpoint_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateEndpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_line_groups_async(self, request):
+        """更新线路分组。
+
+        更新单个线路分组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateLineGroups
+        :type request: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsResponse`
+        """
+        return self.update_line_groups_with_http_info(request)
+
+    def update_line_groups_with_http_info(self, request):
+        all_params = ['linegroup_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'linegroup_id' in local_var_params:
+            path_params['linegroup_id'] = local_var_params['linegroup_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/linegroups/{linegroup_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateLineGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_resolve_rule_async(self, request):
+        """修改解析规则。
+
+        修改一个解析规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateResolveRule
+        :type request: :class:`huaweicloudsdkdns.v2.UpdateResolveRuleRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.UpdateResolveRuleResponse`
+        """
+        return self.update_resolve_rule_with_http_info(request)
+
+    def update_resolve_rule_with_http_info(self, request):
+        all_params = ['resolverrule_id', 'update_resolve_rule_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resolverrule_id' in local_var_params:
+            path_params['resolverrule_id'] = local_var_params['resolverrule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/resolverrule/{resolverrule_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateResolveRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -877,6 +2645,70 @@ class DnsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdatePtrRecordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def associate_health_check_async(self, request):
+        """Record Set关联健康检查。
+
+        Record Set关联健康检查。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociateHealthCheck
+        :type request: :class:`huaweicloudsdkdns.v2.AssociateHealthCheckRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.AssociateHealthCheckResponse`
+        """
+        return self.associate_health_check_with_http_info(request)
+
+    def associate_health_check_with_http_info(self, request):
+        all_params = ['recordset_id', 'associate_health_check_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'recordset_id' in local_var_params:
+            path_params['recordset_id'] = local_var_params['recordset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path=' /v2.1/recordsets/{recordset_id}/associatehealthcheck',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociateHealthCheckResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1327,6 +3159,70 @@ class DnsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteRecordSetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def disassociate_health_check_async(self, request):
+        """Record Set解关联健康检查。
+
+        Record Set解关联健康检查。。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for DisassociateHealthCheck
+        :type request: :class:`huaweicloudsdkdns.v2.DisassociateHealthCheckRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.DisassociateHealthCheckResponse`
+        """
+        return self.disassociate_health_check_with_http_info(request)
+
+    def disassociate_health_check_with_http_info(self, request):
+        all_params = ['recordset_id', 'associate_health_check_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'recordset_id' in local_var_params:
+            path_params['recordset_id'] = local_var_params['recordset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/recordsets/{recordset_id}/associatehealthcheck',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisassociateHealthCheckResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2909,6 +4805,70 @@ class DnsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListPublicZonesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def set_private_zone_proxy_pattern_async(self, request):
+        """设置单个内网Zone的子域名递归解析代理
+
+        设置单个内网Zone的子域名递归解析代理
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+
+        :param request: Request instance for SetPrivateZoneProxyPattern
+        :type request: :class:`huaweicloudsdkdns.v2.SetPrivateZoneProxyPatternRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.SetPrivateZoneProxyPatternResponse`
+        """
+        return self.set_private_zone_proxy_pattern_with_http_info(request)
+
+    def set_private_zone_proxy_pattern_with_http_info(self, request):
+        all_params = ['zone_id', 'set_private_zone_proxy_pattern_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/zones/{zone_id}/actions/set-proxy-pattern',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SetPrivateZoneProxyPatternResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

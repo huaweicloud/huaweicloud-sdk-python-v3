@@ -1,3 +1,340 @@
+# 3.1.12 2022-11-24
+
+### HuaweiCloud SDK DWR
+
+- _新增特性_
+  - 支持数据工坊服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持接口`ListStackEvents`、`ListStackResources`、`DeleteStack`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK APM
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowBusinessDetail`
+    - `ShowSubBusinessDetail`
+    - `ListAlarmData`
+    - `ListAlarmNotify`
+    - `SearchBusinessTopology`
+    - `SearchEnvTopology`
+    - `SearchTransactionConfig`
+    - `ListBusinessEnv`
+    - `SearchTransaction`
+    - `ShowTransactionDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`DeleteEnv`
+  - 接口`ListAkSk`:
+    - 响应参数`gmt_create`类型调整 `date` -> `string`
+    - 响应参数`gmt_modify`类型调整 `date` -> `string`
+  - 接口`SaveMonitorItemConfig`请求参数`monitor_item_id`、`env_id`改为必填
+  - 接口`ListEnvMonitorItem`请求参数`x-business-id`
+  - 接口`ShowTopologyTree`请求参数`business_id`改为非必填
+  - 接口`ListEnvTags`:
+    - 请求参数`business_id`改为必填
+    - 响应参数`gmt_create`类型调整 `date` -> `string`
+    - 响应参数`gmt_modify`类型调整 `date` -> `string`
+  - 接口`ShowSpanSearch`请求参数`region`、`biz_id`改为必填
+  - 接口`ShowRawTable`请求参数`view_type`、`collector_name`、`metric_set`、`title`、`table_direction`、`group_by`、`filter`、`span`、`span_field`、`page`、`page_size`、`search_word`、`instance_id`、`monitor_item_id`、`env_id`、`start_time`、`end_time`改为必填
+  - 接口`ShowClobDetail`请求参数`env_id`、`clob_id`改为必填
+  - 接口`ListEnvInstances`请求参数`env_id`、`page`、`page_size`改为必填
+  - 接口`ShowAkSks`:
+    - 响应参数`gmt_create`类型调整 `date` -> `string`
+    - 响应参数`gmt_modify`类型调整 `date` -> `string`
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSubCustomerBillDetail`新增响应参数 `sub_service_type_code`、`sub_service_type_name`、`sub_resource_type_code`、`sub_resource_type_name`、`sub_resource_id`、`sub_resource_name`
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowBackup`新增响应参数 `children`
+  - 接口`ListBackups`新增响应参数 `children`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateCluster`新增请求参数 `configurationsOverride`
+  - 接口`ListClusters`新增响应参数 `configurationsOverride`
+  - 接口`UpdateCluster`:
+    - 新增请求参数 `eniNetwork`、`hostNetwork`
+    - 新增响应参数 `configurationsOverride`
+  - 接口`DeleteCluster`:
+    - 新增请求参数 `delete_sfs30`
+    - 新增响应参数 `configurationsOverride`
+  - 接口`ShowCluster`新增响应参数 `configurationsOverride`
+  - 接口`CreateNode`新增请求参数 `initializedConditions`
+  - 接口`ListNodes`新增响应参数 `initializedConditions`
+  - 接口`UpdateNode`新增响应参数 `initializedConditions`
+  - 接口`DeleteNode`新增响应参数 `initializedConditions`
+  - 接口`ShowNode`新增响应参数 `initializedConditions`
+  - 接口`AddNode`新增请求参数 `initializedConditions`
+  - 接口`ResetNode`新增请求参数 `initializedConditions`
+  - 接口`CreateNodePool`新增请求参数 `customSecurityGroups`、`initializedConditions`
+  - 接口`ListNodePools`新增响应参数 `customSecurityGroups`、`initializedConditions`
+  - 接口`UpdateNodePool`:
+    - 新增请求参数 `initializedConditions`
+    - 新增响应参数 `customSecurityGroups`、`initializedConditions`
+  - 接口`DeleteNodePool`新增响应参数 `customSecurityGroups`、`initializedConditions`
+  - 接口`ShowNodePool`新增响应参数 `customSecurityGroups`、`initializedConditions`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAlarmTemplates`
+    - `CreateAlarmTemplate`
+    - `BatchDeleteAlarmTemplates`
+    - `ShowAlarmTemplate`
+    - `UpdateAlarmTemplate`
+    - `ListAlarmTemplateAssociationAlarms`
+    - `ListResourceGroups`
+    - `CreateResourceGroup`
+    - `ShowResourceGroup`
+    - `UpdateResourceGroup`
+    - `ListResourceGroupsServicesResources`
+    - `BatchDeleteResourceGroups`
+    - `BatchCreateResources`
+    - `BatchDeleteResources`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 支持接口`UpgradeEngine`、`RetryEngine`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 支持接口`UpdateInstance`、`ChangeMode`、`AddIndependentNode`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListClustersDetails`新增响应参数 `totalSize`、`volume`
+  - 接口`ShowClusterDetail`新增响应参数 `volume`
+  - 接口`StartVpecp`请求参数`endpointWithDnsName`改为非必填
+
+### HuaweiCloud SDK DAS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowSqlLimitSwitchStatus`
+    - `ChangeSqlLimitSwitchStatus`
+    - `ListSqlLimitRules`
+    - `CreateSqlLimitRules`
+    - `DeleteSqlLimitRules`
+    - `ExportTopSqlTemplatesDetails`
+    - `ShowSqlLimitJobInfo`
+    - `ExportSlowSqlTemplatesDetails`
+    - `ExportTopSqlTrendDetails`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowQuotas`响应参数`quotas`类型调整 `object` -> `array`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAppliedInstances`
+    - `ShowConfigurationAppliedHistory`
+    - `ShowConfigurationModifyHistory`
+    - `CompareConfiguration`
+    - `CopyConfiguration`
+    - `ResetConfiguration`
+    - `ListTasks`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AddReadonlyNode`新增请求参数 `is_auto_pay`
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 支持以下接口：
+    - `SetPrivateZoneProxyPattern`
+    - `AssociateHealthCheck`
+    - `DisassociateHealthCheck`
+    - `CreateRetrieval`
+    - `ShowRetrieval`
+    - `CreateRetrievalVerification`
+    - `ShowRetrievalVerification`
+    - `CreateEndpoint`
+    - `ShowEndpoint`
+    - `ListEndpoints`
+    - `UpdateEndpoint`
+    - `DeleteEndpoint`
+    - `AssociateEndpointIpaddress`
+    - `ListEndpointIpaddresses`
+    - `DisassociateEndpointIpaddress`
+    - `ListEndpointVpcs`
+    - `CreateResolveRule`
+    - `ShowResoleRule`
+    - `ListResoleRules`
+    - `UpdateResolveRule`
+    - `DeleteResolveRule`
+    - `CreateLineGroup`
+    - `ListLineGroups`
+    - `ShowLineGroup`
+    - `UpdateLineGroups`
+    - `DeleteLineGroup`
+    - `BatchDeleteZones`
+    - `BatchDeletePtrRecords`
+    - `BatchSetZonesStatus`
+    - `BatchSetRecordSetsStatus`
+    - `BatchDeleteRecordSets`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateDependencyVersion`
+    - `ListDependencyVersion`
+    - `ShowDependencyVersion`
+    - `DeleteDependencyVersion`
+    - `ListReservedInstanceConfigs`
+    - `ListFunctionReservedInstances`
+    - `ListFunctionAsMetric`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`AsyncInvokeReservedFunction`
+  - 接口`UpdateFunctionConfig`新增请求参数 `custom_image`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持以下接口：
+    - `ResizeColdVolume`
+    - `CreateColdVolume`
+    - `ModifyPublicIp`
+    - `SwitchSsl`
+    - `SetAutoEnlargePolicy`
+    - `RestartInstance`
+    - `ShowApplicableInstances`
+    - `ShowModifyHistory`
+    - `ShowApplyHistory`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`新增请求参数 `restore_info`、`port`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeHealthCode`新增响应参数 `test_interval`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ShowDomainName`、`ShowDnsName`、`ShowReplicationStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ROMA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDatasourceInfo`:
+    - 新增请求参数 `ssl`
+    - 移除请求参数 `custom_plugin_id`
+    - 请求参数`datasource_name`、`datasource_type`、`app_id`改为必填
+  - 接口`ListDatasources`新增响应参数 `ssl`
+  - 接口`UpdateDatasourceInfo`:
+    - 新增请求参数 `ssl`
+    - 新增响应参数 `ssl`
+    - 移除请求参数 `custom_plugin_id`
+    - 请求参数`datasource_name`、`datasource_type`、`app_id`改为必填
+  - 接口`ShowDataourceDetail`新增响应参数 `ssl`
+  - 接口`StartTestDatasource`:
+    - 新增请求参数 `ssl`
+    - 移除请求参数 `custom_plugin_id`
+    - 请求参数`datasource_name`、`datasource_type`、`app_id`改为必填
+  - 接口`CreateCommonTask`:
+    - 移除响应参数 `created_by`
+    - 请求参数`task_name`、`task_type`、`source_datasource_id`、`target_datasource_id`、`task_detail`改为必填
+  - 接口`UpdateTask`:
+    - 移除响应参数 `created_by`
+    - 请求参数`task_name`、`task_type`、`source_datasource_id`、`target_datasource_id`、`task_detail`改为必填
+  - 接口`ShowTask`移除响应参数 `created_by`
+  - 接口`BatchStartOrStopTasks`请求参数`action_id`改为必填
+  - 接口`CreateMultiTasks`请求参数`task_name`、`operation_types`改为必填
+  - 接口`UpdateMultiTasks`请求参数`operation_types`、`repulling_snapshot`改为必填
+  - 接口`CreateMultiTaskMappings`请求参数`source_datasource_id`、`target_datasource_id`改为必填
+
+### HuaweiCloud SDK SA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ImportEvents`:
+    - 新增请求参数 `dest_ip`、`cve_ids`
+    - 移除请求参数 `destc_ip`
+    - 请求参数`first_observed_time`类型调整 `string` -> `date-time`
+    - 请求参数`last_observed_time`类型调整 `string` -> `date-time`
+    - 请求参数`create_time`类型调整 `string` -> `date-time`
+    - 请求参数`arrive_time`类型调整 `string` -> `date-time`
+    - 请求参数`release_time`类型调整 `string` -> `date-time`
+    - 请求参数`start_time`类型调整 `string` -> `date-time`
+    - 请求参数`modified`类型调整 `string` -> `date-time`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持接口`CreatePrepaidCloudWaf`、`ChangePrepaidCloudWaf`、`ShowSubscriptionInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.11 2022-11-17
 
 ### HuaweiCloud SDK AOS

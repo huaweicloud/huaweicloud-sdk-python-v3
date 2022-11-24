@@ -34,9 +34,9 @@ class ViewRow:
 
         The model defined in huaweicloud sdk
 
-        :param view_list: 视图行，包含多个视图，展示的时候根据实际的长度适配
+        :param view_list: 视图行，包含多个视图，展示的时候根据实际的长度适配。
         :type view_list: list[:class:`huaweicloudsdkapm.v1.ViewBase`]
-        :param title: 标题
+        :param title: 标题。
         :type title: str
         """
         
@@ -55,7 +55,7 @@ class ViewRow:
     def view_list(self):
         """Gets the view_list of this ViewRow.
 
-        视图行，包含多个视图，展示的时候根据实际的长度适配
+        视图行，包含多个视图，展示的时候根据实际的长度适配。
 
         :return: The view_list of this ViewRow.
         :rtype: list[:class:`huaweicloudsdkapm.v1.ViewBase`]
@@ -66,7 +66,7 @@ class ViewRow:
     def view_list(self, view_list):
         """Sets the view_list of this ViewRow.
 
-        视图行，包含多个视图，展示的时候根据实际的长度适配
+        视图行，包含多个视图，展示的时候根据实际的长度适配。
 
         :param view_list: The view_list of this ViewRow.
         :type view_list: list[:class:`huaweicloudsdkapm.v1.ViewBase`]
@@ -77,7 +77,7 @@ class ViewRow:
     def title(self):
         """Gets the title of this ViewRow.
 
-        标题
+        标题。
 
         :return: The title of this ViewRow.
         :rtype: str
@@ -88,7 +88,7 @@ class ViewRow:
     def title(self, title):
         """Sets the title of this ViewRow.
 
-        标题
+        标题。
 
         :param title: The title of this ViewRow.
         :type title: str

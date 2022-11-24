@@ -32,7 +32,7 @@ class ListAppsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param apps: 组件信息列表
+        :param apps: 组件信息列表。
         :type apps: list[:class:`huaweicloudsdkapm.v1.AppNodeModel`]
         """
         
@@ -48,7 +48,7 @@ class ListAppsResponse(SdkResponse):
     def apps(self):
         """Gets the apps of this ListAppsResponse.
 
-        组件信息列表
+        组件信息列表。
 
         :return: The apps of this ListAppsResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.AppNodeModel`]
@@ -59,7 +59,7 @@ class ListAppsResponse(SdkResponse):
     def apps(self, apps):
         """Sets the apps of this ListAppsResponse.
 
-        组件信息列表
+        组件信息列表。
 
         :param apps: The apps of this ListAppsResponse.
         :type apps: list[:class:`huaweicloudsdkapm.v1.AppNodeModel`]

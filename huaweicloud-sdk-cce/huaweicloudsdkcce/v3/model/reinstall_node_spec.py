@@ -28,6 +28,7 @@ class ReinstallNodeSpec:
         'runtime_config': 'ReinstallRuntimeConfig',
         'k8s_options': 'ReinstallK8sOptionsConfig',
         'lifecycle': 'NodeLifecycleConfig',
+        'initialized_conditions': 'list[str]',
         'extend_param': 'ReinstallExtendParam'
     }
 
@@ -40,10 +41,11 @@ class ReinstallNodeSpec:
         'runtime_config': 'runtimeConfig',
         'k8s_options': 'k8sOptions',
         'lifecycle': 'lifecycle',
+        'initialized_conditions': 'initializedConditions',
         'extend_param': 'extendParam'
     }
 
-    def __init__(self, os=None, login=None, name=None, server_config=None, volume_config=None, runtime_config=None, k8s_options=None, lifecycle=None, extend_param=None):
+    def __init__(self, os=None, login=None, name=None, server_config=None, volume_config=None, runtime_config=None, k8s_options=None, lifecycle=None, initialized_conditions=None, extend_param=None):
         """ReinstallNodeSpec
 
         The model defined in huaweicloud sdk
@@ -64,6 +66,8 @@ class ReinstallNodeSpec:
         :type k8s_options: :class:`huaweicloudsdkcce.v3.ReinstallK8sOptionsConfig`
         :param lifecycle: 
         :type lifecycle: :class:`huaweicloudsdkcce.v3.NodeLifecycleConfig`
+        :param initialized_conditions: 自定义初始化标记。CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions&#x3D;CCEInitial_CustomedInitial。当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。 - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个
+        :type initialized_conditions: list[str]
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcce.v3.ReinstallExtendParam`
         """
@@ -78,6 +82,7 @@ class ReinstallNodeSpec:
         self._runtime_config = None
         self._k8s_options = None
         self._lifecycle = None
+        self._initialized_conditions = None
         self._extend_param = None
         self.discriminator = None
 
@@ -95,6 +100,8 @@ class ReinstallNodeSpec:
             self.k8s_options = k8s_options
         if lifecycle is not None:
             self.lifecycle = lifecycle
+        if initialized_conditions is not None:
+            self.initialized_conditions = initialized_conditions
         if extend_param is not None:
             self.extend_param = extend_param
 
@@ -249,6 +256,28 @@ class ReinstallNodeSpec:
         :type lifecycle: :class:`huaweicloudsdkcce.v3.NodeLifecycleConfig`
         """
         self._lifecycle = lifecycle
+
+    @property
+    def initialized_conditions(self):
+        """Gets the initialized_conditions of this ReinstallNodeSpec.
+
+        自定义初始化标记。CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions=CCEInitial_CustomedInitial。当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。 - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个
+
+        :return: The initialized_conditions of this ReinstallNodeSpec.
+        :rtype: list[str]
+        """
+        return self._initialized_conditions
+
+    @initialized_conditions.setter
+    def initialized_conditions(self, initialized_conditions):
+        """Sets the initialized_conditions of this ReinstallNodeSpec.
+
+        自定义初始化标记。CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions=CCEInitial_CustomedInitial。当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。 - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个
+
+        :param initialized_conditions: The initialized_conditions of this ReinstallNodeSpec.
+        :type initialized_conditions: list[str]
+        """
+        self._initialized_conditions = initialized_conditions
 
     @property
     def extend_param(self):

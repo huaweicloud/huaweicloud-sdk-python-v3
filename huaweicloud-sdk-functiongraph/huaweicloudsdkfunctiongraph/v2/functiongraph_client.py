@@ -105,69 +105,6 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def async_invoke_reserved_function(self, request):
-        """函数异步执行并返回预留实例ID
-
-        函数异步执行并返回预留实例ID用于场景指客户端请求执行比较费时任务，不需要同步等待执行完成返回结果，该方法提前返回任务执行对应的预留实例ID, 如果预留实例有异常，可以通过该实例ID把对应实例删除（该接口主要针对白名单用户）。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for AsyncInvokeReservedFunction
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeReservedFunctionRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.AsyncInvokeReservedFunctionResponse`
-        """
-        return self.async_invoke_reserved_function_with_http_info(request)
-
-    def async_invoke_reserved_function_with_http_info(self, request):
-        all_params = ['function_urn', 'async_invoke_reserved_function_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = ["Content-Type", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/reserved-invocations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AsyncInvokeReservedFunctionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def batch_delete_function_triggers(self, request):
         """删除指定函数的所有触发器
 
@@ -413,6 +350,67 @@ class FunctionGraphClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateDependencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_dependency_version(self, request):
+        """创建依赖包版本
+
+        创建依赖包版本
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateDependencyVersion
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyVersionRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyVersionResponse`
+        """
+        return self.create_dependency_version_with_http_info(request)
+
+    def create_dependency_version_with_http_info(self, request):
+        all_params = ['create_dependency_version_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/dependencies/version',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateDependencyVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -852,6 +850,69 @@ class FunctionGraphClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteDependencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_dependency_version(self, request):
+        """删除依赖包版本
+
+        删除依赖包版本
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDependencyVersion
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyVersionRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteDependencyVersionResponse`
+        """
+        return self.delete_dependency_version_with_http_info(request)
+
+    def delete_dependency_version_with_http_info(self, request):
+        all_params = ['depend_id', 'version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'depend_id' in local_var_params:
+            path_params['depend_id'] = local_var_params['depend_id']
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/dependencies/{depend_id}/version/{version}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteDependencyVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1573,6 +1634,71 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_dependency_version(self, request):
+        """获取依赖包版本列表
+
+        获取依赖包版本列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListDependencyVersion
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListDependencyVersionRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListDependencyVersionResponse`
+        """
+        return self.list_dependency_version_with_http_info(request)
+
+    def list_dependency_version_with_http_info(self, request):
+        all_params = ['depend_id', 'marker', 'maxitems']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'depend_id' in local_var_params:
+            path_params['depend_id'] = local_var_params['depend_id']
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'maxitems' in local_var_params:
+            query_params.append(('maxitems', local_var_params['maxitems']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/dependencies/{depend_id}/version',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDependencyVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_events(self, request):
         """获取指定函数的测试事件列表
 
@@ -1629,6 +1755,75 @@ class FunctionGraphClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_function_as_metric(self, request):
+        """获取按指定指标排序的函数列表
+
+        按指定指标排序的函数列表。
+        
+        默认统计按错误次数指标统计最近一天失败次数最多的前10个函数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListFunctionAsMetric
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsMetricRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsMetricResponse`
+        """
+        return self.list_function_as_metric_with_http_info(request)
+
+    def list_function_as_metric_with_http_info(self, request):
+        all_params = ['type', 'start_time', 'end_time', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/function/report',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFunctionAsMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1694,6 +1889,71 @@ class FunctionGraphClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListFunctionAsyncInvokeConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_function_reserved_instances(self, request):
+        """获取函数预留实例数量
+
+        获取函数预留实例数量。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListFunctionReservedInstances
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionReservedInstancesRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionReservedInstancesResponse`
+        """
+        return self.list_function_reserved_instances_with_http_info(request)
+
+    def list_function_reserved_instances_with_http_info(self, request):
+        all_params = ['marker', 'maxitems', 'urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'maxitems' in local_var_params:
+            query_params.append(('maxitems', local_var_params['maxitems']))
+        if 'urn' in local_var_params:
+            query_params.append(('urn', local_var_params['urn']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/reservedinstances',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFunctionReservedInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2007,6 +2267,67 @@ class FunctionGraphClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_reserved_instance_configs(self, request):
+        """获取函数预留实例配置列表
+
+        获取函数预留实例配置列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListReservedInstanceConfigs
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListReservedInstanceConfigsRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListReservedInstanceConfigsResponse`
+        """
+        return self.list_reserved_instance_configs_with_http_info(request)
+
+    def list_reserved_instance_configs_with_http_info(self, request):
+        all_params = ['function_urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'function_urn' in local_var_params:
+            query_params.append(('function_urn', local_var_params['function_urn']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/reservedinstanceconfigs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListReservedInstanceConfigsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2398,6 +2719,69 @@ class FunctionGraphClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowDependcyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_dependency_version(self, request):
+        """获取依赖包版本详情
+
+        获取依赖包版本详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDependencyVersion
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependencyVersionRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependencyVersionResponse`
+        """
+        return self.show_dependency_version_with_http_info(request)
+
+    def show_dependency_version_with_http_info(self, request):
+        all_params = ['depend_id', 'version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'depend_id' in local_var_params:
+            path_params['depend_id'] = local_var_params['depend_id']
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/dependencies/{depend_id}/version/{version}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDependencyVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

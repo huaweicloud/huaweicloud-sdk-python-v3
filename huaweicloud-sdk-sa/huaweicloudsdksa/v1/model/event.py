@@ -23,10 +23,10 @@ class Event:
         'version': 'str',
         'environment': 'Environment',
         'data_source': 'DataSource',
-        'first_observed_time': 'str',
-        'last_observed_time': 'str',
-        'create_time': 'str',
-        'arrive_time': 'str',
+        'first_observed_time': 'datetime',
+        'last_observed_time': 'datetime',
+        'create_time': 'datetime',
+        'arrive_time': 'datetime',
         'event_id': 'str',
         'title': 'str',
         'description': 'str',
@@ -93,13 +93,13 @@ class Event:
         :param data_source: 
         :type data_source: :class:`huaweicloudsdksa.v1.DataSource`
         :param first_observed_time: 首次发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
-        :type first_observed_time: str
+        :type first_observed_time: datetime
         :param last_observed_time: 最新发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
-        :type last_observed_time: str
+        :type last_observed_time: datetime
         :param create_time: 记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
-        :type create_time: str
+        :type create_time: datetime
         :param arrive_time: 数据接收时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。  是指事件数据被SA侧接收的时间，由SA接收时填写，产品上报数据时不用填写。
-        :type arrive_time: str
+        :type arrive_time: datetime
         :param event_id: 事件唯一标识，UUID格式。
         :type event_id: str
         :param title: 事件标题，最大255字符。
@@ -285,7 +285,7 @@ class Event:
         首次发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :return: The first_observed_time of this Event.
-        :rtype: str
+        :rtype: datetime
         """
         return self._first_observed_time
 
@@ -296,7 +296,7 @@ class Event:
         首次发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :param first_observed_time: The first_observed_time of this Event.
-        :type first_observed_time: str
+        :type first_observed_time: datetime
         """
         self._first_observed_time = first_observed_time
 
@@ -307,7 +307,7 @@ class Event:
         最新发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :return: The last_observed_time of this Event.
-        :rtype: str
+        :rtype: datetime
         """
         return self._last_observed_time
 
@@ -318,7 +318,7 @@ class Event:
         最新发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :param last_observed_time: The last_observed_time of this Event.
-        :type last_observed_time: str
+        :type last_observed_time: datetime
         """
         self._last_observed_time = last_observed_time
 
@@ -329,7 +329,7 @@ class Event:
         记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :return: The create_time of this Event.
-        :rtype: str
+        :rtype: datetime
         """
         return self._create_time
 
@@ -340,7 +340,7 @@ class Event:
         记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
         :param create_time: The create_time of this Event.
-        :type create_time: str
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -351,7 +351,7 @@ class Event:
         数据接收时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。  是指事件数据被SA侧接收的时间，由SA接收时填写，产品上报数据时不用填写。
 
         :return: The arrive_time of this Event.
-        :rtype: str
+        :rtype: datetime
         """
         return self._arrive_time
 
@@ -362,7 +362,7 @@ class Event:
         数据接收时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。  是指事件数据被SA侧接收的时间，由SA接收时填写，产品上报数据时不用填写。
 
         :param arrive_time: The arrive_time of this Event.
-        :type arrive_time: str
+        :type arrive_time: datetime
         """
         self._arrive_time = arrive_time
 

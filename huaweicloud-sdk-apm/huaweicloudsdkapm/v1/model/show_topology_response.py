@@ -36,11 +36,11 @@ class ShowTopologyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param global_trace_id: 全局traceID
+        :param global_trace_id: 全局traceId。
         :type global_trace_id: str
-        :param line_list: 组件之间调用指向线列表
+        :param line_list: 组件之间调用指向线列表。
         :type line_list: list[:class:`huaweicloudsdkapm.v1.TraceTopologyLine`]
-        :param node_list: 组件节点列表
+        :param node_list: 组件节点列表。
         :type node_list: list[:class:`huaweicloudsdkapm.v1.TraceTopologyNode`]
         """
         
@@ -62,7 +62,7 @@ class ShowTopologyResponse(SdkResponse):
     def global_trace_id(self):
         """Gets the global_trace_id of this ShowTopologyResponse.
 
-        全局traceID
+        全局traceId。
 
         :return: The global_trace_id of this ShowTopologyResponse.
         :rtype: str
@@ -73,7 +73,7 @@ class ShowTopologyResponse(SdkResponse):
     def global_trace_id(self, global_trace_id):
         """Sets the global_trace_id of this ShowTopologyResponse.
 
-        全局traceID
+        全局traceId。
 
         :param global_trace_id: The global_trace_id of this ShowTopologyResponse.
         :type global_trace_id: str
@@ -84,7 +84,7 @@ class ShowTopologyResponse(SdkResponse):
     def line_list(self):
         """Gets the line_list of this ShowTopologyResponse.
 
-        组件之间调用指向线列表
+        组件之间调用指向线列表。
 
         :return: The line_list of this ShowTopologyResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.TraceTopologyLine`]
@@ -95,7 +95,7 @@ class ShowTopologyResponse(SdkResponse):
     def line_list(self, line_list):
         """Sets the line_list of this ShowTopologyResponse.
 
-        组件之间调用指向线列表
+        组件之间调用指向线列表。
 
         :param line_list: The line_list of this ShowTopologyResponse.
         :type line_list: list[:class:`huaweicloudsdkapm.v1.TraceTopologyLine`]
@@ -106,7 +106,7 @@ class ShowTopologyResponse(SdkResponse):
     def node_list(self):
         """Gets the node_list of this ShowTopologyResponse.
 
-        组件节点列表
+        组件节点列表。
 
         :return: The node_list of this ShowTopologyResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.TraceTopologyNode`]
@@ -117,7 +117,7 @@ class ShowTopologyResponse(SdkResponse):
     def node_list(self, node_list):
         """Sets the node_list of this ShowTopologyResponse.
 
-        组件节点列表
+        组件节点列表。
 
         :param node_list: The node_list of this ShowTopologyResponse.
         :type node_list: list[:class:`huaweicloudsdkapm.v1.TraceTopologyNode`]

@@ -3,6 +3,13 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkcdn.v2.model.batch_copy_configs import BatchCopyConfigs
+from huaweicloudsdkcdn.v2.model.batch_copy_d_request_body import BatchCopyDRequestBody
+from huaweicloudsdkcdn.v2.model.batch_copy_domain_request import BatchCopyDomainRequest
+from huaweicloudsdkcdn.v2.model.batch_copy_domain_response import BatchCopyDomainResponse
+from huaweicloudsdkcdn.v2.model.batch_copy_error_rsp import BatchCopyErrorRsp
+from huaweicloudsdkcdn.v2.model.batch_copy_error_rsp_error import BatchCopyErrorRspError
+from huaweicloudsdkcdn.v2.model.batch_copy_result_vo import BatchCopyResultVo
 from huaweicloudsdkcdn.v2.model.download_region_carrier_excel_request import DownloadRegionCarrierExcelRequest
 from huaweicloudsdkcdn.v2.model.download_region_carrier_excel_response import DownloadRegionCarrierExcelResponse
 from huaweicloudsdkcdn.v2.model.download_statistics_excel_request import DownloadStatisticsExcelRequest

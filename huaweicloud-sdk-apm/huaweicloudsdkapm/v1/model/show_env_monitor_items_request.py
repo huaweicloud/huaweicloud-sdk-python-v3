@@ -34,9 +34,9 @@ class ShowEnvMonitorItemsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param env_id: 环境id
+        :param env_id: 环境id。
         :type env_id: int
-        :param x_business_id: 应用id
+        :param x_business_id: 应用id。
         :type x_business_id: int
         """
         
@@ -53,7 +53,7 @@ class ShowEnvMonitorItemsRequest:
     def env_id(self):
         """Gets the env_id of this ShowEnvMonitorItemsRequest.
 
-        环境id
+        环境id。
 
         :return: The env_id of this ShowEnvMonitorItemsRequest.
         :rtype: int
@@ -64,7 +64,7 @@ class ShowEnvMonitorItemsRequest:
     def env_id(self, env_id):
         """Sets the env_id of this ShowEnvMonitorItemsRequest.
 
-        环境id
+        环境id。
 
         :param env_id: The env_id of this ShowEnvMonitorItemsRequest.
         :type env_id: int
@@ -75,7 +75,7 @@ class ShowEnvMonitorItemsRequest:
     def x_business_id(self):
         """Gets the x_business_id of this ShowEnvMonitorItemsRequest.
 
-        应用id
+        应用id。
 
         :return: The x_business_id of this ShowEnvMonitorItemsRequest.
         :rtype: int
@@ -86,7 +86,7 @@ class ShowEnvMonitorItemsRequest:
     def x_business_id(self, x_business_id):
         """Sets the x_business_id of this ShowEnvMonitorItemsRequest.
 
-        应用id
+        应用id。
 
         :param x_business_id: The x_business_id of this ShowEnvMonitorItemsRequest.
         :type x_business_id: int

@@ -32,7 +32,7 @@ class ShowClobDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param clob_string: clob详情
+        :param clob_string: clob详情。
         :type clob_string: str
         """
         
@@ -48,7 +48,7 @@ class ShowClobDetailResponse(SdkResponse):
     def clob_string(self):
         """Gets the clob_string of this ShowClobDetailResponse.
 
-        clob详情
+        clob详情。
 
         :return: The clob_string of this ShowClobDetailResponse.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowClobDetailResponse(SdkResponse):
     def clob_string(self, clob_string):
         """Sets the clob_string of this ShowClobDetailResponse.
 
-        clob详情
+        clob详情。
 
         :param clob_string: The clob_string of this ShowClobDetailResponse.
         :type clob_string: str

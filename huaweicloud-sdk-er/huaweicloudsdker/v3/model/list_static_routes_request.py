@@ -56,7 +56,7 @@ class ListStaticRoutesRequest:
         :type destination: list[str]
         :param attachment_id: 连接ID
         :type attachment_id: list[str]
-        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        :param resource_type: 连接资源类型:vpc|vpn|vgw|peering
         :type resource_type: list[str]
         :param sort_key: 按关键字排序，默认按照id排序，可选值:id|name|state
         :type sort_key: list[str]
@@ -206,7 +206,7 @@ class ListStaticRoutesRequest:
     def resource_type(self):
         """Gets the resource_type of this ListStaticRoutesRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :return: The resource_type of this ListStaticRoutesRequest.
         :rtype: list[str]
@@ -217,7 +217,7 @@ class ListStaticRoutesRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListStaticRoutesRequest.
 
-        连接资源类型:vpc|vpn|vgw|peering|can|gdgw
+        连接资源类型:vpc|vpn|vgw|peering
 
         :param resource_type: The resource_type of this ListStaticRoutesRequest.
         :type resource_type: list[str]

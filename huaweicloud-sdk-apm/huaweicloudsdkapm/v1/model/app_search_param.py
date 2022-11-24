@@ -40,15 +40,15 @@ class AppSearchParam:
 
         The model defined in huaweicloud sdk
 
-        :param business_id: 业务id
+        :param business_id: 应用id。
         :type business_id: int
-        :param region: 区域名称
+        :param region: 区域名称。
         :type region: str
-        :param page: 页码
+        :param page: 页码。
         :type page: int
-        :param page_size: 每页条数
+        :param page_size: 每页条数。
         :type page_size: int
-        :param keyword: 关键字
+        :param keyword: 关键字。
         :type keyword: str
         """
         
@@ -72,7 +72,7 @@ class AppSearchParam:
     def business_id(self):
         """Gets the business_id of this AppSearchParam.
 
-        业务id
+        应用id。
 
         :return: The business_id of this AppSearchParam.
         :rtype: int
@@ -83,7 +83,7 @@ class AppSearchParam:
     def business_id(self, business_id):
         """Sets the business_id of this AppSearchParam.
 
-        业务id
+        应用id。
 
         :param business_id: The business_id of this AppSearchParam.
         :type business_id: int
@@ -94,7 +94,7 @@ class AppSearchParam:
     def region(self):
         """Gets the region of this AppSearchParam.
 
-        区域名称
+        区域名称。
 
         :return: The region of this AppSearchParam.
         :rtype: str
@@ -105,7 +105,7 @@ class AppSearchParam:
     def region(self, region):
         """Sets the region of this AppSearchParam.
 
-        区域名称
+        区域名称。
 
         :param region: The region of this AppSearchParam.
         :type region: str
@@ -116,7 +116,7 @@ class AppSearchParam:
     def page(self):
         """Gets the page of this AppSearchParam.
 
-        页码
+        页码。
 
         :return: The page of this AppSearchParam.
         :rtype: int
@@ -127,7 +127,7 @@ class AppSearchParam:
     def page(self, page):
         """Sets the page of this AppSearchParam.
 
-        页码
+        页码。
 
         :param page: The page of this AppSearchParam.
         :type page: int
@@ -138,7 +138,7 @@ class AppSearchParam:
     def page_size(self):
         """Gets the page_size of this AppSearchParam.
 
-        每页条数
+        每页条数。
 
         :return: The page_size of this AppSearchParam.
         :rtype: int
@@ -149,7 +149,7 @@ class AppSearchParam:
     def page_size(self, page_size):
         """Sets the page_size of this AppSearchParam.
 
-        每页条数
+        每页条数。
 
         :param page_size: The page_size of this AppSearchParam.
         :type page_size: int
@@ -160,7 +160,7 @@ class AppSearchParam:
     def keyword(self):
         """Gets the keyword of this AppSearchParam.
 
-        关键字
+        关键字。
 
         :return: The keyword of this AppSearchParam.
         :rtype: str
@@ -171,7 +171,7 @@ class AppSearchParam:
     def keyword(self, keyword):
         """Sets the keyword of this AppSearchParam.
 
-        关键字
+        关键字。
 
         :param keyword: The keyword of this AppSearchParam.
         :type keyword: str

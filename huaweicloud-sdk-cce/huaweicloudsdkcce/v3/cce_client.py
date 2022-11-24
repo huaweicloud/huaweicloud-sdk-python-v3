@@ -619,9 +619,9 @@ class CceClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_cloud_persistent_volume_claims(self, request):
-        """删除PVC
+        """删除PVC（待废弃）
 
-        该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。
+        该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。该API待废弃，请使用Kubernetes PVC相关接口。
         
         &gt;存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。
         
@@ -705,7 +705,7 @@ class CceClient(Client):
         return self.delete_cluster_with_http_info(request)
 
     def delete_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs', 'tobedeleted']
+        all_params = ['cluster_id', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs', 'delete_sfs30', 'tobedeleted']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -732,6 +732,8 @@ class CceClient(Client):
             query_params.append(('delete_obs', local_var_params['delete_obs']))
         if 'delete_sfs' in local_var_params:
             query_params.append(('delete_sfs', local_var_params['delete_sfs']))
+        if 'delete_sfs30' in local_var_params:
+            query_params.append(('delete_sfs30', local_var_params['delete_sfs30']))
         if 'tobedeleted' in local_var_params:
             query_params.append(('tobedeleted', local_var_params['tobedeleted']))
 
@@ -1275,7 +1277,9 @@ class CceClient(Client):
     def migrate_node(self, request):
         """节点迁移
 
-        该API用于在指定集群下迁移节点到另一集群。
+        该API用于在指定集群下迁移节点到另一集群（仅支持在同一VPC下的不同集群之间进行迁移）。
+        [CCE Turbo集群下弹性云服务-物理机类型节点不支持迁移。](tag:hws,hws_hk,dt)
+        
         &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
         
         详细说明请参考华为云API Explorer。
